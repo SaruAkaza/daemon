@@ -1,20 +1,15 @@
 {
   "version": 1,
   "summary": {
-    "entityIdCount": 1740,
-    "duplicateGlobalIdCount": 1,
-    "publishedRefCount": 46,
+    "entityIdCount": 2821,
+    "duplicateGlobalIdCount": 0,
+    "publishedRefCount": 50,
     "brokenPublishedRefCount": 0,
     "bookRefCount": 260,
-    "brokenBookRefCount": 178,
+    "brokenBookRefCount": 179,
     "duplicateRefInSameBlockCount": 0
   },
-  "duplicateGlobalIds": {
-    "a-assassina": [
-      "data\\entities\\adventure.json#0",
-      "data\\entities\\source.json#1"
-    ]
-  },
+  "duplicateGlobalIds": {},
   "brokenPublishedRefs": [],
   "brokenBookRefsTop": [
     {
@@ -467,6 +462,10 @@
     },
     {
       "ref": "ras-al-ghul",
+      "count": 1
+    },
+    {
+      "ref": "geracao-aleatoria-de-atributos",
       "count": 1
     },
     {
