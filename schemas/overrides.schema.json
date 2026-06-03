@@ -37,11 +37,11 @@
           },
           "reason": {
             "type": "string",
-            "description": "Justificativa editorial legível"
+            "description": "Justificativa editorial para auditoria (não processada pelo script)"
           },
           "note": {
             "type": "string",
-            "description": "Nota interna exibida no catálogo"
+            "description": "Nota editorial; propagada como campo 'manualOverrideNote' no item"
           },
           "name": {
             "type": "string"
@@ -80,7 +80,10 @@
             "type": "integer"
           },
           "pages": {
-            "type": "array"
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
           },
           "entityRefs": {
             "type": "array"
