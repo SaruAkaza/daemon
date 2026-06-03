@@ -44,9 +44,9 @@ STAT_BLOCK_RE = re.compile(
     re.IGNORECASE,
 )
 CHARACTER_OPTION_RE = re.compile(
-    r"\b(?:aprimoramentos?|kits?|classes?|ra[cç]as?|linhagens?)\b.*\b(?:pontos?|pts?\.?)\b|"
-    r"\b(?:per[ií]cias?|aprimoramentos?)\s*:.*\b(?:pontos? her[oó]icos|pontos? de per[ií]cia|pts?\.?)\b",
-    re.IGNORECASE | re.DOTALL,
+    r"\b(?:aprimoramentos?|kits?|classes?|ra[cç]as?|linhagens?)\b.{0,120}\b(?:pontos?|pts?\.?)\b|"
+    r"\b(?:per[ií]cias?|aprimoramentos?)\s*:.{0,200}\b(?:pontos? her[oó]icos|pontos? de per[ií]cia|pts?\.?)\b",
+    re.IGNORECASE,
 )
 POWER_MAGIC_RE = re.compile(
     r"\b(?:magias?|poderes?|rituais?|c[ií]rculos?|focus|pontos? de magia|tempo de conjura[cç][aã]o|materiais?)\s*:",
@@ -96,7 +96,7 @@ def certification_failure(entity: dict[str, Any], locked_names: dict[str, set[tu
         return "looks_like_stat_block"
     if CHARACTER_OPTION_RE.search(body[:1400]):
         return "looks_like_character_option"
-    if POWER_MAGIC_RE.search(body[:1000]) and category != "core_rule":
+    if POWER_MAGIC_RE.search(body[:1000]) and category not in {"core_rule", "combat", "attribute_skill"}:
         return "looks_like_power_magic_or_ritual"
     if not MECHANICAL_RE.search(f"{name} {body} {' '.join(entity.get('tags', []) or [])}"):
         return "no_rule_mechanical_signal"
