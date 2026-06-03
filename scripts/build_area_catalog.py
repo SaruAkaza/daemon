@@ -19,6 +19,7 @@ from catalog_loader import (
 )
 from catalog_processor import (
     build_entity_items,
+    build_source_entities,
     build_source_part_items,
     catalog_sort_key,
     enrich_display_quality,
@@ -134,7 +135,8 @@ def main() -> None:
     classifications = source_classification_lookup()
     part_items = build_source_part_items(source_ids, source_lookup, known_entity_ids, classifications)
     entity_items = build_entity_items(set(source_ids), source_lookup, classifications)
-    summary = write_area_files(source_ids, part_items, entity_items)
+    source_entity_items = build_source_entities(source_ids, source_lookup)
+    summary = write_area_files(source_ids, part_items, [*entity_items, *source_entity_items])
     write_report(summary)
     print(
         f"Area catalog built: {summary['readySourceCount']} sources, "

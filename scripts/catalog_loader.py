@@ -32,6 +32,7 @@ AREA_LABELS = {
     "cenarios_lore": "Cenarios e Lore",
     "aventuras": "Aventuras",
     "tabelas": "Tabelas e Geradores",
+    "fontes": "Fontes",
 }
 
 CATEGORY_TO_AREA = {
