@@ -177,7 +177,10 @@ def main() -> None:
     rejected: list[dict[str, Any]] = []
     seen_ids: set[str] = set()
     seen_source_names: set[tuple[str, str]] = set()
-    locked_names = locked_names_for_areas(["aprimoramentos"])
+    locked_names = locked_names_for_areas([
+        "aprimoramentos", "racas", "linhagens", "classes",
+        "poderes", "magias", "rituais", "regras_base",
+    ])
 
     for entity in entities:
         failure = certification_failure(entity, locked_names)
