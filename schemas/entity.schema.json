@@ -30,7 +30,7 @@
     },
     "subtype": {
       "type": "string",
-      "enum": ["aprimoramento", "class", "kit", "lineage", "linhagem", "magia", "poder", "raca", "ritual"]
+      "enum": ["aprimoramento", "class", "kit", "lineage", "linhagem", "magia", "poder", "race", "raca", "ritual"]
     },
     "page": {
       "type": ["integer", "null"],
