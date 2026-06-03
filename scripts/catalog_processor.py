@@ -409,6 +409,13 @@ def build_entity_items(
             if area == "aprimoramentos":
                 subgroup, subgroup_label, subgroup_tag = aprimoramento_subgroup(entity)
                 matched_areas = [*matched_areas, subgroup_tag]
+            elif area in {"kits", "classes", "racas", "linhagens", "poderes", "magias", "rituais"}:
+                family_id = classification.get("family", {}).get("id") or ""
+                family_label = classification.get("family", {}).get("label") or ""
+                if family_id and family_label:
+                    subgroup = family_id
+                    subgroup_label = family_label
+                    subgroup_tag = f"family-{family_id}"
 
             item: dict[str, Any] = {
                 "id": entity_id,
