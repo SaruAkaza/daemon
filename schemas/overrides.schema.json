@@ -20,23 +20,91 @@
         "properties": {
           "action": {
             "type": "string",
-            "enum": ["publish", "quarantine", "rename", "merge", "hide", "update"]
+            "enum": ["replace", "hide", "publish", "tag_review", "quarantine"]
           },
           "id": {
             "type": "string",
             "description": "ID da entidade ou sourcePart alvo"
           },
-          "targetId": {
+          "area": {
             "type": "string",
-            "description": "ID de destino para ações merge/rename"
+            "description": "Área para escopo do override (opcional)"
+          },
+          "itemType": {
+            "type": "string",
+            "enum": ["entity", "sourcePart"],
+            "description": "Tipo do item para escopo (opcional)"
           },
           "reason": {
             "type": "string",
             "description": "Justificativa editorial legível"
           },
-          "fields": {
-            "type": "object",
-            "description": "Campos a sobrescrever (para action=update)"
+          "note": {
+            "type": "string",
+            "description": "Nota interna exibida no catálogo"
+          },
+          "name": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "entries": {
+            "type": "array"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "category": {
+            "type": "string"
+          },
+          "subtype": {
+            "type": "string"
+          },
+          "contentKind": {
+            "type": "string"
+          },
+          "contentKindLabel": {
+            "type": "string"
+          },
+          "sourceFamily": {
+            "type": "string"
+          },
+          "sourceFamilyLabel": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "pages": {
+            "type": "array"
+          },
+          "entityRefs": {
+            "type": "array"
+          },
+          "costText": {
+            "type": "string"
+          },
+          "requirements": {
+            "type": "string"
+          },
+          "skillsText": {
+            "type": "string"
+          },
+          "aprimoramentosText": {
+            "type": "string"
+          },
+          "attributesText": {
+            "type": "string"
+          },
+          "advantagesText": {
+            "type": "string"
+          },
+          "disadvantagesText": {
+            "type": "string"
           }
         },
         "additionalProperties": false
