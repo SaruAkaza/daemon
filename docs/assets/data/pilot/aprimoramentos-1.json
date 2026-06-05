@@ -1,10 +1,10 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T03:06:10",
+  "generatedAt": "2026-06-05T10:44:37",
   "source": "aprimoramentos-1",
   "sourceFile": "Aprimoramentos_1_OCR_alta_qualidade.docx",
-  "sourcePath": "Livros\\word\\Aprimoramentos_1_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\feito\\Aprimoramentos_1_OCR_alta_qualidade.docx",
   "title": "Aprimoramentos 1",
   "summary": "Compilação de aprimoramentos positivos e negativos para personagens, com regra introdutória de uso de pontos de aprimoramento.",
   "areas": [
@@ -1258,36 +1258,6 @@
       ]
     },
     {
-      "id": "comeca-o-jogo-com-5-pontos-de-focus-e-3-pontos-de-magia",
-      "title": "Começa o jogo com 5 pontos de Focus e 3 pontos de Magia.",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "polarity": "positivo",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "4 pontos: Mago desenvolvido. Possui 7 pontos de Focus para dividir entre os caminhos, e pelo menos um inimigo mortal a mais do que já possuiria (fica a cargo do Mestre). Possuir 5 pontos de Magia.",
-        "5 pontos: São personagens mais velhos, com muito poder acumulado e bastante conhecimento de magia. Possui pelo menos DOIS inimigos mortais a mais dos que já possuiria (a cargo do Mestre -e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "4 pontos: Mago desenvolvido. Possui 7 pontos de Focus para dividir entre os caminhos, e pelo menos um inimigo mortal a mais do que já possuiria (fica a cargo do Mestre). Possuir 5 pontos de Magia.",
-            "5 pontos: São personagens mais velhos, com muito poder acumulado e bastante conhecimento de magia. Possui pelo menos DOIS inimigos mortais a mais dos que já possuiria (a cargo do Mestre -e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": []
-        }
-      ]
-    },
-    {
       "id": "complexo-de-culpa",
       "title": "Complexo de Culpa",
       "area": "aprimoramentos",
@@ -2193,14 +2163,9 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto: 2 soldados.",
-        "2 pontos: 4 a 5 soldados.",
-        "3 pontos: 8 a 10 soldados.",
-        "4 pontos: 15 a 20 soldados.",
-        "5 pontos: 30 a 40 soldados.",
+        "Ver referência",
         "Seu Personagem possui um Familiar.",
-        "Veja o Aprimoramento Mascote.",
-        "Forças Militares O personagem tem acesso a um pequeno grupo de soldados, tropa de elite, guarda-costas pessoais ou mercenários contratados, podendo utilizar seus serviços em horas de emergência."
+        "Veja o Aprimoramento Mascote."
       ],
       "sections": [
         {
@@ -2208,11 +2173,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto: 2 soldados.",
-            "2 pontos: 4 a 5 soldados.",
-            "3 pontos: 8 a 10 soldados.",
-            "4 pontos: 15 a 20 soldados.",
-            "5 pontos: 30 a 40 soldados."
+            "Ver referência"
           ]
         },
         {
@@ -2221,8 +2182,7 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Seu Personagem possui um Familiar.",
-            "Veja o Aprimoramento Mascote.",
-            "Forças Militares O personagem tem acesso a um pequeno grupo de soldados, tropa de elite, guarda-costas pessoais ou mercenários contratados, podendo utilizar seus serviços em horas de emergência."
+            "Veja o Aprimoramento Mascote."
           ]
         }
       ]
@@ -2441,6 +2401,45 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": "forcas-militares",
+      "title": "Forças Militares",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: 2 soldados.",
+        "2 pontos: 4 a 5 soldados.",
+        "3 pontos: 8 a 10 soldados.",
+        "4 pontos: 15 a 20 soldados.",
+        "5 pontos: 30 a 40 soldados.",
+        "O personagem tem acesso a um pequeno grupo de soldados, tropa de elite, guarda-costas pessoais ou mercenários contratados, podendo utilizar seus serviços em horas de emergência."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: 2 soldados.",
+            "2 pontos: 4 a 5 soldados.",
+            "3 pontos: 8 a 10 soldados.",
+            "4 pontos: 15 a 20 soldados.",
+            "5 pontos: 30 a 40 soldados."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem tem acesso a um pequeno grupo de soldados, tropa de elite, guarda-costas pessoais ou mercenários contratados, podendo utilizar seus serviços em horas de emergência."
+          ]
         }
       ]
     },
@@ -3247,9 +3246,7 @@
         "2 pontos: 3 pontos de mascote",
         "3 pontos: 5 pontos de mascote",
         "4 pontos: 7 pontos de mascote",
-        "5 pontos: 10 pontos de mascote Não Precisar Beber ou Comer",
-        "2 pontos: seu Personagem não precisa beber nenhum tipo de líquido, nem sofre efeitos de desidratação. Esta característica só pode ser escolhida se o seu personagem possuir um background sobrenatural ou estiver vinculado a algum tipo de maldição.",
-        "3 pontos: seu personagem não precisa beber nem comer absolutamente nada. É imprescindível que haja uma explicação muito boa para isso em seu background.",
+        "5 pontos: 10 pontos de mascote",
         "Através deste Aprimoramento, seu personagem possuirá uma ou mais criaturas, místicas ou não. Elas o acompanham durante suas aventuras, devido a alguma razão que deve ser explicada no seu background. Note que a criatura em questão pode variar muito, desde um simples animal de estimação, como um cachorro ou um papagaio, até um ser mitológico, como uma cockatrice ou uma anaconda.",
         "O animal possui um tipo de vínculo com o personagem, permitindo que ele possa compreender alguns comandos simples, como atender a um chamado, atacar, vigiar um local e cumprir pequenas ordens.",
         "Esse aprimoramento pode ser comprado várias vezes, permitindo ao personagem ter mais de um animal, sendo que cada novo animal tem seu custo normal. No caso de animais pequenos (como insetos, por exemplo) o Mestre pode utilizar ninhadas ou enxames equivalentes a 1d6 x100 animais correspondentes.",
@@ -3265,9 +3262,7 @@
             "2 pontos: 3 pontos de mascote",
             "3 pontos: 5 pontos de mascote",
             "4 pontos: 7 pontos de mascote",
-            "5 pontos: 10 pontos de mascote Não Precisar Beber ou Comer",
-            "2 pontos: seu Personagem não precisa beber nenhum tipo de líquido, nem sofre efeitos de desidratação. Esta característica só pode ser escolhida se o seu personagem possuir um background sobrenatural ou estiver vinculado a algum tipo de maldição.",
-            "3 pontos: seu personagem não precisa beber nem comer absolutamente nada. É imprescindível que haja uma explicação muito boa para isso em seu background."
+            "5 pontos: 10 pontos de mascote"
           ]
         },
         {
@@ -3472,6 +3467,36 @@
           "paragraphs": [
             "seu relógio biológico é extremamente regular, sendo este sincronizado com a passagem de tempo dos relógios. O personagem é capaz de adivinhar o horário sem nem ao menos precisar consultar um relógio, ver a posição do sol ou valer-se de qualquer outro metódo para isso. Permite calcular com exatidão quase precisa o tempo que se passou desde o momento que ele ficou inconsciente, saber há quanto tempo está viajando e até memorizar o timer de uma bomba (podendo recordar o tempo restante para ela explodir)."
           ]
+        }
+      ]
+    },
+    {
+      "id": "nao-precisar-beber-ou-comer",
+      "title": "Não Precisar Beber ou Comer",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 pontos: seu Personagem não precisa beber nenhum tipo de líquido, nem sofre efeitos de desidratação. Esta característica só pode ser escolhida se o seu personagem possuir um background sobrenatural ou estiver vinculado a algum tipo de maldição.",
+        "3 pontos: seu personagem não precisa beber nem comer absolutamente nada. É imprescindível que haja uma explicação muito boa para isso em seu background."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos: seu Personagem não precisa beber nenhum tipo de líquido, nem sofre efeitos de desidratação. Esta característica só pode ser escolhida se o seu personagem possuir um background sobrenatural ou estiver vinculado a algum tipo de maldição.",
+            "3 pontos: seu personagem não precisa beber nem comer absolutamente nada. É imprescindível que haja uma explicação muito boa para isso em seu background."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": []
         }
       ]
     },
@@ -3713,7 +3738,9 @@
       "paragraphs": [
         "1 ponto: Começou a estudar as artes arcanas a muito pouco tempo. Possui 2 pontos de Focus e 1 ponto de Magia.",
         "2 pontos: Possui alguns conhecimentos de efeitos de Magia. Possui 3 pontos de Focus para dividir entre os caminhos que desejar. Começa o jogo com 2 pontos de Magia.",
-        "3 pontos: Mago. Já praticava as artes arcanas há algum tempo."
+        "3 pontos: Mago. Já praticava as artes arcanas há algum tempo. Começa o jogo com 5 pontos de Focus e 3 pontos de Magia.",
+        "4 pontos: Mago desenvolvido. Possui 7 pontos de Focus para dividir entre os caminhos, e pelo menos um inimigo mortal a mais do que já possuiria (fica a cargo do Mestre). Possuir 5 pontos de Magia.",
+        "5 pontos: São personagens mais velhos, com muito poder acumulado e bastante conhecimento de magia. Possui pelo menos DOIS inimigos mortais a mais dos que já possuiria (a cargo do Mestre -e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia."
       ],
       "sections": [
         {
@@ -3723,7 +3750,9 @@
           "paragraphs": [
             "1 ponto: Começou a estudar as artes arcanas a muito pouco tempo. Possui 2 pontos de Focus e 1 ponto de Magia.",
             "2 pontos: Possui alguns conhecimentos de efeitos de Magia. Possui 3 pontos de Focus para dividir entre os caminhos que desejar. Começa o jogo com 2 pontos de Magia.",
-            "3 pontos: Mago. Já praticava as artes arcanas há algum tempo."
+            "3 pontos: Mago. Já praticava as artes arcanas há algum tempo. Começa o jogo com 5 pontos de Focus e 3 pontos de Magia.",
+            "4 pontos: Mago desenvolvido. Possui 7 pontos de Focus para dividir entre os caminhos, e pelo menos um inimigo mortal a mais do que já possuiria (fica a cargo do Mestre). Possuir 5 pontos de Magia.",
+            "5 pontos: São personagens mais velhos, com muito poder acumulado e bastante conhecimento de magia. Possui pelo menos DOIS inimigos mortais a mais dos que já possuiria (a cargo do Mestre -e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia."
           ]
         },
         {
@@ -5179,7 +5208,7 @@
     }
   ],
   "areaCounts": {
-    "aprimoramentos": 157,
+    "aprimoramentos": 158,
     "regras_base": 1
   },
   "reviewNotes": [
@@ -5187,6 +5216,6 @@
     "Texto revisado antes da catalogação; cabeçalhos de página, numeração solta e assinatura foram removidos.",
     "Aprimoramentos com várias opções de custo preservam cada opção de custo junto ao efeito correspondente.",
     "Aprimoramentos com custo único exibem o custo isolado e movem a explicação para Descrição.",
-    "Total de aprimoramentos catalogados: 157 (78 positivos, 79 negativos)."
+    "Total de aprimoramentos catalogados: 158 (79 positivos, 79 negativos)."
   ]
 }

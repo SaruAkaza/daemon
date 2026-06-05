@@ -13,6 +13,8 @@ from common import ROOT, slugify, write_json
 SOURCE = "aprimoramentos-2"
 TITLE = "Aprimoramentos 2"
 SOURCE_PATH = ROOT / "Livros" / "word" / "Aprimoramentos_2_OCR_alta_qualidade.docx"
+if not SOURCE_PATH.exists():
+    SOURCE_PATH = ROOT / "Livros" / "word" / "feito" / "Aprimoramentos_2_OCR_alta_qualidade.docx"
 OUT_PATH = ROOT / "data" / "pilot" / f"{SOURCE}.json"
 DOCS_OUT_PATH = ROOT / "docs" / "assets" / "data" / "pilot" / f"{SOURCE}.json"
 

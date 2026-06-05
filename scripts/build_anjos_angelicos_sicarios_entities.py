@@ -177,12 +177,17 @@ def build_section(title, area, paragraphs):
     }
 
 
-def build_entity(name, area, kind, paragraphs):
+def build_entity(name, area, kind, section_title, paragraphs):
+    """Build an individual, browsable entity for the top-level `sections` array.
+    The app renders each top-level section as its own list item (groups, by
+    contrast, collapse into a single item)."""
     return {
         "id": slugify(name),
         "title": name,
         "area": area,
         "kind": kind,
+        "sectionId": slugify(section_title),
+        "sectionTitle": section_title,
         "paragraphs": [p for p in paragraphs if p.strip()],
         "sections": [],
     }
@@ -233,7 +238,8 @@ def build_pilot() -> dict:
     credo_idx = find("O Credo do Silêncio")
     powers_blob = " ".join(paras[arg_idx + 1:credo_idx])
     power_chunks = split_powers(powers_blob)
-    power_entities = [build_entity(n, "poderes", "power", [t]) for n, t in power_chunks]
+    power_entities = [build_entity(n, "poderes", "power", "Poder", [t])
+                      for n, t in power_chunks]
 
     # ---- CREDO (lore) + verses ----
     # Credo verses run from after credo_idx until first epigraph that precedes maneuvers
@@ -249,7 +255,7 @@ def build_pilot() -> dict:
                       if p.startswith("“A única regra"))
     maneuvers_blob = " ".join(paras[luta_idx + 1:looper_idx])
     maneuver_chunks = split_by_anchors(maneuvers_blob, MANEUVER_NAMES, require_colon=True)
-    maneuver_entities = [build_entity(n, "aprimoramentos", "enhancement", [t])
+    maneuver_entities = [build_entity(n, "aprimoramentos", "enhancement", "Aprimoramento", [t])
                          for n, t in maneuver_chunks]
 
     # ---- WEAPONS (itens) ----
@@ -258,7 +264,7 @@ def build_pilot() -> dict:
                       if p.startswith("“Não olhe muito tempo"))
     weapons_blob = " ".join(paras[looper_idx + 1:abismo_idx])
     weapon_chunks = split_by_anchors(weapons_blob, WEAPON_NAMES, require_colon=True)
-    weapon_entities = [build_entity(n, "itens_equipamentos", "equipment", [t])
+    weapon_entities = [build_entity(n, "itens_equipamentos", "equipment", "Equipamento", [t])
                        for n, t in weapon_chunks]
 
     # ---- PRISONS (lore) ----
@@ -274,31 +280,22 @@ def build_pilot() -> dict:
         prison_sections.append(build_section(n, "cenarios_lore", [t]))
     lore_sections.extend(prison_sections)
 
-    # ---- Assemble groups ----
+    # ---- Assemble ----
+    # Lore (history + prisons) stays as a single group → one "Cenário" item.
     groups = [
         {
             "id": "cenarios-lore-sicarios", "title": "Lore & História",
             "kind": "setting", "area": "cenarios_lore", "sectionTitle": "Cenário",
             "sections": lore_sections,
         },
-        {
-            "id": "poderes-sicarios", "title": "Argúcias (Poderes)",
-            "kind": "power", "area": "poderes", "sectionTitle": "Poder",
-            "sections": power_entities,
-        },
-        {
-            "id": "aprimoramentos-sicarios", "title": "Manobras de Combate",
-            "kind": "enhancement", "area": "aprimoramentos", "sectionTitle": "Aprimoramento",
-            "sections": maneuver_entities,
-        },
-        {
-            "id": "equipamentos-sicarios", "title": "Equipamentos & Armas",
-            "kind": "equipment", "area": "itens_equipamentos", "sectionTitle": "Equipamento",
-            "sections": weapon_entities,
-        },
     ]
 
-    area_counts = {g["area"]: len(g["sections"]) for g in groups}
+    # Powers, maneuvers and weapons become individual browsable items.
+    top_sections = power_entities + maneuver_entities + weapon_entities
+
+    area_counts = {"cenarios_lore": 1}
+    for s in top_sections:
+        area_counts[s["area"]] = area_counts.get(s["area"], 0) + 1
 
     return {
         "version": 1,
@@ -311,7 +308,7 @@ def build_pilot() -> dict:
         "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos da Cidade de Prata. História completa da Ordem, poderes (Argúcias), manobras de combate, armas/artefatos e prisões secretas.",
         "areas": sorted(area_counts.keys()),
         "groups": groups,
-        "sections": [],
+        "sections": top_sections,
         "areaCounts": area_counts,
     }
 
@@ -320,12 +317,13 @@ def main() -> None:
     payload = build_pilot()
     write_json(OUT_PATH, payload)
     write_json(DOCS_OUT_PATH, payload)
-    print(f"Groups: {len(payload['groups'])}")
-    for g in payload["groups"]:
-        print(f"  - {g['title']}: {len(g['sections'])} entities")
-        for s in g["sections"]:
-            print(f"      . {s['title']}")
-    print(f"Areas: {payload['areaCounts']}")
+    print(f"Groups (lore): {len(payload['groups'])} -> {len(payload['groups'][0]['sections'])} lore sections")
+    print(f"Top-level individual items: {len(payload['sections'])}")
+    from collections import Counter
+    by_area = Counter(s['area'] for s in payload['sections'])
+    for area, n in by_area.items():
+        print(f"  {area}: {n}")
+    print(f"areaCounts: {payload['areaCounts']}")
 
 
 if __name__ == "__main__":

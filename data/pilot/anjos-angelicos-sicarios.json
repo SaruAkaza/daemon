@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T10:39:21",
+  "generatedAt": "2026-06-05T10:47:02",
   "source": "anjos-angelicos-sicarios",
   "sourceFile": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "sourcePath": "Livros\\word\\Anjos - A Cidade de Prata - Angélicos Sicários.docx",
@@ -292,408 +292,456 @@
           ]
         }
       ]
-    },
-    {
-      "id": "poderes-sicarios",
-      "title": "Argúcias (Poderes)",
-      "kind": "power",
-      "area": "poderes",
-      "sectionTitle": "Poder",
-      "sections": [
-        {
-          "id": "marca",
-          "title": "Marca",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 1: Marca. Como o poder Marca dos Captares."
-          ],
-          "sections": []
-        },
-        {
-          "id": "detectar-marca",
-          "title": "Detectar Marca",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 1: Detectar Marca. Como o poder Marca dos Captares."
-          ],
-          "sections": []
-        },
-        {
-          "id": "perceber-a-caca",
-          "title": "Perceber a Caça",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 1: Perceber a Caça. Como o poder dos Inquisidores, descrito no e-book Caçadores Alados, mas utilizável para qualquer criatura que o Sicário esteja caçando."
-          ],
-          "sections": []
-        },
-        {
-          "id": "necandi",
-          "title": "Necandi",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 1: Necandi. Com este Poder, o Sicário pode imbuir armamento (ou seus próprios punhos) com energia, tornando seus ataques físicos muito mais poderoso. O Sicário aumenta o dano de seus ataques em +1D3."
-          ],
-          "sections": []
-        },
-        {
-          "id": "trilha",
-          "title": "Trilha",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 1: Trilha. Quando um Sicário faz contato com um objeto de algum alvo previamente estudado através de informações recolhidas (ou passadas a ele), este Poder cria uma trilha enevoada por trás de seu alvo podendo ser seguida com um teste de PER."
-          ],
-          "sections": []
-        },
-        {
-          "id": "deliquio",
-          "title": "Delíquio",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 2: Delíquio. O Sicário cria uma aura atordoante que obscurece todos os sentidos normais e sobrenaturais, deixando as ações físicas e mentais de todos a sua volta reduzidas do atributo em 1 Pt. É possível que criaturas sobrenaturais possam resistir se possuírem algum sentido especial."
-          ],
-          "sections": []
-        },
-        {
-          "id": "conviccao",
-          "title": "Convicção",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 2: Convicção. O Sicário utiliza sua WILL para aumentar em +1 seus atributos físicos durante uma rodada, enquanto estiver caçando."
-          ],
-          "sections": []
-        },
-        {
-          "id": "aporte",
-          "title": "Aporte",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 2: Aporte. Com uma disputa de WILLxCON da vítima, o Sicário é capaz de puxar o alvo para próximo de si, como se possuísse o poder TELECINÉSIA FR x2."
-          ],
-          "sections": []
-        },
-        {
-          "id": "temperanca",
-          "title": "Temperança",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 3: Temperança. A presença do Sicário não pode ser notada por meios normais. Criaturas sobrenaturais acima de 800 anos podem realizar um teste de PERxWILL para perceber algo estranho no ambiente."
-          ],
-          "sections": []
-        },
-        {
-          "id": "alcance",
-          "title": "Alcance",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 3: Alcance. O Sicário pode projetar seus sentidos por PERm, atravessando paredes e áreas a prova de ruídos."
-          ],
-          "sections": []
-        },
-        {
-          "id": "elo",
-          "title": "Elo",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 3: Elo. Um Sicário pode contatar outro Sicário, enviando a ele uma única mensagem, para isso, ambos devem permanecer no mesmo planeta."
-          ],
-          "sections": []
-        },
-        {
-          "id": "ictus-mortem",
-          "title": "Ictus Mortem",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 4: Ictus Mortem. Se puder se aproximar de uma vítima sem ser notado, um Sicário considera seu ataque, um ataque crítico."
-          ],
-          "sections": []
-        },
-        {
-          "id": "clostridium",
-          "title": "Clostridium",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 4: Clostridium. O Sicário embebe a ponta de seu dedo com um veneno mortal. Em contato com mortais, ele causa 1D10 de dano + 1D6 por turno. Criaturas sobrenaturais podem realizar um teste de CON, para somente receber o dano de 1D6 por turno até ser curado. O Sicário pode provar o sangue de um membro da raça ou do próprio individuo a qual o veneno se destina, e acrescentar um efeito extra - com a aprovação do Mestre - ao mesmo baseado em alguma fraqueza daquela criatura."
-          ],
-          "sections": []
-        },
-        {
-          "id": "vigilate",
-          "title": "Vigilate",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 4: Vigilate. O Sicário pode perceber qualquer indivíduo com atitudes hostis contra ele, em um raio de PERm."
-          ],
-          "sections": []
-        },
-        {
-          "id": "plane-shift",
-          "title": "Plane Shift",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 4: Plane Shift. O Sicário é capaz de transitar entre Paradisia, Inferno, Spiritum e a Terra livremente."
-          ],
-          "sections": []
-        },
-        {
-          "id": "imunitas",
-          "title": "Imunitas",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 4: Imunitas. O Sicário não pode ser barrado por proteções que afetem seres de Paradísia, nem mesmo rituais específicos de proteção contra anjos. Este poder não pode ser desativado."
-          ],
-          "sections": []
-        },
-        {
-          "id": "anjo-cinzento",
-          "title": "Anjo Cinzento",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 5: Anjo Cinzento. O Sicário pode caminhar entre outros seres sobrenaturais ou não, e estes verão um disfarce ilusório que dirá a eles que o Anjo pertence aos seus. O Sicário será notado como um membro qualquer da raça onde se infiltra, só não sendo reconhecido. O Poder pode ser desfeito com um teste Difícil de PERxWILL+20."
-          ],
-          "sections": []
-        },
-        {
-          "id": "marca-de-iskariotis",
-          "title": "Marca de Iskariotis",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 6: Marca de Iskariotis. Como o Poder dos Captare, com exceção que o Sicário pode se alto marcar."
-          ],
-          "sections": []
-        },
-        {
-          "id": "manto-do-nada",
-          "title": "Manto do Nada",
-          "area": "poderes",
-          "kind": "power",
-          "paragraphs": [
-            "Nível 7: Manto do Nada. O Sicário literalmente veste-se com o Nada, desaparecendo da Roda dos Mundos por um curto período de tempo. NENHUM feitiço, poder ou artefato é capaz de rastreá-lo neste estado de inexistência. Seus perseguidores deveram realizar um teste de PER difícil para não simplesmente esquecer da existência do Anjo. O Poder é mantido por até 1D3 Turnos, após isso o Sicário é forçado a manifestar-se e perde TODOS os efeitos místicos atuantes sobre si. Sicários podem assumir QUAISQUER Poderes que desejassem, incluindo Poderes Demoníacos, etc."
-          ],
-          "sections": []
-        }
-      ]
-    },
-    {
-      "id": "aprimoramentos-sicarios",
-      "title": "Manobras de Combate",
-      "kind": "enhancement",
-      "area": "aprimoramentos",
-      "sectionTitle": "Aprimoramento",
-      "sections": [
-        {
-          "id": "desarmar-com-asa",
-          "title": "Desarmar com Asa",
-          "area": "aprimoramentos",
-          "kind": "enhancement",
-          "paragraphs": [
-            "Desarmar com Asa (25): O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair."
-          ],
-          "sections": []
-        },
-        {
-          "id": "ataque-rolante",
-          "title": "Ataque Rolante",
-          "area": "aprimoramentos",
-          "kind": "enhancement",
-          "paragraphs": [
-            "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente."
-          ],
-          "sections": []
-        },
-        {
-          "id": "finta",
-          "title": "Finta",
-          "area": "aprimoramentos",
-          "kind": "enhancement",
-          "paragraphs": [
-            "Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa."
-          ],
-          "sections": []
-        },
-        {
-          "id": "mata-dragao",
-          "title": "Mata-Dragão",
-          "area": "aprimoramentos",
-          "kind": "enhancement",
-          "paragraphs": [
-            "Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%."
-          ],
-          "sections": []
-        },
-        {
-          "id": "coracao-de-fafnir",
-          "title": "Coração de Fafnir",
-          "area": "aprimoramentos",
-          "kind": "enhancement",
-          "paragraphs": [
-            "Coração de Fafnir (30): Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%."
-          ],
-          "sections": []
-        },
-        {
-          "id": "calcanhar-da-fera",
-          "title": "Calcanhar da Fera",
-          "area": "aprimoramentos",
-          "kind": "enhancement",
-          "paragraphs": [
-            "Calcanhar da Fera (30): O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
-          ],
-          "sections": []
-        },
-        {
-          "id": "asas-cortantes",
-          "title": "Asas Cortantes",
-          "area": "aprimoramentos",
-          "kind": "enhancement",
-          "paragraphs": [
-            "Asas Cortantes (30): As pontas das asas de um sicário, são armas de corte, devido a seu treinamento. Um Sicário recebe um bônus de +3 de dano em todos os ataques realizados com suas asas."
-          ],
-          "sections": []
-        }
-      ]
-    },
-    {
-      "id": "equipamentos-sicarios",
-      "title": "Equipamentos & Armas",
-      "kind": "equipment",
-      "area": "itens_equipamentos",
-      "sectionTitle": "Equipamento",
-      "sections": [
-        {
-          "id": "yaldabaoth",
-          "title": "Yaldabaoth",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Yaldabaoth: Consiste em afixar na asa, 12 farpas de aço paradisiano que são liberadas com um teste simples de DEX. As farpas possuem o tamanho e o formato de pequenas adagas, e causam o dano de 1D4. As farpas podem ser lançadas todas de uma vez (ROF 12) ou uma de cada vez, com um teste de DEX difícil. Existem outras variantes de Yaldabaoth como a em formato de agulha, cravo, lança ou palito."
-          ],
-          "sections": []
-        },
-        {
-          "id": "nebro",
-          "title": "Nebro",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Nebro: Lâminas que são colocadas na ponta das asas, mas estas por sua vez não podem ser lançadas. A Nebro consiste em uma espessa lamina curta, afixada a parte maior da asa de um Anjo. A arma causa 1D10 + FR e deve ser utilizada com uma Perícia própria."
-          ],
-          "sections": []
-        },
-        {
-          "id": "saklas",
-          "title": "Saklas",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Saklas: Dardos de 2/3 polegadas de aço, muito finos e leves, lançados através do soprar das duas mãos juntas de um Anjo ou escondidos dentro de sua boca, e disparados a curtas distâncias. O Dardo em si causa apenas 1 pt de dano, mas pode ser embebido em veneno. Seu alcance equivale a CONx2m"
-          ],
-          "sections": []
-        },
-        {
-          "id": "harmathoth",
-          "title": "Harmathoth",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Harmathoth: armas de fogo medievais, semelhante a mini canhões que são levadas sob a manopla, feitas para serem usadas a fim de causar grande dano à distância no inimigo. Muitas vezes elas eram utilizadas em ataques coordenados ou em um único alvo, tendo seu disparo coordenado por um outro Anjo observador. A arma causa 2D6+3 de dano, podendo disparar um único tiro por turno, a uma distância de 800m. Possui inúmeros tipos de projeteis, incluindo alguns feitos de Ferro Frio e Ferro de Dite."
-          ],
-          "sections": []
-        },
-        {
-          "id": "galila",
-          "title": "Galila",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Galila: Uma espécie de esfera de luz concentrada, capaz de cegar um oponente quando atirada em sua direção; uma vez destruída, um oponente a frente do lançador, ficará cego durante 1D3+3 turnos."
-          ],
-          "sections": []
-        },
-        {
-          "id": "exarp",
-          "title": "Exarp",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Exarp: Exarp é uma fina linha feita de luz sólida, utilizada pelos Sicários para estrangular suas vítimas. O Anjo prende o Exarp na ponta de seus dedos, e com um simples cruzar de mãos na garganta de sua vítima, ativa o item e seu efeito. O Exarp não pode ser visto, já que se manifesta apenas quando seu portador assim desejar. O Dano do Exarp é causado por estrangulamento a medida de 1 Pt de dano por turno, e exigindo da vítima testes de CON para cada Pt extra causado; em caso de falha, a vítima sofre um redutor de -2 em seus testes de FR para tentar se livrar do ataque."
-          ],
-          "sections": []
-        },
-        {
-          "id": "hcoma",
-          "title": "Hcoma",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Hcoma: Uma criatura construída com o aço Paradisiano chamado Orichalco. A criatura assemelha-se a um aracnídeo normalmente - mas pode assumir a forma que seu construtor desejar - medindo de 2/3cm. O portador desta criatura deve criar com ela um vínculo de sangue para que esta retorne a ele e cumpra sua missão. A criatura normalmente é utilizada como veículo portador de veneno, mas também pode ser abastecida com outros efeitos Místicos como pragas ou feitiços. O Hcoma assume 1cm para cada 0,5l de veneno imbuídos em seu corpo."
-          ],
-          "sections": []
-        },
-        {
-          "id": "manto-do-sicario",
-          "title": "Manto do Sicário",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Manto do Sicário: Artefato raríssimo e lendário, entregue somente aqueles que aceitam o Credo do Silêncio e passam a viver para ele. Forjado com finos fios de Orichalko o Manto do Sicário é comparado, em inúmeras lendas a mortalha da própria figura da Morte, embora possa assumir várias cores e formatos. O Manto fornece ao usuário IP+3, e um bônus de +30% em todas as Perícias que visem agir sorrateiramente como Camuflagem, Furtividade, etc. O Manto também possui vínculo com um mini bolsão em Spiritum, onde o Sicário pode carregar itens sem que seu peso influencie em seus movimentos."
-          ],
-          "sections": []
-        },
-        {
-          "id": "angelica-sica",
-          "title": "Angélica Sica",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Angélica Sica: Um pequeno punhal curvo ou adaga, que se podia facilmente ocultar debaixo da roupa, ou mesmo na palma da mão. A Angélica Sica também é um artefato icônico que dá nome aos Sicários, mas que NUNCA poderá ser vista se seu portador não desejar. Existe uma Sica única para cada assassino e esta é forjada com seu sangue e vinculada a seu espírito. A Sica desaparece nas mãos de seu dono e após sua morte torna-se cinzas, retorna a sua mão quando arremessada ou perdida. Em termos de jogo, a Sica é um punhal místico, que causa 1D6+FR de dano, e também atinge Espíritos normalmente. Em um primeiro momento, para um observador leigo, a Sica parece fantasmagórica nas mãos de seu portador, quando ele assim permite que ela seja vista."
-          ],
-          "sections": []
-        },
-        {
-          "id": "nanta-biton",
-          "title": "Nanta Biton",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Nanta Biton: Esta arma consiste de \"unhas\" pontiagudas de Orichalko, presas à ponta dos dedos, dando assim um efeito de garras animalescas. As Nanta Biton causam 1D3+FR de Dano, e reduzem a dificuldade para acertos em locais críticos em um nível."
-          ],
-          "sections": []
-        },
-        {
-          "id": "escudo-de-orichalko",
-          "title": "Escudo de Orichalko",
-          "area": "itens_equipamentos",
-          "kind": "equipment",
-          "paragraphs": [
-            "Escudo de Orichalko: O Orichalko Olympiano é maleável a altas temperaturas, e tratado misticamente, assume a densidade do elemento químico terreno Mercúrio, mas, mantendo sua resistência. Esse escudo banham as asas dos Sicários, tomando a forma de suas asas e transformando estas em escudos com IP 6, e tornando-se possível o aparar com as asas."
-          ],
-          "sections": []
-        }
-      ]
     }
   ],
-  "sections": [],
+  "sections": [
+    {
+      "id": "marca",
+      "title": "Marca",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 1: Marca. Como o poder Marca dos Captares."
+      ],
+      "sections": []
+    },
+    {
+      "id": "detectar-marca",
+      "title": "Detectar Marca",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 1: Detectar Marca. Como o poder Marca dos Captares."
+      ],
+      "sections": []
+    },
+    {
+      "id": "perceber-a-caca",
+      "title": "Perceber a Caça",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 1: Perceber a Caça. Como o poder dos Inquisidores, descrito no e-book Caçadores Alados, mas utilizável para qualquer criatura que o Sicário esteja caçando."
+      ],
+      "sections": []
+    },
+    {
+      "id": "necandi",
+      "title": "Necandi",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 1: Necandi. Com este Poder, o Sicário pode imbuir armamento (ou seus próprios punhos) com energia, tornando seus ataques físicos muito mais poderoso. O Sicário aumenta o dano de seus ataques em +1D3."
+      ],
+      "sections": []
+    },
+    {
+      "id": "trilha",
+      "title": "Trilha",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 1: Trilha. Quando um Sicário faz contato com um objeto de algum alvo previamente estudado através de informações recolhidas (ou passadas a ele), este Poder cria uma trilha enevoada por trás de seu alvo podendo ser seguida com um teste de PER."
+      ],
+      "sections": []
+    },
+    {
+      "id": "deliquio",
+      "title": "Delíquio",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 2: Delíquio. O Sicário cria uma aura atordoante que obscurece todos os sentidos normais e sobrenaturais, deixando as ações físicas e mentais de todos a sua volta reduzidas do atributo em 1 Pt. É possível que criaturas sobrenaturais possam resistir se possuírem algum sentido especial."
+      ],
+      "sections": []
+    },
+    {
+      "id": "conviccao",
+      "title": "Convicção",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 2: Convicção. O Sicário utiliza sua WILL para aumentar em +1 seus atributos físicos durante uma rodada, enquanto estiver caçando."
+      ],
+      "sections": []
+    },
+    {
+      "id": "aporte",
+      "title": "Aporte",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 2: Aporte. Com uma disputa de WILLxCON da vítima, o Sicário é capaz de puxar o alvo para próximo de si, como se possuísse o poder TELECINÉSIA FR x2."
+      ],
+      "sections": []
+    },
+    {
+      "id": "temperanca",
+      "title": "Temperança",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 3: Temperança. A presença do Sicário não pode ser notada por meios normais. Criaturas sobrenaturais acima de 800 anos podem realizar um teste de PERxWILL para perceber algo estranho no ambiente."
+      ],
+      "sections": []
+    },
+    {
+      "id": "alcance",
+      "title": "Alcance",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 3: Alcance. O Sicário pode projetar seus sentidos por PERm, atravessando paredes e áreas a prova de ruídos."
+      ],
+      "sections": []
+    },
+    {
+      "id": "elo",
+      "title": "Elo",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 3: Elo. Um Sicário pode contatar outro Sicário, enviando a ele uma única mensagem, para isso, ambos devem permanecer no mesmo planeta."
+      ],
+      "sections": []
+    },
+    {
+      "id": "ictus-mortem",
+      "title": "Ictus Mortem",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 4: Ictus Mortem. Se puder se aproximar de uma vítima sem ser notado, um Sicário considera seu ataque, um ataque crítico."
+      ],
+      "sections": []
+    },
+    {
+      "id": "clostridium",
+      "title": "Clostridium",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 4: Clostridium. O Sicário embebe a ponta de seu dedo com um veneno mortal. Em contato com mortais, ele causa 1D10 de dano + 1D6 por turno. Criaturas sobrenaturais podem realizar um teste de CON, para somente receber o dano de 1D6 por turno até ser curado. O Sicário pode provar o sangue de um membro da raça ou do próprio individuo a qual o veneno se destina, e acrescentar um efeito extra - com a aprovação do Mestre - ao mesmo baseado em alguma fraqueza daquela criatura."
+      ],
+      "sections": []
+    },
+    {
+      "id": "vigilate",
+      "title": "Vigilate",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 4: Vigilate. O Sicário pode perceber qualquer indivíduo com atitudes hostis contra ele, em um raio de PERm."
+      ],
+      "sections": []
+    },
+    {
+      "id": "plane-shift",
+      "title": "Plane Shift",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 4: Plane Shift. O Sicário é capaz de transitar entre Paradisia, Inferno, Spiritum e a Terra livremente."
+      ],
+      "sections": []
+    },
+    {
+      "id": "imunitas",
+      "title": "Imunitas",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 4: Imunitas. O Sicário não pode ser barrado por proteções que afetem seres de Paradísia, nem mesmo rituais específicos de proteção contra anjos. Este poder não pode ser desativado."
+      ],
+      "sections": []
+    },
+    {
+      "id": "anjo-cinzento",
+      "title": "Anjo Cinzento",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 5: Anjo Cinzento. O Sicário pode caminhar entre outros seres sobrenaturais ou não, e estes verão um disfarce ilusório que dirá a eles que o Anjo pertence aos seus. O Sicário será notado como um membro qualquer da raça onde se infiltra, só não sendo reconhecido. O Poder pode ser desfeito com um teste Difícil de PERxWILL+20."
+      ],
+      "sections": []
+    },
+    {
+      "id": "marca-de-iskariotis",
+      "title": "Marca de Iskariotis",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 6: Marca de Iskariotis. Como o Poder dos Captare, com exceção que o Sicário pode se alto marcar."
+      ],
+      "sections": []
+    },
+    {
+      "id": "manto-do-nada",
+      "title": "Manto do Nada",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nível 7: Manto do Nada. O Sicário literalmente veste-se com o Nada, desaparecendo da Roda dos Mundos por um curto período de tempo. NENHUM feitiço, poder ou artefato é capaz de rastreá-lo neste estado de inexistência. Seus perseguidores deveram realizar um teste de PER difícil para não simplesmente esquecer da existência do Anjo. O Poder é mantido por até 1D3 Turnos, após isso o Sicário é forçado a manifestar-se e perde TODOS os efeitos místicos atuantes sobre si. Sicários podem assumir QUAISQUER Poderes que desejassem, incluindo Poderes Demoníacos, etc."
+      ],
+      "sections": []
+    },
+    {
+      "id": "desarmar-com-asa",
+      "title": "Desarmar com Asa",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Desarmar com Asa (25): O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair."
+      ],
+      "sections": []
+    },
+    {
+      "id": "ataque-rolante",
+      "title": "Ataque Rolante",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente."
+      ],
+      "sections": []
+    },
+    {
+      "id": "finta",
+      "title": "Finta",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa."
+      ],
+      "sections": []
+    },
+    {
+      "id": "mata-dragao",
+      "title": "Mata-Dragão",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%."
+      ],
+      "sections": []
+    },
+    {
+      "id": "coracao-de-fafnir",
+      "title": "Coração de Fafnir",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Coração de Fafnir (30): Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%."
+      ],
+      "sections": []
+    },
+    {
+      "id": "calcanhar-da-fera",
+      "title": "Calcanhar da Fera",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Calcanhar da Fera (30): O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
+      ],
+      "sections": []
+    },
+    {
+      "id": "asas-cortantes",
+      "title": "Asas Cortantes",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Asas Cortantes (30): As pontas das asas de um sicário, são armas de corte, devido a seu treinamento. Um Sicário recebe um bônus de +3 de dano em todos os ataques realizados com suas asas."
+      ],
+      "sections": []
+    },
+    {
+      "id": "yaldabaoth",
+      "title": "Yaldabaoth",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Yaldabaoth: Consiste em afixar na asa, 12 farpas de aço paradisiano que são liberadas com um teste simples de DEX. As farpas possuem o tamanho e o formato de pequenas adagas, e causam o dano de 1D4. As farpas podem ser lançadas todas de uma vez (ROF 12) ou uma de cada vez, com um teste de DEX difícil. Existem outras variantes de Yaldabaoth como a em formato de agulha, cravo, lança ou palito."
+      ],
+      "sections": []
+    },
+    {
+      "id": "nebro",
+      "title": "Nebro",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Nebro: Lâminas que são colocadas na ponta das asas, mas estas por sua vez não podem ser lançadas. A Nebro consiste em uma espessa lamina curta, afixada a parte maior da asa de um Anjo. A arma causa 1D10 + FR e deve ser utilizada com uma Perícia própria."
+      ],
+      "sections": []
+    },
+    {
+      "id": "saklas",
+      "title": "Saklas",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Saklas: Dardos de 2/3 polegadas de aço, muito finos e leves, lançados através do soprar das duas mãos juntas de um Anjo ou escondidos dentro de sua boca, e disparados a curtas distâncias. O Dardo em si causa apenas 1 pt de dano, mas pode ser embebido em veneno. Seu alcance equivale a CONx2m"
+      ],
+      "sections": []
+    },
+    {
+      "id": "harmathoth",
+      "title": "Harmathoth",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Harmathoth: armas de fogo medievais, semelhante a mini canhões que são levadas sob a manopla, feitas para serem usadas a fim de causar grande dano à distância no inimigo. Muitas vezes elas eram utilizadas em ataques coordenados ou em um único alvo, tendo seu disparo coordenado por um outro Anjo observador. A arma causa 2D6+3 de dano, podendo disparar um único tiro por turno, a uma distância de 800m. Possui inúmeros tipos de projeteis, incluindo alguns feitos de Ferro Frio e Ferro de Dite."
+      ],
+      "sections": []
+    },
+    {
+      "id": "galila",
+      "title": "Galila",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Galila: Uma espécie de esfera de luz concentrada, capaz de cegar um oponente quando atirada em sua direção; uma vez destruída, um oponente a frente do lançador, ficará cego durante 1D3+3 turnos."
+      ],
+      "sections": []
+    },
+    {
+      "id": "exarp",
+      "title": "Exarp",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Exarp: Exarp é uma fina linha feita de luz sólida, utilizada pelos Sicários para estrangular suas vítimas. O Anjo prende o Exarp na ponta de seus dedos, e com um simples cruzar de mãos na garganta de sua vítima, ativa o item e seu efeito. O Exarp não pode ser visto, já que se manifesta apenas quando seu portador assim desejar. O Dano do Exarp é causado por estrangulamento a medida de 1 Pt de dano por turno, e exigindo da vítima testes de CON para cada Pt extra causado; em caso de falha, a vítima sofre um redutor de -2 em seus testes de FR para tentar se livrar do ataque."
+      ],
+      "sections": []
+    },
+    {
+      "id": "hcoma",
+      "title": "Hcoma",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Hcoma: Uma criatura construída com o aço Paradisiano chamado Orichalco. A criatura assemelha-se a um aracnídeo normalmente - mas pode assumir a forma que seu construtor desejar - medindo de 2/3cm. O portador desta criatura deve criar com ela um vínculo de sangue para que esta retorne a ele e cumpra sua missão. A criatura normalmente é utilizada como veículo portador de veneno, mas também pode ser abastecida com outros efeitos Místicos como pragas ou feitiços. O Hcoma assume 1cm para cada 0,5l de veneno imbuídos em seu corpo."
+      ],
+      "sections": []
+    },
+    {
+      "id": "manto-do-sicario",
+      "title": "Manto do Sicário",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Manto do Sicário: Artefato raríssimo e lendário, entregue somente aqueles que aceitam o Credo do Silêncio e passam a viver para ele. Forjado com finos fios de Orichalko o Manto do Sicário é comparado, em inúmeras lendas a mortalha da própria figura da Morte, embora possa assumir várias cores e formatos. O Manto fornece ao usuário IP+3, e um bônus de +30% em todas as Perícias que visem agir sorrateiramente como Camuflagem, Furtividade, etc. O Manto também possui vínculo com um mini bolsão em Spiritum, onde o Sicário pode carregar itens sem que seu peso influencie em seus movimentos."
+      ],
+      "sections": []
+    },
+    {
+      "id": "angelica-sica",
+      "title": "Angélica Sica",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Angélica Sica: Um pequeno punhal curvo ou adaga, que se podia facilmente ocultar debaixo da roupa, ou mesmo na palma da mão. A Angélica Sica também é um artefato icônico que dá nome aos Sicários, mas que NUNCA poderá ser vista se seu portador não desejar. Existe uma Sica única para cada assassino e esta é forjada com seu sangue e vinculada a seu espírito. A Sica desaparece nas mãos de seu dono e após sua morte torna-se cinzas, retorna a sua mão quando arremessada ou perdida. Em termos de jogo, a Sica é um punhal místico, que causa 1D6+FR de dano, e também atinge Espíritos normalmente. Em um primeiro momento, para um observador leigo, a Sica parece fantasmagórica nas mãos de seu portador, quando ele assim permite que ela seja vista."
+      ],
+      "sections": []
+    },
+    {
+      "id": "nanta-biton",
+      "title": "Nanta Biton",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Nanta Biton: Esta arma consiste de \"unhas\" pontiagudas de Orichalko, presas à ponta dos dedos, dando assim um efeito de garras animalescas. As Nanta Biton causam 1D3+FR de Dano, e reduzem a dificuldade para acertos em locais críticos em um nível."
+      ],
+      "sections": []
+    },
+    {
+      "id": "escudo-de-orichalko",
+      "title": "Escudo de Orichalko",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "equipamento",
+      "sectionTitle": "Equipamento",
+      "paragraphs": [
+        "Escudo de Orichalko: O Orichalko Olympiano é maleável a altas temperaturas, e tratado misticamente, assume a densidade do elemento químico terreno Mercúrio, mas, mantendo sua resistência. Esse escudo banham as asas dos Sicários, tomando a forma de suas asas e transformando estas em escudos com IP 6, e tornando-se possível o aparar com as asas."
+      ],
+      "sections": []
+    }
+  ],
   "areaCounts": {
-    "cenarios_lore": 30,
+    "cenarios_lore": 1,
     "poderes": 19,
     "aprimoramentos": 7,
     "itens_equipamentos": 11

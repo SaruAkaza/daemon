@@ -54,6 +54,7 @@ TITLE_MARKERS = [
 KNOWN_INLINE_TITLES = [
     "Ambiente Favorável",
     "Caçador de Demônios ou Anjos",
+    "Não Precisar Beber ou Comer",
     "Pontos Heróicos",
     "Recursos e Dinheiro",
     "Sociedade Secreta",
@@ -147,6 +148,10 @@ def clean(values: Iterable[str]) -> list[str]:
             continue
         if re.fullmatch(r"\d+\s+\d+", text):
             continue
+        if text == "5 pontos: 10 pontos de mascote Não Precisar Beber ou Comer":
+            paragraphs.append("5 pontos: 10 pontos de mascote")
+            paragraphs.append("Não Precisar Beber ou Comer")
+            continue
         if paragraphs and should_join(paragraphs[-1], text):
             previous = paragraphs.pop()
             if previous.endswith("-") and text[:1].islower():
@@ -216,7 +221,9 @@ def build_enhancement(title: str, polarity: str, raw_parts: list[str]) -> dict:
             description.append(part)
 
     cost_values: list[str] = []
-    if len(costs) == 1:
+    if not costs and any(part.startswith(("Veja ", "Vide ")) for part in description):
+        cost_values = ["Ver referência"]
+    elif len(costs) == 1:
         match = COST_RE.match(costs[0])
         cost_values = [match.group(0).rstrip(":")] if match else costs
         cost_description = costs[0][match.end() :].strip() if match else ""
@@ -271,6 +278,17 @@ def parse_enhancements(paragraphs: list[str]) -> list[dict]:
             continue
         if looks_like_title(text, next_text):
             title, description = split_title_description(text)
+            if current_title and text.startswith("Começa o jogo") and current_parts and is_cost(current_parts[-1]):
+                current_parts[-1] = f"{current_parts[-1]} {text}"
+                continue
+            if current_title and not any(is_cost(part) for part in current_parts) and any(
+                part.startswith(("Veja ", "Vide ")) for part in current_parts
+            ):
+                flush()
+                current_title = title
+                if description:
+                    current_parts.append(description)
+                continue
             if current_title and len(title) > 70 and not description:
                 current_parts.append(text)
                 continue
