@@ -750,6 +750,22 @@ button:focus-visible {
   line-height: 1.52;
 }
 
+.text-list {
+  display: grid;
+  gap: 8px;
+  white-space: normal;
+}
+
+.text-list-row {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.text-list-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
 .footer {
   display: flex;
   align-items: center;

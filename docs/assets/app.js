@@ -718,6 +718,34 @@ function renderTextBlock(title, text) {
   return block;
 }
 
+function renderListBlock(title, paragraphs) {
+  const block = document.createElement("section");
+  block.className = "section";
+  const heading = document.createElement("h3");
+  heading.textContent = title;
+  const body = document.createElement("div");
+  body.className = "text-block text-list";
+  for (const paragraph of paragraphs.filter(Boolean)) {
+    const row = document.createElement("div");
+    row.className = "text-list-row";
+    row.textContent = paragraph;
+    body.append(row);
+  }
+  block.append(heading, body);
+  return block;
+}
+
+function shouldRenderAsList(section) {
+  const title = normalize(section.title || "");
+  return title === "custo" || title === "custo de pericia";
+}
+
+function renderDetailSection(section) {
+  const paragraphs = section.paragraphs || [];
+  if (shouldRenderAsList(section)) return renderListBlock(section.title, paragraphs);
+  return renderTextBlock(section.title, sectionText(section));
+}
+
 function renderSectionGroup(title, sections, includeSectionTitles = false) {
   const paragraphs = sections.flatMap((section) => {
     const text = sectionText(section);
@@ -758,7 +786,7 @@ function renderPilotNpcDetail(item) {
 
   for (const section of sections) {
     if (consumed.has(section)) continue;
-    nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
+    nodes.detailPanel.append(renderDetailSection(section));
   }
 }
 
@@ -782,7 +810,7 @@ function renderSectionDetail(item) {
 
 function renderAdventureDetail(item) {
   for (const section of item.sections || []) {
-    nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
+    nodes.detailPanel.append(renderDetailSection(section));
   }
 }
 
@@ -804,7 +832,7 @@ function renderGroupedDetail(item, sortFunction = null) {
   const sections = [...(item.sections || [])];
   if (sortFunction) sections.sort(sortFunction);
   for (const section of sections) {
-    nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
+    nodes.detailPanel.append(renderDetailSection(section));
   }
 }
 
