@@ -215,7 +215,7 @@ def build():
     for t in LORE_TITLES:
         if t in bt:
             lore_sections.append(sec(slugify(t), t, "cenarios_lore", bt[t][1]))
-    groups.append({"id": "lore-requiem", "title": "Lore & História",
+    groups.append({"id": "lore-requiem", "title": TITLE,
                    "kind": "setting", "area": "cenarios_lore",
                    "sectionTitle": "Cenário", "sections": lore_sections})
 
@@ -231,9 +231,9 @@ def build():
     for t in REGRAS_TITLES:
         if t in bt:
             regras_sections.append(sec(slugify(t), t, "regras_base", bt[t][1]))
-    groups.append({"id": "regras-requiem", "title": "Regras & Criação de Personagem",
+    groups.append({"id": "regras-requiem", "title": f"Regra base - {TITLE}",
                    "kind": "ruleset", "area": "regras_base",
-                   "sectionTitle": "Regra", "sections": regras_sections})
+                   "sectionTitle": "Regra Base", "sections": regras_sections})
 
     # -------- CASTAS (classes) --------
     for casta in ["Captare", "Corpore", "Nimbus", "Protetore", "Recípere"]:

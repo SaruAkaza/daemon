@@ -65,6 +65,13 @@ TEXT_FIXES = {
     "2 pontos: cada Você": "2 pontos: Você",
     "Sensibilidade a Luz": "Sensibilidade à Luz",
     "Vôo": "Voo",
+    "podendo ate ultrapassar": "podendo até ultrapassar",
+    "restrição e que": "restrição é que",
+    "em uma único Atributo": "em um único Atributo",
+    "com a aprimoramento": "com o aprimoramento",
+    "saúdes perfeitos": "saúde perfeitas",
+    "critico": "crítico",
+    "sensível a luz": "sensível à luz",
 }
 
 KNOWN_TITLES = {

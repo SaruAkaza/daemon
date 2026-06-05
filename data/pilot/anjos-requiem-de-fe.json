@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T11:40:32",
+  "generatedAt": "2026-06-05T11:47:05",
   "source": "anjos-requiem-de-fe",
   "sourceFile": "Anjos - Réquiem de Fé.docx",
   "sourcePath": "Livros\\word\\Anjos - Réquiem de Fé.docx",
@@ -18,7 +18,7 @@
   "groups": [
     {
       "id": "lore-requiem",
-      "title": "Lore & História",
+      "title": "Anjos - Réquiem de Fé",
       "kind": "setting",
       "area": "cenarios_lore",
       "sectionTitle": "Cenário",
@@ -304,10 +304,10 @@
     },
     {
       "id": "regras-requiem",
-      "title": "Regras & Criação de Personagem",
+      "title": "Regra base - Anjos - Réquiem de Fé",
       "kind": "ruleset",
       "area": "regras_base",
-      "sectionTitle": "Regra",
+      "sectionTitle": "Regra Base",
       "sections": [
         {
           "id": "almas-humanas-nos-ceus",

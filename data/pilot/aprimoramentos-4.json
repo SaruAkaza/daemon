@@ -1927,7 +1927,7 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "1 a 12 Pontos",
-        "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em seus atributos. É como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre seus atributos. Cada ponto gasto com a aprimoramento significa 1D6+1 ponto para usar. Se você tem Poder Oculto 3, pode distribuir 3D6+3 pontos entre quaisquer Atributos, podendo ate ultrapassar os seus limites. Você poderia, por exemplo, escolher Força +2D6+2 e Destreza +1D6+1 ou qualquer outra combinação. A única restrição e que, mesmo com Poder Oculto acima de 3, você nunca pode colocar um bônus superior a +3D6+3 em uma único Atributo. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que mover os pontos, precisa gastar 1 Ponto de Ki. Mover pontos no meio de um combate conta como uma ação completa e leva um turno, mas se quiser você pode mover mais de um ponto ao mesmo tempo. Se a qualquer momento você ficar com 0 PVs, seus pontos de Poder Oculto desaparecem e terão que ser invocados outra vez."
+        "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em seus atributos. É como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre seus atributos. Cada ponto gasto com o aprimoramento significa 1D6+1 ponto para usar. Se você tem Poder Oculto 3, pode distribuir 3D6+3 pontos entre quaisquer Atributos, podendo até ultrapassar os seus limites. Você poderia, por exemplo, escolher Força +2D6+2 e Destreza +1D6+1 ou qualquer outra combinação. A única restrição é que, mesmo com Poder Oculto acima de 3, você nunca pode colocar um bônus superior a +3D6+3 em um único Atributo. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que mover os pontos, precisa gastar 1 Ponto de Ki. Mover pontos no meio de um combate conta como uma ação completa e leva um turno, mas se quiser você pode mover mais de um ponto ao mesmo tempo. Se a qualquer momento você ficar com 0 PVs, seus pontos de Poder Oculto desaparecem e terão que ser invocados outra vez."
       ],
       "sections": [
         {
@@ -1943,7 +1943,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em seus atributos. É como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre seus atributos. Cada ponto gasto com a aprimoramento significa 1D6+1 ponto para usar. Se você tem Poder Oculto 3, pode distribuir 3D6+3 pontos entre quaisquer Atributos, podendo ate ultrapassar os seus limites. Você poderia, por exemplo, escolher Força +2D6+2 e Destreza +1D6+1 ou qualquer outra combinação. A única restrição e que, mesmo com Poder Oculto acima de 3, você nunca pode colocar um bônus superior a +3D6+3 em uma único Atributo. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que mover os pontos, precisa gastar 1 Ponto de Ki. Mover pontos no meio de um combate conta como uma ação completa e leva um turno, mas se quiser você pode mover mais de um ponto ao mesmo tempo. Se a qualquer momento você ficar com 0 PVs, seus pontos de Poder Oculto desaparecem e terão que ser invocados outra vez."
+            "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em seus atributos. É como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre seus atributos. Cada ponto gasto com o aprimoramento significa 1D6+1 ponto para usar. Se você tem Poder Oculto 3, pode distribuir 3D6+3 pontos entre quaisquer Atributos, podendo até ultrapassar os seus limites. Você poderia, por exemplo, escolher Força +2D6+2 e Destreza +1D6+1 ou qualquer outra combinação. A única restrição é que, mesmo com Poder Oculto acima de 3, você nunca pode colocar um bônus superior a +3D6+3 em um único Atributo. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que mover os pontos, precisa gastar 1 Ponto de Ki. Mover pontos no meio de um combate conta como uma ação completa e leva um turno, mas se quiser você pode mover mais de um ponto ao mesmo tempo. Se a qualquer momento você ficar com 0 PVs, seus pontos de Poder Oculto desaparecem e terão que ser invocados outra vez."
           ]
         }
       ]
@@ -2055,7 +2055,7 @@
       "paragraphs": [
         "-1 ponto: Os pontos de vida (PVS) iniciais do personagem são a metade obtida com o cálculo normal;",
         "-2 Pontos por nível: Os PVs iniciais são a metade do normal e o ganho por nível é a metade do ganho normal por nível.",
-        "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúdes perfeitos."
+        "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúde perfeitas."
       ],
       "sections": [
         {
@@ -2072,7 +2072,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúdes perfeitos."
+            "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúde perfeitas."
           ]
         }
       ]
@@ -2158,7 +2158,7 @@
       "paragraphs": [
         "-1 ponto: Minúsculo. Precisa de um teste difícil de PER para ser notado e um teste difícil para ser atingido;",
         "-2 pontos: Médio. Precisa de um teste de PER para ser notado e um teste de ataque normal para ser atingido.",
-        "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um critico, os pontos de vida do personagem caem para 0."
+        "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um crítico, os pontos de vida do personagem caem para 0."
       ],
       "sections": [
         {
@@ -2175,7 +2175,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um critico, os pontos de vida do personagem caem para 0."
+            "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um crítico, os pontos de vida do personagem caem para 0."
           ]
         }
       ]
@@ -2190,7 +2190,7 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "-1 Ponto",
-        "Seu personagem pertence a uma raça ou possui alguma maldição ou defeito que torna sua visão sensível a luz do dia. Para todos os efeitos de regras, um personagem com Sensibilidade à Luz irá enxergar apenas seis metros à luz do dia, e mesmo assim de forma precária. Além disso, todos os testes (excetuando-se combate corpo-a-corpo) envolvendo visão durante o dia aumentam em um grau de Dificuldade."
+        "Seu personagem pertence a uma raça ou possui alguma maldição ou defeito que torna sua visão sensível à luz do dia. Para todos os efeitos de regras, um personagem com Sensibilidade à Luz irá enxergar apenas seis metros à luz do dia, e mesmo assim de forma precária. Além disso, todos os testes (excetuando-se combate corpo-a-corpo) envolvendo visão durante o dia aumentam em um grau de Dificuldade."
       ],
       "sections": [
         {
@@ -2206,7 +2206,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Seu personagem pertence a uma raça ou possui alguma maldição ou defeito que torna sua visão sensível a luz do dia. Para todos os efeitos de regras, um personagem com Sensibilidade à Luz irá enxergar apenas seis metros à luz do dia, e mesmo assim de forma precária. Além disso, todos os testes (excetuando-se combate corpo-a-corpo) envolvendo visão durante o dia aumentam em um grau de Dificuldade."
+            "Seu personagem pertence a uma raça ou possui alguma maldição ou defeito que torna sua visão sensível à luz do dia. Para todos os efeitos de regras, um personagem com Sensibilidade à Luz irá enxergar apenas seis metros à luz do dia, e mesmo assim de forma precária. Além disso, todos os testes (excetuando-se combate corpo-a-corpo) envolvendo visão durante o dia aumentam em um grau de Dificuldade."
           ]
         }
       ]
@@ -2322,5 +2322,5 @@
     "Quebras de página e linhas partidas foram removidas antes da segmentação.",
     "Modificadores negativos internos de Ataque Especial foram preservados na descrição do aprimoramento positivo, não como aprimoramentos negativos independentes."
   ],
-  "generatedAt": "2026-06-05T11:40:45"
+  "generatedAt": "2026-06-05T11:41:48"
 }
