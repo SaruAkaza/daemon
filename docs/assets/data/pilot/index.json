@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T02:50:21",
+  "generatedAt": "2026-06-05T03:06:36",
   "sources": [
     {
       "source": "4killers",
@@ -140,6 +140,16 @@
         "itens_equipamentos",
         "kits",
         "racas"
+      ]
+    },
+    {
+      "source": "aprimoramentos-1",
+      "title": "Aprimoramentos 1",
+      "file": "aprimoramentos-1.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "regras_base"
       ]
     }
   ]
