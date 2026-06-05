@@ -1835,7 +1835,7 @@ Sobrevivência
 +10 Ciências Proibidas
 +20 Artes (desenho)
 Total
-10. PNTS DÊ VIDA E  ÍNDICE DE PRTECÃ
+10. PNTS DÊ VIDA E ÍNDICE DE PRTECÃ
 Calcular os Pontos de Vida de um personagem é muito fácil.
 Some a Força com a Constituição e divida por 2. Arredonde para
 cima. Para o IP, verifique se o anjo possui índice de Proteção de
@@ -1850,7 +1850,7 @@ Total
 Alephiapossui 26 e 19 respectivamente. Somam 45 pontos.
 Dividido por 2 dá 22,5. Arredondado para 23 PVs. Alephia não
 usa armaduras, mas possui IP 3 graças a seus poderes angelicais.
-11. SE?ER.sNAGem  um MAGI.
+11. SE?ER.sNAGem um MAGI.
 DEFINA S PNTS DG IIlAGIA fi S FCUS,
 Um anjo pode possuir o dom da Magia. Para isto, basta
 escolher o Aprimoramento Poderes Mágicos. A Magia é bastante
@@ -4544,7 +4544,7 @@ ber com certeza se alguém está mentindo ou não.
 Bola de cristal: permite ao mago enxergar locais ou pessoas
 distantes. Suas chances são: conhece bem a pessoa (100%),
 conhece um pouco (75%), desenho ou foto (50%), possui um
-objeto pessoa! apenas (25%), apenas a descrição (20%). Pode
+objeto pessoal apenas (25%), apenas a descrição (20%). Pode
 tentar ser usada 3 vezes por dia.
 Broche escudo: na forma de uma jóia comum, o broche confe-
 re ao personagem defesa contra flechas não-mágicas. As fle-
