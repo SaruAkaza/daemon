@@ -95,6 +95,22 @@ TEXT_FIXES = {
     "sacrificio": "sacrifício",
 }
 
+TEXT_FIXES.update({
+    "Alcance;": "Alcance:",
+    "Alvo;": "Alvo:",
+    "Dura\u00e7\u00e3o;": "Dura\u00e7\u00e3o:",
+    "Alcance: Om": "Alcance: 0m",
+    "Alcance: Sm": "Alcance: 5m",
+    "1* parte": "1\u00aa parte",
+    "1 m\u00ease 1 dia": "1 m\u00eas e 1 dia",
+    "2\u00ba parte": "2\u00aa parte",
+    "V,G": "V, G",
+    "hipnose, O feiticeiro": "hipnose. O feiticeiro",
+    "30xm": "30cm",
+    "um cova": "uma cova",
+    "À armadura": "A armadura",
+})
+
 DROP_PARAGRAPHS = {
     TITLE,
     "Texto extraído por OCR / camada textual, com limpeza de quebras de linha e caracteres indevidos.",
@@ -468,6 +484,112 @@ def make_rituals() -> list[dict]:
                 meta.append(paragraph)
             else:
                 desc.append(paragraph)
+        sections = []
+        if meta:
+            sections.append(block("Ficha do Ritual", "rituais", meta))
+        if desc:
+            sections.append(block("Descrição", "rituais", desc))
+        results.append(item(heading, "rituais", "ritual", desc, sections))
+    return results
+
+
+RITUAL_HEADINGS_COMPLETE = [
+    "Aríete Espectral",
+    "Armadura Espectral",
+    "Arrepio de Licantropo",
+    "Atenção",
+    "Casamento",
+    "Contato com Arkanun",
+    "Conversar com Espíritos",
+    "Conversar com Mortos",
+    "Conversar em Sonhos",
+    "Dor de Cabeça",
+    "Enxergar Pessoas Mortas",
+    "Espada Espiritual",
+    "Espelho Secreto",
+    "Iniciação",
+    "Lembrete",
+    "Localizar Cadáveres",
+    "Mãos Espectrais",
+    "Mapeador Astral",
+    "Marca Pessoal",
+    "Mesas Girantes",
+    "Morte da Alma",
+    "Olhar de Minerva",
+    "Olhar de Pedinte",
+    "Olhar de Penitência",
+    "Pânico",
+    "Pegadas Luminosas",
+    "Pena dos Rumores",
+    "Pesadelo",
+    "Ressurreição em Outro Corpo",
+    "Rompimento Sagrado",
+    "Servos Mumificados",
+]
+
+RITUAL_META_PREFIX_RE = re.compile(
+    r"^(Componentes|Tempo de Formulação|Alcance|Área|Alvo|Efeitos?|Duração|Teste de Resistência)\s*[:;]",
+    flags=re.IGNORECASE,
+)
+RITUAL_SCHOOL_RE = re.compile(r"^(Criar|Controlar|Entender)(?:[/ A-Za-zÁÉÍÓÚÂÊÔÃÕÇáéíóúâêôãõç-]+)?\s+\d+$")
+
+
+def ritual_logical_lines(text: str) -> list[str]:
+    lines: list[str] = []
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or re.fullmatch(r"\d{1,3}", line):
+            continue
+        if lines and lines[-1].endswith("-") and line[:1].islower():
+            lines[-1] = lines[-1][:-1] + line
+        else:
+            lines.append(line)
+    return lines
+
+
+def parse_ritual_chunk(text: str) -> tuple[list[str], list[str]]:
+    meta: list[str] = []
+    desc_lines: list[str] = []
+    current_meta = ""
+    after_resistance = False
+    in_description = False
+
+    def flush_meta() -> None:
+        nonlocal current_meta
+        if current_meta:
+            meta.append(normalize_text(current_meta))
+            current_meta = ""
+
+    for line in ritual_logical_lines(text):
+        is_school = bool(RITUAL_SCHOOL_RE.match(line))
+        is_meta = bool(RITUAL_META_PREFIX_RE.match(line))
+        if not in_description and (is_school or is_meta):
+            flush_meta()
+            current_meta = line
+            after_resistance = line.lower().startswith("teste de resistência")
+            continue
+        if not in_description and current_meta and not after_resistance:
+            current_meta = normalize_text(f"{current_meta} {line}")
+            continue
+        flush_meta()
+        in_description = True
+        desc_lines.append(line)
+
+    flush_meta()
+    return meta, clean_block("\n".join(desc_lines))
+
+
+def make_rituals() -> list[dict]:
+    source = page_text(range(61, 67))
+    results = []
+    for index, heading in enumerate(RITUAL_HEADINGS_COMPLETE):
+        next_heading = RITUAL_HEADINGS_COMPLETE[index + 1] if index + 1 < len(RITUAL_HEADINGS_COMPLETE) else "Regras e Testes"
+        start_match = re.search(rf"(?m)^\s*{re.escape(heading)}\s*$", source)
+        if not start_match:
+            continue
+        end_match = re.search(rf"(?m)^\s*{re.escape(next_heading)}\s*$", source[start_match.end() :])
+        end_index = start_match.end() + end_match.start() if end_match else len(source)
+        meta, desc = parse_ritual_chunk(source[start_match.end() : end_index])
         sections = []
         if meta:
             sections.append(block("Ficha do Ritual", "rituais", meta))

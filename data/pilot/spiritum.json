@@ -17,7 +17,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-05T18:00:09",
+  "generatedAt": "2026-06-05T18:05:42",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -4579,14 +4579,29 @@
       "kind": "ritual",
       "sectionId": "ritual",
       "sectionTitle": "Aríete Espectral",
-      "paragraphs": [],
+      "paragraphs": [
+        "Este ritual conjura do Plano Astral um aríete espectral com grande força, capaz de arrombar a maioria das portas e portais existentes. O conjurador se posiciona na frente da porta que deseja arrombar e recita os versos do ritual. Quando terminar, o feiticeiro empurra o ar com seu punho esquerdo, que deve estar segurando a miniatura, enquanto uma força espectral golpeia a porta com For (FR) 24, causando 4d6 pontos de dano. Com algumas alterações, este ritual também pode ser utilizado contra alvos humanos, causando 4d6 pontos de dano divididos entre as pessoas que estviverem na área de efeito."
+      ],
       "sections": [
         {
           "id": "ficha-do-ritual",
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Criar Spiritum 4 Componentes: V, M (um aríete miniatura em prata) Tempo de Formulação: 1 ação Alcance: 3m Duração: 1 cena (D) Teste de Resistência: fortitude (CON) reduz à metade Este ritual conjura do Plano Astral um aríete espectral com grande força, capaz de arrombar a maioria das portas e portais existentes. O conjurador se posiciona na frente da porta que deseja arrombar e recita os versos do ritual. Quando terminar, o feiticeiro empurra o ar com seu punho esquerdo, que deve estar segurando a miniatura, enquanto uma força espectral golpeia a porta com For (FR) 24, causando 4d6 pontos de dano. Com algumas alterações, este ritual também pode ser utilizado contra alvos humanos, causando 4d6 pontos de dano divididos entre as pessoas que estviverem na área de efeito."
+            "Criar Spiritum 4",
+            "Componentes: V, M (um aríete miniatura em prata)",
+            "Tempo de Formulação: 1 ação",
+            "Alcance: 3m",
+            "Duração: 1 cena (D)",
+            "Teste de Resistência: fortitude (CON) reduz à metade"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual conjura do Plano Astral um aríete espectral com grande força, capaz de arrombar a maioria das portas e portais existentes. O conjurador se posiciona na frente da porta que deseja arrombar e recita os versos do ritual. Quando terminar, o feiticeiro empurra o ar com seu punho esquerdo, que deve estar segurando a miniatura, enquanto uma força espectral golpeia a porta com For (FR) 24, causando 4d6 pontos de dano. Com algumas alterações, este ritual também pode ser utilizado contra alvos humanos, causando 4d6 pontos de dano divididos entre as pessoas que estviverem na área de efeito."
           ]
         }
       ]
@@ -4599,19 +4614,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Armadura Espectral",
       "paragraphs": [
-        "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. À armadura lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual.",
-        "Se o amuleto for retirado antes da duração do ritual, o feitiço é quebrado.",
-        "Arrepio de Licantropo",
-        "Este ritual foi desenvolvido pelos nórdicos no século VIII, quando começaram a se aventurar para o sul através das florestas protegidas pelos lobos. Quando acionar este ritual, o mago sente um arrepio se estiver a menos de 100 metros de um licantropo. Existem versões deste ritual para vampiros, demônios, anjos, espíritos, fadas e quaisquer outras criaturas sobrenaturais que o Mestre achar necessário.",
-        "Atenção",
-        "Área: 20m de raio",
-        "Este ritual faz um chamado astral para todas as pessoas em um raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo.",
-        "Casamento",
-        "Este ritual deve ser feito com os dois pretendentes junto ao mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa.",
-        "Contato com Arkanun",
-        "Área: 6m de raio",
-        "Este é um dos primeiros contatos que o demonologista tem com os Reinos de Arkanun. Através dele, o feiticeiro consegue canalizar a essência de Arkanun para a Terra, causando uma aura de mal-estar ao redor de si mesmo.",
-        "Todas as pessoas em um raio de 6m do feiticeiro precisam passar em um teste de vontade (WILL) ou ficarão terrivelmente incomodadas. Aqueles que falharem o teste precisam passar em um segundo teste ou ficarão enjoadas por 1d6 rodadas (vomitando ou até mesmo desmaiando). Este ritual afeta apenas criaturas com menos de 6 dados de vida (ou níveis)."
+        "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. A armadura lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual. Se o amuleto for retirado antes da duração do ritual, o feitiço é quebrado."
       ],
       "sections": [
         {
@@ -4625,29 +4628,145 @@
             "Alcance: o próprio mago",
             "Efeitos: cria uma armadura espectral",
             "Duração: 1 cena",
-            "Teste de Resistência: nenhum",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. A armadura lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual. Se o amuleto for retirado antes da duração do ritual, o feitiço é quebrado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arrepio-de-licantropo",
+      "title": "Arrepio de Licantropo",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Arrepio de Licantropo",
+      "paragraphs": [
+        "Este ritual foi desenvolvido pelos nórdicos no século VIII, quando começaram a se aventurar para o sul através das florestas protegidas pelos lobos. Quando acionar este ritual, o mago sente um arrepio se estiver a menos de 100 metros de um licantropo. Existem versões deste ritual para vampiros, demônios, anjos, espíritos, fadas e quaisquer outras criaturas sobrenaturais que o Mestre achar necessário."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
             "Entender Spiritum 4",
-            "Componentes: V, F/FD (uma corrente de prata) Tempo de Formulação: 1 ação",
+            "Componentes: V, F/FD (uma corrente de prata)",
+            "Tempo de Formulação: 1 ação",
             "Alcance: o próprio mago",
-            "Efeitos: alerta o mago da presença de licantropos Duração: 1 cena",
-            "Teste de Resistência: nenhum",
+            "Efeitos: alerta o mago da presença de licantropos",
+            "Duração: 1 cena",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual foi desenvolvido pelos nórdicos no século VIII, quando começaram a se aventurar para o sul através das florestas protegidas pelos lobos. Quando acionar este ritual, o mago sente um arrepio se estiver a menos de 100 metros de um licantropo. Existem versões deste ritual para vampiros, demônios, anjos, espíritos, fadas e quaisquer outras criaturas sobrenaturais que o Mestre achar necessário."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atencao",
+      "title": "Atenção",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Atenção",
+      "paragraphs": [
+        "Este ritual faz um chamado astral para todas as pessoas em um raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
             "Entender Spiritum 1",
             "Componentes: V",
             "Tempo de Formulação: 1 ação",
             "Alcance: o próprio mago",
+            "Área: 20m de raio",
             "Duração: 1 rodada",
-            "Teste de Resistência: não e vontade (WILL) anula",
+            "Teste de Resistência: não e vontade (WILL) anula"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual faz um chamado astral para todas as pessoas em um raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "casamento",
+      "title": "Casamento",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Casamento",
+      "paragraphs": [
+        "Este ritual deve ser feito com os dois pretendentes junto ao mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
             "Entender Spiritum 3",
             "Componentes: V, G, FD (dois anéis de ouro)",
             "Tempo de Formulação: 2 horas",
             "Alcance: toque",
             "Alvo: duas pessoas que pretendam se casar",
             "Duração: 5 anos",
-            "Teste de Resistência: nenhum",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual deve ser feito com os dois pretendentes junto ao mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contato-com-arkanun",
+      "title": "Contato com Arkanun",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Contato com Arkanun",
+      "paragraphs": [
+        "Este é um dos primeiros contatos que o demonologista tem com os Reinos de Arkanun. Através dele, o feiticeiro consegue canalizar a essência de Arkanun para a Terra, causando uma aura de mal-estar ao redor de si mesmo. Todas as pessoas em um raio de 6m do feiticeiro precisam passar em um teste de vontade (WILL) ou ficarão terrivelmente incomodadas. Aqueles que falharem o teste precisam passar em um segundo teste ou ficarão enjoadas por 1d6 rodadas (vomitando ou até mesmo desmaiando). Este ritual afeta apenas criaturas com menos de 6 dados de vida (ou níveis)."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
             "Entender Arkanun 1",
-            "Componentes: V,G",
+            "Componentes: V, G",
             "Tempo de Formulação: 1 ação",
-            "Alcance: Om",
+            "Alcance: 0m",
+            "Área: 6m de raio",
             "Duração: 1d6 rodadas",
             "Teste de Resistência: vontade (WILL) anula"
           ]
@@ -4657,19 +4776,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. À armadura lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual.",
-            "Se o amuleto for retirado antes da duração do ritual, o feitiço é quebrado.",
-            "Arrepio de Licantropo",
-            "Este ritual foi desenvolvido pelos nórdicos no século VIII, quando começaram a se aventurar para o sul através das florestas protegidas pelos lobos. Quando acionar este ritual, o mago sente um arrepio se estiver a menos de 100 metros de um licantropo. Existem versões deste ritual para vampiros, demônios, anjos, espíritos, fadas e quaisquer outras criaturas sobrenaturais que o Mestre achar necessário.",
-            "Atenção",
-            "Área: 20m de raio",
-            "Este ritual faz um chamado astral para todas as pessoas em um raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo.",
-            "Casamento",
-            "Este ritual deve ser feito com os dois pretendentes junto ao mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa.",
-            "Contato com Arkanun",
-            "Área: 6m de raio",
-            "Este é um dos primeiros contatos que o demonologista tem com os Reinos de Arkanun. Através dele, o feiticeiro consegue canalizar a essência de Arkanun para a Terra, causando uma aura de mal-estar ao redor de si mesmo.",
-            "Todas as pessoas em um raio de 6m do feiticeiro precisam passar em um teste de vontade (WILL) ou ficarão terrivelmente incomodadas. Aqueles que falharem o teste precisam passar em um segundo teste ou ficarão enjoadas por 1d6 rodadas (vomitando ou até mesmo desmaiando). Este ritual afeta apenas criaturas com menos de 6 dados de vida (ou níveis)."
+            "Este é um dos primeiros contatos que o demonologista tem com os Reinos de Arkanun. Através dele, o feiticeiro consegue canalizar a essência de Arkanun para a Terra, causando uma aura de mal-estar ao redor de si mesmo. Todas as pessoas em um raio de 6m do feiticeiro precisam passar em um teste de vontade (WILL) ou ficarão terrivelmente incomodadas. Aqueles que falharem o teste precisam passar em um segundo teste ou ficarão enjoadas por 1d6 rodadas (vomitando ou até mesmo desmaiando). Este ritual afeta apenas criaturas com menos de 6 dados de vida (ou níveis)."
           ]
         }
       ]
@@ -4682,8 +4789,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Conversar com Espíritos",
       "paragraphs": [
-        "É recomendado o uso de um círculo de proteção vs. Spiritum. Este ritual permite ao mago contatar algum espírito, aparição ou fantasma que esteja próximo (na mesma sala) e conversar com ele. O mago pode fazer até 3 perguntas a um espírito escolhido pelo ritual. Se o espírito não quiser responder às perguntas ou quiser mentir, deve fazer um teste de vontade (WILL vs. WILL do mago) para conseguir enganá-lo.",
-        "As perguntas deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do espírito. Se não houver nenhum espírito conhecido dentro da sala, o ritual não funciona."
+        "É recomendado o uso de um círculo de proteção vs. Spiritum. Este ritual permite ao mago contatar algum espírito, aparição ou fantasma que esteja próximo (na mesma sala) e conversar com ele. O mago pode fazer até 3 perguntas a um espírito escolhido pelo ritual. Se o espírito não quiser responder às perguntas ou quiser mentir, deve fazer um teste de vontade (WILL vs. WILL do mago) para conseguir enganá-lo. As perguntas deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do espírito. Se não houver nenhum espírito conhecido dentro da sala, o ritual não funciona."
       ],
       "sections": [
         {
@@ -4692,9 +4798,11 @@
           "area": "rituais",
           "paragraphs": [
             "Entender Spiritum 3",
-            "Componentes: V, G, M (um ramo de oliveira) Tempo de Formulação: 2 rodadas",
+            "Componentes: V, G, M (um ramo de oliveira)",
+            "Tempo de Formulação: 2 rodadas",
             "Alcance: uma sala",
-            "Alvo; um espírito que estiver na sala Duração: 1 cena",
+            "Alvo: um espírito que estiver na sala",
+            "Duração: 1 cena",
             "Teste de Resistência: vontade (WILL) anula"
           ]
         },
@@ -4703,8 +4811,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "É recomendado o uso de um círculo de proteção vs. Spiritum. Este ritual permite ao mago contatar algum espírito, aparição ou fantasma que esteja próximo (na mesma sala) e conversar com ele. O mago pode fazer até 3 perguntas a um espírito escolhido pelo ritual. Se o espírito não quiser responder às perguntas ou quiser mentir, deve fazer um teste de vontade (WILL vs. WILL do mago) para conseguir enganá-lo.",
-            "As perguntas deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do espírito. Se não houver nenhum espírito conhecido dentro da sala, o ritual não funciona."
+            "É recomendado o uso de um círculo de proteção vs. Spiritum. Este ritual permite ao mago contatar algum espírito, aparição ou fantasma que esteja próximo (na mesma sala) e conversar com ele. O mago pode fazer até 3 perguntas a um espírito escolhido pelo ritual. Se o espírito não quiser responder às perguntas ou quiser mentir, deve fazer um teste de vontade (WILL vs. WILL do mago) para conseguir enganá-lo. As perguntas deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do espírito. Se não houver nenhum espírito conhecido dentro da sala, o ritual não funciona."
           ]
         }
       ]
@@ -4717,19 +4824,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Conversar com Mortos",
       "paragraphs": [
-        "Um ritual bastante simples e ao mesmo tempo extremamente funcional. Foi desenvolvido pelos magos necromânticos da Gália no ano de 1230 e depois aprimorado pelos feiticeiros italianos.",
-        "O corpo da pessoa morta deve estar presente e não estar morto há mais de um dia. O mago faz, então, um círculo no chão com as nove pedrinhas, recita alguns versos místicos e faz um corte no pulso (mínimo de 1 ponto de dano). O sangue derramado formará uma pequena poça e a imagem do morto aparecerá refletida no sangue. O mago poderá fazer três perguntas, que deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do morto. A vítima só poderá responder perguntas relativas a seu corpo físico. Todas as suas lembranças e conhecimentos terminam com sua morte. Caso a vítima deseje mentir, precisa passar em um teste de vontade (WILL vs. WILL do mago que conjurou o ritual).",
-        "Conversar em Sonhos",
-        "O uso de círculo de proteção contra espíritos é altamente recomendado. Este ritual permite ao mago conversar com uma pessoa durante o sonho. Caso esta pessoa não deseje conversar, deve fazer um teste de vontade (WILL vs. WILL do mago).",
-        "Qualquer tipo de mensagem pode ser passada, mas a vítima receberá este comunicado como um sonho (ou seja, não há nenhuma garantia de que sequer levará a sério a mensagem).",
-        "Para este ritual funcionar, o alvo deverá estar dormindo desde o início do ritual até seu final (aproximadamente uma hora de duração, até que o feiticeiro e o alvo entrem em sincronia, permitindo o compartilhamento dos sonhos).",
-        "O corpo do mago pode, em alguns casos (5%), ser vitima de algum tipo de assalto ou possessão por espíritos errantes durante a jornada fora de seu corpo.",
-        "Ao custo de 5 pontos de magia, o mago pode alterar sua aparência e o ambiente em que trava a conversa com à vítima. Pesadelos também são possíveis com estas alterações, mas é impossível machucar a vítima fisicamente através de um sonho.",
-        "Dor de Cabeça",
-        "Este ritual faz com que a vítima tenha de fazer um teste de vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar.",
-        "Enxergar Pessoas Mortas",
-        "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentra- ção, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua).",
-        "Se caso existirem mais espíritos do que ele seja capaz de enxergar, o mestre pode sortear quais serão os fantasmas que o mago será capaz de ver (note que eles podem variar cada vez que o mago faça o ritual, ou mesmo se magos diferentes fizerem o mesmo ritual)."
+        "Um ritual bastante simples e ao mesmo tempo extremamente funcional. Foi desenvolvido pelos magos necromânticos da Gália no ano de 1230 e depois aprimorado pelos feiticeiros italianos. O corpo da pessoa morta deve estar presente e não estar morto há mais de um dia. O mago faz, então, um círculo no chão com as nove pedrinhas, recita alguns versos místicos e faz um corte no pulso (mínimo de 1 ponto de dano). O sangue derramado formará uma pequena poça e a imagem do morto aparecerá refletida no sangue. O mago poderá fazer três perguntas, que deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do morto. A vítima só poderá responder perguntas relativas a seu corpo físico. Todas as suas lembranças e conhecimentos terminam com sua morte. Caso a vítima deseje mentir, precisa passar em um teste de vontade (WILL vs. WILL do mago que conjurou o ritual)."
       ],
       "sections": [
         {
@@ -4743,21 +4838,105 @@
             "Alcance: toque",
             "Alvo: um corpo morto",
             "Duração: 3 rodadas",
-            "Teste de Resistência: nenhum",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Um ritual bastante simples e ao mesmo tempo extremamente funcional. Foi desenvolvido pelos magos necromânticos da Gália no ano de 1230 e depois aprimorado pelos feiticeiros italianos. O corpo da pessoa morta deve estar presente e não estar morto há mais de um dia. O mago faz, então, um círculo no chão com as nove pedrinhas, recita alguns versos místicos e faz um corte no pulso (mínimo de 1 ponto de dano). O sangue derramado formará uma pequena poça e a imagem do morto aparecerá refletida no sangue. O mago poderá fazer três perguntas, que deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do morto. A vítima só poderá responder perguntas relativas a seu corpo físico. Todas as suas lembranças e conhecimentos terminam com sua morte. Caso a vítima deseje mentir, precisa passar em um teste de vontade (WILL vs. WILL do mago que conjurou o ritual)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conversar-em-sonhos",
+      "title": "Conversar em Sonhos",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Conversar em Sonhos",
+      "paragraphs": [
+        "O uso de círculo de proteção contra espíritos é altamente recomendado. Este ritual permite ao mago conversar com uma pessoa durante o sonho. Caso esta pessoa não deseje conversar, deve fazer um teste de vontade (WILL vs. WILL do mago). Qualquer tipo de mensagem pode ser passada, mas a vítima receberá este comunicado como um sonho (ou seja, não há nenhuma garantia de que sequer levará a sério a mensagem). Para este ritual funcionar, o alvo deverá estar dormindo desde o início do ritual até seu final (aproximadamente uma hora de duração, até que o feiticeiro e o alvo entrem em sincronia, permitindo o compartilhamento dos sonhos). O corpo do mago pode, em alguns casos (5%), ser vitima de algum tipo de assalto ou possessão por espíritos errantes durante a jornada fora de seu corpo. Ao custo de 5 pontos de magia, o mago pode alterar sua aparência e o ambiente em que trava a conversa com à vítima. Pesadelos também são possíveis com estas alterações, mas é impossível machucar a vítima fisicamente através de um sonho."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
             "Entender Spiritum 4",
             "Componentes: V, G, F/FD (um travesseiro especialmente preparado para o ritual)",
             "Tempo de Formulação: 1 hora",
             "Alcance: 100m",
             "Alvo: 1 pessoa que esteja dormindo",
             "Duração: 1 cena",
-            "Teste de Resistência: nenhum",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "O uso de círculo de proteção contra espíritos é altamente recomendado. Este ritual permite ao mago conversar com uma pessoa durante o sonho. Caso esta pessoa não deseje conversar, deve fazer um teste de vontade (WILL vs. WILL do mago). Qualquer tipo de mensagem pode ser passada, mas a vítima receberá este comunicado como um sonho (ou seja, não há nenhuma garantia de que sequer levará a sério a mensagem). Para este ritual funcionar, o alvo deverá estar dormindo desde o início do ritual até seu final (aproximadamente uma hora de duração, até que o feiticeiro e o alvo entrem em sincronia, permitindo o compartilhamento dos sonhos). O corpo do mago pode, em alguns casos (5%), ser vitima de algum tipo de assalto ou possessão por espíritos errantes durante a jornada fora de seu corpo. Ao custo de 5 pontos de magia, o mago pode alterar sua aparência e o ambiente em que trava a conversa com à vítima. Pesadelos também são possíveis com estas alterações, mas é impossível machucar a vítima fisicamente através de um sonho."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dor-de-cabeca",
+      "title": "Dor de Cabeça",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Dor de Cabeça",
+      "paragraphs": [
+        "Este ritual faz com que a vítima tenha de fazer um teste de vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
             "Controlar Spiritum 1",
             "Componentes: V, G, M (um dente)",
             "Tempo de Formulação: 1 ação",
             "Alcance: 10m",
             "Alvo: 1 pessoa",
             "Duração: 1 rodada / nível",
-            "Teste de Resistência: vontade (WILL) anula",
+            "Teste de Resistência: vontade (WILL) anula"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual faz com que a vítima tenha de fazer um teste de vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enxergar-pessoas-mortas",
+      "title": "Enxergar Pessoas Mortas",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Enxergar Pessoas Mortas",
+      "paragraphs": [
+        "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentração, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua). Se caso existirem mais espíritos do que ele seja capaz de enxergar, o mestre pode sortear quais serão os fantasmas que o mago será capaz de ver (note que eles podem variar cada vez que o mago faça o ritual, ou mesmo se magos diferentes fizerem o mesmo ritual)."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
             "Entender Spiritum 1",
             "Componentes: V",
             "Tempo de Formulação: 1 rodada",
@@ -4772,19 +4951,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Um ritual bastante simples e ao mesmo tempo extremamente funcional. Foi desenvolvido pelos magos necromânticos da Gália no ano de 1230 e depois aprimorado pelos feiticeiros italianos.",
-            "O corpo da pessoa morta deve estar presente e não estar morto há mais de um dia. O mago faz, então, um círculo no chão com as nove pedrinhas, recita alguns versos místicos e faz um corte no pulso (mínimo de 1 ponto de dano). O sangue derramado formará uma pequena poça e a imagem do morto aparecerá refletida no sangue. O mago poderá fazer três perguntas, que deverão ser respondidas com Sim, Não, Irrelevante ou Desconheço, dentro das capacidades do morto. A vítima só poderá responder perguntas relativas a seu corpo físico. Todas as suas lembranças e conhecimentos terminam com sua morte. Caso a vítima deseje mentir, precisa passar em um teste de vontade (WILL vs. WILL do mago que conjurou o ritual).",
-            "Conversar em Sonhos",
-            "O uso de círculo de proteção contra espíritos é altamente recomendado. Este ritual permite ao mago conversar com uma pessoa durante o sonho. Caso esta pessoa não deseje conversar, deve fazer um teste de vontade (WILL vs. WILL do mago).",
-            "Qualquer tipo de mensagem pode ser passada, mas a vítima receberá este comunicado como um sonho (ou seja, não há nenhuma garantia de que sequer levará a sério a mensagem).",
-            "Para este ritual funcionar, o alvo deverá estar dormindo desde o início do ritual até seu final (aproximadamente uma hora de duração, até que o feiticeiro e o alvo entrem em sincronia, permitindo o compartilhamento dos sonhos).",
-            "O corpo do mago pode, em alguns casos (5%), ser vitima de algum tipo de assalto ou possessão por espíritos errantes durante a jornada fora de seu corpo.",
-            "Ao custo de 5 pontos de magia, o mago pode alterar sua aparência e o ambiente em que trava a conversa com à vítima. Pesadelos também são possíveis com estas alterações, mas é impossível machucar a vítima fisicamente através de um sonho.",
-            "Dor de Cabeça",
-            "Este ritual faz com que a vítima tenha de fazer um teste de vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar.",
-            "Enxergar Pessoas Mortas",
-            "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentra- ção, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua).",
-            "Se caso existirem mais espíritos do que ele seja capaz de enxergar, o mestre pode sortear quais serão os fantasmas que o mago será capaz de ver (note que eles podem variar cada vez que o mago faça o ritual, ou mesmo se magos diferentes fizerem o mesmo ritual)."
+            "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentração, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua). Se caso existirem mais espíritos do que ele seja capaz de enxergar, o mestre pode sortear quais serão os fantasmas que o mago será capaz de ver (note que eles podem variar cada vez que o mago faça o ritual, ou mesmo se magos diferentes fizerem o mesmo ritual)."
           ]
         }
       ]
@@ -4796,14 +4963,30 @@
       "kind": "ritual",
       "sectionId": "ritual",
       "sectionTitle": "Espada Espiritual",
-      "paragraphs": [],
+      "paragraphs": [
+        "Este ritual conjura uma espada espiritual de material cristalino (considere a arma como uma espada longa capaz de causar 1d10 pontos de dano) constituída de Forma-Pensamento e material astral. A espada se dissolve em poucas rodadas, mas é uma arma muito útil em combate."
+      ],
       "sections": [
         {
           "id": "ficha-do-ritual",
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Criar Spiritum 2 Componentes: V, G Tempo de Formulação: 1 ação Alcance: toque Efeitos: cria uma arma Duração: 1 cena Teste de Resistência: nenhum Este ritual conjura uma espada espiritual de material cristalino (considere a arma como uma espada longa capaz de causar 1d10 pontos de dano) constituída de Forma-Pensamento e material astral. A espada se dissolve em poucas rodadas, mas é uma arma muito útil em combate."
+            "Criar Spiritum 2",
+            "Componentes: V, G",
+            "Tempo de Formulação: 1 ação",
+            "Alcance: toque",
+            "Efeitos: cria uma arma",
+            "Duração: 1 cena",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual conjura uma espada espiritual de material cristalino (considere a arma como uma espada longa capaz de causar 1d10 pontos de dano) constituída de Forma-Pensamento e material astral. A espada se dissolve em poucas rodadas, mas é uma arma muito útil em combate."
           ]
         }
       ]
@@ -4815,14 +4998,30 @@
       "kind": "ritual",
       "sectionId": "ritual",
       "sectionTitle": "Espelho Secreto",
-      "paragraphs": [],
+      "paragraphs": [
+        "Uma das maiores preocupações dos magos sempre foi a de guardar e proteger seus cobiçados objetos mágicos. Este ritual foi inventado com esse propósito. Para conjurar este espaço dimensional, o feiticeiro precisa de um espelho (a forma não importa) e das palavras de ativação corretas, além de seu símbolo rúnico entalhado em uma das pontas da superfície espelhada. Uma vez conjurado, o espelho pode ser atravessado (o efeito visual é o mesmo de se mergulhar a mão em um líquido) e qualquer objeto pode ser guardado dentro dessa câmara secreta, As dimensões internas da câmara são: a própria altura e largura do espelho e a profundidade igual ao maior valor delas, ou seja, um espelho de 20cm x 30cm formará um espaço dimensional de 20x30x30cm. Ao final da duração, qualquer objeto que esteja dentro do espelho será expelido para fora. Criaturas vivas também não podem permanecer dentro do espelho por mais do que uma rodada, sendo expelidas também. O único perigo deste ritual é que se o espelho for quebrado, existe 50% de chance dos objetos que estviverem dentro deles ficarem perdidos no Reino dos Espelhos, em Spiritum."
+      ],
       "sections": [
         {
           "id": "ficha-do-ritual",
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Entender/Criar Spiritum/Metamagia 3 Componentes: V, G, F (um espelho com uma runa entalhada) Tempo de Formulação: 1 hora Alcance: toque Efeitos: cria uma câmara secreta Duração: 1 dia / nível Teste de Resistência: nenhum Uma das maiores preocupações dos magos sempre foi a de guardar e proteger seus cobiçados objetos mágicos. Este ritual foi inventado com esse propósito. Para conjurar este espaço dimensional, o feiticeiro precisa de um espelho (a forma não importa) e das palavras de ativação corretas, além de seu símbolo rúnico entalhado em uma das pontas da superfície espelhada. Uma vez conjurado, o espelho pode ser atravessado (o efeito visual é o mesmo de se mergulhar a mão em um líquido) e qualquer objeto pode ser guardado dentro dessa câmara secreta, As dimensões internas da câmara são: a própria altura e largura do espelho e a profundidade igual ao maior valor delas, ou seja, um espelho de 20cm x 30xm formará um espaço dimensional de 20x30x30cm. Ao final da duração, qualquer objeto que esteja dentro do espelho será expelido para fora. Criaturas vivas também não podem permanecer dentro do espelho por mais do que uma rodada, sendo expelidas também. O único perigo deste ritual é que se o espelho for quebrado, existe 50% de chance dos objetos que estviverem dentro deles ficarem perdidos no Reino dos Espelhos, em Spiritum."
+            "Entender/Criar Spiritum/Metamagia 3",
+            "Componentes: V, G, F (um espelho com uma runa entalhada)",
+            "Tempo de Formulação: 1 hora",
+            "Alcance: toque",
+            "Efeitos: cria uma câmara secreta",
+            "Duração: 1 dia / nível",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Uma das maiores preocupações dos magos sempre foi a de guardar e proteger seus cobiçados objetos mágicos. Este ritual foi inventado com esse propósito. Para conjurar este espaço dimensional, o feiticeiro precisa de um espelho (a forma não importa) e das palavras de ativação corretas, além de seu símbolo rúnico entalhado em uma das pontas da superfície espelhada. Uma vez conjurado, o espelho pode ser atravessado (o efeito visual é o mesmo de se mergulhar a mão em um líquido) e qualquer objeto pode ser guardado dentro dessa câmara secreta, As dimensões internas da câmara são: a própria altura e largura do espelho e a profundidade igual ao maior valor delas, ou seja, um espelho de 20cm x 30cm formará um espaço dimensional de 20x30x30cm. Ao final da duração, qualquer objeto que esteja dentro do espelho será expelido para fora. Criaturas vivas também não podem permanecer dentro do espelho por mais do que uma rodada, sendo expelidas também. O único perigo deste ritual é que se o espelho for quebrado, existe 50% de chance dos objetos que estviverem dentro deles ficarem perdidos no Reino dos Espelhos, em Spiritum."
           ]
         }
       ]
@@ -4843,8 +5042,10 @@
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Entender Spiritum 3 Componentes: V, G, M, FD (o símbolo sagrado do deus)",
-            "Tempo de Formulação: ver descrição Alcance: toque",
+            "Entender Spiritum 3",
+            "Componentes: V, G, M, FD (o símbolo sagrado do deus)",
+            "Tempo de Formulação: ver descrição",
+            "Alcance: toque",
             "Alvo: 1 pessoa",
             "Duração: permanente",
             "Teste de Resistência: nenhum"
@@ -4868,9 +5069,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Lembrete",
       "paragraphs": [
-        "Para realizar este ritual simples, o mago precisa escrever o lembrete que deseja em um pergaminho, conjurar seu espírito-guardião e queimar o pergaminho enquanto recita a data em que o lembrete deverá ser comunicado a ele (sem exceder uma semana por nível). Por exemplo: \"Aniversário de Gandalf\" ou \"Fechamento do Portal para Arcádia\".",
-        "Na hora e data especificada, o mago será avisado pelos espíritos de seu lembrete, exatamente como escreveu (até um máximo de 25 palavras). A única maneira do mago não receber sua mensagem é se algo grave acontecer ao seu espírito guia ou se o mago estiver em um local inacessível a espíritos e, nesse caso, não receber a mensagem pode ser o menor dos problemas do feiticeiro.",
-        "Localizar Cadáveres"
+        "Para realizar este ritual simples, o mago precisa escrever o lembrete que deseja em um pergaminho, conjurar seu espírito-guardião e queimar o pergaminho enquanto recita a data em que o lembrete deverá ser comunicado a ele (sem exceder uma semana por nível). Por exemplo: \"Aniversário de Gandalf\" ou \"Fechamento do Portal para Arcádia\". Na hora e data especificada, o mago será avisado pelos espíritos de seu lembrete, exatamente como escreveu (até um máximo de 25 palavras). A única maneira do mago não receber sua mensagem é se algo grave acontecer ao seu espírito guia ou se o mago estiver em um local inacessível a espíritos e, nesse caso, não receber a mensagem pode ser o menor dos problemas do feiticeiro."
       ],
       "sections": [
         {
@@ -4879,12 +5078,12 @@
           "area": "rituais",
           "paragraphs": [
             "Entender Spiritum 1",
-            "Componentes: V, G, M (um pedaço de pergaminho) Tempo de Formulação: 1 rodada",
+            "Componentes: V, G, M (um pedaço de pergaminho)",
+            "Tempo de Formulação: 1 rodada",
             "Alcance: toque",
             "Efeitos: ver descrição",
             "Duração: 1 semana / nível",
-            "Teste de Resistência: nenhum",
-            "Entender Spiritum 4 Componentes: V, G, F/FD (o nome verdadeiro da pessoa) Tempo de Formulação: 1 rodada Alcance: ver descrição Alvo: 1 cadáver Duração: instantânea Teste de Resistência: nenhum Dizem que este ritual foi desenvolvido por Thyatis para seus clérigos, mas que se tornou rapidamente conhecido nos outros reinos, principalmente nos locais onde havia muitas guerras. Esta magia faz com que o feiticeiro conheça a localização precisa de um cadáver, desde que conheça seu verdadeiro nome. O mago recita os versos do ritual enquanto pronuncia o nome da pessoa que deseja encontrar e adquire o conhecimento do local onde o cadáver estará. Este ritual funciona não importando o tempo que a pessoa esteja morta (por isso foi utilizado muitas vezes para localizar tumbas e mausoléus antigos). Quanto mais próximo o mago estiver do local, maior a precisão da resposta. Se ele estiver distante, a resposta pode ser \"três dias de viagem para o norte\", mas se estiver próximo, o resultado pode ser \"Debaixo da terceira árvore\" ou \"Vinte passos para o oeste\". Seo alvo escolhido estiver em outra dimensão, tiver sido destruído (desintegrado, mutilado ou queimado), ou ainda viva (seja porque ainda não morreu ou porque foi ressuscitada), o ritual não funcionará."
+            "Teste de Resistência: nenhum"
           ]
         },
         {
@@ -4892,9 +5091,42 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Para realizar este ritual simples, o mago precisa escrever o lembrete que deseja em um pergaminho, conjurar seu espírito-guardião e queimar o pergaminho enquanto recita a data em que o lembrete deverá ser comunicado a ele (sem exceder uma semana por nível). Por exemplo: \"Aniversário de Gandalf\" ou \"Fechamento do Portal para Arcádia\".",
-            "Na hora e data especificada, o mago será avisado pelos espíritos de seu lembrete, exatamente como escreveu (até um máximo de 25 palavras). A única maneira do mago não receber sua mensagem é se algo grave acontecer ao seu espírito guia ou se o mago estiver em um local inacessível a espíritos e, nesse caso, não receber a mensagem pode ser o menor dos problemas do feiticeiro.",
-            "Localizar Cadáveres"
+            "Para realizar este ritual simples, o mago precisa escrever o lembrete que deseja em um pergaminho, conjurar seu espírito-guardião e queimar o pergaminho enquanto recita a data em que o lembrete deverá ser comunicado a ele (sem exceder uma semana por nível). Por exemplo: \"Aniversário de Gandalf\" ou \"Fechamento do Portal para Arcádia\". Na hora e data especificada, o mago será avisado pelos espíritos de seu lembrete, exatamente como escreveu (até um máximo de 25 palavras). A única maneira do mago não receber sua mensagem é se algo grave acontecer ao seu espírito guia ou se o mago estiver em um local inacessível a espíritos e, nesse caso, não receber a mensagem pode ser o menor dos problemas do feiticeiro."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "localizar-cadaveres",
+      "title": "Localizar Cadáveres",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Localizar Cadáveres",
+      "paragraphs": [
+        "Dizem que este ritual foi desenvolvido por Thyatis para seus clérigos, mas que se tornou rapidamente conhecido nos outros reinos, principalmente nos locais onde havia muitas guerras. Esta magia faz com que o feiticeiro conheça a localização precisa de um cadáver, desde que conheça seu verdadeiro nome. O mago recita os versos do ritual enquanto pronuncia o nome da pessoa que deseja encontrar e adquire o conhecimento do local onde o cadáver estará. Este ritual funciona não importando o tempo que a pessoa esteja morta (por isso foi utilizado muitas vezes para localizar tumbas e mausoléus antigos). Quanto mais próximo o mago estiver do local, maior a precisão da resposta. Se ele estiver distante, a resposta pode ser \"três dias de viagem para o norte\", mas se estiver próximo, o resultado pode ser \"Debaixo da terceira árvore\" ou \"Vinte passos para o oeste\". Seo alvo escolhido estiver em outra dimensão, tiver sido destruído (desintegrado, mutilado ou queimado), ou ainda viva (seja porque ainda não morreu ou porque foi ressuscitada), o ritual não funcionará."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
+            "Entender Spiritum 4",
+            "Componentes: V, G, F/FD (o nome verdadeiro da pessoa)",
+            "Tempo de Formulação: 1 rodada",
+            "Alcance: ver descrição",
+            "Alvo: 1 cadáver",
+            "Duração: instantânea",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Dizem que este ritual foi desenvolvido por Thyatis para seus clérigos, mas que se tornou rapidamente conhecido nos outros reinos, principalmente nos locais onde havia muitas guerras. Esta magia faz com que o feiticeiro conheça a localização precisa de um cadáver, desde que conheça seu verdadeiro nome. O mago recita os versos do ritual enquanto pronuncia o nome da pessoa que deseja encontrar e adquire o conhecimento do local onde o cadáver estará. Este ritual funciona não importando o tempo que a pessoa esteja morta (por isso foi utilizado muitas vezes para localizar tumbas e mausoléus antigos). Quanto mais próximo o mago estiver do local, maior a precisão da resposta. Se ele estiver distante, a resposta pode ser \"três dias de viagem para o norte\", mas se estiver próximo, o resultado pode ser \"Debaixo da terceira árvore\" ou \"Vinte passos para o oeste\". Seo alvo escolhido estiver em outra dimensão, tiver sido destruído (desintegrado, mutilado ou queimado), ou ainda viva (seja porque ainda não morreu ou porque foi ressuscitada), o ritual não funcionará."
           ]
         }
       ]
@@ -4906,14 +5138,30 @@
       "kind": "ritual",
       "sectionId": "ritual",
       "sectionTitle": "Mãos Espectrais",
-      "paragraphs": [],
+      "paragraphs": [
+        "Este ritual permite ao mago criar mãos translúcidas e espectrais, que podem ser usadas como se fossem suas próprias mãos (para lutar à distância, mover objetos ou até realizar uma magia de toque em um oponente longe etc.). A mão tem 5PVs e pode flutuar a até 20m de distância do mago. Este ritual cria uma ligação arcana entre a mão espectral e o feiticeiro, o que permite a ele canalizar rituais de toque através desta magia."
+      ],
       "sections": [
         {
           "id": "ficha-do-ritual",
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Criar/Controlar Spiritum/Metamagia 2 Componentes: V, G Tempo de Formulação: 1 ação Alcance: 20m Efeitos: cria uma mão mágica Duração: 1 cena Teste de Resistência: nenhum Este ritual permite ao mago criar mãos translúcidas e espectrais, que podem ser usadas como se fossem suas próprias mãos (para lutar à distância, mover objetos ou até realizar uma magia de toque em um oponente longe etc.). A mão tem 5PVs e pode flutuar a até 20m de distância do mago. Este ritual cria uma ligação arcana entre a mão espectral e o feiticeiro, o que permite a ele canalizar rituais de toque através desta magia."
+            "Criar/Controlar Spiritum/Metamagia 2",
+            "Componentes: V, G",
+            "Tempo de Formulação: 1 ação",
+            "Alcance: 20m",
+            "Efeitos: cria uma mão mágica",
+            "Duração: 1 cena",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual permite ao mago criar mãos translúcidas e espectrais, que podem ser usadas como se fossem suas próprias mãos (para lutar à distância, mover objetos ou até realizar uma magia de toque em um oponente longe etc.). A mão tem 5PVs e pode flutuar a até 20m de distância do mago. Este ritual cria uma ligação arcana entre a mão espectral e o feiticeiro, o que permite a ele canalizar rituais de toque através desta magia."
           ]
         }
       ]
@@ -4926,8 +5174,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Mapeador Astral",
       "paragraphs": [
-        "Um dos mais interessantes rituais de dominação e encantamento envolvendo espíritos, o Mapeador Astral conjura um pequeno espírito guia do Plano Astral e pede a ele que desenhe os arredores da região onde o mago e seu grupo estão. O mapa pode ser desenhado em qualquer escala que o espírito achar conveniente, respeitando o tamanho do papel e as dimensões da área onde os Personagens estão.",
-        "O espírito vasculha a sala, anotando portas, janelas e objetos, mas nada que esteja camuflado, invisível ou oculto de uma observação superficial. O observador astral agirá como um NPC que sobrevoa a sala anotando tudo o que vê no papel. A impressão que os observadores têm é que o pergaminho e a pena saíram voando ao redor da sala e retornaram as mãos do feiticeiro após um tempo."
+        "Um dos mais interessantes rituais de dominação e encantamento envolvendo espíritos, o Mapeador Astral conjura um pequeno espírito guia do Plano Astral e pede a ele que desenhe os arredores da região onde o mago e seu grupo estão. O mapa pode ser desenhado em qualquer escala que o espírito achar conveniente, respeitando o tamanho do papel e as dimensões da área onde os Personagens estão. O espírito vasculha a sala, anotando portas, janelas e objetos, mas nada que esteja camuflado, invisível ou oculto de uma observação superficial. O observador astral agirá como um NPC que sobrevoa a sala anotando tudo o que vê no papel. A impressão que os observadores têm é que o pergaminho e a pena saíram voando ao redor da sala e retornaram as mãos do feiticeiro após um tempo."
       ],
       "sections": [
         {
@@ -4935,8 +5182,12 @@
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Entender/Controlar Spiritum 3 Componentes: V, G, M (papel, pena e tinta) Tempo de Formulação: 1 rodada Alcance: toque",
-            "Efeitos: cria um mapa dos arredores Duração: ver descrição",
+            "Entender/Controlar Spiritum 3",
+            "Componentes: V, G, M (papel, pena e tinta)",
+            "Tempo de Formulação: 1 rodada",
+            "Alcance: toque",
+            "Efeitos: cria um mapa dos arredores",
+            "Duração: ver descrição",
             "Teste de Resistência: nenhum"
           ]
         },
@@ -4945,8 +5196,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Um dos mais interessantes rituais de dominação e encantamento envolvendo espíritos, o Mapeador Astral conjura um pequeno espírito guia do Plano Astral e pede a ele que desenhe os arredores da região onde o mago e seu grupo estão. O mapa pode ser desenhado em qualquer escala que o espírito achar conveniente, respeitando o tamanho do papel e as dimensões da área onde os Personagens estão.",
-            "O espírito vasculha a sala, anotando portas, janelas e objetos, mas nada que esteja camuflado, invisível ou oculto de uma observação superficial. O observador astral agirá como um NPC que sobrevoa a sala anotando tudo o que vê no papel. A impressão que os observadores têm é que o pergaminho e a pena saíram voando ao redor da sala e retornaram as mãos do feiticeiro após um tempo."
+            "Um dos mais interessantes rituais de dominação e encantamento envolvendo espíritos, o Mapeador Astral conjura um pequeno espírito guia do Plano Astral e pede a ele que desenhe os arredores da região onde o mago e seu grupo estão. O mapa pode ser desenhado em qualquer escala que o espírito achar conveniente, respeitando o tamanho do papel e as dimensões da área onde os Personagens estão. O espírito vasculha a sala, anotando portas, janelas e objetos, mas nada que esteja camuflado, invisível ou oculto de uma observação superficial. O observador astral agirá como um NPC que sobrevoa a sala anotando tudo o que vê no papel. A impressão que os observadores têm é que o pergaminho e a pena saíram voando ao redor da sala e retornaram as mãos do feiticeiro após um tempo."
           ]
         }
       ]
@@ -4959,7 +5209,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Marca Pessoal",
       "paragraphs": [
-        "O mago pode armazenar 1 ponto de magia para manter esse efeito por quanto tempo desejar."
+        "Este efeito prende espiritualmente um objeto ao mago. Enquanto seu espírito permanecer na Orbe da Terra, o objeto só funcionará se o próprio mago tentar utilizá-lo. Se, por algum motivo qualquer, o espírito do mago sair da Orbe da Terra, o efeito cessará, mesmo que o mago retorne em seguida. Obviamente, cada objeto só pode ter uma Marca Pessoal. Geralmente, a marca é colocada em espadas, adagas ou outras armas mágicas, em anéis, pergaminhos, chaves ou cajados místicos, para impedir seu uso por estranhos. O mago pode armazenar 1 ponto de magia para manter esse efeito por quanto tempo desejar."
       ],
       "sections": [
         {
@@ -4967,7 +5217,13 @@
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Criar Spiritum 4 Componentes: V, G, M (uma gota do sangue do mago) Tempo de Formulação: 1 rodada Alcance: toque Alvo: 1 objeto Duração: 1 cena Teste de Resistência: nenhum Este efeito prende espiritualmente um objeto ao mago. Enquanto seu espírito permanecer na Orbe da Terra, o objeto só funcionará se o próprio mago tentar utilizá-lo. Se, por algum motivo qualquer, o espírito do mago sair da Orbe da Terra, o efeito cessará, mesmo que o mago retorne em seguida. Obviamente, cada objeto só pode ter uma Marca Pessoal. Geralmente, a marca é colocada em espadas, adagas ou outras armas mágicas, em anéis, pergaminhos, chaves ou cajados místicos, para impedir seu uso por estranhos."
+            "Criar Spiritum 4",
+            "Componentes: V, G, M (uma gota do sangue do mago)",
+            "Tempo de Formulação: 1 rodada",
+            "Alcance: toque",
+            "Alvo: 1 objeto",
+            "Duração: 1 cena",
+            "Teste de Resistência: nenhum"
           ]
         },
         {
@@ -4975,7 +5231,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "O mago pode armazenar 1 ponto de magia para manter esse efeito por quanto tempo desejar."
+            "Este efeito prende espiritualmente um objeto ao mago. Enquanto seu espírito permanecer na Orbe da Terra, o objeto só funcionará se o próprio mago tentar utilizá-lo. Se, por algum motivo qualquer, o espírito do mago sair da Orbe da Terra, o efeito cessará, mesmo que o mago retorne em seguida. Obviamente, cada objeto só pode ter uma Marca Pessoal. Geralmente, a marca é colocada em espadas, adagas ou outras armas mágicas, em anéis, pergaminhos, chaves ou cajados místicos, para impedir seu uso por estranhos. O mago pode armazenar 1 ponto de magia para manter esse efeito por quanto tempo desejar."
           ]
         }
       ]
@@ -4987,14 +5243,30 @@
       "kind": "ritual",
       "sectionId": "ritual",
       "sectionTitle": "Mesas Girantes",
-      "paragraphs": [],
+      "paragraphs": [
+        "Este ritual foi desenvolvido pelos Estudiosos do Umbral como uma das primeiras evidências de que os espíritos realmente existem. Ele faz com que o ambiente em uma sala fique propicio à ação de espíritos ou outras entidades astrais. Seu uso comum é fazer com-que uma mesa (ou qualquer outro objeto) fique sob controle de um espírito que esteja no mesmo ambiente (a personalidade do espírito fica a cargo do mestre). Através deste ritual, o espírito pode passar mensagens ou comunicados rudimentares para o grupo em que o mago está, apesar do processo demorar um pouco."
+      ],
       "sections": [
         {
           "id": "ficha-do-ritual",
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Criar Spiritum 1 Componentes: V, G, F (uma mesa) Tempo de Formulação: 1 rodada Alcance: toque Efeitos: permite que um espírito se comunique através de uma mesa Duração: 1 cena Teste de Resistência: nenhum Este ritual foi desenvolvido pelos Estudiosos do Umbral como uma das primeiras evidências de que os espíritos realmente existem. Ele faz com que o ambiente em uma sala fique propicio à ação de espíritos ou outras entidades astrais. Seu uso comum é fazer com-que uma mesa (ou qualquer outro objeto) fique sob controle de um espírito que esteja no mesmo ambiente (a personalidade do espírito fica a cargo do mestre). Através deste ritual, o espírito pode passar mensagens ou comunicados rudimentares para o grupo em que o mago está, apesar do processo demorar um pouco."
+            "Criar Spiritum 1",
+            "Componentes: V, G, F (uma mesa)",
+            "Tempo de Formulação: 1 rodada",
+            "Alcance: toque",
+            "Efeitos: permite que um espírito se comunique através de uma mesa",
+            "Duração: 1 cena",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Este ritual foi desenvolvido pelos Estudiosos do Umbral como uma das primeiras evidências de que os espíritos realmente existem. Ele faz com que o ambiente em uma sala fique propicio à ação de espíritos ou outras entidades astrais. Seu uso comum é fazer com-que uma mesa (ou qualquer outro objeto) fique sob controle de um espírito que esteja no mesmo ambiente (a personalidade do espírito fica a cargo do mestre). Através deste ritual, o espírito pode passar mensagens ou comunicados rudimentares para o grupo em que o mago está, apesar do processo demorar um pouco."
           ]
         }
       ]
@@ -5007,11 +5279,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Morte da Alma",
       "paragraphs": [
-        "Este poderosíssimo ritual ataca diretamente o espírito da vítima. O corpo é preservado, mas o espírito recebe um poderoso ataque de energia mística. A vítima sofre 6d6 pontos de dano, com direito a teste de vontade (WILL) para reduzir o dano à metade. Se a vítima morrer devido a este efeito, seu espírito é destruído no processo.",
-        "A grande vantagem deste tipo de ataque em relação aos demais é que pessoas comuns não perceberão nenhum tipo de anomalia, acreditando que a vítima tenha sofrido um ataque cardíaco ou algo semelhante.",
-        "Contudo, este ritual deixa marcas profundas em Spiritum e essas marcas podem ser vistas ou rastreadas por outros espíritos que porventura passem por aquele local (as vibrações podem ser sentidas a 100m por ponto de dano causado por esse ritual).",
-        "Olhar de Minerva",
-        "Este ritual permite detectar a influência, mas não neutralizá-la."
+        "Este poderosíssimo ritual ataca diretamente o espírito da vítima. O corpo é preservado, mas o espírito recebe um poderoso ataque de energia mística. A vítima sofre 6d6 pontos de dano, com direito a teste de vontade (WILL) para reduzir o dano à metade. Se a vítima morrer devido a este efeito, seu espírito é destruído no processo. A grande vantagem deste tipo de ataque em relação aos demais é que pessoas comuns não perceberão nenhum tipo de anomalia, acreditando que a vítima tenha sofrido um ataque cardíaco ou algo semelhante. Contudo, este ritual deixa marcas profundas em Spiritum e essas marcas podem ser vistas ou rastreadas por outros espíritos que porventura passem por aquele local (as vibrações podem ser sentidas a 100m por ponto de dano causado por esse ritual)."
       ],
       "sections": [
         {
@@ -5020,12 +5288,12 @@
           "area": "rituais",
           "paragraphs": [
             "Controlar Spiritum 6",
-            "Componentes: V, G, F (um objeto pessoal da vítima) Tempo de Formulação: 1 rodada",
-            "Alcance; 30m",
+            "Componentes: V, G, F (um objeto pessoal da vítima)",
+            "Tempo de Formulação: 1 rodada",
+            "Alcance: 30m",
             "Alvo: 1 pessoa",
             "Duração: instantânea",
-            "Teste de Resistência: vontade (WILL) anula",
-            "Entender Humanos/Spiritum 2 Componentes: V, G, FD (o símbolo de Minerva) Tempo de Formulação: 3 rodadas Alcance; Sm Alvo; 1 pessoa Duração; instantânea Teste de Resistência: nenhum Esta antiga magia romana permite ao sacerdote ou feiticeiro detectar se uma pessoa está sob os efeitos de algum tipo de dominação mental, influência dos espíritos ou hipnose, O feiticeiro deve olhar diretamente nos olhos da pessoa e se concentrar por três rodadas. No final desse período, ele saberá se a vítima possui algum tipo de poder ou ritual influenciando sua vontade."
+            "Teste de Resistência: vontade (WILL) anula"
           ]
         },
         {
@@ -5033,11 +5301,42 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Este poderosíssimo ritual ataca diretamente o espírito da vítima. O corpo é preservado, mas o espírito recebe um poderoso ataque de energia mística. A vítima sofre 6d6 pontos de dano, com direito a teste de vontade (WILL) para reduzir o dano à metade. Se a vítima morrer devido a este efeito, seu espírito é destruído no processo.",
-            "A grande vantagem deste tipo de ataque em relação aos demais é que pessoas comuns não perceberão nenhum tipo de anomalia, acreditando que a vítima tenha sofrido um ataque cardíaco ou algo semelhante.",
-            "Contudo, este ritual deixa marcas profundas em Spiritum e essas marcas podem ser vistas ou rastreadas por outros espíritos que porventura passem por aquele local (as vibrações podem ser sentidas a 100m por ponto de dano causado por esse ritual).",
-            "Olhar de Minerva",
-            "Este ritual permite detectar a influência, mas não neutralizá-la."
+            "Este poderosíssimo ritual ataca diretamente o espírito da vítima. O corpo é preservado, mas o espírito recebe um poderoso ataque de energia mística. A vítima sofre 6d6 pontos de dano, com direito a teste de vontade (WILL) para reduzir o dano à metade. Se a vítima morrer devido a este efeito, seu espírito é destruído no processo. A grande vantagem deste tipo de ataque em relação aos demais é que pessoas comuns não perceberão nenhum tipo de anomalia, acreditando que a vítima tenha sofrido um ataque cardíaco ou algo semelhante. Contudo, este ritual deixa marcas profundas em Spiritum e essas marcas podem ser vistas ou rastreadas por outros espíritos que porventura passem por aquele local (as vibrações podem ser sentidas a 100m por ponto de dano causado por esse ritual)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "olhar-de-minerva",
+      "title": "Olhar de Minerva",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Olhar de Minerva",
+      "paragraphs": [
+        "Esta antiga magia romana permite ao sacerdote ou feiticeiro detectar se uma pessoa está sob os efeitos de algum tipo de dominação mental, influência dos espíritos ou hipnose. O feiticeiro deve olhar diretamente nos olhos da pessoa e se concentrar por três rodadas. No final desse período, ele saberá se a vítima possui algum tipo de poder ou ritual influenciando sua vontade. Este ritual permite detectar a influência, mas não neutralizá-la."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
+            "Entender Humanos/Spiritum 2",
+            "Componentes: V, G, FD (o símbolo de Minerva)",
+            "Tempo de Formulação: 3 rodadas",
+            "Alcance: 5m",
+            "Alvo: 1 pessoa",
+            "Duração: instantânea",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Esta antiga magia romana permite ao sacerdote ou feiticeiro detectar se uma pessoa está sob os efeitos de algum tipo de dominação mental, influência dos espíritos ou hipnose. O feiticeiro deve olhar diretamente nos olhos da pessoa e se concentrar por três rodadas. No final desse período, ele saberá se a vítima possui algum tipo de poder ou ritual influenciando sua vontade. Este ritual permite detectar a influência, mas não neutralizá-la."
           ]
         }
       ]
@@ -5050,8 +5349,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Olhar de Pedinte",
       "paragraphs": [
-        "Este ritual faz com que o feiticeiro (na verdade, ele funciona melhor com feiticeiras) fique com o conhecido \"olhar de cachorro sem dono\", o que aumenta seus testes de Carisma em +25% se estiver pedindo algum favor ou objeto. Também faz com que todos os observadores sintam uma tremenda pena e compaixão pela feiticeira (ou mago). Se alguém tiver algum motivo real para desconfiar do mago, ele terá direito a um teste de vontade (WILL) para evitar a influência mágica.",
-        "Note que este ritual não afeta o físico, mas o lado espiritual das vítimas e, portanto, não pode ser detectado magicamente. Olhar de Pedinte não funciona se o conjurador possuir FR 14 ou maior ou CON 14 ou maior."
+        "Este ritual faz com que o feiticeiro (na verdade, ele funciona melhor com feiticeiras) fique com o conhecido \"olhar de cachorro sem dono\", o que aumenta seus testes de Carisma em +25% se estiver pedindo algum favor ou objeto. Também faz com que todos os observadores sintam uma tremenda pena e compaixão pela feiticeira (ou mago). Se alguém tiver algum motivo real para desconfiar do mago, ele terá direito a um teste de vontade (WILL) para evitar a influência mágica. Note que este ritual não afeta o físico, mas o lado espiritual das vítimas e, portanto, não pode ser detectado magicamente. Olhar de Pedinte não funciona se o conjurador possuir FR 14 ou maior ou CON 14 ou maior."
       ],
       "sections": [
         {
@@ -5063,7 +5361,8 @@
             "Componentes: V, G",
             "Tempo de Formulação: 1 ação",
             "Alcance: o próprio mago",
-            "Efeitos: eleva os testes de carisma do mago Duração: 1 cena",
+            "Efeitos: eleva os testes de carisma do mago",
+            "Duração: 1 cena",
             "Teste de Resistência: vontade (WILL) anula"
           ]
         },
@@ -5072,8 +5371,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Este ritual faz com que o feiticeiro (na verdade, ele funciona melhor com feiticeiras) fique com o conhecido \"olhar de cachorro sem dono\", o que aumenta seus testes de Carisma em +25% se estiver pedindo algum favor ou objeto. Também faz com que todos os observadores sintam uma tremenda pena e compaixão pela feiticeira (ou mago). Se alguém tiver algum motivo real para desconfiar do mago, ele terá direito a um teste de vontade (WILL) para evitar a influência mágica.",
-            "Note que este ritual não afeta o físico, mas o lado espiritual das vítimas e, portanto, não pode ser detectado magicamente. Olhar de Pedinte não funciona se o conjurador possuir FR 14 ou maior ou CON 14 ou maior."
+            "Este ritual faz com que o feiticeiro (na verdade, ele funciona melhor com feiticeiras) fique com o conhecido \"olhar de cachorro sem dono\", o que aumenta seus testes de Carisma em +25% se estiver pedindo algum favor ou objeto. Também faz com que todos os observadores sintam uma tremenda pena e compaixão pela feiticeira (ou mago). Se alguém tiver algum motivo real para desconfiar do mago, ele terá direito a um teste de vontade (WILL) para evitar a influência mágica. Note que este ritual não afeta o físico, mas o lado espiritual das vítimas e, portanto, não pode ser detectado magicamente. Olhar de Pedinte não funciona se o conjurador possuir FR 14 ou maior ou CON 14 ou maior."
           ]
         }
       ]
@@ -5086,10 +5384,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Olhar de Penitência",
       "paragraphs": [
-        "Muitos sábios dizem que este ritual foi um presente dos \"Anjos da Punição\" da Cidade de Prata como uma forma de castigar assassinos, ladrões e torturadores. Para realizar esta magia, O feiticeiro precisa ser capaz de olhar o alvo diretamente nos olhos e recitar os versos do ritual (que demoram uma rodada).",
-        "A vítima sentirá na própria pele todo o mal que tenha causado a outros seres vivos. Assassinatos, torturas, mutilações e quaisquer outros atos malignos retornam à mente do alvo, causando-lhes terríveis dores.",
-        "O alvo ficará completamente indefeso por uma rodada por ato maligno que tenha cometido, enquanto vivencia a dor que causou em outras pessoas. O ritual causa 5dé pontos de dano divididos entre as cinco primeiras rodadas, mas esse dano não é verdadeiro. Caso o alvo chegue a O PVs, ele desmaia, acordando 3d6 rodadas depois. Os PVs retornarão a ele lentamente após seu despertar. O alvo tem direito a um teste de vontade",
-        "(WILL vs. 5D) para diminuir sua dor pela metade."
+        "Muitos sábios dizem que este ritual foi um presente dos \"Anjos da Punição\" da Cidade de Prata como uma forma de castigar assassinos, ladrões e torturadores. Para realizar esta magia, O feiticeiro precisa ser capaz de olhar o alvo diretamente nos olhos e recitar os versos do ritual (que demoram uma rodada). A vítima sentirá na própria pele todo o mal que tenha causado a outros seres vivos. Assassinatos, torturas, mutilações e quaisquer outros atos malignos retornam à mente do alvo, causando-lhes terríveis dores. O alvo ficará completamente indefeso por uma rodada por ato maligno que tenha cometido, enquanto vivencia a dor que causou em outras pessoas. O ritual causa 5dé pontos de dano divididos entre as cinco primeiras rodadas, mas esse dano não é verdadeiro. Caso o alvo chegue a O PVs, ele desmaia, acordando 3d6 rodadas depois. Os PVs retornarão a ele lentamente após seu despertar. O alvo tem direito a um teste de vontade (WILL vs. 5D) para diminuir sua dor pela metade."
       ],
       "sections": [
         {
@@ -5111,10 +5406,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Muitos sábios dizem que este ritual foi um presente dos \"Anjos da Punição\" da Cidade de Prata como uma forma de castigar assassinos, ladrões e torturadores. Para realizar esta magia, O feiticeiro precisa ser capaz de olhar o alvo diretamente nos olhos e recitar os versos do ritual (que demoram uma rodada).",
-            "A vítima sentirá na própria pele todo o mal que tenha causado a outros seres vivos. Assassinatos, torturas, mutilações e quaisquer outros atos malignos retornam à mente do alvo, causando-lhes terríveis dores.",
-            "O alvo ficará completamente indefeso por uma rodada por ato maligno que tenha cometido, enquanto vivencia a dor que causou em outras pessoas. O ritual causa 5dé pontos de dano divididos entre as cinco primeiras rodadas, mas esse dano não é verdadeiro. Caso o alvo chegue a O PVs, ele desmaia, acordando 3d6 rodadas depois. Os PVs retornarão a ele lentamente após seu despertar. O alvo tem direito a um teste de vontade",
-            "(WILL vs. 5D) para diminuir sua dor pela metade."
+            "Muitos sábios dizem que este ritual foi um presente dos \"Anjos da Punição\" da Cidade de Prata como uma forma de castigar assassinos, ladrões e torturadores. Para realizar esta magia, O feiticeiro precisa ser capaz de olhar o alvo diretamente nos olhos e recitar os versos do ritual (que demoram uma rodada). A vítima sentirá na própria pele todo o mal que tenha causado a outros seres vivos. Assassinatos, torturas, mutilações e quaisquer outros atos malignos retornam à mente do alvo, causando-lhes terríveis dores. O alvo ficará completamente indefeso por uma rodada por ato maligno que tenha cometido, enquanto vivencia a dor que causou em outras pessoas. O ritual causa 5dé pontos de dano divididos entre as cinco primeiras rodadas, mas esse dano não é verdadeiro. Caso o alvo chegue a O PVs, ele desmaia, acordando 3d6 rodadas depois. Os PVs retornarão a ele lentamente após seu despertar. O alvo tem direito a um teste de vontade (WILL vs. 5D) para diminuir sua dor pela metade."
           ]
         }
       ]
@@ -5127,13 +5419,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Pânico",
       "paragraphs": [
-        "Área: 30m",
-        "Quando esta magia é lançada contra uma criatura, ela deve fazer um teste de vontade (WILL). Se falhar, vai ficar apavorada e tentar fugir do mago de qualquer maneira, o mais rápido que puder. Uma vitima em pânico não pode usar qualquer manobra, Vantagem ou magia - exceto aquelas que ajudem em sua fuga, como esquivas, aceleração, transporte, teleporte...",
-        "O pânico vai durar até que a magia termine ou até que a vítima saia do alcance da magia (o que pode ser difícil, se o mago começar uma perseguição...) Personagens ou criaturas que por algum motivo sejam imunes ao medo - como certos clérigos, ou Personagens sob efeito de Fúria - nunca são afetados por esta magia.",
-        "Pegadas Luminosas Criar Spiritum 1 Componentes: V, G Tempo de Formulação: 1 ação Alcance: 30m Alvo; as pegadas de uma pessoa Duração: 101 passos Teste de Resistência: nenhum Este ritual consiste em chamar um espírito para seguir uma pessoa. Ele fará com que as pegadas dessa pessoa apareçam com um leve brilho, característica do material astral que o fantasma deixa na Terra, que apenas o mago é capaz de enxergar. Outras pessoas que possuam magias relacionadas a espíritos (Entender Spiritum 3+) também podem enxergar estas pegadas com um teste de Int (PER). O ritual dura por algumas rodadas ou se a vítima completar 101 passos, o que acontecer primeiro. As pegadas permanecem por uma hora para cada dois níveis do feiticeiro, desaparecendo em seguida.",
-        "Pena dos Rumores",
-        "Outro feitiço envolvendo espíritos, a Pena dos Rumores é um ritual que os magos fazem quando chegam a uma cidade nova. Através da conjuração de espíritos menores, eles colocam pergaminho e papel no chão enquanto recitam os versos do ritual e a pena vai escrevendo os rumores comuns à cidade (o que não significa de maneira nenhuma que sejam verdades, apenas o que o povo está comentando, lendas e relatos que são comuns à cidade).",
-        "A pena transcreve um rumor a cada três níveis do mago e mesmo se vários magos fizerem este ritual, não conseguirão muitas variações da mesma história. Os rumores ficam por conta do Mestre, que pode utilizar este ritual como gancho para aventuras."
+        "Quando esta magia é lançada contra uma criatura, ela deve fazer um teste de vontade (WILL). Se falhar, vai ficar apavorada e tentar fugir do mago de qualquer maneira, o mais rápido que puder. Uma vitima em pânico não pode usar qualquer manobra, Vantagem ou magia - exceto aquelas que ajudem em sua fuga, como esquivas, aceleração, transporte, teleporte... O pânico vai durar até que a magia termine ou até que a vítima saia do alcance da magia (o que pode ser difícil, se o mago começar uma perseguição...) Personagens ou criaturas que por algum motivo sejam imunes ao medo - como certos clérigos, ou Personagens sob efeito de Fúria - nunca são afetados por esta magia."
       ],
       "sections": [
         {
@@ -5142,14 +5428,46 @@
           "area": "rituais",
           "paragraphs": [
             "Entender Humanos/ Spiritum 3",
-            "Componentes: V, G, F (uma máscara) Tempo de Formulação: 1 ação",
+            "Componentes: V, G, F (uma máscara)",
+            "Tempo de Formulação: 1 ação",
             "Alcance: 100m",
-            "Duração: 1 rodada / nível (ver descrição) Teste de Resistência: vontade (WILL) anula",
-            "Entender Spiritum 2",
-            "Componentes: V, G, M (uma pena, papel e tinta)",
-            "Tempo de Formulação: 15 minutos",
-            "Alcance: ver descrição",
-            "Efeitos: transcreve os principais rumores em um pergaminho Duração: ver descrição",
+            "Área: 30m",
+            "Duração: 1 rodada / nível (ver descrição)",
+            "Teste de Resistência: vontade (WILL) anula"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Quando esta magia é lançada contra uma criatura, ela deve fazer um teste de vontade (WILL). Se falhar, vai ficar apavorada e tentar fugir do mago de qualquer maneira, o mais rápido que puder. Uma vitima em pânico não pode usar qualquer manobra, Vantagem ou magia - exceto aquelas que ajudem em sua fuga, como esquivas, aceleração, transporte, teleporte... O pânico vai durar até que a magia termine ou até que a vítima saia do alcance da magia (o que pode ser difícil, se o mago começar uma perseguição...) Personagens ou criaturas que por algum motivo sejam imunes ao medo - como certos clérigos, ou Personagens sob efeito de Fúria - nunca são afetados por esta magia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pegadas-luminosas",
+      "title": "Pegadas Luminosas",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Pegadas Luminosas",
+      "paragraphs": [
+        "Este ritual consiste em chamar um espírito para seguir uma pessoa. Ele fará com que as pegadas dessa pessoa apareçam com um leve brilho, característica do material astral que o fantasma deixa na Terra, que apenas o mago é capaz de enxergar. Outras pessoas que possuam magias relacionadas a espíritos (Entender Spiritum 3+) também podem enxergar estas pegadas com um teste de Int (PER). O ritual dura por algumas rodadas ou se a vítima completar 101 passos, o que acontecer primeiro. As pegadas permanecem por uma hora para cada dois níveis do feiticeiro, desaparecendo em seguida."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
+            "Criar Spiritum 1",
+            "Componentes: V, G",
+            "Tempo de Formulação: 1 ação",
+            "Alcance: 30m",
+            "Alvo: as pegadas de uma pessoa",
+            "Duração: 101 passos",
             "Teste de Resistência: nenhum"
           ]
         },
@@ -5158,13 +5476,42 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Área: 30m",
-            "Quando esta magia é lançada contra uma criatura, ela deve fazer um teste de vontade (WILL). Se falhar, vai ficar apavorada e tentar fugir do mago de qualquer maneira, o mais rápido que puder. Uma vitima em pânico não pode usar qualquer manobra, Vantagem ou magia - exceto aquelas que ajudem em sua fuga, como esquivas, aceleração, transporte, teleporte...",
-            "O pânico vai durar até que a magia termine ou até que a vítima saia do alcance da magia (o que pode ser difícil, se o mago começar uma perseguição...) Personagens ou criaturas que por algum motivo sejam imunes ao medo - como certos clérigos, ou Personagens sob efeito de Fúria - nunca são afetados por esta magia.",
-            "Pegadas Luminosas Criar Spiritum 1 Componentes: V, G Tempo de Formulação: 1 ação Alcance: 30m Alvo; as pegadas de uma pessoa Duração: 101 passos Teste de Resistência: nenhum Este ritual consiste em chamar um espírito para seguir uma pessoa. Ele fará com que as pegadas dessa pessoa apareçam com um leve brilho, característica do material astral que o fantasma deixa na Terra, que apenas o mago é capaz de enxergar. Outras pessoas que possuam magias relacionadas a espíritos (Entender Spiritum 3+) também podem enxergar estas pegadas com um teste de Int (PER). O ritual dura por algumas rodadas ou se a vítima completar 101 passos, o que acontecer primeiro. As pegadas permanecem por uma hora para cada dois níveis do feiticeiro, desaparecendo em seguida.",
-            "Pena dos Rumores",
-            "Outro feitiço envolvendo espíritos, a Pena dos Rumores é um ritual que os magos fazem quando chegam a uma cidade nova. Através da conjuração de espíritos menores, eles colocam pergaminho e papel no chão enquanto recitam os versos do ritual e a pena vai escrevendo os rumores comuns à cidade (o que não significa de maneira nenhuma que sejam verdades, apenas o que o povo está comentando, lendas e relatos que são comuns à cidade).",
-            "A pena transcreve um rumor a cada três níveis do mago e mesmo se vários magos fizerem este ritual, não conseguirão muitas variações da mesma história. Os rumores ficam por conta do Mestre, que pode utilizar este ritual como gancho para aventuras."
+            "Este ritual consiste em chamar um espírito para seguir uma pessoa. Ele fará com que as pegadas dessa pessoa apareçam com um leve brilho, característica do material astral que o fantasma deixa na Terra, que apenas o mago é capaz de enxergar. Outras pessoas que possuam magias relacionadas a espíritos (Entender Spiritum 3+) também podem enxergar estas pegadas com um teste de Int (PER). O ritual dura por algumas rodadas ou se a vítima completar 101 passos, o que acontecer primeiro. As pegadas permanecem por uma hora para cada dois níveis do feiticeiro, desaparecendo em seguida."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pena-dos-rumores",
+      "title": "Pena dos Rumores",
+      "area": "rituais",
+      "kind": "ritual",
+      "sectionId": "ritual",
+      "sectionTitle": "Pena dos Rumores",
+      "paragraphs": [
+        "Outro feitiço envolvendo espíritos, a Pena dos Rumores é um ritual que os magos fazem quando chegam a uma cidade nova. Através da conjuração de espíritos menores, eles colocam pergaminho e papel no chão enquanto recitam os versos do ritual e a pena vai escrevendo os rumores comuns à cidade (o que não significa de maneira nenhuma que sejam verdades, apenas o que o povo está comentando, lendas e relatos que são comuns à cidade). A pena transcreve um rumor a cada três níveis do mago e mesmo se vários magos fizerem este ritual, não conseguirão muitas variações da mesma história. Os rumores ficam por conta do Mestre, que pode utilizar este ritual como gancho para aventuras."
+      ],
+      "sections": [
+        {
+          "id": "ficha-do-ritual",
+          "title": "Ficha do Ritual",
+          "area": "rituais",
+          "paragraphs": [
+            "Entender Spiritum 2",
+            "Componentes: V, G, M (uma pena, papel e tinta)",
+            "Tempo de Formulação: 15 minutos",
+            "Alcance: ver descrição",
+            "Efeitos: transcreve os principais rumores em um pergaminho",
+            "Duração: ver descrição",
+            "Teste de Resistência: nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "rituais",
+          "paragraphs": [
+            "Outro feitiço envolvendo espíritos, a Pena dos Rumores é um ritual que os magos fazem quando chegam a uma cidade nova. Através da conjuração de espíritos menores, eles colocam pergaminho e papel no chão enquanto recitam os versos do ritual e a pena vai escrevendo os rumores comuns à cidade (o que não significa de maneira nenhuma que sejam verdades, apenas o que o povo está comentando, lendas e relatos que são comuns à cidade). A pena transcreve um rumor a cada três níveis do mago e mesmo se vários magos fizerem este ritual, não conseguirão muitas variações da mesma história. Os rumores ficam por conta do Mestre, que pode utilizar este ritual como gancho para aventuras."
           ]
         }
       ]
@@ -5185,7 +5532,8 @@
           "title": "Ficha do Ritual",
           "area": "rituais",
           "paragraphs": [
-            "Criar Animais/Spiritum 6 Componentes: V, G, M (círculo de invocação adequado e uma asa de uma fada)",
+            "Criar Animais/Spiritum 6",
+            "Componentes: V, G, M (círculo de invocação adequado e uma asa de uma fada)",
             "Tempo de Formulação: 1 ação",
             "Alcance: toque",
             "Alvo: 1 cavalo",
@@ -5211,10 +5559,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Ressurreição em Outro Corpo",
       "paragraphs": [
-        "Este ritual permite ao mago trazer uma pessoa de volta à vida. Deve ser feito no máximo 1 mês por ponto de Força de Vontade da pessoa após sua morte (por exemplo, até doze meses para uma pessoa que tenha WILL 12. Deve ser feito antes que o espírito dela se adapte totalmente a Spiritum. Para a realização deste ritual, é necessário o crânio da pessoa que se deseja trazer de volta, em boas condições.",
-        "Os feiticeiros preparam um altar especial, no plano astral, onde realizarão a troca dos espíritos. Para isso, deve se colocar o crânio em uma mesa de mármore ao lado de uma pessoa de importância equivalente ao morto. Esta pessoa deverá ter sido assassinada de maneira correta, segundo os passos do ritual e seu corpo deverá estar bem conservado. Qualquer cicatriz que possua neste momento se tornará permanente quando o ritual for finalizado. Em seguida, deve ser feito um corte na altura da nuca e a forma-pensamento do crânio da vítima deve ser cuidadosamente retirado no Plano Astral, segundo as instruções do ritual.",
-        "A preparação deste ritual é de extrema importância, pois durante todo o desenrolar da conjuração, todos os cirurgiões estarão em transe e completamente indefesos no Plano Material. Durante doze horas, os magos devem preparar o corpo pra receber o crânio que está sobre o altar. Os magos recitam os versos finais do ritual e conjuram o espírito original, que ocupará seu novo corpo.",
-        "No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
+        "Este ritual permite ao mago trazer uma pessoa de volta à vida. Deve ser feito no máximo 1 mês por ponto de Força de Vontade da pessoa após sua morte (por exemplo, até doze meses para uma pessoa que tenha WILL 12. Deve ser feito antes que o espírito dela se adapte totalmente a Spiritum. Para a realização deste ritual, é necessário o crânio da pessoa que se deseja trazer de volta, em boas condições. Os feiticeiros preparam um altar especial, no plano astral, onde realizarão a troca dos espíritos. Para isso, deve se colocar o crânio em uma mesa de mármore ao lado de uma pessoa de importância equivalente ao morto. Esta pessoa deverá ter sido assassinada de maneira correta, segundo os passos do ritual e seu corpo deverá estar bem conservado. Qualquer cicatriz que possua neste momento se tornará permanente quando o ritual for finalizado. Em seguida, deve ser feito um corte na altura da nuca e a forma-pensamento do crânio da vítima deve ser cuidadosamente retirado no Plano Astral, segundo as instruções do ritual. A preparação deste ritual é de extrema importância, pois durante todo o desenrolar da conjuração, todos os cirurgiões estarão em transe e completamente indefesos no Plano Material. Durante doze horas, os magos devem preparar o corpo pra receber o crânio que está sobre o altar. Os magos recitam os versos finais do ritual e conjuram o espírito original, que ocupará seu novo corpo. No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
       ],
       "sections": [
         {
@@ -5223,8 +5568,11 @@
           "area": "rituais",
           "paragraphs": [
             "Entender Spiritum 7",
-            "Componentes: V, G, M (um corpo), XP Tempo de Formulação: ver descrição Alcance: toque",
-            "Efeitos: traz uma pessoa de volta a vida Duração: permanente",
+            "Componentes: V, G, M (um corpo), XP",
+            "Tempo de Formulação: ver descrição",
+            "Alcance: toque",
+            "Efeitos: traz uma pessoa de volta a vida",
+            "Duração: permanente",
             "Teste de Resistência: nenhum"
           ]
         },
@@ -5233,10 +5581,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Este ritual permite ao mago trazer uma pessoa de volta à vida. Deve ser feito no máximo 1 mês por ponto de Força de Vontade da pessoa após sua morte (por exemplo, até doze meses para uma pessoa que tenha WILL 12. Deve ser feito antes que o espírito dela se adapte totalmente a Spiritum. Para a realização deste ritual, é necessário o crânio da pessoa que se deseja trazer de volta, em boas condições.",
-            "Os feiticeiros preparam um altar especial, no plano astral, onde realizarão a troca dos espíritos. Para isso, deve se colocar o crânio em uma mesa de mármore ao lado de uma pessoa de importância equivalente ao morto. Esta pessoa deverá ter sido assassinada de maneira correta, segundo os passos do ritual e seu corpo deverá estar bem conservado. Qualquer cicatriz que possua neste momento se tornará permanente quando o ritual for finalizado. Em seguida, deve ser feito um corte na altura da nuca e a forma-pensamento do crânio da vítima deve ser cuidadosamente retirado no Plano Astral, segundo as instruções do ritual.",
-            "A preparação deste ritual é de extrema importância, pois durante todo o desenrolar da conjuração, todos os cirurgiões estarão em transe e completamente indefesos no Plano Material. Durante doze horas, os magos devem preparar o corpo pra receber o crânio que está sobre o altar. Os magos recitam os versos finais do ritual e conjuram o espírito original, que ocupará seu novo corpo.",
-            "No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
+            "Este ritual permite ao mago trazer uma pessoa de volta à vida. Deve ser feito no máximo 1 mês por ponto de Força de Vontade da pessoa após sua morte (por exemplo, até doze meses para uma pessoa que tenha WILL 12. Deve ser feito antes que o espírito dela se adapte totalmente a Spiritum. Para a realização deste ritual, é necessário o crânio da pessoa que se deseja trazer de volta, em boas condições. Os feiticeiros preparam um altar especial, no plano astral, onde realizarão a troca dos espíritos. Para isso, deve se colocar o crânio em uma mesa de mármore ao lado de uma pessoa de importância equivalente ao morto. Esta pessoa deverá ter sido assassinada de maneira correta, segundo os passos do ritual e seu corpo deverá estar bem conservado. Qualquer cicatriz que possua neste momento se tornará permanente quando o ritual for finalizado. Em seguida, deve ser feito um corte na altura da nuca e a forma-pensamento do crânio da vítima deve ser cuidadosamente retirado no Plano Astral, segundo as instruções do ritual. A preparação deste ritual é de extrema importância, pois durante todo o desenrolar da conjuração, todos os cirurgiões estarão em transe e completamente indefesos no Plano Material. Durante doze horas, os magos devem preparar o corpo pra receber o crânio que está sobre o altar. Os magos recitam os versos finais do ritual e conjuram o espírito original, que ocupará seu novo corpo. No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
           ]
         }
       ]
@@ -5284,10 +5629,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Servos Mumificados",
       "paragraphs": [
-        "Efeito: cria uma múmia",
-        "Este macabro ritual foi desenvolvido no Egito durante as primeiras dinastias. Consiste literalmente em mumificar e petrificar um criado, transformando-o em uma espécie de múmia que agirá como guarda-costas do faraó em tempos de necessidade. O maior problema deste ritual é que ele é permanente (mas a maioria dos feiticeiros malignos não se importará muito com a vida de seus servos) e o segundo problema é que o servo perderá muito de sua força de vontade, tornando-se uma espécie de zumbi (por esse motivo os faraós evitavam o uso deste ritual em sábios e escribas).",
-        "O voluntário precisa ingerir diversas ervas especiais que limparão seu organismo durante sete dias e sete noites, nas quais ele terá de seguir os passos do ritual. Nesse período, sua mente e seu corpo passarão por mudanças violentas. É importante lembrar aqui que a pessoa deve ingerir as ervas por sua própria vontade, mesmo que desconheça os verdadeiros motivos para estar fazendo isso. Ao final da sétima noite, o servo é enterrado vivo por um mês e um dia, enquanto as ervas fazem o efeito final do poderoso ritual.",
-        "Após o ritual, o servo cava sua saída da tumba com suas próprias garras, transformando-se em uma forma putrefata e aterrorizante. A pseudomúmia possui cerca de 2m de altura, é magra e esquelética mas envolta em trapos € pedaços de carne acinzentada. Seus músculos tornam-se cinza-escuro e a pele de seu corpo fica pálida e arroxeada, como a de um cadáver. Suas feições já não lembram mais em nada o servo que se submeteu ao ritual, A criatura possui garras com 15cm nos dedos e dentes capazes de penetrar fundo na carne dos inimigos. O servo mumificado obedecerá cegamente toda e qualquer ordem dada por seu criador, mesmo que esta resulte em sua destruição."
+        "Este macabro ritual foi desenvolvido no Egito durante as primeiras dinastias. Consiste literalmente em mumificar e petrificar um criado, transformando-o em uma espécie de múmia que agirá como guarda-costas do faraó em tempos de necessidade. O maior problema deste ritual é que ele é permanente (mas a maioria dos feiticeiros malignos não se importará muito com a vida de seus servos) e o segundo problema é que o servo perderá muito de sua força de vontade, tornando-se uma espécie de zumbi (por esse motivo os faraós evitavam o uso deste ritual em sábios e escribas). O voluntário precisa ingerir diversas ervas especiais que limparão seu organismo durante sete dias e sete noites, nas quais ele terá de seguir os passos do ritual. Nesse período, sua mente e seu corpo passarão por mudanças violentas. É importante lembrar aqui que a pessoa deve ingerir as ervas por sua própria vontade, mesmo que desconheça os verdadeiros motivos para estar fazendo isso. Ao final da sétima noite, o servo é enterrado vivo por um mês e um dia, enquanto as ervas fazem o efeito final do poderoso ritual. Após o ritual, o servo cava sua saída da tumba com suas próprias garras, transformando-se em uma forma putrefata e aterrorizante. A pseudomúmia possui cerca de 2m de altura, é magra e esquelética mas envolta em trapos € pedaços de carne acinzentada. Seus músculos tornam-se cinza-escuro e a pele de seu corpo fica pálida e arroxeada, como a de um cadáver. Suas feições já não lembram mais em nada o servo que se submeteu ao ritual, A criatura possui garras com 15cm nos dedos e dentes capazes de penetrar fundo na carne dos inimigos. O servo mumificado obedecerá cegamente toda e qualquer ordem dada por seu criador, mesmo que esta resulte em sua destruição."
       ],
       "sections": [
         {
@@ -5296,9 +5638,10 @@
           "area": "rituais",
           "paragraphs": [
             "Controlar Humanos/Spiritum 7",
-            "Componentes: V, G, M (um voluntário, ervas raras, um cova, material para embalsamar um cadáver)",
-            "Tempo de Formulação: 1 semana (1* parte) e 1 mêse 1 dia (2º parte)",
+            "Componentes: V, G, M (um voluntário, ervas raras, uma cova, material para embalsamar um cadáver)",
+            "Tempo de Formulação: 1 semana (1ª parte) e 1 mês e 1 dia (2ª parte)",
             "Alcance: toque",
+            "Efeito: cria uma múmia",
             "Duração: permanente",
             "Teste de Resistência: nenhum"
           ]
@@ -5308,10 +5651,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Efeito: cria uma múmia",
-            "Este macabro ritual foi desenvolvido no Egito durante as primeiras dinastias. Consiste literalmente em mumificar e petrificar um criado, transformando-o em uma espécie de múmia que agirá como guarda-costas do faraó em tempos de necessidade. O maior problema deste ritual é que ele é permanente (mas a maioria dos feiticeiros malignos não se importará muito com a vida de seus servos) e o segundo problema é que o servo perderá muito de sua força de vontade, tornando-se uma espécie de zumbi (por esse motivo os faraós evitavam o uso deste ritual em sábios e escribas).",
-            "O voluntário precisa ingerir diversas ervas especiais que limparão seu organismo durante sete dias e sete noites, nas quais ele terá de seguir os passos do ritual. Nesse período, sua mente e seu corpo passarão por mudanças violentas. É importante lembrar aqui que a pessoa deve ingerir as ervas por sua própria vontade, mesmo que desconheça os verdadeiros motivos para estar fazendo isso. Ao final da sétima noite, o servo é enterrado vivo por um mês e um dia, enquanto as ervas fazem o efeito final do poderoso ritual.",
-            "Após o ritual, o servo cava sua saída da tumba com suas próprias garras, transformando-se em uma forma putrefata e aterrorizante. A pseudomúmia possui cerca de 2m de altura, é magra e esquelética mas envolta em trapos € pedaços de carne acinzentada. Seus músculos tornam-se cinza-escuro e a pele de seu corpo fica pálida e arroxeada, como a de um cadáver. Suas feições já não lembram mais em nada o servo que se submeteu ao ritual, A criatura possui garras com 15cm nos dedos e dentes capazes de penetrar fundo na carne dos inimigos. O servo mumificado obedecerá cegamente toda e qualquer ordem dada por seu criador, mesmo que esta resulte em sua destruição."
+            "Este macabro ritual foi desenvolvido no Egito durante as primeiras dinastias. Consiste literalmente em mumificar e petrificar um criado, transformando-o em uma espécie de múmia que agirá como guarda-costas do faraó em tempos de necessidade. O maior problema deste ritual é que ele é permanente (mas a maioria dos feiticeiros malignos não se importará muito com a vida de seus servos) e o segundo problema é que o servo perderá muito de sua força de vontade, tornando-se uma espécie de zumbi (por esse motivo os faraós evitavam o uso deste ritual em sábios e escribas). O voluntário precisa ingerir diversas ervas especiais que limparão seu organismo durante sete dias e sete noites, nas quais ele terá de seguir os passos do ritual. Nesse período, sua mente e seu corpo passarão por mudanças violentas. É importante lembrar aqui que a pessoa deve ingerir as ervas por sua própria vontade, mesmo que desconheça os verdadeiros motivos para estar fazendo isso. Ao final da sétima noite, o servo é enterrado vivo por um mês e um dia, enquanto as ervas fazem o efeito final do poderoso ritual. Após o ritual, o servo cava sua saída da tumba com suas próprias garras, transformando-se em uma forma putrefata e aterrorizante. A pseudomúmia possui cerca de 2m de altura, é magra e esquelética mas envolta em trapos € pedaços de carne acinzentada. Seus músculos tornam-se cinza-escuro e a pele de seu corpo fica pálida e arroxeada, como a de um cadáver. Suas feições já não lembram mais em nada o servo que se submeteu ao ritual, A criatura possui garras com 15cm nos dedos e dentes capazes de penetrar fundo na carne dos inimigos. O servo mumificado obedecerá cegamente toda e qualquer ordem dada por seu criador, mesmo que esta resulte em sua destruição."
           ]
         }
       ]
