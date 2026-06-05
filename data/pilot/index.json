@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T17:05:10",
+  "generatedAt": "2026-06-05T17:16:33",
   "sources": [
     {
       "source": "4killers",
@@ -112,6 +112,46 @@
       "areas": [
         "aprimoramentos",
         "cenarios_lore",
+        "regras_base"
+      ]
+    },
+    {
+      "source": "anjos-angelicos-sicarios",
+      "title": "Anjos - A Cidade de Prata - Angélicos Sicários",
+      "file": "anjos-angelicos-sicarios.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "itens_equipamentos",
+        "manobras_combate",
+        "poderes"
+      ]
+    },
+    {
+      "source": "anjos-cacadores-alados",
+      "title": "Anjos - Caçadores Alados",
+      "file": "anjos-cacadores-alados.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "criaturas_npcs",
+        "manobras_combate",
+        "poderes",
+        "racas"
+      ]
+    },
+    {
+      "source": "anjos-requiem-de-fe",
+      "title": "Anjos - Réquiem de Fé",
+      "file": "anjos-requiem-de-fe.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
+        "magias",
+        "poderes",
         "regras_base"
       ]
     },
