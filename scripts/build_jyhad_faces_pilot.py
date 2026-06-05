@@ -58,7 +58,7 @@ def extract_blocks():
                 continue
             push()
             cl = int(st[-1])
-            ct = normalize(t)
+            ct = dehyphenate(normalize(t))
             craw = []
             if cl == 1:
                 chapter = ct
@@ -75,6 +75,45 @@ def extract_blocks():
 def sec(id_, title, area, paras):
     return {"id": id_, "title": title, "area": area,
             "paragraphs": [p for p in paras if p and p.strip()]}
+
+
+DANGLING = re.compile(r"\b(das|dos|de|da|do)$", re.I)
+FALANGE_NAME = re.compile(r"^\S+\s+Falange\s+Orbis\b", re.I)
+PATRON_RE = re.compile(r"Sant[oa]:\s*(Sant[oa]\s+[A-ZÀ-Ý][\wáéíóúâêôãõç]+)")
+
+
+def canonical_name(heading, raw):
+    """Reconstruct a complete entity name from the (un-joined) raw lines.
+    Headings are often truncated and the real name (or its tail) is the first
+    body line (e.g. 'Observadores das' + '95 Teses')."""
+    body0 = raw[0].strip() if raw else ""
+    short_name = bool(body0) and len(body0.split()) <= 7 \
+        and not body0.rstrip().endswith((".", "!", "?")) and ":" not in body0
+    if short_name and (DANGLING.search(heading) or heading.endswith(("Santo", "Santa"))
+                       or len(heading.split()) <= 2):
+        return f"{heading} {body0}".strip()
+    if heading.startswith("Ordem"):
+        for l in raw[:6]:
+            m = PATRON_RE.search(l)
+            if m:
+                patron = m.group(1).strip()
+                if patron.split()[-1].lower() not in heading.lower():
+                    return f"{heading} de {patron}"
+                break
+    return heading
+
+
+def split_falanges(raw):
+    """An 'As Falanges*' block lists named falanges in its body; yield
+    (name, lines) per falange (names come from the body, not the heading)."""
+    idxs = [i for i, l in enumerate(raw) if FALANGE_NAME.match(l)]
+    if not idxs:
+        return [(raw[0].rstrip(":").strip(), raw)] if raw else []
+    out = []
+    for j, start in enumerate(idxs):
+        end = idxs[j + 1] if j + 1 < len(idxs) else len(raw)
+        out.append((raw[start].strip(), raw[start:end]))
+    return out
 
 
 def build_kit(title, body):
@@ -184,6 +223,8 @@ def build():
             continue
         if title.startswith(("Capítulo", "Suplemento")):
             continue
+        if title[:1].islower():
+            continue  # back-matter fragment (e.g. 'um netbook da')
         if title in ("Introdução",):
             lore_sections.append(sec("introducao", "Introdução", "cenarios_lore", body))
             continue
@@ -202,11 +243,22 @@ def build():
             if seen_char[base] > 1:
                 name = f"{base} ({seen_char[base]})"
             characters.append(build_character(name, raw))
+        elif chapter == "Capítulo 2" and title.startswith("As Falanges"):
+            # Block lists several named falanges; each is its own kit (with cost)
+            # or a lore section (without).
+            for fname, flines in split_falanges(raw):
+                flbody = join_body(flines)
+                if any(COST_RE.search(p) for p in flbody):
+                    kits.append(build_kit(fname, flbody))
+                else:
+                    lore_sections.append(sec(slugify(fname), fname, "cenarios_lore", flbody))
         elif chapter == "Capítulo 2" and has_cost:
-            kits.append(build_kit(title, body))
+            name = canonical_name(title, raw)
+            kits.append(build_kit(name, body))
         else:
             # lore section (mundane/magic orders, antagonists, angelic overviews)
-            lore_sections.append(sec(slugify(title), title, "cenarios_lore", body))
+            name = canonical_name(title, raw)
+            lore_sections.append(sec(slugify(name), name, "cenarios_lore", body))
 
     groups = [{
         "id": "lore-jyhad", "title": TITLE, "kind": "setting",

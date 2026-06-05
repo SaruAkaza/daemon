@@ -737,7 +737,7 @@ function renderPilotNpcDetail(item) {
     return found;
   };
 
-  renderSectionGroup("Custo", take((title) => title.includes("custo")), true);
+  renderSectionGroup("Atributos", take((title) => title.includes("atributo")), true);
   renderSectionGroup(
     "PerÃ­cias e Combate",
     take((title) => title.includes("pericia") || title.includes("combate") || title.includes("ataque")),
@@ -786,8 +786,24 @@ function renderAdventureDetail(item) {
   }
 }
 
-function renderGroupedDetail(item) {
-  for (const section of item.sections || []) {
+function npcSectionSort(a, b) {
+  const order = [
+    "atributos",
+    "pericias-e-combate",
+    "habilidades",
+    "ficha",
+    "historia",
+    "personalidade-e-objetivos",
+  ];
+  const aIndex = order.indexOf(a.id);
+  const bIndex = order.indexOf(b.id);
+  return (aIndex === -1 ? order.length : aIndex) - (bIndex === -1 ? order.length : bIndex);
+}
+
+function renderGroupedDetail(item, sortFunction = null) {
+  const sections = [...(item.sections || [])];
+  if (sortFunction) sections.sort(sortFunction);
+  for (const section of sections) {
     nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
   }
 }

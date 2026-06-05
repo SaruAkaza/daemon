@@ -69,10 +69,21 @@ LIGATURES = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl",
              "ﬃ": "ffi", "ﬄ": "ffl", "ﬅ": "ft", "ﬆ": "st"}
 
 
+_SPACED_RE = re.compile(r"(?:(?<![A-Za-zÀ-ÿ])[A-Za-zÀ-ÿ] ){3,}[A-Za-zÀ-ÿ](?![A-Za-zÀ-ÿ])")
+
+
+def collapse_spaced_letters(text: str) -> str:
+    """Collapse kerning artefacts like 'T e n d ê n c i a' -> 'Tendência'."""
+    text = _SPACED_RE.sub(lambda m: m.group(0).replace(" ", ""), text)
+    text = re.sub(r"\s+:\s+", ": ", text)
+    return text
+
+
 def normalize(text: str) -> str:
     text = text.replace("\xa0", " ")
     for lig, repl in LIGATURES.items():
         text = text.replace(lig, repl)
+    text = collapse_spaced_letters(text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 

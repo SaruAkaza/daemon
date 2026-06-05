@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T15:33:18",
+  "generatedAt": "2026-06-05T16:10:59",
   "source": "anjos-jyhad-faces-da-fe",
   "sourceFile": "Anjos Jyhad - Faces da Fé.docx",
   "sourcePath": "Livros\\word\\Anjos Jyhad - Faces da Fé.docx",
@@ -73,8 +73,8 @@
           ]
         },
         {
-          "id": "o-tem-plo-fiel",
-          "title": "O Tem-plo Fiel",
+          "id": "o-templo-fiel",
+          "title": "O Templo Fiel",
           "area": "cenarios_lore",
           "paragraphs": [
             "Os Pobres Cavaleiros de Christos e do Templo de Salomão foram fundados por Hugo de Payns com o apoio de São Bernardo de Clairvaux ainda no século XII com o objetivo de proteger os peregrinos nas cruzadas. Tornou-se uma das ordens mais poderosas do mundo após assumir o papel de banqueiros e procurar por relíquias perdidas no Oriente. Os templários eram, além de guerreiros, grandes credores de pessoas importantes na Europa. O rei Filipe o Belo, da França, era um deles e foi um dos que conspirou para a eliminação da ordem. A Inquisição agiu duramente contra os templários e o grupo foi extinto, passando a existir apenas como sociedade secreta.",
@@ -127,7 +127,7 @@
           "paragraphs": [
             "Se os Shallah Bene Elohim são conhecidos por suas técnicas militares, os Amitai Reuel são os pesquisadores secretos do judaísmo. Sugiram durante a Diáspora após das Guerras Judaicas contra o Império Romano. Eram sábios judeus que pretendiam manter uma ligação entre si, escrevendo sobre suas interpretações das Escrituras e fazendo novas pesquisas sobre outros documentos antigos. Estiveram presentes desde o início dos estudos cabalísticos e se tornaram mestres nas pesquisas sobre Demiurgo.",
             "Um Amitai Reuel é um pesquisador assíduo que não se contenta apenas em ler. Ele busca conhecimento e registra tudo para a ordem. Aliam-se com freqüência aos Shallah para conseguirem proteção quando correm o mundo a procura de documentos que ainda precisem ser descobertos ou que e s - tejam nas mãos das pessoas erradas.",
-            "Símbolo: Os Amitai Reuel se identifi- cam pelo d e s e n h o de um livro aberto dentro de um quadrado negro.",
+            "Símbolo: Os Amitai Reuel se identifi- cam pelo dese n h o de um livro aberto dentro de um quadrado negro.",
             "Organização: Os Amitai se reúnem nas casas da ordem, espalhadas por quase todo o mundo ocidental, principalmente nas capitais dos países. A liderança é feita pelo Conselho dos Anciões, seguida pelos responsáveis pelas casas."
           ]
         },
@@ -165,7 +165,7 @@
           "title": "Seitas, Sociedades e Ordens Angelicais",
           "area": "cenarios_lore",
           "paragraphs": [
-            "A H o s t e de Miguel As falanges do anjo Miguel sempre foram a principal divisão do exército celestial. São tropas de choque e de defesa ao mesmo tempo. Anjos treinados por pelo menos cem anos são selecionados para divisões específicas conforme a melhor de suas aptidões. Foi assim desde o início, quando anjos ainda nasciam do sopro divino e continuou sendo depois que se tornaram fruto da transformação de almas mortais.",
+            "A Hoste de Miguel As falanges do anjo Miguel sempre foram a principal divisão do exército celestial. São tropas de choque e de defesa ao mesmo tempo. Anjos treinados por pelo menos cem anos são selecionados para divisões específicas conforme a melhor de suas aptidões. Foi assim desde o início, quando anjos ainda nasciam do sopro divino e continuou sendo depois que se tornaram fruto da transformação de almas mortais.",
             "A história dos guerreiros do Príncipe da Guerra é tão antiga quanto a Cidade de Prata. Lutaram contra Lúcifer e foram derrotados quando eram maioria. Foi uma humilhação que manchou a existência das tropas por séculos. A disciplina militar e a determinação de Miguel, sempre alheio às fofocas e tramas dos outros anjos, mantiveram a autoestima. Quase todo o tempo livre dos anjos era ocupado com treinamento, orações ou meditação. O contato com outras falanges era evitado a não ser por ordens do Conselho. Quando surgiram as guerras contra outros panteões, o Príncipe da Guerra conduziu seus guerreiros para a vitória. O respeito foi finalmente restabelecido.",
             "O segundo grande evento que marcou os guerreiros de Miguel foi o surgimento do cristianismo. Até então, não havia muita diferença de crença entre os anjos, mas a aparição de Christos e sua posterior chegada na Cidade de Prata mudaram as crenças de muitos anjos. A guerra civil que quase explodiu entre os anjos não afetou por pouco a disciplina das falanges de Miguel. O Príncipe da Guerra percebeu que não poderia impedir seus guerreiros de seguir uma ou outra facção. Ao contrário de outros generais e Serafins, ele permitiu o culto livre, mas instalou regras. Antes da religião, havia o serviço para a Cidade de Prata e para a humanidade. Esse era o dever no qual se baseavam as falanges que significava seguir o primeiro e maior de todos os Mandamentos.",
             "Miguel dividiu suas falanges em cinco grandes divisões: Orbis Terris, Orbis Spiritum, Orbis Quid, Orbis Non Verba, Orbis Dei. Cada uma é liderada por um general, enquanto Miguel, o Grande General, coordena todos os movimentos a partir do castelo fortaleza da Cidade de Prata. Cada divisão tem um objetivo específico, mais ligado ao local onde atua do que à coordenação propriamente dita.",
@@ -174,8 +174,8 @@
           ]
         },
         {
-          "id": "as-falanges",
-          "title": "As Falanges",
+          "id": "orbis-terris",
+          "title": "Orbis Terris",
           "area": "cenarios_lore",
           "paragraphs": [
             "Orbis Terris A Orbis Terris está encarregada de guardar a Terra. É a segunda maior falange de Miguel.",
@@ -215,13 +215,23 @@
           ]
         },
         {
+          "id": "primeira-falange-orbis-dei-eles",
+          "title": "Primeira Falange Orbis Dei – Eles",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Primeira Falange Orbis Dei – Eles A Primeira Falanges Orbis Dei não tem nome, não tem símbolos, não tem nada além de sangue nas mãos para identificá-los. Foram a primeira falange comandada por Miguel, os primeiros guerreiros que Demiurgo criou para lutarem junto ao Príncipe da Guerra. Ainda existem alguns poucos entre eles que serviram durante a batalha contra Lúcifer e se recusaram a formar suas próprias hostes, considerando-se fracassados se não conseguiram vencer junto de seu comandante. Imaginam que parte da culpa da derrota seja deles e isso será corrigido durante o Apocalipse.",
+            "Os outros anjos os chamam apenas de Eles e somente sussurram quando os guerreiros mais antigos da Hoste de Miguel passam. A Primeira Falange é orgulhosa e sempre se manteve firme. Quando as falanges de Laoviah caíram, Eles se mantiveram quietos e com armas preparadas caso fossem convocados, ao contrário de muitos anjos que observaram assustados a perda de uma das mais importantes hostes da Cidade de Prata.",
+            "Aprimoramento: A falange é proibida para personagens jogadores. É preciso ter mais de mil e quinhetos anos para ser um d´Eles."
+          ]
+        },
+        {
           "id": "orbis-non-verba",
           "title": "Orbis Non Verba",
           "area": "cenarios_lore",
           "paragraphs": [
             "A Orbis Non Verba não existe. Ao menos não deveria existir. Ela deveria ser apenas uma facção oculta, um exército invisível dentro da Cidade de Prata. Sua missão é discutível e tornou-se uma polêmica em 1999 quando as falanges de Laoviah caíram e descobriu-se parte das missões secretas que o Conselho confiara ao Serafim da Destruição e do Castigo Final. Eram revelações terríveis como assassinar anjos, caçar criminosos até no Inferno, criar pequenos infernos para almas pecadoras que não poderiam cair nas mãos dos demônios.",
             "A Orbis Non Verba ressurgiu para preencher o vácuo deixado pela Hoste do Castigo e da Destruição. Ao menos foram o que os boatos disseram. Agora muitos sabem que a Orbis Non Verna realmente existe, mas o que ela realmente faz ainda é um mistério. É proibido perguntar sobre a Orbs Non Verba segundo um tratado assinado por todo o Conselho. Uma vez é considerado legal e o anjo recebe apenas um aviso, mas a segunda recebe punição da Inquisição Celestial. Como na Cidade de Prata as leis são rígidas e seguidas, as bocas se calam e agora a Orbis Non Verba é um boato para quase toda a cidade.",
-            "H o s t e d e Gabriel Tendência: cristã, muçulmana ou judaica O caos é a arma e a fraqueza das forças de Gabriel. Fraqueza é um adjetivo mais dito por seus inimigos e concorrentes e que o anjo não faz questão de evitar. Os críticos dizem que o mesmo caos que dá força ao Príncipe da Morte, causa uma organização que permitirá a vitória fácil de qualquer um que saiba como atacar. Gabriel concorda, porém em mais de dez mil anos, ninguém foi capaz de vencer suas falanges. Talvez isso faça compreender porque seu nome significa Força de Deus.",
+            "Hoste d e Gabriel Tendência: cristã, muçulmana ou judaica O caos é a arma e a fraqueza das forças de Gabriel. Fraqueza é um adjetivo mais dito por seus inimigos e concorrentes e que o anjo não faz questão de evitar. Os críticos dizem que o mesmo caos que dá força ao Príncipe da Morte, causa uma organização que permitirá a vitória fácil de qualquer um que saiba como atacar. Gabriel concorda, porém em mais de dez mil anos, ninguém foi capaz de vencer suas falanges. Talvez isso faça compreender porque seu nome significa Força de Deus.",
             "Gabriel controla seus soldados com tanta desenvoltura e sutileza que ninguém percebe a mão de ferro que está por trás das falanges. Ele é a morte que espreita, aquela que só é percebida quando é tarde demais. Do mesmo modo que os mortais vivem muitas vezes fingindo que a morte não existe ou preferindo não falar dela, os soldados de Gabriel dispõe de liberdade para tudo, mas conhecem a limitação e as ordens de seu líder.",
             "O exército comandado pelo Príncipe da Morte não é o mais numeroso da Cidade de Prata. Eles são uma elite pequena, formada por toda espécie de anjo. São as únicas falanges que permitem o intercâmbio entre anjos muçulmanos, judeus e cristãos sem que ocorram conflitos. Até mesmo os anjos apócrifos, Apocriphae, fazem parte dos servos de Gabriel sem reclamarem do apego que ele tem com a religião.",
             "Os anjos de Gabriel podem participar de qualquer outra sociedade da Cidade de Prata, fato que deixa alguns Serafins bastante curiosos e nervosos."
@@ -232,7 +242,7 @@
           "title": "Levitas Celestiais",
           "area": "cenarios_lore",
           "paragraphs": [
-            "T e n d ê n c i a : c r i s t ã protestante O dízimo aparece como uma cobrança justa na Bíblia. A tribo dos levitas, que, entre os hebreus, cuidava dos afazeres religiosos ainda antes do cativeiro da Babilônia, recebia doações dos moradores das vilas para que seu trabalho pudesse continuar. As igrejas cristãs aderiram ao costume e a taxa de 10% passou a ser cobrada. Entre os católicos, transformou-se em uma doação sem valor específico, mas assumiu um papel rígido entre os protestantes.",
+            "Tendência: cristã protestante O dízimo aparece como uma cobrança justa na Bíblia. A tribo dos levitas, que, entre os hebreus, cuidava dos afazeres religiosos ainda antes do cativeiro da Babilônia, recebia doações dos moradores das vilas para que seu trabalho pudesse continuar. As igrejas cristãs aderiram ao costume e a taxa de 10% passou a ser cobrada. Entre os católicos, transformou-se em uma doação sem valor específico, mas assumiu um papel rígido entre os protestantes.",
             "Os Levitas Celestial têm a missão de cobrar o dízimo de to-"
           ]
         },
@@ -414,8 +424,8 @@
           ]
         },
         {
-          "id": "magos",
-          "title": "Magos",
+          "id": "magos-austrohungaros",
+          "title": "Magos AustroHúngaros",
           "area": "cenarios_lore",
           "paragraphs": [
             "AustroHúngaros Judaísmo: Há séculos que dividimos os segredos da cabala com os hebreus. Ainda há muito o que aprendermos com eles.",
@@ -551,7 +561,7 @@
             "Os Mercadores possuem uma rede de contatos muito grande e uma doutrinação muito forte dos seguidores. Graças a essas ações, eles podem conectar os membros manipulados do culto e conseguir empregos, garantir o sucesso de empresas ou doutrinar a mente para que o único pensamento da pessoa seja conseguir mais dinheiro para levar para o líder. Cada vítima é um investimento em potencial.",
             "Símbolo: Um Mercador da Fé tem sempre uma moeda de ouro com a marca da religião em que atua no centro.",
             "Organi- zação:",
-            "O s Mercad o r e s possuem os mais variados níveis de organização, geralmente tomando áreas de influência para si. Cada um se infiltra em uma comunidade religiosa e a deturpa como quer, tendo outros como aliados secretos. Há sempre reuniões mensais entre os Mercadores de uma cidade ou estado. Os mais ricos tornam-se líderes proeminentes entre eles. Aqueles que conseguiram fundar suas próprias comunidades religiosas são os mais famosos pôr já terem um religião única em suas mãos.",
+            "O s Mercadores possuem os mais variados níveis de organização, geralmente tomando áreas de influência para si. Cada um se infiltra em uma comunidade religiosa e a deturpa como quer, tendo outros como aliados secretos. Há sempre reuniões mensais entre os Mercadores de uma cidade ou estado. Os mais ricos tornam-se líderes proeminentes entre eles. Aqueles que conseguiram fundar suas próprias comunidades religiosas são os mais famosos pôr já terem um religião única em suas mãos.",
             "Aprimoramento: Tornar-se um Mercador da Fé requer o investimento de pontos em Contatos, Aliados, Dinheiro e em aprimoramentos que permitam acesso a seitas ou instituições religiosas. A maioria deles tem altos níveis de Carisma, Força de Vontade e Inteligência, além de Perícias de Manipulação, Lábia, Teologia e Ocultismo."
           ]
         },
@@ -662,22 +672,14 @@
             "Os elohim possuem uma maior variedade de castas tratando de cuidar do rebanho celestial do judaísmo. Toda casta tem direito a se unir ao grupo. Um Elim inquisidor pode ser implacável, um Bene Elohim pode ser capaz de descobrir os segredos mais profundos e os Hayyoth chegam a parecer tão bondosos durante os interrogatórios que ninguém consegue esconder informações deles. Porém, a maioria dos inquisidores elohim são Seraphim, Ophanim e Elehim. A organização deles é quase desconhecida. Seus membros posuem pouco contato entre si e quase sempre reportam ao Ophanim mais próximo ou na torre celestial de Iofiel (Jyhad: Guerra Santa página 42).",
             "Um inquisidor não costuma ser um guerreiro. Ele costuma ser acompanhado por alguns desses quando precisa de uma ação mais dura contra pecadores."
           ]
-        },
-        {
-          "id": "um-netbook-da",
-          "title": "um netbook da",
-          "area": "cenarios_lore",
-          "paragraphs": [
-            "Visite www.rederpg.com.br para conhecer outros de nossos netbooks"
-          ]
         }
       ]
     }
   ],
   "sections": [
     {
-      "id": "kit-as-falanges-da-orbis-terris",
-      "title": "As Falanges da Orbis Terris",
+      "id": "kit-terceira-falange-orbis-terris-espadas-resplandecentes-da-ira-divina",
+      "title": "Terceira Falange Orbis Terris – Espadas Resplandecentes da Ira Divina",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
@@ -685,10 +687,7 @@
       "paragraphs": [
         "Terceira Falange Orbis Terris – Espadas Resplandecentes da Ira Divina Os anjos da Terceira falange Orbis Terris foram os primeiros a pisarem na Terra. Antigamente, eles desconheciam a clemência, o que fez Miguel usá-los em ataques apenas contra outros panteões, quando a guerra deveria ser violenta e o extermínio era a única resposta. Com o tempo, o número deles foi diminuindo e Miguel não reconstituiu a falange, começando apenas a substituir esses guerreiros de elite por anjos mais novos. Os poucos que restaram foram enviados para missões de liderança nas fronteiras com terras pagãs.",
         "Os guerreiros da Espada Resplandecente de hoje são anjos mais moderados, mas ainda guerreiros equipados com espadas douradas com licença para ferir mortais, ainda que não possam matá-los. Sempre usam armaduras pesadas e portam bestas.",
-        "Aprimoramento: Tornar-se um membro da Terceira Falange Orbis Terris exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 10 em uma Perícia com Armas Brancas (machado ou espada), Besta e Intimidação. Uma vez por dia, eles podem atacar em nome da ira divina, triplicando o dano.",
-        "Oitava Falange Orbis Terris – Os Lanceiros A divisão Orbis Terris enfrentou poucos grandes desafios na Terra. É verdade que já lutou contra vários panteões e perticipou de alguns combates contra forças de Tenebras, mas ainda não teve a oportunidade de muitos combates diretos contra as forças poderosas do Além. Uma única batalha contra um tenebriano foi suficiente para que reavaliassem suas estratégias. Os Lanceiros foram criados depois desse evento, quando Céu e Inferno precisaram se unir para destruir uma criatura de Tenebras. Os Lanceiros formaram um grupo de guerra pronto para receber a primeira onda de ataque e mantê-la afastada, ou empalada, enquanto as forças anteriores preparavam-se para acabar com os inimigos, uma vez que a força do ataque em carga fosse eliminada.",
-        "O dever dos Lanceiros é esperar. Eles observam o inimigo aumentarem de tamanho com a aproximação frenética. Esses anjos sabem que serão os primeiros a morrerem na batalha e é seu dever manter a posição para garantir a sobrevivência dos irmãos e a vitória. Os lanceiros sempre carregam consigo quatro armas básicas: uma lança grande de seis metros, uma lança menor, uma espada curta e uma faca. A primeira é usada apenas para esperar o ataque e deter a carga ainda de longe. A segunda pode ser usada em arremesso ou em combates mais próximos.",
-        "Aprimoramento: Tornar-se um membro da Oitava Falange Orbis Terris exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 10 em uma Perícia com Armas Brancas (lança). Também recebe um poder especial. Pode assumir uma forma de preparação de ataque. Nesse sentido, ele espera a aproximação do inimigo e tem a oportunidade de um ataque. Caso seja bem sucedido, provocará o triplo do dano, porém receberá um redutor de – 20% nos testes de defesa na rodada seguinte."
+        "Aprimoramento: Tornar-se um membro da Terceira Falange Orbis Terris exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 10 em uma Perícia com Armas Brancas (machado ou espada), Besta e Intimidação. Uma vez por dia, eles podem atacar em nome da ira divina, triplicando o dano."
       ],
       "sections": [
         {
@@ -706,7 +705,37 @@
           "paragraphs": [
             "Terceira Falange Orbis Terris – Espadas Resplandecentes da Ira Divina Os anjos da Terceira falange Orbis Terris foram os primeiros a pisarem na Terra. Antigamente, eles desconheciam a clemência, o que fez Miguel usá-los em ataques apenas contra outros panteões, quando a guerra deveria ser violenta e o extermínio era a única resposta. Com o tempo, o número deles foi diminuindo e Miguel não reconstituiu a falange, começando apenas a substituir esses guerreiros de elite por anjos mais novos. Os poucos que restaram foram enviados para missões de liderança nas fronteiras com terras pagãs.",
             "Os guerreiros da Espada Resplandecente de hoje são anjos mais moderados, mas ainda guerreiros equipados com espadas douradas com licença para ferir mortais, ainda que não possam matá-los. Sempre usam armaduras pesadas e portam bestas.",
-            "Aprimoramento: Tornar-se um membro da Terceira Falange Orbis Terris exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 10 em uma Perícia com Armas Brancas (machado ou espada), Besta e Intimidação. Uma vez por dia, eles podem atacar em nome da ira divina, triplicando o dano.",
+            "Aprimoramento: Tornar-se um membro da Terceira Falange Orbis Terris exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 10 em uma Perícia com Armas Brancas (machado ou espada), Besta e Intimidação. Uma vez por dia, eles podem atacar em nome da ira divina, triplicando o dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kit-oitava-falange-orbis-terris-os-lanceiros",
+      "title": "Oitava Falange Orbis Terris – Os Lanceiros",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "descricao",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Oitava Falange Orbis Terris – Os Lanceiros A divisão Orbis Terris enfrentou poucos grandes desafios na Terra. É verdade que já lutou contra vários panteões e perticipou de alguns combates contra forças de Tenebras, mas ainda não teve a oportunidade de muitos combates diretos contra as forças poderosas do Além. Uma única batalha contra um tenebriano foi suficiente para que reavaliassem suas estratégias. Os Lanceiros foram criados depois desse evento, quando Céu e Inferno precisaram se unir para destruir uma criatura de Tenebras. Os Lanceiros formaram um grupo de guerra pronto para receber a primeira onda de ataque e mantê-la afastada, ou empalada, enquanto as forças anteriores preparavam-se para acabar com os inimigos, uma vez que a força do ataque em carga fosse eliminada.",
+        "O dever dos Lanceiros é esperar. Eles observam o inimigo aumentarem de tamanho com a aproximação frenética. Esses anjos sabem que serão os primeiros a morrerem na batalha e é seu dever manter a posição para garantir a sobrevivência dos irmãos e a vitória. Os lanceiros sempre carregam consigo quatro armas básicas: uma lança grande de seis metros, uma lança menor, uma espada curta e uma faca. A primeira é usada apenas para esperar o ataque e deter a carga ainda de longe. A segunda pode ser usada em arremesso ou em combates mais próximos.",
+        "Aprimoramento: Tornar-se um membro da Oitava Falange Orbis Terris exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 10 em uma Perícia com Armas Brancas (lança). Também recebe um poder especial. Pode assumir uma forma de preparação de ataque. Nesse sentido, ele espera a aproximação do inimigo e tem a oportunidade de um ataque. Caso seja bem sucedido, provocará o triplo do dano, porém receberá um redutor de – 20% nos testes de defesa na rodada seguinte."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
             "Oitava Falange Orbis Terris – Os Lanceiros A divisão Orbis Terris enfrentou poucos grandes desafios na Terra. É verdade que já lutou contra vários panteões e perticipou de alguns combates contra forças de Tenebras, mas ainda não teve a oportunidade de muitos combates diretos contra as forças poderosas do Além. Uma única batalha contra um tenebriano foi suficiente para que reavaliassem suas estratégias. Os Lanceiros foram criados depois desse evento, quando Céu e Inferno precisaram se unir para destruir uma criatura de Tenebras. Os Lanceiros formaram um grupo de guerra pronto para receber a primeira onda de ataque e mantê-la afastada, ou empalada, enquanto as forças anteriores preparavam-se para acabar com os inimigos, uma vez que a força do ataque em carga fosse eliminada.",
             "O dever dos Lanceiros é esperar. Eles observam o inimigo aumentarem de tamanho com a aproximação frenética. Esses anjos sabem que serão os primeiros a morrerem na batalha e é seu dever manter a posição para garantir a sobrevivência dos irmãos e a vitória. Os lanceiros sempre carregam consigo quatro armas básicas: uma lança grande de seis metros, uma lança menor, uma espada curta e uma faca. A primeira é usada apenas para esperar o ataque e deter a carga ainda de longe. A segunda pode ser usada em arremesso ou em combates mais próximos.",
             "Aprimoramento: Tornar-se um membro da Oitava Falange Orbis Terris exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 10 em uma Perícia com Armas Brancas (lança). Também recebe um poder especial. Pode assumir uma forma de preparação de ataque. Nesse sentido, ele espera a aproximação do inimigo e tem a oportunidade de um ataque. Caso seja bem sucedido, provocará o triplo do dano, porém receberá um redutor de – 20% nos testes de defesa na rodada seguinte."
@@ -715,8 +744,8 @@
       ]
     },
     {
-      "id": "kit-as-falanges-da-orbis-spiritum",
-      "title": "As Falanges da Orbis Spiritum",
+      "id": "kit-decima-falange-orbis-spiritum-navegadores-do-sopro-de-deus",
+      "title": "Décima Falange Orbis Spiritum – Navegadores do Sopro de Deus",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
@@ -724,9 +753,7 @@
       "paragraphs": [
         "Décima Falange Orbis Spiritum – Navegadores do Sopro de Deus As formas de se movimentar em Spiritum são muitas. As falanges de Miguel utilizam as mais variadas, porém um grupo decidiu usar caravelas astrais idênticas às da época das grandes navegações na Terra, só que muito maiores. Algumas delas são tão grandes que comportam mais de mil anjos. Os anjos da Décima Falange Orbis Spiritum vivem nesses monstros construídos em Paradísia e carregados através dos ventos espirituais. Suas grandes velas não possuem desenhos e uma única bandeira onde está escrito Isaías 33:21.",
         "Os Navegadores estudam constantemente os ventos espirituais e ajudam no movimento das tropas Seus barcos só podem ser usados pelas falanges de Miguel. A não ser por esses guerreiros, só é permitido entrar nas caravelas com uma carta de permissão.",
-        "Aprimoramento: Tornar-se um membro da Décima Falange Orbis Spiritum exige o investimento de 1 Ponto de Aprimoramento. O anjo recebe um bônus de + 10 em Conhecimento (Spiritum) e Navegação.",
-        "Quinta Falange Orbis Spiritum – Tempestade Angelical A Tempestade Angelical é formada por anjos que se denominam Raios de Deus. São uma tropa de choque especializada em desestabilizar as forças inimigas. Eles penetram nos grupos de combate para causarem pânico e ferimentos. Aparecem em um vôo rápido e furioso, algumas vezes silenciosos, outras trovejando. Um membro da Tempestade Angelical está pronto para liberar poder de ataque e permitir que os aliados avancem logo depois para eliminarem os inimigos.",
-        "Aprimoramento: Tornar-se um membro da Quinta Falange Orbis Spiritum exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 3 na Iniciativa. Também adquire um poder especial de espalhar uma série de raios por uma vez por dia. A eletricidade não afeta outros anjos dessa mesma falange, mas qualquer outra criatura em um raio de dez metros sofre 2d6 de dano e deve testar CON para não ficar paralisada na rodada seguinte."
+        "Aprimoramento: Tornar-se um membro da Décima Falange Orbis Spiritum exige o investimento de 1 Ponto de Aprimoramento. O anjo recebe um bônus de + 10 em Conhecimento (Spiritum) e Navegação."
       ],
       "sections": [
         {
@@ -744,7 +771,36 @@
           "paragraphs": [
             "Décima Falange Orbis Spiritum – Navegadores do Sopro de Deus As formas de se movimentar em Spiritum são muitas. As falanges de Miguel utilizam as mais variadas, porém um grupo decidiu usar caravelas astrais idênticas às da época das grandes navegações na Terra, só que muito maiores. Algumas delas são tão grandes que comportam mais de mil anjos. Os anjos da Décima Falange Orbis Spiritum vivem nesses monstros construídos em Paradísia e carregados através dos ventos espirituais. Suas grandes velas não possuem desenhos e uma única bandeira onde está escrito Isaías 33:21.",
             "Os Navegadores estudam constantemente os ventos espirituais e ajudam no movimento das tropas Seus barcos só podem ser usados pelas falanges de Miguel. A não ser por esses guerreiros, só é permitido entrar nas caravelas com uma carta de permissão.",
-            "Aprimoramento: Tornar-se um membro da Décima Falange Orbis Spiritum exige o investimento de 1 Ponto de Aprimoramento. O anjo recebe um bônus de + 10 em Conhecimento (Spiritum) e Navegação.",
+            "Aprimoramento: Tornar-se um membro da Décima Falange Orbis Spiritum exige o investimento de 1 Ponto de Aprimoramento. O anjo recebe um bônus de + 10 em Conhecimento (Spiritum) e Navegação."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kit-quinta-falange-orbis-spiritum-tempestade-angelical",
+      "title": "Quinta Falange Orbis Spiritum – Tempestade Angelical",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "descricao",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Quinta Falange Orbis Spiritum – Tempestade Angelical A Tempestade Angelical é formada por anjos que se denominam Raios de Deus. São uma tropa de choque especializada em desestabilizar as forças inimigas. Eles penetram nos grupos de combate para causarem pânico e ferimentos. Aparecem em um vôo rápido e furioso, algumas vezes silenciosos, outras trovejando. Um membro da Tempestade Angelical está pronto para liberar poder de ataque e permitir que os aliados avancem logo depois para eliminarem os inimigos.",
+        "Aprimoramento: Tornar-se um membro da Quinta Falange Orbis Spiritum exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 3 na Iniciativa. Também adquire um poder especial de espalhar uma série de raios por uma vez por dia. A eletricidade não afeta outros anjos dessa mesma falange, mas qualquer outra criatura em um raio de dez metros sofre 2d6 de dano e deve testar CON para não ficar paralisada na rodada seguinte."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
             "Quinta Falange Orbis Spiritum – Tempestade Angelical A Tempestade Angelical é formada por anjos que se denominam Raios de Deus. São uma tropa de choque especializada em desestabilizar as forças inimigas. Eles penetram nos grupos de combate para causarem pânico e ferimentos. Aparecem em um vôo rápido e furioso, algumas vezes silenciosos, outras trovejando. Um membro da Tempestade Angelical está pronto para liberar poder de ataque e permitir que os aliados avancem logo depois para eliminarem os inimigos.",
             "Aprimoramento: Tornar-se um membro da Quinta Falange Orbis Spiritum exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 3 na Iniciativa. Também adquire um poder especial de espalhar uma série de raios por uma vez por dia. A eletricidade não afeta outros anjos dessa mesma falange, mas qualquer outra criatura em um raio de dez metros sofre 2d6 de dano e deve testar CON para não ficar paralisada na rodada seguinte."
           ]
@@ -752,8 +808,8 @@
       ]
     },
     {
-      "id": "kit-as-falanges-da-orbis-quid",
-      "title": "As Falanges da Orbis Quid",
+      "id": "kit-primeira-falange-orbis-quid-os-futuros-martires-de-deus",
+      "title": "Primeira Falange Orbis Quid – Os Futuros Mártires de Deus",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
@@ -761,9 +817,7 @@
       "paragraphs": [
         "Primeira Falange Orbis Quid – Os Futuros Mártires de Deus O nome mais famoso da Primeira Falange Orbis Quid é o do Protetore Arcanjo Benfiliel. Anjo cristão protestante, decidiu que precisava mostrar a seu novo general do que seus soldados eram capazes. Na primeira oportunidade de batalha, ofereceu a sua vida e a de colegas para avançar diretamente contra as linhas inimigas afim de quebrar suas defesas. Não se importava em ter o corpo cortado por lanças e garras ou atingindo por magia durante o avanço. Só pensava em seu sacrifício para dar cobertura para o avanço de outras falanges.",
         "Um membro da Primeira falange Orbis Quid existe para morrer em batalha, somente para isso, mais nada. Seus pensamentos são apenas o de se sacrificar para a vitória de Demiurgo. A falange é constantemente renovada por voluntários e até por anjos incompetentes que precisam desaparecer depressa. Quando o vôo da falange começa, os relutantes são colocados na frente e empurrados até as garras inimigas. Quase todos os anjos sobreviventes guardam grandes cicatrizes de guerra.",
-        "Aprimoramento: Tornar-se um membro da Primeira Falange Orbis Quid exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 3 a Iniciativa, + 2 no IP e +6 PV.",
-        "Segunda Falange Orbis Quid – Escudos Fiéis do Exército Divino Os grandes escudos da Segunda Falange Orbis Quid são um símbolo que deixa as criaturas do Abismo receosas. Eles defendem tão bem os ataques que são quase uma muralha que impede avanços em carga e ataques a distância. Os Escudos Fiéis são treinados para a defesa e para resistir à pressão feita pelos piores demônios. Para eles, o objetivo não é morrer pelo exército, mas viver e resistir, garantindo a sobrevivência de todos.",
-        "Aprimoramento: Tornar-se um membro da Segunda Falange Orbis Quid exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um escudo mágico de IP 4 e um poder de, uma vez por dia, criar uma barreira de proteção de 3 metros de raio. Essa tem a capacidade de evitar 3d6 pontos de dano."
+        "Aprimoramento: Tornar-se um membro da Primeira Falange Orbis Quid exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 3 a Iniciativa, + 2 no IP e +6 PV."
       ],
       "sections": [
         {
@@ -781,7 +835,36 @@
           "paragraphs": [
             "Primeira Falange Orbis Quid – Os Futuros Mártires de Deus O nome mais famoso da Primeira Falange Orbis Quid é o do Protetore Arcanjo Benfiliel. Anjo cristão protestante, decidiu que precisava mostrar a seu novo general do que seus soldados eram capazes. Na primeira oportunidade de batalha, ofereceu a sua vida e a de colegas para avançar diretamente contra as linhas inimigas afim de quebrar suas defesas. Não se importava em ter o corpo cortado por lanças e garras ou atingindo por magia durante o avanço. Só pensava em seu sacrifício para dar cobertura para o avanço de outras falanges.",
             "Um membro da Primeira falange Orbis Quid existe para morrer em batalha, somente para isso, mais nada. Seus pensamentos são apenas o de se sacrificar para a vitória de Demiurgo. A falange é constantemente renovada por voluntários e até por anjos incompetentes que precisam desaparecer depressa. Quando o vôo da falange começa, os relutantes são colocados na frente e empurrados até as garras inimigas. Quase todos os anjos sobreviventes guardam grandes cicatrizes de guerra.",
-            "Aprimoramento: Tornar-se um membro da Primeira Falange Orbis Quid exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 3 a Iniciativa, + 2 no IP e +6 PV.",
+            "Aprimoramento: Tornar-se um membro da Primeira Falange Orbis Quid exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de + 3 a Iniciativa, + 2 no IP e +6 PV."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kit-segunda-falange-orbis-quid-escudos-fieis-do-exercito-divino",
+      "title": "Segunda Falange Orbis Quid – Escudos Fiéis do Exército Divino",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "descricao",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Segunda Falange Orbis Quid – Escudos Fiéis do Exército Divino Os grandes escudos da Segunda Falange Orbis Quid são um símbolo que deixa as criaturas do Abismo receosas. Eles defendem tão bem os ataques que são quase uma muralha que impede avanços em carga e ataques a distância. Os Escudos Fiéis são treinados para a defesa e para resistir à pressão feita pelos piores demônios. Para eles, o objetivo não é morrer pelo exército, mas viver e resistir, garantindo a sobrevivência de todos.",
+        "Aprimoramento: Tornar-se um membro da Segunda Falange Orbis Quid exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um escudo mágico de IP 4 e um poder de, uma vez por dia, criar uma barreira de proteção de 3 metros de raio. Essa tem a capacidade de evitar 3d6 pontos de dano."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "3 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
             "Segunda Falange Orbis Quid – Escudos Fiéis do Exército Divino Os grandes escudos da Segunda Falange Orbis Quid são um símbolo que deixa as criaturas do Abismo receosas. Eles defendem tão bem os ataques que são quase uma muralha que impede avanços em carga e ataques a distância. Os Escudos Fiéis são treinados para a defesa e para resistir à pressão feita pelos piores demônios. Para eles, o objetivo não é morrer pelo exército, mas viver e resistir, garantindo a sobrevivência de todos.",
             "Aprimoramento: Tornar-se um membro da Segunda Falange Orbis Quid exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um escudo mágico de IP 4 e um poder de, uma vez por dia, criar uma barreira de proteção de 3 metros de raio. Essa tem a capacidade de evitar 3d6 pontos de dano."
           ]
@@ -789,16 +872,13 @@
       ]
     },
     {
-      "id": "kit-as-falanges-orbis-dei",
-      "title": "As Falanges Orbis Dei",
+      "id": "kit-vigesima-falange-orbis-dei-matadores-de-pagaos",
+      "title": "Vigésima Falange Orbis Dei – Matadores de Pagãos",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
       "sectionTitle": "Kit",
       "paragraphs": [
-        "Primeira Falange Orbis Dei – Eles A Primeira Falanges Orbis Dei não tem nome, não tem símbolos, não tem nada além de sangue nas mãos para identificá-los. Foram a primeira falange comandada por Miguel, os primeiros guerreiros que Demiurgo criou para lutarem junto ao Príncipe da Guerra. Ainda existem alguns poucos entre eles que serviram durante a batalha contra Lúcifer e se recusaram a formar suas próprias hostes, considerando-se fracassados se não conseguiram vencer junto de seu comandante. Imaginam que parte da culpa da derrota seja deles e isso será corrigido durante o Apocalipse.",
-        "Os outros anjos os chamam apenas de Eles e somente sussurram quando os guerreiros mais antigos da Hoste de Miguel passam. A Primeira Falange é orgulhosa e sempre se manteve firme. Quando as falanges de Laoviah caíram, Eles se mantiveram quietos e com armas preparadas caso fossem convocados, ao contrário de muitos anjos que observaram assustados a perda de uma das mais importantes hostes da Cidade de Prata.",
-        "Aprimoramento: A falange é proibida para personagens jogadores. É preciso ter mais de mil e quinhetos anos para ser um d´Eles.",
         "Vigésima Falange Orbis Dei – Matadores de Pagãos O nome é estranho para a falange. É uma demonstração de intolerância, uma afronta à harmonia religiosa. Mas a Vigésima Falange não se importa. Ainda não foram repreendidos por Miguel ou pelos generais da Orbis Dei. Reunindo anjos cristãos, elohim e malaks, a falange tem como meta especial caçar os pagãos e acabar com criaturas celestiais de outras religiões. As várias tropas da falange se especializam em lutar contra criaturas específicas de Paradísia.",
         "Miguel mantém a Vigésima Falange sob rígida observação. Eles não são proibidos, porém não podem sair da Cidade de Prata sem grande acompanhamento de anjos de possam controlar o ímpeto guerreiro e fanático deles. O Príncipe da Guerra apenas os libera no momento certo, deixando-os livres para descerem suas espadas sobre aqueles que chamam de “malditos pagãos”.",
         "Aprimoramento: Tornar-se um membro da Vigésima Falange Orbis Dei exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 10% no ataque e defesa, + 4 no dano quando lutando contra uma criatura específica. Cada ponto de aprimoramento a mais permite escolher mais uma criatura. Elas não poderão ser trocadas depois de escolhidas."
@@ -817,9 +897,6 @@
           "title": "Descrição",
           "area": "kits",
           "paragraphs": [
-            "Primeira Falange Orbis Dei – Eles A Primeira Falanges Orbis Dei não tem nome, não tem símbolos, não tem nada além de sangue nas mãos para identificá-los. Foram a primeira falange comandada por Miguel, os primeiros guerreiros que Demiurgo criou para lutarem junto ao Príncipe da Guerra. Ainda existem alguns poucos entre eles que serviram durante a batalha contra Lúcifer e se recusaram a formar suas próprias hostes, considerando-se fracassados se não conseguiram vencer junto de seu comandante. Imaginam que parte da culpa da derrota seja deles e isso será corrigido durante o Apocalipse.",
-            "Os outros anjos os chamam apenas de Eles e somente sussurram quando os guerreiros mais antigos da Hoste de Miguel passam. A Primeira Falange é orgulhosa e sempre se manteve firme. Quando as falanges de Laoviah caíram, Eles se mantiveram quietos e com armas preparadas caso fossem convocados, ao contrário de muitos anjos que observaram assustados a perda de uma das mais importantes hostes da Cidade de Prata.",
-            "Aprimoramento: A falange é proibida para personagens jogadores. É preciso ter mais de mil e quinhetos anos para ser um d´Eles.",
             "Vigésima Falange Orbis Dei – Matadores de Pagãos O nome é estranho para a falange. É uma demonstração de intolerância, uma afronta à harmonia religiosa. Mas a Vigésima Falange não se importa. Ainda não foram repreendidos por Miguel ou pelos generais da Orbis Dei. Reunindo anjos cristãos, elohim e malaks, a falange tem como meta especial caçar os pagãos e acabar com criaturas celestiais de outras religiões. As várias tropas da falange se especializam em lutar contra criaturas específicas de Paradísia.",
             "Miguel mantém a Vigésima Falange sob rígida observação. Eles não são proibidos, porém não podem sair da Cidade de Prata sem grande acompanhamento de anjos de possam controlar o ímpeto guerreiro e fanático deles. O Príncipe da Guerra apenas os libera no momento certo, deixando-os livres para descerem suas espadas sobre aqueles que chamam de “malditos pagãos”.",
             "Aprimoramento: Tornar-se um membro da Vigésima Falange Orbis Dei exige o investimento de 2 Pontos de Aprimoramento. O anjo recebe um bônus de + 10% no ataque e defesa, + 4 no dano quando lutando contra uma criatura específica. Cada ponto de aprimoramento a mais permite escolher mais uma criatura. Elas não poderão ser trocadas depois de escolhidas."
@@ -828,8 +905,8 @@
       ]
     },
     {
-      "id": "kit-as-falanges",
-      "title": "As Falanges",
+      "id": "kit-ishmerai",
+      "title": "Ishmerai",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
@@ -997,8 +1074,8 @@
       ]
     },
     {
-      "id": "kit-ordem-de-santo",
-      "title": "Ordem de Santo",
+      "id": "kit-ordem-de-santo-agostinho",
+      "title": "Ordem de Santo Agostinho",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
@@ -1032,8 +1109,8 @@
       ]
     },
     {
-      "id": "kit-ordem-da-fe",
-      "title": "Ordem da Fé",
+      "id": "kit-ordem-da-fe-de-santa-isabel",
+      "title": "Ordem da Fé de Santa Isabel",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
@@ -1098,14 +1175,14 @@
       ]
     },
     {
-      "id": "kit-observadores-das",
-      "title": "Observadores das",
+      "id": "kit-observadores-das-95-teses",
+      "title": "Observadores das 95 Teses",
       "area": "kits",
       "kind": "kit",
       "sectionId": "descricao",
       "sectionTitle": "Kit",
       "paragraphs": [
-        "95 Teses T e n d ê n c i a : c r i s t ã protestante Os Observadores das 95 Teses estão entre os principais opositores dos anjos católicos tanto na Cidade de Prata quanto na Terra. O nome da ordem remata as 95 testes apresentadas por Martinho Lutero. Não ficam contentes apenas em negarem os santos. Para um Observador das Teses, é preciso denunciar o erro. Eles perseguem, andam por tribunais e tentam demonstrar como é a verdadeira fé.",
+        "95 Teses Tendência: cristã protestante Os Observadores das 95 Teses estão entre os principais opositores dos anjos católicos tanto na Cidade de Prata quanto na Terra. O nome da ordem remata as 95 testes apresentadas por Martinho Lutero. Não ficam contentes apenas em negarem os santos. Para um Observador das Teses, é preciso denunciar o erro. Eles perseguem, andam por tribunais e tentam demonstrar como é a verdadeira fé.",
         "A teologia é bem conhecida desses anjos. Eles são excelentes na arte de debater e já provocaram grandes conflitos burocráticos durante suas acusações. Aliaram-se à Inquisição Celestial para ganharem apoio quando estão em uma luta teológica, conseguindo uma punição maior para seus inimigos. aos olhos de muitos, podem parecer anjos irascíveis, porém, como todos do Céu, estão apenas lutando para a manutenção do que acreditam e do que os levou á presença de Demiurgo.",
         "Aprimoramento: Tornar-se um Observador das Teses exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de 20% em Teologia e Lábia. Também recebem o poder de deduzir qual a religião que um anjo segue."
       ],
@@ -1123,7 +1200,7 @@
           "title": "Descrição",
           "area": "kits",
           "paragraphs": [
-            "95 Teses T e n d ê n c i a : c r i s t ã protestante Os Observadores das 95 Teses estão entre os principais opositores dos anjos católicos tanto na Cidade de Prata quanto na Terra. O nome da ordem remata as 95 testes apresentadas por Martinho Lutero. Não ficam contentes apenas em negarem os santos. Para um Observador das Teses, é preciso denunciar o erro. Eles perseguem, andam por tribunais e tentam demonstrar como é a verdadeira fé.",
+            "95 Teses Tendência: cristã protestante Os Observadores das 95 Teses estão entre os principais opositores dos anjos católicos tanto na Cidade de Prata quanto na Terra. O nome da ordem remata as 95 testes apresentadas por Martinho Lutero. Não ficam contentes apenas em negarem os santos. Para um Observador das Teses, é preciso denunciar o erro. Eles perseguem, andam por tribunais e tentam demonstrar como é a verdadeira fé.",
             "A teologia é bem conhecida desses anjos. Eles são excelentes na arte de debater e já provocaram grandes conflitos burocráticos durante suas acusações. Aliaram-se à Inquisição Celestial para ganharem apoio quando estão em uma luta teológica, conseguindo uma punição maior para seus inimigos. aos olhos de muitos, podem parecer anjos irascíveis, porém, como todos do Céu, estão apenas lutando para a manutenção do que acreditam e do que os levou á presença de Demiurgo.",
             "Aprimoramento: Tornar-se um Observador das Teses exige o investimento de 3 Pontos de Aprimoramento. O anjo recebe um bônus de 20% em Teologia e Lábia. Também recebem o poder de deduzir qual a religião que um anjo segue."
           ]
@@ -2789,7 +2866,7 @@
   ],
   "areaCounts": {
     "cenarios_lore": 1,
-    "kits": 21,
+    "kits": 24,
     "criaturas_npcs": 24
   }
 }
