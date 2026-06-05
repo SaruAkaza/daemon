@@ -145,6 +145,14 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
+.panel-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+}
+
 .panel-head h2 {
   font-size: 0.88rem;
   text-transform: uppercase;
@@ -344,6 +352,12 @@ button:focus-visible {
 
 .filter-open {
   min-width: 112px;
+}
+
+.filter-open.compact {
+  min-width: 82px;
+  min-height: 30px;
+  padding: 4px 8px;
 }
 
 .filter-open:hover,

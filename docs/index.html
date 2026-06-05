@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daemon Pilotos</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20260605-brand-category-select">
+    <link rel="stylesheet" href="assets/styles.css?v=20260605-global-book-category-filters">
   </head>
   <body>
     <header class="topbar">
@@ -42,7 +42,10 @@
           <section class="segments-panel">
             <div class="panel-head">
               <h2 id="segmentsTitle">Itens</h2>
-              <span id="segmentsCount"></span>
+              <div class="panel-actions">
+                <span id="segmentsCount"></span>
+                <button class="filter-open compact" id="categoryFilterButton" type="button" hidden>Filtros</button>
+              </div>
             </div>
             <div class="segments-list" id="segmentsList" role="listbox" aria-label="Itens da categoria"></div>
           </section>
@@ -120,6 +123,6 @@
       </section>
     </template>
 
-    <script src="assets/app.js?v=20260605-brand-category-select" type="module"></script>
+    <script src="assets/app.js?v=20260605-global-book-category-filters" type="module"></script>
   </body>
 </html>

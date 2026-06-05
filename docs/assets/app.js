@@ -44,6 +44,10 @@ const state = {
     areas: new Set(),
     kinds: new Set(),
   },
+  globalFilters: {
+    books: new Set(),
+  },
+  filterMode: "category",
   collapsedGroups: new Set(),
   draftFilters: null,
   filterSearch: "",
@@ -62,8 +66,10 @@ const nodes = {
   themeToggle: document.querySelector("#themeToggle"),
   refreshButton: document.querySelector("#refreshButton"),
   filterOpenButton: document.querySelector("#filterOpenButton"),
+  categoryFilterButton: document.querySelector("#categoryFilterButton"),
   filterBackdrop: document.querySelector("#filterBackdrop"),
   filterPanel: document.querySelector("#filterPanel"),
+  filterTitle: document.querySelector("#filterTitle"),
   filterCloseButton: document.querySelector("#filterCloseButton"),
   filterSearchInput: document.querySelector("#filterSearchInput"),
   filterGroups: document.querySelector("#filterGroups"),
@@ -227,8 +233,9 @@ function buildItems(book) {
 }
 
 function categoryCount(area) {
-  if (area === "all") return state.items.length;
-  return state.areaCounts.get(area) || 0;
+  const items = globalScopedItems();
+  if (area === "all") return items.length;
+  return items.filter((item) => item.area === area).length;
 }
 
 function countBy(items, getKey) {
@@ -250,9 +257,10 @@ function refreshAreaCounts() {
 }
 
 function scopedFilterItems() {
-  if (!state.selectedArea) return state.items;
-  if (state.selectedArea === "all") return state.items;
-  return state.items.filter((item) => item.area === state.selectedArea);
+  const items = globalScopedItems();
+  if (!state.selectedArea) return items;
+  if (state.selectedArea === "all") return items;
+  return items.filter((item) => item.area === state.selectedArea);
 }
 
 function sectionByTitle(item, title) {
@@ -330,24 +338,36 @@ function optionListFromCounts(counts) {
     .sort((a, b) => a.label.localeCompare(b.label, "pt-BR", { sensitivity: "base" }));
 }
 
+function globalFilterGroupsData() {
+  const bookCounts = countBy(state.items, (item) => item.book.source);
+  return [{
+    id: "books",
+    title: "Livros",
+    options: state.books
+      .map((book) => ({ id: book.source, label: book.title, count: bookCounts.get(book.source) || 0 }))
+      .filter((option) => option.count > 0)
+      .sort((a, b) => a.label.localeCompare(b.label, "pt-BR", { sensitivity: "base" })),
+  }];
+}
+
+function globalScopedItems(filters = state.globalFilters) {
+  const groups = globalFilterGroupsData();
+  const booksGroup = groups.find((group) => group.id === "books");
+  const selected = filters.books;
+  if (!booksGroup || !selected || selected.size === booksGroup.options.length) return state.items;
+  if (selected.size === 0) return [];
+  return state.items.filter((item) => selected.has(item.book.source));
+}
+
 function filterGroupsData() {
-  const cacheKey = `${state.selectedArea || ""}:${state.items.length}`;
+  const globalBooks = [...(state.globalFilters.books || [])].sort().join(",");
+  const cacheKey = `${state.selectedArea || ""}:${state.items.length}:${globalBooks}`;
   if (state.filterGroupsCache && state.filterGroupsCacheKey === cacheKey) {
     return state.filterGroupsCache;
   }
 
   const scopedItems = scopedFilterItems();
-  const bookCounts = countBy(scopedItems, (item) => item.book.source);
-  const groups = [
-    {
-      id: "books",
-      title: "Livros",
-      options: state.books
-        .map((book) => ({ id: book.source, label: book.title, count: bookCounts.get(book.source) || 0 }))
-        .filter((option) => option.count > 0)
-        .sort((a, b) => a.label.localeCompare(b.label, "pt-BR", { sensitivity: "base" })),
-    }
-  ];
+  const groups = [];
 
   if (!state.selectedArea || state.selectedArea === "all") {
     const areaCounts = countBy(scopedItems, (item) => item.area);
@@ -417,9 +437,13 @@ function filterGroupsData() {
   return state.filterGroupsCache;
 }
 
-function defaultFilters() {
+function activeFilterGroupsData() {
+  return state.filterMode === "global" ? globalFilterGroupsData() : filterGroupsData();
+}
+
+function defaultFilters(groups = filterGroupsData()) {
   return Object.fromEntries(
-    filterGroupsData().map((group) => [group.id, new Set(group.options.map((option) => option.id))]),
+    groups.map((group) => [group.id, new Set(group.options.map((option) => option.id))]),
   );
 }
 
@@ -427,9 +451,9 @@ function cloneFilters(filters) {
   return Object.fromEntries(Object.entries(filters || {}).map(([key, value]) => [key, new Set(value)]));
 }
 
-function filtersWithDefaults(filters) {
+function filtersWithDefaults(filters, groups = filterGroupsData()) {
   return {
-    ...defaultFilters(),
+    ...defaultFilters(groups),
     ...cloneFilters(filters),
   };
 }
@@ -451,11 +475,10 @@ function filterAllowsAny(groupId, values, groupsById = null) {
   return values.some((value) => selected.has(value));
 }
 
-function selectedFilterCount() {
-  const groups = filterGroupsData();
+function selectedFilterCount(filters = state.filters, groups = filterGroupsData()) {
   let active = 0;
   for (const group of groups) {
-    const selected = state.filters[group.id];
+    const selected = filters[group.id];
     if (selected && selected.size > 0 && selected.size < group.options.length) active += selected.size;
   }
   return active;
@@ -530,11 +553,9 @@ function visibleItems() {
   if (!state.selectedArea) return [];
   const query = normalize(state.query);
   const groupsById = new Map(filterGroupsData().map((group) => [group.id, group]));
-  return state.items.filter((item) => {
+  return globalScopedItems().filter((item) => {
     if (state.selectedArea !== "all" && item.area !== state.selectedArea) return false;
     if (state.section !== "all" && item.kind === "npc" && item.sectionId !== state.section) return false;
-    if (!filterAllows("books", item.book.source, state.filters, groupsById)) return false;
-    if (!filterAllows("areas", item.area, state.filters, groupsById)) return false;
     if (!filterAllows("kinds", item.kind || "section", state.filters, groupsById)) return false;
     if (!filterAllows("polarity", itemPolarityOption(item), state.filters, groupsById)) return false;
     if (!filterAllowsAny("costs", itemCostOptions(item), groupsById)) return false;
@@ -789,7 +810,7 @@ function setDraftGroup(groupId, values) {
 function renderFilterPanel() {
   if (!state.draftFilters) return;
   clearNode(nodes.filterGroups);
-  const groups = filterGroupsData();
+  const groups = activeFilterGroupsData();
   const search = normalize(state.filterSearch);
   let selectedVisible = 0;
   let totalVisible = 0;
@@ -841,10 +862,14 @@ function renderFilterPanel() {
   nodes.filterSummary.textContent = `${formatNumber(selectedVisible)} de ${formatNumber(totalVisible)} opções visíveis selecionadas`;
 }
 
-function openFilters() {
-  state.draftFilters = filtersWithDefaults(state.filters);
+function openFilters(mode = "category") {
+  state.filterMode = mode;
+  const groups = activeFilterGroupsData();
+  const sourceFilters = mode === "global" ? state.globalFilters : state.filters;
+  state.draftFilters = filtersWithDefaults(sourceFilters, groups);
   state.filterSearch = "";
   nodes.filterSearchInput.value = "";
+  nodes.filterTitle.textContent = mode === "global" ? "Filtrar livros" : `Filtros de ${areaLabel(state.selectedArea)}`;
   nodes.filterBackdrop.hidden = false;
   renderFilterPanel();
   nodes.filterSearchInput.focus();
@@ -857,7 +882,7 @@ function closeFilters() {
 }
 
 function setAllDraftFilters(selected) {
-  const next = defaultFilters();
+  const next = defaultFilters(activeFilterGroupsData());
   if (!selected) {
     for (const key of Object.keys(next)) next[key].clear();
   }
@@ -866,17 +891,29 @@ function setAllDraftFilters(selected) {
 }
 
 function applyFilters() {
-  state.filters = cloneFilters(state.draftFilters);
+  if (state.filterMode === "global") {
+    state.globalFilters = cloneFilters(state.draftFilters);
+    invalidateFilterGroups();
+    if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
+    state.filters = filtersWithDefaults({});
+  } else {
+    state.filters = cloneFilters(state.draftFilters);
+  }
   state.selectedItemId = null;
   closeFilters();
   render();
 }
 
 function renderFilterButton() {
-  const active = selectedFilterCount();
-  nodes.filterOpenButton.textContent = active ? `Filtros (${formatNumber(active)})` : "Filtros";
-  nodes.filterOpenButton.classList.toggle("active", active > 0);
+  const globalActive = selectedFilterCount(state.globalFilters, globalFilterGroupsData());
+  nodes.filterOpenButton.textContent = globalActive ? `Livros (${formatNumber(globalActive)})` : "Livros";
+  nodes.filterOpenButton.classList.toggle("active", globalActive > 0);
   nodes.filterOpenButton.hidden = false;
+
+  const categoryActive = selectedFilterCount(state.filters, filterGroupsData());
+  nodes.categoryFilterButton.textContent = categoryActive ? `Filtros (${formatNumber(categoryActive)})` : "Filtros";
+  nodes.categoryFilterButton.classList.toggle("active", categoryActive > 0);
+  nodes.categoryFilterButton.hidden = !state.selectedArea;
 }
 
 function render() {
@@ -896,6 +933,7 @@ async function load() {
   state.items = state.books.flatMap(buildItems).map(prepareItem);
   refreshAreaCounts();
   invalidateFilterGroups();
+  state.globalFilters = filtersWithDefaults(state.globalFilters, globalFilterGroupsData());
   state.filters = filtersWithDefaults(state.filters);
   if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
   render();
@@ -940,7 +978,8 @@ nodes.themeToggle.addEventListener("click", () => {
   applyTheme(nextTheme);
 });
 
-nodes.filterOpenButton.addEventListener("click", openFilters);
+nodes.filterOpenButton.addEventListener("click", () => openFilters("global"));
+nodes.categoryFilterButton.addEventListener("click", () => openFilters("category"));
 nodes.filterCloseButton.addEventListener("click", closeFilters);
 nodes.filterCancelButton.addEventListener("click", closeFilters);
 
