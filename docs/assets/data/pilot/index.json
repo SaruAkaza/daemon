@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-04T22:26:03",
+  "generatedAt": "2026-06-05T01:31:47",
   "sources": [
     {
       "source": "4killers",
@@ -99,6 +99,7 @@
       "file": "anime-rpg-supers-monstros-viloes.json",
       "status": "pilot_review",
       "areas": [
+        "classes",
         "criaturas_npcs",
         "regras_base"
       ]
@@ -126,6 +127,19 @@
         "itens_equipamentos",
         "poderes",
         "regras_base"
+      ]
+    },
+    {
+      "source": "anoes",
+      "title": "Anões",
+      "file": "anoes.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "classes",
+        "itens_equipamentos",
+        "racas"
       ]
     }
   ]

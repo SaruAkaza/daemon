@@ -1,13 +1,14 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-04T22:26:01",
+  "generatedAt": "2026-06-04T23:19:53",
   "source": "anime-rpg-supers-monstros-viloes",
   "sourceFile": "Anime RPG - Supers - Monstros e Vilões.docx",
-  "sourcePath": "Livros/word/Anime RPG - Supers - Monstros e Vilões.docx",
+  "sourcePath": "Livros/word/feito/Anime RPG - Supers - Monstros e Vilões.docx",
   "title": "Anime RPG - Supers - Monstros e Vilões",
   "summary": "Suplemento de ameaças para Anime RPG/SUPERS com humanos comuns, criminosos, animais, criaturas fantásticas, mortos-vivos, demônios e robôs para uso como NPCs ou monstros.",
   "areas": [
+    "classes",
     "criaturas_npcs",
     "regras_base"
   ],
@@ -49,55 +50,56 @@
             "Espero que gostem do resultado final, e quem sabe talvez outro dia possamos ter uma nova versão desse livro.",
             "Humanos são geralmente 90% das coisas que os super heróis encontrarão em uma campanha de SUPERS. Eles literalmente povoam o mundo, sendo em cidades ou fazendas. Os humanos exercem todo tipo de função e podem ser úteis para mil e uma utilidades para a campanha. Alguns humanos podem ser pacíficos, outros hostis. Podem tanto ajudar quanto atrapalhar ou temer os heróis. Pois uma vez que os heróis geralmente também sejam humanos, o perigo pode vir de qualquer um. A seguir um guia de algumas funções que humanos exercem que mais podem vir a ser úteis em uma campanha de SUPERS."
           ]
-        },
-        {
-          "id": "necromante",
-          "title": "Necromante",
-          "area": "regras_base",
-          "paragraphs": [
-            "Ver Mago.",
-            "Ver Feiticeiro Maligno (Capítulo 6).",
-            "Um necromante é um mago que se especializou em estudar a morte, ele é um manipulador das artes negras da magia, seu poder envolve tudo sobre a podridão e o mal estar, o mal circula este feiticeiro que às vezes se deixa dominar completamente ou, em casos raros, luta para não ser absorvido pela maldade. Os necromantes realizam experiências macabras em seus covis diabólicos, eles trazem os mortos de volta a vida como esqueletos ou zumbis para servirem como seus escravos. Alguns veneram algum deus antigo e esquecido e às vezes realizam sacrifícios em seu nome. Um necromante se especializa nos caminhos Trevas, Demônios (Arkanun), Espíritos (Spiritum) e Humanos.",
-            "Para qualquer fim, as perícias mais utilizadas por necromantes são: Ciências (Herbalismo), Ciências Proibidas (Alquimia, Astrologia, Rituais), Falsificação, Idiomas (Grego, Hebraico, Latim), manipulação (Intimidação, Tortura). Com valores entre 30% a 85%."
-          ]
-        },
-        {
-          "id": "reporter",
-          "title": "Repórter",
-          "area": "regras_base",
-          "paragraphs": [
-            "“Estamos aqui ao vivo do canal 3 onde a Trindade trava uma dura batalha contra o Senhor das Trevas”.",
-            "Ver Jornalista",
-            "Um repórter é um jornalista, porém com um câmeramen do lado."
-          ]
-        },
-        {
-          "id": "soldado-das-forcas-especiais",
-          "title": "Soldado Das Forças Especiais",
-          "area": "regras_base",
-          "paragraphs": [
-            "“Pede pra sair!!!”",
-            "Estatísticas iguais ao Soldado, porém utiliza um colete de kevlar de 18 camadas, fornecendo IP: 5 (cinético) e 9 (balístico).",
-            "Diferente do soldado comum e atua somente em situações de guerra ou conflitos, o soldado das forças especiais é treinado para missões especiais. Geralmente, um soldado das forças especiais é convocado para serviços como invasão, infiltração, reconhecimento, salvamento e combate. Um soldado da Tropa de Choque, S.W.A.T. ou de contenção de super-vilões são soldados das forças especiais.",
-            "Para qualquer fim, as perícias mais utilizadas por soldados das forças especiais são: Camuflagem, Condução (Carros, Lanchas, Barcos, Helicópteros), Escutar, Esportes (Mergulho, Paraquedismo), Explosivos, Furtividade, Idiomas (Código Morse), Manipulação (Interrogatório, Intimidação, Liderança), Rastreio, Sobrevivência (Todas). Com valores entre 30% a 80%."
-          ]
-        },
-        {
-          "id": "terrorista",
-          "title": "Terrorista",
-          "area": "regras_base",
-          "paragraphs": [
-            "“250 milhões em 3 horas ou metade da cidade vai pros ares”.",
-            "As características de um terrorista podem variar muito, mas geralmente são valores que vão de Físicos 06 a 18, e Mentais: 13-18, às vezes muito mais.",
-            "Um terrorista utiliza o medo, o terror, para obter algo, na maioria dos casos, terroristas buscam algo que deseja de uma nação, de um país. Cada terrorista possui um objetivo, uns desejam libertar prisioneiros, outros desejam espalhar uma ideologia, outros desejam simplesmente dinheiro, alguns vingança, outros por questões religiosas, outros vêem certo país como ameaça e apenas deseja destruí-lo, enfim, os motivos de um terrorista podem ser muito variados. Os terroristas simplesmente podem vir de qualquer lugar: um árabe religiosamente fanático, um comandante que se achou traído pelo seu país, um lunático que deseja enriquecer, um super-vilão que deseja dominar o mundo. Seus métodos de espalhar o terror também são muito variados: bombas, mísseis, vírus, aviões seqüestrados, reféns, homens-bombas, armas alienígenas, eco terrorismo, poderes de dominação. Geralmente os terroristas não atuam sozinhos, podem possuir dezenas ou milhares de capangas que o auxiliam em seu louco objetivo.",
-            "Para qualquer fim, as perícias mais comuns para os terroristas são: Armadilhas, Avaliação de Objetos, Disfarce, Engenharia (Todas), Etiqueta, Explosivos, Idiomas/Línguas (todas), Informática (Todas), Manipulação (Empatia, Lábia, Liderança, Manha, Tortura), Mecânica, Negociação (Todas), Pesquisa. Com valores entre 45% a 100%.",
-            "Este capítulo se dedica aos animais que encontramos normalmente na Terra. Muitos animais, mesmo os carnívoros, só atacam em casos de alimentação, quando se sentem ameaçados ou para proteger seus filhotes. Eles agem por instinto e não sabem raciocinar, porém podem ser instruídos e serem ensinados alguns truques com as perícias Treinamento de Animais e Doma. Os animais descritos aqui são aqueles que mais tem chances de interagir com os personagem de alguma forma. Seja um bando de leões caçando comida ou como animais de estimação, controlados ou que auxiliem em combate ou não."
-          ]
         }
       ]
     }
   ],
-  "sections": [],
+  "sections": [
+    {
+      "id": "necromante",
+      "title": "Necromante",
+      "area": "classes",
+      "paragraphs": [
+        "Ver Mago.",
+        "Ver Feiticeiro Maligno (Capítulo 6).",
+        "Um necromante é um mago que se especializou em estudar a morte, ele é um manipulador das artes negras da magia, seu poder envolve tudo sobre a podridão e o mal estar, o mal circula este feiticeiro que às vezes se deixa dominar completamente ou, em casos raros, luta para não ser absorvido pela maldade. Os necromantes realizam experiências macabras em seus covis diabólicos, eles trazem os mortos de volta a vida como esqueletos ou zumbis para servirem como seus escravos. Alguns veneram algum deus antigo e esquecido e às vezes realizam sacrifícios em seu nome. Um necromante se especializa nos caminhos Trevas, Demônios (Arkanun), Espíritos (Spiritum) e Humanos.",
+        "Para qualquer fim, as perícias mais utilizadas por necromantes são: Ciências (Herbalismo), Ciências Proibidas (Alquimia, Astrologia, Rituais), Falsificação, Idiomas (Grego, Hebraico, Latim), manipulação (Intimidação, Tortura). Com valores entre 30% a 85%."
+      ]
+    },
+    {
+      "id": "reporter",
+      "title": "Repórter",
+      "area": "classes",
+      "paragraphs": [
+        "“Estamos aqui ao vivo do canal 3 onde a Trindade trava uma dura batalha contra o Senhor das Trevas”.",
+        "Ver Jornalista",
+        "Um repórter é um jornalista, porém com um câmeramen do lado."
+      ]
+    },
+    {
+      "id": "soldado-das-forcas-especiais",
+      "title": "Soldado das Forças Especiais",
+      "area": "classes",
+      "paragraphs": [
+        "“Pede pra sair!!!”",
+        "Estatísticas iguais ao Soldado, porém utiliza um colete de kevlar de 18 camadas, fornecendo IP: 5 (cinético) e 9 (balístico).",
+        "Diferente do soldado comum e atua somente em situações de guerra ou conflitos, o soldado das forças especiais é treinado para missões especiais. Geralmente, um soldado das forças especiais é convocado para serviços como invasão, infiltração, reconhecimento, salvamento e combate. Um soldado da Tropa de Choque, S.W.A.T. ou de contenção de super-vilões são soldados das forças especiais.",
+        "Para qualquer fim, as perícias mais utilizadas por soldados das forças especiais são: Camuflagem, Condução (Carros, Lanchas, Barcos, Helicópteros), Escutar, Esportes (Mergulho, Paraquedismo), Explosivos, Furtividade, Idiomas (Código Morse), Manipulação (Interrogatório, Intimidação, Liderança), Rastreio, Sobrevivência (Todas). Com valores entre 30% a 80%."
+      ]
+    },
+    {
+      "id": "terrorista",
+      "title": "Terrorista",
+      "area": "classes",
+      "paragraphs": [
+        "“250 milhões em 3 horas ou metade da cidade vai pros ares”.",
+        "As características de um terrorista podem variar muito, mas geralmente são valores que vão de Físicos 06 a 18, e Mentais: 13-18, às vezes muito mais.",
+        "Um terrorista utiliza o medo, o terror, para obter algo, na maioria dos casos, terroristas buscam algo que deseja de uma nação, de um país. Cada terrorista possui um objetivo, uns desejam libertar prisioneiros, outros desejam espalhar uma ideologia, outros desejam simplesmente dinheiro, alguns vingança, outros por questões religiosas, outros vêem certo país como ameaça e apenas deseja destruí-lo, enfim, os motivos de um terrorista podem ser muito variados. Os terroristas simplesmente podem vir de qualquer lugar: um árabe religiosamente fanático, um comandante que se achou traído pelo seu país, um lunático que deseja enriquecer, um super-vilão que deseja dominar o mundo. Seus métodos de espalhar o terror também são muito variados: bombas, mísseis, vírus, aviões seqüestrados, reféns, homens-bombas, armas alienígenas, eco terrorismo, poderes de dominação. Geralmente os terroristas não atuam sozinhos, podem possuir dezenas ou milhares de capangas que o auxiliam em seu louco objetivo.",
+        "Para qualquer fim, as perícias mais comuns para os terroristas são: Armadilhas, Avaliação de Objetos, Disfarce, Engenharia (Todas), Etiqueta, Explosivos, Idiomas/Línguas (todas), Informática (Todas), Manipulação (Empatia, Lábia, Liderança, Manha, Tortura), Mecânica, Negociação (Todas), Pesquisa. Com valores entre 45% a 100%.",
+        "Este capítulo se dedica aos animais que encontramos normalmente na Terra. Muitos animais, mesmo os carnívoros, só atacam em casos de alimentação, quando se sentem ameaçados ou para proteger seus filhotes. Eles agem por instinto e não sabem raciocinar, porém podem ser instruídos e serem ensinados alguns truques com as perícias Treinamento de Animais e Doma. Os animais descritos aqui são aqueles que mais tem chances de interagir com os personagem de alguma forma. Seja um bando de leões caçando comida ou como animais de estimação, controlados ou que auxiliem em combate ou não."
+      ]
+    }
+  ],
   "characters": [
     {
       "id": "agente-federal",
@@ -241,7 +243,7 @@
           "IP": "0 ou 1 (jaqueta de couro)",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 0 ou 1 (jaqueta de couro), PVs 08-19.\nBriga 25/15 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.\nRevólver 35% dano 1d6.\nPara qualquer fim, as perícias mais comuns utilizadas por assaltantes são: Artes (prestidigitação), Furtar, Furtividade e Manipulação (Intimidação). Geralmente variando de 20 a 50%.\n# Ataques [1], IP: 0 ou 1 (jaqueta de couro), PVs 13-21.\nBriga 30/25 dano 1d3+bônus. Pistola 50% dano 1d6+2.\nMetralhadora 40% dano 1d6 +2. Metralhadora Pesada 40% dano 1d10.\nEscopeta 40% dano 2d6 +2.\nPara qualquer fim, as perícias mais comuns utilizadas por assaltantes de bancos são: Avaliação de Objetos, Condução (Carros e/ou Motos), Escutar, Explosivos e Manipulação (Intim idação). Geralmente variando de 35 a",
+        "skills": "# Ataques [1], IP: 0 ou 1 (jaqueta de couro), PVs 08-19.\nBriga 25/15 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.\nRevólver 35% dano 1d6.\nPara qualquer fim, as perícias mais comuns utilizadas por assaltantes são: Artes (prestidigitação), Furtar, Furtividade e Manipulação (Intimidação). Geralmente variando de 20 a 50%.",
         "special": []
       },
       "sections": [
@@ -255,13 +257,7 @@
             "# Ataques [1], IP: 0 ou 1 (jaqueta de couro), PVs 08-19.",
             "Briga 25/15 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.",
             "Revólver 35% dano 1d6.",
-            "Para qualquer fim, as perícias mais comuns utilizadas por assaltantes são: Artes (prestidigitação), Furtar, Furtividade e Manipulação (Intimidação). Geralmente variando de 20 a 50%.",
-            "ASSALTANTE DE BANCO “TODO MUNDO DEITADO!” CON 10-18, FR 10-18, DEX 10-18, AGI 12-18, INT 12-18, WILL 11-18, CAR 09- 18, PER 12-18.",
-            "# Ataques [1], IP: 0 ou 1 (jaqueta de couro), PVs 13-21.",
-            "Briga 30/25 dano 1d3+bônus. Pistola 50% dano 1d6+2.",
-            "Metralhadora 40% dano 1d6 +2. Metralhadora Pesada 40% dano 1d10.",
-            "Escopeta 40% dano 2d6 +2.",
-            "Para qualquer fim, as perícias mais comuns utilizadas por assaltantes de bancos são: Avaliação de Objetos, Condução (Carros e/ou Motos), Escutar, Explosivos e Manipulação (Intim idação). Geralmente variando de 35 a"
+            "Para qualquer fim, as perícias mais comuns utilizadas por assaltantes são: Artes (prestidigitação), Furtar, Furtividade e Manipulação (Intimidação). Geralmente variando de 20 a 50%."
           ]
         },
         {
@@ -271,10 +267,65 @@
           "paragraphs": [
             "“a carteira! AGORA!”",
             "Personagem de nível 1.",
-            "O pária da sociedade. Existem diversos motivos para que alguém se torne um assaltante: ganância, dependência, dívidas, maldade, hobbie, ou apenas para servir de aquecimento para algum super-herói. Alguns assaltantes apenas furtam a vítima e correm, outros a ameaçam com armas caso não entregue o objeto desejado.",
+            "O pária da sociedade. Existem diversos motivos para que alguém se torne um assaltante: ganância, dependência, dívidas, maldade, hobbie, ou apenas para servir de aquecimento para algum super-herói. Alguns assaltantes apenas furtam a vítima e correm, outros a ameaçam com armas caso não entregue o objeto desejado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assaltante-de-banco",
+      "name": "Assaltante de Banco",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.82,
+          "reason": "Bloco com atributos/ficha operacional detectados no DOCX."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": "10-18",
+          "FR": "10-18",
+          "DEX": "10-18",
+          "AGI": "12-18",
+          "INT": "12-18",
+          "WILL": "11-18",
+          "CAR": "09-18",
+          "PER": "12-18"
+        },
+        "vitals": {
+          "PV": "13-21",
+          "IP": "0 ou 1 (jaqueta de couro)",
+          "Ataques": "1"
+        },
+        "skills": "# Ataques [1], IP: 0 ou 1 (jaqueta de couro), PVs 13-21.\nBriga 30/25 dano 1d3+bônus. Pistola 50% dano 1d6+2.\nMetralhadora 40% dano 1d6 +2. Metralhadora Pesada 40% dano 1d10.\nEscopeta 40% dano 2d6 +2.\nPara qualquer fim, as perícias mais comuns utilizadas por assaltantes de bancos são: Avaliação de Objetos, Condução (Carros e/ou Motos), Escutar, Explosivos e Manipulação (Intimidação). Geralmente variando de 35 a 65%.",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 10-18, FR 10-18, DEX 10-18, AGI 12-18, INT 12-18, WILL 11-18, CAR 09- 18, PER 12-18.",
+            "# Ataques [1], IP: 0 ou 1 (jaqueta de couro), PVs 13-21.",
+            "Briga 30/25 dano 1d3+bônus. Pistola 50% dano 1d6+2.",
+            "Metralhadora 40% dano 1d6 +2. Metralhadora Pesada 40% dano 1d10.",
+            "Escopeta 40% dano 2d6 +2.",
+            "Para qualquer fim, as perícias mais comuns utilizadas por assaltantes de bancos são: Avaliação de Objetos, Condução (Carros e/ou Motos), Escutar, Explosivos e Manipulação (Intimidação). Geralmente variando de 35 a 65%."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "“TODO MUNDO DEITADO!”",
             "Personagem de nível 3.",
             "SUPERS sem um banco para ser assaltado? Um assaltante de banco geralmente atua em bandos de 3 à 8.",
-            "65%."
+            "O assaltante de banco é um criminoso especializado em crimes mais ousados, seu objetivo é um cofre lotado de sacos com um cifrão desenhado. Diferente do assaltante comum, um assaltante de banco é mais especializado, mais ousado e melhor armado."
           ]
         }
       ]
@@ -307,7 +358,7 @@
           "IP": "0 ou Kevlar: 3 (cinético) e 5 (balístico)",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 0 ou Kevlar: 3\n(cinético) e 5 (balístico), PVs 10-21. Artes Marciais 35/35 dano 1d3+bônus.\nFaca 35/35 dano 1d3 -1 à +2. Pistola 45% dano 1d6+2.\nPara qualquer fim, as perícias mais utilizadas por assassinos são: Armadilhas, Camuflagem, O assaltante de banco é um criminoso especializado em crimes mais ousados, seu objetivo é um cofre lotado de sacos com um cifrão desenhado. Diferente do assaltante comum, um assaltante de banco é mais especializado, mais confiante e mais ousado. Ele não teme a polícia e geralmente gosta de fazer reféns. Afinal, o que seria de uma campanha de Ciências (Anatomia), Condução (Carros, Motos), Disfarce, Escutar, Explosivos, Furtividade, Manipulação (Impressionar, Tortura), Manobras de Combate (Todas), Manuseio de Fechaduras, Rastreio. Com valores entre 30% a 95%.",
+        "skills": "# Ataques [1], IP: 0 ou Kevlar: 3\n(cinético) e 5 (balístico), PVs 10-21. Artes Marciais 35/35 dano 1d3+bônus.\nFaca 35/35 dano 1d3 -1 à +2. Pistola 45% dano 1d6+2.\nEspingarda 45% dano 2d6+6.\nPara qualquer fim, as perícias mais utilizadas por assassinos são: Armadilhas, Camuflagem, Ciências (Anatomia), Condução (Carros, Motos), Disfarce, Escutar, Explosivos, Furtividade, Manipulação (Impressionar, Tortura), Manobras de Combate (Todas), Manuseio de Fechaduras, Rastreio. Com valores entre 30% a 95%.",
         "special": []
       },
       "sections": [
@@ -321,15 +372,8 @@
             "# Ataques [1], IP: 0 ou Kevlar: 3",
             "(cinético) e 5 (balístico), PVs 10-21. Artes Marciais 35/35 dano 1d3+bônus.",
             "Faca 35/35 dano 1d3 -1 à +2. Pistola 45% dano 1d6+2.",
-            "Para qualquer fim, as perícias mais utilizadas por assassinos são: Armadilhas, Camuflagem, O assaltante de banco é um criminoso especializado em crimes mais ousados, seu objetivo é um cofre lotado de sacos com um cifrão desenhado. Diferente do assaltante comum, um assaltante de banco é mais especializado, mais confiante e mais ousado. Ele não teme a polícia e geralmente gosta de fazer reféns. Afinal, o que seria de uma campanha de Ciências (Anatomia), Condução (Carros, Motos), Disfarce, Escutar, Explosivos, Furtividade, Manipulação (Impressionar, Tortura), Manobras de Combate (Todas), Manuseio de Fechaduras, Rastreio. Com valores entre 30% a 95%."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Um assassino é um profissional contratado para tarefas de eliminação de um determinado algo. Geralmente alguém com muito dinheiro e nada amigável não gosta de alguém, pois esse alguém poderia estar “atrapalhando seus planos” e contrata um assassino profissional para livrar-se dele. Assassinos são pessoas frias e inteligentes, não costumam fazer serviços baratos e geralmente freqüenta locais caros e possui uma vida luxuosa. Um assassino quando contratado pergunta se a vítima deve ter uma morte rápida ou lenta e quais meios deve realizar o serviço, coisas como um tiro na cabeça ou se um simples veneno já estaria bom. E claro algumas cabeças de heróis poderiam estar em seus planos."
+            "Espingarda 45% dano 2d6+6.",
+            "Para qualquer fim, as perícias mais utilizadas por assassinos são: Armadilhas, Camuflagem, Ciências (Anatomia), Condução (Carros, Motos), Disfarce, Escutar, Explosivos, Furtividade, Manipulação (Impressionar, Tortura), Manobras de Combate (Todas), Manuseio de Fechaduras, Rastreio. Com valores entre 30% a 95%."
           ]
         },
         {
@@ -339,7 +383,7 @@
           "paragraphs": [
             "“Deseja uma morte rápida ou beeeem lenta?”",
             "Personagem de nível 3.",
-            "Espingarda 45% dano 2d6+6."
+            "Um assassino é um profissional contratado para tarefas de eliminação de um determinado algo. Geralmente alguém com muito dinheiro e nada amigável não gosta de alguém, pois esse alguém poderia estar “atrapalhando seus planos” e contrata um assassino profissional para livrar-se dele. Assassinos são pessoas frias e inteligentes, não costumam fazer serviços baratos e geralmente freqüenta locais caros e possui uma vida luxuosa. Um assassino quando contratado pergunta se a vítima deve ter uma morte rápida ou lenta e quais meios deve realizar o serviço, coisas como um tiro na cabeça ou se um simples veneno já estaria bom. E claro algumas cabeças de heróis poderiam estar em seus planos."
           ]
         }
       ]
@@ -372,7 +416,7 @@
           "IP": "Roupa de Bombeiro (IP 10 contra fogo)",
           "Ataques": "0"
         },
-        "skills": "# Ataques [0], IP: Roupa de Bombeiro (IP 10 contra fogo), PVs 12-19.\n# Ataques [1], IP: 0 ou Kevlar: 3 (cinético) e 5\n(balístico), PVs 17-23.\nBriga 50/40 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.\n(balístico), PVs 11-19.\nBriga 20/15 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.\nMetralhadora 35% dano 1d6 +2.",
+        "skills": "# Ataques [0], IP: Roupa de Bombeiro (IP 10 contra fogo), PVs 12-19.",
         "special": []
       },
       "sections": [
@@ -382,10 +426,58 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 11-18, FR 11-18, DEX 10-18, AGI 10-18, INT 10-18, WILL 10-18, CAR 10-18, PER 12- 18.",
-            "# Ataques [0], IP: Roupa de Bombeiro (IP 10 contra fogo), PVs 12-19.",
-            "# Ataques [1], IP: 0 ou Kevlar: 3 (cinético) e 5",
-            "(balístico), PVs 17-23.",
-            "Briga 50/40 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.",
+            "# Ataques [0], IP: Roupa de Bombeiro (IP 10 contra fogo), PVs 12-19."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "“Ainda bem que estão aqui heróis, há uma criança presa no quinto andar!”",
+            "Personagem de nível 1.",
+            "O bombeiro é o herói sem super poderes, são os combatentes do fogo, seu dever é apagar incêndios, salvar pessoas presas nesses incêndios, e cuidar para que civis não se aproximem de estruturas em chamas ou prestes a serem demolidas. O bombeiro também realiza trabalhos menores como tirar cachos de maribondo de uma residência ou tirar gatinhos que não conseguem descer de uma árvore."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capanga",
+      "name": "Capanga",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.82,
+          "reason": "Bloco com atributos/ficha operacional detectados no DOCX."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": "10-18",
+          "FR": "10-18",
+          "DEX": "10-18",
+          "AGI": "10-18",
+          "INT": "10-18",
+          "WILL": "10-18",
+          "CAR": "08-18",
+          "PER": "08-18"
+        },
+        "vitals": {
+          "PV": "11-19",
+          "IP": "0 ou Kevlar: 3 (cinético) e 5 (balístico)",
+          "Ataques": "1"
+        },
+        "skills": "# Ataques [1], IP: 0 ou Kevlar: 3 (cinético) e 5\n(balístico), PVs 11-19.\nBriga 20/15 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.\nMetralhadora 35% dano 1d6 +2.",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
             "CON 10-18, FR 10-18, DEX 10-18, AGI 10-18, INT 10-18, WILL 10-18, CAR 08-18, PER 08- 18.",
             "# Ataques [1], IP: 0 ou Kevlar: 3 (cinético) e 5",
             "(balístico), PVs 11-19.",
@@ -398,11 +490,6 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "“Ainda bem que estão aqui heróis, há uma criança presa no quinto andar!”",
-            "Personagem de nível 1.",
-            "O bombeiro é o herói sem super poderes, são os combatentes do fogo, seu dever é apagar incêndios, salvar pessoas presas nesses incêndios, e cuidar para que civis não se aproximem de estruturas em chamas ou prestes a serem demolidas. O bombeiro também realiza trabalhos menores como tirar cachos de maribondo de uma residência ou tirar gatinhos que não conseguem descer de uma árvore.",
-            "Diferente de um capanga comum, um capanga forte é contratado para serviços mais pesados, geralmente onde haja necessidade de um confronto físico direto. Não são necessariamente muito inteligentes, porém a maioria possui maior massa corporal do que massa cerebral.",
-            "CAPANGA",
             "“Sim, sua malvadeza”",
             "Personagem de nível 1.",
             "O que seria dos super vilões sem seu bando de capangas para servirem de bucha de canhão para os super-heróis? Capangas geralmente são criminosos (ou desempregados desesperados) que são contratados por mentes malignas para diversos trabalhos em seu covil do mal. Trabalhos que variam desde protegera entrada secreta, apertar o botão que lançará o fogu ete da morte, guardar a mocinha aprisionada, varrer o chão do complexo..."
@@ -433,8 +520,12 @@
           "CAR": "06-14",
           "PER": "06-18"
         },
-        "vitals": {},
-        "skills": "",
+        "vitals": {
+          "PV": "17-23",
+          "IP": "0 ou Kevlar: 3 (cinético) e 5 (balístico)",
+          "Ataques": "1"
+        },
+        "skills": "# Ataques [1], IP: 0 ou Kevlar: 3 (cinético) e 5 (balístico), PVs 17-23.\nBriga 50/40 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus.",
         "special": []
       },
       "sections": [
@@ -443,7 +534,9 @@
           "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "CON 14-20, FR 14-20, DEX 08-15, AGI 08- 15, INT 07-14, WILL 12-18, CAR 06-14, PER 06- 18."
+            "CON 14-20, FR 14-20, DEX 08-15, AGI 08- 15, INT 07-14, WILL 12-18, CAR 06-14, PER 06- 18.",
+            "# Ataques [1], IP: 0 ou Kevlar: 3 (cinético) e 5 (balístico), PVs 17-23.",
+            "Briga 50/40 dano 1d3+bônus. Faca 35/0 dano 1d3+bônus."
           ]
         },
         {
@@ -452,7 +545,8 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "“EU VOU ESMAGAR VOCÊ!!!”",
-            "Personagem de nível 3."
+            "Personagem de nível 3.",
+            "Diferente de um capanga comum, um capanga forte é contratado para serviços mais pesados, geralmente onde haja necessidade de um confronto físico direto. Não são necessariamente muito inteligentes, porém a maioria possui maior massa corporal do que massa cerebral."
           ]
         }
       ]
@@ -711,7 +805,7 @@
           "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "“Senhor Músculos, me dá seu autógrafo?” CON 01-07, FR 00-07, DEX 01-07, AGI 01-08, INT 00-10, WILL 00-07, CAR 01-10, PER 00- 11.",
+            "CON 01-07, FR 00-07, DEX 01-07, AGI 01-08, INT 00-10, WILL 00-07, CAR 01-10, PER 00- 11.",
             "# Ataques [0], IP: 0, PVs 1-7.",
             "Para qualquer fim, as perícias mais comuns utilizadas por crianças são: Animais (Montaria), Armas Brancas (estilingues), Artes (Atuação, Canto, Dança, Instrumentos Musicais), Camuflagem, Ciências (Física, História, Matemática, Química), Condução (Bicicletas), Escutar, Esquiva, Esportes (todos), Etiqueta, Furtar, Furtividade, Idiomas/Línguas (Todos), Informática (Internet) e Jogos (Tabuleiros, Videogames). Aconselha-se que uma criança não p o s s u a mais do que 30% em u m a"
           ]
@@ -721,6 +815,7 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "“Senhor Músculos, me dá seu autógrafo?”",
             "Personagem de nível 0.",
             "As crianças apresentadas aqui representam desde bebês recém-nascidos até crianças de 11 anos. Crianças são tão comuns em uma cidade quando os adultos, porém encontrados com menos freqüência. Em uma aventura de SUPERS podem possuir qualquer papel, desde o bebê preso em um incêndio, a filha do governador seqüestrada, as crianças de uma escola feitas de reféns por bandidos, o bebê de 1 ano que futuramente irá receber acidentalmente aquele raio do crescimento... Até aos moleques que zombam do herói dizendo que o seu pai disse que o herói é o maior babaca."
           ]
@@ -894,7 +989,7 @@
     },
     {
       "id": "investigador-de-policia",
-      "name": "Investigador De Polícia",
+      "name": "Investigador de Polícia",
       "type": "character_npc",
       "role": "Criatura/NPC",
       "classifications": [
@@ -984,7 +1079,7 @@
           "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "“Como você o derrotou?, Ele voltará,? Qual era seu plano? Havia mais alguém com ele?” CON 07-18, FR 07-18, DEX 10-18, AGI 10-18, INT 10-18, WILL 10-18, CAR 11-18, PER 12- 18.",
+            "CON 07-18, FR 07-18, DEX 10-18, AGI 10-18, INT 10-18, WILL 10-18, CAR 11-18, PER 12- 18.",
             "# Ataques [0], IP: 0, PVs 08-19.",
             "Para qualquer fim, as perícias mais utilizadas por jornalistas são Artes (Crítica de Arte, Redação), Ciências (Literatura), Condução (Carros), Etiqueta, Manipulação (Impressionar, Intimidação) e Pesquisa. Com valores entre 30% a 95%."
           ]
@@ -994,6 +1089,7 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "“Como você o derrotou?, Ele voltará,? Qual era seu plano? Havia mais alguém com ele?”",
             "O que seria da fama dos heróis se não existissem os jornalistas? São graças a eles que suas fotos saem na primeira página do jornal, que livros e matérias sobre eles são escritas todos os dias e os deixam mais famosos. Porém nem tudo é vantagem, pois onde um jornalista está algo de errado também pode estar acontecendo, eles ao invés de fugirem do perigo como os civis, eles se aproximam, e será algo que o herói deverá se preocupar, e os vilões podem tirar vantagem disso. Existem também alguns jornalistas são rabugentos e não gostam de super-heróis, pois eles têm o poder da mídia nas mãos e ele detesta tudo ou todos que ele não consegue controlar, e ao invés de fazerem a fama dos heróis, eles os deixam cada dia mais infames."
           ]
         }
@@ -1057,7 +1153,7 @@
     },
     {
       "id": "lutador-de-boxe",
-      "name": "Lutador De Boxe",
+      "name": "Lutador de Boxe",
       "type": "character_npc",
       "role": "Criatura/NPC",
       "classifications": [
@@ -1112,7 +1208,7 @@
     },
     {
       "id": "lutador-de-karate-judo-tae-kwon-do",
-      "name": "Lutador De Karatê/Judô/Tae-Kwon-Do",
+      "name": "Lutador de Karatê/Judô/Tae-Kwon-do",
       "type": "character_npc",
       "role": "Criatura/NPC",
       "classifications": [
@@ -1167,7 +1263,7 @@
     },
     {
       "id": "lutador-de-kung-fu",
-      "name": "Lutador De Kung Fu",
+      "name": "Lutador de Kung Fu",
       "type": "character_npc",
       "role": "Criatura/NPC",
       "classifications": [
@@ -1277,7 +1373,7 @@
     },
     {
       "id": "membro-de-gangue",
-      "name": "Membro De Gangue",
+      "name": "Membro de Gangue",
       "type": "character_npc",
       "role": "Criatura/NPC",
       "classifications": [
@@ -1745,7 +1841,7 @@
           "IP": "0",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 0, PVs 1-3.",
+        "skills": "# Ataques [1], IP: 0, PVs 1-3.\nMordida 30% dano 1+ veneno (paralisia).",
         "special": []
       },
       "sections": [
@@ -1755,16 +1851,8 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 1-3, FR 1-3, DEX 3, AGI 10-15, INT 0, WILL 0, CAR 0, PER 10.",
-            "# Ataques [1], IP: 0, PVs 1-3."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Mordida 30% dano 1+ veneno (paralisia).",
-            "Aprimoramento Sentidos Aguçados: Visão ou algum super poder) através de passagens ou entre as árvores. Uma vítima que tente atravessar a teia deve ter sucesso em um teste de Força, ou fica presa. A vítima tem direito a um novo teste por turno. Infelizmente, assim que sente a vibração nos fios, a aranha avança sobre a vítima no turno seguinte e aplica uma picada venenosa. O veneno exige da vítima um Teste de Resistência de Constituição por turno, ou será paralisada."
+            "# Ataques [1], IP: 0, PVs 1-3.",
+            "Mordida 30% dano 1+ veneno (paralisia)."
           ]
         },
         {
@@ -1774,6 +1862,7 @@
           "paragraphs": [
             "Aranhas pertencem a ordem dos aracnídeos (criaturas com 8 pata), geralmente existem em cavernas, florestas tropicais ou outros pontos isolados. Podem medir desde 10 cm até 80 cm de diâmetro (de uma ponta da pata a outra).",
             "Aranhas são agressivas e solitárias por natureza, mas podem existir comunidades contendo cerca de duas dúzias dessas aranhas. Elas tecem teias invisíveis através de passagens ou entre as árvores para capturarem suas presas, geralmente insetos voadores. Assim que sente a vibração nos fios, a aranha avança sobre a presa e aplica uma picada venenosa..",
+            "Aprimoramento Sentidos Aguçados: Visão ou algum super poder) através de passagens ou entre as árvores. Uma vítima que tente atravessar a teia deve ter sucesso em um teste de Força, ou fica presa. A vítima tem direito a um novo teste por turno. Infelizmente, assim que sente a vibração nos fios, a aranha avança sobre a vítima no turno seguinte e aplica uma picada venenosa. O veneno exige da vítima um Teste de Resistência de Constituição por turno, ou será paralisada.",
             "A paralisia termina em 2 semanas, ou quando é cancelada por algum super poder ou magia, caso a aranha não devore a vítima antes disso. A aranha gigante também pode disparar teia sobre uma vítima. Mas, em geral, criaturas que se mostrem fortes o bastante para romper a teia fazem a aranha continuar escondida."
           ]
         }
@@ -2040,8 +2129,8 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
             "O Cavalo é um animal próprio para transportar uma pessoa por grandes distâncias. Sua velocidade normal é de 10 km/h (duas vezes maior que um ser humano normal), ou cerca de 50 km por dia, incluindo pausas para descansar e se alimentar. Agalope, percorre 30 m por rodada."
@@ -2077,7 +2166,7 @@
           "IP": "1 (pele)",
           "Ataques": "1+1"
         },
-        "skills": "Cobras constritoras são serpentes não venenosas de grande porte, que atacam primeiro com uma forte mordida para prender a vítima e depois enroscando-se em seu corpo e apertando até esmagar todos os seus ossos. Caso o ataque com a mordida seja bem sucedido, ela passa a provocar dano automático nos turnos seguintes, sem a necessidade de testes, e a vítima não pode absorver o dano pelo IP.\n# Ataques [1+1], IP: 1 (pele), PVs 20-30. Mordida 65% dano 1d3+2 ou Constrição: dano 2d6+1 por rodada.\n# Ataques [1+1], IP: 1 (pele), PVs 20-30. Mordida 45% dano 1d3+2 ou Constrição: dano 2d6+2 por rodada.",
+        "skills": "# Ataques [1+1], IP: 1 (pele), PVs 20-30. Mordida 65% dano 1d3+2 ou Constrição: dano 2d6+1 por rodada.\n# Ataques [1+1], IP: 1 (pele), PVs 20-30. Mordida 45% dano 1d3+2 ou Constrição: dano 2d6+2 por rodada.",
         "special": []
       },
       "sections": [
@@ -2086,7 +2175,6 @@
           "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Cobras constritoras são serpentes não venenosas de grande porte, que atacam primeiro com uma forte mordida para prender a vítima e depois enroscando-se em seu corpo e apertando até esmagar todos os seus ossos. Caso o ataque com a mordida seja bem sucedido, ela passa a provocar dano automático nos turnos seguintes, sem a necessidade de testes, e a vítima não pode absorver o dano pelo IP.",
             "CON 15-45, FR 15-45, DEX 00, AGI 06-12, INT 01, WILL 01, CAR 00, PER 16-20.",
             "# Ataques [1+1], IP: 1 (pele), PVs 20-30. Mordida 65% dano 1d3+2 ou Constrição: dano 2d6+1 por rodada.",
             "CON 15-35, FR 15-25, DEX 00, AGI 06-12, INT 01, WILL 01, CAR 00, PER 16-20.",
@@ -2094,18 +2182,12 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Uma vítima aprisionada só consegue atacar se antes passar em um teste de Força resistido pela Força da cobra e só pode usar armas pequenas ou super poderes que não exijam as mãos para serem ativados (corpo energético por exemplo), Ataques feitos por outros personagens exigem um teste com -20% de penalidade ou provocam na vítima metade do dano que causam ao animal. As cobras constritoras mais comuns são a anaconda e a píton do deserto."
-          ]
-        },
-        {
           "id": "descricao",
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Cobras constritoras são serpentes não venenosas de grande porte, que atacam primeiro com uma forte mordida para prender a vítima e depois enroscando-se em seu corpo e apertando até esmagar todos os seus ossos. Caso o ataque com a mordida seja bem sucedido, ela passa a provocar dano automático nos turnos seguintes, sem a necessidade de testes, e a vítima não pode absorver o dano pelo IP.",
+            "Uma vítima aprisionada só consegue atacar se antes passar em um teste de Força resistido pela Força da cobra e só pode usar armas pequenas ou super poderes que não exijam as mãos para serem ativados (corpo energético por exemplo), Ataques feitos por outros personagens exigem um teste com -20% de penalidade ou provocam na vítima metade do dano que causam ao animal. As cobras constritoras mais comuns são a anaconda e a píton do deserto.",
             "A anaconda, também conhecida como sucuri, habita rios e pântanos. Como os crocodilos, aguarda submersa para atacar criaturas que se aproximam para beber. Às vezes também fica pendurada em galhos baixos, esperando para cair cobre a presa. Mede 7 m de comprimento, embora algumas raras consigam atingir 10 m de comprimento.",
             "Muito parecida com a anaconda, exceto que prefere esperar suas vítimas enterrada na areia, onde fica totalmente indetectável. Pode chegar a 6 m."
           ]
@@ -2191,7 +2273,7 @@
           "IP": "0",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 0, PVs 02-15.\n# Ataques [1], IP: 0, PVs 06-20.",
+        "skills": "# Ataques [1], IP: 0, PVs 02-15.\nMordida 45% dano 1d2 + veneno (3d6 a 10d6).\n# Ataques [1], IP: 0, PVs 06-20.\nMordida 45% dano 1d2 + veneno (10d6).",
         "special": []
       },
       "sections": [
@@ -2202,8 +2284,10 @@
           "paragraphs": [
             "CON 02-10, FR 02-05, DEX 00, AGI 06-18, INT 01, WILL 01, CAR 00, PER 16-20.",
             "# Ataques [1], IP: 0, PVs 02-15.",
+            "Mordida 45% dano 1d2 + veneno (3d6 a 10d6).",
             "CON 04-08, FR 02-05, DEX 00, AGI 16-18, INT 01, WILL 01, CAR 00, PER 16-20.",
-            "# Ataques [1], IP: 0, PVs 06-20."
+            "# Ataques [1], IP: 0, PVs 06-20.",
+            "Mordida 45% dano 1d2 + veneno (10d6)."
           ]
         },
         {
@@ -2211,11 +2295,7 @@
           "title": "Habilidades",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Mordida 45% dano 1d2 + veneno (3d6 a 10d6).",
-            "O efeito do veneno pode ser apenas paralisante ou então mortal. O veneno mortal não causa dano imediato, mas a vítima deve obter um Teste de Resistência de Constituição ou será envenenada. A vítima recebe 1d6 pontos de dano por rodada até o máximo do efeito do veneno (um teste de CON por rodada ajuda a diminuir o dano daquela rodada pela metade).",
             "Pode ser identificada por um tipo de “capuz” que traz na cabeça. Seu veneno é mais forte, uma vítima envenenada perde entre 6d6 e 8d6 de pontos de vida.",
-            "Mordida 45% dano 1d2 + veneno (10d6).",
-            "Encontrada nos oceanos (em lugares rasos), seu veneno é muito mais forte, a vítima perde 1d6 pontos de vida. encontrado apenas nas áreas costeiras. Pode atingir até 10 m de comprimento.",
             "Ao contrário das outras serpentes, que injetam peçonha através das presas, esta cobra consegue cuspir seu veneno a grandes distâncias."
           ]
         },
@@ -2225,8 +2305,10 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "As cobras venenosas existem em quase todo o mundo, exceto em áreas glaciais. Elas caçam apenas pequenos animais e não atacam humanos ou animais maiores, a menos que se sintam ameaçadas, o que costuma acontecer quando alguém se aproxima demais ou pisa nelas por acidente. Após esse primeiro ataque, seja bem sucedido ou não, a serpente tenta fugir.",
+            "O efeito do veneno pode ser apenas paralisante ou então mortal. O veneno mortal não causa dano imediato, mas a vítima deve obter um Teste de Resistência de Constituição ou será envenenada. A vítima recebe 1d6 pontos de dano por rodada até o máximo do efeito do veneno (um teste de CON por rodada ajuda a diminuir o dano daquela rodada pela metade).",
             "As cobras venenosas mais comuns são a cascavel, a naja, a cuspideira e a serpente marinha.",
-            "A mais comum entre as cobras venenosas, encontradas em campos, montanhas e desertos. Felizmente quando ameaçada, ela usa o guiso em sua cauda como sinal de aviso e só vai atacar no turno seguinte, caso o agressor não se afaste."
+            "A mais comum entre as cobras venenosas, encontradas em campos, montanhas e desertos. Felizmente quando ameaçada, ela usa o guiso em sua cauda como sinal de aviso e só vai atacar no turno seguinte, caso o agressor não se afaste.",
+            "Encontrada nos oceanos (em lugares rasos), seu veneno é muito mais forte, a vítima perde 1d6 pontos de vida. encontrado apenas nas áreas costeiras. Pode atingir até 10 m de comprimento."
           ]
         }
       ]
@@ -2259,7 +2341,7 @@
           "IP": "0",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 0, PVs 06-20.",
+        "skills": "# Ataques [1], IP: 0, PVs 06-20.\nMordida 45% dano 1d2 + veneno (10d6).",
         "special": []
       },
       "sections": [
@@ -2269,15 +2351,15 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 04-08, FR 02-05, DEX 00, AGI 16-18, INT 01, WILL 01, CAR 00, PER 16-20.",
-            "# Ataques [1], IP: 0, PVs 06-20."
+            "# Ataques [1], IP: 0, PVs 06-20.",
+            "Mordida 45% dano 1d2 + veneno (10d6)."
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Mordida 45% dano 1d2 + veneno (10d6).",
             "Encontrada nos oceanos (em lugares rasos), seu veneno é muito mais forte, a vítima perde 1d6 pontos de vida. encontrado apenas nas áreas costeiras. Pode atingir até 10 m de comprimento."
           ]
         }
@@ -2587,18 +2669,11 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Escorpiões pertencem à classe dos aracnídeos (criaturas com 8 pata). Escorpiões são animais invertebrados que vivem em ambientes quentes, podem ser encontrados em qualquer continente exceto na Antártida. São animais carnívoros e têm geralmente hábitos noturnos. O intimidador ferrão do escorpião além de servi-lhe para agarrar a presa e para se defender também possui um veneno mortal. Qualquer pessoa picada por um escorpião deve ter sucesso em um Teste de Resistência de CON ou sofrerá"
-          ]
-        },
-        {
           "id": "descricao",
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Escorpiões pertencem à classe dos aracnídeos (criaturas com 8 pata). Escorpiões são animais invertebrados que vivem em ambientes quentes, podem ser encontrados em qualquer continente exceto na Antártida. São animais carnívoros e têm geralmente hábitos noturnos. O intimidador ferrão do escorpião além de servi-lhe para agarrar a presa e para se defender também possui um veneno mortal. Qualquer pessoa picada por um escorpião deve ter sucesso em um Teste de Resistência de CON ou sofrerá",
             "2d6 pontos de dano.",
             "O ancestral pré-histórico do elefante moderno, encontrado apenas em áreas pré-históricas. È um pouco maior e mais peludo, mas idêntico ao elefante em"
           ]
@@ -2700,8 +2775,8 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
             "Uma versão muito maior e mais agressiva do escorpião comum, estes monstros medem até 1,80m de comprimento. Podem ser encontrados em estado selvagem, mas também são usados pelos homens-escorpião como cães de guarda e caça. Fazem dois ataques por rodada com as garras, sempre como mesmo alvo, se conseguir acertar os dois ataques na mesma rodada, a vítima fica presa e incapaz de lutar até ter sucesso em um teste resistido de FOR contra a FOR do escorpião gigante. O escorpião gigante pode atacar qualquer vítima presa nas garras com o ferrão venenoso, sem precisar fazer nenhum teste. Além do dano do ferrão, a vítima deve fazer um Teste de Resistência de CON, falha significa um dano extra de 3d6 pontos. cultistas de deuses egípcios antigos adoram gatos como se fossem deuses."
@@ -3047,7 +3122,7 @@
           "IP": "0",
           "Ataques": "2"
         },
-        "skills": "# Ataques [2], IP: 0, PVs 28. Garras 50% dano 1d6+4.\nMordida 60% dano 1d6.\nLobo são parentes diretos dos cachorros. Os lobos caçam em matilhas contendo 2d6 membros e são famosos por suas persistência e astúcia. A tática preferida dos lobos é enviar alguns indivíduos para o combate frontal, enquanto o restante da matilha cerca o inimigo. firmeza para que o veneno escorra do c é uda boca para o ferimento (moréias não têm presas inoculadoras, como as cobras). A mordida causa dano de 1d6 por turno (mais 2 pontos e l o veneno), sem direito a absorver com IP proveniente de armaduras, até que o bicho se solte.",
+        "skills": "# Ataques [2], IP: 0, PVs 28. Garras 50% dano 1d6+4.\nMordida 60% dano 1d6.",
         "special": []
       },
       "sections": [
@@ -3059,15 +3134,15 @@
             "CON 22, FR 25, DEX 05, AGI",
             "20, INT 03, WILL 05, CAR 03, PER 25.",
             "# Ataques [2], IP: 0, PVs 28. Garras 50% dano 1d6+4.",
-            "Mordida 60% dano 1d6.",
-            "Lobo são parentes diretos dos cachorros. Os lobos caçam em matilhas contendo 2d6 membros e são famosos por suas persistência e astúcia. A tática preferida dos lobos é enviar alguns indivíduos para o combate frontal, enquanto o restante da matilha cerca o inimigo. firmeza para que o veneno escorra do c é uda boca para o ferimento (moréias não têm presas inoculadoras, como as cobras). A mordida causa dano de 1d6 por turno (mais 2 pontos e l o veneno), sem direito a absorver com IP proveniente de armaduras, até que o bicho se solte."
+            "Mordida 60% dano 1d6."
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Lobo são parentes diretos dos cachorros. Os lobos caçam em matilhas contendo 2d6 membros e são famosos por suas persistência e astúcia. A tática preferida dos lobos é enviar alguns indivíduos para o combate frontal, enquanto o restante da matilha cerca o inimigo. firmeza para que o veneno escorra do c é uda boca para o ferimento (moréias não têm presas inoculadoras, como as cobras). A mordida causa dano de 1d6 por turno (mais 2 pontos e l o veneno), sem direito a absorver com IP proveniente de armaduras, até que o bicho se solte.",
             "Arrancar a moréia exige um teste de FOR."
           ]
         }
@@ -3101,7 +3176,7 @@
           "IP": "0",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 0, PVs 6-10.",
+        "skills": "# Ataques [1], IP: 0, PVs 6-10.\nMordida 50% dano 2d6+veneno (4 pontos).",
         "special": []
       },
       "sections": [
@@ -3111,14 +3186,7 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 16-20, FR 12-16, DEX 00, AGI 06-16, INT 01, WILL 02, CAR 00, PER 12-18.",
-            "# Ataques [1], IP: 0, PVs 6-10."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
+            "# Ataques [1], IP: 0, PVs 6-10.",
             "Mordida 50% dano 2d6+veneno (4 pontos)."
           ]
         },
@@ -3160,7 +3228,7 @@
           "IP": "0",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 0, PVs 6-10.",
+        "skills": "# Ataques [1], IP: 0, PVs 6-10.\nMordida 50% dano 1d6+veneno (2 pontos).",
         "special": []
       },
       "sections": [
@@ -3170,14 +3238,7 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 06-10, FR 02-06, DEX 00, AGI 06-16, INT 01, WILL 02, CAR 00, PER 12-18.",
-            "# Ataques [1], IP: 0, PVs 6-10."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
+            "# Ataques [1], IP: 0, PVs 6-10.",
             "Mordida 50% dano 1d6+veneno (2 pontos)."
           ]
         },
@@ -3499,8 +3560,8 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
             "Medindo até 6m de comprimento, este monstro mantém o corpanzil imerso na água ou lama, deixando apenas os olhos salientes à mostra. Quando as vítimas se aproximam, ele emerge e ataca com a língua; esse ataque não casa dano mas, se acertar arrasta a vítima para dentro da boca, onde ela passa a sofrer dano de 3d6 por turno, até morrer ou se soltar caso tenha sucesso em um teste de FOR resistido pela FOR do animal. presença de sangue, eles irão atacar em todos os turnos, até a morte da vítima ou do próprio peixe. Tubarões são encontrados em mar aberto, sendo muito raro que ataquem em áreas costeiras. Nadam o dia todo e nunca dormem. São solitários, mas muitas vezes podem ser encontrados em pequenos bandos. Algumas espécies raramente ultrapassam dos dois metros, os maiores atingem 4,5 m de comprimento e são uma ameaça considerável, espécies enormes são verdadeiros monstros (como o tubarão branco) e atingem mais de 6 m de comprimento."
@@ -3566,19 +3627,12 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Tubarões não gostam de longas batalhas, eles costumam fazer um único e decisivo ataque, procurando arrancar um grande pedaço de carne com uma única e poderosa mordida, em geral a vítima morre pouco depois, por perda de sangue, perdendo 1 Ponto de Vida por turno até que sejam aplicados primeiros socorros. Tubarões ficam excitados e famintos quando farejam sangue, que eles podem perceber a até 1km de distância. Em"
-          ]
-        },
-        {
           "id": "descricao",
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
             "Esses grandes felinos atingem 90 cm da altura dos ombros e têm 2,7 m de comprimento. Eles pesam entre 200 kg e 300 kg. São caçadores noturnos e apesar de seu grande tamanho, podem se aproximar de sua presa em completo silêncio, antes de avançar sobre ela a curta distância.Há nove sub-espécie de tigres, três das quais estão extintas e uma muito próxima de torna-se também extinta.",
+            "Tubarões não gostam de longas batalhas, eles costumam fazer um único e decisivo ataque, procurando arrancar um grande pedaço de carne com uma única e poderosa mordida, em geral a vítima morre pouco depois, por perda de sangue, perdendo 1 Ponto de Vida por turno até que sejam aplicados primeiros socorros. Tubarões ficam excitados e famintos quando farejam sangue, que eles podem perceber a até 1km de distância. Em",
             "O tipo mais comum, encontrado em florestas de clima temperado. Mede quase 2 m de comprimento e pesa 300 kg.",
             "Idêntico ao urso negro, exceto por habitar locais de clima mais quente.",
             "Maior e mais pesado, é encontrado apenas em regiões geladas onde vive de caça e pesca. É muito resistente ao frio e excelente nadador.",
@@ -3825,7 +3879,7 @@
           "IP": "6 (pele)",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 6 (pele), PVs 70-80.\nPisada 40% dano 3d6+15 ou Cauda 30% dano 4d6.",
+        "skills": "# Ataques [1], IP: 6 (pele), PVs 70-80.",
         "special": []
       },
       "sections": [
@@ -3835,16 +3889,7 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 70-80, FR 70-80, DEX 00, AGI 05-10, INT 01, WILL 01, CAR 05, PER 12-18.",
-            "# Ataques [1], IP: 6 (pele), PVs 70-80.",
-            "Pisada 40% dano 3d6+15 ou Cauda 30% dano 4d6."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Manadas de braquiossauros costumam ser a visão mais impressionante nas planícies, e também uma das coisas mais destrutivas do mundo. Embora pouca coisa consiga assustá-los, o ataque de um grande carnívoro ou outro tipo de ameaça pode provocar um estouro de manada: qualquer criatura no caminho sofre pelo menos 20d6 de dano por rodada, porém tem direito a um teste difícil de AGI para escapar do ataque. Muita pouca coisa poderia sobreviver a tamanho estrago..."
+            "# Ataques [1], IP: 6 (pele), PVs 70-80."
           ]
         },
         {
@@ -3852,9 +3897,11 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Pisada 40% dano 3d6+15 ou Cauda 30% dano 4d6.",
             "Braquiossauros são os maiores dinossauros existentes na era pré-histórica, e também um dos maiores animais do mundo. São quadrúpedes, mas com as patas dianteiras mais robustas que as traseiras, de forma que o corpo parece inclinado. O pescoço muito longo e flexível pode levar a cabeça até as folhagens das árvores mais altas. A criatura pode chegar a 30m de comprimento e 7m de altura no ombro.",
             "Braquiossauros são tão grandes que seu próprio tamanho é sua melhor defesa. Eles podem pisotear quase qualquer inimigo, matando-o com um só golpe. Contra adversários mais ágeis, podem usar a cauda fina como chicote.",
             "Apesar de tudo isso, são herbívoros pacíficos, com temperamento similar ao das vacas comuns. Braquiossauros nunca atacam com mordidas. A única situação em que se tornam agressivos é quando o ninho é ameaçado. Nesse caso, as fêmeas avançam sobre os invasores até que esses se afastem de seus territórios.",
+            "Manadas de braquiossauros costumam ser a visão mais impressionante nas planícies, e também uma das coisas mais destrutivas do mundo. Embora pouca coisa consiga assustá-los, o ataque de um grande carnívoro ou outro tipo de ameaça pode provocar um estouro de manada: qualquer criatura no caminho sofre pelo menos 20d6 de dano por rodada, porém tem direito a um teste difícil de AGI para escapar do ataque. Muita pouca coisa poderia sobreviver a tamanho estrago...",
             "Braquiossauros possuem no alto da cabeça um tipo de câmara de ar, que serve para amplificar sons (eles emitem altos “mugidos”) e também o olfato."
           ]
         }
@@ -4028,19 +4075,12 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "O dinonico tem uma garra de 12cm do segundo dedo da cada pata traseira, suspensa para evitar o contato com o chão e mantê-la afiada. Dinonicos atacam presas de grande porte pulando sobre elas, segurando-a com seus dentes e garras dianteiras e então rasgando a presa com suas patas traseiras (dois ataques por rodada sem testes para acertar). Desalojar o monstro exige um teste de Força resistido com a Força do dinonico. Contra oponentes menores (como humanos), ele se apóia sobre uma única perna para poder chutar com a outra. Qualquer alvo diante do dinonico pode ser chutado sem que isso conte como uma ação."
-          ]
-        },
-        {
           "id": "descricao",
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
             "O dinonico é um parente maior e mais perigoso do velocirraptor. Mede até 3m de comprimento (incluindo cauda) e cerca de 1m de altura, pesando de uma a duas toneladas. Apesar disso, uma dessas criaturas é capaz de derrotar presas muito maiores utilizando táticas de ataque em bando, velocidade e suas notórias garras. Dinonicos são verde-claros e têm listas negras, como os tigres.",
+            "O dinonico tem uma garra de 12cm do segundo dedo da cada pata traseira, suspensa para evitar o contato com o chão e mantê-la afiada. Dinonicos atacam presas de grande porte pulando sobre elas, segurando-a com seus dentes e garras dianteiras e então rasgando a presa com suas patas traseiras (dois ataques por rodada sem testes para acertar). Desalojar o monstro exige um teste de Força resistido com a Força do dinonico. Contra oponentes menores (como humanos), ele se apóia sobre uma única perna para poder chutar com a outra. Qualquer alvo diante do dinonico pode ser chutado sem que isso conte como uma ação.",
             "Dinonicos caçam em bandos de seis ou mais indivíduos. Eles têm olhos grandes e podem permanecer em atividade tanto de dia quanto de noite.",
             "O ictiossauro é um réptil marinho pré-histórico. Mede até 2,50m e não se parece com um lagarto ou dinossauro: tem formato muito semelhante ao de um golfinho, mas com cauda vertical. Seus olhos são grandes como pratos e o couro é cinza-escuro ou negro.",
             "O ictiossauro caça pequenos peixes, águas-vivas e lulas."
@@ -4182,7 +4222,7 @@
           "IP": "1-2 (pele)",
           "Ataques": "3"
         },
-        "skills": "# Ataques [3], IP: 1-2 (pele), PVs 24-36. Garras (x2) 60/60 dano 2d6.\nMordida 40% dano 1d6+1.\n# Ataques [1], IP: 8/4 (carapaça/pele), PVs 50-60.",
+        "skills": "# Ataques [3], IP: 1-2 (pele), PVs 24-36. Garras (x2) 60/60 dano 2d6.\nMordida 40% dano 1d6+1.",
         "special": []
       },
       "sections": [
@@ -4193,17 +4233,7 @@
           "paragraphs": [
             "CON 16-24, FR 24-36, DEX 06-12, AGI 12-16, INT 01, WILL 01, CAR 00, PER 14-16.",
             "# Ataques [3], IP: 1-2 (pele), PVs 24-36. Garras (x2) 60/60 dano 2d6.",
-            "Mordida 40% dano 1d6+1.",
-            "INT 01, WILL 01, CAR 00, PER 04-08.",
-            "# Ataques [1], IP: 8/4 (carapaça/pele), PVs 50-60."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Também conhecido como “lagarto ceifador”, este dinossauro tem braços de 2,5m que terminam em garras afiadas em forma de foice. Ele faz dois ataques por rodada com as garras e mordida."
+            "Mordida 40% dano 1d6+1."
           ]
         },
         {
@@ -4211,10 +4241,8 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Terizinossauros pesam duas toneladas, são massivos como rinocerontes (seus passos estrondosos podem ser ouvidos ao longe) e nas florestas e planícies das terras pré-históricas. São herbívoros: usam as garras apenas para agarrar os ramos mais altos das árvores.",
-            "Chifres 60/20 dano 3d6+6 ou Carga 50% dano 5d6+6.",
-            "Em eras pré-históricas, o triceratops foi o mais comum entre os grandes dinossauros herbívoros, encontrado em vastas manadas. Um triceratops adulto pode atingir dez metros de comprimento, com chifres medindo mais de um metro. Sua cabeça, pescoço e ombros são protegidos por um escudo de osso, que ele pode usar como um escudo normal, e capaz de proteger a si mesmo ou alguém que o esteja cavalgando.",
-            "Infelizmente, são também muito irritadiços e territoriais, atacando qualquer criatura que se aproxime do bando. Viajam em grandes manadas de 10 a 30 indivíduos."
+            "Também conhecido como “lagarto ceifador”, este dinossauro tem braços de 2,5m que terminam em garras afiadas em forma de foice. Ele faz dois ataques por rodada com as garras e mordida.",
+            "Terizinossauros pesam duas toneladas, são massivos como rinocerontes (seus passos estrondosos podem ser ouvidos ao longe) e nas florestas e planícies das terras pré-históricas. São herbívoros: usam as garras apenas para agarrar os ramos mais altos das árvores."
           ]
         }
       ]
@@ -4247,7 +4275,7 @@
           "IP": "3-4 (pele)",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 3-4 (pele), PVs 50-60. Mordida 60/20 dano 4d6+6.\nTalvez uma dos mais perigosos (apenas talvez...) dos dinossauros, o tiranossauro-rex mede até 13m de comprimento, 6m de altura e pesa de quatro a seis toneladas. Vive em selvas e planícies. Embora sejam solitários, na época do acasalamento podem ser encontrados em casais. Sua enorme cabeça (IP 4) mede 1,30m com afiados dentes de 15cm e uma mandíbula extremamente musculosa, capaz de rasgar mais de 200 quilos de carne em uma única mordida. Seus braços têm menos de um metro de comprimento, terminando em duas garras fracas e inúteis em combate. Mas suas longas e poderosas patas traseiras permitem ao tiranossauro-rex correr muito rápido (alguns acreditam em até 50 km/h) e também imobilizar presas pequenas ou fracas apenas pisando nelas (escapar exige um este de Força resistido contra a Força do tiranossauro-rex).",
+        "skills": "# Ataques [1], IP: 3-4 (pele), PVs 50-60. Mordida 60/20 dano 4d6+6.",
         "special": []
       },
       "sections": [
@@ -4257,7 +4285,14 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 42-50, FR 36-50, DEX 03, AGI 06-10, INT 01, WILL 01, CAR 00, PER 04-08.",
-            "# Ataques [1], IP: 3-4 (pele), PVs 50-60. Mordida 60/20 dano 4d6+6.",
+            "# Ataques [1], IP: 3-4 (pele), PVs 50-60. Mordida 60/20 dano 4d6+6."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "criaturas_npcs",
+          "paragraphs": [
             "Talvez uma dos mais perigosos (apenas talvez...) dos dinossauros, o tiranossauro-rex mede até 13m de comprimento, 6m de altura e pesa de quatro a seis toneladas. Vive em selvas e planícies. Embora sejam solitários, na época do acasalamento podem ser encontrados em casais. Sua enorme cabeça (IP 4) mede 1,30m com afiados dentes de 15cm e uma mandíbula extremamente musculosa, capaz de rasgar mais de 200 quilos de carne em uma única mordida. Seus braços têm menos de um metro de comprimento, terminando em duas garras fracas e inúteis em combate. Mas suas longas e poderosas patas traseiras permitem ao tiranossauro-rex correr muito rápido (alguns acreditam em até 50 km/h) e também imobilizar presas pequenas ou fracas apenas pisando nelas (escapar exige um este de Força resistido contra a Força do tiranossauro-rex)."
           ]
         }
@@ -4280,10 +4315,18 @@
           "CON": "42-50",
           "FR": "36-50",
           "DEX": "03",
-          "AGI": "06-10"
+          "AGI": "06-10",
+          "INT": "01",
+          "WILL": "01",
+          "CAR": "00",
+          "PER": "04-08"
         },
-        "vitals": {},
-        "skills": "",
+        "vitals": {
+          "PV": "50-60",
+          "IP": "8/4 (carapaça/pele)",
+          "Ataques": "1"
+        },
+        "skills": "# Ataques [1], IP: 8/4 (carapaça/pele), PVs 50-60.\nChifres 60/20 dano 3d6+6 ou Carga 50% dano 5d6+6.",
         "special": []
       },
       "sections": [
@@ -4292,7 +4335,18 @@
           "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "CON 42-50, FR 36-50, DEX 03, AGI 06-10,"
+            "CON 42-50, FR 36-50, DEX 03, AGI 06-10, INT 01, WILL 01, CAR 00, PER 04-08.",
+            "# Ataques [1], IP: 8/4 (carapaça/pele), PVs 50-60.",
+            "Chifres 60/20 dano 3d6+6 ou Carga 50% dano 5d6+6."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Em eras pré-históricas, o triceratops foi o mais comum entre os grandes dinossauros herbívoros, encontrado em vastas manadas. Um triceratops adulto pode atingir dez metros de comprimento, com chifres medindo mais de um metro. Sua cabeça, pescoço e ombros são protegidos por um escudo de osso, que ele pode usar como um escudo normal, e capaz de proteger a si mesmo ou alguém que o esteja cavalgando.",
+            "Infelizmente, são também muito irritadiços e territoriais, atacando qualquer criatura que se aproxime do bando. Viajam em grandes manadas de 10 a 30 indivíduos."
           ]
         }
       ]
@@ -4344,7 +4398,6 @@
           "title": "Habilidades",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Assim como seu parente maior dinonico, o raptor também tem uma grande garra em forma de foice em cada pata traseira. Sua estratégia é agarrar a presa com as presas e garras dianteiras, caso tenha acertado esse ataque, na rodada seguinte começa a chutar com as garras traseiras, atacando duas vezes por rodada sem precisar de testes para acertar. Desalojar o raptor exige sucesso em um teste de Força resistido com a Força do velocirraptor.",
             "Nem todos os perigos enfrentados por super heróis consistem em capturar assaltantes de bancos, impedir mísseis de atingirem cidades e enfrentar super-vilões. Algumas vezes na vida de combate ao crime um super herói pode se deparar com criaturas que parecem ter saídos de pesadelos ou filmes de terror, os monstros. Existem infinitos motivos para que monstros apareçam em uma campanha de SUPERS. Talvez trazidos para a Terra por um portal, conjurado por um feiticeiro, experiências secretas que fugiram de controle, experiências com bombas nucleares no oceano que fizeram com que um lagarto crescesse em proporções épicas... Ou apenas estas criaturas já são naturais em um mundo criado pelo Mestre. Aqui contém a descrição de alguns monstros comuns que podem ser encontrados em revistas e filmes. vitais por isso são imunes a acertos críticos. Assim como também, sono, veneno, paralisia mental e controle mental."
           ]
         },
@@ -4353,7 +4406,8 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "O velocirraptor é um predador de 2m de comprimento e 80 a 100 quilos. Eles existem em terras pré históricas, onde caçam em bandos de 3 a 6 indivíduos."
+            "O velocirraptor é um predador de 2m de comprimento e 80 a 100 quilos. Eles existem em terras pré históricas, onde caçam em bandos de 3 a 6 indivíduos.",
+            "Assim como seu parente maior dinonico, o raptor também tem uma grande garra em forma de foice em cada pata traseira. Sua estratégia é agarrar a presa com as presas e garras dianteiras, caso tenha acertado esse ataque, na rodada seguinte começa a chutar com as garras traseiras, atacando duas vezes por rodada sem precisar de testes para acertar. Desalojar o raptor exige sucesso em um teste de Força resistido com a Força do velocirraptor."
           ]
         }
       ]
@@ -4429,7 +4483,7 @@
           "IP": "8",
           "Ataques": "1-4"
         },
-        "skills": "# Ataques [1-4], IP: 8, PVs 22.",
+        "skills": "# Ataques [1-4], IP: 8, PVs 22.\nPancada com os galhos 40/40 dano 1d10+3. Sufocar: dano 1d6 por rodada.",
         "special": []
       },
       "sections": [
@@ -4439,16 +4493,8 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 20, FR 24, DEX 15, AGI 00, INT 00, WILL 00, CAR 00, PER 10.",
-            "# Ataques [1-4], IP: 8, PVs 22."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Pancada com os galhos 40/40 dano 1d10+3. Sufocar: dano 1d6 por rodada.",
-            "Árvores animadas podem surgir por causa de maldições, magias, origem alienígena ou simplesmente pelo super poder Animação de Objetos. Geralmente são árvore de 8 metros de altura que atacam qualquer um que se aproximar batendo com seus galhos na vítima, como são feitas de madeira e folhagem recebem dano dobrado com fogo. Algumas árvores que possuam galhos mais finos ou vinhas, a árvore pode tentar agarrar alguma vítima pelos pés para jogá-las longe, batê-las no chão ou enforcá-las, se tiver sucesso em um teste de ataque localizado (pescoço), a planta então começará a sufocar a vítima apertando seu pescoço, além de não conseguir respirar, a vítima perderá 1d6 pontos de vida a cada rodada até libertar-se ou morrer. Para se livrar desse ataque, precisa ter sucesso em um teste de Força resistido contra a Força da árvore animada."
+            "# Ataques [1-4], IP: 8, PVs 22.",
+            "Pancada com os galhos 40/40 dano 1d10+3. Sufocar: dano 1d6 por rodada."
           ]
         },
         {
@@ -4456,6 +4502,7 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Árvores animadas podem surgir por causa de maldições, magias, origem alienígena ou simplesmente pelo super poder Animação de Objetos. Geralmente são árvore de 8 metros de altura que atacam qualquer um que se aproximar batendo com seus galhos na vítima, como são feitas de madeira e folhagem recebem dano dobrado com fogo. Algumas árvores que possuam galhos mais finos ou vinhas, a árvore pode tentar agarrar alguma vítima pelos pés para jogá-las longe, batê-las no chão ou enforcá-las, se tiver sucesso em um teste de ataque localizado (pescoço), a planta então começará a sufocar a vítima apertando seu pescoço, além de não conseguir respirar, a vítima perderá 1d6 pontos de vida a cada rodada até libertar-se ou morrer. Para se livrar desse ataque, precisa ter sucesso em um teste de Força resistido contra a Força da árvore animada.",
             "Como são árvores, elas não possuem órgãos",
             "Os chacais guardiões são enormes estátuas egípcias de humanos com cabeças de chacais medido entre 8m a 15m. Apesar do nome, alguma dessas estátuas podem possuir a cabeça de corujas. Algumas dessas estátuas são animadas por magias antigas para protegerem algo, geralmente um sarcófago de um imperador egípcio, um tesouro ou um santuário. Normalmente não reagem e ficam totalmente imóveis, a menos que alguém acabe mexendo no objeto ou entrem no local que estão guardando. Geralmente utilizam lanças enormes e jamais vão parar de lutar até que sejam d e s t r u í d a s completamente, ou com a morte do invasor, também voltarão a ficar imóveis caso o objeto ou local seja deixado em paz."
           ]
@@ -4490,7 +4537,7 @@
           "IP": "10",
           "Ataques": "3"
         },
-        "skills": "# Ataques [3], IP: 10, PVs 45-70.\nRegenera 1 PV por rodada. Garras 70/70 dano 3d6+bônus. Mordida 70% dano 2d6.\nAlguns podem conjurar magias. Pontos de Magia 25 a 30.\nFocus 27 a 32.\nCaminhos: Demônios (Arkanun), Trevas, Fogo, Ar, Terra, Água, Espíritos (Spiritum).",
+        "skills": "# Ataques [3], IP: 10, PVs 45-70.\nGarras 70/70 dano 3d6+bônus. Mordida 70% dano 2d6.\nAlguns podem conjurar magias. Pontos de Magia 25 a 30.\nFocus 27 a 32.\nCaminhos: Demônios (Arkanun), Trevas, Fogo, Ar, Terra, Água, Espíritos (Spiritum).",
         "special": []
       },
       "sections": [
@@ -4501,10 +4548,18 @@
           "paragraphs": [
             "CON 30-60, FR 30-60, DEX 05-12, AGI 12-18, INT 05-50, WILL 30-50, CAR 30-60, PER 30- 50.",
             "# Ataques [3], IP: 10, PVs 45-70.",
-            "Regenera 1 PV por rodada. Garras 70/70 dano 3d6+bônus. Mordida 70% dano 2d6.",
+            "Garras 70/70 dano 3d6+bônus. Mordida 70% dano 2d6.",
             "Alguns podem conjurar magias. Pontos de Magia 25 a 30.",
             "Focus 27 a 32.",
             "Caminhos: Demônios (Arkanun), Trevas, Fogo, Ar, Terra, Água, Espíritos (Spiritum)."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Regenera 1 PV por rodada."
           ]
         },
         {
@@ -4549,7 +4604,7 @@
           "IP": "variável",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: variável, PVs 6-40.\nRegenera 1 PV/rodada em contato com seu elemento.\nBriga 20/30 a 50/60 dano 1d10+bônus. Arma mágica variável por arma +bônus. Pontos de Magia 3 a 10.\nFocus 5 a 12.",
+        "skills": "# Ataques [1], IP: variável, PVs 6-40.\nBriga 20/30 a 50/60 dano 1d10+bônus. Arma mágica variável por arma +bônus. Pontos de Magia 3 a 10.\nFocus 5 a 12.",
         "special": []
       },
       "sections": [
@@ -4560,7 +4615,6 @@
           "paragraphs": [
             "CON 06-30, FR 06-30, DEX 06-30, AGI 06-30, INT 06-30, WILL 06-30, CAR 06-30, PER 06- 30.",
             "# Ataques [1], IP: variável, PVs 6-40.",
-            "Regenera 1 PV/rodada em contato com seu elemento.",
             "Briga 20/30 a 50/60 dano 1d10+bônus. Arma mágica variável por arma +bônus. Pontos de Magia 3 a 10.",
             "Focus 5 a 12."
           ]
@@ -4570,8 +4624,8 @@
           "title": "Habilidades",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Elementais são constituídos de magia, portanto utilizam poderes mágicos baseados em seu elemento, porém um Mestre pode utilizar alguns super poderes para simular tais poderes ao invés de magia. Elementais nunca dormem, nem precisam descansar, beber ou comer, muitos também são imunes a ataques normais e só podem ser feridos por magia ou por alguns super poderes de acordo com cada Mestre.",
-            "Esqueletos são imunes a acertos críticos (afinal não têm carne que possa ser ferida) e não podem ser afetados por ataques baseados em frio ou gelo (exceto claro, congelamento total), não são afetados por controle mental e sofrem dano menor quando atacados com ataques perfurantes. Esqueletos nunca podem se recuperar Pontos de Vida, nem por descanso, magia ou super poder. Uma vez danificados, é para sempre e uma vez destruídos nunca podem ser restaurados."
+            "Regenera 1 PV/rodada em contato com seu elemento.",
+            "Elementais são constituídos de magia, portanto utilizam poderes mágicos baseados em seu elemento, porém um Mestre pode utilizar alguns super poderes para simular tais poderes ao invés de magia. Elementais nunca dormem, nem precisam descansar, beber ou comer, muitos também são imunes a ataques normais e só podem ser feridos por magia ou por alguns super poderes de acordo com cada Mestre."
           ]
         },
         {
@@ -4580,13 +4634,11 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "Somente seu Caminho de origem.",
-            "Elementais são criaturas constituídas doseleme ntos principais da magia (Fogo, Terra, Água, Ar, Luz, Trevas), estas criaturas pertencem a uma própria dimensão de seu elemento e que são conjuradas para Terra por feiticeiros a fim que realizem um serviço especial. Geralmente elementais podem ser inteligentes ou não (a escolha será do Mestre) e uma vez conjurados só voltarão à sua dimensão após o comprimento de tal tarefa.",
+            "Elementais são criaturas constituídas dos elementos principais da magia (Fogo, Terra, Água, Ar, Luz, Trevas), estas criaturas pertencem a uma própria dimensão de seu elemento e que são conjuradas para Terra por feiticeiros a fim que realizem um serviço especial. Geralmente elementais podem ser inteligentes ou não (a escolha será do Mestre) e uma vez conjurados só voltarão à sua dimensão após o comprimento de tal tarefa.",
             "Alguns elementais não gostam de serem invocados e tentarão atacar o mago ou magos que o conjuraram e apenas se estes se demonstrem fortes o bastante o elemental se rende e cumprirá sua tarefa com a esperança que retorne logo de onde foi tirado.",
             "O formato de um elemental pode varia muito, e existem de infinitas formas: um homem de terra, uma fogueira que anda, uma linda mulher de água, um dragão de ar.... a aparência de um elemental é decidida pelo Mestre.",
             "Por arma 40/40.",
-            "Recebem metade do dano de ataques perfurantes.",
-            "Estes são o tipo mais fraco de morto vivo, um simples amontoado de ossos que andam e lutam. Eles não surgem naturalmente, costumam ser invocados por forças malignas para servirem para algum propósito sombrio. É raro que sejam encontrados sozinhos: costumam agir em bandos de 5 a 12 indivíduos.",
-            "Quase todos os esqueletos são silenciosos, totalmente mudos e aqueles capazes de falar o fazem com uma voz estridente e arranhada."
+            "Recebem metade do dano de ataques perfurantes."
           ]
         }
       ]
@@ -4619,7 +4671,7 @@
           "IP": "5",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 5, PVs 15-25.\nEspa da (ou Lança) 60/50 dano 1d10+bônus.",
+        "skills": "# Ataques [1], IP: 5, PVs 15-25.",
         "special": []
       },
       "sections": [
@@ -4629,8 +4681,7 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 15-25, FR 15-25, DEX 06-10, AGI 06- 10, INT 00, WILL 06-15, CAR 03, PER 10- 15.",
-            "# Ataques [1], IP: 5, PVs 15-25.",
-            "Espa da (ou Lança) 60/50 dano 1d10+bônus."
+            "# Ataques [1], IP: 5, PVs 15-25."
           ]
         },
         {
@@ -4638,6 +4689,7 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Espa da (ou Lança) 60/50 dano 1d10+bônus.",
             "Estas criaturas geralmente podem ser encontradas em antigas tumbas e masmorras que guardavam grandes tesouros, são na verdade estátuas de pedra que foram animadas por magia ou pelo super poder Animação de Objetos. De um modo geral, elas são animadas para servirem propósitos parecidos dos Chacais Guardiões."
           ]
         }
@@ -4683,6 +4735,23 @@
             "CON 05-08, FR 12-16, DEX 05, AGI 05, INT 00, WILL 01, CAR 00, PER 12.",
             "# Ataques [1], IP: 0, PVs 10. Garras 35/30 dano 1d6 ou"
           ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Esqueletos são imunes a acertos críticos, não podem ser afetados por ataques baseados em frio ou gelo, não são afetados por controle mental e sofrem dano menor quando atacados com ataques perfurantes. Esqueletos nunca podem recuperar Pontos de Vida, nem por descanso, magia ou super poder. Uma vez danificados, é para sempre, exceto se forem restaurados."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Estes são o tipo mais fraco de morto vivo, um simples amontoado de ossos que andam e lutam. Eles não surgem naturalmente, costumam ser invocados por forças malignas para servirem para algum propósito sombrio. É raro que tenham qualquer vontade própria.",
+            "Quase todos os esqueletos são silenciosos, totalmente mudos, e aqueles capazes de falar o fazem com uma voz estridente e arranhada."
+          ]
         }
       ]
     },
@@ -4714,7 +4783,7 @@
           "IP": "5-7",
           "Ataques": "3"
         },
-        "skills": "# Ataques [3], IP: 5-7, PVs 30-45.\nGarras (x2) 65/65 dano 1d10+6. Mordida 50% dano 1d6+2.\nTodas as gárgulas carregam uma espécie de maldição: quando tocadas pela luz do sol fiam imóveis como estátuas, adormecidas incapazes de fazer qualquer coisa. Por outro lado, nesse estado são quase indestrutíveis, e só podem ser danificadas através de magias com Focus 5 ou mais. Quando o sol de vai elas retornam ao normal. Por esses motivos as gárgulas preferem habitar os subterrâneos como túneis, metrôs, masmorras, catacumbas, esgotos e outros parecidos, além de outros locais escuros (onde enxerga perfeitamente), para se manterem salvas mesmo durante o dia.\n# Ataques [1], IP: 2 a 4 (pele), PVs 50-60. Clava ou tronco 45/40 dano 3d6+bônus.\n# Ataques [1], IP: 2 (pele), PVs 30-45. Clava 85/65 dano 3d6+bônus.\n# Ataques [1], IP: 3 a 6 (pele), PVs 50-60. Regeneram 1 PV por hora\nClava ou tronco 45/40 dano 3d6+bônus.",
+        "skills": "# Ataques [3], IP: 5-7, PVs 30-45.\nGarras (x2) 65/65 dano 1d10+6. Mordida 50% dano 1d6+2.\nTodas as gárgulas carregam uma espécie de maldição: quando tocadas pela luz do sol fiam imóveis como estátuas, adormecidas incapazes de fazer qualquer coisa. Por outro lado, nesse estado são quase indestrutíveis, e só podem ser danificadas através de magias com Focus 5 ou mais. Quando o sol de vai elas retornam ao normal. Por esses motivos as gárgulas preferem habitar os subterrâneos como túneis, metrôs, masmorras, catacumbas, esgotos e outros parecidos, além de outros locais escuros (onde enxerga perfeitamente), para se manterem salvas mesmo durante o dia.\n# Ataques [1], IP: 2 a 4 (pele), PVs 50-60. Clava ou tronco 45/40 dano 3d6+bônus.\n# Ataques [1], IP: 2 (pele), PVs 30-45. Clava 85/65 dano 3d6+bônus.\n# Ataques [1], IP: 3 a 6 (pele), PVs 50-60.\nClava ou tronco 45/40 dano 3d6+bônus.",
         "special": []
       },
       "sections": [
@@ -4732,7 +4801,7 @@
             "CON 28-38, FR 28-38, DEX 05-10, AGI 06-10, INT 14-18, WILL 14-18, CAR 03-06, PER 08- 12.",
             "# Ataques [1], IP: 2 (pele), PVs 30-45. Clava 85/65 dano 3d6+bônus.",
             "CON 15-45, FR 17-58, DEX 05-18, AGI 15-21, INT 07-12, WILL 08-18, CAR 04-14, PER 05- 18.",
-            "# Ataques [1], IP: 3 a 6 (pele), PVs 50-60. Regeneram 1 PV por hora",
+            "# Ataques [1], IP: 3 a 6 (pele), PVs 50-60.",
             "Clava ou tronco 45/40 dano 3d6+bônus."
           ]
         },
@@ -4743,7 +4812,8 @@
           "paragraphs": [
             "Pode voar com velocidade de 20m/s.",
             "Gárgulas são imunes a acertos críticos (pois não possuem carne), nunca precisam dormir, descansar, comer, beber, são imunes a venenos, doenças e só podem se recuperar de seus ferimentos pela mesma fonte maligna que as criou.",
-            "Infravisão, Ver o Invisível e Visão Aguçada."
+            "Infravisão, Ver o Invisível e Visão Aguçada.",
+            "Regeneram 1 PV por hora"
           ]
         },
         {
@@ -4848,7 +4918,7 @@
           "IP": "3 a 6 (pele)",
           "Ataques": "1"
         },
-        "skills": "# Ataques [1], IP: 3 a 6 (pele), PVs 50-60. Regeneram 1 PV por hora\nClava ou tronco 45/40 dano 3d6+bônus.",
+        "skills": "# Ataques [1], IP: 3 a 6 (pele), PVs 50-60.\nClava ou tronco 45/40 dano 3d6+bônus.",
         "special": []
       },
       "sections": [
@@ -4858,8 +4928,16 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 15-45, FR 17-58, DEX 05-18, AGI 15-21, INT 07-12, WILL 08-18, CAR 04-14, PER 05- 18.",
-            "# Ataques [1], IP: 3 a 6 (pele), PVs 50-60. Regeneram 1 PV por hora",
+            "# Ataques [1], IP: 3 a 6 (pele), PVs 50-60.",
             "Clava ou tronco 45/40 dano 3d6+bônus."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Regeneram 1 PV por hora"
           ]
         },
         {
@@ -5124,19 +5202,12 @@
           ]
         },
         {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Um homem-escorpião pode fazer dói ataques por turno com as garras, sempre contra o mesmo alvo, ou um único ataque com a cauda. Se conseguir acertar os dois ataques com as garras em um mesmo turno, a vítima fica presa e incapaz de lutar até ter sucesso em um teste de FOR resistido contra a FOR do homem-escorpião. O homem escorpião pode, se quiser, atacar um vítima presa nas garras com o ferrão venenoso, sem precisar fazer nenhum teste."
-          ]
-        },
-        {
           "id": "descricao",
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Um homem escorpião é uma criatura bizarra com torso humano ligado ao corpo de um escorpião gigante. Eles também têm grandes pinças em vez de mãos."
+            "Um homem escorpião é uma criatura bizarra com torso humano ligado ao corpo de um escorpião gigante. Eles também têm grandes pinças em vez de mãos.",
+            "Um homem-escorpião pode fazer dói ataques por turno com as garras, sempre contra o mesmo alvo, ou um único ataque com a cauda. Se conseguir acertar os dois ataques com as garras em um mesmo turno, a vítima fica presa e incapaz de lutar até ter sucesso em um teste de FOR resistido contra a FOR do homem-escorpião. O homem escorpião pode, se quiser, atacar um vítima presa nas garras com o ferrão venenoso, sem precisar fazer nenhum teste."
           ]
         }
       ]
@@ -5238,8 +5309,7 @@
           "title": "Habilidades",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Pode voar com velocidade de 10m/s.",
-            "Homens-morcego vivem em grandes colônias de 10 a 30 indivíduos. Para espantar intrusos que se aproximam se seu território, eles simplesmente sobrevoam as vítimas de grande altura e deixam cair guano (esterco) sobre elas; é inofensivo, mas pode desconcentrar super poderes ativos (pode ser evitado com um teste de WILL ou NP) e impedir que qualquer outro cheiro seja percebido até que os heróis de limpem."
+            "Pode voar com velocidade de 10m/s."
           ]
         },
         {
@@ -5249,6 +5319,7 @@
           "paragraphs": [
             "Esta criatura é um habitante dos “submundos”. O homem-morcego tem um corpo humano, coberto de pelagem alaranjada, exceto na cabeça e asas (que são marrons). As orelhas e o focinho lembram muito mais uma raposa de olhos grandes.",
             "O homem morcego não se alimenta de sangue, nem é um predador, come apenas frutas e néctar de flores subterrâneas. As mãos, transformadas em asas, não permitem manipular objetos, ele faz isso com a língua muito longa e flexível, que atinge 1m. Ao contrário de outros morcegos, ele consegue caminhar sobre duas pernas. Também pode escalar árvores e paredes rochosas, graças ao grande polegar em forma de garra.",
+            "Homens-morcego vivem em grandes colônias de 10 a 30 indivíduos. Para espantar intrusos que se aproximam se seu território, eles simplesmente sobrevoam as vítimas de grande altura e deixam cair guano (esterco) sobre elas; é inofensivo, mas pode desconcentrar super poderes ativos (pode ser evitado com um teste de WILL ou NP) e impedir que qualquer outro cheiro seja percebido até que os heróis de limpem.",
             "As criaturas só entram em combate quando alguém se aproxima demais do ninho da colônia: realizam vôos rasantes e golpeiam o alvo com as garras dos pés. Caso sejam derrubados, atacam com o polegar/garras."
           ]
         }
@@ -5345,8 +5416,15 @@
             "CON 14-24, FR 16-26, DEX 08-12, AGI 16-24, INT 08-16, WILL 08-16, CAR 00, PER 12-18.",
             "# Ataques [2 ou 1], IP: 1 (pele), PVs 16-26. Garras (x2) 50/50 dano 1d6+2.",
             "Lança 60/60 dano 1d10+5.",
-            "Podem expelir veneno paralisante (FR 4D).",
             "Homens-serpentes podem fazer um ataque por turno usando uma lança ou, desarmados, dois ataques por turno com as garras. Eles também podem realizar, com a boca, dois tipos de ataques; expelir uma enzima ácida (2d6) ou veneno paralisante (FR 4D)."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Podem expelir veneno paralisante (FR 4D)."
           ]
         },
         {
@@ -5388,7 +5466,7 @@
           "IP": "4-9 (pele)",
           "Ataques": "vários"
         },
-        "skills": "# Ataques [vários], IP: 4-9 (pele), PVs 100-120. Cada tentáculo possui 20-50 PVs, IP 4 e realiza 1 ataque.\nTentáculos (vários) 60/20 dano 2d6+12 Tentáculos maiores (x2) 50/30 dano 4d6+12.\nCada tentáculo pode tolerar dano igual a cada um de seus Pontos de Vida antes de ficar inutilizado e só pode ser amputado através de ataques cortantes. Dano sofrido pelos tentáculos não afeta os PVs normais do kraken, para isso é necessário atingir a cabeça ou os órgão vitais (que normalmente ficam embaixo d´água enquanto o monstro ataca).\nLobisomens regeneram 2 Pontos de Vida por rodada e só podem ser verdadeiramente mortos por prata puta. Ataques feitos por armas de prata não são regenerados. Os lobisomens possuem todos os sentidos superiores, bem como alguns deles podem possuir poderes quem simulam os Caminhos, em Ar e Trevas. Alguns super poderes também podem ser simulados pelos lobisomens (de acordo com cada Mestre).",
+        "skills": "# Ataques [vários], IP: 4-9 (pele), PVs 100-120. Cada tentáculo possui 20-50 PVs, IP 4 e realiza 1 ataque.\nTentáculos (vários) 60/20 dano 2d6+12 Tentáculos maiores (x2) 50/30 dano 4d6+12.",
         "special": []
       },
       "sections": [
@@ -5399,9 +5477,7 @@
           "paragraphs": [
             "CON 75-80, FR 75-80, DEX 05-15, AGI 05-15, INT 05-15, WILL 05-15, CAR 00, PER 05-15.",
             "# Ataques [vários], IP: 4-9 (pele), PVs 100-120. Cada tentáculo possui 20-50 PVs, IP 4 e realiza 1 ataque.",
-            "Tentáculos (vários) 60/20 dano 2d6+12 Tentáculos maiores (x2) 50/30 dano 4d6+12.",
-            "Cada tentáculo pode tolerar dano igual a cada um de seus Pontos de Vida antes de ficar inutilizado e só pode ser amputado através de ataques cortantes. Dano sofrido pelos tentáculos não afeta os PVs normais do kraken, para isso é necessário atingir a cabeça ou os órgão vitais (que normalmente ficam embaixo d´água enquanto o monstro ataca).",
-            "Lobisomens regeneram 2 Pontos de Vida por rodada e só podem ser verdadeiramente mortos por prata puta. Ataques feitos por armas de prata não são regenerados. Os lobisomens possuem todos os sentidos superiores, bem como alguns deles podem possuir poderes quem simulam os Caminhos, em Ar e Trevas. Alguns super poderes também podem ser simulados pelos lobisomens (de acordo com cada Mestre)."
+            "Tentáculos (vários) 60/20 dano 2d6+12 Tentáculos maiores (x2) 50/30 dano 4d6+12."
           ]
         },
         {
@@ -5412,6 +5488,7 @@
             "Criaturas gigantescas fazem parte do universo dos super heróis, algumas dessas criaturas já estavam sob a Terra há milhares de anos, adormecidas ou congeladas só esperando o momento para despertarem para começar a destruição. Um exemplo disso é uma fera mitológica chamada Kraken.",
             "O kraken é uma monstruosa lula-gigante. Alongadas, podem medir de 10 a 100m de comprimento ou muito mais, elas podem viver milhares de anos e nunca param de crescer. É raro que se aproximem da costa, mas costumam atacar barcos e navios em mar aberto.",
             "Como as lulas normais, o kraken tem dez tentáculos, oito mais curtos e pontiagudos, dois mais longos (10 a 60m) e achatados das extremidades. O diâmetro dos tentáculos varia de 45cm a mais de 1m. para propósito de combate, cada tentáculo do kraken é tratado como um inimigo separado. A criatura normalmente tenta segurar a vítima com um ou mais tentáculos e arrastá-la na direção de seu bico.",
+            "Cada tentáculo pode tolerar dano igual a cada um de seus Pontos de Vida antes de ficar inutilizado e só pode ser amputado através de ataques cortantes. Dano sofrido pelos tentáculos não afeta os PVs normais do kraken, para isso é necessário atingir a cabeça ou os órgão vitais (que normalmente ficam embaixo d´água enquanto o monstro ataca).",
             "Lobisomens ou licantropos são os humanos que nas noites de lua cheia transformam-se em lupinos e passam a aterrorizar vilas e pequenas cidades, em busca de destruição e morte. Os homens-lobos quase nunca controlam a transformação e muitos nem sequer lembram-se do que ocorreu na noite anterior.",
             "Um personagem ferido por um lobisomem possui uma pequena chance de contrair a licantropia (igual ao dano em porcentagem). O único modo de se transformar em um lobisomem é ser ferido por um, ou ter nascido descendente de um. Uma vez contaminado, não existe cura."
           ]
@@ -5446,7 +5523,7 @@
           "IP": "3 (pele)",
           "Ataques": "3"
         },
-        "skills": "# Ataques [3], IP: 3 (pele), PVs 30-40. Regenera 2 PVs por Rodada.\nGarras (x2) 75/75 dano 1d6+bônus. Mordida 70/20 dano 1d10.",
+        "skills": "# Ataques [3], IP: 3 (pele), PVs 30-40.\nGarras (x2) 75/75 dano 1d6+bônus. Mordida 70/20 dano 1d10.",
         "special": []
       },
       "sections": [
@@ -5456,8 +5533,17 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 11-36, FR 11-36, DEX 06-12, AGI 10-30, INT 02-12, WILL 08-18, CAR 01, PER 10-30.",
-            "# Ataques [3], IP: 3 (pele), PVs 30-40. Regenera 2 PVs por Rodada.",
+            "# Ataques [3], IP: 3 (pele), PVs 30-40.",
             "Garras (x2) 75/75 dano 1d6+bônus. Mordida 70/20 dano 1d10."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Regenera 2 PVs por Rodada.",
+            "Lobisomens regeneram 2 Pontos de Vida por rodada e só podem ser verdadeiramente mortos por prata pura. Ataques feitos por armas de prata não são regenerados. Os lobisomens possuem todos os sentidos superiores, bem como alguns deles podem possuir poderes que simulam os Caminhos em Ar e Trevas. Alguns super poderes também podem ser simulados pelos lobisomens, de acordo com o Mestre."
           ]
         },
         {
@@ -5498,7 +5584,7 @@
           "IP": "especial (ver abaixo)",
           "Ataques": "2"
         },
-        "skills": "# Ataques [2], IP: especial (ver abaixo), PVs 26-40.\nGarras (x2) 70/70 dano 1d6+bônus. 30% das múmias são magos de nível 4-8.\nUma das maiores fraquezas de um múmia é que todas estão presas a uma maldição; nunca podem se afastar muito de sua própria tumba. A cada nascer do sol, caso estejam distantes de sua tumba mais de 100m (ou 200m, ou 300m ou um quilômetro... quanto mais velha, maior a distância que uma múmia pode se afastar de sua tumba sem sofrer dano), começam a deteriorar e perder 1 PV por turno até retornarem, ou até a morte final.",
+        "skills": "# Ataques [2], IP: especial (ver abaixo), PVs 26-40.\nGarras (x2) 70/70 dano 1d6+bônus. 30% das múmias são magos de nível 4-8.",
         "special": []
       },
       "sections": [
@@ -5509,8 +5595,7 @@
           "paragraphs": [
             "CON 16-30, FR 12-36, DEX 10-12, AGI 06-10, INT 06-18, WILL 12-24, CAR 00, PER 12-18.",
             "# Ataques [2], IP: especial (ver abaixo), PVs 26-40.",
-            "Garras (x2) 70/70 dano 1d6+bônus. 30% das múmias são magos de nível 4-8.",
-            "Uma das maiores fraquezas de um múmia é que todas estão presas a uma maldição; nunca podem se afastar muito de sua própria tumba. A cada nascer do sol, caso estejam distantes de sua tumba mais de 100m (ou 200m, ou 300m ou um quilômetro... quanto mais velha, maior a distância que uma múmia pode se afastar de sua tumba sem sofrer dano), começam a deteriorar e perder 1 PV por turno até retornarem, ou até a morte final."
+            "Garras (x2) 70/70 dano 1d6+bônus. 30% das múmias são magos de nível 4-8."
           ]
         },
         {
@@ -5518,7 +5603,6 @@
           "title": "Habilidades",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Múmias podem sofrer dano Apenas por fogo, Magia e armas mágicas. Suas garras, além de causar dano normal, exige que a vítima se bem sucedida em um Teste de Resistência de CON, se falhar, vai contrair uma doença pestilenta que provoca em TODOS os testes um redutor de -3 em todos os Atributos Físicos. Essa doença é considerada uma maldição, e afeta apenas criaturas vivas.",
             "Caso assim o Mestre desejar, uma múmia pode usar um disfarce ilusório para se fazer passar por seres humanos (mas o disfarce se dissipa quando sofrem dano ou entram em combate). Múmias são inteligentes, as mais antigas, inclusive, podem ser magos poderosos."
           ]
         },
@@ -5528,7 +5612,9 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "Múmias são cadáveres especialmente embalsamados e preparados para resistir à passagem dos séculos. Uma série de rituais funerários garante à sua alma uma viagem tranqüila ao Reino dos Mortos. Infelizmente, às vezes, algum tipo de maldição impede que o espírito da múmia deixe este mundo, resultando em um tipo de morto-vivo muito mais poderoso que simples esqueletos e zumbis.",
-            "Algumas múmias também podem exalar uma aura mágica de medo. Elas possuem o super poder Controle de Emoções (medo) como uma habilidade natural, sem gastar Pontos de Poder (para qualquer fim, o NP será igual a WILL da múmia)."
+            "Múmias podem sofrer dano Apenas por fogo, Magia e armas mágicas. Suas garras, além de causar dano normal, exige que a vítima se bem sucedida em um Teste de Resistência de CON, se falhar, vai contrair uma doença pestilenta que provoca em TODOS os testes um redutor de -3 em todos os Atributos Físicos. Essa doença é considerada uma maldição, e afeta apenas criaturas vivas.",
+            "Algumas múmias também podem exalar uma aura mágica de medo. Elas possuem o super poder Controle de Emoções (medo) como uma habilidade natural, sem gastar Pontos de Poder (para qualquer fim, o NP será igual a WILL da múmia).",
+            "Uma das maiores fraquezas de um múmia é que todas estão presas a uma maldição; nunca podem se afastar muito de sua própria tumba. A cada nascer do sol, caso estejam distantes de sua tumba mais de 100m (ou 200m, ou 300m ou um quilômetro... quanto mais velha, maior a distância que uma múmia pode se afastar de sua tumba sem sofrer dano), começam a deteriorar e perder 1 PV por turno até retornarem, ou até a morte final."
           ]
         }
       ]
@@ -5561,7 +5647,7 @@
           "IP": "10 a 15",
           "Ataques": "2"
         },
-        "skills": "# Ataques [2], IP:10 a 15, PVs 150-200.\nRegenera 3 PVs por rodada.",
+        "skills": "# Ataques [2], IP:10 a 15, PVs 150-200.\nGolpe de corpo 90/90 dano 6d6+bônus.",
         "special": []
       },
       "sections": [
@@ -5572,6 +5658,14 @@
           "paragraphs": [
             "CON 20-120, FR 15-90, DEX 00, AGI 00, INT 00, WILL 00, CAR 01-06, PER 04-24.",
             "# Ataques [2], IP:10 a 15, PVs 150-200.",
+            "Golpe de corpo 90/90 dano 6d6+bônus."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
             "Regenera 3 PVs por rodada."
           ]
         },
@@ -5580,7 +5674,6 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Golpe de corpo 90/90 dano 6d6+bônus.",
             "Durante a Idade Média, navegar para fora dos limites costeiros era a mesma coisa de suicídio. O mar era habitado por criaturas destruidoras e fantásticas chamadas serpentes marinhas. Hoje em dia algumas dessas serpentes ainda podem existir vivendo nos mais fundos oceanos, e tão poderosas que podem naufragar até os maiores cruzeiros. Elas se assemelhavam a imensos dragões com nadadeiras ao invés de asas. As serpentes possuíam de 20 a 30 metros de comprimento e eram fortes o suficiente para destruir navios em poucos segundos."
           ]
         }
@@ -5607,14 +5700,14 @@
           "INT": "12-20",
           "WILL": "12-20",
           "CAR": "00-20",
-          "PER": "16"
+          "PER": "16-24"
         },
         "vitals": {
           "PV": "26-56",
           "IP": "1-6 (especial)",
           "Ataques": "2"
         },
-        "skills": "# Ataques [2], IP: 1-6 (especial), PVs 26-56. Garras (x2) 80/90 dano 1d6+8 ou Mordida 45% dano (especial).\nTODOS os vampiros sofrem dano quando repulsiva e não pode se fazer passar por um humano normal. Além disso, pelo tamanho de suas presas e aspecto de morcego, pode ser facilmente identificado como um vampiro.\nVulnerabilidade à Água: O vampiro sempre recebe o dobro do dano quando sofre ataques baseados em água (mesmo quando não seja água benta). Além disso, quando mergulhado em água corrente, perde 1 PV por turno.\nOBS: Os vampiros aqui descritos, foram retirados do livro Guia de Monstros de Arton, são vampiros mais genéricos, porém, podem ser substituídos normalmente por aqueles do livro Vampiros Mitológicos, da Editora Daemon. Caso assim deseje, construa os vampiros normalmente utilizando as regras daquele livro. Os vampiros mais comuns de se aparecerem em uma aventura de SUPERS são os Estrigoi, os Ekimmu e os Nosferatus. por turno até virar cinzas (e não podem regenerar normalmente esse dano). Aperda se reduz a 1 PV por minuto em dias nublados ou quando usam roupas pesadas.",
+        "skills": "# Ataques [2], IP: 1-6 (especial), PVs 26-56. Garras (x2) 80/90 dano 1d6+8 ou Mordida 45% dano (especial).",
         "special": []
       },
       "sections": [
@@ -5623,12 +5716,8 @@
           "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "CON 16-36, FR 16-36, DEX 12-24, AGI 16-36, também não pode ser atacado (exceto magia e armas mágicas).",
-            "INT 12-20, WILL 12-20, CAR 00-20, PER 16- O vampiro pode se 24.",
-            "# Ataques [2], IP: 1-6 (especial), PVs 26-56. Garras (x2) 80/90 dano 1d6+8 ou Mordida 45% dano (especial).",
-            "TODOS os vampiros sofrem dano quando repulsiva e não pode se fazer passar por um humano normal. Além disso, pelo tamanho de suas presas e aspecto de morcego, pode ser facilmente identificado como um vampiro.",
-            "Vulnerabilidade à Água: O vampiro sempre recebe o dobro do dano quando sofre ataques baseados em água (mesmo quando não seja água benta). Além disso, quando mergulhado em água corrente, perde 1 PV por turno.",
-            "OBS: Os vampiros aqui descritos, foram retirados do livro Guia de Monstros de Arton, são vampiros mais genéricos, porém, podem ser substituídos normalmente por aqueles do livro Vampiros Mitológicos, da Editora Daemon. Caso assim deseje, construa os vampiros normalmente utilizando as regras daquele livro. Os vampiros mais comuns de se aparecerem em uma aventura de SUPERS são os Estrigoi, os Ekimmu e os Nosferatus. por turno até virar cinzas (e não podem regenerar normalmente esse dano). Aperda se reduz a 1 PV por minuto em dias nublados ou quando usam roupas pesadas."
+            "CON 16-36, FR 16-36, DEX 12-24, AGI 16-36, INT 12-20, WILL 12-20, CAR 00-20, PER 16-24.",
+            "# Ataques [2], IP: 1-6 (especial), PVs 26-56. Garras (x2) 80/90 dano 1d6+8 ou Mordida 45% dano (especial)."
           ]
         },
         {
@@ -5636,8 +5725,13 @@
           "title": "Habilidades",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Formas Alternativas: o vampiro pode se transformar em um lobo ou morcego.",
+            "Imortal: Quando destruído, o vampiro ressurge 2d6 noites mais tarde em sua tumba ou algum outro lugar. Esse tipo de vampiro nunca pode ser realmente destruído, exceto pelo sol.",
+            "Invulnerabilidade: O vampiro pode ser ferido apenas por fogo, magia e armas mágicas.",
+            "Monstruoso: Este vampiro tem aparência",
             "Provavelmente os mais temidos de todos os mortos-vivos, vampiros também são aqueles com origem e habilidades mais variadas. Eles podem surgir através de maldições, contaminação por doenças raras, rituais demoníacos... Cada vampiro é único, com uma combinação própria de poderes e fraquezas. Vampiros são imunes a acertos críticos, uma vez que seus órgãos vitais não funcionam mais, também não precisam respirar, beber ou comer. Além dessas imunidades, eles têm apenas alguns traços em comum...",
-            "Temores Vampíricos: O cheiro de alho, o toque de água benta e a visão de fogo ou qualquer símbolo religioso provoca no vampiro um pânico incontrolável."
+            "Temores Vampíricos: O cheiro de alho, o toque de água benta e a visão de fogo ou qualquer símbolo religioso provoca no vampiro um pânico incontrolável.",
+            "Vulnerabilidade à Água: O vampiro sempre recebe o dobro do dano quando sofre ataques baseados em água (mesmo quando não seja água benta). Além disso, quando mergulhado em água corrente, perde 1 PV por turno."
           ]
         },
         {
@@ -5646,10 +5740,8 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "Vários e únicos poderes (cada vampiro é criado individualmente, com seus próprios poderes e fraquezas). transformar em um lobo ou morcego.",
-            "Imortal: Quando destruído, o vampiro ressurge 2d6 noites mais tarde em sua tumba ou algum outro lugar. Esse tipo de vampiro nunca pode ser realmente destruído, exceto pelo sol.",
-            "Invulnerabilidade: O vampiro pode ser ferido apenas por fogo, magia e armas mágicas.",
-            "Monstruoso: Este vampiro tem aparência",
             "O que define um vampiro é sua necessidade de sugar a vida dos vivos; TODOS os vampiros dependem de alguma coisa rara, proibida ou monstruosa para continuar existindo. Sangue humano é a necessidade mais óbvia e comum nesses seres, mas também existem aqueles que sugam suas almas ou devoram partes do corpo. Seja como for, um vampiro precisa matar um humano todos os dias, ou a cada pequeno intervalo de dias, senão enfraquece até ser destruído.",
+            "OBS: Os vampiros aqui descritos, foram retirados do livro Guia de Monstros de Arton, são vampiros mais genéricos, porém, podem ser substituídos normalmente por aqueles do livro Vampiros Mitológicos, da Editora Daemon. Caso assim deseje, construa os vampiros normalmente utilizando as regras daquele livro. Os vampiros mais comuns de se aparecerem em uma aventura de SUPERS são os Estrigoi, os Ekimmu e os Nosferatus. por turno até virar cinzas (e não podem regenerar normalmente esse dano). Aperda se reduz a 1 PV por minuto em dias nublados ou quando usam roupas pesadas.",
             "Quando conseguem superar esses detalhes, vampiros podem se fazer passar por humanos"
           ]
         }
@@ -5683,7 +5775,7 @@
           "IP": "0",
           "Ataques": "2"
         },
-        "skills": "# Ataques [2], IP: 0, PVs 12-15.\nGarras (x2) 35/25 dano 1d6+1. sem muita dificuldade, vivendo disfarçados em\nZumbis podem parecer criaturas estúpidas e sem mente, mas isso em sempre é verdade. Eles apenas se comportam como tal por que precisam satisfazer um apetite desesperado por carne humana: um zumbi precisa devorar um órgão humano vivo e fresco (um cérebro, um coração...) todos os dias, ou ficará cada vez mais fraco (perdendo 1 PV a cada doze horas) até se desfazer por completo.",
+        "skills": "# Ataques [2], IP: 0, PVs 12-15.\nGarras (x2) 35/25 dano 1d6+1. sem muita dificuldade, vivendo disfarçados em",
         "special": []
       },
       "sections": [
@@ -5694,8 +5786,7 @@
           "paragraphs": [
             "CON 12-15, FR 12-15, DEX 03-06, AGI 08-12, INT 00, WILL 00, CAR 00, PER 10-12.",
             "# Ataques [2], IP: 0, PVs 12-15.",
-            "Garras (x2) 35/25 dano 1d6+1. sem muita dificuldade, vivendo disfarçados em",
-            "Zumbis podem parecer criaturas estúpidas e sem mente, mas isso em sempre é verdade. Eles apenas se comportam como tal por que precisam satisfazer um apetite desesperado por carne humana: um zumbi precisa devorar um órgão humano vivo e fresco (um cérebro, um coração...) todos os dias, ou ficará cada vez mais fraco (perdendo 1 PV a cada doze horas) até se desfazer por completo."
+            "Garras (x2) 35/25 dano 1d6+1. sem muita dificuldade, vivendo disfarçados em"
           ]
         },
         {
@@ -5716,6 +5807,7 @@
             "O vampiro pode se cemitérios amaldiçoados, vírus tecnológicos... transformar em névoa. Nessa forma ele pode voar com velocidade de 20m por segundo e não pode atacar ou usar magias e poderes, mas",
             "Costumam ser encontrados em bandos de 5 a 8 indivíduos.",
             "Zumbis não tem quaisquer imunidade ou malignos, mas também costumam ocorrer naturalmente por outros motivos, como cemitérios amaldiçoados, vírus tecnológicos... Costumam ser encontrados em bandos de 5 a 8 indivíduos.",
+            "Zumbis podem parecer criaturas estúpidas e sem mente, mas isso em sempre é verdade. Eles apenas se comportam como tal por que precisam satisfazer um apetite desesperado por carne humana: um zumbi precisa devorar um órgão humano vivo e fresco (um cérebro, um coração...) todos os dias, ou ficará cada vez mais fraco (perdendo 1 PV a cada doze horas) até se desfazer por completo.",
             "Zumbis podem falar, mas, como os esqueletos, a maioria consegue apenas gemer e forma fantasmagórica. Por seu cheiro forte e aparência decrépita, muitos também nunca podem se fazer passar por seres humanos, exceto à distância. Mas existem alguns com aspecto mais o menos normal.",
             "Nem todo desafio da vida de um super surge em um beco escuro onde assaltantes roubam velhinhas indefesas, monstros marinhos gigantes derrubando pontes sob o mar ou de invasões alienígenas. Algumas dessas ameaças podem vir de um lugar bem mais profundo e distante. Podem vir das profundezas do próprio inferno... Demônios podem surgir na Terra por variados motivos, uma tentativa de dominação, caçar outros demônios, caçar alguém em especial, fazer pactos com outros super-vilões, fugir do inferno, espalhar terror e caos, enfim. Aqui estão alguns arquétipos clássicos de demônios que podem confrontar os heróis de alguma forma. Apesar desses demônios conjurarem magias para simular seus poderes sobrenaturais, o Mestre pode substituir ou acrescentar alguns super poderes.",
             "OBS: Os demônios aqui são apresentados de forma genérica. Porém, caso assim deseje o Mestre, eles podem ser normalmente substituídos pelos demônios presentes no livro Demônios: A Divina Comédia, da Editora Daemon, uma vez que são totalmente compatíveis. Caso seja assim, construa seus demônios utilizando as regras daquele livro. Os demônios mais comuns para aparecerem em campanhas de SUPERS são os Daemon e Succubi (e Incubi). Porém os Anjos Caídos e Hellspwns podem servir mais do que apenas “bucha de canhão”, podem se apresentar ótimos como NPCs ou até mesmo heróis e vilões (um caso especial seria com os Hellspawns)."
@@ -5751,7 +5843,7 @@
           "IP": "7 (escamas)",
           "Ataques": "2 a 3"
         },
-        "skills": "# Ataques [2 a 3], IP: 7 (escamas), PVs 40-50. Regenera 2 PVs por rodada.\nGarras 80/70 dano 2d6+bônus.\nArma mágica 80/75 dano por arma+bônus. Pontos de Magia 10 a 15.\nFocus 12 a 17.\nCaminhos: Trevas, Fogo, Ar, Terra, Demônios (Arkanun), Espíritos (Spiritum).",
+        "skills": "# Ataques [2 a 3], IP: 7 (escamas), PVs 40-50.\nGarras 80/70 dano 2d6+bônus.\nArma mágica 80/75 dano por arma+bônus. Pontos de Magia 10 a 15.\nFocus 12 a 17.\nCaminhos: Trevas, Fogo, Ar, Terra, Demônios (Arkanun), Espíritos (Spiritum).",
         "special": []
       },
       "sections": [
@@ -5761,11 +5853,19 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "CON 13-48, FR 13-48, DEX 10-30, AGI 10-30, INT 10-30, WILL 11-36, CAR 04-24, PER 11-36.",
-            "# Ataques [2 a 3], IP: 7 (escamas), PVs 40-50. Regenera 2 PVs por rodada.",
+            "# Ataques [2 a 3], IP: 7 (escamas), PVs 40-50.",
             "Garras 80/70 dano 2d6+bônus.",
             "Arma mágica 80/75 dano por arma+bônus. Pontos de Magia 10 a 15.",
             "Focus 12 a 17.",
             "Caminhos: Trevas, Fogo, Ar, Terra, Demônios (Arkanun), Espíritos (Spiritum)."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Regenera 2 PVs por rodada."
           ]
         },
         {
@@ -5808,7 +5908,7 @@
           "IP": "5",
           "Ataques": "3"
         },
-        "skills": "# Ataques [3], IP: 5, PVs 25-35.\nRegenera 1 PV por rodada. Garras 50/55 dano 2d6+bônus. Dentes 20% dano 1d6.\nRabo 50% dano 1d6+bônus. Pontos de Magia 7 a 12.\nFocus 9 a 14.\nCaminhos: Trevas, Fogo, Ar, Terra, Demônios (Arkanun).",
+        "skills": "# Ataques [3], IP: 5, PVs 25-35.\nGarras 50/55 dano 2d6+bônus. Dentes 20% dano 1d6.\nRabo 50% dano 1d6+bônus. Pontos de Magia 7 a 12.\nFocus 9 a 14.\nCaminhos: Trevas, Fogo, Ar, Terra, Demônios (Arkanun).",
         "special": []
       },
       "sections": [
@@ -5819,10 +5919,18 @@
           "paragraphs": [
             "CON 11-36, FR 15-30, DEX 09-24, AGI 10-24, INT 09-24, WILL 11-36, CAR 03-18, PER 09-24.",
             "# Ataques [3], IP: 5, PVs 25-35.",
-            "Regenera 1 PV por rodada. Garras 50/55 dano 2d6+bônus. Dentes 20% dano 1d6.",
+            "Garras 50/55 dano 2d6+bônus. Dentes 20% dano 1d6.",
             "Rabo 50% dano 1d6+bônus. Pontos de Magia 7 a 12.",
             "Focus 9 a 14.",
             "Caminhos: Trevas, Fogo, Ar, Terra, Demônios (Arkanun)."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Regenera 1 PV por rodada."
           ]
         },
         {
@@ -6010,7 +6118,7 @@
     },
     {
       "id": "robo-de-combate",
-      "name": "Robô De Combate",
+      "name": "Robô de Combate",
       "type": "character_npc",
       "role": "Criatura/NPC",
       "classifications": [
@@ -6127,12 +6235,15 @@
   ],
   "adventures": [],
   "areaCounts": {
-    "criaturas_npcs": 107,
+    "criaturas_npcs": 109,
+    "classes": 4,
     "regras_base": 1
   },
   "reviewNotes": [
     "Piloto conservador: apenas headings com ficha detectável viraram criaturas/NPCs.",
+    "Perfis humanos sem ficha própria completa foram tratados como Classes, não como Regra Base.",
     "Habilidades especiais foram separadas de Perícias e Combate quando detectadas por frase de efeito, teste, veneno, regeneração ou voo.",
-    "O DOCX possui quebras e trechos fora de ordem; revisar manualmente entradas com descrições curtas ou herdadas de variantes."
+    "O DOCX possui quebras e trechos fora de ordem; revisar manualmente entradas com descrições curtas ou herdadas de variantes.",
+    "Pendência conhecida: Crocodilo do Pântano não traz linha de PV/IP/# Ataques no trecho extraído do DOCX; foram mantidos atributos, ataques e descrição sem inventar valores."
   ]
 }

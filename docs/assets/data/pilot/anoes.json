@@ -1,0 +1,842 @@
+{
+  "version": 1,
+  "status": "pilot_review",
+  "generatedAt": "2026-06-05T01:31:46",
+  "source": "anoes",
+  "sourceFile": "Anoes_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\feito\\Anoes_OCR_alta_qualidade.docx",
+  "title": "Anões",
+  "summary": "Suplemento sobre Anões e Duegares, com lore de Nidavellir, características raciais, aprimoramentos, kits de personagem e regras de forja.",
+  "areas": [
+    "aprimoramentos",
+    "cenarios_lore",
+    "classes",
+    "itens_equipamentos",
+    "racas"
+  ],
+  "groups": [
+    {
+      "id": "anoes-nidavellir",
+      "title": "Anões",
+      "kind": "setting",
+      "area": "cenarios_lore",
+      "sectionTitle": "Cenário",
+      "sections": [
+        {
+          "id": "introducao",
+          "title": "Introdução",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Antes mesmo da construção de Aasgard, os deuses aesires já sabiam da existência de pequenos seres que se escondiam nos confins subterrâneos entre os mundos, mas dos quais era muito difícil aproximar-se: os Anões.",
+            "Descritos pelo folclore dos Reinos Nórdicos como criaturas de baixa estatura, aparência carrancuda, porte robusto e longa barba. Apesar de discretos e temerosos, são os senhores da arte dos metais. Donos de todos os segredos da forja, zelosos de seu saber, possuem o dom de fabricar objetos mágicos e jóias exuberantes.",
+            "Sua terra natal é Nidavellir, um reino montanhoso, coberto de neve e cercado por florestas de pinheiros gigantes, que conecta os planos de Paradísia, Arcádia e Terra. Os Anões costumam ajudar os deuses nórdicos na confecção de armas e equipamentos e, por sua vez, os vikings, Magos da Ordem de Luft e guerreiros do norte os auxiliam em sua batalha contra os Jotuns."
+          ]
+        },
+        {
+          "id": "origem-das-lendas",
+          "title": "Origem das Lendas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Segundo as interpretações mais ousadas dos estudiosos, Ymir teria criado não apenas os Jothuns, mas também os Anões.",
+            "A razão disto é atribuída ao fato das lendas mencionarem os filhos de Ymir como tendo nascido em uma ninhada moldada em uma forma antropomórfica semelhante à do próprio Ymir.",
+            "Como ele próprio fora criado da união entre as forças cósmicas da Criação e da Destruição, seus descendentes carregaram heranças dessas forças consigo, em proporções diferentes.",
+            "Assim, alguns nasceram malignos e cruéis, medindo muitos metros de altura e que sabiam apenas espalhar a destruição por onde passavam, enquanto outros nasceram benevolentes e eruditos, embora ainda fossem gigantes colossais. Porém, também haviam aqueles que nasceram pequenos em estatura, mas igualmente sábios ou perversos: os Anões.",
+            "Se analisarmos com atenção, pode-se perceber que os Anões são muito semelhantes aos Gigantes. Ambos possuem uma aparência rústica, um corpo troncudo, fortes e resistentes ao frio e ao fogo. Sua diferença maior é, notavelmente, a estatura, apesar dos Anões também possuírem uma organização em sociedade e aprimoramentos tecnológicos muito mais desenvolvidos que os Gigantes, que conservam hábitos primitivos de vida."
+          ]
+        },
+        {
+          "id": "o-reino-dos-anoes",
+          "title": "O Reino dos Anões",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O Reino dos Anões está dividido em centenas de cidades, fortalezas e minas construídas em um complexo cavernoso esculpido no interior das montanhas e no subsolo, criando um universo em camadas, cada vez mais profundo e misterioso. As redes de túneis interligam as cidadelas subterrâneas como se fossem estradas ou rotas mercantis, e também chegam a comunicarem-se com outros impérios de criaturas das profundezas.",
+            "Nidavellir também possuem muitos pontos de conexão com Aasgard, Alfheim (o Reino dos Elfos, que fica nas florestas meridionais da Nova Arcádia, Jotunheim (o lar dos Jotuns e Gigantes), Halzazee (o reino mais distante, que faz fronteira com o território proibido de Ark-a-nun) e com diversas regiões dos reinos das fadas. Existem, contudo, alguns portais que estão ligados à Terra, principalmente nas montanhas e florestas do Norte, próximo a Novgorod, da Rússia e espalhados pela Península Escandinávia.",
+            "Contudo, os Anões nem sempre habitaram o mundo subterrâneo.",
+            "Originalmente, eles construíram suas primeiras cidades sobre a terra sagrada de Vanaheim, próximo a morada dos deuses aesires. Desde aquela época, suas magníficas construções já eram notáveis.",
+            "Castelos, torres e palácios de beleza invejada até pelos próprios deuses compunham um cenário que era motivo de orgulho para os anões. Geralmente as cidades eram erguidas próximas às minas escavadas nas montanhas, de onde eram retiradas as pedras e gemas usadas na confecção das casas.",
+            "No entanto, aquelas estruturas monumentais tornaram-se alvo da destruição ensandecida provocada pelos Gigantes sempre que estes cruzavam os vales de Vanaheim, pois essas criaturas de imensa estatura apenas sabiam espalhar o caos por onde passavam. Inconformados com estes massacres, os Anões iniciaram uma guerra contra os Jothuns. Resistências eram organizadas para conter seus avanços em direção à outras cidades e exércitos eram formados em números cada vez maiores.",
+            "Em vista da necessidade crescente de armamentos mais fortes e refúgios mais seguros contra as investidas dos Jotuns, os Anões abandonaram suas cidades que ainda se conservavam intactas e mudaram-se para as cavernas subterrâneas de suas minas nas montanhas. Inicialmente eles utilizavam como residência as grandes grutas deixadas após o término dos minérios a serem extraídos, mas logo passaram a escavar também espaços na entre as rochas para que fossem construídas suas novas cidades. Conforme a população aumentava, as cidades expandiam-se e, consequentemente, os domínios dos anões aumentavam",
+            "By Rodrigo “Lamazuus” Linn “O segredo da forja não está nos metais ou nas ferramentas que utilizamos, mas sim na absoluta sabedoria de que a criação é um fruto que nos deve alimentar, e não envenenar.”",
+            "A colonização realizada pelos anões gerou um grande reino subterrâneo, batizado de Nidavellir. Segundo os mapas desenhados pelos sábios, o Reino dos Anões está localizado nas zonas mais antigas da Velha Arcádia, em um ponto de interseção entre as dimensões e os planos, conectando-se com principalmente com Paradísia e com a Terra.",
+            "É inegável que praticamente toda a civilização anã esteja abaixo da superfície, entretanto, ainda assim, existem focos menores de sua raça que construíram vilarejos sobre a superfície.",
+            "São raras, é verdade, mas algumas destas vilas podem ser encontradas na Velha Arcádia (ou até mesmo na Terra), sobretudo próximo aos grandes bosques. A principal razão da existência destes núcleos é a extração de madeira e a necessidade de postos observação da superfície. Os troncos dos pinheiros são enviados para o subterrâneos a fim de que possam ser manufaturados pelos artesãos para a confecção de equipamentos e armas. Já os postos avançados são responsáveis pela notícias sobre invasores, chegada de comitês diplomáticos ou qualquer tipo de movimento anormal acima do subsolo.",
+            "Porém, não demorou para que as criaturas que habitavam a Velha Arcádia descobrissem este refúgio subterrâneo e começassem a aventurar-se por lá. Assim, Orcs, Goblins, Ogres e outros seres indesejáveis iniciaram confrontos com os Anões pela posse de territórios."
+          ]
+        },
+        {
+          "id": "cidades-gloriosas",
+          "title": "Cidades Gloriosas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O entalhe da própria rocha sólida possibilitou que os Anões cobrissem grandes espaços e construíssem estruturas de alturas arrojadas. Esculpindo em estilos que proporcionavam um aspecto vivo e quase real à pedra, as estátuas e fachadas dos palácios freqüentemente incorporam estilos arquitetônicos que variam entre o gótico medieval até o romântico renascentista, mas em proporções muito superiores às das construções mundanas.",
+            "Além do excepcional trabalho que conseguem realizar na rocha sólida, outra característica das cidades dos Anões é o desenvolvimento de máquinas e aparelhos mecânicos que lembram os moinhos medievais, que moem as raízes e transformamnas em pós e substâncias de uso doméstico; encanamentos primitivos, que conduzem a água que corre nos rios subterrâneos até os poços de armazenamento das vilas (piscinas de pedra polida que formam grandes lagos artificiais); obras hidráulicas, como diques e canais; isso sem falar nas caldeiras, construídas junto aos depósitos de lava dos vulcões, onde são usadas como fornalhas naturais para as forjarias e olarias, onde os anões esculpem habilmente peças de metal ou cerâmica."
+          ]
+        },
+        {
+          "id": "pequenos-habitantes",
+          "title": "Pequenos Habitantes",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Mesmo sendo rudes e grosseiros, preservando a força física como símbolo de poder, os Anões também são muito sábios e eruditos. Sua afinidade com o ambiente rochoso não só permitiu que a raça sobrevivesse no subsolo, como também lhes propiciou o desenvolvimento de inúmeros conhecimentos relativos à geologia, mineração, engenharia mecânica, medicina, poesia, herbalismo, joalheria, etc.",
+            "Ao contrário dos Elfos, são seres mortais. Entretanto envelhecem lentamente, chegando a viverem até cerca de 300 anos.",
+            "Os membros desta raça são atarracados, fortes e vigorosos.",
+            "Sua resistência natural ao calor e ao frio é espantosa. Uma vez que em Nidavellir o clima seja rigorosamente gélido, para os Anões essa temperatura parece ser a mais confortável, a ponto de dispensarem roupas pesadas para se aquecerem. Talvez por lidarem com as chamas e brasas ardentes das fundições, estejam acostumados a trabalhar com níveis escaldantes de temperatura, e mesmo isso parece não incomodá-los. É como se o corpo deles se mantivesse estável a mudanças na situação climática do ambiente, sentindo os graus da temperatura de forma diferente aos humanos.",
+            "Embora não sejam atraentes e tampouco cultivem as mesmas noções de beleza física que os humanos ou os elfos possuem (dificilmente você encontrará um anão ou anã que demonstre interesse pela aparência um do outro). A única vaidade que defendem com afinco é conservar a barba longa e espessa.",
+            "Tradicionalmente, a raça acredita que a barba sirva como um indício de respeito e admiração.",
+            "Conquistaram enorme fama como hábeis artífices. Os deuses de Aasgard reconheceram, desde cedo, tal talento e souberam valorizá-lo. Desse modo, os Anões eram protegidos e cortejados pelos deuses e, em troca, auxiliavam na confecção das armas, equipamentos e jóias que os Aesires desejavam. Algumas das peças mais fabulosas encontradas na Roda dos Mundos foram feitas pelas mãos dos Anões, tais como o lendário Martelo de Thor e a Lança de Odin.",
+            "Enquanto os Elfos são considerados os espíritos da natureza, da fertilidade e da juventude pelas lendas nórdicas, os Anões estão ligados aos elementos da terra e dos minérios como os espíritos guardiões do subsolo e seus tesouros. Possuem grandes segredos sobre a arte da forja, mas nunca os transmitem às outras raças, por temerem despertarem os interesses dos gananciosos. Nem que assim o fizessem, jamais poderiam ensinarlhes completamente seu ofício, pois dizem que é necessária uma aptidão especial para manipular as forjas, e esta somente é encontrada nas almas dos Anões.",
+            "Em seu Reino subterrâneo possuem incontáveis minas, de onde extraem metais e pedras que utilizam para forjarem artefatos místicos. Tais minérios são imensuráveis em poder e preciosidade, bem como a variedade incontável de diferentes cristais, gemas e metais que os Anões exploram em seus filões secretos.",
+            "Durante o século XVI foram amplamente populares na Islândia, Escócia e Noruega, época em que os portais entre Nidavellir e a Terra abriam-se em quantidades cada vez maiores.",
+            "Neste tempo, não havia camponês que não apontasse para rochedos e colinas sem afirmar, com a mais absoluta convicção, que lá existiam verdadeiros formigueiros de pequeninos anõezinhos mineradores que escondiam fabulosas riquezas."
+          ]
+        },
+        {
+          "id": "civilizacao-subterranea",
+          "title": "Civilização Subterrânea",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A comunidade emprega técnicas rudimentares de agricultura, o que gera uma produção deficiente, mas suficiente para satisfazer a necessidade populacional. A caça e o pastoreio são muito melhor praticados, além de serem responsáveis por grande parte da alimentação dos Anões. As raízes e fungos são cultivados em pequenas hortas próximo aos rios, mas a maioria dos anões prefere um bom churrasco de lagarto.",
+            "Não dispensam a cerveja e o hidromel, suas duas bebidas prediletas. Elas são fortes e extremamente amargas para o paladar de qualquer um que não seja um Anão, embora tenham a aparência e o modo de preparo idênticos ao realizado pelos humanos. É um costume dentre a raça beber durante as reuniões, constituindo um ato solene e indispensável entre os presentes.",
+            "As artes desenvolvidas pelos Anões, principalmente nos campos da arquitetura e da escultura, caracterizam-se pela grandiosidade de suas obras, o orgulho do povo pela sua cidade e sua raça, os traços elegantes e a harmonia das formas. As expressões naturais e a riqueza de detalhes empregados também na pintura, na cerâmica e até na música (os anões utilizam muitos instrumentos que lembram primitivos órgãos e realejos).",
+            "Além disso, também enfatizam muito os estudos da alquimia, a fim de explorarem os processos de destilação e fermentação.",
+            "Entretanto, é importante mencionar que os Anões possuíam uma escrita muito peculiar. De fato, não se pode chamá-la propriamente de escrita, pois seu valor é deveras obscuro. Os Anões gravam seus textos em blocos de pedra, em paredes ou em objetos de cerâmica ou metal, empregando um método de inscrições em baixo-relevo que devem ser interpretados como sinais e signos decorativos, não como um texto a ser lido. Cada símbolo aproxima-se de um desenho, de modo que não existe um padrão fixo de caracteres, estando cada entalhe sujeito a diferentes interpretações. Mais tarde, um sistema semelhante, mas muito mais simplório, foi desenvolvido pelos vikings: as Runas.",
+            "As mulheres Anãs são dificilmente vistas fora das cidades, pois a guerra é uma atividade praticada essencialmente pelos homens. As mulheres preferem ocuparem-se com pastoreio, agricultura e artesanato, embora não seja proibido que elas ingressem na carreira militar.",
+            "Ao contrário dos Elfos, os Anões evitavam o contato com os humanos, preferindo empenharem-se na batalha interminável que travam contra os Jotuns, a fim de conter a destruição caótica que estes espalham. Mas, ainda assim, alguns negócios são realizados entre as duas raças, já que eles consideram os humanos seus mais propensos aliados."
+          ]
+        },
+        {
+          "id": "honra-respeito-e-coragem",
+          "title": "Honra, Respeito e Coragem",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Talvez por esse motivo tenham entrando em conflito com os Jothuns. Inconformados com a destruição que estes gigantes causavam e preocupados com o perigo que eles representavam ao seu trabalho de produção, os Anões declaram-lhes guerra. Apesar de sua natureza pacífica, é bastante claro que a raça ainda conserva traços de violência herdados de Ymir, o ser primordial.",
+            "A civilização anã sofre forte influência de Aasgard e seus habitantes, embora a religião seja pouco praticada entre o povo.",
+            "Aqueles que decidem praticar alguma, geralmente apegam-se a divindades nórdicas como Tyr (o deus da guerra) ou Freya (deusa da fertilidade). Os templos, sacerdotes e até mesmo fiéis são escassos, porque os Anões voltam suas crenças aos antepassados, adotando os parentes mortos como guardiões e protetores do destino dos vivos.",
+            "Este tipo de culto privilegia o respeito à família e estabelece uma série de normas morais, que os Anões fazem questão de cumprir devotadamente. Assim, é inaceitável que qualquer indivíduo contradiga o seu pai, falte com a educação a um ancião, quebre sua palavra de honra, quebre um juramento feito à um parente, etc. Julgam que, após a morte de um anão, seu corpo perca toda a essência necessária à vida e, por isso, deva ser acomodado em uma tumba (mas que não é enterrada), que geralmente também recebia a construção de um templo especial para o seu abrigo. O espírito do morto (os Anões não utilizam o mesmo sentido da palavra “espírito” que os humanos, referindo-se a este como um energia ativa e presente ao seu redor) passa a rondar os vivos e é constantemente procurado como guia para os momentos de dificuldade.",
+            "A cultura anã supervaloriza a honra, ressaltando uma moral rigorosa e repugnância à mentira. Nada é mais respeitável do que os princípios de honestidade, fidelidade, hospitalidade, trabalho árduo e disciplina entre o povo nanico. A coragem é a virtude de maior importância para um Anão. Ele jamais demonstrará covardia ou temor diante de um inimigo, mesmo que este esteja em plena vantagem, preferindo combatê-lo até a morte a render-se. O sacrifício e o heroísmo são considerados provas definitivas de valor.",
+            "Os Anões possuem poucos criminosos em suas cidades (se comparadas às cidades humanas). Ladrões e contrabandistas existem, porém em um número reduzido. Não existem prisões no Reino, sendo os criminosos julgados e sentenciados pela milícia real. A traição é o único crime imperdoável, cuja condenação é a morte. Os demais implicam em castigos administrativos, como a expulsão da cidade, ou verdadeiras torturas, como esmagar o cotovelo direito com um martelo. Mas, a punição mais comum – e também a mais humlhante – é o aparo da barba.",
+            "Além disso, possuem um sentimento nacionalista como nenhum outro povo jamais conheceu. Todos os Anões amam sua raça e seu Reino, jamais permitindo que qualquer um deles esteja em perigo. Devido ao combate incessante contra os Jotuns e os ataques regulares dos Orcs e Ogres, os Anões restringem suas atividades bélicas ao subsolo. Entretanto, alguns grupos de assalto ou postos avançados podem ser encontrados travando batalhas na superfície."
+          ]
+        },
+        {
+          "id": "oposicao-a-magia",
+          "title": "Oposição à Magia",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "É como se possuíssem uma energia astral tão forte que é capaz de drenar a energia do efeito mágico que o Mago canaliza, reduzindo sua potência (às vezes até anulando-o completamente).",
+            "Os cadáveres dos Anões, por alguma razão que jamais se soube explicar, são imunes aos feitiços de animar mortos-vivos.",
+            "De modo que o seu próprio corpo físico é passivo de mistérios, acreditando-se que talvez atue como um verdadeiro campo de força contra a Magia. Desde os primórdios de Nidavellir, quando as primeiras grandes minas foram abertas e as cidades começaram a ser talhadas na rocha, os Anões já forjavam extraordinários objetos e armas mágicas. Porém, apesar de serem capazes de criar tais itens, eles não possuíam nenhum conhecimento sobre Magia. Não existia nenhum Anão que tivesse contato com as artes arcanas e isso intrigava os deuses de Aasgard. Como poderiam aquelas criaturas fabricar artefatos tão poderosos se nem ao menos conheciam os conceitos da Magia?",
+            "Ainda intrigados com essa questão, atualmente os sábios discutem possibilidades inusitadas para explicar o estranho fenômeno. Uma delas diz que os Anões haviam desenvolvido esta habilidade a partir do momento em que iniciaram a colonização do subterrâneo, onde percorreram lugares tão inóspitos das profundezas que obtiveram um contato com poderes ocultos da Roda dos Mundos. Alguns comentam que estes poderes estão relacionados, de alguma forma, com as raízes de Yggdrasil, a Árvore da Vida. Enquanto os Anjos preocuparam-se em estudar os ramos da árvore (que originaram os sephiroth), os Anões encontraram nas suas raízes os segredos do processo da criação e da construção mística.",
+            "Por outro lado, há quem defenda que os Anões sejam apenas exímios artífices e que extraiam de suas minas minérios mágicos fabulosos, mas que dificilmente seriam encontrados se não fosse a escavação contínua das profundezas."
+          ]
+        },
+        {
+          "id": "os-irmaos-corrompidos",
+          "title": "Os Irmãos Corrompidos",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Na época em que habitavam a superfície de Vanaheim, alguns anões ambiciosos confrontavam-se com seus irmãos, insistindo para que fossem estudar os mistérios de Yggdrasil. Os Anões conheciam a Árvore e seus prodígios, sabiam que seus ramos possuíam doutrinas místicas reservadas aos deuses e, por isso, não ousavam investigá-los.",
+            "Os sábios discutem que essa divergência entre a raça gerou-se da mesma forma que entre os Jotuns: sendo crias de Ymir, eles herdaram suas tendências para a ordem e para o caos. Dessa forma, assim como os gigantes, haviam aqueles que eram bondosos e aqueles que eram malignos.",
+            "Escondidos, alguns destes anões passaram a estudar os ramos de Yggdrasil e obtiveram então primitivos conceitos da Magia, através dos quais desenvolveram, com certa dificuldade, alguns poderes cabalísticos. Aquele foi um crime muito grave, os Anões ficaram muito ressentidos com o que seus irmãos fizeram e decidiram banir os acusados para longe de Vanaheim.",
+            "Segundo uma nomenclatura adotada pelos Anões, aqueles que haviam sido expulsos receberam o nome de Duegares."
+          ]
+        },
+        {
+          "id": "duegares",
+          "title": "Duegares",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Também contam que somente desistiram dos territórios de Vanaheim por descobrirem em Halzazee uma fonte muito mais farta para seus propósitos. Além disso, lá encontraram entidades dispostas a ensinarem-lhes a manipular as forças místicas.",
+            "Assim, muitas vezes em troca de seus serviços como ferreiros e mineradores, os Duegares conseguiram realizar pactos e negócios com os Demônios de Arkanun.",
+            "Halzazee é a parte de Arcádia que tangencia o Plano de Arkanun. Formado pelos contos de fadas dos povos de Arkanun, esta é considerada uma das regiões mais sombrias da Velha Arcádia. Basicamente composto de cavernas e montanhas, Halzazee possui centenas de milhares de túneis, eternamente alterados por vermes e criaturas bizarras que vivem escavando e devorando as rochas, formando uma rede interminável de labirintos subterrâneos.",
+            "Criando uma versão grotesca e assustadora do tipo de cidades arquitetadas pelos Anões de Nidavellir, os Duegares construíram seu próprio reino subterrâneo em Halzazee, disputando espaço com tribos de Orcs, Trolls e Goblins. Existem alguns portais nas montanhas geladas da Rússia que permitem acessar algumas destas cidades, mas encontrá-los não é uma tarefa nada fácil. Em raras ocasiões são encontrados nas cidades mais ao norte, em busca de equipamentos, armas e mercenários para lutar em sua guerra contra os Anões.",
+            "Os Duegares são especialistas em armadilhas mecânicas e os sábios afirmam que suas catacumbas e minas são praticamente impenetráveis para aqueles que não possuem os mapas corretos.",
+            "Seu contato com os Demônios possibilitou-lhes manipular ciências negras do Caminho de Arkanun com muita facilidade.",
+            "Também desenvolveram muitos Rituais modificando os Caminhos Naturais para versões bizarras envolvendo Orcs, Goblins, mortos-vivos, vermes demoníacos, plantas carnívoras, pestes e doenças. A maioria dos feiticeiros Duegares são necromânticos ou conjuradores de demônios.",
+            "Em Halzazee não existem tantos recursos minerais quanto em Nidavellir, mas ainda assim os Duegares extraem metais e gemas que usam para confeccionar suas armas mágica. Entretanto, os materiais mais usados são os ossos e carcaças das outras criaturas que habitam as galerias subterrâneas, com os quais fabricam armaduras, equipamentos e até palácios. Muitos dos minérios encontrados em Halzazee possuem poderes negativos, isso é, causam prejuízos a quem os utiliza. Os Duegares forjam artefatos malditos com eles, e os comercializam com os Demônios, que apreciam muito o trabalho destes anões malignos."
+          ]
+        },
+        {
+          "id": "o-trabalho-nas-forjas",
+          "title": "O Trabalho nas Forjas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Encontramos também artefatos lendários que este pequeno povo forjou em seu Reino e que são cobiçados por Magos de todas as nações, como o poderoso Mjolnir (o maravilhoso Martelo de Thor), a histórica Espada de Odhin (descrita nas canções nórdicas como a arma utilizada para destruir o dragão Fafnir), Ghungmir (a Lança de Odhin, capaz de controlar todas as tempestades na Terra ou em Paradísia), os grilhões de Fenrir (uma fita de seda tão resistente que nem mesmo os deuses foram capazes de parti-la) e o amaldiçoado Anel de Andvari (que multiplicava as riquezas do seu dono, à custa de preços terríveis).",
+            "A confecção de um objeto mágico é um trabalho que exige exímia habilidade e conhecimento. Os Anões são seres profundamente ligados à arte da forja, o que lhes torna capazes de realizar tal proeza, que para muitos Magos é laboriosa e complicada, com extrema facilidade. Para que um destes itens místicos seja produzido, deve-se levar em conta que um Anão emprega uma série de materiais retirados de suas minas (como metais, gemas e pedras dotadas de características especiais) e ingredientes não-convencionais (raízes da montanha, tendões de urso, saliva de pássaro, escamas de peixe, etc) numa dosagem resultante de longos séculos de experiência.",
+            "Contudo, a natureza mística destes objetos NÃO provém de nenhum tipo de encantamento ou feitiço. Todos aqueles que possuem algum tipo de poder são resultado de intricados processos e fórmulas, desenvolvidos pelos Anões para obter os efeitos sobrenaturais desejados. Desse modo, todas as armas e itens produzidos pelos artífices são criações únicas e espantosas, pois depois que um destes objetos está finalizado, não se pode encantá-lo magicamente de maneira nenhuma. Qualquer tentativa de aumentar os seus poderes ou desencantá-lo resultarão em fracasso.",
+            "Anões sabem forjar todo o tipo de arma e armadura normal (não-mágica). Seu conjunto predileto são armaduras de cota de malha ou armaduras de placa, juntamente com um machado ou martelo de combate. A maioria dos Anões trajados para o combate é vista usando estas peças.",
+            "Devido à suas incríveis habilidades com o manejo dos metais, o Mestre deve considerar que todos os Anões possuem valores diferentes para o tempo necessário para a construção ou conserto de uma arma brancas. Abaixo é sugerida uma tabela com a relação de armas e o tempo necessário para sua construção, caso um Anão a realize:"
+          ]
+        },
+        {
+          "id": "campanha",
+          "title": "Campanha",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Nidavellir eventualmente envia comissões diplomáticas para as cortes de Arcádia. As Fadas gostam muito de suas visitas e não perdem a oportunidade de pedir-lhes que realizem algum tipo de missão (geralmente expulsar uma criatura que atormenta as aldeias da Corte). Os Elfos possuem inimizades com os Anões, pois não toleram o comportamento grosseiro e briguento deles, e sempre os recebem com menosprezo.",
+            "A maioria dos Anões permanece em Nidavellir, ou trabalhando arduamente nas minas, ou protegendo o Reino dos ataques dos Orcs, Goblins, Gigantes e outras criaturas que representam uma constante ameaça à cidades subterrâneas. Existem, porém, alguns grupos especiais, que são escolhidos para irem à Terra auxiliar os humanos nas batalhas contra os exércitos goblinóides e os Jotuns que surgem nas florestas do norte.",
+            "Os Duegares, por outro lado, empenham-se em expulsar os Elfos Negros de seu território. Ainda que mantenham sua guerra pessoal com os Anões, eles não suportam a presença destes invasores no seu império subterrâneo e estão concentrados em livrarem-se deles. O Mestre pode utilizar muitos ganchos valendo-se da criação de artefatos. Os personagens podem estar à procura de algum metal lendário para que possam forjar uma arma mágica, e só o encontrarão nas minas que foram tomadas pelos Trolls, por exemplo."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "anoes",
+      "title": "Anões",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Antes mesmo da construção de Aasgard, os deuses aesires já sabiam da existência de pequenos seres que se escondiam nos confins subterrâneos entre os mundos, mas dos quais era muito difícil aproximar-se: os Anões.",
+        "Descritos pelo folclore dos Reinos Nórdicos como criaturas de baixa estatura, aparência carrancuda, porte robusto e longa barba. Apesar de discretos e temerosos, são os senhores da arte dos metais. Donos de todos os segredos da forja, zelosos de seu saber, possuem o dom de fabricar objetos mágicos e jóias exuberantes.",
+        "Sua terra natal é Nidavellir, um reino montanhoso, coberto de neve e cercado por florestas de pinheiros gigantes, que conecta os planos de Paradísia, Arcádia e Terra. Os Anões costumam ajudar os deuses nórdicos na confecção de armas e equipamentos e, por sua vez, os vikings, Magos da Ordem de Luft e guerreiros do norte os auxiliam em sua batalha contra os Jotuns.",
+        "Pequenos Habitantes Anões são seres de baixa estatura (medindo entre 1,20 e 1,50 metros) que lembram muito, em aparência, os guerreiros vikings.",
+        "Mesmo sendo rudes e grosseiros, preservando a força física como símbolo de poder, os Anões também são muito sábios e eruditos. Sua afinidade com o ambiente rochoso não só permitiu que a raça sobrevivesse no subsolo, como também lhes propiciou o desenvolvimento de inúmeros conhecimentos relativos à geologia, mineração, engenharia mecânica, medicina, poesia, herbalismo, joalheria, etc.",
+        "Ao contrário dos Elfos, são seres mortais. Entretanto envelhecem lentamente, chegando a viverem até cerca de 300 anos.",
+        "Os membros desta raça são atarracados, fortes e vigorosos.",
+        "Sua resistência natural ao calor e ao frio é espantosa. Uma vez que em Nidavellir o clima seja rigorosamente gélido, para os Anões essa temperatura parece ser a mais confortável, a ponto de dispensarem roupas pesadas para se aquecerem. Talvez por lidarem com as chamas e brasas ardentes das fundições, estejam acostumados a trabalhar com níveis escaldantes de temperatura, e mesmo isso parece não incomodá-los. É como se o corpo deles se mantivesse estável a mudanças na situação climática do ambiente, sentindo os graus da temperatura de forma diferente aos humanos.",
+        "Embora não sejam atraentes e tampouco cultivem as mesmas noções de beleza física que os humanos ou os elfos possuem (dificilmente você encontrará um anão ou anã que demonstre interesse pela aparência um do outro). A única vaidade que defendem com afinco é conservar a barba longa e espessa.",
+        "Tradicionalmente, a raça acredita que a barba sirva como um indício de respeito e admiração.",
+        "Conquistaram enorme fama como hábeis artífices. Os deuses de Aasgard reconheceram, desde cedo, tal talento e souberam valorizá-lo. Desse modo, os Anões eram protegidos e cortejados pelos deuses e, em troca, auxiliavam na confecção das armas, equipamentos e jóias que os Aesires desejavam. Algumas das peças mais fabulosas encontradas na Roda dos Mundos foram feitas pelas mãos dos Anões, tais como o lendário Martelo de Thor e a Lança de Odin.",
+        "Enquanto os Elfos são considerados os espíritos da natureza, da fertilidade e da juventude pelas lendas nórdicas, os Anões estão ligados aos elementos da terra e dos minérios como os espíritos guardiões do subsolo e seus tesouros. Possuem grandes segredos sobre a arte da forja, mas nunca os transmitem às outras raças, por temerem despertarem os interesses dos gananciosos. Nem que assim o fizessem, jamais poderiam ensinarlhes completamente seu ofício, pois dizem que é necessária uma aptidão especial para manipular as forjas, e esta somente é encontrada nas almas dos Anões.",
+        "Em seu Reino subterrâneo possuem incontáveis minas, de onde extraem metais e pedras que utilizam para forjarem artefatos místicos. Tais minérios são imensuráveis em poder e preciosidade, bem como a variedade incontável de diferentes cristais, gemas e metais que os Anões exploram em seus filões secretos.",
+        "Durante o século XVI foram amplamente populares na Islândia, Escócia e Noruega, época em que os portais entre Nidavellir e a Terra abriam-se em quantidades cada vez maiores.",
+        "Neste tempo, não havia camponês que não apontasse para rochedos e colinas sem afirmar, com a mais absoluta convicção, que lá existiam verdadeiros formigueiros de pequeninos anõezinhos mineradores que escondiam fabulosas riquezas.",
+        "Civilização Subterrânea Desde as primeiras gerações, as famílias anãs já apresentavam uma união natural e um sentimento de amizade muito fortes, o que propiciou o surgimento de uma civilização extremamente organizada. A estrutura fundamental desta sociedade está nos princípios de monarquia medieval, que se estabeleceu desde o início dos confrontos com os Jotuns, quando os clãs indicavam líderes militares. Esses chefes temporários, escolhidos para fazer frente à batalha, acabaram por assumirem um posto definitivo de comando, convertendo-se em reis.",
+        "A comunidade emprega técnicas rudimentares de agricultura, o que gera uma produção deficiente, mas suficiente para satisfazer a necessidade populacional. A caça e o pastoreio são muito melhor praticados, além de serem responsáveis por grande parte da alimentação dos Anões. As raízes e fungos são cultivados em pequenas hortas próximo aos rios, mas a maioria dos anões prefere um bom churrasco de lagarto.",
+        "Não dispensam a cerveja e o hidromel, suas duas bebidas prediletas. Elas são fortes e extremamente amargas para o paladar de qualquer um que não seja um Anão, embora tenham a aparência e o modo de preparo idênticos ao realizado pelos humanos. É um costume dentre a raça beber durante as reuniões, constituindo um ato solene e indispensável entre os presentes.",
+        "As artes desenvolvidas pelos Anões, principalmente nos campos da arquitetura e da escultura, caracterizam-se pela grandiosidade de suas obras, o orgulho do povo pela sua cidade e sua raça, os traços elegantes e a harmonia das formas. As expressões naturais e a riqueza de detalhes empregados também na pintura, na cerâmica e até na música (os anões utilizam muitos instrumentos que lembram primitivos órgãos e realejos).",
+        "Além disso, também enfatizam muito os estudos da alquimia, a fim de explorarem os processos de destilação e fermentação.",
+        "Entretanto, é importante mencionar que os Anões possuíam uma escrita muito peculiar. De fato, não se pode chamá-la propriamente de escrita, pois seu valor é deveras obscuro. Os Anões gravam seus textos em blocos de pedra, em paredes ou em objetos de cerâmica ou metal, empregando um método de inscrições em baixo-relevo que devem ser interpretados como sinais e signos decorativos, não como um texto a ser lido. Cada símbolo aproxima-se de um desenho, de modo que não existe um padrão fixo de caracteres, estando cada entalhe sujeito a diferentes interpretações. Mais tarde, um sistema semelhante, mas muito mais simplório, foi desenvolvido pelos vikings: as Runas.",
+        "As mulheres Anãs são dificilmente vistas fora das cidades, pois a guerra é uma atividade praticada essencialmente pelos homens. As mulheres preferem ocuparem-se com pastoreio, agricultura e artesanato, embora não seja proibido que elas ingressem na carreira militar.",
+        "Ao contrário dos Elfos, os Anões evitavam o contato com os humanos, preferindo empenharem-se na batalha interminável que travam contra os Jotuns, a fim de conter a destruição caótica que estes espalham. Mas, ainda assim, alguns negócios são realizados entre as duas raças, já que eles consideram os humanos seus mais propensos aliados.",
+        "Honra, Respeito e Coragem Os Anões possuem um senso comum que valoriza a construção e a criação como um fundamento básico e indispensável da vida. Não é à toa que estejam sempre envolvidos com elaborações de projetos arquitetônicos e curiosos em aprender sobre as ciências mecânicas, já que eles consideram que a melhor maneira de descobrir coisas é criando-as.",
+        "Talvez por esse motivo tenham entrando em conflito com os Jothuns. Inconformados com a destruição que estes gigantes causavam e preocupados com o perigo que eles representavam ao seu trabalho de produção, os Anões declaram-lhes guerra. Apesar de sua natureza pacífica, é bastante claro que a raça ainda conserva traços de violência herdados de Ymir, o ser primordial.",
+        "A civilização anã sofre forte influência de Aasgard e seus habitantes, embora a religião seja pouco praticada entre o povo.",
+        "Aqueles que decidem praticar alguma, geralmente apegam-se a divindades nórdicas como Tyr (o deus da guerra) ou Freya (deusa da fertilidade). Os templos, sacerdotes e até mesmo fiéis são escassos, porque os Anões voltam suas crenças aos antepassados, adotando os parentes mortos como guardiões e protetores do destino dos vivos.",
+        "Este tipo de culto privilegia o respeito à família e estabelece uma série de normas morais, que os Anões fazem questão de cumprir devotadamente. Assim, é inaceitável que qualquer indivíduo contradiga o seu pai, falte com a educação a um ancião, quebre sua palavra de honra, quebre um juramento feito à um parente, etc. Julgam que, após a morte de um anão, seu corpo perca toda a essência necessária à vida e, por isso, deva ser acomodado em uma tumba (mas que não é enterrada), que geralmente também recebia a construção de um templo especial para o seu abrigo. O espírito do morto (os Anões não utilizam o mesmo sentido da palavra “espírito” que os humanos, referindo-se a este como um energia ativa e presente ao seu redor) passa a rondar os vivos e é constantemente procurado como guia para os momentos de dificuldade.",
+        "A cultura anã supervaloriza a honra, ressaltando uma moral rigorosa e repugnância à mentira. Nada é mais respeitável do que os princípios de honestidade, fidelidade, hospitalidade, trabalho árduo e disciplina entre o povo nanico. A coragem é a virtude de maior importância para um Anão. Ele jamais demonstrará covardia ou temor diante de um inimigo, mesmo que este esteja em plena vantagem, preferindo combatê-lo até a morte a render-se. O sacrifício e o heroísmo são considerados provas definitivas de valor.",
+        "Os Anões possuem poucos criminosos em suas cidades (se comparadas às cidades humanas). Ladrões e contrabandistas existem, porém em um número reduzido. Não existem prisões no Reino, sendo os criminosos julgados e sentenciados pela milícia real. A traição é o único crime imperdoável, cuja condenação é a morte. Os demais implicam em castigos administrativos, como a expulsão da cidade, ou verdadeiras torturas, como esmagar o cotovelo direito com um martelo. Mas, a punição mais comum – e também a mais humlhante – é o aparo da barba.",
+        "Além disso, possuem um sentimento nacionalista como nenhum outro povo jamais conheceu. Todos os Anões amam sua raça e seu Reino, jamais permitindo que qualquer um deles esteja em perigo. Devido ao combate incessante contra os Jotuns e os ataques regulares dos Orcs e Ogres, os Anões restringem suas atividades bélicas ao subsolo. Entretanto, alguns grupos de assalto ou postos avançados podem ser encontrados travando batalhas na superfície.",
+        "Oposição à Magia Não existem Anões Magos. Uma estranha resistência natural impede que os Anões desenvolvam aptidões para a Magia, pois sua essência vital impede que os efeitos místicos sejam realizados.",
+        "É como se possuíssem uma energia astral tão forte que é capaz de drenar a energia do efeito mágico que o Mago canaliza, reduzindo sua potência (às vezes até anulando-o completamente).",
+        "Os cadáveres dos Anões, por alguma razão que jamais se soube explicar, são imunes aos feitiços de animar mortos-vivos.",
+        "De modo que o seu próprio corpo físico é passivo de mistérios, acreditando-se que talvez atue como um verdadeiro campo de força contra a Magia. Desde os primórdios de Nidavellir, quando as primeiras grandes minas foram abertas e as cidades começaram a ser talhadas na rocha, os Anões já forjavam extraordinários objetos e armas mágicas. Porém, apesar de serem capazes de criar tais itens, eles não possuíam nenhum conhecimento sobre Magia. Não existia nenhum Anão que tivesse contato com as artes arcanas e isso intrigava os deuses de Aasgard. Como poderiam aquelas criaturas fabricar artefatos tão poderosos se nem ao menos conheciam os conceitos da Magia?",
+        "Ainda intrigados com essa questão, atualmente os sábios discutem possibilidades inusitadas para explicar o estranho fenômeno. Uma delas diz que os Anões haviam desenvolvido esta habilidade a partir do momento em que iniciaram a colonização do subterrâneo, onde percorreram lugares tão inóspitos das profundezas que obtiveram um contato com poderes ocultos da Roda dos Mundos. Alguns comentam que estes poderes estão relacionados, de alguma forma, com as raízes de Yggdrasil, a Árvore da Vida. Enquanto os Anjos preocuparam-se em estudar os ramos da árvore (que originaram os sephiroth), os Anões encontraram nas suas raízes os segredos do processo da criação e da construção mística.",
+        "Por outro lado, há quem defenda que os Anões sejam apenas exímios artífices e que extraiam de suas minas minérios mágicos fabulosos, mas que dificilmente seriam encontrados se não fosse a escavação contínua das profundezas.",
+        "Personagens Anões Personagens anões são construídos da mesma forma que qualquer personagem de Arkanun/Trevas. Possuem as mesmas quantidades de pontos para gastar em seus Atributos, Perícias e Aprimoramentos, portanto, use sem problemas as regras do Sistema Daemon. Anões, além da baixa estatura, são encorpados e têm barbas muito espessas (os Duegares possuem a mesma aparência de um Anão qualquer, embora muitos apresentem deformidades demoníacas decorrentes do uso de Magia). Medem entre 1,20 e 1,50 metros de altura e vivem cerca de 300 anos.",
+        "Abaixo seguem alguns Kits de Personagens mais comuns entre os anões. Porém, note apenas duas importantes observações: apenas os Duegares podem comprar o Aprimoramento Poderes Mágicos (todos os Anões são proibidos, sem exceção), e para os Aprimoramentos Visão Noturna e Resistência à Magia, utilize os modelos:",
+        "Visão Noturna",
+        "2 pontos: Os anões possuem uma visão especial, além da visão normal. Esta é a habilidade de enxergar perfeitamente escuro, desde que haja por perto uma fonte qualquer de iluminação.",
+        "Tanto à noite quanto em ambientes fechados, o personagem pode ver normalmente sem sofrer qualquer penalidade devido ao escuro do ambiente. No entanto, deve haver algum tipo de iluminação, como uma tocha ou vela, dentro do campo de visão do personagem. Sem isso torna-se impossível enxergar na escuridão total. Os Anões utilizam muitas pedras especiais, que emitem luz própria, em suas cidades e túneis subterrâneos para auxiliá-los neste ponto.",
+        "Resistência à Magia O personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder). Assim, sempre que uma magia for empregada no personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir.",
+        "1 ponto: 1D de resistência.",
+        "2 pontos: 2D de resistência.",
+        "3 pontos: 3D de resistência.",
+        "4 pontos: 4D de resistência.",
+        "5 pontos: 5D de resistência."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Antes mesmo da construção de Aasgard, os deuses aesires já sabiam da existência de pequenos seres que se escondiam nos confins subterrâneos entre os mundos, mas dos quais era muito difícil aproximar-se: os Anões.",
+            "Descritos pelo folclore dos Reinos Nórdicos como criaturas de baixa estatura, aparência carrancuda, porte robusto e longa barba. Apesar de discretos e temerosos, são os senhores da arte dos metais. Donos de todos os segredos da forja, zelosos de seu saber, possuem o dom de fabricar objetos mágicos e jóias exuberantes.",
+            "Sua terra natal é Nidavellir, um reino montanhoso, coberto de neve e cercado por florestas de pinheiros gigantes, que conecta os planos de Paradísia, Arcádia e Terra. Os Anões costumam ajudar os deuses nórdicos na confecção de armas e equipamentos e, por sua vez, os vikings, Magos da Ordem de Luft e guerreiros do norte os auxiliam em sua batalha contra os Jotuns.",
+            "Pequenos Habitantes Anões são seres de baixa estatura (medindo entre 1,20 e 1,50 metros) que lembram muito, em aparência, os guerreiros vikings.",
+            "Mesmo sendo rudes e grosseiros, preservando a força física como símbolo de poder, os Anões também são muito sábios e eruditos. Sua afinidade com o ambiente rochoso não só permitiu que a raça sobrevivesse no subsolo, como também lhes propiciou o desenvolvimento de inúmeros conhecimentos relativos à geologia, mineração, engenharia mecânica, medicina, poesia, herbalismo, joalheria, etc.",
+            "Ao contrário dos Elfos, são seres mortais. Entretanto envelhecem lentamente, chegando a viverem até cerca de 300 anos.",
+            "Os membros desta raça são atarracados, fortes e vigorosos.",
+            "Sua resistência natural ao calor e ao frio é espantosa. Uma vez que em Nidavellir o clima seja rigorosamente gélido, para os Anões essa temperatura parece ser a mais confortável, a ponto de dispensarem roupas pesadas para se aquecerem. Talvez por lidarem com as chamas e brasas ardentes das fundições, estejam acostumados a trabalhar com níveis escaldantes de temperatura, e mesmo isso parece não incomodá-los. É como se o corpo deles se mantivesse estável a mudanças na situação climática do ambiente, sentindo os graus da temperatura de forma diferente aos humanos.",
+            "Embora não sejam atraentes e tampouco cultivem as mesmas noções de beleza física que os humanos ou os elfos possuem (dificilmente você encontrará um anão ou anã que demonstre interesse pela aparência um do outro). A única vaidade que defendem com afinco é conservar a barba longa e espessa.",
+            "Tradicionalmente, a raça acredita que a barba sirva como um indício de respeito e admiração.",
+            "Conquistaram enorme fama como hábeis artífices. Os deuses de Aasgard reconheceram, desde cedo, tal talento e souberam valorizá-lo. Desse modo, os Anões eram protegidos e cortejados pelos deuses e, em troca, auxiliavam na confecção das armas, equipamentos e jóias que os Aesires desejavam. Algumas das peças mais fabulosas encontradas na Roda dos Mundos foram feitas pelas mãos dos Anões, tais como o lendário Martelo de Thor e a Lança de Odin.",
+            "Enquanto os Elfos são considerados os espíritos da natureza, da fertilidade e da juventude pelas lendas nórdicas, os Anões estão ligados aos elementos da terra e dos minérios como os espíritos guardiões do subsolo e seus tesouros. Possuem grandes segredos sobre a arte da forja, mas nunca os transmitem às outras raças, por temerem despertarem os interesses dos gananciosos. Nem que assim o fizessem, jamais poderiam ensinarlhes completamente seu ofício, pois dizem que é necessária uma aptidão especial para manipular as forjas, e esta somente é encontrada nas almas dos Anões.",
+            "Em seu Reino subterrâneo possuem incontáveis minas, de onde extraem metais e pedras que utilizam para forjarem artefatos místicos. Tais minérios são imensuráveis em poder e preciosidade, bem como a variedade incontável de diferentes cristais, gemas e metais que os Anões exploram em seus filões secretos.",
+            "Durante o século XVI foram amplamente populares na Islândia, Escócia e Noruega, época em que os portais entre Nidavellir e a Terra abriam-se em quantidades cada vez maiores.",
+            "Neste tempo, não havia camponês que não apontasse para rochedos e colinas sem afirmar, com a mais absoluta convicção, que lá existiam verdadeiros formigueiros de pequeninos anõezinhos mineradores que escondiam fabulosas riquezas."
+          ]
+        },
+        {
+          "id": "sociedade",
+          "title": "Sociedade",
+          "area": "racas",
+          "paragraphs": [
+            "Civilização Subterrânea Desde as primeiras gerações, as famílias anãs já apresentavam uma união natural e um sentimento de amizade muito fortes, o que propiciou o surgimento de uma civilização extremamente organizada. A estrutura fundamental desta sociedade está nos princípios de monarquia medieval, que se estabeleceu desde o início dos confrontos com os Jotuns, quando os clãs indicavam líderes militares. Esses chefes temporários, escolhidos para fazer frente à batalha, acabaram por assumirem um posto definitivo de comando, convertendo-se em reis.",
+            "A comunidade emprega técnicas rudimentares de agricultura, o que gera uma produção deficiente, mas suficiente para satisfazer a necessidade populacional. A caça e o pastoreio são muito melhor praticados, além de serem responsáveis por grande parte da alimentação dos Anões. As raízes e fungos são cultivados em pequenas hortas próximo aos rios, mas a maioria dos anões prefere um bom churrasco de lagarto.",
+            "Não dispensam a cerveja e o hidromel, suas duas bebidas prediletas. Elas são fortes e extremamente amargas para o paladar de qualquer um que não seja um Anão, embora tenham a aparência e o modo de preparo idênticos ao realizado pelos humanos. É um costume dentre a raça beber durante as reuniões, constituindo um ato solene e indispensável entre os presentes.",
+            "As artes desenvolvidas pelos Anões, principalmente nos campos da arquitetura e da escultura, caracterizam-se pela grandiosidade de suas obras, o orgulho do povo pela sua cidade e sua raça, os traços elegantes e a harmonia das formas. As expressões naturais e a riqueza de detalhes empregados também na pintura, na cerâmica e até na música (os anões utilizam muitos instrumentos que lembram primitivos órgãos e realejos).",
+            "Além disso, também enfatizam muito os estudos da alquimia, a fim de explorarem os processos de destilação e fermentação.",
+            "Entretanto, é importante mencionar que os Anões possuíam uma escrita muito peculiar. De fato, não se pode chamá-la propriamente de escrita, pois seu valor é deveras obscuro. Os Anões gravam seus textos em blocos de pedra, em paredes ou em objetos de cerâmica ou metal, empregando um método de inscrições em baixo-relevo que devem ser interpretados como sinais e signos decorativos, não como um texto a ser lido. Cada símbolo aproxima-se de um desenho, de modo que não existe um padrão fixo de caracteres, estando cada entalhe sujeito a diferentes interpretações. Mais tarde, um sistema semelhante, mas muito mais simplório, foi desenvolvido pelos vikings: as Runas.",
+            "As mulheres Anãs são dificilmente vistas fora das cidades, pois a guerra é uma atividade praticada essencialmente pelos homens. As mulheres preferem ocuparem-se com pastoreio, agricultura e artesanato, embora não seja proibido que elas ingressem na carreira militar.",
+            "Ao contrário dos Elfos, os Anões evitavam o contato com os humanos, preferindo empenharem-se na batalha interminável que travam contra os Jotuns, a fim de conter a destruição caótica que estes espalham. Mas, ainda assim, alguns negócios são realizados entre as duas raças, já que eles consideram os humanos seus mais propensos aliados.",
+            "Honra, Respeito e Coragem Os Anões possuem um senso comum que valoriza a construção e a criação como um fundamento básico e indispensável da vida. Não é à toa que estejam sempre envolvidos com elaborações de projetos arquitetônicos e curiosos em aprender sobre as ciências mecânicas, já que eles consideram que a melhor maneira de descobrir coisas é criando-as.",
+            "Talvez por esse motivo tenham entrando em conflito com os Jothuns. Inconformados com a destruição que estes gigantes causavam e preocupados com o perigo que eles representavam ao seu trabalho de produção, os Anões declaram-lhes guerra. Apesar de sua natureza pacífica, é bastante claro que a raça ainda conserva traços de violência herdados de Ymir, o ser primordial.",
+            "A civilização anã sofre forte influência de Aasgard e seus habitantes, embora a religião seja pouco praticada entre o povo.",
+            "Aqueles que decidem praticar alguma, geralmente apegam-se a divindades nórdicas como Tyr (o deus da guerra) ou Freya (deusa da fertilidade). Os templos, sacerdotes e até mesmo fiéis são escassos, porque os Anões voltam suas crenças aos antepassados, adotando os parentes mortos como guardiões e protetores do destino dos vivos.",
+            "Este tipo de culto privilegia o respeito à família e estabelece uma série de normas morais, que os Anões fazem questão de cumprir devotadamente. Assim, é inaceitável que qualquer indivíduo contradiga o seu pai, falte com a educação a um ancião, quebre sua palavra de honra, quebre um juramento feito à um parente, etc. Julgam que, após a morte de um anão, seu corpo perca toda a essência necessária à vida e, por isso, deva ser acomodado em uma tumba (mas que não é enterrada), que geralmente também recebia a construção de um templo especial para o seu abrigo. O espírito do morto (os Anões não utilizam o mesmo sentido da palavra “espírito” que os humanos, referindo-se a este como um energia ativa e presente ao seu redor) passa a rondar os vivos e é constantemente procurado como guia para os momentos de dificuldade.",
+            "A cultura anã supervaloriza a honra, ressaltando uma moral rigorosa e repugnância à mentira. Nada é mais respeitável do que os princípios de honestidade, fidelidade, hospitalidade, trabalho árduo e disciplina entre o povo nanico. A coragem é a virtude de maior importância para um Anão. Ele jamais demonstrará covardia ou temor diante de um inimigo, mesmo que este esteja em plena vantagem, preferindo combatê-lo até a morte a render-se. O sacrifício e o heroísmo são considerados provas definitivas de valor.",
+            "Os Anões possuem poucos criminosos em suas cidades (se comparadas às cidades humanas). Ladrões e contrabandistas existem, porém em um número reduzido. Não existem prisões no Reino, sendo os criminosos julgados e sentenciados pela milícia real. A traição é o único crime imperdoável, cuja condenação é a morte. Os demais implicam em castigos administrativos, como a expulsão da cidade, ou verdadeiras torturas, como esmagar o cotovelo direito com um martelo. Mas, a punição mais comum – e também a mais humlhante – é o aparo da barba.",
+            "Além disso, possuem um sentimento nacionalista como nenhum outro povo jamais conheceu. Todos os Anões amam sua raça e seu Reino, jamais permitindo que qualquer um deles esteja em perigo. Devido ao combate incessante contra os Jotuns e os ataques regulares dos Orcs e Ogres, os Anões restringem suas atividades bélicas ao subsolo. Entretanto, alguns grupos de assalto ou postos avançados podem ser encontrados travando batalhas na superfície."
+          ]
+        },
+        {
+          "id": "restricoes-e-habilidades",
+          "title": "Restrições e Habilidades",
+          "area": "racas",
+          "paragraphs": [
+            "Oposição à Magia Não existem Anões Magos. Uma estranha resistência natural impede que os Anões desenvolvam aptidões para a Magia, pois sua essência vital impede que os efeitos místicos sejam realizados.",
+            "É como se possuíssem uma energia astral tão forte que é capaz de drenar a energia do efeito mágico que o Mago canaliza, reduzindo sua potência (às vezes até anulando-o completamente).",
+            "Os cadáveres dos Anões, por alguma razão que jamais se soube explicar, são imunes aos feitiços de animar mortos-vivos.",
+            "De modo que o seu próprio corpo físico é passivo de mistérios, acreditando-se que talvez atue como um verdadeiro campo de força contra a Magia. Desde os primórdios de Nidavellir, quando as primeiras grandes minas foram abertas e as cidades começaram a ser talhadas na rocha, os Anões já forjavam extraordinários objetos e armas mágicas. Porém, apesar de serem capazes de criar tais itens, eles não possuíam nenhum conhecimento sobre Magia. Não existia nenhum Anão que tivesse contato com as artes arcanas e isso intrigava os deuses de Aasgard. Como poderiam aquelas criaturas fabricar artefatos tão poderosos se nem ao menos conheciam os conceitos da Magia?",
+            "Ainda intrigados com essa questão, atualmente os sábios discutem possibilidades inusitadas para explicar o estranho fenômeno. Uma delas diz que os Anões haviam desenvolvido esta habilidade a partir do momento em que iniciaram a colonização do subterrâneo, onde percorreram lugares tão inóspitos das profundezas que obtiveram um contato com poderes ocultos da Roda dos Mundos. Alguns comentam que estes poderes estão relacionados, de alguma forma, com as raízes de Yggdrasil, a Árvore da Vida. Enquanto os Anjos preocuparam-se em estudar os ramos da árvore (que originaram os sephiroth), os Anões encontraram nas suas raízes os segredos do processo da criação e da construção mística.",
+            "Por outro lado, há quem defenda que os Anões sejam apenas exímios artífices e que extraiam de suas minas minérios mágicos fabulosos, mas que dificilmente seriam encontrados se não fosse a escavação contínua das profundezas.",
+            "Personagens Anões Personagens anões são construídos da mesma forma que qualquer personagem de Arkanun/Trevas. Possuem as mesmas quantidades de pontos para gastar em seus Atributos, Perícias e Aprimoramentos, portanto, use sem problemas as regras do Sistema Daemon. Anões, além da baixa estatura, são encorpados e têm barbas muito espessas (os Duegares possuem a mesma aparência de um Anão qualquer, embora muitos apresentem deformidades demoníacas decorrentes do uso de Magia). Medem entre 1,20 e 1,50 metros de altura e vivem cerca de 300 anos.",
+            "Abaixo seguem alguns Kits de Personagens mais comuns entre os anões. Porém, note apenas duas importantes observações: apenas os Duegares podem comprar o Aprimoramento Poderes Mágicos (todos os Anões são proibidos, sem exceção), e para os Aprimoramentos Visão Noturna e Resistência à Magia, utilize os modelos:",
+            "Visão Noturna",
+            "2 pontos: Os anões possuem uma visão especial, além da visão normal. Esta é a habilidade de enxergar perfeitamente escuro, desde que haja por perto uma fonte qualquer de iluminação.",
+            "Tanto à noite quanto em ambientes fechados, o personagem pode ver normalmente sem sofrer qualquer penalidade devido ao escuro do ambiente. No entanto, deve haver algum tipo de iluminação, como uma tocha ou vela, dentro do campo de visão do personagem. Sem isso torna-se impossível enxergar na escuridão total. Os Anões utilizam muitas pedras especiais, que emitem luz própria, em suas cidades e túneis subterrâneos para auxiliá-los neste ponto.",
+            "Resistência à Magia O personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder). Assim, sempre que uma magia for empregada no personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir.",
+            "1 ponto: 1D de resistência.",
+            "2 pontos: 2D de resistência.",
+            "3 pontos: 3D de resistência.",
+            "4 pontos: 4D de resistência.",
+            "5 pontos: 5D de resistência."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duegares",
+      "title": "Duegares",
+      "area": "racas",
+      "kind": "lineage",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Na época em que habitavam a superfície de Vanaheim, alguns anões ambiciosos confrontavam-se com seus irmãos, insistindo para que fossem estudar os mistérios de Yggdrasil. Os Anões conheciam a Árvore e seus prodígios, sabiam que seus ramos possuíam doutrinas místicas reservadas aos deuses e, por isso, não ousavam investigá-los.",
+        "Os sábios discutem que essa divergência entre a raça gerou-se da mesma forma que entre os Jotuns: sendo crias de Ymir, eles herdaram suas tendências para a ordem e para o caos. Dessa forma, assim como os gigantes, haviam aqueles que eram bondosos e aqueles que eram malignos.",
+        "Escondidos, alguns destes anões passaram a estudar os ramos de Yggdrasil e obtiveram então primitivos conceitos da Magia, através dos quais desenvolveram, com certa dificuldade, alguns poderes cabalísticos. Aquele foi um crime muito grave, os Anões ficaram muito ressentidos com o que seus irmãos fizeram e decidiram banir os acusados para longe de Vanaheim.",
+        "Segundo uma nomenclatura adotada pelos Anões, aqueles que haviam sido expulsos receberam o nome de Duegares.",
+        "Duegares A história como contada acima é uma versão narrada pelos Anões (e sobre a qual é muito difícil convencê-los a falar). Os Duegares, por outro lado, apresentam outros fatos relevantes que não são mencionados pelos Anões. Eles relatam que sua expulsão não foi, de forma alguma, disciplinada e pacífica. Batalhas foram travadas, principalmente porque os Duegares não estavam dispostos a abandonarem as minas de onde extraíam pedras que descobriram ser muito úteis em seus feitiços toscos.",
+        "Também contam que somente desistiram dos territórios de Vanaheim por descobrirem em Halzazee uma fonte muito mais farta para seus propósitos. Além disso, lá encontraram entidades dispostas a ensinarem-lhes a manipular as forças místicas.",
+        "Assim, muitas vezes em troca de seus serviços como ferreiros e mineradores, os Duegares conseguiram realizar pactos e negócios com os Demônios de Arkanun.",
+        "Halzazee é a parte de Arcádia que tangencia o Plano de Arkanun. Formado pelos contos de fadas dos povos de Arkanun, esta é considerada uma das regiões mais sombrias da Velha Arcádia. Basicamente composto de cavernas e montanhas, Halzazee possui centenas de milhares de túneis, eternamente alterados por vermes e criaturas bizarras que vivem escavando e devorando as rochas, formando uma rede interminável de labirintos subterrâneos.",
+        "Criando uma versão grotesca e assustadora do tipo de cidades arquitetadas pelos Anões de Nidavellir, os Duegares construíram seu próprio reino subterrâneo em Halzazee, disputando espaço com tribos de Orcs, Trolls e Goblins. Existem alguns portais nas montanhas geladas da Rússia que permitem acessar algumas destas cidades, mas encontrá-los não é uma tarefa nada fácil. Em raras ocasiões são encontrados nas cidades mais ao norte, em busca de equipamentos, armas e mercenários para lutar em sua guerra contra os Anões.",
+        "Os Duegares são especialistas em armadilhas mecânicas e os sábios afirmam que suas catacumbas e minas são praticamente impenetráveis para aqueles que não possuem os mapas corretos.",
+        "Seu contato com os Demônios possibilitou-lhes manipular ciências negras do Caminho de Arkanun com muita facilidade.",
+        "Também desenvolveram muitos Rituais modificando os Caminhos Naturais para versões bizarras envolvendo Orcs, Goblins, mortos-vivos, vermes demoníacos, plantas carnívoras, pestes e doenças. A maioria dos feiticeiros Duegares são necromânticos ou conjuradores de demônios.",
+        "Em Halzazee não existem tantos recursos minerais quanto em Nidavellir, mas ainda assim os Duegares extraem metais e gemas que usam para confeccionar suas armas mágica. Entretanto, os materiais mais usados são os ossos e carcaças das outras criaturas que habitam as galerias subterrâneas, com os quais fabricam armaduras, equipamentos e até palácios. Muitos dos minérios encontrados em Halzazee possuem poderes negativos, isso é, causam prejuízos a quem os utiliza. Os Duegares forjam artefatos malditos com eles, e os comercializam com os Demônios, que apreciam muito o trabalho destes anões malignos.",
+        "Apenas os Duegares podem comprar o Aprimoramento Poderes Mágicos entre os personagens anões apresentados neste suplemento."
+      ],
+      "sections": [
+        {
+          "id": "historia",
+          "title": "História",
+          "area": "racas",
+          "paragraphs": [
+            "Na época em que habitavam a superfície de Vanaheim, alguns anões ambiciosos confrontavam-se com seus irmãos, insistindo para que fossem estudar os mistérios de Yggdrasil. Os Anões conheciam a Árvore e seus prodígios, sabiam que seus ramos possuíam doutrinas místicas reservadas aos deuses e, por isso, não ousavam investigá-los.",
+            "Os sábios discutem que essa divergência entre a raça gerou-se da mesma forma que entre os Jotuns: sendo crias de Ymir, eles herdaram suas tendências para a ordem e para o caos. Dessa forma, assim como os gigantes, haviam aqueles que eram bondosos e aqueles que eram malignos.",
+            "Escondidos, alguns destes anões passaram a estudar os ramos de Yggdrasil e obtiveram então primitivos conceitos da Magia, através dos quais desenvolveram, com certa dificuldade, alguns poderes cabalísticos. Aquele foi um crime muito grave, os Anões ficaram muito ressentidos com o que seus irmãos fizeram e decidiram banir os acusados para longe de Vanaheim.",
+            "Segundo uma nomenclatura adotada pelos Anões, aqueles que haviam sido expulsos receberam o nome de Duegares.",
+            "Duegares A história como contada acima é uma versão narrada pelos Anões (e sobre a qual é muito difícil convencê-los a falar). Os Duegares, por outro lado, apresentam outros fatos relevantes que não são mencionados pelos Anões. Eles relatam que sua expulsão não foi, de forma alguma, disciplinada e pacífica. Batalhas foram travadas, principalmente porque os Duegares não estavam dispostos a abandonarem as minas de onde extraíam pedras que descobriram ser muito úteis em seus feitiços toscos.",
+            "Também contam que somente desistiram dos territórios de Vanaheim por descobrirem em Halzazee uma fonte muito mais farta para seus propósitos. Além disso, lá encontraram entidades dispostas a ensinarem-lhes a manipular as forças místicas.",
+            "Assim, muitas vezes em troca de seus serviços como ferreiros e mineradores, os Duegares conseguiram realizar pactos e negócios com os Demônios de Arkanun.",
+            "Halzazee é a parte de Arcádia que tangencia o Plano de Arkanun. Formado pelos contos de fadas dos povos de Arkanun, esta é considerada uma das regiões mais sombrias da Velha Arcádia. Basicamente composto de cavernas e montanhas, Halzazee possui centenas de milhares de túneis, eternamente alterados por vermes e criaturas bizarras que vivem escavando e devorando as rochas, formando uma rede interminável de labirintos subterrâneos.",
+            "Criando uma versão grotesca e assustadora do tipo de cidades arquitetadas pelos Anões de Nidavellir, os Duegares construíram seu próprio reino subterrâneo em Halzazee, disputando espaço com tribos de Orcs, Trolls e Goblins. Existem alguns portais nas montanhas geladas da Rússia que permitem acessar algumas destas cidades, mas encontrá-los não é uma tarefa nada fácil. Em raras ocasiões são encontrados nas cidades mais ao norte, em busca de equipamentos, armas e mercenários para lutar em sua guerra contra os Anões.",
+            "Os Duegares são especialistas em armadilhas mecânicas e os sábios afirmam que suas catacumbas e minas são praticamente impenetráveis para aqueles que não possuem os mapas corretos.",
+            "Seu contato com os Demônios possibilitou-lhes manipular ciências negras do Caminho de Arkanun com muita facilidade.",
+            "Também desenvolveram muitos Rituais modificando os Caminhos Naturais para versões bizarras envolvendo Orcs, Goblins, mortos-vivos, vermes demoníacos, plantas carnívoras, pestes e doenças. A maioria dos feiticeiros Duegares são necromânticos ou conjuradores de demônios.",
+            "Em Halzazee não existem tantos recursos minerais quanto em Nidavellir, mas ainda assim os Duegares extraem metais e gemas que usam para confeccionar suas armas mágica. Entretanto, os materiais mais usados são os ossos e carcaças das outras criaturas que habitam as galerias subterrâneas, com os quais fabricam armaduras, equipamentos e até palácios. Muitos dos minérios encontrados em Halzazee possuem poderes negativos, isso é, causam prejuízos a quem os utiliza. Os Duegares forjam artefatos malditos com eles, e os comercializam com os Demônios, que apreciam muito o trabalho destes anões malignos."
+          ]
+        },
+        {
+          "id": "uso-em-jogo",
+          "title": "Uso em Jogo",
+          "area": "racas",
+          "paragraphs": [
+            "Apenas os Duegares podem comprar o Aprimoramento Poderes Mágicos entre os personagens anões apresentados neste suplemento."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visao-noturna",
+      "title": "Visão Noturna",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Visão Noturna",
+        "2 pontos: Os anões possuem uma visão especial, além da visão normal. Esta é a habilidade de enxergar perfeitamente escuro, desde que haja por perto uma fonte qualquer de iluminação.",
+        "Tanto à noite quanto em ambientes fechados, o personagem pode ver normalmente sem sofrer qualquer penalidade devido ao escuro do ambiente. No entanto, deve haver algum tipo de iluminação, como uma tocha ou vela, dentro do campo de visão do personagem. Sem isso torna-se impossível enxergar na escuridão total. Os Anões utilizam muitas pedras especiais, que emitem luz própria, em suas cidades e túneis subterrâneos para auxiliá-los neste ponto."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos: Os anões possuem uma visão especial, além da visão normal. Esta é a habilidade de enxergar perfeitamente escuro, desde que haja por perto uma fonte qualquer de iluminação.",
+            "Tanto à noite quanto em ambientes fechados, o personagem pode ver normalmente sem sofrer qualquer penalidade devido ao escuro do ambiente. No entanto, deve haver algum tipo de iluminação, como uma tocha ou vela, dentro do campo de visão do personagem. Sem isso torna-se impossível enxergar na escuridão total. Os Anões utilizam muitas pedras especiais, que emitem luz própria, em suas cidades e túneis subterrâneos para auxiliá-los neste ponto."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia-a-magia",
+      "title": "Resistência à Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Resistência à Magia O personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder). Assim, sempre que uma magia for empregada no personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir.",
+        "1 ponto: 1D de resistência.",
+        "2 pontos: 2D de resistência.",
+        "3 pontos: 3D de resistência.",
+        "4 pontos: 4D de resistência.",
+        "5 pontos: 5D de resistência."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: 1D de resistência.",
+            "2 pontos: 2D de resistência.",
+            "3 pontos: 3D de resistência.",
+            "4 pontos: 4D de resistência.",
+            "5 pontos: 5D de resistência."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui uma aura de proteção contra magias arcanas. Não é totalmente imune à Magia; possui uma resistência sobrenatural capaz de reduzir ou anular efeitos mágicos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ferreiro",
+      "title": "Ferreiro",
+      "area": "classes",
+      "kind": "class",
+      "sectionId": "classe-kit",
+      "sectionTitle": "Classe/Kit",
+      "paragraphs": [
+        "Custo: 2 pts. de Aprimoramento, 240 pts. de Perícia.",
+        "Perícias: Machado 30/20, Martelo de Combate 30/20, Armeiro 50%, Artes (Arquitetura 20%, Escultura 15%, Joalheria 50%), Artífice (Carpinteiro 20%, Ferreiro 60%, Pedreiro 20%), Avaliação de Objetos 30%, Ciências (Arqueologia 10%), Mineração 30%, Sobrevivência (Montanhas 50%).",
+        "Aprimoramentos: Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1.",
+        "Pontos de Fé: 0.",
+        "Pontos de Magia: 0.",
+        "Pontos Heróicos: 1 por nível."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "classes",
+          "paragraphs": [
+            "2 pts. de Aprimoramento, 240 pts. de Perícia."
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "classes",
+          "paragraphs": [
+            "Machado 30/20, Martelo de Combate 30/20, Armeiro 50%, Artes (Arquitetura 20%, Escultura 15%, Joalheria 50%), Artífice (Carpinteiro 20%, Ferreiro 60%, Pedreiro 20%), Avaliação de Objetos 30%, Ciências (Arqueologia 10%), Mineração 30%, Sobrevivência (Montanhas 50%)."
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "classes",
+          "paragraphs": [
+            "Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1."
+          ]
+        },
+        {
+          "id": "pontos-de-fe",
+          "title": "Pontos de Fé",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-de-magia",
+          "title": "Pontos de Magia",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-heroicos",
+          "title": "Pontos Heróicos",
+          "area": "classes",
+          "paragraphs": [
+            "1 por nível."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guerreiro",
+      "title": "Guerreiro",
+      "area": "classes",
+      "kind": "class",
+      "sectionId": "classe-kit",
+      "sectionTitle": "Classe/Kit",
+      "paragraphs": [
+        "Custo: 2 pts. de Aprimoramento, 200 pts. de Perícia.",
+        "Perícias: Machado 40/40, Martelo de Combate 40/40, Armeiro 30%, Artes (Arquitetura 10%, Escultura 15%, Joalheria 15%), Artífice (Ferreiro 25%), Armadilhas 30%, Avaliação de Objetos 15%, Mineração 30%, Manipulação (Intimidação 20%), Sobrevivência (Montanhas 50%).",
+        "Aprimoramentos: Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1.",
+        "Pontos de Fé: 0.",
+        "Pontos de Magia: 0.",
+        "Pontos Heróicos: 1 por nível."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "classes",
+          "paragraphs": [
+            "2 pts. de Aprimoramento, 200 pts. de Perícia."
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "classes",
+          "paragraphs": [
+            "Machado 40/40, Martelo de Combate 40/40, Armeiro 30%, Artes (Arquitetura 10%, Escultura 15%, Joalheria 15%), Artífice (Ferreiro 25%), Armadilhas 30%, Avaliação de Objetos 15%, Mineração 30%, Manipulação (Intimidação 20%), Sobrevivência (Montanhas 50%)."
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "classes",
+          "paragraphs": [
+            "Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1."
+          ]
+        },
+        {
+          "id": "pontos-de-fe",
+          "title": "Pontos de Fé",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-de-magia",
+          "title": "Pontos de Magia",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-heroicos",
+          "title": "Pontos Heróicos",
+          "area": "classes",
+          "paragraphs": [
+            "1 por nível."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ladrao",
+      "title": "Ladrão",
+      "area": "classes",
+      "kind": "class",
+      "sectionId": "classe-kit",
+      "sectionTitle": "Classe/Kit",
+      "paragraphs": [
+        "Custo: 2 pts. de Aprimoramento, 250 pts. de Perícia.",
+        "Perícias: Adaga 25/25, Armeiro 20%, Armadilhas 50%, Artes (Atuação 20%, Escapismo 25%, Joalheria 10%), Artífice (Ferreiro 15%), Avaliação de Objetos 30%, Disfarce 30%, Furtar 40%, Furtividade 25%, Falsificação 20%, Mineração 30%, Manipulação (Lábia 15%), Manuseio de Fechaduras 20%, Sobrevivência (Montanhas 50%), Subterfúgio 20%.",
+        "Aprimoramentos: Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1.",
+        "Pontos de Fé: 0.",
+        "Pontos de Magia: 0.",
+        "Pontos Heróicos: 1 por nível."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "classes",
+          "paragraphs": [
+            "2 pts. de Aprimoramento, 250 pts. de Perícia."
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "classes",
+          "paragraphs": [
+            "Adaga 25/25, Armeiro 20%, Armadilhas 50%, Artes (Atuação 20%, Escapismo 25%, Joalheria 10%), Artífice (Ferreiro 15%), Avaliação de Objetos 30%, Disfarce 30%, Furtar 40%, Furtividade 25%, Falsificação 20%, Mineração 30%, Manipulação (Lábia 15%), Manuseio de Fechaduras 20%, Sobrevivência (Montanhas 50%), Subterfúgio 20%."
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "classes",
+          "paragraphs": [
+            "Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1."
+          ]
+        },
+        {
+          "id": "pontos-de-fe",
+          "title": "Pontos de Fé",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-de-magia",
+          "title": "Pontos de Magia",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-heroicos",
+          "title": "Pontos Heróicos",
+          "area": "classes",
+          "paragraphs": [
+            "1 por nível."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clerigo",
+      "title": "Clérigo",
+      "area": "classes",
+      "kind": "class",
+      "sectionId": "classe-kit",
+      "sectionTitle": "Classe/Kit",
+      "paragraphs": [
+        "Custo: 3 pts. de Aprimoramento, 220 pts. de Perícia.",
+        "Perícias: Ciências (Teologia 45%, Arqueologia 15%, Herbalismo 25%), Ciências Proibidas (Arcádia 15%), Armeiro 15%, Artes (Arquitetura 25%, Escultura 10%, Joalheria 10%), Artífice (Carpinteiro 10%, Ferreiro 20%), Etiqueta (Clero 25%), Primeiros Socorros 35%, Pesquisa/Investigação 20%, Avaliação de Objetos 15%, Manipulação (Empatia 20%), Mineração 30%, Sobrevivência (Montanhas 50%), Religião 50%.",
+        "Aprimoramentos: Visão Noturna 2, Resistência à Magia 1, Pontos de Fé 1.",
+        "Pontos de Fé: 1 + 1 a cada nível.",
+        "Pontos de Magia: 0.",
+        "Pontos Heróicos: 0."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "classes",
+          "paragraphs": [
+            "3 pts. de Aprimoramento, 220 pts. de Perícia."
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "classes",
+          "paragraphs": [
+            "Ciências (Teologia 45%, Arqueologia 15%, Herbalismo 25%), Ciências Proibidas (Arcádia 15%), Armeiro 15%, Artes (Arquitetura 25%, Escultura 10%, Joalheria 10%), Artífice (Carpinteiro 10%, Ferreiro 20%), Etiqueta (Clero 25%), Primeiros Socorros 35%, Pesquisa/Investigação 20%, Avaliação de Objetos 15%, Manipulação (Empatia 20%), Mineração 30%, Sobrevivência (Montanhas 50%), Religião 50%."
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "classes",
+          "paragraphs": [
+            "Visão Noturna 2, Resistência à Magia 1, Pontos de Fé 1."
+          ]
+        },
+        {
+          "id": "pontos-de-fe",
+          "title": "Pontos de Fé",
+          "area": "classes",
+          "paragraphs": [
+            "1 + 1 a cada nível."
+          ]
+        },
+        {
+          "id": "pontos-de-magia",
+          "title": "Pontos de Magia",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-heroicos",
+          "title": "Pontos Heróicos",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mago",
+      "title": "Mago",
+      "area": "classes",
+      "kind": "class",
+      "sectionId": "classe-kit",
+      "sectionTitle": "Classe/Kit",
+      "paragraphs": [
+        "Apenas para Duegares",
+        "Custo: 3 pts. de Aprimoramento, 270 pts. de Perícia.",
+        "Perícias: Machado 20/20, Armeiro 30%, Armadilhas 30%, Artes (Arquitetura 25%, Escultura 15%, Joalheria 30%), Artífice (Ferreiro 30%), Avaliação de Objetos 20%, Ciências (Arqueologia 20%, Herbalismo 30%, Teologia 10%), Ciências Proibidas (Oculto 20%, Rituais 30%, Teoria da Magia 40%), Idioma (Escolha uma Língua Antiga 30%), Manipulação (Tortura 20%), Pesquisa/Investigação 20%, Mineração 30%, Sobrevivência (Montanhas 50%).",
+        "Formas e Caminhos Principais: Arkanun, Trevas, Criar.",
+        "Aprimoramentos: Visão Noturna 2, Poderes Mágicos 2, Pontos Heróicos 1.",
+        "Pontos de Fé: 0.",
+        "Pontos de Magia: 2 + 1 por nível.",
+        "Pontos Heróicos: 1 por nível."
+      ],
+      "sections": [
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "classes",
+          "paragraphs": [
+            "Apenas para Duegares"
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "classes",
+          "paragraphs": [
+            "3 pts. de Aprimoramento, 270 pts. de Perícia."
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "classes",
+          "paragraphs": [
+            "Machado 20/20, Armeiro 30%, Armadilhas 30%, Artes (Arquitetura 25%, Escultura 15%, Joalheria 30%), Artífice (Ferreiro 30%), Avaliação de Objetos 20%, Ciências (Arqueologia 20%, Herbalismo 30%, Teologia 10%), Ciências Proibidas (Oculto 20%, Rituais 30%, Teoria da Magia 40%), Idioma (Escolha uma Língua Antiga 30%), Manipulação (Tortura 20%), Pesquisa/Investigação 20%, Mineração 30%, Sobrevivência (Montanhas 50%)."
+          ]
+        },
+        {
+          "id": "formas-e-caminhos-principais",
+          "title": "Formas e Caminhos Principais",
+          "area": "classes",
+          "paragraphs": [
+            "Arkanun, Trevas, Criar."
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "classes",
+          "paragraphs": [
+            "Visão Noturna 2, Poderes Mágicos 2, Pontos Heróicos 1."
+          ]
+        },
+        {
+          "id": "pontos-de-fe",
+          "title": "Pontos de Fé",
+          "area": "classes",
+          "paragraphs": [
+            "0."
+          ]
+        },
+        {
+          "id": "pontos-de-magia",
+          "title": "Pontos de Magia",
+          "area": "classes",
+          "paragraphs": [
+            "2 + 1 por nível."
+          ]
+        },
+        {
+          "id": "pontos-heroicos",
+          "title": "Pontos Heróicos",
+          "area": "classes",
+          "paragraphs": [
+            "1 por nível."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tempo-de-construcao-de-armas",
+      "title": "Tempo de construção de armas",
+      "area": "itens_equipamentos",
+      "kind": "equipment_table",
+      "sectionId": "tabela",
+      "sectionTitle": "Tabela",
+      "paragraphs": [
+        "Adaga: 2 por dia",
+        "Espada Curta: 2 dias",
+        "Espada Longa/Bastarda: 3 dias",
+        "Espada de: 2 mãos 5 dias",
+        "Besta Leve: 1 dia",
+        "Besta Pesada: 2 dias",
+        "Flechas: 30 por dia",
+        "Lança: 2 dias",
+        "Machado: 1 dia",
+        "Martelo: 2 dias",
+        "Mangual: 2 dias",
+        "Tridente: 2 dias"
+      ],
+      "sections": [
+        {
+          "id": "tabela",
+          "title": "Tabela",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Adaga: 2 por dia",
+            "Espada Curta: 2 dias",
+            "Espada Longa/Bastarda: 3 dias",
+            "Espada de: 2 mãos 5 dias",
+            "Besta Leve: 1 dia",
+            "Besta Pesada: 2 dias",
+            "Flechas: 30 por dia",
+            "Lança: 2 dias",
+            "Machado: 1 dia",
+            "Martelo: 2 dias",
+            "Mangual: 2 dias",
+            "Tridente: 2 dias"
+          ]
+        }
+      ]
+    }
+  ],
+  "areaCounts": {
+    "aprimoramentos": 2,
+    "cenarios_lore": 1,
+    "classes": 5,
+    "itens_equipamentos": 1,
+    "racas": 2
+  },
+  "reviewNotes": [
+    "Livro tratado individualmente após interrupção dos Anjos.",
+    "Nenhum custo racial foi inferido para Anões ou Duegares, pois o texto não apresenta custo explícito para usar a raça.",
+    "Visão Noturna e Resistência à Magia foram tratados como aprimoramentos com custo separado."
+  ]
+}

@@ -66,6 +66,8 @@ def normalize_text(text: str) -> str:
         "heroicos": "heróicos",
         "pericias": "perícias",
     }
+    replacements["Intim idação"] = "Intimidação"
+    replacements["doseleme ntos"] = "dos elementos"
     for old, new in replacements.items():
         text = text.replace(old, new)
     text = re.sub(r"\s+", " ", text).strip()
@@ -152,7 +154,7 @@ def should_join(previous: str, current: str) -> bool:
         return True
     if current[0].islower():
         return True
-    if previous.endswith(("-", ",", " de", " do", " da", " dos", " das", " e", " ou", " para", " com")):
+    if previous.endswith(("-", ",", " a", " de", " do", " da", " dos", " das", " e", " ou", " para", " com")):
         return True
     if re.fullmatch(r"\d{1,2}", current) and re.search(r"\b(?:PVs?|PER|CAR|AGI)$", previous):
         return True
@@ -198,7 +200,9 @@ def is_attribute_line(text: str) -> bool:
 
 
 def is_vital_line(text: str) -> bool:
-    return bool(re.search(r"\b(?:#\s*Ataques?|IP:?|PVs?)\b", text))
+    if re.match(r"^(?:#\s*Ataques?|IP:?|PVs?)\b", text, re.IGNORECASE):
+        return True
+    return bool(re.search(r"\b(?:IP:|PVs?\s*\d)", text, re.IGNORECASE))
 
 
 def is_attack_line(text: str) -> bool:
@@ -206,9 +210,46 @@ def is_attack_line(text: str) -> bool:
         return False
     if not re.search(r"\b(?:dano|d\d+|\d+/\d+|\d+%)\b", text, re.IGNORECASE):
         return False
+    attack_start = (
+        "Artes Marciais",
+        "Briga",
+        "Pistola",
+        "Revólver",
+        "Faca",
+        "Garras",
+        "Garra",
+        "Mordida",
+        "Chifre",
+        "Chifres",
+        "Coice",
+        "Cauda",
+        "Clava",
+        "Espada",
+        "Lança",
+        "Metralhadora",
+        "Escopeta",
+        "Espingarda",
+        "Presas",
+        "Ferrão",
+        "Tentáculos",
+        "Tentáculo",
+        "Pancada",
+        "Rajada",
+        "Bico",
+        "Dentes",
+        "Arma mágica",
+        "Motosserra",
+        "Boxe",
+        "Nunchaco",
+        "Estrelinhas",
+        "Golpe de corpo",
+    )
+    if not text.startswith("#") and not any(text.lower().startswith(term.lower()) for term in attack_start):
+        if not re.search(r"\b(?:Garras?|Mordida|Briga|Faca|Pistola|Espingarda|Clava|Lança|Ferrão|Tentáculos?)\s+\d", text, re.IGNORECASE):
+            return False
     return bool(
         re.search(
-            r"\b(?:Artes Marciais|Briga|Pistola|Revólver|Faca|Garras?|Mordida|Chifre|Coice|Cauda|Clava|Espada|Lança|Metralhadora|Escopeta|Presas|Ferrão|Tentáculos?|Pancada|Rajada|Bico|Dentes|Arma mágica|Motosserra|Boxe|Nunchaco|Estrelinhas)\b",
+            r"\b(?:Artes Marciais|Briga|Pistola|Revólver|Faca|Garras?|Mordida|Chifres?|Coice|Cauda|Clava|Espada|Lança|Metralhadora|Escopeta|Espingarda|Presas|Ferrão|Tentáculos?|Pancada|Rajada|Bico|Dentes|Arma mágica|Motosserra|Boxe|Nunchaco|Estrelinhas|Golpe de corpo)\b",
             text,
             re.IGNORECASE,
         )
@@ -232,9 +273,11 @@ def is_magic_line(text: str) -> bool:
 def is_ability_line(text: str) -> bool:
     if re.search(r"\bperícias? mais (?:comuns|utilizadas|usadas)\b", text, re.IGNORECASE):
         return False
-    if re.match(r"^(?:Pode|Podem|Caso|Ao contrário|Regenera|Regeneram|Infravisão|Ver o Invisível|Visão Aguçada|Temores|Vulnerabilidade|Forma de Névoa|Imortal|Invulnerabilidade|Monstruoso)\b", text):
+    if re.match(r"^(?:Pode|Podem|Caso|Ao contrário|Regenera|Regeneram|Infravisão|Ver o Invisível|Visão Aguçada|Temores|Vulnerabilidade|Forma de Névoa|Formas Alternativas|Imortal|Invulnerabilidade|Monstruoso)\b", text):
         return True
-    if re.search(r"\b(?:por rodada|por turno|vezes por dia|veneno|imunes?|vulnerabilidades?|não precisam dormir|sofre dano|recebe dano|perde \d+ PV)\b", text, re.IGNORECASE):
+    if re.search(r"\bregeneram? \d+ (?:Pontos de Vida|PVs?)\b", text, re.IGNORECASE):
+        return True
+    if re.search(r"\b(?:vezes por dia|imunes?|vulnerabilidades?|não precisam dormir|sofre dano|recebe dano|perde \d+ PV)\b", text, re.IGNORECASE):
         return True
     return False
 
@@ -244,6 +287,14 @@ def is_sheet_line(text: str) -> bool:
 
 
 def split_mixed_paragraph(text: str) -> list[str]:
+    quote_attr = re.match(r"^([“\"].+?[”\"])\s+(CON\b.+)$", text)
+    if quote_attr:
+        return [normalize_text(quote_attr.group(1)), normalize_text(quote_attr.group(2))]
+
+    sheet_ability = re.split(r"(?<=\.)\s+(Regenera(?:m)?\b)", text, maxsplit=1, flags=re.IGNORECASE)
+    if len(sheet_ability) == 3 and is_vital_line(sheet_ability[0]):
+        return [normalize_text(sheet_ability[0]), normalize_text(sheet_ability[1] + sheet_ability[2])]
+
     pieces = [text]
     weapon_terms = (
         "Garras",
@@ -339,15 +390,81 @@ def postprocess_character_inputs(title: str, paragraphs: list[str]) -> list[str]
             "Diferente de um capanga comum, um capanga forte é contratado para serviços mais pesados, geralmente onde haja necessidade de um confronto físico direto. Não são necessariamente muito inteligentes, porém a maioria possui maior massa corporal do que massa cerebral.",
         ]
     if title == "ASSASSINO":
-        return remove_matching(paragraphs, [r"^O assaltante de banco é", r"assaltante comum"])
+        return remove_matching(paragraphs, [r"^O assaltante de banco é", r"assaltante comum"]) + [
+            "Para qualquer fim, as perícias mais utilizadas por assassinos são: Armadilhas, Camuflagem, Ciências (Anatomia), Condução (Carros, Motos), Disfarce, Escutar, Explosivos, Furtividade, Manipulação (Impressionar, Tortura), Manobras de Combate (Todas), Manuseio de Fechaduras, Rastreio. Com valores entre 30% a 95%.",
+        ]
     if title == "ASSALTANTE DE BANCO":
         return paragraphs + [
             "O assaltante de banco é um criminoso especializado em crimes mais ousados, seu objetivo é um cofre lotado de sacos com um cifrão desenhado. Diferente do assaltante comum, um assaltante de banco é mais especializado, mais ousado e melhor armado.",
         ]
+    if title == "KRAKEN":
+        return remove_matching(paragraphs, [r"^Lobisomens regeneram"])
+    if title == "LOBISOMEM":
+        return paragraphs + [
+            "Lobisomens regeneram 2 Pontos de Vida por rodada e só podem ser verdadeiramente mortos por prata pura. Ataques feitos por armas de prata não são regenerados. Os lobisomens possuem todos os sentidos superiores, bem como alguns deles podem possuir poderes que simulam os Caminhos em Ar e Trevas. Alguns super poderes também podem ser simulados pelos lobisomens, de acordo com o Mestre.",
+        ]
+    if title == "VAMPIRO":
+        cleaned = remove_matching(
+            paragraphs,
+            [
+                r"também não pode ser atacado",
+                r"PER 16- O vampiro pode se 24",
+                r"^O vampiro pode se$",
+                r"^24\.$",
+                r"^transformar em um lobo ou morcego",
+                r"^TODOS os vampiros sofrem dano quando repulsiva",
+            ],
+        )
+        return [
+            "CON 16-36, FR 16-36, DEX 12-24, AGI 16-36, INT 12-20, WILL 12-20, CAR 00-20, PER 16-24.",
+            "Formas Alternativas: o vampiro pode se transformar em um lobo ou morcego.",
+        ] + cleaned
+    if title == "TERIZINOSSAURO":
+        return remove_matching(
+            paragraphs,
+            [
+                r"INT 01, WILL 01, CAR 00, PER 04-08",
+                r"# Ataques \[1\], IP: 8/4",
+                r"Chifres 60/20",
+                r"Em eras pré-históricas, o triceratops",
+                r"Infelizmente, são também muito irritadiços",
+            ],
+        )
+    if title == "TRICERATOPS":
+        return [
+            "CON 42-50, FR 36-50, DEX 03, AGI 06-10, INT 01, WILL 01, CAR 00, PER 04-08.",
+            "# Ataques [1], IP: 8/4 (carapaça/pele), PVs 50-60.",
+            "Chifres 60/20 dano 3d6+6 ou Carga 50% dano 5d6+6.",
+            "Em eras pré-históricas, o triceratops foi o mais comum entre os grandes dinossauros herbívoros, encontrado em vastas manadas. Um triceratops adulto pode atingir dez metros de comprimento, com chifres medindo mais de um metro. Sua cabeça, pescoço e ombros são protegidos por um escudo de osso, que ele pode usar como um escudo normal, e capaz de proteger a si mesmo ou alguém que o esteja cavalgando.",
+            "Infelizmente, são também muito irritadiços e territoriais, atacando qualquer criatura que se aproxime do bando. Viajam em grandes manadas de 10 a 30 indivíduos.",
+        ]
+    if title == "ELEMENTAIS":
+        return remove_matching(
+            paragraphs,
+            [
+                r"^Estes são o tipo mais fraco de morto vivo",
+                r"^Esqueletos são imunes",
+                r"^por controle mental",
+                r"^restaurados",
+                r"^Quase todos os esqueletos",
+            ],
+        )
+    if title == "ESQUELETO":
+        return paragraphs + [
+            "Estes são o tipo mais fraco de morto vivo, um simples amontoado de ossos que andam e lutam. Eles não surgem naturalmente, costumam ser invocados por forças malignas para servirem para algum propósito sombrio. É raro que tenham qualquer vontade própria.",
+            "Esqueletos são imunes a acertos críticos, não podem ser afetados por ataques baseados em frio ou gelo, não são afetados por controle mental e sofrem dano menor quando atacados com ataques perfurantes. Esqueletos nunca podem recuperar Pontos de Vida, nem por descanso, magia ou super poder. Uma vez danificados, é para sempre, exceto se forem restaurados.",
+            "Quase todos os esqueletos são silenciosos, totalmente mudos, e aqueles capazes de falar o fazem com uma voz estridente e arranhada.",
+        ]
     return paragraphs
 
 
+def display_name(title: str) -> str:
+    name = normalize_text(title.title() if title.isupper() else title)
+    return re.sub(r"\b(Da|De|Do|Das|Dos|E)\b", lambda match: match.group(1).lower(), name)
+
+
 def make_character(title: str, paragraphs: list[str]) -> dict:
+    paragraphs = postprocess_character_inputs(title, paragraphs)
     ficha, habilidades, descricao = split_character_sections(paragraphs)
     skill_lines = [paragraph for paragraph in ficha if not is_attribute_line(paragraph)]
     sections = [block("ficha", "Ficha", "criaturas_npcs", ficha)]
@@ -357,7 +474,7 @@ def make_character(title: str, paragraphs: list[str]) -> dict:
         sections.append(block("descricao", "Descrição", "criaturas_npcs", descricao))
     return {
         "id": slugify(title),
-        "name": normalize_text(title.title() if title.isupper() else title),
+        "name": display_name(title),
         "type": "character_npc",
         "role": "Criatura/NPC",
         "classifications": [
@@ -389,9 +506,9 @@ def collect_intro(entries: list[dict]) -> list[dict]:
     return [block("introducao", "Introdução", "regras_base", paragraphs)]
 
 
-def collect_characters_and_notes(entries: list[dict]) -> tuple[list[dict], list[dict]]:
+def collect_characters_and_classes(entries: list[dict]) -> tuple[list[dict], list[dict]]:
     characters = []
-    notes = []
+    class_sections = []
     seen = set()
     for index, entry in enumerate(entries):
         if entry["level"] is None:
@@ -409,15 +526,15 @@ def collect_characters_and_notes(entries: list[dict]) -> tuple[list[dict], list[
                 seen.add(key)
                 characters.append(make_character(title, paragraphs))
         elif entry["level"] == 1:
-            notes.append(block(title, normalize_text(title.title() if title.isupper() else title), "regras_base", paragraphs))
-    return characters, notes
+            class_sections.append(block(title, display_name(title), "classes", paragraphs))
+    return characters, class_sections
 
 
 def build_payload() -> dict:
     src = source_path()
     entries = read_entries(src)
-    characters, notes = collect_characters_and_notes(entries)
-    rules_sections = collect_intro(entries) + notes
+    characters, class_sections = collect_characters_and_classes(entries)
+    rules_sections = collect_intro(entries)
     groups = []
     if rules_sections:
         groups.append(
@@ -432,6 +549,8 @@ def build_payload() -> dict:
         )
 
     area_counts = {"criaturas_npcs": len(characters)}
+    if class_sections:
+        area_counts["classes"] = len(class_sections)
     if groups:
         area_counts["regras_base"] = len(groups)
     return {
@@ -448,14 +567,16 @@ def build_payload() -> dict:
         ),
         "areas": sorted(area_counts),
         "groups": groups,
-        "sections": [],
+        "sections": class_sections,
         "characters": characters,
         "adventures": [],
         "areaCounts": area_counts,
         "reviewNotes": [
             "Piloto conservador: apenas headings com ficha detectável viraram criaturas/NPCs.",
+            "Perfis humanos sem ficha própria completa foram tratados como Classes, não como Regra Base.",
             "Habilidades especiais foram separadas de Perícias e Combate quando detectadas por frase de efeito, teste, veneno, regeneração ou voo.",
             "O DOCX possui quebras e trechos fora de ordem; revisar manualmente entradas com descrições curtas ou herdadas de variantes.",
+            "Pendência conhecida: Crocodilo do Pântano não traz linha de PV/IP/# Ataques no trecho extraído do DOCX; foram mantidos atributos, ataques e descrição sem inventar valores.",
         ],
     }
 
