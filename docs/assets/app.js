@@ -719,6 +719,10 @@ function renderTextBlock(title, text) {
 }
 
 function renderNpcDetail(item) {
+  if (!item.npc) {
+    renderGroupedDetail(item);
+    return;
+  }
   const npc = item.npc;
   nodes.detailPanel.append(renderTextBlock("Atributos", renderStatText(npc)));
   nodes.detailPanel.append(renderTextBlock("Perícias e Combate", renderSkillsText(npc)));
