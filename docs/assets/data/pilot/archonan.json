@@ -1,0 +1,477 @@
+{
+  "version": 1,
+  "source": "archonan",
+  "title": "Archonan",
+  "sourceFile": "Archonan_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Sociedade secreta anarquista Archonan e NPCs Archonanus associados.",
+  "areas": [
+    "cenarios_lore",
+    "criaturas_npcs"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "cenarios-lore-archonan",
+      "title": "Cenarios/Lore - Archonan",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenario-lore",
+      "sectionTitle": "Cenário/Lore",
+      "paragraphs": [
+        "Fundação: França, século XIX.",
+        "Base: Paris.",
+        "Atuação: França, principalmente Espanha, Austrália e América do Sul.",
+        "Personalidades: Anjo Blanquiel, Demônio Trauros, Proudhon, Bakunin, Kropotkin, Oscar Wilde, Tolstoi, George Orwell, Aldous Huxley, Picasso, Alex Confort, Herbert Read, Emma Goldman, Trilussa, Tucker, Thoreau, Malesta e George Woodcock.",
+        "Em meados de 1870, a batalha pelo domínio da Terra, liderada por Anjos, Demônios e Magos poderosos, já estava bem estruturada. Com exceção dos Templários e das AGNI, quase não havia sociedades secretas tentando restabelecer a paz e a harmonia na Terra.",
+        "Ao ver o sangue derramado na Terra, o Serafim Blanquiel desceu para acabar com a guerra. Ele se aliou a Proudhon, Bakunin e Kropotkin, que já lutavam pelo mesmo objetivo, e juntos formularam conceitos sobre o exílio de entidades sobrenaturais malignas da Terra e a conversão de Magos e entidades benignas à Anarquia.",
+        "Blanquiel, Proudhon, Bakunin e Kropotkin fundaram a Sociedade Archonan, do grego Archon, governo, e an, sem. O objetivo era devolver liberdade à humanidade e fazê-la atuar como uma unidade cooperativa.",
+        "Depois da fundação, o demônio Trauros, vindo de Arkanun e movido por ideologia semelhante e culpa pelas mortes causadas por seus congêneres, aliou-se aos Archonanus. A Sociedade passou a dominar o Caminho Natural Humano e recebeu de Trauros os Caminhos Arcanos da Terra e da Água.",
+        "A Archonan não tem aliados fixos e atua praticamente sozinha, com alianças poucas e temporárias com Templários ou AGNI. Seus inimigos incluem sociedades secretas, governos, organizações hierárquicas, Anjos, Demônios, Magos e Iluminados.",
+        "A Sociedade cresceu consideravelmente, destruiu pequenas ordens com objetivos de conquista, implantou regimes anarquistas em pequenas cidades espanholas e enfrentou agentes Iluminados em países da Europa entre 1894 e 1901.",
+        "Por volta de 1905, os Iluminados passaram a acompanhar a Sociedade de perto. Em 1907, infiltraram agentes e atacaram uma sede da Archonan em Paris. A batalha causou baixas nos dois lados; o quinteto fundador expulsou os invasores, mas Kropotkin foi morto por Max Weber, agente dos Iluminados, antes de Weber ser destruído por Trauros.",
+        "Hoje, apesar de jovem se comparada a sociedades milenares, a Archonan tem contingente atuante, influência na Austrália e ramificações em boa parte da Europa e da América do Sul.",
+        "A Archonan não tem vínculo com o Arkanun Arcanorum, e seus quatro fundadores ainda vivos permanecem ao lado dos membros sob forma humana, pois a Sociedade não possui hierarquia.",
+        "Os Archonanus seguem cinco mandamentos: jamais negar ajuda a outro Archonanus; matar apenas em último caso; jamais se submeter a hierarquia; combater entidades sobrenaturais, sociedades secretas ou pessoas com objetivos de domínio terrestre; e pregar o movimento anarquista.",
+        "O mandamento de matar apenas em último caso é frequentemente ignorado, por causa do perigo constante ao qual os membros são submetidos. A Sociedade discute a possibilidade de abandoná-lo e de se aliar a grupos terroristas ou anarquistas interessados em seu apoio.",
+        "Os Archonanus se organizam em sedes que funcionam como comunidades, onde integrantes podem viver. Na Austrália e na América do Sul existem pequenas cidades sob regime anarquista, embora muitos membros vivam em cidades comuns para manter a Sociedade informada.",
+        "Para tornar-se um Archonanus, a pessoa deve concordar com os objetivos da Sociedade e passar por um ritual simbólico de purificação: sobreviver uma semana em uma cidade desconhecida, apenas com as roupas do corpo, sem dinheiro ou pertences, respeitando as leis locais.",
+        "O iniciado é observado por outros Archonanus. Caso roube ou cometa outro ato inválido, sua entrada na Sociedade é recusada. Se completar o ritual, recebe um anel com o símbolo da Archonan e passa a compartilhar conhecimentos com os demais membros.",
+        "A Archonan não é dividida em graus de poder. Todos estão no mesmo nível, inclusive os fundadores.",
+        "Em vez de graus, a Sociedade é dividida em Grupos de Profissão, cada um especializado em uma profissão ou perícia, como Caminho Arcano da Terra, Caminho Arcano da Água, Caminho Humano, Espiões e Atiradores.",
+        "Esses grupos ensinam técnicas da profissão. O estudo varia de um a cinco anos. Após concluir uma formação, o Archonanus recebe anel, adorno ou tatuagem que indica sua aptidão para realizar tarefas naquela profissão. O direito de aprender novas habilidades vem de créditos obtidos por feitos em favor da Sociedade.",
+        "O bloco final do texto reúne citações de Trilussa, Rousseau e Thoreau sobre números, liberdade, governo e anarquismo, servindo como tom ideológico da Sociedade Archonan."
+      ],
+      "sections": [
+        {
+          "id": "ficha-da-sociedade",
+          "title": "Ficha da Sociedade",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Fundação: França, século XIX.",
+            "Base: Paris.",
+            "Atuação: França, principalmente Espanha, Austrália e América do Sul.",
+            "Personalidades: Anjo Blanquiel, Demônio Trauros, Proudhon, Bakunin, Kropotkin, Oscar Wilde, Tolstoi, George Orwell, Aldous Huxley, Picasso, Alex Confort, Herbert Read, Emma Goldman, Trilussa, Tucker, Thoreau, Malesta e George Woodcock."
+          ]
+        },
+        {
+          "id": "background",
+          "title": "Background",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Em meados de 1870, a batalha pelo domínio da Terra, liderada por Anjos, Demônios e Magos poderosos, já estava bem estruturada. Com exceção dos Templários e das AGNI, quase não havia sociedades secretas tentando restabelecer a paz e a harmonia na Terra.",
+            "Ao ver o sangue derramado na Terra, o Serafim Blanquiel desceu para acabar com a guerra. Ele se aliou a Proudhon, Bakunin e Kropotkin, que já lutavam pelo mesmo objetivo, e juntos formularam conceitos sobre o exílio de entidades sobrenaturais malignas da Terra e a conversão de Magos e entidades benignas à Anarquia.",
+            "Blanquiel, Proudhon, Bakunin e Kropotkin fundaram a Sociedade Archonan, do grego Archon, governo, e an, sem. O objetivo era devolver liberdade à humanidade e fazê-la atuar como uma unidade cooperativa.",
+            "Depois da fundação, o demônio Trauros, vindo de Arkanun e movido por ideologia semelhante e culpa pelas mortes causadas por seus congêneres, aliou-se aos Archonanus. A Sociedade passou a dominar o Caminho Natural Humano e recebeu de Trauros os Caminhos Arcanos da Terra e da Água.",
+            "A Archonan não tem aliados fixos e atua praticamente sozinha, com alianças poucas e temporárias com Templários ou AGNI. Seus inimigos incluem sociedades secretas, governos, organizações hierárquicas, Anjos, Demônios, Magos e Iluminados."
+          ]
+        },
+        {
+          "id": "historia-recente",
+          "title": "História Recente",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Sociedade cresceu consideravelmente, destruiu pequenas ordens com objetivos de conquista, implantou regimes anarquistas em pequenas cidades espanholas e enfrentou agentes Iluminados em países da Europa entre 1894 e 1901.",
+            "Por volta de 1905, os Iluminados passaram a acompanhar a Sociedade de perto. Em 1907, infiltraram agentes e atacaram uma sede da Archonan em Paris. A batalha causou baixas nos dois lados; o quinteto fundador expulsou os invasores, mas Kropotkin foi morto por Max Weber, agente dos Iluminados, antes de Weber ser destruído por Trauros.",
+            "Hoje, apesar de jovem se comparada a sociedades milenares, a Archonan tem contingente atuante, influência na Austrália e ramificações em boa parte da Europa e da América do Sul."
+          ]
+        },
+        {
+          "id": "caracteristicas",
+          "title": "Características",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Archonan não tem vínculo com o Arkanun Arcanorum, e seus quatro fundadores ainda vivos permanecem ao lado dos membros sob forma humana, pois a Sociedade não possui hierarquia.",
+            "Os Archonanus seguem cinco mandamentos: jamais negar ajuda a outro Archonanus; matar apenas em último caso; jamais se submeter a hierarquia; combater entidades sobrenaturais, sociedades secretas ou pessoas com objetivos de domínio terrestre; e pregar o movimento anarquista.",
+            "O mandamento de matar apenas em último caso é frequentemente ignorado, por causa do perigo constante ao qual os membros são submetidos. A Sociedade discute a possibilidade de abandoná-lo e de se aliar a grupos terroristas ou anarquistas interessados em seu apoio."
+          ]
+        },
+        {
+          "id": "organizacao-e-iniciacao",
+          "title": "Organização e Iniciação",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Os Archonanus se organizam em sedes que funcionam como comunidades, onde integrantes podem viver. Na Austrália e na América do Sul existem pequenas cidades sob regime anarquista, embora muitos membros vivam em cidades comuns para manter a Sociedade informada.",
+            "Para tornar-se um Archonanus, a pessoa deve concordar com os objetivos da Sociedade e passar por um ritual simbólico de purificação: sobreviver uma semana em uma cidade desconhecida, apenas com as roupas do corpo, sem dinheiro ou pertences, respeitando as leis locais.",
+            "O iniciado é observado por outros Archonanus. Caso roube ou cometa outro ato inválido, sua entrada na Sociedade é recusada. Se completar o ritual, recebe um anel com o símbolo da Archonan e passa a compartilhar conhecimentos com os demais membros."
+          ]
+        },
+        {
+          "id": "graus",
+          "title": "Graus",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Archonan não é dividida em graus de poder. Todos estão no mesmo nível, inclusive os fundadores.",
+            "Em vez de graus, a Sociedade é dividida em Grupos de Profissão, cada um especializado em uma profissão ou perícia, como Caminho Arcano da Terra, Caminho Arcano da Água, Caminho Humano, Espiões e Atiradores.",
+            "Esses grupos ensinam técnicas da profissão. O estudo varia de um a cinco anos. Após concluir uma formação, o Archonanus recebe anel, adorno ou tatuagem que indica sua aptidão para realizar tarefas naquela profissão. O direito de aprender novas habilidades vem de créditos obtidos por feitos em favor da Sociedade."
+          ]
+        },
+        {
+          "id": "numeros",
+          "title": "Números",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O bloco final do texto reúne citações de Trilussa, Rousseau e Thoreau sobre números, liberdade, governo e anarquismo, servindo como tom ideológico da Sociedade Archonan."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paulo-de-oliveira",
+      "title": "Paulo de Oliveira",
+      "area": "criaturas_npcs",
+      "kind": "npc",
+      "sectionId": "npc",
+      "sectionTitle": "NPC",
+      "paragraphs": [
+        "Dia 22 de Abril de 1979 nasceu Paulo de Oliveira, filho de Samuel Oliveira e Janaina Matos de Oliveira, ambos magos da Sociedade Archonan, que viviam em uma das sedes da Sociedade na cidade de Lisboa, Portugal. Na verdade Janaína era estéril, não podia ter filhos, por este motivo o casal descartava a ideia de serem pais. Mas certa vez Janaína, após ter cuidado de um dos sobrinhos durante um mês, viu como a tarefa de ser mãe a deixava extremamente feliz, e então, dali em diante ficou com a ideia de ter um filho fixa na cabeça. O único meio de conseguir um, seria através de adoção, então tentaram, mas seu pedido foi recusado. Janaina ficou muito abalada, e após algum tempo, com muito esforço, conseguiu se equilibrar novamente mas não abandonou a ideia de ter um filho. Com o passar do tempo ela foi ficando cada vez mais paranóica, chegando ao ponto de tentar suicidar-se, mas foi impedida por seu marido. Samuel estava preocupado e tentou de todas as formas encontrar um modo de ajudar sua esposa, até que finalmente conseguiu com Joaquim, seu professor de magia, uma forma de curar a doença de Janaina, o que seria feito através de um ritual desenvolvido por ele (Entender/Humanos 7). Ele, então, sem que Janaina soubesse curou-a de seu mal, e foi um espanto e ao mesmo tempo uma alegria quando ela descobriu que estava grávida.",
+        "Paulo cresceu sob vigilância cerrada de sua mãe, que amava-o e protegia-o mais do que qualquer coisa neste mundo, uma vez ela chegou ao ponto de bater num pivete que havia roubado o boné dele. Dentro da Sociedade Archonan, Paulo observava os magos com tremenda admiração, sonhando um dia tornar-se um mago tão poderoso quanto qualquer outro, mas tinha que limitar-se a olhar porque só poderia começar a aprender depois que completasse 18 anos. Mas ainda assim sua mãe já lhe ensinava alguns fundamentos sobre os caminhos da magia.",
+        "Em 1994 a sede dos Archonanus em Lisboa, onde a família Oliveira morava, foi atacada pela Ordem dos Magos Vermelhos, que temiam o grande crescimento da Sociedade dentro da cidade. Foi um ataque fulminante, e pegou a sede de surpresa, bem que os Archonanus tentaram resistir ao ataque mas não conseguiram, porque o poderio dos adversários era muito maior. As devastadoras bolas de fogo dos Magos Vermelhos destruíram completamente o lugar, e os Archonanus tiveram muitas baixas, inclusive Samuel. Agora sem sede a maioria dos Archonanus se mudaram para a sede da Sociedade na Espanha, em Barcelona, (com exceção de alguns que ficaram para reconstruir a sede, e outros que foram para países onde tinham parentes)para onde Paulo e sua mãe foram.",
+        "Na sede dos Archonanus em Barcelona, após completar seus 18 anos, Paulo começou a aprender os caminhos da magia da Terra e Humanos (os mesmos que seu pai conhecia), e hoje já adquiriu bastante conhecimento sobre eles, mas ele não quer parar de aprender até se tornar o melhor. Paulo tem como objetivo principal de sua vida, vingar a morte de seu pai, acabando com todos os Magos Vermelhos que puder, e proteger sua mãe dos males do mundo.",
+        "Paulo é uma pessoa muito mimada e calma, mas quando está em missão para a Archonan, é muito determinado e tenta cumprir os objetivos com todos os méritos possíveis. E quando se trata de Magos Vermelhos vira um verdadeiro sanguinário.",
+        "Lisboa/Portugal; Altura: 1,67m; Peso: 63Kg; Idade: 25; Branco, olhos castanhos, cabelos levemente louros; Nível: 1; PV: 13; PM: 2",
+        "CON 11; FR 12; DEX 12; AGI 11; INT 16; WILL 09; PER 14; CAR 14;",
+        "Caçador 2, Sociedade Secreta 1, Poderes Mágicos 2;",
+        "Humanos 2, Terra 1;",
+        "Bastão 30/20, Anatomia 30%, Teoria Mágica 45%, Ciências Proibidas (Anjos, Demônios) 45%, Condução 33%, Espanhol 40%, Pesquisa/Investigação 35%, Jogo (cartas) 40%, Computação 35%, Atuação 30%, Latim 35%."
+      ],
+      "sections": [
+        {
+          "id": "historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Dia 22 de Abril de 1979 nasceu Paulo de Oliveira, filho de Samuel Oliveira e Janaina Matos de Oliveira, ambos magos da Sociedade Archonan, que viviam em uma das sedes da Sociedade na cidade de Lisboa, Portugal. Na verdade Janaína era estéril, não podia ter filhos, por este motivo o casal descartava a ideia de serem pais. Mas certa vez Janaína, após ter cuidado de um dos sobrinhos durante um mês, viu como a tarefa de ser mãe a deixava extremamente feliz, e então, dali em diante ficou com a ideia de ter um filho fixa na cabeça. O único meio de conseguir um, seria através de adoção, então tentaram, mas seu pedido foi recusado. Janaina ficou muito abalada, e após algum tempo, com muito esforço, conseguiu se equilibrar novamente mas não abandonou a ideia de ter um filho. Com o passar do tempo ela foi ficando cada vez mais paranóica, chegando ao ponto de tentar suicidar-se, mas foi impedida por seu marido. Samuel estava preocupado e tentou de todas as formas encontrar um modo de ajudar sua esposa, até que finalmente conseguiu com Joaquim, seu professor de magia, uma forma de curar a doença de Janaina, o que seria feito através de um ritual desenvolvido por ele (Entender/Humanos 7). Ele, então, sem que Janaina soubesse curou-a de seu mal, e foi um espanto e ao mesmo tempo uma alegria quando ela descobriu que estava grávida.",
+            "Paulo cresceu sob vigilância cerrada de sua mãe, que amava-o e protegia-o mais do que qualquer coisa neste mundo, uma vez ela chegou ao ponto de bater num pivete que havia roubado o boné dele. Dentro da Sociedade Archonan, Paulo observava os magos com tremenda admiração, sonhando um dia tornar-se um mago tão poderoso quanto qualquer outro, mas tinha que limitar-se a olhar porque só poderia começar a aprender depois que completasse 18 anos. Mas ainda assim sua mãe já lhe ensinava alguns fundamentos sobre os caminhos da magia.",
+            "Em 1994 a sede dos Archonanus em Lisboa, onde a família Oliveira morava, foi atacada pela Ordem dos Magos Vermelhos, que temiam o grande crescimento da Sociedade dentro da cidade. Foi um ataque fulminante, e pegou a sede de surpresa, bem que os Archonanus tentaram resistir ao ataque mas não conseguiram, porque o poderio dos adversários era muito maior. As devastadoras bolas de fogo dos Magos Vermelhos destruíram completamente o lugar, e os Archonanus tiveram muitas baixas, inclusive Samuel. Agora sem sede a maioria dos Archonanus se mudaram para a sede da Sociedade na Espanha, em Barcelona, (com exceção de alguns que ficaram para reconstruir a sede, e outros que foram para países onde tinham parentes)para onde Paulo e sua mãe foram.",
+            "Na sede dos Archonanus em Barcelona, após completar seus 18 anos, Paulo começou a aprender os caminhos da magia da Terra e Humanos (os mesmos que seu pai conhecia), e hoje já adquiriu bastante conhecimento sobre eles, mas ele não quer parar de aprender até se tornar o melhor. Paulo tem como objetivo principal de sua vida, vingar a morte de seu pai, acabando com todos os Magos Vermelhos que puder, e proteger sua mãe dos males do mundo."
+          ]
+        },
+        {
+          "id": "personalidade-e-objetivos",
+          "title": "Personalidade e Objetivos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Paulo é uma pessoa muito mimada e calma, mas quando está em missão para a Archonan, é muito determinado e tenta cumprir os objetivos com todos os méritos possíveis. E quando se trata de Magos Vermelhos vira um verdadeiro sanguinário."
+          ]
+        },
+        {
+          "id": "local-de-nascimento",
+          "title": "Local de Nascimento",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Lisboa/Portugal; Altura: 1,67m; Peso: 63Kg; Idade: 25; Branco, olhos castanhos, cabelos levemente louros; Nível: 1; PV: 13; PM: 2"
+          ]
+        },
+        {
+          "id": "atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 11; FR 12; DEX 12; AGI 11; INT 16; WILL 09; PER 14; CAR 14;"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Caçador 2, Sociedade Secreta 1, Poderes Mágicos 2;"
+          ]
+        },
+        {
+          "id": "caminhos",
+          "title": "Caminhos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Humanos 2, Terra 1;"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Bastão 30/20, Anatomia 30%, Teoria Mágica 45%, Ciências Proibidas (Anjos, Demônios) 45%, Condução 33%, Espanhol 40%, Pesquisa/Investigação 35%, Jogo (cartas) 40%, Computação 35%, Atuação 30%, Latim 35%."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "richard-stanford",
+      "title": "Richard Stanford",
+      "area": "criaturas_npcs",
+      "kind": "npc",
+      "sectionId": "npc",
+      "sectionTitle": "NPC",
+      "paragraphs": [
+        "A vida de Richard Stanford já era conturbada mesmo antes de nascer.",
+        "Michele Stanford (sua futura mãe) era a garota mais bonita de seu pequeno bairro chamado Greenhorse, nos subúrbios de Londres. Praticamente todos os homens do local cantavam a jovem sempre que a viam, mas Michele era uma moça muito conservadora e não se deixava iludir por essas conversas, e dizia que somente se entregaria para um homem por quem realmente se apaixonasse. Mas nem estas afirmações da moça fizeram os homens do lugar desistirem de conquistá-la, principalmente um policial local chamado Robert Clavell, e provavelmente o homem que era mais apaixonada pela garota. O tempo passava e a garota permanecia firme em sua filosofia, até que mudou-se para vila um estudante de medicina chamado Albert, que pouco a pouco foi conquistando o amor de Michele. Os dois começaram a namorar, e se davam muito bem, então não demorou muito para começassem a fazer planos para se casar. Quando Robert, que já estava se remoendo de ciúmes, ficou sabendo que eles pretendiam se casar, literalmente enlouqueceu e prometeu para si mesmo que isso não iria acontecer. Ele estava decidido em acabar com o amor dos dois, mas esta era uma tarefa quase impossível, então resolveu cortar o mal pela raiz e armar uma emboscada para dar um fim definitivo em Albert. Um dia já pela madrugada, quando Albert voltava da casa de Michele (Robert havia combinado com um garoto de rua, em troca de uns trocados, para que ele trombasse com Albert, e no momento do encontrão colocasse um papelote de cocaína no bolso de sua jaqueta), e Robert fazia sua patrulha pelo bairro, então abordou Albert alegando ser suspeita sua caminhada aquela hora da madrugada, e para sua \"surpresa\" encontrou o papelote em seu bolso. Albert foi julgado e pegou 3 anos de cadeia, e Robert mais 3 anos para tentar conquistar Michele. Mas a garota soube através de Albert que era Robert que havia armado uma cilada para ele, então dali em diante nunca mais falou com Robert. Mas ele estava ensandecido, e um dia quando Michele estava sozinha em casa, ele invadiu e violentou a garota, e desse dia em diante nunca mais foi visto por ninguém. Michele engravidou, mas escondeu isto de Albert, e apesar de tudo depois que Richard nasceu cuidou muito bem dele. Alguns anos se passaram, Albert foi liberto, então foi visitar seu grande amor, mas para sua surpresa quando chegou, viu Michele com um filho que não era seu, ficou furioso não dando chance para moça se explicar e abandonou-a. Albert não conseguia acreditar como Michele havia o ignorado, ao ponto de ter um filho com outro homem, e dizia que uma pessoa que faz uma coisa dessas não tinha direito de viver. Assim, um dia, quando Michele saia de um supermercado, Albert de dentro de seu carro deu um tiro, que acertou a cabeça da moça matando-a instantaneamente.",
+        "Richard Stanford nasceu no dia 23 de agosto de 1979 em Londres. Quando tinha por volta de 3 anos sua mãe foi assassinada por um antigo namorado, e a partir daí foi criado por sua avó Melani.",
+        "Richard era um garoto forte para sua idade, por isso era respeitado por seus colegas, e praticamente todos os dias arranjava confusão na escola, e por causa disso foi transferido muitas vezes. Como aluno não era diferente, sempre ia mal nas provas, e chegou a repetir dois anos, mas mesmo sendo um garoto problema era amado por sua avó como se fosse seu filho. Em 1995, quando ele tinha 15 anos, sua avó morreu devido a um derrame cerebral, mas poderia ter sido salva se fosse atendida a tempo no hospital. Como havia ficado sozinho em Londres, ele se mudou para casa de sua tia Raquel, que morava em Barcelona na Espanha, e passou o resto de sua adolescência, que foi menos conturbada que a infância, e finalmente conseguiu terminar a escola. Em Barcelona, inexplicavelmente ele começou a sofrer atentados, onde um homem armado sempre tentava acertá-lo mas para sua sorte sempre errava o alvo. Certo dia quando voltava do banco acompanhando sua tia, o homem o atacou novamente, e mais uma vez errou o tiro, mas sua tia viu o homem e o reconheceu como sendo seu pai, Robert. Agora sempre que é atacado ele tenta capturar o safado, mas nunca consegue.",
+        "Com o passar do tempo Richard criou dentro de si, um imenso ódio do governo de um modo geral, e dizia que tudo não passava de uma farsa. Por que como um governo poderia não dar direitos iguais a seus cidadãos (devido a alguns problemas que teve por ser Inglês), concordar com uma polícia corrupta (seu pai Robert), não dar atendimento necessário a um cidadão (sua avó, Melani), não punir criminosos (Albert). A partir daí Richard começou a fazer protestos contra o governo, participar de manifestações e durante uma destas ficou conhecendo a Archonan. Como estava de acordo com os objetivos da Sociedade, inclusive de banir os seres sobrenaturais malignos da Terra por que acredita que seu pai seja um híbrido de Demônio, decidiu se unir a ela.",
+        "Dentro da Sociedade Richard está se especializando nas profissões que utilizam a força física, e luta com todas suas forças para cumprir seus objetivos dela. Mas tem ainda que sobreviver aos constantes ataques de seu pai, e quer capturá-lo a todo custo. Richard é uma pessoa ranzinza, e compulsiva, sempre age antes de perguntar.",
+        "Londres/Inglaterra; Altura: 1,85m; Peso: 85Kg; Idade: 25; Branco, olhos verdes, cabelos pretos; Nível: 1; PV: 17; PM: 0",
+        "CON 14; FR 18; DEX 17; AGI 11; INT 09; WILL 11; PER 12; CAR 09;",
+        "Caçador 2, Sociedade Secreta 1, Armas de Fogo 1, Poder Demoníaco 1;",
+        "Nun-tchaco 40/35, Pistola 50%, Kung-Fu 35%, Espanhol 30%, Explosivos 30%, Intimidação 35%, Condução 30%, Ciências Proibidas (Anjos, Demônios) 45%, Esquiva 35%;"
+      ],
+      "sections": [
+        {
+          "id": "historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "A vida de Richard Stanford já era conturbada mesmo antes de nascer.",
+            "Michele Stanford (sua futura mãe) era a garota mais bonita de seu pequeno bairro chamado Greenhorse, nos subúrbios de Londres. Praticamente todos os homens do local cantavam a jovem sempre que a viam, mas Michele era uma moça muito conservadora e não se deixava iludir por essas conversas, e dizia que somente se entregaria para um homem por quem realmente se apaixonasse. Mas nem estas afirmações da moça fizeram os homens do lugar desistirem de conquistá-la, principalmente um policial local chamado Robert Clavell, e provavelmente o homem que era mais apaixonada pela garota. O tempo passava e a garota permanecia firme em sua filosofia, até que mudou-se para vila um estudante de medicina chamado Albert, que pouco a pouco foi conquistando o amor de Michele. Os dois começaram a namorar, e se davam muito bem, então não demorou muito para começassem a fazer planos para se casar. Quando Robert, que já estava se remoendo de ciúmes, ficou sabendo que eles pretendiam se casar, literalmente enlouqueceu e prometeu para si mesmo que isso não iria acontecer. Ele estava decidido em acabar com o amor dos dois, mas esta era uma tarefa quase impossível, então resolveu cortar o mal pela raiz e armar uma emboscada para dar um fim definitivo em Albert. Um dia já pela madrugada, quando Albert voltava da casa de Michele (Robert havia combinado com um garoto de rua, em troca de uns trocados, para que ele trombasse com Albert, e no momento do encontrão colocasse um papelote de cocaína no bolso de sua jaqueta), e Robert fazia sua patrulha pelo bairro, então abordou Albert alegando ser suspeita sua caminhada aquela hora da madrugada, e para sua \"surpresa\" encontrou o papelote em seu bolso. Albert foi julgado e pegou 3 anos de cadeia, e Robert mais 3 anos para tentar conquistar Michele. Mas a garota soube através de Albert que era Robert que havia armado uma cilada para ele, então dali em diante nunca mais falou com Robert. Mas ele estava ensandecido, e um dia quando Michele estava sozinha em casa, ele invadiu e violentou a garota, e desse dia em diante nunca mais foi visto por ninguém. Michele engravidou, mas escondeu isto de Albert, e apesar de tudo depois que Richard nasceu cuidou muito bem dele. Alguns anos se passaram, Albert foi liberto, então foi visitar seu grande amor, mas para sua surpresa quando chegou, viu Michele com um filho que não era seu, ficou furioso não dando chance para moça se explicar e abandonou-a. Albert não conseguia acreditar como Michele havia o ignorado, ao ponto de ter um filho com outro homem, e dizia que uma pessoa que faz uma coisa dessas não tinha direito de viver. Assim, um dia, quando Michele saia de um supermercado, Albert de dentro de seu carro deu um tiro, que acertou a cabeça da moça matando-a instantaneamente.",
+            "Richard Stanford nasceu no dia 23 de agosto de 1979 em Londres. Quando tinha por volta de 3 anos sua mãe foi assassinada por um antigo namorado, e a partir daí foi criado por sua avó Melani.",
+            "Richard era um garoto forte para sua idade, por isso era respeitado por seus colegas, e praticamente todos os dias arranjava confusão na escola, e por causa disso foi transferido muitas vezes. Como aluno não era diferente, sempre ia mal nas provas, e chegou a repetir dois anos, mas mesmo sendo um garoto problema era amado por sua avó como se fosse seu filho. Em 1995, quando ele tinha 15 anos, sua avó morreu devido a um derrame cerebral, mas poderia ter sido salva se fosse atendida a tempo no hospital. Como havia ficado sozinho em Londres, ele se mudou para casa de sua tia Raquel, que morava em Barcelona na Espanha, e passou o resto de sua adolescência, que foi menos conturbada que a infância, e finalmente conseguiu terminar a escola. Em Barcelona, inexplicavelmente ele começou a sofrer atentados, onde um homem armado sempre tentava acertá-lo mas para sua sorte sempre errava o alvo. Certo dia quando voltava do banco acompanhando sua tia, o homem o atacou novamente, e mais uma vez errou o tiro, mas sua tia viu o homem e o reconheceu como sendo seu pai, Robert. Agora sempre que é atacado ele tenta capturar o safado, mas nunca consegue.",
+            "Com o passar do tempo Richard criou dentro de si, um imenso ódio do governo de um modo geral, e dizia que tudo não passava de uma farsa. Por que como um governo poderia não dar direitos iguais a seus cidadãos (devido a alguns problemas que teve por ser Inglês), concordar com uma polícia corrupta (seu pai Robert), não dar atendimento necessário a um cidadão (sua avó, Melani), não punir criminosos (Albert). A partir daí Richard começou a fazer protestos contra o governo, participar de manifestações e durante uma destas ficou conhecendo a Archonan. Como estava de acordo com os objetivos da Sociedade, inclusive de banir os seres sobrenaturais malignos da Terra por que acredita que seu pai seja um híbrido de Demônio, decidiu se unir a ela."
+          ]
+        },
+        {
+          "id": "personalidade-e-objetivos",
+          "title": "Personalidade e Objetivos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Dentro da Sociedade Richard está se especializando nas profissões que utilizam a força física, e luta com todas suas forças para cumprir seus objetivos dela. Mas tem ainda que sobreviver aos constantes ataques de seu pai, e quer capturá-lo a todo custo. Richard é uma pessoa ranzinza, e compulsiva, sempre age antes de perguntar."
+          ]
+        },
+        {
+          "id": "local-de-nascimento",
+          "title": "Local de Nascimento",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Londres/Inglaterra; Altura: 1,85m; Peso: 85Kg; Idade: 25; Branco, olhos verdes, cabelos pretos; Nível: 1; PV: 17; PM: 0"
+          ]
+        },
+        {
+          "id": "atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 14; FR 18; DEX 17; AGI 11; INT 09; WILL 11; PER 12; CAR 09;"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Caçador 2, Sociedade Secreta 1, Armas de Fogo 1, Poder Demoníaco 1;"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nun-tchaco 40/35, Pistola 50%, Kung-Fu 35%, Espanhol 30%, Explosivos 30%, Intimidação 35%, Condução 30%, Ciências Proibidas (Anjos, Demônios) 45%, Esquiva 35%;"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veronica-galdini",
+      "title": "Verônica Galdini",
+      "area": "criaturas_npcs",
+      "kind": "npc",
+      "sectionId": "npc",
+      "sectionTitle": "NPC",
+      "paragraphs": [
+        "Barcelona, 1976, no começo do mês de junho, mais precisamente dia 6. Podemos perceber que o último digito do ano em questão é 6, o mês de junho segundo nosso calendário é o 6º, e ainda o dia é 6, isso nos dá um belo 666, o que para alguns seria um péssimo dia para nascer. E isso não foi diferente com a garota Verônica Galdini",
+        "Ela era filha de um bancário de ideias anarquistas, Marco Galdini e da então secretária Rosaria Pascal, eles eram simples e extremamente religiosos, e sempre se preocuparam muito com a infeliz data de nascimento de Verônica",
+        "Nada de extraordinário aconteceu com ela, até seu aniversário de (adivinha) 6 anos. Quando tudo começou.",
+        "Deste dia em diante a vida do casal e sua filha mudou drasticamente, começaram a acontecer fatos estranhos na casa, como pequenas explosões em aparelhos domésticos, objetos se movendo sozinhos, entre outras coisas. Marco e Rosaria mandaram benzer a casa e a menina, mas mesmo assim esses fenômenos não param de acontecer, até que certo dia quando não havia ninguém em casa, ela começou a pegar fogo e quando chegaram não havia mais tempo para salvar nada. Eles então se mudaram para casa dos pais de Rosaria, que ficava em Barcelona mesmo. Foi lá onde os pais da garota receberam a visita de um ser do plano corrompido de Arkanun. O demônio disse a eles que Verônica era uma pessoa com um \"dom especial\", e eles deveriam entregá-la para que ele aprimorasse esse dom na menina, mas é claro que o casal não concordou com isso. Então os fenômenos começaram a acontecer também nesta nova casa, mas agora eram bem mais frequentes e estavam causando danos físicos aos moradores, como cortes e pancadas, em todos exceto em Verônica que por algum motivo desconhecido não podia ser ferida pelos demônios (que eram quem causavam esses males). Foi então que Marco conheceu a Sociedade Archonan, como ela já tinha ideais anarquistas e agora estava lutando contra seres de outros planos (estes que são os principais objetivos da Archonan), resolveu se tornar um de seus integrantes, juntamente com sua esposa e filha. Com todos fazendo parte da Archonan, eles se mudaram e foram para a sede da Archonan de Barcelona.",
+        "Na Sociedade Marco e Rosaria aprenderam as magias arcanas da Água e da Terra, a fim de se protegerem e quem sabe destruir o demônio que os atormenta, que mais tarde vieram a descobrir que se chama Mynistroon. Depois que adquiriram um poder razoável, eles movidos por um impulso do momento desafiaram Mynistroon para um duelo. Foi uma batalha dura, mas no fim o demônio matou Rosaria, e se retirou dizendo que faria o mesmo com Marco se ele não entregasse a menina. Pai e filha ficaram muito abalados, mas não cederam aos caprichos de Mynistroon, e juraram vingança. Agora os dois só pensam em ganhar mais e mais poder para um dia conseguirem vingar a morte de Rosaria.",
+        "Verônica é uma pessoa muito reservada e determinada, principalmente quando se trata de extermínio de qualquer demônio, e seu pai funciona como um guarda-costas, protegendo-a a qualquer custo. Ela jurou para si mesma que um dia vingará a morte de sua mãe e não medirá esforços para isso.",
+        "Barcelona/Espanha; Altura: 1,70m; Peso: 63Kg; Idade: 28; Branca, olhos pretos, cabelos pretos; Nível: 1; PV: 14; PM: 2",
+        "CON 13; FR 11; DEX 13; AGI 11; INT 15; WILL 14; PER 14; CAR 10;",
+        "Caçador 2, Sociedade Secreta 2, Poderes Mágicos 2, Caçada -1:",
+        "Terra 2, Água 1;",
+        "Bastão 40/40, Italiano 20%, Inglês 30%, Latim 30%, Primeiros Socorros 35%, Pesquisa/Investigação 45%, Condução 35%, Desenho 35%, Ciências Proibidas (Anjo, Demônios) 45%, Alpinismo 20%;"
+      ],
+      "sections": [
+        {
+          "id": "historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Barcelona, 1976, no começo do mês de junho, mais precisamente dia 6. Podemos perceber que o último digito do ano em questão é 6, o mês de junho segundo nosso calendário é o 6º, e ainda o dia é 6, isso nos dá um belo 666, o que para alguns seria um péssimo dia para nascer. E isso não foi diferente com a garota Verônica Galdini",
+            "Ela era filha de um bancário de ideias anarquistas, Marco Galdini e da então secretária Rosaria Pascal, eles eram simples e extremamente religiosos, e sempre se preocuparam muito com a infeliz data de nascimento de Verônica",
+            "Nada de extraordinário aconteceu com ela, até seu aniversário de (adivinha) 6 anos. Quando tudo começou.",
+            "Deste dia em diante a vida do casal e sua filha mudou drasticamente, começaram a acontecer fatos estranhos na casa, como pequenas explosões em aparelhos domésticos, objetos se movendo sozinhos, entre outras coisas. Marco e Rosaria mandaram benzer a casa e a menina, mas mesmo assim esses fenômenos não param de acontecer, até que certo dia quando não havia ninguém em casa, ela começou a pegar fogo e quando chegaram não havia mais tempo para salvar nada. Eles então se mudaram para casa dos pais de Rosaria, que ficava em Barcelona mesmo. Foi lá onde os pais da garota receberam a visita de um ser do plano corrompido de Arkanun. O demônio disse a eles que Verônica era uma pessoa com um \"dom especial\", e eles deveriam entregá-la para que ele aprimorasse esse dom na menina, mas é claro que o casal não concordou com isso. Então os fenômenos começaram a acontecer também nesta nova casa, mas agora eram bem mais frequentes e estavam causando danos físicos aos moradores, como cortes e pancadas, em todos exceto em Verônica que por algum motivo desconhecido não podia ser ferida pelos demônios (que eram quem causavam esses males). Foi então que Marco conheceu a Sociedade Archonan, como ela já tinha ideais anarquistas e agora estava lutando contra seres de outros planos (estes que são os principais objetivos da Archonan), resolveu se tornar um de seus integrantes, juntamente com sua esposa e filha. Com todos fazendo parte da Archonan, eles se mudaram e foram para a sede da Archonan de Barcelona.",
+            "Na Sociedade Marco e Rosaria aprenderam as magias arcanas da Água e da Terra, a fim de se protegerem e quem sabe destruir o demônio que os atormenta, que mais tarde vieram a descobrir que se chama Mynistroon. Depois que adquiriram um poder razoável, eles movidos por um impulso do momento desafiaram Mynistroon para um duelo. Foi uma batalha dura, mas no fim o demônio matou Rosaria, e se retirou dizendo que faria o mesmo com Marco se ele não entregasse a menina. Pai e filha ficaram muito abalados, mas não cederam aos caprichos de Mynistroon, e juraram vingança. Agora os dois só pensam em ganhar mais e mais poder para um dia conseguirem vingar a morte de Rosaria."
+          ]
+        },
+        {
+          "id": "personalidade-e-objetivos",
+          "title": "Personalidade e Objetivos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Verônica é uma pessoa muito reservada e determinada, principalmente quando se trata de extermínio de qualquer demônio, e seu pai funciona como um guarda-costas, protegendo-a a qualquer custo. Ela jurou para si mesma que um dia vingará a morte de sua mãe e não medirá esforços para isso."
+          ]
+        },
+        {
+          "id": "local-de-nascimento",
+          "title": "Local de Nascimento",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Barcelona/Espanha; Altura: 1,70m; Peso: 63Kg; Idade: 28; Branca, olhos pretos, cabelos pretos; Nível: 1; PV: 14; PM: 2"
+          ]
+        },
+        {
+          "id": "atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 13; FR 11; DEX 13; AGI 11; INT 15; WILL 14; PER 14; CAR 10;"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Caçador 2, Sociedade Secreta 2, Poderes Mágicos 2, Caçada -1:"
+          ]
+        },
+        {
+          "id": "caminhos",
+          "title": "Caminhos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Terra 2, Água 1;"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Bastão 40/40, Italiano 20%, Inglês 30%, Latim 30%, Primeiros Socorros 35%, Pesquisa/Investigação 45%, Condução 35%, Desenho 35%, Ciências Proibidas (Anjo, Demônios) 45%, Alpinismo 20%;"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "max-mike-sterenlicht",
+      "title": "Max/Mike Sterenlicht",
+      "area": "criaturas_npcs",
+      "kind": "npc",
+      "sectionId": "npc",
+      "sectionTitle": "NPC",
+      "paragraphs": [
+        "Dia 19 de setembro de 1978, Dortmund na Alemanha, sob um eclipse lunar nascem os gêmeos já chamados de Max Sterenlicht e Mike Sterenlicht, filhos da conturbada relação entre a então estudante de Direito Cristine Zaith e do Arquiteto Frank Sterenlicht. Os bebês vieram de um parto dificil, onde um dos garotos (não se sabe qual deles) não resistiu e morreu, então o que sobreviveu optaram por chama-lo de Max (então o que morreu foi Mike?)",
+        "A infância de Max/Mike foi muito agitada, onde ele presenciava constantes brigas entre seus pais sem poder fazer nada, até que inevitavelmente eles se separaram, e seu pai foi para a Espanha, o menino ficou em Dortmund com a mãe. O garoto viveu tranquilamente com a mãe, a não ser por suas frequentes dores de cabeça que castigavam-no. Geralmente sempre que tinha essas dores de cabeça, 0 menino sofria uma mudança brusca de comportamento e personalidade, e isso preocupava muito sua mãe. Havia momentos em que Max/Mike estava na mesa comendo algo que dizia gostar, e de repente (após sua cabeça começar a doer) ele jogava fora a comida dizendo que detestava aquilo. Diante disto sua mãe, muito preocupada, levou-o a um médico na tentativa de descobri a causa dessas dores, mas. após os exames o médico disse que clinicamente o garoto não tinha nenhuma enfermidade, mas ainda assim receitou alguns remédios. Max/Mike tomou os remédios mas ainda assim as dores não passavam, então sua mae que já estava esgotada resolveu ignora-la e apenas dar o remédio quando as dores apareciam. O tempo passou e as dores diminuíram mas as mudanças de personalidade se tornaram mais frequentes, algumas vezes o garoto chegava a inexplicavelmente discutir sozinho, então novamente Cristine resolveu leva-lo ao médico mas desta vez ao Psiquiatra. Depois de algumas consultas, ele chegou a conclusão de que o menino tinha um distúrbio cerebral, que fazia-o desenvolver duas personalidades diferentes. Isso precisava de um tratamento urgente, por que pessoas com este tipo de distúrbio podem muito facilmente se tomar-se os chamados serial-kilers, e este tratamento só poderia ser dado num local especializado, ou seja em um manicômio. Cristine não queria internar o filho num manicômio, mas mesmo que ela não internasse-o, o governo internaria-o alegando ser muito perigoso para sociedade. Então ela encontrou uma única saída, comprou passagens para Barcelona para deixar Max/Mike com o pai, pois lá ele estaria seguro porque ninguém saberia de seu distúrbio. Mas antes do dia da viagem, o psiquiatra (Heinz)com quem o menino se consultou avisou os médicos. do manicômio que vieram busca-lo. Cristine ficou muito abalada com a internação de seu filho, e daquele dia em diante viveu uma vida sem sentido, devido a ausência dele. A cada dia ela se afogava mais em lágrimas, chegando até a se culpar pelo ocorrido, até que num gesto de desespero suicidou-se pulando do 12º andar do apartamento.",
+        "A vida no manicômio foi muito difícil para Max/Mike, pois ele estava cercado de pessoas loucas, que não conseguiam ao menos se comunicar. Lá, ele foi muitas vezes torturado por Heinz (que também trabalhava no manicômio), por puro prazer, mas o médico dizia que era o único modo de curar o distúrbio. Por isso Max/Mike criou um imenso ódio de Heinz e também do governo, por obriga-lo a ficar ali convivendo com loucos, sendo que era uma pessoa normal. Mas Max/Mike já estava tentando descobrir um meio de fugir dali, pois se fica-se mais tempo lá dentro ai realmente ficaria louco. Foi então que em um final de ano, logo após o natal, quando os lixeiros estavam retirando todo lixo do dia anterior, que ele conseguiu entrar em um dos sacos de lixo e finalmente se viu livre do lugar.",
+        "Max/Mike conseguiu algum dinheiro emprestado com um velho amigo e foi para Barcelona morar com seu pai. Lá ele voltou a estudar e em seu último ano escolar ficou conhecendo a Archonan, através de um colega, decidiu então entrar na Sociedade, a fim de acabar com o poder dos governos que manipulam tanto a vida das pessoas (afinal foi o governo quem o aprisionou num manicômio)",
+        "Na verdade Max/Mike são as almas dos gêmeos que estão juntas no mesmo corpo. Quando um dos bebês morreu a sua alma foi para o outro corpo criando assim essa dupla personalidade de Max/Mike, pois elas não podem estar ativas ao mesmo tempo no corpo. Hora é a alma de Max que está no corpo, hora é a de Mike. Max é uma pessoa calma e paciente que sempre pensa muito antes de agir. \"Já Mike é o total oposto, uma pessoa muito nervosa e agitada, que está sempre de mal humor, e faz tudo sem pensar nas consequências. Max/Mike tem como objetivo principal em sua vida, acabar com Heinz, por tê-lo aprisionado num manicômio e consequentemente causado a morte de sua mae. E definitivamente abraçou a causa da Archonan, e luta fielmente para ajuda-la como for preciso",
+        "Dortmund/Alemanha; Altura: 1,73m; Peso: 75Kg; Idade: 26; Branco, olhos pretos, cabelos louros; Nível: 1; PV: 13; PM: 0",
+        "CON 13; FR 12; DEX 11; AGI 10; INT 17; WILL 10; PER 14; CAR 14;",
+        "Caçador 2, Sociedade Secreta 1, Armas de Fogo 1, Alma Dupla 3, Perda Terrível -2;",
+        "Karatê 25%; Espanhol 35%; Inglês 30%; Psicologia 30%; Ciências Proibidas (Anjos, Demônios) 45%, Computação 50%, Hacker 50%, Programação 40%, Tortura 40%, Pesquisa/Investigação 64%;",
+        "Dortmund/Alemanha; Altura: 1,73m; Peso: 75Kg; Idade: 26; Branco, olhos pretos, cabelos louros; Nível: 1; PV: 13; PM: 0",
+        "CON 12; FR 13; DEX 14; AGI 15; INT 11; WILL 13; PER 12; CAR 11;",
+        "Caçador 2, Sociedade Secreta 1, Armas de Fogo 1, Alma Dupla 3, Perda Terrível -2;",
+        "Bastão 40/25; Jiu-Jitsu 64%; Pistola 50%; Espanhol 35%; Ciências Proibidas (Anjos, Demônios) 45%; Condução 35%; Explosivos 30%, Intimidação 21%;"
+      ],
+      "sections": [
+        {
+          "id": "historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Dia 19 de setembro de 1978, Dortmund na Alemanha, sob um eclipse lunar nascem os gêmeos já chamados de Max Sterenlicht e Mike Sterenlicht, filhos da conturbada relação entre a então estudante de Direito Cristine Zaith e do Arquiteto Frank Sterenlicht. Os bebês vieram de um parto dificil, onde um dos garotos (não se sabe qual deles) não resistiu e morreu, então o que sobreviveu optaram por chama-lo de Max (então o que morreu foi Mike?)",
+            "A infância de Max/Mike foi muito agitada, onde ele presenciava constantes brigas entre seus pais sem poder fazer nada, até que inevitavelmente eles se separaram, e seu pai foi para a Espanha, o menino ficou em Dortmund com a mãe. O garoto viveu tranquilamente com a mãe, a não ser por suas frequentes dores de cabeça que castigavam-no. Geralmente sempre que tinha essas dores de cabeça, 0 menino sofria uma mudança brusca de comportamento e personalidade, e isso preocupava muito sua mãe. Havia momentos em que Max/Mike estava na mesa comendo algo que dizia gostar, e de repente (após sua cabeça começar a doer) ele jogava fora a comida dizendo que detestava aquilo. Diante disto sua mãe, muito preocupada, levou-o a um médico na tentativa de descobri a causa dessas dores, mas. após os exames o médico disse que clinicamente o garoto não tinha nenhuma enfermidade, mas ainda assim receitou alguns remédios. Max/Mike tomou os remédios mas ainda assim as dores não passavam, então sua mae que já estava esgotada resolveu ignora-la e apenas dar o remédio quando as dores apareciam. O tempo passou e as dores diminuíram mas as mudanças de personalidade se tornaram mais frequentes, algumas vezes o garoto chegava a inexplicavelmente discutir sozinho, então novamente Cristine resolveu leva-lo ao médico mas desta vez ao Psiquiatra. Depois de algumas consultas, ele chegou a conclusão de que o menino tinha um distúrbio cerebral, que fazia-o desenvolver duas personalidades diferentes. Isso precisava de um tratamento urgente, por que pessoas com este tipo de distúrbio podem muito facilmente se tomar-se os chamados serial-kilers, e este tratamento só poderia ser dado num local especializado, ou seja em um manicômio. Cristine não queria internar o filho num manicômio, mas mesmo que ela não internasse-o, o governo internaria-o alegando ser muito perigoso para sociedade. Então ela encontrou uma única saída, comprou passagens para Barcelona para deixar Max/Mike com o pai, pois lá ele estaria seguro porque ninguém saberia de seu distúrbio. Mas antes do dia da viagem, o psiquiatra (Heinz)com quem o menino se consultou avisou os médicos. do manicômio que vieram busca-lo. Cristine ficou muito abalada com a internação de seu filho, e daquele dia em diante viveu uma vida sem sentido, devido a ausência dele. A cada dia ela se afogava mais em lágrimas, chegando até a se culpar pelo ocorrido, até que num gesto de desespero suicidou-se pulando do 12º andar do apartamento.",
+            "A vida no manicômio foi muito difícil para Max/Mike, pois ele estava cercado de pessoas loucas, que não conseguiam ao menos se comunicar. Lá, ele foi muitas vezes torturado por Heinz (que também trabalhava no manicômio), por puro prazer, mas o médico dizia que era o único modo de curar o distúrbio. Por isso Max/Mike criou um imenso ódio de Heinz e também do governo, por obriga-lo a ficar ali convivendo com loucos, sendo que era uma pessoa normal. Mas Max/Mike já estava tentando descobrir um meio de fugir dali, pois se fica-se mais tempo lá dentro ai realmente ficaria louco. Foi então que em um final de ano, logo após o natal, quando os lixeiros estavam retirando todo lixo do dia anterior, que ele conseguiu entrar em um dos sacos de lixo e finalmente se viu livre do lugar.",
+            "Max/Mike conseguiu algum dinheiro emprestado com um velho amigo e foi para Barcelona morar com seu pai. Lá ele voltou a estudar e em seu último ano escolar ficou conhecendo a Archonan, através de um colega, decidiu então entrar na Sociedade, a fim de acabar com o poder dos governos que manipulam tanto a vida das pessoas (afinal foi o governo quem o aprisionou num manicômio)"
+          ]
+        },
+        {
+          "id": "personalidade-e-objetivos",
+          "title": "Personalidade e Objetivos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Na verdade Max/Mike são as almas dos gêmeos que estão juntas no mesmo corpo. Quando um dos bebês morreu a sua alma foi para o outro corpo criando assim essa dupla personalidade de Max/Mike, pois elas não podem estar ativas ao mesmo tempo no corpo. Hora é a alma de Max que está no corpo, hora é a de Mike. Max é uma pessoa calma e paciente que sempre pensa muito antes de agir. \"Já Mike é o total oposto, uma pessoa muito nervosa e agitada, que está sempre de mal humor, e faz tudo sem pensar nas consequências. Max/Mike tem como objetivo principal em sua vida, acabar com Heinz, por tê-lo aprisionado num manicômio e consequentemente causado a morte de sua mae. E definitivamente abraçou a causa da Archonan, e luta fielmente para ajuda-la como for preciso"
+          ]
+        },
+        {
+          "id": "local-de-nascimento-max",
+          "title": "Local de Nascimento - Max",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Dortmund/Alemanha; Altura: 1,73m; Peso: 75Kg; Idade: 26; Branco, olhos pretos, cabelos louros; Nível: 1; PV: 13; PM: 0"
+          ]
+        },
+        {
+          "id": "atributos-max",
+          "title": "Atributos - Max",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 13; FR 12; DEX 11; AGI 10; INT 17; WILL 10; PER 14; CAR 14;"
+          ]
+        },
+        {
+          "id": "aprimoramentos-max",
+          "title": "Aprimoramentos - Max",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Caçador 2, Sociedade Secreta 1, Armas de Fogo 1, Alma Dupla 3, Perda Terrível -2;"
+          ]
+        },
+        {
+          "id": "pericias-max",
+          "title": "Perícias - Max",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Karatê 25%; Espanhol 35%; Inglês 30%; Psicologia 30%; Ciências Proibidas (Anjos, Demônios) 45%, Computação 50%, Hacker 50%, Programação 40%, Tortura 40%, Pesquisa/Investigação 64%;"
+          ]
+        },
+        {
+          "id": "local-de-nascimento-mike",
+          "title": "Local de Nascimento - Mike",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Dortmund/Alemanha; Altura: 1,73m; Peso: 75Kg; Idade: 26; Branco, olhos pretos, cabelos louros; Nível: 1; PV: 13; PM: 0"
+          ]
+        },
+        {
+          "id": "atributos-mike",
+          "title": "Atributos - Mike",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 12; FR 13; DEX 14; AGI 15; INT 11; WILL 13; PER 12; CAR 11;"
+          ]
+        },
+        {
+          "id": "aprimoramentos-mike",
+          "title": "Aprimoramentos - Mike",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Caçador 2, Sociedade Secreta 1, Armas de Fogo 1, Alma Dupla 3, Perda Terrível -2;"
+          ]
+        },
+        {
+          "id": "pericias-mike",
+          "title": "Perícias - Mike",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Bastão 40/25; Jiu-Jitsu 64%; Pistola 50%; Espanhol 35%; Ciências Proibidas (Anjos, Demônios) 45%; Condução 35%; Explosivos 30%, Intimidação 21%;"
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1,
+    "criaturas_npcs": 4,
+    "itens": 5
+  },
+  "reviewNotes": [
+    "Texto revisado antes da catalogação, com correções de OCR e remoção de ruído de página.",
+    "As páginas iniciais tinham coluna dupla misturada; o conteúdo foi reorganizado em blocos de sociedade, histórico, características, organização e graus.",
+    "Personagens foram catalogados como NPCs, com história, personalidade/objetivos e ficha técnica separados."
+  ],
+  "generatedAt": "2026-06-05T15:28:47"
+}

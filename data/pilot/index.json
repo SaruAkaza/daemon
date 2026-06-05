@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T14:23:40",
+  "generatedAt": "2026-06-05T15:28:48",
   "sources": [
     {
       "source": "4killers",
@@ -239,6 +239,16 @@
         "regras_base",
         "itens_equipamentos",
         "kits"
+      ]
+    },
+    {
+      "source": "archonan",
+      "title": "Archonan",
+      "file": "archonan.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "criaturas_npcs"
       ]
     }
   ]
