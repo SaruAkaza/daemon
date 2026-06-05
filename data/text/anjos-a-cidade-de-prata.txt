@@ -1,9 +1,6 @@
---- page 1 ---
-M
 Marcela Del Debato
 
---- page 2 ---
-Dei DEBBI®
+Dei DEBBI
 1a Edição -Junho de 1 998
 2a Impressão - Setembro de 2000
 2a Edição - Junho de 2001
@@ -12,12 +9,7 @@ Dei DEBBI®
 EDITORA
 PAX (II) 3675-1860
 
---- page 3 ---
-_
--
-_
 CIDADE DE
-_
 Criação: Marcelo Del Debbio
 Desenvolvimento: Marcelo Del Debbio, Norson Botrel e An-
 tónio Augusto Shaftiel
@@ -73,7 +65,7 @@ ATRIBUTOS BAsicos
 PERÍCIAS
 APRimORAinENTOS
 PODERES ANGELICAIS
-®B|ETOS MAGIICOS
+B|ETOS MAGIICOS
 PONTOS DE Fe
 REGRAS E TESTES
 CRIANDO SUA PRÓPRIA CIDADE DE ANJOS
@@ -81,41 +73,8 @@ NPCS IlHPORTANTES DE BARCELONA
 ANIOS PRINCIPAIS
 LANÇAS DE CHRISTOS
 BIBLIOGRAFIA
-3
-4
-6
-10
-II
-21
-22
-28
-30
-34
-36
-38
-40
-42
-44
-48
-58
-62
-64
-74
-77
-78
-88
-95
-_
-.
-_
 
---- page 4 ---
 INTR0DUCÃ0
-.
-.
--
-.
--_
 Olá, RPGista, Esta nova edição de ANJOS - A CIDADE
 de PRATA vem atender aos jogadores que não puderam ad-
 quirir esses clássicos do RPG nacional. Todo o material conti-
@@ -137,7 +96,7 @@ Com este jogo, vocês serão exploradores de dimensões
 paralelas, visitantes neste planeta e guerreiros celestiais en-
 carregados de trazer a ordem sobre o caos.
 E que a luz divina acompanhe suas jornadas.
-© QUE E RPG ?
+ QUE E RPG?
 Um RPG ou Role Playing Game é uma mistura de teatro e
 jogo de estratégia. Como assim?
 Em um teatro, os atores recebem seu script com tudo o
@@ -166,7 +125,6 @@ vezes a sorte da jogada de um dado) que determina se os joga-
 dores foram felizes em suas decisões, estabelecendo quais fo-
 ram as consequências no mundo imaginário.
 
---- page 5 ---
 CONCEITOS BÁSICOS
 Como em qualquer jogo, é preciso conhecer as regras e os
 termos utilizados, para se poder jogar. O RPG ANJOS não é uma
@@ -271,7 +229,6 @@ Rituais: são Magias mais elaboradas, para magos mais
 experientes. Ao contrário dos Caminhos de aprendizados, os
 Rituais devem ser escritos em livros de Magias e memorizados
 
---- page 6 ---
 para poderem ser usados pelo mago. Rituais também conso-
 mem mais pontos de Magia do que os Caminhos.
 Pontos de Aprimoramento: são pontos que um joga-
@@ -327,9 +284,7 @@ reinos dos céus.
 9. Não dejesar a mulher do próximo.
 10. Não cobiçar as coisas alheias.
 
---- page 7 ---
 A aoADfi oe PRATA
-._
 Escuta aqui, garoto: você é novo aqui, e eu já não tenho a
 mesma paciência que tinha alguns séculos atrás. Vou explicar
 uma vez só, se prestar atenção, átimo! se não, dane-se. Não vai
@@ -432,10 +387,8 @@ composta somente de anjos gostosíssimas - ahem - perdoe meu
 comentário - quer dizer... anjos femininos bem encorpadas... os
 Portões Vermelhos são duas colunas enormes com inscrições em
 
---- page 8 ---
-> )
+>)
 
---- page 9 ---
 latim que dão passagem para o distrito de Mercúrio. Nunca
 parei para ler, mas dizem que contém os nomes de todos os anjos
 que caíram com Lucibel na primeira revolta. E, eu me lembro
@@ -544,7 +497,6 @@ Cidade de Prata... alguém me contou uma vez que subindo ou
 descendo o Monte de uma só vez você atravessa todos os distri-
 tos e tem a impressão de ver o dia passar como na Terra...
 
---- page 10 ---
 Enfim, subindo aquelas escadas ali chega-se ao castelo
 de Júpiter, que constitui o próprio distrito de Júpiter.
 Ah, esqueci de dizer... ao redor do monte Aramesh estão os
@@ -573,7 +525,7 @@ O conselho dos arcanjos se reúne no castelo de Júpiter
 para decidir questões relacionadas com as outras cidades de
 Paradísia também (principalmente a corrompida Metrópolis).
 Todos os embaixadores de outras cidades (Aasgard, a cidade do
-• Sol, Kathmaran e outras) também residem neste palácio, bem
+ Sol, Kathmaran e outras) também residem neste palácio, bem
 como os embaixadores keepers e chezas, de Metrópolis. Coita-
 dos. Estão sentados sobre um barril de pólvora e ficam discuti-
 do sobre quem acende o Zippo primeiro.
@@ -618,7 +570,7 @@ Solarium também é inteiramente feito com este material, ou seja,
 nem pense em entrar lá para sua própria segurança.
 Não se meta com estes caras se quiser viver para ver
 Leviathan sair do fosso.
-A P®U'TICA NA CIDADE DE PRATA
+A PU'TICA NA CIDADE DE PRATA
 Aqui dentro vigoram as leis conhecidas como Dez Man-
 damentos, válidas para todas as castas celestiais. Aquele negó-
 cio das dez leis... Não matar, não mentir, não roubar... eu nunca
@@ -652,11 +604,10 @@ Bom, hora de ir embora. Danabiah, velho companheiro...
 aqui está seu filho. São e salvo, conforme eu prometi.
 Te cuida garoto, e boa sorte.
 
---- page 11 ---
 A HisréRiA De PARADÍSIA
 Prefiro governar no Inferno à servir nos céus
 Lúcifer, Paraíso Perdido
-0 cetnec®
+0 cetnec
 A Cidade de Prata surgiu em 15.000 AC, quando Jeovah
 venceu a barreira que separa Edhen de Paradísia e decidiu
 criar um local para viver. A região de Dudael era um deserto
@@ -692,7 +643,7 @@ Deus nunca daria a ele a chance de criar a Terra se-
 gundo suas próprias visões, estando apenas um passo atrás
 do poder absoluto.
 Então Lúcifer fez o impensável: desafiou o poder de Deus.
-A PaimeiRA REBELIÀ®
+A PaimeiRA REBELIÀ
 A rebelião de Lúcifer não foi de todo infrutífera: ele conse-
 guiu reunir quase um terço dos anjos da Cidade de Prata em seus
 exércitos e subiu novamente a Júpiter, onde encontrou Christos,
@@ -728,7 +679,7 @@ celestial. Finda a rebelião, o Demiurge baniu esta terceira falange
 da Cidade de Prata. Alguns permaneceram em Paradísia, en-
 quanto outros se refugiaram na Terra.
 Após a rebelião, foram criadas as castas.
-©LYfflPUS
+LYfflPUS
 Os dois próximos deuses de Edhen a cruzar a fronteira
 foram Gaea (Gaia, a mãe terra) e Uranus (o pai, o céu). Tiveram
 doze filhos, chamados Titans, e povoaram partes de Paradísia.
@@ -749,10 +700,8 @@ Alertado por um Oráculo de Spiritum (novamente, alguns es-
 tudiosos acham que Chronos foi avisado por si mesmo no
 1 O
 
---- page 12 ---
 PIAN0S DE EXISTÊNCIA
 
---- page 13 ---
 futuro) que seria derrotado por seu filho mais jovem, Chronos
 decidiu devorar todas as suas proles.
 Rhea, quando o sexto filho nasceu, decidiu escondê-lo do
@@ -833,7 +782,7 @@ Terra dos Gigantes), Hei, Arkanun e Niflheim (Infernun).
 Muitas das valkirias treinaram com os anjos Captares,
 nos campos de Marte, de onde vem a influência em suas arma-
 duras e uniformes de batalha.
-A ÁRven.6 DA VIDA, A QUABALUA E ®s SEPHIRAH
+A ÁRven.6 DA VIDA, A QUABALUA E s SEPHIRAH
 Após a descoberta da Árvore da Vida, alguns anjos
 de Paradísia foram enviados a Aasgard para estudar
 Yggdrasil. Junto a Hermes e seus filhos, onze anjos analisa-
@@ -857,7 +806,6 @@ mónios (chamados Qlippoth) as mesmas regras que os arcan-
 jos aprenderam, para que pudessem se opor aos sephiroth.
 l 2
 
---- page 14 ---
 RATmARAN
 Outras duas entidades de Edhen, Vishnu e Indra, toma-
 ram para si grandes porções centrais de Paradísia, separando
@@ -910,7 +858,6 @@ todas as suas encarnações, sendo incapazes de esquecer o
 que haviam aprendido.
 l 3
 
---- page 15 ---
 ffi Diluvie
 Quando os anjos desceram dos céus, escolheram cada
 um uma mulher e tiveram filhos com elas. Ensinaram às suas
@@ -995,7 +942,7 @@ guerra, vários deuses de várias cidades de Paradísia auxiliaram
 um ou outro lado na batalha, e este foi o grande centro das
 atenções neste período. A guerra chegou ao fim com o cavalo
 de madeira idealizado pelo arquiteto chamado Epeu.
-® Teime DE
+ Teime DE
 Enquanto os gregos se enfrentavam nas ilhas, o grande
 mago Salomão, obedecendo aos desejos do Demiurge, cons-
 trói o Grande Templo de Jerusalém, em homenagem ao Deus
@@ -1006,18 +953,13 @@ tentes das criaturas sobrenaturais na Terra.
 Com a morte de Salomão, seu reino se divide em dois: Judá
 e Israel. Mais tarde, o Templo de Jerusalém seria destruído em uma
 guerra civil, arquitetada pelos demônios de Arkanun.
-ReniA E ©
+ReniA E 
 Em 753 AC, Rômulo e Remo fundam a cidade de Roma, e
 começam a expansão deste reino ao longo dos séculos seguin-
 tes. Roma está localizada na mesma região do espaço que a
 Cidade de Prata ocupa em Paradísia, e portanto foi considera-
 1 4
 
---- page 16 ---
-.
-.
--
-.
 da de vital importância para os anjos da Cidade de Prata. Mui-
 tos dos senadores foram anjos Corpore ou Nimbus enviados à
 Terra em missão de comandar a cidade e principalmente evitar
@@ -1031,7 +973,7 @@ Aos poucos, os anjos vão perdendo seu interesse na
 Terra, ao mesrno tempo em que os demônios de Arkanun pas-
 sam a atravessar o véu que separa Arkanun da Terra, e a caçar
 e destruir os seres de Paradísia que encontravam.
-NASCimENT® DE JESUS
+NASCimENT DE JESUS
 O conselho decide finalmente que é hora de evoluir.
 Os homens se encontravam em um estado mais purificado
 agora, e depois das leis de Moisés, é chegada a hora de
@@ -1052,7 +994,7 @@ tolos, anjos enviados à Terra, fundaram as bases do que
 seria a representação do Demiurge na Terra. Todos, exceto
 Iscariotis, um Captare que se tornou o fugitivo com a cabe-
 ça mais valiosa da história da humanidade.
-A EXPANSA® DA CIDADE DE PRATA
+A EXPANSA DA CIDADE DE PRATA
 Após a morte de Jesus, São Pedro se torna o primeiro
 papa, e após a sua morte, retorna à Cidade de Prata como chefe
 de todos os exércitos de Luna, o maior distrito da Cidade. São
@@ -1071,7 +1013,6 @@ observadores. Com o tempo, sempre que uma vila fosse fun-
 dada, um Corpore seria designado para vigiá-la.
 1 5
 
---- page 17 ---
 Neste período, os Djinns (seres de Arkanun) auxilia-
 vam os combatentes árabes e os magos petros em suas con-
 quistas. Tomam Jerusalém e muitas outras cidades, e gran-
@@ -1125,7 +1066,7 @@ os de venerar o demônio (na verdade, uma criatura de
 Arkanun conhecida como Baphomet).
 Um ano depois, Clemente V é assassinado, e o papa se-
 guinte ordena uma bula papal perdoando os templários.
-A INQUISICÃ®
+A INQUISICÃ
 Terrível instituição criada sob o papado de Inocêncio
 II, manipulado pelos Nimbus, para garantir que os heréticos
 fossem condenados e punidos. Em l .233, Gregório IX deu-
@@ -1161,7 +1102,7 @@ conflito entre católicos e os poucos remanescentes da ve-
 lha cultura clássica. Esta batalha terminou com a constru-
 ção da Igreja de São Jorge no alto do monte Licabetus, em
 Atenas, em frente ao Pantheon de Atenas.
-©s Heaéis G SANT©S
+s Heaéis G SANTS
 Durante este período da Inquisição e expansão da Igre-
 ja Católica, muitos heróis e santos foram martirizados pelos
 integrantes de outras religiões. Estas almas guerreiras fo-
@@ -1173,7 +1114,6 @@ sos santos destacamos St. Stephen (patrono da Hungria e
 Áustria, com a Igreja de São Stephen, construída no cora-
 l 6
 
---- page 18 ---
 cão de Vienna); Santa Sophia, matriarca de Constantinopla;
 São Nicolau, patrono e protetor das crianças (tem seu cas-
 telo no Polo Norte, junto a um portal para Alfheim, lar dos
@@ -1200,7 +1140,7 @@ igrejas góticas possuem alturas e proporções gigantescas: para
 a passagem dos anjos alados entre seus portais).
 O ponto de virada dos Nimbus sobre seus irmãos se deu
 com a tomada de Constantinopla, em l .453.
-A GUERRA oes cem AH©S
+A GUERRA oes cem AHS
 A região do Flandres (Holanda) era muito rica em ma-
 nufaturas, e um ponto crucial para o domínio da Terra pelos
 anjos. Os demônios mercadores já haviam se instalado na
@@ -1230,7 +1170,6 @@ Em 1.348, os magos da Ordem Corrosiva lançaram um
 ataque aos anjos e suas instituições. Utilizando-se de poderes
 l 7
 
---- page 19 ---
 de Infernun, eles lançaram sobre a Europa a peste bubônica,
 que destruiu quase um terço da população existente na época.
 Foi preciso um esforço conjunto de Merlin, Baskiatt,
@@ -1246,8 +1185,8 @@ Os anjos conseguiram restabelecer o poder com
 Armagnac, que conseguiu dividir a França em duas partes: A
 norte, governada pelo vampiro Valois e a sul, governada por
 Armagnac e seus partidos políticos.
-•
-J®ANNA D'ARC.
+
+JANNA D'ARC.
 Joanna D'Arc era uma camponesa que conseguiu orga-
 nizar um exército e derrotar em várias ocasiões os ingleses e os
 partidos do norte da França (chamados borguinhões). A Fran-
@@ -1263,7 +1202,7 @@ entre Luna e Mercúrio. Também se tornou comandante de
 uma das principais falanges da Cidade de Prata: um grupo
 de anjos treinados junto com as valkírias nórdicas nos Cam-
 pos de Marte.
-A GUERRA DAS DUAS R®SAS
+A GUERRA DAS DUAS RSAS
 No ano de l .455, as duas principais facções da Rosacruz
 na Inglaterra, os Lancasters e os Yorks começaram uma guerra
 de palavras que se desdobrou no campo místico, e envolvia a
@@ -1332,10 +1271,8 @@ presença destes anjos disformes se intensificou. Muitos
 dos chezas começaram a participar dos jogos dos Nimbus
 pelo poder e domínio da Terra.
 l 8
-.
 
---- page 20 ---
-© N®V® MUNDO
+ NV MUNDO
 O encontro dos europeus com os nativos do novo
 mundo foi um acontecimento único na história da humani-
 dade. Durante mais de 4 milênios os demônios de Arkanun
@@ -1361,7 +1298,7 @@ as novas terras, na esperança de conseguir escapar das
 garras da Inquisição e da Igreja. Fundaram colónias, desen-
 volveram vilas e, ao invés do pensamento explorador portu-
 guês e espanhol, procuravam manter uma nova base de ope-
-• rações para contra-atacar.
+ rações para contra-atacar.
 A ÁPRICA
 O continente negro foi a parte da Terra que mais con-
 flitos teve entre a Cidade de Prata e os deuses nativos.
@@ -1374,7 +1311,7 @@ ram combatidos quando os exploradores ingleses e france-
 ses começaram suas incursões no continente. Seus deuses
 principais eram Mulungu, Nyambee, Leza e Nyame, criatu-
 ras poderosíssimas de Arkanun.
-A ReveLucA® INDUSTRIAL
+A ReveLucA INDUSTRIAL
 Com o advento das máquinas, começou uma nova era
 na humanidade. Uma Era baseada na mecanização, total-
 mente contrária ao conhecimento dos anjos.
@@ -1385,7 +1322,6 @@ dades, por outro lado, tornava fértil o terreno de caçadas
 para os vampiros do ocidente.
 1 9
 
---- page 21 ---
 Os Nimbus obscuros foram os primeiros a descobrirem
 as vantagens da mecanização sobre o trabalho humano, e tra-
 taram de aprender o mais rápido que puderam sobre estes no-
@@ -1408,7 +1344,7 @@ anjos diminuiu sensivelmente. Alguns Anjos conseguiram
 permanecer infiltrados entre os membros do partido comu-
 nista, mas a influência da Cidade de Prata sobre os Russos
 foi praticamente eliminada.
-©S ÊSTADffiS UNIDffiS
+S ÊSTADffiS UNIDffiS
 Desde sua origem, os EUA estão permanentemente
 em guerra entre as sociedades secretas como os templários,
 a Maçonaria e a Rosa Cruz e os demônios de Arkanun, com
@@ -1437,7 +1373,7 @@ sível guerra religiosa no Oriente Médio. Os Anjos estão apro-
 veitando esta situação para influenciar as tropas americanas,
 principalmente no que trata da tomada de Bagdá, uma das mais
 importantes Meças dos Anjos Muçulmanos.
-A Am ERIÇA D® SUL E CENTRAL
+A Am ERIÇA D SUL E CENTRAL
 Os conflitos entre os anjos e demônios acabou com
 os impérios que estavam na América. Com os portugueses e
 a colonização do Brasil, vieram para a América centenas de
@@ -1461,7 +1397,7 @@ des secretas foram capazes de formar impérios muito pode-
 rosos, manipulando governos e ditadores. Os vampiros
 strigoi também estão presentes na história do Brasil, ao lado
 de asimanis e ekimmus.
-© SÉCUL® XXI
+ SÉCUL XXI
 O surgimento de novas seitas Evangélicas e Pentecostais
 em cada esquina, a grande maioria delas motivada apenas pela
 arrecadação de dinheiro não tributado, têm enfraquecido o
@@ -1491,18 +1427,15 @@ cada atraído mais e mais seguidores, tornando as histórias de
 Anjos cada vez mais próximas dos contos de fadas...
 2 O
 
---- page 22 ---
 HIERARQUIA
 2 l
 s^
 
---- page 23 ---
--
 ATRIBUTeS
 Os Atributos são explicados detalhadamente nas pági-
 nas 40 e 41, mas a parte de Criação de Personagens
 (páginas 22 a 27) mostrará os limites a serem seguidos.
-CABECALH®
+CABECALH
 São as características básicas do Personagem.
 Procure responder às perguntas nas páginas
 23 a 24 para completar esta parte da ficha.
@@ -1510,7 +1443,7 @@ PERÍCIAS cem ARHIAS
 As regras de combate são
 explicadas no final do livro (pá-
 ginas'64 a 73).
-PaníoAs c*m AMUAS ÍD«x)
+PaníoAs c*m AMUAS ÍDx)
 Nome 
 At 
 Def 
@@ -1526,13 +1459,12 @@ nas 42 a 43.
 PQDERES ANGELICAIS
 Uma lista completa e detalhada dos poderes
 angelicais está descrita nas páginas 48 a 57.
-APRIin®RAinENT®S
+APRIinRAinENTS
 Nas páginas 44 a 46 estão
 listados os Aprimoramentos.
 2 2
 
---- page 24 ---
-QuACÃe DG PfiRS©NAGfiNS
+QuACÃe DG PfiRSNAGfiNS
 Em ANJOS, a criação de um personagem é algo bastante
 fácil de se fazer. Normalmente existem muitas coisas a se deci-
 dir, que serão vitais para a sobrevivência do personagem no
@@ -1545,7 +1477,7 @@ que o jogador imaginou para o sistema de regras. Para a cria-
 ção de um personagem, siga estes passos e você não terá
 problemas. Para ajudá-lo, criaremos um personagem juntos,
 assim, você pode ir se acostumando com o sistema utilizado.
-I. £SC®LHA A CAfflPANHA
+I. SCLHA A CAfflPANHA
 Em ANJOS, o poder de cada personagem é definido pela idade.
 Antes de começar a criar seu personagem, vocês devem se reunir com
 o Mestre e definir que tipo de campanha vocês irão jogar. Cada uma
@@ -1568,7 +1500,6 @@ Iniciantes: são os anjos criados há até 10 anos. Ainda es-
 tão aprendendo os Caminhos da Magia e as relações entre cada
 uma das castas e tem muito a aprender. Geralmente nunca foram
 em missão fora da Cidade de Prata e conhecem muito pouco sobre
--^
 Paradísia e sobre a Terra. Muitos deles ainda possuem vínculos
 afetivos com as pessoas que ficaram na Terra. Possuem 100 pon-
 tos de Atributos, 250 em perícias e 5 em Aprimoramentos.
@@ -1584,7 +1515,6 @@ criado pelo Mestre e utilizado no decorrer da campanha.
 Guerreiros: a imensa maioria dos anjos se enquadra nes-
 ta posição social. São os guerreiros da Guerra Santa, entre 101
 e 200 anos de criação. Enviados para a Terra e Arkanun, são a
-^
 força de combate dos céus. Muitos também cuidam da política
 em Paradísia, enfrentando problemas com Aasgard, Olympus,
 Metrópolis e outras regiões do mundo celestial. Possuem 140
@@ -1604,7 +1534,7 @@ Aprimoramento para cada 20 anos de criação (mínimo 10). Possu-
 em também pelo menos 4 inimigos extremamente poderosos, que
 devem ser criados pelo Mestre com muito cuidado e carinho, e
 influenciarão o Background e o decorrer da campanha.
-2. ESCOLHA UfflA HISTéRIA ffl®RTAL
+2. ESCOLHA UfflA HISTéRIA fflRTAL
 Antes de se tornar um anjo, o candidato passou por uma
 última encarnação na Terra. Como foi esta encarnação?
 Para melhor compor um personagem e sua história, você
@@ -1620,12 +1550,12 @@ usadas se o jogador desejar um personagem complexo.
 Primeira Pergunta
 l. Qual a data e local da campanha em que irá jogar?
 História mortal:
-1. Qual é o nome mortal do personagem ?
-2. Onde e quando ele nasceu e cresceu ?
-3. Ele conheceu seus pais ?
-4. O que seu personagem sentia sobre eles ?
+1. Qual é o nome mortal do personagem?
+2. Onde e quando ele nasceu e cresceu?
+3. Ele conheceu seus pais?
+4. O que seu personagem sentia sobre eles?
 5. O que ele fazia quando era vivo?
-6. Ele foi casado? Teve filhos? Se teve, como eles são ?
+6. Ele foi casado? Teve filhos? Se teve, como eles são?
 7. Como foi a morte de seu personagem? Com quantos anos?
 8. Ele deixou alguém que amava para trás? Quem?
 9. Como a sua família ficou após sua morte?
@@ -1634,7 +1564,6 @@ O renascimento:
 2. Quem foi seu mentor? A qual casta pertence?
 3. Como foi seu desenvolvimento dentro da Cidade de Prata?
 
---- page 25 ---
 4. Quais são seus sentimentos com relação à sua própria morte?
 5. Quantos anos passou estudando e treinando?
 6. Como foi este treinamento?
@@ -1651,8 +1580,8 @@ Objetívos / Motivação:
 7. Se ele pudesse mudar alguma coisa no mundo, o que seria?
 8. Ele tem medo de alguma coisa?
 Personalidade:
-l .Como as outras pessoas descrevem seu personagem ?
-2.Como ele se auto-descreveria ?
+l .Como as outras pessoas descrevem seu personagem?
+2.Como ele se auto-descreveria?
 Atitude:
 1. Qual é a atitude de seu personagem em relação aos anjos?
 2. Qual é a atitude dele em relação às outras pessoas na Terra?
@@ -1735,17 +1664,15 @@ buto com modificador multiplicado por 4. Este valor é expresso
 em porcentagem (%) e pode ser maior do que 100%. Este valor
 percentual também é passado para a ficha de personagem.
 
---- page 26 ---
 KJ
 Ul
 
---- page 27 ---
 No nosso caso, Alephia é uma guerreira nata. Sua boa
 índole de camponesa há muito foi diluída pelo intenso trei-
 namento nos campos de Marte. Alephia é belíssima, mesmo
 para um padrão angelical. Como estamos criando um perso-
 nagem complexo (herói), temos 160 pontos para distribuir.
-Assim ficam seus Atributos :
+Assim ficam seus Atributos:
 Atributo
 Constituição
 Força
@@ -1758,27 +1685,10 @@ Percepção
 Total
 Valor 
 Modificador
-26
-19
-15
-20
-20
-15
-21
-24
-160
 Teste
-104
-76
-60
-80
-80
-60
-84
-96
 Consulte a página 34 para ter uma explicação detalhada
 sobre cada um dos 8 Atributos.
-6. ESCOLHA ©s PODERES ANGELICAIS
+6. ESCOLHA s PODERES ANGELICAIS
 Os Poderes Angelicais são o que tornam os anjos adver-
 sários tão perigosos e respeitados. Para cada 10 anos de trei-
 namento, o anjo adquire l Poder Angelical. Maiores detalhes
@@ -1823,7 +1733,7 @@ tes arcanas com Zillah, e atualmente possui 7pontos de Focus
 para dividir entre os Caminhos, e pelo menos um inimigo
 mortal (além dos quatro que já tinha, por ter escolhido "he-
 rói "). Possui também 5 pontos de Magia.
-8. fisceiHA ©s iNimices De PSRseNAGEm
+8. fisceiHA s iNimices De PSRseNAGEm
 A parte legal já passou. Agora é a hora de vermos em
 quantos calos nosso personagem já pisou para conseguir to-
 dos estes poderes acima. O Mestre deve sempre interferir se
@@ -1867,7 +1777,6 @@ Herói
 1000 pontos
 2 6
 
---- page 28 ---
 Todos os personagens começam suas perícias de armas
 com seus valores de Destreza, e somam seus pontos a eles.
 Note que os índices para ataque e defesa são diferentes, e
@@ -1893,11 +1802,6 @@ Arco e flecha
 651-
 757-
 Crítico
-19
-17
-12
-17
-6
 Dano
 ld8+3
 2d6+3
@@ -1931,69 +1835,23 @@ Sobrevivência
 +10 Ciências Proibidas
 +20 Artes (desenho)
 Total
-10. P®NT®S DÊ VIDA E ® ÍNDICE DE PR®TECÃ®
+10. PNTS DÊ VIDA E  ÍNDICE DE PRTECÃ
 Calcular os Pontos de Vida de um personagem é muito fácil.
 Some a Força com a Constituição e divida por 2. Arredonde para
 cima. Para o IP, verifique se o anjo possui índice de Proteção de
 pele e que tipo de armadura está usando. Lembre-se que cada
 ponto de IP representa uma penalidade de -1 em DEX e AGI.
 Inicial
-20
-0
-0
-21
-0
-30
-0
-0
-0
-24
-20
-24
-20
-0
-0
-15
 Gastos
-50
-40
-30
-40
-50
-30
-50
-40
-50
-50
-20
-60
-20
-40
 30 (+10)
 0 (+20)
 600 (+30)
 Total
-70
-40
-30
-61
-50
-60
-50
-40
-50
-74
-40
-84
-40
-40
-40
-35
 Alephiapossui 26 e 19 respectivamente. Somam 45 pontos.
 Dividido por 2 dá 22,5. Arredondado para 23 PVs. Alephia não
 usa armaduras, mas possui IP 3 graças a seus poderes angelicais.
-11. SE ® ?ER.s®NAGem è um MAGI®.
-DEFINA ®S P©NT©S DG IIlAGIA fi ©S F©CUS,
+11. SE?ER.sNAGem  um MAGI.
+DEFINA S PNTS DG IIlAGIA fi S FCUS,
 Um anjo pode possuir o dom da Magia. Para isto, basta
 escolher o Aprimoramento Poderes Mágicos. A Magia é bastante
 comum entre os seres alados de Paradísia. Um personagem mago
@@ -2030,7 +1888,7 @@ quantidade de pontos que possui. Novos itens podem ser cri-
 ados, desde que SEMPRE com a autorização do Mestre. Para
 verificar se o objeto mágico está correto, compare-o com os
 valores apresentados neste livro.
-13. REUNINDO ©s PERSONAGENS
+13. REUNINDO s PERSONAGENS
 Agora a reta final: juntar todas as histórias de todos os
 personagens da campanha. O Mestre geralmente vai criar uma
 aventura introdutória e a campanha começa.
@@ -2041,7 +1899,6 @@ cos, se levar em conta TODOS os personagens do grupo) e no
 tipo de missão que eles gostariam de desempenhar.
 2 7
 
---- page 29 ---
 CORPORE
 Os Corpore representam a maior parte dos anjos da Cidade
 de Prata. De acordo com o papa Urbano I, são as almas boas e
@@ -2078,7 +1935,7 @@ lha contra os demônios, ficando como auxiliares místicos,
 sábios e pesquisadores. É claro que sempre aparecem guer-
 reiros dentro dos Corpores, e estes magos poderosos são
 sempre bem vindos na linha de frente.
-©RGANIZACÃ0
+RGANIZACÃ0
 Os Corpore possuem poder político dentro dos distritos,
 mas dificilmente modificam a estrutura vigente. Também atuam na
 Terra, protegendo os mortais importantes para a Cidade de Prata e
@@ -2142,7 +1999,6 @@ magistrati e para o Conselho.
 São os magos e os cientistas mais poderosos de Paradísia
 e desenvolvem os campos da ciência e da magia com igual
 
---- page 30 ---
 fervor. São aliados das virtudes (anjos tecnocratas) e das do-
 minações (exército de emergência) e são adversários políticos
 dos Nimbus dentro do Conselho da Cidade de Prata.
@@ -2196,7 +2052,6 @@ Também adquirem uma forma mais andrógena e esguia
 com o passar dos séculos.
 2 9
 
---- page 31 ---
 Os Protetores são os soldados divinos, aqueles que lu-
 tam diretamente no campo de batalha, enfrentando as ameaças
 onde quer que se encontrem. São a segunda maior força ange-
@@ -2236,7 +2091,7 @@ irá parecer, até abandonar todo e qualquer traço sexual em sua
 aparência, tornando-se uma criança andrógina.
 Seu príncipe é Raziel e seus generais são: Aladiah,
 Hahaliiah, Hariel, Haziel, Hekamiah, Laoviah, Mebahel e Yesalel.
-P©DSRÊS ÚNICQS
+PDSRÊS ÚNICQS
 Os poderes dos Querubins estão relacionados à cura a
 aos sentimentos nobres dos seres humanos como amor, res-
 peito, compaixão e sensibilidade.
@@ -2268,7 +2123,7 @@ Seu príncipe é Tsaphkiel, e seus generais são: Lauviah,
 Caliel, Leuviah, Pahaliah, Nelchael, leiael, Melahel e Haheuiah.
 Todos os príncipes Tronos possuem almas guerreiras e são
 líderes de falanges nas tropas da Cidade de Prata.
-Peo6R.es ÚNIC©S
+Peo6R.es ÚNICS
 Os poderes dos tronos se relacionam com as artes, e em
 especial com a música. Muitos deles incluem a criação de co-
 res e tons em seus quadros cujos sentidos humanos não são
@@ -2294,7 +2149,6 @@ dades. Seu príncipe é Tsadkiel, e seus generais são Nith-Haiah,
 Haaiah, lerathel, Seheiah, Reyel, Omael, Lecabel e Vasahiah.
 3 O
 
---- page 32 ---
 Muitas vezes são chamados como juizes para intervi-
 rem em disputas envolvendo habitantes da Cidade de Prata
 nos distritos mais afastados do Castelo. Por sua própria
@@ -2348,7 +2202,6 @@ que costumam utilizar para apagar incêndios, atenuar o inver-
 no ou amenizar o calor de um verão escaldante.
 3 l
 
---- page 33 ---
 VIRTUDES
 São os anjos tecnocratas, responsáveis pela proteção
 dos humanos e pela vigilância dos magos e demônios. São
@@ -2440,7 +2293,7 @@ que novos Principados possam tomar o seu lugar. Um dos
 poderes únicos dos Principados é justamente entrar em conta-
 to com seus ancestrais quando necessitam de ajuda ou conse-
 lhos sobre como lidar com determinada situação.
-ARCA N [as e AN;®S
+ARCA N [as e AN;S
 Apesar dos humanos chamarem a todos os habitan-
 tes da Cidade de Prata de "Anjos", os anjos são os guerrei-
 ros sagrados de Deus que deram origem a este nome.
@@ -2455,7 +2308,6 @@ relatórios e ordens do Conselho para as tropas e são respon-
 sáveis pelo comando das falanges durante os conflitos.
 3 2
 
---- page 34 ---
 Os Anjos são prudentes, introvertidos e só aceitam uma
 novidade após medir todos os prós e contras. Duas vezes.
 Brigam por seus ideais com coragem, firmeza e deter-
@@ -2473,7 +2325,7 @@ Seus príncipes são Mikael e Gabriel, e seus generais são
 Damabiah, Nemamiah, Manakel, leialel, Hahahel, Mitzrael, Ayel,
 Umabel, lah-Hel, Anauel, Mehiel, Habuhiah, Rochel, Yabamiah,
 Haiaiel e Mumiah.
-PODERES ÚNICOS D®S ANJfflS 
+PODERES ÚNICOS DS ANJfflS 
 G ARCANJffiS
 Os Anjos e Arcanjos não possuem poderes específicos,
 mas podem fazer uso dos poderes relacionados a transmissão
@@ -2483,7 +2335,7 @@ Apenas para NPCS.
 São os anjos mais velhos e mais poderosos da Cidade de
 Prata. Possuem tanto poder que a sua mera presença causa altera-
 ções na realidade e na percepção das pessoas. Somente se mani-
-•festam na Terra quando o clima está frio e chuvoso, com trovões.
+festam na Terra quando o clima está frio e chuvoso, com trovões.
 Atuam principalmente nas regiões mais antigas da Terra (Palesti-
 na, Egito, Israel, Turquia, Arábia e Iraque) e são comandados por
 anjos poderosíssimos e muito velhos (Metraton tem mais de 15,000
@@ -2502,7 +2354,7 @@ ter pelo menos 2.000 anos de idade. Seu príncipe é Metraton, e
 os generais são: Achaiah, Cahethel, Elemiah, Jeliel, Lelahel,
 Mahasiah, Sitael e Vehuiah. Todos, com exceção de Vehuiah,
 lutaram contra Lúcifer na Primeira Rebelião.
-PffiDERfiS ÚN!C©S
+PffiDERfiS ÚN!CS
 Os Serafins são tão poderosos que eles podem INVEN-
 TAR seus próprios poderes, ou aprender QUALQUER poder
 de qualquer outra casta de anjos. Caso não possuam determi-
@@ -2510,7 +2362,6 @@ nado poder, são capazes de desenvolvê-lo ou imitá-lo perfeita-
 mente com pouco esforço.
 3 3
 
---- page 35 ---
 CAPTARfi
 Escolhidos entre as almas dos caçadores e guerreiros,
 os Captares são o "serviço secreto" da Cidade de Prata. São os
@@ -2521,7 +2372,7 @@ nos desertos de Dudael, nas montanhas de Jotunheim e nas
 profundezas do Mar de Poseidon, os Captares são a mais
 antiga força militar encontrada na Cidade de Prata.
 A
-©RIGEffl
+RIGEffl
 A criação da casta Captare data da Segunda Rebelião.
 Antes dela, os Protetores formavam todo o exército celestial,
 mas seu treinamento não estava voltado para pequenas mis-
@@ -2614,7 +2465,6 @@ rente, destruir um dragão, acertar um cavaleiro templário na
 Terra ou atacar uma vila em Arkanun... não importa, desde que
 paguem o preço justo.
 
---- page 36 ---
 Nesse mercado, os mais velhos também não gostam da
 concorrência. Os mais novos precisam se "estabelecer" e, an-
 tes de conquistarem um nome, certamente enfrentarão alguns
@@ -2623,7 +2473,7 @@ tes mercenários fazem seu trabalho em segredo, pois isto po-
 deria muito bem ser considerado alta traição pelo conselho da
 Cidade de Prata e a pena é o acorrentamento no deserto de
 Dudael ou até mesmo o desmembramento das asas.
-©RGANIZACA©
+RGANIZACA
 Os anjos Captare são solitários por natureza, mas geral-
 mente mantém contatos na Terra ou nas vilas, onde os interes-
 sados podem encontrá-los para contratar seus serviços. Existe
@@ -2666,7 +2516,6 @@ desenvolvem poderes relacionados a aprisionamento, espio-
 nagem e ataques furtivos.
 3 5
 
---- page 37 ---
 RECÍPERES
 Os Recíperes são os mercadores de almas da Cidade de
 Prata. São eles quem cuidam da escolha e distribuição das
@@ -2709,7 +2558,7 @@ carnação, o céu ou o inferno tornou-se muito ténue e o Conse-
 lho precisou intervir, debelando a rebelião e banindo estes
 anjos da Cidade de Prata. Muitos foram destruídos, mas al-
 guns se estabeleceram em seus próprios reinos.
-©RGANIZACAe
+RGANIZACAe
 Na Cidade de Prata, os Recíperes estão divididos em quatro
 grupos distintos, que estão relacionados com os outros de diver-
 sas formas. Alguns são bem vistos e respeitados, enquanto ou-
@@ -2762,7 +2611,6 @@ do Conselho, e são especializados em espionagem e contra-
 espionagem. Também são encarregados de proteger os segre-
 dos da Cidade de Prata dos espiões inimigos. Atuam ao lado
 
---- page 38 ---
 das virtudes e do Conselho e muitas vezes como espiões
 infiltrados em outras castas. São muito poderosos e ao mesmo
 tempo pouco queridos entre os anjos.
@@ -2816,7 +2664,6 @@ tefatos, moldá-las conforme sua vontade ou até mesmo des-
 truí-las durante algum tempo.
 3 7
 
---- page 39 ---
 Nimbus
 Os Nimbus são os políticos da Cidade de Prata. Se con-
 sideram os escolhidos de uma força superior, e por essa razão
@@ -2843,7 +2690,7 @@ peração com a política do Conselho. São elementos vitais du-
 rante operações na Terra, e de fato, muitos deles estão
 infiltrados em igrejas, corporações e lideranças políticas, para
 garantir os interesses da Cidade de Prata.
-©RI G E m
+RI G E m
 A casta Nimbus é uma das mais antigas da Cidade de
 Prata (seus membros mais velhos possuem cerca de 10.000
 anos de idade) e uma das mais influentes politicamente no
@@ -2874,7 +2721,7 @@ tornarem afastados de sua própria comunidade, formando seus
 próprios grupos de amigos.
 São diplomatas excelentes e magos com um potencial
 enorme. Adoram o oculto e os enigmas da humanidade.
-©RGANIZACÃe
+RGANIZACÃe
 Os Nimbus são extremamente organizados, possuindo
 uma hierarquia muito rígida, quase sempre baseada na idade e
 influência de seus membros.
@@ -2915,7 +2762,6 @@ seus poderes de comunicação e dominação, ele jogam com os
 Nimbus um estranho jogo de "xadrez humano" utilizando pes-
 soas, entidades e organizações como peças deste jogo.
 
---- page 40 ---
 Os Nimbus que perdem este jogo vão se retirando da
 Terra e o objetivo maior é a dominação de todo o globo. Os
 Nimbus, por seu orgulho, recusam-se a aceitar ajuda de outras
@@ -2954,7 +2800,7 @@ nhas envolvendo anjos apenas como NPCs, para construir o
 Background dos Personagens. Apenas tenha em mente que
 um Nimbus antigo é um dos oponentes mais perigosos e pode-
 rosos que podem existir em uma campanha de ANJOS.
-P©DfiRfiS ÚNIC©S
+PDfiRfiS ÚNICS
 Humanos normais (que não possuem nenhum ponto de
 Focus ou de Fé) NÃO tem direito ao Teste de WILL vs. WILL
 do anjo para resistir a seus poderes. Isto significa que na Terra,
@@ -2971,7 +2817,6 @@ poderosos específicos para este fim, que apenas os Nimbus
 mais poderosos conhecem).
 3 9
 
---- page 41 ---
 ATRIBUTOS BÁsices
 Atributos são números que transportam para o jogo as
 características de um personagem. Esses números dizem como o
@@ -2985,22 +2830,22 @@ tais são a Inteligência, Força de Vontade, Percepção e Carisma.
 Durante a criação do personagem cada jogador começa
 com um determinado número de pontos, de acordo com o tipo
 de campanha, para distribuir entre esses Atributos.
-ATRIBUT©S Físices
-(C©N)
+ATRIBUTS Físices
+(CN)
 Determina o vigor, saúde e condição física do persona-
 gem. De modo geral um personagem com um baixo valor em
 Constituição é franzino e feio, enquanto um valor alto garante
-uma boa aparência — ou um aspecto de brutamontes, você
+uma boa aparência - - - ou um aspecto de brutamontes, você
 decide. Isso não significa necessariamente que o personagem
 seja forte ou fraco; isso é determinado pela Força.
 A Constituição determina a quantidade de Pontos de
-Vida — quanto mais alta a CON, mais PVs o personagem terá.
+Vida - - - quanto mais alta a CON, mais PVs o personagem terá.
 Também serve para testar a resistência do personagem a vene-
 nos, fadiga, rigores climáticos.
 FORCA (FR)
 Determina a força física do personagem, sua capacidade
 muscular. A Força não tem tanta influência sobre a aparência
-quanto a Constituição — um lutador de karatê magrinho pode
+quanto a Constituição - - - um lutador de karatê magrinho pode
 ser forte o bastante para quebrar pilhas de tijolos, mas um
 fisiculturista musculoso dificilmente poderia igualar a proeza.
 A Força, como a Constituição, tem influência sobre o
@@ -3017,20 +2862,19 @@ melhor com armas, usar ferramentas, operar instrumentos delica-
 dos, atirar com arco-e-flecha, agarrar objetos em pleno ar...
 ACUIDADE (AGI)
 Ao contrário da Destreza, a Agilidade é válida não ape-
-nas para coisas feitas com as mãos — mas para o corpo todo.
+nas para coisas feitas com as mãos - - - mas para o corpo todo.
 Com um alto valor em Agilidade um personagem pode correr
 mais rápido, equilibrar-se melhor sobre um muro, dançar com
 mais graça, esquivar-se de ataques... E importante fixar a dife-
 rença entre Destreza e Agilidade para fins de jogo.
-ATRIBUT®S HIENTAIS 
-^
+ATRIBUTS HIENTAIS 
 INTELIGÊNCIA (INT)
 Inteligência é a capacidade de resolver problemas, nem
 mais e nem menos. Um personagem inteligente está mais apto
 a compreender o que ocorre à sua volta, e não se deixa enganar
 tão facilmente. Também lida com a memória, capacidade de
 abstrair conceitos e descobrir coisas novas.
-FORCA DÊ V®NTADE (WILL)
+FORCA DÊ VNTADE (WILL)
 Esta é a capacidade de concentração e determinação do
 personagem. Uma alta Força de Vontade fará com que um per-
 sonagem resista a coisas como tortura, hipnose, pânico, tenta-
@@ -3052,7 +2896,7 @@ Claro, pessoas de alto astral costumam ser mais afortunadas
 que os pessimistas resmungões.
 PERCEPCAe (PER)
 É a capacidade de observar o mundo à volta e perce-
-ber detalhes importantes — como aquele cano de revólver
+ber detalhes importantes - - - como aquele cano de revólver
 aparecendo na curva do corredor. Um personagem com alta
 Percepção está sempre atento a coisas estranhas e minúcias
 quase imperceptíveis, enquanto o sujeito com Percepção
@@ -3067,7 +2911,6 @@ treza; e "levar no papo" uma secretária de um Nimbus para
 obter informações sigilosas requer um Teste de Carisma.
 4 O
 
---- page 42 ---
 Os valores dos Atributos variam de l a 100 ou mais, mas
 para a maioria dos personagens eles ficam entre 10 e 30. Para
 testá-los, é necessário encontrar o número de Teste. Esse nú-
@@ -3092,14 +2935,14 @@ Atributo
 3-4
 5-6
 7-8
-VAL®RÊS oe ATRIBUT®S
+VALRÊS oe ATRIBUTS
 Carregar
 (kg)
 1 40
 FR
 Levantar
 (kg)
-•
+
 Carro
 10000
 11200
@@ -3149,7 +2992,6 @@ de dano
 +20
 +21
 
---- page 43 ---
 PERÍCIAS
 Perícias são profissões que o personagem aprendeu
 ao longo do tempo. Algumas delas foram usadas em sua
@@ -3164,7 +3006,7 @@ gastar pontos de perícia para ser capaz de usá-las.
 Sempre que uma Perícia tiver subgrupos, o persona-
 gem deve obrigatoriamente especificar qual(is) subgrupo(s)
 dentro da perícia (representado pelas perícias dentro dos
-colchetes [ ]) o personagem possui.
+colchetes []) o personagem possui.
 A forma como os exemplos estão dispostos:
 Nome (Valor Inicial) [Subgrupos (Valor Inicial)]
 ffi QU6 es VAISRES SIGNIMCAJII?
@@ -3255,8 +3097,7 @@ Robótica (0) [terrestre, alienígena, outras dimensões]
 Sobrevivência (INT) [selva, deserto, montanhas, pântanos,
 planetas específicos].
 
---- page 44 ---
-N®VAS PERÍCIAS
+NVAS PERÍCIAS
 Espada de Fogo (DEX): engloba lutar com as espadas criadas
 pelo Ritual Espada de Fogo (Criar/Controlar Fogo 3, 4 ou 5),
 bem como com armas construídas por outros anjos. Esta perí-
@@ -3284,7 +3125,7 @@ líderes, onde eles estão e o que podem ou não fazer por você.
 Conhecimento de casta - Recípere (0): engloba conhecer a es-
 trutura da casta dentro da Cidade de Prata. Saber quem são os
 líderes, onde eles estão e o que podem ou não fazer por você.
-• Burocracia da Cidade de Prata (0): engloba conhecer"quemman-
+ Burocracia da Cidade de Prata (0): engloba conhecer"quemman-
 da em quem" dentro da cidade. Como as leis são feitas, a coordena-
 ção de cada casta, e como cada uma das castas funciona.
 Conhecimento sobre Metrópolis (0): inclui conhecimento so-
@@ -3311,13 +3152,10 @@ internas, hierarquia, nome dos líderes, hábitos, poderes e habi-
 lidades e fraquezas, bem como sobre as principais cidades do
 Inferno (Dite e a Cidade de Ossos).
 , i -. '
-, :.: 
-.,= •-.; 
-- -
-v
+,:.: 
+.,= -.; 
 4 3
 
---- page 45 ---
 Caso você esteja utilizando ANJOS como um suplemen-
 to para ARKANUN, é possível considerar os poderes
 angelicais como Aprimoramentos também.
@@ -3344,7 +3182,7 @@ real identidade, e os que sabem são seus amigos e aliados.
 Detalhes devem ser sempre aprovados pelo Mestre.
 AirnA DUPLA
 3 pontos: por algum motivo, dois espíritos comparti-
-lham um mesmo corpo — ou dois corpos compartilham uma
+lham um mesmo corpo - - - ou dois corpos compartilham uma
 mesma alma. O personagem pode ser ao mesmo tempo gé-
 meos, amantes, pai e filho, etc. Pode ainda ter dois corpos:
 um deles fica em Spiriíum, e o outro em Paradísia, ligados
@@ -3385,7 +3223,7 @@ sendo uma perícia de 50% em relação a assuntos místicos.
 3 pontos: possui uma extensa biblioteca, com livros que
 há muito desapareceram da Terra. Considere a biblioteca como
 uma perícia de pesquisa 75% em relação a assuntos místicos.
-ClfiR®
+ClfiR
 Na Idade Média, o poder da Igreja era incontestável. Os
 inquisidores possuíam o poder de decisão sobre a vida e a morte,
 e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de
@@ -3414,15 +3252,13 @@ esta energia para os planos físicos. Com um Teste de Percepção,
 o anjo é capaz de tatear o mundo de Spiritum em busca de algum
 objeto, e materializá-lo onde estiver. O Teste é fácil para objetos
 
---- page 46 ---
--.
 pequenos (dinheiro, lápis, papel, coisas de uso cotidiano...); nor-
 mal para objetos pequenos mas exóticos (jóias, armas, peças de
 roupa...) ou com mais de 30cm; e difícil para objetos únicos (a
 chave de uma porta, um documento específico, um disquete de
 computador com dados próprios...) ou feitos de metal ferroso. Os
 objetos conjurados dissipam-se em 3d6 rodadas.
-CfflNTAT®S
+CfflNTATS
 1 ponto por contato: contatos incluem pessoas influen-
 tes na Terra e/ou em Paradísia: prefeitos, médicos, gerentes de
 grandes corporações, fotógrafos paparazzi, editores de jornais
@@ -3434,7 +3270,7 @@ tatos no mercado negro, advogados, etc. Por contato entenda-
 se um amigo ou pequeno grupo que o personagem pode con-
 fiar e contar em caso de necessidade. Precisa ser detalhado no
 Background para ser aceito pelo Mestre.
-DETÊCCA® DE MAGIIA
+DETÊCCA DE MAGIIA
 2 pontos: com sucesso em um Teste de Percepção, o
 personagem sente a presença de material não-natural, ou resí-
 duos místicos, em um objeto, criatura ou local. Pode também
@@ -3442,8 +3278,6 @@ detectar vagamente sua intensidade e direção.
 3 pontos: igual ao acima, mas o personagem pode detec-
 tar exatamente o a intensidade, distância e direção.
 GÁRGULA
-^- 
-. 
 2 pontos: o anjo possui uma gárgula como criatura prote-
 tora. Gárgulas são estátuas de pedra animadas, construídas
 entre os séculos X e XIII na Terra, para ornamentar as igrejas
@@ -3454,13 +3288,12 @@ Gárgula: CON [2D+6], FR [2D+6], DEX [2D+6], AGI [2D]
 INT [ID+ó), WILL [2D+6], CAR [1D], PER [3D+6]
 #Ataques [2], IP 2, PVs 8 a 18
 Garras 50/60 dano 1d10+bônus
-GUARDIÃ® DE um ARTEFAT® IIIIP®RTANTE
+GUARDIÃ DE um ARTEFAT IIIIPRTANTE
 3 pontos: como o próprio nome indica, o personagem foi
 designado como guardião de um item de grande valor. Às ve-
 zes, este Aprimoramento pode ser menos vantajoso e mais
 daninho: objetos poderosos atraem a atenção de seres pode-
 rosos. Cabe ao Mestre e ao jogador escolherem qual artefato
-^- 
 seu personagem possui, e as razões dele estar com este perso-
 nagem. ESTE APRIMORAMENTO NÃO DEVE SER USADO
 LEVIANAMENTE. O artefato pode ser de posse definitiva ou
@@ -3472,7 +3305,7 @@ da Nemédia, Excalibur, a vassoura de Hildret, O quarto prego da
 cruz de Cristo, O pilão de Baba-Yaga, o Coração esmeralda do rei
 Yashir, a foca de Brutus, a segunda chave do Inferno, a tocha de
 Prometeus, O verdadeiro sudário, entre muitos outros.
-L®CAL DE C®NTR®LE
+LCAL DE CNTRLE
 1 ponto por local: seu personagem controla um local com-
 pletamente. Este local serve como refugio e auxílio ao anjo em
 suas missões. Como ele controla este local deve ser especifi-
@@ -3481,7 +3314,7 @@ seu personagem adquiriu controle sobre este local. O anjo pode
 ser amigo dos donos, comandar mentalmente, personificar os
 donos, etc. Locais incluem um hospital, fábrica, igreja ou cate-
 dral, cemitério, hospício, escola, base militar, etc.
-©B}fiT©s ilIÁGECes
+B}fiTs ilIÁGECes
 O personagem possui um ou mais objetos mágicos ou
 fetiches encantados com ele. Consulte o capítulo de Objetos
 Mágicos (pág 46) para gastar os pontos de Objetos Mágicos.
@@ -3509,7 +3342,7 @@ pode dar uma ordem a alguém em voz alta. Esta pessoa será
 obrigada a seguir esta ordem literalmente, sem chance de resis-
 tência. Alguns poucos demônios e outras criaturas sobrena-
 turais podem ser imunes a este poder.
-PERTENCER A umA ESC®LA DE- HIAGIA
+PERTENCER A umA ESCLA DE- HIAGIA
 2 pontos: escolas de Magia são locais onde magos que
 compartilham os mesmos ideais se encontram para trocar in-
 formações e planejar ataques aos magos que não comparti-
@@ -3521,9 +3354,7 @@ cípulos de Chronos, Magos das Sombras e Seguidores de
 Luvithy, entre outras. Consulte seu Mestre sobre qual escola
 de Magia está mais adequada a seu personagem.
 4 5
-_
 
---- page 47 ---
 PERTENCER eu COHIANDAR UIHA SEITA
 2 pontos: seitas, ao contrário de escolas de Magia, são gru-
 pos de fanáticos religiosos que acreditam em religiões pagãs. Al-
@@ -3571,7 +3402,7 @@ dos sentidos normais: uma presença sobrenatural, um risco para
 sua vida, a localização de um objeto perdido, etc.
 SENSO DE DlRECAO
 1 ponto: seu anjo sabe se orientar, mesmo sem bases
-visuais — ele não precisa de bússola, o sol, estrelas ou outros
+visuais - - - ele não precisa de bússola, o sol, estrelas ou outros
 pontos de referência para saber onde ficam os pontos carde-
 ais. Sempre será capaz de lembrar-se de um caminho que tenha
 percorrido, não importa em que plano de existência esteja.
@@ -3591,8 +3422,8 @@ e para um Teste rotineiro não é preciso rolar os dados).
 SORTUDO
 2 pontos: este personagem é portador de uma sorte incrí-
 vel. Uma vez por sessão de jogo, o jogador pode escolher um
-Teste e declarar que foi um sucesso crítico — o melhor resulta-
-do possível —, sem precisar jogar os dados. Ele deve anunciar
+Teste e declarar que foi um sucesso crítico - - - o melhor resulta-
+do possível -, sem precisar jogar os dados. Ele deve anunciar
 essa decisão ANTES de rolar os dados.
 TALENTO
 1 ponto: para seu personagem, todos os Testes ligados a
@@ -3626,9 +3457,7 @@ dos chezas e dos Captares). A maior vantagem destes tutores
 andam fazendo (acompanhar, não auxiliar). E chegam até a des-
 cer dos céus para conversar com eles (muito raramente).
 
---- page 48 ---
 
---- page 49 ---
 ANGELICAIS
 A seguir fornecemos as características e poderes mais
 comuns pertencentes à classe angelical da Cidade de Prata.
@@ -3701,7 +3530,7 @@ poder de Teleportação dentro de um plano. Este poder de-
 mora 3 rodadas para ser realizado, e o anjo necessita de
 concentração absoluta (ou seja, não pode fazer nenhuma
 outra ação nem sofrer nenhum tipo de distúrbio).
-BARD®
+BARD
 (somente Tronos)
 Nivel 1: Sinfonia de Ninar. Faz todos os seres humanos
 em um raio de 5m adormecerem por 2d6 rodadas se não tiver
@@ -3725,7 +3554,6 @@ passarão a ridicularizar a vítima. O alvo perde 1 ponto de CAR
 para cada 10% da perícia do Trono em música, apenas em rela-
 ção às pessoas que ouvirem a música. O efeito dura 1d6 horas.
 
---- page 50 ---
 Nível 2: Canção dos Fatos. O trono pode cantar ou to-
 car uma música que lhe permite despertar os humanos sobre o
 que realmente está acontecendo à sua volta. Enquanto ele es-
@@ -3737,7 +3565,7 @@ em tudo que o Trono diz enquanto ele está cantando ou tocan-
 do. Todas as palavras do Trono serão tomadas como a mais
 pura verdade, até que alguém consiga convencer a vítima do
 contrário. Qualquer tentativa de desmentir o Trono tem um
-redutor de —20% nos testes. A vítima chega a ficar irritada caso
+redutor de -20% nos testes. A vítima chega a ficar irritada caso
 haja muita insistência. A credulidade do Trono tem duração
 em minutos igual ao valor da perícia em música do anjo.
 Nível 3: Sinfonia da Pacificação. Faz todas as criaturas
@@ -3750,10 +3578,10 @@ que o anjo tocar, mais uma rodada.
 Nível 5: Comunhão com as Artes. Ao tocar uma pintura
 ou escultura o Trono pode ver o que aconteceu diante dela no
 período de algumas horas.
-BfiNCÃ®
+BfiNCÃ
 (todas as castas)
 Nível 1: Cura de Doenças Naturais. O anjo pode curar
-• uma doença qualquer em um mortal. Este poder pode ser utili-
+ uma doença qualquer em um mortal. Este poder pode ser utili-
 zado uma vez por dia, e nenhum Teste é necessário.
 Nível l: Abençoar. Dá uma bonificação de 10% em todas
 as habilidades de ataque do alvo. Este efeito dura uma hora,
@@ -3782,7 +3610,6 @@ em uma mesma pessoa, mesmo que por outro anjo.
 I i
 .*'
 
---- page 51 ---
 CAPTARE
 (somente Captare)
 Nível l: Marca. Com este poder, um Captare é capaz de
@@ -3858,7 +3685,7 @@ maligna que estiver na presença do Anjo amedrontar-se caso
 falhe em um teste de WILL vs WILL. A criatura amedrontada
 recebe um redutor de -10% em todos os seus testes enquanto
 estiver diante do Anjo.
-CemuNHÃ©
+CemuNHÃ
 (todas as castas)
 É o poder de comunicação entre anjos, permitindo ao
 anjo enviar e receber mensagens aos seus superiores hierár-
@@ -3870,13 +3697,13 @@ Nível 1: Permite ao anjo se comunicar com seu superi-
 or hierárquico imediato (se for um mortal, permite a ele se
 comunicar com seu anjo da guarda ou protetor).
 Nível 2: Permite ao anjo se comunicar com seu superi-
-or hierárquico mais próximo», ou outro anjo de mesma posi-
+or hierárquico mais próximo, ou outro anjo de mesma posi-
 ção hierárquica que esteja próximo.
 Nível 3: Socorro. Permite ao anjo enviar um pedido de
 socorro fornecendo sua localização a seu superior hierár-
 quico (se for um mortal, permite a ele se comunicar com seu
 anjo da guarda ou protetor).
-C®NTR0Lfi niENTAL
+CNTR0Lfi niENTAL
 (todas as castas)
 Nível 1: Hipnosis. Permite ao anjo (mediante ao contato
 olho-a-olho) hipnotizar uma vítima e colocá-la sob seu contro-
@@ -3888,7 +3715,6 @@ recer" do inconsciente humano, escondendo-se em um can-
 to da sala, nas sombras ou simplesmente ficando quieto.
 Este poder não os torna invisíveis, mas apenas apaga das
 
---- page 52 ---
 x->
 mentes dos homens sua presença. Não afeta meios eletrôni-
 cos de vigilância.
@@ -3919,7 +3745,6 @@ rem intensamente atraídas por ele.
 Nível 2: Aversão. Semelhante à atração, mas causa es-
 panto, medo e temor.
 Nível 2: Vanish. Faz o anjo desaparecer literalmente
-^
 -da visão da vítima por alguns instantes, mesmo que esteja a
 apenas alguns passos de distância. Exige concentração e
 só pode ser realizado com pessoas que o anjo possa obser-
@@ -3937,7 +3762,7 @@ ente do que está acontecendo à sua volta quando está dormin-
 do. Pode sonhar com eventos distantes, mas que venham a
 interferir com o seu destino ou karma.
 Nível 3: LockVogel. Permite ao anjo convocar alguma
-—
+-
 pessoa que conheça ou que possua algum objeto pessoal
 desta, desde que esteja na mesma cidade ou região. A víti-
 ma pode demorar para atender ao chamado, devido a pro-
@@ -3945,7 +3770,6 @@ blemas de trânsito ou outros empecilhos. A vítima pode ou
 não saber que está sendo chamada.
 Nível 3: Adoração. Anjos com este poder podem do-
 minar mentalmente uma pessoa e torná-las imunes ao con-
--~
 trole mental de outras entidades.
 Nível 3: Mediunidade. Permite ao anjo "tomar" o corpo
 de outra pessoa por um determinado período de tempo. A víti-
@@ -4001,7 +3825,6 @@ Nível 2: Proteção vs. Mal. Todas as criaturas malignas que
 estiverem próximas ao anjo (5m de raio) sofrem uma penalidade de
 5 l
 
---- page 53 ---
 -10% para ataques, defesas e para qualquer Teste de Atributos.
 Nível 2: Proteção vs. Bem. Todas as criaturas de aura
 benigna que estiverem próximas ao anjo (5m de raio) sofrem
@@ -4038,7 +3861,7 @@ Nível 3: Doppelganger. O anjo é capaz de imitar com
 to, não absorve as capacidades intelectuais, tiques nervo-
 sos e maneirismos, portanto, alguém que conheça a pessoa
 copiada poderá perceber que há algo de errado.
-DREN©
+DREN
 (somente Recíperes)
 Nível l: Absorção de Força. Com este poder, o anjo é capaz
 de drenar 1d6 pontos de Força da vítima para si, durante 3d6
@@ -4107,11 +3930,8 @@ duração, mas o Potestade não pode ver com seus próprios olhos
 enquanto não romper a ligação. O Potestade também não tem
 controle sobre os atos do animal (exceto por outros meios).
 
---- page 54 ---
--
 ,
-—
-.
+-
 Nível 2: Garras. O Potestade pode criar garras parecidas
 com às de um animal, causando 1d10+bônus da FR.
 Nível 3: Chamar Animais. O Potestade pode convocar
@@ -4141,7 +3961,7 @@ no Potestade. Funciona como se ele tivesse proteção de 5D
 contra este Caminho.
 Nível 6: Resistência aos Caminhos Elementais. O
 potestade passa a receber metade do dano pelos elementos
-•naturais, mágicos ou não-mágicos, e continua fazendo teste
+naturais, mágicos ou não-mágicos, e continua fazendo teste
 de CON para reduzi-los para 1/4 do dano.
 Nível 7: Dom da Vida. O Potestade pode recriar a vege-
 tação de uma área devastada de até l OOm2, o tipo de vegetação
@@ -4180,7 +4000,7 @@ Nível 5: Vida. Idêntico ao Dreno de Energia Mística, mas
 cede 1d6 PVs por rodada. Os Pontos de Vida passados desta
 forma não retornam ao anjo em 3d6 rodadas, tendo de ser recu-
 perados de outra fornia (regeneração, descanso, Magias).
-ffiUD®
+ffiUD
 (somente Principados)
 Nível 1: Sentir a Vizinhança. Quando o Principado se con-
 centra, ele conhece tudo o que se passa em uma determinada rua.
@@ -4219,7 +4039,6 @@ dois locais distintos ao mesmo tempo. Seu corpo fica dividido
 em dois (e enfraquecido), porém sua alma ainda habita os dois
 corpos, formando uma ligação arcana entre eles. Quando está
 
---- page 55 ---
 dividido o Principado só pode realizar magias em UM dos dois
 corpos (considerado o corpo principal) e não pode atacar fisi-
 camente, porém pode fazer os testes de CON e FR normalmen-
@@ -4247,7 +4066,7 @@ determinada área de 5m de raio contra a presença de mor-
 tos-vivos. Os mortos-vivos são afastados por uma força
 invisível e não podem atravessar esta barreira, a menos que
 consigam passar em um Teste de WILL vs. WILL do anjo.
-•Nível 3: Proteção contra Espíritos. Protege uma de-
+Nível 3: Proteção contra Espíritos. Protege uma de-
 terminada área de 5m de raio contra a presença de espíritos.
 Os espíritos são afastados por uma força invisível e não
 podem atravessar esta barreira, a menos que consigam pas-
@@ -4283,7 +4102,7 @@ lei. Isso lhe garante um bônus de +15% em seus testes de
 Intimidação ou Subterfúgio.
 Nível 2: Olhos Sobrenaturais. Este poder permite o
 Dominação enxergar através do poder Máscara e identificar
-ilusões até o 4° círculo. Sem um monóculo ele não será ca-
+ilusões até o 4 círculo. Sem um monóculo ele não será ca-
 paz de enxergar através de ilusões feitas por magias e o alvo
 com Máscara pode fazer um teste de WILL vs WILL para
 evitar ser visto.
@@ -4307,7 +4126,7 @@ mar para sua presença um ser de outra Orbe que estejam num
 raio de lOm. A criatura não será hostil no início, mas não está
 sob domínio algum. Também funciona com seres de outros
 planos, mas estes podem resistir num teste de WILL vs WILL.
-IIIfiNSAGfilR® CfiLfiSTIAL
+IIIfiNSAGfilR CfiLfiSTIAL
 (somente Protetores)
 Nível 1: Velocidade. Para facilitar seu trabalho como
 mensageiros, anjos com este poder terão uma velocidade de
@@ -4326,8 +4145,6 @@ capaz de atravessar plantas ou cercas-vivas.
 Nível 3: Inspiração. Enquanto lidera suas tropas o Anjo
 pode inspirá-las, garantindo um bônus de +5% nos testes de
 
---- page 56 ---
-_
 ataque para cada 15% que possuir em Liderança. Afeta até
 cinco aliados em cada combate.
 Nível 3: Mensagem Direta. Usando este poder, o anjo
@@ -4381,10 +4198,8 @@ Nível 4: Aneurisma. Idêntico ao Ataque Mental, mas faz
 3 dó pontos de dano por rodada.
 Nível 4: Dominação da Mente Humana. Os Nimbus
 podem agir como se fossem o "mestre das marionetes" com
-~
 5 5
 
---- page 57 ---
 um único mortal, sem direito a Teste de Resistência. Todas
 as suas vontades tornam-se ações, e o anjo controla sua
 vítima totalmente. Heróis, magos e criaturas sobrenaturais
@@ -4395,7 +4210,7 @@ car com outro Nimbus telepaticamente em qualquer parte de
 uma Orbe bastando para isto se concentrar no alvo (não
 pode fazer nenhuma outra ação enquanto estiver conver-
 sando mentalmente).
-Nível 4 : Escudo Mental. Permite ao anjo proteger a
+Nível 4: Escudo Mental. Permite ao anjo proteger a
 mente de um mortal contra dominações de outros anjos ou
 telepatas.
 Nível 5: Proteção. Os Nimbus podem embutir um se-
@@ -4452,7 +4267,7 @@ Nível 6: Orbes distantes. O maior poder de todos os Corpore é
 poder ultrapassar a barreira de Aether, chegando a Orbes distantes. É
 usado em m issões importantíssimas, ou para o resgate de relíquias
 alienígenas que adquirem muito valor no mercado de almas.
-PfiRCfiPCÃ® DIVINA
+PfiRCfiPCÃ DIVINA
 (somente Virtudes)
 Nível l: Sentir Magos. Concentrando-se por uma roda-
 da, o Virtude pode sentir a presença de magos e objetos mági-
@@ -4492,9 +4307,7 @@ manualmente), ou esta tenha vontade própria, teste sua INT
 para obter sucesso no controle da máquina desconhecida e
 INT vs. INT nos outros casos.
 
---- page 58 ---
 x_^
--
 QUfiRUBIA
 (somente Querubins)
 Nível 1: Compartilhar. Os Anjos tem uma grande difi-
@@ -4553,7 +4366,7 @@ utilizá-lo. O corpo não pode estar morto há mais de uma hora.
 Fazendo uma oração, o Querubim precisa tirar um sucesso crí-
 tico em um teste de WILL (% do valor normal). Este poder
 gasta todos os pontos de Fé do Querubim por uma semana.
-RfiGENfiRACA©
+RfiGENfiRACA
 (todas as castas)
 É a capacidade do anjo de recuperar rapidamente PVs.
 Nível 1:0 anjo regenera l P V a cada 12 horas.
@@ -4598,9 +4411,7 @@ sua mente. Pode mover objetos como se tivesse FR 24 e DEX 6
 com DEX 12 ou 50 Kg com DEX 18.
 Nível 5:Permite ao anjo mover até 400kgs com a força de
 sua mente. Pode realizar efeitos de Força como se tivesse FR 30.
-^-
 
---- page 59 ---
 0B|ETes ITIÁGices
 Neste capítulo, apresentaremos algumas sugestões de
 armas e objetos mágicos que seu personagem poderá adquirir
@@ -4612,7 +4423,7 @@ Note que o personagem pode utilizar este Aprimoramen-
 to mais de uma vez, por exemplo, se o jogador quiser que seu
 personagem possua 15 pontos de Objetos Mágicos, basta que
 ele pague 8 pontos de Aprimoramento (3+5)
-TABELA oe ©Bjeres IIIÁGices:
+TABELA oe Bjeres IIIÁGices:
 Observações:
 Poções: a menos que seja dito algo em contrário, o
 efeito das poções dura aproximadamente 5 minutos (25+1 dó
@@ -4644,7 +4455,7 @@ gem 7 dias para começar a funcionar, e funciona durante 7
 dias, desligando-se 7 dias, e assim por diante.
 Anel do conforto: enquanto estiver usando este anel, a
 temperatura ao redor do corpo do personagem será sempre
-de 25° C, não importando o clima.
+de 25 C, não importando o clima.
 Balas de prata (ld6+6): balas mágicas de prata fazem 2d6
 de dano em criaturas sobrenaturais, e 3 dó em lobisomens
 ou vampiros Vrikolakas ou Strigoi.
@@ -4670,7 +4481,6 @@ até 2 pessoas extras invisíveis por l hora.
 Vela de invocação: serve para conjurar um espírito de até 4D
 de Spiritum. O espírito servirá ao personagem pelo tempo em
 que a vela permanecer acesa (max. l Omin).
-I
 Armadura +1: não importa o tipo de armadura. A versão
 mágica é quase impossível de se destruir, e confere ao perso-
 nagem um bônus de+1 em IP além do normal da armadura.
@@ -4702,7 +4512,6 @@ Esta penumbra forma um escudo à prova de projéteis (qual-
 quer coisa propelida por pólvora). A esfera dura 100 pontos de
 dano ou 2 minutos, o que ocorrer primeiro.
 
---- page 60 ---
 Óleo áe Quimera: anula qualquer Magia, Ritual ou encanta-
 mento no qual seja derramado, sem direito a Teste de Resistên-
 cia. Dissolve materiais criados por Magia e remove os poderes
@@ -4807,10 +4616,7 @@ sa, e um bônus de +3 em dano.
 Amuleto de adamantite: confere um bônus de +6 em CON
 para quem o estiver usando. O amuleto gruda na pele, e arrancá-
 lo causa 1d6 pontos de dano.
-^
 
---- page 61 ---
-_
 Amuleto dos padres: uma cruz de ouro. Serve para afastar
 fantasmas e outros habitantes de Spiritum. O personagem faz
 um Teste de WILL vs. WILL do espírito. Se for um sucesso, o
@@ -4917,11 +4723,6 @@ nascer do Sol. Não pode conjurar nada que contenha ferro
 frio, prata, ouro ou chumbo.
 6 O
 
---- page 62 ---
--
--
-_
-8
 Cajado de Odin: durante uma tempestade, permite ao perso-
 nagem chamar trovões do céu para acertarem onde ele desejar.
 Cada carga equivale a uma potência elétrica de 2d6 de dano
@@ -4946,7 +4747,6 @@ As névoas demoram 6 horas para obscurecer esta área, e as
 brumas resultantes demoram 24 horas para se dissipar. A pro-
 dução de brumas pode ser interrompida a qualquer hora pelo
 dono da jarra. Pode ser usada uma vez a cada 7 dias.
-10
 Olho de Agamotto: confere ao personagem poderes seme-
 lhantes a Entender/Criar/Controlar Spiritum 8, entre os efeitos
 destacam-se: Olhar da verdade, detectar Magia, detectar men-
@@ -4961,7 +4761,7 @@ pontos de dano são transmitidos diretamente ao dono do fio,
 sem IP, resistências ou Magias de proteção. Quando os PVs de
 um personagem chegam a zero desta forma, sua forma astral é
 destruída, e a vítima é destruída para sempre.
-CRIANDO srus paépRi© ITENS mAcices
+CRIANDO srus paépRi ITENS mAcices
 O Mestre e os jogadores podem (e devem) inventar
 seus próprios itens mágicos, com base no Background dos
 personagens. Para critério de custo dos objetos em pontos
@@ -4972,8 +4772,7 @@ mágicos, sempre escolhendo materiais nobres, jóias e obje-
 tos caros para a confecção de seus itens mágicos.
 6 l
 
---- page 63 ---
-P®NT©S D6
+PNTS D6
 Fé [do latim Fide] S.f. 1. Crença Religiosa. 2. Conjunto
 de Dogmas e Doutrinas que constituem um culto. 3. A primei-
 ra virtude teologal: adesão e anuência pessoal a Deus, seus
@@ -5065,11 +4864,8 @@ Mustafá gasta 4 Pontos de Fé, que lhe fornecem 4dó pontos
 extras de FR para tentar deslocar a pedra.
 6 2
 
---- page 64 ---
-_
-.
-—
-ATIVACA® DÊ ITENS HlÁcices
+-
+ATIVACA DÊ ITENS HlÁcices
 Alguns itens mágicos (em especial aqueles criados
 pelos seres da Cidade de Prata) requerem Pontos de Fé para
 serem ativados ou utilizados. Somente pessoas com Fé po-
@@ -5105,7 +4901,7 @@ rodadas), de modo que a arma passe a ser considerada uma arma
 que só podem ser feridas por armas mágicas). Múltiplos encanta-
 mentos podem ser colocados sobre uma mesma arma, mas cada
 encantamento demora urna rodada para ser feito.
-©UTR®S P®DfiRfiS
+UTRS PDfiRfiS
 Pontos de Fé são muito versáteis e podem imitar qualquer
 poder ou milagre que algum santo já realizou (inclui até mesmo
 andar sobre as águas, multiplicação dos pães, cura de cegos e
@@ -5116,11 +4912,8 @@ gem deve MERECER esses poderes. Utilizá-los sem motivo justi-
 ficado ou por motivos torpes, pessoais ou egoístas podem irritar
 profundamente a entidade que confere esses poderes ao Perso-
 nagem e a bênção pode vir a se tomar uma maldição.
-_
-^
 6 3
 
---- page 65 ---
 REGRAS e TESTES
 Por mais cautelosos que os Personagens sejam, por maiores
 os cuidados que eles tenham, em algum momento da Aventura eles
@@ -5143,7 +4936,7 @@ que está sendo testado para ser bem sucedido no Teste.
 Em QUALQUER situação, independentemente do valor
 que está sendo testado, um resultado nos dados ou cronome-
 tro superior a 95 significa falha, SEMPRE.
-'TESTE DE ATRIBUT®
+'TESTE DE ATRIBUT
 Este é o mais simples de todos os Testes. Quando um Per-
 sonagem é submetido a uma provação simples e direta, o Mestre
 pede para que ele faça um Teste de Atributo. Esse tipo de Teste
@@ -5200,7 +4993,7 @@ podem ser mais fáceis de serem controlados por Mestre iniciantes.
 Márcio Alexsunder tenta soltar um pequeno mecanismo,
 mas está equipado com ferramentas um pouco defeituosas. O
 Mestre decide aplicar uma penalidade de -10% em seu Teste.
-CAS® ESPECIAL : FffiRCA
+CAS ESPECIAL: FffiRCA
 A Força é um Atributo diferente. No capítulo de Atributos,
 há uma tabela que relaciona pesos (em quilos) com os Atributos.
 Quando um Personagem deseja levantar um peso qualquer, essa
@@ -5208,11 +5001,8 @@ situação deve ser tratada como se ele estivesse combatendo uma
 Força oposta. Se o peso é 100 kg, ele está combatendo uma Força
 12. Nesse caso, consulte o item: Atributo vs. Atributo.
 
---- page 66 ---
 -
--
-—
-ATRIBUT® vs. ATRIBUT®
+ATRIBUT vs. ATRIBUT
 Existem situações onde há o confronto de dois Atributos.
 Já foi citado o caso de um Personagem tentando levantar um
 peso. Há diversos outros exemplos: dois Personagens tirando um
@@ -5263,13 +5053,8 @@ Somando-se os menores, 16+11+8=35. Dividindo por 2, fica 18
 estátua tem peso equivalente a FR 30. As chances deles levanta-
 rem a estátua são boas: 75%.
 Ativo
-7
-8
-9
 7 50 
-55 
 ffi
-1 
 J\J 
 *) 'J 
 VA/
@@ -5277,463 +5062,61 @@ VA/
 9 40 45 50
 10 35 40 45
 11 30 
-35 
-40
 12 25 30 35
 13 20 25 30
 14 15 20 
-25
 15 10 
 15 20
 0 16 5 
 10 15
-•
-•« 17 - 
+
+ 17 - 
 5 10
 3 18 - 
-- 
-5
-0« 19 - 
-- 
--
+0 19 - 
 20 - 
-- 
--
 21 - 
-- 
--
 22 - 
-- 
--
 23 - 
-- 
--
 24 - 
-- 
--
 25 - 
-- 
--
 26 - 
-- 
--
 27 - 
-- 
--
-28 
-•
+
 70 .
 ÍA
-10
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
 5.
--
--
--
--
--
--
-11
-70
 I\J
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5
--
--
--
--
--
--
-12
 ' 75/j
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5
--.
--
--
--
-13
-80
 O*y
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5
--
--
--
--
-14
-85
 CU
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-35
-10
-5
--.
--
-15
-90
 7\J
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5
--
--
-16
-95
 J7J1
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5
--
-17
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5
 Fracasso Automático
-18
-_
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5
-19
-„
-20
-_
-21
-_
-22
-_
-23
-.
-24
-_
-25
-„
-26
-_
-27
-_
-Sucesso automático
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-10
-5j
--
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-^
-~>
--
--
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-20
-15
-IfJ
-5
-.
--
--
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-25
-30
-£jJ
-15
-Imt
-10
--
--
--
--
-95
-90
-85
-SÓ
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-?N
-£*J
-70
-ZÁS
-15
--
--
--
--
--
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-35
-30
-~3\J
-25
-£*J
-20
--
--
--
--
--
--
-95
-90
-85
-80
-75'
-70
-65
-60
-55
-50
-45
-40
-35
-J-J
-30
-*J\.>
-25
--
--
--
--
--
--
-„
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-40
-l~t\J
-35
--J J1
-30
-.
--
--
--
--
--_
--
-95
-90
-85
-80
-75
-70
-65
-60
-55
-50
-45
-TiJ
-40
-TV
-35
-6 5
-.
 
---- page 67 ---
+
+Sucesso automático
+5j
+~>
+IfJ
+jJ
+Imt
+SÓ
+?N
+*J
+ZÁS
+~3\J
+*J
+75'
+J-J
+*J\.>
+
+l~t\J
+-J J1
+TiJ
+TV
+6 5
+
 TESTE DE RESISTÊNCIA
 Em alguns casos, os Personagens são submetidos a pro-
 vações de ordem física ou mental. São situações inesperadas
@@ -5773,7 +5156,7 @@ Airton tem [Condução - Automóveis 40] e Alain tem [Condu-
 Ativa, sua chance de vitória será 50%+40%-30% = 60%. Se
 Alain for a Fonte Ativa, sua chance de vitória será de
 50%+30%-40% = 40%, o que dá no mesmo.
-PERÍCIA vs. ATRIBUT®
+PERÍCIA vs. ATRIBUT
 Em alguns casos, pode-se testar uma Perícia contra um Atri-
 buto. Quando isso ocorrer, proceda da mesma maneira que os ca-
 sos acima. Utiliza-se a Perícia contra o valor de Teste do Atributo.
@@ -5825,7 +5208,6 @@ jogo de xadrez). O Mestre também deve decidir o que os NPCs
 irão fazer, antes dos Personagens, mas ainda não deve anunci-
 ar para eles suas decisões.
 
---- page 68 ---
 Regra Opcional: Ação condicionada. O Jogador pode
 condicionar sua ação a alguma situação do combate.
 Rupert é um mago que conhece o Caminho do Fogo. O
@@ -5853,7 +5235,7 @@ Verificam-se todos os acertos e calculam-se os danos. De-
 talhes sobre danos e proteções serão discutidos mais adiante.
 Depois das quatro etapas, verifica-se quais são os Personagens
 sobreviventes da batalha que pretendem continuar em combate.
-© ÇUfi FAZfiR Effl umA RffiDADA?
+ ÇUfi FAZfiR Effl umA RffiDADA?
 Uma rodada, ou um turno, compreende cerca de 10 segun-
 dos. Cada Jogador tem o direito de fazer uma ação por rodada,
 salvo em alguns casos (alguns Rituais permitem ao Jogador fa-
@@ -5923,7 +5305,6 @@ Se um Personagem, após ter os modificadores aplicados,
 ficar com iniciativa negativa, ele perde sua ação nessa rodada.
 6 7
 
---- page 69 ---
 Entende-se tal fato pela excessiva preparação do golpe
 por parte do Personagem, penalidades acumuladas de armadu-
 ras (armadura completa medieval), armas pesadas (uma espada
@@ -5933,7 +5314,7 @@ mo se ele tornar a ficar com a iniciativa negativa. Essa penalidade
 NÃO pode ser aplicada duas vezes consecutivas. Dessa forma, o
 Personagem terá uma ação a cada 2 rodadas. Talvez seja melhor
 pensar novamente nas armas e armaduras escolhidas.
-VfiL®CIDADE
+VfiLCIDADE
 Se um Personagem possui múltiplas ações (por qualquer
 maldita razão que seja) e tiver uma iniciativa maior que o dobro
 da segunda maior iniciativa, permita a esse Personagem realizar
@@ -5948,7 +5329,7 @@ espada curta é -4. Jogador e Mestre jogam 1d10 cada um.
 Melhor sorte teve o Jogador: Ele tirou 9 ficando com 13+9-
 7=15 de inciativa contra os 15+2-4=13 do Ore (tirou 2 em
 1d10). Luther fará seu ataque antes.
-VAL©R DE ATAQUE E DEFESA
+VALR DE ATAQUE E DEFESA
 -Cada tipo de arma possui dois valores a serem conside-
 rados: o valor de ataque e o valor de defesa. Ambos são trata-
 dos como Perícias tendo o Atributo DEX como valor inicial.
@@ -5976,7 +5357,7 @@ ataque dele é 30 e o valor de defesa de Luther é 25. As chances
 do Ore acenar são melhores: 50%+30%-25%=55%.
 Existem situações especiais de combate que podem pro-
 porcionar importantes modificadores nos valores de ataque e
-•—
+-
 defesa. Elas são descritas detalhadamente neste capítulo. Note
 que algumas delas podem acontecer em conjunto. Quando
 acontecer, não se preocupe: simplesmente aplique todos os
@@ -5991,7 +5372,7 @@ a um ataque e uma defesa por rodada.
 Importante: Nunca, em caso algum, sob qualquer pre-
 texto que seja, permita a um Personagem usar a Perícia Esquiva
 para escapar de flechas ou armas de distância.
-DAM®
+DAM
 Se um golpe atingir o oponente e ele não for capaz de se
 defender, o golpe causará dano.
 Cada arma tem sua própria capacidade de causar dano e
@@ -6006,9 +5387,8 @@ contrada no capítulo Atributos. Se o Personagem possui bó-
 nus de Força, acrescente este valor ao dano da arma.
 Luther está atacando um zumbi com seu machado. Luther
 possui FR 17, portanto, um bônus de +2. Ele acerta seu golpe,
-_.
 assim seu ataque causará ao zumbi l dl 0+2 pontos de dano.
-ACÊRTS CRÍTIC©
+ACÊRTS CRÍTIC
 O índice crítico de um Personagem é o valor da Perícia
 com arma em ataque dividido por 4, arredondado para cima.
 Se o valor tirado no 1d100 for IGUAL ou MENOR do que
@@ -6026,17 +5406,13 @@ Observação: Nestes casos, pode ser aplicado um dano
 especial como uma fratura ou o Personagem fica atordoado
 durante a rodada seguinte.
 
---- page 70 ---
-_
-ÍNDICE DÊ PR®TECÃ® (IP)
+ÍNDICE DÊ PRTECÃ (IP)
 O índice de proteção existe para representar algum tipo
 de proteção contra dano. Na Idade Média, existiam armas dos
 mais variados tipos. Não podemos esquecer dos feiticeiros e
-_
 magos que lançavam seus encatamentos sobre os inimigos.
 De uma maneira ou de outra, quando um golpe atinge
 uma pessoa, parte do dano pode ser absorvida por sua prote-
-^-
 cão. Do valor do dano, subtraia o valor do IP.
 Existem vários tipos de IP. Caso nada seja dito, o IP ser-
 ve APENAS para danos físicos de impacto e balística. Outros
@@ -6057,27 +5433,24 @@ Qualquer golpe que atingir o inimigo faz, no mínimo, um
 ponto de dano (somado a um eventual bônus de FR) devido ao
 impacto certeiro que o golpe provocou.
 A analogia é a seguinte: imagine um soldado com uma
-_
 armadura completa de combate recebendo uma martelada de
 um gigante. Não importa se a armadura possui IP 8, o golpe
 certamente irá doer!
 SITUAÇÕES ESPECIAIS
-^^
 ,
 Entendeu tudo até agora? Otimo...
 Mas a regras só falaram até agora de um combate simples, um
-_
 contra um, mortal, sem armas de distância ou outros complicadores.
 No entanto, o Sistema Daemon resolve facilmente esses
 casos especiais, podendo-se, inclusive, associar mais de um
-—
+-
 deles sem nenhuma dificuldade.
-CeiTIBATE D£SAR.II!ADe
+CeiTIBATE DSAR.II!ADe
 Também conhecido como Briga ou pancadaria. É, histo-
 _ ricamente, o método mais utilizado de ser resolver disputas
 quando a razão não faz mais parte do cenário.
 O homem já inventou milhares de tipos de armas ao longo
-—
+-
 dos milênios, mas em geral, as disputas são resolvidas sem elas.
 Isso acontece porque as partes não imaginavam que iriam se en-
 contrar, ou porque a desavença aconteceu repentinamente, den-
@@ -6085,12 +5458,12 @@ tro de um ambiente onde armas são proibidas.
 Todos os Personagens possuem a Perícia Briga com valor
 inicial igual à Destreza tanto no ataque quanto na defesa. Trata-se
 de uma Perícia como qualquer outra e pode ter seus valores aumen-
-—'
+-'
 tados com pontos de Perícia. Lembre-se que o valor de ataque e o
 de defesa são aumentados separadamente.
 O dano causado por um golpe de combate desarmado é
 1d3, somando-se o bônus de Força.
-III ULTIPl.es ©P® N ENTES
+III ULTIPl.es P N ENTES
 Ocorrem casos em que um Personagem está enfrentando
 dois ou mais inimigos. Quando isso acontece, ele terá proble-
 mas em utilizar sua defesa. Nesses casos, é permitido ao Perso-
@@ -6128,7 +5501,7 @@ onde a arma é efetiva. Para aceitar um oponente que estiver além do
 alcance normal mas dentro do alcance máximo o Personagem realiza
 um Ataque com metade do valor de Ataque. Além dessa distância a
 munição passará longe do oponente.
-ATAQues FeRA DÊ ALCANCE •
+ATAQues FeRA DÊ ALCANCE 
 São Ataques que sempre erram o alvo. No caso de flechas,
 elas caem no chão antes de chegar ao alvo. No caso de balas, elas
 passam pelo inimigo, mas a distância é tão grande que não há
@@ -6139,10 +5512,7 @@ ser uma atitude interessante atirar em inimigos fora de alcance
 para obrigá-los a procurar cobertura, na medida em que, por
 mais que os tiros não tenham precisão, o som do tiroteio é
 inconfundível. Isto pode ganhar tempo para outras ações.
-_
-.
 
---- page 71 ---
 O chamado fogo de cobertura pode ser usado para for-
 çar o inimigo a procurar abrigo ou mante-los abaixados tempo
 suficiente para um colega percorrer determinada distância.
@@ -6204,7 +5574,7 @@ Personagem. O arremesso não foi preciso e o Personagem esta-
 va a 4 metros da granada. Quem estava a até dois metros do
 ponto de impacto sofre 4d6, quem estava entre 2e3 metros sofre
 apenas 3d6, enquanto o Personagem sofre 2d6.
-ATAQUE LQCAUZAD®
+ATAQUE LQCAUZAD
 Outro caso especial acontece quando um Personagem dese-
 ja atingir uma parte específica do oponente. Pode ser um braço, o
 tórax, o pescoço ou algum objeto que esteja com o inimigo, com o
@@ -6242,8 +5612,6 @@ dos lutadores. Se o defensor estiver usando duas armas, é preci-
 so desarmar uma arma de cada vez. Se o número tirado no 1d100
 for um acerto crítico de desarme, o atacante não apenas desarma
 
---- page 72 ---
-_
 o defensor, mas o faz de modo humilhante. Isso quer dizer jogar a
 arma do inimigo longe, em cima de uma mesa, ou até mesmo pegar
 a arma do defensor no ar. Um desarme humilhante deve ter efeitos
@@ -6252,13 +5620,13 @@ Mark está possuído por um espírito e ataca seu amigo com
 uma faca. Eris não quer machucar seu companheiro descontrola-
 do então decide tirar afaça de Mark Eris tem Briga 45/40, preci-
 sando de 23 em l dl 00 para derrubar afaça no chão.
-ATAQUE T®TAL
+ATAQUE TTAL
 Também conhecido como Carga. O Personagem esque-
 ce todas as recomendações sobre prudência e ataca seu inimi-
 go. Ele realiza um único ataque e não tem direito a defesa. Seu
 valor de ataque aumenta em 10% e o dano em +2. Além disso o
 dano de impacto passa a ser 3.
-DEFESA T®TAL
+DEFESA TTAL
 Se o Personagem decidir que não pretende atacar o opo-
 nente e irá somente se defender, ele pode realizar uma Defesa
 em lugar de cada Ataque a que tiver direito. Desta forma, pode-
@@ -6268,7 +5636,7 @@ Marcyfica descontrolada ao ver sua amiga Sandra levar
 um soco. Ela ataca o motoqueiro com toda fúria, em Carga.
 Marcy tem Briga 30/30, precisando de 40 em 1d100 para acer-
 tar. Se isso ocorrer, fará ld3+2 pontos de dano no motoqueiro,
-•com mínimo de 3, já que a roupa do motoqueiro confere IP 2.
+com mínimo de 3, já que a roupa do motoqueiro confere IP 2.
 O motoqueiro atacado por Marcy não quer brigar com
 ela também. Ele recua com os braços protegendo o rosto e
 desiste de atacar. Sandra e Marcy fazem um ataque cada uma
@@ -6333,13 +5701,12 @@ apagada. Robert, que tem a manobra luta às cegas, contínua
 a usar [briga 40/40], mas Ozaki enfrentará dificuldades: sua
 [briga 35/50] fica agora reduzida a apenas [briga 18/25].
 Ozaki está em sérias dificuldades.
-PesicA® DESVANTAJOSA
+PesicA DESVANTAJOSA
 Acontece com alguma frequência de um dos comba-
 tentes estar em posição desvantajosa no combate. Ele pode
 estar sentado em uma mesa quando é surpreendido pelo
 inimigo ou pode ter caído no chão. Existem uma infinidade
 
---- page 73 ---
 de situações que podem ser consideras desvantajosas.
 Nestes casos, o Mestre deve aplicar uma penalidade tanto
 no valor de Ataque quanto no valor de Defesa. O modificador
@@ -6352,7 +5719,7 @@ atiradores no telhado de uma casa Phil atira de volta en-
 quanto corre buscando abrigo, mas está em posição desvan-
 tajosa. Seu [revolver 25%] fica penalizado em Metade: ape-
 nas 13% de chance de acertar.
-HlÂffi ©PffiSTA
+HlÂffi PffiSTA
 Eventualmente, um Personagem pode estar usando uma
 arma com a mão oposta a que está acostumado ou treinado (mão
 esquerda para destros ou mão direita para canhotos).
@@ -6369,7 +5736,7 @@ tem Destreza e [pistola 35]. Assim, Eddie terá de usar apenas
 (35-15)12 = 10%. Se Eddie fosse ambidestro (conforme o Apri-
 moramento), poderia usar sua Destreza melhorando sua Pe-
 rícia para [pistola 25%].
-C®mBATÊ NA® ÍIleRTAt
+CmBATÊ NA ÍIleRTAt
 Dois Personagens podem estar brigando e não lutando.
 São os casos clássicos de Personagens da Campanha que se
 desentenderam por algum problema da Aventura e acabam per-
@@ -6393,7 +5760,6 @@ Como Mark tem 15 PV, ele desmaia. Três horas depois Mark
 acorda com 10 P V (sofreu apenas 5 pontos de dano).
 AovERse
 Se combate estiver sendo realizado no meio de um incêndio 
-^-
 ou outras circunstâncias anormais, trate as cada uma separada-
 mente do combate. Isto simplificará a resolução das situações.
 Michael está atirando em um bandido. O inimigo está
@@ -6402,13 +5768,12 @@ gue vê-lo parcialmente. O Mestre decide que sua [pistola
 40%] sofrerá penalidade de 10% ficando [pistola 30%]. Ou-
 tra penalidade possível é Metade, que divide o valor por 2,
 mas o Mestre entendeu que seria um valor injusto.
-• —
+ -
 REGRAS ESPECIAIS
 PARALISIA
 Um Personagem pode estar paralisado devido a um efeito
 mágico, um veneno ou qualquer motivo que seja. O Personagem
 pode estar ciente dos fatos a sua volta, mas não pode, de modo 
--^
 algum, mover-se ou defender-se de nada. Caso um outro Persona-
 gem decida matá-lo, ele não tem como se defender.
 SUFOCAR
@@ -6430,7 +5795,7 @@ parados para absorver o impacto. O dano é 1d6 a cada por metro de
 queda, com direito a Teste de AGI para reduzir o dano à metade. Já
 um pulo permite ao Personagem amortecer a altura com um bom
 movimento de pernas. Se passar no Teste de AGI, reduz o dano em 
-—
+-
 \ dó para cada dado de comparação do Personagem. Lembre-se que
 humanos têm 3 dados de comparação, enquanto anjos e demônios
 podem ter 4 ou mais dados de comparação.
@@ -6438,10 +5803,7 @@ Joe saltou de um prédio para fugir de um incêndio. Ele
 cai 8 metros, mas sofre apenas 1d6 pontos de dano. Se tivesse
 caído, sofreria 8d6 com direito a um Teste de AGI par a redu-
 zir o dano à metade.
-72
 
---- page 74 ---
--
 VENENffiS
 Existem uma infinidade de venenos conhecidos. Eles po-
 dem ser paralisantes, debilitantes, soníferos ou mortais. Seus
@@ -6451,7 +5813,7 @@ mente de qual efeito e método de aplicação, os venenos SEM-
 PRE dão direito a um Teste de Resistência para evitar o pior.
 Exemplos de venenos podem ser encontrados no GUIA DE
 ARMAS MEDIEVAIS.
-DANO LecAUZAD®
+DANO LecAUZAD
 Se um Personagem sofrer dano equivalente a mais que
 metade de seus Pontos de Vida em uma único parte do corpo,
 o Jogador deverá fazer um Teste de CON para seu Persona-
@@ -6488,10 +5850,8 @@ quer Personagem que tenha seus Pontos de Vida zerados
 cai imediatamente desmaiado, perdendo 1 PV por rodada
 devido ao ferimento, até chegar em -5 e, se ninguém fizer
 nada por ele, será a morte certa!
-73
 
---- page 75 ---
-QUAND© SUA PRéPRlA GDADE DG ANJOS
+QUAND SUA PRéPRlA GDADE DG ANJOS
 Para começar uma campanha na Terra, a primeira coisa
 que você ou seu Mestre deverá fazer é construir uma cidade
 pela lógica dos anjos.
@@ -6503,7 +5863,7 @@ Aparecida, Salvador, Meca ou outras cidades mais religio-
 sas, existem na Terra aproximadamente um anjo da Cidade
 de Prata para cada 10.000 habitantes, e eles são alocados de
 acordo com o crescimento populacional da própria cidade.
-PASS®
+PASS
 O primeiro passo na criação de sua cidade é determinar a
 quantidade de anjos que vivem nela. Verifique em alguma enci-
 clopédia, almanaque, livros ou no bom e velho livro de história
@@ -6556,7 +5916,6 @@ A mão pequena, chamada de poble menut, compre-
 endia 75% da população. Consiste nos camponeses,
 artesãos e comerciantes menores.
 Além destes grupos, ainda existiam os judeus, separados 
-_
 em um bairro próprio, chamado el Call. E os escravos, em sua
 maioria sarracenos trazidos das terras africanas, que constitu-
 em servos domésticos muito apreciados pela classe dominante.

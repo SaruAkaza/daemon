@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T03:39:47",
+  "generatedAt": "2026-06-05T03:55:32",
   "source": "anjos-a-cidade-de-prata",
   "sourceFile": "Anjos_A_Cidade_de_Prata.docx",
   "sourcePath": "Livros\\word\\Anjos_A_Cidade_de_Prata.docx",
@@ -983,106 +983,6 @@
           "title": "Criando sua Própria Cidade de Anjos",
           "area": "regras_base",
           "paragraphs": []
-        },
-        {
-          "id": "usos-de-pontos-de-fe",
-          "title": "Usos de Pontos de Fé",
-          "area": "regras_base",
-          "paragraphs": [],
-          "blocks": [
-            {
-              "id": "ativacao-de-itens-magicos",
-              "title": "Ativação de Itens Mágicos",
-              "details": {
-                "Efeito": "Ativa artefatos que requerem Pontos de Fé; apenas personagens com Fé podem usá-los"
-              },
-              "paragraphs": [
-                "Alguns itens mágicos (em especial aqueles criados pelos seres da Cidade de Prata) requerem Pontos de Fé para serem ativados ou utilizados. Somente pessoas com Fé podem utilizar tais artefatos."
-              ]
-            },
-            {
-              "id": "bencao",
-              "title": "Bênção",
-              "details": {
-                "Custo": "1 Ponto de Fé",
-                "Quem": "Inquisidor",
-                "Efeito": "+5% na Defesa para até 6 pessoas por PF durante uma cena"
-              },
-              "paragraphs": [
-                "O Inquisidor pode abençoar um grupo de Aventureiros (até 6 pessoas por Ponto de Fé), concedendo a eles um bónus de +5% em combates (na Defesa) durante uma cena."
-              ]
-            },
-            {
-              "id": "controlar-mortos-vivos",
-              "title": "Controlar Mortos-Vivos",
-              "details": {
-                "Custo": "1 Ponto de Fé",
-                "Quem": "Necromântico / Clérigo",
-                "Efeito": "Comandar criaturas mortas-vivas durante uma cena"
-              },
-              "paragraphs": [
-                "Semelhante a Afastar Mortos Vivos, mas utilizados por Necromânticos e clérigos de deuses malignos. O Teste funciona da mesma maneira, mas o clérigo passa a comandar a criatura (ou criaturas) durante uma cena."
-              ]
-            },
-            {
-              "id": "conversar-com-passaros-e-animais",
-              "title": "Conversar com Pássaros e Animais",
-              "details": {
-                "Custo": "1 Ponto de Fé",
-                "Quem": "Personagem com Fé",
-                "Efeito": "Comunicar-se com um animal durante um curto período de tempo"
-              },
-              "paragraphs": [
-                "Muitos santos na mitologia católica eram capazes de entender os animais. Com o gasto de um Ponto de Fé, o Personagem é capaz de conversar com um animal durante um curto período de tempo."
-              ]
-            },
-            {
-              "id": "cura",
-              "title": "Cura",
-              "details": {
-                "Custo": "1-2 Pontos de Fé",
-                "Quem": "Inquisidor",
-                "Efeito": "1d6 PVs em si mesmo (1 PF/dia) ou em outra pessoa (2 PF, via toque)"
-              },
-              "paragraphs": [
-                "O Inquisidor pode utilizar 1 Ponto de Fé para curar 1d6 pontos de dano em si mesmo (até um máximo de um Ponto de Fé por dia), ou 2 Pontos de Fé para curar 1d6 PVs em outra pessoa, através do toque de suas mãos. Esse toque também pode ser feito. em plantas ou animais."
-              ]
-            },
-            {
-              "id": "criacao-de-agua-benta",
-              "title": "Criação de Água Benta",
-              "details": {
-                "Custo": "1 Ponto de Fé por frasco",
-                "Quem": "Inquisidor",
-                "Efeito": "1 frasco de água benta por Ponto de Fé gasto"
-              },
-              "paragraphs": [
-                "Pontos de Fé podem ser usados para criar água benta a partir da água pura do orvalho, à razão de um pequeno frasco para cada ponto gasto pelo Inquisidor."
-              ]
-            },
-            {
-              "id": "encantar",
-              "title": "Encantar",
-              "details": {
-                "Custo": "Variável",
-                "Efeito": "Arma torna-se +1 durante uma cena (3d6 rodadas)"
-              },
-              "paragraphs": [
-                "O fiel pode encantar uma arma durante uma cena (ou 3d6 rodadas), de modo que a arma passe a ser considerada uma arma +1 durante este tempo (no que diz propósito a enfrentar criaturas que só podem ser feridas por armas mágicas). Múltiplos encantamentos podem ser colocados sobre uma mesma arma, mas cada encantamento demora uma rodada para ser feito."
-              ]
-            },
-            {
-              "id": "outros-poderes",
-              "title": "Outros Poderes",
-              "details": {
-                "Quem": "Personagem com Fé",
-                "Efeito": "Imita qualquer milagre de santo; o Personagem deve merecê-lo"
-              },
-              "paragraphs": [
-                "Pontos de Fé são muito versáteis e podem imitar qualquer poder ou milagre que algum santo já realizou (inclui até mesmo andar sobre as águas, multiplicação dos pães, cura de cegos e leprosos, andar sobre brasas, espetar correntes no corpo sem sentir dor, ficar sem comer por longos períodos, controlar o clima, ser resgatado por uma baleia em alto mar, etc.) MAS o Personagem deve MERECER esses poderes. Utilizá-los sem motivo justificado ou por motivos torpes, pessoais ou egoístas podem irritar profundamente a entidade que confere esses poderes ao Personagem e a bênção pode vir a se tomar uma maldição."
-              ]
-            }
-          ]
         }
       ]
     }
@@ -1618,12 +1518,15 @@
       "title": "Afinidade com Fadas",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "3 pontos: a presença do personagem não assusta as fadas e outras criaturas de Arcádia. Pelo contrário, ele as atrai e aguça sua curiosidade. Ao contrário dos outros habitantes de Paradísia, seu personagem não considera os habitantes de Arcádia como inferiores, mas como aliados valorosos.",
-        "4 pontos: não só a presença do personagem não assusta as fadas, mas ele possui 1 ou 2 amigos nos reinos de Arcádia. Detalhes da construção da ficha destes amigos ficam a cargo do Mestre, que deve utilizar estes NPCs como pano de fundo para aventuras.",
-        "5 pontos: o personagem possui alguns companheiros nos reinos de Arcádia, bem como acesso a pelo menos um ou dois portais de ligação entre a Terra e o reino das fadas. Pode também possuir uma casa ou fortificação em um dos reinos. Os habitantes de Arcádia não devem saber de sua real identidade, e os que sabem são seus amigos e aliados. Detalhes devem ser sempre aprovados pelo Mestre."
+        "Ambidestria",
+        "2 pontos: o personagem pode manusear armas e instrumentos tanto com a mão direita quanto com a esquerda, com igual eficiência. Também pode usar duas armas de fogo ou duas armas brancas ao mesmo tempo, se forem pequenas o bastante para o uso com uma única mão. Estão fora desta categoria rifles, metralhadoras, artilharia pesada, arco e flecha, etc. A ambidesíria afeta apenas perícias baseadas em Destreza, não em Agilidade: boxe, artes marciais e outras não recebem benefícios pela ambidestria.",
+        "Biblioteca Arcana",
+        "0 anjo possui uma vasta biblioteca em seu refúgio, recebidos como herança de seu mentor, roubados de um outro mago, anjo ou demônio ou mesmo criado por ele mesmo em seus bons tempos de aprendiz. E pode consultar esta biblioteca em busca de outros efeitos de Magias (em Caminhos que possui), ou Rituais (em Caminhos que não possui). Também podem ajudá-lo em pesquisas ou na resolução de problemas relativos à Magia e ocultismo. Utilizar esta perícia (procurar informações em sua biblioteca) demora de l a 2 dias.",
+        "1 ponto: o personagem possui Rituais e livros conhecidos pela maioria dos magos. Considere que a biblioteca possui respostas para 25% das perguntas que o anjo possa ter de pesquisar.",
+        "2 pontos: o personagem possui livros raros e muitas publicações de outros anjos e magos. Considere esta biblioteca como sendo uma perícia de 50% em relação a assuntos místicos."
       ],
       "sections": [
         {
@@ -1631,9 +1534,17 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "3 pontos: a presença do personagem não assusta as fadas e outras criaturas de Arcádia. Pelo contrário, ele as atrai e aguça sua curiosidade. Ao contrário dos outros habitantes de Paradísia, seu personagem não considera os habitantes de Arcádia como inferiores, mas como aliados valorosos.",
-            "4 pontos: não só a presença do personagem não assusta as fadas, mas ele possui 1 ou 2 amigos nos reinos de Arcádia. Detalhes da construção da ficha destes amigos ficam a cargo do Mestre, que deve utilizar estes NPCs como pano de fundo para aventuras.",
-            "5 pontos: o personagem possui alguns companheiros nos reinos de Arcádia, bem como acesso a pelo menos um ou dois portais de ligação entre a Terra e o reino das fadas. Pode também possuir uma casa ou fortificação em um dos reinos. Os habitantes de Arcádia não devem saber de sua real identidade, e os que sabem são seus amigos e aliados. Detalhes devem ser sempre aprovados pelo Mestre."
+            "2 pontos: o personagem pode manusear armas e instrumentos tanto com a mão direita quanto com a esquerda, com igual eficiência. Também pode usar duas armas de fogo ou duas armas brancas ao mesmo tempo, se forem pequenas o bastante para o uso com uma única mão. Estão fora desta categoria rifles, metralhadoras, artilharia pesada, arco e flecha, etc. A ambidesíria afeta apenas perícias baseadas em Destreza, não em Agilidade: boxe, artes marciais e outras não recebem benefícios pela ambidestria. Biblioteca Arcana 0 anjo possui uma vasta biblioteca em seu refúgio, recebidos como herança de seu mentor, roubados de um outro mago, anjo ou demônio ou mesmo criado por ele mesmo em seus bons tempos de aprendiz. E pode consultar esta biblioteca em busca de outros efeitos de Magias (em Caminhos que possui), ou Rituais (em Caminhos que não possui). Também podem ajudá-lo em pesquisas ou na resolução de problemas relativos à Magia e ocultismo. Utilizar esta perícia (procurar informações em sua biblioteca) demora de l a 2 dias.",
+            "1 ponto: o personagem possui Rituais e livros conhecidos pela maioria dos magos. Considere que a biblioteca possui respostas para 25% das perguntas que o anjo possa ter de pesquisar.",
+            "2 pontos: o personagem possui livros raros e muitas publicações de outros anjos e magos. Considere esta biblioteca como sendo uma perícia de 50% em relação a assuntos místicos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Ambidestria"
           ]
         }
       ]
@@ -1643,11 +1554,12 @@
       "title": "Alma Dupla",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "3 pontos: por algum motivo, dois espíritos compartilham um mesmo corpo — ou dois corpos compartilham uma mesma alma. O personagem pode ser ao mesmo tempo gêmeos, amantes, pai e filho, etc. Pode ainda ter dois corpos: um deles fica em Spiritum, e o outro em Paradísia, ligados entre si por um cordão branco (os dois corpos nunca podem estar em um mesmo plano ao mesmo tempo). Crie cada personagem separadamente, e invente uma história para justificar este Aprimoramento.",
-        "4 pontos: igual ao acima, mas em determinadas circunstâncias, conjunções astrais, datas ou fenômenos naturais os dois corpos PODEM aparecer no mesmo plano por um curto período de tempo (1 dia)."
+        "3 pontos: possui uma extensa biblioteca, com livros que há muito desapareceram da Terra. Considere a biblioteca como uma perícia de pesquisa 75% em relação a assuntos místicos.",
+        "Clero Na Idade Média, o poder da Igreja era incontestável. Os inquisidores possuíam o poder de decisão sobre a vida e a morte, e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de zelar e tomar conta dos vilarejos, bem como organizar a parte social das pequenas comunidades. Quanto mais poder um clérigo possuir, maiores serão suas responsabilidades. Seu anjo pode estar infiltrado na Igreja, como parte de sua missão.",
+        "Clérigos recebem uma bonificação, nas perícias de religião e burocracia, de 10% para cada ponto de Aprimoramento 1 ponto: padre. O personagem pode ser responsável por uma pequena igreja em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis, bem como é ele quem primeiro investiga as mortes inexplicáveis."
       ],
       "sections": [
         {
@@ -1655,8 +1567,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "3 pontos: por algum motivo, dois espíritos compartilham um mesmo corpo — ou dois corpos compartilham uma mesma alma. O personagem pode ser ao mesmo tempo gêmeos, amantes, pai e filho, etc. Pode ainda ter dois corpos: um deles fica em Spiritum, e o outro em Paradísia, ligados entre si por um cordão branco (os dois corpos nunca podem estar em um mesmo plano ao mesmo tempo). Crie cada personagem separadamente, e invente uma história para justificar este Aprimoramento.",
-            "4 pontos: igual ao acima, mas em determinadas circunstâncias, conjunções astrais, datas ou fenômenos naturais os dois corpos PODEM aparecer no mesmo plano por um curto período de tempo (1 dia)."
+            "3 pontos: possui uma extensa biblioteca, com livros que há muito desapareceram da Terra. Considere a biblioteca como uma perícia de pesquisa 75% em relação a assuntos místicos. Clero Na Idade Média, o poder da Igreja era incontestável. Os inquisidores possuíam o poder de decisão sobre a vida e a morte, e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de zelar e tomar conta dos vilarejos, bem como organizar a parte social das pequenas comunidades. Quanto mais poder um clérigo possuir, maiores serão suas responsabilidades. Seu anjo pode estar infiltrado na Igreja, como parte de sua missão. Clérigos recebem uma bonificação, nas perícias de religião e burocracia, de 10% para cada ponto de Aprimoramento",
+            "1 ponto: padre. O personagem pode ser responsável por uma pequena igreja em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis, bem como é ele quem primeiro investiga as mortes inexplicáveis."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "possui uma extensa biblioteca, com livros que há muito desapareceram da Terra. Considere a biblioteca como uma perícia de pesquisa 75% em relação a assuntos místicos. Clero Na Idade Média, o poder da Igreja era incontestável. Os inquisidores possuíam o poder de decisão sobre a vida e a morte, e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de zelar e tomar conta dos vilarejos, bem como organizar a parte social das pequenas comunidades. Quanto mais poder um clérigo possuir, maiores serão suas responsabilidades. Seu anjo pode estar infiltrado na Igreja, como parte de sua missão. Clérigos recebem uma bonificação, nas perícias de religião e burocracia, de 10% para cada ponto de Aprimoramento padre. O personagem pode ser responsável por uma pequena igreja em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis, bem como é ele quem primeiro investiga as mortes inexplicáveis."
           ]
         }
       ]
@@ -1666,10 +1586,11 @@
       "title": "Ambidestria",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 pontos: o personagem pode manusear armas e instrumentos tanto com a mão direita quanto com a esquerda, com igual eficiência. Também pode usar duas armas de fogo ou duas armas brancas ao mesmo tempo, se forem pequenas o bastante para o uso com uma única mão. Estão fora desta categoria rifles, metralhadoras, artilharia pesada, arco e flecha, etc. A ambidestria afeta apenas perícias baseadas em Destreza, não em Agilidade: boxe, artes marciais e outras não recebem benefícios pela ambidestria."
+        "2 pontos: bispo. O personagem é responsável por um condado ou região. Ele possui uma igreja de um tamanho razoável, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para invadir vilas a procura de bruxas ou investigar o desaparecimento de algum padre.",
+        "3 pontos: arcebispo, o personagem possui uma grande área, e responsável por várias igrejas. Um arcebispo é responsável pela avaliação dos livros considerados blasfêmicos, e estuda os Rituais e os tipos de demônios e anjos."
       ],
       "sections": [
         {
@@ -1677,7 +1598,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos: o personagem pode manusear armas e instrumentos tanto com a mão direita quanto com a esquerda, com igual eficiência. Também pode usar duas armas de fogo ou duas armas brancas ao mesmo tempo, se forem pequenas o bastante para o uso com uma única mão. Estão fora desta categoria rifles, metralhadoras, artilharia pesada, arco e flecha, etc. A ambidestria afeta apenas perícias baseadas em Destreza, não em Agilidade: boxe, artes marciais e outras não recebem benefícios pela ambidestria."
+            "2 pontos: bispo. O personagem é responsável por um condado ou região. Ele possui uma igreja de um tamanho razoável, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para invadir vilas a procura de bruxas ou investigar o desaparecimento de algum padre.",
+            "3 pontos: arcebispo, o personagem possui uma grande área, e responsável por várias igrejas. Um arcebispo é responsável pela avaliação dos livros considerados blasfêmicos, e estuda os Rituais e os tipos de demônios e anjos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "bispo. O personagem é responsável por um condado ou região. Ele possui uma igreja de um tamanho razoável, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para invadir vilas a procura de bruxas ou investigar o desaparecimento de algum padre. arcebispo, o personagem possui uma grande área, e responsável por várias igrejas. Um arcebispo é responsável pela avaliação dos livros considerados blasfêmicos, e estuda os Rituais e os tipos de demônios e anjos."
           ]
         }
       ]
@@ -1690,10 +1620,8 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto: o personagem possui Rituais e livros conhecidos pela maioria dos magos. Considere que a biblioteca possui respostas para 25% das perguntas que o anjo possa ter de pesquisar.",
-        "2 pontos: o personagem possui livros raros e muitas publicações de outros anjos e magos. Considere esta biblioteca como sendo uma perícia de 50% em relação a assuntos místicos.",
-        "3 pontos: possui uma extensa biblioteca, com livros que há muito desapareceram da Terra. Considere a biblioteca como uma perícia de pesquisa 75% em relação a assuntos místicos.",
-        "0 anjo possui uma vasta biblioteca em seu refúgio, recebidos como herança de seu mentor, roubados de um outro mago, anjo ou demônio ou mesmo criado por ele mesmo em seus bons tempos de aprendiz. E pode consultar esta biblioteca em busca de outros efeitos de Magias (em Caminhos que possui), ou Rituais (em Caminhos que não possui). Também podem ajudá-lo em pesquisas ou na resolução de problemas relativos à Magia e ocultismo. Utilizar esta perícia (procurar informações em sua biblioteca) demora de l a 2 dias."
+        "4 pontos: com este Aprimoramento, o anjo possui o conhecimento sobre a Forma-Pensamento e a capacidade de canalizar esta energia para os planos físicos. Com um Teste de Percepção, o anjo é capaz de tatear o mundo de Spiritum em busca de algum objeto, e materializá-lo onde estiver. O Teste é fácil para objetos pequenos (dinheiro, lápis, papel, coisas de uso cotidiano.); normal para objetos pequenos mas exóticos (jóias, armas, peças de roupa.) ou com mais de 30cm; e difícil para objetos únicos (a chave de uma porta, um documento específico, um disquete de computador com dados próprios.) ou feitos de metal ferroso. Os objetos conjurados dissipam-se em 3d6 rodadas.",
+        "Contatos 1 ponto por contato: contatos incluem pessoas influentes na Terra e/ou em Paradísia: prefeitos, médicos, gerentes de grandes corporações, fotógrafos paparazzi, editores de jornais importantes, repórteres com notícias \"quentes\", investigadores de polícia, coronéis, cardeais, bispos, políticos importantes, traficantes de drogas, traficantes de armas, mercadores de espíritos, mercenários, demônios foragidos, anjos caídos, contatos no mercado negro, advogados, etc. Por contato entendase um amigo ou pequeno grupo que o personagem pode confiar e contar em caso de necessidade. Precisa ser detalhado no Background para ser aceito pelo Mestre."
       ],
       "sections": [
         {
@@ -1701,9 +1629,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto: o personagem possui Rituais e livros conhecidos pela maioria dos magos. Considere que a biblioteca possui respostas para 25% das perguntas que o anjo possa ter de pesquisar.",
-            "2 pontos: o personagem possui livros raros e muitas publicações de outros anjos e magos. Considere esta biblioteca como sendo uma perícia de 50% em relação a assuntos místicos.",
-            "3 pontos: possui uma extensa biblioteca, com livros que há muito desapareceram da Terra. Considere a biblioteca como uma perícia de pesquisa 75% em relação a assuntos místicos."
+            "4 pontos: com este Aprimoramento, o anjo possui o conhecimento sobre a Forma-Pensamento e a capacidade de canalizar esta energia para os planos físicos. Com um Teste de Percepção, o anjo é capaz de tatear o mundo de Spiritum em busca de algum objeto, e materializá-lo onde estiver. O Teste é fácil para objetos pequenos (dinheiro, lápis, papel, coisas de uso cotidiano.); normal para objetos pequenos mas exóticos (jóias, armas, peças de roupa.) ou com mais de 30cm; e difícil para objetos únicos (a chave de uma porta, um documento específico, um disquete de computador com dados próprios.) ou feitos de metal ferroso. Os objetos conjurados dissipam-se em 3d6 rodadas. Contatos",
+            "1 ponto por contato: contatos incluem pessoas influentes na Terra e/ou em Paradísia: prefeitos, médicos, gerentes de grandes corporações, fotógrafos paparazzi, editores de jornais importantes, repórteres com notícias \"quentes\", investigadores de polícia, coronéis, cardeais, bispos, políticos importantes, traficantes de drogas, traficantes de armas, mercadores de espíritos, mercenários, demônios foragidos, anjos caídos, contatos no mercado negro, advogados, etc. Por contato entendase um amigo ou pequeno grupo que o personagem pode confiar e contar em caso de necessidade. Precisa ser detalhado no Background para ser aceito pelo Mestre."
           ]
         },
         {
@@ -1711,7 +1638,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 anjo possui uma vasta biblioteca em seu refúgio, recebidos como herança de seu mentor, roubados de um outro mago, anjo ou demônio ou mesmo criado por ele mesmo em seus bons tempos de aprendiz. E pode consultar esta biblioteca em busca de outros efeitos de Magias (em Caminhos que possui), ou Rituais (em Caminhos que não possui). Também podem ajudá-lo em pesquisas ou na resolução de problemas relativos à Magia e ocultismo. Utilizar esta perícia (procurar informações em sua biblioteca) demora de l a 2 dias."
+            "com este Aprimoramento, o anjo possui o conhecimento sobre a Forma-Pensamento e a capacidade de canalizar esta energia para os planos físicos. Com um Teste de Percepção, o anjo é capaz de tatear o mundo de Spiritum em busca de algum objeto, e materializá-lo onde estiver. O Teste é fácil para objetos pequenos (dinheiro, lápis, papel, coisas de uso cotidiano.); normal para objetos pequenos mas exóticos (jóias, armas, peças de roupa.) ou com mais de 30cm; e difícil para objetos únicos (a chave de uma porta, um documento específico, um disquete de computador com dados próprios.) ou feitos de metal ferroso. Os objetos conjurados dissipam-se em 3d6 rodadas. Contatos contatos incluem pessoas influentes na Terra e/ou em Paradísia: prefeitos, médicos, gerentes de grandes corporações, fotógrafos paparazzi, editores de jornais importantes, repórteres com notícias \"quentes\", investigadores de polícia, coronéis, cardeais, bispos, políticos importantes, traficantes de drogas, traficantes de armas, mercadores de espíritos, mercenários, demônios foragidos, anjos caídos, contatos no mercado negro, advogados, etc. Por contato entendase um amigo ou pequeno grupo que o personagem pode confiar e contar em caso de necessidade. Precisa ser detalhado no Background para ser aceito pelo Mestre."
           ]
         }
       ]
@@ -1724,12 +1651,14 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto: padre. O personagem pode ser responsável por uma pequena igreja em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis, bem como é ele quem primeiro investiga as mortes inexplicáveis.",
-        "2 pontos: bispo. O personagem é responsável por um condado ou região. Ele possui uma igreja de um tamanho razoável, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para invadir vilas a procura de bruxas ou investigar o desaparecimento de algum padre.",
-        "3 pontos: arcebispo, o personagem possui uma grande área, e responsável por várias igrejas. Um arcebispo é responsável pela avaliação dos livros considerados blasfêmicos, e estuda os Rituais e os tipos de demônios e anjos.",
-        "4 pontos: com este Aprimoramento, o anjo possui o conhecimento sobre a Forma-Pensamento e a capacidade de canalizar esta energia para os planos físicos. Com um Teste de Percepção, o anjo é capaz de tatear o mundo de Spiritum em busca de algum objeto, e materializá-lo onde estiver. O Teste é fácil para objetos pequenos (dinheiro, lápis, papel, coisas de uso cotidiano...); normal para objetos pequenos mas exóticos (jóias, armas, peças de roupa...) ou com mais de 30cm; e difícil para objetos únicos (a chave de uma porta, um documento específico, um disquete de computador com dados próprios...) ou feitos de metal ferroso. Os objetos conjurados dissipam-se em 3d6 rodadas.",
-        "Na Idade Média, o poder da Igreja era incontestável. Os inquisidores possuíam o poder de decisão sobre a vida e a morte, e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de zelar e tomar conta dos vilarejos, bem como organizar a parte social das pequenas comunidades. Quanto mais poder um clérigo possuir, maiores serão suas responsabilidades. Seu anjo pode estar infiltrado na Igreja, como parte de sua missão.",
-        "Clérigos recebem uma bonificação, nas perícias de religião e burocracia, de 10% para cada ponto de Aprimoramento"
+        "Detecção de Magia",
+        "2 pontos: com sucesso em um Teste de Percepção, o personagem sente a presença de material não-natural, ou resíduos místicos, em um objeto, criatura ou local. Pode também detectar vagamente sua intensidade e direção.",
+        "3 pontos: igual ao acima, mas o personagem pode detectar exatamente o a intensidade, distância e direção.",
+        "GÁRGULA",
+        "2 pontos: o anjo possui uma gárgula como criatura protetora. Gárgulas são estátuas de pedra animadas, construídas entre os séculos X e XIII na Terra, para ornamentar as igrejas góticas da Europa. Como, quando e por que seu personagem adquiriu tal criatura ficam a cargo do Mestre. Uma gárgula pode ter várias formas, e é sempre fiel a seu dono.",
+        "Gárgula: CON [2D+6], FR [2D+6], DEX [2D+6], AGI [2D]",
+        "INT [1d+ó), WILL [2D+6], CAR [1D], PER [3D+6]",
+        "#Ataques [2], IP 2, PVs 8 a 18 Garras 50/60 dano 1d10+bônus"
       ],
       "sections": [
         {
@@ -1737,10 +1666,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto: padre. O personagem pode ser responsável por uma pequena igreja em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis, bem como é ele quem primeiro investiga as mortes inexplicáveis.",
-            "2 pontos: bispo. O personagem é responsável por um condado ou região. Ele possui uma igreja de um tamanho razoável, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para invadir vilas a procura de bruxas ou investigar o desaparecimento de algum padre.",
-            "3 pontos: arcebispo, o personagem possui uma grande área, e responsável por várias igrejas. Um arcebispo é responsável pela avaliação dos livros considerados blasfêmicos, e estuda os Rituais e os tipos de demônios e anjos.",
-            "4 pontos: com este Aprimoramento, o anjo possui o conhecimento sobre a Forma-Pensamento e a capacidade de canalizar esta energia para os planos físicos. Com um Teste de Percepção, o anjo é capaz de tatear o mundo de Spiritum em busca de algum objeto, e materializá-lo onde estiver. O Teste é fácil para objetos pequenos (dinheiro, lápis, papel, coisas de uso cotidiano...); normal para objetos pequenos mas exóticos (jóias, armas, peças de roupa...) ou com mais de 30cm; e difícil para objetos únicos (a chave de uma porta, um documento específico, um disquete de computador com dados próprios...) ou feitos de metal ferroso. Os objetos conjurados dissipam-se em 3d6 rodadas."
+            "2 pontos: com sucesso em um Teste de Percepção, o personagem sente a presença de material não-natural, ou resíduos místicos, em um objeto, criatura ou local. Pode também detectar vagamente sua intensidade e direção.",
+            "3 pontos: igual ao acima, mas o personagem pode detectar exatamente o a intensidade, distância e direção. GÁRGULA",
+            "2 pontos: o anjo possui uma gárgula como criatura protetora. Gárgulas são estátuas de pedra animadas, construídas entre os séculos X e XIII na Terra, para ornamentar as igrejas góticas da Europa. Como, quando e por que seu personagem adquiriu tal criatura ficam a cargo do Mestre. Uma gárgula pode ter várias formas, e é sempre fiel a seu dono. Gárgula: CON [2D+6], FR [2D+6], DEX [2D+6], AGI [2D] INT [1d+ó), WILL [2D+6], CAR [1D], PER [3D+6] #Ataques [2], IP 2, PVs 8 a 18 Garras 50/60 dano 1d10+bônus"
           ]
         },
         {
@@ -1748,8 +1676,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Na Idade Média, o poder da Igreja era incontestável. Os inquisidores possuíam o poder de decisão sobre a vida e a morte, e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de zelar e tomar conta dos vilarejos, bem como organizar a parte social das pequenas comunidades. Quanto mais poder um clérigo possuir, maiores serão suas responsabilidades. Seu anjo pode estar infiltrado na Igreja, como parte de sua missão.",
-            "Clérigos recebem uma bonificação, nas perícias de religião e burocracia, de 10% para cada ponto de Aprimoramento"
+            "Detecção de Magia"
           ]
         }
       ]
@@ -1759,18 +1686,18 @@
       "title": "Contatos",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto por contato: contatos incluem pessoas influentes na Terra e/ou em Paradísia: prefeitos, médicos, gerentes de grandes corporações, fotógrafos paparazzi, editores de jornais importantes, repórteres com notícias \"quentes\", investigadores de polícia, coronéis, cardeais, bispos, políticos importantes, traficantes de drogas, traficantes de armas, mercadores de espíritos, mercenários, demônios foragidos, anjos caídos, contatos no mercado negro, advogados, etc. Por contato entendase um amigo ou pequeno grupo que o personagem pode confiar e contar em caso de necessidade. Precisa ser detalhado no Background para ser aceito pelo Mestre."
+        "Guardião de um Artefato Importante"
       ],
       "sections": [
         {
-          "id": "custo",
-          "title": "Custo",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto por contato: contatos incluem pessoas influentes na Terra e/ou em Paradísia: prefeitos, médicos, gerentes de grandes corporações, fotógrafos paparazzi, editores de jornais importantes, repórteres com notícias \"quentes\", investigadores de polícia, coronéis, cardeais, bispos, políticos importantes, traficantes de drogas, traficantes de armas, mercadores de espíritos, mercenários, demônios foragidos, anjos caídos, contatos no mercado negro, advogados, etc. Por contato entendase um amigo ou pequeno grupo que o personagem pode confiar e contar em caso de necessidade. Precisa ser detalhado no Background para ser aceito pelo Mestre."
+            "Guardião de um Artefato Importante"
           ]
         }
       ]
@@ -1780,11 +1707,12 @@
       "title": "Detecção de Magia",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 pontos: com sucesso em um Teste de Percepção, o personagem sente a presença de material não-natural, ou resíduos místicos, em um objeto, criatura ou local. Pode também detectar vagamente sua intensidade e direção.",
-        "3 pontos: igual ao acima, mas o personagem pode detectar exatamente a intensidade, distância e direção."
+        "3 pontos: como o próprio nome indica, o personagem foi designado como guardião de um item de grande valor. Às vezes, este Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre e ao jogador escolherem qual artefato seu personagem possui, e as razões dele estar com este personagem. ESTE APRIMORAMENTO NÃO DEVE SER USADO LEVIANAMENTE. O artefato pode ser de posse definitiva ou apenas temporária (durante o curso da campanha).",
+        "Artefatos incluem: Mjolnir (o Martelo do Thor), a caixa de Pandora, o Pomo da Discórdia, O cinturão de Hipólita, o Cavalo de Tróia, as flechas embebidas em veneno da Hidra, a pele do leão da Nemédia, Excalibur, a vassoura de Hildret, O quarto prego da cruz de Cristo, O pilão de Baba-Yaga, o Coração esmeralda do rei Yashir, a foca de Brutus, a segunda chave do Inferno, a tocha de Prometeus, O verdadeiro sudário, entre muitos outros.",
+        "Loca1de Controle"
       ],
       "sections": [
         {
@@ -1792,8 +1720,15 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos: com sucesso em um Teste de Percepção, o personagem sente a presença de material não-natural, ou resíduos místicos, em um objeto, criatura ou local. Pode também detectar vagamente sua intensidade e direção.",
-            "3 pontos: igual ao acima, mas o personagem pode detectar exatamente a intensidade, distância e direção."
+            "3 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "como o próprio nome indica, o personagem foi designado como guardião de um item de grande valor. Às vezes, este Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre e ao jogador escolherem qual artefato seu personagem possui, e as razões dele estar com este personagem. ESTE APRIMORAMENTO NÃO DEVE SER USADO LEVIANAMENTE. O artefato pode ser de posse definitiva ou apenas temporária (durante o curso da campanha). Artefatos incluem: Mjolnir (o Martelo do Thor), a caixa de Pandora, o Pomo da Discórdia, O cinturão de Hipólita, o Cavalo de Tróia, as flechas embebidas em veneno da Hidra, a pele do leão da Nemédia, Excalibur, a vassoura de Hildret, O quarto prego da cruz de Cristo, O pilão de Baba-Yaga, o Coração esmeralda do rei Yashir, a foca de Brutus, a segunda chave do Inferno, a tocha de Prometeus, O verdadeiro sudário, entre muitos outros. Loca1de Controle"
           ]
         }
       ]
@@ -1806,8 +1741,11 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 pontos: o anjo possui uma gárgula como criatura protetora. Gárgulas são estátuas de pedra animadas, construídas entre os séculos X e XIII na Terra, para ornamentar as igrejas góticas da Europa. Como, quando e por que seu personagem adquiriu tal criatura ficam a cargo do Mestre. Uma gárgula pode ter várias formas, e é sempre fiel a seu dono.",
-        "Gárgula: CON [2D+6], FR [2D+6], DEX [2D+6], AGI [2D], INT [1D+6], WILL [2D+6], CAR [1D], PER [3D+6] #Ataques [2], IP 2, PVs 8 a 18 Garras 50/60 dano 1d10+bônus"
+        "1 ponto por local: seu personagem controla um local completamente. Este local serve como refugio e auxílio ao anjo em suas missões. Como ele controla este local deve ser especificado no background, bem como ONDE, QUANDO e COMO seu personagem adquiriu controle sobre este local. O anjo pode ser amigo dos donos, comandar mentalmente, personificar os donos, etc. Locais incluem um hospital, fábrica, igreja ou catedral, cemitério, hospício, escola, base militar, etc.",
+        "Objetos Mágicos O personagem possui um ou mais objetos mágicos ou fetiches encantados com ele. Consulte o capítulo de Objetos Mágicos (pág 46) para gastar os pontos de Objetos Mágicos. \\ ponto: 1 ponto de Objetos mágicos 2 pontos: 3 pontos de Objetos mágicos 3 pontos: 5 pontos de Objetos mágicos 4 pontos: 7 pontos de Objetos mágicos 5 pontos: 10 pontos de Objetos mágicos.",
+        "Pactos variável: pactos com entidades muito poderosas podem ser uma ótima fonte de poder, se você estiver disposto a pagar o preço. Demônios de Infernun precisam sempre de energia mística para se manterem vivos na Terra. Alguns magos oferecem parte de sua energia (pontos de Atributos, pontos de Magia, pontos de perícia, sua alma, etc.) em troca de riquezas, poder, a cura de uma doença.",
+        "Benefícios podem incluir Rituais, uma arma mágica, a cura de uma doença, exorcismo de um outro demônio, mais poder dentro da Igreja ou sociedade secreta, etc. Note que pactos são muito perigosos de serem feitos, pois quando se está desesperado, aceita-se o que for oferecido, e paga-se o estipulado.",
+        "Palavra de Deus"
       ],
       "sections": [
         {
@@ -1815,7 +1753,11 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos: o anjo possui uma gárgula como criatura protetora. Gárgulas são estátuas de pedra animadas, construídas entre os séculos X e XIII na Terra, para ornamentar as igrejas góticas da Europa. Como, quando e por que seu personagem adquiriu tal criatura ficam a cargo do Mestre. Uma gárgula pode ter várias formas, e é sempre fiel a seu dono."
+            "1 ponto por local: seu personagem controla um local completamente. Este local serve como refugio e auxílio ao anjo em suas missões. Como ele controla este local deve ser especificado no background, bem como ONDE, QUANDO e COMO seu personagem adquiriu controle sobre este local. O anjo pode ser amigo dos donos, comandar mentalmente, personificar os donos, etc. Locais incluem um hospital, fábrica, igreja ou catedral, cemitério, hospício, escola, base militar, etc. Objetos Mágicos O personagem possui um ou mais objetos mágicos ou fetiches encantados com ele. Consulte o capítulo de Objetos Mágicos (pág 46) para gastar os pontos de Objetos Mágicos. \\ ponto: 1 ponto de Objetos mágicos",
+            "2 pontos: 3 pontos de Objetos mágicos",
+            "3 pontos: 5 pontos de Objetos mágicos",
+            "4 pontos: 7 pontos de Objetos mágicos",
+            "5 pontos: 10 pontos de Objetos mágicos. Pactos variável: pactos com entidades muito poderosas podem ser uma ótima fonte de poder, se você estiver disposto a pagar o preço. Demônios de Infernun precisam sempre de energia mística para se manterem vivos na Terra. Alguns magos oferecem parte de sua energia (pontos de Atributos, pontos de Magia, pontos de perícia, sua alma, etc.) em troca de riquezas, poder, a cura de uma doença. Benefícios podem incluir Rituais, uma arma mágica, a cura de uma doença, exorcismo de um outro demônio, mais poder dentro da Igreja ou sociedade secreta, etc. Note que pactos são muito perigosos de serem feitos, pois quando se está desesperado, aceita-se o que for oferecido, e paga-se o estipulado. Palavra de Deus"
           ]
         },
         {
@@ -1823,7 +1765,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Gárgula: CON [2D+6], FR [2D+6], DEX [2D+6], AGI [2D], INT [1D+6], WILL [2D+6], CAR [1D], PER [3D+6] #Ataques [2], IP 2, PVs 8 a 18 Garras 50/60 dano 1d10+bônus"
+            "seu personagem controla um local completamente. Este local serve como refugio e auxílio ao anjo em suas missões. Como ele controla este local deve ser especificado no background, bem como ONDE, QUANDO e COMO seu personagem adquiriu controle sobre este local. O anjo pode ser amigo dos donos, comandar mentalmente, personificar os donos, etc. Locais incluem um hospital, fábrica, igreja ou catedral, cemitério, hospício, escola, base militar, etc. Objetos Mágicos O personagem possui um ou mais objetos mágicos ou fetiches encantados com ele. Consulte o capítulo de Objetos Mágicos (pág 46) para gastar os pontos de Objetos Mágicos. \\ ponto: 1 ponto de Objetos mágicos 3 pontos de Objetos mágicos 5 pontos de Objetos mágicos 7 pontos de Objetos mágicos 10 pontos de Objetos mágicos. Pactos variável: pactos com entidades muito poderosas podem ser uma ótima fonte de poder, se você estiver disposto a pagar o preço. Demônios de Infernun precisam sempre de energia mística para se manterem vivos na Terra. Alguns magos oferecem parte de sua energia (pontos de Atributos, pontos de Magia, pontos de perícia, sua alma, etc.) em troca de riquezas, poder, a cura de uma doença. Benefícios podem incluir Rituais, uma arma mágica, a cura de uma doença, exorcismo de um outro demônio, mais poder dentro da Igreja ou sociedade secreta, etc. Note que pactos são muito perigosos de serem feitos, pois quando se está desesperado, aceita-se o que for oferecido, e paga-se o estipulado. Palavra de Deus"
           ]
         }
       ]
@@ -1836,8 +1778,9 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "3 pontos: como o próprio nome indica, o personagem foi designado como guardião de um item de grande valor. Às vezes, este Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre e ao jogador escolherem qual artefato seu personagem possui, e as razões dele estar com este personagem. ESTE APRIMORAMENTO NÃO DEVE SER USADO LEVIANAMENTE. O artefato pode ser de posse definitiva ou apenas temporária (durante o curso da campanha).",
-        "Artefatos incluem: Mjolnir (o Martelo do Thor), a caixa de Pandora, o Pomo da Discórdia, O cinturão de Hipólita, o Cavalo de Tróia, as flechas embebidas em veneno da Hidra, a pele do leão da Nemédia, Excalibur, a vassoura de Hildret, O quarto prego da cruz de Cristo, O pilão de Baba-Yaga, o Coração esmeralda do rei Yashir, a foca de Brutus, a segunda chave do Inferno, a tocha de Prometeus, O verdadeiro sudário, entre muitos outros."
+        "4 pontos: uma vez por sessão de jogo, seu personagem pode dar uma ordem a alguém em voz alta. Esta pessoa será obrigada a seguir esta ordem literalmente, sem chance de resistência. Alguns poucos demônios e outras criaturas sobrenaturais podem ser imunes a este poder.",
+        "Pertencer a uma Escola de Magia",
+        "2 pontos: escolas de Magia são locais onde magos que compartilham os mesmos ideais se encontram para trocar informações e planejar ataques aos magos que não compartilham desses ideais. As escolas mais conhecidas incluem a Escola de Pyros, os Magos Vermelhos, Magos Aquos, Magos Atlantes, Escola de Luft, Magos do Vácuo, Ordem de Petros, Ordem de Mármore, Magos Corrosivos, Escola de Photus, Discípulos de Chronos, Magos das Sombras e Seguidores de Luvithy, entre outras. Consulte seu Mestre sobre qual escola de Magia está mais adequada a seu personagem."
       ],
       "sections": [
         {
@@ -1845,7 +1788,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "3 pontos: como o próprio nome indica, o personagem foi designado como guardião de um item de grande valor. Às vezes, este Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre e ao jogador escolherem qual artefato seu personagem possui, e as razões dele estar com este personagem. ESTE APRIMORAMENTO NÃO DEVE SER USADO LEVIANAMENTE. O artefato pode ser de posse definitiva ou apenas temporária (durante o curso da campanha)."
+            "4 pontos: uma vez por sessão de jogo, seu personagem pode dar uma ordem a alguém em voz alta. Esta pessoa será obrigada a seguir esta ordem literalmente, sem chance de resistência. Alguns poucos demônios e outras criaturas sobrenaturais podem ser imunes a este poder. Pertencer a uma Escola de Magia",
+            "2 pontos: escolas de Magia são locais onde magos que compartilham os mesmos ideais se encontram para trocar informações e planejar ataques aos magos que não compartilham desses ideais. As escolas mais conhecidas incluem a Escola de Pyros, os Magos Vermelhos, Magos Aquos, Magos Atlantes, Escola de Luft, Magos do Vácuo, Ordem de Petros, Ordem de Mármore, Magos Corrosivos, Escola de Photus, Discípulos de Chronos, Magos das Sombras e Seguidores de Luvithy, entre outras. Consulte seu Mestre sobre qual escola de Magia está mais adequada a seu personagem."
           ]
         },
         {
@@ -1853,7 +1797,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Artefatos incluem: Mjolnir (o Martelo do Thor), a caixa de Pandora, o Pomo da Discórdia, O cinturão de Hipólita, o Cavalo de Tróia, as flechas embebidas em veneno da Hidra, a pele do leão da Nemédia, Excalibur, a vassoura de Hildret, O quarto prego da cruz de Cristo, O pilão de Baba-Yaga, o Coração esmeralda do rei Yashir, a foca de Brutus, a segunda chave do Inferno, a tocha de Prometeus, O verdadeiro sudário, entre muitos outros."
+            "uma vez por sessão de jogo, seu personagem pode dar uma ordem a alguém em voz alta. Esta pessoa será obrigada a seguir esta ordem literalmente, sem chance de resistência. Alguns poucos demônios e outras criaturas sobrenaturais podem ser imunes a este poder. Pertencer a uma Escola de Magia escolas de Magia são locais onde magos que compartilham os mesmos ideais se encontram para trocar informações e planejar ataques aos magos que não compartilham desses ideais. As escolas mais conhecidas incluem a Escola de Pyros, os Magos Vermelhos, Magos Aquos, Magos Atlantes, Escola de Luft, Magos do Vácuo, Ordem de Petros, Ordem de Mármore, Magos Corrosivos, Escola de Photus, Discípulos de Chronos, Magos das Sombras e Seguidores de Luvithy, entre outras. Consulte seu Mestre sobre qual escola de Magia está mais adequada a seu personagem."
           ]
         }
       ]
@@ -1863,19 +1807,15 @@
       "title": "Local de Controle",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "1 ponto por local: seu personagem controla um local completamente. Este local serve como refúgio e auxílio ao anjo em suas missões. Como ele controla este local deve ser especificado no background, bem como ONDE, QUANDO e COMO seu personagem adquiriu controle sobre este local. O anjo pode ser amigo dos donos, comandar mentalmente, personificar os donos, etc. Locais incluem um hospital, fábrica, igreja ou catedral, cemitério, hospício, escola, base militar, etc."
-      ],
+      "paragraphs": [],
       "sections": [
         {
-          "id": "custo",
-          "title": "Custo",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": [
-            "1 ponto por local: seu personagem controla um local completamente. Este local serve como refúgio e auxílio ao anjo em suas missões. Como ele controla este local deve ser especificado no background, bem como ONDE, QUANDO e COMO seu personagem adquiriu controle sobre este local. O anjo pode ser amigo dos donos, comandar mentalmente, personificar os donos, etc. Locais incluem um hospital, fábrica, igreja ou catedral, cemitério, hospício, escola, base militar, etc."
-          ]
+          "paragraphs": []
         }
       ]
     },
@@ -1887,32 +1827,15 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto: 1 ponto de Objetos mágicos",
-        "2 pontos: 3 pontos de Objetos mágicos",
-        "3 pontos: 5 pontos de Objetos mágicos",
-        "4 pontos: 7 pontos de Objetos mágicos",
-        "5 pontos: 10 pontos de Objetos mágicos.",
-        "O personagem possui um ou mais objetos mágicos ou fetiches encantados com ele. Consulte o capítulo de Objetos Mágicos (pág 46) para gastar os pontos de Objetos Mágicos."
+        "Pertencer ou Comandar uma Seita"
       ],
       "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "1 ponto: 1 ponto de Objetos mágicos",
-            "2 pontos: 3 pontos de Objetos mágicos",
-            "3 pontos: 5 pontos de Objetos mágicos",
-            "4 pontos: 7 pontos de Objetos mágicos",
-            "5 pontos: 10 pontos de Objetos mágicos."
-          ]
-        },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O personagem possui um ou mais objetos mágicos ou fetiches encantados com ele. Consulte o capítulo de Objetos Mágicos (pág 46) para gastar os pontos de Objetos Mágicos."
+            "Pertencer ou Comandar uma Seita"
           ]
         }
       ]
@@ -1925,8 +1848,8 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "variável: pactos com entidades muito poderosas podem ser uma ótima fonte de poder, se você estiver disposto a pagar o preço. Demônios de Infernun precisam sempre de energia mística para se manterem vivos na Terra. Alguns magos oferecem parte de sua energia (pontos de Atributos, pontos de Magia, pontos de perícia, sua alma, etc.) em troca de riquezas, poder, a cura de uma doença.",
-        "Benefícios podem incluir Rituais, uma arma mágica, a cura de uma doença, exorcismo de um outro demônio, mais poder dentro da Igreja ou sociedade secreta, etc. Note que pactos são muito perigosos de serem feitos, pois quando se está desesperado, aceita-se o que for oferecido, e paga-se o estipulado."
+        "2 pontos: seitas, ao contrário de escolas de Magia, são grupos de fanáticos religiosos que acreditam em religiões pagãs. Algumas delas incluem sacrifícios humanos e adorações a estranhas criaturas, algumas seitas lidam com magos, enquanto outras procuram exterminá-los. As seitas mais conhecidas (do ponto de vista de outras seitas, e das igrejas, pois elas são desconhecidas do grande público) são: Os seguidores de Luvithy, Os seguidores de Ktulhu, A Ordem dos Anjos, a Ordem de São Ciprião, Eterna.",
+        "PODERES IIIÁGices: Obrigatório se o jogador desejar um anjo mago."
       ],
       "sections": [
         {
@@ -1934,7 +1857,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "variável: pactos com entidades muito poderosas podem ser uma ótima fonte de poder, se você estiver disposto a pagar o preço. Demônios de Infernun precisam sempre de energia mística para se manterem vivos na Terra. Alguns magos oferecem parte de sua energia (pontos de Atributos, pontos de Magia, pontos de perícia, sua alma, etc.) em troca de riquezas, poder, a cura de uma doença."
+            "2 pontos"
           ]
         },
         {
@@ -1942,7 +1865,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Benefícios podem incluir Rituais, uma arma mágica, a cura de uma doença, exorcismo de um outro demônio, mais poder dentro da Igreja ou sociedade secreta, etc. Note que pactos são muito perigosos de serem feitos, pois quando se está desesperado, aceita-se o que for oferecido, e paga-se o estipulado."
+            "seitas, ao contrário de escolas de Magia, são grupos de fanáticos religiosos que acreditam em religiões pagãs. Algumas delas incluem sacrifícios humanos e adorações a estranhas criaturas, algumas seitas lidam com magos, enquanto outras procuram exterminá-los. As seitas mais conhecidas (do ponto de vista de outras seitas, e das igrejas, pois elas são desconhecidas do grande público) são: Os seguidores de Luvithy, Os seguidores de Ktulhu, A Ordem dos Anjos, a Ordem de São Ciprião, Eterna. PODERES IIIÁGices: Obrigatório se o jogador desejar um anjo mago."
           ]
         }
       ]
@@ -1952,10 +1875,11 @@
       "title": "Palavra de Deus",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "4 pontos: uma vez por sessão de jogo, seu personagem pode dar uma ordem a alguém em voz alta. Esta pessoa será obrigada a seguir esta ordem literalmente, sem chance de resistência. Alguns poucos demônios e outras criaturas sobrenaturais podem ser imunes a este poder."
+        "2 pontos: possui alguns conhecimentos de efeitos de Magia. Possui 3 pontos de Focus para dividir entre os Caminhos que desejar. Começa o jogo com 2 pontos de Magia.",
+        "3 pontos: mago. Já pratica as artes arcanas há algum tempo."
       ],
       "sections": [
         {
@@ -1963,7 +1887,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "4 pontos: uma vez por sessão de jogo, seu personagem pode dar uma ordem a alguém em voz alta. Esta pessoa será obrigada a seguir esta ordem literalmente, sem chance de resistência. Alguns poucos demônios e outras criaturas sobrenaturais podem ser imunes a este poder."
+            "2 pontos: possui alguns conhecimentos de efeitos de Magia. Possui 3 pontos de Focus para dividir entre os Caminhos que desejar. Começa o jogo com 2 pontos de Magia.",
+            "3 pontos: mago. Já pratica as artes arcanas há algum tempo."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "possui alguns conhecimentos de efeitos de Magia. Possui 3 pontos de Focus para dividir entre os Caminhos que desejar. Começa o jogo com 2 pontos de Magia. mago. Já pratica as artes arcanas há algum tempo."
           ]
         }
       ]
@@ -1973,10 +1906,13 @@
       "title": "Pertencer a uma Escola de Magia",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 pontos: escolas de Magia são locais onde magos que compartilham os mesmos ideais se encontram para trocar informações e planejar ataques aos magos que não compartilham desses ideais. As escolas mais conhecidas incluem a Escola de Pyros, os Magos Vermelhos, Magos Aquos, Magos Atlantes, Escola de Luft, Magos do Vácuo, Ordem de Petros, Ordem de Mármore, Magos Corrosivos, Escola de Photus, Discípulos de Chronos, Magos das Sombras e Seguidores de Luvithy, entre outras. Consulte seu Mestre sobre qual escola de Magia está mais adequada a seu personagem."
+        "Começa o jogo com 5 pontos de Focus e 3 pontos de Magia.",
+        "4 pontos: mago desenvolvido. Possui 7 pontos de Focus para dividir entre os Caminhos, e pelo menos um inimigo mortal (fica a cargo do Mestre). Possui 5 pontos de Magia.",
+        "5 pontos: são personagens mais velhos, com muito poder acumulado e bastante conhecimento de Magia. Possui pelo menos DOIS inimigos mortais (a cargo do Mestre - e pode pegar pesado!).",
+        "O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia."
       ],
       "sections": [
         {
@@ -1984,7 +1920,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos: escolas de Magia são locais onde magos que compartilham os mesmos ideais se encontram para trocar informações e planejar ataques aos magos que não compartilham desses ideais. As escolas mais conhecidas incluem a Escola de Pyros, os Magos Vermelhos, Magos Aquos, Magos Atlantes, Escola de Luft, Magos do Vácuo, Ordem de Petros, Ordem de Mármore, Magos Corrosivos, Escola de Photus, Discípulos de Chronos, Magos das Sombras e Seguidores de Luvithy, entre outras. Consulte seu Mestre sobre qual escola de Magia está mais adequada a seu personagem."
+            "4 pontos: mago desenvolvido. Possui 7 pontos de Focus para dividir entre os Caminhos, e pelo menos um inimigo mortal (fica a cargo do Mestre). Possui 5 pontos de Magia.",
+            "5 pontos: são personagens mais velhos, com muito poder acumulado e bastante conhecimento de Magia. Possui pelo menos DOIS inimigos mortais (a cargo do Mestre - e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Começa o jogo com 5 pontos de Focus e 3 pontos de Magia."
           ]
         }
       ]
@@ -1994,10 +1939,11 @@
       "title": "Pertencer ou Comandar uma Seita",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 pontos: seitas, ao contrário de escolas de Magia, são grupos de fanáticos religiosos que acreditam em religiões pagãs. Algumas delas incluem sacrifícios humanos e adorações a estranhas criaturas, algumas seitas lidam com magos, enquanto outras procuram exterminá-los. As seitas mais conhecidas (do ponto de vista de outras seitas, e das igrejas, pois elas são desconhecidas do grande público) são: Os seguidores de Luvithy, Os seguidores de Ktulhu, A Ordem dos Anjos, a Ordem de São Ciprião, Eterna."
+        "6 pontos: um personagem bastante velho, já bem estabelecido e com muita fama entre os magos (tanto da Terra quanto de Paradísia). Possui bastante poder, e ao mesmo tempo uma grande coleção de inimigos (QUATRO, pelo menos). Começa com 1-1 pontos de Focus e 9 pontos de Magia.",
+        "SENSITIVO"
       ],
       "sections": [
         {
@@ -2005,7 +1951,15 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos: seitas, ao contrário de escolas de Magia, são grupos de fanáticos religiosos que acreditam em religiões pagãs. Algumas delas incluem sacrifícios humanos e adorações a estranhas criaturas, algumas seitas lidam com magos, enquanto outras procuram exterminá-los. As seitas mais conhecidas (do ponto de vista de outras seitas, e das igrejas, pois elas são desconhecidas do grande público) são: Os seguidores de Luvithy, Os seguidores de Ktulhu, A Ordem dos Anjos, a Ordem de São Ciprião, Eterna."
+            "6 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "um personagem bastante velho, já bem estabelecido e com muita fama entre os magos (tanto da Terra quanto de Paradísia). Possui bastante poder, e ao mesmo tempo uma grande coleção de inimigos (QUATRO, pelo menos). Começa com 1-1 pontos de Focus e 9 pontos de Magia. SENSITIVO"
           ]
         }
       ]
@@ -2018,47 +1972,14 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 pontos: possui alguns conhecimentos de efeitos de Magia. Possui 3 pontos de Focus para dividir entre os Caminhos que desejar. Começa o jogo com 2 pontos de Magia.",
-        "3 pontos: mago. Já pratica as artes arcanas há algum tempo. Começa o jogo com 5 pontos de Focus e 3 pontos de Magia.",
-        "4 pontos: mago desenvolvido. Possui 7 pontos de Focus para dividir entre os Caminhos, e pelo menos um inimigo mortal (fica a cargo do Mestre). Possui 5 pontos de Magia.",
-        "5 pontos: são personagens mais velhos, com muito poder acumulado e bastante conhecimento de Magia. Possui pelo menos DOIS inimigos mortais (a cargo do Mestre - e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia.",
-        "6 pontos: um personagem bastante velho, já bem estabelecido e com muita fama entre os magos (tanto da Terra quanto de Paradísia). Possui bastante poder, e ao mesmo tempo uma grande coleção de inimigos (QUATRO, pelo menos). Começa com 11 pontos de Focus e 9 pontos de Magia.",
-        "Obrigatório se o jogador desejar um anjo mago."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "2 pontos: possui alguns conhecimentos de efeitos de Magia. Possui 3 pontos de Focus para dividir entre os Caminhos que desejar. Começa o jogo com 2 pontos de Magia.",
-            "3 pontos: mago. Já pratica as artes arcanas há algum tempo. Começa o jogo com 5 pontos de Focus e 3 pontos de Magia.",
-            "4 pontos: mago desenvolvido. Possui 7 pontos de Focus para dividir entre os Caminhos, e pelo menos um inimigo mortal (fica a cargo do Mestre). Possui 5 pontos de Magia.",
-            "5 pontos: são personagens mais velhos, com muito poder acumulado e bastante conhecimento de Magia. Possui pelo menos DOIS inimigos mortais (a cargo do Mestre - e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia.",
-            "6 pontos: um personagem bastante velho, já bem estabelecido e com muita fama entre os magos (tanto da Terra quanto de Paradísia). Possui bastante poder, e ao mesmo tempo uma grande coleção de inimigos (QUATRO, pelo menos). Começa com 11 pontos de Focus e 9 pontos de Magia."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Obrigatório se o jogador desejar um anjo mago."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "sensitivo",
-      "title": "Sensitivo",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "descricao",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "1 ponto: o personagem sonha com coisas sobrenaturais. Esses sensitivos quase sempre dedicam-se a alguma forma de arte, reproduzindo as imagens que enxergam durante o sono. Escrevem livros, modelam esculturas e pintam quadros. Estes quadros devem ser usados pelo Mestre como ajuda na preparação de campanhas e aventuras. O personagem ganha também 10% em ciências proibidas e 20% em qualquer subgrupo da perícia artes.",
-        "2 pontos: o personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o jogador pode tentar um Teste de Percepção para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida, a localização de um objeto perdido, etc.",
-        "Seu anjo possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas."
+        "Seu anjo possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas.",
+        "1 ponto: o personagem sonha com coisas sobrenaturais.",
+        "Esses sensitivos quase sempre dedicam-se a alguma forma de arte, reproduzindo as imagens que enxergam durante o sono. Escrevem livros, modelam esculturas e pintam quadros. Estes quadros devem ser usados pelo Mestre como ajuda na preparação de campanhas e aventuras. O personagem ganha também 10% em ciências proibidas e 20% em qualquer subgrupo da perícia artes.",
+        "2 pontos: o personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade.",
+        "Em alguns casos, com a permissão do Mestre, o jogador pode tentar um Teste de Percepção para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida, a localização de um objeto perdido, etc.",
+        "Senso de Direção",
+        "1 ponto: seu anjo sabe se orientar, mesmo sem bases visuais - ele não precisa de bússola, o sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido, não importa em que plano de existência esteja.",
+        "SENSO"
       ],
       "sections": [
         {
@@ -2067,7 +1988,8 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "1 ponto: o personagem sonha com coisas sobrenaturais. Esses sensitivos quase sempre dedicam-se a alguma forma de arte, reproduzindo as imagens que enxergam durante o sono. Escrevem livros, modelam esculturas e pintam quadros. Estes quadros devem ser usados pelo Mestre como ajuda na preparação de campanhas e aventuras. O personagem ganha também 10% em ciências proibidas e 20% em qualquer subgrupo da perícia artes.",
-            "2 pontos: o personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o jogador pode tentar um Teste de Percepção para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida, a localização de um objeto perdido, etc."
+            "2 pontos: o personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o jogador pode tentar um Teste de Percepção para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida, a localização de um objeto perdido, etc. Senso de Direção",
+            "1 ponto: seu anjo sabe se orientar, mesmo sem bases visuais - ele não precisa de bússola, o sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido, não importa em que plano de existência esteja. SENSO"
           ]
         },
         {
@@ -2081,14 +2003,19 @@
       ]
     },
     {
-      "id": "senso-de-direcao",
-      "title": "Senso de Direção",
+      "id": "sensitivo",
+      "title": "Sensitivo",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto: seu anjo sabe se orientar, mesmo sem bases visuais — ele não precisa de bússola, o sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido, não importa em que plano de existência esteja."
+        "1 ponto: o personagem é capaz de contar imediatamente grande quantidade de objetos, com muita precisão. Pode contar cabeças de gado, quantos palitos de fósforo caíram de uma caixa, cartas de baralho e coisa assim.",
+        "SENTIDOS AGUÇADOS",
+        "1 ponto para cada sentido: o personagem possui sentidos mais aguçados do que os outros anjos. Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos. Em Testes de Percepção que utilizem este sentido, o Mestre deve reduzir a dificuldade em um nível (um Teste Difícil torna-se Normal; um Teste Normal torna-se rotineiro; e para um Teste rotineiro não é preciso rolar os dados).",
+        "SORTUDO",
+        "2 pontos: este personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o jogador pode escolher um Teste e declarar que foi um sucesso crítico - o melhor resultado possível -, sem precisar jogar os dados. Ele deve anunciar essa decisão ANTES de rolar os dados.",
+        "TALENTO"
       ],
       "sections": [
         {
@@ -2096,7 +2023,47 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto: seu anjo sabe se orientar, mesmo sem bases visuais — ele não precisa de bússola, o sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido, não importa em que plano de existência esteja."
+            "1 ponto: o personagem é capaz de contar imediatamente grande quantidade de objetos, com muita precisão. Pode contar cabeças de gado, quantos palitos de fósforo caíram de uma caixa, cartas de baralho e coisa assim. SENTIDOS AGUÇADOS",
+            "1 ponto para cada sentido: o personagem possui sentidos mais aguçados do que os outros anjos. Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos. Em Testes de Percepção que utilizem este sentido, o Mestre deve reduzir a dificuldade em um nível (um Teste Difícil torna-se Normal; um Teste Normal torna-se rotineiro; e para um Teste rotineiro não é preciso rolar os dados). SORTUDO",
+            "2 pontos: este personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o jogador pode escolher um Teste e declarar que foi um sucesso crítico - o melhor resultado possível -, sem precisar jogar os dados. Ele deve anunciar essa decisão ANTES de rolar os dados. TALENTO"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "o personagem é capaz de contar imediatamente grande quantidade de objetos, com muita precisão. Pode contar cabeças de gado, quantos palitos de fósforo caíram de uma caixa, cartas de baralho e coisa assim. SENTIDOS AGUÇADOS o personagem possui sentidos mais aguçados do que os outros anjos. Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos. Em Testes de Percepção que utilizem este sentido, o Mestre deve reduzir a dificuldade em um nível (um Teste Difícil torna-se Normal; um Teste Normal torna-se rotineiro; e para um Teste rotineiro não é preciso rolar os dados). SORTUDO este personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o jogador pode escolher um Teste e declarar que foi um sucesso crítico - o melhor resultado possível -, sem precisar jogar os dados. Ele deve anunciar essa decisão ANTES de rolar os dados. TALENTO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "senso-de-direcao",
+      "title": "Senso de Direção",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: para seu personagem, todos os Testes ligados a uma determinada arte (perícia) são feitos como se fossem Testes Fáceis. Testes Difíceis são feitos como se fossem Normais.",
+        "TUTOR"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "para seu personagem, todos os Testes ligados a uma determinada arte (perícia) são feitos como se fossem Testes Fáceis. Testes Difíceis são feitos como se fossem Normais. TUTOR"
           ]
         }
       ]
@@ -2106,10 +2073,11 @@
       "title": "Senso",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto: o personagem é capaz de contar imediatamente grande quantidade de objetos, com muita precisão. Pode contar cabeças de gado, quantos palitos de fósforo caíram de uma caixa, cartas de baralho e coisa assim."
+        "Tutor é o anjo, deus ou entidade que ensinou a Magia ao seu personagem. Se você desejar que ele ainda esteja com você, ensinando-o ou protegendo, este é o lugar certo para gastar seus pontos de Aprimoramento. O tutor, ou mentor pode possui até uma pequena biblioteca ou laboratório (que TALVEZ deixe você usar) e pode auxiliá-lo com algumas dúvidas. O Mestre possui liberdade total para definir a verdadeira história de seu tutor. Seus problemas, seus desejos e anseios, e seus objetivos (afinal, ele não iria ensinar Magia a você sem um bom motivo.)",
+        "2 pontos: seu tutor é uma criatura sobrenatural. Pode ser um anjo da Cidade de Prata, de Aasgard ou de Olympus, ou ainda um espírito de um mago morto. Seu tutor pode ainda ser um oráculo ou um espírito da floresta (um elementar de água ou terra) ou mesmo um vampiro ou uma fúria."
       ],
       "sections": [
         {
@@ -2117,7 +2085,15 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto: o personagem é capaz de contar imediatamente grande quantidade de objetos, com muita precisão. Pode contar cabeças de gado, quantos palitos de fósforo caíram de uma caixa, cartas de baralho e coisa assim."
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Tutor é o anjo, deus ou entidade que ensinou a Magia ao seu personagem. Se você desejar que ele ainda esteja com você, ensinando-o ou protegendo, este é o lugar certo para gastar seus pontos de Aprimoramento. O tutor, ou mentor pode possui até uma pequena biblioteca ou laboratório (que TALVEZ deixe você usar) e pode auxiliá-lo com algumas dúvidas. O Mestre possui liberdade total para definir a verdadeira história de seu tutor. Seus problemas, seus desejos e anseios, e seus objetivos (afinal, ele não iria ensinar Magia a você sem um bom motivo.) seu tutor é uma criatura sobrenatural. Pode ser um anjo da Cidade de Prata, de Aasgard ou de Olympus, ou ainda um espírito de um mago morto. Seu tutor pode ainda ser um oráculo ou um espírito da floresta (um elementar de água ou terra) ou mesmo um vampiro ou uma fúria."
           ]
         }
       ]
@@ -2127,10 +2103,10 @@
       "title": "Sentidos Aguçados",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto para cada sentido: o personagem possui sentidos mais aguçados do que os outros anjos. Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos. Em Testes de Percepção que utilizem este sentido, o Mestre deve reduzir a dificuldade em um nível (um Teste Difícil torna-se Normal; um Teste Normal torna-se rotineiro; e para um Teste rotineiro não é preciso rolar os dados)."
+        "3 pontos: seu tutor pode ser um anjo mais poderoso ou até mesmo um arcanjo. Os motivos de um anjo ter descido dos céus e ensinado as artes místicas a seu personagem são tão obscuros quanto sua própria natureza. Geralmente, personagens com mentores de Edhen ou do Solarium tendem a se autoproclamarem mensageiros de Deus ou até mesmo messias (e portanto, merecem um tratamento \"especial\" da Inquisição, dos chezas e dos Captares). A maior vantagem destes tutores é que eles costumam acompanhar (de longe) o que seu pupilos andam fazendo (acompanhar, não auxiliar). E chegam até a descer dos céus para conversar com eles (muito raramente)."
       ],
       "sections": [
         {
@@ -2138,7 +2114,15 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto para cada sentido: o personagem possui sentidos mais aguçados do que os outros anjos. Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos. Em Testes de Percepção que utilizem este sentido, o Mestre deve reduzir a dificuldade em um nível (um Teste Difícil torna-se Normal; um Teste Normal torna-se rotineiro; e para um Teste rotineiro não é preciso rolar os dados)."
+            "3 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "seu tutor pode ser um anjo mais poderoso ou até mesmo um arcanjo. Os motivos de um anjo ter descido dos céus e ensinado as artes místicas a seu personagem são tão obscuros quanto sua própria natureza. Geralmente, personagens com mentores de Edhen ou do Solarium tendem a se autoproclamarem mensageiros de Deus ou até mesmo messias (e portanto, merecem um tratamento \"especial\" da Inquisição, dos chezas e dos Captares). A maior vantagem destes tutores é que eles costumam acompanhar (de longe) o que seu pupilos andam fazendo (acompanhar, não auxiliar). E chegam até a descer dos céus para conversar com eles (muito raramente)."
           ]
         }
       ]
@@ -2148,19 +2132,15 @@
       "title": "Sortudo",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "2 pontos: este personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o jogador pode escolher um Teste e declarar que foi um sucesso crítico — o melhor resultado possível —, sem precisar jogar os dados. Ele deve anunciar essa decisão ANTES de rolar os dados."
-      ],
+      "paragraphs": [],
       "sections": [
         {
-          "id": "custo",
-          "title": "Custo",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": [
-            "2 pontos: este personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o jogador pode escolher um Teste e declarar que foi um sucesso crítico — o melhor resultado possível —, sem precisar jogar os dados. Ele deve anunciar essa decisão ANTES de rolar os dados."
-          ]
+          "paragraphs": []
         }
       ]
     },
@@ -2169,19 +2149,15 @@
       "title": "Talento",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "sectionId": "custo",
+      "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "1 ponto: para seu personagem, todos os Testes ligados a uma determinada arte (perícia) são feitos como se fossem Testes Fáceis. Testes Difíceis são feitos como se fossem Normais."
-      ],
+      "paragraphs": [],
       "sections": [
         {
-          "id": "custo",
-          "title": "Custo",
+          "id": "descricao",
+          "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": [
-            "1 ponto: para seu personagem, todos os Testes ligados a uma determinada arte (perícia) são feitos como se fossem Testes Fáceis. Testes Difíceis são feitos como se fossem Normais."
-          ]
+          "paragraphs": []
         }
       ]
     },
@@ -2193,9 +2169,10 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 pontos: seu tutor é uma criatura sobrenatural. Pode ser um anjo da Cidade de Prata, de Aasgard ou de Olympus, ou ainda um espírito de um mago morto. Seu tutor pode ainda ser um oráculo ou um espírito da floresta (um elementar de água ou terra) ou mesmo um vampiro ou uma fúria.",
-        "3 pontos: seu tutor pode ser um anjo mais poderoso ou até mesmo um arcanjo. Os motivos de um anjo ter descido dos céus e ensinado as artes místicas a seu personagem são tão obscuros quanto sua própria natureza. Geralmente, personagens com mentores de Edhen ou do Solarium tendem a se autoproclamarem mensageiros de Deus ou até mesmo messias (e portanto, merecem um tratamento \"especial\" da Inquisição, dos chezas e dos Captares). A maior vantagem destes tutores é que eles costumam acompanhar (de longe) o que seu pupilos andam fazendo (acompanhar, não auxiliar). E chegam até a descer dos céus para conversar com eles (muito raramente).",
-        "Tutor é o anjo, deus ou entidade que ensinou a Magia ao seu personagem. Se você desejar que ele ainda esteja com você, ensinando-o ou protegendo, este é o lugar certo para gastar seus pontos de Aprimoramento. O tutor, ou mentor pode possuir até uma pequena biblioteca ou laboratório (que TALVEZ deixe você usar) e pode auxiliá-lo com algumas dúvidas. O Mestre possui liberdade total para definir a verdadeira história de seu tutor. Seus problemas, seus desejos e anseios, e seus objetivos (afinal, ele não iria ensinar Magia a você sem um bom motivo...)"
+        "Poderes Angelicais",
+        "A seguir fornecemos as características e poderes mais comuns pertencentes à classe angelicalda Cidade de Prata.",
+        "Note que esta lista é apenas uma sugestão, e que cada anjo desenvolve com o passar do tempo poderes únicos e diferenciados de todos os outros.",
+        "Os poderes estão divididos em níveis. Para obter um poder no nível 2, é necessário que o anjo possua pelo menos um poder deste tipo no nível l, e assim por diante, embora o poder de nível 2 custe apenas UM PONTO de poderes angelicais. Existem alguns poderes que se ramificam em vários efeitos por nível (por exemplo, Controle Mental), e CADA um destes efeitos custa 1 ponto. Os Jogadores somente podem escolher poderes que sejam característicos de seu Personagem, e que possam ser explicados no Background."
       ],
       "sections": [
         {
@@ -2203,8 +2180,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos: seu tutor é uma criatura sobrenatural. Pode ser um anjo da Cidade de Prata, de Aasgard ou de Olympus, ou ainda um espírito de um mago morto. Seu tutor pode ainda ser um oráculo ou um espírito da floresta (um elementar de água ou terra) ou mesmo um vampiro ou uma fúria.",
-            "3 pontos: seu tutor pode ser um anjo mais poderoso ou até mesmo um arcanjo. Os motivos de um anjo ter descido dos céus e ensinado as artes místicas a seu personagem são tão obscuros quanto sua própria natureza. Geralmente, personagens com mentores de Edhen ou do Solarium tendem a se autoproclamarem mensageiros de Deus ou até mesmo messias (e portanto, merecem um tratamento \"especial\" da Inquisição, dos chezas e dos Captares). A maior vantagem destes tutores é que eles costumam acompanhar (de longe) o que seu pupilos andam fazendo (acompanhar, não auxiliar). E chegam até a descer dos céus para conversar com eles (muito raramente)."
+            "1 ponto"
           ]
         },
         {
@@ -2212,7 +2188,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Tutor é o anjo, deus ou entidade que ensinou a Magia ao seu personagem. Se você desejar que ele ainda esteja com você, ensinando-o ou protegendo, este é o lugar certo para gastar seus pontos de Aprimoramento. O tutor, ou mentor pode possuir até uma pequena biblioteca ou laboratório (que TALVEZ deixe você usar) e pode auxiliá-lo com algumas dúvidas. O Mestre possui liberdade total para definir a verdadeira história de seu tutor. Seus problemas, seus desejos e anseios, e seus objetivos (afinal, ele não iria ensinar Magia a você sem um bom motivo...)"
+            "Poderes Angelicais A seguir fornecemos as características e poderes mais comuns pertencentes à classe angelicalda Cidade de Prata. Note que esta lista é apenas uma sugestão, e que cada anjo desenvolve com o passar do tempo poderes únicos e diferenciados de todos os outros. Os poderes estão divididos em níveis. Para obter um poder no nível 2, é necessário que o anjo possua pelo menos um poder deste tipo no nível l, e assim por diante, embora o poder de nível 2 custe apenas UM PONTO de poderes angelicais. Existem alguns poderes que se ramificam em vários efeitos por nível (por exemplo, Controle Mental), e CADA um destes efeitos custa Os Jogadores somente podem escolher poderes que sejam característicos de seu Personagem, e que possam ser explicados no Background."
           ]
         }
       ]
@@ -2225,48 +2201,29 @@
       "sectionId": "descricao",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: Seguidor. O Personagem possui 1 ponto de Fé.",
-        "2 Pontos: Fiel. O Personagem possui 2 pontos de Fé.",
-        "3 Pontos: Entusiasta. Possui 3 pontos de Fé.",
-        "4 Pontos: Fanático. Possui 5 pontos de Fé.",
-        "5 Pontos: Radical. Possui 7 pontos de Fé.",
-        "Fé [do latim Fide] S.f. 1. Crença Religiosa. 2. Conjunto de Dogmas e Doutrinas que constituem um culto. 3. A primeira virtude teologal: adesão e anuência pessoal a Deus, seus desígnios e manifestações.",
-        "Pontos de Fé expressam o poder máximo dos Inquisidores: a Fé Divina. Em termos de jogo, Fé representa os pequenos milagres que um Aventureiro dedicado pode alcançar, através da devoção a uma entidade. Neste jogo, obviamente trata-se do Deus Católico, mas Pontos de Fé podem ser atribuídos a qualquer divindade: Allah, Shiva, Ganesha, Odin, Ra, Osíris, Tupã e qualquer outra entidade que possa conceder estes pequenos milagres a seus adoradores.",
-        "PONTOS DE FÉ é considerado um Aprimoramento, e pode ser comprado por qualquer Personagem, com a autorização do Mestre. Misturar Pontos de Fé com Pontos de Magia ou PSI ou qualquer outro tipo de poderes fica exclusivamente a cargo do Mestre, dependendo do tipo de Campanha que deseja mestrar. Este Aprimoramento é vetado para a classe Inquisidores.",
-        "Os Pontos de Fé são recuperados com orações. Às vezes o Personagem também necessitará de repouso absoluto e silêncio enquanto ora. Para termos de comparação, assuma que um Personagem recupera um Ponto de Fé a cada meia hora rezando. Isso deve ser feito em um ambiente calmo e tranquilo e de preferência logo após o despertar.",
         "Pontos de Fé também estão ligados diretamente à devoção do Personagem e ao cumprimento de certas regras, definidas pelo Deus ou Entidade para a qual o Personagem é devoto.",
         "Um guerreiro muçulmano que não cumprir o Alcorão nem praticar as rezas voltadas a Meca, ou que nunca foi até Meca perderá automaticamente seus Pontos de Fé.",
         "Da mesma forma, um Cavaleiro Templário Paladino que não cumpre o código de honra dos Cavaleiros, ou um necromante dedicado ao demônio Azathoth perderá seus pontos de Fé se não providenciar os sacrifícios humanos e outros Rituais que seu deus exigir.",
         "O Mestre deve levar muito a sério a doutrina escolhida, pois quanto mais Pontos de Fé o Personagem possui, mais dedicado àquela religião ele deve ser.",
-        "A seguir fornecemos uma descrição do que se pode fazer com Pontos de Fé. Anjos, Inquisidores e Templários podem ter Fé, mas basicamente qualquer Personagem que se disponha a seguir um rígido código de regras pode comprar este Aprimoramento."
+        "A seguir fornecemos uma descrição do que se pode fazer com Pontos de Fé. Anjos, Inquisidores e Templários podem ter Fé, mas basicamente qualquer Personagem que se disponha a seguir um rígido código de regras pode comprar este Aprimoramento.",
+        "Afastar Mortos-Vivos Por meio de Pontos de Fé, o Inquisidor pode usar um amuleto (cruz ou outro símbolo religioso) para afastar Vampiros, Demônios, Espectros ou outras criaturas malignas.",
+        "Para tanto, anuncia quantos Pontos de Fé está utilizando e testa WILL + Xd6 (onde X é igual ao número de Pontos de Fé empregados) vs. WILL da criatura. Caso a criatura perca a disputa, se afasta do fiel o mais rápido que conseguir.",
+        "Sebastião é um Inquisidor e está cercado por esqueletos conjurados por um Necromântico em Castela. Sebastião carrega sua cruz de prata do bolso e ao mostrar a cruz para os mortos, invoca o nome de Nosso Senhor Jesus Cristo.",
+        "Sebastião possui WILL 13 e decide gastar 2 Pontos de Fé. Ele joga 2 d6 e tira um 8. Seu Teste ser á feito com WILL 21 versus a WILL dos esqueletos (que o Mestre decidiu ser 10).",
+        "Como resultado, todos os esqueletos afastam-se de Sebastião, repelidos pela força divina.",
+        "Aumente DE ATRIBUTOS Físices O Inquisidor pode aumentar um Atributo Físico em 1d6 durante algumas rodadas (3 d6 rodadas ou uma cena, de acordo com o Mestre) gastando um Ponto de Fé, mas apenas UM Atributo de cada vez.",
+        "Jeremias está cercado por Guerreiros de Sombras e prepara sua espada curta para a batalha. Antes que as criaturas possam atacar, ele coloca para fora da cota de malha seu crucifixo abençoado pelo papa Urbano V e reza a Deus que lhe dê forças para a batalha.",
+        "Jeremias usa l Ponto de Fé para aumentar sua DEX em 1d6, o que reflete em sua Perícia Espada Curta, melhorando sua chance de acertar os golpes.",
+        "Aumento Milagroso de Atributos Semelhante ao Aumento de Atributos Físicos, mas com a diferença que o Personagem pode gastar mais de um Ponto de Fé em uma única rodada, porém os efeitos duram apenas UM Teste.",
+        "Mustafá-Allin-Bin é um membro da Ordem dos Assassinos e está preso debaixo de algumas pedras que deslizaram sobre ele prendendo-no. Mustafá tenta erguer a pedra, sem sucesso. Ela é muito pesada. Invocando a força de Allah, Mustafá gasta 4 Pontos de Fé, que lhe fornecem 4d6 pontos extras de FR para tentar deslocar a pedra."
       ],
       "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "1 Ponto: Seguidor. O Personagem possui 1 ponto de Fé.",
-            "2 Pontos: Fiel. O Personagem possui 2 pontos de Fé.",
-            "3 Pontos: Entusiasta. Possui 3 pontos de Fé.",
-            "4 Pontos: Fanático. Possui 5 pontos de Fé.",
-            "5 Pontos: Radical. Possui 7 pontos de Fé."
-          ]
-        },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Fé [do latim Fide] S.f. 1. Crença Religiosa. 2. Conjunto de Dogmas e Doutrinas que constituem um culto. 3. A primeira virtude teologal: adesão e anuência pessoal a Deus, seus desígnios e manifestações.",
-            "Pontos de Fé expressam o poder máximo dos Inquisidores: a Fé Divina. Em termos de jogo, Fé representa os pequenos milagres que um Aventureiro dedicado pode alcançar, através da devoção a uma entidade. Neste jogo, obviamente trata-se do Deus Católico, mas Pontos de Fé podem ser atribuídos a qualquer divindade: Allah, Shiva, Ganesha, Odin, Ra, Osíris, Tupã e qualquer outra entidade que possa conceder estes pequenos milagres a seus adoradores.",
-            "PONTOS DE FÉ é considerado um Aprimoramento, e pode ser comprado por qualquer Personagem, com a autorização do Mestre. Misturar Pontos de Fé com Pontos de Magia ou PSI ou qualquer outro tipo de poderes fica exclusivamente a cargo do Mestre, dependendo do tipo de Campanha que deseja mestrar. Este Aprimoramento é vetado para a classe Inquisidores.",
-            "Os Pontos de Fé são recuperados com orações. Às vezes o Personagem também necessitará de repouso absoluto e silêncio enquanto ora. Para termos de comparação, assuma que um Personagem recupera um Ponto de Fé a cada meia hora rezando. Isso deve ser feito em um ambiente calmo e tranquilo e de preferência logo após o despertar.",
-            "Pontos de Fé também estão ligados diretamente à devoção do Personagem e ao cumprimento de certas regras, definidas pelo Deus ou Entidade para a qual o Personagem é devoto.",
-            "Um guerreiro muçulmano que não cumprir o Alcorão nem praticar as rezas voltadas a Meca, ou que nunca foi até Meca perderá automaticamente seus Pontos de Fé.",
-            "Da mesma forma, um Cavaleiro Templário Paladino que não cumpre o código de honra dos Cavaleiros, ou um necromante dedicado ao demônio Azathoth perderá seus pontos de Fé se não providenciar os sacrifícios humanos e outros Rituais que seu deus exigir.",
-            "O Mestre deve levar muito a sério a doutrina escolhida, pois quanto mais Pontos de Fé o Personagem possui, mais dedicado àquela religião ele deve ser.",
-            "A seguir fornecemos uma descrição do que se pode fazer com Pontos de Fé. Anjos, Inquisidores e Templários podem ter Fé, mas basicamente qualquer Personagem que se disponha a seguir um rígido código de regras pode comprar este Aprimoramento."
+            "Pontos de Fé também estão ligados diretamente à devoção do Personagem e ao cumprimento de certas regras, definidas pelo Deus ou Entidade para a qual o Personagem é devoto. Um guerreiro muçulmano que não cumprir o Alcorão nem praticar as rezas voltadas a Meca, ou que nunca foi até Meca perderá automaticamente seus Pontos de Fé. Da mesma forma, um Cavaleiro Templário Paladino que não cumpre o código de honra dos Cavaleiros, ou um necromante dedicado ao demônio Azathoth perderá seus pontos de Fé se não providenciar os sacrifícios humanos e outros Rituais que seu deus exigir. O Mestre deve levar muito a sério a doutrina escolhida, pois quanto mais Pontos de Fé o Personagem possui, mais dedicado àquela religião ele deve ser. A seguir fornecemos uma descrição do que se pode fazer com Pontos de Fé. Anjos, Inquisidores e Templários podem ter Fé, mas basicamente qualquer Personagem que se disponha a seguir um rígido código de regras pode comprar este Aprimoramento. Afastar Mortos-Vivos Por meio de Pontos de Fé, o Inquisidor pode usar um amuleto (cruz ou outro símbolo religioso) para afastar Vampiros, Demônios, Espectros ou outras criaturas malignas. Para tanto, anuncia quantos Pontos de Fé está utilizando e testa WILL + Xd6 (onde X é igual ao número de Pontos de Fé empregados) vs. WILL da criatura. Caso a criatura perca a disputa, se afasta do fiel o mais rápido que conseguir. Sebastião é um Inquisidor e está cercado por esqueletos conjurados por um Necromântico em Castela. Sebastião carrega sua cruz de prata do bolso e ao mostrar a cruz para os mortos, invoca o nome de Nosso Senhor Jesus Cristo. Sebastião possui WILL 13 e decide gastar 2 Pontos de Fé. Ele joga 2 d6 e tira um 8. Seu Teste ser á feito com WILL 21 versus a WILL dos esqueletos (que o Mestre decidiu ser 10). Como resultado, todos os esqueletos afastam-se de Sebastião, repelidos pela força divina. Aumente DE ATRIBUTOS Físices O Inquisidor pode aumentar um Atributo Físico em 1d6 durante algumas rodadas (3 d6 rodadas ou uma cena, de acordo com o Mestre) gastando um Ponto de Fé, mas apenas UM Atributo de cada vez. Jeremias está cercado por Guerreiros de Sombras e prepara sua espada curta para a batalha. Antes que as criaturas possam atacar, ele coloca para fora da cota de malha seu crucifixo abençoado pelo papa Urbano V e reza a Deus que lhe dê forças para a batalha. Jeremias usa l Ponto de Fé para aumentar sua DEX em 1d6, o que reflete em sua Perícia Espada Curta, melhorando sua chance de acertar os golpes. Aumento Milagroso de Atributos Semelhante ao Aumento de Atributos Físicos, mas com a diferença que o Personagem pode gastar mais de um Ponto de Fé em uma única rodada, porém os efeitos duram apenas UM Teste. Mustafá-Allin-Bin é um membro da Ordem dos Assassinos e está preso debaixo de algumas pedras que deslizaram sobre ele prendendo-no. Mustafá tenta erguer a pedra, sem sucesso. Ela é muito pesada. Invocando a força de Allah, Mustafá gasta 4 Pontos de Fé, que lhe fornecem 4d6 pontos extras de FR para tentar deslocar a pedra."
           ]
         }
       ]
@@ -6234,6 +6191,112 @@
           ]
         }
       ]
+    },
+    {
+      "id": "usos-de-pontos-de-fe",
+      "title": "Usos de Pontos de Fé",
+      "area": "regras_base",
+      "kind": "ruleset",
+      "sectionId": "regra-base",
+      "sectionTitle": "Regra Base",
+      "paragraphs": [
+        "Ativação de Itens Mágicos Alguns itens mágicos (em especial aqueles criados pelos seres da Cidade de Prata) requerem Pontos de Fé para serem ativados ou utilizados. Somente pessoas com Fé podem utilizar tais artefatos.",
+        "BÊNÇÃO",
+        "O Inquisidor pode abençoar um grupo de Aventureiros (até 6 pessoas por Ponto de Fé), concedendo a eles um bónus de +5% em combates (na Defesa) durante uma cena.",
+        "CONTROLAR HIORTOS-Vivos",
+        "Semelhante a Afastar Mortos Vivos, mas utilizados por Necromânticos e clérigos de deuses malignos. O Teste funciona da mesma maneira, mas o clérigo passa a comandar a criatura (ou criaturas) durante uma cena.",
+        "CONVERSAR com PÁSSAROS E ANIMAIS",
+        "Muitos santos na mitologia católica eram capazes de entender os animais. Com o gasto de um Ponto de Fé, o Personagem é capaz de conversar com um animaldurante um curto período de tempo.",
+        "CURA",
+        "O Inquisidor pode utilizar l Ponto de Fé para curar 1d6 pontos de dano em si mesmo (até um máximo de um Ponto de Fé por dia), ou 2 Pontos de Fé para curar 1d6 PVs em outra pessoa, através do toque de suas mãos. Esse toque também pode ser feito. em plantas ou animais.",
+        "CRIAÇÃO DE ÁGUA BENTA",
+        "Pontos de Fé podem ser usados para criar água benta a partir da água pura do orvalho, à razão de um pequeno frasco para cada ponto gasto pelo Inquisidor.",
+        "ENCANTAR",
+        "O fiel pode encantar uma arma durante uma cena (ou 3d6 rodadas), de modo que a arma passe a ser considerada uma arma +1 durante este tempo (no que diz propósito a enfrentar criaturas que só podem ser feridas por armas mágicas). Múltiplos encantamentos podem ser colocados sobre uma mesma arma, mas cada encantamento demora urna rodada para ser feito.",
+        "OUTRS PDfiRfiS Pontos de Fé são muito versáteis e podem imitar qualquer poder ou milagre que algum santo já realizou (inclui até mesmo andar sobre as águas, multiplicação dos pães, cura de cegos e leprosos, andar sobre brasas, espetar correntes no corpo sem sentir dor, ficar sem comer por longos períodos, controlar o clima, ser resgatado por uma baleia em alto mar, etc.) MAS o Personagem deve MERECER esses poderes. Utilizá-los sem motivo justificado ou por motivos torpes, pessoais ou egoístas podem irritar profundamente a entidade que confere esses poderes ao Personagem e a bênção pode vir a se tomar uma maldição.",
+        "Regras e Testes",
+        "Por mais cautelosos que os Personagens sejam, por maiores os cuidados que eles tenham, em algum momento da Aventura eles serão obrigados a enfrentar algo ou alguém. Para isso, é necessário definir com bastante cuidado as regras para Combates e Testes.",
+        "As regras são simples, porém muito eficientes, pois neste jogo é privilegiada a resolução de enigmas e problemas e não quem tem mais força e mata mais inimigos (pode-se perceber os Jogadores mais experientes por seus pontos em Percepção e Agilidade e os novatos em Força e Constituição).",
+        "TESTES",
+        "Quando você decide que seu Personagem vai arremessar uma pedra na cabeça de um inimigo, é necessário um mecanismo para o Mestre saber se o Personagem acertou ou não e continuar a Aventura baseado nisso. Esse mecanismo chama-se Teste.",
+        "Os Testes são sempre feitos jogando-se 1d100 (ou fazendo uma marcação no cronometro), onde o resultado 00 significa 100.",
+        "O Jogador precisa tirar um número MENOR ou IGUAL ao valor que está sendo testado para ser bem sucedido no Teste.",
+        "Em QUALQUER situação, independentemente do valor que está sendo testado, um resultado nos dados ou cronometro superior a 95 significa falha, SEMPRE.",
+        "Teste de Atributo"
+      ],
+      "sections": [
+        {
+          "id": "afastar-mortos-vivos",
+          "title": "Afastar Mortos-Vivos",
+          "area": "regras_base",
+          "paragraphs": [
+            "Ativação de Itens Mágicos Alguns itens mágicos (em especial aqueles criados pelos seres da Cidade de Prata) requerem Pontos de Fé para serem ativados ou utilizados. Somente pessoas com Fé podem utilizar tais artefatos.",
+            "BÊNÇÃO",
+            "O Inquisidor pode abençoar um grupo de Aventureiros (até 6 pessoas por Ponto de Fé), concedendo a eles um bónus de +5% em combates (na Defesa) durante uma cena.",
+            "CONTROLAR HIORTOS-Vivos",
+            "Semelhante a Afastar Mortos Vivos, mas utilizados por Necromânticos e clérigos de deuses malignos. O Teste funciona da mesma maneira, mas o clérigo passa a comandar a criatura (ou criaturas) durante uma cena.",
+            "CONVERSAR com PÁSSAROS E ANIMAIS",
+            "Muitos santos na mitologia católica eram capazes de entender os animais. Com o gasto de um Ponto de Fé, o Personagem é capaz de conversar com um animaldurante um curto período de tempo.",
+            "CURA",
+            "O Inquisidor pode utilizar l Ponto de Fé para curar 1d6 pontos de dano em si mesmo (até um máximo de um Ponto de Fé por dia), ou 2 Pontos de Fé para curar 1d6 PVs em outra pessoa, através do toque de suas mãos. Esse toque também pode ser feito. em plantas ou animais.",
+            "CRIAÇÃO DE ÁGUA BENTA"
+          ]
+        },
+        {
+          "id": "ativacao-de-itens-magicos",
+          "title": "Ativação de Itens Mágicos",
+          "area": "regras_base",
+          "paragraphs": []
+        },
+        {
+          "id": "bencao",
+          "title": "Benção",
+          "area": "regras_base",
+          "paragraphs": [
+            "O fiel pode encantar uma arma durante uma cena (ou 3d6 rodadas), de modo que a arma passe a ser considerada uma arma +1 durante este tempo (no que diz propósito a enfrentar criaturas que só podem ser feridas por armas mágicas). Múltiplos encantamentos podem ser colocados sobre uma mesma arma, mas cada encantamento demora urna rodada para ser feito."
+          ]
+        },
+        {
+          "id": "controlar-mortos-vivos",
+          "title": "Controlar Mortos-Vivos",
+          "area": "regras_base",
+          "paragraphs": []
+        },
+        {
+          "id": "conversar-com-passaros-e-animais",
+          "title": "Conversar com Pássaros e Animais",
+          "area": "regras_base",
+          "paragraphs": [
+            "Regras e Testes"
+          ]
+        },
+        {
+          "id": "cura",
+          "title": "Cura",
+          "area": "regras_base",
+          "paragraphs": [
+            "As regras são simples, porém muito eficientes, pois neste jogo é privilegiada a resolução de enigmas e problemas e não quem tem mais força e mata mais inimigos (pode-se perceber os Jogadores mais experientes por seus pontos em Percepção e Agilidade e os novatos em Força e Constituição)."
+          ]
+        },
+        {
+          "id": "criacao-de-agua-benta",
+          "title": "Criação de Água Benta",
+          "area": "regras_base",
+          "paragraphs": [
+            "Quando você decide que seu Personagem vai arremessar uma pedra na cabeça de um inimigo, é necessário um mecanismo para o Mestre saber se o Personagem acertou ou não e continuar a Aventura baseado nisso. Esse mecanismo chama-se Teste."
+          ]
+        },
+        {
+          "id": "encantar",
+          "title": "Encantar",
+          "area": "regras_base",
+          "paragraphs": [
+            "O Jogador precisa tirar um número MENOR ou IGUAL ao valor que está sendo testado para ser bem sucedido no Teste.",
+            "Em QUALQUER situação, independentemente do valor que está sendo testado, um resultado nos dados ou cronometro superior a 95 significa falha, SEMPRE.",
+            "Teste de Atributo"
+          ]
+        }
+      ]
     }
   ],
   "areaCounts": {
@@ -6242,7 +6305,7 @@
     "classes": 5,
     "itens_equipamentos": 79,
     "poderes": 23,
-    "regras_base": 1
+    "regras_base": 2
   },
   "reviewNotes": [
     "Primeira revisão controlada após remoção do lote de Anjos; validar este livro antes de avançar para outro.",
