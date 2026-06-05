@@ -1,25 +1,25 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T09:53:20",
+  "generatedAt": "2026-06-05T09:57:16",
   "source": "anjos-angelicos-sicarios",
   "sourceFile": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "sourcePath": "Livros\\word\\Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "title": "Anjos - A Cidade de Prata - Angélicos Sicários",
-  "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos e espiões da Cidade de Prata. Contém história completa da Ordem, habilidades (poderes), aprimoramentos de combate, equipamentos especiais e informações sobre prisões secretas.",
+  "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos da Cidade de Prata. Inclui 9 seções de história/lore, 7 técnicas de combate (aprimoramentos), 11 armas/artefatos individuais, e poderes especiais.",
   "areas": [
-    "cenarios_lore",
-    "poderes",
     "aprimoramentos",
-    "itens_equipamentos"
+    "cenarios_lore",
+    "itens_equipamentos",
+    "poderes"
   ],
   "groups": [
     {
-      "id": "lore-historia",
+      "id": "cenarios-lore-sicarios",
       "title": "Lore & História",
       "kind": "setting",
       "area": "cenarios_lore",
-      "sectionTitle": "Limbo",
+      "sectionTitle": "Cenário",
       "sections": [
         {
           "id": "origem-e-contexto",
@@ -273,11 +273,11 @@
       ]
     },
     {
-      "id": "argucias-poderes",
+      "id": "poderes-sicarios",
       "title": "Argúcias (Poderes)",
       "kind": "power",
       "area": "poderes",
-      "sectionTitle": "Poderes",
+      "sectionTitle": "Poder",
       "sections": [
         {
           "id": "poderes-dos-sicarios",
@@ -303,55 +303,212 @@
       ]
     },
     {
-      "id": "manobras-de-combate",
+      "id": "aprimoramentos-sicarios",
       "title": "Manobras de Combate",
       "kind": "enhancement",
       "area": "aprimoramentos",
-      "sectionTitle": "Técnicas",
+      "sectionTitle": "Aprimoramento",
       "sections": [
         {
-          "id": "tecnicas-de-combate",
-          "title": "Técnicas de Combate",
+          "id": "desarmar-com-asa",
+          "title": "Desarmar com Asa",
           "area": "aprimoramentos",
+          "kind": "enhancement",
           "paragraphs": [
-            "“As lutas duram o tempo que for necessário” - 8ª Regra do Clube da Luta",
-            "Desarmar com Asa (25): O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair.",
-            "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente. Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa. Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em",
-            "que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%. Coração de Fafnir (30): Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%. Calcanhar da Fera (30): O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado.",
+            "Desarmar com Asa (25): O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair."
+          ],
+          "sections": []
+        },
+        {
+          "id": "ataque-rolante",
+          "title": "Ataque Rolante",
+          "area": "aprimoramentos",
+          "kind": "enhancement",
+          "paragraphs": [
+            "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente. Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa. Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em"
+          ],
+          "sections": []
+        },
+        {
+          "id": "finta",
+          "title": "Finta",
+          "area": "aprimoramentos",
+          "kind": "enhancement",
+          "paragraphs": [
+            "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente. Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa. Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em"
+          ],
+          "sections": []
+        },
+        {
+          "id": "mata-dragao",
+          "title": "Mata-Dragão",
+          "area": "aprimoramentos",
+          "kind": "enhancement",
+          "paragraphs": [
+            "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente. Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa. Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em"
+          ],
+          "sections": []
+        },
+        {
+          "id": "coracao-de-fafnir",
+          "title": "Coração de Fafnir",
+          "area": "aprimoramentos",
+          "kind": "enhancement",
+          "paragraphs": [
+            "que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%. Coração de Fafnir (30): Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%. Calcanhar da Fera (30): O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
+          ],
+          "sections": []
+        },
+        {
+          "id": "calcanhar-da-fera",
+          "title": "Calcanhar da Fera",
+          "area": "aprimoramentos",
+          "kind": "enhancement",
+          "paragraphs": [
+            "que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%. Coração de Fafnir (30): Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%. Calcanhar da Fera (30): O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
+          ],
+          "sections": []
+        },
+        {
+          "id": "asas-cortantes",
+          "title": "Asas Cortantes",
+          "area": "aprimoramentos",
+          "kind": "enhancement",
+          "paragraphs": [
             "Asas Cortantes (30): As pontas das asas de um sicário, são armas de corte, devido a seu treinamento. Um Sicário recebe um bônus de +3 de dano em todos os ataques realizados com suas asas."
-          ]
+          ],
+          "sections": []
         }
       ]
     },
     {
-      "id": "equipamentos-armas",
+      "id": "equipamentos-sicarios",
       "title": "Equipamentos & Armas",
       "kind": "equipment",
       "area": "itens_equipamentos",
-      "sectionTitle": "Armas",
+      "sectionTitle": "Equipamento",
       "sections": [
         {
-          "id": "armas-especiais",
-          "title": "Armas Especiais",
+          "id": "yaldabaoth",
+          "title": "Yaldabaoth",
           "area": "itens_equipamentos",
+          "kind": "equipment",
           "paragraphs": [
             "Yaldabaoth: Consiste em afixar na asa, 12 farpas de aço paradisiano que são liberadas com um teste simples de DEX. As farpas possuem o tamanho e o formato de pequenas",
             "adagas, e causam o dano de 1D4. As farpas podem ser",
             "lançadas todas de uma vez (ROF 12) ou uma de",
-            "cada vez, com um teste de DEX difícil. Existem outras variantes de Yaldabaoth como a em formato de agulha, cravo, lança ou palito. Nebro: Lâminas que são colocadas na ponta das asas, mas estas por sua vez não podem ser lançadas. A Nebro consiste em uma espessa lamina curta, afixada a parte maior da asa de um Anjo. A arma causa 1D10 + FR e deve ser utilizada com uma Perícia própria. Saklas: Dardos de 2/3 polegadas de aço, muito finos e leves, lançados através do soprar das duas mãos juntas de um Anjo ou escondidos dentro de sua boca, e disparados a curtas distâncias. O Dardo em si causa apenas 1 pt de dano, mas pode ser embebido em veneno. Seu alcance equivale a CONx2m",
+            "cada vez, com um teste de DEX difícil. Existem outras variantes de Yaldabaoth como a em formato de agulha, cravo, lança ou palito. Nebro: Lâminas que são colocadas na ponta das asas, mas estas por sua vez não podem ser lançadas. A Nebro consiste em uma espessa lamina curta, afixada a parte maior da asa de um Anjo. A arma causa 1D10 + FR e deve ser utilizada com uma Perícia própria. Saklas: Dardos de 2/3 polegadas de aço, muito finos e leves, lançados através do soprar das duas mãos juntas de um Anjo ou escondidos dentro de sua boca, e disparados a curtas distâncias. O Dardo em si causa apenas 1 pt de dano, mas pode ser embebido em veneno. Seu alcance equivale a CONx2m"
+          ],
+          "sections": []
+        },
+        {
+          "id": "nebro",
+          "title": "Nebro",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
+            "lançadas todas de uma vez (ROF 12) ou uma de",
+            "cada vez, com um teste de DEX difícil. Existem outras variantes de Yaldabaoth como a em formato de agulha, cravo, lança ou palito. Nebro: Lâminas que são colocadas na ponta das asas, mas estas por sua vez não podem ser lançadas. A Nebro consiste em uma espessa lamina curta, afixada a parte maior da asa de um Anjo. A arma causa 1D10 + FR e deve ser utilizada com uma Perícia própria. Saklas: Dardos de 2/3 polegadas de aço, muito finos e leves, lançados através do soprar das duas mãos juntas de um Anjo ou escondidos dentro de sua boca, e disparados a curtas distâncias. O Dardo em si causa apenas 1 pt de dano, mas pode ser embebido em veneno. Seu alcance equivale a CONx2m"
+          ],
+          "sections": []
+        },
+        {
+          "id": "saklas",
+          "title": "Saklas",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
+            "cada vez, com um teste de DEX difícil. Existem outras variantes de Yaldabaoth como a em formato de agulha, cravo, lança ou palito. Nebro: Lâminas que são colocadas na ponta das asas, mas estas por sua vez não podem ser lançadas. A Nebro consiste em uma espessa lamina curta, afixada a parte maior da asa de um Anjo. A arma causa 1D10 + FR e deve ser utilizada com uma Perícia própria. Saklas: Dardos de 2/3 polegadas de aço, muito finos e leves, lançados através do soprar das duas mãos juntas de um Anjo ou escondidos dentro de sua boca, e disparados a curtas distâncias. O Dardo em si causa apenas 1 pt de dano, mas pode ser embebido em veneno. Seu alcance equivale a CONx2m"
+          ],
+          "sections": []
+        },
+        {
+          "id": "harmathoth",
+          "title": "Harmathoth",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
             "Harmathoth: armas de fogo medievais, semelhante a mini canhões que são levadas sob a manopla, feitas para serem usadas a fim de causar grande dano à distância no inimigo.",
-            "Muitas vezes elas eram utilizadas em ataques coordenados ou em um único alvo, tendo seu disparo coordenado por um outro Anjo observador. A arma causa 2D6+3 de dano, podendo disparar um único tiro por turno, a uma distância de 800m. Possui inúmeros tipos de projeteis, incluindo alguns feitos de Ferro Frio e Ferro de Dite.",
+            "Muitas vezes elas eram utilizadas em ataques coordenados ou em um único alvo, tendo seu disparo coordenado por um outro Anjo observador. A arma causa 2D6+3 de dano, podendo disparar um único tiro por turno, a uma distância de 800m. Possui inúmeros tipos de projeteis, incluindo alguns feitos de Ferro Frio e Ferro de Dite."
+          ],
+          "sections": []
+        },
+        {
+          "id": "galila",
+          "title": "Galila",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
             "Galila: Uma espécie de esfera de luz concentrada, capaz de cegar um oponente quando atirada em",
-            "sua direção; uma vez destruída, um oponente a frente do lançador, ficará cego durante 1D3+3 turnos.",
+            "sua direção; uma vez destruída, um oponente a frente do lançador, ficará cego durante 1D3+3 turnos."
+          ],
+          "sections": []
+        },
+        {
+          "id": "exarp",
+          "title": "Exarp",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
+            "Exarp: Exarp é uma fina linha feita de luz sólida, utilizada pelos Sicários para estrangular suas vítimas. O Anjo prende o Exarp na ponta de seus dedos, e com um simples cruzar de mãos na garganta de sua vítima, ativa o item e seu efeito. O Exarp não pode ser visto, já que se manifesta apenas quando seu portador assim desejar. O Dano do Exarp é causado por estrangulamento a medida de 1 Pt de dano por turno, e exigindo da vítima testes de CON para cada Pt extra causado; em caso de falha, a vítima sofre um redutor de -2 em seus testes de FR para tentar se livrar do ataque. Hcoma: Uma criatura construída com o aço Paradisiano chamado Orichalco. A criatura assemelha-se a um aracnídeo normalmente - mas pode assumir a forma que seu construtor desejar - medindo"
+          ],
+          "sections": []
+        },
+        {
+          "id": "hcoma",
+          "title": "Hcoma",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
             "Exarp: Exarp é uma fina linha feita de luz sólida, utilizada pelos Sicários para estrangular suas vítimas. O Anjo prende o Exarp na ponta de seus dedos, e com um simples cruzar de mãos na garganta de sua vítima, ativa o item e seu efeito. O Exarp não pode ser visto, já que se manifesta apenas quando seu portador assim desejar. O Dano do Exarp é causado por estrangulamento a medida de 1 Pt de dano por turno, e exigindo da vítima testes de CON para cada Pt extra causado; em caso de falha, a vítima sofre um redutor de -2 em seus testes de FR para tentar se livrar do ataque. Hcoma: Uma criatura construída com o aço Paradisiano chamado Orichalco. A criatura assemelha-se a um aracnídeo normalmente - mas pode assumir a forma que seu construtor desejar - medindo",
             "de 2/3cm. O portador desta criatura deve criar com ela um vínculo de sangue para que esta retorne a ele e cumpra sua missão.",
-            "A criatura normalmente é utilizada como veículo portador de veneno, mas também pode ser abastecida com outros efeitos Místicos como pragas ou feitiços. O Hcoma assume 1cm para cada 0,5l de veneno imbuídos em seu corpo.",
+            "A criatura normalmente é utilizada como veículo portador de veneno, mas também pode ser abastecida com outros efeitos Místicos como pragas ou feitiços. O Hcoma assume 1cm para cada 0,5l de veneno imbuídos em seu corpo."
+          ],
+          "sections": []
+        },
+        {
+          "id": "manto-do-sicario",
+          "title": "Manto do Sicário",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
             "Manto do Sicário: Artefato raríssimo e lendário, entregue somente aqueles que aceitam o Credo do Silêncio e passam a viver para ele. Forjado com finos fios de Orichalko o Manto do Sicário é comparado, em inúmeras lendas a mortalha da própria figura da Morte, embora possa assumir várias cores e formatos. O Manto",
-            "fornece ao usuário IP+3, e um bônus de +30% em todas as Perícias que visem agir sorrateiramente como Camuflagem, Furtividade, etc. O Manto também possui vínculo com um mini bolsão em Spiritum, onde o Sicário pode carregar itens sem que seu peso influencie em seus movimentos.",
+            "fornece ao usuário IP+3, e um bônus de +30% em todas as Perícias que visem agir sorrateiramente como Camuflagem, Furtividade, etc. O Manto também possui vínculo com um mini bolsão em Spiritum, onde o Sicário pode carregar itens sem que seu peso influencie em seus movimentos."
+          ],
+          "sections": []
+        },
+        {
+          "id": "angelica-sica",
+          "title": "Angélica Sica",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
             "Angélica Sica: Um pequeno punhal curvo ou adaga, que se podia facilmente ocultar debaixo da roupa, ou mesmo na palma da mão. A Angélica Sica também é um artefato icônico que dá nome aos Sicários, mas que NUNCA",
+            "poderá ser vista se seu portador não desejar. Existe uma Sica única para cada assassino e esta é forjada com seu sangue e vinculada a seu espírito. A Sica desaparece nas mãos de seu dono e após sua morte torna-se cinzas, retorna a sua mão quando arremessada ou perdida. Em termos de jogo, a Sica é um punhal místico, que causa 1D6+FR de dano, e também atinge Espíritos normalmente. Em um primeiro momento, para um observador leigo, a Sica parece fantasmagórica nas mãos de seu portador, quando ele assim permite que ela seja vista. Nanta Biton: Esta arma consiste de \"unhas\" pontiagudas de Orichalko, presas à ponta dos dedos, dando assim um efeito de garras animalescas. As Nanta"
+          ],
+          "sections": []
+        },
+        {
+          "id": "nanta-biton",
+          "title": "Nanta Biton",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
             "poderá ser vista se seu portador não desejar. Existe uma Sica única para cada assassino e esta é forjada com seu sangue e vinculada a seu espírito. A Sica desaparece nas mãos de seu dono e após sua morte torna-se cinzas, retorna a sua mão quando arremessada ou perdida. Em termos de jogo, a Sica é um punhal místico, que causa 1D6+FR de dano, e também atinge Espíritos normalmente. Em um primeiro momento, para um observador leigo, a Sica parece fantasmagórica nas mãos de seu portador, quando ele assim permite que ela seja vista. Nanta Biton: Esta arma consiste de \"unhas\" pontiagudas de Orichalko, presas à ponta dos dedos, dando assim um efeito de garras animalescas. As Nanta",
             "Biton causam 1D3+FR de Dano, e reduzem a dificuldade para acertos em locais críticos em um nível."
-          ]
+          ],
+          "sections": []
+        },
+        {
+          "id": "escudo-de-orichalko",
+          "title": "Escudo de Orichalko",
+          "area": "itens_equipamentos",
+          "kind": "equipment",
+          "paragraphs": [
+            "Escudo de Orichalko: O Orichalko Olympiano é",
+            "maleável a altas temperaturas, e tratado misticamente, assume a densidade do elemento químico terreno Mercúrio, mas, mantendo sua resistência. Esse escudo banham as asas dos Sicários, tomando a forma de suas asas e transformando estas em escudos com IP 6, e tornando-se possível o aparar com as asas."
+          ],
+          "sections": []
         }
       ]
     }
@@ -360,7 +517,7 @@
   "areaCounts": {
     "cenarios_lore": 9,
     "poderes": 1,
-    "aprimoramentos": 1,
-    "itens_equipamentos": 1
+    "aprimoramentos": 7,
+    "itens_equipamentos": 11
   }
 }
