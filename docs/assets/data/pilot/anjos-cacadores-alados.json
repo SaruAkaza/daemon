@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T13:05:03",
+  "generatedAt": "2026-06-05T13:09:30",
   "source": "anjos-cacadores-alados",
   "sourceFile": "Anjos cacadores-alados.docx",
   "sourcePath": "Livros\\word\\Anjos cacadores-alados.docx",
@@ -2475,7 +2475,7 @@
       "id": "goghiel",
       "title": "GOGHIEL",
       "area": "criaturas_npcs",
-      "kind": "npc",
+      "kind": "character",
       "sectionId": "ficha",
       "sectionTitle": "Ficha",
       "paragraphs": [
@@ -2568,7 +2568,7 @@
       "id": "astrid",
       "title": "Astrid",
       "area": "criaturas_npcs",
-      "kind": "npc",
+      "kind": "character",
       "sectionId": "ficha",
       "sectionTitle": "Ficha",
       "paragraphs": [

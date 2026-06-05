@@ -217,7 +217,9 @@ def build_npc(title, body):
         subs.append(sec("pericias-e-combate", "Perícias e Combate", "criaturas_npcs", ficha))
     if historia:
         subs.append(sec("historia", "História", "criaturas_npcs", historia))
-    return entity(title, "criaturas_npcs", "npc", "Ficha", historia or ficha, subs=subs)
+    # kind 'character' (not 'npc') so the app renders our subsections via
+    # renderGroupedDetail instead of the statBlock-only renderNpcDetail.
+    return entity(title, "criaturas_npcs", "character", "Ficha", historia or ficha, subs=subs)
 
 
 # ------------------------------------------------------------ assembly

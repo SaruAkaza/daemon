@@ -719,6 +719,7 @@ function renderGroupedDetail(item) {
 
 function itemTypeLabel(item) {
   if (item.kind === "npc") return "NPC";
+  if (item.kind === "character") return "NPC";
   if (item.kind === "adventure") return "Aventura";
   if (item.kind === "ruleset") return "Regra Base";
   if (item.kind === "setting") return "Cenário";
