@@ -255,7 +255,7 @@ def build_pilot() -> dict:
                       if p.startswith("“A única regra"))
     maneuvers_blob = " ".join(paras[luta_idx + 1:looper_idx])
     maneuver_chunks = split_by_anchors(maneuvers_blob, MANEUVER_NAMES, require_colon=True)
-    maneuver_entities = [build_entity(n, "aprimoramentos", "enhancement", "Aprimoramento", [t])
+    maneuver_entities = [build_entity(n, "manobras_combate", "maneuver", "Manobra", [t])
                          for n, t in maneuver_chunks]
 
     # ---- WEAPONS (itens) ----

@@ -322,6 +322,34 @@ def section(section_id: str, title: str, area: str, paragraphs: list[str]) -> di
     return {"id": section_id, "title": title, "area": area, "paragraphs": paragraphs}
 
 
+def move_situational_negative_cost_to_description(item: dict) -> dict:
+    if item.get("id") != "grimorio":
+        return item
+
+    cost_section = next((part for part in item["sections"] if part["id"] == "custo"), None)
+    description_section = next((part for part in item["sections"] if part["id"] == "descricao"), None)
+    if not cost_section or not description_section:
+        return item
+
+    costs = cost_section["paragraphs"]
+    situational = [
+        cost
+        for cost in costs
+        if cost.strip().startswith("-")
+        and "desvantagem" in strip_accents(cost).lower()
+    ]
+    if not situational:
+        return item
+
+    regular_costs = [cost for cost in costs if cost not in situational]
+    description = description_section["paragraphs"]
+    cost_section["paragraphs"] = regular_costs
+    description_section["paragraphs"] = description + situational
+    item["paragraphs"] = regular_costs + description_section["paragraphs"]
+    item["polarity"] = "positivo"
+    return item
+
+
 def title_case(title: str) -> str:
     if title.upper() == title:
         title = title.title()
@@ -375,23 +403,50 @@ def build_enhancement(title: str, raw_parts: list[str], fallback_polarity: str) 
 
         if not cost_segments:
             return None
-        polarity = "negativo" if any(segment[0].lstrip().startswith("-") for segment in cost_segments) else "positivo"
+
+        situational_negative_segments: list[list[str]] = []
+        regular_cost_segments: list[list[str]] = []
+        for segment_parts in cost_segments:
+            first = strip_accents(segment_parts[0]).lower()
+            segment_text = strip_accents(" ".join(segment_parts)).lower()
+            if (
+                first.lstrip().startswith("-")
+                and len(cost_segments) > 1
+                and ("desvantagem" in segment_text or "caso nao possa arcar" in segment_text)
+            ):
+                situational_negative_segments.append(segment_parts)
+            else:
+                regular_cost_segments.append(segment_parts)
+
+        if not regular_cost_segments:
+            regular_cost_segments = cost_segments
+            situational_negative_segments = []
+
+        polarity = (
+            "negativo"
+            if any(segment[0].lstrip().startswith("-") for segment in regular_cost_segments)
+            else "positivo"
+        )
         costs: list[str] = []
         description = list(intro)
 
-        if len(cost_segments) == 1:
-            first = cost_segments[0][0]
+        if len(regular_cost_segments) == 1:
+            first = regular_cost_segments[0][0]
             match = COST_RE.match(first)
             costs = [cost_label(first)]
             detail = match.group(2).strip() if match else ""
-            description.extend([text for text in [detail, *cost_segments[0][1:]] if text])
+            description.extend([text for text in [detail, *regular_cost_segments[0][1:]] if text])
         else:
-            for segment_parts in cost_segments:
+            for segment_parts in regular_cost_segments:
                 first = format_cost_segment(segment_parts[0])
                 costs.append(normalize_text(" ".join([first, *segment_parts[1:]])))
             description.extend(trailing_description)
 
-    return {
+        for segment_parts in situational_negative_segments:
+            first = format_cost_segment(segment_parts[0])
+            description.append(normalize_text(" ".join([first, *segment_parts[1:]])))
+
+    item = {
         "id": slugify(title),
         "title": title_case(title),
         "area": "aprimoramentos",
@@ -405,6 +460,7 @@ def build_enhancement(title: str, raw_parts: list[str], fallback_polarity: str) 
             section("descricao", "Descrição", "aprimoramentos", description),
         ],
     }
+    return move_situational_negative_cost_to_description(item)
 
 
 def parse_content(paragraphs: list[str]) -> tuple[list[dict], list[dict]]:

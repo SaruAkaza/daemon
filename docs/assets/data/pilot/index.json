@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T10:44:50",
+  "generatedAt": "2026-06-05T10:51:32",
   "sources": [
     {
       "source": "4killers",
@@ -121,9 +121,9 @@
       "file": "anjos-angelicos-sicarios.json",
       "status": "pilot_review",
       "areas": [
-        "aprimoramentos",
         "cenarios_lore",
         "itens_equipamentos",
+        "manobras_combate",
         "poderes"
       ]
     },

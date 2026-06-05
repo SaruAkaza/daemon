@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T10:36:39",
+  "generatedAt": "2026-06-05T10:51:14",
   "source": "aprimoramentos-3",
   "sourceFile": "Aprimoramentos_3_OCR_alta_qualidade.docx",
   "sourcePath": "Livros\\word\\feito\\Aprimoramentos_3_OCR_alta_qualidade.docx",
@@ -2104,15 +2104,15 @@
       "title": "Grimório",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "polarity": "negativo",
+      "polarity": "positivo",
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "1 Ponto: o grimório possui Feitiços e Rituais variados de até Complexidade 30%.",
         "2 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 60%.",
         "3 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 80%.",
-        "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo.",
-        "Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem."
+        "Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem.",
+        "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo."
       ],
       "sections": [
         {
@@ -2122,8 +2122,7 @@
           "paragraphs": [
             "1 Ponto: o grimório possui Feitiços e Rituais variados de até Complexidade 30%.",
             "2 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 60%.",
-            "3 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 80%.",
-            "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo."
+            "3 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 80%."
           ]
         },
         {
@@ -2131,7 +2130,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem."
+            "Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem.",
+            "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo."
           ]
         }
       ]
@@ -4205,6 +4205,6 @@
     "Texto revisado antes da catalogacao; paginas soltas e cabecalho OCR foram removidos.",
     "Entradas negativas foram separadas a partir da secao Negativos e/ou pelo sinal do custo.",
     "Entradas do tipo Vide Dependencia foram preservadas como referencias, sem inventar custo numerico.",
-    "Total de aprimoramentos catalogados: 122 (89 positivos, 33 negativos)."
+    "Total de aprimoramentos catalogados: 122 (90 positivos, 32 negativos)."
   ]
 }

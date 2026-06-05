@@ -1,16 +1,16 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T10:47:02",
+  "generatedAt": "2026-06-05T10:51:29",
   "source": "anjos-angelicos-sicarios",
   "sourceFile": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "sourcePath": "Livros\\word\\Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "title": "Anjos - A Cidade de Prata - Angélicos Sicários",
   "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos da Cidade de Prata. História completa da Ordem, poderes (Argúcias), manobras de combate, armas/artefatos e prisões secretas.",
   "areas": [
-    "aprimoramentos",
     "cenarios_lore",
     "itens_equipamentos",
+    "manobras_combate",
     "poderes"
   ],
   "groups": [
@@ -526,10 +526,10 @@
     {
       "id": "desarmar-com-asa",
       "title": "Desarmar com Asa",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
+      "area": "manobras_combate",
+      "kind": "maneuver",
+      "sectionId": "manobra",
+      "sectionTitle": "Manobra",
       "paragraphs": [
         "Desarmar com Asa (25): O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair."
       ],
@@ -538,10 +538,10 @@
     {
       "id": "ataque-rolante",
       "title": "Ataque Rolante",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
+      "area": "manobras_combate",
+      "kind": "maneuver",
+      "sectionId": "manobra",
+      "sectionTitle": "Manobra",
       "paragraphs": [
         "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente."
       ],
@@ -550,10 +550,10 @@
     {
       "id": "finta",
       "title": "Finta",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
+      "area": "manobras_combate",
+      "kind": "maneuver",
+      "sectionId": "manobra",
+      "sectionTitle": "Manobra",
       "paragraphs": [
         "Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa."
       ],
@@ -562,10 +562,10 @@
     {
       "id": "mata-dragao",
       "title": "Mata-Dragão",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
+      "area": "manobras_combate",
+      "kind": "maneuver",
+      "sectionId": "manobra",
+      "sectionTitle": "Manobra",
       "paragraphs": [
         "Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%."
       ],
@@ -574,10 +574,10 @@
     {
       "id": "coracao-de-fafnir",
       "title": "Coração de Fafnir",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
+      "area": "manobras_combate",
+      "kind": "maneuver",
+      "sectionId": "manobra",
+      "sectionTitle": "Manobra",
       "paragraphs": [
         "Coração de Fafnir (30): Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%."
       ],
@@ -586,10 +586,10 @@
     {
       "id": "calcanhar-da-fera",
       "title": "Calcanhar da Fera",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
+      "area": "manobras_combate",
+      "kind": "maneuver",
+      "sectionId": "manobra",
+      "sectionTitle": "Manobra",
       "paragraphs": [
         "Calcanhar da Fera (30): O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
       ],
@@ -598,10 +598,10 @@
     {
       "id": "asas-cortantes",
       "title": "Asas Cortantes",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
+      "area": "manobras_combate",
+      "kind": "maneuver",
+      "sectionId": "manobra",
+      "sectionTitle": "Manobra",
       "paragraphs": [
         "Asas Cortantes (30): As pontas das asas de um sicário, são armas de corte, devido a seu treinamento. Um Sicário recebe um bônus de +3 de dano em todos os ataques realizados com suas asas."
       ],
@@ -743,7 +743,7 @@
   "areaCounts": {
     "cenarios_lore": 1,
     "poderes": 19,
-    "aprimoramentos": 7,
+    "manobras_combate": 7,
     "itens_equipamentos": 11
   }
 }
