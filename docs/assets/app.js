@@ -401,14 +401,12 @@ function filterGroupsData() {
     if (levels.length) groups.push({ id: "levels", title: "Nível", options: levels });
   }
 
-  if (state.selectedArea === "rituais") {
-    const caminhos = optionListFromCounts(countBy(scopedItems, itemCaminhoOptions));
+  if (state.selectedArea === "magias") {
     const circulos = optionListFromCounts(countBy(scopedItems, itemCirculoOptions));
-    if (caminhos.length) groups.push({ id: "caminhos", title: "Caminho", options: caminhos });
     if (circulos.length) groups.push({ id: "circulos", title: "Círculo", options: circulos });
   }
 
-  const blocksExcluded = ["all", "aprimoramentos", "racas", "poderes", "rituais"];
+  const blocksExcluded = ["all", "aprimoramentos", "racas", "poderes", "magias"];
   if (!blocksExcluded.includes(state.selectedArea)) {
     const blocks = optionListFromCounts(countBy(scopedItems, sectionTitles));
     if (blocks.length > 1) groups.push({ id: "blocks", title: "Blocos", options: blocks });
@@ -625,6 +623,21 @@ function renderItems() {
     return;
   }
 
+  if (state.selectedArea === "magias") {
+    const byCaminho = new Map();
+    for (const item of items) {
+      for (const caminho of (itemCaminhoOptions(item).length ? itemCaminhoOptions(item) : ["Outros"])) {
+        if (!byCaminho.has(caminho)) byCaminho.set(caminho, []);
+        byCaminho.get(caminho).push(item);
+      }
+    }
+    const caminhos = [...byCaminho.keys()].sort((a, b) => a.localeCompare(b, "pt-BR", { sensitivity: "base" }));
+    for (const caminho of caminhos) {
+      renderEnhancementGroup(`magias-${caminho}`, caminho, byCaminho.get(caminho));
+    }
+    return;
+  }
+
   for (const item of items) nodes.segmentsList.append(renderSegmentRow(item));
 }
 
@@ -713,6 +726,10 @@ function itemTypeLabel(item) {
   if (item.kind === "power") return "Poder";
   if (item.kind === "race") return "Raça";
   if (item.kind === "ritual") return "Ritual";
+  if (item.kind === "magia") return "Magia";
+  if (item.kind === "class") return "Classe";
+  if (item.kind === "maneuver") return "Manobra";
+  if (item.kind === "equipment") return "Equipamento";
   if (item.kind === "group") return "Grupo";
   return "";
 }

@@ -153,17 +153,17 @@ def parse_magic(magic_paras):
         custo = grab(seg, "Custo", ["Duração", "Efeito"])
         duracao = grab(seg, "Duração", ["Efeito"])
         efeito = grab(seg, "Efeito", [])
-        subs = [sec("caminho", "Caminho", "rituais", [caminho]),
-                sec("circulo", "Círculo", "rituais", [str(circ)])]
+        subs = [sec("caminho", "Caminho", "magias", [caminho]),
+                sec("circulo", "Círculo", "magias", [str(circ)])]
         if atributo:
-            subs.append(sec("atributo", "Atributo", "rituais", [atributo]))
+            subs.append(sec("atributo", "Atributo", "magias", [atributo]))
         if custo:
-            subs.append(sec("custo", "Custo", "rituais", [custo]))
+            subs.append(sec("custo", "Custo", "magias", [custo]))
         if duracao:
-            subs.append(sec("duracao", "Duração", "rituais", [duracao]))
-        subs.append(sec("efeito", "Efeito", "rituais", [efeito or seg]))
-        ent = entity(name, "rituais", "ritual", "Ritual", [efeito or seg], subsections=subs)
-        ent["id"] = slugify(f"ritual-{caminho}-{name}")
+            subs.append(sec("duracao", "Duração", "magias", [duracao]))
+        subs.append(sec("efeito", "Efeito", "magias", [efeito or seg]))
+        ent = entity(name, "magias", "magia", "Magia", [efeito or seg], subsections=subs)
+        ent["id"] = slugify(f"magia-{caminho}-{name}")
         ent["group"] = caminho
         ent["circulo"] = circ
         rituals.append(ent)
@@ -302,9 +302,9 @@ def main():
     for a, n in by_area.items():
         print(f"  {a}: {n}")
     # power & ritual breakdown
-    rituals = [s for s in payload["sections"] if s["area"] == "rituais"]
+    rituals = [s for s in payload["sections"] if s["area"] == "magias"]
     by_cam = Counter(s.get("group", "?") for s in rituals)
-    print("  rituais por caminho:", dict(by_cam))
+    print("  magias por caminho:", dict(by_cam))
     print("  criaturas detectadas:", creatures)
 
 

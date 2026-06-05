@@ -1,0 +1,2326 @@
+{
+  "version": 1,
+  "source": "aprimoramentos-4",
+  "title": "Aprimoramentos 4",
+  "sourceFile": "Aprimoramentos_4_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Lista dedicada de aprimoramentos positivos e negativos.",
+  "areas": [
+    "aprimoramentos"
+  ],
+  "groups": [
+    {
+      "id": "regra-base-aprimoramentos-4",
+      "title": "Regra base - Aprimoramentos 4",
+      "kind": "ruleset",
+      "area": "regras_base",
+      "sectionTitle": "Regra Base",
+      "sections": [
+        {
+          "id": "orientacao",
+          "title": "Regra base - Aprimoramentos 4",
+          "area": "regras_base",
+          "paragraphs": [
+            "Aprimoramentos positivos representam vantagens compradas com pontos; aprimoramentos negativos representam limitações que concedem pontos ou impõem restrições.",
+            "Quando um aprimoramento possui variações de custo, cada custo mantém junto o efeito concedido por aquele valor."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "atropelar",
+      "title": "Atropelar",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "A criatura projeta 1 metro a criatura defensora por ponto de dano que acertar o alvo independente do seu IP, o alvo tem direito a um teste de CON para reduzir a distância a metade."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A criatura projeta 1 metro a criatura defensora por ponto de dano que acertar o alvo independente do seu IP, o alvo tem direito a um teste de CON para reduzir a distância a metade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aceleracao",
+      "title": "Aceleração",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: O personagem recebe +10 em sua Iniciativa e aumenta sua velocidade normal em 10m/s. No caso de fuga, perseguição e esquiva ele concede um bônus de 15% no teste de perícia.",
+        "2 pontos: O personagem recebe +20 em sua Iniciativa e aumenta sua velocidade normal em 30m/s. No caso de fuga, perseguição e esquiva ele concede um bônus de 30% no teste de perícia.",
+        "3 pontos: O personagem recebe +30 em sua Iniciativa e aumenta sua velocidade normal em 50m/s. No caso de fuga, perseguição e esquiva ele concede um bônus de 45% no teste de Perícia."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: O personagem recebe +10 em sua Iniciativa e aumenta sua velocidade normal em 10m/s. No caso de fuga, perseguição e esquiva ele concede um bônus de 15% no teste de perícia.",
+            "2 pontos: O personagem recebe +20 em sua Iniciativa e aumenta sua velocidade normal em 30m/s. No caso de fuga, perseguição e esquiva ele concede um bônus de 30% no teste de perícia.",
+            "3 pontos: O personagem recebe +30 em sua Iniciativa e aumenta sua velocidade normal em 50m/s. No caso de fuga, perseguição e esquiva ele concede um bônus de 45% no teste de Perícia."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": "adaptacao",
+      "title": "Adaptação",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Variável",
+        "Para cada ponto gasto nessa Habilidade, o personagem pode se adaptar a um ambiente ao qual sua raça não esteja acostumada. Caso receba dano de alguma forma por algo ao qual está adaptado, ele receberá IP 2.",
+        "Dentre alguns tipos de ambientes estão: ácidos/básicos, regiões interdimensionais, pressões extremas, frio intenso (gelo), calor intenso (fogo), eletricidade, gases tóxicos, trevas, luz, radiação e subaquático."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Variável"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Para cada ponto gasto nessa Habilidade, o personagem pode se adaptar a um ambiente ao qual sua raça não esteja acostumada. Caso receba dano de alguma forma por algo ao qual está adaptado, ele receberá IP 2.",
+            "Dentre alguns tipos de ambientes estão: ácidos/básicos, regiões interdimensionais, pressões extremas, frio intenso (gelo), calor intenso (fogo), eletricidade, gases tóxicos, trevas, luz, radiação e subaquático."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adaptador",
+      "title": "Adaptador",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Você tem facilidade para lidar com armas, aprender novas técnicas e improvisar novos golpes.",
+        "Esta Vantagem permite mudar o tipo de arma com a qual você foi treinado sem sofrer nenhuma penalidade, como se fosse sua própria arma inicial, porém não podem somar os valores de atributo para armas que não são as suas armas principais."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você tem facilidade para lidar com armas, aprender novas técnicas e improvisar novos golpes.",
+            "Esta Vantagem permite mudar o tipo de arma com a qual você foi treinado sem sofrer nenhuma penalidade, como se fosse sua própria arma inicial, porém não podem somar os valores de atributo para armas que não são as suas armas principais."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ambiente-especial",
+      "title": "Ambiente Especial",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem possui um lugar no qual ele se sente em casa, sua \"arena\". Em termos de regras, ele recebe um bônus de 20% em testes de perícias envolvendo o lugar, além de 20% em perícias de defesa, perícias de ataque e testes de resistência enquanto se encontra no ambiente especial. A cada novo nível há um acréscimo de +5% em bônus de Ambiente."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui um lugar no qual ele se sente em casa, sua \"arena\". Em termos de regras, ele recebe um bônus de 20% em testes de perícias envolvendo o lugar, além de 20% em perícias de defesa, perícias de ataque e testes de resistência enquanto se encontra no ambiente especial. A cada novo nível há um acréscimo de +5% em bônus de Ambiente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armas-naturais",
+      "title": "Armas Naturais",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: O personagem possui garras, presas, espinhos pelo corpo ou chifres que conferem um ataque adicional que causa +1d6 de dano em um combate corpo-a-corpo.",
+        "2 pontos: O personagem possui um tentáculo, uma cauda ou um braço adicional que não somente ataca, mas serve como braço para manipular e segurar as coisas, possuindo a mesma Destreza (DEX) que o personagem. Quando usado para atacar, causa dano de +1d6 durante o combate.",
+        "O personagem possui um tipo de arma natural de sua raça, tais como garras, dentes afiados, tentáculos, caudas e até braços adicionais. Pode ser comprado mais de uma vez, para cada tipo diferente de arma natural."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: O personagem possui garras, presas, espinhos pelo corpo ou chifres que conferem um ataque adicional que causa +1d6 de dano em um combate corpo-a-corpo.",
+            "2 pontos: O personagem possui um tentáculo, uma cauda ou um braço adicional que não somente ataca, mas serve como braço para manipular e segurar as coisas, possuindo a mesma Destreza (DEX) que o personagem. Quando usado para atacar, causa dano de +1d6 durante o combate."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui um tipo de arma natural de sua raça, tais como garras, dentes afiados, tentáculos, caudas e até braços adicionais. Pode ser comprado mais de uma vez, para cada tipo diferente de arma natural."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ataque-especial",
+      "title": "Ataque Especial",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto por 1d6",
+        "O personagem possui um ataque especial que causa um dano maior que o normal. Para cada 1 ponto de aprimoramento gastos em Ataque Especial, o personagem recebe a capacidade de causar 1d6 de dano. O seu ataque pode ainda ser personalizado, possuindo algumas vantagens ou desvantagens únicas, sendo que para isso, recebem um custo (ou bônus) adicional em pontos:",
+        "Agravado: O dano causado pelo ataque especial necessita de duas vezes mais tempo e cuidados para que seja recuperado (2 pontos)",
+        "Aura: O personagem manifestará seu ataque especial em uma aura que age como um verdadeiro escudo, atingindo qualquer um que toque seu corpo. Contudo, é ineficiente em ataques a distância (1 ponto)",
+        "Bumerangue: O ataque especial concede bônus de 10% no teste de ataque, e caso não acerte na primeira vez, ele torna a avançar contra o alvo, que deverá esquivar-se novamente para não ser atingido (2 Pontos)",
+        "Carregável: O dano final de seu ataque dobra caso seja carregado por um turno. Pode ser alguma forma de energia única que seu personagem possui, ou talvez um maior tempo de mira e concentração no caso de um tiro. É possível comprar este aprimoramento várias vezes, e seu efeito é cumulativo tanto para o valor quanto para a quantidade de turnos para carregar (1 Ponto)",
+        "Dano Contínuo: A vítima continuará perdendo 1 ponto de vida por rodada, até 5 rodadas após o ataque.",
+        "Pode ser comprada várias vezes, para aumentar a quantidade de dano além do número de rodadas. (1 Ponto)",
+        "Efeito em Área: O ataque especial atingirá uma área de 3 metros de diâmetro. Para cada 1,5 metro a mais de distância do ponto de impacto, o dano é diminuído pela metade. Pode ser comprado mais de uma vez para aumentar a área total de dano (1 ponto)",
+        "Flexível: O ataque especial pode ser flexível, como um chicote, indo atrás do oponente e diminuindo em 10% a defesa total do alvo. Pode ser comprado mais de uma vez, tornando-o cumulativo (1 Ponto)",
+        "Força: O ataque especial pode ter o valor da Força ou da Destreza dividido por 2 e arredondado para baixo, adicionado ao dano (1 Ponto)",
+        "Incapacitante: O ataque paralisa o oponente por dois turnos após acertá-lo. O oponente tem direito a um Teste de Resistência (Agilidade, Constituição ou Força de Vontade, dependendo da forma do ataque do personagem) para não ser paralisado. Pode ser comprado mais de uma vez, para aumentar o número de turnos que o oponente ficará paralisado (1 Ponto)",
+        "Indetectável: O personagem poderá realizar o seu ataque especial de forma confusa, anulando o bônus de Atributo da Defesa do oponente (3 pontos)",
+        "Longo Alcance: O personagem poderá ampliar o alcance do ataque especial de 10 metros para 30. Pode ser comprado mais de uma vez (1 ponto)",
+        "Penetrante: O ataque especial ignorará 4 pontos de IP. Pode ser comprado mais de uma vez; (1 Ponto)",
+        "Preciso: O ataque especial concede bônus de +20% no ataque. Pode ser comprado cumulativamente (1 ponto)",
+        "Rajada: O ataque especial pode atingir até 3 oponentes que estejam próximos um ao outro. Pode ser comprado mais de uma vez para aumentar o número de oponentes que podem ser atingidos (1 ponto)",
+        "Ambiente Especial: O ataque não pode ser realizado em um tipo de ambiente. (-1 ponto)",
+        "Autodestrutivo: O ataque causa o mesmo dano que o oponente levou, no seu usuário também. (-2 pontos)",
+        "Corpo a Corpo: O ataque só poderá ser realizado havendo contato físico e não contra alvos à distância. (-2 pontos)",
+        "Curta Distância: O ataque só pode atingir oponentes que estejam a cinco metros de distância. (-1 ponto)",
+        "Disparos Limitados: O ataque especial só pode ser usado poucas vezes por dia. 5 vezes, por -1 ponto. 3 vezes, por -2 pontos. 1 vez, por -3 pontos;",
+        "Estático: O ataque especial não pode ser utilizado em movimento. (-2 pontos)",
+        "Impreciso: O ataque recebe uma penalidade de -20% na jogada de ataque. (-1 ponto)",
+        "Lento: O ataque precisa ser carregado por um turno antes de ser realizado. (-1 ponto)",
+        "Usar Energia: O ataque faz uso da energia pessoal do personagem. Para cada ataque realizado ele subtrai 2 pontos de vida. (-1 ponto)"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto por 1d6"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui um ataque especial que causa um dano maior que o normal. Para cada 1 ponto de aprimoramento gastos em Ataque Especial, o personagem recebe a capacidade de causar 1d6 de dano. O seu ataque pode ainda ser personalizado, possuindo algumas vantagens ou desvantagens únicas, sendo que para isso, recebem um custo (ou bônus) adicional em pontos:",
+            "Agravado: O dano causado pelo ataque especial necessita de duas vezes mais tempo e cuidados para que seja recuperado (2 pontos)",
+            "Aura: O personagem manifestará seu ataque especial em uma aura que age como um verdadeiro escudo, atingindo qualquer um que toque seu corpo. Contudo, é ineficiente em ataques a distância (1 ponto)",
+            "Bumerangue: O ataque especial concede bônus de 10% no teste de ataque, e caso não acerte na primeira vez, ele torna a avançar contra o alvo, que deverá esquivar-se novamente para não ser atingido (2 Pontos)",
+            "Carregável: O dano final de seu ataque dobra caso seja carregado por um turno. Pode ser alguma forma de energia única que seu personagem possui, ou talvez um maior tempo de mira e concentração no caso de um tiro. É possível comprar este aprimoramento várias vezes, e seu efeito é cumulativo tanto para o valor quanto para a quantidade de turnos para carregar (1 Ponto)",
+            "Dano Contínuo: A vítima continuará perdendo 1 ponto de vida por rodada, até 5 rodadas após o ataque.",
+            "Pode ser comprada várias vezes, para aumentar a quantidade de dano além do número de rodadas. (1 Ponto)",
+            "Efeito em Área: O ataque especial atingirá uma área de 3 metros de diâmetro. Para cada 1,5 metro a mais de distância do ponto de impacto, o dano é diminuído pela metade. Pode ser comprado mais de uma vez para aumentar a área total de dano (1 ponto)",
+            "Flexível: O ataque especial pode ser flexível, como um chicote, indo atrás do oponente e diminuindo em 10% a defesa total do alvo. Pode ser comprado mais de uma vez, tornando-o cumulativo (1 Ponto)",
+            "Força: O ataque especial pode ter o valor da Força ou da Destreza dividido por 2 e arredondado para baixo, adicionado ao dano (1 Ponto)",
+            "Incapacitante: O ataque paralisa o oponente por dois turnos após acertá-lo. O oponente tem direito a um Teste de Resistência (Agilidade, Constituição ou Força de Vontade, dependendo da forma do ataque do personagem) para não ser paralisado. Pode ser comprado mais de uma vez, para aumentar o número de turnos que o oponente ficará paralisado (1 Ponto)",
+            "Indetectável: O personagem poderá realizar o seu ataque especial de forma confusa, anulando o bônus de Atributo da Defesa do oponente (3 pontos)",
+            "Longo Alcance: O personagem poderá ampliar o alcance do ataque especial de 10 metros para 30. Pode ser comprado mais de uma vez (1 ponto)",
+            "Penetrante: O ataque especial ignorará 4 pontos de IP. Pode ser comprado mais de uma vez; (1 Ponto)",
+            "Preciso: O ataque especial concede bônus de +20% no ataque. Pode ser comprado cumulativamente (1 ponto)",
+            "Rajada: O ataque especial pode atingir até 3 oponentes que estejam próximos um ao outro. Pode ser comprado mais de uma vez para aumentar o número de oponentes que podem ser atingidos (1 ponto)",
+            "Ambiente Especial: O ataque não pode ser realizado em um tipo de ambiente. (-1 ponto)",
+            "Autodestrutivo: O ataque causa o mesmo dano que o oponente levou, no seu usuário também. (-2 pontos)",
+            "Corpo a Corpo: O ataque só poderá ser realizado havendo contato físico e não contra alvos à distância. (-2 pontos)",
+            "Curta Distância: O ataque só pode atingir oponentes que estejam a cinco metros de distância. (-1 ponto)",
+            "Disparos Limitados: O ataque especial só pode ser usado poucas vezes por dia. 5 vezes, por -1 ponto. 3 vezes, por -2 pontos. 1 vez, por -3 pontos;",
+            "Estático: O ataque especial não pode ser utilizado em movimento. (-2 pontos)",
+            "Impreciso: O ataque recebe uma penalidade de -20% na jogada de ataque. (-1 ponto)",
+            "Lento: O ataque precisa ser carregado por um turno antes de ser realizado. (-1 ponto)",
+            "Usar Energia: O ataque faz uso da energia pessoal do personagem. Para cada ataque realizado ele subtrai 2 pontos de vida. (-1 ponto)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ataque-extra",
+      "title": "Ataque Extra",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos por nível",
+        "O personagem recebe 1 ataque adicional por turno para cada 2 pontos gastos neste aprimoramento.",
+        "Assim, um atirador com Ataque Extra 2, por exemplo, poderá em um único turno efetuar dois ataques completos além do seu ataque padrão."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos por nível"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem recebe 1 ataque adicional por turno para cada 2 pontos gastos neste aprimoramento.",
+            "Assim, um atirador com Ataque Extra 2, por exemplo, poderá em um único turno efetuar dois ataques completos além do seu ataque padrão."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contra-ataque",
+      "title": "Contra ataque",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O Personagem uma vez por rodada pode ao sofrer um ataque bem sucedido ou defendido de um oponente em um combate corpo-a-corpo, realizar um contra ataque automático. O Personagem realiza um teste difícil de sua perícia de defesa, e em caso de sucesso, pode realizar um ataque simples extra contra o oponente. Será sem direito a esquivas ou defesas, mas podem fazer teste de contitução normal ou agilidade dificil para escapar. O Personagem NÃO perde seu ataque e defesas normais de seu turno. Será o ÚLTIMO ataque da rodada, iniciativa igual à menor em cena."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem uma vez por rodada pode ao sofrer um ataque bem sucedido ou defendido de um oponente em um combate corpo-a-corpo, realizar um contra ataque automático. O Personagem realiza um teste difícil de sua perícia de defesa, e em caso de sucesso, pode realizar um ataque simples extra contra o oponente. Será sem direito a esquivas ou defesas, mas podem fazer teste de contitução normal ou agilidade dificil para escapar. O Personagem NÃO perde seu ataque e defesas normais de seu turno. Será o ÚLTIMO ataque da rodada, iniciativa igual à menor em cena."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contra-ataque-aprimorado",
+      "title": "Contra ataque aprimorado",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Igual ao de cima, mas o teste passa a ser normal e o personagem pode usar armas e técnicas (Manobras de Combate) no contra ataque."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Igual ao de cima, mas o teste passa a ser normal e o personagem pode usar armas e técnicas (Manobras de Combate) no contra ataque."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corpo-flexivel",
+      "title": "Corpo Flexível",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem possui um corpo maleável, podendo dobrar-se em posições que seriam consideradas estranhas pela maioria das pessoas. Recebe um IP 6 contra ataques de concussão, mas não pode possuir Força maior que 10."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui um corpo maleável, podendo dobrar-se em posições que seriam consideradas estranhas pela maioria das pessoas. Recebe um IP 6 contra ataques de concussão, mas não pode possuir Força maior que 10."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dano-macico",
+      "title": "Dano Maciço",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: O personagem possui uma técnica especial com uma arma, golpe ou ataque que causa um dano adicional de +1d6. Deve-se especificar o tipo e a origem durante a criação do personagem.",
+        "2 pontos: O personagem possui uma habilidade especial que causa um dano adicional de +1d6, independente do tipo de arma ou técnica que esteja utilizando, sendo uma habilidade inerente ao mesmo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: O personagem possui uma técnica especial com uma arma, golpe ou ataque que causa um dano adicional de +1d6. Deve-se especificar o tipo e a origem durante a criação do personagem.",
+            "2 pontos: O personagem possui uma habilidade especial que causa um dano adicional de +1d6, independente do tipo de arma ou técnica que esteja utilizando, sendo uma habilidade inerente ao mesmo."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": "deslocamento-especial",
+      "title": "Deslocamento Especial",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Variável",
+        "Para cada ponto gasto nessa Habilidade, o personagem pode se mover em sua velocidade normal em um ambiente ao qual sua raça não esteja acostumada ou de uma forma inesperada. Tipos de deslocamentos especiais são: Aquático, Andar nas paredes, Balançar em Cordas, Caminhar sobre as águas, Deslizar sobre o gelo, Indetectável, Quicar nas Paredes, Passos na Areia, Passos no Gelo, Subterrâneo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Variável"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Para cada ponto gasto nessa Habilidade, o personagem pode se mover em sua velocidade normal em um ambiente ao qual sua raça não esteja acostumada ou de uma forma inesperada. Tipos de deslocamentos especiais são: Aquático, Andar nas paredes, Balançar em Cordas, Caminhar sobre as águas, Deslizar sobre o gelo, Indetectável, Quicar nas Paredes, Passos na Areia, Passos no Gelo, Subterrâneo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deslocamento-em-velocidade",
+      "title": "Deslocamento em velocidade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O Personagem é capaz de mover-se tão rápido que escapa aos olhos destreinados, permitindo que ele reapareça secretamente em qualquer local (até AGI metros de distância) sem ser notado. Um adversário pode tentar encontrá-lo mediante um teste Difícil de PER. Caso oponente não seja bem sucedido, seu personagem poderá realizar um Ataque Surpresa NO MESMO TURNO desde que possa atacar no mesmo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem é capaz de mover-se tão rápido que escapa aos olhos destreinados, permitindo que ele reapareça secretamente em qualquer local (até AGI metros de distância) sem ser notado. Um adversário pode tentar encontrá-lo mediante um teste Difícil de PER. Caso oponente não seja bem sucedido, seu personagem poderá realizar um Ataque Surpresa NO MESMO TURNO desde que possa atacar no mesmo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deslocamento-em-velocidade-aprimorado",
+      "title": "Deslocamento em velocidade Aprimorado",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "O mesmo que o Deslocamento em Velocidade mas a distância é dobrada."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O mesmo que o Deslocamento em Velocidade mas a distância é dobrada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elasticidade",
+      "title": "Elasticidade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "O personagem pode esticar ou contorcer seus membros e seu corpo num nível sobre-humano.",
+        "Ele pode esticar-se até 10 metros de distância e recebe um bônus de +5% nos testes de ataque e defesa para agarrar. Este aprimoramento pode ser comprado mais de uma vez para aumentar a distância e o bônus recebido."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem pode esticar ou contorcer seus membros e seu corpo num nível sobre-humano.",
+            "Ele pode esticar-se até 10 metros de distância e recebe um bônus de +5% nos testes de ataque e defesa para agarrar. Este aprimoramento pode ser comprado mais de uma vez para aumentar a distância e o bônus recebido."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empatia-com-animais",
+      "title": "Empatia com Animais",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Os animais não veem ameaça alguma no personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados por outro)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os animais não veem ameaça alguma no personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados por outro)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energia-extra",
+      "title": "Energia Extra",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Com um teste de Força de Vontade o personagem pode recuperar todos os seus pontos de vida.",
+        "Essa habilidade só pode ser usada um número de vezes por dia igual à sua Força de Vontade (WILL)",
+        "dividida por cinco e arredondada para baixo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Com um teste de Força de Vontade o personagem pode recuperar todos os seus pontos de vida.",
+            "Essa habilidade só pode ser usada um número de vezes por dia igual à sua Força de Vontade (WILL)",
+            "dividida por cinco e arredondada para baixo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expert",
+      "title": "Expert",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto por nível",
+        "O personagem possui uma aptidão natural em certos conhecimentos. Ele pode escolher até três perícias comuns, iniciando o jogo com 40% em cada uma delas e aumentando este bônus em mais 5% por nível. Contudo, o personagem não poderá gastar mais pontos de perícia inicialmente neste mesmo subgrupo. Isto poderá ser feito apenas futuramente com os pontos recebidos pela passagem de nível."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto por nível"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui uma aptidão natural em certos conhecimentos. Ele pode escolher até três perícias comuns, iniciando o jogo com 40% em cada uma delas e aumentando este bônus em mais 5% por nível. Contudo, o personagem não poderá gastar mais pontos de perícia inicialmente neste mesmo subgrupo. Isto poderá ser feito apenas futuramente com os pontos recebidos pela passagem de nível."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feiticaria",
+      "title": "Feitiçaria",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: 3 pontos de Focus e (WILL/5) Pontos de Magia; Ou seja, a Força de Vontade dividida por cinco e arredondada para baixo.",
+        "2 pontos: 5 pontos de Focus e (WILL/5 x2) Pontos de Magia;",
+        "3 pontos: 7 pontos de Focus e (WILL/5 x3) Pontos de Magia;",
+        "4 pontos: 9 pontos de Focus e (WILL/5 x4) Pontos de Magia;",
+        "5 pontos: 11 ponto de Focus e (WILL) Pontos de Magia.",
+        "O personagem fez algum pacto com uma entidade que o permite conjurar as energias místicas sem precisar de rituais, de forma espontânea. Em termos de regras o personagem recebe alguns pontos de focus para distribuir nos caminhos e pontos de magia. Por mais 3 pontos o personagem pode ter conseguido os poderes sem precisar de um pacto, nascendo com esse dom. Mesmo assim, para cada ponto gasto com Feitiçaria, o personagem ganha uma Deformação."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: 3 pontos de Focus e (WILL/5) Pontos de Magia; Ou seja, a Força de Vontade dividida por cinco e arredondada para baixo.",
+            "2 pontos: 5 pontos de Focus e (WILL/5 x2) Pontos de Magia;",
+            "3 pontos: 7 pontos de Focus e (WILL/5 x3) Pontos de Magia;",
+            "4 pontos: 9 pontos de Focus e (WILL/5 x4) Pontos de Magia;",
+            "5 pontos: 11 ponto de Focus e (WILL) Pontos de Magia."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem fez algum pacto com uma entidade que o permite conjurar as energias místicas sem precisar de rituais, de forma espontânea. Em termos de regras o personagem recebe alguns pontos de focus para distribuir nos caminhos e pontos de magia. Por mais 3 pontos o personagem pode ter conseguido os poderes sem precisar de um pacto, nascendo com esse dom. Mesmo assim, para cada ponto gasto com Feitiçaria, o personagem ganha uma Deformação."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forma-alternativa",
+      "title": "Forma Alternativa",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "4 Pontos",
+        "O personagem possui uma forma alternativa. Em termos de regras, todas as suas habilidades e atributos (com exceção de Inteligência, Força de Vontade e Carisma) podem ser remontados em uma nova ficha. Perícias e Aprimoramentos Negativos continuam idênticos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "4 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui uma forma alternativa. Em termos de regras, todas as suas habilidades e atributos (com exceção de Inteligência, Força de Vontade e Carisma) podem ser remontados em uma nova ficha. Perícias e Aprimoramentos Negativos continuam idênticos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genio",
+      "title": "Gênio",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 Pontos",
+        "O personagem é um gênio nato. Todas as perícias comuns possuem o valor da Inteligência somada em seus testes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem é um gênio nato. Todas as perícias comuns possuem o valor da Inteligência somada em seus testes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "habil",
+      "title": "Hábil",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Variável",
+        "Para cada ponto gasto nesse aprimoramento, o personagem recebe mais 100 pontos de perícia para gastar de acordo com sua escolha."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Variável"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Para cada ponto gasto nesse aprimoramento, o personagem recebe mais 100 pontos de perícia para gastar de acordo com sua escolha."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imortalidade-quimica",
+      "title": "Imortalidade Química",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 Pontos",
+        "Apenas para Personagens Gnomos",
+        "Ao contrário das demais espécies, um gnomo morre ao chegar a apenas 0 pontos de vida, se decompondo numa poça química em meia hora. No meio desta poça de nutrientes estarão dois bebês gnomos idênticos.",
+        "Um bebê gnomo crescerá em 1d6 dias até alcançar a idade do corpo antigo e manterá todas as memórias e perícias que o anterior possuía. O outro será um novo ser que crescerá de forma natural.",
+        "Para cada vida perdida, o personagem perde um ponto em Constituição e Força (afetando inclusive os PV's). Esta imortalidade funciona apenas sete vezes no decorrer da vida do personagem (se ele tiver Constituição e Força suficiente), e só será efetiva se o corpo não for completamente destruído antes da decomposição total (incinerado, por exemplo)"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Apenas para Personagens Gnomos",
+            "Ao contrário das demais espécies, um gnomo morre ao chegar a apenas 0 pontos de vida, se decompondo numa poça química em meia hora. No meio desta poça de nutrientes estarão dois bebês gnomos idênticos.",
+            "Um bebê gnomo crescerá em 1d6 dias até alcançar a idade do corpo antigo e manterá todas as memórias e perícias que o anterior possuía. O outro será um novo ser que crescerá de forma natural.",
+            "Para cada vida perdida, o personagem perde um ponto em Constituição e Força (afetando inclusive os PV's). Esta imortalidade funciona apenas sete vezes no decorrer da vida do personagem (se ele tiver Constituição e Força suficiente), e só será efetiva se o corpo não for completamente destruído antes da decomposição total (incinerado, por exemplo)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imunidade",
+      "title": "Imunidade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 pontos: Seu personagem é imune a venenos ou doenças;",
+        "5 pontos: Seu personagem é imune a venenos ou doenças mágicas;",
+        "15 pontos: Seu personagem é imune a um elemento ou tipo de dano (Calor/Fogo, Frio/Gelo, Luz/Laser; Eletricidade; Vento/Som; Água/Ácido; Trevas; Contusão; Corte; Explosão; Perfuração; etc.).",
+        "O personagem possui uma imunidade ao dano e aos efeitos adversos de uma determinada arma, elemento, droga ou evento. Pode ser comprado mais de uma vez, e seus efeitos são cumulativos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 pontos: Seu personagem é imune a venenos ou doenças;",
+            "5 pontos: Seu personagem é imune a venenos ou doenças mágicas;",
+            "15 pontos: Seu personagem é imune a um elemento ou tipo de dano (Calor/Fogo, Frio/Gelo, Luz/Laser; Eletricidade; Vento/Som; Água/Ácido; Trevas; Contusão; Corte; Explosão; Perfuração; etc.)."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui uma imunidade ao dano e aos efeitos adversos de uma determinada arma, elemento, droga ou evento. Pode ser comprado mais de uma vez, e seus efeitos são cumulativos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iniciativa",
+      "title": "Iniciativa",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Quem possuir esse aprimoramento não precisa rolar a sua iniciativa no início do combate ele sempre age primeiro caso ela enfrente outra criatura com a mesma habilidade a iniciativa é rolada entre elas."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Quem possuir esse aprimoramento não precisa rolar a sua iniciativa no início do combate ele sempre age primeiro caso ela enfrente outra criatura com a mesma habilidade a iniciativa é rolada entre elas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "invisibilidade",
+      "title": "Invisibilidade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 Pontos",
+        "O personagem se torna invisível a um sentido ou técnica (visão, audição, olfato, astral, etérea, infravermelha, mental, radar, radiação, sonar, espiritual, ultravioleta, vibrações, etc.). Pode ser comprado várias vezes para tornar-se invisível a um novo sentido ou técnica."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem se torna invisível a um sentido ou técnica (visão, audição, olfato, astral, etérea, infravermelha, mental, radar, radiação, sonar, espiritual, ultravioleta, vibrações, etc.). Pode ser comprado várias vezes para tornar-se invisível a um novo sentido ou técnica."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-pessoal",
+      "title": "Item Pessoal",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "O personagem possui um item especial, um objeto que possui e lhe confere determinados poderes. Em termos de regras, para cada 2 pontos de aprimoramento do personagem gastos com o item, ele recebe 5 pontos para adquirir aprimoramentos para o item. Note que os pontos não podem ser remanejados novamente para o personagem, e que o item pode ser perdido, destruido, furtado..."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui um item especial, um objeto que possui e lhe confere determinados poderes. Em termos de regras, para cada 2 pontos de aprimoramento do personagem gastos com o item, ele recebe 5 pontos para adquirir aprimoramentos para o item. Note que os pontos não podem ser remanejados novamente para o personagem, e que o item pode ser perdido, destruido, furtado..."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ligacao-natural",
+      "title": "Ligação Natural",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem possui uma ligação natural com outra pessoa (personagem ou NPC, e ambos precisam ter esse aprimoramento). Cada um poderá saber os pensamentos superficiais um do outro e se comunicarem apenas mantendo contato visual. Se estiverem afastados, um sempre será capaz de localizar o outro e sentir suas emoções básicas.",
+        "Se um morrer, o outro precisa passar em um teste de Constituição (CON) e um teste de Força de Vontade (WILL). Se não passar no teste de Constituição, desmaiará por 6 horas. Se não passar no teste de Força de Vontade, todos os seus testes terão sua dificuldade aumentada por uma semana."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui uma ligação natural com outra pessoa (personagem ou NPC, e ambos precisam ter esse aprimoramento). Cada um poderá saber os pensamentos superficiais um do outro e se comunicarem apenas mantendo contato visual. Se estiverem afastados, um sempre será capaz de localizar o outro e sentir suas emoções básicas.",
+            "Se um morrer, o outro precisa passar em um teste de Constituição (CON) e um teste de Força de Vontade (WILL). Se não passar no teste de Constituição, desmaiará por 6 horas. Se não passar no teste de Força de Vontade, todos os seus testes terão sua dificuldade aumentada por uma semana."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adiar-magia",
+      "title": "Adiar Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O arcano pode conjurar magias que surtirão efeito num curto período de tempo depois. O jogador pode escolher entre 1 ou 5 turnos após a conjuração da magia para que ela tenha efeito, não é possível alterar esse turno após a tomada de decisão a menos que o arcano use alguma magia de dissipação. A magia também poderá ser detectada a partir do momento que ela foi conjurada e o arcano deve decidir todas as variantes no momento da conjuração."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O arcano pode conjurar magias que surtirão efeito num curto período de tempo depois. O jogador pode escolher entre 1 ou 5 turnos após a conjuração da magia para que ela tenha efeito, não é possível alterar esse turno após a tomada de decisão a menos que o arcano use alguma magia de dissipação. A magia também poderá ser detectada a partir do momento que ela foi conjurada e o arcano deve decidir todas as variantes no momento da conjuração."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ampliar-magia",
+      "title": "Ampliar Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Você pode ampliar a área de efeito de uma magia. Qualquer magia de área terá seu valor dobrado, porém essa magia custará 3 pontos de magia a mais."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você pode ampliar a área de efeito de uma magia. Qualquer magia de área terá seu valor dobrado, porém essa magia custará 3 pontos de magia a mais."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ignorar-componente",
+      "title": "Ignorar componente",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem pode conjurar magias sem a necessidade dos seus componentes. O jogador deverá escolher qual dos três componentes deverá ser ignorado entre: Verbal, Gestual e Material. Após a escolha o personagem ignora a necessidade desses componentes sempre que for conjurar suas magias ou rituais. É possível escolher outro componente pagando mais 1 ponto de aprimoramento, porém, uma magia sempre tem que ter no mínimo um componente."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem pode conjurar magias sem a necessidade dos seus componentes. O jogador deverá escolher qual dos três componentes deverá ser ignorado entre: Verbal, Gestual e Material. Após a escolha o personagem ignora a necessidade desses componentes sempre que for conjurar suas magias ou rituais. É possível escolher outro componente pagando mais 1 ponto de aprimoramento, porém, uma magia sempre tem que ter no mínimo um componente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "invocacao-aprimorada",
+      "title": "Invocação Aprimorada",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "As criaturas que o arcano invocar são mais poderosas. O jogador escolhe um atributo da criaturas que será aumentado em 1D, caso o jogador escolha ele pode pagar 2 pontos de magia a mais para aumentar outro atributo em +1D, não é possível aumentar o atributo da criatura em +2D."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "As criaturas que o arcano invocar são mais poderosas. O jogador escolhe um atributo da criaturas que será aumentado em 1D, caso o jogador escolha ele pode pagar 2 pontos de magia a mais para aumentar outro atributo em +1D, não é possível aumentar o atributo da criatura em +2D."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magia-cooperativa",
+      "title": "Magia Cooperativa",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Dois arcanos podem lançar suas magias em conjunto para conseguir efeitos maiores. Para que esse efeito funcione é necessário que os dois conjuradores tenham esta especialidade, assim, quando eles decidirem lançar uma magia em conjunto eles podem somar seus focus a fim de realizar a magia. Ambos os arcanos devem possuir a magia que vão lançar e todos devem ter sucesso em seus testes para lançar a magia. A magia consumirá uma quantidade de pontos de magia de acordo com a soma dos focus de cada arcano que lançar a magia, esse valor deverá ser pago por todos os arcanos que lançarem a magia. A magia é conjurada na menor iniciativa dos arcanos que participarem da conjuração."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Dois arcanos podem lançar suas magias em conjunto para conseguir efeitos maiores. Para que esse efeito funcione é necessário que os dois conjuradores tenham esta especialidade, assim, quando eles decidirem lançar uma magia em conjunto eles podem somar seus focus a fim de realizar a magia. Ambos os arcanos devem possuir a magia que vão lançar e todos devem ter sucesso em seus testes para lançar a magia. A magia consumirá uma quantidade de pontos de magia de acordo com a soma dos focus de cada arcano que lançar a magia, esse valor deverá ser pago por todos os arcanos que lançarem a magia. A magia é conjurada na menor iniciativa dos arcanos que participarem da conjuração."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magia-sequencial",
+      "title": "Magia Sequencial",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Você consegue lançar magias que atingem vários alvos sequencialmente, além do primeiro. Essa especialidade funciona com qualquer magia que tenha um único alvo e o alcance diferente de toque. A magia em sequência afetará o primeiro alvo normalmente, a partir dele, a magia atinge outro alvo que esteja a até nove metros, o limite de alvos é igual ao focus da magia. Se a magia causa dano, os alvos secundários recebem metade do dano apenas e podem fazer seus testes de resistência caso a magia permita. Uma magia sequenciada custa 2 pontos de magia a mais."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você consegue lançar magias que atingem vários alvos sequencialmente, além do primeiro. Essa especialidade funciona com qualquer magia que tenha um único alvo e o alcance diferente de toque. A magia em sequência afetará o primeiro alvo normalmente, a partir dele, a magia atinge outro alvo que esteja a até nove metros, o limite de alvos é igual ao focus da magia. Se a magia causa dano, os alvos secundários recebem metade do dano apenas e podem fazer seus testes de resistência caso a magia permita. Uma magia sequenciada custa 2 pontos de magia a mais."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "memoria-expandida",
+      "title": "Memória Expandida",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "A memória do personagem é infalível e gigantesca, podendo lembrar cenas, gestos, sons e odores perfeitamente. Ele pode até simular qualquer perícia que já tenha visto ser realizada por outra pessoa, como se tivesse 20% de habilidade nela."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A memória do personagem é infalível e gigantesca, podendo lembrar cenas, gestos, sons e odores perfeitamente. Ele pode até simular qualquer perícia que já tenha visto ser realizada por outra pessoa, como se tivesse 20% de habilidade nela."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mente-repartilhada",
+      "title": "Mente Repartilhada",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Você tem mais de uma mente na sua cabeça (ou mais de uma cabeça...)",
+        "Por conta disso poderá fazer duas ações mentais num mesmo turno, como executar Magias ou outros Poderes. As suas mentes podem discordar algumas vezes e entrar em conflito."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você tem mais de uma mente na sua cabeça (ou mais de uma cabeça...)",
+            "Por conta disso poderá fazer duas ações mentais num mesmo turno, como executar Magias ou outros Poderes. As suas mentes podem discordar algumas vezes e entrar em conflito."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mesclar-se-as-sombras",
+      "title": "Mesclar-se às Sombras",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Oculto pela escuridão, o personagem é capaz de mover-se sem ser notado nas sombras. Nestas condições, testes de Furtividade e Camuflagem diminuem sua dificuldade em um ponto (Difíceis se tornam Normais, e Normais se tornam Fáceis)"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Oculto pela escuridão, o personagem é capaz de mover-se sem ser notado nas sombras. Nestas condições, testes de Furtividade e Camuflagem diminuem sua dificuldade em um ponto (Difíceis se tornam Normais, e Normais se tornam Fáceis)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paralisia",
+      "title": "Paralisia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem possui uma técnica que paralisa um oponente caso ele não passe num Teste de Resistência. Essa paralisia dura cinco turnos ou até que o alvo paralisado seja atingido."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui uma técnica que paralisa um oponente caso ele não passe num Teste de Resistência. Essa paralisia dura cinco turnos ou até que o alvo paralisado seja atingido."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pele-metalica",
+      "title": "Pele Metálica",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Por algum motivo sua pele é feita de metal, permitindo um índice de proteção superior contra o dano. Para todos os efeitos, cada nível de Pele Metálica lhe confere um IP2 natural."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Por algum motivo sua pele é feita de metal, permitindo um índice de proteção superior contra o dano. Para todos os efeitos, cada nível de Pele Metálica lhe confere um IP2 natural."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poder-elevado",
+      "title": "Poder Elevado",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: Este aprimoramento dá ao personagem mais 1 ponto extra de Poderes. Por algum motivo o personagem tem mais poder que deveria.",
+        "2 pontos: Este aprimoramento dá ao personagem mais 2 pontos extra de Poderes. Por algum motivo o personagem tem mais poder que deveria.",
+        "3 pontos: Este lhe concede 3 pontos extras de Poderes acima do que você teria normalmente.",
+        "Por um motivo qualquer o personagem está fora da média até para seus próprios irmãos. Seu grau de conhecimento de seus poderes é um pouco maior que de seus irmãos. Este é um dos Aprimoramentos preferidos pelos iniciantes, mas os poderes têm de serem condizentes com os poderes da raça que você escolheu."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Este aprimoramento dá ao personagem mais 1 ponto extra de Poderes. Por algum motivo o personagem tem mais poder que deveria.",
+            "2 pontos: Este aprimoramento dá ao personagem mais 2 pontos extra de Poderes. Por algum motivo o personagem tem mais poder que deveria.",
+            "3 pontos: Este lhe concede 3 pontos extras de Poderes acima do que você teria normalmente."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Por um motivo qualquer o personagem está fora da média até para seus próprios irmãos. Seu grau de conhecimento de seus poderes é um pouco maior que de seus irmãos. Este é um dos Aprimoramentos preferidos pelos iniciantes, mas os poderes têm de serem condizentes com os poderes da raça que você escolheu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pontos-de-vida-extras",
+      "title": "Pontos de Vida Extras",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem possui pontos de vida a mais além do seu limite de Constituição. Em termos de regras, o personagem possuirá pontos de vida como se tivesse um bônus de +10, adicional, na Constituição atual. Pode ser comprado mais de uma vez."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui pontos de vida a mais além do seu limite de Constituição. Em termos de regras, o personagem possuirá pontos de vida como se tivesse um bônus de +10, adicional, na Constituição atual. Pode ser comprado mais de uma vez."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presenca-invisivel",
+      "title": "Presença Invisível",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Você tem a habilidade de não ser notado, as pessoas só percebem sua presença quando você se anuncia. O personagem não está realmente invisível, mas parece tão insignificante que as pessoas não prestam atenção nele, a menos que venha a se expor abertamente."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você tem a habilidade de não ser notado, as pessoas só percebem sua presença quando você se anuncia. O personagem não está realmente invisível, mas parece tão insignificante que as pessoas não prestam atenção nele, a menos que venha a se expor abertamente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reflexao",
+      "title": "Reflexão",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Quando atacado, o personagem pode fazer um teste de Defesa (Armas e escudos também são beneficiadas pelo aprimoramento) e devolver o projétil mágicos contra o seu atacante ou em direção a qualquer alvo que ele desejar. O teste para saber se foi bem sucedido e; para cada 1ponto de dano que a magia causaria no personagem esta gera uma penalidade em -1% no teste de defesa, se passar no teste a magia será como descrita, se o alvo for o mesmo lançador este não tem direito a um teste de agilidade, somente podendo fazer teste de Constituição para reduzir o dano a metade."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Quando atacado, o personagem pode fazer um teste de Defesa (Armas e escudos também são beneficiadas pelo aprimoramento) e devolver o projétil mágicos contra o seu atacante ou em direção a qualquer alvo que ele desejar. O teste para saber se foi bem sucedido e; para cada 1ponto de dano que a magia causaria no personagem esta gera uma penalidade em -1% no teste de defesa, se passar no teste a magia será como descrita, se o alvo for o mesmo lançador este não tem direito a um teste de agilidade, somente podendo fazer teste de Constituição para reduzir o dano a metade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regeneracao",
+      "title": "Regeneração",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "5 pontos: Seu personagem recupera 1 PV a cada 3 turnos.",
+        "7 pontos: Seu personagem recupera 1 PV a cada 2 turnos.",
+        "9 pontos: Seu personagem recupera 1 PV a cada 1 turno.",
+        "Seu personagem possui um fator de cura impressionante, sendo capaz de regenerar uma enorme quantidade de dano rapidamente. Os motivos para este poder devem ser explicados pelo personagem. Em termos de regras, os custos de Regeneração variam de acordo com a quantidade de pontos de vida recuperados a cada turno. Um personagem nunca pode possuir mais pontos de vida do que o seu total final."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "5 pontos: Seu personagem recupera 1 PV a cada 3 turnos.",
+            "7 pontos: Seu personagem recupera 1 PV a cada 2 turnos.",
+            "9 pontos: Seu personagem recupera 1 PV a cada 1 turno."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu personagem possui um fator de cura impressionante, sendo capaz de regenerar uma enorme quantidade de dano rapidamente. Os motivos para este poder devem ser explicados pelo personagem. Em termos de regras, os custos de Regeneração variam de acordo com a quantidade de pontos de vida recuperados a cada turno. Um personagem nunca pode possuir mais pontos de vida do que o seu total final."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia",
+      "title": "Resistência",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "O seu personagem possui uma Resistência maior a um tipo de dano (Contusão; Corte; Explosão; Perfuração; Mágico; etc.). Em termos de regras, seus testes de Resistência quando envolvem o tipo de dano cujo seu personagem é resistente são diminuídos em um nível de dificuldade (Normais se tornam fáceis, por exemplo)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O seu personagem possui uma Resistência maior a um tipo de dano (Contusão; Corte; Explosão; Perfuração; Mágico; etc.). Em termos de regras, seus testes de Resistência quando envolvem o tipo de dano cujo seu personagem é resistente são diminuídos em um nível de dificuldade (Normais se tornam fáceis, por exemplo)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ritualismo",
+      "title": "Ritualismo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 ponto: O personagem pode lançar todos os rituais do 1o Círculo, começa com 3 rituais e (WILL/5) Pontos de Magia, ou seja, o número de pontos de magia é igual a Força de Vontade dividida por cinco, e arredondada para baixo.",
+        "2 pontos: O personagem pode lançar todos os rituais do 2o Círculo, começa com 5 rituais e (WILL/5 x2) Pontos de Magia;",
+        "3 pontos: O personagem pode lançar todos os rituais do 3o Círculo, começa com 7 rituais e (WILL/5 x3) Pontos de Magia;",
+        "4 pontos: O personagem pode lançar todos os rituais do 4o Círculo, começa com 9 rituais e (WILL/5 x4) Pontos de Magia;",
+        "5 pontos: O personagem pode lançar todos os rituais do 5o Círculo, começa com 11 rituais e (WILL/5 x5) Pontos de Magia.",
+        "O personagem conseguiu de alguma forma desenvolver a habilidade de manipular a magia. Através de rituais complexos em seu grimório, ele pode realizar magias que conheça e tenha preparado. Para cada ponto gasto em Ritualismo o personagem ganha uma Deformação, melhor detalhados no capítulo Magia do Módulo Básico."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: O personagem pode lançar todos os rituais do 1o Círculo, começa com 3 rituais e (WILL/5) Pontos de Magia, ou seja, o número de pontos de magia é igual a Força de Vontade dividida por cinco, e arredondada para baixo.",
+            "2 pontos: O personagem pode lançar todos os rituais do 2o Círculo, começa com 5 rituais e (WILL/5 x2) Pontos de Magia;",
+            "3 pontos: O personagem pode lançar todos os rituais do 3o Círculo, começa com 7 rituais e (WILL/5 x3) Pontos de Magia;",
+            "4 pontos: O personagem pode lançar todos os rituais do 4o Círculo, começa com 9 rituais e (WILL/5 x4) Pontos de Magia;",
+            "5 pontos: O personagem pode lançar todos os rituais do 5o Círculo, começa com 11 rituais e (WILL/5 x5) Pontos de Magia."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem conseguiu de alguma forma desenvolver a habilidade de manipular a magia. Através de rituais complexos em seu grimório, ele pode realizar magias que conheça e tenha preparado. Para cada ponto gasto em Ritualismo o personagem ganha uma Deformação, melhor detalhados no capítulo Magia do Módulo Básico."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saude-de-rato",
+      "title": "Saúde de Rato",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Seu personagem possui imunidade total a qualquer doença ou veneno não mágicos. Contudo, isso não o impede de ser um transmissor dos males que carrega inertes em seu corpo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu personagem possui imunidade total a qualquer doença ou veneno não mágicos. Contudo, isso não o impede de ser um transmissor dos males que carrega inertes em seu corpo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentido-de-perigo",
+      "title": "Sentido de Perigo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 a 2 Pontos",
+        "Esse aviso interno de perigo é também chamado de Sentido de Combate. O nível deste aprimoramento pode ser usada no lugar da Agilidade, com o propósito de se esquivar de ataques. Um Personagem com o aprimoramento Sentido de Perigo de não poderá ser surpreendido - isso é, você declara uma ação em qualquer turno onde alguém declarar um ataque surpresa no seu personagem. Isso não revela o tipo de ataque, apenas que um ataque está vindo. O Narrador poderá lhe dizer que há algo perigoso atrás de uma porta antes que o personagem a abra, mas não dirá exatamente o que se esconde ali.",
+        "com 2 pontos Você ganha a perícia Esquiva com 30% e +5% por Nível sem precisar gastar pontos para isso, mas pode gastar para chegar a valores acima de 100%."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 a 2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Esse aviso interno de perigo é também chamado de Sentido de Combate. O nível deste aprimoramento pode ser usada no lugar da Agilidade, com o propósito de se esquivar de ataques. Um Personagem com o aprimoramento Sentido de Perigo de não poderá ser surpreendido - isso é, você declara uma ação em qualquer turno onde alguém declarar um ataque surpresa no seu personagem. Isso não revela o tipo de ataque, apenas que um ataque está vindo. O Narrador poderá lhe dizer que há algo perigoso atrás de uma porta antes que o personagem a abra, mas não dirá exatamente o que se esconde ali.",
+            "com 2 pontos Você ganha a perícia Esquiva com 30% e +5% por Nível sem precisar gastar pontos para isso, mas pode gastar para chegar a valores acima de 100%."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "telepatia",
+      "title": "Telepatia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 pontos: O personagem só consegue captar pensamentos superficiais, o que ela está pensando naquele momento ou sentimentos muito fortes. O telepata também pode transmitir um sentimento simples, como medo ou amor, uma imagem ou uma mensagem para a outra pessoa. Ela poderá passar num teste de força de vontade pra resistir à influência. A distância máxima em metros e tempo máximo em minutos seguido que pode utilizar é de Força de Vontade x5. É preciso passar uma hora antes de utilizar novamente, esgotado esse prazo. O alvo tem direito a um teste de WILL pra resistir.",
+        "5 pontos: O personagem consegue além de captar os pensamentos e sentimentos, captar as impressões sensoriais (ver o que ele está vendo, ouvir o que está ouvindo, sentir o que ele está sentindo, etc.). Ele pode alterar alguns sentidos ou emoções da outra pessoa, além de ler pensamentos mais profundos e conversar mentalmente com a mesma. Pode ler pensamentos superficiais e emoções de um grupo de até 10 pessoas e passar para elas uma mensagem, uma imagem ou um sentimento simples. Não há distância máxima e tempo máximo de utilização. O alvo tem direito a um Teste de WILL pra resistir.",
+        "É o dom de ler e captar a mente das pessoas. Usar Telepatia exige um turno."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 pontos: O personagem só consegue captar pensamentos superficiais, o que ela está pensando naquele momento ou sentimentos muito fortes. O telepata também pode transmitir um sentimento simples, como medo ou amor, uma imagem ou uma mensagem para a outra pessoa. Ela poderá passar num teste de força de vontade pra resistir à influência. A distância máxima em metros e tempo máximo em minutos seguido que pode utilizar é de Força de Vontade x5. É preciso passar uma hora antes de utilizar novamente, esgotado esse prazo. O alvo tem direito a um teste de WILL pra resistir.",
+            "5 pontos: O personagem consegue além de captar os pensamentos e sentimentos, captar as impressões sensoriais (ver o que ele está vendo, ouvir o que está ouvindo, sentir o que ele está sentindo, etc.). Ele pode alterar alguns sentidos ou emoções da outra pessoa, além de ler pensamentos mais profundos e conversar mentalmente com a mesma. Pode ler pensamentos superficiais e emoções de um grupo de até 10 pessoas e passar para elas uma mensagem, uma imagem ou um sentimento simples. Não há distância máxima e tempo máximo de utilização. O alvo tem direito a um Teste de WILL pra resistir."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "É o dom de ler e captar a mente das pessoas. Usar Telepatia exige um turno."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teletransporte",
+      "title": "Teletransporte",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 pontos: A distância segura é de 10m, a distância máxima é de 1 km;",
+        "4 pontos: A distância segura é de 30m, a distância máxima é de 3 km;",
+        "5 pontos: A distância segura é de 50m, a distância máxima é de 5 km.",
+        "O teletransporte permite que o personagem se transporte instantaneamente de um lugar para o outro, sem cruzar o espaço intermediário. Ele concede um bônus automático de +10% em Esquiva. O teletransporte só é possível se o personagem já visitou alguma vez o local de destino ou possa vê-lo ou senti-lo claramente (com o uso de sentidos aguçados e/ou sensitivo). Para conseguir alcançar a distância máxima, é necessário um teste de Força de Vontade."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 pontos: A distância segura é de 10m, a distância máxima é de 1 km;",
+            "4 pontos: A distância segura é de 30m, a distância máxima é de 3 km;",
+            "5 pontos: A distância segura é de 50m, a distância máxima é de 5 km."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O teletransporte permite que o personagem se transporte instantaneamente de um lugar para o outro, sem cruzar o espaço intermediário. Ele concede um bônus automático de +10% em Esquiva. O teletransporte só é possível se o personagem já visitou alguma vez o local de destino ou possa vê-lo ou senti-lo claramente (com o uso de sentidos aguçados e/ou sensitivo). Para conseguir alcançar a distância máxima, é necessário um teste de Força de Vontade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voo",
+      "title": "Voo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 pontos: O personagem é capaz apenas de deslizar dois metros acima do solo ou planar caso esteja em queda livre, anulando o dano por queda;",
+        "3 pontos: O personagem é capaz de voar a 20m/s, mas não pode decolar verticalmente, sendo preciso que ele tenha um espaço bom para conseguir decolar;",
+        "4 pontos: O personagem é capaz de voar a 50m/s;",
+        "5 pontos: O personagem é capaz de voar a 100m/s."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos: O personagem é capaz apenas de deslizar dois metros acima do solo ou planar caso esteja em queda livre, anulando o dano por queda;",
+            "3 pontos: O personagem é capaz de voar a 20m/s, mas não pode decolar verticalmente, sendo preciso que ele tenha um espaço bom para conseguir decolar;",
+            "4 pontos: O personagem é capaz de voar a 50m/s;",
+            "5 pontos: O personagem é capaz de voar a 100m/s."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": "virus",
+      "title": "Vírus",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "Qualquer secreção emanada por seu corpo contém alguma doença nele hospedada. Em caso de sucesso em um ataque corpo-a-corpo, qualquer oponente precisa passar em um teste de Resistência de CON pra evitar ser infectado.",
+        "Secreções corporais exigem um Teste fácil (1d3 de dano); dejetos exigem um teste normal (1d6 de dano e testes aumentam uma dificuldade); Sangue e órgãos exigem um teste difícil (1d10 de dano e todos os testes tornam-se difíceis)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Qualquer secreção emanada por seu corpo contém alguma doença nele hospedada. Em caso de sucesso em um ataque corpo-a-corpo, qualquer oponente precisa passar em um teste de Resistência de CON pra evitar ser infectado.",
+            "Secreções corporais exigem um Teste fácil (1d3 de dano); dejetos exigem um teste normal (1d6 de dano e testes aumentam uma dificuldade); Sangue e órgãos exigem um teste difícil (1d10 de dano e todos os testes tornam-se difíceis)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foco-em-caminho",
+      "title": "Foco em Caminho",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem é especialista em um dos caminhos da magia. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +1. Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem é especialista em um dos caminhos da magia. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +1. Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maestria-em-caminho",
+      "title": "Maestria em Caminho",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Restrição: O personagem deve possuir o Aprimoramento Foco em Caminho.",
+        "A sua especialidade e compreensão de um dos caminhos da magia tornou-se formidável. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +3. Este bônus SUBSTITUI o bônus de Foco em Caminho.",
+        "Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Restrição: O personagem deve possuir o Aprimoramento Foco em Caminho.",
+            "A sua especialidade e compreensão de um dos caminhos da magia tornou-se formidável. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +3. Este bônus SUBSTITUI o bônus de Foco em Caminho.",
+            "Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supremacia-em-caminho",
+      "title": "Supremacia em Caminho",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Restrição: O personagem deve possuir o Aprimoramento Maestria em Caminho.",
+        "A sua especialidade e compreensão de um dos caminhos da magia tornou-se Estrondosa. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +4. Este bônus SUBSTITUI o bônus de Maestria em Caminho.",
+        "Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera, e pode-se lançar uma magia extra para cada 5 pontos em Int, desde que estas sejam magias de lançamento imediato."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Restrição: O personagem deve possuir o Aprimoramento Maestria em Caminho.",
+            "A sua especialidade e compreensão de um dos caminhos da magia tornou-se Estrondosa. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +4. Este bônus SUBSTITUI o bônus de Maestria em Caminho.",
+            "Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera, e pode-se lançar uma magia extra para cada 5 pontos em Int, desde que estas sejam magias de lançamento imediato."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saque-rapido",
+      "title": "Saque rápido",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Você treinou bastante a técnica de sacar uma arma (seja ela de fogo ou branca), antes mesmo de seus oponentes verem você. Você pode sacar uma arma sem gastar um turno e ganha +4 na sua iniciativa neste turno."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você treinou bastante a técnica de sacar uma arma (seja ela de fogo ou branca), antes mesmo de seus oponentes verem você. Você pode sacar uma arma sem gastar um turno e ganha +4 na sua iniciativa neste turno."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poder-oculto",
+      "title": "Poder Oculto",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 a 12 Pontos",
+        "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em seus atributos. É como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre seus atributos. Cada ponto gasto com a aprimoramento significa 1D6+1 ponto para usar. Se você tem Poder Oculto 3, pode distribuir 3D6+3 pontos entre quaisquer Atributos, podendo ate ultrapassar os seus limites. Você poderia, por exemplo, escolher Força +2D6+2 e Destreza +1D6+1 ou qualquer outra combinação. A única restrição e que, mesmo com Poder Oculto acima de 3, você nunca pode colocar um bônus superior a +3D6+3 em uma único Atributo. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que mover os pontos, precisa gastar 1 Ponto de Ki. Mover pontos no meio de um combate conta como uma ação completa e leva um turno, mas se quiser você pode mover mais de um ponto ao mesmo tempo. Se a qualquer momento você ficar com 0 PVs, seus pontos de Poder Oculto desaparecem e terão que ser invocados outra vez."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 a 12 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em seus atributos. É como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre seus atributos. Cada ponto gasto com a aprimoramento significa 1D6+1 ponto para usar. Se você tem Poder Oculto 3, pode distribuir 3D6+3 pontos entre quaisquer Atributos, podendo ate ultrapassar os seus limites. Você poderia, por exemplo, escolher Força +2D6+2 e Destreza +1D6+1 ou qualquer outra combinação. A única restrição e que, mesmo com Poder Oculto acima de 3, você nunca pode colocar um bônus superior a +3D6+3 em uma único Atributo. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que mover os pontos, precisa gastar 1 Ponto de Ki. Mover pontos no meio de um combate conta como uma ação completa e leva um turno, mas se quiser você pode mover mais de um ponto ao mesmo tempo. Se a qualquer momento você ficar com 0 PVs, seus pontos de Poder Oculto desaparecem e terão que ser invocados outra vez."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alergia",
+      "title": "Alergia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: O Personagem é alérgico a alguma coisa (poeira, pelo de animais, certos perfumes). Ao entrar em contato com essa substância, sofre uma reação alérgica que prejudica suas ações (o Mestre deve impor penalidades conforme o tipo de ação que o personagem pretender realizar).",
+        "-2 pontos: Cada cinco minutos de exposição ao causador da reação alérgica pede um teste imediato de CON. Caso seja mal sucedido, os efeitos da alergia se intensificam, e em caso de falha no teste, podendo causar a morte."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: O Personagem é alérgico a alguma coisa (poeira, pelo de animais, certos perfumes). Ao entrar em contato com essa substância, sofre uma reação alérgica que prejudica suas ações (o Mestre deve impor penalidades conforme o tipo de ação que o personagem pretender realizar).",
+            "-2 pontos: Cada cinco minutos de exposição ao causador da reação alérgica pede um teste imediato de CON. Caso seja mal sucedido, os efeitos da alergia se intensificam, e em caso de falha no teste, podendo causar a morte."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": "cacado",
+      "title": "Caçado",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: Há um preço considerável por você; ultrapassando D$ 10.000,00 (que equivalem a 1.000 Peças de Ouro)",
+        "-2 pontos: Os valores sobre sua cabeça são altos e até seus melhores amigos ficarão tentados a traí-lo pelo prêmio. Em valores, ultrapassam facilmente o montante de D$100.000,00 (ou 10.000 Peças de Ouro).",
+        "-3 pontos: O valor de prêmio pela sua vida é de tal forma tentador, que você será caçado e conhecido como uma das cabeças premiadas mais cobiçadas de todo o mundo. Recompensa total superior aos D$ 1.000.000,00 (Valor equivalente a 100.000 Peças de Ouro)",
+        "Alguém colocou um prêmio sobre a cabeça de seu personagem, e ele é constantemente atormentado por caçadores de recompensas ou oportunistas. Nenhum lugar é realmente seguro, e a ganância das pessoas o torna alguém que não pode confiar plenamente em ninguém."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: Há um preço considerável por você; ultrapassando D$ 10.000,00 (que equivalem a 1.000 Peças de Ouro)",
+            "-2 pontos: Os valores sobre sua cabeça são altos e até seus melhores amigos ficarão tentados a traí-lo pelo prêmio. Em valores, ultrapassam facilmente o montante de D$100.000,00 (ou 10.000 Peças de Ouro).",
+            "-3 pontos: O valor de prêmio pela sua vida é de tal forma tentador, que você será caçado e conhecido como uma das cabeças premiadas mais cobiçadas de todo o mundo. Recompensa total superior aos D$ 1.000.000,00 (Valor equivalente a 100.000 Peças de Ouro)"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Alguém colocou um prêmio sobre a cabeça de seu personagem, e ele é constantemente atormentado por caçadores de recompensas ou oportunistas. Nenhum lugar é realmente seguro, e a ganância das pessoas o torna alguém que não pode confiar plenamente em ninguém."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dominado",
+      "title": "Dominado",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-2 Pontos",
+        "Você há muito tempo perdeu sua liberdade, sendo mantido em regime de escravidão por alguém ou por alguma grande corporação. Deve cumprir tarefas sob a ordem direta de seus superiores e jamais questionar suas decisões. Sua vida pertence a eles, e nada do que você fizer passará despercebido por aqueles que lhe dominam."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você há muito tempo perdeu sua liberdade, sendo mantido em regime de escravidão por alguém ou por alguma grande corporação. Deve cumprir tarefas sob a ordem direta de seus superiores e jamais questionar suas decisões. Sua vida pertence a eles, e nada do que você fizer passará despercebido por aqueles que lhe dominam."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fracote",
+      "title": "Fracote",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: Os pontos de vida (PVS) iniciais do personagem são a metade obtida com o cálculo normal;",
+        "-2 Pontos por nível: Os PVs iniciais são a metade do normal e o ganho por nível é a metade do ganho normal por nível.",
+        "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúdes perfeitos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: Os pontos de vida (PVS) iniciais do personagem são a metade obtida com o cálculo normal;",
+            "-2 Pontos por nível: Os PVs iniciais são a metade do normal e o ganho por nível é a metade do ganho normal por nível."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúdes perfeitos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inabil",
+      "title": "Inábil",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: O personagem calcula seus pontos de perícia com metade do valor da Inteligência.",
+        "-2 pontos: O personagem calcula seus pontos de perícia com metade do valor da Idade.",
+        "-3 pontos: O valor total dos pontos de perícia do personagem (calculados normalmente) são divididos pela metade.",
+        "Seu personagem não possui a menor habilidade para qualquer coisa, sendo um completo inútil para a maioria das atividades que requeiram um pouco mais de cérebro."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: O personagem calcula seus pontos de perícia com metade do valor da Inteligência.",
+            "-2 pontos: O personagem calcula seus pontos de perícia com metade do valor da Idade.",
+            "-3 pontos: O valor total dos pontos de perícia do personagem (calculados normalmente) são divididos pela metade."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu personagem não possui a menor habilidade para qualquer coisa, sendo um completo inútil para a maioria das atividades que requeiram um pouco mais de cérebro."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marcado-a-ferro",
+      "title": "Marcado a Ferro",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: A marca é pequena, em uma parte do corpo oculta ou é facilmente ocultável;",
+        "-2 pontos: Sua marca é grande ou está num lugar óbvio, sendo difícil de ser ocultada;",
+        "-3 pontos: É impossível ocultá-la, pois todo o seu corpo está marcado por ela.",
+        "O personagem possui uma marca no corpo que o torna facilmente reconhecível por seus inimigos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: A marca é pequena, em uma parte do corpo oculta ou é facilmente ocultável;",
+            "-2 pontos: Sua marca é grande ou está num lugar óbvio, sendo difícil de ser ocultada;",
+            "-3 pontos: É impossível ocultá-la, pois todo o seu corpo está marcado por ela."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui uma marca no corpo que o torna facilmente reconhecível por seus inimigos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ponto-fraco",
+      "title": "Ponto Fraco",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: Minúsculo. Precisa de um teste difícil de PER para ser notado e um teste difícil para ser atingido;",
+        "-2 pontos: Médio. Precisa de um teste de PER para ser notado e um teste de ataque normal para ser atingido.",
+        "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um critico, os pontos de vida do personagem caem para 0."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: Minúsculo. Precisa de um teste difícil de PER para ser notado e um teste difícil para ser atingido;",
+            "-2 pontos: Médio. Precisa de um teste de PER para ser notado e um teste de ataque normal para ser atingido."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um critico, os pontos de vida do personagem caem para 0."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensibilidade-a-luz",
+      "title": "Sensibilidade à Luz",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 Ponto",
+        "Seu personagem pertence a uma raça ou possui alguma maldição ou defeito que torna sua visão sensível a luz do dia. Para todos os efeitos de regras, um personagem com Sensibilidade à Luz irá enxergar apenas seis metros à luz do dia, e mesmo assim de forma precária. Além disso, todos os testes (excetuando-se combate corpo-a-corpo) envolvendo visão durante o dia aumentam em um grau de Dificuldade."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu personagem pertence a uma raça ou possui alguma maldição ou defeito que torna sua visão sensível a luz do dia. Para todos os efeitos de regras, um personagem com Sensibilidade à Luz irá enxergar apenas seis metros à luz do dia, e mesmo assim de forma precária. Além disso, todos os testes (excetuando-se combate corpo-a-corpo) envolvendo visão durante o dia aumentam em um grau de Dificuldade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tamanho-especial",
+      "title": "Tamanho Especial",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 Ponto",
+        "Seu corpo é muito diferente do padrão humanóide, o que irá impossibilitar o uso de qualquer arma, roupa ou equipamento que não tenha sido projetado especialmente para você. Pode ser muito grande, ou pequeno demais, possuir braços de tamanhos diversos, a explicação depende do seu background. Em certos casos, todos os membros de sua raça possuirão esta desvantagem."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu corpo é muito diferente do padrão humanóide, o que irá impossibilitar o uso de qualquer arma, roupa ou equipamento que não tenha sido projetado especialmente para você. Pode ser muito grande, ou pequeno demais, possuir braços de tamanhos diversos, a explicação depende do seu background. Em certos casos, todos os membros de sua raça possuirão esta desvantagem."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vidas-gastas",
+      "title": "Vidas Gastas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: Você já morreu uma vez e só possui seis vidas para gastar. É preciso esclarecer no background o que ocorreu com o novo gnomo nascido;",
+        "-2 pontos: Você já morreu três vezes e só possui quatro vidas pra gastar. É preciso esclarecer no background o que ocorreu com os novos gnomos nascidos;",
+        "-3 pontos: Você já morreu seis vezes e só possui uma vida pra gastar. É preciso esclarecer no background o que ocorreu com os novos gnomos nascidos.",
+        "Apenas para Gnomos"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: Você já morreu uma vez e só possui seis vidas para gastar. É preciso esclarecer no background o que ocorreu com o novo gnomo nascido;",
+            "-2 pontos: Você já morreu três vezes e só possui quatro vidas pra gastar. É preciso esclarecer no background o que ocorreu com os novos gnomos nascidos;",
+            "-3 pontos: Você já morreu seis vezes e só possui uma vida pra gastar. É preciso esclarecer no background o que ocorreu com os novos gnomos nascidos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Apenas para Gnomos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vulnerabilidade",
+      "title": "Vulnerabilidade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 ponto: Perde duas vezes mais pontos de vida com um tipo de ataque.",
+        "-2 pontos: Perde metade dos pontos de vida com um tipo de ataque ou duas vezes mais pontos de vida com 3 tipos de ataque;",
+        "-3 pontos: Perde todos os pontos de vida com um determinado tipo de ataque ou duas vezes mais pontos de vida com 5 tipos de ataque.",
+        "O corpo de seu personagem é especialmente vulnerável a alguma substância ou tipo de ataque, que gera muito mais dano do que iria causar em uma pessoa normal. Em termos de regras, quando atacado com o objeto que lhe causa vulnerabilidade, seu personagem:"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto: Perde duas vezes mais pontos de vida com um tipo de ataque.",
+            "-2 pontos: Perde metade dos pontos de vida com um tipo de ataque ou duas vezes mais pontos de vida com 3 tipos de ataque;",
+            "-3 pontos: Perde todos os pontos de vida com um determinado tipo de ataque ou duas vezes mais pontos de vida com 5 tipos de ataque."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O corpo de seu personagem é especialmente vulnerável a alguma substância ou tipo de ataque, que gera muito mais dano do que iria causar em uma pessoa normal. Em termos de regras, quando atacado com o objeto que lhe causa vulnerabilidade, seu personagem:"
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "aprimoramentos": 69,
+    "aprimoramentos_positivos": 58,
+    "aprimoramentos_negativos": 11
+  },
+  "reviewNotes": [
+    "Quebras de página e linhas partidas foram removidas antes da segmentação.",
+    "Modificadores negativos internos de Ataque Especial foram preservados na descrição do aprimoramento positivo, não como aprimoramentos negativos independentes."
+  ],
+  "generatedAt": "2026-06-05T11:40:45"
+}
