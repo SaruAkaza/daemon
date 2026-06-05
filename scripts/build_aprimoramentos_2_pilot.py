@@ -48,6 +48,8 @@ TEXT_FIXES = {
     "PONTO.": "PONTO:",
     "Pontos Heróicos": "Pontos Heroicos",
     "Heróicos": "Heroicos",
+    "PONTOS HERÓICOS": "PONTOS HEROICOS",
+    "HERÓICOS": "HEROICOS",
 }
 
 RULE_HEADINGS = {
