@@ -1,0 +1,2238 @@
+{
+  "version": 1,
+  "status": "pilot_review",
+  "generatedAt": "2026-06-04T21:55:15",
+  "source": "alastores-a-justica-infernal",
+  "sourceFile": "Alastores - A Justiça Infernal.docx",
+  "sourcePath": "Livros\\word\\feito\\Alastores - A Justiça Infernal.docx",
+  "title": "Alastores - A Justiça Infernal",
+  "summary": "Suplemento sobre a Ordem Caçadora dos Alastores, suas leis infernais, poderes, aprimoramentos, kits, rituais, objetos e fichas.",
+  "areas": [
+    "aprimoramentos",
+    "cenarios_lore",
+    "classes",
+    "criaturas_npcs",
+    "itens_equipamentos",
+    "poderes",
+    "rituais"
+  ],
+  "groups": [
+    {
+      "id": "alastores-justica-infernal-lore",
+      "title": "Alastores - A Justiça Infernal",
+      "kind": "setting",
+      "area": "cenarios_lore",
+      "sectionTitle": "Cenário",
+      "sections": [
+        {
+          "id": "introducao",
+          "title": "Introdução",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Na mitologia grega, Alastor era uma divindade encarregada da vingança de um crime. Alastor significava \"Vingador\". A palavra também e empregada para designar espíritos infernais incumbidos de caçar qualquer alma condenada ao Orco que tenha fugida para a Terra. Alastores são uma das casas infernais mais conhecidas dentro do Inferno, sendo encarregados de caçarem fugitivos do mesmo. No Passado, muitos Demônios foragidos fugiam para o mundo de Ark-A-Nun, mas, com a degradação deste planeta, passaram a fugir para a Terra, em especial a América do Sul, pela falta de controle dos governos, da corrupção generalizada e da impunidade nessa região do mundo. Muitas vezes, os Alastores precisam do apoio de Humanos para realizar seu trabalho. Os Demonologistas que os auxiliam nesse trabalho fazem parte de uma antiga ordem de caçadores conhecida como Auxiliares - que por sua vez esta subordinada a Ordem do Templo de Set - que existe desde a Idade Média. Os Auxiliares não são exatamente caçadores de Demônios, pois eles não caçam diretamente criaturas sobrenaturais, apenas providenciam recursos para que os verdadeiros caçadores possam agir."
+          ]
+        },
+        {
+          "id": "origem",
+          "title": "Origem",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "\"Do crepúsculo dos tempos nós viemos, movendo silenciosamente através dos séculos, carregando muitas vidas secretas. Ninguém jamais soube que nós existíamos entre vocês até agora\" Ramirez, Highlander.",
+            "A Ordem Caçadora dos Alastores teve inicio com seu primeiro \"Carrasco\" que fora aquele que lhe da nome. Oriundo de Ark-A-Nun, Alastor fora conselheiro do rei Neleus de Pylos, na Grécia, mas fora assassinado por Héracles a mando do próprio Zeus, por manter contatos com feiticeiros persas. Em Ark-A-Nun, Alastor já exercia suas habilidades em matar e rastrear - integrando um grupo de assassinos devotos ao rei de sua região - sendo estas lendárias, lhe renderam renome nas terras infernais e todo o apoio para que continuasse empregando e aprimorando suas capacidades, a serviço do Triunvirato Infernal. Com o passar das eras, o Inferno fora divido em Círculos de Danação, e os gritos de sofrimento das almas dos condenados preencheram o silêncio que pairava naquela região umbralina. Fora decisão da Tríade Profana – formada por Shaitan, Lúcifer e Belzebu – relocar esses espíritos cada um de acordo com suas perversidades; e claro, contra a vontade desses. Quando o primeiro chicote fustigou, simultaneamente o primeiro pensamento de fuga também acendeu nas mentes dos Condenados, e logo fora necessário formar uma equipe de caçadores de fugitivos do Inferno. No passado Aiacos, Minos e Radamanthys, Os",
+            "Três Juízes Infernais utilizavam guerreiros sem nome e desorganizados, que perseguiam os fugitivos de seus veredictos e na maioria das vezes destruíam a alma deserta – algo que não agradava aos senhores do Inferno. Muitos Demônios foragidos fugiam para o mundo de Ark-A-Nun, mas, com a degradação deste, passaram a escapar para a Terra. Naquele tempo, apenas o medo instaurava a ordem no Inferno e mesmo assim, existia locais onde ele não atingia; guerras aconteciam, destruições e represálias em massa ocorriam. Os governantes infernais precisavam de alguém que levasse o sua palavra através da espada aos corações dos Demônios, uma personificação de sua vontade, que existiria dali em diante no Orco; em conjunto o Triunvirato, e os Três Juízes do Inferno, nomearam como seus olhos, ouvidos e seus punhos uma Ordem e a chamaram Alastores. A Nigrum Manus (A Mão Negra), como ficaram conhecidos inicialmente os Demônios de Alastor passaram a desfrutar de um poder imenso sobre a sociedade infernal, após inúmeras missões, foram ungidos com o poder de julgar as leis infernais e punir seus infratores; podendo convocar uma caçada a todo e qualquer que as desrespeitasse. Os Alastores originais são uma espécie de tropa de elite dentro do Inferno, selecionados entre os melhores. Não existe uma casta preferencial, apesar dos duques preferirem Arkanitas ou Captares Caídos para realizarem este serviço. Com o poder que detinham, podiam fazer com que Nobres fossem removidos antes de causar muitos danos ou dirigir marés de guerra infrutíferas uns contra os outros, e dizem lendas que os próprios Juízes Infernais não estão a salvo de suas punições. Alastores são uma das casas infernais mais conhecidas dentro e fora do Orco, sendo encarregados de caçarem fugitivos do mesmo e responsáveis por todas as 4320 Leis Infernais conhecidas principais (já que quanto mais ínfero for o padrão vibratório, mais leis existem), mas cada Alastor Majora (os mais graduados) deve ser responsável por conhecer e fazer valer também as leis regionais que integram o Círculo o qual estão vigilantes."
+          ]
+        },
+        {
+          "id": "o-indice-carmesim",
+          "title": "O Índice Carmesim",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "\"Esta é a Lei da Selva, tão antiga e verdadeira como o céu; E o Lobo que a seguir poderá protestar, mas o Lobo que a quebrar deverá morrer\" Rudyard Kipling, \"A Lei da Selva\"",
+            "Os Alastores foram responsáveis pela criação do temível Índice Carmesim: A Lista dos mais procurados do Inferno. Conta-se que a tão odiada listagem encontra-se na sede da Ordem dos Caçadores; um livro de capa de couro Humano, tingido de vermelho e adornado com o olho vigilante dos Alastores, onde estão descritas todas as leis infernais conhecidas e onde qualquer nome inserido passa a ser do conhecimento de todos aqueles que caçam no Inferno. A pena que sela o destino de um espírito (na realidade um dedo demoníaco ressecado), esta sempre ao lado do volume, imersa em sangue negro pronta para condenar um infeliz a perdição. Judas lidera a lista por ser tão valioso para os Céus quanto para o Inferno. Anung un Rama, conhecido como Hellboy, esta em Segundo por ser capaz de libertar entidades terríveis do Limbo. Photus, um poderoso Anjo da Cidade de Prata que enfrentou Christos, perdeu, e quando caiu escondeu-se na Terra para não ir para o Inferno servir a Lúcifer esta em Terceiro lugar na lista. Laoviah esta em Quarto lugar por tentar criar um paraíso paralelo para os espíritos de seus fiéis e Andreas Von Brauchitsch, o Soldado que fugiu do Inferno usando a Caixa de Anúbis em Quinto. O Feiticeiro chamado Faustus esta em Sexto por enganar o próprio Belzebu e All Simons em Sétimo, sendo caçado principalmente pelas forças de Malebolge. Marcelus Van Lexus ocupa a oitava posição por ter liberado ritual da Peste Negra durante a Idade das Trevas, que matou Demônios importantes. Muitos dos Anjos da Segunda Rebelião (principalmente Samyaza e seus filhos Nephelim Ahiah, Hiwa e Hiya) ocupam posições distintas da lista. O Ophanim Howhael foi adicionado à lista da Décima Posição por se incumbir de punir os praticantes das artes arcanas entre os Hebreus que começassem a contatar entidades inferiores, Anjos Caídos e Daemons. Todos os integrantes do Índice Carmesim têm suas cabeças avaliadas em tesouros, e aqueles que as conseguem, escolhem seus troféus no lendário Labirinto dos Tesouros, situado dentro do Palácio Dourado de Lúcifer: um imenso salão contendo armas e armaduras mágicas reunidas ao redor da existência pelo próprio Portador da Luz. O Índice Carmesim é extremamente visado, já que o nome que for apagado do livro deixará de existir para os caçadores de recompensas e demais Alastores; mas um fugitivo nunca é esquecido pelo Primeiro dos Carrascos que nomeia a implacável justiça infernal."
+          ]
+        },
+        {
+          "id": "a-cacada",
+          "title": "A Caçada",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "\"Alquebrado e consumido por chamas, será expulso do céu etéreo. No abismo da perdição reinarás. Algemado em correntes adamantinas. Envolto em fogo punidor\" John Milton, Paraíso Perdido Mesmo com toda desorganização existente no Orco, os Alastores são extremamente calculistas e estratégicos ao atuarem em suas missões, as quais eles chamam de Caçadas. Uma Caçada não se inicia subitamente, impulsiva e sem foco, pelo contrário; assim que a informação chega à sede da Ordem – enviada muito provavelmente pelos Auxiliares, através do ritual Dammant Indicium – um grupo inicial de Alastores (chamados internamente de Vigiluns) se desloca para o local, para investigar o acontecido. Sua presença sempre é acompanhada pelo medo, pois ela é tanto um grande poder por si só como a potencia precursora da atenção fatal dos Alastores. Vigiluns são compostos normalmente por um Alastor Majora e um grupo que varia de 2 a 3 Alastores. Após a confirmação dos indícios, partem no encalço do fugitivo os Alastores conhecidos como Agmens, que saem do Inferno com uma missão específica e todo tipo de informação possível recolhida (essas definições são jargões internos apenas, já que os Alastores dividem-se em Alastor Majora e Alastores). Uma vez declarada a Caçada, o fugitivo passa a compor o Indice Carmesim, e todos os contatos dentro e fora do Inferno são alertados. Cada Círculo Infernal é responsabilidade de um Alastor Majora, e estes são servidos por diversos Alastores que atuam como seus espiões, executores e representantes de seu poder, sendo capazes também de convocarem uma Caçada quando assim acharem condizente. A convocação para uma Caçada feita por um Alastor Majora, só poderá ser contestada por outro Alastor Majora, concedendo-lhes poderes quase ilimitados para fazer o que bem entenderem. A maioria dos Majoras são prudentes o suficiente para considerarem suas ações ao lidarem com outro de sua estirpe; abusos de poder normalmente geram ressentimentos de Demônios de todas as idades, principalmente dos mais antigos. Não há limites para a convocação de uma Caçada e seus alvos; todos estão em sua mira, caso desrespeitem as leis impostas pelo Triunvirato, na teoria, na prática, sabe-se que muitos Alastores - mesmo sendo exemplos de prudência e honra no Inferno - ainda assim não estão no Orco por acidente, e talvez um inimigo de certo Duque Infernal possa adentrar ao Índice Carmesim se este possuir os contatos corretos."
+          ]
+        },
+        {
+          "id": "os-coenobiuns",
+          "title": "Os Coenobiuns",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Quando uma Caçada é bem sucedida (e normalmente elas o são) o fugitivo é encerrado por um tempo em um local chamado Coenobium. A palavra tem origem no Latim e significa \"tortura\" apenas, mas, estes locais realmente fazem valer o significado desta sensação. Nessas regiões, o condenado passa por dores e sofrimentos tão terríveis que defini-los através de palavras são impossíveis. Um Coenobium é uma região tétrica e vil, localizada em áreas do Baixo Umbral, onde o padrão vibratório é extremamente denso e as trevas primordiais ainda existem. São representações fantasmagóricas de imagens do mundo dos vivos (como a prisão de Alcatraz, Carandiru, os Gulags russos ou campos de concentração nazistas e muitas vezes, portais para esses locais podem ser facilmente abertos dessas áreas). Espectros horrendos desfilam com suas aparências indizíveis nesses locais atraídos pelos gritos de agonia dos torturados, proporcionando aos olhos destes um espetáculo macabro que nunca mais deixa suas mentes - já que marca o cerne de sua essência. A destruição de uma alma torturada esta fora de cogitação para os Alastores, visto que a estrutura do Inferno é erigida sob o sofrimento destas, então, como punição pela tentativa falha de escapar, o pobre condenado é enviado a estas prisões onde o tempo não corre, e eles podem desfrutar de uma eternidade de eternidades para sofrer. Muitos são os instrumentos de padecimento que existem em um Coenobium e são através de suas punições que os Alastores espalham o medo, sendo estas sempre muito criativas e cruéis. Os Carrascos são temidos não apenas por seu poder e idade, mas também por sua criatividade e sagacidade. Apenas os Demônios mais poderosos e politicamente fortes podem tentar escapar de suas garras. Os meios de tortura coordenados pelos Alastores dentro de um Coenobium são inúmeros e os servos que os manejam são tão prisioneiros quanto suas vítimas, enclausurados aqui por crimes indeléveis e inafiançáveis, mas que encontram certo conforto no sofrimento alheio. Coenobiuns muitas vezes são confundidos com Cidades Trevosas, vistos de Spiritum, mas os responsáveis por esses austeros locais são muitas vezes Duques Infernais ou entidades sinistras a serviço do Triunvirato; que possuem sua própria guarda pessoal em caso de precisarem combater Missões de Salvação a qualquer um dos torturados."
+          ]
+        },
+        {
+          "id": "a-fidelitas-ordinis",
+          "title": "A Fidelitas Ordinis",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Caçada Perigosa, como os Alastores chamam uma perseguição a um Duque Infernal ou general comandante de muitas legiões. Ao convocar um Fidelitas Ordinis, um Alastor Majora deve ser bem cauteloso já que a partir deste momento, se tornará alvo de olhares acusatórios, fazendo muitos inimigos ao mero pronunciar desta frase. Uma Caçada Perigosa deve ser convocada mediante uma reunião com os membros mais importantes da rotina do Círculo onde o Alastor atua; deste devem fazer parte todos os Majoras responsáveis por cada Círculo Infernal. Colocar o nome de uma entidade poderosa no Índice Carmesim é tarefa para poucos, mas até mesmo a coragem de um Senhor Infernal se esvai quando este termo é meramente citado próximo ao Círculo que controla. Dizem que verdadeiras divindades já sucumbiram a uma Fidelitas Ordinis e um alvo desta tão extrema ação é destruído imediatamente. Convocar uma Caçada Perigosa é exigir livre acesso aos domínios da entidade a que se caça da própria Tríade Infernal, e esta normalmente não age de maneira contrária ao veredito dos Majoras."
+          ]
+        },
+        {
+          "id": "veniam-peto",
+          "title": "Veniam Peto",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Assim como se pode condenar um Demônio a Caçada, os Juízes do Inferno, e nunca um Alastor (não que não sejam capazes, mas sim por NUNCA perdoarem ninguém) podem declarar que este é inocente; este fenômeno raro é chamado Veniam Peto. Normalmente quando os Alastores entram em ação, dificilmente aquele que os convocou voltara atrás em sua decisão – uns dizem que por medo – então Veniam Peto deve ser declarada antes dos Carrascos serem convocados ou depois de terem atuado. A palavra Veniam Peto é ouvida com frequência dentro dos Círculos de Sofrimento no Inferno, e normalmente não é levada a sério, a menos que proferida por um dos responsáveis pelas áreas de punição, e estes só as dizem quando realmente são ordenados para tal. Raríssimos Recíperes Caídos são capazes de forjar uma carta de perdão deste tipo, algo dificílimo já que até mesmo o tipo de material utilizado pode ser reconhecido por um Alastor se a falsificação for de péssima qualidade. O preço para uma destas pode ser pior que a danação a qual o espírito fora condenado; tanto para o procurador quanto para o fornecedor da fraude.",
+            "\"Três coisas devem ser feitas por um juiz: ouvir atentamente, considerar sobriamente e decidir implacavelmente.\" Sócrates."
+          ]
+        },
+        {
+          "id": "no-inferno",
+          "title": "No Inferno",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Sendo temidos e considerados o braço forte das leis infernais; os Alastores respondem diretamente aos Juízes e ao Triunvirato do Inferno no quesito da captura de foragidos e criminosos das principais normas do Orco. Cada Círculo do Inferno, também possui leis regionais criadas por seus senhores que também devem ser cumpridas e respeitadas a risca, sendo este tratamento amparado ao poder a eles confiados pela Tríade Infernal. Para exercer a lei em seus domínios, muitos Duques e Comandantes de Legiões formaram suas próprias milícias e arrebanharam guerreiros particulares para desempenharem a função fiscalizatória, deixando para os Alastores a tarefa de tratar de assuntos ditos \"federais\""
+          ]
+        },
+        {
+          "id": "a-milicia-de-ferro",
+          "title": "A Milícia de Ferro",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Bhaalzebub chegou ao Inferno no século X a.C, e tomou o controle da Cidade de Ferro de Dite de seu antigo Imperador, o Daemon Orcus culminando em sua derrota e aparente destruição. Porém, muitos Demônios argumentam que a essência vital do deus maligno conseguiu se recuperar e passou a se esconder nos milhares de túneis subterrâneos, formando uma sociedade secreta entre os",
+            "Demônios, com o objetivo de derrubar Bhaalzebub e trazer novamente o grande deus das pestes de volta a Dite. Bhaalzebub criou um grupo de Demônios a seu serviço, prontos para caçar quaisquer daqueles que ainda nutriam simpatia por Orcus; esses caçadores são chamados de Milícia de Bhaalzebub ou Milícia de Ferro e são especialistas em pragas e doenças. Bhaalzebub também se utiliza do serviço dos assassinos conhecidos como a Irmandade Rubra, mas estes agem de maneira dúbia, tanto caçando Orcus e seus discípulos, como também os milicianos do novo senhor de Dite. Do outro lado da guerra que acontece em Dite, Orcus ergue-se com sua secreta Sociedade de Orcus. Atualmente, ainda não se sabe se o Daemon está mesmo vivo ou se não passa apenas de uma lenda entre os Demônios que tentam usurpar o poder da realeza infernal. A Sociedade de Orcus atuam na clandestinidade, aliados a Máfia terrena – que treina os assassinos e capangas para futuramente tornarem-se Maris seguidores de Orcus – e a entidade Laran (um senhor trevoso discípulo do antigo senhor das pragas). O Senhor Trevoso possui os Nomes Verdadeiros de alguns Demônios próximos a Corte de Bhaalzebub, utilizando estes para chantagear e conseguir vantagens em negociações, rituais e outros serviços, principalmente ofuscar os olhares atentos dos Alastores e da Milícia de Ferro."
+          ]
+        },
+        {
+          "id": "os-templarios-caidos",
+          "title": "Os Templários Caídos",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Orientada por Jacques DeMoley, o ultimo grão-mestre dos Templários na Terra, após o extermínio dos cavaleiros pela igreja católica. Foi batizada pelo agora Death Knight e apadrinhada pela criatura que lhe da nome (Jacques na Terra, NÃO pertencia aos adoradores de Baphomet, mas seu ódio, no Inferno, atraiu alguns cavaleiros fadados ao mesmo destino, fundando a irmandade). Baphomet havia ensinado o caminho de inúmeros tesouros para os Templários (e seus servos que estavam infiltrados dentro destes) fazendo os ricos, muito mais que os soberanos da época. Baphomet (cuja origem é desconhecida, e guardada a sete chaves pelos membros da Ordem) levou os cavaleiros a encontrarem em seu território documentos e tesouros que os tornaram poderosos. Segundo alguns, eles ficaram com a tutela do Santo Graal dentre outros tesouros da tradição católica. Em 13 de outubro de 1307, sob as ordens de Felipe, o Belo (homem influenciado pelos Anjos de Paradisia, torpe e grande devedor de dinheiro para a Ordem e favores para o próprio DeMolay, sendo este inclusive padrinho de seu filho) e com o apoio do Papa Clemente V (na realidade Yesaliah, um dos Nimbus mais poderosos da Cidade de Prata, e Décimo Primeiro no Índice Carmesim), 140 cavaleiros foram presos, torturados e condenados à fogueira, acusados de diversas heresias. A Igreja acusava os templários de adorar o diabo na figura de uma cabeça com chifres (a partir daí criou-se a crença de um Demônio chifrudo), de cuspir na cruz, e de praticar rituais de cunho sexual, inclusive práticas homossexuais (embasado no símbolo da Ordem, que era representado por dois Cavaleiros usando o mesmo cavalo). Baphomet (que, na realidade, estava auxiliando os Cavaleiros Templários em sua luta contra os Anjos) tornou-se o bode expiatório da condenação da Ordem pela Igreja Católica e da matança de templários na fogueira que se seguiu a isto. Chegando ao Inferno, Jacques DeMoley e os Templários, transformados em Death Knight, foram amparados por Baphomet. A entidade auxiliou o cavaleiro caído a estruturar uma Ordem de guerreiros; DeMoley em sua nova forma, havia sido tomado pela cólera da vingança e pela corrupção infernal. A Irmandade Baphomets já não era mais formada por cavaleiros nobres e virtuosos, mas sim de verdadeiros mafiosos infernais, oferecendo proteção aos vilões que habitam o Sexto Círculo dos Hereges, gerenciando prostituas Succubi e Incubus, traficando artefatos místicos e vendendo suas espadas como mercenários freelances. Dois anos mais tarde, O papa Clemente V seria encontrado morto em sua cama. Se esta foi uma maneira de Yesaliah desaparecer da Terra ou se ele foi realmente destruído pelos Templários caídos, ninguém sabe ao certo. Esses guerreiros são contratados e enviados em missões de proteção para outros Demônios, pois possuem grandes técnicas de combate, principalmente no tocante a destruição de criaturas de luz."
+          ]
+        },
+        {
+          "id": "as-leis-dos-traidores",
+          "title": "As leis dos Traidores",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O Cainismo no Inferno venera Caim como aquele que traiu, e se ergueu sozinho do Cocito para governar a terra de todos os traidores, como é conhecida a Caína. Para os Cainitas, Caim foi à primeira vítima de Demiurge.",
+            "Segundo eles, o Deus do Antigo Testamento é vingativo e cruel, e que Caim, foi levado por Demiurge a assassinar seu irmão. A ideia por trás do cainismo é a de que os Demônios guardam consigo o Dom de Caim, um elemento divino que levou o Grande Traidor a enxergar através das artimanhas de Demiurgo, e traí-lo.",
+            "Pouco se sabe sobre a origem dos Cainitas, além do fato de terem sido criados nos primeiros séculos do Cristianismo, quando os traidores começaram a chegar ao Inferno. Os Cainitas declaram que a Igreja dos mortais na verdade é falsa, uma mentira propagada pelos Anjos da Cidade de Prata. Esta falsa Igreja é chamada pelos Demônios de Igreja de Christos. Apesar disto, os Cainitas aproveitam-se do próprio corpo da Igreja para infiltrar-se nela e propagar a sua fé, subvertendo as missas e cerimônias, os fazendo grandes rivais dos Templários",
+            "Modernos. Em outros casos, ela se estabelece por detrás de cultos pagãos, pois compartilham entre si as ideias dualistas. Basicamente, a iniciação dos Cainitas dá-se através do ritual chamado Cainismo, onde o Demônio que se reerguer do gelo da Caína, deve destruir os outros que também conseguiram escapar.",
+            "Quando atingindo um certo nível - onde deve ser feito o Juramento Eterno - os Irmãos recebem a Marca XYOXX no pulso esquerdo e, somente assim, podem prosseguir, ou seja; somente assim são denominados verdadeiros Cainitas. Não são reconhecidos por Caim, já que este prefere agir sozinho mas o veneram como a um deus. Muitos Duques Infernais empregam seus serviços quando a situação foge da alçada de seus exércitos particulares."
+          ]
+        },
+        {
+          "id": "o-exercito-do-escorpiao-negro",
+          "title": "O exército do Escorpião Negro",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Ordem do Escorpião Negro fora trazida para o Inferno por Otaviano, após sua morte, (14 d.C.). Embora o conceito desses guerreiros esteja inserido no termo Praetoriani (a guarda pessoal do imperador de Roma) muitos guerreiros espartanos passaram a integrar suas fileiras, após a morte, amalgamando conceitos romanos e gregos. Tibério foi o construtor de uma fortificação que serviu de base para a guarda pretoriana na Terra e, por isso, foi adotado o escorpião (signo zodiacal de Tibério) como símbolo da guarda, permanecendo atualmente no Inferno. Hades arrebanhou a maioria desses guerreiros, que não puderam adentrar ao Olympus, para integrarem sua elite de soldados em seus reinos. A Guarda Pretoriana teve participação decisiva em muitos eventos da história do Hades, como por exemplo, a destruição de Calígula, quando este tentou erguer uma revolta na região do Tártaro. Os Praetoriani são usados pelo Imperador Hades como um instrumento de validação de suas leis pela força, caça de fugitivos e combatentes de elite em suas falanges. Os Eubuleos, que governam as Pólis do reino de Hades, sabem que, quando Demônios, os guerreiros pretorianos podem se tornar muito perigosos, por isso trouxeram da Terra, o costume de agradar aos comandantes da guarda com pequenos presentes e comissões; e estes intimidam seus governantes já em seu lema: \"A Guarda Pretoriana cuidará do Eubuleo, enquanto Eubuleo cuidar de seu reino; Quando Eubuleo não mais cuidar de seu reino, então haverá outro Eubuleo\". Hades apoia esta atitude, visando manter também seus governantes sob controle. Após algum tempo de serviço, um legionário poderia pretender uma vaga na Guarda Pretoriana, que proporcionara melhores poderes e benefícios. Mesmo após as reformas de Caio Mário - que introduziram para as legiões, entre outras coisas, os escudos retangulares - a Guarda Pretoriana da Ordem do Escorpião",
+            "Negro ainda usa os escudos ovais do tempo da antiga república; isso servia também como uma demonstração de preservação dos velhos costumes. Os Praetorianos são um corpo militar de elite, formado para agir também como uma espécie de Alastores dentro dos reinos de Hades, mas reportando-se a estes quando necessário."
+          ]
+        },
+        {
+          "id": "o-reich",
+          "title": "O Reich",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Geheime Staatpolizei Gestapo ou Policia Secreta do Estado fora na Terra uma das mais competentes e assustadoras tropas de caça a inimigos do governo nazista. Não se conhece muito do que se passa dentro dos muros de concreto e cercas de arame farpado do Reich (para mais detalhes, consultar o e-book Reich – Demônios Nazistas), mas os Alastores possuem ciência da atuação semelhante desta Ordem secreta de caçadores dentro daquele lugar de guerras. Sabe-se também que a Gestapo atua sem a intervenção de juízes, e dentro de seus domínios fazem o papel deste, além de júri e executores, decidindo eles mesmo as sanções a serem aplicados aos fugitivos e criminosos. Mesmo a comparação sendo inevitável, um Alastor nunca verá com bons olhos outra criatura que a faça, e esta com certeza atrairá a inimizade deste se o fizer.",
+            "\"Se o Nazareno caminhou sobre as águas, nós caminhamos sobre o fogo.\" Agnes Faria."
+          ]
+        },
+        {
+          "id": "alastor",
+          "title": "Alastor",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Demônio responsável pela execução da justiça no Inferno. Comandante de muitas Legiões de caçadores, e responsável pela captura e condenação dos fugitivos do Orco. Possui um grupo de demônios de elite, chamado Alastores, que podem cruzar a barreira entre o Inferno e a Terra, e são responsáveis por caçar, recapturar ou destruir demônios fugitivos. Os Alastores estão entre os mais temidos demônios do inferno, e Alastor o mais temido de todos os temidos."
+          ]
+        },
+        {
+          "id": "azazel",
+          "title": "Azazel",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Demônio de origem hebraica. O Levítico (16, 8-34) o menciona como o bode expiatório divino, enviado ao deserto. Enoch o faz chefe dos Anjos Ca1dos que vieram a terra para esposar humanas e criar uma raça de gigantes. Ensinou aos homens o fabrico de espadas, facas, escudos, couraças e espelhos, e ainda a confecção de braceletes e ornamentos, o uso das pinturas, pedras preciosas e tinturas. Foi derrotado por Rafael, e atado pelos pés e mãos no deserto de Dudael, envolvido em trevas. Seu rosto foi coberto por véus, para que nunca mais visse a luz. Os anjos de Lúcifer o libertaram de Dudael e o trouxeram ao Inferno. É dito no Orco que é o melhor espadachim do Inferno e seus movimentos não podem ser seguidos por nenhum outro."
+          ]
+        },
+        {
+          "id": "arioch",
+          "title": "Arioch",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Alastor lendário; quando em vida, habitava ArK-A-Nun e pertencia a corte de Marduk, mas durante as guerras Arkanitas por seu senhor acabou perecendo e chegando aos reinos infernais. Dizem lendas que a grande maioria dos condenados aos Coenobiuns e a captura de 2 integrantes notáveis do Indice Carmesim, se devem a ele. Arioch é lacônico e não faz amigos, preferindo agir sozinho."
+          ]
+        },
+        {
+          "id": "os-sebbiti",
+          "title": "Os Sebbiti",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Comandados por Nergal, um dos Grão-duques Infernais mais importantes; Demônio assírio da guerra e das caçadas. Os Sebitti são sete guerreiros também conhecidos como os \"Pleadies\", que o ajudava a matar o excedente da população Humana e de animais, considerados os sete maiores guerreiros da antiguidade e impossíveis de serem derrotados. Nergal os convocava quando sentia o desejo de batalha, e chamava Ishum para iluminar seus caminhos. Sua segunda esposa se chama Allatu. Os Sebbiti jamais tinham suas identidades reveladas, mas várias vezes prestaram treinamento aos Alastores e são escolhidos entre os melhores Hellspawns e Death Knights de cada geração."
+          ]
+        },
+        {
+          "id": "seddim",
+          "title": "Seddim",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O Demônio Destruidor, chefe de 50 Legiões e capaz de derrubar castelos com seu toque. Sheddin é um dos demônios árabes, auxiliar de Éblis e Íblis-Al-Qadin. Seus demônios vestem-se com trajes árabes e são muito conhecidos entre os magos demonologistas por sua sede de destruição. O próprio Sheddin e descrito como um guerreiro de roupas árabes, rosto no formato de um crânio, usando um turbante avermelhado (o vermelho provem do sangue dos cristãos) e carrega uma cimitarra mágica chamada Al-Sheddir."
+          ]
+        },
+        {
+          "id": "mekkhelot",
+          "title": "Mekkhelot",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Demônio misterioso, vezes auxiliando os Alastores em missões na Terra. Possui uma empresa militar de mercenários que age em guerras para países que não querem empregar seus homens; desrespeitando todos os tratados firmados e cometendo atrocidades. Os homens de Mekkhelot ao morrerem vão direto para os campos de treinamento, e aqueles que conseguirem tornam-se Death Knights.",
+            "\"\"Haverá sangue, eles dizem;",
+            "Sangue terá sangue\". William Shakespeare, Macbeth"
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "veredictum",
+      "title": "Veredictum",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "(Alastores)",
+        "Nivel 1: Marca Demoníaca. Como o poder Marca dos Captares. Seres de Luz sentirão uma forte presença demoníaca no alvo deste poder.",
+        "Nivel 1: Echos. O Alastor é incapaz de produzir um único som se quer, durante a utilização deste poder.",
+        "Nivel 1: Delator. Com um teste de Will vs Will da vitima, o Alastor saberá de tudo o que a vitima sabe sobre quem esta caçando, mesmo que esta não saiba nem mesmo o que viu. O Alastor tem acesso aos vestígios de energias presos à aura da vitima.",
+        "Nivel 2: Detectar Marca Demoníaca. Como o poder detectar Marca dos Captares. O Alastor marca sua vítima com o Olho Alastor, o símbolo dos Alastores, e não com uma marca pessoal.",
+        "Nivel 2: Defesa contra o Marcado. Numa disputa de Will vs Will de quem tenha sido alvo do poder Marca Demoníaca, todo ataque vindos da vitima durante 24hrs, desferidos contra o Alastor, recebem redutores de -10/-10 e –Will do Alastor Pontos de Dano.",
+        "Nivel 2: Sentir Características. Como o poder homônimo dos Captares. Este poder pode ser aprimorado para seguir as características de um foragido previamente informadas, diminuindo em um nível a dificuldade dos testes com Perícias relacionadas a este. O Alastor pode sentir as características de um fugitivo tocando objetos que este tenha tocado, ou simplesmente passando por caminhos que seu alvo tenha percorrido.",
+        "Nivel 3: Sentir Efeitos Místicos. O Alastor pode sentir efeitos místicos num raio de 300m.",
+        "Nivel 3: Rastreio de Marcas Demoníacas. Como o poder Rastreio de Marcas dos Captares.",
+        "Nivel 3: Chamado das Trevas. Os Alastores podem enviar uma mensagem ou um pedido de ajuda para qualquer outro Alastor, em qualquer lugar que estejam. Nivel 4: Apagar Características. Como o poder homônimo dos Captares. Nivel 4: Selo Demoníaco de Arioch. Com a ponta do dedo, o Alastor toca a fronte de um foragido capturado, selando seus poderes; se for bem sucedido em um disputa de Will vs Will, por 24hrs."
+      ],
+      "sections": [
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "poderes",
+          "paragraphs": [
+            "Alastores"
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Marca Demoníaca. Como o poder Marca dos Captares. Seres de Luz sentirão uma forte presença demoníaca no alvo deste poder."
+          ]
+        },
+        {
+          "id": "nivel-1-2",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Echos. O Alastor é incapaz de produzir um único som se quer, durante a utilização deste poder."
+          ]
+        },
+        {
+          "id": "nivel-1-3",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Delator. Com um teste de Will vs Will da vitima, o Alastor saberá de tudo o que a vitima sabe sobre quem esta caçando, mesmo que esta não saiba nem mesmo o que viu. O Alastor tem acesso aos vestígios de energias presos à aura da vitima."
+          ]
+        },
+        {
+          "id": "nivel-2-4",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Detectar Marca Demoníaca. Como o poder detectar Marca dos Captares. O Alastor marca sua vítima com o Olho Alastor, o símbolo dos Alastores, e não com uma marca pessoal."
+          ]
+        },
+        {
+          "id": "nivel-2-5",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Defesa contra o Marcado. Numa disputa de Will vs Will de quem tenha sido alvo do poder Marca Demoníaca, todo ataque vindos da vitima durante 24hrs, desferidos contra o Alastor, recebem redutores de -10/-10 e –Will do Alastor Pontos de Dano."
+          ]
+        },
+        {
+          "id": "nivel-2-6",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Sentir Características. Como o poder homônimo dos Captares. Este poder pode ser aprimorado para seguir as características de um foragido previamente informadas, diminuindo em um nível a dificuldade dos testes com Perícias relacionadas a este. O Alastor pode sentir as características de um fugitivo tocando objetos que este tenha tocado, ou simplesmente passando por caminhos que seu alvo tenha percorrido."
+          ]
+        },
+        {
+          "id": "nivel-3-7",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Sentir Efeitos Místicos. O Alastor pode sentir efeitos místicos num raio de 300m."
+          ]
+        },
+        {
+          "id": "nivel-3-8",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Rastreio de Marcas Demoníacas. Como o poder Rastreio de Marcas dos Captares."
+          ]
+        },
+        {
+          "id": "nivel-3-9",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Chamado das Trevas. Os Alastores podem enviar uma mensagem ou um pedido de ajuda para qualquer outro Alastor, em qualquer lugar que estejam."
+          ]
+        },
+        {
+          "id": "nivel-4-10",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Apagar Características. Como o poder homônimo dos Captares."
+          ]
+        },
+        {
+          "id": "nivel-4-11",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Selo Demoníaco de Arioch. Com a ponta do dedo, o Alastor toca a fronte de um foragido capturado, selando seus poderes; se for bem sucedido em um disputa de Will vs Will, por 24hrs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cainismo",
+      "title": "Cainismo",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "(Cainitas)",
+        "Nível 1: Corpo Gélido. O Demônio amalgamou sua essência a Caína, e agora, é um reflexo do coração frio dos traidores. Seu corpo é composto de gelo; feitiços baseados no Caminho Água e Ar recebem um redutor de - 30% quando feitos contra O Personagem e esta ainda recebe um bônus de + 3 em sua IP. Nível 2: Aura Gélida. O Cainita emana uma aura fria que reduz os testes de AGI e Perícias baseadas no atributo em – 20%, dentro de um raio de CON metros.",
+        "Nível 2: Disfarce Gélido. O Cainita é capaz de fundir seu corpo ao de grandes quantidades de gelo, recebendo o IP deste, se preferir, pode camuflar-se desta forma, tornando-se indetectável para meios não mágicos. Nível 3: Armas Frias.O Cainita pode gerar armas, escudos e outros itens através de seus poderes. As armas e defesas, são utilizadas com seus valores na Perícia Briga, acrescentando um bônus de +20% e +",
+        "3 no dano. Nível 3: Toque Enrregelante. O toque do Cainita é gélido, tão frio que um contato muito extenso com o Demônio causa congelamento. Em termos de jogo, o Cainita causa dano de 1d6 mediante toque que ignora IP, e perdura enquanto o toque for mantido. O toque do Cainita também congela superfícies a razão de 1m congelado por turno. Nível 3: Regeneração. O Cainita é capaz de regenerar seus ferimentos a partir de uma superfície de gelo, a razão de 1d6 a cada turno, ou até a superfície ser totalmente absorvida. Nível 4: Clone. O Cainita pode criar cópias gélidas de si mesmo para lutarem por ele, mas para cada clone que for feito, o Demônio deve dividir seus PVs entre eles, e cada clone destruído, significa na perda daqueles PVs. Apenas características físicas são clonadas, os poderes que o Cainita possua, não.",
+        "Nível 4: Dom de Caim. O Cainita pode rastrear qualquer espírito que já tenha praticado um ato de traição. Ele também pode inspirar este sentimento em um alvo, que poderá resistir, se for uma criatura sobrenatural, com uma disputa de WILL x WILL da vítima. Nível 5: Gelo. Como o Poder homônimo dos Aletchs (ver e-book Mortos Vivos)."
+      ],
+      "sections": [
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "poderes",
+          "paragraphs": [
+            "Cainitas"
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Corpo Gélido. O Demônio amalgamou sua essência a Caína, e agora, é um reflexo do coração frio dos traidores. Seu corpo é composto de gelo; feitiços baseados no Caminho Água e Ar recebem um redutor de - 30% quando feitos contra O Personagem e esta ainda recebe um bônus de + 3 em sua IP."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Aura Gélida. O Cainita emana uma aura fria que reduz os testes de AGI e Perícias baseadas no atributo em – 20%, dentro de um raio de CON metros."
+          ]
+        },
+        {
+          "id": "nivel-2-3",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Disfarce Gélido. O Cainita é capaz de fundir seu corpo ao de grandes quantidades de gelo, recebendo o IP deste, se preferir, pode camuflar-se desta forma, tornando-se indetectável para meios não mágicos."
+          ]
+        },
+        {
+          "id": "nivel-3-4",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Armas Frias.O Cainita pode gerar armas, escudos e outros itens através de seus poderes. As armas e defesas, são utilizadas com seus valores na Perícia Briga, acrescentando um bônus de +20% e + 3 no dano."
+          ]
+        },
+        {
+          "id": "nivel-3-5",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Toque Enrregelante. O toque do Cainita é gélido, tão frio que um contato muito extenso com o Demônio causa congelamento. Em termos de jogo, o Cainita causa dano de 1d6 mediante toque que ignora IP, e perdura enquanto o toque for mantido. O toque do Cainita também congela superfícies a razão de 1m congelado por turno."
+          ]
+        },
+        {
+          "id": "nivel-3-6",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Regeneração. O Cainita é capaz de regenerar seus ferimentos a partir de uma superfície de gelo, a razão de 1d6 a cada turno, ou até a superfície ser totalmente absorvida."
+          ]
+        },
+        {
+          "id": "nivel-4-7",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Clone. O Cainita pode criar cópias gélidas de si mesmo para lutarem por ele, mas para cada clone que for feito, o Demônio deve dividir seus PVs entre eles, e cada clone destruído, significa na perda daqueles PVs. Apenas características físicas são clonadas, os poderes que o Cainita possua, não."
+          ]
+        },
+        {
+          "id": "nivel-4-8",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Dom de Caim. O Cainita pode rastrear qualquer espírito que já tenha praticado um ato de traição. Ele também pode inspirar este sentimento em um alvo, que poderá resistir, se for uma criatura sobrenatural, com uma disputa de WILL x WILL da vítima."
+          ]
+        },
+        {
+          "id": "nivel-5-9",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Gelo. Como o Poder homônimo dos Aletchs (ver e-book Mortos Vivos)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "esparciatas",
+      "title": "Esparciatas",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "(Praetoriani)",
+        "Nível 1: Hoplita. O Personagem, enquanto luta com os seus, recebe +10% em Ataque/Defesa de suas armas, e + 2 Pontos em seu dano. Este bônus é cumulativo para cada Praetoriani que se se juntar ao grupo. Nivel 1: Palé. Independente da força aplicada pelo Personagem, todo inimigo tocando por ele, será jogado ao chão. Um teste de AGI é permitido para que a queda seja de joelhos. Nível 2: Biós. O Personagem pode utilizar um Arco e Flecha, com um bônus de +10% e +2 em dano. Nível 2: Lakónia. O Personagem é imune à dominação, e todos os testes de CAR feitos contra ele, recebem um redutor de – 2. Todas as Perícias baseadas no atributo, também sofrem um redutor de -20% quando utilizadas contra um Praetoriani. Nível 2: Kpió. O Personagem pode, simplesmente, atropelar vários inimigos utilizando este poder. Ele inicia uma corrida e, todos aqueles que estiverem em seu caminho, realizam um teste de CON Difícil para se mantiver de pé após encontrarem-se com o Praetoriani. O dano do encontrão é de 1d10+FR. Nível 3: Peltasta. O Personagem é capaz de arremessar uma arma do tipo lança WILLx por dia, com dano x2.",
+        "Nível 3: Cinêmides. De posse de um escudo, O Personagem pode aumentar sua Perícia com o mesmo em +20% e seu IP em +2.",
+        "Nível 4: Agogé. O Personagem é imune ao medo, não precisando realizar testes para isso. Recebe +1 em todos os seus Atributos Físicos, -1 em seus Atributos Mentais, +10% em suas Perícias de combate e -10% em todas as Perícias que não sejam relacionadas ao combate, apenas por pagar os pontos por este poder.",
+        "Nível 4: Kriptéia. Quando este poder é ativado, O Personagem irradia fúria. Seus olhos emanam uma luminescência vermelha - que faz todos em um raio de 2m realizar testes de WILL para não fugirem apavorados; suas armas e armaduras tornam-se brasas, recebendo um bônus de +3 no dano, recebem +3 em IP, e mesmo que seus PVs cheguem à zero, continuaram lutando até o combate estar terminado, após isso, morrem. Este poder pode ser utilizado 1x por dia."
+      ],
+      "sections": [
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "poderes",
+          "paragraphs": [
+            "Praetoriani"
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Hoplita. O Personagem, enquanto luta com os seus, recebe +10% em Ataque/Defesa de suas armas, e + 2 Pontos em seu dano. Este bônus é cumulativo para cada Praetoriani que se se juntar ao grupo."
+          ]
+        },
+        {
+          "id": "nivel-1-2",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Palé. Independente da força aplicada pelo Personagem, todo inimigo tocando por ele, será jogado ao chão. Um teste de AGI é permitido para que a queda seja de joelhos."
+          ]
+        },
+        {
+          "id": "nivel-2-3",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Biós. O Personagem pode utilizar um Arco e Flecha, com um bônus de +10% e +2 em dano."
+          ]
+        },
+        {
+          "id": "nivel-2-4",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Lakónia. O Personagem é imune à dominação, e todos os testes de CAR feitos contra ele, recebem um redutor de – 2. Todas as Perícias baseadas no atributo, também sofrem um redutor de -20% quando utilizadas contra um Praetoriani."
+          ]
+        },
+        {
+          "id": "nivel-2-5",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Kpió. O Personagem pode, simplesmente, atropelar vários inimigos utilizando este poder. Ele inicia uma corrida e, todos aqueles que estiverem em seu caminho, realizam um teste de CON Difícil para se mantiver de pé após encontrarem-se com o Praetoriani. O dano do encontrão é de 1d10+FR."
+          ]
+        },
+        {
+          "id": "nivel-3-6",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Peltasta. O Personagem é capaz de arremessar uma arma do tipo lança WILLx por dia, com dano x2."
+          ]
+        },
+        {
+          "id": "nivel-3-7",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Cinêmides. De posse de um escudo, O Personagem pode aumentar sua Perícia com o mesmo em +20% e seu IP em +2."
+          ]
+        },
+        {
+          "id": "nivel-4-8",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Agogé. O Personagem é imune ao medo, não precisando realizar testes para isso. Recebe +1 em todos os seus Atributos Físicos, -1 em seus Atributos Mentais, +10% em suas Perícias de combate e -10% em todas as Perícias que não sejam relacionadas ao combate, apenas por pagar os pontos por este poder."
+          ]
+        },
+        {
+          "id": "nivel-4-9",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Kriptéia. Quando este poder é ativado, O Personagem irradia fúria. Seus olhos emanam uma luminescência vermelha - que faz todos em um raio de 2m realizar testes de WILL para não fugirem apavorados; suas armas e armaduras tornam-se brasas, recebendo um bônus de +3 no dano, recebem +3 em IP, e mesmo que seus PVs cheguem à zero, continuaram lutando até o combate estar terminado, após isso, morrem. Este poder pode ser utilizado 1x por dia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commilitonum-nigrus",
+      "title": "Commilitonum Nigrus",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "(Irmandade Baphomets)",
+        "Nivel 1: Rastrear Luz. Os Templários Caídos são capazes de rastrear qualquer ser que retire suas energias da luz, num raio de 3 km.",
+        "Nivel 1: Andar nas Paredes. O Templário Caído é capaz de andar nas paredes.",
+        "Nivel 1: Chamado das Trevas. Como o poder homônimo dos Alastores.",
+        "Nivel 2: Ataque Vingativo. Todo ódio da vingança e liberado neste ataque, contra um ser de Paradisia, esse ataque causa 3d6+FR, e a vitima deve realizar um teste de defesa como sendo difícil.",
+        "Nivel 2: Dom do Metal de Dite. Um Templário Caído, nunca esta desarmado, ele sempre poderá convocar para se defender, alguma arma feita de ferro de Dite, ou garras de metal feitas do mesmo material, que causam Xd6+FR, onde X é o número das dezenas do valor da WILL da Personagem.",
+        "Nivel 3: Exorcismo Celestial. Capaz de enviar Paradisianos de volta para seu plano com uma disputa de Will vs Will.",
+        "Nível 3: Controle de Mortos-Vivos. O Templário Caído é capaz de erguer os mortos para lutarem por ele, com um teste de WILL (a dificuldade aumenta para cada cadáver extra a ser reanimado) O poder perdura durante o combate, e após isso, os cadáveres caminhantes se desfazem. Nivel 3: Sangue de Mercúrio Fervente. O sangue do Templário Caído é mercúrio, prateado, fervente e envenenara qualquer um que entre em contato com ele causando 1d10, a vitima tem um direito a um teste de AGI para reduzir o dano à metade, também causando danos posteriores, como tornando os testes envolvendo todos os atributos da vitima (caso esta falhe em um teste de CON, para resistir ao envenenamento).",
+        "Nivel 4: Dom Alquímico. Graças aos ensinamentos de Baphomet, um Templário Caído é capaz de transmutar materiais em outros com apenas um teste de Will, a quantidade de material não pode ser superior, em metros e kg, a Will da Personagem Nivel 5: Enxofre Negro. O enxofre na alquimia simboliza a alma, um Magister Inferi que seja bem sucedido em uma disputa de Will-3 vs Will da vitima, pode reduzi-la a Enxofre Negro. Este Enxofre pode ser absorvido pelo Templário Caído, afim de curar seus PVs. O Contato deve ser mantido com a vitima, até que os PVs da mesma cheguem à zero.",
+        "Nivel 5: Hadjar. A obsessão pela destruição de seres paradisianos é tão grande que muitos Templários Caídos desenvolveram este poder único; Gradus Satanae podem, com um teste difícil de PER, tentar sentir o metal Hadjar, num raio de 1 km duas vezes por dia.",
+        "Nivel 6: Chamas da Fogueira. Os olhos de um Templário Caído ardem em chamas, e apenas olhando para um inimigo, pode atear fogo no mesmo, com uma disputa de Will vs Will. O fogo perdura por 1D6 turnos e causa 4d6 pontos de dano. O contato visual pode ser mantido causando dano nos turnos que se seguem. As chamas são negras, e em criaturas de Paradisia, causam um dano adicional de +1d6."
+      ],
+      "sections": [
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "poderes",
+          "paragraphs": [
+            "Irmandade Baphomets"
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Rastrear Luz. Os Templários Caídos são capazes de rastrear qualquer ser que retire suas energias da luz, num raio de 3 km."
+          ]
+        },
+        {
+          "id": "nivel-1-2",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Andar nas Paredes. O Templário Caído é capaz de andar nas paredes."
+          ]
+        },
+        {
+          "id": "nivel-1-3",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Chamado das Trevas. Como o poder homônimo dos Alastores."
+          ]
+        },
+        {
+          "id": "nivel-2-4",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Ataque Vingativo. Todo ódio da vingança e liberado neste ataque, contra um ser de Paradisia, esse ataque causa 3d6+FR, e a vitima deve realizar um teste de defesa como sendo difícil."
+          ]
+        },
+        {
+          "id": "nivel-2-5",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Dom do Metal de Dite. Um Templário Caído, nunca esta desarmado, ele sempre poderá convocar para se defender, alguma arma feita de ferro de Dite, ou garras de metal feitas do mesmo material, que causam Xd6+FR, onde X é o número das dezenas do valor da WILL da Personagem."
+          ]
+        },
+        {
+          "id": "nivel-3-6",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Exorcismo Celestial. Capaz de enviar Paradisianos de volta para seu plano com uma disputa de Will vs Will."
+          ]
+        },
+        {
+          "id": "nivel-3-7",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Controle de Mortos-Vivos. O Templário Caído é capaz de erguer os mortos para lutarem por ele, com um teste de WILL (a dificuldade aumenta para cada cadáver extra a ser reanimado) O poder perdura durante o combate, e após isso, os cadáveres caminhantes se desfazem."
+          ]
+        },
+        {
+          "id": "nivel-3-8",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Sangue de Mercúrio Fervente. O sangue do Templário Caído é mercúrio, prateado, fervente e envenenara qualquer um que entre em contato com ele causando 1d10, a vitima tem um direito a um teste de AGI para reduzir o dano à metade, também causando danos posteriores, como tornando os testes envolvendo todos os atributos da vitima (caso esta falhe em um teste de CON, para resistir ao envenenamento)."
+          ]
+        },
+        {
+          "id": "nivel-4-9",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Dom Alquímico. Graças aos ensinamentos de Baphomet, um Templário Caído é capaz de transmutar materiais em outros com apenas um teste de Will, a quantidade de material não pode ser superior, em metros e kg, a Will da Personagem"
+          ]
+        },
+        {
+          "id": "nivel-5-10",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Enxofre Negro. O enxofre na alquimia simboliza a alma, um Magister Inferi que seja bem sucedido em uma disputa de Will-3 vs Will da vitima, pode reduzi-la a Enxofre Negro. Este Enxofre pode ser absorvido pelo Templário Caído, afim de curar seus PVs. O Contato deve ser mantido com a vitima, até que os PVs da mesma cheguem à zero."
+          ]
+        },
+        {
+          "id": "nivel-5-11",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Hadjar. A obsessão pela destruição de seres paradisianos é tão grande que muitos Templários Caídos desenvolveram este poder único; Gradus Satanae podem, com um teste difícil de PER, tentar sentir o metal Hadjar, num raio de 1 km duas vezes por dia."
+          ]
+        },
+        {
+          "id": "nivel-6-12",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Chamas da Fogueira. Os olhos de um Templário Caído ardem em chamas, e apenas olhando para um inimigo, pode atear fogo no mesmo, com uma disputa de Will vs Will. O fogo perdura por 1D6 turnos e causa 4d6 pontos de dano. O contato visual pode ser mantido causando dano nos turnos que se seguem. As chamas são negras, e em criaturas de Paradisia, causam um dano adicional de +1d6."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flagelo",
+      "title": "Flagelo",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "(Milicia de Ferro)",
+        "Nivel 1: Toque da Peste. O toque dos membros da Milicia de Ferro traz doenças. Todos que forem tocados por este, deverão realizar um teste de CON, ou serão contaminados por uma doença não-mística comun. Exemplos de doenças comuns: gripe e resfriado.",
+        "Nivel 2: Peste Avançada. Idem ao anterior, mas o alvo é infectado com uma doença grave. Exemplos de doenças graves: Caxumba, Febre Escarlatina, Cólera, Peste Bubônica.",
+        "Nivel 3: Peste Terminal. Idem ao anterior, mas o alvo é infectado com uma doença terminal. Exemplos de doenças terminais: câncer com metástase, infecção generalizada no último grau, AIDS em estado terminal, tuberculose em seu último mês, Ebola.",
+        "Nivel 3: Regeneração Vil. A Personagem regenera PVs absorvendo pequenos animais nocivos (ratos, baratas, moscas, etc) a razão de 1 PV por Kg/turno.",
+        "Nivel 4: Peste Congênita. Idem ao anterior, mas, uma doença congênita, a escolha do Mestre e do Jogador-Vítima e sem cura, é aflorada, obrigando a",
+        "Personagem a receber pontos por Aprimoramentos",
+        "Negativos adquiridos.",
+        "Exemplos de doenças congênitas: defeitos no coração, mongolismo, nanismo, gigantismo, cegueira de nascença, mudez.",
+        "Nível 4: Controle de Pestes. A Personagem é capaz de controlar um número de animais transmissores de doenças (ratos, baratas, moscas, mosquitos, etc.) equivalente a sua WILL. Nivel 5: Infectar. A Personagem é capaz de inocular em um vetor de transmissão (ratos, baratas, mosquitos, moscas, água, alimentos, objetos, etc.) qualquer doença que desejar. Também é capaz de infectar uma área de até 5m de raio com doenças.",
+        "Nivel 5: Forma de Praga. A Personagem é capaz de assumir a forma de animais nocivos (ratos, baratas, moscas, etc.). A quantidade de animais será o valor de seus PVs."
+      ],
+      "sections": [
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "poderes",
+          "paragraphs": [
+            "Milicia de Ferro"
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Toque da Peste. O toque dos membros da Milicia de Ferro traz doenças. Todos que forem tocados por este, deverão realizar um teste de CON, ou serão contaminados por uma doença não-mística comun. Exemplos de doenças comuns: gripe e resfriado."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Peste Avançada. Idem ao anterior, mas o alvo é infectado com uma doença grave. Exemplos de doenças graves: Caxumba, Febre Escarlatina, Cólera, Peste Bubônica."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Peste Terminal. Idem ao anterior, mas o alvo é infectado com uma doença terminal. Exemplos de doenças terminais: câncer com metástase, infecção generalizada no último grau, AIDS em estado terminal, tuberculose em seu último mês, Ebola."
+          ]
+        },
+        {
+          "id": "nivel-3-4",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Regeneração Vil. A Personagem regenera PVs absorvendo pequenos animais nocivos (ratos, baratas, moscas, etc) a razão de 1 PV por Kg/turno."
+          ]
+        },
+        {
+          "id": "nivel-4-5",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Peste Congênita. Idem ao anterior, mas, uma doença congênita, a escolha do Mestre e do Jogador-Vítima e sem cura, é aflorada, obrigando a Personagem a receber pontos por Aprimoramentos Negativos adquiridos. Exemplos de doenças congênitas: defeitos no coração, mongolismo, nanismo, gigantismo, cegueira de nascença, mudez."
+          ]
+        },
+        {
+          "id": "nivel-4-6",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Controle de Pestes. A Personagem é capaz de controlar um número de animais transmissores de doenças (ratos, baratas, moscas, mosquitos, etc.) equivalente a sua WILL."
+          ]
+        },
+        {
+          "id": "nivel-5-7",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Infectar. A Personagem é capaz de inocular em um vetor de transmissão (ratos, baratas, mosquitos, moscas, água, alimentos, objetos, etc.) qualquer doença que desejar. Também é capaz de infectar uma área de até 5m de raio com doenças."
+          ]
+        },
+        {
+          "id": "nivel-5-8",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Forma de Praga. A Personagem é capaz de assumir a forma de animais nocivos (ratos, baratas, moscas, etc.). A quantidade de animais será o valor de seus PVs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arrebate",
+      "title": "Arrebate",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nivel 1: Fúria. A Personagem combate com ódio, acrescentando +1 em seus ataques e +10% em todas as suas Perícias relacionadas a combate.",
+        "Nivel 1: Zanga. A Personagem não sente dor, e é imune a todos os redutores que ferimentos graves possam lhe causar.",
+        "Nivel 2: Furor. Quando em luta, a Personagem demonstra tanta fúria, que todos os presentes devem realizar testes de WILL para não receberem -10% em suas Perícias de combate.",
+        "Nivel 3: Cólera. A Personagem combate em um transe enlouquecido. Mesmo que seus PVs cheguem à zero, esta só caíra quando o combate estiver terminado ou ao menos que seus PVs atinjam -5PVs.",
+        "Nivel 4: Brasa. A Personagem pode inspirar o ódio da batalha nos corações de suas vítimas, estas atacaram tudo a seu redor, se forem mal sucedidas em um teste de WILL.",
+        "Nivel 5: Horror. A Personagem urra, demonstrando a todos ao seu redor toda sua fúria. Todos em um raio de CON em metros devem realizar testes de WILL, ou fugirão do local."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Fúria. A Personagem combate com ódio, acrescentando +1 em seus ataques e +10% em todas as suas Perícias relacionadas a combate."
+          ]
+        },
+        {
+          "id": "nivel-1-2",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Zanga. A Personagem não sente dor, e é imune a todos os redutores que ferimentos graves possam lhe causar."
+          ]
+        },
+        {
+          "id": "nivel-2-3",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Furor. Quando em luta, a Personagem demonstra tanta fúria, que todos os presentes devem realizar testes de WILL para não receberem -10% em suas Perícias de combate."
+          ]
+        },
+        {
+          "id": "nivel-3-4",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Cólera. A Personagem combate em um transe enlouquecido. Mesmo que seus PVs cheguem à zero, esta só caíra quando o combate estiver terminado ou ao menos que seus PVs atinjam -5PVs."
+          ]
+        },
+        {
+          "id": "nivel-4-5",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Brasa. A Personagem pode inspirar o ódio da batalha nos corações de suas vítimas, estas atacaram tudo a seu redor, se forem mal sucedidas em um teste de WILL."
+          ]
+        },
+        {
+          "id": "nivel-5-6",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Horror. A Personagem urra, demonstrando a todos ao seu redor toda sua fúria. Todos em um raio de CON em metros devem realizar testes de WILL, ou fugirão do local."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defesas-especiais",
+      "title": "Defesas Especiais",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poder",
+      "sectionTitle": "Poder",
+      "paragraphs": [
+        "Nivel 5: Imunidade a ataques específicos. O personagem recebe 5d6 de IP ao dano desferido por um determinado tipo de criatura (Death knight, Daemons, Hordas, Hellspawns, Anjos Caídos ou Succubi/Incubbi, Anjos, Arcadianos, Arkanitas, etc)."
+      ],
+      "sections": [
+        {
+          "id": "nivel-5-1",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Imunidade a ataques específicos. O personagem recebe 5d6 de IP ao dano desferido por um determinado tipo de criatura (Death knight, Daemons, Hordas, Hellspawns, Anjos Caídos ou Succubi/Incubbi, Anjos, Arcadianos, Arkanitas, etc)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alastor",
+      "title": "Alastor",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Seu personagem pertence à categoria de Alastor, ou membro da justiça infernal encarregado de caçar fugitivos dos três juízes. O personagem possuirá diversas vantagens, sendo tratado como um representante da lei dentro dos nove Círculos.",
+        "ponto: O personagem possui conhecimentos sobre a criatura que caca (anjos ou Demônios foragidos) com ate 60%, além de saber como encontrá-los, capturá-los ou mesmo como destruí-los seguramente.",
+        "pontos: Alastor Majora, ou chefe de um pequeno grupo de caçadores. O personagem possui conhecimentos sobre anjos ou Demônios foragidos com 85%, e conhece muitos outros caçadores como ele. Pode vir a pertencer a uma sociedade de caçadores, que ira auxiliá-lo com esta missão."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: O personagem possui conhecimentos sobre a criatura que caca (anjos ou Demônios foragidos) com ate 60%, além de saber como encontrá-los, capturá-los ou mesmo como destruí-los seguramente.",
+            "2 pontos: Alastor Majora, ou chefe de um pequeno grupo de caçadores. O personagem possui conhecimentos sobre anjos ou Demônios foragidos com 85%, e conhece muitos outros caçadores como ele. Pode vir a pertencer a uma sociedade de caçadores, que ira auxiliá-lo com esta missão."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu personagem pertence à categoria de Alastor, ou membro da justiça infernal encarregado de caçar fugitivos dos três juízes. O personagem possuirá diversas vantagens, sendo tratado como um representante da lei dentro dos nove Círculos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alastor-veneravel",
+      "title": "Alastor Venerável",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "(Somente para Alastores)",
+        "4 Pontos: São chefes de um grande grupo de caçadores, ou agindo sozinhos; Alastores bem mais velhos. O Personagem possui conhecimento sobre Anjos ou Demônios foragidos com 95%, e conhece muitos outros caçadores como ele (recebendo Contatos 3). Pode vir a pertencer ou a controlar uma sociedade de caçadores, que irá auxiliá-lo com esta missão. O grupo pode ser unido, leal ou apenas profissional, de qualquer forma, eles trabalham bem em equipe. A equipe de Alastores conta com até 4 Demônios."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "4 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "(Somente para Alastores) São chefes de um grande grupo de caçadores, ou agindo sozinhos; Alastores bem mais velhos. O Personagem possui conhecimento sobre Anjos ou Demônios foragidos com 95%, e conhece muitos outros caçadores como ele (recebendo Contatos 3). Pode vir a pertencer ou a controlar uma sociedade de caçadores, que irá auxiliá-lo com esta missão. O grupo pode ser unido, leal ou apenas profissional, de qualquer forma, eles trabalham bem em equipe. A equipe de Alastores conta com até 4 Demônios."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "burocracia-infernal",
+      "title": "Burocracia Infernal",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Inclui manter o controle burocrático sobre alguma cidade do Inferno, não importando através de que meios. Cidades Possíveis: Dite, Sodoma, Gomorra, Cidade dos Mortos, Alguma fortaleza demoníaca, etc. ponto: Um bairro ou vilarejo. pontos: Alguns bairros ou um partido político. pontos: Uma metrópole ou varias pequenas cidades. pontos: Um estado ou região infernal."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Um bairro ou vilarejo.",
+            "2 pontos: Alguns bairros ou um partido político.",
+            "3 pontos: Uma metrópole ou varias pequenas cidades.",
+            "4 pontos: Um estado ou região infernal."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Inclui manter o controle burocrático sobre alguma cidade do Inferno, não importando através de que meios. Cidades Possíveis: Dite, Sodoma, Gomorra, Cidade dos Mortos, Alguma fortaleza demoníaca, etc."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cacador-experiente",
+      "title": "Caçador Experiente",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 pontos: Você possui um bônus de +25% nas perícias Rastreio e Investigação contra um tipo de Demônio específico (Death knight, Daemons, Hordas, Hellspawns, Anjos Caídos ou Succubi/Incubbi)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você possui um bônus de +25% nas perícias Rastreio e Investigação contra um tipo de Demônio específico (Death knight, Daemons, Hordas, Hellspawns, Anjos Caídos ou Succubi/Incubbi)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contatos-e-aliados",
+      "title": "Contatos e Aliados",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Lembre-se que estes aliados, caso não sejam imortais, magos, anjos, espíritos ou Demônios, podem morrer com o passar do tempo. Quando isto ocorrer, assume-se que o Demônio conseguiu outro aliado no mesmo ramo, ou passou a conhecer os descendentes dele, ou seu sucessor, etc (isto significa que o Aprimoramento não é perdido).",
+        "Cada aliado pode ser especializado em algum tipo de negócios (armas, sexo, informações, drogas, programas de computador, equipamentos raros ou ilegais, pode livrar o personagem de uma determinada encrenca, pode apresentá-lo as pessoas certas, etc.). O Mestre deve sempre se lembrar que os contatos e aliados do Demônio também têm seus próprios problemas, e não estão sempre a disposição de seu personagem sempre que acontecer algum problema, e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (e isto pode ser usado como fonte de aventuras pelo Mestre). ponto: Um aliado importante. pontos: Dois aliados importantes. pontos: Quatro Aliados importantes. pontos: Oito Aliados importantes. pontos: Quinze aliados importantes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Um aliado importante.",
+            "2 pontos: Dois aliados importantes.",
+            "3 pontos: Quatro Aliados importantes.",
+            "4 pontos: Oito Aliados importantes.",
+            "5 pontos: Quinze aliados importantes."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Lembre-se que estes aliados, caso não sejam imortais, magos, anjos, espíritos ou Demônios, podem morrer com o passar do tempo. Quando isto ocorrer, assume-se que o Demônio conseguiu outro aliado no mesmo ramo, ou passou a conhecer os descendentes dele, ou seu sucessor, etc (isto significa que o Aprimoramento não é perdido). Cada aliado pode ser especializado em algum tipo de negócios (armas, sexo, informações, drogas, programas de computador, equipamentos raros ou ilegais, pode livrar o personagem de uma determinada encrenca, pode apresentá-lo as pessoas certas, etc.). O Mestre deve sempre se lembrar que os contatos e aliados do Demônio também têm seus próprios problemas, e não estão sempre a disposição de seu personagem sempre que acontecer algum problema, e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (e isto pode ser usado como fonte de aventuras pelo Mestre)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "direito-e-jurisprudencia",
+      "title": "Direito e Jurisprudência",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Seu Demônio controla as leis ou aqueles que fazem as leis. Mantêm contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. ponto: Um bairro (vereadores). pontos: Alguns bairros ou uma pequena cidade. pontos: Uma metrópole ou varias pequenas cidades. pontos: Um estado ou região (senadores). pontos: Dois ou três estados ou uma grande região."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Um bairro (vereadores).",
+            "2 pontos: Alguns bairros ou uma pequena cidade.",
+            "3 pontos: Uma metrópole ou varias pequenas cidades.",
+            "4 pontos: Um estado ou região (senadores).",
+            "5 pontos: Dois ou três estados ou uma grande região."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu Demônio controla as leis ou aqueles que fazem as leis. Mantêm contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "igreja",
+      "title": "Igreja",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Controle sobre o clero, sobre padres, bispos, fieis, ativistas, caçadores de bruxas, e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e Ordens militares religiosas. ponto: Um bairro (padres em uma igreja). pontos: Uma pequena cidade (uma catedral). pontos: Uma metrópole ou pequenas cidades (A catedral) pontos: Um estado ou região (Bispos). pontos: Um país pequeno (Arcebispos)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Um bairro (padres em uma igreja).",
+            "2 pontos: Uma pequena cidade (uma catedral).",
+            "3 pontos: Uma metrópole ou pequenas cidades (A catedral)",
+            "4 pontos: Um estado ou região (Bispos).",
+            "5 pontos: Um país pequeno (Arcebispos)."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Controle sobre o clero, sobre padres, bispos, fieis, ativistas, caçadores de bruxas, e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e Ordens militares religiosas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luciferianos",
+      "title": "Luciferianos",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 Pontos: Observação - este Aprimoramento deve ser usado com supervisão total e atenta por parte do Mestre. Em meio a todas as milícias e Ordens dentro do Inferno, sempre existem aqueles Demônios que agem como os olhos e ouvidos da Tríade Demoníaca, principalmente Lúcifer. Essas entidades não integram uma Ordem, mas estão infiltradas em todas elas e normalmente, não conhecem outros agentes Luciferianos. Como agente abençoado por Lúcifer, você ganha +3 Poderes Demoníacos, +2 de dano, +10% no ataque e pode ter uma identidade alternativa dentro do Inferno (com direito a qualquer informação falsa)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Observação - este Aprimoramento deve ser usado com supervisão total e atenta por parte do Mestre. Em meio a todas as milícias e Ordens dentro do Inferno, sempre existem aqueles Demônios que agem como os olhos e ouvidos da Tríade Demoníaca, principalmente Lúcifer. Essas entidades não integram uma Ordem, mas estão infiltradas em todas elas e normalmente, não conhecem outros agentes Luciferianos. Como agente abençoado por Lúcifer, você ganha +3 Poderes Demoníacos, +2 de dano, +10% no ataque e pode ter uma identidade alternativa dentro do Inferno (com direito a qualquer informação falsa)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "objetos-magicos",
+      "title": "Objetos Mágicos",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Observação: este Aprimoramento deve ser usado com supervisão total e atenta por parte do Mestre.",
+        "O personagem possui um ou mais objetos mágicos, artefatos ou fetiches encantados com ele. Consulte o Guia de Itens Mágicos para gastar os pontos de Objetos Mágicos. Os objetos (caso sejam mais de um) devem ser distribuídos entre fortes e fracos, a critério do Mestre.",
+        "1 ponto: l Objetos mágicos.",
+        "2 pontos: 3 Objetos mágicos.",
+        "3 pontos: 5 Objetos mágicos.",
+        "4 pontos: 7 Objetos mágicos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: l Objetos mágicos.",
+            "2 pontos: 3 Objetos mágicos.",
+            "3 pontos: 5 Objetos mágicos.",
+            "4 pontos: 7 Objetos mágicos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Observação: este Aprimoramento deve ser usado com supervisão total e atenta por parte do Mestre. O personagem possui um ou mais objetos mágicos, artefatos ou fetiches encantados com ele. Consulte o Guia de Itens Mágicos para gastar os pontos de Objetos Mágicos. Os objetos (caso sejam mais de um) devem ser distribuídos entre fortes e fracos, a critério do Mestre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "o-olho-alastor",
+      "title": "O Olho Alastor",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos: O Personagem possui na palma da sua mão, a marca dos Alastores, O Olho Vigilante ou Olho de Satã. Quando necessita provar que pertence a Ordem dos Carrascos, ele mostra sua mão, revelando o símbolo. O Olho Alastor pode fazer com que muitas barreiras diplomáticas e burocráticas sejam deixadas de lado. Obscuri Recíperes são capazes de talhar tal marca nas mãos de um Demônio que não seja um Alastor... por um determinado preço. O Olho Alastor também fornece um bônus de +10% em testes de Intimidação, além de alguns benefícios descritos abaixo:",
+        "- Capacidade de \"marcar\" um espírito como convidado ou asilado impedindo que este seja trancafiado nos Círculos de Danação.",
+        "– Conceder liberdade temporária a um Condenado, podendo tirá-lo do Inferno."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem possui na palma da sua mão, a marca dos Alastores, O Olho Vigilante ou Olho de Satã. Quando necessita provar que pertence a Ordem dos Carrascos, ele mostra sua mão, revelando o símbolo. O Olho Alastor pode fazer com que muitas barreiras diplomáticas e burocráticas sejam deixadas de lado. Obscuri Recíperes são capazes de talhar tal marca nas mãos de um Demônio que não seja um Alastor... por um determinado preço. O Olho Alastor também fornece um bônus de +10% em testes de Intimidação, além de alguns benefícios descritos abaixo: - Capacidade de \"marcar\" um espírito como convidado ou asilado impedindo que este seja trancafiado nos Círculos de Danação. – Conceder liberdade temporária a um Condenado, podendo tirá-lo do Inferno."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passagem-livre",
+      "title": "Passagem Livre",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos: O Personagem possui acesso livre entre os Círculos. Caso tente acessar outras áreas infernais de maior sigilo, poderá enfrentar problemas com os Lordes Demoníacos locais.",
+        "4 Pontos: O Personagem possui imunidade diplomática para atravessar os Círculos como bem entender: uma marca invisível é feita no corpo do Personagem, para permitir o trânsito."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos: O Personagem possui acesso livre entre os Círculos. Caso tente acessar outras áreas infernais de maior sigilo, poderá enfrentar problemas com os Lordes Demoníacos locais.",
+            "4 Pontos: O Personagem possui imunidade diplomática para atravessar os Círculos como bem entender: uma marca invisível é feita no corpo do Personagem, para permitir o trânsito."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem possui acesso livre entre os Círculos. Caso tente acessar outras áreas infernais de maior sigilo, poderá enfrentar problemas com os Lordes Demoníacos locais. O Personagem possui imunidade diplomática para atravessar os Círculos como bem entender: uma marca invisível é feita no corpo do Personagem, para permitir o trânsito."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "submundo",
+      "title": "Submundo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Demônio possui controle de alguma atividade ilegal no Inferno. Este Aprimoramento coloca o Demônio como chefe ou (dependendo da personalidade e background), contato principal de UMA organização criminosa. O personagem pode usar favores destas entidades para seus objetivos, emprestar homens para alguma missão ou emprestar contatos, mas este tipo de organização sempre trará problemas para o personagem, como dívidas, débitos de honra pela perda de algum homem, ou outras. A associação também pode requisitar os serviços do personagem para missões especificas, e neste caso, o personagem e obrigado a aceitar ou perderá os aliados (talvez até os transforme em potenciais inimigos). 1 ponto: Comanda ou influencia um bairro.",
+        "2 pontos: Alguns bairros ou uma pequena cidade.",
+        "3 pontos: Conhecido em uma metrópole ou varias pequenas cidades próximas.",
+        "4 pontos: Um estado ou região.",
+        "5 pontos: Dois ou três estados ou uma grande região. 6 pontos: Um pequeno pais ou algumas regiões."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Comanda ou influencia um bairro.",
+            "2 pontos: Alguns bairros ou uma pequena cidade.",
+            "3 pontos: Conhecido em uma metrópole ou varias pequenas cidades próximas.",
+            "4 pontos: Um estado ou região.",
+            "5 pontos: Dois ou três estados ou uma grande região.",
+            "6 pontos: Um pequeno pais ou algumas regiões."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Demônio possui controle de alguma atividade ilegal no Inferno. Este Aprimoramento coloca o Demônio como chefe ou (dependendo da personalidade e background), contato principal de UMA organização criminosa. O personagem pode usar favores destas entidades para seus objetivos, emprestar homens para alguma missão ou emprestar contatos, mas este tipo de organização sempre trará problemas para o personagem, como dívidas, débitos de honra pela perda de algum homem, ou outras. A associação também pode requisitar os serviços do personagem para missões especificas, e neste caso, o personagem e obrigado a aceitar ou perderá os aliados (talvez até os transforme em potenciais inimigos)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treinamento-sebbiti",
+      "title": "Treinamento: Sebbiti",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 pontos: O Demônio recebeu treinamento, não de qualquer outra entidade, mas dos Sebbiti – os sete maiores guerreiros demoníacos do Inferno. Um guerreiro treinado pelos Sebbiti recebe Inicialmente 20/20 em Briga, 50/50 em Armas",
+        "Brancas (escolha uma), 40% em Tática e um bônus de +3 em dano. Em contrapartida, ser treinado pelos melhores dos melhores deixa marcas horrendas no corpo e no espírito do Demônio; esses infernais recebem um redutor de -2 em todos os testes de CAR, devido às escoriações e cicatrizes deixados em seu corpo, além do personagem adquirir a Fraqueza Fúria."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Demônio recebeu treinamento, não de qualquer outra entidade, mas dos Sebbiti – os sete maiores guerreiros demoníacos do Inferno. Um guerreiro treinado pelos Sebbiti recebe Inicialmente 20/20 em Briga, 50/50 em Armas Brancas (escolha uma), 40% em Tática e um bônus de +3 em dano. Em contrapartida, ser treinado pelos melhores dos melhores deixa marcas horrendas no corpo e no espírito do Demônio; esses infernais recebem um redutor de -2 em todos os testes de CAR, devido às escoriações e cicatrizes deixados em seu corpo, além do personagem adquirir a Fraqueza Fúria."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treinamento-seddim",
+      "title": "Treinamento: Seddim",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 pontos: O Demônio recebeu treinamento de Seddim; O Demônio Destruidor, chefe de 50 Legiões e capaz de derrubar castelos com seu toque. O Personagem recebe +1 em dano e +20/20 em Armas Brancas (Cimitarra). O discípulo de Seddim também é capaz de destruir construções, mediante o toque, causando 1d6 Pontos de Dano a esta por turno; em contrapartida, um Demônio Seddim esta preso a uma sede de sangue para com os Anjos da Cidade de Prata e os Cristãos, recebendo o Aprimoramento Negativo Voto (caçar anjos e cristãos)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Demônio recebeu treinamento de Seddim; O Demônio Destruidor, chefe de 50 Legiões e capaz de derrubar castelos com seu toque. O Personagem recebe +1 em dano e +20/20 em Armas Brancas (Cimitarra). O discípulo de Seddim também é capaz de destruir construções, mediante o toque, causando 1d6 Pontos de Dano a esta por turno; em contrapartida, um Demônio Seddim esta preso a uma sede de sangue para com os Anjos da Cidade de Prata e os Cristãos, recebendo o Aprimoramento Negativo Voto (caçar anjos e cristãos)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treinamento-azazel",
+      "title": "Treinamento: Azazel",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "5 pontos: O personagem fora treinado pelo guerreiro lendário chamado Azazel, conhecido também como o Levítico (16, 8-34), que ensinou os homens a arte do fabrico de espadas, facas, escudos, couraças e espelhos, e ainda a confecção de braceletes e ornamentos, o uso das pinturas, pedras preciosas e tinturas. Dizem às lendas que seus movimentos são leves e imperceptíveis, e nenhuma criatura que cruzou espadas com esta entidade vive atualmente. Os motivos para Azazel ter despendido seu precioso tempo para ensinar o personagem devem ser explicados no backrgound. O discípulo de Azazel recebe + 60/50 em Armas Brancas (escolha uma), +1 em AGI, +30% em Esquiva e 1 ataque extra. Em contrapartida, o Demônio torna-se vulnerável a luz solar, devido a influencia das energias do Anjo Caído."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "5 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem fora treinado pelo guerreiro lendário chamado Azazel, conhecido também como o Levítico (16, 8-34), que ensinou os homens a arte do fabrico de espadas, facas, escudos, couraças e espelhos, e ainda a confecção de braceletes e ornamentos, o uso das pinturas, pedras preciosas e tinturas. Dizem às lendas que seus movimentos são leves e imperceptíveis, e nenhuma criatura que cruzou espadas com esta entidade vive atualmente. Os motivos para Azazel ter despendido seu precioso tempo para ensinar o personagem devem ser explicados no backrgound. O discípulo de Azazel recebe + 60/50 em Armas Brancas (escolha uma), +1 em AGI, +30% em Esquiva e 1 ataque extra. Em contrapartida, o Demônio torna-se vulnerável a luz solar, devido a influencia das energias do Anjo Caído."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cainitas",
+      "title": "Cainitas",
+      "area": "classes",
+      "paragraphs": [
+        "Imitatus, Aprendiz de 3º Grau, Aprendiz de 2º grau, Aprendiz e Investigado. Ela é liderada por uma curia de arcebispos chamada Caimária, cada um com uma região de atuação dentro da Caína, e por sua vez é presidida pelo Arcebispo de Nod. Abaixo dos arcebispos existem os bispos, e abaixo destes, os diáconos. Cada congregação é liderada por um diácono e cada diácono tem a seu comando, 10 ou",
+        "12 guerreiros Cainitas. Símbolo: Uma bandeira azul, com um desenho de Lúcifer, o primeiro traidor e os dizeres XYOXX, um anagrama que significa CALADOS."
+      ]
+    },
+    {
+      "id": "ordem-do-escorpiao-negro",
+      "title": "Ordem do Escorpião Negro",
+      "area": "classes",
+      "paragraphs": [
+        "Organização: Uma vez que a guarda era uma unidade militar, sua organização era parecida com a de uma legião, visto que poderia entrar em combate a qualquer momento. A proporção de legionários nos exércitos dos Eubuleos é de três turmae (a unidade de 30 cavaleiros). Os melhores guerreiros eram enviados para uma centúria especial e eles formam a unidade de elite da Guarda Pretoriana, chamada de Speculatores Augusti, a guarda mais próxima de Hades. Eles são o seu escudo pessoal, sempre a sua volta; os seus guerreiros de extrema confiança.",
+        "Símbolo: Um escorpião negro."
+      ]
+    },
+    {
+      "id": "milicia-de-ferro",
+      "title": "Milícia de Ferro",
+      "area": "classes",
+      "paragraphs": [
+        "Bhaalzebub, Príncipe dos Demônios, Senhor das Moscas e da pestilência, Mestre da Ordem é conhecido principalmente como O Terceiro dos Três. Tem essa nomeação por ser o terceiro Demônio mais poderoso do Inferno; curvando-se somente perante Lúcifer e o próprio Shaitan, de Tenebras. Bhaalzebub é uma entidade amalgamada de outras duas poderosas entidades conhecidas da mitologia Cananéia e Fenícia: o deus Baal ou Bael, senhor dos trovões, agricultura e fertilidade. Também associado à morte e crueldade e Zebub, o deus das moscas e da pestilência. Segundo a mitologia, Zebub era um Infernita arqui-inimigo de Baal. Este, junto com grandes Magos da Antiguidade, Bhaal, para destruir seu inimigo, jogou-se no Underworld, agarrando Zebub. No processo, seus espíritos foram unidos em um só, dando origem ao então \"belth-zebul\". Seu poder excedia o poder de Zebub e do próprio Bhaal. Proclamou-se senhor da Cidade de Dite, antes governada por Orcus. Em Ecrom na Terra, um culto fora formado para adorar o Senhor das Moscas, e dele obter meios para resistir à invasão dos deuses Assírios e Babilônicos. Sibilas eram utilizadas como fonte de informação, comunicando-se com os Demônios dos Círculos Internos da Ordem no Inferno, no Castelo de Zebuol, em Dite. Muitos Magos Humanos e Demônios da região juntaram-se a Milícia, que visava um combate indireto contra as forças invasoras, utilizando rituais e feitiços que envolviam doenças e pragas. Uma dessas pragas contaminou o rei Nabucodonosor II com uma doença mental, cujos sintomas lembravam a licantropia. Ele sobreviveu à loucura, e morreu em 562 a.C., aos oitenta e três ou oitenta e quatro anos de idade. Entre 604 aC e 562 aC. a cidade foi destruída pelo rei babilônico. Anjos da Cidade de Prata acusam a Milícia de Ferro de vitimar 185 mil Assírios com uma doença, quando estes realizaram um cerco contra Jerusalém. Organização: A Milícia possui quatro graus de iniciação, sendo eles: Asdodita, Cavaleiro Das Pragas, Ecrono, Senhor das Pestilências.",
+        "Simbolo: O planeta Vênus, tido como estrela da noite, ostentando em seus mantos arroxeados."
+      ]
+    },
+    {
+      "id": "irmandade-demoley",
+      "title": "Irmandade DeMoley",
+      "area": "classes",
+      "paragraphs": [
+        "Fundada por Jacques DeMoley, o grão-mestre dos Templários na Terra, após o extermínio dos cavaleiros pela igreja católica; criando assim a única ordem infernal destinada ao extermínio de criaturas celestiais diretamente. Ao chegar ao Inferno, os Templários trocaram as armaduras, por couraças forjadas com o ferro negro de Dite, e as mantas brancas que as cobriam, por mantas vermelho e negras, ostentando o símbolo da ordem bem no peito. Quando em missões, organizam acampamentos repletos de efeitos místicos de proteção contra seres celestiais, a fim de se proteger de seus algozes. A Ordem possui 140 Death Knights em todo o Inferno, e desses, 20 só na Terra. Os princípios da Ordem, ainda são baseados na fraternidade e no companheirismo. Os seus membros fizeram votos de caçar todos os seres de Paradisia que conseguirem: usam mantos negros com um pentagrama em vermelho. Em decorrência do local onde originalmente se estabeleceram (no Sexto Círculo, onde existe uma cópia corrupta do Templo de Salomão) também são chamados Ímpios Cavaleiros do Templo de Baphomet.",
+        "Organização: Estão divididos em dez graus: Neófito Baphometis, Practicus do Astrum Nigrum, Adeptus Daemones, Gradus Scorti, Gradus Orgia, Magister Inferi, Maximus Schemaphorash, Gradus Satanae, Phallos et Ketus, Magus Sigilli Baphomets. Os graus mais altos são alcançados após um ritual, no qual consiste na ingestão de elixires preparados pelos mais altos graus da ordem, e visões de Baphomet, chamado INVOCATIO BAPHOMETIS e um duelo homem a homem com o próprio DeMoley, mas dizem que o Death Knitgh nunca luta as sérias, e apenas testa as habilidades de seus iniciados. Simbolo: Um pentagrama com o suposto rosto de Baphomet em seu centro."
+      ]
+    },
+    {
+      "id": "soro-da-verdade",
+      "title": "Soro da Verdade",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "É uma droga psicoativa usada para tentar obter informações de um sujeito disfarçadamente, muitas vezes por um policial, agência de inteligência, ou de organização militar. Foi roubada dos Campos do Reich no Inferno, e combinada a inúmeros outros compostos químicos para chegar ao que é hoje. A vítima realiza testes de CON; cada falha revelara 3 palavras que o interrogador deseja. O efeito de cada falha gera um redutor cumulativo de -3 nos testes de CON e +3 na quantidade de frases que o interrogado deve revelar, muito utilizado pelos Alastores."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "É uma droga psicoativa usada para tentar obter informações de um sujeito disfarçadamente, muitas vezes por um policial, agência de inteligência, ou de organização militar. Foi roubada dos Campos do Reich no Inferno, e combinada a inúmeros outros compostos químicos para chegar ao que é hoje. A vítima realiza testes de CON; cada falha revelara 3 palavras que o interrogador deseja. O efeito de cada falha gera um redutor cumulativo de -3 nos testes de CON e +3 na quantidade de frases que o interrogado deve revelar, muito utilizado pelos Alastores."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amuleto-de-paralizacao",
+      "title": "Amuleto de Paralização",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "quando esmagado, causa paralisia em um raio de 5.5m do portador durante 1d6 turnos. O amuleto é destruído no processo."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "quando esmagado, causa paralisia em um raio de 5.5m do portador durante 1d6 turnos. O amuleto é destruído no processo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bussola-rastreadora",
+      "title": "Bússola Rastreadora",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Um pêndulo de metal negro, amarrado a uma fina corrente de bronze. Quando embebido em qualquer fluido corporal da vítima, este artefato indicará a direção exata para onde esta seguiu."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Um pêndulo de metal negro, amarrado a uma fina corrente de bronze. Quando embebido em qualquer fluido corporal da vítima, este artefato indicará a direção exata para onde esta seguiu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "olhos-da-alma",
+      "title": "Olhos da Alma",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Este monóculo, de aparência muito antiga, permite ao usuário ver a alma de outro ser. Enxergando sua aura, descobrindo o que ele é e como ele é. Quando ativado, o usuário age como se possuísse o Aprimoramento Capaz de Enxergar Auras."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Este monóculo, de aparência muito antiga, permite ao usuário ver a alma de outro ser. Enxergando sua aura, descobrindo o que ele é e como ele é. Quando ativado, o usuário age como se possuísse o Aprimoramento Capaz de Enxergar Auras."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shakhor",
+      "title": "Shakhor",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Este item permite a uma Personagem, se infiltrar entre uma determinada \"Casta\" de Demônios, e se misturar entre eles sem ser notado. O portador deste artefato (que pode ser um anel, um colar,etc) torna-se idêntico a um Demônio da casta alvo. Tudo aquilo que poderia denunciá-lo, torna-se oculto pelo poder do objeto. Um item extremamente raro, já que para cada casta de Demônio, um distinto deve ser feito."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Este item permite a uma Personagem, se infiltrar entre uma determinada \"Casta\" de Demônios, e se misturar entre eles sem ser notado. O portador deste artefato (que pode ser um anel, um colar,etc) torna-se idêntico a um Demônio da casta alvo. Tudo aquilo que poderia denunciá-lo, torna-se oculto pelo poder do objeto. Um item extremamente raro, já que para cada casta de Demônio, um distinto deve ser feito."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "granada-de-agua-maldita",
+      "title": "Granada de Água Maldita",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Artefato que funciona principalmente contra criaturas de Paradisia. Um pequeno recipiente de vidro transparente, contendo um líquido turvo. Quando uma criatura que retire seus poderes da luz é atingida, seu corpo sofre uma rápida degeneração, sofrendo a perda de 1d6 PVs por turno, até o líquido ser totalmente limpo."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Artefato que funciona principalmente contra criaturas de Paradisia. Um pequeno recipiente de vidro transparente, contendo um líquido turvo. Quando uma criatura que retire seus poderes da luz é atingida, seu corpo sofre uma rápida degeneração, sofrendo a perda de 1d6 PVs por turno, até o líquido ser totalmente limpo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arrebatador",
+      "title": "Arrebatador",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Um documento Alastor capaz de retirar uma alma do Inferno. O espírito é retirado com violência, e levado a um local pré-determinado."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Um documento Alastor capaz de retirar uma alma do Inferno. O espírito é retirado com violência, e levado a um local pré-determinado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joia-dos-pensamentos",
+      "title": "Joia dos Pensamentos",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "esse objeto é um pequeno rubi vermelho-sangue, que, permite a comunicação telepática com outro Demônio que possua também uma Joia, não importa o Plano ou à distância."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "esse objeto é um pequeno rubi vermelho-sangue, que, permite a comunicação telepática com outro Demônio que possua também uma Joia, não importa o Plano ou à distância."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caixa-e-besouro",
+      "title": "Caixa e Besouro",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Uma pequena caixa de madeira, ornamentada com símbolos dourados; em seu interior, um besouro escaravelho. Quando agitado, o besouro emite um chiar que faz todos os Demônios em um raio de 10m sentirem-se incomodados, se falharem em um teste de WILL Difícil."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Uma pequena caixa de madeira, ornamentada com símbolos dourados; em seu interior, um besouro escaravelho. Quando agitado, o besouro emite um chiar que faz todos os Demônios em um raio de 10m sentirem-se incomodados, se falharem em um teste de WILL Difícil."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "areia-de-agaures",
+      "title": "Areia de Agaures",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Uma alforja média, contendo uma areia brilhante. Quando jogada, os grãos de areia revelaram quaisquer tipos de encantamentos agindo no local, através de Glifos, mas não sua natureza, para isso, o Demônio deverá realizar um teste da Perícia Oculto."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Uma alforja média, contendo uma areia brilhante. Quando jogada, os grãos de areia revelaram quaisquer tipos de encantamentos agindo no local, através de Glifos, mas não sua natureza, para isso, o Demônio deverá realizar um teste da Perícia Oculto."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grilhoes-dos-condenados",
+      "title": "Grilhões dos Condenados",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Algemas que em uma primeira visão parecem enferrujadas e não possuem ligação uma com a outra, já que a corrente que deveria fazê-lo pende despedaçada, mas uma vítima deste artefato torna-se incapaz de utilizar seus poderes ou mesmo de se distanciar a mais que 5m de seu captor."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Algemas que em uma primeira visão parecem enferrujadas e não possuem ligação uma com a outra, já que a corrente que deveria fazê-lo pende despedaçada, mas uma vítima deste artefato torna-se incapaz de utilizar seus poderes ou mesmo de se distanciar a mais que 5m de seu captor."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manto-negro",
+      "title": "Manto Negro",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Este manto é uma malha negra, com diversos desenhos tribais e runas avermelhadas desenhadas sobre ele. Aqueles que usam o Manto Negro podem utilizar dois poderes: O primeiro poder do manto é sua resistência. Quando ativado, ele torna-se incrivelmente resistente, e praticamente nenhum ataque mundano pode destrui-lo. Como resultado, o usuário ganha 2D de defesa contra todos tipo de ataque. Isso não protege o alvo contra fogo, porém. O segundo poder se mantém mesmo quando o manto não foi ativado. O usuário do manto, ficando imóvel em meio à escuridão, torna-se invisível. Apenas se receber luz diretamente ou se o usuário se mover ele poderá ser visto. Esta habilidade está sempre ativa, e portanto funciona mesmo quando o usuário não deseja que ela funcione. O manto é virtualmente indestrutível: ao ser rasgado, ele misticamente se reconstrói após alguns segundos. As únicas formas de se danificar permanentemente o manto é usando fogo, ácido ou formas equivalentes de destruição."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Este manto é uma malha negra, com diversos desenhos tribais e runas avermelhadas desenhadas sobre ele. Aqueles que usam o Manto Negro podem utilizar dois poderes: O primeiro poder do manto é sua resistência. Quando ativado, ele torna-se incrivelmente resistente, e praticamente nenhum ataque mundano pode destrui-lo. Como resultado, o usuário ganha 2D de defesa contra todos tipo de ataque. Isso não protege o alvo contra fogo, porém. O segundo poder se mantém mesmo quando o manto não foi ativado. O usuário do manto, ficando imóvel em meio à escuridão, torna-se invisível. Apenas se receber luz diretamente ou se o usuário se mover ele poderá ser visto. Esta habilidade está sempre ativa, e portanto funciona mesmo quando o usuário não deseja que ela funcione. O manto é virtualmente indestrutível: ao ser rasgado, ele misticamente se reconstrói após alguns segundos. As únicas formas de se danificar permanentemente o manto é usando fogo, ácido ou formas equivalentes de destruição."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espada-dos-cruzados",
+      "title": "Espada dos Cruzados",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Espada de duas mãos capaz de transpassar a armadura de um Death Knight. A espada causa dano de 1d10+2."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Espada de duas mãos capaz de transpassar a armadura de um Death Knight. A espada causa dano de 1d10+2."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espada-ajanti",
+      "title": "Espada Ajanti",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Espada de madeira, com diversos entalhes, capaz de causar 1d6 em espíritos e criaturas imateriais."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Espada de madeira, com diversos entalhes, capaz de causar 1d6 em espíritos e criaturas imateriais."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amuleto-de-pena",
+      "title": "Amuleto de Pena",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Este sinete é imbuído com uma resistência limitada contra qualquer efeito místico de camuflagem ou poder Forma Humana. Os seres sobrenaturais irão, quando o selo for ativado, reverter às suas formas."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Este sinete é imbuído com uma resistência limitada contra qualquer efeito místico de camuflagem ou poder Forma Humana. Os seres sobrenaturais irão, quando o selo for ativado, reverter às suas formas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incenso-da-revelacao",
+      "title": "Incenso da Revelação",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Sempre se devem acender no mínimo três destes incensos rubros. Quando um desses incensos é aceso, todo tipo de criatura invisível, num raio de 10m tornar-se-á visível novamente."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Sempre se devem acender no mínimo três destes incensos rubros. Quando um desses incensos é aceso, todo tipo de criatura invisível, num raio de 10m tornar-se-á visível novamente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bafo-de-dragao",
+      "title": "Bafo de Dragão",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Uma varinha, de 50cm, ornamentada com um dragão em forma de serpente, cuja boca, abocanha um rubi redondo e magenta. Este artefato, é capaz de liberar 6 cargas diárias de bolas de fogo, que causam 1d6 de dano ou, um único sopro de chamas, que causa 6d6 de dano."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Uma varinha, de 50cm, ornamentada com um dragão em forma de serpente, cuja boca, abocanha um rubi redondo e magenta. Este artefato, é capaz de liberar 6 cargas diárias de bolas de fogo, que causam 1d6 de dano ou, um único sopro de chamas, que causa 6d6 de dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tebori",
+      "title": "Tebori",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "uma tatuagem mágica que confere uma habilidade específica ao usuário. Dentre elas, estão (escolha uma):",
+        "Atributo +3",
+        "Perícia +50%",
+        "Um Poder Demoníaco",
+        "Aprimoramento físico/mental/espiritual de 3 pontos",
+        "+20 Pontos de Magia. Adaptado do net Caçadores Alados."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "uma tatuagem mágica que confere uma habilidade específica ao usuário. Dentre elas, estão (escolha uma):"
+          ]
+        },
+        {
+          "id": "opcoes",
+          "title": "Opções",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Atributo +3",
+            "Perícia +50%",
+            "Um Poder Demoníaco",
+            "Aprimoramento físico/mental/espiritual de 3 pontos",
+            "+20 Pontos de Magia. Adaptado do net Caçadores Alados."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amuleto-de-thanatos",
+      "title": "Amuleto de Thanatos",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Artefatos extremamente raros de serem fabricados ou conseguidos. Um Amuleto de Thanatos traz um Demônio destruído na Terra, imediatamente de volta ao local onde estava. O Amuleto se encrava na carne demoníaca (causando 1d10 se for retirado), e absorve a essência do infernal assim que seus PVs chegam à zero; reconstruindo seu corpo ao tempo de 1 PV/turno. Após a utilização o mesmo se desfaz."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Artefatos extremamente raros de serem fabricados ou conseguidos. Um Amuleto de Thanatos traz um Demônio destruído na Terra, imediatamente de volta ao local onde estava. O Amuleto se encrava na carne demoníaca (causando 1d10 se for retirado), e absorve a essência do infernal assim que seus PVs chegam à zero; reconstruindo seu corpo ao tempo de 1 PV/turno. Após a utilização o mesmo se desfaz."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trogus-mali",
+      "title": "Trogus Mali",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Cajado mágico, feito de metal ou madeira encravadas, possuindo muitas runas e símbolos, e com aproximadamente 1m de comprimento, capazes de esconjurar para o Inferno qualquer espírito que dele tenha fugido instantaneamente."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Cajado mágico, feito de metal ou madeira encravadas, possuindo muitas runas e símbolos, e com aproximadamente 1m de comprimento, capazes de esconjurar para o Inferno qualquer espírito que dele tenha fugido instantaneamente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arrebatador-consectetur",
+      "title": "Arrebatador Consectetur",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "versão mais poderosa do documento comum, e também proibida. Permite que um espírito – condenado ao Orco - volte imediatamente a Terra após falecer, sem passar por nenhum dos Juízes Infernais. Normalmente, tais itens são conseguidos no Mercado Negro, por poderosos capazes de fornecê-los. O Mestre pode permitir que apenas personagens com o Aprimoramento Contatos 2 e Submundo 2 possam ter acesso a este artefato."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "versão mais poderosa do documento comum, e também proibida. Permite que um espírito – condenado ao Orco - volte imediatamente a Terra após falecer, sem passar por nenhum dos Juízes Infernais. Normalmente, tais itens são conseguidos no Mercado Negro, por poderosos capazes de fornecê-los. O Mestre pode permitir que apenas personagens com o Aprimoramento Contatos 2 e Submundo 2 possam ter acesso a este artefato."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manto-de-etlich",
+      "title": "Manto de Etlich",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "descricao",
+      "sectionTitle": "Item",
+      "paragraphs": [
+        "Um amuleto que pode levar o Alastor imediatamente para o Inferno, exatamente no Círculo do qual partira, este será imediatamente transportado, levando consigo qualquer objeto ou criatura que segure."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Um amuleto que pode levar o Alastor imediatamente para o Inferno, exatamente no Círculo do qual partira, este será imediatamente transportado, levando consigo qualquer objeto ou criatura que segure."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "convocar-lukhavim",
+      "title": "Convocar Lukhavim",
+      "area": "rituais",
+      "paragraphs": [
+        "Convocar Lukhavim (Entender/Controlar/Spiritum 5). Custo: 4 pts de Magia.",
+        "Tempo de Conjuração: algumas rodadas.",
+        "Materiais: 3 vitimas, tintas e velas.",
+        "Duração: 72 hrs.",
+        "Lukhavim são Demônios construídos através do fiar de diversas almas e seus cordões de prata. São criaturas cruéis e implacáveis. Possuem diversos poderes relacionados ao Caminho de Spiritum, dentre eles, a capacidade de se tornar imaterial e de tocar espíritos, assim como a habilidade de possuir indivíduos. FR 1d10+12 CON 1d10+12 DEX 1d10+6 AGI 1d10+12 INT 1d10 PER",
+        "1d10+3 CAR 1d10. IP+15 regenera 1d6 PVs/rodada, espinhos (1d6 de dano se for esfregado contra uma vítima). Seus ataques afetam espíritos, podem se tornar imateriais.",
+        "Garras 60/50 2d6+bônus FR Mordida 30/0 3d6+bônus FR Fraqueza: Alimentar-se de Espírito Humano."
+      ]
+    },
+    {
+      "id": "convocar-duinum",
+      "title": "Convocar Duinum",
+      "area": "rituais",
+      "paragraphs": [
+        "Convocar Duinum (Criar/Controlar/Metamagia/Caminho específico 4).",
+        "Custo: Variável.",
+        "Tempo de Conjuração: algumas rodadas.",
+        "Materiais: 3 vitimas, tintas e velas. Duração: até cumprir a missão ou ser destruído.",
+        "O Duinum é uma cópia demoníaca de outra entidade, que servirá a seu criador fielmente, mas, se a cópia entrar em contato com o original, ambos se consumirão: são bastante utilizados como assassinos. Para ser criado, é necessário lembranças recentes do alvo e, em termos de jogo, um Caminho Místico que lide com a origem da vítima (Arkanum para Demônios, Humanos para Humanos, etc.)."
+      ]
+    },
+    {
+      "id": "dammant-indicium",
+      "title": "Dammant Indicium",
+      "area": "rituais",
+      "paragraphs": [
+        "Dammant Indicium (Entender/Criar/Arkanun 1). Custo: 1 pt de Magia.",
+        "Tempo de Conjuração: Instantâneo.",
+        "Materiais: 3 gotas de sangue.",
+        "O ritual sagrado utilizado pelos Auxiliares na Terra - ou por aqueles pouquíssimos que os conhecem - para entrar em contato com os Alastores. Dammant Indicium funciona como um chamado de emergência para investigar um crime; desnecessário dizer que rituais realizados sem uma \"ocorrência\", são punidos severamente pelos Carrascos."
+      ]
+    },
+    {
+      "id": "sellas-locum",
+      "title": "Sellas locum",
+      "area": "rituais",
+      "paragraphs": [
+        "Sellas locum (Entender/Controlar/Arkanun 3). Custo: Variável (conforme o tamanho da área a ser selada).",
+        "Tempo de Conjuração: 5 turnos. Materiais: carvão, sangue do conjurador.",
+        "O Ritual Alastor muito conhecido no Inferno, utilizado para isolar uma determinada área, permitindo o acesso somente para aqueles de posse do Olho de Satã. O Demônio, postado no centro da área, desenha o Olho Alastor, e em seguida goteja seu sangue sobre o mesmo. Toda criatura que tentar transpassar a área, deverá sem bem sucedida em uma disputa de WILLXWILL do Alastor + quantidade de sangue imbuindo no ritual."
+      ]
+    },
+    {
+      "id": "ipsa-nomina",
+      "title": "Ipsa Nomina",
+      "area": "rituais",
+      "paragraphs": [
+        "Ipsa Nomina (Entender /Arkanun 4). Custo: Variável.",
+        "Tempo de Conjuração: Variável. Materiais: um objeto do alvo, velas, um sacrifício.",
+        "Todas as criaturas sobrenaturais possuem um nome em suas línguas naturais. Não é um ser que batiza o sobrenatural: cada nova entidade nasce sabendo seu Nome Verdadeiro. Enquanto se forma, o criatura ouve nas profundezas de sua mente esse nome ser repetido sem parar. O Nome Verdadeiro dos Demônios é pronunciado em uma das línguas falados no Inferno (latim, Aramaico, Babilônio, etc). Ele é um nome sem tradução direta e quase impronunciável para qualquer um a não ser a entidade. Mas o nome é também a maior das fraquezas, principalmente dos demônios, pois quem conhece o Nome Verdadeiro de um sobrenatural pode controla-lo. Um místico que conheça um Nome Verdadeiro e os rituais certos é capaz de manipular uma divindade com grande facilidade. Há inclusive rituais capazes de Obliterar um Demônio, através de seu nome. Por isso, Demônios guardam para si mesmos seus nomes verdadeiros e adotam outros nomes; que mudam de acordo com os tempos, enquanto o Nome Verdadeiro é um segredo eterno. Em todas as eras, demônios adotam esses nomes temporários. Conforme as eras passam, esses nomes temporários mudam. No mundo atual, nomes em inglês são comuns, assim como já foram comuns nomes em latim, em grego ou em egípcio. Normalmente, um nome temporário de demônio denuncia uma característica deles ou apenas é um termo que impressione. Algumas vezes, é simplesmente um nome estranho qualquer. O ritual Ipsa Nomina visa descobrir esse Nome Verdadeiro para então controlar a entidade. O mestre deve delimitar qual é o custo para determinada criatura e deixar bem claro que se o conjurador descobrir este segredo, atrairá o ódio imortal da vítima."
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "demonio-menor",
+      "name": "Demônio Menor",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.88,
+          "reason": "Ficha com atributos, ataques, PV/IP e poderes."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": 8,
+          "FR": 8,
+          "DEX": 14,
+          "AGI": 15,
+          "INT": 9,
+          "WILL": 8,
+          "CAR": 10,
+          "PER": 14
+        },
+        "vitals": {
+          "PV": "10",
+          "IP": "0"
+        },
+        "skills": "#Ataques [1], IP 0, 10 PVs\nPontos de Magia 2/Focus 4 Magia: Fogo 2, Metamagia 2",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 8, FR 8, DEX 14, AGI 15, INT",
+            "9, WILL 8, CAR 10, PER 14",
+            "#Ataques [1], IP 0, 10 PVs",
+            "Pontos de Magia 2/Focus 4 Magia: Fogo 2, Metamagia 2"
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Pode voar à 20m/s Garras 35/35 dano 1d6-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "death-knight",
+      "name": "Death Knight",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.88,
+          "reason": "Ficha com atributos, ataques, PV/IP e poderes."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": 18,
+          "FR": 24,
+          "DEX": 17,
+          "AGI": 18,
+          "INT": 12,
+          "WILL": 14,
+          "CAR": 10,
+          "PER": 15
+        },
+        "vitals": {
+          "PV": "30",
+          "IP": "4"
+        },
+        "skills": "#Ataques [1], IP 4, 30 PVs\nEspada Envenenada 60/60 dano 1d10+5\nGarras 57/47 dano 1d6+5 Pontos de Magia 5/Focus 7 Magia: Fogo 4, Spiritum 3",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 18, FR 24, DEX 17, AGI 18,",
+            "INT 12, WILL 14, CAR 10, PER 15",
+            "#Ataques [1], IP 4, 30 PVs",
+            "Espada Envenenada 60/60 dano 1d10+5",
+            "Garras 57/47 dano 1d6+5 Pontos de Magia 5/Focus 7 Magia: Fogo 4, Spiritum 3"
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Pode voar à 60m/s",
+            "Recebe +2d6 nos testes de Iniciativa Golpes com a espada bem-sucedidos geram teste de CON. Falha no teste, a vítima"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "succubi-inccubi",
+      "name": "Succubi/Inccubi",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.88,
+          "reason": "Ficha com atributos, ataques, PV/IP e poderes."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": 13,
+          "FR": 12,
+          "DEX": 15,
+          "AGI": 16,
+          "INT": 25,
+          "WILL": 25,
+          "CAR": 21,
+          "PER": 16
+        },
+        "vitals": {
+          "PV": "17",
+          "IP": "0"
+        },
+        "skills": "#Ataques [1], IP 0, 17 PVs\nWILL.\nRajada de Fogo (automático) dano 3d6\nPontos de Magia 7/Focus 9 Magia: Trevas 4, Humanos 4",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 13, FR 12, DEX 15, AGI 16,",
+            "INT 25, WILL 25, CAR 21, PER 16",
+            "#Ataques [1], IP 0, 17 PVs",
+            "WILL.",
+            "Rajada de Fogo (automático) dano 3d6",
+            "Pontos de Magia 7/Focus 9 Magia: Trevas 4, Humanos 4"
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Pode possuir corpos mortais mediante teste de WILL vs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demonio-capanga",
+      "name": "Demônio Capanga",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.88,
+          "reason": "Ficha com atributos, ataques, PV/IP e poderes."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": 12,
+          "FR": 13,
+          "DEX": 12,
+          "AGI": 10,
+          "INT": 10,
+          "WILL": 10,
+          "CAR": 9,
+          "PER": 11
+        },
+        "vitals": {
+          "PV": "12",
+          "IP": "0"
+        },
+        "skills": "#Ataques [1], IP 0, 12 PVs Briga 40/40 dano 1d4\nPistola de Dite 45/0 dano 1d6+1(ROF:3)",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 12, FR 13, DEX 12, AGI 10,",
+            "INT 10, WILL 10, CAR 9, PER 11",
+            "#Ataques [1], IP 0, 12 PVs Briga 40/40 dano 1d4",
+            "Pistola de Dite 45/0 dano 1d6+1(ROF:3)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anjo-caido",
+      "name": "Anjo Caído",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.88,
+          "reason": "Ficha com atributos, ataques, PV/IP e poderes."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": 15,
+          "FR": 18,
+          "DEX": 16,
+          "AGI": 16,
+          "INT": 11,
+          "WILL": 14,
+          "CAR": 15,
+          "PER": 13
+        },
+        "vitals": {
+          "PV": "25",
+          "IP": "4"
+        },
+        "skills": "#Ataques [1], IP 4 (armadura), 25 PVs\nEspada 60/60 dano 3d6+2",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 15, FR 18, DEX 16, AGI 16,",
+            "INT 11, WILL 14, CAR 15, PER 13",
+            "#Ataques [1], IP 4 (armadura), 25 PVs",
+            "Espada 60/60 dano 3d6+2"
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Pode conjurar uma espada de chamas",
+            "Pode voar à 60m/s Lança 60/60 dano 1d6+4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "satanista",
+      "name": "Satanista",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.88,
+          "reason": "Ficha com atributos, ataques, PV/IP e poderes."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": 11,
+          "FR": 10,
+          "DEX": 13,
+          "AGI": 12,
+          "INT": 14,
+          "WILL": 14,
+          "CAR": 11,
+          "PER": 12
+        },
+        "vitals": {
+          "PV": "12",
+          "IP": "0"
+        },
+        "skills": "#Ataques [1], IP 0, 12 PVs Pontos de Magia 5/Focus 7 Arkanun 3, Trevas 3, Fogo 1",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 11, FR 10, DEX 13, AGI 12,",
+            "INT 14, WILL 14, CAR 11, PER 12",
+            "#Ataques [1], IP 0, 12 PVs Pontos de Magia 5/Focus 7 Arkanun 3, Trevas 3, Fogo 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duque-infernal",
+      "name": "Duque Infernal",
+      "type": "character_npc",
+      "role": "Criatura/NPC",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 0.88,
+          "reason": "Ficha com atributos, ataques, PV/IP e poderes."
+        }
+      ],
+      "statBlock": {
+        "attributes": {
+          "CON": 40,
+          "FR": 35,
+          "DEX": 30,
+          "AGI": 30,
+          "INT": 27,
+          "WILL": 30,
+          "CAR": 17,
+          "PER": 18
+        },
+        "vitals": {
+          "PV": "60",
+          "IP": "15"
+        },
+        "skills": "#Ataques [2], IP 15 (rituais), 60 PVs\nPontos de Magia 22/Focus 24 Magia: Criar 3, Controlar 4, Trevas\n1, Fogo 2, Humanos 3, Arkanun 3,\nSpiritum 4, Metamagia 2",
+        "special": []
+      },
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "CON 40, FR 35, DEX 30, AGI 30,",
+            "INT 27, WILL 30, CAR 17, PER 18",
+            "#Ataques [2], IP 15 (rituais), 60 PVs",
+            "Pontos de Magia 22/Focus 24 Magia: Criar 3, Controlar 4, Trevas",
+            "1, Fogo 2, Humanos 3, Arkanun 3,",
+            "Spiritum 4, Metamagia 2"
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Regenera 2 PVs/Rodada Possui todos os Poderes Demoníacos Garras 90/90 dano 1d10+13"
+          ]
+        }
+      ]
+    }
+  ],
+  "areaCounts": {
+    "cenarios_lore": 1,
+    "poderes": 7,
+    "aprimoramentos": 15,
+    "classes": 4,
+    "itens_equipamentos": 22,
+    "rituais": 5,
+    "criaturas_npcs": 7
+  },
+  "reviewNotes": [
+    "Piloto inicial por faixas do DOCX.",
+    "Lore foi agrupado como uma entidade maior.",
+    "Objetos mágicos foram separados em entradas individuais por título.",
+    "Fichas de criaturas/NPCs foram separadas de guerreiros notáveis narrativos."
+  ]
+}

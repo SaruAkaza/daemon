@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "status": "pilot_review",
+  "generatedAt": "2026-06-04T16:11:58",
+  "source": "alianca-daemon-01",
+  "sourceFile": "Aliança Daemon 01.docx",
+  "sourcePath": "Livros/word/feito/Aliança Daemon 01.docx",
+  "title": "Aliança Daemon 01",
+  "summary": "Fanzine brasileiro de RPG dedicado ao Sistema Daemon. Contém análise matemática do sistema, resenha detalhada do livro Vampiros Mitológicos (VM) com suas 14 raças vampíricas, conteúdo original da raça Ghul com ficha completa de poderes e fraquezas, e regra alternativa de geração de atributos com 1d10+8.",
+  "areas": [
+    "cenarios_lore",
+    "racas",
+    "regras_base"
+  ],
+  "groups": [
+    {
+      "id": "vm-cenario-lore",
+      "title": "Vampiros Mitológicos — Cenário",
+      "kind": "setting",
+      "area": "cenarios_lore",
+      "description": "Resenha e síntese das seções de lore do livro Vampiros Mitológicos (VM): origem histórica dos vampiros, vampirismo, leis vampíricas, timeline de 4000 A.C. a 1980, 14 raças vampíricas descritas e vampiros notáveis da literatura e mitologia.",
+      "sections": [
+        {
+          "id": "introducao",
+          "title": "Introdução",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Neste capítulo o autor explica o que é RPG, o que o levou a escrever o livro e, o mais importante, mostra que VM é um jogo de campanhas históricas, de personagens imortais e longevos. O que isso quer dizer? Quer dizer que em VMosjogadoresvivenciarão aventuras e histórias através dos séculos e não em apenas uma época!"
+          ]
+        },
+        {
+          "id": "vampirismo",
+          "title": "Vampirismo",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Aqui ficamos a par das origens históricas, folclóricas, mitológicas e literárias sobre os vampiros. Coisas como casos \"reais\" registrados pela igreja ou investigadores à referências de ícones como Bram Stoker e Anne Rice."
+          ]
+        },
+        {
+          "id": "leis-vampiricas",
+          "title": "Leis Vampíricas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Seguimos o livro com as tão necessárias leis vampíricas. Aqui são apresentadas as mesmas leis encontradas no romance O Vampiro Lestat (Anne Rice) que são as seguintes:",
+            "1ª O Líder: Que cada comunidade deve ter seu líder e apenas ele pode autorizar a concessão dos poderes das Trevas para um mortal, cuidando para que os rituais fossem corretamente observados.",
+            "2ª A Beleza Vampírica: Os poderes das Trevas jamais devem ser concedidos aos aleijados, mutilados ou crianças, ou ainda àqueles que, mesmo com a sua posse, não poderiam viver por sua conta.",
+            "Além disto, todos os mortais escolhidos devem possuir grande beleza, tornando assim maior o insulto a Deus.",
+            "3ª Os Mais Antigos: Um velho vampiro jamais deveria transmitir sua mágica, para evitar que o sangue do iniciado ficasse forte demais, pois todos os Dons das Trevas aumentam naturalmente com o tempo, e a força dos antigos é grande demais para ser repassada.",
+            "4ª A Destruição: Nenhum vampiro jamais poderá destruir outro vampiro. Somente o Mestre da comunidade tem o poder da vida e da morte sobre todo o seu rebanho. E ele tem a obrigação de atirar no fogo os velhos e loucos que não mais conseguem servir a Satan como deveriam. É sua obrigação destruir todos os vampiros que não forem criados como se dever. É sua obrigação destruir aqueles que foram feridos a ponto de não conseguirem sobreviver por si mesmos. E, finalmente, é sua obrigação destruir todos os proscritos etodosaquelesque desobedecerem às leis.",
+            "5ª O Segredo: Nenhum vampiro poderá jamais revelar sua verdadeira natureza para um mortal e permitir que ele continue vivendo. Nenhum vampiro jamais deverá revelar a história dos vampiros para um mortal e permitir que ele continue vivendo. Nenhum vampiro poderá escrever sobre a história dos vampiros, nem deixar por escrito qualquer informação real sobre os vampiros, de modo a evitar que os textos sejam encontrados por mortaisedadoscomo verdadeiros. Nenhum mortal deverá jamais saber o nome de um vampiro, a não ser aquele que está na sua lápide, e nenhum vampiro poderá revelar a um mortal a localização de seu refúgio ouode qualquer vampiro.",
+            "No VM estas cinco leis são mais detalhadas e melhor explicadas."
+          ]
+        },
+        {
+          "id": "racas-vampiricas",
+          "title": "Raças Vampíricas",
+          "area": "racas",
+          "paragraphs": [
+            "Logo em seguida são apresentadas as raças vampíricas:",
+            "A esta raça pertence quase a metade da população vampírica. Os Strigoi têm origem na Antiga Roma, quando a lendária bruxa Strix, à beira da morte, suplicou à Nix, deusa da noite, a vida eterna, tornandose assim a primeira vampira da raça. Strix passou o Dom das Trevas para apenas 3 discípulos que espalharam a maldição dos Strigoi pelo mundo. Vampiros famosos como Dracula e a Condessa Bathory pertencem a essa raça.",
+            "As vampiras conhecidas como Brujas surgiram quando um Coven composto de 13 bruxas espanholas capturou o vampiro strigoi Lacaste e realizou um ritual com seu sangue, tornandose um novo tipo de Vampiras. Apenas mulheres podem se tornar Brujas, qualquer tentativa de vampirizar um homem o tornaria um Ghoul descerebrado. Novas brujas surgem de séculos em séculos, e apenas em rituais realizado pela ordem.",
+            "A raça dos Sábios surgiu quando um Vampiro Strigói, Santiago deLa Roya, invadiu com seu secto um castelo templário. Vencido, o líder dos templários foi transformado também em um vampiro, mas suplicou aos céus, que lhe enviaram um Anjo, que o cegou e destruiu os invasores. Todos os Sábios são cegados quando vampirizados e muitos podem ver o futuro e o passado.",
+            "Os Lamiai descendem de uma das amantes de Zeus, Lamia, qua após dar a luz a um filho do deus supremo viuo morrer nas mãos de Hera. Lamia rogou a Nix, pedindo uma maneira de vingarse da deusa ciumenta e foi transformada num monstro com seis braços e cauda de cobra, passando a vagar pela Grécia devorando as crianças recém nascidas. Lamia passou o Dom das Trevas para frente e suas crias deram origem as lendas sobre sereias.",
+            "Os Ekimmus descendem de Vampyr, uma entidade de Tenebras que após se confrontar com o Arcanjo Miguel foi destruída e sua essência passou a vagar pelos baixos umbrais. São os vampiros descritos nos livros da Anne Rice. Muitos vampiros famosos como Lestat de Lincourt pertencem a esta raça.",
+            "Os Vrikolakas descendem dos 17 dentre os cinqüenta filhos de Licaon que foram concebidos por ninfas e semideusas, por tanto imortais. São vampiros com características lupinas, muito ligados a natureza e a seus irmãos lobisomens. Assim como sua personalidade, seus poderes também são ligados ao controle e entendimento da natureza.",
+            "Os Eretiks são parentes distantes dos Vrikolakas. Os lobos brancos da Rússia. Vampiros Vrikolakas modificados pela magia russa, e nomeados como hereges, uma vez que Rússia se acreditava que os hereges ao morrerem se tornavam vampiros.",
+            "Uma facção dos Vrikolakas, esta raça se originou com o conde Orlock, um nobre do Século XI, extremamente malévolo, que teve o infortúnio de provocar uma feiticeira, a qual jogoulhe uma praga que culminou na terrível aparência do conde, quando o mesmo foi transformado em um vampiro.",
+            "Essa raça descende de Asema, uma criatura que rondava as noites africanas devorando carne humana e se alimentando de sangue com seus dentes de ferro. Os Asimanis são vampiros monstruosos, com membros compridos e dedos longos, transformados em garras, dentes de ferro afiados como os de tubarão, olhos vermelhos e cabelos desgrenhados. Muitos se assemelham a morcegos em sua forma original.",
+            "Os vampiros orientais são os mais misteriosos e provavelmente mais poderosos existentes, bem como os mais raros. Um Kiangshi surge quando, após a morte, a segunda alma, denominada P'ai continuava em seu corpo, tornandose assim um vampiro. Dizse que uma pessoa é predestinada a se tornar um desses vampiros e que os Kiangshis mais antigos realizam rituais para chegarem até essas pessoas e treinálas. Normalmente os Kiangshis têm uma inclinação para o \"mal\", mas contase que quando a alma P'o consegue vencer a alma P'ai ele tornase idependente, normalmente tornandose uma caçador de vampiros.",
+            "Os Rakshasas são os vampiros hindus, descendentes da deusa Kali, que teve sua alma corrompida pela essência de Vampyr, e da entidade conhecida como Raktabija, que se duplicava a cada gota de sangue derramada. Os Rakshasas possuem cabeça de tigre ou babuíno, são extremamente fortes e adeptos dos prazeres e orgias, muitas vezes controlando o mercado de drogas e pornografia nas cidades que ocupam.",
+            "As primeiras lendas a respeito dos Arcádios surgiram durante os primeiros séculos da própria criação e surgimento de Arcádia, o território banido por Zeus.",
+            "Nessa época, alguns vrikolakas se afastaram de suas famílias e partiram para o plano das fadas. Quando o sangue vampírico entrou em contato com o sangue fey, originou uma nova raça de vampiros, com traços de ambos os lados.",
+            "Relatos de vampiros na região do México podem ser encontrados até a época dos Maias, que viviam no território onde hoje fica a Guatemala, mas que no passado chegava até a península de Yucatan. Durante toda a história do México, esse era conhecido com o território dos Morcegos-Vampiros mas, ao contrário das outras raças de vampiros, os Kamazots nunca se misturaram à sociedade mortal, permanecendo sempre como seus algozes."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Lista das fraquezas dos seres das trevas. Desde Alho à barreira de rosas."
+          ]
+        },
+        {
+          "id": "time-line",
+          "title": "Time Line",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Uma das partes mais bacanas do VM, possui uma linha histórica detalhada de 4000",
+            "A.C. a 1980 D.C. Uma ótima referência para as campanhas históricas."
+          ]
+        },
+        {
+          "id": "wondderful-kopenhagen",
+          "title": "Wondderful Kopenhagen",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Aqui temos um cidade vampírica e as dicas para construir uma cidade para acoplar os Vampiros Mitológicos."
+          ]
+        },
+        {
+          "id": "vampiros-notaveis",
+          "title": "Vampiros Notáveis",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Um capítulo trazendo a descrição de vampiros ícones da literatura, cinema e mitologia. Não possui estatísticas de jogo para os mesmos, uma vez que estes seriam muito antigos e com estatísticas quase infinitas! Mas podemos ver presentes como Drácula, Lestat entre outros!"
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "sistema-daemon-introducao",
+      "title": "Sistema Daemon — Introdução e Análise",
+      "area": "cenarios_lore",
+      "description": "Apresentação do Sistema Daemon com histórico desde 1992, análise matemática da curva exponencial de atributos e contextualização do livro Vampiros Mitológicos.",
+      "paragraphs": [
+        "Por mais que já tenha sido um dos sistemas mais jogados no Brasil, mesmo que seja um dos sistemas com mais títulos publicados, com mais netbooks etc. O sistema Daemon ainda é desconhecido por muitos e visto com preconceito por outros.",
+        "A minha proposta nesta série “Desvendando o Sistema Daemon ” é apresentar o sistema da forma mais didática possível e desmistificar alguns mitos e problemáticas do sistema.",
+        "Então,antesde começar, um breve histórico:",
+        "O sistema daemon foi publicadopela primeira vez em 1992, por Marcelo Del Debbio em um fanzine da POLI-USP chamado Politreco, mais tarde seria utilizado no cenário Arkanun (em sua 1ª edição) publicado em uma Dragão Brasil Especial. O sistema foi bem recebido e foi utilizado nas revistas Só Aventuras e pelo editor da mesma (Marcelo Cassaro) em seu RPG de ficção científica, intitulado Invasão. Não muito depois o sistema mudou de casa indo para a Editora Daemon , responsável por 99% dos RPGs publicados utilizando o sistema. O sistema Daemon já tem 19 anos de existência e sofreu poucas alterações nesteperíodo , demonstrando sempre bons resultados e uma boa adaptabilidade. Vamos descobrir o porquê:",
+        "O sistema Daemon é simples e prático, mas por trás de tudo há uma matemática que firma ebalanceiatodososmecanismosdojogo (Atributos, Perícias, Magias, Poderes, Níveis...). O sistema foi desenvolvido em 1992 por engenheiros da POLI-USP para simulação de máquinas e equipamentos, mas que veio muito bem a calhar na forma de um sistema de RPG.",
+        "O sistema segue uma cur va exponencial de fórmula Y=Kx2^(Atributo/6) onde Kéo fator de conversão do Atributo e Y sua capacidade de realização. Isto significa, na prática, que os valores de Atributo DOBRAM a cada seis unidades (1D). Um personagem que tenha Força 17 tem o dobro da força que um personagem que possua Força 11 e assim por diante. E as Perícias, Atributos, Magias, Poderes e TUDO mais dentrodosistemaencaixam - s e perfeitamente neste mecanismo, sem a necessidade de milhares de tabelas para consultar!",
+        "Em termos rpgísticos, tudo no sistema pode ser comparado com 1D, ou seja, um dado comum de seis faces. Por exemplo: Um ser humano possui em seus atributos 3D (3 dados de seis faces), isso quer dizer que podem variar de 3 a 18.",
+        "Tomemos como exemplo a seguinte tabela, onde usaremos termos como Carregar,Levantar,Bônus de dano e Velocidade, para melhor ilustrar a progressão dos Atributos no jogo (poderíamos usar qualquer coisa, como",
+        "Focus de Magia, Poder psíquico etc.):",
+        "VAMPIROS MITOLÓGICOS traz o universo vampiresco para o cenário Trevas/Arkanun. Com sua primeira publicação em novembro de 1998 teve sua última aparição física em maio de 2003 na forma da edição 3.5 e com a belíssima capa ilustrada por Evandro Gregório. Hoje em dia esse clássico do RPG nacional encontrase esgotado na própria editora e sem promessas de uma nova remessa, ou seja, um item de colecionador!"
+      ]
+    },
+    {
+      "id": "ghul",
+      "title": "Ghul",
+      "area": "racas",
+      "kind": "race",
+      "description": "Raça vampírica de origem árabe, baseada nas lendas dos Ghuls das 1001 Noites. Possuem capacidade metamórfica e podem caminhar durante o dia, ao contrário de outras raças. Conteúdo original do fanzine Aliança Daemon 01.",
+      "paragraphs": [
+        "Diversas lendas árabes, incluindo o clássico As 1001 Noites mencionam um tipo de Djin que se reúne em bandos para desenterrar cadáveres e consumilos, esta criatura seria capaz de assumir diversas formas e atrair os beduínos para armadilhas com o intuito de devorar sua carne e beber seu sangue: o Ghul ou Ghoul, uma criatura que é a encarnação dos perigos mortais do deserto. Os Ghouls foram criados pelo demônio árabe Íblis para atormentar os seguidores do Corão, levandoos a temer o deserto e a noite, desenvolvendo assim superstições para se protegerem dessas criaturas que por suas capacidades metamórficas poderiam assumir a forma de qualquer pessoa para atacar os povos do deserto; especulase, portanto, que o propósito de Íblis ao criar estes vampiros seria desviar os muçulmanos dos ensinamentos do Profeta através do medo e do desespero."
+      ],
+      "editorial_notes": [
+        "O que mais me chama atenção no VMéa ideia dos Vampiros baseados em crenças reais dos povos, sem uma unificação fictícia para sua origem. Ai do caçador que tentar"
+      ],
+      "sections": [
+        {
+          "id": "ghul-idade-media",
+          "title": "Idade Média",
+          "paragraphs": [
+            "Os Ghuls acompanharam a expansão do Islamismo pelo Oriente Médio, Norte da África e Ásia Central, perseguindo e atormentando os muçulmanos constantemente. Alguns deles entraram em contato com os Asimani e migraram para o interior da África, se afastando do ramo principal da Raça que assombrava os beduínos no deserto. Com as Cruzadas eles entraram em contato com os Templários que a princípio foram presas fáceis das habilidades metamórficas dessas criaturas, mas que logo aprenderam a lidar com elas. Alguns poucos Ghuls acompanharam os muçulmanos que se estabeleceram no Sudeste Asiático, mas acreditase que eles não tenham se adaptado ao ambiente exótico e as bizarras Raças de vampiros que lá habitam."
+          ]
+        },
+        {
+          "id": "ghul-idade-moderna",
+          "title": "Idade Moderna",
+          "paragraphs": [
+            "O século XV marca o início da Idade Moderna com a Conquista do Império Bizantino pelos Turcos Otomanos, assim como marca uma revolta entre os Ghuls que desafiam a autoridade dos mais velhos e questionam o propósito da Raça se espalhando pelo mundo para conhecer novas terras ao invés de simplesmente se reunirem para atormentar os muçulmanos. Esta rebelião ocorreu devido ao contato com a cultura ocidental, pois muitos Ghuls que se infiltraram nas Cortes Européias como espiões, absorveram os ideais progressistas da Renascença e propagaramnos entre seus irmãos.",
+            "Duranteas Grandes Navegações muitos Ghouls que estavam na África chegaram as Américas aproveitandose do Tráfico Negreiro e logo se espalharam pelo continente seguindo de perto a expansão dos colonizadores europeus."
+          ]
+        },
+        {
+          "id": "ghul-caracteristicas",
+          "title": "Características",
+          "paragraphs": [
+            "Uma das principais características dos Ghuls é a sua capacidade metamórfica que aliada à possibilidade de eles poderem caminhar durante o dia, ao contrário de outras Raças, lhes permite infiltrarse facilmente na sociedade mortal. Ghuls também são capazes de metamorfosearse em animais ou mesclarse aos elementos naturais, o que permite a estas criaturas escapar facilmente quando seus disfarces não surtem mais efeito. Dizem que após algumas décadas um Ghul normalmente esquece sua aparência original e até mesmo o gênero ao qual pertencia.",
+            "Existem duas maneiras de transformar um ser humano em um Ghul, a primeira consiste em assassinar uma pessoa durante a Lua Nova e deixar seu cadáver apodrecer até que se complete o Ciclo Lunar, suprindoo com sanguinus a cada mudança de fase lunar. Também é possível para um mortal fazer um pacto com Íblis e tornarse um Ghul, estes tendem a ser os mais cruéis e bestiais de toda a Raça."
+          ]
+        },
+        {
+          "id": "ghul-organizacao-e-modo-de-vida",
+          "title": "Organização e Modo de Vida",
+          "paragraphs": [
+            "Ghuls normalmente se organizam em bandos liderados por um vampiro mais velho, semelhante em muitos aspectos a matilhas de hienas, pois costumam caçarem juntos e dividirem o mesmo refúgio diurno. Estes bandos geralmente selecionam um de seus membros para viver entre os mortais e atrair vítimas para alimentar o grupo. O tamanho destes agrupamentos depende invariavelmente da disponibilidade de alimento na região.",
+            "Ghuls Ritualísticos, aqueles que fizeram o Pacto com Íblis, costumam ser solitários e até mesmo se tornam criaturas ferais que vagam pelas bordas das cidades, geralmente em sua forma animal, a espreita de uma vítima incauta. Se forem Magos provavelmente se isolarão no interior de ordens místicas, onde não raro acabam sendo confundidos com Liches. Não é incomum que um Ghul Ritualístico, após adquirir certa idade, crie outros vampiros para formar um bando, seja para com o intuito de obter servos para protegêlo, seja por conta do acordo feito com Íblis, qualquer que seja o motivo eles necessariamente viverão para aterrorizar os mortais."
+          ]
+        },
+        {
+          "id": "ghul-principais-areas-de-influencia",
+          "title": "Principais Áreas de Influência",
+          "paragraphs": [
+            "Os mais antigos que ainda se mantêm fiéis às ordens de Íblis permanecem no Oriente Médio, Norte da África, Irã, Afeganistão e Paquistão. Acreditase que existam Ghuls infiltrados no governo e na mídia israelense incitando o ódio entre árabes e judeus na Faixa de Gaza. Ainda existem vampiros desta Raça em países da Europa Oriental que mantém pouco ou nenhum contato com seus irmãos residentes no Oriente Médio e aproveitaram a queda dos regimes comunistas para adquirir influência na sociedade mortal. Estes vampiros chegaram ao Brasil, acompanhados dos Asimani, na época do tráfico de escravos e em pouco tempo se espalharam pelo país, sendo que o mesmo ocorreu no restante da América Latina. Hoje em dia eles estão espalhados por praticamente todos os paises do Continente Americano, mantendo uma influência discreta na sociedade humana."
+          ]
+        },
+        {
+          "id": "ghul-relacoes-com-outras-racas",
+          "title": "Relações com outras Raças",
+          "paragraphs": [
+            "A primeira Raça com a qual os Ghuls mantiveram contato foi com a facção árabe dos vampiros Ekimmu, uma relação tensa marcada ora por disputas por territórios e presas, ora por acordos esporádicos e efêmeros em que os Ekimmu contratavam Ghuls como espiões. O mais célebre destes acordos se deu durante a conquista Otomana de Bizâncio e da Europa Oriental em que diversos Ghuls, valendose de suas habilidades metamórficas e de sua tolerância ao sol, se infiltraram em meio a Igreja e a Nobreza Cristãs. Os Asimani e Rakshasas mantêm boas relações com os Ghuls, pois consideram os muçulmanos invasores de suas terras e por isso apóiam a diabólica missão dos Ghul.",
+            "Muitosvampiros Strigoi , Vrykolakas e Eretiks tiveram confrontos isolados com os Ghuls durante a Invasão Otomana da Europa Oriental que logo evoluíram para verdadeiras caçadas quando descobriram que estas criaturas eram espiões dos invasores. Ainda hoje os vampiros nativos desta região consideram os Ghuls como demônios estrangeiros. Nas Américas os Ghuls ainda mantém acordos e alianças com os Asimani e chegam a formar bandos com os Camazotz, já em relação às outras Raças a atitude varia bastante de local para local e costuma ser pouco influenciada pelas opiniões dos vampiros europeus."
+          ]
+        },
+        {
+          "id": "ghul-poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "paragraphs": [
+            "Aumento de Atributos, Bruxaria, Controle Mental, Garras, Ghoul, Sentir Criaturas, Qalit'Ayn, Ras'Al-Ghul, Transformação [Animais, Névoas e Humanos]"
+          ]
+        },
+        {
+          "id": "ghul-fraquezas",
+          "title": "Fraquezas",
+          "paragraphs": [
+            "Aparência Horrenda , Decapitação, Vulnerabilidade ao Sol, Necrofagia.",
+            "Escolha 4 das 9 seguintes: Água Benta, Cânticos Religiosos(*), Corpo Corrompido(*), Fogo, Fúria, Obediência(*), Símbolos Religiosos, Cascos. que o vampiro realize um teste difícil de Will por rodada para que não fuja apavorado. Obviamente a pessoa que entoa o cântico deve seguir a religião que inspira a canção.",
+            "(*) Ghuls Ritualísticos devem escolher obrigatoriamente pelo menos uma dessas fraquezas."
+          ]
+        },
+        {
+          "id": "ghul-cascos",
+          "title": "Cascos",
+          "paragraphs": [
+            "O Ghul apresenta cascos de asno em sua forma humana e estes não podem ser ocultos por nenhum tipo magia ou poder ilusório, apenas por roupas ou sapatos especialmente confeccionados para este fim. Antigamente, esta fraqueza fez com que muitos vampiros se disfarçassem apenas de mulheres devido à facilidade em ocultar os pés debaixo de seus vestidos longos."
+          ]
+        },
+        {
+          "id": "ghul-canticos-religiosos",
+          "title": "Cânticos Religiosos",
+          "paragraphs": [
+            "O vampiro odeia o som de cânticos religiosos, sejam mantras, orações, salmos ou hinos de louvor. A mera audição destes sons faz com"
+          ]
+        },
+        {
+          "id": "ghul-controle-mental",
+          "title": "Controle Mental",
+          "paragraphs": [
+            "Os Ghul não possuem acesso aos seguintes poderes: Hipnosis,",
+            "Comandos Complexos, Esquecimento, Idéia Original, Controle de Multidões, Atração, Lealdade ao Mestre, LockVogel, GrossLockVogel,",
+            "Escravo e Cordas de Marionete."
+          ]
+        },
+        {
+          "id": "ghul-transformacao-em-nevoas",
+          "title": "Transformação em Névoas",
+          "paragraphs": [
+            "Ghuls que vivem no deserto manipulam a areia ao invés da névoa, contudo se trata de uma modificação apenas na descrição do poder e não de novos níveis.",
+            "Nível 1: permite conjurar pequenas tempestades de areia para se ocultarem.",
+            "Nível 2: pode se transformar em uma nuvem de poeira ao invés de névoa."
+          ]
+        },
+        {
+          "id": "ghul-transformacao-em-animais",
+          "title": "Transformação em Animais",
+          "paragraphs": [
+            "Hiena: o vampiro é capaz de se transformar em uma hiena listrada. As estatísticas do animal são basicamente as mesmas de um lobo. Ghuls que vivem em cidades transformamse em grandes cães.",
+            "Kaftar: o vampiro se transforma em uma criatura semelhante a um homemhiena com traços demoníacos. Os bônus dessa forma são os mesmos do poder lobisomem.",
+            "Ifrit: o Ghul assume a forma de um demônio pavoroso com quase 3 metros de altura. Nesta forma o vampiro provoca terror em seres humanos, os quais devem ser bem sucedidos em um teste de Will para evitar fugir em desespero. Além disso, o personagem nessa forma recebe os mesmos bônus conferidos pelo poder Monstro."
+          ]
+        },
+        {
+          "id": "ghul-transformacao-em-humanos",
+          "title": "Transformação em Humanos",
+          "paragraphs": [
+            "Personagens Ghuls possuem acesso aos mesmos níveis que os vampiros",
+            "Rakshasas, além dos poderes exclusivos que seguem abaixo:",
+            "Aspecto Ordinário: permite que, ao assumir sua forma humana ou animal, o vampiro dissimule a sua natureza sobrenatural. Apenas poderes ou magias com foco maior do que os níveis de Transformação em Humanos do personagem poderão revelar a sua identidade.",
+            "Habitante Local: o vampiro é capaz de se transformar em uma pessoa típica da região onde ele se encontra, a qual pode pertencer a qualquer classe social que o Ghul tenha vislumbrado no local. O vampiro reproduz fielmente todos os costumes e hábitos nativos e age conforme as regras de conduta requeridas para aquele tipo de pessoa. O vampiro também é capaz de se comunicar no idioma local enquanto permanecer nessa forma e não for desmascarado. É necessário o dispêndio de 2 pontos de Sanguinus toda vez que o Ghul assumir uma forma humana através deste poder. Não é possível copiar um indivíduo específico com este poder.",
+            "Miragem: o vampiro é capaz de se transformar na cópia exata de um indivíduo, absorvendo suas memórias e seu comportamento. Para conseguir isso ele deve manter contato olho a olho com o alvo durante 10 rodadas e gastar 3 pontos de Sanguinus ao final desse tempo para concluir a transformação. O vampiro pode reter a forma indefinidamente, mas as memórias e a personalidade duram apenas Will/2 dias."
+          ]
+        },
+        {
+          "id": "ghul-sentir-criaturas",
+          "title": "Sentir Criaturas",
+          "paragraphs": [
+            "Uivos: como o poder homônimo dos Vrykolakas, porém permite convocar apenas outros Ghul.",
+            "Inimigo Íntimo: o vampiro pode modificar a “assinatura” de seu sangue para simular pertencer a uma outra raça, de modo a enganar poderes de detecção.",
+            "Máscara do Sangue: permite modificar o sangue do personagem para que ele se passe por outro vampiro. Aquele que provar do seu sangue pensará que se trata de um vampiro de outra raça a menos que passe em um teste de WillxWill.",
+            "Para ativar este poder o personagem deve beber pelo menos um ponto de sanguinus de outro vampiro para poder mimetizálo por até uma semana. É permitido simular apenas um vampiro de cada vez.",
+            "Qatil'Ayn",
+            "Este dom foi concedido aos Ghuls por Íblis para que estes atormentassem os mortais que passariam a temer a morte e perderiam assim toda a esperança em uma vida futura de bemaventurança prometida por Allah, o Magnífico. Aqueles que já foram vítimas dessa sinistra habilidade sabem o quanto é doloroso enfrentar um Ghul, pois mesmo que a criatura seja destruída, o mortal invariavelmente acaba com a fé despedaçada e a sua vida perde o sentido. Adestruição de um Ghul é feita da maneira o mais cautelosa possível para evitar que Íblis arrebanhe mais almas desesperançadas.",
+            "O significado mais próximo em nossa língua desta palavra árabe é “Olhar da Morte”.",
+            "Olhar Paralisante: O Ghul desenvolve um olhar vazio que não consegue se fixar em ponto algum. Aqueles que olharem em seus olhos deverão testar WillxWill ou ficarão paralisadas de medo como se tivessem encarado a sua própria morte.",
+            "Presença de Morte: como o poder acima só que não exige contato visual, pois agora o vampiro irradia uma aura de morte ao seu redor que afeta todos que estão presentes em um raio de 5 metros + 1 metro para cada 5 anos de pósvida da criatura.",
+            "Perda de Fé: O olhar do Ghul provoca um sentimento de desespero e agonia que esvazia o coração de suas vítimas. Caso a vítima falhe em um teste de WillxWill ela perderá 1d6 pontos de fé, quando estes chegarem a zero (ou se ela não possuir fé) ela entrará em desespero e cairá em prantos no chão incapaz de agir pelo resto da cena.",
+            "Falsa Morte: ao encarar sua vítima por algum tempo o Ghul é capaz de induzir nela um estado de falsa morte. O contato visual deve ser mantido durante 5 rodadas, durante este período a vítima experimenta uma sensação de sonolência, frio e torpor; ao final deste tempo o alvo tem direito a um teste de resistência. Para todos os efeitos a vítima está morta e apenas magias, poderes sobrenaturais ou médicos experientes (Perícia 50%+) serão capazes de notar que a pessoa ainda está viva. Falsa Morte dura um número de horas igual à Will/2 do vampiro.",
+            "Olhar de Íblis: Este temível poder evoca as forças da morte e do desespero sobre aqueles que ousarem encarar o Ghul; os olhos do vampiro enegrecem refletindo nada além do vazio da morte e do esquecimento.",
+            "A vitima deve fazer um teste de WillxWill, caso falhe perderá todas as suas forças e se prostrará no chão, incapaz de lutar por sua vida. Se esta possuir pontos de fé, perderá todos. Depois disso a vítima entrará em depressão e será incapaz de recuperar sua fé por algum tempo; o vampiro deve rolar 1d6+bônus de Will contra 1d6 + bônus de Will da vítima, o resultado determinará por quanto tempo a vítima permanecerá em um estado de total desesperança. Mesmo aqueles poucos afortunados o suficiente para resistir à depressão, ficarão profundamente abalados por esse acontecimento; talvez pelo resto de suas vidas.",
+            "3d6 rodadas",
+            "1 hora",
+            "1 noite",
+            "1 semana",
+            "1 mês",
+            "1 ano e 1 dia",
+            "1 década",
+            "25 anos",
+            "50 anos, dobre esse valor a cada sucesso do Vampiro.",
+            "Ras'Al-Ghul",
+            "Segundo as lendas árabes os Ghuls eram capazes de criar luzes no deserto que simulavam fogueiras pra atrair os beduínos. Eles também eram considerados responsáveis pela aparição da estrela chamada algol que surge nos céus por algumas horas e depois some, o que poderia confundir um beduíno e atraílo para uma armadilha para ser devorado vivo pelo Ghul e seu bando. Esta estrela é conhecida no Oriente Médio como Ras'Al-Ghul, a Cabeça do Diabo e é definitivamente um símbolo de mau agouro.",
+            "Fogo-Fátuo: o Ghul é capaz de criar um globo de luz semelhante a um fogofátuo, que pode facilmente se passar por uma fogueira, lâmpada acesa ou farol de um veiculo a distância. O vampiro pode movimentar o fogofátuo, podendo passar a impressão de que se trata de um veículo em movimento ou de uma pessoa caminhando com um lampião ou tocha em punho. Custo: 1 Sanguinus.",
+            "Falsa Estrela: o Ghul pode criar uma falsa estrela no céu, confundindo aqueles que precisam observar o céu noturno para se orientarem. Em tempos modernos este poder pode ser utilizado para imitar um avião, helicóptero ou torre de telefonia. Custo: 2 Sanguinus.",
+            "Atração Fatal: este poder faz com que as pessoas sejam atraídas hipnoticamente pelas luzes criadas nos níveis anteriores. A vítima tem direito a um teste de Will x Will do Ghul.",
+            "Miragem: como no primeiro nível o vampiro pode criar um globo de luz, mas que pode ser visto apenas por suas vítimas. É necessário o dispêndio de 2 pontos de Sanguinus + 1 ponto para cada vítima além da primeira.",
+            "Farol: o Ghul pode criar uma luz espiritual sobre um alvo que pode servir tanto para alertar outros seres sobrenaturais de que a pessoa em questão está sob sua proteção, quanto para atrair espectros, demônios, vampiros e outras criaturas malévolas para atormentarem a vítima. O vampiro deve especificar quais tipos de criaturas serão capazes de enxergar a luz. Custo: 3 Sanguinus.",
+            "Prana (A/ Variável)",
+            "Pré Requisito: Ter no mínimo 30% na perícia meditação.",
+            "Éter Luminoso (A/1)",
+            "Responsável pelo funcionamento das funções de relação: visão, audição, fonação, etc. O Personagem recebe +10% nos testes",
+            "Descrição:",
+            "O iniciado com este aprimoramento consegue, relacionados com o atributo PER e quase nunca é surpreendido. através da prática de pranayamas, revitalizar e fortalecer o seu corpo vital (que é formado pelo éter). Este corpo é composto por quatro éteres, a saber: Químico, de Vida, Luminoso e Refletor. Cada um fornecendo efeitos específicos.",
+            "Éter Químico (A/1)",
+            "Responsável pelo funcionamento de todo metabolismo físico. O personagem recebe +10% nos testes relacionados com os Atributos Físicos (FR, CON, DEX e AGI) e recupera os pontos de Constituição Física mais rápido do que o normal ( 1 ponto a cada 30 min.)",
+            "Éter da Vida (A/1)",
+            "Responsável pelo funcionamento da função reprodutora. O personagem consegue alterar as funções hormonais das pessoas que mantém contato visual e assim recebe +10% em testes relacionados com o atributo CAR. Ganha 1D contra Shiddis que envolvam manipulação mental.",
+            "(teste DIFÍCILpara tentar se aproximar do personagem)",
+            "Éter Refletor (A/1)",
+            "Responsável pelas funções de memória, raciocínio e imaginação. O personagem recebe +10% em testes relacionados com os atributos INT e WILL."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alianca-daemon-01-regras-base",
+      "title": "Regra base - Aliança Daemon 01",
+      "area": "regras_base",
+      "kind": "ruleset",
+      "description": "Síntese das regras e mecânicas comentadas no fanzine, unificada com a regra alternativa de geração de atributos com 1d10+8.",
+      "paragraphs": [],
+      "sections": [
+        {
+          "id": "conceitos-basicos",
+          "title": "Conceitos Básicos",
+          "area": "regras_base",
+          "paragraphs": [
+            "Este capítulo é padrão nos livros da daemon. Traz um panorama superficial a respeito das regras e terminologias do jogo."
+          ]
+        },
+        {
+          "id": "criacao-de-personagens",
+          "title": "Criação de Personagens",
+          "area": "regras_base",
+          "paragraphs": [
+            "Aqui aprendemos a construir um personagem vampiro passo a passo. Junto com as diretrizes acompanhamos a criação de um personagem, o que facilita muito a compreensão do processo."
+          ]
+        },
+        {
+          "id": "atributos",
+          "title": "Atributos",
+          "area": "regras_base",
+          "paragraphs": [
+            "Capítulo contendo a descrição dos atributos básicos do Sistema Daemon."
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Capítulo descrevendo algunsaprimoramentos . Seguindo a mesma linha dos outros títulos."
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "regras_base",
+          "paragraphs": [
+            "Aqui ao invés das perícias super detalhadas (como no Trevas) temos apenas uma lista com os nomes e como utilizálas."
+          ]
+        },
+        {
+          "id": "equipamentos",
+          "title": "Equipamentos",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Padrão em todos os livros Daemon."
+          ]
+        },
+        {
+          "id": "poderes-vampiricos",
+          "title": "Poderes Vampíricos",
+          "area": "poderes",
+          "paragraphs": [
+            "Um dos capítulos mais bacanas do livro, onde temos as descrições e os custos dos poderes desenvolvidos pelas raças vampíricas. Detalhe para que cada vampiro é único podendo desenvolver poderes únicos e imprevisíveis!"
+          ]
+        },
+        {
+          "id": "sanguinus",
+          "title": "Sanguinus",
+          "area": "regras_base",
+          "paragraphs": [
+            "Sanguinus é o que mantém um Vampiro e o que ele utiliza para ativar alguns poderes. Neste capítulo temos a definição e as regras para o uso de sanguinus."
+          ]
+        },
+        {
+          "id": "regras-e-testes",
+          "title": "Regras e Testes",
+          "area": "regras_base",
+          "paragraphs": [
+            "Capítulopadrão , trazendo as regras básicas do sistema daemon."
+          ]
+        },
+        {
+          "id": "envelhecimento",
+          "title": "Envelhecimento",
+          "area": "regras_base",
+          "paragraphs": [
+            "Aqui são apresentadas as diretrizes e efeitos do envelhecimento de um vampiro. Capítulo mais descritivo do que com regras em si."
+          ]
+        },
+        {
+          "id": "simulando-1d100-com-3d6",
+          "title": "Simulando 1d100 com 3d6",
+          "area": "regras_base",
+          "paragraphs": [
+            "Aqui o autor tenta mostrar uma alternativa para quem não tem acesso aos dados de 10 lados, mas fica um pouco complicado ter que aderir à tabela apresentada a todo o momento, sem falar que ajuda a desgastar ainda mais o livro."
+          ]
+        },
+        {
+          "id": "regra-atributos-1d10",
+          "title": "Regra Alternativa: Atributos com 1d10+8",
+          "area": "regras_base",
+          "paragraphs": [
+            "No sistema daemon, os atributos são obtidos através da distribuição de pontos. Geralmente, os jogadores têm 101 pontos para serem gastos entre 8 atributos – mínimo 5 e máximo18 pontos por atributo.",
+            "O problema da forma de distribuição mostrada acima é que na maioria das vezes os jogadores sempre ficam perdidos nas contas ou indecisos em como distribuir os pontos, isso quando não caem na cilada de construírem personagens patos (com todos os atributos medianos). A distribuição de pontos de atributo sempre toma uma boa parcela de tempo do jogo – o que deixa muitos jogadores frustrados, pois querem logo interpretar!",
+            "Pensando nisso, criei uma forma de obter os atributos através da aleatoriedade. É simples. Basta rolar 1d10 e somar 8 uma vez para cada atributo.",
+            "Ex: Rodney vai rolar seu atributo força. Ele rola 1d10 e tira 5, soma 8 e tem um resultado de 13 em força. Ele executa a mesma sequência para cada um dos sete restantes atributos.",
+            "Para não deixar os jogadores completamente sem controle sobre seus atributos, ao final das rolagens, o jogador pode trocar o valor de um atributo por outro – para adequar o seu personagem a como melhor o imagina.",
+            "Ex: Rodney obteve os seguintes resultados: FR 13, CON 9, DEX 15, AGI 12, INT 16, WILL 12, PER 10,",
+            "CAR 13. Como ele imagina seu personagem mais resistente fisicamente do que inteligente, ele troca o valor de INT pelo valor de CON. Ficando com os atributos finais assim: FR 13, CON 16, DEX 15, AGI",
+            "12, INT 9, WILL 12, PER 10, CAR 13.",
+            "Asoma total dos atributos neste tipo de rolagem ficará entre 72 e 144. O que não é tão discrepante do valor 101 e possibilita personagens mais distintos e desafiantes para interpretar! Além de encurtar em muito a parte de criação de personagens!",
+            "Faça parte da Aliança!",
+            "Envie seus artigos e adaptações para sistema daemon para o email liberimago@gmail.com e tenha sua contribuição publicada nas próximas edições!!!"
+          ]
+        }
+      ]
+    }
+  ],
+  "areaCounts": {
+    "cenarios_lore": 2,
+    "racas": 1,
+    "regras_base": 1
+  },
+  "reviewNotes": [
+    "Este piloto trata o documento como um fanzine/suplemento com duas camadas: resenha do VM (grupos) e conteúdo original (seções individuais).",
+    "As 14 raças do VM são descrições em texto corrido na seção RAÇAS — sem fichas de jogo. Foram agrupadas no grupo vm-cenario-lore, não como entidades individuais.",
+    "A raça Ghul é conteúdo original do fanzine, com subseções H3 detalhadas (poderes, fraquezas, etc.), por isso foi modelada como entidade própria (seção individual area=racas).",
+    "A síntese das mecânicas de Vampiros Mitológicos e o bloco Pranayama/1d10+8 foram unificados em um único item de regras_base.",
+    "Ainda precisa de revisão humana antes de virar entidade final da base."
+  ]
+}

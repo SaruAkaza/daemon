@@ -1,0 +1,12 @@
+{
+  "vantagens": {
+    "status": "ok",
+    "warnings": [
+      "no_chapter_detected: documento sem Heading 1 real; estrutura inferida por heurística"
+    ],
+    "structuredAt": "2026-06-03T04:17:08.101725+00:00",
+    "blocksAt": "2026-06-03T04:17:19.910717+00:00",
+    "blockCount": 1,
+    "file": "Vantagens.docx"
+  }
+}

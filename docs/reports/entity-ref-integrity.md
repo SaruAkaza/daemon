@@ -4,17 +4,17 @@ Este relatório separa o que está publicado nas áreas do site do que ainda exi
 
 ## Resumo
 
-- IDs de entidade: 1740
-- IDs globais duplicados: 1
-- Referências publicadas: 46
+- IDs de entidade: 2821
+- IDs globais duplicados: 0
+- Referências publicadas: 50
 - Referências publicadas quebradas: 0
 - Referências brutas nos livros: 260
-- Referências brutas quebradas nos livros: 178
+- Referências brutas quebradas nos livros: 179
 - Referências duplicadas no mesmo bloco: 0
 
 ## IDs globais duplicados
 
-- `a-assassina`: data\entities\adventure.json#0, data\entities\source.json#1
+Nenhum.
 
 ## Referências publicadas quebradas
 

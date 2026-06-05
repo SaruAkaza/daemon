@@ -1,0 +1,1557 @@
+{
+  "version": 1,
+  "source": "abismo-infinito-quick-start",
+  "sourceType": "docx",
+  "file": "Abismo-Infinito-Quick-Start.docx",
+  "title": "Abismo Infinito Quick Start",
+  "extractedAt": "2026-06-03T00:51:52",
+  "warnings": [],
+  "children": [
+    {
+      "type": "frontmatter",
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Cenário, sistema, textos, diagramação, contos e ilustrações por John Bogéa.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Agradecimentos: a Editora Secular Games, pelo estímulo que eu precisava para desenvolver este projeto; a Editora Retropunk, por ter acreditado e investido neste jogo; ao marginal Eduardo Caetano; a Livia von Sucro, Walder Lopes e o povo da Comunidade RPG Brasil do Orkut; a Felipe Penna (valeu pelos livros de Psicologia. E pelas cervejas também); aos amigos de Portugal João Mariano e Ricardo \"Jogador Sonhador\" Tavares; aos integrantes do fórum Garagem RPG; aos comparsas do Blog RPG Pará, Rafael Rocha da Secular Games, Guilherme Moraes da Retropunk; Eraldo Portugal (World RPG Fest); Cassiano Oliveira (Dia D RPG); Fernando Pires (Revista Rolepunker); as pessoas que apoiaram o projeto desde o início e/ou testaram o jogo, como Sayron Schmidt, Rafão Araújo, Marcos Silva, Ricardo Mallen, André Mousinho, Rodrigo Ragabash, Mike Wevanne, Júlio Cesar da Silva, Kairam Ahmed Hamdan, Dmitri Gadelha, Gilson Rocha, Vitor Pissaia, João Pedro, Caio Maximino, Harlley Castro, Lafaete Dexter, Daniel Carvalho, Hélio Júnior e Daniel Firmino (Jan Piertezoon).",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "www.retropunk. www.salacentoeum.com",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "que é um jogo narrativo?",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Jogo Narrativo é uma tradução livre do termo Role-Playing Game (RPG). Jogar um jogo narrativo (jogar RPG) significa interpretar um papel dentro de uma história, mas não um papel comum e sim o papel princi-pal da história: o protagonista. Você e os outros jogadores criam e fingem ser esses personagens, agem como eles agiriam e pensam como eles pensariam. As ações são apenas faladas e não efetivamente realizadas. Isto é, você não precisa correr se o seu personagem estiver correndo, basta descrever a cena.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Sessões de jogo",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Um jogo pode demorar horas, dias, meses ou até anos antes que a história chegue ao fim. Claro que depois de algumas horas de jogo, todos estarão bastante cansados, e, se a história ainda não tiver acabado, você pode pausar o jogo e recomeçá-lo do ponto onde parou em outro dia. Sempre que o jogo recomeçar é o início de uma nova sessão.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "material para jogo",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Para jogar Abismo Infinito, é necessário uma cópia da ficha de astronauta para cada jogador (a matrizes se encontra no final deste livro - ou em www.retropunk.net, ou em www. salacentoeum.com), 3 dados comuns de seis fa-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "ces, lápis, borracha, imaginação e disposição para protagonizar uma história de horror/terror.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Observação sobre os dados: os dados são descritos ao longo do jogo abreviados com a letra \"d\", isto é, 1d sig-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "nifica um dado, 2d significa dois dados, 3d significa três da-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "dos e assim por diante. Às vezes aparece um modificador numéri-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "co positivo ou negativo que muda o resultado do dado, por exemplo: 2d-2 (o resultado de dois dados subtraído por dois); 3d+4 (o resultado de três dados somado a quatro) e assim por diante.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "os personagens",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Os personagens são todos os indivíduos que integram a história, sejam eles controlados (interpretados) por você ou controlados (interpretados) pelo Mestre.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Protagonistas: são os personagens criados e controlados pelos jogadores. Por definição, eles são os per-sonagens principais da história, a trama gira em torno deles. O Mestre descreve cenas, situações e aconteci-mentos que envolvam esses personagens, mas são os jogadores que determinam o que eles vão fazer, falar ou como vão reagir.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Coadjuvantes: são os personagens criados e controlados pelo Mestre que agirão a favor dos protagonistas (ou que pelo menos não vão atrapalhar).",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Antagonistas: são personagens criados e controlados pelo Mestre que agirão contra os protagonistas, podem ser as manifestações do medo ou até outros tripulantes.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Figurantes: são os personagens criados e controlados pelo Mestre que vão decorar o ambiente, não são importantes pra história, existem apenas para compor uma determinada cena como parte do cenário. No entanto, nada impede qualquer tipo de interação.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "o mestre do Espaço",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "O Mestre do Espaço (ou simplesmente Mestre) é um jogador especial, responsável por criar/conduzir a história, criar/controlar os antagonistas, coadjuvantes e figurantes que estiverem nessa história, e, o mais im-portante, arbitrar as regras do jogo. O Mestre é o juiz e tem a palavra final na resolução de qualquer conflito dentro do jogo. Tudo o que ele diz torna-se real no mundo imaginário do jogo. Ele, se quiser, pode contrariar as regras deste livro, pois uma regra só existe se ele permitir que ela exista. Ele pode, inclusive, inventar suas próprias regras ou alterar as que não estiverem ao seu gosto.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "O Mestre não é materializado na história, ele é apenas uma voz que se comunica com os jogadores, des-creve os acontecimentos e diz como os conflitos se resolvem. Apesar de ter controle sobre a história, ele não tem poder sobre o destino dos protagonistas (personagens dos jogadores), ele não pode determinar o que um jogador deve fazer com seu personagem, ele apenas descreve o ambiente, consequencias, oferece os conflitos e, se quiser, dá algumas possibilidades.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Para assumir o cargo de Mestre do Espaço deve-se ter um conhecimento pleno sobre as regras contidas neste livro, ser um bom contador de histórias e, além de tudo, ter bom senso.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "\"É preciso mergulhar por abismos obscuros... e nas profundezas viver entre maravilhas e glórias eternas\"",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "-Lovecraft",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Fui o primeiro a acordar da hibernação, pelo menos uma semana antes dos outros. No início é confuso, custa compreender que já não se está mais dormindo. Se não fosse a fome avassaladora que eu sentia – que nenhum tubo de nutrientes ia saciar – provavelmente ia ficar lá deitado por mais alguns dias. Desconectei tudo do meu corpo, abri a porta da câmara e me levantei. A sensação era que eu tinha dormido apenas por uma longa e contur-bada noite. Lembro de poucos sonhos, pedaços fáceis de esquecer. Se não soubesse, jamais pensaria que já tinha se passado quatro anos.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Andar pelos corredores escuros do Prometeu era as-sustador, a voz eletrônica da nave me desejava bom dia, me informava das horas terrestres, me dizia o que fazer, pra onde ir, perguntava sobre minha saúde – como se ela realmente se importasse com minha saúde, como se não estivesse programada para simular algum tipo de preo-cupação. O sistema de suporte vital ainda estava se res-tabelecendo, por conta disso, vários setores da nave ainda estavam inacessíveis.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "A voz eletrônica do Prometeu, por mais apática que parecesse, diminuía um pouco a solidão. Às vezes eu até tentava manter algum diálogo, mas as respostas progra-madas me fizeram desistir.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Na cozinha, ainda com uma lata aberta de pasta de nutrientes na mão, olhei o espaço pela janela lateral. En-tre uma colherada e outra, vislumbrei Autoctonia. Como era imenso aquele planeta. Por um momento tive um surto de desespero, como quem encontra algo que não pode ser contido, que não pode ser domado, mas que se é obrigado a enfrentar. Era tanta informação visual que me deixa-va tonto. Meus olhos vidrados e a cara colada no vidro da janelinha que me separava do vácuo do espaço con-templava os astros, a poeira de estrelas avermelhada que circundava o planeta gigante e as três luas majestosas que orbitavam em nossa companhia. Tudo era maravilhoso demais, um assustador espetáculo cósmico, surreal. Pensei em pegar minha câmera fotográfica e todo o equipamen-to de filmagem para começar a registrar o que via, mas estava tão fraco e aturdido, que decidi ir descansar um pouco. Descansar de verdade, sem a indução de nenhuma máquina.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Tomei dois analgésicos, aparei a barba e acendi um cigarro. A cabeça parecia que ia explodir de tanta dor, o cérebro ainda estava embaralhado, recuperando a ordem. Esparramei-me no chão umas duas ou três vezes antes de chegar à minha cabine. Deitei-me na cama, me coloquei de lado, na posição costumeira de dormir. Pus o braço por baixo do travesseiro macio e fechei os olhos… E foi quando vi pela primeira vez a face da besta.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "alguns desses planetas, com a missão de confirmar as especulações científicas sobre as possibilidades de colonização, mas até hoje nenhuma retornou com respostas positivas. Várias equipes se perderam no espaço ou fo-ram despedaçadas por algum erro de dobra espacial – erros que serviram para aprimorar ainda mais o processo e tecnologia das via-gens intergaláctica. A maioria das equipes continua em viagem mesmo depois de tanto tempo, pois a viagem, dependendo do setor galáctico onde o Autoctônia está localizado, pode demorar várias dezenas de anos.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "o abismo do universo",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Não é de hoje que o ser huma-no deseja alcançar o espaço, foram séculos de tentativas e desenvolvi-mento de tecnologia astronômica para romper as fronteiras do nos-so próprio sistema solar. Viajar entre as estrelas, visitar outros planetas, contemplar outras luas, se tornou mais do que um simples desejo, na época atual",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "é uma necessidade extrema. Para isso, foram seleciona-das pessoas destemidas, ousadas e brilhantes, que atravessarão o gran-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "de abismo infinito do universo em busca de",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "esperança, para dar continuidade à espécie humana, que hoje, por conta de milênios de maus tratos ao próprio planeta natal (a Terra), precisa de outro lugar para viver; mais seguro, mais limpo e sem nenhum cataclisma eminente.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "A paisagem do universo - astros deslizando pelos moldes do espaço a milhares de anos luz da Terra - a primeira vista leva a mente a um estado melancólico de contemplação, depois de adrenalina, e depois de medo. O medo do desconhecido é a sensação mais antiga e mais pura dos seres humanos, é o mais in-tenso e mais primitivo de todos; aquele medo que corrompe o corações das pessoas quando elas estão frente a algo que não compreendem; o mesmo medo que sentiram os primeiros homens das cavernas a medida que foram descobrindo as maravilhas do mundo, do fogo, da caça e da morte. A ignorância é o combustível desse medo, a sensação avassalado-ra de não ter poder sobre o que se mostra, de não compreender, de não conter. Isso, sem dúvida, pode enlouquecer o mais forte dos homens; e é isso que os astronautas encontraram se forem muito fundo no abismo do universo.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "a era da viagem espacial",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "No quarto milênio, as fronteiras do universo não são mais intransponíveis, e os seres humanos finalmente poderiam ir para além do sistema solar, desbravando o espaço obscuro, arriscando a própria vida por causa de especulações astronômicas sobre lugares assombrosos e colonizáveis. Esses audazes astronautas são considerados os heróis de espécie,",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "viajando por anos, a uma distância estupenda – mi-lhares de anos luz – onde nenhum homem jamais esteve. Tudo isso possível graças ao maior advento da humanidade: o motor de dobra espacial. Essa tecno-logia custou vários séculos de pesquisas árduas sobre como produzir antimatéria e controlá-la; gerações de cientistas aprimorando a teoria geral da relatividade de Einstein, até chegar ao que parecia impossível: uma máquina capaz de simular um buraco de verme e do-brar o espaço, fazendo com que o cruzador equipado com este artefato viaje até mil vezes mais rápido que a velocidade da luz.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Tal façanha científica talvez nunca tivesse sido realizada se não fosse a atual extrema necessidade de migrar para o espaço e estabelecer moradia em ou-tros planetas. A Terra está morrendo e a raça humana está a beira do juízo final. Os esforços de todas as autoridades governamentais do mundo foram con-centrados inteiramente nos projetos de colonização espacial, o que, obviamente, faz com que os trabalhos no campo da astronomia dessem um salto evolutivo gigantesco.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "autoctônias",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "As teorias astronômicas sobre planetas habitáveis se tornaram ainda mais evidentes no quarto milênio, há pelo menos alguns milhares de possibilidades es-palhadas pela Via Láctea, observadas de longe por telescópios poderosíssimos e sondas de monitoração. Esses possíveis planetas habitáveis são chamados de Autoctônias (cada Autoctônia possui um sufixo numérico, na ordem em que são descobertas; por exemplo: Autoctônia-122, Autoctônia-123, Autoc-tônia-124 e assim por diante). Nas últimas décadas,",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "várias equipes de pesquisadores foram enviadas para alguns desses planetas, com a missão de confirmar as especulações científicas sobre as possibilidades de colonização, mas até hoje nenhuma retornou com respostas positivas. Várias equipes se perderam no espaço ou foram despedaçadas por algum erro de dobra espacial – erros que serviram para aprimorar ainda mais o processo e tecnologia das viagens inter-galáctica. A maioria das equipes continua em viagem mesmo depois de tanto tempo, pois a viagem, depen-dendo do setor galáctico onde o Autoctônia está loca-lizado, pode demorar várias dezenas de anos.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Diversas formas de vida podem ser encontra-das nos Autoctônias; algumas dóceis como alguns répteis e roedores, outras totalmente hostis como bestas enormes. Certos planetas são habitados por animais gigantes, como se estivessem em",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "seu período pré-histórico, outros apenas por formas de vida simples, como se tudo ainda estivesse no comecinho da longa estrada da evolução. Curiosamente, todas as for-mas de vidas (animais e vegetais) parecem versões esquisitas das formas de vida já conhecidas na Terra (micróbios, larvas, plantas, algas, insetos, anfíbios, rép-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "teis, mamíferos, aves etc.) como se toda a vida na galáxia partisse da mesma origem biológica; mas com processos evolutivos diferentes, dando forma e comportamento totalmente originais",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "- cada espécie evoluiu de acordo com as necessidades de cada meio ambien-te. A vegetação, assim como a da Ter-ra, também se adapta e comporta de acordo com o tipo geológico de lugar em que cresce, como, por exemplo, cactos e em regiões áridas e palmei-ras em regiões tropicais. A maioria",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "dos planetas capazes de abrigar algum tipo de vida são inteiramente selvagens, possuindo uma extensa",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "área vegetal.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Nem todo o planeta capaz de abrigar alguma forma de vida é necessariamente capaz de abri-gar vida humana. Certos fatores como o ar e água com algum elemento diferente, poderia ser vene-noso para seres que não tenham evoluído nessas condições. Certos níveis de gravidade, comuns para seres nativos podem ser mortais para estru-tura corporal humana.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "a Iniciativa Cronos",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "A Iniciativa Cronos é o maior e mais importante projeto de exploração espacial da história da Terra, uma força tarefa científica expedicionária compos-ta das mentes mais brilhantes no campo da as-tronomia, que promove e administra as missões espaciais em toda a Via Láctea. É uma espécie",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "de marinha espacial científica, preparada para desbravar os confins galácticos e coloni-zar planetas possivelmente habitáveis. A Cronos foi a responsável pela subs-tituição do modelo físico newtoniano pelo modelo físico einsteiniano, o que possibilitou um melhor entendimen-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "to sobre o funcionamento das forças naturais que moldam o universo e a criação do motor de dobra espacial.",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "as hipérions",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Um Hipérion é uma mega estação espacial da Cronos, cada uma com uma função específica, como base de operações de pesquisa, pólos científicos, quartéis militares, extratoras de minerais etc. (cada Hipérion possui um sufixo numérico, na ordem em que são fundadas; por exemplo: Hipérion-8, Hipé-rion-9, Hipérion-10 e assim por diante). As Hipé-rions são também marcos galácticos, discriminado as zonas espaciais já exploradas na Via Láctea. Uma Hipérion pode ser flutuante ou fixa na superfície de algum planeta, lua ou até asteróide, dependendo da necessidade. Muitos astronautas moram por décadas nas estações, abandonando o serviço e voltando para a Terra só quando estão muito velhos, doentes ou, de alguma forma, incapazes de exercer seus cargos. A base central do Cronos fica na Hipérion-1, uma mega estação espacial flutuando entre a Terra e a Lua. É na Hipérion-1 que praticamente todos cruzadores são construídos e a grande maioria dos astronautas termina a última etapa de treinamento antes de des-bravarem o espaço.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "os Prometeus",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Um Prometeu é um cruzador intergaláctico de-senvolvido especialmente para suportar viagens de dobra espacial sem por a integridade física e mental dos tripulantes em risco, pelo menos em teoria. (cada Prometeu possui um sufixo numérico, na ordem em que são construídos; por exemplo: Prometeu-39, Prometeu-40, Prometeu-41 e assim por diante). Cada Prometeu é construído equipado com motor de dobra espacial, câmara de contenção e cápsulas de hibernação. Nada conhecido na galáxia tem o deslocamento mais",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "rápido que os Prometeus viajando em ponte de dobra, pois eles podem chegar a uma velocidades absurdas, centenas de vezes superiores a velocidade da luz. No entanto, não só existem algumas dezenas de Prome-teus em plena atividade. O espaço é um lugar obscu-ro e perigoso, fácil de se perder ao menor erro de cál-culo de navegação, por conta disso, vários Prometeus desapareceram entre as estrelas, principalmente no Setor Perseus. A construção de um Prometeu é com-plicada e exige muitos recursos minerais - que já não são mais tão abundantes na Terra - tornando bem co-mum o uso de material sucateado em muitos deles.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Motor de dobra espacial: é a maior advento da história da humanidade. O motor de dobra permitiu que o os humanos fossem capazes de explorar longas distâncias na galáxia. O motor cria um tipo de buraco de verme artificial e manipulável, chamados de pontes de dobra, que engole e impulsiona o cruzador até seu destino, alcançando uma velocidade até mil vezes mais rápida que a luz. Quando o motor é ativado, a estrutura do continuum espaço-tempo ao redor do cru-zador e distorcida, puxando (dobrando) o espaço e o tempo enquanto o Prometeu avança, encurtando a distância entre dois pontos no universo.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Câmaras de contenção e cápsulas de Hiber-nação: a viagem pela ponte de dobra é extremamente prejudicial ao organismo humano, por conta disso, todos os cruzadores são equipados com câmaras de contenção, desenvolvidas especialmente para prote-ger os astronautas no processo de dobra espacial. Den-tro das câmaras, há inúmeras cápsulas de hibernação, que são leitos de animação suspensa, com a função de induzir um sono constante enquanto um sistema de introdução de nutrientes alimenta o corpo do astro-nauta por períodos às vezes superiores a uma deze-nas de anos, dependendo de onde se quer chegar no universo.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Equipamento de Apoio: Existem inúme-ros veículos de apoio disponíveis no hangar de uma Prometeu, há naves de transporte, veículos terrestres, drones e outros equipa-mentos úteis para exploração. Drones são robôs de auxílio científico, parecidas com pequenos veículos terrestres ou flutuado-res, servem para explorar uma determina-da região, transmitir imagens e ajudar no mapeamento de uma determinada zona. Drones também possuem membros me-cânicos, podendo, por exemplo, consertar danos externos de um Prometeu em órbita, enquanto um engenheiro opera o controle",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "remoto.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "os argos",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Argos são computadores dotados do que há de mais moderno em inteligência artificial, cuidam da manutenção e administração estru-tural das Prometeus e Hipérions. Cada Argo é a alma da estrutura em que está instalado. Um Argo se comunica com os tripulantes (uma voz feminina ou masculina, clara, doce e gentil), informando-os, aconselhando-os, apoiando-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "-os ou até recriminando-os, no entando, ape-sar de ser capaz de expressar suas próprias opiniões programadas, um Argo está a serviço dos tripulantes, principalmente do capitão (seus protocolos podem ser modificados para ignorar um ou outro tripulante, mas o normal é que ele sirva a todos). Enquanto os astronau-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "tas estão em hibernação, é o Argo que regula a aplicação de nutrientes, tempo de sono induzido, trajetória da nave e todos as outras funções automa-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "tizadas necessárias para a viagem na dobra espacial.",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "a exploração intergaláctica",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Obscura, espiral e perigosa, a Via Láctea gira sem propósito pelo universo; um vórtex com inúmeros braços compostos de bilhões de sistemas solares atra-ídos pelo seu núcleo voraz. No entanto, apesar de seu tamanho assombroso, é apenas mais uma galáxia or-dinária no meio de um infinito de outras galáxias, e, nem de longe, chega a ser a maior. Ir além de seus limites, mesmo com o nível tecnológico atual, é um sonho quase impossível. Uma viagem até as extre-midades da Via Láctea, mesmo viajando mil vezes mais rápido que a luz, dependendo de que lado da borda se quer chegar, poderia demorar mais de um século. Além disso, a mente humana não está pre-parada para uma relação tão longa com um infinito de coisas nunca antes vistas. Mesmo as mentes mais poderosas já sucumbiram a delírios e outras mazelas psicológicas quando se arriscam a ir tão distantes no espaço. Explorar a galáxia é um trabalho tão perigoso quanto necessário.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "O Inferno: O Núcleo Galáctico é chamado de O Inferno pelos navegadores, por conta da tonalidade vermelha vibrante da região. Colônias próximas ao núcleo são quase sempre descartadas, o lugar exer-ce uma influencia perigosa sobre o cérebro humano, talvez ondas de radiação indetectáveis que alteram drasticamente o comportamento de alguns astronau-tas tornando-os violentos e, às vezes, quase irracio-nais. Os motivos e padrões biológicos afetados por esse tipo de influência ainda é fonte de estudo da co-munidade científica.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Sagitário A: No núcleo existe um buraco negro de proporções assombrosas chamado de Sagitário A, ou O Olho de Deus. Assim como qualquer outro",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "buraco negro, qualquer massa que passe dentro de seu raio de atração é tragado até ser engolido, absor-vido e desmaterializado por completo; a diferença em relação a outros buracos negros (pelo menos os já registrados pela Cronos) é que o Sagitário A tem proporções colossais e um poder de atração suficien-te para devorar planetas inteiros em poucas horas. Apesar do perigo, o Sagitário A pode ser a resposta que vários cosmólogos procuram para desvendar to-dos os mistérios quanto à origem da Via Láctea, e, se todas as expectativas forem saciadas, compreender o processo que originou o universo.",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "braços galácticos",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "É do núcleo que brotam todos os braços galác-ticos que compõem nossa galáxia. Os cinco braços galácticos, Perseus, Norma, Scutum-Centauro, Carina-Sagitário e, o menor de todos, Órion, onde está localizado o nosso sistema solar, e a Terra, gi-ram ao redor do núcleo galáctico, que gira ao redor de Sagitário-A, formando um redemoinho a deriva no universo, rebocando centenas de trilhões de corpos celestes (há Bilhões de sistemas planetários em cada um dos braços, e muitos deles possuem potenciais planetas habitáveis). Os navegadores usam os braços como fronteiras galácticas, delimitando regiões e ajudando na própria localização entre as estrelas da Via-Láctea.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Estrelas Vermelhas: É também no núcleo da ga-láxia onde se localizam as estrelas mais antigas já re-gistradas pela Cronos, chamadas de Estrelas Primor-diais ou Estrelas Vermelhas. Essas estrelas ancestrais possuem um brilho rubro intenso e cegante. Talvez a tonalidade avermelhada do núcleo seja justamente influencia dessas estrelas na região, destacando ain-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "da mais o clima infernal do lugar. Alguns criptólo-gos acreditam que a origem da vida na galáxia tenha sido nos planetas dessa região, que a trilhões de anos atrás, toda a região das estrelas Vermelhas, tenha sido um bom lugar para morar. No entanto, os interesses científicos estão na grande intensidade de captação de energia da região; como os cruzadores e estações se alimentam do hidrogênio captado no espaço, é de grande interesse que se entenda o fenômeno",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "da região para, talvez, criar uma fonte constante de energia.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Labirinto de Estrelas: O Labirinto de Estre-las se localiza em toda região entre os Braços de Carina-Sagitário e Perseus. É uma região super-lotada de corpos celestes, totalmente caótica. É também onde mais se perderam cruzadores e pra onde mais se destacam missões de resgate. Não se sabe ao certo os motivos, mas navegar por esta região faz os sensores de localização enlouquecerem assim como o próprio senso de",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "direção e percepção temporal dos astronautas",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Zona Obscura: Entre os braços de Norma e Scutum-Centauro há uma zona totalmente obs-cura e temida pela maioria dos exploradores; al-guns astronautas, mais supersticiosos, acreditam que é nessa zona que nascem todos os medos, e onde se acumulam todos os pesadelos; funciona como um receptor, tragando toda a energia nega-tiva da galáxia e acumulando-a em certas regiões desse setor.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Zona de Extração Mineral: Próximo ao braço de Órion (o nosso braço galáctico) é onde, até agora, mais se encontrou planetas e luas recheados de minérios; no entanto, todos os planetas e luas onde essas fontes foram en-contradas são totalmente inóspitos, tempestu-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "osos, lugares incapazes de sustentar formas de vida, ou, segundo alguns astrogeólogos, se tornaram inca-pazes no decorrer de milhões de anos.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Cemitério de Estrelas: Há uma região entre os braços de Perseus e Norma que causa extrema preo-cupação nas academias científicas, por causa de um evento que talvez tenha acontecido há milênios atrás. 90% de todos os planetas e luas da região estão com-pletamente desolados, mortos. Não passam de rochas inúteis orbitando sóis fracos e instáveis, ou planetói-des desgarrados vagando pela região, chocando-se com outros corpos celestes.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Sítios Arqueológicos: Entre os braços de Carina Sagitário e Scutum-Centáuro; astronautas encontra-ram inúmeros vestígios de antigas civilizações extra-terrestres, algumas datadas de bilhões de anos. Em alguns planetas desse setor, pode se encontrar cida-des inteiras, templos e monumentos; em outros pla-netas apenas detritos e alguns raros artefatos.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "É difícil acreditar que em uma galáxia tão gran-de e tão misteriosa, e com tantas possibilidades de sustentação de vida, só existam os humanos como seres inteligentes. No entanto, em toda a história da exploração intergaláctica, nunca foram encontradas outras formas de vida intelectualmente equivalentes; pelo menos não na parte já explorada. Mesmo assim, pode existir, ou pelo menos já existiu há milhões de anos atrás. Criptólogos já encontraram ruínas de civilizações ancestrais em alguns planetas e luas do Setor Carina-Sagitário; algumas surpreendentemen-te semelhantes às estruturas arquitetônicas egípcias, astecas, maias e incas. O que reforça a clássica Teoria dos Pré-Humanos - muito popular nas academias de criptologia espacial.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "A Teoria dos Pré-Humanos defende que criaturas extraterrestres inteligentes visitaram a Terra em um",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "passado remoto e que tal contato está relacionado com a origem e desenvolvimento da cultura e civili-zação humana. Os seres humanos seriam descenden-tes, experiências, criações ou filhos desses seres do-tados de imensurável inteligência, que pousaram na Terra há milhões de anos atrás. Todo o conhecimento e cultura terrestre teria vindo desses visitantes extra-terrestres. Os Pré-Humanos - ou Os Primeiros, ou Os Primarcas, como a comunidade de criptologia costu-ma chamá-los - teriam sido o modelo civilizacional para os humanos, como uma \"cultura-mãe\", nos en-sinando as bases científicas e artísticas que temos até hoje, principalmente os conceitos de fala, escrita e desenho.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Por algum motivo ainda desconhecido, os habi-tantes dessas civilizações foram extintos, ou simples-mente abandonaram a galáxia.",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "a febre do espaço",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "O espaço infinito exerce uma influencia misterio-sa sobre a mente humana. A maioria dos astronautas que se afastam muito da Terra relata sobre alucina-ções e surtos de pânico. Talvez a série de novas in-formações visuais e o próprio sentimento de apego ao lugar natal e a possibilidade de nunca mais voltar, sejam os responsáveis pelos distúrbios psicológicos e crises de insanidade. Os psicólogos chamam isso de \"Febre do Espaço\". Já era previsto que a mente demo-raria a se readaptar depois da hibernação; a letargia e confusão entre o que é real e o que é sonho eram sintomas esperados, mas nada tão grave ou perigoso a ponto de comprometer gravemente a sanidade do astronauta. Seria apenas um processo de confusão e reorganização cerebral que duraria algumas semanas.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Não se sabe ao certo se todas as missões passaram ou passam por isso, pois nem todas as missões retor-naram ou se comunicaram ainda. Desde o início do projeto de exploração espacial, inúmeros cruzadores se perderam no espaço de forma misteriosa, talvez por falhas de estrutura, erros de navegação, choques com corpos celestes ou, o mais provável segundo a maioria dos astronautas, um surto de febre do espaço.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "astronautas Expedicionários",
+      "level": 2,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Os personagens de Abismo Infinito são geralmente cientistas talentosos, e até aqueles que não exercem nenhum cargo científico, não são simples munda-nos, estão, de alguma forma, um nível acima das pessoas comuns. O Programa de Expedições Espa-ciais é super concorrido, apenas os melhores entre os melhores, intelectualmente superiores, são aprova-dos como tripulantes dos cruzadores intergalácticos. Mesmo um agente de segurança, que basicamente é um militar armado dentro da nave, é intelectual-mente superior a outros militares mundanos. Isto é, alguém só se torna membro das expedições espaciais, se for realmente um gênio em sua área de atuação. Teoricamente, apenas uma mente poderosa está apta a absorver toda a magnitude do universo sem entrar em colapso.",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "as missões",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "A grande maioria das missões expedicionárias tem apenas um objetivo: encontrar planetas habitá-veis, parecidos com a Terra, aptos para a coloniza-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "ção. No entanto, várias missões tem outros objetivos, como mandar técnicos para manutenção de uma es-tação espacial, explorar o potencial mineral de copos celestes com centros de mineração, investigar ruínas extraterrestres, encontrar cruzadores desaparecidos entre outras inúmeras coisas. nenhuma dessas outras missões são tão importantes e nobres quanto a de en-contrar novas Terras, mas, extremamente necessárias.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "A quantidade de membros de uma expedição pode variar dependendo do objetivo e tipo da missão, pode haver situações em que dezenas de astronautas são necessários e podem haver situações em que ape-nas em grupo especialmente pequeno é suficiente.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Missões de exploração são geralmente destinadas a longas distâncias no espaço, longe de qualquer es-trutura humana conhecida, deixam os astronautas expedicionários sozinhos, incomunicáveis, sem con-tato nenhum com a Terra ou com qualquer base da Cronos, pois nenhum sinal, dependendo da distân-cia, consegue ir tão longe no espaço em menos de algumas dezenas, centenas ou milhares de anos, e, na grande maioria das vezes, se perde por algum erro de percurso ou influencia magnética de algum corpo celeste imprevisível. Além disso, como a estrutura do espaço e do tempo é distorcida para executar a dobra, as noções de horário também são prejudicadas. O computador central tenta calibrar os relógios da nave em relação à distorção temporal, sincronizan-do o horário do cruzador com o padrão da Cronos, levando em consideração o fuso em relação a locali-zação galáctica. Assim os astronautas não perdem a noção de tempo.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "hibernação",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "A viagem em velocidade de ponte pode ser bem perigosa para os tripulantes, e, mesmo levando em consideração a série de fracassos das primeiras missões, sé-culos atrás, não se sabe ao certo o que pode acontecer lá fora, no espaço. Viajar nessa velocidade sem a devida proteção, poderia causar problemas cardíacos, cere-brais, circulatórios ou, na pior das hipó-teses, ter o organismo totalmente despe-daçado. O fato é que se manter fora de câmaras de contenção é algo perigosís-simo para qualquer ser vivo.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Os cruzadores intergalácticos são equipadas com inúmeras cápsu-las individuais de animação suspensa, onde os tripulantes são enclausura-dos e, teoricamente, protegidos das mazelas da viagem. A cápsula induz o ocupante a um sono constante, por anos seguidos, enquanto fornece ao organismo todos os nutrientes neces-sários para mantê-lo vivo. Enquanto a",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "tripulação dorme, o Piloto Automático da nave segue o percurso até o destino.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Depois do tempo programado, a indução do sono é automaticamente cortada fazendo com que os tripulantes acordem poucas ho-ras, dias ou semanas depois (a depender do organismo de cada um). Os tripulantes nem percebem os longos anos, ficando apenas com a sensação de uma noite de sono longa",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "e conturbada.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "Pesadelo lúcido",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Depois de tanto tempo dormindo os tripulantes passam por longos dias em estado de letargia, alguns desenvolvem um tipo temporário de narcolepsia. A parte subconsciente do cérebro simplesmente não desliga facilmente, fazendo com que eles cheguem a sonhar enquanto ainda estão acordados. Esses sin-tomas já eram previstos, e teriam como solução ape-nas o tempo e reorganização cerebral natural de cada tripulante. Teoricamente, a confusão mental duraria pouco menos de uma semana - um triste engano. A",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "distância no espaço e o tempo de hibernação, de al-guma forma obscura, tiveram uma influência terrível sobre essa condição de sonolência. O que era para ser apenas um leve estado temporário de confusão da reali-dade, nada que prejudicasse a sanidade dos tripulantes, tende a se tornar um turbilhão de loucura e morte.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Alguns psicólogos chamam os casos graves de so-nolência pós hibernação de \"Febre do Espaço\", não há evidencias concretas sobre a suposta doença, mas, o que se sabe, é que os tripulantes simplesmente per-dem a noção do que é real e do é um sonho, ouvindo vozes, vendo coisas, perdidos em ilusões e manifes-tações oníricas horrendas. E o pior, é que tudo que se manifesta são alucinações terríveis dos pavores parti-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "culares de cada um, como um grande surto de delírio coletivo. Às vezes há dúvidas até se eles estão realmente acordados ou se tudo faz parte de um sonho ruim en-quanto ainda estão viajando pela ponte, inertes em suas Cápsulas de Hibernação.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Não há estudos profundos o suficiente em cima desses distúrbios para um diagnóstico ou tratamen-to adequado (o Mestre defini o quanto a comuni-dade científica sabe sobre essa febre). Segundo os registros da Cronos, grande parte dos tripulantes em missões distantes no espaço, além do nosso braço galáctico, apresentaram algum nível desse",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "mal.",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "as Regras do jogo",
+      "level": 1,
+      "page": 1,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "heading": "Cenas",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "O andamento da história é dividido por cenas, que podem ser composta de uma única ação ou de uma sequência de ações. O Mestre estabelece as situ-ações e conflitos, mas são os jogadores que criam as cenas para os personagem lidarem com essas situa-ções e conflitos. Por exemplo: o Mestre diz a um dos jogadores \"O seu personagem está cercado de meia dúzia de seres disformes visivelmente violentos correndo em sua direção com a clara intenção de trucidá-lo.\"; o jogador tem que criar uma mostrando como o seu persona-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "gem vai lidar com isso, ele diz \"meu personagem não se intimida, engatilha o rifle, aponta para as criaturas que se aproximam, solta uma rajada de tiros nos que estão mais à frente, corre para a sala do refeitório e tranca a porta.\" O Mestre pede uma jogada de dados para verificar se a cena aconteceu assim como o jogador a descre-veu (Ler Resolução de Cenas, pág XX). Dependendo do resultado dos dados, a cena pode ter acontecido exatamente como o jogador a descreveu (as criaturas receberão algum dano e ele ainda consegue se escon-der no refeitório); ou nada acontece como o jogador descreveu (ele não acerta nenhuma criatura e não consegue se refugiar no refeitório).",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "organizando cenas",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Quando a cena de um personagem acaba, começa a cena do personagem de outro jogador; quando todos os jogadores tiverem agido, começa uma nova rodada de cenas. A ordem em que cada jogador ganha uma cena para seu personagem, pode ser determinada pelo Mestre, por disputas de dados entre os jogadores ou por puro con-senso do grupo.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "Resolvendo cenas",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Se a atuação do personagem não deixar dúvidas quanto ao desfecho da cena, então o jogador simplesmente declara o que e como acontece a cena, sem necessidade de fazer testes. Quando o desfecho da cena é incerto, quando as ações possuem alguma chance de dar errado, há ne-cessidade de fazer um teste de dados para determinar como tudo acaba, se o personagem consegue atingir",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "seus objetivos ou não.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Cada astronauta rola uma quantidade de dados relacionada à quantidade de Âncoras atuais. As Âncoras são os motivadores dos astronautas dentro da história, as chances de sucesso em determinadas ações dependem do quanto o astronauta está moti-vado em relação à cena, em relação à história e em relação à sua própria existência. Se um astronauta",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "tiver atualmente...",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "... 1 Âncora, rola apenas 1 dado;",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "... de 2 a 5 Âncoras, rola 2 dados;",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "... 6 Âncoras, rola 3 dados.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Se a cena não tiver nenhum outro persona-gem como alvo das ações, o Mestre determina uma dificuldade a ser alcançada pelo teste de dados; um valor que o resultado do teste precisa alcançar para que o personagem alcance seus objetivos na cena. Essa",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "dificuldade pode ser...",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...3 para tarefas fáceis;",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...6 para tarefas comuns;",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...9 para tarefas complexas;",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...12 para muito complexas;",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "... 15 ou mais para tarefas extraordinárias.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Com a dificuldade da cena definida, o jogador rola os dados (quantidade definida pelas suas Ânco-ras atuais) e modifica o resultado de acordo com as Vantagens ou Desvantagens Circunstanciais presentes na cena (Pág. XX) – se houver. Se o resultado for maior ou igual à dificuldade estabelecida pelo Mes-tre, significa que o personagem foi bem sucedido, alcançou seus objetivos na cena; se o resultado for menor que a dificuldade estabelecida pelo Mestre, significa que esse personagem fracassou, não conse-guiu alcançar seus objetivos na cena.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Se a cena tiver outro personagem como alvo das ações (seja antagonista, coadjuvante, figurante ou até outro protagonista), como, por exemplo, em cenas de combate, sedução, intimidação, persuasão etc. O teste é resistido pelo alvo (mesmo que não seja sua vez dentro da organização das cenas), tornando a resolução da cena uma disputa entre as partes en-volvidas, vencendo aquele que obtiver o maior resul-tado no teste.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Com o alvo da cena bem definido, o jogador rola os dados (quantidade definida pelas suas Âncoras atuais) e modifica o resultado de acordo com as Van-tagens ou Desvantagens Circunstanciais presentes na cena (Pág. XX) – se houver.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "O alvo ganha direito a um teste de reação (inde-pendente da posição deles na organização das ce-nas). O teste de reação funciona exatamente como qualquer outro teste de dados, o alvo (se souber que está sendo alvo) cria uma reação descrevendo como",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "pretende frustrar as ações contra ele e rola os dados (quantidade definida pelas suas Âncoras atuais) e modifica o resultado de acordo com as Vantagens ou Desvantagens Circunstanciais presentes na cena (Pág. XX) – se houver.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Se o resultado do alvo for maior ou igual ao re-sultado do personagem que criou a cena, significa que o alvo foi bem sucedido em frustrar as ações contra ele; se o resultado do alvo for menor do que o resultado do personagem que criou a cena, signifi-ca que o alvo foi mal sucedido e vai receber todas as consequências impostas pela cena.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "Vantagens e desvantagens",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Se, por um acaso, o seu personagem tiver algu-ma vantagem ou desvantagem em relação à ação que está tentando desempenhar.. Para cada vantagem que você encontrar por conta das circunstâncias da cena, você soma +1 ao resultado dos dados; para cada desvantagem que você encontrar por conta das circunstâncias da cena, você subtrai -1 do resultado dos dados.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Por exemplo, se a cena tiver alguma relação com o cargo do personagem é uma vantagem, se não ti-ver nenhuma relação é uma desvantagem; Se a cena justificar a citação do personagem é uma vantagem, se for contrária a citação é uma desvantagem; se, em um combate estratégico, o personagem estiver posicionado em um lugar superior a um adversário é uma vantagem, estar posicionado em um lugar inferior é uma desvantagem; tentar persuadir uma pessoa alcoolizada é uma vantagem, estar alcoo-lizado enquanto alguém tenta te persuadir é uma desvantagem; estar armado em um combate é uma",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "vantagem, defender-se de um disparo sem nenhuma",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "proteção é uma desvantagem... e assim por diante.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "gênese do protagonista",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Antes de tudo, reflita um pouco sobre que tipo de personagem você gostaria de atuar em uma história de horror espacial e terror psicológico. Pense sobre como esse personagem se comportaria, o que ele deixou pra trás ao se lançar no espaço, que tipo de relacionamento tem ou gostaria de ter com outros personagens, que coisas importantes aconteceram em sua vida até o ponto inicial do jogo... Uma simples reflexão sobre o personagem momentos antes de realmente criá-lo, pode render bastante e tornar tudo bem mais interessante.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Agora pegue uma cópia da ficha de astronauta (que se encontra no final deste livro), batize o seu protagonista, e...",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...escolha um cargo - há nove argos básicos: astrogeólogo, cosmólogo, criptólogo, engenheiro, exobiólogo, médico, navegador, psicólogo e segurança (pág. XX – XX);",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...crie uma citação - escreva uma frase curta e grossa sobre sua filosofia de vida ou pensamento que caracterize os próprios anseios (pág. XX);",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...crie um Medo Particular - descreva algo íntimo e psicologicamente terrível, que represente um grande pavor (pág. XX);",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...crie de 1 a 6 Âncoras - descreva coisas, situações, pessoas, lugares ou qualquer outro elemento que represente uma ligação emocional com a Terra, que sirva de motivação para enfrentar obstáculos e sobreviver para voltar pra casa (Pág.). Cada Âncora gera 1 ponto de Trauma (pág. XX);",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "...distribua os pontos de Trauma - marque livremente entre Sonolência e Medo Particular. Pontos de Trauma são marcados preenchendo-se totalmente os círculos, como em um bingo (pág. XX);",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Cargos",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Cada astronauta tem um cargo específico (editados, aprimorados, expandidos e concebidos de acordo com as convenções da Iniciativa Cronos) que representa a função em que é especialista – sua área de atuação profissional dentro da missão. Os cargos definem a gama de coisas que um personagem é capaz de fazer, definem em que são peritos e em que rumo o raciocínio segue diante de um problema, facilitando a execução de uma solução. Por exemplo, subentende-se que um Médico saiba diagnosticar doenças conhecidas, tratar ferimentos, operar equipamento médico, receitar remédios, identificar problemas orgânicos, realizar cirurgias e tudo mais que esteja dentro da gama de atividades de um Médico em Abismo Infinito. Todas essas coisas não precisam ser anotadas ou decoradas, tudo está contido no conceito de \"Médico\", e virá a tona sempre que for importante para uma cena e para a história. Se ele é Médico, então sabe fazer coisas de Médico, e não vai saber como fazer com a mesma presteza coisas que estejam fora da área de medicina, como, por exemplo, traçar uma rota espacial entre dois braços galácticos.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Em termos de jogo, um cargo oferece vantagem circunstancial sempre que as ações de uma cena tiverem haver com o cargo em questão; e oferece desvantagem circunstancial sempre que as ações de uma cena não tiverem haver com o cargo em questão (ler, Vantagem e Desvantagem Circunstancial, pág. XX)",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "astrogeólogo",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Especialista em ambientes geológicos extraterrestres, de rochas simples de planetas e luas até composições geológicas estranhas em asteróides, meteoros e outros corpos celestes. Capaz de determinar estrutura, composição e outros detalhes associados, como, por exem-plo, determinar a idade estelar de uma amostra depois de examiná-la com cuidado em um laboratório.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Cosmólogo",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Especialista em astrofísica, astroquímica e, obviamente, cosmo-logia. Perfeito conhecedos da estrutura galáctica e na maleabilidade universal do continuum espaço-tempo e do funcionamento das dobras intergalácticas. Estudam profundamente os elementos cósmicos em relação a origem e evolução do universo, podendo até prever vários fatores em relação a diversos fenômenos cósmicos como buracos ne-gros e buracos de verme.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Criptólogo",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Especialista em xenoarqueologia, iconografia, pictografia e crip-tografia. Participa principalmente de missões que envolvam explora-ção minuciosa de ruínas e artefatos extraterrestres. Principalmente no que remete as civilizações dos Pré-Humanos. São exploradores muito respeitados e herméticos, guardando segredos em suas acade-mias que, às vezes, é melhor nem saber.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Engenheiro",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Responsável pela manutenção de todo sistema elétrico, eletrôni-co, mecânico e computacional dos cruzadores e demais estruturas tecnológicas espaciais. A função de um Engenheiro é basicamente fa-zer com que as coisas funcionem como deveriam funcionar, tornan-do-o, na maior parte do tempo, um zelador do maquinário da missão.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Psicólogo",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Especialista nos comportamento e processos mentais dos seres humanos. Um cuidador da salubridade mental dos astronautas. Foi inicialmente inserido nas missões para tratar de possíveis traumas psicológicos por conta das longas viagens espaciais e anos de hiber-nação.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Segurança",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "É um militar encarregado da ordem e do bem estar da tripulação. Recebeu treinamento em diversos tipos de armas, lutas corporais e estratégias de combate. Tem acesso a um arsenal de armas, como ri-fles, pistolas, bastões elétricos, tasers e sprays. A principal função do segurança é proteger os pesquisadores de qualquer hostilidade encontrada na missão, principalmente hostilidade entre os próprios tripulantes.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Videomaker",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "É um militar encarregado da ordem e do bem estar da tripulação. Recebeu treinamento em diversos tipos de armas, lutas corporais e estratégias de combate. Tem acesso a um arsenal de armas, como ri-fles, pistolas, bastões elétricos, tasers e sprays. A principal função do segurança é proteger os pesquisadores de qualquer hostilidade encontrada na missão, principalmente hostilidade entre os próprios tripulantes.",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "Trauma e Estresse",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Traumas representam cicatrizes psicológicas que jamais desaparecerão, danos permanentes adquiri-dos pelos personagens durante a história. Traumas em Medo Particular representam o quanto o perso-nagem tem dificuldade em lidar com seu pavores ín-timos e Traumas em Sonolência representam a pro-gressão dos distúrbios neurológicos pós-hibernação adquirida no processo de viagem intergaláctica. Um ponto de Trauma é marcado na ficha de personagem preenchendo-se completamente um dos círculos, deixando-o totalmente negro, como em um bingo.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "A criação do personagem está diretamente rela-cionada a ligação emocional/motivacional que o per-sonagem tem com a Terra, e o medo de talvez nun-ca mais voltar pra casa. Você vai ganhar 1 ponto de Trauma para cada Âncora que criar para o seu perso-nagem e vai distribuí-los livremente entre Sonolên-cia e Medo Particular.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Os Traumas obstruem os círculos permanente-mente, reduzindo sua capacidade de acumular Es-tresse. O Estresse são pontos temporários, marcados nos círculos desobstruídos, representa o quanto o personagem está perturbado e o quão perto ele está de aumentar os seus pontos de Trauma ou se des-prender de Âncoras. Marca-se Estresse com uma linha vertical cortando o círculo. Quando todos os círculos desobstruídos de um determinado aspecto (Medo Particular ou Sonolência) estiverem marca-dos com pontos de Estresse, o personagem se dege-nera um pouco mais. O jogador escolhe entre ganhar mais 1 ponto de Trauma no aspecto em questão, obs-truindo mais um círculo, ou se desligando de uma de",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "suas Âncoras (apagando-a). Em ambos os casos, os pontos de Estresse desse aspecto são zerados.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Exemplo: Hector atualmente tem 7 pontos de Trauma em Medo Particular...",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "No decorrer da história, ele vislumbra face de seus medos, que, segundo ele, é uma asquerosa aranha gigante, desa-jeitada com o abdômen decorado de cabeças pútridas de crianças; a aranha desce pela parede vagarosamente em sua direção. Hector, para não ter uma Surto de Medo, dmarca 1 ponto de Estresse em Medo Particular.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Depois, bem adiante na história, onde encontrou mais manifestações dos seus medos e dos medos de outros per-sonagens, acabou acumulando mais 4 pontos de Estresse (ocupando todos os círculos que não estavam obstruídos pelos pontos de Trauma).",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Como todos os círculos desobstruídos foram marcados com Estresse, o protagonista vai, de alguma forma, se dege-nerar. O jogador pode optar por aumentar o Trauma em Medo Particular em 1 ponto, ou se desligar de 1 Âncora. Ele optar por aumentar o Trauma, elevando-o para 8. Ambas as opções zeram o Estresse. Perceba que a quanti-dade de círculos desobstruídos diminuiu, reduzindo o es-paço para acumular novos pontos de Estresse, tornando o próximo ponto de Trauma mais fácil de ser alcançado.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Apesar de o exemplo ter sido sobre Medo Parti-cular, o processo de marcação é o mesmo para Sono-lência.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "medo particular",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "O seu protagonista tem um medo, íntimo e terrível, algo que teme mais do que qualquer outra coisa, como, por exemplo, o medo de perder um ente querido, de nunca mais voltar a Terra, de perder a alma, de não conseguir exercer sua função quando necessário ou qualquer outra coisa que lhe seja potencialmente aterrorizante. Na criação do protagonista você vai criar e anotar esse medo na Ficha de Astronauta, logo abaixo dos níveis de Medo Particular. Esse medo vai dar forma as manifestações e alucina-ções que o seu personagem confrontará no decorrer da história.",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "loucura do Espaço",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Acumular 12 pontos de Trauma em Medo Particu-lar desestabiliza permanentemente o psicológico do personagem. Ele fica insano, e este estado, da for-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "ma com que foi adquirido, é irreversível (o jogador perde o personagem). O personagem insano fica extremamente violento, atacando tudo e todos ao redor, sem pensar nas consequências, por mais agressivas e suicidas que sejam.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "manifestando",
+          "level": 3,
+          "page": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "os próprios medos",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Quando o protagonista acor-dou da hibernação, distante de casa - ou pelo menos acha que acordou – o seu medo ganhou o poder de se manifestar implícita ou explicitamente. Ele assume a forma de uma assombração, aluci-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "nação ou monstro. Uma manifestação do medo tem apenas o único intuito de causar o mal aos tripulan-tes e destruir as esperanças (Âncoras) de cada um, principalmente daquele que a gerou. Vai atormentá-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "-los até que eles enlouqueçam ou morram.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Mesmo que o protagonista saiba que está em um sonho, saiba que tudo pode ser apenas uma ilusão, a manifestação ainda vai exercer uma grande influ-ência sobre sua mente, ela representa sentimentos fortes demais para serem ponderados com razão. Vão confundir o protagonista (e convencê-lo), pois as ma-nifestações também fazem parte dele, brotam dele, representam aflições íntimas demais para serem ig-noradas.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Perceber uma Manifestação Implícita: Se a manifestação estiver disfarçada, tentando en-ganar o protagonista com ilusões, é necessário marcar de 1 a 6 pontos de Estresse em Medo Particular para perceber a mentira (a quantidade exata de pontos de Estresse é determinada pelo Mestre em relação a importância para a história do personagem descobrir ou não que está sendo",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "iludido).",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Encarar uma Manifestação Explícita: Sempre que a manifestação estiver explícita (ou se tornar explícita depois que for percebida), é necessário marcar de 1 a 6 pontos de Estresse em Medo Particular para tentar conter o pavor diante da face do medo (a quantidade exata de pontos de Estresse é determinada pelo Mestre em relação a importância para a história do personagem ficar aterrorizado ou não diante da manifestação). Se o jogador não quiser ou não puder marcar pon-tos de Estresse em Medo particular, o seu perso-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "nagem vai ter um \"Surto de Medo\".",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "Surto de medo",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Quando o personagem não conseguir resistir à manifestação explícita de seus medos, ele vai reagir de forma imprevisível. Desmaio, histeria, catatonia, crise de choro, náusea, vômito... ou qualquer outra reação que o deixe incapaz de realizar suas próximas cenas ou até de interagir nas cenas de outros perso-nagens. A Condição dura até a manifestação sair de cena, ficando esse tempo todo incapaz de reagir ou criar cenas, a mercê de qualquer perigo.",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "Sonolência",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "O processo de Hibernação, somado a alguma força cósmica obscura, faz com que o astronauta desenvolva algum tipo de distúrbio psicológico bi-zarro quase sobrenatural, fazendo-o ter dificuldade em distinguir sonhos e realidade. Ele demora até perceber que não está mais sonhando (ou pelo me-nos achar que percebeu que não está mais sonhan-do). São surtos repentinos de sono, fazendo-o ter um comportamento letárgico constante, incontrolável, e, às vezes, quando acha que está resistindo ao sono, sequer percebe que já está dormindo, enquanto que o que estava fazendo, ou presenciando, continua a se desenrolar em seus sonhos como se fosse real. Tudo a sua volta começa a ficar onírico, surreal demais, como se a parte do cérebro responsável pelos sonhos estivesse em plena atividade mesmo quando se está acordado (ou achando que está acordado).",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Como em um sonho ruim, o protagonista é ator-mentado por vozes, visões e premonições, todas re-velando um fim terrível, sofrido e mortal. Às vezes ele é transportado para lugares familiares em épocas",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "emocionalmente fortes em sua vida (de-terminados por suas Âncoras), e essas ilusões são compartilhadas por todos, como se todos estivessem sonhando o mesmo sonho, construindo a realida-de onírica em coletividade, causando uma confusão de referencias pessoais.",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "Eterno despertar",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Acumular 12 pontos de Trauma em Sonolência desestabiliza perma-nentemente o subconsciente do personagem (o jogador perde o personagem). A mente se perde",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "em um eterno ciclo de pesade-los; vai acordar sempre diante de seu pior medo, e acordar de novo, e de novo, e de novo...",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "olvidamento",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Por mais que a reali-dade esteja distorcida, o protagonista não se dá conta disso; ele vive a distorção como se fosse perfeitamente cabível; não racionaliza sobre isso, apenas a aceita como fato, como se ela sempre existis-se. O Olvidamento é justa-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "mente a perda da sensatez em relação à realidade, a perda de noção do que é absurdo, é aceitar",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "o novo plano de existência como se fosse real, único, normal e natural, por mais perturbador que pareça. Não vai lembrar de sua própria realidade, e nem das realidades oníricas que talvez tenha passado antes de chegar nesta.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Um personagem entra em estado automático de Olvidamento sempre que entrar em uma nova cama-da de sonhos ou ganhar um novo ponto de Trauma em Sonolência;",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Livrar-se do Olvidamento: um personagem pode livrar-se por conta própria do Olvidamento, mas para isso é necessário uma vontade legítima de duvidar da própria realidade; elementos, sensações ou emoções que lembrem alguma de suas Âncoras, podem servir de justificativa para semear dúvida sobre a realidade em que está inserido. O jogador marca de 1 a 6 pontos de Estresse em Sonolência (a quantidade exata de pontos de Estresse é determina-da pelo Mestre em relação a importância do perso-nagem manter-se em Olvidamento ou não) para se dar conta de que está dentro de um sonho e que toda a realidade em que está inserido não é verdadeira; ele lembra de tudo que passou antes, recobra toda a consciência e sensatez.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "Camadas de Sonhos",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Uma camada de sonho é uma realidade dentro de outra realidade, e de outra, e de outra, e de outra... é um novo universo onírico coletivo, como se todos estivessem dentro do mesmo sonho. Os astronautas, às vezes, podem viajar por estas camadas, acordan-do dentro de novos sonhos, e de novas realidades. Na verdade, quando eles acordam da hibernação, já podem estar, mesmo sem saber, perdido em camadas",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "de sonhos.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Se o protagonista estiver livre do Olvidamento, ele pode tentar viajar entre as camadas de sonhos, acessar camadas que já esteve antes ou acessar novas camadas. Ele acorda para voltar uma camada de so-nhos e dorme para avançar para uma camada à fren-te. Para efetivar isso, é necessário marcar de 1 a 6 pontos de Estresse em Sonolência (a quantidade exa-ta de pontos de Estresse é determinada pelo Mestre em relação a importância do personagem atravessar uma determinada camada) para cada travessia entre uma camada e outra, retornando (acordando), ou avançando (dormindo).",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "Controle do sonho",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Quando o protagonista estiver livre do Olvida-mento, ele pode tentar controlar o sonho, alterando a realidade onírica na qual está inserido, simplesmen-te toma as rédeas do sonho e diz o que acontece na cena, alterando ou acrescentando elementos (clima, objetos, sensações, emoções, cenário), e fazendo com que as coisas aconteçam de acordo com sua vontade. Para isso, basta marcar de 1 a 6 pontos de Estresse em Sonolência (a quantidade exata de pontos de Estresse é determinada pelo Mestre em relação a importância do personagem controlar o sonho)",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "âncoras",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Âncoras são fortes ligações emocionais que o pro-tagonista tem com a Terra, os principais motivos que o faz querer voltar para casa. Sempre representam valores sentimentais poderosos e importantíssimos",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "para o protagonista, como desejos, saudades, pro-messas, paixões, pessoas que ele quer rever, sensa-ções que ele quer experimentar, entre outras coisas que ele ainda quer realizar na Terra, quando voltar – se voltar.",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "Perdendo âncoras",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Sempre que um personagem tiver Estresse mar-cado em todos os círculos desobstruídos de um de-terminado aspecto (Medo Particular ou Sonolên-cia), tem duas opções degenerativas para o seu personagem: 1) marcar mais 1 ponto de Trau-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "ma no aspecto em questão (Medo Particular ou Sonolência); ou 2) se desligar de uma de suas Âncoras e esquecer aos poucos a sua ligação com a Terra (Âncoras perdidas ja-mais podem ser recuperadas). Ambas as opções zeram totalmente os pontos de Estresse no aspecto em questão (Medo Particular ou Sonolência).",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "A medida que o personagem per-de Âncoras, sua motivação diminui, e consequentemente, a quantidade de dados que ele rola para criar e reagir a cenas. Quando o protagonista perder todas as Âncoras, ele não encontra mais sentido em sua própria existên-cia diante das manifestações do medo e da magnitude do universo. Ele fica",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "inerte, louco, perdido em seus próprios pesadelos. Desisti da própria existência – ou do conceito humano de existência. O jogador perde o personagem.",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "ferimentos",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "O personagem, mesmo no sonho, pode sangrar, quebrar ossos, rasgar a carne, asfixiar, adoecer... e vai realmente sentir todas as sensações desagradáveis geradas por esses danos – ou pelo menos sentir o que o cérebro achar que é dor, agonia, fadiga etc. Os quadrados em Ferimentos (ver Ficha do Astronauta no final do livro) representam a quantidade de danos físicos que um personagem é capaz de suportar antes de morrer; marca-se os pontos de Ferimentos pre-enchendo totalmente um quadrado para cada pon-to recebido. Um personagem morre ao acumular 12 pontos.",
+          "page": 1
+        },
+        {
+          "type": "subsection",
+          "heading": "Infligir danos",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Em Abismo Infinito, infligir danos tem mais haver com as intenções do que com os meios. Isto é, tem mais haver com sentimento e vontade do que com ar-mas ou força bruta. Quando seu personagem decidir atacar alguém, você tem que deixar bem claro qual a intenção desse ataque e o que ele pretende conseguir com isso.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Se a intenção for atordoar, imobilizar, nocautear ou qualquer outra ação dentro da cena que não represente nenhum dano grave a integridade fí-sica do alvo; você cria a cena do ataque, o alvo reagi, e se ele não conseguir se defender, recebe de 1d pontos de Ferimentos.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Se a intenção for apenas ferir, fraturar ou qual-quer outra ação que machuque ou mutile, mas que não represente a legítima vontade de matar, você cria a cena do ataque, o alvo reagi, e se ele não conseguir se defender, recebe 2d pontos de",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Ferimentos.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Se a intenção for realmente matar, você cria a cena do ataque, o alvo reagi, e se ele não conse-guir se defender, recebe 3d pontos de ferimentos.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "armas e equipamento de proteção",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Armas e equipamentos de proteção são apenas Vantagens Circunstanciais (Pág. XX) para se alcan-çar uma determinada intenção de causar dano ou proteger-se de danos.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "heading": "males do Espaço",
+          "level": 3,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Assombro visual: Praticamente todos os tripu-lantes sentem enjôos, náuseas e tonturas, causados principalmente pelo conflito de novas informações visuais a que estão expostos. Sempre que o persona-gem entrar em contato visual com novas paisagens extraterrestres, vai sofrer uma desvantagem circuns-tancial (pág xx) na próxima cena, por conta da con-fusão visual.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Gravidade nula: Agir sem gravidade gera desvan-tagem circunstancial (pág xx) em todas as cenas que exijam habilidade física. Além disso, passar muito tempo em gravidade nula (com o simulador de gra-vidade da nave desligado ou em algum ambiente naturalmente sem gravidade) faz os fluidos corpo-rais subirem, causando congestão nasal, inchaço no rosto, atrofia muscular e enfraquecimento dos ossos, dobrando a desvantagem circunstancial.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Vácuo do espaço: Se o personagem estiver ex-",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "posto ao vácuo do espaço sem traje de proteção ou com o traje de proteção danificado (com um vaza-mento mínimo que seja), todo o ar contido em seu corpo pula para fora como um jato, a descompressão causa uma ruptura em seus pulmões, rasga suas veias, racha o seu crânio e, na pior das hipóteses, despeda-ça inteiramente o seu corpo. Isso causa 3d pontos de Ferimentos por rodada, enquanto estiver no vácuo.",
+              "page": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "heading": "manifestações dos medos",
+      "level": 1,
+      "page": 1,
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "O Medo Particular de cada tripulante se ma-nifesta como um monstro assombroso, às vezes visível a todos e outras vezes visível apenas para o personagem gerador da manifestação (às vezes até de diferentes formas para cada membro do mesmo grupo de espectadores). As manifesta-ções começam a partir do momento em que se acorda da hibernação (em alguns casos elas começam pouco antes do astronauta acordar",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "de fato). No entanto, a hibernação é apenas um reagente das manifestações e não seu causador exclusivo; o elemento que faz as manifestações acontecerem é um total mis-tério; talvez uma força cósmica sinistra que habita algumas regiões do espaço (ou todo ele) que, de alguma forma, influencia peri-gosamente o cérebro humano. Todas as mani-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "festações querem o mal dos personagens (prin-cipalmente aquele que a gerou), todas, de uma forma ou outra, vão distorcer a realidade e criar um ambiente bizarro de medo e náusea.",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Cada manifestação age como um anta-gonista, e também podem criar ou reagir a cenas com testes de dados. Se um astronauta que a gerou tiver atualmente...",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "... 1 Âncora, a manifestação rola 3 dado;",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "... de 2 a 5 Âncoras, a manifestação rola 2 dados;",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "... 6 Âncoras, a manifestação rola 1 dados. Uma manifestação usa os pontos de Trau-",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "ma em Medo Particular do personagem que a gerou como vantagens circunstanciais em cenas violentas, quando está tentando ferir alguém; e usa os pontos de Traumas em Sonolência do per-sonagem que a gerou como vantagens circunstan-ciais em cenas persuasivas, quando está tentando enganar alguém",
+          "page": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Manifestações também possuem níveis Feri-mentos (12 quadrados, exatamente igual a qual-quer outro personagem; também marcado da mesma forma). As manifestações podem ser des-pedaçadas como se ataques físicos desfizessem um pouco mais da trama obscura da qual são feitas. Entretanto, como são geradas a partir do íntimo de um personagem, não podem ser destruídas a não ser que esse personagem também seja destruído. Quando estão totalmente despedaçadas (12 pontos de ferimentos), desaparecem da cena, ficam inativas até se recomporem, o que pode durar até a próxima cena ou até a próxima sessão (o Mestre decide quan-do essa recomposição é concluída com base no que é mais interessante pra história).",
+          "page": 1
+        },
+        {
+          "type": "section",
+          "heading": "narrando manifestações e ilusões",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Os protagonistas de Abismo Infinito são cheios de dicas para o Mestre brincar de criar ilusões e manifestações medonhas. O Medo Particular e Âncoras são as principais fontes de inspiração para conceber os conceitos das ilusões e manifestações que realmente im-portarão na história. A descrição desses elementos não deve ser objetiva e sim abstrata, apenas dê o conceito geral e deixe que a imaginação doentia dos jogadores dê a forma. Descreva coisas como: \"A personificação da fúria e do desespero se materializa no meio do nada, faminta e raivosa, exibindo a dor e a angustia de um ser que sequer compreende a própria existência\". Perceba que em momento nenhum se fala sobre a aparência exata da criatura, apenas conceitos relevantes para representar os medos e esperanças dos protagonistas. Se cada protagonista visualizar/compreender a criatura de forma diferente, ótimo, conseguiu exatamente o caos que precisava para deixar os astronautas ainda mais confusos, como se cada um tivesse visto a mesma criatura da forma que, psicologicamente, reflete suas aflições e pavores. O Mestre, assim que acaba de narrar o conceito da manifestação ou ilusão, pergunta ao(s) jogador(es): \"O que você(s) vê(em)?\" a resposta do(s) jogador(es) é exatamente como a manifestação é visualmente. Obviamente, o grupo pode entrar em um acordo de qual é realmente a aparência da coisa ou, como citado a pouco, cada personagem visualizar a sua maneira.",
+              "page": 1
+            },
+            {
+              "type": "paragraph",
+              "text": "Descrição objetiva: Por outro lado, pode-se muito bem ser mais objetivo ao usar as manifestações, dando descrições precisas de suas formas. Por exemplo, o seu Medo Par-ticular fosse \"Tenho medo de morrer\", a manifestação poderia aparecer como o clássico es-queleto de manto preto e foice e depois como um ente querido morto ou até como um reflexo do próprio protagonista morto-vivo; se fosse \"Não quero ser possuído por demônios\", a manifestação poderia aparecer como um demônio ou um monstro de fogo e depois como um personagem medonho de um filme familiar antigo sobre possessão demoníaca, ou até fingir ser algum outro tripulante endemoniado; se for \"Tenho medo de não conseguir voltar a Terra e ver minha família\", a manifestação poderia transportá-lo para um ponto distante no espaço, em algum planeta solitário, prendendo-o em alguma ruína alienígenas aban-donada, convencendo-o que nunca mais sairá e lá, ou aparecer como um grande meteoro colidindo com a Terra mostrando repetidamente a morte trágica de todos os seus entes queridos.",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "a história",
+          "level": 2,
+          "page": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "As histórias em Abismo Infinito se dividem em três fases: Despertar, Pesadelo e Redenção (início, meio e fim). Cada fase leva os personagens a condições extremas de pressão psicológica até, quem sabe, conseguirem se livrar das manifestações do medo e trama dos sonhos (ou não).",
+              "page": 1
+            },
+            {
+              "type": "subsection",
+              "heading": "fase 1: despertar",
+              "level": 3,
+              "page": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "text": "Os protagonistas despertam em suas cápsulas de hibernação...",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Esta é a fase do terror, de criar medo e estimular a curiosidade dos protagonistas (e jogadores). O Mestre começa a brincar com o psicológico de cada um, adicionando mistério e criando um certo clima investigativo conspiratório. As manifestações do medo estão em plena atividade, mas ainda não são explícitas (ou os astronautas ainda não tomam consciência delas), a realidade onírica ainda não é perceptível e os protagonistas acreditam piamente que estão acordados.",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Pode ser interessante também que os protagonistas já acordem em outra realidade onírica, sem se dar conta do que está acontecendo, achando que realmente pertencem a essa realidade. Como, por exemplo, acordarem como cavaleiros templários em um acampamento, se preparando para explorar um templo muçulmano cheio de lendas misteriosas. Neste caso, o jogo começa com os jogadores interpretando a versão \"cavaleiro templário\" de cada protagonista, e os protagonistas em nada desconfiam de sua verdadeira identidade. Neste caso os elementos de mistério seriam pistas de quem os astronautas realmente são e que tudo que estão vivendo nesse momento é apenas um sonho.",
+                  "page": 1
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "heading": "fase 2: Pesadelo",
+              "level": 3,
+              "page": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "text": "Os protagonistas se perdem em uma trama caótica de ilusões oníricas...",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Todos os personagens ganham 1 ponto de Trauma automático em Medo Particular. Esta é a fase do horror, é o momento de extrapolar nas descrições bizarras e torcer o cérebro dos protagonistas (e jogadores). É neste ponto que as manifestações começam a ficar explícitas, a coisa deixa de apenas criar tensão psicológica ou confundir as realidades e começa a atacar diretamente os protagonistas. Tentar matá-los. Tudo fica mais agressivo, mais repulsivo e mais perturbador. Esse é o momento de trazer o caos ao jogo, despedaçar a realidade e abusar dos medos particulares dos astronautas. Tudo se torna extremamente dramático e, as vezes, incompreensível para os tripulantes.",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "É uma fase delicada, o Pesadelo pode tornar o jogo muito mais interessante, mas também pode acabar com tudo, enrolando a história a uma ponto que vai ser impossível desenrolar. O Mestre, nessa fase, deve mostrar toda sua habilidade narrativa e capacidade de amarrar as pontas da trama.",
+                  "page": 1
+                }
+              ]
+            },
+            {
+              "type": "subsection",
+              "heading": "fase 3: Redenção",
+              "level": 3,
+              "page": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "text": "Os protagonistas tem a chance de se salvarem...",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Todos os personagens ganham 1 ponto de Trauma automático em Sonolência. Os tripulantes não vão conseguir voltar para casa facilmente, podem tentar, mas não vão conseguir, podem ter a ilusão que conseguiram, mas logo vão descobrir que continuam nos confins do universo. Eles talvez teorizem que aquela região do universo simplesmente não quer que eles se vão, e talvez, essa não seja apenas uma teoria. Eles vão continuar perdidos em sonhos ruins, sendo atormentados por seus medos até encontrarem a única forma de se livrar desse lugar maldito: a Redenção Pessoal.",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Nesta fase da história, cada tripulante tem a chance de se livrar da manifestação de seu Medo Particular em jornadas pessoais (ou compartilhadas entre os outros tripulantes, dependendo do quanto isso é interessante para a história) onde vai confrontar o seu medo com provações de coragem. Essas provações são ações espetaculares, realmente desafiadoras e que não poderia ser feitas por qualquer um, apenas pelo tripulante afim da redenção. Para isso é necessário que o tripulante realmente queira enfrentar e perder esse medo. É preciso que ele queira buscar essa redenção.",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "As provações podem se mostrar em qualquer lugar e a qualquer momento, seja no cruzador, na superfície de algum planeta ou até em alguma realidade ilusória transportando o protagonista para a Terra ou para algum lugar imaginário que seja familiar e que sirva de palco para a sua redenção. Um tripulante que tenha, por exemplo, o Medo Particular \"Temo nunca mais ver minha filha\", pode ter visões de sua filha tentando fugir, desaparecendo no espaço, ouvi-la chorar ou pedindo ajuda, tudo isso enquanto esse mesmo tripulante é atormentado por mani-festações horrendas. Neste caso, a prova de Redenção Pessoal do tripulante é encontrar a filha que sempre está entre ele e um desafio terrível.",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Criando/interpretando as provações: nesta fase da história, nem todo confronto com o medo é necessaria-mente uma provação de coragem, mas confrontos realmente surpreendentes, virtuosos em situações realmente desafiadoras, podem ser – e devem ser – interpretados como uma provação de coragem e um passo a mais para a redenção pessoal. O Mestre pode criar minuciosamente situações para cada protagonista como forma de forçar a provação, ou pode ser surpreendido com as ações que se desenrolarão naturalmente. Isto é, as provações não precisam ser necessariamente planejadas, surpreender-se com uma determinada atitude corajosa por parte de um protagonista é o suficientemente uma provação de coragem.",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "A quantidade de provações de coragem que cada protagonista vai enfrentar vai depender da quantidade de Traumas em Medo Particular. Uma provação para cada ponto de Trauma. Quando ele tiver sido bem sucedido em todas as suas provações, o protagonista alcança a Redenção e está livre do tormento das manifestações do medo, ela simplesmente desaparece para sempre. No entanto, ainda pode ser afetado pelas manifestações dos outros até que os outros também alcancem a Redenção. Quando todos alcançarem a Redenção Estarão livres das forças cósmicas obscuras, e poderão voltar pra casa. A história acaba.",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "nomE jogadoR CaRgo CITação",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "SonolênCIa",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "mEdo PaRTICUlaR",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "fERImEnToS",
+                  "page": 1
+                },
+                {
+                  "type": "paragraph",
+                  "text": "ânCoRaS",
+                  "page": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

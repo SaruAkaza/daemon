@@ -3,127 +3,122 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daemon Tools</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20260519-editorial">
+    <title>Daemon Pilotos</title>
+    <link rel="stylesheet" href="assets/styles.css?v=20260603-theme">
   </head>
   <body>
     <header class="topbar">
       <div class="brand">
-        <p class="eyebrow">Daemon Tools</p>
-        <h1>Catálogo Daemon/Trevas</h1>
+        <span class="eyebrow">Daemon/Trevas</span>
+        <h1>Pilotos de Tratamento</h1>
       </div>
-      <div class="topbar-actions">
-        <div class="metrics" id="metrics" aria-live="polite"></div>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema escuro" title="Alternar tema">
-          <span class="theme-toggle-icon" aria-hidden="true"></span>
-          <span class="theme-toggle-text">Tema</span>
-        </button>
+      <div class="toolbar top-toolbar">
+        <label class="search">
+          <span>Busca</span>
+          <input id="searchInput" type="search" placeholder="Nome, categoria ou trecho">
+        </label>
+        <button class="filter-open" id="homeButton" type="button" hidden>Categorias</button>
+        <button class="filter-open theme-toggle" id="themeToggle" type="button" aria-pressed="false">Tema escuro</button>
+        <button class="icon-button" id="refreshButton" type="button" title="Recarregar" aria-label="Recarregar">↻</button>
+        <button class="filter-open" id="filterOpenButton" type="button" hidden>Filtros</button>
+        <select id="areaFilter" hidden></select>
+        <select id="flagFilter" hidden>
+          <option value="all">Todos</option>
+          <option value="intro">Introdução</option>
+          <option value="ficha">Ficha</option>
+          <option value="historia">História</option>
+          <option value="personalidade">Personalidade</option>
+          <option value="poderes_npc">Poderes</option>
+          <option value="curiosidades">Curiosidades</option>
+        </select>
       </div>
     </header>
 
-    <main class="layout">
-      <aside class="sidebar" aria-label="Áreas">
-        <div class="sidebar-header">
-          <h2>Áreas</h2>
-          <button class="icon-button" id="refreshButton" type="button" title="Recarregar dados" aria-label="Recarregar dados">
-            &#8635;
-          </button>
-        </div>
-        <nav class="area-list" id="areaList"></nav>
-      </aside>
-
-      <section class="workspace" aria-live="polite">
-        <div class="toolbar">
-          <label class="search">
-            <span>Buscar</span>
-            <input id="searchInput" type="search" placeholder="Nome, fonte, regra, tag ou trecho">
-          </label>
-          <button class="admin-toggle" id="adminToggle" type="button" aria-expanded="false" aria-controls="adminPanel">
-            Filtro
-          </button>
-          <section class="admin-panel" id="adminPanel" hidden role="dialog" aria-label="Painel de filtros" aria-modal="false">
-            <div class="admin-panel-head">
-              <div>
-                <h2>Filtros</h2>
-                <p>Revisão editorial, quarentena e filtros avançados.</p>
-              </div>
-              <button class="icon-button" id="adminClose" type="button" title="Fechar filtros" aria-label="Fechar filtros">×</button>
-            </div>
-            <div class="admin-grid">
-              <label>
-                <span>Modo</span>
-                <select id="qualityMode">
-                  <option value="catalog">Catálogo normal</option>
-                  <option value="review">Revisar</option>
-                  <option value="quarantine">Quarentena</option>
-                </select>
-              </label>
-              <label>
-                <span>Fonte</span>
-                <select id="sourceMode">
-                  <option value="all">Todas</option>
-                  <option value="official">Oficiais</option>
-                  <option value="supplement">Suplementos</option>
-                </select>
-              </label>
-              <fieldset>
-                <legend>Famílias</legend>
-                <div class="filter-options" id="familyFilter"></div>
-              </fieldset>
-              <fieldset>
-                <legend>Tipos de conteúdo</legend>
-                <div class="filter-options" id="kindFilter"></div>
-              </fieldset>
-              <fieldset class="wide">
-                <legend>Fontes</legend>
-                <div class="filter-options filter-options-sources" id="sourceFilter"></div>
-              </fieldset>
-            </div>
-            <div class="admin-actions">
-              <button class="filter-action" id="notesToggle" type="button" aria-pressed="false">Mostrar avisos</button>
-              <button class="clear-filters" id="clearFilters" type="button">Limpar filtros</button>
-            </div>
-            <div class="active-filters" id="activeFilters" aria-live="polite"></div>
-          </section>
-        </div>
-
+    <main class="shell">
+      <section class="workbench">
+        <section class="category-hub" id="categoryHub" aria-label="Categorias disponíveis"></section>
         <div class="browser">
-          <section class="results-pane" aria-label="Lista de itens">
-            <div class="results-head">
-              <h2 id="resultsTitle">Itens</h2>
-              <span id="resultsCount"></span>
+          <section class="segments-panel">
+            <div class="panel-head">
+              <h2 id="segmentsTitle">Itens</h2>
+              <span id="segmentsCount"></span>
             </div>
-            <div class="results" id="results" role="listbox" aria-label="Itens encontrados"></div>
+            <div class="segments-list" id="segmentsList" role="listbox" aria-label="Itens da categoria"></div>
           </section>
 
-          <article class="detail-pane" id="detailPane" aria-label="Detalhe do item">
-            <div class="empty detail-empty">Selecione um item na lista.</div>
+          <article class="detail-panel" id="detailPanel">
+            <div class="empty">Selecione um item.</div>
           </article>
         </div>
       </section>
     </main>
 
-    <template id="areaButtonTemplate">
-      <button class="area-button" type="button">
-        <span class="area-name"></span>
-        <span class="area-count"></span>
+    <footer class="footer">
+      <span>Fontes piloto em revisão</span>
+      <span>Dados em revisão</span>
+    </footer>
+
+    <div class="filter-backdrop" id="filterBackdrop" hidden>
+      <section class="filter-panel" id="filterPanel" role="dialog" aria-modal="true" aria-labelledby="filterTitle">
+        <header class="filter-head">
+          <div>
+            <span class="eyebrow">Refinamento</span>
+            <h2 id="filterTitle">Filtros</h2>
+          </div>
+          <button class="icon-button" id="filterCloseButton" type="button" title="Fechar" aria-label="Fechar">×</button>
+        </header>
+        <div class="filter-tools">
+          <label class="search">
+            <span>Filtrar opções</span>
+            <input id="filterSearchInput" type="search" placeholder="Livro, categoria ou tipo">
+          </label>
+          <div class="filter-actions">
+            <button id="filterShowAllButton" type="button">Mostrar todos</button>
+            <button id="filterClearButton" type="button">Limpar</button>
+            <button id="filterDefaultButton" type="button">Padrão</button>
+          </div>
+        </div>
+        <div class="filter-summary" id="filterSummary"></div>
+        <div class="filter-groups" id="filterGroups"></div>
+        <footer class="filter-foot">
+          <button id="filterCancelButton" type="button">Cancelar</button>
+          <button class="primary-button" id="filterApplyButton" type="button">Aplicar filtros</button>
+        </footer>
+      </section>
+    </div>
+
+    <template id="categoryCardTemplate">
+      <button class="category-card" type="button">
+        <span class="category-card-title"></span>
+        <span class="category-card-meta"></span>
       </button>
     </template>
 
-    <template id="itemTemplate">
-      <button class="item-row" type="button" role="option">
-        <span class="row-main">
-          <span class="item-title"></span>
-          <span class="item-preview"></span>
+    <template id="segmentTemplate">
+      <button class="segment-row" type="button" role="option">
+        <span class="segment-main">
+          <span class="segment-title"></span>
+          <span class="segment-preview"></span>
         </span>
-          <span class="row-meta">
-            <span class="pill item-kind"></span>
-            <span class="pill item-warning" hidden></span>
-            <span class="muted item-source"></span>
-          </span>
+        <span class="segment-meta"></span>
       </button>
     </template>
 
-    <script src="assets/app.js?v=20260519-editorial" type="module"></script>
+    <template id="filterGroupTemplate">
+      <section class="filter-group">
+        <div class="filter-group-head">
+          <h3></h3>
+          <div class="mini-actions">
+            <button data-action="all" type="button">Todos</button>
+            <button data-action="clear" type="button">Limpar</button>
+            <button data-action="default" type="button">Padrão</button>
+            <button data-action="mode" type="button">OR</button>
+          </div>
+        </div>
+        <div class="filter-chip-list"></div>
+      </section>
+    </template>
+
+    <script src="assets/app.js?v=20260603-theme" type="module"></script>
   </body>
 </html>

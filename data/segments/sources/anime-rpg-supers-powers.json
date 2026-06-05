@@ -1,0 +1,1445 @@
+{
+  "version": 1,
+  "source": "anime-rpg-supers-powers",
+  "title": "Anime RPG - Supers - Powers",
+  "sourceFile": "Anime RPG - Supers - Powers.docx",
+  "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+  "sourceQualityStatus": "ok",
+  "generatedAt": "2026-06-02T23:46:26",
+  "paragraphs": 136,
+  "segments": [
+    {
+      "id": "anime-rpg-supers-powers-seg-0001-44introducao",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "44introdução",
+      "paragraphRange": [
+        1,
+        18
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1375,
+      "wordCount": 212,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bsistema\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "front_matter_possible",
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "22\n\nPOWERS\n\n2a edição\n\npowers\n\n33\n\nCriação: Hatalíbio Almeida\n\nCapa: Hatalíbio Almeida\n\nArte Interna: Chris ladouceur, Randy Kintz, Bleedman, Hatalíbio Almeida, Lobo Lancaster\n\nDiagramação: Hatalíbio Almeida\n\nAgradecimentos:\n\nDesaconselhável para menores de 14 anos.\n\nSe tiver qualquer dúvida ou sugestão, enviar email para:\n\nhatalibioalmeida@hotmail.com\n\nÍndice\n\n44introdução\n\nOlá leitores! É com muito orgulho que venho lhes trazer esse livro! Há muito tempo eu venho escrevendo essas regras para com-plementar as incríveis que existem no livro DAEMON SUPERS. Aqui vocês vão encontrar métodos rápidos e fáceis de se construir um super-herói sem precisar saber, de fato, a regra pra construção de um super! Saber apenas comprar seus Aprimoramentos já é suﬁciente! Cá acolá também vão encontrar algum superpoder novo ou Aprimoramentos do Anime RPG que combinam perfeit-amente com super-heróis (como Deﬂexão), imprescindíveis pra cenas espetaculares! Bem, não vou estragar a surpresa! Espero que gostem! PS.: Esses livros são produzidos de um fã para outros fãs, tentando suprir a necessidade que todos nós temos de novos materiais para o Sistema Daemon. Se você gostou do produto, compre nas nossas lojas digitais no site da Red Box e PerSe (inclusive no PerSe vocês podem conseguir versões sicas). Só com esse apoio poderemos manter a produção cada vez melhor.\n\nO Autor\n\n55"
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0002-eras-heroicas",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Eras Heroicas",
+      "paragraphRange": [
+        19,
+        22
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 533,
+      "wordCount": 83,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bmundo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Avante!\n\nEras Heroicas\n\nO universo dos super-heróis sempre foi permeado, pra não\n\ndizer focado, com as intenções dos mesmos que norteavam o mundo. De fato, em um universo de super-heróis, as intenções, os limites de agir, são tudo. Houveram diversas épocas heroicas nos quadrinhos, marcadas por diversos fatores. Fica a cargo do Narrador tomar inspirações para criar seus super-heróis, visto que algumas Eras marcaram linhas de quadrinhos de editoras até a contemporaneidade, enquanto que outras evoluíram para versões mais sombrias."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0003-era-de-ouro",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Era de Ouro",
+      "paragraphRange": [
+        23,
+        24
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 878,
+      "wordCount": 147,
+      "primaryArea": "aventuras",
+      "classifications": [
+        {
+          "area": "aventuras",
+          "label": "Aventuras",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\baventura(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Era de Ouro\n\nA Era de Ouro dos quadrinhos, nos meados de 1930, foi marcada por heróis em trajes coloridos já desde o início, porém uma surpreendente postura de agressividade e violência contra seus inimigos. Era comum matar capangas e vilões, por exemplo. De fato, é mais acertado chamar esses heróis de vigilantes (ou, como eram conhecidos, Mystery Man). Esse es!lo possui uma diferenciação bastante clara entre heróis e vilões, bem como um cenário onde a cria!vidade superava a lógica: dinossauros ciborgues podem estar enfrentando os heróis em um momento simplesmente para na aventura seguinte estarem viajando pro espaço deter uma guerra alienígena. Um tema muito comum na Era de Ouro foi o da 2ª Guerra Mundial (evento que ocorreu durante essa Era), e a luta contra nazistas. De fato era muito comum o nazismo como inimigo dos heróis, símbolo da liberdade e bondade humana."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0004-era-de-prata",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Era de Prata",
+      "paragraphRange": [
+        25,
+        27
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 636,
+      "wordCount": 111,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bhumano(?:s)?\\b",
+            "\\bdeus(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Era de Prata\n\nA Era de Prata é o formato dos super-heróis mais conhecidos hoje em dia: o colante ainda é muito u!lizado, os heróis ganham mais poderes (superando a marca do sobre-humano,\n\npessoas com poderes acima da média humana, e chegando ao super-humano, pessoas com poderes próximos de verdadeiros deuses), adquirem um “código de é!ca” mais humanizado, onde não se deve matar. Também a natureza dos superpoderes giram muito em torno de mutações e energia atômica, e nunca se deu a devida atenção para os danos colaterais das lutas entre super-seres (prefeitos e presidentes não ligavam se um combate destruía o centro de cidades!)."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0005-era-de-ferro",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Era de Ferro",
+      "paragraphRange": [
+        28,
+        31
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1207,
+      "wordCount": 210,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bsangue\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\barma(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bmundo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Era de Bronze\n\nA Era de Bronze foi marcada por temas mais humanizados, heróis mais voltados pra realidade do mundo, com temas como drogas, racismo, ecologia e globalização. Nessa época houveram muitas histórias trazendo heróis para uma realidade fora do combate entre uniformizados.\n\nEra de Ferro\n\n55A Era de Ferro foi a era dos quadrinhos pós-1980. Marcada por temas sombrios, heróis eram pouco valorizados frente aos vigilantes. A moralidade foi muito ques!onada e eles se equilibravam entre ações duvidosas de certo e errado. Muitos heróis da Era de Ferro u!lizavam mais armas de fogo de grosso calibre e menos superpoderes, e a brutalidade e o assassinato voltaram a vigorar entre os superseres, tema aprovado apenas na época da Era de Ouro (mas até mesmo na Era de Ouro não era demonstrado os requintes de sangue e crueldade que se vê na Era de Bronze). O Colante foi posto um pouco de lado na Era de Bronze, e o couro enegrecido, o vinil e os acessórios militares foram muito u!lizados. As histórias eram mais soﬁs!cadas, mais complexas, com temas melhor estudados, uma pseudociência mais complexa (de forma que fosse mais di$cil para o leitor saber se aquilo poderia ou não dar certo ou ser verdade)."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0006-natureza-dos-superpoderes",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Natureza dos Superpoderes",
+      "paragraphRange": [
+        32,
+        34
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 523,
+      "wordCount": 87,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 5.17,
+          "confidence": 0.627,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Natureza dos Superpoderes\n\nAs regras de DAEMON SUPERS permite uma inﬁnidade de\n\ninterpretações para os superpoderes – de onde eles vêm, o que eles são, e principalmente que po de novas variações os poderes de um super-herói pode alcançar. As regras são simples o suﬁciente para qualquer combinação possível, mas é necessário explicar a natureza desses poderes para que o Personagem ganhe vida, que se torne mais que um conjunto de números numa ﬁcha. A seguir uma série de idéias para as naturezas de poderes numa campanha:"
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0007-cibernetica",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Cibernética",
+      "paragraphRange": [
+        35,
+        36
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 560,
+      "wordCount": 87,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "aventuras",
+          "label": "Aventuras",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bcampanha(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Cibernética\n\nOs poderes são gerados por implantes biônicos, músculos de ﬁbras sintécas que aumentam a força de forma sobrehumana, lentes dentro da córnea que geram imensas quandades de calor emidas em feixes laser, discos gravitacionais implantados dentro do corpo permindo vôo sem asas, ossos metálicos, braços biônicos, nanorobôs na corrente sanguínea que reparam tecido daniﬁcado em segundos, cérebros sintécos e muitos outros. Esse po de natureza para superpoderes permite campanhas bem mais realistas e é uma excelente explicação em campanhas sci-ﬁ."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0008-magia",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Magia",
+      "paragraphRange": [
+        37,
+        38
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 697,
+      "wordCount": 113,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b",
+            "\\bmorto(?:s)?-?vivo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Magia\n\nFeiços podem conjurar os mais variados fenômenos inexplicáveis, desde bolas de fogo saindo pelas mãos de um mago, a metamorfose em lobos e sapos até mantos invisíveis e blindados protegendo-o de balas e socos. Os superpoderes não precisam girar em torno apenas de feiços e encantamentos, um guerreiro mísco pode empunhar uma espada encantada, um metamorfo pode ter seus poderes gerados por uma maldição licantrópica ou mesmo um personagem com uma blindagem de pedra pode ser um golem animado! Esse po de campanha é bastante interessante quando todos os superpoderes são originários de magia, criando um cenário rico de magos, mortos-vivos, anjos, demônios, deuses e demônios ancestrais!"
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0009-genetica",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Genética",
+      "paragraphRange": [
+        39,
+        40
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 733,
+      "wordCount": 112,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Genética\n\nA engenharia genéca criará o próximo passo da evolução humana. Alterações em cadeias de DNA e a transgenia permirão que pessoas possam desenvolver habilidades jamais vistas, melhorando suas próprias capacidades humanas, ampliando-as com genes de outros animais ou simplesmente com criações completamente novas e nunca vistas antes. Em cenários de super-heróis, esse conhecimento permite uma gama imensa de superpoderes. Claro que o acesso à tratamentos genécos pode ser caríssimo, restrito apenas para usos militares, governamentais ou ultra-secreto. Dependendo do cenário, poderes ganhos mediante alterações genécas podem advir até de acidentes com radiação (olha só, em vez de câncer, você ﬁcou verde e super-forte!)."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0010-nivel-de-poder-np",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Nível de Poder (NP)",
+      "paragraphRange": [
+        41,
+        48
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1714,
+      "wordCount": 291,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bteste(?:s)?\\b",
+            "\\bresist[eê]ncia\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Cósmica\n\n66A forma mais misteriosa de origem para superpoderes: uma força ou energia vinda do espaço concedeu os superpoderes,\n\nintencional ou acidentalmente, para os Personagens. Existe uma inﬁnidade de possibilidades para a real idendade dessa fonte, desde abduções alienígenas, deuses do espaço até banhos de misteriosas ondas de radiação cósmica. A imaginação é o limite.\n\nNível de Poder (NP)\n\nHá alguns esclarecimentos que devem ser feitos sobre o NP\n\nque não parecem ter ﬁcado claros no DAEMON SUPERS. Primeiro, NP é o controle que seu Personagem tem sobre seus poderes. Alguns poderes são muito simples, como apenas ejetar garras metálicas dos braços, e não precisam exatamente de controle. Outros, como telepaa, precisam. É, em diversos aspectos, como uma nova Perícia que subs tui sua WILL e perícia de ataque com seus poderes, mas especíﬁco para cada superpoder. Se seu poder uliza de testes de resistência contra o alvo, então ele precisa de NP. Note que o NP não é um Atributo como a WILL, é como uma Perícia, e deve ser comprada de acordo. Se seu Personagem tem pele indestru\"vel, super-sendos, ou outro poder passivo que é permanentemente ligado, ele não precisa de NP. Ou seja, o Jogador não é obrigado a pagar por essa nova “Perícia” com poderes passivos (ou seja, permanentemente ligados). Ulizando o TREVAS RPG como referência, o NP é como o Atributo que um poder sobrenatural precisa ter pra atacar ou resisr à outro, onde você ulizaria sua WILL. Você quer controlar a mente de um alvo? Não testa\n\nWILL, testa NP! Compreenderam? Para u lizar superpoderes em combate sico, entretanto, u liza-se outras perícias associadas, como Briga.\n\nDemais regras de NP, consulte o livro DAEMON SUPERS."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0011-regra-opcional-sem-custo",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Regra Opcional: Sem Custo",
+      "paragraphRange": [
+        49,
+        50
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 481,
+      "wordCount": 85,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bsistema\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.5,
+          "confidence": 0.534,
+          "evidence": [
+            "partial_daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Regra Opcional: Sem Custo\n\nMuitos poderes do SUPERS u lizam de gasto de WILL temporário pra a var, desa var e manter superpoderes. O DAEMON POWERS foi escrito de forma que ignora essa regra, visto que o Sistema Daemon não possui “gasto” de combus\"vel para poderes em outros livros. Ela apenas será man da para efeitos de ﬁchas que não comprarem NP (exceto os poderes passivos, citados acima), incidindo aí a regra normal. Afora isso, não se preocupe, ponha seu traje, e divirta-se."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0012-aprimoramentos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Aprimoramentos",
+      "paragraphRange": [
+        51,
+        53
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1205,
+      "wordCount": 182,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Aprimoramentos\n\nEm DAEMON POWERS os Aprimoramentos são divididos em\n\ntrês pos: Gerais, Raciais e Conceituais. Aprimoramentos Gerais são aqueles já conhecidos nos livros que u lizam o Sistema Daemon, concedendo vantagens e desvantagens ao Personagem. Aprimoramentos Raciais permitem ao Personagem jogar com pos não-humanos, como vampiros, elfos ou robôs, concedendo-lhes uma série de vantagens inerentes àquele po de Personagem. Não são necessários pra se jogar com uma outra raça, mas concedem um “pacote” de poderes e sugestões de Aprimoramentos nega vos que podem facilitar a vida (e os cálculos) do Jogador, além de serem mais baratos (seu custo em si não é mais barato, mas alguns possuem obrigatoriamente alguns Aprimoramentos nega vos que reduziram o custo ﬁnal dos mesmos). Aprimoramentos Conceituais provavelmente serão os mais u lizados nesse livro. Os Aprimoramentos Conceituais nada mais são do que superpoderes já comprados e postos à disposição do Jogador, apenas pagar e colocar na ﬁcha, sem precisar fazer cálculos, uma forma alterna va do Aprimoramento Superpoderes, já distribuído para facilitar e inspirar a criação de personagens. Eles serão melhor descritos no capítulo Aprimoramentos."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0013-guerra-civil",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Guerra Civil",
+      "paragraphRange": [
+        54,
+        57
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 518,
+      "wordCount": 88,
+      "primaryArea": "aventuras",
+      "classifications": [
+        {
+          "area": "aventuras",
+          "label": "Aventuras",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\baventura(?:s)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Idéias para Aventuras\n\nA seguir uma série de idéias para aventuras com super-heróis:\n\nGuerra Civil\n\nOs super-heróis entraram em um conﬂito e separaram-se em dois grupos. Um deseja que revelem suas iden dades secretas para o público e assim, ganharem sua conﬁança. Outro grupo acredita que está ferindo a própria base do super-heroísmo (além dessa revelação colocar suas famílias e amigos em risco). Os Personagens são recrutados por um dos lados para realizar missões para impedir que o outro lado realize seu obje vo."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0014-invasao-alien",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Invasão alien",
+      "paragraphRange": [
+        58,
+        62
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 839,
+      "wordCount": 129,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\bordem(?:ns)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Crise de realidades\n\n77As várias versões dimensionais da Terra estão convergindo, e muitos super-heróis e vilões estão aparecendo no nosso mundo. Muitos são versões distorcidas, que podem causar\n\nmuitos problemas (Superman louco? Batman assassino?). Os Personagens devem descobrir a fonte desse problema e restaurar a ordem.\n\nInvasão alien\n\nA Terra está sendo invadida secretamente por uma raça de alienígenas metamorfos cujos quais conseguiram se modiﬁcar gene camente com sua tecnologia avançada para simular os próprios poderes dos super-heróis! Mas sua estratégia não para por aí: eles também modiﬁcam suas mentes de forma que suas memórias reais possam ser escondidas de qualquer telepata, de modo que possam ser o espião perfeito. Gradualmente, eles vão subs tuindo os super-heróis da Terra até poderem realizar uma invasão em massa!"
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0015-autoridade",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Autoridade",
+      "paragraphRange": [
+        63,
+        64
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 505,
+      "wordCount": 87,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bmundo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Autoridade\n\nO mundo está um caos. Países ameaçam a ONU, a África está cada vez pior, a economia mundial está em crise e as nações não encontram respostas conciliadoras pro mundo por mo vações polí cas. Nessa aventura os heróis ﬁcam em uma tênue linha entre o heroísmo e a vilania: num ato desesperado, eles decidem tomar as rédeas do mundo. Ameaçando e invadindo países, eles próprios se mostram como uma ameaça mundial, e ATACARÃO se as divergências não forem resolvidas de modo a beneﬁciar a humanidade."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0016-regra-opcional-sem-mortes",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Regra Opcional: Sem Mortes",
+      "paragraphRange": [
+        65,
+        69
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1165,
+      "wordCount": 201,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 10.585,
+          "confidence": 0.928,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bteste(?:s)?\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Matrix\n\nEssa é uma idéia para aventuras diferentes, onde os Personagens estão aprisionados em um mundo de sonhos criado tecnológica ou magicamente. Dentro desse mundo são capazes de burlar as regras da realidade e desenvolver poderes como Vôo, Aumento de Atributos e Invulnerabilidade!\n\nRegra Opcional: Sem Mortes\n\nA maioria das histórias em quadrinhos são voltadas para um público infanto-juvenil e muitas vezes a faixa etária impede o excesso de violência em suas páginas, o que trouxe um senso maior de moralidade para as histórias, e por mais forte que heróis e vilões batessem, ninguém de fato morria. Para simular esse po de combate, o Narrador pode colocar a seguinte regra opcional: todos os Pontos de Vida perdidos por um Personagem podem chegar a -5 PVs, mas é apenas dano contundente, sem cortes ou queimaduras além de 1º grau, que pode ser recuperado a taxa de um número de PVs por dia igual ao seu nível. Quando zerar, o Personagem faz um teste de CON pra não desmaiar. Se desmaiar, porém, não ﬁca mais susce\"vel a essa regra, e se for atacado, irá de fato morrer.\n\nEssa regra permite os longos e épicos combates entre supers sem derramamento de sangue"
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0017-deflexao2-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Deflexão2 pontos",
+      "paragraphRange": [
+        70,
+        75
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 480,
+      "wordCount": 69,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Aprimoramentos\n\nAprimoramentos Gerais\n\nAprimoramentos gerais são os mesmos encontrados em\n\nqualquer livro do Sistema Daemon, como vantagens e desvantagens para os personagens.\n\nDeflexão2 pontos\n\nO Personagem pode se desviar de balas! Bem, ele realmente não se desvia delas, mas apenas “passam raspando”. Esse é um Aprimoramento completamente cinematográﬁco e não possui explicação exceto a lógica dos quadrinhos. O Personagem testa sua AGIx4 - Perícia do a#rador para se esquivar."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0018-superpoderesvariavel",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Superpoderesvariável",
+      "paragraphRange": [
+        76,
+        84
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 715,
+      "wordCount": 98,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 7.322,
+          "confidence": 0.747,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 6.807,
+          "confidence": 0.718,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Superpoderesvariável\n\nO Personagem possui superpoderes! Quaisquer uns dos poderes comprados devem ser pagos por este Aprimoramento. Os poderes presentes nos Aprimoramentos Conceituais já estão inclusos seu custo deste Aprimoramento, e caso o Personagem deseje comprar mais poderes ou aumentar seus poderes, deve pagar este Aprimoramento desde o começo (porém, podem obedecer a graduação acima na Supertabela, caso estejam aumentando poderes que já possuam).\n\nponto: 100 pontos de Superpoderes.\n\npontos: 150 pontos de Superpoderes.\n\npontos: 200 pontos de Superpoderes.\n\npontos: 250 pontos de Superpoderes.\n\npontos: 300 pontos de Superpoderes.\n\npontos: 350 pontos de Superpoderes.\n\npontos: 400 pontos de Superpoderes."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0019-equipamentovariavel",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Equipamentovariável",
+      "paragraphRange": [
+        85,
+        92
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1207,
+      "wordCount": 188,
+      "primaryArea": "itens_equipamentos",
+      "classifications": [
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\bequipamento(?:s)?\\b",
+            "\\barma(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bpontos?\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Equipamentovariável\n\nO Personagem possui alguns equipamentos que o ajudam no\n\ncombate ao crime. Caso ele possua as perícias ou o dinheiro necessários, é possível trocar esses equipamentos por outros de tempos em tempos.\n\nponto: Alguns itens úteis como ganchos de escalada, gazuas, máscara de gás portá#l, equipamento de arrombamento, equipamento de dete#ve, etc. Em termos de jogo, o Personagem SEMPRE vai ter aquele equipamento necessário para a situação (exceto quando o equipamento causar dano substancial ou não for pequeno o suﬁciente para caber numa mochila ou cinto de u#lidades).\n\npontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 100 pontos de Superpoderes.\n\npontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 150 pontos de Superpoderes.\n\npontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 200 pontos de Superpoderes.\n\npontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 250 pontos de Superpoderes."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0020-modificacao-de-poder1-ponto",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Modificação de Poder1 ponto",
+      "paragraphRange": [
+        93,
+        97
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 685,
+      "wordCount": 114,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\bvantagem(?:ns)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Modificação de Poder1 ponto\n\nEsse Aprimoramento confere uma alteração na forma de manifestar o poder básico descrito no livro SUPERS.\n\n+1 ponto: Sua modiﬁcação é esté#ca ou lhe confere uma vantagem, como suas rajadas ó#cas poderem ricochetear entre seus alvos, pode duplicar poderes de mais de um alvo ao mesmo tempo, pode aumentar a duração do poder, etc.\n\n88-1 ponto: Sua modiﬁcação de poder lhe prejudica de alguma forma. Talvez para voar você precise de asas, suas rajadas ó#cas não possam ser desligadas, seus poderes só funcionam\n\ncontra um po de alvo especíﬁco, só possam ser u lizados mediante determinadas ações (como uma mordida) ou alguma forma prejudicial de funcionamento."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0021-forma-alternativa2-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Forma Alternativa2 pontos",
+      "paragraphRange": [
+        98,
+        102
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 875,
+      "wordCount": 150,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Forma Alternativa2 pontos\n\nO Personagem possui uma forma alterna va quando se transforma em sua versão “super”. Ela que possui os verdadeiros poderes do Personagem. O Jogador deve fazer duas ﬁchas em separado para seu Personagem, uma de sua forma normal e outra da forma super, inclusive gastando o Mana separadamente entre suas formas.\n\n+1 ponto: Múl plas. O Personagem pode ter MAIS de uma forma super, com todo um novo conjunto de poderes! Esse aprimoramento pode ser cumula vo, ganhando mais e mais formas.\n\n-1 ponto: Ga lho. A forma alterna va do Personagem é a vada por um ga lho: ele só poderá se transformar em tempestades, no escuro, à noite, lua cheia ou quando ﬁcar com muita raiva. O ga lho não pode ser coisas simples como apenas pronunciar palavras mágicas.\n\n-1 ponto: Estúpido. A forma alterna va do personagem é estúpida, possuindo Inteligência 9 (no máximo)."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0022-jumper4-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Jumper4 pontos",
+      "paragraphRange": [
+        103,
+        105
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 487,
+      "wordCount": 80,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bteste(?:s)?\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Jumper4 pontos\n\nO Personagem é um teleportador galác co: ele pode se teleportar para qualquer ponto da galáxia que conheça ou tenha visto, até mesmo por fotos, ﬁlmagens, ilusões, holograﬁa ou mensagem telepá ca. Viagens instantâneas entre planetas não é problema (a falta de oxigênio, por outro lado, é). Para ﬁns de mecânica, considere esse poder uma exceção às regras de superpoderes. Para ﬁns de teste, considere que ele possui NP\n\n50. Um Jumper pode teleportar até 2 pessoas consigo."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0023-pontos-heroicos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Pontos Heróicos!",
+      "paragraphRange": [
+        106,
+        109
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 791,
+      "wordCount": 134,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.807,
+          "confidence": 0.552,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\bvantagem(?:ns)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Paradoxo Temporal1 ponto\n\nO Personagem fez diversas viagens temporais, causando o paradoxo sobre si mesmo e ainda conseguindo exis r. Ele pode ter eliminado sua linha do tempo original, ser seu próprio avô ou qualquer coisa que seu jogo permita. A vantagem é que nenhuma alteração na linha do tempo poderá apagá-lo da existência ou suas memórias do mesmo.\n\nPontos Heróicos!\n\nUm Aprimoramento imprescindível pra qualquer super-herói são os Pontos Heróicos. Eles são mais imprescindíveis que os próprios superpoderes. É aconselhável que o Jogador sempre compre o máximo que puder desses pontos, algo entre 3 e 5 pontos, logo no começo da ﬁcha, pra poder adquirir mais e mais pontos o mais rápido que puder. Uma vida super-heróica pode ser longa com essa dica ou muito curta e realista sem ela."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0024-hospedeiro-de-ser-cosmico5-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Hospedeiro de ser cósmico5 pontos",
+      "paragraphRange": [
+        110,
+        112
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 874,
+      "wordCount": 143,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 6.322,
+          "confidence": 0.691,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.5,
+          "confidence": 0.59,
+          "evidence": [
+            "\\bNPCs?\\b",
+            "partial_daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Hospedeiro de ser cósmico5 pontos\n\n99O Personagem é o hospedeiro de uma força cósmica. Por algum mo vo que ainda é um mistério a en dade não consumiu a mente do Personagem por completo. Via de regra, o Personagem ganha +300 pontos de Superpoderes que devem ser distribuídos como desejar. A desvantagem é que o\n\nPersonagem também adquire o Aprimoramento Nega vo Dupla Personalidade sem ganhar pontos extras por ela, sendo a segunda personalidade uma versão de si mesmo com ideais megalomaníacos de criação e destruição do mundo que o cerca – literalmente falando. O Narrador deve fazer Testes de WILL Di\"ceis constantemente para o Personagem não sucumbir à en dade. Durante os surtos da dupla personalidade o Personagem se torna um NPC e manifesta poderes bem maiores dos que possui (mesmo com os pontos extras ganhos pelo Aprimoramento!), podendo causar danos cataclísmicos."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0025-supercelebridadevariavel",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Supercelebridadevariável",
+      "paragraphRange": [
+        113,
+        119
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1059,
+      "wordCount": 165,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\bcidade(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Supercelebridadevariável\n\nO Personagem é famoso por seus feitos, sendo uma ﬁgura de destaque na mídia, todos reconhecem seu nome e ele é freqüentemente um dos assuntos preferidos do público. Este\n\npo de reputação reﬂete um melhor tratamento por parte dos NPCs, uma série de convites para reuniões e festas, assédio de fãs, destaque na mídia e alvo constante de paparazzis.\n\nponto: Conhecido. O Personagem é famoso em sua cidade. Sua ronda as vezes lhe rende donuts e café de graça e amistosos cumprimentos dos cidadãos, aplausos e torcidas de\n\nencorajamento.\n\npontos: Respeitado. O Personagem é famoso em seu país, talvez um símbolo do próprio país.\n\npontos: Famoso. O Personagem é tão famoso quanto as celebridades de Hollywood, tendo fama mundial! Seus feitos foram conhecidos e adorados pelo mundo inteiro. Esse nível confere uma série de vantagens extras: imunidade diplomá\"ca ao atravessar fronteiras de países, será mais facilmente inocentado de crimes (se chegar a sequer ser acusado), transgressões menores serão ignoradas pelas forças policiais, etc."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0026-supermessias3-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "superMessias3 pontos",
+      "paragraphRange": [
+        120,
+        121
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 742,
+      "wordCount": 133,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 5.5,
+          "confidence": 0.646,
+          "evidence": [
+            "\\bNPCs?\\b",
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "superMessias3 pontos\n\nO Personagem está predes\"nado à algo grande, que guiará o des\"no da população superpoderosa do mundo todo, seja restaurando os poderes de todos os superseres do mundo inteiro em uma época onde perdem seus poderes, seja viajando no tempo para matar um super-vilão que destruirá/escravizará a raça mutante ou o que for, a questão é que o Personagem tem esse grande des\"no à sua frente e muitos sabem disso (ou, pelo menos, aqueles que importam). O Personagem tem um bônus de +30% em Testes sociais para lidar com qualquer NPC ou PC que se importe com a população superpoderosa e pode inclusive realizar um Teste Normal de CAR por sessão para conseguir ajuda de um desses NPC, não importa o quão fraco ou poderoso ele seja."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0027-clone-da-lenda1-ponto",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Clone da Lenda1 ponto",
+      "paragraphRange": [
+        122,
+        125
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1027,
+      "wordCount": 164,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bresist[eê]ncia\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Clone da Lenda1 ponto\n\nO Personagem é um clone de um mutante, super-herói ou super-vilão famoso e/ou falecido, possuindo os poderes de tal. O Personagem é diferente do original de algum modo e não será confundido com o mesmo (embora muitos o reconhecerão como uma versão jovem do mesmo). Exemplos de heróis que estão ou já foram falecidos nas HQs são Pássaro Trovejante (força, resistência e agilidade sobrehumanas), Banshee (grito sônico e vôo), Cifra (compreensão universal das linguagens), Jean Grey (telecinésia e telepa\"a), Charles Xavier (telepa\"a), Superman (vários poderes), Batman (ar\"sta marcial) entre outros. Exemplos de vilões falecidos são Mestre Mental (ilusões mentais), Senhor das Sombras (telepa\"a), Ômega Vermelho (feromônios letais), etc. O Aprimoramento lhe dá um bônus de\n\n+30% em Testes sociais com an\"gos conhecidos do falecido.\n\nO Narrador não precisa permi\"r que todos os Personagens acima estejam mortos no seu período de campanha em jogo, podendo inclusive incluir ou excluir vários outros exemplos."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0028-vida-extra3-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Vida Extra3 pontos",
+      "paragraphRange": [
+        126,
+        128
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 748,
+      "wordCount": 133,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Vida Extra3 pontos\n\nO Personagem consegue voltar dos mortos uma vez. Ele não exatamente retorna a vida, mas o Narrador deve gerar um evento espetacular que o trará de volta mesmo após ter perdido todos seus Pontos de Vida (os Anciões Cósmicos recriaram seu corpo, seu Fator de Cura chegou ao limite mas lhe trouxe de volta, um necromante o ressuscitou, você estava sendo subs\"tuído por um clone e seu corpo verdadeiro foi libertado de seus captores, você conseguiu fazer uma cópia cerebral em um corpo robó\"co no úl\"mo segundo, etc.). Esse Aprimoramento só pode ser u\"lizado uma vez por compra e depois deve ser apagado da ﬁcha do Personagem (ou seja, se\n\ngastar 6 pontos de Aprimoramento e comprá-lo duas vezes, poderá retornar a vida duas vezes)."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0029-objeto-de-poder-2-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Objeto de Poder-2 pontos",
+      "paragraphRange": [
+        129,
+        130
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 478,
+      "wordCount": 85,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 4.322,
+          "confidence": 0.58,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Objeto de Poder-2 pontos\n\nOs poderes do Personagem não vêm dele, e sim de um objeto, seja um martelo mágico, um anel energé\"co, o que quer que seja, pode ser re\"rado ou perdido (precisando apenas ser arrancado de suas roupas ou suas mãos). Perceba que os poderes do Personagem ainda são comprados normalmente na ﬁcha. Objeto de Poder não pode ser comprado para superpoderes gerados por fontes que sejam muito di$ceis de anular como, por exemplo, re\"rar uma armadura tecnológica."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0030-supervilao-aspirante-2-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Supervilão aspirante-2 pontos",
+      "paragraphRange": [
+        131,
+        132
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 853,
+      "wordCount": 148,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.5,
+          "confidence": 0.534,
+          "evidence": [
+            "partial_daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Supervilão aspirante-2 pontos\n\nO Personagem está no lugar errado. Ele não quer ser um superherói – pelo contrário, quer ser um supervilão! Ele idolatra um ou mais supervilões e o tem como seu ídolo, seu exemplo de como deve ser. O Jogador deve escolher qual(is) exemplo(s) o Personagem tem e deve segui-lo. Sempre que se deparar com situações onde o Personagem iria tentar se comportar como seu ídolo, ele o fará. Caso o Jogador não queira, o Personagem deve fazer um teste de WILL. Em caso de falha, ele deve fazê-lo. O comportamento não precisa ser necessariamente e abertamente criminoso como assaltar um banco, mas ele irá odiar heróis aracnídeos se \"ver como ídolo o Dr. Octopus ou qualquer inimigo do Homem-Aranha, por exemplo, ou irá tentar liderar mutantes contra os humanos caso seja fã do Magneto durante sua carreira de supervilão terrorista."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0031-duplo-vilao-1-ponto",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Duplo vilão-1 ponto",
+      "paragraphRange": [
+        133,
+        134
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 994,
+      "wordCount": 182,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.5,
+          "confidence": 0.534,
+          "evidence": [
+            "partial_daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Duplo vilão-1 ponto\n\nSabe quando um clone maligno de você mesmo aparece na sua dimensão? Pois é. Você é o clone maligno. Sua vida foi marcada por todo \"po de tragédias e bizarrices, desde morte da esposa, ﬁlhos e cachorro até ter o braço amputado (e subs\"tuído por outro braço um pouco medonho), rosto deformado e muito mais. Só que você está em outra dimensão que não é a sua, e olha só, sua versão desse mundo possui uma vida que você considera perfeita. E você fará de tudo para tê-la. Em termos de jogo, o Personagem vive para subs\"tuir sua versão da dimensão do jogo a qualquer custo. Para isso ele deve tomar bastante cuidado para não ser percebido no ato ou poderá pôr tudo a perder (embora uma morte ou duas possam ainda evitar essa tragédia). O Narrador deve fazer testes de WILL sempre que o Personagem tomar rumos que o façam gerir uma vida própria (assumir cargos de poder e responsabilidade, procurar novos superpoderes que não sejam para superar seu outro Eu, apaixonar-se, etc.)."
+    },
+    {
+      "id": "anime-rpg-supers-powers-seg-0032-mutacao-deleteria-2-pontos",
+      "source": "anime-rpg-supers-powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourcePath": "Livros\\word\\Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Anime RPG - Supers - Powers",
+      "heading": "Mutação deletéria-2 pontos",
+      "paragraphRange": [
+        135,
+        136
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 476,
+      "wordCount": 72,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bsuperpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Mutação deletéria-2 pontos\n\n1010O Aprimoramento Fraqueza é recorrente em boa parte dos Supers, e mutantes não são exceção. Muitas mutações trazem male$cios ao Personagem, seja de abuso dos superpoderes ou da própria ﬁsionomia do organismo mutante. Abaixo segue alguns exemplos de novas Fraquezas que podem ser u\"lizadas: Baixa Imunidade: o corpo do Personagem está sendo daniﬁcado pelos próprios superpoderes. Geralmente essa fraqueza é associada à poderes químicos que acabam"
+    }
+  ],
+  "areaCounts": {
+    "aprimoramentos": 5,
+    "aventuras": 2,
+    "cenarios_lore": 3,
+    "criaturas_npcs": 3,
+    "itens_equipamentos": 1,
+    "linhagens": 1,
+    "poderes": 6,
+    "regras_base": 11
+  },
+  "reviewFlagCounts": {
+    "front_matter_possible": 1,
+    "low_confidence_classification": 22,
+    "multi_area_segment": 20
+  }
+}

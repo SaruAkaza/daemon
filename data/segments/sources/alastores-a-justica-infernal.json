@@ -1,0 +1,2131 @@
+{
+  "version": 1,
+  "source": "alastores-a-justica-infernal",
+  "title": "Alastores - A Justiça Infernal",
+  "sourceFile": "Alastores - A Justiça Infernal.docx",
+  "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+  "sourceQualityStatus": "ok",
+  "generatedAt": "2026-06-02T23:46:24",
+  "paragraphs": 355,
+  "segments": [
+    {
+      "id": "alastores-a-justica-infernal-seg-0001-alastores-a-justica-infernal",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "",
+      "paragraphRange": [
+        1,
+        18
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 4706,
+      "wordCount": 726,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 11.17,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bmitologia\\b",
+            "\\blenda(?:s)?\\b",
+            "\\bmundo(?:s)?\\b",
+            "\\bcultura(?:s)?\\b",
+            "\\borganiza[cç][aã]o(?:es)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "front_matter_possible",
+        "multi_area_segment"
+      ],
+      "text": "Esta é uma obra de ficção. Apesar dos fatos citados neste livro poderem ter sido extraídos de lendas, religiões, culturas e histórias reais de diversos povos, a magia e os rituais aqui descritos não devem ser utilizadas, podendo ferir os participantes. Toda Ordem Secreta, Seita Demoníaca, Casta de Demônios citados aqui são tratados de forma ficcional.\n\nAlastores – A Jusiça Infernal\n\nCriação: Bernard “Maihelkash” Coutinho\n\nOrganização e Diagramação: Bernard “Maihelkash” Coutinho\n\nCapa: Alex Alexandrov Imagens internas: Devianart Agradecimentos\n\nAo Alex Pina e Taliba Almeida pelas ideias.\n\nA Todos que postam diariamente suas opiniões no grupo Trevas do Facabook.\n\nIndtrodução – 4\n\nOrigem – 5\n\nO Indece Carmesim – 6 A Caçada – 7\n\nJurisprudencia Infernal – 12 Poderes Demoníacos – 17 Aprimoramentos – 23\n\nKits – 27 Objsetos Mágicos – 32\n\nRituais – 35 Guerreiros Notáveis – 38 Vitimas, Inimigos, etc - 40\n\nNa mitologia grega, Alastor era uma divindade encarregada da vingança de um crime. Alastor significava “Vingador”. A palavra também e empregada para designar espíritos infernais incumbidos de caçar qualquer alma condenada ao Orco que tenha fugida para a Terra. Alastores são uma das casas infernais mais conhecidas dentro do Inferno, sendo encarregados de caçarem fugitivos do mesmo. No Passado, muitos Demônios foragidos fugiam para o mundo de Ark-A-Nun, mas, com a degradação deste planeta, passaram a fugir para a Terra, em especial a América do Sul, pela falta de controle dos governos, da corrupção generalizada e da impunidade nessa região do mundo. Muitas vezes, os Alastores precisam do apoio de Humanos para realizar seu trabalho. Os Demonologistas que os auxiliam nesse trabalho fazem parte de uma antiga ordem de caçadores conhecida como Auxiliares - que por sua vez esta subordinada a Ordem do Templo de Set - que existe desde a Idade Média. Os Auxiliares não são exatamente caçadores de Demônios, pois eles não caçam diretamente criaturas sobrenaturais, apenas providenciam recursos para que os verdadeiros caçadores possam agir.\n\nEMAIL: bercoutinho@yahoo.com.br SITE: THEATHER OF MADNESS\n\n“Do crepúsculo dos tempos nós viemos, movendo silenciosamente através dos séculos, carregando muitas vidas secretas. Ninguém jamais soube que nós existíamos entre vocês até agora” Ramirez, Highlander.\n\nA Ordem Caçadora dos Alastores teve inicio com seu primeiro “Carrasco” que fora aquele que lhe da nome. Oriundo de Ark-A-Nun, Alastor fora conselheiro do rei Neleus de Pylos, na Grécia, mas fora assassinado por Héracles a mando do próprio Zeus, por manter contatos com feiticeiros persas. Em Ark-A-Nun, Alastor já exercia suas habilidades em matar e rastrear - integrando um grupo de assassinos devotos ao rei de sua região - sendo estas lendárias, lhe renderam renome nas terras infernais e todo o apoio para que continuasse empregando e aprimorando suas capacidades, a serviço do Triunvirato Infernal. Com o passar das eras, o Inferno fora divido em Círculos de Danação, e os gritos de sofrimento das almas dos condenados preencheram o silêncio que pairava naquela região umbralina. Fora decisão da Tríade Profana – formada por Shaitan, Lúcifer e Belzebu – relocar esses espíritos cada um de acordo com suas perversidades; e claro, contra a vontade desses. Quando o primeiro chicote fustigou, simultaneamente o primeiro pensamento de fuga também acendeu nas mentes dos Condenados, e logo fora necessário formar uma equipe de caçadores de fugitivos do Inferno. No passado Aiacos, Minos e Radamanthys, Os\n\nTrês Juízes Infernais utilizavam guerreiros sem nome e desorganizados, que perseguiam os fugitivos de seus veredictos e na maioria das vezes destruíam a alma deserta – algo que não agradava aos senhores do Inferno. Muitos Demônios foragidos fugiam para o mundo de Ark-A-Nun, mas, com a degradação deste, passaram a escapar para a Terra. Naquele tempo, apenas o medo instaurava a ordem no Inferno e mesmo assim, existia locais onde ele não atingia; guerras aconteciam, destruições e represálias em massa ocorriam. Os governantes infernais precisavam de alguém que levasse o sua palavra através da espada aos corações dos Demônios, uma personificação de sua vontade, que existiria dali em diante no Orco; em conjunto o Triunvirato, e os Três Juízes do Inferno, nomearam como seus olhos, ouvidos e seus punhos uma Ordem e a chamaram Alastores. A Nigrum Manus (A Mão Negra), comoficaramconhecidos inicialmente os Demônios de Alastor passaram a desfrutar de um poder imenso sobre a sociedade infernal, após inúmeras missões, foram ungidos com o poder de julgar as leis infernais e punir seus infratores; podendo convocar uma caçada a todo e qualquer que as desrespeitasse.    Os    Alastores"
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0002-alastores-a-justica-infernal",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "",
+      "paragraphRange": [
+        19,
+        23
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 4202,
+      "wordCount": 709,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 5.585,
+          "confidence": 0.65,
+          "evidence": [
+            "\\blenda(?:s)?\\b",
+            "\\bcidade(?:s)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "originais são uma espécie de tropa de elite dentro do Inferno, selecionados entre os melhores. Não existe uma casta preferencial, apesar dos duques preferirem Arkanitas ou Captares Caídos para realizarem este serviço. Com o poder que detinham, podiam fazer com que Nobres fossem removidos antes de causar muitos danos ou dirigir marés de guerra infrutíferas uns contra os outros, e dizem lendas que os próprios Juízes Infernais não estão a salvo de suas punições. Alastores são uma das casas infernais mais conhecidas dentro e fora do Orco, sendo encarregados de caçarem fugitivos do mesmo e responsáveis por todas as 4320 Leis Infernais conhecidas principais (já que quanto mais ínfero for o padrão vibratório, mais leis existem), mas cada Alastor Majora (os mais graduados) deve ser responsável por conhecer e fazer valer também as leis regionais que integram o Círculo o qual estão vigilantes.\n\nO Credo Alastor“Do mais profundo abismo ao mais escuro céu, o olho atento julgará todos aqueles que infringem a vontade dos Juízes e o equilíbrio dos Círculos. O rastro dos que escapam e o sangue dos que são traidores serão seu pão, e a entrega dos infratores, sua vitória. Onde faltar a ordem, que o Alastor assuma o papel e faça prevalecer sua justiça.”O Credo Alastor“Do mais profundo abismo ao mais escuro céu, o olho atento julgará todos aqueles que infringem a vontade dos Juízes e o equilíbrio dos Círculos. O rastro dos que escapam e o sangue dos que são traidores serão seu pão, e a entrega dos infratores, sua vitória. Onde faltar a ordem, que o Alastor assuma o papel e faça prevalecer sua justiça.”\n\n“Esta é a Lei da Selva, tão antiga e verdadeira como o céu; E o Lobo que a seguir poderá protestar, mas o Lobo que a quebrar deverá morrer” Rudyard Kipling, “A Lei da Selva”\n\nOs Alastores foram responsáveis pela criação do temível Índice Carmesim: A Lista dos mais procurados do Inferno. Conta-se que a tão odiada listagem encontra-se na sede da Ordem dos Caçadores; um livro de capa de couro Humano, tingido de vermelho e adornado com o olho vigilante dos Alastores, onde estão descritas todas as leis infernais conhecidas e onde qualquer nome inserido passa a ser do conhecimento de todos aqueles que caçam no Inferno. A pena que sela o destino de um espírito (na realidade um dedo demoníaco ressecado), esta sempre ao lado do volume, imersa em sangue negro pronta para condenar um infeliz a perdição. Judas lidera a lista por ser tão valioso para os Céus quanto para o Inferno. Anung un Rama, conhecido como Hellboy, esta em Segundo por ser capaz de libertar entidades terríveis do Limbo. Photus, um poderoso Anjo da Cidade de Prata que enfrentou Christos, perdeu, e quando caiu escondeu-se na Terra para não ir para o Inferno servir a Lúcifer esta em Terceiro lugar na lista. Laoviah esta em Quarto lugar por tentar criar um paraíso paralelo para os espíritos de seus fiéis e Andreas Von Brauchitsch, o Soldado que fugiu do Inferno usando a Caixa de Anúbis em Quinto. O Feiticeiro chamado Faustus esta em Sexto por\n\nenganar o próprio Belzebu e All Simons em Sétimo, sendo caçado principalmente pelas forças de Malebolge. Marcelus Van Lexus ocupa a oitava posição por ter liberado ritual da Peste Negra durante a Idade das Trevas, que matou Demônios importantes. Muitos dos Anjos da Segunda Rebelião (principalmente Samyaza e seus filhos Nephelim Ahiah, Hiwa e Hiya) ocupam posições distintas da lista. O Ophanim Howhael foi adicionado à lista da Décima Posição por se incumbir de punir os praticantes das artes arcanas entre os Hebreus que começassem a contatar entidades inferiores, Anjos Caídos e Daemons. Todos os integrantes do Índice Carmesim têm suas cabeças avaliadas em tesouros, e aqueles que as conseguem, escolhem seus troféus no lendário Labirinto dos Tesouros, situado dentro do Palácio Dourado de Lúcifer: um imenso salão contendo armas e armaduras mágicas reunidas ao redor da existência pelo próprio Portador da Luz. O Índice Carmesim é extremamente visado, já que o nome que for apagado do livro deixará de existir para os caçadores de recompensas e demais Alastores; mas um fugitivo nunca é esquecido pelo Primeiro dos Carrascos que nomeia a implacável justiça infernal."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0003-alastores-a-justica-infernal",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "",
+      "paragraphRange": [
+        24,
+        27
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2435,
+      "wordCount": 385,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "rituais",
+          "label": "Rituais",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\britual(?:is|s)?\\b",
+            "\\bc[ií]rculo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "“Alquebrado e consumido por chamas, será expulso do céu etéreo. No abismo da perdição reinarás. Algemado em correntes adamantinas. Envolto em fogo punidor” John Milton, Paraíso Perdido\n\nMesmo com toda desorganização existente no Orco, os Alastores são extremamente calculistas e estratégicos ao atuarem em suas missões, as quais eles chamam de Caçadas. Uma Caçada não se inicia subitamente, impulsiva e sem foco, pelo contrário; assim que a informação chega à sede da Ordem\n\n– enviada muito provavelmente pelos Auxiliares, através do ritual Dammant Indicium – um grupo inicial de Alastores (chamados internamente de Vigiluns) se desloca para o local, para investigar o acontecido. Sua presença sempre é acompanhada pelo medo, pois ela é tanto um grande poder por si só como a potencia precursora da atenção fatal dos Alastores. Vigilunssãocompostos normalmente por um Alastor Majora e um grupo que varia de 2 a 3 Alastores. Após a confirmação dos indícios, partem no encalço do fugitivo os Alastores conhecidos como Agmens, que saem do Inferno com uma missão específica e todo tipo de informação possível recolhida (essas definições são jargões internos apenas, já que os Alastores dividem-se em Alastor Majora e Alastores). Uma vez declarada a Caçada, o fugitivo passa a compor o Indice Carmesim, e todos os contatos dentro e fora do Inferno são alertados. Cada Círculo Infernal é responsabilidade de um\n\nAlastor Majora, e estes são servidos por diversos Alastores que atuam como seus espiões, executores e representantes de seu poder, sendo capazes também de convocarem uma Caçada quando assim acharem condizente. A convocação para uma Caçada feita por um Alastor Majora, só poderá ser contestada por outro Alastor Majora, concedendo-lhes poderes quase ilimitados para fazer o que bem entenderem. A maioria dos Majoras são prudentes o suficiente para considerarem suas ações ao lidarem com outro de sua estirpe; abusos de poder normalmente geram ressentimentos de Demônios de todas as idades, principalmente dos mais antigos. Não há limites para a convocação de uma Caçada e seus alvos; todos estão em sua mira, caso desrespeitem as leis impostas pelo Triunvirato, na teoria, na prática, sabe-se que muitos Alastores - mesmo sendo exemplos de prudência e honra no Inferno - ainda assim não estão no Orco por acidente, e talvez um inimigo de certo Duque Infernal possa adentrar ao Índice Carmesim se este possuir os contatos corretos."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0004-os-coenobiuns",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Os Coenobiuns",
+      "paragraphRange": [
+        28,
+        31
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2367,
+      "wordCount": 372,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\bcidade(?:s)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Os Coenobiuns\n\nQuando uma Caçada é bem sucedida (e normalmente elas o são) o  fugitivo  é  encerrado  por  um\n\ntempo em um local chamado Coenobium. A palavra tem origem no Latim e significa “tortura” apenas, mas, estes locais realmente fazem valer o significado desta sensação. Nessas regiões, o condenado passa por dores e sofrimentos tão terríveis que defini-los através de palavras são impossíveis. Um Coenobium é uma região tétrica e vil, localizada em áreas do Baixo Umbral, onde o padrão vibratório é extremamente denso e as trevas primordiais ainda existem. São representações fantasmagóricas de imagens do mundo dos vivos (como a prisão de Alcatraz, Carandiru, os Gulags russos ou campos de concentração nazistas e muitas vezes, portais para esses locais podem ser facilmente abertos dessas áreas). Espectros horrendos desfilam com suas aparências indizíveis nesses locais atraídos pelos gritos de agonia dos torturados, proporcionando aos olhos destes um espetáculo macabro que nunca mais deixa suas mentes - já que marca o cerne de sua essência. A destruição de uma alma torturada esta fora de cogitação para os Alastores, visto que a estrutura do Inferno é erigida sob o sofrimento destas, então, como punição pela tentativa falha de escapar, o pobre condenado é enviado a estas prisões onde o tempo não corre, e eles podem desfrutar de uma eternidade de eternidades para sofrer. Muitos são\n\nos instrumentos de padecimento que existem em um Coenobium e são através de suas punições que os Alastores espalham o medo, sendo estas sempre muito criativas e cruéis. Os Carrascos são temidos não apenas por seu poder e idade, mas também por sua criatividade e sagacidade. Apenas os Demônios mais poderosos e politicamente fortes podem tentar escapar de suas garras. Os meios de tortura coordenados pelos Alastores dentro de um Coenobium são inúmeros e os servos que os manejam são tão prisioneiros quanto suas vítimas, enclausurados aqui por crimes indeléveis e inafiançáveis, mas que encontram certo conforto no sofrimento alheio. Coenobiuns muitas vezes são confundidos com Cidades Trevosas, vistos de Spiritum, mas os responsáveis por esses austeros locais são muitas vezes Duques Infernais ou entidades sinistras a serviço do Triunvirato; que possuem sua própria guarda pessoal em caso de precisarem combater Missões de Salvação a qualquer um dos torturados."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0005-a-fidelitas-ordinis",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "A Fidelitas Ordinis",
+      "paragraphRange": [
+        32,
+        34
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2193,
+      "wordCount": 322,
+      "primaryArea": "magias",
+      "classifications": [
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bmagia(?:s)?\\b",
+            "\\bcaminho(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\barma(?:s)?\\b",
+            "\\bartefato(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "A Fidelitas Ordinis\n\nA Caçada Perigosa, como os Alastores chamam uma perseguição a um Duque Infernal ou general comandante de muitas legiões. Ao convocar um Fidelitas Ordinis, um Alastor Majora deve ser bem cauteloso já que a partir deste momento, se tornará alvo de olhares\n\nAlguns Jargões AlastoresAratare – local onde um fugitivo se escondeAstuc – quando um fugitivo escapa, temporariamente.Deochetor– infernais.fugitivodasleisEstruga – antigo nome que os Alastores são chamados, pejorativo.Dragão/Dragões – superior imediato de uma missão, mas também se refere aos Juízes Infernais e ao Triunvirato.Ieles – literalmente “eles” são os contatos fora do Inferno.Sisca – um Alastor que conhece os Caminhos de Magia.Uternic – os objetos, artefatos e armas utilizados pelos Alastores.Mateshulah – Alastores lendários, muito antigos.Alguns Jargões AlastoresAratare – local onde um fugitivo se escondeAstuc – quando um fugitivo escapa, temporariamente.Deochetor– infernais.fugitivodasleisEstruga – antigo nome que os Alastores são chamados, pejorativo.Dragão/Dragões – superior imediato de uma missão, mas também se refere aos Juízes Infernais e ao Triunvirato.Ieles – literalmente “eles” são os contatos fora do Inferno.Sisca – um Alastor que conhece os Caminhos de Magia.Uternic – os objetos, artefatos e armas utilizados pelos Alastores.Mateshulah – Alastores lendários, muito antigos.acusatórios, fazendo muitos inimigos ao mero pronunciar desta frase. Uma Caçada Perigosa deve ser convocada mediante uma reunião com os membros mais importantes da rotina do Círculo onde o Alastor atua; deste devem fazer parte todos os Majoras responsáveis por cada Círculo Infernal. Colocar o nome de uma entidade poderosa no Índice Carmesim é tarefa para poucos, mas até mesmo a coragem de um Senhor Infernal se esvai quando este termo é meramente citado próximo ao Círculo que controla. Dizem que verdadeirasdivindadesjá sucumbiram a uma Fidelitas Ordinis e um alvo desta tão extrema ação é destruído imediatamente. Convocar uma Caçada Perigosa é exigir livre acesso aos domínios da entidade a que se caça da própria Tríade Infernal, e esta normalmente não age de maneira contrária ao veredito dos Majoras."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0006-veniam-peto",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Veniam Peto",
+      "paragraphRange": [
+        35,
+        38
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1240,
+      "wordCount": 206,
+      "primaryArea": "rituais",
+      "classifications": [
+        {
+          "area": "rituais",
+          "label": "Rituais",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bc[ií]rculo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bpre[cç]o\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Veniam Peto\n\nAssim como se pode condenar um Demônio a Caçada, os Juízes do Inferno, e nunca um Alastor (não que não sejam capazes, mas sim por NUNCA perdoarem ninguém) podem declarar que este é inocente; este fenômeno raro é chamado Veniam Peto. Normalmente quando os Alastores entram em ação, dificilmente aquele que os convocou voltara atrás em sua decisão – uns dizem que por medo – então Veniam Peto deve ser declarada antes dos Carrascos serem convocados ou depois de terem atuado. A palavra Veniam Peto é ouvida com frequência dentro dos Círculos de Sofrimento no Inferno, e\n\nnormalmente não é levada a sério, a menos que proferida por um dos responsáveis pelas áreas de punição, e estes só as dizem quando realmente são ordenados para tal. Raríssimos Recíperes Caídos são capazes de forjar uma carta de perdão deste tipo, algo dificílimo já que até mesmo o tipo de material utilizado pode ser reconhecido por um Alastor se a falsificação for de péssima qualidade. O preço para uma destas pode ser pior que a danação a qual o espírito fora condenado; tanto para o procurador quanto para o fornecedor da fraude.\n\n“Três coisas devem ser feitas por um juiz: ouvir atentamente, considerar sobriamente e decidir implacavelmente.” Sócrates."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0007-no-inferno",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "No Inferno",
+      "paragraphRange": [
+        39,
+        40
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 705,
+      "wordCount": 106,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "rituais",
+          "label": "Rituais",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bc[ií]rculo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "No Inferno\n\nSendo temidos e considerados o braço forte das leis infernais; os Alastores respondem diretamente aos Juízes e ao Triunvirato do Inferno no quesito da captura de foragidos e criminosos das principais normas do Orco. Cada Círculo do Inferno, também possui leis regionais criadas por seus senhores que também devem ser cumpridas e respeitadas a risca, sendo este tratamento amparado ao poder a eles confiados pela Tríade Infernal. Para exercer a lei em seus domínios, muitos Duques e Comandantes de Legiões formaram suas próprias milícias e arrebanharamguerreiros particulares para desempenharem a função fiscalizatória, deixando para os Alastores a tarefa de tratar de assuntos ditos “federais”"
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0008-a-milicia-de-ferro",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "A Milícia de Ferro",
+      "paragraphRange": [
+        41,
+        44
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1739,
+      "wordCount": 283,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\blenda(?:s)?\\b",
+            "\\bdeus(?:es)?\\b",
+            "\\bcidade(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "A Milícia de Ferro\n\nBhaalzebub chegou ao Inferno no século X a.C, e tomou o controle da Cidade de Ferro de Dite de seu antigo Imperador, o Daemon Orcus culminando em sua derrota e aparente destruição. Porém, muitos Demônios argumentam que a essência vital do deus maligno conseguiu se recuperar e passou a se esconder nos milhares de túneis subterrâneos, formando uma sociedade   secreta   entre   os\n\nDemônios, com o objetivo de derrubar Bhaalzebub e trazer novamente o grande deus das pestes de volta a Dite. Bhaalzebub criou um grupo de Demônios a seu serviço, prontos para caçar quaisquer daqueles que ainda nutriam simpatia por Orcus; esses caçadores são chamados de Milícia de Bhaalzebub ou Milícia de Ferro e são especialistas em pragas e doenças. Bhaalzebub também se utiliza do serviço dos assassinos conhecidos como a Irmandade Rubra, mas estes agem de maneira dúbia, tanto caçando Orcus e seus discípulos, como também os milicianos do novo senhor de Dite. Do outro lado da guerra que acontece em Dite, Orcus ergue-se com sua secreta Sociedade de Orcus. Atualmente, ainda não se sabe se o Daemon está mesmo vivo ou se não passa apenas de uma lenda entre os Demônios que tentam usurpar o poder da realeza infernal. A Sociedade de Orcus atuam na clandestinidade, aliados a Máfia terrena – que treina os assassinos e capangas para futuramente tornarem-se Maris seguidores de Orcus – e a entidade Laran (um senhor trevoso discípulo do antigo senhor das pragas). O Senhor Trevoso possui os Nomes Verdadeiros de alguns Demônios próximos a Corte de Bhaalzebub, utilizando estes para chantagear e conseguirvantagensem\n\nnegociações, rituais e outros serviços, principalmente ofuscar os olhares atentos dos Alastores e da Milícia de Ferro."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0009-os-templarios-caidos",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Os Templários Caídos",
+      "paragraphRange": [
+        45,
+        48
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2922,
+      "wordCount": 463,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 5.322,
+          "confidence": 0.636,
+          "evidence": [
+            "\\bcidade(?:s)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Os Templários Caídos\n\nOrientada por Jacques DeMoley, o ultimo grão-mestre dos Templários na Terra, após o extermínio dos cavaleiros pela igreja católica. Foi batizada pelo agora Death Knight e apadrinhada pela criatura que lhe da nome (Jacques na Terra, NÃO pertencia aos adoradores de Baphomet, mas seu ódio, no Inferno, atraiu alguns cavaleiros fadados ao mesmo destino, fundando a irmandade). Baphomet havia ensinado o caminho de inúmeros tesouros para os Templários (e seus servos que estavam infiltrados dentro destes) fazendo os ricos, muito mais que os soberanos da época. Baphomet (cuja origem é desconhecida, e guardada a sete chaves pelos membros da Ordem) levou os cavaleiros a encontrarem em seu território documentos e tesouros que os tornaram poderosos. Segundo alguns, eles ficaram com a tutela do Santo Graal dentre outros tesouros da tradição católica. Em 13 de outubro de 1307, sob as ordens de Felipe, o Belo (homem influenciado pelos Anjos de Paradisia, torpe e grande devedor de dinheiro para a Ordem e favores para o próprio DeMolay, sendo este inclusive padrinho de seu filho) e com o apoio do Papa Clemente V (na realidade Yesaliah, um dos Nimbus mais poderosos da Cidade de Prata, e Décimo Primeiro no Índice Carmesim), 140 cavaleiros foram   presos,   torturados   e\n\ncondenados à fogueira, acusados de diversas heresias. A Igreja acusava os templários de adorar o diabo na figura de uma cabeça com chifres (a partir daí criou-se a crença de um Demônio chifrudo), de cuspir na cruz, e de praticar rituais de cunho sexual,inclusivepráticas homossexuais (embasado no símbolo da Ordem, que era representado por dois Cavaleiros usando o mesmo cavalo). Baphomet (que, na realidade, estava auxiliando os Cavaleiros Templários em sua luta contra os Anjos) tornou-se o bode expiatório da condenação da Ordem pela Igreja Católica e da matança de templários na fogueira que se seguiu a isto. Chegando ao Inferno, Jacques DeMoley e os Templários, transformados em Death Knight, foram amparados por Baphomet. A entidade auxiliou o cavaleiro caído a estruturar uma Ordem de guerreiros; DeMoley em sua nova forma, havia sido tomado pela cólera da vingança e pela corrupção infernal. A Irmandade Baphomets já não era mais formada por cavaleiros nobres e virtuosos, mas sim de verdadeiros mafiosos infernais, oferecendo proteção aos vilões que habitam o Sexto Círculo dos Hereges, gerenciando prostituas Succubi e Incubus, traficando artefatos místicos e vendendo suas espadas como mercenários freelances. Dois anos mais tarde, O papa Clemente V seria encontrado morto em sua cama. Se esta foi uma maneira de Yesaliah desaparecer da Terra ou se ele foi realmente destruído pelos Templários caídos, ninguém sabe ao certo. Esses guerreiros são contratados e enviados em missões de proteção\n\npara outros Demônios, pois possuem grandes técnicas de combate, principalmente no tocante a destruição de criaturas de luz."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0010-as-leis-dos-traidores",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "As leis dos Traidores",
+      "paragraphRange": [
+        49,
+        60
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1801,
+      "wordCount": 277,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bdeus(?:es)?\\b",
+            "\\bcidade(?:s)?\\b",
+            "long_lore_block"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "As leis dos Traidores\n\nO Cainismo no Inferno venera Caim como aquele que traiu, e se ergueu sozinho do Cocito para governar a terra de todos ostraidores,comoé conhecida a Caína. Para os Cainitas, Caim foi à primeira vítimadeDemiurge.\n\nSegundo eles, o Deus do AntigoTestamentoé vingativo e cruel, e que Caim,foilevadopor Demiurge a assassinar seu irmão. A ideia por trás do cainismo é a de que os Demôniosguardam consigo o Dom de Caim,\n\numelementodivino que levou o Grande Traidoraenxergar atravésdas\n\nartimanhasde Demiurgo,etraí-lo.\n\nPouco se sabe sobre a origem dos Cainitas, além do fato de terem sido criados nos primeiros séculos do Cristianismo, quando os traidores começaram a chegar ao Inferno. Os Cainitas declaram que a Igreja dos mortais na verdade é falsa, uma mentira propagada pelos Anjos da Cidade de Prata. Esta falsa Igreja é chamada pelos Demônios de Igreja de Christos. Apesar disto, os Cainitas aproveitam-se do próprio corpo da Igreja para infiltrar-se nela e propagar a sua fé, subvertendo as missas e cerimônias, os fazendo grandes  rivais  dos  Templários\n\nModernos. Em outros casos, ela se estabelecepordetrásdecultos pagãos, pois compartilham entre si as ideias dualistas. Basicamente, a iniciação dos Cainitas dá-se através do ritual chamado Cainismo, onde o Demônio que se reerguer do gelo da Caína, deve destruir os outros que também conseguiram escapar.\n\nQuando atingindo um certo nível - onde deve ser feito o Juramento Eterno - os Irmãos recebem a Marca XYOXX no pulsoesquerdoe, somente assim, podem prosseguir, ou seja;\n\nsomente assim são\n\ndenominados verdadeiros Cainitas.Nãosão\n\nreconhecidospor Caim,jáqueeste prefereagirsozinho mas o veneram como a um deus. Muitos DuquesInfernais empregam seus serviços quando a situação foge da\n\nalçadadeseusexércitos particulares."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0011-o-exercito-do-escorpiao-negro",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "O exército do Escorpião Negro",
+      "paragraphRange": [
+        61,
+        64
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2228,
+      "wordCount": 350,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 7.322,
+          "confidence": 0.747,
+          "evidence": [
+            "\\bhist[oó]ria\\b",
+            "\\breino(?:s)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "O exército do Escorpião Negro\n\nA Ordem do Escorpião Negro fora trazida para o Inferno por Otaviano, após sua morte, (14 d.C.). Embora o conceito desses guerreiros esteja inserido no termo Praetoriani (a guarda pessoal do imperador de Roma) muitos guerreiros espartanos passaram a integrar suas fileiras, após a morte, amalgamando conceitos romanos e gregos. Tibério foi o construtor de uma fortificação que serviu de base para a guarda\n\npretoriana na Terra e, por isso, foi adotado o escorpião (signo zodiacal de Tibério) como símbolo da guarda, permanecendo atualmente no Inferno. Hades arrebanhou a maioria desses guerreiros, que não puderam adentrar ao Olympus, para integrarem sua elite de soldados em seus reinos. A Guarda Pretoriana teve participação decisiva em muitos eventos da história do Hades, como por exemplo, a destruição de Calígula, quando este tentou erguer uma revolta na região do Tártaro. Os Praetoriani são usados pelo Imperador Hades como um instrumento de validação de suas leis pela força, caça de fugitivos e combatentes de elite em suas falanges. Os Eubuleos, que governam as Pólis do reino de Hades, sabem que, quando Demônios, os guerreiros pretorianos podem se tornar muito perigosos, por isso trouxeram da Terra, o costume de agradar aos comandantes da guarda com pequenos presentes e comissões; e estes intimidam seus governantes já em seu lema: \"A Guarda Pretoriana cuidará do Eubuleo, enquanto Eubuleo cuidar de seu reino; Quando Eubuleo não mais cuidar de seu reino, então haverá outro Eubuleo\". Hades apoia esta atitude, visando manter também seus governantes sob controle. Após algum tempo de serviço, um legionário poderia pretender uma vaga na Guarda Pretoriana, que proporcionara melhores poderes e benefícios. Mesmo após as reformas de Caio Mário - que introduziram para as legiões, entre outras coisas, os escudos retangulares - a Guarda Pretoriana da Ordem do Escorpião\n\nNegro ainda usa os escudos ovais do tempo da antiga república; isso servia também como uma demonstração de preservação dos velhos costumes. Os Praetorianos são um corpo militar de elite, formado para agir também como uma espécie de Alastores dentro dos reinos de Hades, mas reportando-se a estes quando necessário."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0012-o-reich",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "O Reich",
+      "paragraphRange": [
+        65,
+        67
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 915,
+      "wordCount": 156,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "O Reich\n\nA Geheime Staatpolizei Gestapo ou Policia Secreta do Estado fora na Terra uma das mais competentes e assustadoras tropas de caça a inimigos do governo nazista. Não se conhece muito do que se passa dentro dos muros de concreto e cercas de arame farpado do Reich (para mais detalhes, consultar o e-book Reich – Demônios Nazistas), mas os Alastores possuem ciência da atuação semelhante desta Ordem secreta de caçadores dentro daquele lugar de guerras. Sabe-se também que a Gestapo atua sem a intervenção de juízes, e dentro de seus domínios fazem o papel deste, além de júri e executores, decidindo eles mesmo as sanções a serem aplicados aos fugitivos e criminosos. Mesmo a comparação sendo inevitável, um Alastor nunca verá com bons olhos outra criatura que a faça, e esta com certeza atrairá a inimizade deste se o fizer.\n\n“Se o Nazareno caminhou sobre as águas, nós caminhamos sobre o fogo.” Agnes Faria."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0013-veredictum",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Veredictum",
+      "paragraphRange": [
+        68,
+        79
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1944,
+      "wordCount": 329,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 8.807,
+          "confidence": 0.829,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bdificuldade\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Veredictum\n\n(Alastores)\n\nNivel 1: Marca Demoníaca. Como o poder Marca dos Captares. Seres de Luz sentirão uma forte presença demoníaca no alvo deste poder.\n\nNivel 1: Echos. O Alastor é incapaz de produzir um único som se quer, durante a utilização deste poder.\n\nNivel 1: Delator. Com um teste de Will vs Will da vitima, o Alastor saberá de tudo o que a vitima sabe sobre quem esta caçando, mesmo que esta não saiba nem mesmo o que viu. O Alastor tem acesso aos vestígios de energias presos à aura da vitima.\n\nNivel 2: Detectar Marca Demoníaca. Como o poder detectar Marca dos Captares. O Alastor marca sua vítima com o Olho Alastor, o símbolo dos Alastores, e não com uma marca pessoal.\n\nNivel 2: Defesa contra o Marcado. Numa disputa de Will vs Will de quem tenha sido alvo do poder Marca Demoníaca, todo ataque vindos da vitima durante 24hrs, desferidos contra o Alastor, recebem redutores de -10/-10 e –Will do Alastor Pontos de Dano.\n\nNivel 2: Sentir Características. Como o poder homônimo dos Captares. Este poder pode ser aprimorado para seguir as características de um\n\nforagido previamente informadas, diminuindo em um nível a dificuldade dos testes com Perícias relacionadas a este. O Alastor pode sentir as características de um fugitivo tocando objetos que este tenha tocado, ou simplesmente passando por caminhos que seu alvo tenha percorrido.\n\nNivel 3: Sentir Efeitos Místicos. O Alastor pode sentir efeitos místicos num raio de 300m.\n\nNivel 3: Rastreio de Marcas Demoníacas. Como o poder Rastreio de Marcas dos Captares.\n\nNivel 3: Chamado das Trevas. Os Alastores podem enviar uma mensagem ou um pedido de ajuda para qualquer outro Alastor, em qualquer lugar que estejam. Nivel 4: Apagar Características. Como o poder homônimo dos Captares. Nivel 4: Selo Demoníaco de Arioch. Com a ponta do dedo, o Alastor toca a fronte de um foragido capturado, selando seus poderes; se for bem sucedido em um disputa de Will vs Will, por 24hrs."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0014-cainismo",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Cainismo",
+      "paragraphRange": [
+        80,
+        87
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2052,
+      "wordCount": 358,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 11.585,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 9.322,
+          "confidence": 0.858,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Cainismo\n\n(Cainitas)\n\nNível 1: Corpo Gélido. O Demônio amalgamou sua essência a Caína, e agora, é um reflexo do coração frio dos traidores. Seu corpo é composto de gelo; feitiços baseados no Caminho Água e Ar recebem um redutor de - 30% quando feitos contra O Personagem e esta ainda recebe um\n\nbônus  de  +  3  em  sua  IP. Nível 2: Aura Gélida. O Cainita emana uma aura fria que reduz os testes de AGI e Perícias baseadas no atributo em – 20%, dentro de um raio de CON metros.\n\nNível 2: Disfarce Gélido. O Cainita é capaz de fundir seu corpo ao de grandes quantidades de gelo, recebendo o IP deste, se preferir, pode camuflar-se desta forma, tornando-se indetectável para meios não mágicos. Nível 3: Armas Frias.O Cainita pode gerar armas, escudos e outros itens através de seus poderes. As armas e defesas, são utilizadas com seus valores na Perícia Briga, acrescentando um bônus de +20% e +\n\n3nodano. Nível 3: Toque Enrregelante. O toque do Cainita é gélido, tão frio que um contato muito extenso com o Demônio causa congelamento. Em termos de jogo, o Cainita causa dano de 1d6 mediante toque que ignora IP, e perdura enquanto o toque for mantido. O toque do Cainita também congela superfícies a razão de 1m congeladoporturno. Nível 3: Regeneração. O Cainita é capaz de regenerar seus ferimentos a partir de uma superfície de gelo, a razão de 1d6 a cada turno, ou até a superfície ser totalmente absorvida. Nível 4: Clone. O Cainita pode criar cópias gélidas de si mesmo para lutarem por ele, mas para cada clone que for feito, o Demônio deve dividir seus PVs entre eles, e cada clone destruído, significa na perda daqueles PVs. Apenas características físicas são clonadas, os poderes que o Cainita possua,não.\n\nNível 4: Dom de Caim. O Cainita pode rastrear qualquer espírito que já tenha praticado um ato de traição. Ele também pode inspirar este sentimento em um alvo, que poderá\n\nresistir, se for uma criatura sobrenatural, com uma disputa de WILL  x  WILL  da  vítima. Nível 5: Gelo. Como o Poder homônimo dos Aletchs (ver e-book Mortos Vivos)."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0015-esparciatas",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Esparciatas",
+      "paragraphRange": [
+        88,
+        94
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1988,
+      "wordCount": 335,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 16.814,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\barma(?:s)?\\b",
+            "\\barmadura(?:s)?\\b",
+            "\\bescudo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Esparciatas\n\n(Praetoriani)\n\nNível1:Hoplita.OPersonagem, enquanto luta com os seus, recebe\n\n+10% em Ataque/Defesa de suas armas, e + 2 Pontos em seu dano. Este bônusé cumulativopara cada Praetoriani que se se juntar ao grupo. Nivel 1: Palé. Independente da força aplicadapelo Personagem, todo inimigo tocando por ele, será jogado ao chão. Um teste de AGI é permitido para que a queda seja de joelhos. Nível 2: Biós. O Personagem pode utilizar um Arco e Flecha, com um bônusde+10%e +2emdano. Nível 2: Lakónia. O Personagem é imune à dominação, e todos os testes de CAR feitos contra ele, recebem um redutor de – 2. Todas as Perícias baseadas no atributo, também sofrem umredutorde-20%quando utilizadascontraum Praetoriani. Nível 2: Kpió. O Personagem pode, simplesmente,atropelarvários inimigos utilizando este poder. Ele inicia uma corrida e, todos aqueles queestiverememseucaminho, realizam um teste de CON Difícil parasemantiver depéapós encontrarem-se com o Praetoriani. O dano do encontrão é de 1d10+FR. Nível 3: Peltasta. O Personagem é capaz de arremessar uma arma do tipo lança WILLx por dia, com dano x2.\n\nNível 3: Cinêmides. De posse de um escudo, O Personagem pode aumentar sua Perícia com o mesmo em +20% e seu IP em +2.\n\nNível 4: Agogé. O Personagem é imune ao medo, não precisando realizar testes para isso. Recebe +1 em todos os seus Atributos Físicos, -1 em seus Atributos Mentais, +10% em suas Perícias de combate e -10% em todas as Perícias que não sejam relacionadas ao combate, apenas por pagar os pontos por este poder.\n\nNível 4: Kriptéia. Quando este poder é ativado, O Personagem irradia fúria. Seus olhos emanam uma luminescência vermelha - que faz todos em um raio de 2m realizar testes de WILL para não fugirem apavorados; suas armas e armaduras tornam-se brasas, recebendo um bônus de +3 no dano, recebem +3 em IP, e mesmo que seus PVs cheguem à zero, continuaram lutando até o combate estar terminado, após isso, morrem. Este poder pode ser utilizado 1x por dia."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0016-commilitonum-nigrus",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Commilitonum Nigrus",
+      "paragraphRange": [
+        95,
+        112
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2805,
+      "wordCount": 484,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 15.392,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bdificuldade\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 11.585,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bmorto(?:s)?-?vivo(?:s)?\\b",
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Commilitonum Nigrus\n\n(Irmandade Baphomets)\n\nNivel 1: Rastrear Luz. Os Templários Caídos são capazes de rastrear qualquer ser que retire suas energias da luz, num raio de 3 km.\n\nNivel 1: Andar nas Paredes. O Templário Caído é capaz de andar nas paredes.\n\nNivel 1: Chamado das Trevas. Como o poder homônimo dos Alastores.\n\nNivel 2: Ataque Vingativo. Todo ódio da vingança e liberado neste ataque, contra um ser de Paradisia, esse ataque causa 3d6+FR, e a vitima deve realizar um teste de defesa como sendo difícil.\n\nNivel 2: Dom do Metal de Dite. Um Templário Caído, nunca esta desarmado, ele sempre poderá convocar para se defender, alguma arma feita de ferro de Dite, ou garras de metal feitas do mesmo\n\nmaterial, que causam Xd6+FR, onde X é o número das dezenas do valor da WILL da Personagem.\n\nNivel 3: Exorcismo Celestial. Capaz de enviar Paradisianos de volta para seu plano com uma disputa de Will vsWill.\n\nNível 3: Controle de Mortos-Vivos. O Templário Caído é capaz de erguer os mortos para lutarem por ele, com um teste de WILL (a dificuldade aumenta para cada cadáver extra a ser reanimado) O poder perdura durante o combate, e após isso, os cadáveres caminhantes se desfazem. Nivel 3: Sangue de Mercúrio Fervente. O sangue do Templário Caído é mercúrio, prateado, fervente e envenenara qualquer um que entre em contato com ele causando 1d10, a vitima tem um direito a um teste de AGI para reduzir o dano à metade, também causando danos posteriores, como tornando os testes envolvendo todos os atributos da vitima (caso esta falhe em um teste de CON, para resistir ao envenenamento).\n\nNivel 4: Dom Alquímico. Graças aos ensinamentos de Baphomet, um Templário Caído é capaz de transmutar materiais em outros com apenas um teste de Will, a quantidade de material não pode ser superior, em metros e kg, a Will da Personagem\n\nNivel 5: Enxofre Negro. O enxofre na alquimia simboliza a alma, um Magister Inferi que seja bem sucedido em uma disputa de Will-3 vs Will da vitima, pode reduzi-la a Enxofre Negro. Este Enxofre pode ser absorvido pelo Templário Caído, afim de curar seus PVs. O Contato deve ser mantido com a vitima, até\n\nque os PVs da mesma cheguem à zero.\n\nNivel 5: Hadjar. A obsessão pela destruição de seres paradisianos é tão grande que muitos Templários Caídos desenvolveram este poder único; Gradus Satanae podem, com um teste difícil de PER, tentar sentir o metal Hadjar, num raio de 1 km duas vezes por dia.\n\nNivel 6: Chamas da Fogueira. Os olhos de um Templário Caído ardem em chamas, e apenas olhandoparauminimigo, pode atear fogo no mesmo, com uma disputa de Will vs Will. O fogo perdura por\n\n1D6 turnos e causa 4d6 pontos dedano.O contatovisualpode\n\nsermantido causando dano nos turnosquese seguem.As\n\nchamassão negras,eem criaturasde Paradisia,causam um dano adicional de +1d6."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0017-flagelo",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Flagelo",
+      "paragraphRange": [
+        113,
+        127
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1757,
+      "wordCount": 271,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Flagelo\n\n(Milicia de Ferro)\n\nNivel 1: Toque da Peste. O toque dos membros da Milicia de Ferro traz doenças. Todos que forem tocados por este, deverão realizar um teste de CON, ou serão contaminados por uma doença não-mística comun. Exemplos de doenças comuns: gripe e resfriado.\n\nNivel 2: Peste Avançada. Idem ao anterior, mas o alvo é infectado com uma doença grave. Exemplos de doenças graves: Caxumba, Febre Escarlatina, Cólera, Peste Bubônica.\n\nNivel 3: Peste Terminal. Idem ao anterior, mas o alvo é infectado com uma doença terminal. Exemplos de doenças terminais: câncer com metástase, infecção generalizada no último grau, AIDS em estado terminal, tuberculose em seu último mês, Ebola.\n\nNivel3:RegeneraçãoVil.A PersonagemregeneraPVs absorvendo pequenos animais\n\nnocivos(ratos, baratas, moscas, etc) a razão de 1 PV por Kg/turno.\n\nNivel 4: Peste Congênita. Idem ao anterior, mas, uma doença congênita, a escolha do Mestre e do Jogador-Vítima e sem cura, é aflorada, obrigandoa\n\nPersonagema receberpontospor Aprimoramentos\n\nNegativos adquiridos.\n\nExemplosde doenças congênitas: defeitos no coração,\n\nmongolismo, nanismo, gigantismo, cegueira de nascença, mudez.\n\nNível 4: Controle de Pestes. A Personagem é capaz de controlar um número de animais transmissores de doenças (ratos, baratas, moscas, mosquitos, etc.) equivalente  a  sua  WILL. Nivel 5: Infectar. A Personagem é capaz de inocular em um vetor de transmissão (ratos, baratas, mosquitos, moscas, água, alimentos, objetos, etc.) qualquer doença que desejar. Também é capaz de infectar\n\numa área de até 5m de raio com doenças.\n\nNivel 5: Forma de Praga. A Personagem é capaz de assumir a forma de animais nocivos (ratos, baratas, moscas, etc.). A quantidade de animais será o valor de seus PVs."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0018-arrebate",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Arrebate",
+      "paragraphRange": [
+        128,
+        135
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 971,
+      "wordCount": 170,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 7.585,
+          "confidence": 0.761,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Arrebate\n\nNivel 1: Fúria. A Personagem combate com ódio, acrescentando\n\n+1 em seus ataques e +10% em todas as suas Perícias relacionadas a combate.\n\nNivel 1: Zanga. A Personagem não sente dor, e é imune a todos os redutores que ferimentos graves possam lhe causar.\n\nNivel 2: Furor. Quando em luta, a Personagem demonstra tanta fúria, que todos os presentes devem realizar testes de WILL para não receberem -10% em suas Perícias de combate.\n\nNivel 3: Cólera. A Personagem combate em um transe enlouquecido. Mesmo que seus PVs cheguem à zero, esta só caíra quando o combate estiver terminado ou ao menos que seus PVs atinjam -5PVs.\n\nNivel 4: Brasa. A Personagem pode inspirar o ódio da batalha nos corações de suas vítimas, estas atacaram tudo a seu redor, se forem mal sucedidas em um teste de WILL.\n\nNivel 5: Horror. A Personagem urra, demonstrando a todos ao seu redor toda sua fúria. Todos em um raio de CON em metros devem realizar testes de WILL, ou fugirão do local."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0019-alastor",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Alastor",
+      "paragraphRange": [
+        136,
+        143
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1065,
+      "wordCount": 164,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 16.0,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b",
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Defesas Especiais\n\nNivel 5: Imunidade a ataques específicos. O personagem recebe 5d6 de IP ao dano desferido por um determinado tipo de criatura (Death knight, Daemons, Hordas, Hellspawns, Anjos Caídos ou Succubi/Incubbi,Anjos, Arcadianos, Arkanitas, etc).\n\n“Aquele que conhece os outros é sábio. Aquele que conhece a si mesmo é iluminado.\"\n\nLao Tzi\n\nAlastor\n\nSeu personagem pertence à categoria de Alastor, ou membro da justiça infernal encarregado de caçar fugitivos dos três juízes. O personagem possuirá diversas vantagens, sendo tratado como um representante da lei dentro dos nove Círculos.\n\nponto: O personagem possui conhecimentos sobre a criatura que caca (anjos ou Demônios foragidos) com ate 60%, além de saber como encontrá-los, capturá-los ou mesmo como destruí-los seguramente.\n\npontos: Alastor Majora, ou chefe de um pequeno grupo de caçadores. Opersonagempossui conhecimentos sobre anjos ou Demônios foragidos com 85%, e conhece muitos outros caçadores como ele. Pode vir a pertencer a uma sociedade de caçadores, que ira auxiliá-lo com esta missão."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0020-alastor-veneravel",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Alastor Venerável",
+      "paragraphRange": [
+        144,
+        147
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 539,
+      "wordCount": 87,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Alastor Venerável\n\n(Somente para Alastores)\n\n4 Pontos: São chefes de um grande grupo de caçadores, ou agindo sozinhos; Alastores bem mais velhos. O Personagem possui conhecimento sobre Anjos ou Demônios foragidos com 95%, e conhece muitos outros caçadores como ele (recebendo Contatos 3). Pode vir a pertencer ou a controlar uma sociedade de caçadores, que irá auxiliá-lo com esta missão. O grupo pode ser unido, leal ou apenas profissional, de qualquer\n\nforma, eles trabalham bem em equipe. A equipe de Alastores conta com até 4 Demônios."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0021-cacador-experiente",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Caçador Experiente",
+      "paragraphRange": [
+        148,
+        156
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 602,
+      "wordCount": 86,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bcidade(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Burocracia Infernal\n\nInclui manter o controle burocrático sobre alguma cidade do Inferno, não importando através de que meios. Cidades Possíveis: Dite, Sodoma, Gomorra, Cidade dos Mortos, Alguma fortaleza demoníaca, etc.\n\nponto: Um bairro ou vilarejo.\n\npontos: Alguns bairros ou um partido político.\n\npontos: Uma metrópole ou varias pequenas cidades.\n\npontos: Um estado ou região infernal.\n\nCaçador Experiente\n\n2 pontos: Você possui um bônus de\n\n+25% nas perícias Rastreio e Investigação contra um tipo de Demônio específico (Death knight, Daemons, Hordas, Hellspawns, Anjos Caídos ou Succubi/Incubbi)."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0022-contatos-e-aliados",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Contatos e Aliados",
+      "paragraphRange": [
+        157,
+        164
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1067,
+      "wordCount": 147,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Contatos e Aliados\n\nLembre-se que estes aliados, caso não sejam imortais, magos, anjos, espíritos ou Demônios, podem morrer com o passar do tempo. Quando isto ocorrer, assume-se que o Demônio conseguiu outro aliado no mesmo ramo, ou passou a conhecer os descendentes dele, ou seu sucessor, etc (isto significa que o Aprimoramento não é perdido).\n\nCada aliado pode ser especializado em algum tipo de negócios (armas, sexo, informações,drogas, programasdecomputador, equipamentos raros ou ilegais, pode livraropersonagemdeuma determinadaencrenca,pode apresentá-lo as pessoas certas, etc.). O Mestre deve sempre se lembrar queoscontatos e aliadosdo Demônio também têm seus próprios problemas, e não estão sempre a disposiçãodeseupersonagem sempre que aconteceralgum problema, equeocasionalmente tambémcobrarãofavores ou pedirão ajuda a ele (e isto pode ser usado como fonte de aventuras pelo Mestre).\n\nponto: Um aliado importante.\n\npontos: Dois aliados importantes.\n\npontos:QuatroAliados importantes.\n\npontos: Oito Aliados importantes.\n\npontos:Quinzealiados importantes."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0023-direito-e-jurisprudencia",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Direito e Jurisprudência",
+      "paragraphRange": [
+        165,
+        171
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 511,
+      "wordCount": 73,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Direito e Jurisprudência\n\nSeu Demônio controla as leis ou aqueles que fazem as leis. Mantêm contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações.\n\nponto: Um bairro (vereadores).\n\npontos: Alguns bairros ou uma pequena cidade.\n\npontos: Uma metrópole ou varias pequenas cidades.\n\npontos: Um estado ou região (senadores).\n\npontos: Dois ou três estados ou uma grande região."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0024-luciferianos",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Luciferianos",
+      "paragraphRange": [
+        172,
+        181
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1027,
+      "wordCount": 146,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bpontos?\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Igreja\n\nControle sobre o clero, sobre padres, bispos, fieis, ativistas, caçadores de bruxas, e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e Ordens militares religiosas.\n\nponto: Um bairro (padres em uma igreja).\n\npontos:Umapequenacidade (uma catedral).\n\npontos:Umametrópoleou pequenas cidades (A catedral)\n\npontos: Um estado ou região (Bispos).\n\npontos:Umpaíspequeno (Arcebispos).\n\nLuciferianos\n\n3 Pontos: Observação - este Aprimoramento deve ser usado com supervisão total e atenta por parte do Mestre. Em meio a todas as milícias e Ordens dentro do Inferno, sempre existem aqueles Demônios que agem como os olhos e ouvidos daTríadeDemoníaca, principalmente Lúcifer. Essas entidades não integram uma Ordem, mas estão infiltradas em todas elas e normalmente, não conhecemoutrosagentes Luciferianos. Como agente abençoado por Lúcifer, você ganha\n\n+3 Poderes Demoníacos, +2 de dano, +10% no ataque e pode ter uma identidade alternativa dentro do Inferno (com direito a qualquer informação falsa)."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0025-objetos-magicos",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Objetos Mágicos",
+      "paragraphRange": [
+        182,
+        189
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 506,
+      "wordCount": 82,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Objetos Mágicos\n\nObservação: este Aprimoramento deve ser usado com supervisão total e atenta por parte do Mestre.\n\nO personagem possui um ou mais objetos  mágicos,   artefatos  ou\n\nfetiches encantados com ele. Consulte o Guia de Itens Mágicos para gastar os pontos de Objetos Mágicos. Os objetos (caso sejam mais de um) devem ser distribuídos entre fortes e fracos, a critério do Mestre.\n\n1 ponto: l Objetos mágicos.\n\n2 pontos: 3 Objetos mágicos.\n\n3 pontos: 5 Objetos mágicos.\n\n4 pontos: 7 Objetos mágicos."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0026-o-olho-alastor",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "O Olho Alastor",
+      "paragraphRange": [
+        190,
+        194
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 777,
+      "wordCount": 126,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bbenef[ií]cio(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "O Olho Alastor\n\n2 Pontos: O Personagem possui na palma da sua mão, a marca dos Alastores, O Olho Vigilante ou Olho de Satã. Quando necessita provar que pertence a Ordem dos Carrascos, ele mostra sua mão, revelando o símbolo. O Olho Alastor pode fazer com que muitas barreiras diplomáticas e burocráticas sejam deixadas de lado. Obscuri Recíperes são capazes de talhar tal marca nas mãos de um Demônio que não seja um Alastor... por um determinado preço. O Olho Alastor também fornece um bônus de\n\n+10% em testes de Intimidação, além de alguns benefícios descritos abaixo:\n\n- Capacidade de “marcar” um espírito como convidado ou asilado impedindo que este seja trancafiado nos   Círculos   de Danação.\n\n– Conceder liberdade temporária a um Condenado, podendo tirá-lo do Inferno."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0027-submundo",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Submundo",
+      "paragraphRange": [
+        195,
+        204
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1368,
+      "wordCount": 204,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Passagem Livre\n\n2 Pontos: O Personagem possui acesso livre entre os Círculos. Caso tente acessar outras áreas infernais de maior sigilo, poderá enfrentar problemas com os Lordes Demoníacoslocais.\n\n4 Pontos: O Personagem possui imunidade diplomática para atravessar os Círculos como bem entender: uma marca invisível é feita\n\nno corpo do Personagem, para permitir o trânsito.\n\nSubmundo\n\nO Demônio possui controle de alguma atividade ilegal no Inferno. Este Aprimoramento coloca o Demônio como chefe ou (dependendo da personalidade e background), contato principal de UMA organização criminosa. O personagem pode usar favores destas entidades para seus objetivos, emprestar homens para alguma missão ou emprestar contatos, mas este tipo de organização sempre trará problemas para o personagem, como dívidas, débitos de honra pela perda de algum homem, ou outras. A associação também pode requisitar os serviços do personagemparamissões especificas, e neste caso, o personagem e obrigado a aceitar ou perderá os aliados (talvez até os transforme em potenciais inimigos). 1 ponto: Comanda ou influencia um bairro.\n\n2 pontos: Alguns bairros ou uma pequenacidade.\n\n3 pontos: Conhecido em uma metrópole ou varias pequenas cidadespróximas.\n\n4  pontos:  Um  estado  ou  região.\n\n5 pontos: Dois ou três estados ou uma grande região. 6 pontos: Um pequeno pais ou algumas regiões."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0028-treinamento-sebbiti",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Treinamento: Sebbiti",
+      "paragraphRange": [
+        205,
+        207
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 602,
+      "wordCount": 98,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 5.5,
+          "confidence": 0.646,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Treinamento: Sebbiti\n\n3 pontos: O Demônio recebeu treinamento, não de qualquer outra entidade, mas dos Sebbiti – os sete maiores guerreiros demoníacos do Inferno. Um guerreiro treinado pelos Sebbiti recebe Inicialmente 20/20 em Briga, 50/50 em Armas\n\nBrancas (escolha uma), 40% em Tática e um bônus de +3 em dano. Em contrapartida, ser treinado pelos melhores dos melhores deixa marcas horrendas no corpo e no espírito do Demônio; esses infernais recebem um redutor de -2 em todos os testes de CAR, devido às escoriações e cicatrizes deixados em seu corpo, além do personagem adquirir a Fraqueza Fúria."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0029-treinamento-seddim",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Treinamento: Seddim",
+      "paragraphRange": [
+        208,
+        209
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 539,
+      "wordCount": 92,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bpontos?\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Treinamento: Seddim\n\n2 pontos: O Demônio recebeu treinamento de Seddim; O Demônio Destruidor, chefe de 50 Legiões e capaz de derrubar castelos com seu toque. O Personagem recebe +1 em dano e +20/20 em Armas Brancas (Cimitarra). O discípulo de Seddim também é capaz de destruir construções, mediante o toque, causando 1d6 Pontos de Dano a esta por turno; em contrapartida, um Demônio Seddim esta preso a uma sede de sangue para com os Anjos da Cidade de Prata e os Cristãos, recebendo o Aprimoramento Negativo Voto (caçar anjos e cristãos)."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0030-treinamento-azazel",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Treinamento: Azazel",
+      "paragraphRange": [
+        210,
+        219
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 6714,
+      "wordCount": 1011,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 17.322,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b",
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "pericias",
+          "label": "Pericias",
+          "score": 10.0,
+          "confidence": 0.896,
+          "evidence": [
+            "\\bper[ií]cia(?:s)?\\b",
+            "\\bci[eê]ncia(?:s)?\\b",
+            "\\bconhecimento(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 6.585,
+          "confidence": 0.706,
+          "evidence": [
+            "\\barma(?:s)?\\b",
+            "\\bescudo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Treinamento: Azazel\n\n5 pontos: O personagem fora treinado pelo guerreiro lendário chamado Azazel, conhecido também como o Levítico (16, 8-34), que ensinou os homens a arte do fabrico de espadas, facas, escudos, couraças e espelhos, e ainda a confecção de braceletes e ornamentos, o uso das pinturas, pedras preciosas e tinturas. Dizem às lendas que seus movimentos são leves e imperceptíveis, e nenhuma criatura que cruzou espadas com esta entidade vive atualmente. Os\n\nmotivos para Azazel ter despendido seu precioso tempo para ensinar o personagem devem ser explicados no backrgound. O discípulo de Azazel recebe + 60/50 em Armas Brancas (escolha uma), +1 em AGI,\n\n+30% em Esquiva e 1 ataque extra. Em contrapartida, o Demônio torna-se vulnerável a luz solar, devido a influencia das energias do Anjo Caído.\n\nAuxiliaresTempo de aprendizado: 3 a 4 anosCusto: 350pts de pericias, 2pts de AprimoramentoPerícias: Armas Brancas (escolha duas) 50/30, Armas de Fogo (escolha duas) 40%, Armadilhas 30%,Ocultismo  30%,  Rituais  30%,Demonologia 50%, Esquiva 30%, Artes Marciais 40/40, Negociação 30%,  Latim  40%,  GregoRomeno20%,Pesquisa40%,50%.Aprimoramentos: Pontos Heróicos 3, Sociedade Secreta (Ordem do Templo de Set), Pontos de Fé 1, Armas de Fogo 2. Pontos de Fé: 1+1 a cada 2 níveis. Pontos Heróicos: 3 por nível.AuxiliaresTempo de aprendizado: 3 a 4 anosCusto: 350pts de pericias, 2pts de AprimoramentoPerícias: Armas Brancas (escolha duas) 50/30, Armas de Fogo (escolha duas) 40%, Armadilhas 30%,Ocultismo  30%,  Rituais  30%,Demonologia 50%, Esquiva 30%, Artes Marciais 40/40, Negociação 30%,  Latim  40%,  GregoRomeno20%,Pesquisa40%,50%.Aprimoramentos: Pontos Heróicos 3, Sociedade Secreta (Ordem do Templo de Set), Pontos de Fé 1, Armas de Fogo 2. Pontos de Fé: 1+1 a cada 2 níveis. Pontos Heróicos: 3 por nível.\n\n“Um verdadeiro guerreiro não tenta parecer; ele é.\" Paulo Coelho.\n\nAlastorCusto: 400pts de Pericias, 4pts de Aprimoramento.Pericias: Armas Brancas (escolha duas) 40/40, Armas de Fogo (esco lha duas dependendo da data de criaço do Demônio) 30%, Armadilhas 40%, Rituais 4 0%, Conhecimento de Castas Infernais (escolha três) 50%, Conhecimento sobre o Inferno 50%, Esquiva 40%, Negociação 30%, Línguas Antigas (escolhatrês)30%,Pesquisa/Investigação 40%, DireitoInfernal  60%,  Interrogatório  40%,Intimidação 40%, Tortura 30%. Aprimoramentos: Alastor 1, Pontos Heróicos 3, Olho Alastor 2, Biblioteca Especializada (Escolha uma casta de Demônios) 1. Pontos de Fé: 3+1 a cada década (Recebidos de Shaitan, Lúcifer ou Baalzebub.Pontos Heróicos: 1pt a cada década.AlastorCusto: 400pts de Pericias, 4pts de Aprimoramento.Pericias: Armas Brancas (escolha duas) 40/40, Armas de Fogo (esco lha duas dependendo da data de criaço do Demônio) 30%, Armadilhas 40%, Rituais 4 0%, Conhecimento de Castas Infernais (escolha três) 50%, Conhecimento sobre o Inferno 50%, Esquiva 40%, Negociação 30%, Línguas Antigas (escolhatrês)30%,Pesquisa/Investigação 40%, DireitoInfernal  60%,  Interrogatório  40%,Intimidação 40%, Tortura 30%. Aprimoramentos: Alastor 1, Pontos Heróicos 3, Olho Alastor 2, Biblioteca Especializada (Escolha uma casta de Demônios) 1. Pontos de Fé: 3+1 a cada década (Recebidos de Shaitan, Lúcifer ou Baalzebub.Pontos Heróicos: 1pt a cada década.\n\nImitatus, Aprendiz de 3º Grau, Aprendiz de 2º grau, Aprendiz e Investigado. Ela é liderada por uma curia de arcebispos chamada Caimária, cada um com uma região de atuação dentro da Caína, e por sua vez é presidida pelo Arcebispo de Nod. Abaixo dos arcebispos existem os bispos, e abaixo destes, os diáconos. Cada congregação é liderada por um diácono e cada diácono tem a seu comando, 10 ou\n\n12guerreirosCainitas. Símbolo: Uma bandeira azul, com um desenho de Lúcifer, o primeiro traidor e os dizeres XYOXX, um anagrama que significa CALADOS.\n\nAlastor MajoraSão chefes de um pequeno grupo de caçadores, Alastores um pouco mais velhos. O Personagem possui conhecimento sobre Anjos ou Demônios foragidos com 85%, e conhece muitos outros caçadores co mo ele. Pode vir a pertencer a uma sociedade de caçadores, que irá auxiliá-lo com esta missão. Custo: 500pts de pericia, 5pts de aprimoramentoPericias: Armas Brancas (escolha duas)  50/40,  ArmadilhasRituais50%,Conhecimento50%,deCastas Infernais (escolha três) 60%, Conhecimento sobre o Inferno 6 0%,Esquiva 40%, Negociação 30%, Línguas Antigas (escolha quatro) 30%, Pesquisa/Investigação 40%, Direito Infernal 60%, Interrogatório 40%, Intimidação 40%, Tortura 40%, Conhecimento  sobre  Anjos  85%,Conhecimento Foragidos85%,sobreDemôniosAlquimia30%,Escutar 3 0%, Furtividade 20%. Aprimoramentos: Alastor 2, Pontos Heróicos 3, Pontos de Fé 1, Biblioteca Especializada (Castas de Demônios) 2, Burocracia Infernal 1,Status  1,  Olho  Alastor  2. Pontos de Fé: 3+1 a cada década (Recebidos de Shaitan, Lúcifer ou Baalzebub).Pontos Heróicos: 2pt a cada década.Obs: Possui um inimigo que deve ser criados pelo Mestre com carinho.CainitasCusto: 280 pontos de Perícia. Perícias: Combate com duas armas 20%, Escudo 20% Escolha uma arma 20/20, Arco 30/0, Lábia 30%, Ciência (Cristianismo  30%),  Esquiva  40%,Intimidação  30%,Estratégia30%, SobrevivênciaLança40/40, Tática30%,(Caína40%).Aprimoramentos:Pontos Pontode deNenhum.Fé:1+1Magia:0Ponto Heróico: 4+1Alastor MajoraSão chefes de um pequeno grupo de caçadores, Alastores um pouco mais velhos. O Personagem possui conhecimento sobre Anjos ou Demônios foragidos com 85%, e conhece muitos outros caçadores co mo ele. Pode vir a pertencer a uma sociedade de caçadores, que irá auxiliá-lo com esta missão. Custo: 500pts de pericia, 5pts de aprimoramentoPericias: Armas Brancas (escolha duas)  50/40,  ArmadilhasRituais50%,Conhecimento50%,deCastas Infernais (escolha três) 60%, Conhecimento sobre o Inferno 6 0%,Esquiva 40%, Negociação 30%, Línguas Antigas (escolha quatro) 30%, Pesquisa/Investigação 40%, Direito Infernal 60%, Interrogatório 40%, Intimidação 40%, Tortura 40%, Conhecimento  sobre  Anjos  85%,Conhecimento Foragidos85%,sobreDemôniosAlquimia30%,Escutar 3 0%, Furtividade 20%. Aprimoramentos: Alastor 2, Pontos Heróicos 3, Pontos de Fé 1, Biblioteca Especializada (Castas de Demônios) 2, Burocracia Infernal 1,Status  1,  Olho  Alastor  2. Pontos de Fé: 3+1 a cada década (Recebidos de Shaitan, Lúcifer ou Baalzebub).Pontos Heróicos: 2pt a cada década.Obs: Possui um inimigo que deve ser criados pelo Mestre com carinho.CainitasCusto: 280 pontos de Perícia. Perícias: Combate com duas armas 20%, Escudo 20% Escolha uma arma 20/20, Arco 30/0, Lábia 30%, Ciência (Cristianismo  30%),  Esquiva  40%,Intimidação  30%,Estratégia30%, SobrevivênciaLança40/40, Tática30%,(Caína40%).Aprimoramentos:Pontos Pontode deNenhum.Fé:1+1Magia:0Ponto Heróico: 4+1"
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0031-ordem-do-escorpiao-negro",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Ordem do Escorpião Negro",
+      "paragraphRange": [
+        220,
+        226
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2110,
+      "wordCount": 307,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 7.585,
+          "confidence": 0.761,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 6.585,
+          "confidence": 0.706,
+          "evidence": [
+            "\\bitem(?:s)?\\b",
+            "\\barma(?:s)?\\b",
+            "\\bescudo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 6.585,
+          "confidence": 0.706,
+          "evidence": [
+            "\\borganiza[cç][aã]o(?:es)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Cainitas\n\nOrganização: A hierarquia dos Cainitas é baseada nos seguintes graus: Filhos da Viúva, Ante-Luci,\n\nOrdem do Escorpião Negro\n\nOrganização: Uma vez que a guarda era uma unidade militar, sua organização era parecida com a de uma legião, visto que poderia entrar em combate a qualquer momento. A proporção de legionários nos exércitos dos Eubuleos é de três turmae (a unidade de 30 cavaleiros). Os melhores guerreiros eram enviados para uma centúria especial e eles formam a unidade de elite da Guarda  Pretoriana,  chamada  de\n\nCenturiãoRequisitos: 70 anos como Legionário. Custo: +50 ptos de Perícias, + 3 ptos deAprimoramentos. Perícias: Armas Brancas (Gladius + 30%),  HeráldicaProibidas (Nobreza(Oculto 20%),20%,Ciências20%),EtiquetaLiderança30%.Aprimoramentos: Patrono (Ordem do Escorpião Negro) 2, Recursos e Dinheiro 3, Item Mágico 1, -1 Código de Honra (para com o Eubuleos). PontosdeFé:0Ponto de Magia: 0 Ponto Heróico: 0CenturiãoRequisitos: 70 anos como Legionário. Custo: +50 ptos de Perícias, + 3 ptos deAprimoramentos. Perícias: Armas Brancas (Gladius + 30%),  HeráldicaProibidas (Nobreza(Oculto 20%),20%,Ciências20%),EtiquetaLiderança30%.Aprimoramentos: Patrono (Ordem do Escorpião Negro) 2, Recursos e Dinheiro 3, Item Mágico 1, -1 Código de Honra (para com o Eubuleos). PontosdeFé:0Ponto de Magia: 0 Ponto Heróico: 0Speculatores Augusti, a guarda mais próxima de Hades. Eles são o seu escudo pessoal, sempre a sua volta; os seus guerreiros de extrema confiança.\n\nSímbolo: Um escorpião negro.\n\nLegionárioCusto:  2  pts.  de  Aprimoramento,200ptsdePerícias. Perícias: Gladius 40/40. Lança 30/20, Escudo 20/10, escolha uma manobra de combate 50%, Manipulação (Intimidação 20%), Briga 20/20, Idioma(Grego30%). Aprimoramentos: Pontos Heroicos 4 PontosdeFé:0Pontos de Magia: 0 Pontos Heroicos:4+4LegionárioCusto:  2  pts.  de  Aprimoramento,200ptsdePerícias. Perícias: Gladius 40/40. Lança 30/20, Escudo 20/10, escolha uma manobra de combate 50%, Manipulação (Intimidação 20%), Briga 20/20, Idioma(Grego30%). Aprimoramentos: Pontos Heroicos 4 PontosdeFé:0Pontos de Magia: 0 Pontos Heroicos:4+4"
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0032-milicia-de-ferro",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Milícia de Ferro",
+      "paragraphRange": [
+        227,
+        232
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2951,
+      "wordCount": 456,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 12.17,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bmitologia\\b",
+            "\\bdeus(?:es)?\\b",
+            "\\bcidade(?:s)?\\b",
+            "\\borganiza[cç][aã]o(?:es)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "\\bculto(?:s)?\\b",
+            "long_lore_block"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 6.585,
+          "confidence": 0.706,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 5.17,
+          "confidence": 0.627,
+          "evidence": [
+            "\\bhumano(?:s)?\\b",
+            "\\bdeus(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bf[eé]\\b"
+          ]
+        },
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bmagia(?:s)?\\b",
+            "\\bfeiti[cç]o(?:s)?\\b",
+            "\\bcaminho(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Milícia de Ferro\n\nBhaalzebub, Príncipe dos Demônios, Senhor das Moscas e da pestilência, Mestre da Ordem é conhecido principalmente como O Terceiro dos Três. Tem essa nomeação por ser o terceiro Demônio mais poderoso do Inferno;   curvando-se   somente\n\nperante Lúcifer e o próprio Shaitan, de Tenebras. Bhaalzebub é uma entidade amalgamada de outras duaspoderosasentidades conhecidas da mitologia Cananéia e Fenícia: o deus Baal ou Bael, senhor dos trovões, agricultura e fertilidade. Também associado à morte e crueldade e Zebub, o deus das moscas e da pestilência. Segundo a mitologia, Zebub era um Infernita arqui-inimigo de Baal. Este, junto com grandes Magos da Antiguidade, Bhaal, para destruir seu inimigo, jogou-se no Underworld, agarrando Zebub. No processo, seus espíritos foram unidos em um só, dando origem ao então \"belth-zebul\". Seu poder excedia o poder de Zebub e do próprio Bhaal. Proclamou-se senhor da Cidade de Dite, antes governada por Orcus. Em Ecrom na Terra, um culto fora formado para adorar o Senhor das Moscas, e dele obter meios para resistir à invasão dos deuses Assírios e Babilônicos. Sibilas eram utilizadas como fonte de informação, comunicando-se com os Demônios dos Círculos Internos da Ordem no Inferno, no Castelo de Zebuol, em Dite. Muitos Magos Humanos e Demônios da região juntaram-se a Milícia, que visava um combate indireto contra as forças invasoras, utilizando rituais e feitiços que envolviam doenças e pragas. Uma dessas pragas contaminou o rei Nabucodonosor II com uma doença mental, cujos sintomas lembravam a licantropia. Ele sobreviveu à loucura, e morreu em 562 a.C., aos oitenta e três ou oitenta e quatro anos de idade. Entre 604 aC e 562 aC. a cidade foi destruída pelo rei\n\nbabilônico. Anjos da Cidade de Prata acusam a Milícia de Ferro de vitimar 185 mil Assírios com uma doença, quando estes realizaram um cercocontraJerusalém. Organização: A Milícia possui quatro graus de iniciação, sendo eles: Asdodita, Cavaleiro Das Pragas, Ecrono, Senhor das Pestilências.\n\nSimbolo: O planeta Vênus, tido como estrela da noite, ostentando em seus mantos arroxeados.\n\nMilicianos de FerroCusto: 2 pontos de Aprimoramento,230  pontos  de   Perícia Perícias: Adaga, Bastão ou Cajado 30/30, Venefício 30%, Spiritum 50%,Etiqueta20%,Alquimia40%,Necromancia 20%, Psicologia 30%,Oculto 40%, Pragas e Doenças 20%,Rituais 30%.Aprimoramentos: Biblioteca Mística 1, Poderes Mágicos 2,SociedadeSecreta1Ponto de Fé: 0 Ponto de Magia: 2+2PontosHeroicos:0 Caminhos Preferidos: Humanos, Arkanun, Trevas.Milicianos de FerroCusto: 2 pontos de Aprimoramento,230  pontos  de   Perícia Perícias: Adaga, Bastão ou Cajado 30/30, Venefício 30%, Spiritum 50%,Etiqueta20%,Alquimia40%,Necromancia 20%, Psicologia 30%,Oculto 40%, Pragas e Doenças 20%,Rituais 30%.Aprimoramentos: Biblioteca Mística 1, Poderes Mágicos 2,SociedadeSecreta1Ponto de Fé: 0 Ponto de Magia: 2+2PontosHeroicos:0 Caminhos Preferidos: Humanos, Arkanun, Trevas."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0033-irmandade-demoley",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Irmandade DeMoley",
+      "paragraphRange": [
+        233,
+        245
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 4447,
+      "wordCount": 668,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\bitem(?:s)?\\b",
+            "\\barma(?:s)?\\b",
+            "\\barmadura(?:s)?\\b",
+            "\\bartefato(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 7.085,
+          "confidence": 0.734,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 6.907,
+          "confidence": 0.724,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 5.322,
+          "confidence": 0.636,
+          "evidence": [
+            "\\borganiza[cç][aã]o(?:es)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Irmandade DeMoley\n\nFundada por Jacques DeMoley, o grão-mestre dos Templários na Terra, após o extermínio dos cavaleiros pela igreja católica; criando assim a única ordem infernal destinada ao extermínio de criaturas celestiais diretamente. Ao chegar ao Inferno, os Templários trocaram as armaduras, por couraças forjadas com o ferro negro de Dite, e as mantas brancas que as cobriam,  por  mantas  vermelho  e\n\nnegras, ostentando o símbolo da ordem bem no peito. Quando em missões, organizam acampamentos repletos de efeitos místicos de proteção contra seres celestiais, a fim de se proteger de seus algozes. A Ordem possui 140 Death Knights em todo o Inferno, e desses, 20 só na Terra. Os princípios da Ordem, ainda são baseados na fraternidade e no companheirismo. Os seus membros fizeram votos de caçar todos os seres de Paradisia que conseguirem: usam mantos negros com um pentagrama em vermelho. Em decorrência do local onde originalmente se estabeleceram (no Sexto Círculo, onde existe uma cópia corrupta do Templo de Salomão) também são chamados Ímpios Cavaleiros do Templo de Baphomet.\n\nOrganização: Estão divididos em dez graus: Neófito Baphometis, Practicus do Astrum Nigrum, Adeptus Daemones, Gradus Scorti, Gradus Orgia, Magister Inferi, Maximus Schemaphorash, Gradus Satanae, Phallos et Ketus, Magus Sigilli Baphomets. Os graus mais altos são alcançados após um ritual, no qual consiste na ingestão de elixires preparados pelos mais altos graus da ordem, e visões de Baphomet, chamado INVOCATIO BAPHOMETIS e um duelo homem a homem com o próprio DeMoley, mas dizem que o Death Knitgh nunca luta as sérias, e apenas testa as habilidades de seus iniciados. Simbolo: Um pentagrama com o suposto rosto de Baphomet em seu centro.\n\nIrmão DeMoleyCusto: 3 pontos de aprimoramentos,400  pontos  de  perícias. Perícias: (escolha três armas brancas) 40/30, (escolha duas armas de longo alcance) 40%, Manobras de Combate(Refém), Camuflagem (HerbalismoArrombamento35%,25%,Ciências20%),DisfarceEscalada30%,FurtividadeReligião(Cristianismo40%),30%,40%,Caça(Seres de Paradisia 70%), Venenos 40%.Aprimoramentos: Pontos Heroicos 3, Caçador Experiente 1 (Seres de Paradisia),  Sociedade  Secreta  1.Pontos PontodeFé: de1+1porMagia:nível.0Ponto Heróico: 3+3.Irmão DeMoleyCusto: 3 pontos de aprimoramentos,400  pontos  de  perícias. Perícias: (escolha três armas brancas) 40/30, (escolha duas armas de longo alcance) 40%, Manobras de Combate(Refém), Camuflagem (HerbalismoArrombamento35%,25%,Ciências20%),DisfarceEscalada30%,FurtividadeReligião(Cristianismo40%),30%,40%,Caça(Seres de Paradisia 70%), Venenos 40%.Aprimoramentos: Pontos Heroicos 3, Caçador Experiente 1 (Seres de Paradisia),  Sociedade  Secreta  1.Pontos PontodeFé: de1+1porMagia:nível.0Ponto Heróico: 3+3.\n\n“Os símbolos são para a mente quais são os instrumentos a mão – uma aplicação alargada dos seus poderes\" Dion Fortune.\n\n0.5\n\nSoro da Verdade: É uma droga psicoativa usada para tentar obter informações deumsujeito disfarçadamente, muitas vezes por um policial, agência de inteligência, oudeorganizaçãomilitar.Foi roubada dos Campos do Reich no Inferno, e combinada a inúmeros outroscompostosquímicospara chegar ao que é hoje. A vítima realiza testes de CON; cada falha revelara3palavrasqueo interrogador deseja. O efeito de cada falha gera um redutor cumulativo de -3 nos testes de CON e +3 na quantidadedefrasesque o interrogado deve revelar, muito utilizado pelos Alastores.\n\n0.1\n\nAmuletodeParalização: quandoesmagado,causa paralisia em um raio de 5.5m do portador durante 1d6 turnos. Oamuletoédestruídono processo.\n\nBússola Rastreadora. Um pêndulo de metal negro, amarrado a uma fina corrente de bronze. Quando embebidoemqualquerfluido corporal da vítima, este artefato indicará a direção exata para onde esta seguiu.\n\nOlhos da Alma: Este monóculo, de aparência muito antiga, permite ao usuário ver a alma de outro ser. Enxergando sua aura, descobrindo o que ele é e como ele é. Quando\n\nativado, o usuário age como se possuísse o Aprimoramento Capaz deEnxergarAuras. Shakhor: Este item permite a uma Personagem, se infiltrar entre uma determinada “Casta” de Demônios, e se misturar entre eles sem ser notado. O portador deste artefato (que pode ser um anel, um colar,etc) torna-se idêntico a um Demônio da casta alvo. Tudo aquilo que poderia denunciá-lo, torna-se oculto pelo poder do objeto. Um item extremamente raro, já que para cada casta de Demônio, um distinto deve serfeito."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0034-alastores-a-justica-infernal",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "",
+      "paragraphRange": [
+        246,
+        269
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 4401,
+      "wordCount": 706,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 18.0,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\bdrag[aã]o(?:oes|es)?\\b",
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 13.17,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bresist[eê]ncia\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "GranadadeÁguaMaldita: Artefatoque funciona principalmente contra criaturas deParadisia.Umpequeno recipientedevidro transparente, contendo um líquido turvo. Quando uma criatura que retire seus poderes da luz é atingida, seu corpo sofre umarápidadegeneração, sofrendo a perda de 1d6 PVs por\n\nturno, até o líquido ser totalmente limpo.\n\n0.2\n\nArrebatador: Um documento Alastor capaz de retirar uma alma do Inferno. O espírito é retirado com violência, e levado a um local pré-determinado.\n\nJoia dos Pensamentos: esse objeto é um pequeno rubi vermelho-sangue, que, permite a comunicação telepática com outro Demônio que\n\npossua também uma Joia, não importa o Plano ou à distância. Caixa e Besouro: Uma pequena caixa de madeira, ornamentada com símbolos dourados; em seu interior, um besouro escaravelho. Quando agitado, o besouro emite um chiar que faz todos os Demônios em um raio de 10m sentirem-se incomodados, se falharem em um teste   de   WILL   Difícil. Areia de Agaures: Uma alforja média, contendo uma areia brilhante. Quando jogada, os grãos de areia revelaram quaisquer tipos de encantamentos agindo no local, através de Glifos, mas não sua natureza, para isso, o Demônio deverá realizar um teste da Perícia Oculto.\n\nGrilhões dos Condenados: Algemas que em uma primeira visão parecem enferrujadas e não possuem ligação uma com a outra, já que a corrente que deveria fazê-lo pende despedaçada, mas uma vítima deste artefato torna-se incapaz de utilizar seus poderes ou mesmo de se distanciar a mais que 5mdeseucaptor. Manto Negro: Este manto é uma malha negra, com diversos desenhos tribais e runas avermelhadas desenhadas sobre ele. Aqueles que usam o Manto Negro podem utilizar dois poderes: O primeiro poder do manto é sua resistência. Quando ativado, ele torna-se incrivelmente resistente, e praticamente nenhum ataque mundano pode destrui-lo. Como resultado, o usuário ganha 2D de defesa contra todos tipo de ataque. Isso não protege o alvo contra fogo, porém. O segundo poder se mantém mesmo quando o manto não foi\n\nativado. O usuário do manto, ficando imóvel em meio à\n\nescuridão, torna-se invisível. Apenas se receber luz diretamente ou se o usuário se mover ele poderá ser visto. Esta habilidade está sempre ativa, e portanto funciona mesmo quando o usuário não deseja que ela funcione. O manto é virtualmente indestrutível: ao ser rasgado, ele misticamente se reconstrói após alguns segundos. As únicas formas de se danificar permanentemente o manto é usando fogo, ácido ou formas equivalentes de destruição.\n\n0.3\n\nEspada dos Cruzados: Espada de duas mãos capaz de transpassar a armadura de um Death Knight. A espada causa dano de 1d10+2. Espada Ajanti: Espada de madeira, com diversos entalhes, capaz de causar 1d6 em espíritos e criaturas imateriais.\n\nAmuleto de Pena: Este sinete é imbuído com uma resistência limitada contra qualquer efeito místico de camuflagem ou poder Forma Humana. Os seres sobrenaturais irão, quando o selo for ativado, reverter às suas formas. Incenso da Revelação: Sempre se devem acender no mínimo três destes incensos rubros. Quando um desses incensos é aceso, todo tipo de criatura invisível, num raio de 10m tornar-se-á visível novamente.\n\n0.4\n\nBafo de Dragão: Uma varinha, de 50cm, ornamentada com um dragão em forma de serpente, cuja boca, abocanha um rubi redondo e magenta. Este artefato, é capaz de liberar 6 cargas diárias de bolas de fogo, que causam 1d6 de dano ou, um\n\núnico sopro de chamas, que causa 6d6 de dano.\n\n0.7\n\nTebori: uma tatuagem mágica que confere uma habilidade específica ao usuário. Dentre elas, estão (escolhauma):\n\n*Atributo +3\n\n*Perícia +50%\n\n*Um Poder Demoníaco\n\n*Aprimoramento físico/mental/espiritual de 3 pontos\n\n*+20 Pontos de Magia. Adaptado do net Caçadores Alados.\n\nAmuleto de Thanatos: Artefatos extremamente raros de serem fabricados ou conseguidos. Um Amuleto de Thanatos traz um Demônio destruído na Terra, imediatamente de volta ao local onde estava. O Amuleto se encrava na carne demoníaca (causando 1d10 se for retirado), e absorve a essência do infernal assim que seus PVs chegam à zero; reconstruindo seu corpo ao tempo de 1 PV/turno. Após a utilização o mesmo se desfaz.\n\nTrogus Mali: Cajado mágico, feito de metal ou madeira encravadas, possuindo muitas runas e símbolos, e com aproximadamente 1m de comprimento, capazes de esconjurar para o Inferno qualquer espírito que dele tenha fugido instantaneamente."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0035-alastores-a-justica-infernal",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "",
+      "paragraphRange": [
+        270,
+        297
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 5018,
+      "wordCount": 799,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 16.585,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "rituais",
+          "label": "Rituais",
+          "score": 10.644,
+          "confidence": 0.93,
+          "evidence": [
+            "\\britual(?:is|s)?\\b",
+            "\\bc[ií]rculo(?:s)?\\b",
+            "\\btempo de conjura[cç][aã]o\\b",
+            "\\bmateriais?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        },
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bmagia(?:s)?\\b",
+            "\\bcaminho(?:s)?\\b",
+            "\\bmetamagia\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "0.8\n\nArrebatador Consectetur: versão mais poderosa do documento comum, e também proibida. Permite que um espírito – condenado ao Orco - volte imediatamente a Terra após falecer, sem passar por nenhum dos Juízes Infernais. Normalmente, tais itens são conseguidos no Mercado Negro, por poderosos capazes de fornecê-los. O\n\nMestre pode permitir que apenas personagens com o Aprimoramento Contatos 2 e Submundo 2 possam ter  acesso  a  este  artefato. Manto de Etlich: Um amuleto que pode levar o Alastor imediatamente para o Inferno, exatamente no Círculo do qual partira, este será imediatamentetransportado, levando consigo qualquer objeto ou criatura que segure.\n\n“A magia é um modo de se falar com o universo de um jeito que ele não poderá ignorar\"\n\nNeil Gaiman – Livros de Magia.\n\nConvocar Lukhavim (Entender/Controlar/Spiritum 5). Custo: 4 pts de Magia.\n\nTempo de Conjuração: algumas rodadas.\n\nMateriais: 3 vitimas, tintas e velas.\n\nDuração: 72 hrs.\n\nLukhavimsãoDemônios construídos através do fiar de diversas almas e seus cordões de prata. São criaturas cruéis e implacáveis. Possuem diversos poderes relacionados ao Caminho de Spiritum, dentre eles, a capacidade de se tornar imaterial e de tocar espíritos, assim como a habilidade de possuir indivíduos. FR 1d10+12 CON 1d10+12 DEX 1d10+6 AGI 1d10+12 INT 1d10 PER\n\n1d10+3 CAR 1d10. IP+15 regenera 1d6 PVs/rodada, espinhos (1d6 de dano se for esfregado contra uma vítima). Seus ataques afetam espíritos, podem se tornar imateriais.\n\nGarras 60/50 2d6+bônus FR Mordida 30/0 3d6+bônus FR Fraqueza: Alimentar-se de Espírito Humano.\n\nConvocar Duinum (Criar/Controlar/Metamagia/Cami nho específico 4).\n\nCusto: Variável.\n\nTempo de Conjuração: algumas rodadas.\n\nMateriais: 3 vitimas, tintas e velas. Duração: até cumprir a missão ou ser destruído.\n\nO Duinum é uma cópia demoníaca de outra entidade, que servirá a seu criador fielmente, mas, se a cópia entrar em contato com o original, ambos se consumirão: são bastante utilizados como assassinos. Para ser criado, é necessário lembranças recentes do alvo e, em termos de jogo, um Caminho Místico que lide com a origem da vítima (Arkanum para Demônios, Humanos para Humanos, etc.).\n\nDammant Indicium (Entender/Criar/Arkanun 1). Custo: 1 pt de Magia.\n\nTempo de Conjuração: Instantâneo.\n\nMateriais: 3 gotas de sangue.\n\nO ritual sagrado utilizado pelos Auxiliares na Terra - ou por aqueles pouquíssimos que os conhecem - para entrar em contato com os Alastores. Dammant Indicium funciona como um chamado de emergência para investigar um crime; desnecessário dizer que rituais realizados sem uma “ocorrência”, são punidos severamente pelos Carrascos.\n\nSellas locum (Entender/Controlar/Arkanun 3). Custo: Variável (conforme o tamanho da área a ser selada).\n\nTempo de Conjuração: 5 turnos. Materiais: carvão, sangue do conjurador.\n\nO Ritual Alastor muito conhecido no Inferno, utilizado para isolar uma determinada área, permitindo o acesso somente para aqueles de posse do Olho de Satã. O Demônio, postado no centro da área, desenha o Olho Alastor, e em seguida goteja seu sangue sobre o mesmo. Toda criatura que tentar transpassar a área, deverá sem bem sucedida em uma disputa de WILLXWILL do Alastor + quantidade de sangue imbuindo no ritual.\n\nIpsa Nomina (Entender /Arkanun 4). Custo: Variável.\n\nTempo de Conjuração: Variável. Materiais: um objeto do alvo, velas, um sacrifício.\n\nTodas as criaturas sobrenaturais possuem um nome em suas línguas naturais. Não é um ser que batiza o sobrenatural: cada nova entidade nasce sabendo seu Nome Verdadeiro. Enquanto se forma, o criatura ouve nas profundezas de sua mente esse nome ser repetido sem parar. O Nome Verdadeiro dos Demônios é pronunciado em uma das línguas falados no Inferno (latim, Aramaico, Babilônio, etc). Ele é um nome sem tradução direta e quase impronunciável para qualquer um a não ser a entidade. Mas o nome é também a maior das fraquezas, principalmente dos demônios, pois quem\n\nconhece o Nome Verdadeiro de um sobrenatural pode controla-lo. Um místico que conheça um Nome Verdadeiro e os rituais certos é capaz de manipular uma divindade com grande facilidade. Há inclusive rituais capazes de Obliterar um Demônio, através de seu nome. Por isso, Demônios guardam para si mesmos seus nomes verdadeiros e adotam outros nomes; que mudam de acordo com os tempos, enquanto o Nome Verdadeiro é um segredo eterno. Em todas as eras, demônios adotam esses nomes temporários. Conforme as eras passam, esses nomes temporários mudam. No mundo atual, nomes em inglês são comuns, assim como já foram comuns nomes em latim, em grego ou em egípcio. Normalmente, um nome temporário de demônio denuncia uma característica deles ou apenas é um termo que impressione. Algumas vezes, é simplesmente um nome estranho qualquer. O ritual Ipsa Nomina visa descobrir esse Nome Verdadeiro para então controlar a entidade. O mestre deve delimitar qual é o custo para determinada criatura e deixar bem claro que se o conjurador descobrir este segredo, atrairá o ódio imortal da vítima."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0036-alastor",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Alastor",
+      "paragraphRange": [
+        298,
+        300
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 554,
+      "wordCount": 90,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\bataque(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "“Se você sobrevive ao ataque do Atirador, é porque ele o queria vivo” Magic The Gathering\n\nAlastor\n\nDemônio responsável pela execução da justiça no Inferno. Comandante de muitas Legiões de caçadores, e responsável pela captura e condenação dos fugitivos do Orco. Possui um grupo de demônios de elite, chamado Alastores, que podem cruzar a barreira entre o Inferno e a Terra, e são responsáveis por caçar, recapturar ou destruir demônios fugitivos. Os Alastores estão entre os mais temidos demônios do inferno, e Alastor o mais temido de todos os temidos."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0037-azazel",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Azazel",
+      "paragraphRange": [
+        301,
+        302
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 738,
+      "wordCount": 132,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b",
+            "\\bgigante(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Azazel\n\nDemônio de origem hebraica. O Levítico (16, 8-34) o menciona como o bode expiatório divino, enviado ao deserto. Enoch o faz chefe dos Anjos Ca1dos que vieram a terra para esposar humanas e criar uma raça de gigantes. Ensinou aos homens o fabrico de espadas, facas, escudos, couraças e espelhos, e ainda a confecção de braceletes e ornamentos, o uso das pinturas, pedras preciosas e tinturas. Foi derrotado por Rafael, e atado pelos pés e mãos no deserto de Dudael, envolvido em trevas. Seu rosto foi coberto por véus, para que nunca mais visse a luz. Os anjos de Lúcifer o libertaram de Dudael e o trouxeram ao Inferno. É dito no Orco que é o melhor espadachim do Inferno e seus movimentos não podem ser seguidos por nenhum outro."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0038-os-sebbiti",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Os Sebbiti",
+      "paragraphRange": [
+        303,
+        306
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1060,
+      "wordCount": 168,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\blenda(?:s)?\\b",
+            "\\breino(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "front_matter_possible",
+        "low_confidence_classification"
+      ],
+      "text": "Arioch\n\nAlastor lendário; quando em vida, habitava ArK-A-Nun e pertencia a corte de Marduk, mas durante as guerras Arkanitas por seu senhor acabou perecendo e chegando aos reinos infernais. Dizem lendas que a grande maioria dos condenados aos Coenobiuns e a captura de 2 integrantes notáveis do Indice Carmesim, se devem a ele. Arioch é lacônico e não faz amigos, preferindo agir sozinho.\n\nOs Sebbiti\n\nComandados por Nergal, um dos Grão-duques Infernais mais importantes; Demônio assírio da guerra e das caçadas. Os Sebitti são sete guerreiros também conhecidos como os “Pleadies\", que o ajudava a matar o excedente da população Humana e de animais, considerados os sete maiores guerreiros da antiguidade e impossíveis de serem derrotados. Nergal os convocava quando sentia o desejo de batalha, e chamava Ishum para iluminar seus caminhos. Sua segunda esposa se chama Allatu. Os Sebbiti jamais tinham suas identidades reveladas, mas várias vezes prestaram treinamento aos Alastores e são escolhidos entre os melhores Hellspawns e Death Knights de cada geração."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0039-seddim",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Seddim",
+      "paragraphRange": [
+        307,
+        308
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 507,
+      "wordCount": 85,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Seddim\n\nO Demônio Destruidor, chefe de 50 Legiões e capaz de derrubar castelos com seu toque. Sheddin é um dos demônios árabes, auxiliar de Éblis e Íblis-Al-Qadin. Seus demônios vestem-se com trajes árabes e são muito conhecidos entre os magos demonologistas por sua sede de destruição. O próprio Sheddin e descrito como um guerreiro de roupas árabes, rosto no formato de um crânio, usando um turbante avermelhado (o vermelho provem do sangue dos cristãos) e carrega uma cimitarra mágica chamada Al-Sheddir."
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0040-mekkhelot",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "Mekkhelot",
+      "paragraphRange": [
+        309,
+        312
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 465,
+      "wordCount": 66,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bsangue\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Mekkhelot\n\nDemônio misterioso, vezes auxiliando os Alastores em missões na Terra. Possui uma empresa militar de mercenários que age em guerras para países que não querem empregarseushomens; desrespeitando todos os tratados firmados e cometendo atrocidades. Os homens de Mekkhelot ao morrerem vão direto para os campos de treinamento, e aqueles que conseguirem tornam-se Death Knights.\n\n““Haverá sangue, eles dizem;\n\nSangue terá sangue”. William Shakespeare, Macbeth"
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0041-int-12-will-14-car-10-per-15",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "INT 12, WILL 14, CAR 10, PER 15",
+      "paragraphRange": [
+        313,
+        324
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 547,
+      "wordCount": 113,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 13.585,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 11.0,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bmagia(?:s)?\\b",
+            "\\bfocus\\b",
+            "\\bmetamagia\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Demônio Menor\n\nCON 8, FR 8, DEX 14, AGI 15, INT\n\n9, WILL 8, CAR 10, PER 14\n\n#Ataques [1], IP 0, 10 PVs Pode voar à 20m/s Garras 35/35 dano 1d6-1\n\nPontos de Magia 2/Focus 4 Magia: Fogo 2, Metamagia 2\n\nDeath Knight\n\nCON 18, FR 24, DEX 17, AGI 18,\n\nINT 12, WILL 14, CAR 10, PER 15\n\n#Ataques [1], IP 4, 30 PVs Pode voar à 60m/s\n\nRecebe +2d6 nos testes de Iniciativa Golpescomaespadabem-sucedidos geram teste de CON. Falha no teste, a vítima\n\nEspadaEnvenenada60/60dano 1d10+5\n\nGarras 57/47 dano 1d6+5 Pontos de Magia 5/Focus 7 Magia: Fogo 4, Spiritum 3"
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0042-con-15-fr-18-dex-16-agi-16",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "CON 15, FR 18, DEX 16, AGI 16,",
+      "paragraphRange": [
+        325,
+        339
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 470,
+      "wordCount": 93,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 12.0,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b",
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 11.0,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Succubi/Inccubi\n\nCON 13, FR 12, DEX 15, AGI 16,\n\nINT 25, WILL 25, CAR 21, PER 16\n\n#Ataques [1], IP 0, 17 PVs\n\nPodepossuircorposmortais mediante teste de WILL vs.\n\nWILL.\n\nRajada de Fogo (automático) dano 3d6\n\nPontos de Magia 7/Focus 9 Magia: Trevas 4, Humanos 4\n\nDemônio Capanga\n\nCON 12, FR 13, DEX 12, AGI 10,\n\nINT 10, WILL 10, CAR 9, PER 11\n\n#Ataques [1], IP 0, 12 PVs Briga 40/40 dano 1d4\n\nPistoladeDite45/0dano 1d6+1(ROF:3)\n\nAnjo Caído\n\nCON 15, FR 18, DEX 16, AGI 16,"
+    },
+    {
+      "id": "alastores-a-justica-infernal-seg-0043-int-27-will-30-car-17-per-18",
+      "source": "alastores-a-justica-infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourcePath": "Livros\\word\\Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Alastores - A Justiça Infernal",
+      "heading": "INT 27, WILL 30, CAR 17, PER 18",
+      "paragraphRange": [
+        340,
+        355
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 651,
+      "wordCount": 129,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 12.17,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 10.585,
+          "confidence": 0.928,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 5.585,
+          "confidence": 0.65,
+          "evidence": [
+            "\\bmagia(?:s)?\\b",
+            "\\bfocus\\b",
+            "\\bmetamagia\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "INT 11, WILL 14, CAR 15, PER 13\n\n#Ataques [1], IP 4 (armadura), 25 PVs\n\nPodeconjurarumaespadade chamas\n\nPode voar à 60m/s Lança 60/60 dano 1d6+4\n\nEspada 60/60 dano 3d6+2\n\nSatanista\n\nCON 11, FR 10, DEX 13, AGI 12,\n\nINT 14, WILL 14, CAR 11, PER 12\n\n#Ataques [1], IP 0, 12 PVs Pontos de Magia 5/Focus 7 Arkanun 3, Trevas 3, Fogo 1\n\nDuque Infernal\n\nCON 40, FR 35, DEX 30, AGI 30,\n\nINT 27, WILL 30, CAR 17, PER 18\n\n#Ataques [2], IP 15 (rituais), 60 PVs Regenera2PVs/RodadaPossui todos os Poderes Demoníacos Garras 90/90 dano 1d10+13\n\nPontos de Magia 22/Focus 24 Magia: Criar 3, Controlar 4, Trevas\n\n1, Fogo 2, Humanos 3, Arkanun 3,\n\nSpiritum 4, Metamagia 2"
+    }
+  ],
+  "areaCounts": {
+    "aprimoramentos": 3,
+    "cenarios_lore": 8,
+    "criaturas_npcs": 18,
+    "linhagens": 1,
+    "magias": 1,
+    "poderes": 2,
+    "regras_base": 9,
+    "rituais": 1
+  },
+  "reviewFlagCounts": {
+    "front_matter_possible": 2,
+    "low_confidence_classification": 22,
+    "multi_area_segment": 31
+  }
+}

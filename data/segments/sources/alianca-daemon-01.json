@@ -1,0 +1,1106 @@
+{
+  "version": 1,
+  "source": "alianca-daemon-01",
+  "title": "Aliança Daemon 01",
+  "sourceFile": "Aliança Daemon 01.docx",
+  "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+  "sourceQualityStatus": "ok",
+  "generatedAt": "2026-06-02T23:46:24",
+  "paragraphs": 212,
+  "segments": [
+    {
+      "id": "alianca-daemon-01-seg-0001-comecar-um-breve-historico",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "começar, um breve histórico:",
+      "paragraphRange": [
+        1,
+        13
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2559,
+      "wordCount": 504,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 8.807,
+          "confidence": 0.829,
+          "evidence": [
+            "\\bsistema\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Por mais que já tenha sido um dos sistemas mais jogados no Brasil, mesmo que seja um dos sistemas com mais títulos publicados, com mais net-books etc. O sistema Daemon ainda é desconhecido por muitos e visto com preconceito por outros.\n\nA minha proposta nesta série “Desvendando o S i s t e m a D a e m o n ” é apresentar o sistema da forma mais didática possível e desmistificar alguns mitos e problemáticas do sistema.\n\nEntão,antesde\n\ncomeçar, um breve histórico:\n\nO sistema daemon foi p u b l i c a d o p e l a primeira vez em 1992,\n\npor Marcelo Del Debbio em um fanzine da POLI-USP chamado Politreco, mais tarde seria utilizado no cenário Arkanun (em sua 1ª edição) publicado em uma Dragão Brasil Especial. O sistema foi bem recebido e foi utilizado nas revistas Só Aventuras e pelo editor da mesma (Marcelo Cassaro) em seu RPG de ficção científica, intitulado Invasão. Não muito depois o sistema mudou de casa indo para a E d i t o r a D a e m o n , responsável por 99% dos RPGs publicados utilizando o sistema. O sistema Daemon já tem 19 anos de existência\n\ne sofreu poucas alterações n e s t e p e r í o d o , demonstrando sempre bons resultados e uma boa adaptabilidade. Vamos descobrir o porquê:\n\nO sistema Daemon é simples e prático, mas por trás de tudo há uma matemática que firma e b a l a n c e i a t o d o s o s m e c a n i s m o s d o j o g o (Atributos, Perícias, Magias, Poderes, Níveis...). O sistema foi desenvolvido em 1992 por engenheiros da POLI-USP para simulação de máquinas e equipamentos, mas que veio muito bem a calhar na forma de um sistema de RPG.\n\nO sistema segue uma cur va exponencial de fórmula Y=Kx2^(Atributo/6)\n\nonde K é o fator de conversão do Atributo e Y\n\nsua capacidade de realização. Isto significa, na prática, que os valores de Atributo DOBRAM a cada seis unidades (1D). Um personagem que tenha Força 17 tem o dobro da força que um personagem que possua Força 11 e assim por diante. E as Perícias, Atributos, Magias, Poderes e TUDO mais d e n t r o d o s i s t e m a e n c a i x a m - s e perfeitamente neste mecanismo, sem a necessidade de milhares de tabelas para consultar!\n\nEm termos rpgísticos, tudo no sistema pode ser comparado com 1D, ou seja, um dado comum de seis faces. Por exemplo: Um ser humano possui em seus atributos 3D (3 dados de seis faces), isso quer dizer que podem variar de 3 a 18.\n\nTomemos como exemplo a seguinte tabela, onde usaremos termos como Carregar,Levantar,Bônus de dano e Velocidade, para melhor ilustrar a progressão dos Atributos no jogo (poderíamos usar  qualquer  coisa,  como"
+    },
+    {
+      "id": "alianca-daemon-01-seg-0002-v-a-m-p-i-r-o-s",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "V A M P I R O S",
+      "paragraphRange": [
+        14,
+        19
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 949,
+      "wordCount": 179,
+      "primaryArea": "magias",
+      "classifications": [
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bmagia(?:s)?\\b",
+            "\\bfocus\\b"
+          ]
+        },
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bitem(?:s)?\\b",
+            "\\bpre[cç]o\\b"
+          ]
+        },
+        {
+          "area": "tabelas",
+          "label": "Tabelas e Geradores",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\b1d\\d+\\b|\\bd\\d+\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Focus de Magia, Poder psíquico etc.):\n\nVAMPIROS MITOLÓGICOS traz o\n\nuniverso vampiresco para o cenário Trevas/Arkanun. Com sua primeira publicação em novembro de 1998 teve sua última aparição física em maio de 2003 na forma da edição 3.5 e com a belíssima capa ilustrada por Evandro Gregório. Hoje em dia esse clássico do RPG nacional encontra-se esgotado na própria editora e sem promessas de uma nova remessa, ou seja, um item de colecionador!\n\nV A M P I R O S\n\nMITOLÓGICOS, vamos chamá-lo a partir de agora apenas de VM, possui 110 páginas, capa mole, interior preto e branco e preço de capa de R$29,00 (uma bagatela!).\n\nVM funciona tanto como um suplemento para Trevas e Arkanun bem como um módulo básico independente de qualquer outro livro pra jogar! Ele se usufrui do Sistema Daemon, que utiliza dados de 10 faces e o comum d6, mas possui uma adaptação para rolar apenas d6 (dados mais comuns e encontrados em q u a l q u e r  l u g a r ! ) ."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0003-vampirismo",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "VAMPIRISMO",
+      "paragraphRange": [
+        20,
+        27
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 629,
+      "wordCount": 119,
+      "primaryArea": "aventuras",
+      "classifications": [
+        {
+          "area": "aventuras",
+          "label": "Aventuras",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\baventura(?:s)?\\b",
+            "\\bcampanha(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "front_matter_possible",
+        "low_confidence_classification"
+      ],
+      "text": "Vamos desvendar um pouco mais do VM:\n\nINTRODUÇÃO\n\nNeste capítulo o autor\n\nexplica o que é RPG, o que o levou a escrever o livro e, o mais importante, mostra queVM é um jogo de campanhas históricas, de  personagens  imortais  e\n\nlongevos. O que isso quer dizer? Quer dizer que em VM os j o g a d o r e s v i v e n c i a r ã o aventuras e histórias através dos séculos e não em apenas uma\n\népoca!\n\nVAMPIRISMO\n\nAqui ficamos a par das origens históricas, folclóricas, mitológicas e literárias sobre os vampiros. Coisas como casos \"reais\" registrados pela igreja ou investigadores à referências de ícones como Bram Stoker e Anne Rice."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0004-leis-vampiricas",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "LEIS VAMPIRICAS",
+      "paragraphRange": [
+        28,
+        38
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2237,
+      "wordCount": 396,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bsangue\\b",
+            "\\bvampiro(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bhist[oó]ria\\b",
+            "\\bdeus(?:es)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "LEIS VAMPIRICAS\n\nSeguimos o livro com as tão necessárias leis vampíricas. Aqui são apresentadas as mesmas leis encontradas no romance O Vampiro Lestat (Anne Rice) que são as seguintes:\n\n1ª O Líder: Que cada comunidade deve ter seu líder e apenas ele pode autorizar a concessão dos poderes das Trevas para um mortal, cuidando para que os rituais\n\nfossem corretamente observados.\n\n2ª A Beleza Vampírica: Os poderes das Trevas jamais devem ser concedidos aos aleijados, mutilados ou crianças, ou ainda àqueles que, mesmo com a sua posse, não poderiam viver por sua conta.\n\nAlém disto, todos os mortais escolhidos devem possuir grande beleza, tornando assim maior o insulto a Deus.\n\n3ª Os Mais Antigos: Um velho vampiro jamais deveria transmitir sua mágica, para evitar que o sangue do iniciado ficasse forte demais, pois todos os Dons das Trevas aumentam naturalmente com o tempo, e a força dos antigos é grande demais para ser repassada.\n\n4ª A Destruição: Nenhum vampiro jamais poderá destruir outro vampiro. Somente o Mestre da comunidade tem o poder da vida e da morte sobre todo o seu rebanho. E ele tem a obrigação de atirar no fogo os velhos e loucos que não mais conseguem servir a Satan como deveriam. É sua obrigação destruir todos os vampiros que não forem criados como se dever. É sua obrigação destruir aqueles que foram feridos a ponto de não conseguirem sobreviver por si mesmos. E, finalmente, é sua obrigação destruir todos os proscritos e t o d o s a q u e l e s q u e desobedecerem às leis.\n\n5ª O Segredo: Nenhum vampiro poderá jamais revelar sua verdadeira natureza para um mortal e permitir que ele\n\ncontinue vivendo. Nenhum vampiro jamais deverá revelar a história dos vampiros para um mortal e permitir que ele continue vivendo. Nenhum vampiro poderá escrever sobre a história dos vampiros, nem deixar por escrito qualquer informação real sobre os vampiros, de modo a evitar que os textos sejam encontrados por m o r t a i s e d a d o s c o m o verdadeiros. Nenhum mortal deverá jamais saber o nome de um vampiro, a não ser aquele que está na sua lápide, e nenhum vampiro poderá revelar a um mortal a localização de seu refúgio ou o de qualquer vampiro.\n\nNo VM estas cinco leis são mais detalhadas e melhor explicadas."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0005-racas",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "RAÇAS",
+      "paragraphRange": [
+        39,
+        55
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 4556,
+      "wordCount": 754,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 10.0,
+          "confidence": 0.896,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b",
+            "\\bdeus(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        },
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 6.585,
+          "confidence": 0.706,
+          "evidence": [
+            "\\bsangue\\b",
+            "\\bvampiro(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\blenda(?:s)?\\b",
+            "\\bdeus(?:es)?\\b",
+            "\\bmundo(?:s)?\\b",
+            "\\bcidade(?:s)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "CONCEITOS BÁSICOS\n\nEste capítulo é padrão nos livros da daemon. Traz um panorama superficial a respeito das regras e terminologias do jogo.\n\nCRIAÇÃO DE PERSONAGENS\n\nAqui aprendemos a construir um personagem vampiro passo a passo. Junto com as diretrizes acompanhamos a criação de um personagem, o que facilita muito a compreensão do processo.\n\nRAÇAS\n\nLogo em seguida são apresentadas as raças vampíricas:\n\nA esta raça pertence quase a metade da população vampírica. Os Strigoi têm origem na Antiga Roma, quando a lendária bruxa Strix, à beira da morte, suplicou à Nix, deusa da noite, a vida eterna, tornando-se assim a primeira vampira da raça. Strix passou o Dom das Trevas para apenas 3 discípulos que espalharam a maldição dos Strigoi pelo mundo. Vampiros famosos como Dracula e a Condessa Bathory pertencem a essa raça.\n\nAs vampiras conhecidas como Brujas surgiram quando um Coven composto de 13 bruxas espanholas capturou o vampiro strigoi Lacaste e realizou um ritual com seu sangue, tornando-se um novo tipo de Vampiras. Apenas mulheres podem se tornar Brujas, qualquer tentativa de vampirizar um homem o tornaria um Ghoul descerebrado. Novas brujas surgem de séculos em séculos, e apenas em rituais realizado pela ordem.\n\nA raça dos Sábios surgiu quando um Vampiro Strigói, Santiago deLa Roya, invadiu com seu secto um castelo templário. Vencido, o líder dos templários foi transformado também em um vampiro, mas suplicou aos céus, que lhe enviaram um Anjo, que o cegou e destruiu os invasores. Todos os Sábios são cegados quando vampirizados e muitos podem ver o futuro e o passado.\n\nOs Lamiai descendem de uma das amantes de Zeus, Lamia, qua após dar a luz a um filho do deus supremo viu-o morrer nas mãos de Hera. Lamia rogou a Nix, pedindo uma maneira de vingar-se da deusa ciumenta e foi transformada num monstro com seis braços e cauda de cobra, passando a vagar pela Grécia devorando as crianças recém nascidas. Lamia passou o Dom das Trevas para frente e suas crias deram origem as lendas sobre sereias.\n\nOs Ekimmus descendem de Vampyr, uma entidade de Tenebras que após se confrontar com o Arcanjo Miguel foi destruída e sua essência passou a vagar pelos baixos umbrais. São os vampiros descritos nos livros da Anne Rice. Muitos vampiros famosos como Lestat de Lincourt pertencem a esta raça.\n\nOs Vrikolakas descendem dos 17 dentre os cinqüenta filhos de Licaon que foram concebidos por ninfas e semideusas, por tanto imortais. São vampiros com características lupinas, muito ligados a natureza e a seus irmãos lobisomens. Assim como sua personalidade, seus poderes também são ligados ao controle e entendimento da natureza.\n\nOs Eretiks são parentes distantes dos Vrikolakas. Os lobos brancos da Rússia. Vampiros Vrikolakas modificados pela magia russa, e nomeados como hereges, uma vez que Rússia se acreditava que os hereges ao morrerem se tornavam vampiros.\n\nUma facção dos Vrikolakas, esta raça se originou com o conde Orlock, um nobre do Século XI, extremamente malévolo, que teve o infortúnio de provocar uma feiticeira, a qual jogou-lhe uma praga que culminou na terrível aparência do conde, quando o mesmo foi transformado em um vampiro.\n\nEssa raça descende de Asema, uma criatura que rondava as noites africanas devorando carne humana e se alimentando de sangue com seus dentes de ferro. Os Asimanis são vampiros monstruosos, com membros compridos e dedos longos, transformados em garras, dentes de ferro afiados como os de tubarão, olhos vermelhos e cabelos desgrenhados. Muitos se assemelham a morcegos em sua forma original.\n\nOs vampiros orientais são os mais misteriosos e provavelmente mais poderosos existentes, bem como os mais raros. Um Kiang-shi surge quando, após a morte, a segunda alma, denominada P'ai continuava em seu corpo, tornando-se assim um vampiro. Diz-se que uma pessoa é predestinada a se tornar um desses vampiros e que os Kiang-shis mais antigos realizam rituais para chegarem até essas pessoas e treiná-las. Normalmente os Kiang-shis têm uma inclinação para o \"mal\", mas conta-se que quando a alma P'o consegue vencer a alma P'ai ele torna-se idependente, normalmente tornando-se uma caçador de vampiros.\n\nOs Rakshasas são os vampiros hindus, descendentes da deusa Kali, que teve sua alma corrompida pela essência de Vampyr, e da entidade conhecida como Raktabija, que se duplicava a cada gota de sangue derramada. Os Rakshasas possuem cabeça de tigre ou babuíno, são extremamente fortes e adeptos dos prazeres e orgias, muitas vezes controlando o mercado de drogas e pornografia nas cidades que ocupam."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0006-alianca-daemon-01",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "",
+      "paragraphRange": [
+        56,
+        58
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 806,
+      "wordCount": 133,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bsangue\\b",
+            "\\bvampiro(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "As primeiras lendas a respeito dos Arcádios surgiram durante os primeiros séculos da própria criação e surgimento de Arcádia, o território banido por Zeus.\n\nNessa época, alguns vrikolakas se afastaram de suas famílias e partiram para o plano das fadas. Quando o sangue vampírico entrou em contato com o sangue fey, originou uma nova raça de vampiros, com traços de ambos os lados.\n\nRelatos de vampiros na região do México podem ser encontrados até a época dos Maias, que viviam no território onde hoje fica a Guatemala, mas que no passado chegava até a península de Yucatan. Durante toda a história do México, esse era conhecido com o território dos Morcegos-Vampiros mas, ao contrário das outras raças de vampiros, os Kamazots nunca se misturaram à sociedade mortal, permanecendo sempre como seus algozes."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0007-poderes-vampiricos",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "PODERES VAMPÍRICOS",
+      "paragraphRange": [
+        59,
+        69
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 620,
+      "wordCount": 105,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "ATRIBUTOS\n\nCapítulo contendo a descrição dos atributos básicos do Sistema Daemon.\n\nAPRIMORAMENTOS\n\nCapítulo descrevendo a l g u n s a p r i m o r a m e n t o s . Seguindo a mesma linha dos outros títulos.\n\nPERÍCIAS\n\nAqui ao invés das perícias super detalhadas (como no Trevas) temos apenas uma lista com os nomes e como utilizá-las.\n\nEQUIPAMENTOS\n\nPadrão em todos os livros Daemon.\n\nPODERES VAMPÍRICOS\n\nUm dos capítulos mais bacanas do livro, onde temos as descrições e os custos dos poderes desenvolvidos pelas raças vampíricas. Detalhe para\n\nque cada vampiro é único podendo desenvolver poderes únicos e imprevisíveis!"
+    },
+    {
+      "id": "alianca-daemon-01-seg-0008-wondderful-kopenhagen",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "WONDDERFUL KOPENHAGEN",
+      "paragraphRange": [
+        70,
+        79
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 545,
+      "wordCount": 92,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bvampiro(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bcidade(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "FRAQUEZAS\n\nLista das fraquezas dos seres das trevas. Desde Alho à barreira de rosas.\n\nSANGUINUS\n\nSanguinus é o que mantém um Vampiro e o que ele utiliza para ativar alguns poderes. Neste capítulo temos a definição e as regras para o uso de sanguinus.\n\nTIME LINE\n\nUma das partes mais bacanas do VM, possui uma linha histórica  detalhada  de  4000\n\nA.C. a 1980 D.C. Uma ótima referência para as campanhas históricas.\n\nWONDDERFUL KOPENHAGEN\n\nAqui temos um cidade\n\nvampírica e as dicas para construir uma cidade para acoplar os Vampiros Mitológicos."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0009-d-e-s-e-n-v-o-l-v-e-n-d-oa-camapanha",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "D E S E N V O L V E N D OA CAMAPANHA",
+      "paragraphRange": [
+        80,
+        87
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 669,
+      "wordCount": 119,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bsistema\\b",
+            "\\bteste(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "VAMPIROS NOTÁVEIS\n\nUm capítulo trazendo a descrição de vampiros ícones da literatura, cinema e mitologia. Não possui estatísticas de jogo para os mesmos, uma vez que estes seriam muito antigos e com estatísticas quase infinitas! Mas podemos ver presentes como Drácula, Lestat entre outros!\n\nREGRAS E TESTES\n\nC a p í t u l o p a d r ã o , trazendo as regras básicas do sistema daemon.\n\nD E S E N V O L V E N D OA CAMAPANHA\n\nEste capítulo mostra como evoluir os personagens por idade e não por nível. Traz regras de benefícios por idade e por experiência, uma vez que níveis é\n\napenasummétodopara equiparar os mortais.\n\ngeneralizarospoderese fraquezas de um desses seres!"
+    },
+    {
+      "id": "alianca-daemon-01-seg-0010-ultimas-consideracoes",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "ÚLTIMAS CONSIDERAÇÕES",
+      "paragraphRange": [
+        88,
+        94
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1438,
+      "wordCount": 244,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bsangue\\b",
+            "\\bvampiro(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "front_matter_possible",
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "ENVELHECIMENTO\n\nAqui são apresentadas as diretrizes e efeitos do envelhecimento de um vampiro. Capítulo mais descritivo do que com regras em si.\n\nSIMULANDO 1D100 COM 3D6\n\nAqui o autor tenta mostrar uma alternativa para quem não tem acesso aos dados de 10 lados, mas fica um pouco complicado ter que aderir à tabela apresentada a todo o momento, sem falar que ajuda a desgastar ainda mais o livro.\n\nÚLTIMAS CONSIDERAÇÕES\n\nO que mais me chama atenção no VM é a ideia dos Vampiros baseados em crenças reais dos povos, sem uma unificação fictícia para sua origem. Ai do caçador que tentar\n\nDiversas lendas árabes, incluindo o clássico As 1001 Noites mencionam um tipo de Djin que se reúne em bandos para desenterrar cadáveres e consumi-los, esta criatura seria capaz de assumir diversas formas e atrair os beduínos para armadilhas com o intuito de devorar sua carne e beber seu sangue: o Ghul ou Ghoul, uma criatura que é a encarnação dos perigos mortais do deserto. Os Ghouls foram criados pelo demônio árabe Íblis para atormentar os seguidores do Corão, levando-os a temer o deserto e a noite, desenvol-vendo assim superstições para se protegerem dessas criaturas que por suas capacidades metamórficas poderiam assumir a forma de qual-quer pessoa para atacar os povos do deserto; especula-se, portanto, que o propósito de Íblis ao criar estes vampiros seria desviar os muçulma-nos dos ensinamentos do Profeta através do medo e do desespero."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0011-idade-media",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Idade Média",
+      "paragraphRange": [
+        95,
+        97
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 724,
+      "wordCount": 117,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Idade Média\n\nOs Ghuls acompanharam a\n\nexpansão do Islamismo pelo Oriente Médio, Norte da África e Ásia Central, perseguindo e atormentan-do os muçulmanos constantemente. Alguns deles entraram em contato com os Asimani e migraram para o interior da África, se afastando do ramo principal da Raça que assom-brava os beduínos no deserto. Com as Cruzadas eles entraram em contato com os Templários que a princípio foram presas fáceis das habilidades metamórficas dessas criaturas, mas que logo aprenderam a lidar com elas. Alguns poucos Ghuls acompanharam os muçulma-nos que se estabeleceram no Sudeste Asiático, mas acredita-se que eles não tenham se adaptado ao ambiente exótico e as bizarras Raças de vampiros que lá habitam."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0012-idade-moderna",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Idade Moderna",
+      "paragraphRange": [
+        98,
+        101
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 813,
+      "wordCount": 139,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\bcultura(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Idade Moderna\n\nO século XV marca o início da Idade Moderna com a Conquista do Império Bizantino pelos Turcos Otomanos, assim como marca uma revolta entre os Ghuls que desafiam a autoridade dos mais velhos e\n\nquestionam o propósito da Raça se espalhando pelo mundo para conhecer novas terras ao invés de simplesmente se reunirem para atormentar os muçulmanos. Esta rebelião ocorreu devido ao contato com a cultura ocidental, pois muitos Ghuls que se infiltraram nas Cortes Européias como espiões, absorve-ram os ideais progressistas da Renascença e propagaram-nos entre seus irmãos.\n\nD u r a n t e a s G r a n d e s Navegações muitos Ghouls que estavam na África chegaram as Américas aproveitando-se do Tráfico Negreiro e logo se espalha-ram pelo continente seguindo de perto a expansão dos colonizadores europeus."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0013-caracteristicas",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Características",
+      "paragraphRange": [
+        102,
+        105
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 956,
+      "wordCount": 162,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b",
+            "\\bhumano(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Características\n\nUma das principais caracte-rísticas dos Ghuls é a sua capacidade metamórfica que aliada à possibili-dade de eles poderem caminhar durante o dia, ao contrário de outras Raças,  lhes  permite  infiltrar-se\n\nfacilmente na sociedade mortal. Ghuls também são capazes de metamorfosear-se em animais ou mesclar-se aos elementos naturais, o que permite a estas criaturas escapar facilmente quando seus disfarces não surtem mais efeito. Dizem que após algumas décadas um Ghul normalmente esquece sua aparência original e até mesmo o gênero ao qual pertencia.\n\nExistem duas maneiras de transformar um ser humano em um Ghul, a primeira consiste em assassi-nar uma pessoa durante a Lua Nova e deixar seu cadáver apodrecer até que se complete o Ciclo Lunar, suprindo-o com sanguinus a cada mudança de fase lunar. Também é possível para um mortal fazer um pacto com Íblis e tornar-se um Ghul, estes tendem a ser os mais cruéis e bestiais de toda a Raça."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0014-organizacao-e-modo-de-vida",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Organização e Modo de Vida",
+      "paragraphRange": [
+        106,
+        110
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1090,
+      "wordCount": 174,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bcidade(?:s)?\\b",
+            "\\borganiza[cç][aã]o(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bvampiro(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Organização e Modo de Vida\n\nGhuls normalmente se organizam em bandos liderados por um vampiro mais velho, semelhante\n\nem muitos aspectos a mati-lhas de hienas, pois costumam caçarem juntos e dividirem o mesmo refúgio diurno. Estes bandos geral-mente selecionam um de seus membros para viver entre os mortais e atrair vítimas para alimentar o grupo. O tamanho destes agrupa-mentos depende invariavelmente da disponibilidade de alimento na região.\n\nGhuls Ritualísticos, aqueles que fizeram o Pacto com Íblis, costumam ser solitários e até mesmo se tornam criaturas ferais que vagam pelas bordas das cidades, geralmente em sua forma animal, a espreita de uma vítima incauta. Se forem Magos provavelmente se isolarão no interior de ordens místicas, onde não raro acabam sendo confundidos com Liches. Não é incomum que um Ghul Ritualístico, após adquirir certa idade, crie outros vampiros para formar um bando, seja para com o intuito de obter servos para protegê-lo, seja por conta do acordo feito com Íblis, qualquer que seja o motivo eles\n\nnecessariamente viverão para aterrorizar os mortais."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0015-principais-areas-de-influencia",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Principais Áreas de Influência",
+      "paragraphRange": [
+        111,
+        113
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 876,
+      "wordCount": 141,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bvampiro(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Principais Áreas de Influência\n\nOs mais antigos que ainda se mantêm fiéis às ordens de Íblis permanecem no Oriente Médio, Norte da África, Irã, Afeganistão e Paquistão. Acredita-se que existam Ghuls infiltrados no governo e na mídia israelense incitando o ódio entre árabes e judeus na Faixa de Gaza. Ainda existem vampiros desta Raça em países da Europa Oriental que mantém pouco ou nenhum contato com seus irmãos residentes no Oriente Médio e aproveitaram a queda dos regimes comunistas para adquirir influência na sociedade mortal. Estes vampiros chegaram ao Brasil, acompanhados dos Asimani, na época do tráfico de escravos e em pouco tempo se espalharam pelo país, sendo que o mesmo ocorreu no restante da América Latina. Hoje em dia eles estão espalhados por pratica-mente todos os paises do Continente Americano, mantendo uma influên-\n\ncia discreta na sociedade humana."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0016-relacoes-com-outras-racas",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Relações com outras Raças",
+      "paragraphRange": [
+        114,
+        117
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1310,
+      "wordCount": 230,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Relações com outras Raças\n\nA primeira Raça com a qual os Ghuls mantiveram contato foi com a facção árabe dos vampiros Ekimmu, uma relação tensa marcada ora por disputas por territórios e presas, ora por acordos esporádicos e efêmeros em que os Ekimmu contra-tavam Ghuls como espiões. O mais célebre destes acordos se deu durante a conquista Otomana de Bizâncio e da Europa Oriental em que diversos Ghuls, valendo-se de suas habilidades metamórficas e de sua tolerância ao sol, se infiltraram em meio a Igreja e a Nobreza Cristãs. Os Asimani e Rakshasas mantêm boas relações com os Ghuls, pois consideram os muçulmanos invaso-res de suas terras e por isso apóiam a diabólica missão dos Ghul.\n\nM u i t o s v a m p i r o s  S t r i g o i , Vrykolakas e Eretiks tiveram confrontos isolados com os Ghuls durante  a  Invasão  Otomana  da\n\nEuropa Oriental que logo evoluíram para verdadeiras caçadas quando descobriram que estas criaturas eram espiões dos invasores. Ainda hoje os vampiros nativos desta região consideram os Ghuls como demôni-os estrangeiros. Nas Américas os Ghuls ainda mantém acordos e alianças com os Asimani e chegam a formar bandos com os Camazotz, já em relação às outras Raças a atitude varia bastante de local para local e costuma ser pouco influenciada pelas opiniões dos vampiros europe-us."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0017-fraquezas",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Fraquezas",
+      "paragraphRange": [
+        118,
+        125
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 670,
+      "wordCount": 102,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Poderes Possíveis\n\nAumento de Atributos, Bruxaria, Controle Mental, Garras, Ghoul, Sentir Criaturas, Qalit'Ayn, Ras'Al-Ghul, Transformação [Animais, Névoas e Humanos]\n\nFraquezas\n\nA p a r ê n c i aH o r r e n d a , Decapitação,  Vulnerabilidade  ao\n\nSol, Necrofagia.\n\nEscolha 4 das 9 seguintes: Água Benta, Cânticos Religiosos(*), Corpo Corrompido(*), Fogo, Fúria, Obediência(*), Símbolos Religiosos, Cascos.\n\nque o vampiro realize um teste difícil de Will por rodada para que não fuja apavorado. Obviamente a pessoa que entoa o cântico deve seguir a religião que inspira a canção.\n\n(*) Ghuls Ritualísticos devem escolher obrigatoriamente pelo menos uma dessas fraquezas."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0018-canticos-religiosos",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Cânticos Religiosos",
+      "paragraphRange": [
+        126,
+        130
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 520,
+      "wordCount": 85,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bvampiro(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Cascos\n\nO Ghul apresenta cascos de\n\nasno em sua forma humana e estes não podem ser ocultos por nenhum tipo magia ou poder ilusório, apenas por roupas ou sapatos especialmente confeccionados para este fim. Antigamente, esta fraqueza fez com que muitos vampiros se disfarças-sem apenas de mulheres devido à facilidade em ocultar os pés debaixo de seus vestidos longos.\n\nCânticos Religiosos\n\nO vampiro odeia o som de cânticos religiosos, sejam mantras, orações, salmos ou hinos de louvor. A mera audição destes sons faz com"
+    },
+    {
+      "id": "alianca-daemon-01-seg-0019-transformacao-em-nevoas",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Transformação em Névoas",
+      "paragraphRange": [
+        131,
+        140
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 591,
+      "wordCount": 88,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 7.585,
+          "confidence": 0.761,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Poderes Exclusivos\n\nControle Mental\n\nOs Ghul não possuem acesso aos seguintes poderes: Hipnosis,\n\nComandos  Complexos,  Esquecimento,  Idéia  Original,  Controle  de\n\nMultidões, Atração, Lealdade ao Mestre, LockVogel, GrossLockVogel,\n\nEscravo e Cordas de Marionete.\n\nTransformação em Névoas\n\nGhuls que vivem no deserto manipulam a areia ao invés da névoa, contudo se trata de uma modificação apenas na descrição do poder e não de novos níveis.\n\nNível 1: permite conjurar pequenas tempestades de areia para se ocultarem.\n\nNível 2: pode se transformar em uma nuvem de poeira ao invés de névoa."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0020-transformacao-em-animais",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Transformação em Animais",
+      "paragraphRange": [
+        141,
+        145
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 684,
+      "wordCount": 117,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bmonstro(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\bestat[ií]sticas\\b"
+          ]
+        },
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bvampiro(?:s)?\\b",
+            "\\blobisomem(?:ns)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Transformação em Animais\n\nHiena: o vampiro é capaz de se transformar em uma hiena listrada. As estatísticas do animal são basicamente as mesmas de um lobo. Ghuls que vivem em cidades transformam-se em grandes cães.\n\nKaftar: o vampiro se transforma em uma criatura semelhante a um\n\nhomem-hiena com traços demoníacos. Os bônus dessa forma são os mesmos do poder lobisomem.\n\nIfrit: o Ghul assume a forma de um demônio pavoroso com quase 3 metros de altura. Nesta forma o vampiro provoca terror em seres humanos, os quais devem ser bem sucedidos em um teste de Will para evitar fugir em desespero. Além disso, o personagem nessa forma recebe os mesmos bônus conferidos pelo poder Monstro."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0021-transformacao-em-humanos",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Transformação em Humanos",
+      "paragraphRange": [
+        146,
+        152
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1430,
+      "wordCount": 237,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 3.807,
+          "confidence": 0.552,
+          "evidence": [
+            "\\bvampiro(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Transformação em Humanos\n\nPersonagens Ghuls possuem acesso aos mesmos níveis que os vampiros\n\nRakshasas, além dos poderes exclusivos que seguem abaixo:\n\nAspecto Ordinário: permite que, ao assumir sua forma humana ou\n\nanimal, o vampiro dissimule a sua natureza sobrenatural. Apenas poderes ou magias com foco maior do que os níveis de Transformação em Humanos do personagem poderão revelar a sua identidade.\n\nHabitante Local: o vampiro é capaz de se transformar em uma pessoa típica da região onde ele se encontra, a qual pode pertencer a qualquer classe social que o Ghul tenha vislumbrado no local. O vampiro reproduz fielmente todos os costumes e hábitos nativos e age conforme as regras de conduta requeridas para aquele tipo de pessoa. O vampiro também é capaz de se comunicar no idioma local enquanto permanecer nessa forma e não for desmascarado. É necessário o dispêndio de 2 pontos de Sanguinus toda vez que o Ghul assumir uma forma humana através deste poder. Não é possível copiar um indivíduo específico com este poder.\n\nMiragem: o vampiro é capaz de se transformar na cópia exata de um indivíduo, absorvendo suas memórias e seu comportamento. Para conseguir isso ele deve manter contato olho a olho com o alvo durante 10 rodadas e gastar 3 pontos de Sanguinus ao final desse tempo para concluir a transforma-ção. O vampiro pode reter a forma indefinidamente, mas as memórias e a personalidade duram apenas Will/2 dias."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0022-sentir-criaturas",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Sentir Criaturas",
+      "paragraphRange": [
+        153,
+        179
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 4536,
+      "wordCount": 805,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 9.585,
+          "confidence": 0.872,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bresist[eê]ncia\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "section_heading_hint"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 7.392,
+          "confidence": 0.751,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "\\bf[eé]\\b"
+          ]
+        },
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\bsangue\\b",
+            "\\bvampiro(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Sentir Criaturas\n\nUivos: como o poder homônimo dos Vrykolakas, porém permite convocar apenas outros Ghul.\n\nInimigo Íntimo: o vampiro pode modificar a “assinatura” de seu sangue para simular pertencer a uma outra raça, de modo a enganar poderes de detecção.\n\nMáscara do Sangue: permite modificar o sangue do personagem para que ele se passe por outro vampiro. Aquele que provar do seu sangue pensará que se trata de um vampiro de outra raça a menos que passe em um teste de WillxWill.\n\nPara ativar este poder o personagem deve beber pelo menos um ponto de sanguinus de outro vampiro para poder mimetizá-lo por até uma semana. É permitido simular apenas um vampiro de cada vez.\n\nQatil'Ayn\n\nEste dom foi concedido aos Ghuls por Íblis para que estes atormentas-sem os mortais que passariam a temer a morte e perderiam assim toda a esperança em uma vida futura de bem-aventurança prometida por Allah, o Magnífico. Aqueles que já foram vítimas dessa sinistra habilidade sabem o quanto é doloroso enfrentar um Ghul, pois mesmo que a criatura seja destruí-da, o mortal invariavelmente acaba com a fé despedaçada e a sua vida perde o sentido. Adestruição de um Ghul é feita da maneira o mais cautelosa possível para evitar que Íblis arrebanhe mais almas desesperançadas.\n\nO significado mais próximo em nossa língua desta palavra árabe é “Olhar da Morte”.\n\nOlhar Paralisante: O Ghul desenvolve um olhar vazio que não consegue se fixar em ponto algum. Aqueles que olharem em seus olhos deverão testar WillxWill ou ficarão paralisadas de medo como se tivessem encarado a sua própria morte.\n\nPresença de Morte: como o poder acima só que não exige contato visual, pois agora o vampiro irradia uma aura de morte ao seu redor que afeta todos\n\nque estão presentes em um raio de 5 metros + 1 metro para cada 5 anos de pós-vida da criatura.\n\nPerda de Fé: O olhar do Ghul provoca um sentimento de desespero e agonia que esvazia o coração de suas vítimas. Caso a vítima falhe em um teste de WillxWill ela perderá 1d6 pontos de fé, quando estes chegarem a zero (ou se ela não possuir fé) ela entrará em desespero e cairá em prantos no chão incapaz de agir pelo resto da cena.\n\nFalsa Morte: ao encarar sua vítima por algum tempo o Ghul é capaz de induzir nela um estado de falsa morte. O contato visual deve ser mantido durante 5 rodadas, durante este período a vítima experimenta uma sensação de sonolência, frio e torpor; ao final deste tempo o alvo tem direito a um teste de resistência. Para todos os efeitos a vítima está morta e apenas magias, poderes sobrenaturais ou médicos experientes (Perícia 50%+) serão capazes de notar que a pessoa ainda está viva. Falsa Morte dura um número de horas igual à Will/2 do vampiro.\n\nOlhar de Íblis: Este temível poder evoca as forças da morte e do desespero sobre aqueles que ousarem encarar o Ghul; os olhos do vampiro enegrecem refletindo nada além do vazio da morte e do esquecimento.\n\nA vitima deve fazer um teste de WillxWill, caso falhe perderá todas as suas forças e se prostrará no chão, incapaz de lutar por sua vida. Se esta possuir pontos de fé, perderá todos. Depois disso a vítima entrará em depressão e será incapaz de recuperar sua fé por algum tempo; o vampiro deve rolar 1d6+bônus de Will contra 1d6 + bônus de Will da vítima, o resultado determi-nará por quanto tempo a vítima permanecerá em um estado de total desespe-rança. Mesmo aqueles poucos afortunados o suficiente para resistir à depres-são, ficarão profundamente abalados por esse acontecimento; talvez pelo resto de suas vidas.\n\n3d6 rodadas\n\n1 hora\n\n1 noite\n\n1 semana\n\n1 mês\n\n1 ano e 1 dia\n\n1 década\n\n25 anos\n\n50 anos, dobre esse valor a cada sucesso do Vampiro.\n\nRas'Al-Ghul\n\nSegundo as lendas árabes os Ghuls eram capazes de criar luzes no deserto que simulavam fogueiras pra atrair os beduínos. Eles também eram considerados responsáveis pela aparição da estrela chamada algol que surge nos céus por algumas horas e depois some, o que poderia confundir um beduíno e atraí-lo para uma armadilha para ser devorado vivo pelo Ghul e seu bando. Esta estrela é conhecida no Oriente Médio como Ras'Al-Ghul, a Cabeça do Diabo e é definitivamente um símbolo de mau agouro.\n\nFogo-Fátuo: o Ghul é capaz de criar um globo de luz semelhante a um fogo-fátuo, que pode facilmente se passar por uma fogueira, lâmpada acesa ou farol de um veiculo a distância. O vampiro pode movimentar o fogo-fátuo, podendo passar a impressão de que se trata de um veículo em movimento ou de uma pessoa caminhando com um lampião ou tocha em punho. Custo: 1 Sanguinus."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0023-alianca-daemon-01",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "",
+      "paragraphRange": [
+        180,
+        188
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1257,
+      "wordCount": 207,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Falsa Estrela: o Ghul pode criar uma falsa estrela no céu, confundindo aqueles que precisam observar o céu noturno para se orientarem. Em tempos modernos este poder pode ser utilizado para imitar um avião, helicóptero ou torre de telefonia. Custo: 2 Sanguinus.\n\nAtração Fatal: este poder faz com que as pessoas sejam atraídas hipnoti-camente pelas luzes criadas nos níveis anteriores. A vítima tem direito a um teste de Will x Will do Ghul.\n\nMiragem: como no primeiro nível o vampiro pode criar um globo de luz, mas que pode ser visto apenas por suas vítimas. É necessário o dispêndio de 2 pontos de Sanguinus + 1 ponto para cada vítima além da primeira.\n\nFarol: o Ghul pode criar uma luz espiritual sobre um alvo que pode servir\n\ntanto para alertar outros seres sobrenaturais de que a pessoa em questão está sob sua proteção, quanto para atrair espectros, demônios, vampiros e outras criaturas malévolas para atormentarem a vítima. O vampiro deve especificar quais tipos de criaturas serão capazes de enxergar a luz. Custo: 3 Sanguinus.\n\nPrana (A/ Variável)\n\nPré Requisito: Ter no mínimo 30% na perícia meditação.\n\nÉter Luminoso (A/1)\n\nResponsável pelo funcionamento das funções de relação: visão, audição, fonação, etc. O Personagem recebe +10% nos testes"
+    },
+    {
+      "id": "alianca-daemon-01-seg-0024-descricao",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Descrição:",
+      "paragraphRange": [
+        189,
+        200
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1127,
+      "wordCount": 175,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 12.0,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Descrição:\n\nO iniciado com este aprimoramento consegue,\n\nrelacionados com o atributo PER e quase nunca é surpreendido.\n\natravés da prática de pranayamas, revitalizar e fortalecer o seu corpo vital (que é formado pelo éter). Este corpo é composto por quatro éteres, a saber: Químico, de Vida, Luminoso e Refletor. Cada um fornecendo efeitos específicos.\n\nÉter Químico (A/1)\n\nResponsável pelo funcionamento de todo metabolismo físico. O personagem recebe +10% nos testes relacionados com os Atributos Físicos (FR, CON, DEX e AGI) e recupera os pontos de Constituição Física mais rápido do que o normal ( 1 ponto a cada 30 min.)\n\nÉter da Vida (A/1)\n\nResponsável pelo funcionamento da função reprodutora. O personagem consegue alterar as funções hormonais das pessoas que mantém contato visual e assim recebe +10% em testes relacionados com o\n\natributo CAR. Ganha 1D contra Shiddis que envolvam manipulação mental.\n\n(teste DIFÍCILpara tentar se aproximar do personagem)\n\nÉter Refletor (A/1)\n\nResponsável pelas funções de memória, raciocínio e imaginação. O personagem recebe +10% em testes relacionados com os atributos INT e WILL."
+    },
+    {
+      "id": "alianca-daemon-01-seg-0025-pranayama-e-o-controle-da-energia-vital-sendo-a-",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "Pranayama é o controle da energia vital, sendo a regulação dos movimentos da respiração, o meio de alcançá-lo.",
+      "paragraphRange": [
+        201,
+        208
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1571,
+      "wordCount": 270,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 12.322,
+          "confidence": 0.93,
+          "evidence": [
+            "\\bsistema\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Pranayama é o controle da energia vital, sendo a regulação dos movimentos da respiração, o meio de alcançá-lo.\n\nNo sistema daemon, os atributos são obtidos através da distribuição de pontos. Geralmente, os jogadores têm 101 pontos para serem gastos entre 8 atributos – mínimo 5 e máximo18 pontos por atributo.\n\nO problema da forma de distribuição mostrada acima é que na maioria das vezes os jogadores sempre ficam perdidos nas contas ou indecisos em como distribuir os pontos, isso quando não caem na cilada de construírem personagens patos (com todos os atributos medianos). A distribuição de pontos de atributo sempre toma uma boa parcela de tempo do jogo – o que deixa muitos jogadores frustrados, pois querem logo interpretar!\n\nPensando nisso, criei uma forma de obter os atributos através da aleatoriedade. É simples. Basta rolar 1d10 e somar 8 uma vez para cada atributo.\n\nEx: Rodney vai rolar seu atributo força. Ele rola 1d10 e tira 5, soma 8 e tem um resultado de 13 em força. Ele executa a mesma sequência para cada um dos sete restantes atributos.\n\nPara não deixar os jogadores completamente sem controle sobre seus atributos, ao final das rolagens, o jogador pode trocar o valor de um atributo por outro – para adequar o seu personagem a como melhor o imagina.\n\nEx: Rodney obteve os seguintes resultados: FR 13, CON 9, DEX 15, AGI 12, INT 16, WILL 12, PER 10,\n\nCAR 13. Como ele imagina seu personagem mais resistente fisicamente do que inteligente, ele troca o valor de INT pelo valor de CON. Ficando com os atributos finais assim: FR 13, CON 16, DEX 15, AGI"
+    },
+    {
+      "id": "alianca-daemon-01-seg-0026-12-int-9-will-12-per-10-car-13",
+      "source": "alianca-daemon-01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourcePath": "Livros\\word\\Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "title": "Aliança Daemon 01",
+      "heading": "12, INT 9, WILL 12, PER 10, CAR 13.",
+      "paragraphRange": [
+        209,
+        212
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 453,
+      "wordCount": 78,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bsistema\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "front_matter_possible"
+      ],
+      "text": "12, INT 9, WILL 12, PER 10, CAR 13.\n\nAsoma total dos atributos neste tipo de rolagem ficará entre 72 e 144. O que não é tão discrepante do valor 101 e possibilita personagens mais distintos e desafiantes para interpretar! Além de encurtar em muito a parte de criação de personagens!\n\nFaça parte da Aliança!\n\nEnvie seus artigos e adaptações para sistema daemon para o e-mail liberimago@gmail.com e tenha sua contribuição publicada nas próximas edições!!!"
+    }
+  ],
+  "areaCounts": {
+    "aventuras": 1,
+    "cenarios_lore": 2,
+    "criaturas_npcs": 1,
+    "linhagens": 6,
+    "magias": 1,
+    "poderes": 3,
+    "racas": 4,
+    "regras_base": 8
+  },
+  "reviewFlagCounts": {
+    "front_matter_possible": 3,
+    "low_confidence_classification": 15,
+    "multi_area_segment": 9
+  }
+}

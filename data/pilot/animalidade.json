@@ -1,0 +1,2069 @@
+{
+  "version": 1,
+  "status": "pilot_review",
+  "generatedAt": "2026-06-04T16:11:59",
+  "source": "animalidade",
+  "sourceFile": "animalidade.docx",
+  "sourcePath": "Livros\\word\\feito\\animalidade.docx",
+  "title": "Animalidade",
+  "summary": "Suplemento sobre Feras, metamorfose, poderes animais, fraquezas, aprimoramentos e linhagens prontas.",
+  "areas": [
+    "aprimoramentos",
+    "cenarios_lore",
+    "poderes",
+    "racas",
+    "regras_base",
+    "rituais"
+  ],
+  "groups": [
+    {
+      "id": "animalidade-feras-lore",
+      "title": "Animalidade",
+      "kind": "setting",
+      "area": "cenarios_lore",
+      "sectionTitle": "Cenário",
+      "sections": [
+        {
+          "id": "abertura",
+          "title": "Abertura",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "\"Um uivo em uma noite nevada. Um carro cruza uma estrada solitária da montanha. Súbito, um lobo colide com o automóvel. O motorista pára e sai para acudir o animal. Porém, este salta assustado e foge, mas não sem antes deixar uma mordida profunda no braço de Will Randall. A vida deste homem passa a mudar a partir daquele momento. Uma leve transformação vai se desencadeando no interior do motorista durante os dias que se sucedem. Cada vez mais Will compartilha com o espírito do animal, deixando aflorar cada vez mais sua animalidade...\"",
+            "Para quem não viu ou não notou, o parágrafo acima se referia à história de Jack Nicholson no filme Lobo. Um épico contemporâneo do sobrenatural, mostrando a metamorfose de um homem em uma fera. A junção de seu corpo com as características animalescas mais preciosas de sua maldição. As lendas sobre homens que se transformam em bestas selvagens ou que possuem capacidades animais fora do padrão humano foram bastante difundidas durante a Antigüidade e a Idade Média, principalmente pelos gregos, egípcios e africanos. Tais criaturas assombravam bosques, pântanos, cavernas e até lagos próximos das vilas mundanas, sendo amplamente temidos pelos aldeões e combatidos ferreamente por caçadores de recompensa, Templários e até mesmo por Inquisidores.",
+            "Como existem diversas linhas dos mais diversos folclores, decidimos abordar estes seres de uma maneira mais abrangente, procurando envolver todos os tipos de mitos populares. Por isso, nos referiremos a estas criaturas de uma maneira geral como Homens-Fera, ou, simplesmente, Feras."
+          ]
+        },
+        {
+          "id": "instintos-despertos",
+          "title": "Instintos Despertos",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Dizse que um Fera nada mais é do que um humano que teve seus instintos animais despertados, afinal, tais criaturas são uma mistura de humanos com animais. Seres que se dividem entre seu senso de sobrevivência e seu raciocínio lógico, dotados de incríveis habilidades de metamorfose e controle do metabolismo corporal.",
+            "As mudanças que ocorrem na pessoa devido a essa alteração bestial que passa a lhe parecer simplória é o fato que mais lhe traz insegurança. Mesmo estando seguro de que sabe o que está fazendo, nunca se deixe confiar totalmente em seus instintos, pois eles já não são mais humanos, e sim que seguem o padrão de pensamento de um animal. O Fera já não sente o cheiro de comida como sentia antes, pois agora, para ele, alimentarse significa sobreviver, nada mais. Isso pode causar um enorme choque contra a humanidade do personagem, já que ele tem de refrear seus impulsos para não cometer atos que considere selvagens ou desumanos.",
+            "Outro fator determinante é a ligação entre o homem e o animal em questão. Os próprios Feras costumam declarar que seu lado animalesco é sua contraparte, isso é, o lado psicológico dele que almeja ser como um determinado animal. Muitos sábios dizem que quando um Fera é criado, a sua alma humana passa a conviver no mesmo corpo junto com a do animal. Por isso é usado o termo \"contraparte\", afinal tratase do espírito duplo que habita seu corpo.",
+            "Todos os Feras possuem uma ligação muito forte com suas bestas espirituais. Eles a glorificam ou as odeiam. Mesmo que se tente, são raras as vezes em que se consegue voltar a serem humanos de novo. Salvos raros casos, em que rituais ou pactos complexos expulsavam a essência do animal que se ligava à do mortal. Contudo, a maioria prefere aprender a conviver com isso do que se sacrificar em busca de uma cura, pois é melhor aprender lidar com essa Animalidade."
+          ]
+        },
+        {
+          "id": "cultura-e-costumes",
+          "title": "Cultura e Costumes",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Os Feras prezam muito a família, tanto que eles dividem as raças em clãs ou famílias. Para todos os Feras a família é um dos seus maiores bens, já que na realidade são seres muito solitários devido à sua existência intolerada pelas autoridades. Assim, caso sua verdadeira natureza seja descoberta, o Fera pode ser caçado como um verdadeiro demônio.",
+            "No meio desta hierarquia familiar os Feras sempre terão em à frente de comando o Fera mais velho e poderoso. Este velho Fera será chamado de Ancião. Os Anciões prezam pela paz de todos que estão sob sua influência e esperando o dia de adentrar os reinos espirituais de uma vez por todas. Enquanto este dia não chega, eles cuidam de suas famílias e Irmãos (que é o nome pelo qual os Anciões tratam os Feras de outras raças). Os Anciãos também têm outras tarefas, como iniciar e treinar os Filhotes (termo que denominam aqueles que recém descobriram sua animalidade) e cuidar dos domínios das famílias.",
+            "Os Domínios são lugares considerados sagrados pelos Feras. Na maioria das vezes um domínio é o território do Ancião. Por ser um local valioso para os Feras, este local vive sempre em constante vigilância, pois, no domínio, haverá sempre um portal para o vale dos Espíritos Anciões. Neste vale se encontram os espírito de antigos Feras, que até o presente orientam os Anciões. Na maioria das vezes, estes espíritos se tornam os guardiões do domínio, treinando os Filhotes ou ensinando novos poderes aos guerreiros. Os espíritos anciões são quem ditam as leis dentro do domínio."
+          ]
+        },
+        {
+          "id": "as-leis",
+          "title": "As Leis",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Um Fera jamais deverá matar à outro de sua espécie.",
+            "O jovem Fera sempre deve obedecer e respeitar aos mais antigos e seguir os caminhos que lhe forem direcionados.",
+            "O Fera, quando for preciso, deve estar disposto à lutar e defender ao Domínio e aos mais antigos das terríveis garras dos inimigos.",
+            "Os Anciões devem respeitar os mais jovens também, não fazendo abuso demasiado de seu posto.",
+            "Devem ser respeitados os territórios de cada Fera, sempre que um Fera adentrar o território de outro, deve pedir permissão e jamais deverá marcar um território já marcado. (eles marcam território como os lobos, urinando)",
+            "O Fera jamais deverá servir as forças malignas ou permitir que essa influência se faça aparecer em seu corpo ou alma."
+          ]
+        },
+        {
+          "id": "o-umbral",
+          "title": "O Umbral",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O Umbral é a região de Spiritum onde localizamse os reinos espirituais dos pesadelos e os vales dos anciões. Dizem que a umbral era um local lindo e maravilhoso, onde os espíritos Anciões repousavam. Quando os vampiros e demônios chegaram e seu poder corruptor tornou o local tenebroso e terrível, a região do umbral ficou dividida em Baixo Umbral e Umbral Profundo. Na região do baixo Umbral ainda é possível sentir a presença dos espíritos de Ancestrais, no Umbral profundo porém, habitam espíritos malignos que servem aos vampiros e demônios, é um verdadeiro reino de pesadelos.",
+            "Ninguém sabe ao certo ainda, mas é possível num local de trevas profundas, na mais absoluta profundidade destes reinos astrais, exista um local onde já estão abertas as portas de todos os mundos. Se isso for real, é possível que os demônios poderosos e os vampiros antigos apenas estejam ganhando mais forças para finalmente explodir em fúria e mostrar sua face nos planos superiores.",
+            "Os Feras são umas das poucas criaturas capazes de adentrar no reino umbral (Ver ritual \"Adentrar no Umbral\"), mas o poder degenerativo não se manifesta apenas no reino espiritual, mas também neste reino material, cada vez mais corrompido pelas forças dos demônios e vampiros.",
+            "Os Anciões conhecem alguns Rituais capazes de auxiliar os guerreiros em suas missões, proteger as famílias ou mesmo castigar criminosos. Entre eles, destacamse:"
+          ]
+        },
+        {
+          "id": "os-ciganos",
+          "title": "Os Ciganos",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Os ciganos são o povo que mais apresentam ligações com os Feras, pois há uma grande concentração de híbridos, originados da união entre os dois grupos, nos seus acampamentos e por serem um povo nômade eles têm mais mobilidade entre as cidades. Sua cultura é muito antiga e envolta em muitos mistérios. Já possuíam contato com os Feras há muitos séculos e isso lhes deu uma grande gama de descobertas e conhecimentos a respeito das Sociedades Secretas, poderes, fraquezas e lugares onde se escondem algumas dos mais temidos seres na Terra.",
+            "Os ciganos, na parte da Europa, seguem muito dos costumes dos vampiros Vrikolakas e Licantropos. Já na região da China são mais levados pelos costumes dos Garras de Sharikan.",
+            "Em toda parte a cultura dos ciganos fundese com a cultura e missão dos Feras. Então quando quiserem uma explicação de lendas ligadas aos Feras pergunte a eles, que sempre terão uma história para lhes contar sobre uma maldição dada a um estrangeiro, um grande guerreiro que fundiu o seu espírito com um dos animais da floresta ou um animal que guarda o acampamento de possíveis males."
+          ]
+        },
+        {
+          "id": "modo-de-vida",
+          "title": "Modo de Vida",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O modo de vida dos Feras são uma intrincada divisão entre o modo dos animais e humanos. Eles são divididos em Fatrias. Cada Fatria é dirigido pelo Grande Ancião de cada Família, e cada Família é dividido entre as grandes Matilhas controlado pelo Ancião, que tem a sede em um Domínio. Os grandes Anciões são os anciões de mais poder e influência em uma região (geralmente o mais velho também). O grande Ancião é escolhido em um ritual feito por todos os anciões de uma região. Esta reunião é feita conjurando um dos espíritos da criação. Fazendo com que este espírito que faça a escolha entre os anciões que estão ali.",
+            "Aquele que for escolhido recebe poderes próprios, status e obrigações. A palavra de um grande Ancião é como lei pois este poderá ser um novo espírito ancestral. Por isso dizem que os grandes anciões são a boca dos ancestrais. Em tempos de crise para todos os Feras é escolhido entre um dos grandes Anciões um ancião que será destinado para comandar seus irmãos. Este grande ancião terá a missão de acabar com a crise que está destruindo esta Família."
+          ]
+        },
+        {
+          "id": "o-despertar-da-fera",
+          "title": "O Despertar da Fera",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Todos os Feras descobrem seus poderes de forma um pouco conturbada, ou seja, de um jeito traumático. Os Feras muitas vezes descobrem na puberdade sua verdadeira natureza, época em que os seus dons de transformação aparecem descontroladamente. Também pode ser quando ele vê um dos entes de sua família em uma de suas formas alternativas ou presencia uma das transformações de um irmão. Por este motivo é um pouco traumático, como entender que você é um daqueles seres? Como entender sua dupla natureza? E qual é o elo de sua fera interior com sua parte humana? Como viver com sua meia humanidade agora?",
+            "Agora você é um fera e tem como missão destruir os vampiros e demônios que atormentam e destroem o mundo em que você vive. Neste momento você conhece uma realidade que até antes você não conhecia.",
+            "A iniciação acontece depois desta transformação e daí por diante você é um deles. Depois da iniciação vem o treinamento dado pelo ancião ensinando caminhos nos reinos umbrais e entendendo um pouco mais o elo que você tem com sua fera interior.",
+            "Depois deste treinamento você é um Fera que já consegue controlar sua besta interior e aprendeu que está no meio de uma guerra entre anjos e demônios, e não quer que a Terra seja o campo desta batalha."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "animalidade-regras",
+      "title": "Regra base - Animalidade",
+      "kind": "ruleset",
+      "area": "regras_base",
+      "sectionTitle": "Regra Base",
+      "sections": [
+        {
+          "id": "metamorfose",
+          "title": "Metamorfose",
+          "area": "regras_base",
+          "paragraphs": [
+            "Um personagem Fera pode assumir até 3 aspectos distintos: Hominídeo, Fera e Animal. O primeiro basicamente é o mesmo semblante humano que ele possuía, talvez apenas com umas poucas características animalescas, como pêlos em excesso pelo corpo ou um temperamento explosivo.",
+            "A segunda é que vale o nome deste tipo de personagem: Feras. Tratase de uma forma humanóica, repleta de aspectos animais. O formato de cabeçabraçoe-pernas continuam os mesmos, bem como a capacidade de pensamento e razão iguais às que o personagem possui. No entanto, seu corpo sofre alterações drásticas, conforme a espécie animal que é sua contraparte. Em geral, os olhos tornamse da mesma coloração do animal; os cabelos crescem, ou caem; a pele muda de tonalidade; o aroma do animal tornase saliente; as orelhas ficam pontiagudas ou apeludadas; a massa corporal fica mais avolumada, aumentado um pouco o seu tamanho (cerca de um 20 cm), fazendo com que as roupas fiquem rasgadas, etc.",
+            "E, por último, a terceira forma é a do Animal, propriamente dito, do qual o personagem se originou. Assim, é possível metamorfosearse para a figura deste animal (seja ele um morcego, um lobo ou um urso), sempre transformandose numa versão mais majestosa das criaturas originais. Mesmo nesta forma, toda a inteligência do personagem é conservada, porém todos suas características físicas se tornam idênticas ao do animal em questão (veja atributos de vários animais em TREVAS).",
+            "A transformação de uma forma para outra demora uma rodada completa para ser executada. Assim, se um personagem na forma Hominídea desejar assumir a forma Animal, por exemplo, ele irá perder uma rodada. Para mudar novamente sua forma (para Fera, ou retornar à Hominídea), outra rodada precisa ser gasta.",
+            "Não é preciso dizer, mas lembrese que qualquer um que presenciar a metamorfose ficará horrorizado com a cena (talvez deva até fazer um teste de WILL para não desmaiar ou entrar em pânico) e a forma de Fera do personagem já costuma ser assustadora o bastante para incitar medo suficiente em quem a vê."
+          ]
+        },
+        {
+          "id": "criacao-de-um-fera",
+          "title": "Criação de um Fera",
+          "area": "regras_base",
+          "paragraphs": [
+            "Os Feras são homens ou mulheres mortais PUROS (ou seja, apenas personagens completamente humanos podem ser Feras), que, por alguma razão mística sofreu uma metamorfose no seu organismo e passou a dispor de qualidades e defeitos de um certo animal (ou mais de uma animal, talvez). Mudanças psicológicas provocadas pelos instintos animais geram inquéritos na mente dos personagens, de modo que eles eventualmente se sentem confusos em relação aos atos que cometem e das convicções que possuem, dificilmente evitam seu lado humano, mas como eles sabem de sua condição, temem serem descobertos ou caçados por isso.",
+            "Geralmente o surgimento de um Fera ocorre por três razões distintas:",
+            "O personagem foi infectado por um tipo de \"doença genética\", cujo animal era portador e se manifestou no corpo do indivíduo sobre a forma de uma mutação biológica;",
+            "O personagem utilizouse de alguma Magia, Ritual, Maldição ou Pacto para conseguir alterar seu organismo e dotálo de características animalescas;",
+            "O personagem foi submetido a uma \"cirurgia\" por laboratórios governamentais, que usaram uma alta tecnologia de manipulação dos genes e modificaram seu sistema biológico, implantando códigos genéticos de animais em brechas do seu DNA.",
+            "Outros métodos também são possíveis (um acidente industrial, um vírus experimental, hereditariedade paterna, etc). A isso cabe sua imaginação e, claro, a conscientização final do Mestre. O simples fato de seu personagem ser o que é já serve como um background excelente (tenho que ter um inimigo? Que tal aquele cientista que quer eliminar sua criação errônea?) e um ótimo tema para aventuras inteiras (o que está acontecendo comigo? É melhor voltar lá na aldeia cigana e pedir explicações). As possibilidades são inúmeras para \"colorir\" seu personagem, apenas procure dar o máximo de coerência para ele (não vá, por exemplo, criar um homemrinoceronte que vive como marinheiro). Percorrida essa etapa de criação de personagem, passemos para a seguinte: como se constrói um Fera. Essas criaturas são uma mistura entre um ser humano e um animal (talvez mais de um, isso pode variar conforme o background do personagem), que preservam características tanto positivas quanto negativas desse cruzamento racial. Em termos de regras, não é preciso pagar pontos nenhum para ser um Fera.",
+            "Voltando ao assunto, um Fera irá apresentar semelhanças ao animal que contaminou sua essência. Assim, um \"cruzamento\" entre um homem e um lobo irá resultar em um Lobisomem (personagem típico do folclore mundano). Bem como um homem mordido uma serpente maldita se tornará um Naga (meio homem, meio cobra) descendente do povocobra original do antigo Egito e ou das selvas pantanosas do Brasil, que são geralmente criaturas traiçoieras, que vivem enganando pessoas com falsas amizades e joguinhos de corrupção. E um outro ainda, contaminado por uma aranha radioativa irá virar um Spiderman!",
+            "Na fauna mundana encontramos uma grande variedade de Feras. Tipos muito variados e cada qual com características individuais que não se assemelham aos demais. Se as possibilidades já são bastante extensas na Terra, imagine o que ocorre em Arcádia, o plano dos contosdefadas? Metamorfos originados de animais fantasiosos, como o unicórnio e o grifo! Agora não vai faltar alternativas para os Jogadores que se divertem em construir personagens únicos e exóticos.",
+            "Veja mais adiante alguns variantes Feras prontos para você utilizar em aventuras.",
+            "Importante: Para criar um personagem Fera, você deve possuir o Módulo Básico do Sistema Daemon, que pode ser obtido gratuitamente através do site http://www.daemon.com.br.",
+            "Optamos por não incluir as regras de criação de Personagens, Atributos, Conceitos Básicos e Perícias porque senão este suplemento ficaria muito grande e atrapalharia o download dele na maioria dos sites gratuitos, que possuem limite de espaço para armazenamento de programas.",
+            "Os Personagens podem ser criados como humanos normais de 101 pontos, 5 Pontos de Aprimoramentos e pontos de Perícia normais. Quaisquer Aprimoramentos, Kits ou regras do ARKANUN, TREVAS, ANJOS, DEMÔNIOS ou VAMPIROS podem ser utilizadas para a criação de Personagens. Apenas acrescente os poderes e fraquezas respectivos aos Feras para a criação do seu personagem."
+          ]
+        },
+        {
+          "id": "poderes-animais",
+          "title": "Poderes Animais",
+          "area": "regras_base",
+          "paragraphs": [
+            "Esta é a parte mais idolatrada por qualquer Jogador, mas não precisa ficarem tão emocionados. Benefícios (ou Vantagens, como preferirem) são, nada mais nada menos, que os dons especiais e capacidades extras que seu personagem irá receber como um Fera. O personagem tem um número de pontos em Poderes Animais igual a 5 + 1 por nível. Assim, por exemplo, um personagem de 3° nível possuiria 8 pontos de Poderes Animais (5 + 3).",
+            "Estes pontos devem ser usados para comprar os Poderes Animais para o seu personagem. Os Poderes estão divididos em níveis para uma melhor compreensão. Estes níveis existem para o jogador e Mestre somente, pois o personagem jamais usará o termo \"nível de poder\". Para obter um efeito de nível 2, é necessário que o Fera possua pelo menos um efeito do mesmo poder no nível 1, e assim por diante. Existem alguns poderes que se ramificam em vários efeitos por nível, e CADA um destes efeitos custa 1 ponto. É óbvio que os personagens devem possuir poderes de acordo com seus backgounds.",
+            "Aqui NÃO estão especificados a quais Feras correspondem cada poder, pois são muitas variedades e possibilidades existentes destas criaturas. Assim, cabe ao Mestre consentir qual poder é, ou não, permitido para cada tipo de personagem.",
+            "Independente das raça ou origem do Fera, todos possuem uma coisa em comum: instintos bestiais. Esses instintos são uma espécie de elo entre a humanidade e natureza animal do personagem.",
+            "Sendo assim, o Fera tem o poder de conhecer e controlar a fúria da besta que existe dentro dele. O Animalismo nada mais é do conhecimento da contraparte animal que o metamorfo tem dentro de si. Reforçando ou controlando o elo que ele mantém com a besta, tornando capaz de trazer à tona um poder maior ao fera e aprendendo melhor a lidar com seus poderes e fraquezas.",
+            "Veja alguns dos poderes possíveis e sintase livre para modificálos ou criar outros mais:"
+          ]
+        },
+        {
+          "id": "fraquezas-introducao",
+          "title": "Fraquezas",
+          "area": "regras_base",
+          "paragraphs": [
+            "As Fraquezas (ou Desvantagens) são as problemas que complicam a vida do seu personagem conforme o tipo de metamorfo que ele é. A maioria são necessidades animais que se tornaram predominantes em seu corpo. As fraquezas devem ser definidas, assim como os Poderes Animais, pelo Mestre para cada raça de Feras que ele deseje utilizar em jogo."
+          ]
+        },
+        {
+          "id": "epoca-de-transformacao",
+          "title": "Época de Transformação",
+          "area": "regras_base",
+          "paragraphs": [
+            "Por algum motivo obscuro (maldição, talvez) seu personagem só pode assumir sua forma de Fera em uma determinada condição temporal (só em noites de lua cheia, quando está chovendo, durante o dia, quando a temperatura está baixa, por exemplo). Fora deste período, é impossível que seu aspecto hominídeo seja alterado ou que se faça uso de seus poderes."
+          ]
+        },
+        {
+          "id": "vulneravel",
+          "title": "Vulnerável",
+          "area": "regras_base",
+          "paragraphs": [
+            "Seu personagem pode ser destruído facilmente por algum objeto ou magia. Considere todo dano decorrente desta vulnerabilidade DOBRADO. Alguns exemplos bastante comuns são a prata (típica dos Lobisomens), fogo, luz (solar ou artificial), substâncias químicas e até certas plantas."
+          ]
+        },
+        {
+          "id": "inconsciencia",
+          "title": "Inconsciência",
+          "area": "regras_base",
+          "paragraphs": [
+            "Toda a vez que assumir a forma de Fera, o personagem corre o risco de perder o controle de seus atos, dando lugar a seu instinto animal adormecido. Para tentar impedir isso, ele tem direito a um teste de WILL. Se falhar, o Mestre deve tratálo como um NPC e depois ele apenas terá vagas recordações do que viu ou esteve naquele período."
+          ]
+        },
+        {
+          "id": "fome",
+          "title": "Fome",
+          "area": "regras_base",
+          "paragraphs": [
+            "Se o Fera não se alimenta como sua contraparte animal se alimentaria, existe a chance de, 30% + 10% ao dia, de que ele perca a consciência de seus atos. Seguese a mesma regra do item acima, mas apenas até que o personagem tenha saciado seu apetite."
+          ]
+        },
+        {
+          "id": "transmissor",
+          "title": "Transmissor",
+          "area": "regras_base",
+          "paragraphs": [
+            "Você carrega uma espécie de doença contagiosa em seu organismo. Ela não lhe afeta em nada, mas se você ferir alguma pessoa fisicamente, esta poderá contrair a doença. A chance será igual ao dano causado, em porcentagem (causou 12 de dano, 12% de chance de contraíla). O infectado se tornará um Fera como você em 1d4 semanas."
+          ]
+        },
+        {
+          "id": "incapacidade-de-assumir-forma",
+          "title": "Incapacidade de Assumir Forma",
+          "area": "regras_base",
+          "paragraphs": [
+            "O personagem não consegue assumir a forma de Hominídeo ou de Animal. Ele simplesmente não consegue, por mais que se esforce, atingir um destes aspectos."
+          ]
+        },
+        {
+          "id": "forma-perpetua",
+          "title": "Forma Perpétua",
+          "area": "regras_base",
+          "paragraphs": [
+            "A forma de Fera é a única que o personagem apresenta, não podendo metamorfosearse para nenhuma das demais."
+          ]
+        },
+        {
+          "id": "transformacao-trocada",
+          "title": "Transformação Trocada",
+          "area": "regras_base",
+          "paragraphs": [
+            "O personagem não consegue controlar corretamente suas metamorfoses. Sempre que ele desejar trocar de forma, ele tem que fazer um teste de WILL para assumir a forma correta. Em caso de falha, ele simplesmente não consegue se transformar. Já uma falha crítica faz com que ele se transforme na outra forma restante."
+          ]
+        },
+        {
+          "id": "panico",
+          "title": "Pânico",
+          "area": "regras_base",
+          "paragraphs": [
+            "Um medo irracional toma conta do personagem sempre que ele entra em contato com algum tipo de ambiente ou situação. Pode ser uma aversão à altura ou à água, ou temer estar sozinho ou em multidões, enjaulado ou empunhando uma arma. É preciso um teste de WILL para não entrar em desespero."
+          ]
+        },
+        {
+          "id": "reacao-a-estimulos",
+          "title": "Reação a Estímulos",
+          "area": "regras_base",
+          "paragraphs": [
+            "Se o personagem for provocado de alguma forma física tortuosa, como ser atacado de surpresa ou agredido violentamente, seu instinto irá entrar em alerta e ele se descontrolará para tentar se defender. Faça um teste de WILL e em caso de falha, o personagem avança contra o agressor a fim de enxotálo para longe ou mesmo matálo (recebe bônus temporário de +3 em FR, CON, DEX e AGI)."
+          ]
+        },
+        {
+          "id": "fala-limitada",
+          "title": "Fala Limitada",
+          "area": "regras_base",
+          "paragraphs": [
+            "O Fera só consegue se comunicar verbalmente na forma Hominídea. Nas demais, ele apenas gera os sons e grunhidos de sua contraparte animal."
+          ]
+        },
+        {
+          "id": "instintividade",
+          "title": "Instintividade",
+          "area": "regras_base",
+          "paragraphs": [
+            "Cada vez mais seus instintos vão tomando o lugar da sua razão e lógica. O Fera começa a ter reações típicas de suas contrapartes, como rosnar quando provocado ou dormir de cabeça para baixo pendurado em um galho. Considere todos os Testes Fáceis de INT como Normais, os Testes Normais como Difíceis, e os Testes Difíceis com falhas automáticas."
+          ]
+        },
+        {
+          "id": "decapitacao",
+          "title": "Decapitação",
+          "area": "regras_base",
+          "paragraphs": [
+            "Caso o meio fera seja decapitado, ele será destruído e morto para sempre. Para decapitar um fera de uma só vez, é necessário fazer um acerto critico, e arrancar de uma só vez 1/3 dos PVs totais de um Fera."
+          ]
+        },
+        {
+          "id": "espinheiro",
+          "title": "Espinheiro",
+          "area": "regras_base",
+          "paragraphs": [
+            "O Fera não pode cruzar barreiras feitas de plantas com espinho para atravessálas o fera precisa passar por um teste de WILL vs. WILL de quem ergueu a barreira."
+          ]
+        },
+        {
+          "id": "ligacao-a-terra",
+          "title": "Ligação a Terra",
+          "area": "regras_base",
+          "paragraphs": [
+            "Alguns feras tem o instinto de demarcar seus territórios onde eles vivem ou o lugar onde eles caçam. Caso eles saiam de seu território eles sofrem uma penalidade de –1 em todos seus Atributos. Até demarcarem outro território ou levarem consigo uma porção de terra de seu território de origem."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "adentrar-no-umbral",
+      "title": "Adentrar no Umbral",
+      "area": "rituais",
+      "paragraphs": [
+        "(Controlar/Entender/Spiritum 4)",
+        "Para adentrar a Umbral, os Feras deve fitar uma superfície brilhante como um espelhos ou a superfície refletora de um lago. O mago toca a superfície que para ele se torna um portal para o reino espiritual do Umbral. O mesmo ritual permite voltar dos reinos espirituais. É possível arrastar outros Feras ou mesmo mortais para a Umbral, desde que elas estejam segurando o mago. Este lendário feitiço é conhecido apenas pelos Feras e dificilmente poderá ser usado por outros magos."
+      ],
+      "kind": "ritual",
+      "sectionId": "adentrar-no-umbral",
+      "sectionTitle": "Ritual"
+    },
+    {
+      "id": "criacao-de-dominio",
+      "title": "Criação de Domínio",
+      "area": "rituais",
+      "paragraphs": [
+        "(Criar/Controlar Spiritum/Metamagia 4)",
+        "Este ritual consiste em criar um lugar onde todos os feras podem se reunir para decidir os caminhos de sua família e irmãos presentes. O domínio por sua importância é sempre guardado por alguns Feras. Todos os poderes mágicos no local são aumentados no local.",
+        "Porque depois do ritual a área se torna um node, pois agora há a presença de um espírito da criação (ou espírito ancião como dizem os feras)."
+      ],
+      "kind": "ritual",
+      "sectionId": "criacao-de-dominio",
+      "sectionTitle": "Ritual"
+    },
+    {
+      "id": "chamado-do-espirito-anciao",
+      "title": "Chamado do Espírito Ancião",
+      "area": "rituais",
+      "paragraphs": [
+        "(Controlar/Entender Spiritum 6)",
+        "Este ritual consiste em chamar um espirito ancião para guardar e dar os ensinamentos básicos das leis e da missão dos meio feras. O espírito ancião é o ser de mais poder dentro Domínio pois ele controla o Domínio. Porque sem ele o domínio não existe. Sem lei, não há como cumprila."
+      ],
+      "kind": "ritual",
+      "sectionId": "chamado-do-espirito-anciao",
+      "sectionTitle": "Ritual"
+    },
+    {
+      "id": "furia-de-gaea",
+      "title": "Fúria de Gaea",
+      "area": "rituais",
+      "paragraphs": [
+        "(Criar/Controlar Animais/Plantas/Metamagia 6-8)",
+        "Este feitiço consiste em trocar a própria vida por uma maldição que não pode ser retirada por nenhum poder conhecido (a não, talvez, ser por entidades de Infernun, o que custa um preço alto demais). A maldição consiste em colocar uma marca na vitima para que ela sempre seja encontrada pelos Feras e também por animais e plantas que sempre reconhecerão seu crime e o punirão pelo que fez com algum Irmão (afinal, ninguém colocaria uma maldição sem razões para isso). A maldição dura ate que a vítima esteja morta."
+      ],
+      "kind": "ritual",
+      "sectionId": "furia-de-gaea",
+      "sectionTitle": "Ritual"
+    },
+    {
+      "id": "reprodutor",
+      "title": "Reprodutor",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "reprodutor",
+      "sectionTitle": "Reprodutor",
+      "paragraphs": [
+        "Nível 1: O Fera, seja macho o fêmea, pode ter relações sexuais normalmente e ainda gerar filhos. Um personagem sem esta vantagem ainda pode realizar tais relações, mas não pode gerar descendentes e o risco para não se sentir \"satisfeito\" ou ficar incapacitado de continuar o ato aumenta muito mais.",
+        "Nível 2: O Fera é um grande reprodutor, capaz de engravidar uma parceira apenas em uma relação e gerar mais de um filho com ela."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera, seja macho o fêmea, pode ter relações sexuais normalmente e ainda gerar filhos. Um personagem sem esta vantagem ainda pode realizar tais relações, mas não pode gerar descendentes e o risco para não se sentir \"satisfeito\" ou ficar incapacitado de continuar o ato aumenta muito mais."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera é um grande reprodutor, capaz de engravidar uma parceira apenas em uma relação e gerar mais de um filho com ela."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pele-grossa",
+      "title": "Pele Grossa",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "pele-grossa",
+      "sectionTitle": "Pele Grossa",
+      "paragraphs": [
+        "O personagem possui uma camada de pêlos, escamas, penas, couro ou outro tipo de pele bastante rígida, a tal ponto que lhe confere uma armadura natural, sem penalizar DEX nem AGI.",
+        "Nível 1: confere IP 1 natural.",
+        "Nível 2: confere IP 2 natural.",
+        "Nível 3: confere IP 3 natural.",
+        "Nível 4: confere IP 4 natural."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem possui uma camada de pêlos, escamas, penas, couro ou outro tipo de pele bastante rígida, a tal ponto que lhe confere uma armadura natural, sem penalizar DEX nem AGI."
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "confere IP 1 natural."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "confere IP 2 natural."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "confere IP 3 natural."
+          ]
+        },
+        {
+          "id": "nivel-4-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "confere IP 4 natural."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aquatico",
+      "title": "Aquático",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "aquatico",
+      "sectionTitle": "Aquático",
+      "paragraphs": [
+        "Nível 1: Além de respirar normalmente, o Fera pode respirar normalmente debaixo d'água.",
+        "Nível 2: Bem como possuem pequenas membranas entre os dedos, guelras ou mesmo barbatanas que lhe permitem se locomover na água de maneira muito mais rápida que no ambiente terrestre (AGI +6)."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Além de respirar normalmente, o Fera pode respirar normalmente debaixo d'água."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Bem como possuem pequenas membranas entre os dedos, guelras ou mesmo barbatanas que lhe permitem se locomover na água de maneira muito mais rápida que no ambiente terrestre (AGI +6)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sangue-frio",
+      "title": "Sangue Frio",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "sangue-frio",
+      "sectionTitle": "Sangue Frio",
+      "paragraphs": [
+        "Nível 1: O personagem pode se adaptar facilmente à mudanças climáticas bruscas. Para ele, não existe o conceito de calor ou frio. Temperaturas não influenciam em nada seu corpo. Ele não soa, não treme de frio e pode estar em um lugar de altas ou baixas temperaturas sem mudar seu modo de respirar, se sentir cansado ou ofegante."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem pode se adaptar facilmente à mudanças climáticas bruscas. Para ele, não existe o conceito de calor ou frio. Temperaturas não influenciam em nada seu corpo. Ele não soa, não treme de frio e pode estar em um lugar de altas ou baixas temperaturas sem mudar seu modo de respirar, se sentir cansado ou ofegante."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sombras",
+      "title": "Sombras",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "sombras",
+      "sectionTitle": "Sombras",
+      "paragraphs": [
+        "Nível 1: O personagem sabe se camuflar perfeitamente nas sombras, sendo um hábil caçador noturno. Considere que ele possui a perícia Camuflagem em 50% e Furtividade 30%.",
+        "Nível 2: O personagem sabe se camuflar perfeitamente nas sombras, sendo um hábil caçador noturno. Considere que ele possui a perícia Camuflagem em 70% e Furtividade 50%.",
+        "Nível 3: O personagem sabe se camuflar perfeitamente nas sombras, sendo um perfeito caçador noturno. Considere que ele possui a perícia Camuflagem em 90% Furtividade 70%."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem sabe se camuflar perfeitamente nas sombras, sendo um hábil caçador noturno. Considere que ele possui a perícia Camuflagem em 50% e Furtividade 30%."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem sabe se camuflar perfeitamente nas sombras, sendo um hábil caçador noturno. Considere que ele possui a perícia Camuflagem em 70% e Furtividade 50%."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem sabe se camuflar perfeitamente nas sombras, sendo um perfeito caçador noturno. Considere que ele possui a perícia Camuflagem em 90% Furtividade 70%."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aumento-de-atributos",
+      "title": "Aumento de Atributos",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "aumento-de-atributos",
+      "sectionTitle": "Aumento de Atributos",
+      "paragraphs": [
+        "É a capacidade sobrenatural dos Feras de possuírem características mais fortes que a dos humanos normais.",
+        "Força: bônus de +3 pontos em Força. Esse poder pode ser escolhido várias vezes.",
+        "Constituição: bônus de +3 pontos em Constituição. Esse poder pode ser escolhido várias vezes.",
+        "Destreza: bônus de +3 pontos em Destreza. Esse poder pode ser escolhido várias vezes.",
+        "Agilidade: bônus de +3 pontos em Agilidade. Esse poder pode ser escolhido várias vezes.",
+        "Inteligência: bônus de +3 pontos em Inteligência. Esse poder pode ser escolhido várias vezes.",
+        "Força de Vontade: bônus de +3 pontos em Força de Vontade. Esse poder pode ser escolhido várias vezes.",
+        "Percepção: bônus de +3 pontos em Percepção. Esse poder pode ser escolhido várias vezes.",
+        "Carisma: bônus de +3 pontos em Carisma. Esse poder pode ser escolhido várias vezes."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "É a capacidade sobrenatural dos Feras de possuírem características mais fortes que a dos humanos normais. Força: bônus de +3 pontos em Força. Esse poder pode ser escolhido várias vezes. Constituição: bônus de +3 pontos em Constituição. Esse poder pode ser escolhido várias vezes. Destreza: bônus de +3 pontos em Destreza. Esse poder pode ser escolhido várias vezes. Agilidade: bônus de +3 pontos em Agilidade. Esse poder pode ser escolhido várias vezes. Inteligência: bônus de +3 pontos em Inteligência. Esse poder pode ser escolhido várias vezes. Força de Vontade: bônus de +3 pontos em Força de Vontade. Esse poder pode ser escolhido várias vezes. Percepção: bônus de +3 pontos em Percepção. Esse poder pode ser escolhido várias vezes. Carisma: bônus de +3 pontos em Carisma. Esse poder pode ser escolhido várias vezes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garras",
+      "title": "Garras",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "garras",
+      "sectionTitle": "Garras",
+      "paragraphs": [
+        "Nível 1: 1d3 + bônus por Força de dano. Nível 2: 1d6 + bônus por Força de dano. Nível 3: 1d10 + bônus por Força de dano. Nível 4: 2d6 + bônus por Força de dano. Nível 5: 2d10 + bônus por Força de dano."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "1d3 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "1d6 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "1d10 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-4-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "2d6 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-5-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "2d10 + bônus por Força de dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regeneracao",
+      "title": "Regeneração",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "regeneracao",
+      "sectionTitle": "Regeneração",
+      "paragraphs": [
+        "Nível 1: o Fera regenera 1 PV a cada 12 horas. Nível 2: o Fera regenera 1 PV a cada 6 horas. Nível 3: o Fera regenera 1 PV a cada 3 horas. Nível 4: o Fera regenera 1 PV a cada hora.",
+        "Nível 5: o Fera regenera 1 PV a cada 1/2 hora."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "o Fera regenera 1 PV a cada 12 horas."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "o Fera regenera 1 PV a cada 6 horas."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "o Fera regenera 1 PV a cada 3 horas."
+          ]
+        },
+        {
+          "id": "nivel-4-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "o Fera regenera 1 PV a cada hora."
+          ]
+        },
+        {
+          "id": "nivel-5-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "o Fera regenera 1 PV a cada 1/2 hora."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentir-o-sobrenatural",
+      "title": "Sentir o Sobrenatural",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "sentir-o-sobrenatural",
+      "sectionTitle": "Sentir o Sobrenatural",
+      "paragraphs": [
+        "Nível 1: É dito que os animais podem sentir a presença de entidades espirituais com muito mais facilidade que os humanos. Assim, um personagem na forma Animal pode realizar tal proeza. O Mestre deve fazer um teste difícil de PER em segredo e, em caso de sucesso, avisar ao personagem o que ele está vendo ou sentindo.",
+        "Nível 2: O personagem pode detectar espíritos também na forma de Fera.",
+        "Nível 3: O Fera poderá sentir se a pessoa com quem conversa é um ser sobrenatural. Em caso da pessoa esteja tentando se disfarçar através de poderes nãomágicos, ela tem direito a um Teste de WILL contra INT do personagem para tentar enganálo.",
+        "Nível 4: capaz de detectar resíduos mágicos em um local, sabendo dizer se uma magia foi ou está sendo empregada ali. No entanto, não sabe ao certo que magia é esta e nem a que Caminho pertence."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "É dito que os animais podem sentir a presença de entidades espirituais com muito mais facilidade que os humanos. Assim, um personagem na forma Animal pode realizar tal proeza. O Mestre deve fazer um teste difícil de PER em segredo e, em caso de sucesso, avisar ao personagem o que ele está vendo ou sentindo."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem pode detectar espíritos também na forma de Fera."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera poderá sentir se a pessoa com quem conversa é um ser sobrenatural. Em caso da pessoa esteja tentando se disfarçar através de poderes nãomágicos, ela tem direito a um Teste de WILL contra INT do personagem para tentar enganálo."
+          ]
+        },
+        {
+          "id": "nivel-4-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "capaz de detectar resíduos mágicos em um local, sabendo dizer se uma magia foi ou está sendo empregada ali. No entanto, não sabe ao certo que magia é esta e nem a que Caminho pertence."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asas",
+      "title": "Asas",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "asas",
+      "sectionTitle": "Asas",
+      "paragraphs": [
+        "Nível 1: Concede ao Fera um par de asas no aspecto que ele desejar (de couro, como morcegos; de penas negras, como corvos; ou até mesmo como de uma águia). Pode voar a uma velocidade de até 30 km/h.",
+        "Nível 2: Você pode voar a até 70 km/h.",
+        "Nível 3: Suas asas também permitem que você voe nos planos astrais (Spiritum e Arcádia).",
+        "Nível 3: Você pode voar a até 120 km/h."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Concede ao Fera um par de asas no aspecto que ele desejar (de couro, como morcegos; de penas negras, como corvos; ou até mesmo como de uma águia). Pode voar a uma velocidade de até 30 km/h."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Você pode voar a até 70 km/h."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Suas asas também permitem que você voe nos planos astrais (Spiritum e Arcádia)."
+          ]
+        },
+        {
+          "id": "nivel-3-4",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Você pode voar a até 120 km/h."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peconha",
+      "title": "Peçonha",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "peconha",
+      "sectionTitle": "Peçonha",
+      "paragraphs": [
+        "Nível 1: Alguns homensferas possuem veneno como forma de ataque ou defesa corpórea. Podem ser lançados pela boca, garras ou outros ferrões. O veneno causa 1d6 de dano e deixa a vítima atordoada durante sua próxima rodada.",
+        "Nível 2: O veneno causa 1d6+3 de dano e deixa a vítima atordoada durante sua próxima rodada.",
+        "Nível 3: O veneno causa 1d6+6 de dano e exige um teste de CON para evitar uma debilitação (a peçonha causa um torpor e deixa uma pessoa em estado de terror catatônico, impedindoo de se mover até o veneno ser extraído do corpo)."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Alguns homensferas possuem veneno como forma de ataque ou defesa corpórea. Podem ser lançados pela boca, garras ou outros ferrões. O veneno causa 1d6 de dano e deixa a vítima atordoada durante sua próxima rodada."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O veneno causa 1d6+3 de dano e deixa a vítima atordoada durante sua próxima rodada."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "O veneno causa 1d6+6 de dano e exige um teste de CON para evitar uma debilitação (a peçonha causa um torpor e deixa uma pessoa em estado de terror catatônico, impedindoo de se mover até o veneno ser extraído do corpo)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentidos-agucados",
+      "title": "Sentidos Aguçados",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "sentidos-agucados",
+      "sectionTitle": "Sentidos Aguçados",
+      "paragraphs": [
+        "Nível 1: O personagem pode ter UM dos cinco sentidos (visão, audição, paladar, olfato ou tato) aguçados. Para ter outro, é preciso comprar novamente este Poder. Todos os testes de Percepção relacionados ao Sentido escolhido devem ser reduzidos em um nível (um Teste Difícil tornase Normal; um Teste Normal tornase Fácil e para um Teste Fácil não é preciso rolar dados)."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem pode ter UM dos cinco sentidos (visão, audição, paladar, olfato ou tato) aguçados. Para ter outro, é preciso comprar novamente este Poder. Todos os testes de Percepção relacionados ao Sentido escolhido devem ser reduzidos em um nível (um Teste Difícil tornase Normal; um Teste Normal tornase Fácil e para um Teste Fácil não é preciso rolar dados)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chifres",
+      "title": "Chifres",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "chifres",
+      "sectionTitle": "Chifres",
+      "paragraphs": [
+        "Nível 1: Assim como Garras, o Fera possui um, dois ou quantos chifres no formato que preferir. O dano de um ataque à base de chifradas é de 1d6 + bônus por FR.",
+        "Nível 2: Causa 1d10 + bônus de FR de dano.",
+        "Nível 3: Causa 2d6 + bônus de FR de dano."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Assim como Garras, o Fera possui um, dois ou quantos chifres no formato que preferir. O dano de um ataque à base de chifradas é de 1d6 + bônus por FR."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Causa 1d10 + bônus de FR de dano."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Causa 2d6 + bônus de FR de dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comunicacao-animal",
+      "title": "Comunicação Animal",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "comunicacao-animal",
+      "sectionTitle": "Comunicação Animal",
+      "paragraphs": [
+        "Nível 1: É possível que o Fera estabeleça um elo telepático com um animal da mesma espécie da qual ele é transformado. Lobisomens usariam Comunicação Animal com lobos, por exemplo. Ele pode obter informações deste tipo de animal, desde que possa vêlo e dispondo de uma pequena concentração.",
+        "Nível 2: O personagem pode dar ordens simples ao animal (como \"ataqueo\" ou \"sigame\"), que ele executará sem hesitar.",
+        "Nível 3: O personagem pode dar ordens mais complexas ao animal (como \"vasculhe o local e traga a arma para mim\" ou \"espere aqui e ataque o primeiro que passar\"), que ele executará sem hesitar. Nível 4: O Fera mantém um contato telepático com outros Feras de sua mesma espécie do local podendo chamálos em momentos de perigo. Todos os Feras que estejam numa área de 10 km de distancia podem escutar o chamado (através de um contato psíquico ou sonoro)."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "É possível que o Fera estabeleça um elo telepático com um animal da mesma espécie da qual ele é transformado. Lobisomens usariam Comunicação Animal com lobos, por exemplo. Ele pode obter informações deste tipo de animal, desde que possa vêlo e dispondo de uma pequena concentração."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem pode dar ordens simples ao animal (como \"ataqueo\" ou \"sigame\"), que ele executará sem hesitar."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem pode dar ordens mais complexas ao animal (como \"vasculhe o local e traga a arma para mim\" ou \"espere aqui e ataque o primeiro que passar\"), que ele executará sem hesitar."
+          ]
+        },
+        {
+          "id": "nivel-4-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera mantém um contato telepático com outros Feras de sua mesma espécie do local podendo chamálos em momentos de perigo. Todos os Feras que estejam numa área de 10 km de distancia podem escutar o chamado (através de um contato psíquico ou sonoro)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presas",
+      "title": "Presas",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "presas",
+      "sectionTitle": "Presas",
+      "paragraphs": [
+        "O Fera possui seus dentes pontiagudos e perfeitos para dilaceração. Funcionam tão bem quanto garras.",
+        "Nível 1: 1d3 + bônus por Força de dano. Nível 2: 1d6 + bônus por Força de dano. Nível 3: 1d10 + bônus por Força de dano."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera possui seus dentes pontiagudos e perfeitos para dilaceração. Funcionam tão bem quanto garras."
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "1d3 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "1d6 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "1d10 + bônus por Força de dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bico",
+      "title": "Bico",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "bico",
+      "sectionTitle": "Bico",
+      "paragraphs": [
+        "O personagem possui um pico semelhante ao de uma ave e pode usálo para segurar objetos e até mesmo golpear alguém.",
+        "Nível 1: 1d3 + bônus por Força de dano. Nível 2: 1d6 + bônus por Força de dano. Nível 3: 1d10 + bônus por Força de dano."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem possui um pico semelhante ao de uma ave e pode usálo para segurar objetos e até mesmo golpear alguém."
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "1d3 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "1d6 + bônus por Força de dano."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "1d10 + bônus por Força de dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visao-noturna",
+      "title": "Visão Noturna",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "visao-noturna",
+      "sectionTitle": "Visão Noturna",
+      "paragraphs": [
+        "Nível 1: Se houver qualquer mínima luz (mesmo que seja uma tocha a vários metros de distância), o personagem já é capaz de enxergar com perfeição, como se fosse dia claro. Já, se não houver iluminação, você consegue se localizar no local, isso é, sabe evitar tropeçar em objetos, reconhecer paredes e reconhecer a disposição dos móveis de uma sala.",
+        "Nível 2: O personagem pode enxergar perfeitamente na escuridão sem que haja qualquer fonte de iluminação."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Se houver qualquer mínima luz (mesmo que seja uma tocha a vários metros de distância), o personagem já é capaz de enxergar com perfeição, como se fosse dia claro. Já, se não houver iluminação, você consegue se localizar no local, isso é, sabe evitar tropeçar em objetos, reconhecer paredes e reconhecer a disposição dos móveis de uma sala."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem pode enxergar perfeitamente na escuridão sem que haja qualquer fonte de iluminação."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matilha",
+      "title": "Matilha",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "matilha",
+      "sectionTitle": "Matilha",
+      "paragraphs": [
+        "Nível 1: O Fera possui um pequeno núcleo de 1 a 3 animais como a sua contraparte que vivem como seus protegidos e aliados. Podem ser treinados para caçarem, responderem a comandos ou simplesmente vivem junto do personagem, sob sua tutela.",
+        "Nível 2: O Fera possui um pequeno núcleo de 5 a 7 animais como a sua contraparte que vivem como seus protegidos e aliados.",
+        "Nível 3: O Fera possui um pequeno núcleo de 8 a 12 animais como a sua contraparte que vivem como seus protegidos e aliados."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera possui um pequeno núcleo de 1 a 3 animais como a sua contraparte que vivem como seus protegidos e aliados. Podem ser treinados para caçarem, responderem a comandos ou simplesmente vivem junto do personagem, sob sua tutela."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera possui um pequeno núcleo de 5 a 7 animais como a sua contraparte que vivem como seus protegidos e aliados."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "O Fera possui um pequeno núcleo de 8 a 12 animais como a sua contraparte que vivem como seus protegidos e aliados."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inspirar-terror",
+      "title": "Inspirar Terror",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "inspirar-terror",
+      "sectionTitle": "Inspirar Terror",
+      "paragraphs": [
+        "Nível 1: Seu personagem é capaz de incitar o medo em seus inimigos, através de olhares intimidantes, línguas sibilantes, urro ou até rosnar mais bem elaborado. Uma vez tentado inspirar terror, todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 3 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica.",
+        "Nível 2: Todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 5 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica.",
+        "Nível 3: Todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 7 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica.",
+        "Nível 4: Todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 10 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica."
+      ],
+      "sections": [
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Seu personagem é capaz de incitar o medo em seus inimigos, através de olhares intimidantes, línguas sibilantes, urro ou até rosnar mais bem elaborado. Uma vez tentado inspirar terror, todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 3 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 5 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 7 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica."
+          ]
+        },
+        {
+          "id": "nivel-4-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 10 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teia",
+      "title": "Teia",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "teia",
+      "sectionTitle": "Teia",
+      "paragraphs": [
+        "Este é o poder Maximo de um filho de Aracne. Pois este poder é o poder de tecer vários fios de resistência muito grande. Dizem em alguns relatos que seres atacados por este poder morreram em alguns instantes enrolados por estas teias.",
+        "Nível 1: O personagem tem o poder de lançar estas teias a 2 metros de distância com a Força de 1D.",
+        "Nível 2: Você consegue lançar a teia a até 4 metros de distancia com Força de 2D.",
+        "Nível 3: Você é capaz de lançar uma teia até 6 metros com Força de 3D.",
+        "Nível 4: Você é capaz de se pendurar na teia pois ela tem Força de 4D e pode lançála a até 8 metros de distância.",
+        "Nível 4: Você é capaz de fazer um ataque constritivo com suas teias com Força de 4D.",
+        "Obs: a partir do Nível 2 o personagem depois de usar este poder tem que descansar por uma hora pois este poder exige muito do corpo, mas se quiser usar este poder antes de uma hora terá que ceder um ponto de vida por Nível do efeito que você deseja utilizar."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "Este é o poder Maximo de um filho de Aracne. Pois este poder é o poder de tecer vários fios de resistência muito grande. Dizem em alguns relatos que seres atacados por este poder morreram em alguns instantes enrolados por estas teias."
+          ]
+        },
+        {
+          "id": "nivel-1-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O personagem tem o poder de lançar estas teias a 2 metros de distância com a Força de 1D."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Você consegue lançar a teia a até 4 metros de distancia com Força de 2D."
+          ]
+        },
+        {
+          "id": "nivel-3-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Você é capaz de lançar uma teia até 6 metros com Força de 3D."
+          ]
+        },
+        {
+          "id": "nivel-4-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Você é capaz de se pendurar na teia pois ela tem Força de 4D e pode lançála a até 8 metros de distância."
+          ]
+        },
+        {
+          "id": "nivel-4-5",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Você é capaz de fazer um ataque constritivo com suas teias com Força de 4D. Obs: a partir do Nível 2 o personagem depois de usar este poder tem que descansar por uma hora pois este poder exige muito do corpo, mas se quiser usar este poder antes de uma hora terá que ceder um ponto de vida por Nível do efeito que você deseja utilizar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poder-elevado",
+      "title": "Poder Elevado",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Por um motivo qualquer o personagem está fora da média até que os próprios irmãos. Seu grau de conhecimento do elo da besta é um pouco maior que o do seus irmãos. Este é um dos Aprimoramentos preferidos pelos meioferas iniciantes, mas os poderes têm de serem condizentes com os poderes da raça que você escolheu.",
+        "1 Ponto: Este aprimoramento dá ao Fera mais 1 ponto extra de Poderes Animais. Por algum motivo o personagem tem mais poder que deveria.",
+        "2 Pontos. Este aprimoramento dá ao Fera mais 2 pontos extra de Poderes Animais. Por algum motivo o personagem tem mais poder que deveria.",
+        "3 Pontos. Este lhe concede 3 pontos extras de Poderes Animais acima do que você teria normalmente."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: Este aprimoramento dá ao Fera mais 1 ponto extra de Poderes Animais. Por algum motivo o personagem tem mais poder que deveria.",
+            "2 Pontos: Este aprimoramento dá ao Fera mais 2 pontos extra de Poderes Animais. Por algum motivo o personagem tem mais poder que deveria.",
+            "3 Pontos: Este lhe concede 3 pontos extras de Poderes Animais acima do que você teria normalmente."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Por um motivo qualquer o personagem está fora da média até que os próprios irmãos. Seu grau de conhecimento do elo da besta é um pouco maior que o do seus irmãos. Este é um dos Aprimoramentos preferidos pelos meioferas iniciantes, mas os poderes têm de serem condizentes com os poderes da raça que você escolheu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elo-duplo",
+      "title": "Elo duplo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O elo duplo é uma variação bem diferente. Nos termos místicos, o meiofera ao invés de ter ligação com um único animal em sua alma, ele terá uma ligação com dois. Pode ser devido à dois Feras de raças diferentes tenham se reproduzido e dado a luz a um Fera totalmente novo, cujas características de ambos tenham se cruzado e tornado um tipo de híbrido muito poderoso. Mas este híbrido não poderá se reproduzir dando origem a outros híbridos como ele (todos nascem estéreis), e os pais são punidos pelo nascimento deste impuro, embora a criança nada sofra, sendo até treinada mais cedo pelo Ancião. Ou então, porque seu elo será muito mais difícil de lidar. Como entender e controlar mais de uma fera em sua alma?",
+        "3 Pontos. Este aprimoramento dá a você mais uma forma guerreira (Fera)e animal. Sendo que terá que dividir os poderes entre os dois elos animalescos.",
+        "4 Pontos. Por algum motivo você é o resultado de um cruzamento de dois meioferas e desenvolveu mais poderes que um Fera normal mas como resultado teve alguns de seus poderes limitados pois lhe causa muita fadiga usar tais poderes. Em termos de jogo, você tem o DOBRO de pontos que teria normalmente para comprar seus Poderes Animais (embora ainda precise dividilos entre suas formas extras). Mas, por outro lado, sempre que você utilizar algum de seus poderes, perderá 1PV."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 Pontos: Este aprimoramento dá a você mais uma forma guerreira (Fera)e animal. Sendo que terá que dividir os poderes entre os dois elos animalescos.",
+            "4 Pontos: Por algum motivo você é o resultado de um cruzamento de dois meioferas e desenvolveu mais poderes que um Fera normal mas como resultado teve alguns de seus poderes limitados pois lhe causa muita fadiga usar tais poderes. Em termos de jogo, você tem o DOBRO de pontos que teria normalmente para comprar seus Poderes Animais (embora ainda precise dividilos entre suas formas extras). Mas, por outro lado, sempre que você utilizar algum de seus poderes, perderá 1PV."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O elo duplo é uma variação bem diferente. Nos termos místicos, o meiofera ao invés de ter ligação com um único animal em sua alma, ele terá uma ligação com dois. Pode ser devido à dois Feras de raças diferentes tenham se reproduzido e dado a luz a um Fera totalmente novo, cujas características de ambos tenham se cruzado e tornado um tipo de híbrido muito poderoso. Mas este híbrido não poderá se reproduzir dando origem a outros híbridos como ele (todos nascem estéreis), e os pais são punidos pelo nascimento deste impuro, embora a criança nada sofra, sendo até treinada mais cedo pelo Ancião. Ou então, porque seu elo será muito mais difícil de lidar. Como entender e controlar mais de uma fera em sua alma?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escolhido",
+      "title": "Escolhido",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Este aprimoramento é um tipo de fama dentro do domínio tendo um pouco de renome na sua cidade, podendo até conseguir pequenos favores da sociedade de Feras da região ou ser reconhecido por outros Irmãos.",
+        "1 Ponto. Você é um dos melhores guerreiros de sua família. É muito respeitado entre os membros de sua família.",
+        "2 Pontos. Você é um grande guerreiro é o mais indicado para ser o próximo Ancião do domínio. Sendo respeitado em toda cidade.",
+        "3 Pontos. Você É um Ancião, é respeitado por todos de seu domínio. Tendo grande influência na cidade e sendo responsável por manutenção das leis dentro do território."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: Você é um dos melhores guerreiros de sua família. É muito respeitado entre os membros de sua família.",
+            "2 Pontos: Você é um grande guerreiro é o mais indicado para ser o próximo Ancião do domínio. Sendo respeitado em toda cidade.",
+            "3 Pontos: Você É um Ancião, é respeitado por todos de seu domínio. Tendo grande influência na cidade e sendo responsável por manutenção das leis dentro do território."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Este aprimoramento é um tipo de fama dentro do domínio tendo um pouco de renome na sua cidade, podendo até conseguir pequenos favores da sociedade de Feras da região ou ser reconhecido por outros Irmãos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conhecimento-do-umbral",
+      "title": "Conhecimento do Umbral",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Este aprimoramento concede uma maior mobilidade dentro dos reinos umbrais e também eqüivale a uma experiência maior a respeito dos espíritos anciões. Quanto maior o Aprendizado dos Reinos Umbrais, maior sua mobilidade dentro deles, bem como também será maior o perigo que você correrá lá (seus movimentos atrairão cada vez mais a atenção de seres mais poderosos e desconhecidos que habitam os reinos das sombras).",
+        "1 Ponto. Você é um guerreiro. Que já adentrou os reinos umbrais e conhece alguns de seus caminhos, tendo a autorização para visitar regularmente o vale dos anciãos à procura de alguma informação.",
+        "2 Pontos.Você é um guerreiro veterano. Pode adentrar os campos umbrais livremente e conhece vários caminhos lá. Possui a autorização do Ancião para levar junto com você até 3 companheiros.",
+        "3 Pontos. Você já é um guerreiro homenageado, que já enfrentou vários demônios e vampiros no baixo umbral. Conhece algumas passagens para Arcádia e Sonhar podendo transitar entre elas desde que não faça distúrbios nestas regiões."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: Você é um guerreiro. Que já adentrou os reinos umbrais e conhece alguns de seus caminhos, tendo a autorização para visitar regularmente o vale dos anciãos à procura de alguma informação.",
+            "2 Pontos: Você é um guerreiro veterano. Pode adentrar os campos umbrais livremente e conhece vários caminhos lá. Possui a autorização do Ancião para levar junto com você até 3 companheiros.",
+            "3 Pontos: Você já é um guerreiro homenageado, que já enfrentou vários demônios e vampiros no baixo umbral. Conhece algumas passagens para Arcádia e Sonhar podendo transitar entre elas desde que não faça distúrbios nestas regiões."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Este aprimoramento concede uma maior mobilidade dentro dos reinos umbrais e também eqüivale a uma experiência maior a respeito dos espíritos anciões. Quanto maior o Aprendizado dos Reinos Umbrais, maior sua mobilidade dentro deles, bem como também será maior o perigo que você correrá lá (seus movimentos atrairão cada vez mais a atenção de seres mais poderosos e desconhecidos que habitam os reinos das sombras)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adentrar-no-umbral",
+      "title": "Adentrar no Umbral",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Através deste Aprimoramento o personagem tem o conhecimento e poder necessário para adentrar no Umbral. Apesar de alguns Magos terem desenvolvido rituais que simulem esta habilidade dos Feras, poucos tiveram sucesso em manipulála.",
+        "1 Ponto: Para adentrar no Umbral, o Fera deve fitar uma superfície brilhante como um espelhos, ou a superfície refletora de um lago, e tocar a sua superfície, que se tornará um portal para o reino espiritual do Umbral (apenas para o personagem). O mesmo método permite voltar dos reinos espirituais.",
+        "2 Pontos: O personagem pode convocar a presença de um Espírito Ancião para fazer até três perguntas, que serão respondidas com SIM, NÃO ou IRRELEVANTE. Depois que as perguntas são respondidas, o Espírito Ancião só poderá ser chamado novamente dentro de 7 dias."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: Para adentrar no Umbral, o Fera deve fitar uma superfície brilhante como um espelhos, ou a superfície refletora de um lago, e tocar a sua superfície, que se tornará um portal para o reino espiritual do Umbral (apenas para o personagem). O mesmo método permite voltar dos reinos espirituais.",
+            "2 Pontos: O personagem pode convocar a presença de um Espírito Ancião para fazer até três perguntas, que serão respondidas com SIM, NÃO ou IRRELEVANTE. Depois que as perguntas são respondidas, o Espírito Ancião só poderá ser chamado novamente dentro de 7 dias."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Através deste Aprimoramento o personagem tem o conhecimento e poder necessário para adentrar no Umbral. Apesar de alguns Magos terem desenvolvido rituais que simulem esta habilidade dos Feras, poucos tiveram sucesso em manipulála."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nagas",
+      "title": "Nagas",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Descendentes do povo de homensserpente do Antigo Egito, os Nagas são uma raça maligna, que vive escondida em cavernas e tocas subterrâneas na Floresta Amazônica ou em antigos templos submersos nos desertos africanos. Seus cultos referemse a um grande panteão de deusesdemônios de Arkanun e Infernun, e freqüentemente realizam sacrifícios humanos para homenageálos. Alguns emissários são enviados pelos grandes sacerdotes dos cultos, a fim de infiltraremse na sociedade mortal e trazerem vítimas para seus festins religiosos.",
+        "Sua comunidade dividise basicamente em três linhas: Sacerdotes, Guerreiros e Espiões. Os Sacerdotes são responsáveis por manterem a conduta do rebanho, propagarem os ensinamentos caóticos dos deuses e realizarem as cerimônias religiosas. Os Guerreiros são treinados em combate para defenderem as fêmeas e os filhotes caso ocorram alguma guerra. São geralmente criaturas fortes e hábeis na arte de torturar. E os Espiões comportam os escolhidos para aventuraremse entre os humanos, sendo espantosos assassinos em potencial e treinados no manuseio dos venenos mais mortíferos.",
+        "Sua aparência na forma de Fera é de um homem como olhos como os de uma serpente, pálpebras e lábios recobertos com escamas, língua bifurcada, sem orelhas (apenas orifícios) e como escamas escuras nos ombros e atrás do pescoço.",
+        "Poderes Possíveis: Peçonha, Comunicação Animal, Inspirar Terror, Sentido Aguçado, Aumento de Atributos, Matilha, Presas, Sangue Frio.",
+        "Fraquezas: Reação a Estímulos e Fala Limitada."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Descendentes do povo de homensserpente do Antigo Egito, os Nagas são uma raça maligna, que vive escondida em cavernas e tocas subterrâneas na Floresta Amazônica ou em antigos templos submersos nos desertos africanos. Seus cultos referemse a um grande panteão de deusesdemônios de Arkanun e Infernun, e freqüentemente realizam sacrifícios humanos para homenageálos. Alguns emissários são enviados pelos grandes sacerdotes dos cultos, a fim de infiltraremse na sociedade mortal e trazerem vítimas para seus festins religiosos.",
+            "Sua comunidade dividise basicamente em três linhas: Sacerdotes, Guerreiros e Espiões. Os Sacerdotes são responsáveis por manterem a conduta do rebanho, propagarem os ensinamentos caóticos dos deuses e realizarem as cerimônias religiosas. Os Guerreiros são treinados em combate para defenderem as fêmeas e os filhotes caso ocorram alguma guerra. São geralmente criaturas fortes e hábeis na arte de torturar. E os Espiões comportam os escolhidos para aventuraremse entre os humanos, sendo espantosos assassinos em potencial e treinados no manuseio dos venenos mais mortíferos.",
+            "Sua aparência na forma de Fera é de um homem como olhos como os de uma serpente, pálpebras e lábios recobertos com escamas, língua bifurcada, sem orelhas (apenas orifícios) e como escamas escuras nos ombros e atrás do pescoço."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Peçonha, Comunicação Animal, Inspirar Terror, Sentido Aguçado, Aumento de Atributos, Matilha, Presas, Sangue Frio."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Reação a Estímulos e Fala Limitada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beliors",
+      "title": "Beliors",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Os Feras meio homens meio ursos que habitam as montanhas geladas do Canadá. São, em maioria, seres selvagens e solitários, vivendo em cabanas rústicas em cidades pequenas ou em casas isoladas em colinas, vivendo como lenhadores na maioria das vezes. Seus principais aspectos são o temperamento calmo e a força descomunal. Sempre procuram evitar uma luta a todo o custo, mas caso isto mostrese impossível, revelamse verdadeiros guerreiros, capazes de saírem vitoriosos até lutando em uma grande desvantagem numérica.",
+        "Dificilmente deixam as montanhas, pois gostam muito da paz e da tranqüilidade que lá existem, e raramente andam em grupos, preferindo lidarem com suas vidas independentemente. Entretanto não dispensam o calor humano de uma boa família.",
+        "Sua forma de Fera é de uma criatura de 2 metros, peluda e com focinho alongado.",
+        "Poderes Possíveis: Aumento de Atributos, Pele Grossa, Garras, Inspirar Terror, Reprodutor.",
+        "Fraquezas: Pânico (multidões) e Inconsciência."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os Feras meio homens meio ursos que habitam as montanhas geladas do Canadá. São, em maioria, seres selvagens e solitários, vivendo em cabanas rústicas em cidades pequenas ou em casas isoladas em colinas, vivendo como lenhadores na maioria das vezes. Seus principais aspectos são o temperamento calmo e a força descomunal. Sempre procuram evitar uma luta a todo o custo, mas caso isto mostrese impossível, revelamse verdadeiros guerreiros, capazes de saírem vitoriosos até lutando em uma grande desvantagem numérica.",
+            "Dificilmente deixam as montanhas, pois gostam muito da paz e da tranqüilidade que lá existem, e raramente andam em grupos, preferindo lidarem com suas vidas independentemente. Entretanto não dispensam o calor humano de uma boa família.",
+            "Sua forma de Fera é de uma criatura de 2 metros, peluda e com focinho alongado."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Aumento de Atributos, Pele Grossa, Garras, Inspirar Terror, Reprodutor."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Pânico (multidões) e Inconsciência."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reflictys",
+      "title": "Reflictys",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Vindos provavelmente dos mares negros de Arkanun, estas criaturas são uma combinação bizarra de homens e peixes demoníacos. Não chegam a medir 1 metro e meio de altura, e semelhamse a anões corcundas e grotescos. Seu corpo é revestido por uma espécie de escama de vidro e de sua espinha dorsal alongamse cartilagens pontiagudas que chegam a medir até meio metro. No lugar de mãos possuem estilhaços largos de vidro, afiadíssimos, que lembram garras.",
+        "À primeira vista, seu aspecto pode parecer um tanto reptiliano, pois ainda possui uma longa cauda escura, que termina em uma barbatana fina e transparente.",
+        "A maioria destes Feras vive sempre em rios ou lagos de água doce, ou então em suas proximidades, pois necessitam estarem sempre em contato com a maior quantidade possível de umidade, tanto que só conseguem transformaremse quando está chovendo ou quando estão completamente molhados. São encontrados facilmente na norte da África e no sul da Ásia.",
+        "São criaturas muito ariscas, que não gostam de serem provocadas. Geralmente, temem confrontos diretos, preferindo refugiaremse no interior do ambiente aquático para agirem sorrateiramente mais tarde.",
+        "Poderes Possíveis: Aquático, Garras, Sangue Frio, Visão Noturna, Aumento de Atributos, Pele Grossa.",
+        "Fraquezas: Época de Transformação e Decapitação."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Vindos provavelmente dos mares negros de Arkanun, estas criaturas são uma combinação bizarra de homens e peixes demoníacos. Não chegam a medir 1 metro e meio de altura, e semelhamse a anões corcundas e grotescos. Seu corpo é revestido por uma espécie de escama de vidro e de sua espinha dorsal alongamse cartilagens pontiagudas que chegam a medir até meio metro. No lugar de mãos possuem estilhaços largos de vidro, afiadíssimos, que lembram garras.",
+            "À primeira vista, seu aspecto pode parecer um tanto reptiliano, pois ainda possui uma longa cauda escura, que termina em uma barbatana fina e transparente.",
+            "A maioria destes Feras vive sempre em rios ou lagos de água doce, ou então em suas proximidades, pois necessitam estarem sempre em contato com a maior quantidade possível de umidade, tanto que só conseguem transformaremse quando está chovendo ou quando estão completamente molhados. São encontrados facilmente na norte da África e no sul da Ásia.",
+            "São criaturas muito ariscas, que não gostam de serem provocadas. Geralmente, temem confrontos diretos, preferindo refugiaremse no interior do ambiente aquático para agirem sorrateiramente mais tarde."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Aquático, Garras, Sangue Frio, Visão Noturna, Aumento de Atributos, Pele Grossa."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Época de Transformação e Decapitação."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "minotauros",
+      "title": "Minotauros",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Na Antigüidade grega, existia a lenda do Minotauro do Labirinto, que se tornou famosa e perdurou até os dias de hoje. Mas, imagine que não exista apenas um destes seres, e sim uma espécie inteira destes homens com cabeça de touro.",
+        "Os Minotauros vivem em Arcádia e possuem grandes cidadelas onde vivem em clãs. Apesar desta vida aparentemente comum que levam, existem alguns membros que optam por não sedentarizaremse desta forma, preferindo percorrer o mundo à procura de desafios.",
+        "Estes Feras são grandes aventureiros. Corajosos e destemidos, gostam de brigas e perigos tanto quanto apreciam o gosto da carne (humana ou élfica). Alguns chegam a viverem como gladiadores ou mercenários nas cortes imperiais da Nova Arcádia, outros preferem se arriscar aventurandose nas colinas nebulosas de Halzazze.",
+        "Poderes Possíveis: Aumento de Atributos, Chifres, Regeneração, Sentir o Sobrenatural, Pele Grossa, Inspirar Terror.",
+        "Fraquezas: Forma Perpétua, Fome (carne)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Na Antigüidade grega, existia a lenda do Minotauro do Labirinto, que se tornou famosa e perdurou até os dias de hoje. Mas, imagine que não exista apenas um destes seres, e sim uma espécie inteira destes homens com cabeça de touro.",
+            "Os Minotauros vivem em Arcádia e possuem grandes cidadelas onde vivem em clãs. Apesar desta vida aparentemente comum que levam, existem alguns membros que optam por não sedentarizaremse desta forma, preferindo percorrer o mundo à procura de desafios.",
+            "Estes Feras são grandes aventureiros. Corajosos e destemidos, gostam de brigas e perigos tanto quanto apreciam o gosto da carne (humana ou élfica). Alguns chegam a viverem como gladiadores ou mercenários nas cortes imperiais da Nova Arcádia, outros preferem se arriscar aventurandose nas colinas nebulosas de Halzazze."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Aumento de Atributos, Chifres, Regeneração, Sentir o Sobrenatural, Pele Grossa, Inspirar Terror."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Forma Perpétua, Fome (carne)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "herats",
+      "title": "Herats",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Existe um certo tipo de criatura que os sábios não arriscam a classificarem como Vampiros. São os Herats, homens que foram picados por morcegos amaldiçoados e que transformaramse em projetos grotescos de chupadores de sangue.",
+        "Seu comportamento é muito mais animal do que humano e vivem geralmente como líderes de bandos morcegos carnívoros. Seu aspecto lembra o de um morcego gigante, mas com membros e rosto humanos. Possuem asas de pele enegrecida e temem a luz do sol tanto quanto um verdadeiro vampiro, sofrendo danos gravíssimos se for exposto a ela.",
+        "Seu porte é o de um verdadeiro predador noturno, dormindo de cabeça para baixo em tocas escuras durante o dia, e a noite caçando presas para saciar sua sede. Dificilmente estabelece algum tipo de comunicação verbal (pois ele ainda pode fazelo) com alguém, preferindo manterse afastado de qualquer assunto mortal.",
+        "Poderes Possíveis: Presas, Matilha, Visão Noturna, Asas, Sombras, Aumento de Atributos, Sentido Aguçado.",
+        "Fraquezas: Transmissor, Vulnerável (luz do sol), Instintividade."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Existe um certo tipo de criatura que os sábios não arriscam a classificarem como Vampiros. São os Herats, homens que foram picados por morcegos amaldiçoados e que transformaramse em projetos grotescos de chupadores de sangue.",
+            "Seu comportamento é muito mais animal do que humano e vivem geralmente como líderes de bandos morcegos carnívoros. Seu aspecto lembra o de um morcego gigante, mas com membros e rosto humanos. Possuem asas de pele enegrecida e temem a luz do sol tanto quanto um verdadeiro vampiro, sofrendo danos gravíssimos se for exposto a ela.",
+            "Seu porte é o de um verdadeiro predador noturno, dormindo de cabeça para baixo em tocas escuras durante o dia, e a noite caçando presas para saciar sua sede. Dificilmente estabelece algum tipo de comunicação verbal (pois ele ainda pode fazelo) com alguém, preferindo manterse afastado de qualquer assunto mortal."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Presas, Matilha, Visão Noturna, Asas, Sombras, Aumento de Atributos, Sentido Aguçado."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Transmissor, Vulnerável (luz do sol), Instintividade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "licantropos",
+      "title": "Licantropos",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "São os filhos de Licaon, um grande Rei de um dos Reinos da Antiga Grécia, que por um castigo de Zeus transformou os cinqüenta filhos de Licaon em lobos e os baniu das terras de seu reino. Dando assim origem aos primeiros lobisomens. Esses primeiros homens lobo criaram suas famílias que também herdaram a sua missão que é voltar para sua terra de origem que agora está em Arcádia. Estes lobisomens são os guardiões dos portais do Plano Dos Contos De Fadas. Por isso eles protegem as florestas.",
+        "Seus comportamentos são de humanos normais vivendo em grandes cidades tem boas relações com magos, algumas Ordens de Cavaleiros Templários e até com os vampiros Vrikolakas. Esses feras não querem saber muito dos jogos de interesses mortais. Preferem viver cuidando das florestas e viver isolados nas florestas e montanhas por todo mundo.",
+        "Mas existe uma grande facção deste feras que preferem caçar os vampiros ajudando os templários são os chamados caçadores de cabeças. São um tipo muito complexo de meio feras pois possuem muitos subgrupos visto o numero de famílias que os chamados primogênitos criaram por isso cada família tem o nome de um primogênito. Alguns primogênitos são: Ménalo, Tesproto, Hélix, Caucón, Horo, Helisom, Acontes, Alífeo, Estínfalo, Macareu, Palante, Hereeo, Hipsas e Cromo.",
+        "Poderes Possíveis: Garras, Presas, Matilha, Regeneração, Sentidos Aguçados, Comunicação Animal, Aumento de Atributos.",
+        "Fraquezas: Ligação à Terra, Espinhos, Vulnerável (prata ) e Fala Limitada."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "São os filhos de Licaon, um grande Rei de um dos Reinos da Antiga Grécia, que por um castigo de Zeus transformou os cinqüenta filhos de Licaon em lobos e os baniu das terras de seu reino. Dando assim origem aos primeiros lobisomens. Esses primeiros homens lobo criaram suas famílias que também herdaram a sua missão que é voltar para sua terra de origem que agora está em Arcádia. Estes lobisomens são os guardiões dos portais do Plano Dos Contos De Fadas. Por isso eles protegem as florestas.",
+            "Seus comportamentos são de humanos normais vivendo em grandes cidades tem boas relações com magos, algumas Ordens de Cavaleiros Templários e até com os vampiros Vrikolakas. Esses feras não querem saber muito dos jogos de interesses mortais. Preferem viver cuidando das florestas e viver isolados nas florestas e montanhas por todo mundo.",
+            "Mas existe uma grande facção deste feras que preferem caçar os vampiros ajudando os templários são os chamados caçadores de cabeças. São um tipo muito complexo de meio feras pois possuem muitos subgrupos visto o numero de famílias que os chamados primogênitos criaram por isso cada família tem o nome de um primogênito. Alguns primogênitos são: Ménalo, Tesproto, Hélix, Caucón, Horo, Helisom, Acontes, Alífeo, Estínfalo, Macareu, Palante, Hereeo, Hipsas e Cromo."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Garras, Presas, Matilha, Regeneração, Sentidos Aguçados, Comunicação Animal, Aumento de Atributos."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Ligação à Terra, Espinhos, Vulnerável (prata ) e Fala Limitada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pantros",
+      "title": "Pantros",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Os Pantros são uma raça de felinos criados da comunhão de uma pantera e de uma amazona que por castigo de matar uma pantera com crias um demônio a transformou em pantera para ser caçada por suas companheiras depois de muitos anos na sua vida como felina ela se tornou de novo uma humana foi quando Pantro, seu marido, naquela sua antiga vida a matou junto com seus filhos. Quando descobriu que havia matada seu fêmea ele pediu a piedade de Luna. A deusa os atendeu e depois deste dia, ele e seus descendentes teriam que passar a vida suas partes humanas e animais. Depois deste dia eles se tornaram os guerreiros de luna, defendendo a terra dos monstros vindos de Arkanun.",
+        "Poderes Possíveis: Garras, Presas, Aumento de Atributos, Sentidos Aguçados, Regeneração, Reprodutor e Matilha",
+        "Fraquezas: Ligação à Terra, Pânico (água), Instintividade e Fala Limitada."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os Pantros são uma raça de felinos criados da comunhão de uma pantera e de uma amazona que por castigo de matar uma pantera com crias um demônio a transformou em pantera para ser caçada por suas companheiras depois de muitos anos na sua vida como felina ela se tornou de novo uma humana foi quando Pantro, seu marido, naquela sua antiga vida a matou junto com seus filhos. Quando descobriu que havia matada seu fêmea ele pediu a piedade de Luna. A deusa os atendeu e depois deste dia, ele e seus descendentes teriam que passar a vida suas partes humanas e animais. Depois deste dia eles se tornaram os guerreiros de luna, defendendo a terra dos monstros vindos de Arkanun."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Garras, Presas, Aumento de Atributos, Sentidos Aguçados, Regeneração, Reprodutor e Matilha"
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Ligação à Terra, Pânico (água), Instintividade e Fala Limitada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garudas",
+      "title": "Garudas",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "São os homens pássaros das lendas incas. Esses Feras são um tipo especial de metamorfos, pois eles parecem ser a mistura de humanos e pássaros Arcanos. Na verdade, são filhos dos deuses demônios incas e humanos que, por algum motivo, ganharam o poder de se transformar em um tipo corrompido de falcão. Os Garudas vivem sempre em bandos de falcões e tem sempre muita atenção com as florestas.",
+        "Vivem na maior parte na floresta amazônica, pois dizem que lá existe um tipo de cidade onde eles vivem ou têm que visitála pelo menos uma vez na vida. Muitos já tentaram encontrar essa cidade com a promessa que essa cidade seria o Eldorado, a cidade feita de ouro. Mas nunca ninguém a encontrou. Dizem que ela coexiste na Terra e em Arkanun, mas para saber só através de um Garuda que conheça a verdade por detrás das lendas.",
+        "Poderes Possíveis: Garras, Bico, Asas, Regeneração, Matilha, Aumento de Atributos, e Pele Grossa.",
+        "Fraquezas: Decapitação, Ligação à Eldorado e Fala limitada."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "São os homens pássaros das lendas incas. Esses Feras são um tipo especial de metamorfos, pois eles parecem ser a mistura de humanos e pássaros Arcanos. Na verdade, são filhos dos deuses demônios incas e humanos que, por algum motivo, ganharam o poder de se transformar em um tipo corrompido de falcão. Os Garudas vivem sempre em bandos de falcões e tem sempre muita atenção com as florestas.",
+            "Vivem na maior parte na floresta amazônica, pois dizem que lá existe um tipo de cidade onde eles vivem ou têm que visitála pelo menos uma vez na vida. Muitos já tentaram encontrar essa cidade com a promessa que essa cidade seria o Eldorado, a cidade feita de ouro. Mas nunca ninguém a encontrou. Dizem que ela coexiste na Terra e em Arkanun, mas para saber só através de um Garuda que conheça a verdade por detrás das lendas."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Garras, Bico, Asas, Regeneração, Matilha, Aumento de Atributos, e Pele Grossa."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Decapitação, Ligação à Eldorado e Fala limitada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bastet",
+      "title": "Bastet",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "São os Feras filhos dos Anjos seguidores da deusa egípcia dos gatos, Bastet. Eles são uma variação dos nephalins, já que além de possuírem o Dom de se metamorfosear em gatos e também adquiriram a capacidade de assumirem uma forma guerreira. Esses Feras são, na verdade, a primeira forma de defesa contra os Nagas, pois os Bastet são o povo fera que protege os humanos dos joguinhos de poder dos nagas.",
+        "São muito tranqüilos e bem humorados. Vivem com o povo egípcio e gostam de fazer amigos, porém são muito territoriais. Por isso não invada seu território porque o que eles odeiam mais que as nagas são os espiões e ladrões.",
+        "Poderes Possíveis: Garras, Presas, Aumento de Atributos, Sentidos Aguçados, Sentir o Sobrenatural, Regeneração, Matilha, Sombras e Visão Noturna.",
+        "Fraquezas: Espinheiro, decapitação, Reação a Estímulos e Pânico (água)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "São os Feras filhos dos Anjos seguidores da deusa egípcia dos gatos, Bastet. Eles são uma variação dos nephalins, já que além de possuírem o Dom de se metamorfosear em gatos e também adquiriram a capacidade de assumirem uma forma guerreira. Esses Feras são, na verdade, a primeira forma de defesa contra os Nagas, pois os Bastet são o povo fera que protege os humanos dos joguinhos de poder dos nagas.",
+            "São muito tranqüilos e bem humorados. Vivem com o povo egípcio e gostam de fazer amigos, porém são muito territoriais. Por isso não invada seu território porque o que eles odeiam mais que as nagas são os espiões e ladrões."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Garras, Presas, Aumento de Atributos, Sentidos Aguçados, Sentir o Sobrenatural, Regeneração, Matilha, Sombras e Visão Noturna."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Espinheiro, decapitação, Reação a Estímulos e Pânico (água)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rocs",
+      "title": "Rocs",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Os Rocs são o povo fera descrito na coleção das mil e uma noites. São descritos como aves gigantes capazes levantar uma homem. Na verdade, eles são um povo fera que se assemelha com os garudas. Têm o corpo humanóide com asas em suas costas, é recoberto por penas e possuem cabeça de ave. Dizem as lendas que um inimigo Magnus Petraak, um demônio de Arkanun, fez um dos seus experimentos cabalísticos na terra. Usou uma ave arcana e cruzou suas características com um ser humano nascendo ai o primeiro roc. Sem saber do que havia sido feito com ele o humano chamado Roc ele viu suas características mudarem dando a ele capacidades especiais. Então Aeriton fez um pacto com Roc.",
+        "Os Rocs poderiam passar suas habilidades para seus descendentes se eles destruíssem Petraak e seus discípulos. No entanto, com a morte de Aeriton, os Rocs estavam livres do pacto. Mas o ódio era tanto contra os magos petros que eles ainda caçam esses magos e Petraak. Agora são vulgarmente chamados de caçadores de peles.",
+        "Poderes Possíveis: Asas, Bico, Garras, Pele grossa, Regeneração, Aumento de Atributos, Comunicação Animal e Sentidos aguçados.",
+        "Fraquezas: Fala Limitada, Instintividade, Reação a estímulos e transmissor."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os Rocs são o povo fera descrito na coleção das mil e uma noites. São descritos como aves gigantes capazes levantar uma homem. Na verdade, eles são um povo fera que se assemelha com os garudas. Têm o corpo humanóide com asas em suas costas, é recoberto por penas e possuem cabeça de ave. Dizem as lendas que um inimigo Magnus Petraak, um demônio de Arkanun, fez um dos seus experimentos cabalísticos na terra. Usou uma ave arcana e cruzou suas características com um ser humano nascendo ai o primeiro roc. Sem saber do que havia sido feito com ele o humano chamado Roc ele viu suas características mudarem dando a ele capacidades especiais. Então Aeriton fez um pacto com Roc.",
+            "Os Rocs poderiam passar suas habilidades para seus descendentes se eles destruíssem Petraak e seus discípulos. No entanto, com a morte de Aeriton, os Rocs estavam livres do pacto. Mas o ódio era tanto contra os magos petros que eles ainda caçam esses magos e Petraak. Agora são vulgarmente chamados de caçadores de peles."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Asas, Bico, Garras, Pele grossa, Regeneração, Aumento de Atributos, Comunicação Animal e Sentidos aguçados."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Fala Limitada, Instintividade, Reação a estímulos e transmissor."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defensores-do-ragnarok",
+      "title": "Defensores do Ragnarok",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Estes feras são outra variação de lobisomens. Mas neste caso estes são seres do folclore nórdico estes são guerreiros por natureza pois eles são as crias de Fenrir, o lobo citado no ragnarok (o apocalipse nórdico). Estes são as peças de loki no jogo de xadrez celestial. São uma raça que por tendência pêlos negros, ou então brancos com grandes manchas negras.",
+        "Eles esperam pela chegada de seu líder Fenrir para dar inicio a grande guerra do fim dos tempos. São os feras mais selvagens pois foram criados para a guerra. Mas não só existem estes Feras do lado de Loki mas também do lado de Thor. Também são homens honrados e pacíficos querendo que seus irmãos esqueçam esta bobagem de Ragnarok.",
+        "Poderes Possíveis: Garras, Presas, Sombras, Regeneração, Comunicação Animal, Sentir o Sobrenatural, Aumento de Atributos, Matilha e Sentido Aguçado.",
+        "Fraquezas: Reação a Estímulos, Instintividade, Vulnerável (prata), Espinheiro."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Estes feras são outra variação de lobisomens. Mas neste caso estes são seres do folclore nórdico estes são guerreiros por natureza pois eles são as crias de Fenrir, o lobo citado no ragnarok (o apocalipse nórdico). Estes são as peças de loki no jogo de xadrez celestial. São uma raça que por tendência pêlos negros, ou então brancos com grandes manchas negras.",
+            "Eles esperam pela chegada de seu líder Fenrir para dar inicio a grande guerra do fim dos tempos. São os feras mais selvagens pois foram criados para a guerra. Mas não só existem estes Feras do lado de Loki mas também do lado de Thor. Também são homens honrados e pacíficos querendo que seus irmãos esqueçam esta bobagem de Ragnarok."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Garras, Presas, Sombras, Regeneração, Comunicação Animal, Sentir o Sobrenatural, Aumento de Atributos, Matilha e Sentido Aguçado."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Reação a Estímulos, Instintividade, Vulnerável (prata), Espinheiro."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garras-de-sharikan",
+      "title": "Garras de Sharikan",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Estes Feras são os descendentes de Sharikan o tigre protetor das florestas Indianas. Estes Feras por natureza honram a missão dada a eles por Vishinu, que é de defender as florestas da destruição. Para esse objetivo eles ajudam a Agni e os Daiphiris na sua caçada aos temíveis Rakshasas.",
+        "Os Garras têm uma forte ligação com a família. Por isso vivem em clãs, com um território próprio. Onde vivem e treinam em contato com a natureza esperando novas missões. Eles esperam o dia em que encontraram o Espírito Ancestral Sharikan, e se tornar um líder de um dos clãs.",
+        "Muitos Garras viajam com os ciganos entrando em contato com outros metamorfos. Daí eles compartilham o mesmo ideal destruir os vampiros. Pois eles corrompem as florestas tão veneradas por eles.",
+        "Poderes Possíveis: Pele Grossa, Rapidez, Matilha, Garras, Presas e Sentir o Sobrenatural, Aumento de Atributos, Sombras.",
+        "Fraquezas:: Espinheiro, decapitação, Pânico (fogo) e Ligação à terra."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Estes Feras são os descendentes de Sharikan o tigre protetor das florestas Indianas. Estes Feras por natureza honram a missão dada a eles por Vishinu, que é de defender as florestas da destruição. Para esse objetivo eles ajudam a Agni e os Daiphiris na sua caçada aos temíveis Rakshasas.",
+            "Os Garras têm uma forte ligação com a família. Por isso vivem em clãs, com um território próprio. Onde vivem e treinam em contato com a natureza esperando novas missões. Eles esperam o dia em que encontraram o Espírito Ancestral Sharikan, e se tornar um líder de um dos clãs.",
+            "Muitos Garras viajam com os ciganos entrando em contato com outros metamorfos. Daí eles compartilham o mesmo ideal destruir os vampiros. Pois eles corrompem as florestas tão veneradas por eles."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Pele Grossa, Rapidez, Matilha, Garras, Presas e Sentir o Sobrenatural, Aumento de Atributos, Sombras."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            ": Espinheiro, decapitação, Pânico (fogo) e Ligação à terra."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "croatan",
+      "title": "Croatan",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "São os Feras que mais se parecem com os dinossauros, mas são a mistura de Homem e crocodilo. São seres silenciosos e traiçoeiros, que a primeira vista podem ser muito parecido com alguns demônios de Arkanun. O que não é uma total mentira. Certos sábios dizem que os metamorfos, no caso dos croatan, são o primeiro indicio da destruição e corrupção de Atlântida. Muitos magos atlantes falam que os Croatans eram os soldados de elite da Rainha Seifried. Com poderes especiais dado pela rainha de Atlântida. Mas parece que os poderes dos Antigos Soldados afetou os descendentes deste guerreiros abençoados.",
+        "Dizem que estes são os seguidores e os guardiões de Seifried na terra tentando reencontrar todos os cristais Atlantis para reerguer a sua amada ilha destruída por Cthulhu.",
+        "Poderes Possíveis: Aquático, Garras, Presas, Sentir o Sobrenatural, Aumento de Atributos, Sangue Frio, Inspirar Terror, Regeneração.",
+        "Fraquezas: Época de Transformação, Vulnerável (fogo), Transformação Trocada."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "São os Feras que mais se parecem com os dinossauros, mas são a mistura de Homem e crocodilo. São seres silenciosos e traiçoeiros, que a primeira vista podem ser muito parecido com alguns demônios de Arkanun. O que não é uma total mentira. Certos sábios dizem que os metamorfos, no caso dos croatan, são o primeiro indicio da destruição e corrupção de Atlântida. Muitos magos atlantes falam que os Croatans eram os soldados de elite da Rainha Seifried. Com poderes especiais dado pela rainha de Atlântida. Mas parece que os poderes dos Antigos Soldados afetou os descendentes deste guerreiros abençoados.",
+            "Dizem que estes são os seguidores e os guardiões de Seifried na terra tentando reencontrar todos os cristais Atlantis para reerguer a sua amada ilha destruída por Cthulhu."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Aquático, Garras, Presas, Sentir o Sobrenatural, Aumento de Atributos, Sangue Frio, Inspirar Terror, Regeneração."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Época de Transformação, Vulnerável (fogo), Transformação Trocada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parentes",
+      "title": "Parentes",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Os parentes são um tipo diferente de Feras. Os parentes são aqueles que são indistingüiveis de homens comuns. Na verdade, têm o poder dos Feras em seu sangue, mas não foram os escolhidos para desempenhar a grande missão dos Feras que é de defender a terra dos ataques dos demônios e suas hordas.",
+        "Os parentes podem ser os filhos, os irmãos, os pais ou qualquer tipo de outro parente do fera sendo assim os parentes são os feras que não desenvolveram o poder de se transformar em suas formas alternativas. Por isso eles tem o poder um pouco menor que os feras. Os parentes humanos podem usar os outros poderes dos feras normalmente.",
+        "Poderes Possíveis: Escolha uma raça",
+        "Fraquezas: Forma Perpetua (humano), qualquer outra fraqueza da raça escolhida."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os parentes são um tipo diferente de Feras. Os parentes são aqueles que são indistingüiveis de homens comuns. Na verdade, têm o poder dos Feras em seu sangue, mas não foram os escolhidos para desempenhar a grande missão dos Feras que é de defender a terra dos ataques dos demônios e suas hordas.",
+            "Os parentes podem ser os filhos, os irmãos, os pais ou qualquer tipo de outro parente do fera sendo assim os parentes são os feras que não desenvolveram o poder de se transformar em suas formas alternativas. Por isso eles tem o poder um pouco menor que os feras. Os parentes humanos podem usar os outros poderes dos feras normalmente."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Escolha uma raça"
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Forma Perpetua (humano), qualquer outra fraqueza da raça escolhida."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "harpias",
+      "title": "Harpias",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "As Harpias são um tipo especial de meio pássaros descendentes de uma das três Górgonas. Elas se dividem em uma ordem matriarcal, onde escolhem os cantos mais remotos da Terra para viver, pois foram incansavelmente perseguidas pela inquisição. Elas são as autenticas caçadoras das montanhas. Poucas Harpias se aventuram fora dos picos elevados, pois têm medo de sofrem novas represálias. Existem, contudo outras famílias de Harpias, mas estas já não fazem parte de nosso plano, uma vez que se refugiaram em Arcádia há muito tempo atrás.",
+        "As Harpias mais jovens temem a Magia, deixando, assim, para as anciãs cuidarem deste tipo de energia misteriosa. Por esse motivo apenas as Harpias anciãs escolhidas entre as guerreiras mais fortes da família são as únicas que sabem usar as energias mísiticas. Não existem Harpias masculinas. O único modo de uma Harpia conceber um filho é com um humano. A criança à qual a Harpia dará a luz será uma nova Harpia ou um menino mortal sem nenhuma diferença aparente. As lendas dizem que as Harpias seqüestravam os homens das aldeias com suas vozes melodiosas e os escravizavam como reprodutores. Também comentase que os corvos da Tower of London, na verdade, são filhos gerados pelas Harpias inglesas que tiveram seus poderes igualados aos de suas irmãs por um ritual misterioso para defender o tesouro da coroa inglesa. Sua aparência, no entanto, tornouse semelhante à de corvos.",
+        "Poderes possíveis: Asas, Reprodutor, Aumento de Atributos, Regeneração, Presas e Garras",
+        "Fraquezas: Forma Perpétua, Fome(carne), Ligação à Terra."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "As Harpias são um tipo especial de meio pássaros descendentes de uma das três Górgonas. Elas se dividem em uma ordem matriarcal, onde escolhem os cantos mais remotos da Terra para viver, pois foram incansavelmente perseguidas pela inquisição. Elas são as autenticas caçadoras das montanhas. Poucas Harpias se aventuram fora dos picos elevados, pois têm medo de sofrem novas represálias. Existem, contudo outras famílias de Harpias, mas estas já não fazem parte de nosso plano, uma vez que se refugiaram em Arcádia há muito tempo atrás.",
+            "As Harpias mais jovens temem a Magia, deixando, assim, para as anciãs cuidarem deste tipo de energia misteriosa. Por esse motivo apenas as Harpias anciãs escolhidas entre as guerreiras mais fortes da família são as únicas que sabem usar as energias mísiticas. Não existem Harpias masculinas. O único modo de uma Harpia conceber um filho é com um humano. A criança à qual a Harpia dará a luz será uma nova Harpia ou um menino mortal sem nenhuma diferença aparente. As lendas dizem que as Harpias seqüestravam os homens das aldeias com suas vozes melodiosas e os escravizavam como reprodutores. Também comentase que os corvos da Tower of London, na verdade, são filhos gerados pelas Harpias inglesas que tiveram seus poderes igualados aos de suas irmãs por um ritual misterioso para defender o tesouro da coroa inglesa. Sua aparência, no entanto, tornouse semelhante à de corvos."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Asas, Reprodutor, Aumento de Atributos, Regeneração, Presas e Garras"
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Forma Perpétua, Fome(carne), Ligação à Terra."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filhos-de-aracne",
+      "title": "Filhos de Aracne",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "As filhas de Aracne são também conhecidas como viúvas negras.",
+        "Diz a lenda que a matriarca desta família era uma grande tecelã grega chamada Aracne, que ousou desafiar Athena para ver quem era a maior tecelã do universo. Apesar de ter vencido a deusa, foi transformada em aranha, juntamente com suas filhas, por seu orgulho. Lilith apiedouse do destino de Aracne e deulhe uma nova chance de viver como uma mortal. Criouse assim uma nova raça de meioferas, conhecida como descendentes de Aracne. Vistos como uma aberração à serviço dos demônios, os Anjos e os demais Licantropos desprezam estes Feras, que são obrigados a viverem em escondidos da sociedade mortal.",
+        "Os filhos homens são exímios guerreiros, tendo ganhado o nome de Fúrias de Ares, pois é a única divindade que vê qualidade em tais criaturas. Sua forma animal e diferente pois alguns podem se transformar em uma única aranha e outros em várias aranhas.",
+        "Poderes Possíveis: Teia, Garras, Aumento de Atributos, Reprodutor, Pele Grossa, Sombras, Peçonha, Inspirar Terror.",
+        "Fraquezas: Fome (carne), Transformação Trocada, Reação a Estímulos, Instintividade."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "As filhas de Aracne são também conhecidas como viúvas negras.",
+            "Diz a lenda que a matriarca desta família era uma grande tecelã grega chamada Aracne, que ousou desafiar Athena para ver quem era a maior tecelã do universo. Apesar de ter vencido a deusa, foi transformada em aranha, juntamente com suas filhas, por seu orgulho. Lilith apiedouse do destino de Aracne e deulhe uma nova chance de viver como uma mortal. Criouse assim uma nova raça de meioferas, conhecida como descendentes de Aracne. Vistos como uma aberração à serviço dos demônios, os Anjos e os demais Licantropos desprezam estes Feras, que são obrigados a viverem em escondidos da sociedade mortal.",
+            "Os filhos homens são exímios guerreiros, tendo ganhado o nome de Fúrias de Ares, pois é a única divindade que vê qualidade em tais criaturas. Sua forma animal e diferente pois alguns podem se transformar em uma única aranha e outros em várias aranhas."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Teia, Garras, Aumento de Atributos, Reprodutor, Pele Grossa, Sombras, Peçonha, Inspirar Terror."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Fome (carne), Transformação Trocada, Reação a Estímulos, Instintividade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crias-do-caos",
+      "title": "Crias do Caos",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "descricao",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "Este tipo de meiofera é especial, fruto de uma maldição lançada por algum Mago muito poderoso. Recebem este nome pois não possuem controle e nem consciência de seus dons.",
+        "Muitas vezes eles nem sabem o que lhes aconteceu realmente. A maldição faz com que a vítima transformese em uma besta irracional toda a lua cheia e volte normal pela manhã. Durante este tempo o personagem não possuem consciência de seus atos (o Mestre é quem define o que ele fará) e nem mede suas conseqüências. Para livrarse da maldição, é preciso matar o Mago que a lançou ou pedir para que ele a retire. O feitiço faz com que o personagem assuma apenas a forma de Fera que foi utilizada como fetiche.",
+        "Poderes possíveis: Escolha uma raça.",
+        "Fraquezas: Instintividade, Época de Transformação, Vulnerável (prata), Inconsciência, Transmissor, Decapitação, Espinheiro."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Este tipo de meiofera é especial, fruto de uma maldição lançada por algum Mago muito poderoso. Recebem este nome pois não possuem controle e nem consciência de seus dons.",
+            "Muitas vezes eles nem sabem o que lhes aconteceu realmente. A maldição faz com que a vítima transformese em uma besta irracional toda a lua cheia e volte normal pela manhã. Durante este tempo o personagem não possuem consciência de seus atos (o Mestre é quem define o que ele fará) e nem mede suas conseqüências. Para livrarse da maldição, é preciso matar o Mago que a lançou ou pedir para que ele a retire. O feitiço faz com que o personagem assuma apenas a forma de Fera que foi utilizada como fetiche."
+          ]
+        },
+        {
+          "id": "poderes-possiveis",
+          "title": "Poderes Possíveis",
+          "area": "racas",
+          "paragraphs": [
+            "Escolha uma raça."
+          ]
+        },
+        {
+          "id": "fraquezas",
+          "title": "Fraquezas",
+          "area": "racas",
+          "paragraphs": [
+            "Instintividade, Época de Transformação, Vulnerável (prata), Inconsciência, Transmissor, Decapitação, Espinheiro."
+          ]
+        }
+      ]
+    }
+  ],
+  "areaCounts": {
+    "cenarios_lore": 1,
+    "regras_base": 1,
+    "rituais": 4,
+    "poderes": 20,
+    "aprimoramentos": 5,
+    "racas": 17
+  },
+  "reviewNotes": [
+    "Piloto inicial por faixas do DOCX.",
+    "Fraquezas foram tratadas provisoriamente como regras base, pois ainda não há categoria lateral própria para desvantagens/fraquezas.",
+    "Feras prontos foram tratados como raças/linhagens."
+  ]
+}

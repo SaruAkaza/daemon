@@ -1,0 +1,685 @@
+{
+  "version": 1,
+  "source": "4killers",
+  "title": "4killers",
+  "sourceFile": "4killers.docx",
+  "sourcePath": "Livros\\word\\4killers.docx",
+  "sourceQualityStatus": "ok",
+  "generatedAt": "2026-06-02T23:46:22",
+  "paragraphs": 125,
+  "segments": [
+    {
+      "id": "4killers-seg-0001-saidos-do-inferno",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Saídos do Inferno",
+      "paragraphRange": [
+        1,
+        12
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1961,
+      "wordCount": 318,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bhist[oó]ria\\b",
+            "\\blenda(?:s)?\\b",
+            "long_lore_block"
+          ]
+        },
+        {
+          "area": "aventuras",
+          "label": "Aventuras",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\baventura(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Saídos do Inferno\n\n\"Um, dois, Freddy vem te pegar!\n\nTrês, quatro, é melhor a porta do quarto trancar! Cinco, seis, agarre o seu crucifixo!\n\nSete, oito,.é melhor ficar acordado até tarde! Nove, dez, e nunca dormir outra vez!\"\n\nA Hora do Pesadelo\n\nUma das coisas mais fascinantes em jogos de RPG é a interação com os antagonistas da aventura. E, quanto mais interessante for este antagonista, mais inesquecível a aventura se tornará.\n\nO objetivo deste pequeno livro é ajudar o Mestre a por um vilão inesquecível na aventura. Ou melhor, quatro deles...\n\nUm problema surge quando o Mestre quer colocar um vilão inesquecível na aventura: é difícil os jogadores terem respeito por ele. Afinal, destruir inimigos é coisa comum...\n\nPor isso, este livro trará os quatro assassinos mais famosos e poderosos do cinema para o sistema Daemon. São eles Jason Voorhees, Fred Krueger, Michael Myers e Thomas Hewitt (Leatherface).\n\nAbaixo segue a história dessas quatro lendas do terror moderno, juntamente com suas fichas. Vale lembrar que se tratam de seres poderosos (são todos eles assassinos de 15º nível!), com centenas de mortes em seu currículo. Não é coisa para amadores!\n\nOs personagens serão feitos procurando respeitar o máximo possível a sua versão “original” (no caso, sua primeira aparição em um filme), já que eles foram muito descaracterizados (para não dizer avacalhados) em suas versões posteriores. As perícias estão bem restritas também, uma vez que os filmes são limitados a este respeito, cabendo ao Mestre completar a lista da maneira que achar melhor.\n\nNo final de cada personagem será apresentada uma lista de curiosidades. Esta lista são fatos importantes que aparecem em filmes posteriores da série. Porém, as vezes algum fato acabava sendo contrariado em outras versões, e na maioria das vezes, os fãs desaprovam. Por isso, cabe ao Mestre decidir se estes fatos serão reais ou não. Outros fatos citados podem ser apenas curiosidades sobre os filmes."
+    },
+    {
+      "id": "4killers-seg-0002-con-16fr-15dex-20agi-24int-19will-20per-22car-13",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "CON 16FR 15DEX 20AGI 24INT 19WILL 20PER 22CAR 13",
+      "paragraphRange": [
+        13,
+        30
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 3860,
+      "wordCount": 645,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 7.17,
+          "confidence": 0.738,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\bcidade(?:s)?\\b",
+            "\\bordem(?:ns)?\\b",
+            "long_lore_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Fred Krueger\n\nAssassino 15º nível\n\nCON 16FR 15DEX 20AGI 24INT 19WILL 20PER 22CAR 13\n\nPV 31+45, Ataques 1 (garra) 120/120, dano 1d6+1, IP 1\n\nGarras 120/120, artes marciais 60/60, mecânica 50, ocultismo 120\n\nGanha +18 em seus atributos físicos e todos os caminhos mágicos 8 (com 15 pontos de magia) quando está no Sonhar\n\nTudo começa com uma jovem freira, chamada Amanda Krueger. Ela trabalhava em um manicômio para criminosos insanos e violentos, localizado na pequena Springwood. Na véspera de um feriado, ela acabou ficando presa junto com os criminosos, e foi estuprada violentamente dezenas de vezes. Foi escondida pelos presos, e só fio achada dias depois. Deste horrendo episódio, nasceu Fred Krueger.\n\nDesde pequeno, Freddy já mostrava sinais de crueldade, se deliciando com a morte de pequenos animais. A sua mãe foi expulsa da ordem religiosa, e começou a se envolver com homens, na tentativa de criar uma família. Mas acabou sendo pior, alguns chegavam a maltratar ela e a seu filho. E assim o jovem Fred começou a desenvolver sua personalidade doentia.\n\nQuando adulto, Fred arrumou emprego em uma fábrica na periferia da cidade. Lá, isolado do mundo, ele desenvolveu sua peculiar arma: uma luva metálica, com os dedos substituídos por navalhas.\n\nSua primeira vítima foi uma jovem menininha, chamada Amy. Fred se apresentou como “tio Freddy”, e disse que a levaria embora. Ela se recusou, então ele apenas tapou sua boca enquanto passava as suas navalhas na barriga dela... depois, a pôs em seu carro e a levou para a fábrica, onde a torturou e matou. Escondeu seu corpo por lá também. Depois deste episódio, começou a matar mais crianças, levando-as para a fábrica ou para a sua casa, que ficava na Rua Elm, nº 1428. Sempre torturando-as com suas navalhas, e as matando vagarosamente, para depois esconder seus corpos nas caldeiras da fábrica.\n\nCom tantos desaparecimentos, uma intensa investigação se iniciou, e não demorou para acharem o culpado. Porém, devido a ansiedade em se pegar o assassino, os policias acabaram cometendo alguns erros na prisão (como não estar com um mandato, entre outros), e o juiz absolveu Freddy de seus crimes.\n\nFreddy já planejava fugir para uma nova cidade, desta vez tomando maiores precauções para não ser pego, mas não teve chance: a população, revoltada com o acontecido, foi atrás dele. O espancaram e o queimaram vivo, dentro das caldeiras onde tantos crimes ele cometeu. Seria o fim de Fred Krueger... ou não!\n\nDe uma forma sobrenatural, Fred acabou sobrevivendo. Mas não no mundo real, e sim nos sonhos dos jovens da cidade. Ou melhor dizendo, nos pesadelos! De alguma forma, alguma entidade poderosa do Sonhar o levou para lá!\n\nFreddy aparece nos sonhos das pessoas (nos jovens, principalmente, suas vítimas preferidas). Como uma forma de vingança, começou a assassinar os filhos de seus assassinos, aparecendo em seus pesadelos e os matando lá. Quando uma vítima de Freddy morre no sonho, morre também no mundo real.\n\nFreddy aparece nos pesadelos do modo como morreu: uma calça preta, um chapéu marrom amassado e um suéter com listras vermelhas e verdes. E, claro, sua luva com navalhas. Seu rosto também está desfigurado, resultado das queimaduras ganhas na sua morte.\n\nNos pesadelos, suas vítimas são levadas para cenários sombrios, em geral, a velha refinaria onde trabalhava, com os cadáveres das crianças mortas. As vezes, elas cantam a canção “um, dois, Freddy vem te pegar/ três, quatro, é melhor a porta do quarto trancar/ cinco, seis, agarre o seu crucifixo/ sete, oito, é melhor ficar acordado até tarde/ nove, dez, e nunca dormir outra vez!”. E neste\n\ncenário, Freddy reina absoluto, podendo moldar o cenário e tudo dentro dele com sua vontade. A vítima não tem chance... exceto se acordar!\n\nDepois da sua vingança, Freddy começou a matar todos os jovens de Springwood... alguém terá que detê-lo!"
+    },
+    {
+      "id": "4killers-seg-0003-personalidade",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Personalidade",
+      "paragraphRange": [
+        31,
+        36
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1621,
+      "wordCount": 268,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Personalidade\n\nFred Krueger é um assassino sádico. De delicia com o medo de suas vítimas (e até mesmo se fortalece com ele), de modo que ele nunca mata sua vítima rapidamente. Pelo contrário, ele começa a aparecer em seus sonhos, de início, apenas assustando-as, deixando elas com um terrível medo de voltar a dormir, para então realizar o ato final.\n\nQuando uma vítima é atacada por Fred em seus sonhos, o ferimento é levado para o mundo real. Desta maneira, ao cortar a barriga de sua vítima, um corte idêntico irá aparecer no verdadeiro corpo da vítima (rasgando suas roupas, inclusive). E Fred adora torturar suas vítimas com este poder, fazendo elas “passearem” pelas paredes do quarto, “suga-las” para dentro do colchão, arremessa-las... essas coisas. A visão, para quem está acordado vendo a vítima dormir, é assustadora!\n\nSeu ritual de morte segue um estilo padrão: deixar a vítima correndo pelo cenário criado, e aos poucos persegui-la, mostrando suas sombras, suas garras, enquanto pronuncia de maneira sádica o nome da vítima. Depois se revela, dá sua risada sinistra, e parte em perseguição, fatiando e retalhando seus frágeis corpos. As vezes, alguma pequena citação pode ser mencionada antes fa perseguição (“um... carne fresca”, ou “deixe eu ser seu namorado...”). Mas vai\n\nterminar da mesma forma: um louco rindo enquanto persegue sua vítima.\n\nPorém, quando deseja uma morte “criativa”, Freddy tem total poder para faze-lo: pode se transformar em monstros, mandar a vítima para dentro de um jogo de vídeo game, pode criar tentáculos, transformar a vítima em barata... o limite é a imaginação doentia dele."
+    },
+    {
+      "id": "4killers-seg-0004-poderes",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Poderes",
+      "paragraphRange": [
+        37,
+        43
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1180,
+      "wordCount": 200,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Poderes\n\nFred agora é uma criatura do Sonhar. Ele tem o poder de aparecer nos sonhos de qualquer pessoa (apesar de voltar sua atenção para a rua Elm, em Springwood) e fazer com que os ferimentos que ela tenha nos sonhos se tornem reais.\n\nNo Sonhar, seus poderes são imensos: ele ganha +18 em todos os seus atributos e ele pode realizar qualquer efeito ou ritual que deseje, como se tivesse focus 8 em todos os 12 caminhos da magia. Sua única limitação é que não é possível para ele sair do Sonhar... pelo menos, não por sua vontade.\n\nPara trazer ele ao plano da Terra, basta segura-lo no sonho, e acordar. Sua forma física terrena é bem mais fácil de ser enfrentada, já que não tem qualquer poder especial.\n\nMesmo se derrotado, Freddy não será destruído. Seu espírito irá vagar pelos planos, até que alguém relembre dele. Quando uma única pessoa lembrar de sua existência, ele conseguirá um poder mínimo, mas suficiente para que ele\n\nretorne, mesmo extremamente enfraquecido, para o Sonhar, onde irá começar a recolher poder para novamente atingir seus poderes plenos.\n\nPara destruí-lo definitivamente, é necessário rituais específicos que destruam permanentemente o seu espírito."
+    },
+    {
+      "id": "4killers-seg-0005-curiosidades",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Curiosidades",
+      "paragraphRange": [
+        44,
+        51
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1209,
+      "wordCount": 215,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\bcidade(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Curiosidades\n\nFreddy é o vilão da série A Hora do Pesadelo, que possui 7 partes, e no filme Freddy vs Jason.\n\nFreddy, por alguma razão, está aprisionado em Springwood. Ele não pode aparecer em um pesadelo de alguém que não esteja sonhando dentro da cidade.\n\nA mãe de Freddy, Amanda, não consegue descansar em paz, e seu espírito vaga por Springwood, podendo ajudar os personagens que enfrentam Fred.\n\nFred pode possuir o corpo de alguém. Ele usa este artifício quando deseja fazer algo no mundo real. Ele assumi o controle do corpo na hora que deseja, desde que já tenha derrotado a vítima em seu pesadelo.\n\nFreddy foi casado, e teve uma filha. Mas em uma briga, ele acabou assassinando a mulher, e abandonou a filha. Ela seria a Dr. Maggie Burroughs (que não tem conhecimento de que é filha de Fred).\n\nA sua força vem do medo de suas vítimas. Então, se fosse possível fazer todos pararem de sonhar com ele, sua força desapareceria (este é o argumento do “Freddy vs Jason”).\n\nNo primeiro e no último filme da série (partes 1 e 7), Freddy é um personagem sério, aterrorizante, e mata na maior parte do tempo com suas navalhas. Nos outros, ele é mais brincalhão, fazendo piadinhas de péssimo gosto o tempo todo."
+    },
+    {
+      "id": "4killers-seg-0006-con-22fr-20dex-16agi-10int-12will-20per-16car-7",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "CON 22FR 20DEX 16AGI 10INT 12WILL 20PER 16CAR 7",
+      "paragraphRange": [
+        52,
+        65
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2046,
+      "wordCount": 335,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Jason Voorhees\n\nAssassino 15º nível\n\nCON 22FR 20DEX 16AGI 10INT 12WILL 20PER 16CAR 7\n\nPV 36+60, Ataques 1 (arma), dano por arma +3, IP 2\n\nArmasBrancas(todas)100/100,artesmarciais75/50,furtividade100, sobrevivência (florestas) 60, rastreio 60\n\nJason desde pequeno mostrava que não era um garoto normal. Era mudo, grandalhão, desajeitado e tinha o rosto desfigurado. Apesar disso, sua mãe, Pámela Voorhees, sempre o tratou como uma criança normal, sendo sempre o “precioso da mamãe”.\n\nDurante as férias escolares, Jason foi para um acampamento em Crystal Lake. Durante uma bela tarde de Sol, as outras crianças caçoaram do deformado Jason, e assustado, acabou caindo dentro do lago do acampamento. Jason não sabia nadar, e morreu afogado. O casal de instrutores estavam fazendo sexo em vez de vigiar o garoto.\n\nEste fato acabou corrompendo a imagem do local, e o acampamento ficou fechado por vários anos. Porém, um empresário resolveu investir no lugar, e contratou alguns jovens para cuidarem da reabertura do local.\n\nDurante a estadia, os jovens começaram a ser atacados, um a um, e foram mortos de maneiras horríveis. O assassino era... Pámela Voorhees! A senhora Voorhees ainda guardava um ódio mortal por seu filho ter sido morto, e numa vingança, comprou o acampamento e foi a responsável por sua reabertura.\n\nSeu objetivo era continuar matando todos os jovens que aparecessem no acampamento. Mas logo de cara, seu plano falhou... a jovem Alice conseguiu decapitar sua cabeça, pondo fim a seus planos.\n\nNeste momento, algo saiu das águas frias do lago de Cristal Lake...\n\nAlguns anos depois, a jovem sobrevivente foi morta em sua casa. E várias mortes começaram a acontecer em acampamentos de Cristal Lake.\n\nPámela Voorhees estava morta, mas seu plano de vingança seria continuado. Sua cabeça seria guardada em cima de um móvel, como um objeto de valor, em uma cabana simples, localizada no meio da floresta de Cristal Lake. E seu dono seria aquele que começava sua louca vingança contra todos de Cristal Lake.\n\nJason Voorhees está de volta!"
+    },
+    {
+      "id": "4killers-seg-0007-personalidade",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Personalidade",
+      "paragraphRange": [
+        66,
+        69
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 868,
+      "wordCount": 154,
+      "primaryArea": "itens_equipamentos",
+      "classifications": [
+        {
+          "area": "itens_equipamentos",
+          "label": "Itens e Equipamentos",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\barma(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Personalidade\n\nNão há muito o que se possa dizer sobre a personalidade deste assassino. Jason sempre foi um garoto estranho, e agora seu único objetivo é matar todos aqueles que acampam em Cristal Lake. Ele vive escondido em uma cabana nas florestas, a espera de suas vítimas.\n\nJason não é um assassino discreto. Ele apenas fica escondido, esperando o melhor momento. Quando acha que é a hora, se revela e começa a causar uma onda de destruição em tudo a sua volta. Apesar de silencioso (Jason é um mestre em furtividade), ele não se preocupa em se revelar para todos. Ele não é do tipo que mata uma vítima por vez: se puder, ele aparece no meio de uma festa, batendo em todos que ficarem na frente.\n\nJason também não possui uma arma padrão. Ele é provavelmente o mais criativo dos assassinos, matando suas vítimas com as mais variadas armas, dos mais variados jeitos."
+    },
+    {
+      "id": "4killers-seg-0008-poderes",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Poderes",
+      "paragraphRange": [
+        70,
+        76
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 916,
+      "wordCount": 148,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Poderes\n\nOs poderes de Jason são poucos, mas suficientes.\n\nSua maior característica é sua imortalidade. Não importa o quanto ele seja esmagado, cortado, triturado, queimado... ele estará lá, de volta.\n\nQuando é derrotado, seu corpo de fato morre. Mas não de decomporá. Ele aos poucos irá se regenerar, até voltar ao normal. Porém, mesmo quando totalmente regenerado, Jason ficará em coma, dormindo. Ele só irá acordar quando algum evento acontecer que o desperte. E a matança voltará.\n\nJason tem mais alguns poderes curiosos. Ele tem um dom com qualquer arma branca que lhe vem as mãos. Não importa que arma seja, Jason será mestre\n\nem seu uso. Outra característica é que Jason é capaz de conhecer um terreno estranho instantaneamente, dominando o lugar. Não importa se o terreno seja um acampamento ou uma nave estrelar...\n\nPara se acabar definitivamente com Jason, seria necessário derrota-lo no próprio Inferno..."
+    },
+    {
+      "id": "4killers-seg-0009-curiosidades",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Curiosidades",
+      "paragraphRange": [
+        77,
+        82
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 751,
+      "wordCount": 147,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bsangue\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Curiosidades\n\nJason é o vilão principal da série Sexta Feira 13 (que possui 8 partes), aparecendo também no Jason vai para o Inferno, Jason X e Freddy vs Jason.\n\nJason não é o vilão das partes 1 e 5. No filme original, sua mãe é a assassina, e na parte 5, um homem deseja vingança e assume as roupas de Jason para começar um massacre.\n\nJason só ganha sua máscara de hóquei na parte 3. Até então, ele usava um saco na cabeça.\n\nJason sempre anda devagar, desajeitado. Porém, ele está sempre a um passo de sua vítima!\n\nA única forma de Jason morrer é ele ser destruído por alguém que tenha o seu sangue, como sua irmã (este fato é um enorme furo na série, já que no início Jason é filho único, e do nada ele ganha uma irmã, no “Jason vai para o Inferno)."
+    },
+    {
+      "id": "4killers-seg-0010-michael-myers",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Michael Myers",
+      "paragraphRange": [
+        83,
+        89
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1086,
+      "wordCount": 197,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Michael Myers\n\nAssassino 15º nível\n\nCON 18  FR 21  DEX 14  AGI 14  INT 15  WILL 18  PER 17  CAR 8\n\nPV 35+45, Ataques 1 (faca) 120/120, dano 1d6+4, IP 1 Faca 120/120, artes marciais 60/60, furtividade 150\n\nAos 6 anos de idade, Michael Myers inexplicavelmente pegou uma faca de cozinha e retalhou o corpo de sua irmã mais velha, que acabara de fazer sexo com o namorado. Seus pais, inconformados, colocaram ele em um manicômio, onde ele nunca disse uma única palavra sequer, sempre mostrando seu mesmo olhar vazio de sempre.\n\nQuinze anos se passaram, e apesar dos esforços do Dr. Sam Loomis, nunca foi descoberto a razão do enlouquecimento de Myers. Porém, durante uma falha na segurança no dia do Halloween, Michael escapa e inicia uma onda de terror...\n\nMichael está, inexplicavelmente, obcecado em acabar com a jovem babá Laurie. Não é de conhecimento geral, mas Laurie também é irmão de Michael, por isso a sua obsessão em acabar com sua vida. Também não se sabe qual é o motivo do porque Michael quer acabar com sua família, mas o fato é que nenhum parente do assassino está a salvo!"
+    },
+    {
+      "id": "4killers-seg-0011-personalidade",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Personalidade",
+      "paragraphRange": [
+        90,
+        93
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 618,
+      "wordCount": 107,
+      "primaryArea": "magias",
+      "classifications": [
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bcaminho(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Personalidade\n\nMichael Myers é muito discreto e silencioso. É um dos maiores mestres em furtividade que existe, sendo capaz de ficar vários dias em uma casa sem que ninguém saiba de sua existência.\n\nNunca foi revelado o motivo de seu ódio por sua família. Mas ele tem obsessão em destruir seus parentes. E as mortes que acontecem pelo caminho são sempre de alguma forma ligada a esta obsessão.\n\nMichael sempre usa uma máscara branca, de bicho-papão, e um facão de cozinha. Não é do tipo que gosta de platéia: prefere atacar sua vítima escondido, aparecendo de surpresa quando ela menos espera, e quando não pode fugir!"
+    },
+    {
+      "id": "4killers-seg-0012-poderes",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Poderes",
+      "paragraphRange": [
+        94,
+        97
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 532,
+      "wordCount": 93,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 7.585,
+          "confidence": 0.761,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Poderes\n\nMichael não é dotado de imensos poderes. Além de uma imensa força física e uma capacidade de permanecer em silencio sobre-humana, ele poderia ser considerado uma pessoa normal.\n\nPorém, fato é que ele tem uma resistência imensa, e é capaz de se curar rapidamente. Considere que ele é capaz de regenerar todos os seus pontos de vida perdidos em um único dia.\n\nPara mata-lo, é necessário que ele realmente seja destruído, como uma decapitação. Ser apenas derrotado fará com que seu corpo se regenere, e que ele volte a ação..."
+    },
+    {
+      "id": "4killers-seg-0013-curiosidades",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Curiosidades",
+      "paragraphRange": [
+        98,
+        102
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 691,
+      "wordCount": 125,
+      "primaryArea": "rituais",
+      "classifications": [
+        {
+          "area": "rituais",
+          "label": "Rituais",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\britual(?:is|s)?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bculto(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "tabelas",
+          "label": "Tabelas e Geradores",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bresultado(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Curiosidades\n\nMichael Myers é o grande vilão da série Halloween (que possui 8 partes).\n\nA parte 3 do filme, curiosamente, em nada tem a ver com o restante da série. É apenas um bom filme de terror, que leva o nome da série.\n\nOs dois últimos filmes da série (Halloween H20 e Halloween Ressurreição) foram feitos levando em consideração apenas as partes 1 e 2. Isso porque os produtores acharam (e com razão!) que as partes 4, 5 e 6 (lembrando que a 3 em nada tem a ver som a série) teriam descaracterizado os personagens demais.\n\nMichael Myers seria o resultado de um ritual envolvendo um culto profano. Se isso for verdade, ele deixaria de ser um simples assassino para se tornar um demônio!"
+    },
+    {
+      "id": "4killers-seg-0014-con-20fr-20dex-14agi-17int-10will-19per-15car-6",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "CON 20FR 20DEX 14AGI 17INT 10WILL 19PER 15CAR 6",
+      "paragraphRange": [
+        103,
+        112
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1021,
+      "wordCount": 176,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Thomas Hewitt (Leatherface)\n\nAssassino 15º nível\n\nCON 20FR 20DEX 14AGI 17INT 10WILL 19PER 15CAR 6\n\nPV 35+60, Ataques 1 (motosserra ou arma), dano 3d6 ou por arma +3, IP 2 Motosserra 120/0, armas brancas (todas) 60/60, artes marciais 60/60, furtividade 70, rastreio 70\n\nQuase nada se sabe a respeito deste curioso assassino.\n\nThomas Hewitt, conhecido como Leatherface, é um membro de uma grande família de canibais.\n\nNesta família demente e canibal, cada um tem uma função: uns atraem as vítimas, outros distraem... e Leatherface mata!\n\nDescreve-lo é simples: um gigante demente, que usa uma máscara com a pele de suas vítimas (daí seu nome, “Leatherface” ou “Rosto de Pele”), e com uma motosserra na mão!\n\nVárias vítimas já foram feitas, pessoas que sem querer pararam na velha mansão dos Hewitts, um lugar abandonado no meio do nada. Quando captura alguém, Leatherface leva a vitima viva até um enorme freezer, onde a pendura em um gancho, como se fosse uma carne para o abate.\n\nE lá ele irá continuar por muito tempo..."
+    },
+    {
+      "id": "4killers-seg-0015-poderes",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Poderes",
+      "paragraphRange": [
+        113,
+        120
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 911,
+      "wordCount": 146,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 7.585,
+          "confidence": 0.761,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Personalidade\n\nDemente.\n\nEsta é a melhor definição que podemos dar a Leatherface. O gigante age como um animal, caçando suas vítimas e dançando com sua motosserra ligada, num festival de insanidade. As poucas vítimas que escapam de suas mãos se tornam loucas...\n\nQuando mata alguém, adiciona a pele do rosto da vítima a sua máscara de\n\npeles.\n\nPoderes\n\nAlém de grande força física e uma enorme habilidade no uso da motosserra, Leatherface não possui nenhum tipo de poder sobrenatural. Ele é um humano normal... exceto pelo fato de ser canibal!\n\nContudo, de alguma forma, Leatherface consegue “costurar” de volta partes de seu corpo que por ventura sejam cortadas. Não mais de uma vez, o monstruoso assassino teve um membro decepado, para aparecer completo novamente mais tarde. Talvez algum membro de sua família tenha alguma habilidade mágica, e seja responsável por reparar esta monstruosa máquina de matar..."
+    },
+    {
+      "id": "4killers-seg-0016-curiosidades",
+      "source": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourcePath": "Livros\\word\\4killers.docx",
+      "sourceQualityStatus": "ok",
+      "title": "4killers",
+      "heading": "Curiosidades",
+      "paragraphRange": [
+        121,
+        125
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 619,
+      "wordCount": 102,
+      "primaryArea": "aventuras",
+      "classifications": [
+        {
+          "area": "aventuras",
+          "label": "Aventuras",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bcena(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Curiosidades\n\nLeatherface é o principal assassino da série Massacre da Serra Elétrica, aparecendo nos quatro filmes da série, e na recente refilmagem do original.\n\nO Massacre da Serra Elétrica é considerado o avô dos filmes de terror, foi filmado em 1974 (antes de Sexta Feira 13, Hora do pesadelo e Halloween), e revolucionou os filmes de terror, com cenas de violência nunca antes vistas.\n\nO filme original (o mais violento de todos, superando na opinião de alguns até mesmo filmes mais modernos) foi proibido de passar por vários anos em vários paises (Brasil inclusive).\n\nLivro escrito por Ranger (buss@uol.com.br)."
+    }
+  ],
+  "areaCounts": {
+    "aventuras": 1,
+    "cenarios_lore": 2,
+    "criaturas_npcs": 4,
+    "itens_equipamentos": 1,
+    "linhagens": 1,
+    "magias": 1,
+    "poderes": 5,
+    "rituais": 1
+  },
+  "reviewFlagCounts": {
+    "low_confidence_classification": 8,
+    "multi_area_segment": 6
+  }
+}

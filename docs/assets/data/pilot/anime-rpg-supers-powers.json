@@ -1,0 +1,715 @@
+{
+  "version": 1,
+  "status": "pilot_review",
+  "generatedAt": "2026-06-04T16:12:00",
+  "source": "anime-rpg-supers-powers",
+  "sourceFile": "Anime RPG - Supers - Powers.docx",
+  "sourcePath": "Livros/word/feito/Anime RPG - Supers - Powers.docx",
+  "title": "Anime RPG - Supers - Powers",
+  "summary": "Suplemento curto de superpoderes para Anime RPG/SUPERS. Inclui regras iniciais sobre eras heroicas, natureza dos superpoderes, nível de poder, ideias de aventura e uma seleção de aprimoramentos gerais com custos.",
+  "areas": [
+    "aprimoramentos",
+    "cenarios_lore",
+    "regras_base"
+  ],
+  "groups": [
+    {
+      "id": "anime-rpg-supers-regras",
+      "title": "Regra base - Anime RPG - Supers - Powers",
+      "kind": "ruleset",
+      "area": "regras_base",
+      "sectionTitle": "Regra Base",
+      "sections": [
+        {
+          "id": "natureza-dos-superpoderes",
+          "title": "Natureza dos Superpoderes",
+          "area": "regras_base",
+          "paragraphs": [
+            "As regras de DAEMON SUPERS permite uma infinidade de interpretações para os superpoderes – de onde eles vêm, o que eles são, e principalmente que tipo de novas variações os poderes de um super-herói pode alcançar. As regras são simples o suficiente para qualquer combinação possível, mas é necessário explicar a natureza desses poderes para que o Personagem ganhe vida, que se torne mais que um conjunto de números numa ficha. A seguir uma série de idéias para as naturezas de poderes numa campanha:"
+          ]
+        },
+        {
+          "id": "cibernetica",
+          "title": "Cibernética",
+          "area": "regras_base",
+          "paragraphs": [
+            "Os poderes são gerados por implantes biônicos, músculos de fibras sintécas que aumentam a força de forma sobrehumana, lentes dentro da córnea que geram imensas quandades de calor emidas em feixes laser, discos gravitacionais implantados dentro do corpo permindo vôo sem asas, ossos metálicos, braços biônicos, nanorobôs na corrente sanguínea que reparam tecido danificado em segundos, cérebros sintécos e muitos outros. Esse tipo de natureza para superpoderes permite campanhas bem mais realistas e é uma excelente explicação em campanhas sci-fi."
+          ]
+        },
+        {
+          "id": "magia",
+          "title": "Magia",
+          "area": "regras_base",
+          "paragraphs": [
+            "Feiços podem conjurar os mais variados fenômenos inexplicáveis, desde bolas de fogo saindo pelas mãos de um mago, a metamorfose em lobos e sapos até mantos invisíveis e blindados protegendo-o de balas e socos. Os superpoderes não precisam girar em torno apenas de feiços e encantamentos, um guerreiro mísco pode empunhar uma espada encantada, um metamorfo pode ter seus poderes gerados por uma maldição licantrópica ou mesmo um personagem com uma blindagem de pedra pode ser um golem animado! Esse tipo de campanha é bastante interessante quando todos os superpoderes são originários de magia, criando um cenário rico de magos, mortos-vivos, anjos, demônios, deuses e demônios ancestrais!"
+          ]
+        },
+        {
+          "id": "genetica",
+          "title": "Genética",
+          "area": "regras_base",
+          "paragraphs": [
+            "A engenharia genéca criará o próximo passo da evolução humana. Alterações em cadeias de DNA e a transgenia permirão que pessoas possam desenvolver habilidades jamais vistas, melhorando suas próprias capacidades humanas, ampliando-as com genes de outros animais ou simplesmente com criações completamente novas e nunca vistas antes. Em cenários de super-heróis, esse conhecimento permite uma gama imensa de superpoderes. Claro que o acesso à tratamentos genécos pode ser caríssimo, restrito apenas para usos militares, governamentais ou ultra-secreto. Dependendo do cenário, poderes ganhos mediante alterações genécas podem advir até de acidentes com radiação (olha só, em vez de câncer, você ficou verde e super-forte!)."
+          ]
+        },
+        {
+          "id": "cosmica",
+          "title": "Cósmica",
+          "area": "regras_base",
+          "paragraphs": [
+            "A forma mais misteriosa de origem para superpoderes: uma força ou energia vinda do espaço concedeu os superpoderes, intencional ou acidentalmente, para os Personagens. Existe uma infinidade de possibilidades para a real idendade dessa fonte, desde abduções alienígenas, deuses do espaço até banhos de misteriosas ondas de radiação cósmica. A imaginação é o limite."
+          ]
+        },
+        {
+          "id": "nivel-de-poder-np",
+          "title": "Nível de Poder (NP)",
+          "area": "regras_base",
+          "paragraphs": [
+            "Há alguns esclarecimentos que devem ser feitos sobre o NP que não parecem ter ficado claros no DAEMON SUPERS. Primeiro, NP é o controle que seu Personagem tem sobre seus poderes. Alguns poderes são muito simples, como apenas ejetar garras metálicas dos braços, e não precisam exatamente de controle. Outros, como telepaa, precisam. É, em diversos aspectos, como uma nova Perícia que substitui sua WILL e perícia de ataque com seus poderes, mas específico para cada superpoder. Se seu poder uliza de testes de resistência contra o alvo, então ele precisa de NP. Note que o NP não é um Atributo como a WILL, é como uma Perícia, e deve ser comprada de acordo. Se seu Personagem tem pele indestrutivel, super-sendos, ou outro poder passivo que é permanentemente ligado, ele não precisa de NP. Ou seja, o Jogador não é obrigado a pagar por essa nova “Perícia” com poderes passivos (ou seja, permanentemente ligados). Ulizando o TREVAS RPG como referência, o NP é como o Atributo que um poder sobrenatural precisa ter pra atacar ou resisr à outro, onde você ulizaria sua WILL. Você quer controlar a mente de um alvo? Não testa",
+            "WILL, testa NP! Compreenderam? Para utilizar superpoderes em combate sico, entretanto, utiliza-se outras perícias associadas, como Briga.",
+            "Demais regras de NP, consulte o livro DAEMON SUPERS."
+          ]
+        },
+        {
+          "id": "regra-opcional-sem-custo",
+          "title": "Regra Opcional: Sem Custo",
+          "area": "regras_base",
+          "paragraphs": [
+            "Muitos poderes do SUPERS utilizam de gasto de WILL temporário pra a var, desa var e manter superpoderes. O DAEMON POWERS foi escrito de forma que ignora essa regra, visto que o Sistema Daemon não possui “gasto” de combustivel para poderes em outros livros. Ela apenas será man da para efeitos de fichas que não comprarem NP (exceto os poderes passivos, citados acima), incidindo aí a regra normal. Afora isso, não se preocupe, ponha seu traje, e divirta-se."
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "regras_base",
+          "paragraphs": [
+            "Em DAEMON POWERS os Aprimoramentos são divididos em três pos: Gerais, Raciais e Conceituais. Aprimoramentos Gerais são aqueles já conhecidos nos livros que utilizam o Sistema Daemon, concedendo vantagens e desvantagens ao Personagem. Aprimoramentos Raciais permitem ao Personagem jogar com pos não-humanos, comotivampiros, elfos ou robôs, concedendo-lhes uma série de vantagens inerentes àquele tipo de Personagem. Não são necessários pra se jogar com uma outra raça, mas concedem um “pacote” de poderes e sugestões de Aprimoramentos negativos que podem facilitar a vida (e os cálculos) do Jogador, além de serem mais baratos (seu custo em si não é mais barato, mas alguns possuem obrigatoriamente alguns Aprimoramentos negativos que reduziram o custo final dos mesmos). Aprimoramentos Conceituais provavelmente serão os mais utilizados nesse livro. Os Aprimoramentos Conceituais nada mais são do que superpoderes já comprados e postos à disposição do Jogador, apenas pagar e colocar na ficha, sem precisar fazer cálculos, uma forma alternativa do Aprimoramento Superpoderes, já distribuído para facilitar e inspirar a criação de personagens. Eles serão melhor descritos no capítulo Aprimoramentos."
+          ]
+        },
+        {
+          "id": "regra-opcional-sem-mortes",
+          "title": "Regra Opcional: Sem Mortes",
+          "area": "regras_base",
+          "paragraphs": [
+            "A maioria das histórias em quadrinhos são voltadas para um público infanto-juvenil e muitas vezes a faixa etária impede o excesso de violência em suas páginas, o que trouxe um senso maior de moralidade para as histórias, e por mais forte que heróis e vilões batessem, ninguém de fato morria. Para simular esse tipo de combate, o Narrador pode colocar a seguinte regra opcional: todos os Pontos de Vida perdidos por um Personagem podem chegar a -5 PVs, mas é apenas dano contundente, sem cortes ou queimaduras além de 1º grau, que pode ser recuperado a taxa de um número de PVs por dia igual ao seu nível. Quando zerar, o Personagem faz um teste de CON pra não desmaiar. Se desmaiar, porém, não fica mais suscetivel a essa regra, e se for atacado, irá de fato morrer.",
+            "Essa regra permite os longos e épicos combates entre supers sem derramamento de sangue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anime-rpg-supers-cenarios",
+      "title": "Cenários e Lore",
+      "kind": "setting",
+      "area": "cenarios_lore",
+      "sectionTitle": "Cenário",
+      "sections": [
+        {
+          "id": "eras-heroicas",
+          "title": "Eras Heroicas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O universo dos super-heróis sempre foi permeado, pra não dizer focado, com as intenções dos mesmos que norteavam o mundo. De fato, em um universo de super-heróis, as intenções, os limites de agir, são tudo. Houveram diversas épocas heroicas nos quadrinhos, marcadas por diversos fatores. Fica a cargo do Narrador tomar inspirações para criar seus super-heróis, visto que algumas Eras marcaram linhas de quadrinhos de editoras até a contemporaneidade, enquanto que outras evoluíram para versões mais sombrias."
+          ]
+        },
+        {
+          "id": "era-de-ouro",
+          "title": "Era de Ouro",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Era de Ouro dos quadrinhos, nos meados de 1930, foi marcada por heróis em trajes coloridos já desde o início, porém uma surpreendente postura de agressividade e violência contra seus inimigos. Era comum matar capangas e vilões, por exemplo. De fato, é mais acertado chamar esses heróis de vigilantes (ou, como eram conhecidos, Mystery Man). Esse estilo possui uma diferenciação bastante clara entre heróis e vilões, bem como um cenário onde a criatividade superava a lógica: dinossauros ciborgues podem estar enfrentando os heróis em um momento simplesmente para na aventura seguinte estarem viajando pro espaço deter uma guerra alienígena. Um tema muito comum na Era de Ouro foi o da 2ª Guerra Mundial (evento que ocorreu durante essa Era), e a luta contra nazistas. De fato era muito comum o nazismo como inimigo dos heróis, símbolo da liberdade e bondade humana."
+          ]
+        },
+        {
+          "id": "era-de-prata",
+          "title": "Era de Prata",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Era de Prata é o formato dos super-heróis mais conhecidos hoje em dia: o colante ainda é muito utilizado, os heróis ganham mais poderes (superando a marca do sobre-humano, pessoas com poderes acima da média humana, e chegando ao super-humano, pessoas com poderes próximos de verdadeiros deuses), adquirem um “código de ética” mais humanizado, onde não se deve matar. Também a natureza dos superpoderes giram muito em torno de mutações e energia atômica, e nunca se deu a devida atenção para os danos colaterais das lutas entre super-seres (prefeitos e presidentes não ligavam se um combate destruía o centro de cidades!)."
+          ]
+        },
+        {
+          "id": "era-de-bronze",
+          "title": "Era de Bronze",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Era de Bronze foi marcada por temas mais humanizados, heróis mais voltados pra realidade do mundo, com temas como drogas, racismo, ecologia e globalização. Nessa época houveram muitas histórias trazendo heróis para uma realidade fora do combate entre uniformizados."
+          ]
+        },
+        {
+          "id": "era-de-ferro",
+          "title": "Era de Ferro",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Era de Ferro foi a era dos quadrinhos pós-1980. Marcada por temas sombrios, heróis eram pouco valorizados frente aos vigilantes. A moralidade foi muito ques!onada e eles se equilibravam entre ações duvidosas de certo e errado. Muitos heróis da Era de Ferro utilizavam mais armas de fogo de grosso calibre e menos superpoderes, e a brutalidade e o assassinato voltaram a vigorar entre os superseres, tema aprovado apenas na época da Era de Ouro (mas até mesmo na Era de Ouro não era demonstrado os requintes de sangue e crueldade que se vê na Era de Bronze). O Colante foi posto um pouco de lado na Era de Bronze, e o couro enegrecido, o vinil e os acessórios militares foram muito utilizados. As histórias eram mais sofisticadas, mais complexas, com temas melhor estudados, uma pseudociência mais complexa (de forma que fosse mais difícil para o leitor saber se aquilo poderia ou não dar certo ou ser verdade)."
+          ]
+        },
+        {
+          "id": "ideias-para-aventuras",
+          "title": "Idéias para Aventuras",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A seguir uma série de idéias para aventuras com super-heróis:"
+          ]
+        },
+        {
+          "id": "guerra-civil",
+          "title": "Guerra Civil",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Os super-heróis entraram em um conflito e separaram-se em dois grupos. Um deseja que revelem suas identidades secretas para o público e assim, ganharem sua confiança. Outro grupo acredita que está ferindo a própria base do super-heroísmo (além dessa revelação colocar suas famílias e amigos em risco). Os Personagens são recrutados por um dos lados para realizar missões para impedir que o outro lado realize seu obje vo."
+          ]
+        },
+        {
+          "id": "crise-de-realidades",
+          "title": "Crise de realidades",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "As várias versões dimensionais da Terra estão convergindo, e muitos super-heróis e vilões estão aparecendo no nosso mundo. Muitos são versões distorcidas, que podem causar muitos problemas (Superman louco? Batman assassino?). Os Personagens devem descobrir a fonte desse problema e restaurar a ordem."
+          ]
+        },
+        {
+          "id": "invasao-alien",
+          "title": "Invasão alien",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Terra está sendo invadida secretamente por uma raça de alienígenas metamorfos cujos quais conseguiram se modificar gene camente com sua tecnologia avançada para simular os próprios poderes dos super-heróis! Mas sua estratégia não para por aí: eles também modificam suas mentes de forma que suas memórias reais possam ser escondidas de qualquer telepata, de modo que possam ser o espião perfeito. Gradualmente, eles vão substituindo os super-heróis da Terra até poderem realizar uma invasão em massa!"
+          ]
+        },
+        {
+          "id": "autoridade",
+          "title": "Autoridade",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O mundo está um caos. Países ameaçam a ONU, a África está cada vez pior, a economia mundial está em crise e as nações não encontram respostas conciliadoras pro mundo por motivações políticas. Nessa aventura os heróis ficam em uma tênue linha entre o heroísmo e a vilania: num ato desesperado, eles decidem tomar as rédeas do mundo. Ameaçando e invadindo países, eles próprios se mostram como uma ameaça mundial, e ATACARÃO se as divergências não forem resolvidas de modo a beneficiar a humanidade."
+          ]
+        },
+        {
+          "id": "matrix",
+          "title": "Matrix",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Essa é uma idéia para aventuras diferentes, onde os Personagens estão aprisionados em um mundo de sonhos criado tecnológica ou magicamente. Dentro desse mundo são capazes de burlar as regras da realidade e desenvolver poderes como Vôo, Aumento de Atributos e Invulnerabilidade!"
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "deflexao",
+      "title": "Deflexão",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem pode se desviar de balas! Bem, ele realmente não se desvia delas, mas apenas “passam raspando”. Esse é um Aprimoramento completamente cinematográfico e não possui explicação exceto a lógica dos quadrinhos. O Personagem testa sua AGIx4 - Perícia do atirador para se esquivar."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem pode se desviar de balas! Bem, ele realmente não se desvia delas, mas apenas “passam raspando”. Esse é um Aprimoramento completamente cinematográfico e não possui explicação exceto a lógica dos quadrinhos. O Personagem testa sua AGIx4 - Perícia do atirador para se esquivar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "superpoderes",
+      "title": "Superpoderes",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem possui superpoderes! Quaisquer uns dos poderes comprados devem ser pagos por este Aprimoramento. Os poderes presentes nos Aprimoramentos Conceituais já estão inclusos seu custo deste Aprimoramento, e caso o Personagem deseje comprar mais poderes ou aumentar seus poderes, deve pagar este Aprimoramento desde o começo (porém, podem obedecer a graduação acima na Supertabela, caso estejam aumentando poderes que já possuam). ponto: 100 pontos de Superpoderes. pontos: 150 pontos de Superpoderes. pontos: 200 pontos de Superpoderes. pontos: 250 pontos de Superpoderes. pontos: 300 pontos de Superpoderes. pontos: 350 pontos de Superpoderes. pontos: 400 pontos de Superpoderes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: 100 pontos de Superpoderes.",
+            "2 pontos: 150 pontos de Superpoderes.",
+            "3 pontos: 200 pontos de Superpoderes.",
+            "4 pontos: 250 pontos de Superpoderes.",
+            "5 pontos: 300 pontos de Superpoderes.",
+            "6 pontos: 350 pontos de Superpoderes.",
+            "7 pontos: 400 pontos de Superpoderes."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem possui superpoderes! Quaisquer uns dos poderes comprados devem ser pagos por este Aprimoramento. Os poderes presentes nos Aprimoramentos Conceituais já estão inclusos seu custo deste Aprimoramento, e caso o Personagem deseje comprar mais poderes ou aumentar seus poderes, deve pagar este Aprimoramento desde o começo (porém, podem obedecer a graduação acima na Supertabela, caso estejam aumentando poderes que já possuam)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipamento",
+      "title": "Equipamento",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem possui alguns equipamentos que o ajudam no combate ao crime. Caso ele possua as perícias ou o dinheiro necessários, é possível trocar esses equipamentos por outros de tempos em tempos. ponto: Alguns itens úteis como ganchos de escalada, gazuas, máscara de gás portátil, equipamento de arrombamento, equipamento de detetive, etc. Em termos de jogo, o Personagem SEMPRE vai ter aquele equipamento necessário para a situação (exceto quando o equipamento causar dano substancial ou não for pequeno o suficiente para caber numa mochila ou cinto de utilidades). pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 100 pontos de Superpoderes. pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 150 pontos de Superpoderes. pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 200 pontos de Superpoderes. pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 250 pontos de Superpoderes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Alguns itens úteis como ganchos de escalada, gazuas, máscara de gás portátil, equipamento de arrombamento, equipamento de detetive, etc. Em termos de jogo, o Personagem SEMPRE vai ter aquele equipamento necessário para a situação (exceto quando o equipamento causar dano substancial ou não for pequeno o suficiente para caber numa mochila ou cinto de utilidades).",
+            "2 pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 100 pontos de Superpoderes.",
+            "3 pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 150 pontos de Superpoderes.",
+            "4 pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 200 pontos de Superpoderes.",
+            "5 pontos: O Personagem possui armas e equipamentos tecnológicos que lhe conferem o equivalente à um ou mais superpoderes de até 250 pontos de Superpoderes."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem possui alguns equipamentos que o ajudam no combate ao crime. Caso ele possua as perícias ou o dinheiro necessários, é possível trocar esses equipamentos por outros de tempos em tempos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modificacao-de-poder",
+      "title": "Modificação de Poder",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Esse Aprimoramento confere uma alteração na forma de manifestar o poder básico descrito no livro SUPERS. +1 ponto: Sua modificação é estética ou lhe confere uma vantagem, como suas rajadas óticas poderem ricochetear entre seus alvos, pode duplicar poderes de mais de um alvo ao mesmo tempo, pode aumentar a duração do poder, etc.",
+        "88-1 ponto: Sua modificação de poder lhe prejudica de alguma forma. Talvez para voar você precise de asas, suas rajadas óticas não possam ser desligadas, seus poderes só funcionam contra um tipo de alvo específico, só possam ser utilizados mediante determinadas ações (como uma mordida) ou alguma forma prejudicial de funcionamento."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Esse Aprimoramento confere uma alteração na forma de manifestar o poder básico descrito no livro SUPERS. +1 ponto: Sua modificação é estética ou lhe confere uma vantagem, como suas rajadas óticas poderem ricochetear entre seus alvos, pode duplicar poderes de mais de um alvo ao mesmo tempo, pode aumentar a duração do poder, etc.",
+            "88-1 ponto: Sua modificação de poder lhe prejudica de alguma forma. Talvez para voar você precise de asas, suas rajadas óticas não possam ser desligadas, seus poderes só funcionam contra um tipo de alvo específico, só possam ser utilizados mediante determinadas ações (como uma mordida) ou alguma forma prejudicial de funcionamento."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forma-alternativa",
+      "title": "Forma Alternativa",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem possui uma forma alternativa quando se transforma em sua versão “super”. Ela que possui os verdadeiros poderes do Personagem. O Jogador deve fazer duas fichas em separado para seu Personagem, uma de sua forma normal e outra da forma super, inclusive gastando o Mana separadamente entre suas formas. +1 ponto: Múl plas. O Personagem pode ter MAIS de uma forma super, com todo um novo conjunto de poderes! Esse aprimoramento pode ser cumula vo, ganhando mais e mais formas. -1 ponto: Ga lho. A forma alternativa do Personagem é ativada por um gatilho: ele só poderá se transformar em tempestades, no escuro, à noite, lua cheia ou quando ficar com muita raiva. O gatilho não pode ser coisas simples como apenas pronunciar palavras mágicas. -1 ponto: Estúpido. A forma alternativa do personagem é estúpida, possuindo Inteligência 9 (no máximo)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem possui uma forma alternativa quando se transforma em sua versão “super”. Ela que possui os verdadeiros poderes do Personagem. O Jogador deve fazer duas fichas em separado para seu Personagem, uma de sua forma normal e outra da forma super, inclusive gastando o Mana separadamente entre suas formas. +1 ponto: Múl plas. O Personagem pode ter MAIS de uma forma super, com todo um novo conjunto de poderes! Esse aprimoramento pode ser cumula vo, ganhando mais e mais formas. -1 ponto: Ga lho. A forma alternativa do Personagem é ativada por um gatilho: ele só poderá se transformar em tempestades, no escuro, à noite, lua cheia ou quando ficar com muita raiva. O gatilho não pode ser coisas simples como apenas pronunciar palavras mágicas. -1 ponto: Estúpido. A forma alternativa do personagem é estúpida, possuindo Inteligência 9 (no máximo)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jumper",
+      "title": "Jumper",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem é um teleportador galáctico: ele pode se teleportar para qualquer ponto da galáxia que conheça ou tenha visto, até mesmo por fotos, filmagens, ilusões, holografia ou mensagem telepática. Viagens instantâneas entre planetas não é problema (a falta de oxigênio, por outro lado, é). Para fins de mecânica, considere esse poder uma exceção às regras de superpoderes. Para fins de teste, considere que ele possui NP 50. Um Jumper pode teleportar até 2 pessoas consigo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "4 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem é um teleportador galáctico: ele pode se teleportar para qualquer ponto da galáxia que conheça ou tenha visto, até mesmo por fotos, filmagens, ilusões, holografia ou mensagem telepática. Viagens instantâneas entre planetas não é problema (a falta de oxigênio, por outro lado, é). Para fins de mecânica, considere esse poder uma exceção às regras de superpoderes. Para fins de teste, considere que ele possui NP 50. Um Jumper pode teleportar até 2 pessoas consigo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paradoxo-temporal",
+      "title": "Paradoxo Temporal",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem fez diversas viagens temporais, causando o paradoxo sobre si mesmo e ainda conseguindo exis r. Ele pode ter eliminado sua linha do tempo original, ser seu próprio avô ou qualquer coisa que seu jogo permita. A vantagem é que nenhuma alteração na linha do tempo poderá apagá-lo da existência ou suas memórias do mesmo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem fez diversas viagens temporais, causando o paradoxo sobre si mesmo e ainda conseguindo exis r. Ele pode ter eliminado sua linha do tempo original, ser seu próprio avô ou qualquer coisa que seu jogo permita. A vantagem é que nenhuma alteração na linha do tempo poderá apagá-lo da existência ou suas memórias do mesmo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pontos-heroicos",
+      "title": "Pontos Heróicos!",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Um Aprimoramento imprescindível pra qualquer super-herói são os Pontos Heróicos. Eles são mais imprescindíveis que os próprios superpoderes. É aconselhável que o Jogador sempre compre o máximo que puder desses pontos, algo entre 3 e 5 pontos, logo no começo da ficha, pra poder adquirir mais e mais pontos o mais rápido que puder. Uma vida super-heróica pode ser longa com essa dica ou muito curta e realista sem ela."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 a 5 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Um Aprimoramento imprescindível pra qualquer super-herói são os Pontos Heróicos. Eles são mais imprescindíveis que os próprios superpoderes. É aconselhável que o Jogador sempre compre o máximo que puder desses pontos, algo entre 3 e 5 pontos, logo no começo da ficha, pra poder adquirir mais e mais pontos o mais rápido que puder. Uma vida super-heróica pode ser longa com essa dica ou muito curta e realista sem ela."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hospedeiro-de-ser-cosmico",
+      "title": "Hospedeiro de ser cósmico",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem é o hospedeiro de uma força cósmica. Por algum mo vo que ainda é um mistério a entidade não consumiu a mente do Personagem por completo. Via de regra, o Personagem ganha +300 pontos de Superpoderes que devem ser distribuídos como desejar. A desvantagem é que o Personagem também adquire o Aprimoramento Nega vo Dupla Personalidade sem ganhar pontos extras por ela, sendo a segunda personalidade uma versão de si mesmo com ideais megalomaníacos de criação e destruição do mundo que o cerca – literalmente falando. O Narrador deve fazer Testes de WILL Diticeis constantemente para o Personagem não sucumbir à entidade. Durante os surtos da dupla personalidade o Personagem se torna um NPC e manifesta poderes bem maiores dos que possui (mesmo com os pontos extras ganhos pelo Aprimoramento!), podendo causar danos cataclísmicos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "5 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem é o hospedeiro de uma força cósmica. Por algum mo vo que ainda é um mistério a entidade não consumiu a mente do Personagem por completo. Via de regra, o Personagem ganha +300 pontos de Superpoderes que devem ser distribuídos como desejar. A desvantagem é que o Personagem também adquire o Aprimoramento Nega vo Dupla Personalidade sem ganhar pontos extras por ela, sendo a segunda personalidade uma versão de si mesmo com ideais megalomaníacos de criação e destruição do mundo que o cerca – literalmente falando. O Narrador deve fazer Testes de WILL Diticeis constantemente para o Personagem não sucumbir à entidade. Durante os surtos da dupla personalidade o Personagem se torna um NPC e manifesta poderes bem maiores dos que possui (mesmo com os pontos extras ganhos pelo Aprimoramento!), podendo causar danos cataclísmicos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supercelebridade",
+      "title": "Supercelebridade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem é famoso por seus feitos, sendo uma figura de destaque na mídia, todos reconhecem seu nome e ele é freqüentemente um dos assuntos preferidos do público. Este tipo de reputação reflete um melhor tratamento por parte dos NPCs, uma série de convites para reuniões e festas, assédio de fãs, destaque na mídia e alvo constante de paparazzis. ponto: Conhecido. O Personagem é famoso em sua cidade. Sua ronda as vezes lhe rende donuts e café de graça e amistosos cumprimentos dos cidadãos, aplausos e torcidas de encorajamento. pontos: Respeitado. O Personagem é famoso em seu país, talvez um símbolo do próprio país. pontos: Famoso. O Personagem é tão famoso quanto as celebridades de Hollywood, tendo fama mundial! Seus feitos foram conhecidos e adorados pelo mundo inteiro. Esse nível confere uma série de vantagens extras: imunidade diplomática ao atravessar fronteiras de países, será mais facilmente inocentado de crimes (se chegar a sequer ser acusado), transgressões menores serão ignoradas pelas forças policiais, etc."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto: Conhecido. O Personagem é famoso em sua cidade. Sua ronda as vezes lhe rende donuts e café de graça e amistosos cumprimentos dos cidadãos, aplausos e torcidas de encorajamento.",
+            "2 pontos: Respeitado. O Personagem é famoso em seu país, talvez um símbolo do próprio país.",
+            "3 pontos: Famoso. O Personagem é tão famoso quanto as celebridades de Hollywood, tendo fama mundial! Seus feitos foram conhecidos e adorados pelo mundo inteiro. Esse nível confere uma série de vantagens extras: imunidade diplomática ao atravessar fronteiras de países, será mais facilmente inocentado de crimes (se chegar a sequer ser acusado), transgressões menores serão ignoradas pelas forças policiais, etc."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem é famoso por seus feitos, sendo uma figura de destaque na mídia, todos reconhecem seu nome e ele é freqüentemente um dos assuntos preferidos do público. Este tipo de reputação reflete um melhor tratamento por parte dos NPCs, uma série de convites para reuniões e festas, assédio de fãs, destaque na mídia e alvo constante de paparazzis."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supermessias",
+      "title": "superMessias",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem está predestinado à algo grande, que guiará o destino da população superpoderosa do mundo todo, seja restaurando os poderes de todos os superseres do mundo inteiro em uma época onde perdem seus poderes, seja viajando no tempo para matar um super-vilão que destruirá/escravizará a raça mutante ou o que for, a questão é que o Personagem tem esse grande destino à sua frente e muitos sabem disso (ou, pelo menos, aqueles que importam). O Personagem tem um bônus de +30% em Testes sociais para lidar com qualquer NPC ou PC que se importe com a população superpoderosa e pode inclusive realizar um Teste Normal de CAR por sessão para conseguir ajuda de um desses NPC, não importa o quão fraco ou poderoso ele seja."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem está predestinado à algo grande, que guiará o destino da população superpoderosa do mundo todo, seja restaurando os poderes de todos os superseres do mundo inteiro em uma época onde perdem seus poderes, seja viajando no tempo para matar um super-vilão que destruirá/escravizará a raça mutante ou o que for, a questão é que o Personagem tem esse grande destino à sua frente e muitos sabem disso (ou, pelo menos, aqueles que importam). O Personagem tem um bônus de +30% em Testes sociais para lidar com qualquer NPC ou PC que se importe com a população superpoderosa e pode inclusive realizar um Teste Normal de CAR por sessão para conseguir ajuda de um desses NPC, não importa o quão fraco ou poderoso ele seja."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clone-da-lenda",
+      "title": "Clone da Lenda",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem é um clone de um mutante, super-herói ou super-vilão famoso e/ou falecido, possuindo os poderes de tal. O Personagem é diferente do original de algum modo e não será confundido com o mesmo (embora muitos o reconhecerão como uma versão jovem do mesmo). Exemplos de heróis que estão ou já foram falecidos nas HQs são Pássaro Trovejante (força, resistência e agilidade sobrehumanas), Banshee (grito sônico e vôo), Cifra (compreensão universal das linguagens), Jean Grey (telecinésia e telepatia), Charles Xavier (telepatia), Superman (vários poderes), Batman (artista marcial) entre outros. Exemplos de vilões falecidos são Mestre Mental (ilusões mentais), Senhor das Sombras (telepatia), Ômega Vermelho (feromônios letais), etc. O Aprimoramento lhe dá um bônus de +30% em Testes sociais com antigos conhecidos do falecido.",
+        "O Narrador não precisa permitir que todos os Personagens acima estejam mortos no seu período de campanha em jogo, podendo inclusive incluir ou excluir vários outros exemplos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem é um clone de um mutante, super-herói ou super-vilão famoso e/ou falecido, possuindo os poderes de tal. O Personagem é diferente do original de algum modo e não será confundido com o mesmo (embora muitos o reconhecerão como uma versão jovem do mesmo). Exemplos de heróis que estão ou já foram falecidos nas HQs são Pássaro Trovejante (força, resistência e agilidade sobrehumanas), Banshee (grito sônico e vôo), Cifra (compreensão universal das linguagens), Jean Grey (telecinésia e telepatia), Charles Xavier (telepatia), Superman (vários poderes), Batman (artista marcial) entre outros. Exemplos de vilões falecidos são Mestre Mental (ilusões mentais), Senhor das Sombras (telepatia), Ômega Vermelho (feromônios letais), etc. O Aprimoramento lhe dá um bônus de +30% em Testes sociais com antigos conhecidos do falecido.",
+            "O Narrador não precisa permitir que todos os Personagens acima estejam mortos no seu período de campanha em jogo, podendo inclusive incluir ou excluir vários outros exemplos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vida-extra",
+      "title": "Vida Extra",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem consegue voltar dos mortos uma vez. Ele não exatamente retorna a vida, mas o Narrador deve gerar um evento espetacular que o trará de volta mesmo após ter perdido todos seus Pontos de Vida (os Anciões Cósmicos recriaram seu corpo, seu Fator de Cura chegou ao limite mas lhe trouxe de volta, um necromante o ressuscitou, você estava sendo substituído por um clone e seu corpo verdadeiro foi libertado de seus captores, você conseguiu fazer uma cópia cerebral em um corpo robótico no último segundo, etc.). Esse Aprimoramento só pode ser utilizado uma vez por compra e depois deve ser apagado da ficha do Personagem (ou seja, se gastar 6 pontos de Aprimoramento e comprá-lo duas vezes, poderá retornar a vida duas vezes)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem consegue voltar dos mortos uma vez. Ele não exatamente retorna a vida, mas o Narrador deve gerar um evento espetacular que o trará de volta mesmo após ter perdido todos seus Pontos de Vida (os Anciões Cósmicos recriaram seu corpo, seu Fator de Cura chegou ao limite mas lhe trouxe de volta, um necromante o ressuscitou, você estava sendo substituído por um clone e seu corpo verdadeiro foi libertado de seus captores, você conseguiu fazer uma cópia cerebral em um corpo robótico no último segundo, etc.). Esse Aprimoramento só pode ser utilizado uma vez por compra e depois deve ser apagado da ficha do Personagem (ou seja, se gastar 6 pontos de Aprimoramento e comprá-lo duas vezes, poderá retornar a vida duas vezes)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "objeto-de-poder",
+      "title": "Objeto de Poder",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Os poderes do Personagem não vêm dele, e sim de um objeto, seja um martelo mágico, um anel energético, o que quer que seja, pode ser retirado ou perdido (precisando apenas ser arrancado de suas roupas ou suas mãos). Perceba que os poderes do Personagem ainda são comprados normalmente na ficha. Objeto de Poder não pode ser comprado para superpoderes gerados por fontes que sejam muito difíceis de anular como, por exemplo, retirar uma armadura tecnológica."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os poderes do Personagem não vêm dele, e sim de um objeto, seja um martelo mágico, um anel energético, o que quer que seja, pode ser retirado ou perdido (precisando apenas ser arrancado de suas roupas ou suas mãos). Perceba que os poderes do Personagem ainda são comprados normalmente na ficha. Objeto de Poder não pode ser comprado para superpoderes gerados por fontes que sejam muito difíceis de anular como, por exemplo, retirar uma armadura tecnológica."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supervilao-aspirante",
+      "title": "Supervilão aspirante",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Personagem está no lugar errado. Ele não quer ser um superherói – pelo contrário, quer ser um supervilão! Ele idolatra um ou mais supervilões e o tem como seu ídolo, seu exemplo de como deve ser. O Jogador deve escolher qual(is) exemplo(s) o Personagem tem e deve segui-lo. Sempre que se deparar com situações onde o Personagem iria tentar se comportar como seu ídolo, ele o fará. Caso o Jogador não queira, o Personagem deve fazer um teste de WILL. Em caso de falha, ele deve fazê-lo. O comportamento não precisa ser necessariamente e abertamente criminoso como assaltar um banco, mas ele irá odiar heróis aracnídeos se tiver como ídolo o Dr. Octopus ou qualquer inimigo do Homem-Aranha, por exemplo, ou irá tentar liderar mutantes contra os humanos caso seja fã do Magneto durante sua carreira de supervilão terrorista."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem está no lugar errado. Ele não quer ser um superherói – pelo contrário, quer ser um supervilão! Ele idolatra um ou mais supervilões e o tem como seu ídolo, seu exemplo de como deve ser. O Jogador deve escolher qual(is) exemplo(s) o Personagem tem e deve segui-lo. Sempre que se deparar com situações onde o Personagem iria tentar se comportar como seu ídolo, ele o fará. Caso o Jogador não queira, o Personagem deve fazer um teste de WILL. Em caso de falha, ele deve fazê-lo. O comportamento não precisa ser necessariamente e abertamente criminoso como assaltar um banco, mas ele irá odiar heróis aracnídeos se tiver como ídolo o Dr. Octopus ou qualquer inimigo do Homem-Aranha, por exemplo, ou irá tentar liderar mutantes contra os humanos caso seja fã do Magneto durante sua carreira de supervilão terrorista."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duplo-vilao",
+      "title": "Duplo vilão",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "Sabe quando um clone maligno de você mesmo aparece na sua dimensão? Pois é. Você é o clone maligno. Sua vida foi marcada por todo tipo de tragédias e bizarrices, desde morte da esposa, filhos e cachorro até ter o braço amputado (e substituído por outro braço um pouco medonho), rosto deformado e muito mais. Só que você está em outra dimensão que não é a sua, e olha só, sua versão desse mundo possui uma vida que você considera perfeita. E você fará de tudo para tê-la. Em termos de jogo, o Personagem vive para substituir sua versão da dimensão do jogo a qualquer custo. Para isso ele deve tomar bastante cuidado para não ser percebido no ato ou poderá pôr tudo a perder (embora uma morte ou duas possam ainda evitar essa tragédia). O Narrador deve fazer testes de WILL sempre que o Personagem tomar rumos que o façam gerir uma vida própria (assumir cargos de poder e responsabilidade, procurar novos superpoderes que não sejam para superar seu outro Eu, apaixonar-se, etc.)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Sabe quando um clone maligno de você mesmo aparece na sua dimensão? Pois é. Você é o clone maligno. Sua vida foi marcada por todo tipo de tragédias e bizarrices, desde morte da esposa, filhos e cachorro até ter o braço amputado (e substituído por outro braço um pouco medonho), rosto deformado e muito mais. Só que você está em outra dimensão que não é a sua, e olha só, sua versão desse mundo possui uma vida que você considera perfeita. E você fará de tudo para tê-la. Em termos de jogo, o Personagem vive para substituir sua versão da dimensão do jogo a qualquer custo. Para isso ele deve tomar bastante cuidado para não ser percebido no ato ou poderá pôr tudo a perder (embora uma morte ou duas possam ainda evitar essa tragédia). O Narrador deve fazer testes de WILL sempre que o Personagem tomar rumos que o façam gerir uma vida própria (assumir cargos de poder e responsabilidade, procurar novos superpoderes que não sejam para superar seu outro Eu, apaixonar-se, etc.)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mutacao-deleteria",
+      "title": "Mutação deletéria",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "descricao",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "O Aprimoramento Fraqueza é recorrente em boa parte dos Supers, e mutantes não são exceção. Muitas mutações trazem malefícios ao Personagem, seja de abuso dos superpoderes ou da própria fisionomia do organismo mutante. Abaixo segue alguns exemplos de novas Fraquezas que podem ser utilizadas: Baixa Imunidade: o corpo do Personagem está sendo danificado pelos próprios superpoderes. Geralmente essa fraqueza é associada à poderes químicos que acabam"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Aprimoramento Fraqueza é recorrente em boa parte dos Supers, e mutantes não são exceção. Muitas mutações trazem malefícios ao Personagem, seja de abuso dos superpoderes ou da própria fisionomia do organismo mutante. Abaixo segue alguns exemplos de novas Fraquezas que podem ser utilizadas: Baixa Imunidade: o corpo do Personagem está sendo danificado pelos próprios superpoderes. Geralmente essa fraqueza é associada à poderes químicos que acabam"
+          ]
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "adventures": [],
+  "notes": [
+    "Heading4 com custo colado ao título foi separado em nome + bloco Custo.",
+    "Aprimoramentos variáveis tiveram custos inferidos sequencialmente a partir das listas do DOCX."
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-02T23:46:27",
+  "inputQualityStatus": "ok",
+  "sourceCount": 10,
+  "segmentCount": 988,
+  "sources": [
+    {
+      "source": "4killers",
+      "title": "4killers",
+      "sourceFile": "4killers.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 125,
+      "segmentCount": 16,
+      "areaCounts": {
+        "aventuras": 1,
+        "cenarios_lore": 2,
+        "criaturas_npcs": 4,
+        "itens_equipamentos": 1,
+        "linhagens": 1,
+        "magias": 1,
+        "poderes": 5,
+        "rituais": 1
+      },
+      "reviewFlagCounts": {
+        "low_confidence_classification": 8,
+        "multi_area_segment": 6
+      }
+    },
+    {
+      "source": "abismo",
+      "title": "Abismo",
+      "sourceFile": "Abismo.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 2905,
+      "segmentCount": 379,
+      "areaCounts": {
+        "aprimoramentos": 5,
+        "aventuras": 1,
+        "cenarios_lore": 140,
+        "criaturas_npcs": 106,
+        "itens_equipamentos": 4,
+        "kits": 2,
+        "linhagens": 5,
+        "magias": 17,
+        "pericias": 5,
+        "poderes": 13,
+        "racas": 33,
+        "regras_base": 43,
+        "rituais": 4,
+        "tabelas": 1
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 6,
+        "low_confidence_classification": 211,
+        "multi_area_segment": 213,
+        "needs_manual_classification": 1
+      }
+    },
+    {
+      "source": "abismo-infinito-quick-start",
+      "title": "Abismo-Infinito-Quick-Start",
+      "sourceFile": "Abismo-Infinito-Quick-Start.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 307,
+      "segmentCount": 45,
+      "areaCounts": {
+        "aprimoramentos": 2,
+        "aventuras": 1,
+        "cenarios_lore": 13,
+        "classes": 1,
+        "criaturas_npcs": 2,
+        "itens_equipamentos": 2,
+        "magias": 1,
+        "racas": 3,
+        "regras_base": 19,
+        "tabelas": 1
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 1,
+        "low_confidence_classification": 36,
+        "multi_area_segment": 23,
+        "needs_manual_classification": 2
+      }
+    },
+    {
+      "source": "alastores-a-justica-infernal",
+      "title": "Alastores - A Justiça Infernal",
+      "sourceFile": "Alastores - A Justiça Infernal.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 355,
+      "segmentCount": 43,
+      "areaCounts": {
+        "aprimoramentos": 3,
+        "cenarios_lore": 8,
+        "criaturas_npcs": 18,
+        "linhagens": 1,
+        "magias": 1,
+        "poderes": 2,
+        "regras_base": 9,
+        "rituais": 1
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 2,
+        "low_confidence_classification": 22,
+        "multi_area_segment": 31
+      }
+    },
+    {
+      "source": "alianca-daemon-01",
+      "title": "Aliança Daemon 01",
+      "sourceFile": "Aliança Daemon 01.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 212,
+      "segmentCount": 26,
+      "areaCounts": {
+        "aventuras": 1,
+        "cenarios_lore": 2,
+        "criaturas_npcs": 1,
+        "linhagens": 6,
+        "magias": 1,
+        "poderes": 3,
+        "racas": 4,
+        "regras_base": 8
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 3,
+        "low_confidence_classification": 15,
+        "multi_area_segment": 9
+      }
+    },
+    {
+      "source": "animalidade",
+      "title": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 325,
+      "segmentCount": 56,
+      "areaCounts": {
+        "aprimoramentos": 3,
+        "cenarios_lore": 8,
+        "classes": 3,
+        "criaturas_npcs": 11,
+        "linhagens": 1,
+        "magias": 2,
+        "pericias": 1,
+        "poderes": 7,
+        "racas": 6,
+        "regras_base": 14
+      },
+      "reviewFlagCounts": {
+        "low_confidence_classification": 44,
+        "multi_area_segment": 30
+      }
+    },
+    {
+      "source": "anime-rpg-powers",
+      "title": "Anime RPG - Powers",
+      "sourceFile": "Anime RPG - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 812,
+      "segmentCount": 132,
+      "areaCounts": {
+        "aprimoramentos": 9,
+        "aventuras": 4,
+        "cenarios_lore": 8,
+        "classes": 2,
+        "criaturas_npcs": 27,
+        "itens_equipamentos": 4,
+        "linhagens": 1,
+        "magias": 2,
+        "poderes": 13,
+        "racas": 5,
+        "regras_base": 55,
+        "tabelas": 2
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 1,
+        "low_confidence_classification": 56,
+        "multi_area_segment": 89,
+        "needs_manual_classification": 1
+      }
+    },
+    {
+      "source": "anime-rpg-supers-monstros-e-viloes",
+      "title": "Anime RPG - Supers - Monstros e Vilões",
+      "sourceFile": "Anime RPG - Supers - Monstros e Vilões.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 1111,
+      "segmentCount": 100,
+      "areaCounts": {
+        "cenarios_lore": 2,
+        "criaturas_npcs": 71,
+        "magias": 2,
+        "racas": 1,
+        "regras_base": 24
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 1,
+        "low_confidence_classification": 5,
+        "multi_area_segment": 96,
+        "needs_manual_classification": 1
+      }
+    },
+    {
+      "source": "anime-rpg-supers-powers",
+      "title": "Anime RPG - Supers - Powers",
+      "sourceFile": "Anime RPG - Supers - Powers.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 136,
+      "segmentCount": 32,
+      "areaCounts": {
+        "aprimoramentos": 5,
+        "aventuras": 2,
+        "cenarios_lore": 3,
+        "criaturas_npcs": 3,
+        "itens_equipamentos": 1,
+        "linhagens": 1,
+        "poderes": 6,
+        "regras_base": 11
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 1,
+        "low_confidence_classification": 22,
+        "multi_area_segment": 20
+      }
+    },
+    {
+      "source": "anjos-a-cidade-de-prata",
+      "title": "Anjos A Cidade de Prata",
+      "sourceFile": "Anjos_A_Cidade_de_Prata.docx",
+      "sourceQualityStatus": "ok",
+      "paragraphs": 1678,
+      "segmentCount": 159,
+      "areaCounts": {
+        "aprimoramentos": 1,
+        "aventuras": 3,
+        "cenarios_lore": 37,
+        "classes": 1,
+        "criaturas_npcs": 55,
+        "itens_equipamentos": 3,
+        "magias": 3,
+        "pericias": 9,
+        "poderes": 3,
+        "racas": 2,
+        "regras_base": 40,
+        "tabelas": 2
+      },
+      "reviewFlagCounts": {
+        "front_matter_possible": 9,
+        "low_confidence_classification": 65,
+        "multi_area_segment": 99,
+        "needs_manual_classification": 1
+      }
+    }
+  ],
+  "batchStatus": "invalid_experimental",
+  "batchStatusReason": "Primeira segmentacao automatica reprovada em revisao humana: texto ruim e catalogacao imprecisa."
+}

@@ -1,0 +1,2461 @@
+{
+  "version": 1,
+  "source": "animalidade",
+  "title": "animalidade",
+  "sourceFile": "animalidade.docx",
+  "sourcePath": "Livros\\word\\animalidade.docx",
+  "sourceQualityStatus": "ok",
+  "generatedAt": "2026-06-02T23:46:25",
+  "paragraphs": 325,
+  "segments": [
+    {
+      "id": "animalidade-seg-0001-by-rodrigo-lamazuus-linn-e-eduardo-paixao",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "By Rodrigo “ Lamazuus” Linn e Eduardo Paixão",
+      "paragraphRange": [
+        1,
+        6
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1638,
+      "wordCount": 262,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bhist[oó]ria\\b",
+            "\\blenda(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Animalidade\n\nBy Rodrigo “ Lamazuus” Linn e Eduardo Paixão\n\n“Um uivo em uma noite nevada. Um carro cruza uma estrada solitária da montanha. Súbito, um lobo colide com o automóvel. O motorista pára e sai para acudir o animal. Porém, este salta assustado e foge, mas não sem antes deixar uma mordida profunda no braço de Will Randall. A vida deste homem passa a mudar a partir daquele momento. Uma leve transformação vai se desencadeando no interior do motorista durante os dias que se sucedem. Cada vez mais Will compartilha com o espírito do animal, deixando aflorar cada vez mais sua animalidade...”\n\nPara quem não viu ou não notou, o parágrafo acima se referia à história de Jack Nicholson no filme Lobo. Um épico contemporâneo do sobrenatural, mostrando a metamorfose de um homem em uma fera. A junção de seu corpo com as caracte-rísticas animalescas mais preciosas de sua maldição. As lendas sobre homens que se transformam em bestas selvagens ou que possuem capacidades animais fora do padrão humano foram bastante difundidas durante a Antigüidade e a Idade Média, principalmente pelos gregos, egípcios e africanos. Tais criaturas assombravam bosques, pântanos, cavernas e até lagos próximos das vilas mundanas, sendo amplamente temi-dos pelos aldeões e combatidos ferreamente por caçadores de\n\nrecompensa, Templários e até mesmo por Inquisidores.\n\nComo existem diversas linhas dos mais diversos folclo-res, decidimos abordar estes seres de uma maneira mais abrangente, procurando envolver todos os tipos de mitos po-pulares. Por isso, nos referiremos a estas criaturas de uma manei-ra geral como Homens-Fera, ou, simplesmente, Feras."
+    },
+    {
+      "id": "animalidade-seg-0002-instintos-despertos",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Instintos Despertos",
+      "paragraphRange": [
+        7,
+        12
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1886,
+      "wordCount": 331,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bhumano(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Instintos Despertos\n\nDiz-se que um Fera nada mais é do que um humano que teve seus instintos animais despertados, afinal, tais criaturas são uma mistura de humanos com animais. Seres que se dividem entre seu senso de sobrevivência e seu raciocínio lógico, dotados de incríveis habilidades de metamorfose e controle do metabolismo corporal.\n\nAs mudanças que ocorrem na pessoa devido a essa alteração bestial que passa a lhe parecer simplória é o fato que mais lhe traz insegurança. Mesmo estando seguro de que sabe o que está fazendo, nunca se deixe confiar totalmente em seus instintos, pois eles já não são mais humanos, e sim que seguem o padrão de pensamento de um animal. O Fera já não sente o cheiro de comida como sentia antes, pois agora, para ele, alimentar-se significa sobreviver, nada mais. Isso pode causar um enorme choque contra a humanidade do personagem, já que ele tem de refrear seus impulsos para não come-ter atos que considere selvagens ou desumanos.\n\nOutro fator determinante é a ligação entre o homem e o animal em questão. Os próprios Feras costumam declarar que seu lado animalesco é sua contra-parte, isso é, o lado psicológico dele que almeja ser como um determinado animal. Muitos sábi-\n\nos dizem que quando um Fera é criado, a sua alma humana passa a conviver no mesmo corpo junto com a do animal. Por isso é usado o termo “contra-parte”, afinal trata-se do espírito duplo que habita seu corpo.\n\nTodos os Feras possuem uma ligação muito forte com suas bestas espirituais. Eles a glorificam ou as odeiam. Mesmo que se tente, são raras as vezes em que se consegue voltar a serem humanos de novo. Salvos raros casos, em que rituais ou pactos complexos expulsavam a essência do animal que se ligava à do mortal. Contudo, a maioria prefere aprender a conviver com isso do que se sacrificar em busca de uma cura, pois é melhor aprender lidar com essa Animalidade."
+    },
+    {
+      "id": "animalidade-seg-0003-metamorfose",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Metamorfose",
+      "paragraphRange": [
+        13,
+        18
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2072,
+      "wordCount": 349,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.5,
+          "confidence": 0.59,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Metamorfose\n\nUm personagem Fera pode assumir até 3 aspectos distin-tos: Hominídeo, Fera e Animal. O primeiro basicamente é o mesmo semblante humano que ele possuía, talvez apenas com umas poucas características animalescas, como pêlos em excesso pelo corpo ou um temperamento explosivo.\n\nA segunda é que vale o nome deste tipo de personagem: Feras. Trata-se de uma forma humanóica, repleta de aspectos animais. O formato de cabeça-braço-e-pernas continuam os mes-mos, bem como a capacidade de pensamento e razão iguais às que o personagem possui. No entanto, seu corpo sofre altera-ções drásticas, conforme a espécie animal que é sua contra-parte. Em geral, os olhos tornam-se da mesma coloração do animal; os cabelos crescem, ou caem; a pele muda de tonalidade; o aroma do animal torna-se saliente; as orelhas ficam pontiagudas ou apeludadas; a massa corporal fica mais avolumada, aumentado um pouco o seu tamanho (cerca de um 20 cm), fazendo com que as roupas fiquem rasgadas, etc.\n\nE, por último, a terceira forma é a do Animal, propriamente dito, do qual o personagem se originou. Assim, é possível metamorfosear-se para a figura deste animal (seja ele um morcego, um lobo ou um urso), sempre transformando-se numa versão mais majestosa das criaturas originais. Mesmo nesta forma, toda a inteligência do personagem é conservada, porém todos suas caracte-rísticas físicas se tornam idênticas ao do animal em questão (veja atributos de vários animais em TREVAS).\n\nA transformação de uma forma para outra demora uma rodada completa para ser executada. Assim, se um personagem na forma Hominídea desejar assumir a forma Animal, por exemplo, ele irá perder uma rodada. Para mudar novamente sua forma (para Fera, ou retornar à Hominídea), outra rodada precisa ser gasta.\n\nNão é preciso dizer, mas lembre-se que qualquer um que presenciar a metamorfose ficará horrorizado com a cena (talvez deva até fazer um teste de WILL para não desmaiar ou entrar em pânico) e a forma de Fera do personagem já costuma ser assusta-dora o bastante para incitar medo suficiente em quem a vê."
+    },
+    {
+      "id": "animalidade-seg-0004-cultura-e-costumes",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Cultura e Costumes",
+      "paragraphRange": [
+        19,
+        22
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1552,
+      "wordCount": 267,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\breino(?:s)?\\b",
+            "\\bcultura(?:s)?\\b",
+            "\\bcl[aã](?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Cultura e Costumes\n\nOs Feras prezam muito a família, tanto que eles dividem as raças em clãs ou famílias. Para todos os Feras a família é um dos seus maiores bens, já que na realidade são seres muito soli-tários devido à sua existência intolerada pelas autoridades. As-sim, caso sua verdadeira natureza seja descoberta, o Fera pode ser caçado como um verdadeiro demônio.\n\nNo meio desta hierarquia familiar os Feras sempre terão em à frente de comando o Fera mais velho e poderoso. Este velho Fera será chamado de Ancião. Os Anciões prezam pela paz de todos que estão sob sua influência e esperando o dia de adentrar os reinos espirituais de uma vez por todas. Enquanto este dia não chega, eles cuidam de suas famílias e Irmãos (que é o nome pelo qual os Anciões tratam os Feras de outras raças). Os Anciãos também têm outras tarefas, como iniciar e treinar os Filhotes (termo que denominam aqueles que recém descobriram sua animalidade) e cuidar dos domínios das famílias.\n\nOs Domínios são lugares considerados sagrados pelos Feras. Na maioria das vezes um domínio é o território do Ancião. Por ser um local valioso para os Feras, este local vive sempre em constante vigilância, pois, no domínio, haverá sempre um portal para o vale dos Espíritos Anciões. Neste vale se encontram os espírito de anti-gos Feras, que até o presente orientam os Anciões. Na maioria das vezes, estes espíritos se tornam os guardiões do domínio, treinando os Filhotes ou ensinando novos poderes aos guerreiros. Os espíri-tos anciões são quem ditam as leis dentro do domínio."
+    },
+    {
+      "id": "animalidade-seg-0005-as-leis",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "As Leis",
+      "paragraphRange": [
+        23,
+        29
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 740,
+      "wordCount": 125,
+      "primaryArea": "magias",
+      "classifications": [
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bcaminho(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "As Leis\n\nUm Fera jamais deverá matar à outro de sua espécie.\n\nO jovem Fera sempre deve obedecer e respeitar aos mais antigos e seguir os caminhos que lhe forem direcionados.\n\nO Fera, quando for preciso, deve estar disposto à lutar e defender ao Domínio e aos mais antigos das terríveis garras dos inimigos.\n\nOs Anciões devem respeitar os mais jovens também, não fazendo abuso demasiado de seu posto.\n\nDevem ser respeitados os territórios de cada Fera, sempre que um Fera adentrar o território de outro, deve pedir permissão e jamais deverá marcar um território já marcado. (eles marcam território como os lobos, urinando)\n\nO Fera jamais deverá servir as forças malignas ou permitir que essa influência se faça aparecer em seu corpo ou alma."
+    },
+    {
+      "id": "animalidade-seg-0006-o-umbral",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "O Umbral",
+      "paragraphRange": [
+        30,
+        34
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1422,
+      "wordCount": 235,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\breino(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bvampiro(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "O Umbral\n\nO Umbral é a região de Spiritum onde localizam-se os reinos espirituais dos pesadelos e os vales dos anciões. Dizem que a umbral era um local lindo e maravilhoso, onde os espíritos Anciões repousavam. Quando os vampiros e demônios chega-ram e seu poder corruptor tornou o local tenebroso e terrível, a região do umbral ficou dividida em Baixo Umbral e Umbral Profundo. Na região do baixo Umbral ainda é possível sentir a presença dos espíritos de Ancestrais, no Umbral profundo po-rém, habitam espíritos malignos que servem aos vampiros e demônios, é um verdadeiro reino de pesadelos.\n\nNinguém sabe ao certo ainda, mas é possível num local de trevas profundas, na mais absoluta profundidade destes reinos astrais, exista um local onde já estão abertas as portas de todos os mundos. Se isso for real, é possível que os demônios poderosos e os vampiros antigos ape-nas estejam ganhando mais forças para finalmente explodir em fúria e mostrar sua face nos planos superiores.\n\nOs Feras são umas das poucas criaturas capazes de adentrar no reino umbral (Ver ritual “Adentrar no Umbral”), mas o po-der degenerativo não se manifesta apenas no reino espiritual, mas também neste reino material, cada vez mais corrompido pelas forças dos demônios e vampiros.\n\nOs Anciões conhecem alguns Rituais capazes de auxiliar os guerreiros em suas missões, proteger as famílias ou mesmo castigar criminosos. Entre eles, destacam-se:"
+    },
+    {
+      "id": "animalidade-seg-0007-adentrar-no-umbral",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Adentrar no Umbral",
+      "paragraphRange": [
+        35,
+        38
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 534,
+      "wordCount": 89,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\breino(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Adentrar no Umbral\n\n(Controlar/Entender/Spiritum 4)\n\nPara adentrar a Umbral, os Feras deve fitar uma superfície brilhante como um espelhos ou a superfície refletora de um lago. O mago toca a superfície que para ele se torna um portal para o reino espiritual do Umbral. O mesmo ritual permite voltar dos reinos espirituais. É possível arrastar outros Feras ou mesmo mortais para a Umbral, desde que elas estejam segurando o mago. Este lendário feitiço é conhecido apenas pelos Feras e difi-\n\ncilmente poderá ser usado por outros magos."
+    },
+    {
+      "id": "animalidade-seg-0008-criacao-de-dominio",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Criação de Domínio",
+      "paragraphRange": [
+        39,
+        42
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 463,
+      "wordCount": 80,
+      "primaryArea": "magias",
+      "classifications": [
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bcaminho(?:s)?\\b",
+            "\\bmetamagia\\b"
+          ]
+        },
+        {
+          "area": "rituais",
+          "label": "Rituais",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\britual(?:is|s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Criação de Domínio\n\n(Criar/Controlar Spiritum/Metamagia 4)\n\nEste ritual consiste em criar um lugar onde todos os feras podem se reunir para decidir os caminhos de sua família e irmãos presentes. O domínio por sua importância é sempre guardado por alguns Feras. Todos os poderes mágicos no local são aumentados no local .\n\nPorque depois do ritual a área se torna um node, pois agora há a presença de um espírito da criação (ou espírito ancião como dizem os feras)."
+    },
+    {
+      "id": "animalidade-seg-0009-furia-de-gaea",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Fúria de Gaea",
+      "paragraphRange": [
+        43,
+        48
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 926,
+      "wordCount": 164,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bfeiti[cç]o(?:s)?\\b",
+            "\\bmetamagia\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Chamado do Espírito Ancião\n\n(Controlar/Entender Spiritum 6)\n\nEste ritual consiste em chamar um espirito ancião para guardar e dar os ensinamentos básicos das leis e da missão dos meio feras. O espírito ancião é o ser de mais poder dentro Domí-nio pois ele controla o Domínio. Porque sem ele o domínio não existe. Sem lei, não há como cumpri-la.\n\nFúria de Gaea\n\n(Criar/Controlar Animais/Plantas/Metamagia  6-8)\n\nEste feitiço consiste em trocar a própria vida por uma maldição que não pode ser retirada por nenhum poder conheci-do (a não, talvez, ser por entidades de Infernun, o que custa um preço alto demais). A maldição consiste em colocar uma marca na vitima para que ela sempre seja encontrada pelos Feras e também por animais e plantas que sempre reconhecerão seu crime e o punirão pelo que fez com algum Irmão (afinal, ninguém coloca-ria uma maldição sem razões para isso). A maldição dura ate que a vítima esteja morta."
+    },
+    {
+      "id": "animalidade-seg-0010-os-ciganos",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Os Ciganos",
+      "paragraphRange": [
+        49,
+        52
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1119,
+      "wordCount": 197,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bhist[oó]ria\\b",
+            "\\blenda(?:s)?\\b",
+            "\\bcidade(?:s)?\\b",
+            "\\bcultura(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Os Ciganos\n\nOs ciganos são o povo que mais apresentam ligações com os Feras, pois há uma grande concentração de híbridos, origina-dos da união entre os dois grupos, nos seus acampamentos e por serem um povo nômade eles têm mais mobilidade entre as cidades. Sua cultura é muito antiga e envolta em muitos mistéri-os. Já possuíam contato com os Feras há muitos séculos e isso lhes deu uma grande gama de descobertas e conhecimentos a respeito das Sociedades Secretas, poderes, fraquezas e lugares onde se escondem algumas dos mais temidos seres na Terra.\n\nOs ciganos, na parte da Europa, seguem muito dos costu-mes dos vampiros Vrikolakas e Licantropos. Já na região da Chi-na são mais levados pelos costumes dos Garras de Sharikan.\n\nEm toda parte a cultura dos ciganos funde-se com a cultu-ra e missão dos Feras. Então quando quiserem uma explicação de lendas ligadas aos Feras pergunte a eles, que sempre terão uma história para lhes contar sobre uma maldição dada a um estran-geiro, um grande guerreiro que fundiu o seu espírito com um dos animais da floresta ou um animal que guarda o acampamen-to de possíveis males."
+    },
+    {
+      "id": "animalidade-seg-0011-modo-de-vida",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Modo de Vida",
+      "paragraphRange": [
+        53,
+        55
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1084,
+      "wordCount": 194,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Modo de Vida\n\nO modo de vida dos Feras são uma intrincada divisão entre o modo dos animais e humanos. Eles são divididos em Fatrias. Cada Fatria é dirigido pelo Grande Ancião de cada Família, e cada Família é dividido entre as grandes Matilhas controlado pelo Ancião, que tem a sede em um Domínio. Os grandes Anciões são os anciões de mais poder e influência em uma região (geralmente o mais velho também). O grande Ancião é escolhido em um ritual feito por todos os anciões de uma região. Esta reunião é feita conjurando um dos espíritos da criação. Fazendo com que este espírito que faça a escolha entre os anciões que estão ali.\n\nAquele que for escolhido recebe poderes próprios, status e obrigações. A palavra de um grande Ancião é como lei pois este poderá ser um novo espírito ancestral. Por isso dizem que os grandes anciões são a boca dos ancestrais. Em tempos de crise para todos os Feras é escolhido entre um dos grandes Anciões um ancião que será destinado para comandar seus irmãos. Este grande ancião terá a missão de acabar com a crise que está destru-indo esta Família."
+    },
+    {
+      "id": "animalidade-seg-0012-o-despertar-da-fera",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "O Despertar da Fera",
+      "paragraphRange": [
+        56,
+        60
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1271,
+      "wordCount": 226,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\breino(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "O Despertar da Fera\n\nTodos os Feras descobrem seus poderes de forma um pou-co conturbada, ou seja, de um jeito traumático. Os Feras muitas vezes descobrem na puberdade sua verdadeira natureza, época em que os seus dons de transformação aparecem descontroladamente. Também pode ser quando ele vê um dos entes de sua família em uma de suas formas alternativas ou presencia uma das transforma-ções de um irmão. Por este motivo é um pouco traumático, como entender que você é um daqueles seres? Como entender sua dupla natureza? E qual é o elo de sua fera interior com sua parte humana? Como viver com sua meia humanidade agora?\n\nAgora você é um fera e tem como missão destruir os vam-piros e demônios que atormentam e destroem o mundo em que você vive. Neste momento você conhece uma realidade que até antes você não conhecia.\n\nA iniciação acontece depois desta transformação e daí por diante você é um deles. Depois da iniciação vem o treinamento dado pelo ancião ensinando caminhos nos reinos umbrais e entendendo um pouco mais o elo que você tem com sua fera interior.\n\nDepois deste treinamento você é um Fera que já consegue controlar sua besta interior e aprendeu que está no meio de uma guerra entre anjos e demônios, e não quer que a Terra seja o campo desta batalha."
+    },
+    {
+      "id": "animalidade-seg-0013-criacao-de-um-fera",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Criação de um Fera",
+      "paragraphRange": [
+        61,
+        77
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 4306,
+      "wordCount": 685,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 8.585,
+          "confidence": 0.817,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bsistema\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Criação de um Fera\n\nOs Feras são homens ou mulheres mortais PUROS (ou seja, apenas personagens completamente humanos podem ser Feras), que, por alguma razão mística sofreu uma metamorfose no seu organismo e passou a dispor de qualidades e defeitos de um certo animal (ou mais de uma animal, talvez). Mudanças psicológicas provocadas pelos instintos animais geram inquéritos na mente dos personagens, de modo que eles eventualmente se sentem confusos em relação aos atos que cometem e das convicções que possuem, dificilmente evitam seu lado humano, mas como eles sabem de sua condição, temem serem descobertos ou caçados por isso.\n\nGeralmente o surgimento de um Fera ocorre por três razões distintas:\n\nO personagem foi infectado por um tipo de “doença genética”, cujo animal era portador e se manifestou no corpo do indivíduo sobre a forma de uma mutação biológica;\n\nO personagem utilizou-se de alguma Magia, Ritual, Mal-dição ou Pacto para conseguir alterar seu organismo e dotá-lo de características animalescas;\n\nO personagem foi submetido a uma “cirurgia” por labora-tórios governamentais, que usaram uma alta tecnologia de manipu-lação dos genes e modificaram seu sistema biológico, implantando códigos genéticos de animais em brechas do seu DNA.\n\nOutros métodos também são possíveis (um acidente industrial, um vírus experimental, hereditariedade paterna, etc). A isso cabe sua imaginação e, claro, a conscientização final do Mestre. O simples fato de seu personagem ser o que é já serve como um background excelente (tenho que ter um inimigo ? Que tal aquele cientista que quer eliminar sua criação errônea ?) e\n\num ótimo tema para aventuras inteiras (o que está acontecendo comigo ? É melhor voltar lá na aldeia cigana e pedir explicações). As possibilidades são inúmeras para “colorir” seu persona-\n\ngem, apenas procure dar o máximo de coerência para ele (não vá, por exemplo, criar um homem-rinoceronte que vive como marinheiro). Percorrida essa etapa de criação de personagem, passe-\n\nmos para a seguinte: como se constrói um Fera. Essas criaturas são uma mistura entre um ser humano e um animal (talvez mais de um, isso pode variar conforme o background do persona-gem), que preservam características tanto positivas quanto nega-tivas desse cruzamento racial. Em termos de regras, não é preciso pagar pontos nenhum para ser um Fera.\n\nVoltando ao assunto, um Fera irá apresentar semelhanças ao animal que contaminou sua essência. Assim, um “cruzamen-to” entre um homem e um lobo irá resultar em um Lobisomem (personagem típico do folclore mundano). Bem como um ho-mem mordido uma serpente maldita se tornará um Naga (meio homem, meio cobra) descendente do povo-cobra original do antigo Egito e ou das selvas pantanosas do Brasil, que são geral-mente criaturas traiçoieras, que vivem enganando pessoas com falsas amizades e joguinhos de corrupção. E um outro ainda, contaminado por uma aranha radioativa irá virar um Spiderman!\n\nNa fauna mundana encontramos uma grande variedade de Feras. Tipos muito variados e cada qual com características individuais que não se assemelham aos demais. Se as possibili-dades já são bastante extensas na Terra, imagine o que ocorre em Arcádia, o plano dos contos-de-fadas ? Metamorfos originados de animais fantasiosos, como o unicórnio e o grifo! Agora não vai faltar alternativas para os Jogadores que se divertem em cons-truir personagens únicos e exóticos.\n\nVeja mais adiante alguns variantes Feras prontos para você utilizar em aventuras.\n\nImportante: Para criar um personagem Fera, você deve pos-suir o Módulo Básico do Sistema Daemon, que pode ser obtido gratuitamente através do site http://www.daemon.com.br.\n\nOptamos por não incluir as regras de criação de Persona-gens, Atributos, Conceitos Básicos e Perícias porque senão este suplemento ficaria muito grande e atrapalharia o download dele na maioria dos sites gratuitos, que possuem limite de espaço para armazenamento de programas.\n\nOs Personagens podem ser criados como humanos nor-mais de 101 pontos, 5 Pontos de Aprimoramentos e pontos de Perícia normais. Quaisquer Aprimoramentos, Kits ou regras do ARKANUN, TREVAS, ANJOS, DEMÔNIOS ou VAMPIROS\n\npodem ser utilizadas para a criação de Personagens. Apenas acres-cente os poderes e fraquezas respectivos aos Feras para a criação do seu personagem."
+    },
+    {
+      "id": "animalidade-seg-0014-poderes-animais",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Poderes Animais",
+      "paragraphRange": [
+        78,
+        84
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1913,
+      "wordCount": 329,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bpoder(?:es)?\\b",
+            "section_heading_hint"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Poderes Animais\n\nEsta é a parte mais idolatrada por qualquer Jogador, mas não precisa ficarem tão emocionados. Benefícios (ou Vantagens, como preferirem) são, nada mais nada menos, que os dons especiais e capacidades extras que seu personagem irá receber como um Fera. O personagem tem um número de pontos em Poderes Animais igual a 5 + 1 por nível. Assim, por exemplo, um personagem de 3° nível possuiria 8 pontos de Poderes Animais (5 + 3).\n\nEstes pontos devem ser usados para comprar os Poderes Animais para o seu personagem. Os Poderes estão divididos em níveis para uma melhor compreensão. Estes níveis existem para o jogador e Mestre somente, pois o personagem jamais usará o termo “nível de poder”. Para obter um efeito de nível 2, é neces-sário que o Fera possua pelo menos um efeito do mesmo poder no nível 1, e assim por diante. Existem alguns poderes que se ramificam em vários efeitos por nível, e CADA um destes efeitos custa 1 ponto. É óbvio que os personagens devem possuir po-deres de acordo com seus backgounds.\n\nAqui NÃO estão especificados a quais Feras correspondem cada poder, pois são muitas variedades e possibilidades existen-tes destas criaturas. Assim, cabe ao Mestre consentir qual poder é, ou não, permitido para cada tipo de personagem.\n\nIndependente das raça ou origem do Fera, todos possuem uma coisa em comum: instintos bestiais. Esses instintos são uma espécie de elo entre a humanidade e natureza animal do personagem.\n\nSendo assim, o Fera tem o poder de conhecer e controlar a fúria da besta que existe dentro dele. O Animalismo nada mais é do conhecimento da contra-parte animal que o metamorfo tem dentro de si. Reforçando ou controlando o elo que ele mantém com a besta, tornando capaz de trazer à tona um poder maior ao fera e aprendendo melhor a lidar com seus poderes e fraquezas.\n\nVeja alguns dos poderes possíveis e sinta-se livre para modificá-los ou criar outros mais:"
+    },
+    {
+      "id": "animalidade-seg-0015-pele-grossa",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Pele Grossa",
+      "paragraphRange": [
+        85,
+        93
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 761,
+      "wordCount": 133,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Reprodutor\n\nNível 1: O Fera, seja macho o fêmea, pode ter relações sexuais normalmente e ainda gerar filhos. Um personagem sem esta vantagem ainda pode realizar tais relações, mas não pode gerar descendentes e o risco para não se sentir “satisfeito” ou ficar incapacitado de continuar o ato aumenta muito mais.\n\nNível 2: O Fera é um grande reprodutor, capaz de engravidar uma parceira apenas em uma relação e gerar mais de um filho com ela.\n\nPele Grossa\n\nO personagem possui uma camada de pêlos, escamas, penas, couro ou outro tipo de pele bastante rígida, a tal ponto que lhe confere uma armadura natural, sem penalizar DEX nem AGI.\n\nNível 1: confere IP 1 natural.\n\nNível 2: confere IP 2 natural.\n\nNível 3: confere IP 3 natural.\n\nNível 4: confere IP 4 natural."
+    },
+    {
+      "id": "animalidade-seg-0016-sangue-frio",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Sangue Frio",
+      "paragraphRange": [
+        94,
+        98
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 636,
+      "wordCount": 110,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.5,
+          "confidence": 0.534,
+          "evidence": [
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Aquático\n\nNível 1: Além de respirar normalmente, o Fera pode respirar normalmente debaixo d’água.\n\nNível 2: Bem como possuem pequenas membranas en-tre os dedos, guelras ou mesmo barbatanas que lhe permitem se locomover na água de maneira muito mais rápida que no ambi-ente terrestre (AGI +6).\n\nSangue Frio\n\nNível 1: O personagem pode se adaptar facilmente à mu-danças climáticas bruscas. Para ele, não existe o conceito de calor ou frio. Temperaturas não influenciam em nada seu corpo. Ele não soa, não treme de frio e pode estar em um lugar de altas ou baixas temperaturas sem mudar seu modo de respirar, se sentir cansado ou ofegante."
+    },
+    {
+      "id": "animalidade-seg-0017-sombras",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Sombras",
+      "paragraphRange": [
+        99,
+        102
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 521,
+      "wordCount": 81,
+      "primaryArea": "pericias",
+      "classifications": [
+        {
+          "area": "pericias",
+          "label": "Pericias",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bper[ií]cia(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Sombras\n\nNível 1: O personagem sabe se camuflar perfeitamente nas sombras, sendo um hábil caçador noturno. Considere que ele possui a perícia Camuflagem em 50% e Furtividade 30%.\n\nNível 2: O personagem sabe se camuflar perfeitamente nas sombras, sendo um hábil caçador noturno. Considere que ele possui a perícia Camuflagem em 70% e Furtividade 50%.\n\nNível 3: O personagem sabe se camuflar perfeitamente nas sombras, sendo um perfeito caçador noturno. Considere que ele possui a perícia Camuflagem em 90% Furtividade 70%."
+    },
+    {
+      "id": "animalidade-seg-0018-aumento-de-atributos",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Aumento de Atributos",
+      "paragraphRange": [
+        103,
+        112
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 854,
+      "wordCount": 138,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\batributo(?:s)?\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Aumento de Atributos\n\nÉ a capacidade sobrenatural dos Feras de possuírem carac-terísticas mais fortes que a dos humanos normais.\n\nForça: bônus de +3 pontos em Força. Esse poder pode ser escolhido várias vezes.\n\nConstituição: bônus de +3 pontos em Constituição. Esse poder pode ser escolhido várias vezes.\n\nDestreza: bônus de +3 pontos em Destreza. Esse poder pode ser escolhido várias vezes.\n\nAgilidade: bônus de +3 pontos em Agilidade. Esse po-der pode ser escolhido várias vezes.\n\nInteligência: bônus de +3 pontos em Inteligência. Esse poder pode ser escolhido várias vezes.\n\nForça de Vontade: bônus de +3 pontos em Força de Vontade. Esse poder pode ser escolhido várias vezes.\n\nPercepção: bônus de +3 pontos em Percepção. Esse po-der pode ser escolhido várias vezes.\n\nCarisma: bônus de +3 pontos em Carisma. Esse poder pode ser escolhido várias vezes."
+    },
+    {
+      "id": "animalidade-seg-0019-regeneracao",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Regeneração",
+      "paragraphRange": [
+        113,
+        117
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 453,
+      "wordCount": 97,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 6.644,
+          "confidence": 0.709,
+          "evidence": [
+            "\\bdano\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Garras\n\nNível 1: 1d3 + bônus por Força de dano. Nível 2: 1d6 + bônus por Força de dano. Nível 3: 1d10 + bônus por Força de dano. Nível 4: 2d6 + bônus por Força de dano. Nível 5: 2d10 + bônus por Força de dano.\n\nRegeneração\n\nNível 1: o Fera regenera 1 PV a cada 12 horas. Nível 2: o Fera regenera 1 PV a cada 6 horas. Nível 3: o Fera regenera 1 PV a cada 3 horas. Nível 4: o Fera regenera 1 PV a cada hora.\n\nNível 5: o Fera regenera 1 PV a cada 1/2 hora."
+    },
+    {
+      "id": "animalidade-seg-0020-sentir-o-sobrenatural",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Sentir o Sobrenatural",
+      "paragraphRange": [
+        118,
+        122
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 856,
+      "wordCount": 157,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.5,
+          "confidence": 0.534,
+          "evidence": [
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        },
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bmagia(?:s)?\\b",
+            "\\bcaminho(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Sentir o Sobrenatural\n\nNível 1: É dito que os animais podem sentir a presença de entidades espirituais com muito mais facilidade que os humanos. Assim, um personagem na forma Animal pode realizar tal proeza. O Mestre deve fazer um teste difícil de PER em segredo e, em caso de sucesso, avisar ao personagem o que ele está vendo ou sentindo.\n\nNível 2: O personagem pode detectar espíritos também na forma de Fera.\n\nNível 3: O Fera poderá sentir se a pessoa com quem conversa é um ser sobrenatural. Em caso da pessoa esteja tentando se disfar-çar através de poderes não-mágicos, ela tem direito a um Teste de WILL contra INT do personagem para tentar enganá-lo.\n\nNível 4: capaz de detectar resíduos mágicos em um local, sa-bendo dizer se uma magia foi ou está sendo empregada ali. No entan-to, não sabe ao certo que magia é esta e nem a que Caminho pertence."
+    },
+    {
+      "id": "animalidade-seg-0021-peconha",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Peçonha",
+      "paragraphRange": [
+        123,
+        131
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 933,
+      "wordCount": 179,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 4.585,
+          "confidence": 0.595,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.5,
+          "confidence": 0.59,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 3.807,
+          "confidence": 0.552,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Asas\n\nNível 1: Concede ao Fera um par de asas no aspecto que ele desejar (de couro, como morcegos; de penas negras, como corvos; ou até mes-mo como de uma águia). Pode voar a uma velocidade de até 30 km/h.\n\nNível 2: Você pode voar a até 70 km/h.\n\nNível 3: Suas asas também permitem que você voe nos planos astrais (Spiritum e Arcádia).\n\nNível 3: Você pode voar a até 120 km/h.\n\nPeçonha\n\nNível 1: Alguns homens-feras possuem veneno como forma de ataque ou defesa corpórea. Podem ser lançados pela boca, garras ou outros ferrões. O veneno causa 1d6 de dano e deixa a vítima atordoada durante sua próxima rodada.\n\nNível 2: O veneno causa 1d6+3 de dano e deixa a vítima atordoada durante sua próxima rodada.\n\nNível 3: O veneno causa 1d6+6 de dano e exige um teste de CON para evitar uma debilitação (a peçonha causa um torpor e deixa uma pessoa em estado de terror catatônico, impedindo-o de se mover até o veneno ser extraído do corpo)."
+    },
+    {
+      "id": "animalidade-seg-0022-chifres",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Chifres",
+      "paragraphRange": [
+        132,
+        137
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 648,
+      "wordCount": 117,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 9.0,
+          "confidence": 0.84,
+          "evidence": [
+            "\\bataque(?:s)?\\b",
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 8.17,
+          "confidence": 0.794,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Sentidos Aguçados\n\nNível 1: O personagem pode ter UM dos cinco sentidos (visão, audição, paladar, olfato ou tato) aguçados. Para ter outro, é preciso comprar novamente este Poder. Todos os testes de Percep-ção relacionados ao Sentido escolhido devem ser reduzidos em um nível (um Teste Difícil torna-se Normal; um Teste Normal torna-se Fácil e para um Teste Fácil não é preciso rolar dados).\n\nChifres\n\nNível 1: Assim como Garras, o Fera possui um, dois ou quantos chifres no formato que preferir. O dano de um ataque à base de chifradas é de 1d6 + bônus por FR.\n\nNível 2: Causa 1d10 + bônus de FR de dano.\n\nNível 3: Causa 2d6 + bônus de FR de dano."
+    },
+    {
+      "id": "animalidade-seg-0023-comunicacao-animal",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Comunicação Animal",
+      "paragraphRange": [
+        138,
+        142
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 889,
+      "wordCount": 156,
+      "primaryArea": "classes",
+      "classifications": [
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bataque(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Comunicação Animal\n\nNível 1: É possível que o Fera estabeleça um elo telepático com um animal da mesma espécie da qual ele é transformado. Lobisomens usariam Comunicação Animal com lobos, por exem-plo. Ele pode obter informações deste tipo de animal, desde que possa vê-lo e dispondo de uma pequena concentração.\n\nNível 2: O personagem pode dar ordens simples ao animal (como “ataque-o” ou “siga-me”), que ele executará sem hesitar.\n\nNível 3: O personagem pode dar ordens mais complexas ao animal (como “vasculhe o local e traga a arma para mim” ou “espere aqui e ataque o primeiro que passar”), que ele executará sem hesitar. Nível 4: O Fera mantém um contato telepático com ou-\n\ntros Feras de sua mesma espécie do local podendo chamá-los em momentos de perigo. Todos os Feras que estejam numa área de 10 km de distancia podem escutar o chamado (através de um contato psíquico ou sonoro)."
+    },
+    {
+      "id": "animalidade-seg-0024-bico",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Bico",
+      "paragraphRange": [
+        143,
+        148
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 475,
+      "wordCount": 87,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bdano\\b"
+          ]
+        },
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        },
+        {
+          "area": "tabelas",
+          "label": "Tabelas e Geradores",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\b1d\\d+\\b|\\bd\\d+\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Presas\n\nO Fera possui seus dentes pontiagudos e perfeitos para dilaceração. Funcionam tão bem quanto garras.\n\nNível 1: 1d3 + bônus por Força de dano. Nível 2: 1d6 + bônus por Força de dano. Nível 3: 1d10 + bônus por Força de dano.\n\nBico\n\nO personagem possui um pico semelhante ao de uma ave e pode usá-lo para segurar objetos e até mesmo golpear alguém.\n\nNível 1: 1d3 + bônus por Força de dano. Nível 2: 1d6 + bônus por Força de dano. Nível 3: 1d10 + bônus por Força de dano."
+    },
+    {
+      "id": "animalidade-seg-0025-visao-noturna",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Visão Noturna",
+      "paragraphRange": [
+        149,
+        151
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 470,
+      "wordCount": 78,
+      "primaryArea": "classes",
+      "classifications": [
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Visão Noturna\n\nNível 1: Se houver qualquer mínima luz (mesmo que seja uma tocha a vários metros de distância), o personagem já é capaz de enxergar com perfeição, como se fosse dia claro. Já, se não houver iluminação, você consegue se localizar no local, isso é, sabe evitar tropeçar em objetos, reconhecer paredes e reconhecer a disposição dos móveis de uma sala.\n\nNível 2: O personagem pode enxergar perfeitamente na escuridão sem que haja qualquer fonte de iluminação."
+    },
+    {
+      "id": "animalidade-seg-0026-matilha",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Matilha",
+      "paragraphRange": [
+        152,
+        155
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 500,
+      "wordCount": 94,
+      "primaryArea": "classes",
+      "classifications": [
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Matilha\n\nNível 1: O Fera possui um pequeno núcleo de 1 a 3 animais como a sua contra-parte que vivem como seus protegidos e aliados. Podem ser treinados para caçarem, responderem a comandos ou simplesmente vivem junto do personagem, sob sua tutela.\n\nNível 2: O Fera possui um pequeno núcleo de 5 a 7 animais como a sua contra-parte que vivem como seus protegidos e aliados.\n\nNível 3: O Fera possui um pequeno núcleo de 8 a 12 animais como a sua contra-parte que vivem como seus protegi-dos e aliados."
+    },
+    {
+      "id": "animalidade-seg-0027-inspirar-terror",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Inspirar Terror",
+      "paragraphRange": [
+        156,
+        160
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1044,
+      "wordCount": 179,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Inspirar Terror\n\nNível 1: Seu personagem é capaz de incitar o medo em seus inimigos, através de olhares intimidantes, línguas sibilan-tes, urro ou até rosnar mais bem elaborado. Uma vez tentado inspirar terror, todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproxi-marem mais que 3 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica.\n\nNível 2: Todos que observarem ou escutarem seu méto-do de intimidação, deverão fazer um teste de WILL para se apro-ximarem mais que 5 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica.\n\nNível 3: Todos que observarem ou escutarem seu méto-do de intimidação, deverão fazer um teste de WILL para se apro-ximarem mais que 7 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica.\n\nNível 4: Todos que observarem ou escutarem seu méto-do de intimidação, deverão fazer um teste de WILL para se apro-ximarem mais que 10 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica."
+    },
+    {
+      "id": "animalidade-seg-0028-teia",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Teia",
+      "paragraphRange": [
+        161,
+        168
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 958,
+      "wordCount": 192,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "classes",
+          "label": "Classes",
+          "score": 3.807,
+          "confidence": 0.552,
+          "evidence": [
+            "\\bnível\\b|\\bnivel\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Teia\n\nEste é o poder Maximo de um filho de Aracne. Pois este poder é o poder de tecer vários fios de resistência muito grande. Dizem em alguns relatos que seres atacados por este poder mor-reram em alguns instantes enrolados por estas teias.\n\nNível 1: O personagem tem o poder de lançar estas teias a 2 metros de distância com a Força de 1D.\n\nNível 2: Você consegue lançar a teia a até 4 metros de distancia com Força de 2D.\n\nNível 3: Você é capaz de lançar uma teia até 6 metros com Força de 3D.\n\nNível 4: Você é capaz de se pendurar na teia pois ela tem Força de 4D e pode lançá-la a até 8 metros de distância.\n\nNível 4: Você é capaz de fazer um ataque constritivo com suas teias com Força de 4D.\n\nObs: a partir do Nível 2 o personagem depois de usar este poder tem que descansar por uma hora pois este poder exige muito do corpo, mas se quiser usar este poder antes de uma hora terá que ceder um ponto de vida por Nível do efeito que você deseja utilizar."
+    },
+    {
+      "id": "animalidade-seg-0029-epoca-de-transformacao",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Época de Transformação",
+      "paragraphRange": [
+        169,
+        172
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 729,
+      "wordCount": 122,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Fraquezas\n\nAs Fraquezas (ou Desvantagens) são as problemas que complicam a vida do seu personagem conforme o tipo de metamorfo que ele é. A maioria são necessidades animais que se tornaram predominantes em seu corpo. As fraquezas devem ser definidas, assim como os Poderes Animais, pelo Mestre para cada raça de Feras que ele deseje utilizar em jogo.\n\nÉpoca de Transformação\n\nPor algum motivo obscuro (maldição, talvez) seu perso-nagem só pode assumir sua forma de Fera em uma determinada condição temporal (só em noites de lua cheia, quando está cho-vendo, durante o dia, quando a temperatura está baixa, por exem-plo). Fora deste período, é impossível que seu aspecto hominídeo seja alterado ou que se faça uso de seus poderes."
+    },
+    {
+      "id": "animalidade-seg-0030-inconsciencia",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Inconsciência",
+      "paragraphRange": [
+        173,
+        176
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 643,
+      "wordCount": 105,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 4.5,
+          "confidence": 0.59,
+          "evidence": [
+            "\\bNPCs?\\b",
+            "partial_daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Vulnerável\n\nSeu personagem pode ser destruído facilmente por algum objeto ou magia. Considere todo dano decorrente desta vulnerabilidade DOBRADO. Alguns exemplos bastante comuns são a prata (típica dos Lobisomens), fogo, luz (solar ou artificial), substâncias químicas e até certas plantas.\n\nInconsciência\n\nToda a vez que assumir a forma de Fera, o personagem corre o risco de perder o controle de seus atos, dando lugar a seu instinto animal adormecido. Para tentar impedir isso, ele tem direito a um teste de WILL. Se falhar, o Mestre deve tratá-lo como um NPC e depois ele apenas terá vagas recordações do que viu ou esteve naquele período."
+    },
+    {
+      "id": "animalidade-seg-0031-transmissor",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Transmissor",
+      "paragraphRange": [
+        177,
+        180
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 595,
+      "wordCount": 107,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bregra(?:s)?\\b",
+            "\\bdano\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Fome\n\nSe o Fera não se alimenta como sua contraparte animal se alimentaria, existe a chance de, 30% + 10% ao dia, de que ele perca a consciência de seus atos. Segue-se a mesma regra do item acima, mas apenas até que o personagem tenha saciado seu apetite.\n\nTransmissor\n\nVocê carrega uma espécie de doença contagiosa em seu organismo. Ela não lhe afeta em nada, mas se você ferir alguma pessoa fisicamente, esta poderá contrair a doença. A chance será igual ao dano causado, em porcentagem (causou 12 de dano, 12% de chance de contraí-la). O infectado se tornará um Fera como você em 1d4 semanas."
+    },
+    {
+      "id": "animalidade-seg-0032-transformacao-trocada",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Transformação Trocada",
+      "paragraphRange": [
+        181,
+        186
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 645,
+      "wordCount": 104,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.5,
+          "confidence": 0.534,
+          "evidence": [
+            "partial_daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Incapacidade de Assumir Forma\n\nO personagem não consegue assumir a forma de Hominídeo ou de Animal. Ele simplesmente não consegue, por mais que se esforce, atingir um destes aspectos.\n\nForma Perpétua\n\nA forma de Fera é a única que o personagem apresenta, não podendo metamorfosear-se para nenhuma das demais.\n\nTransformação Trocada\n\nO personagem não consegue controlar corretamente suas metamorfoses. Sempre que ele desejar trocar de forma, ele tem que fazer um teste de WILL para assumir a forma correta. Em caso de falha, ele simplesmente não consegue se transformar. Já uma falha crítica faz com que ele se transforme na outra forma restante."
+    },
+    {
+      "id": "animalidade-seg-0033-reacao-a-estimulos",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Reação a Estímulos",
+      "paragraphRange": [
+        187,
+        190
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 701,
+      "wordCount": 128,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.585,
+          "confidence": 0.65,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Pânico\n\nUm medo irracional toma conta do personagem sempre que ele entra em contato com algum tipo de ambiente ou situa-ção. Pode ser uma aversão à altura ou à água, ou temer estar sozinho ou em multidões, enjaulado ou empunhando uma arma. É preciso um teste de WILL para não entrar em desespero.\n\nReação a Estímulos\n\nSe o personagem for provocado de alguma forma física tortuosa, como ser atacado de surpresa ou agredido violenta-mente, seu instinto irá entrar em alerta e ele se descontrolará para tentar se defender. Faça um teste de WILL e em caso de falha, o personagem avança contra o agressor a fim de enxotá-lo para longe ou mesmo matá-lo (recebe bônus temporário de +3 em FR, CON, DEX e AGI)."
+    },
+    {
+      "id": "animalidade-seg-0034-instintividade",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Instintividade",
+      "paragraphRange": [
+        191,
+        194
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 517,
+      "wordCount": 87,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.5,
+          "confidence": 0.534,
+          "evidence": [
+            "partial_daemon_stat_block"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Fala Limitada\n\nO Fera só consegue se comunicar verbalmente na forma Hominídea. Nas demais, ele apenas gera os sons e grunhidos de sua contra-parte animal.\n\nInstintividade\n\nCada vez mais seus instintos vão tomando o lugar da sua razão e lógica. O Fera começa a ter reações típicas de suas contra-partes, como rosnar quando provocado ou dormir de cabeça para baixo pendurado em um galho. Considere todos os Testes Fáceis de INT como Normais, os Testes Normais como Difíceis, e os Testes Difíceis com falhas automáticas."
+    },
+    {
+      "id": "animalidade-seg-0035-ligacao-a-terra",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Ligação a Terra",
+      "paragraphRange": [
+        195,
+        201
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 727,
+      "wordCount": 130,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 8.0,
+          "confidence": 0.784,
+          "evidence": [
+            "daemon_stat_block"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bteste(?:s)?\\b",
+            "\\batributo(?:s)?\\b",
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bIP\\b|\\bPVs?\\b|\\bPMs?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Decapitação\n\nCaso o meio fera seja decapitado, ele será destruído e mor-to para sempre. Para decapitar um fera de uma só vez, é necessá-rio fazer um acerto critico, e arrancar de uma só vez 1/3 dos PVs totais de um Fera.\n\nEspinheiro\n\nO Fera não pode cruzar barreiras feitas de plantas com espinho para atravessá-las o fera precisa passar por um teste de WILL vs. WILL de quem ergueu a barreira.\n\nLigação a Terra\n\nAlguns feras tem o instinto de demarcar seus territórios onde eles vivem ou o lugar onde eles caçam. Caso eles saiam de seu território eles sofrem uma penalidade de –1 em todos seus Atributos. Até demarcarem outro território ou levarem consigo uma porção de terra de seu território de origem.\n\nNovos Aprimoramentos"
+    },
+    {
+      "id": "animalidade-seg-0036-poder-elevado",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Poder Elevado",
+      "paragraphRange": [
+        202,
+        211
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 2064,
+      "wordCount": 368,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 7.0,
+          "confidence": 0.729,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Poder Elevado\n\nPor um motivo qualquer o personagem está fora da mé-dia até que os próprios irmãos. Seu grau de conhecimento do elo da besta é um pouco maior que o do seus irmãos. Este é um dos Aprimoramentos preferidos pelos meio-feras iniciantes, mas os poderes têm de serem condizentes com os poderes da raça que você escolheu.\n\n1 Ponto: Este aprimoramento dá ao Fera mais 1 ponto extra de Poderes Animais. Por algum motivo o personagem tem mais poder que deveria.\n\n2 Pontos. Este aprimoramento dá ao Fera mais 2 pontos extra de Poderes Animais. Por algum motivo o personagem tem mais poder que deveria.\n\n3 Pontos. Este lhe concede 3 pontos extras de Poderes Animais acima do que você teria normalmente.\n\nElo duplo\n\nO elo duplo é uma variação bem diferente. Nos termos místicos, o meio-fera ao invés de ter ligação com um único ani-mal em sua alma, ele terá uma ligação com dois. Pode ser devido\n\nà dois Feras de raças diferentes tenham se reproduzido e dado a luz a um Fera totalmente novo, cujas características de ambos tenham se cruzado e tornado um tipo de híbrido muito podero-so. Mas este híbrido não poderá se reproduzir dando origem a outros híbridos como ele (todos nascem estéreis), e os pais são punidos pelo nascimento deste impuro, embora a criança nada sofra, sendo até treinada mais cedo pelo Ancião. Ou então, por-que seu elo será muito mais difícil de lidar. Como entender e controlar mais de uma fera em sua alma?\n\n3 Pontos. Este aprimoramento dá a você mais uma forma guerreira (Fera)e animal. Sendo que terá que dividir os poderes entre os dois elos animalescos.\n\n4 Pontos. Por algum motivo você é o resultado de um cruzamento de dois meio-feras e desenvolveu mais poderes que um Fera normal mas como resultado teve alguns de seus pode-res limitados pois lhe causa muita fadiga usar tais poderes. Em termos de jogo, você tem o DOBRO de pontos que teria nor-malmente para comprar seus Poderes Animais (embora ainda precise dividi-los entre suas formas extras). Mas, por outro lado, sempre que você utilizar algum de seus poderes, perderá 1PV."
+    },
+    {
+      "id": "animalidade-seg-0037-escolhido",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Escolhido",
+      "paragraphRange": [
+        212,
+        216
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 624,
+      "wordCount": 110,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bcidade(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Escolhido\n\nEste aprimoramento é um tipo de fama dentro do domí-nio tendo um pouco de renome na sua cidade, podendo até conseguir pequenos favores da sociedade de Feras da região ou ser reconhecido por outros Irmãos.\n\n1 Ponto. Você é um dos melhores guerreiros de sua fa-mília. É muito respeitado entre os membros de sua família.\n\n2 Pontos. Você é um grande guerreiro é o mais indicado para ser o próximo Ancião do domínio. Sendo respeitado em toda cidade.\n\n3 Pontos. Você É um Ancião, é respeitado por todos de seu domínio. Tendo grande influência na cidade e sendo respon-sável por manutenção das leis dentro do território."
+    },
+    {
+      "id": "animalidade-seg-0038-conhecimento-do-umbral",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Conhecimento do Umbral",
+      "paragraphRange": [
+        217,
+        221
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1060,
+      "wordCount": 173,
+      "primaryArea": "aprimoramentos",
+      "classifications": [
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 3.585,
+          "confidence": 0.539,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\breino(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bpontos?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Conhecimento do Umbral\n\nEste aprimoramento concede uma maior mobilidade den-tro dos reinos umbrais e também eqüivale a uma experiência maior a respeito dos espíritos anciões. Quanto maior o Aprendi-zado dos Reinos Umbrais, maior sua mobilidade dentro deles, bem como também será maior o perigo que você correrá lá (seus movimentos atrairão cada vez mais a atenção de seres mais pode-rosos e desconhecidos que habitam os reinos das sombras).\n\n1 Ponto. Você é um guerreiro. Que já adentrou os reinos umbrais e conhece alguns de seus caminhos, tendo a autorização para visitar regularmente o vale dos anciãos à procura de alguma informação.\n\n2 Pontos.Você é um guerreiro veterano. Pode adentrar os campos umbrais livremente e conhece vários caminhos lá. Possui a autorização do Ancião para levar junto com você até 3 companheiros.\n\n3 Pontos. Você já é um guerreiro homenageado, que já enfrentou vários demônios e vampiros no baixo umbral. Co-nhece algumas passagens para Arcádia e Sonhar podendo transi-tar entre elas desde que não faça distúrbios nestas regiões."
+    },
+    {
+      "id": "animalidade-seg-0039-adentrar-no-umbral",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Adentrar no Umbral",
+      "paragraphRange": [
+        222,
+        225
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 818,
+      "wordCount": 135,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bCON\\b|\\bFR\\b|\\bDEX\\b|\\bAGI\\b|\\bINT\\b|\\bWILL\\b|\\bCAR\\b|\\bPER\\b",
+            "\\bpontos?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\baprimoramento(?:s)?\\b",
+            "\\b\\d+\\s*(?:pontos?|pts?)\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\breino(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Adentrar no Umbral\n\nAtravés deste Aprimoramento o personagem tem o co-nhecimento e poder necessário para adentrar no Umbral. Apesar de alguns Magos terem desenvolvido rituais que simulem esta habilidade dos Feras, poucos tiveram sucesso em manipulá-la.\n\n1 Ponto: Para adentrar no Umbral, o Fera deve fitar uma superfície brilhante como um espelhos, ou a superfície refletora de um lago, e tocar a sua superfície, que se tornará um portal para o reino espiritual do Umbral (apenas para o personagem). O mesmo método permite voltar dos reinos espirituais.\n\n2 Pontos: O personagem pode convocar a presença de um Espírito Ancião para fazer até três perguntas, que serão respon-didas com SIM, NÃO ou IRRELEVANTE. Depois que as per-guntas são respondidas, o Espírito Ancião só poderá ser chama-do novamente dentro de 7 dias."
+    },
+    {
+      "id": "animalidade-seg-0040-nagas",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Nagas",
+      "paragraphRange": [
+        226,
+        233
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1765,
+      "wordCount": 273,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 6.585,
+          "confidence": 0.706,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b",
+            "\\bpovo(?:s)?\\b",
+            "\\bhumano(?:s)?\\b",
+            "\\bdeus(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bdeus(?:es)?\\b",
+            "\\bpante[aã]o\\b",
+            "\\bculto(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "multi_area_segment"
+      ],
+      "text": "Alguns Feras Prontos\n\nAqui estão apresentados alguns exemplos de como o Mestre pode construir suas próprias raças de Feras, dando a elas seus Poderes Animais e Fraquezas correspondentes, sem dese-quilibrar o nível de poder da raça.\n\nNagas\n\nDescendentes do povo de homens-serpente do Antigo Egito, os Nagas são uma raça maligna, que vive escondida em cavernas e tocas subterrâneas na Floresta Amazônica ou em anti-gos templos submersos nos desertos africanos. Seus cultos refe-rem-se a um grande panteão de deuses-demônios de Arkanun e Infernun, e freqüentemente realizam sacrifícios humanos para homenageá-los. Alguns emissários são enviados pelos grandes sacerdotes dos cultos, a fim de infiltrarem-se na sociedade mortal e trazerem vítimas para seus festins religiosos.\n\nSua comunidade dividi-se basicamente em três linhas: Sa-cerdotes, Guerreiros e Espiões. Os Sacerdotes são responsáveis por manterem a conduta do rebanho, propagarem os ensinamentos caóticos dos deuses e realizarem as cerimônias religiosas. Os Guerreiros são treinados em combate para defen-derem as fêmeas e os filhotes caso ocorram alguma guerra. São geralmente criaturas fortes e hábeis na arte de torturar. E os Espi-ões comportam os escolhidos para aventurarem-se entre os hu-manos, sendo espantosos assassinos em potencial e treinados no manuseio dos venenos mais mortíferos.\n\nSua aparência na forma de Fera é de um homem como olhos como os de uma serpente, pálpebras e lábios recobertos com escamas, língua bifurcada, sem orelhas (apenas orifícios) e como escamas escuras nos ombros e atrás do pescoço.\n\nPoderes Possíveis: Peçonha, Comunicação Animal, Ins-pirar Terror, Sentido Aguçado, Aumento de Atributos, Matilha, Presas, Sangue Frio.\n\nFraquezas: Reação a Estímulos e Fala Limitada."
+    },
+    {
+      "id": "animalidade-seg-0041-beliors",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Beliors",
+      "paragraphRange": [
+        234,
+        239
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 986,
+      "wordCount": 152,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\batributo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "aprimoramentos",
+          "label": "Aprimoramentos",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bdesvantagem(?:ns)?\\b"
+          ]
+        },
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bhumano(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Beliors\n\nOs Feras meio homens meio ursos que habitam as mon-tanhas geladas do Canadá. São, em maioria, seres selvagens e solitários, vivendo em cabanas rústicas em cidades pequenas ou em casas isoladas em colinas, vivendo como lenhadores na mai-oria das vezes. Seus principais aspectos são o temperamento calmo e a força descomunal. Sempre procuram evitar uma luta a todo o custo, mas caso isto mostre-se impossível, revelam-se verdadeiros guerreiros, capazes de saírem vitoriosos até lutando em uma grande desvantagem numérica.\n\nDificilmente deixam as montanhas, pois gostam muito da paz e da tranqüilidade que lá existem, e raramente andam em grupos, preferindo lidarem com suas vidas independentemente. Entretanto não dispensam o calor humano de uma boa família.\n\nSua forma de Fera é de uma criatura de 2 metros, peluda e com focinho alongado.\n\nPoderes Possíveis: Aumento de Atributos, Pele Grossa, Garras, Inspirar Terror, Reprodutor.\n\nFraquezas: Pânico (multidões) e Inconsciência."
+    },
+    {
+      "id": "animalidade-seg-0042-reflictys",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Reflictys",
+      "paragraphRange": [
+        240,
+        246
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1325,
+      "wordCount": 209,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Reflictys\n\nVindos provavelmente dos mares negros de Arkanun, estas criaturas são uma combinação bizarra de homens e peixes demo-níacos. Não chegam a medir 1 metro e meio de altura, e seme-lham-se a anões corcundas e grotescos. Seu corpo é revestido por uma espécie de escama de vidro e de sua espinha dorsal alongam-se cartilagens pontiagudas que chegam a medir até meio metro. No lugar de mãos possuem estilhaços largos de vidro, afiadíssimos, que lembram garras.\n\nÀ primeira vista, seu aspecto pode parecer um tanto reptiliano, pois ainda possui uma longa cauda escura, que termi-na em uma barbatana fina e transparente.\n\nA maioria destes Feras vive sempre em rios ou lagos de água doce, ou então em suas proximidades, pois necessitam estarem sempre em contato com a maior quantidade possível de umidade, tanto que só conseguem transformarem-se quando está chovendo ou quando estão completamente molhados. São encontrados facilmente na norte da África e no sul da Ásia.\n\nSão criaturas muito ariscas, que não gostam de serem provocadas. Geralmente, temem confrontos diretos, preferindo refugiarem-se no interior do ambiente aquático para agirem sor-rateiramente mais tarde.\n\nPoderes Possíveis: Aquático, Garras, Sangue Frio, Visão Noturna, Aumento de Atributos, Pele Grossa.\n\nFraquezas: Época de Transformação e Decapitação."
+    },
+    {
+      "id": "animalidade-seg-0043-minotauros",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Minotauros",
+      "paragraphRange": [
+        247,
+        252
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 980,
+      "wordCount": 153,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\blenda(?:s)?\\b",
+            "\\bcl[aã](?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Minotauros\n\nNa Antigüidade grega, existia a lenda do Minotauro do Labirinto, que se tornou famosa e perdurou até os dias de hoje. Mas, imagine que não exista apenas um destes seres, e sim uma espécie inteira destes homens com cabeça de touro.\n\nOs Minotauros vivem em Arcádia e possuem grandes ci-dadelas onde vivem em clãs. Apesar desta vida aparentemente comum que levam, existem alguns membros que optam por não sedentarizarem-se desta forma, preferindo percorrer o mun-do à procura de desafios.\n\nEstes Feras são grandes aventureiros. Corajosos e destemi-dos, gostam de brigas e perigos tanto quanto apreciam o gosto da carne (humana ou élfica). Alguns chegam a viverem como gladiadores ou mercenários nas cortes imperiais da Nova Arcádia, outros prefe-rem se arriscar aventurando-se nas colinas nebulosas de Halzazze.\n\nPoderes Possíveis: Aumento de Atributos, Chifres, Rege-neração, Sentir o Sobrenatural, Pele Grossa, Inspirar Terror.\n\nFraquezas: Forma Perpétua, Fome (carne)."
+    },
+    {
+      "id": "animalidade-seg-0044-herats",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Herats",
+      "paragraphRange": [
+        253,
+        258
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1060,
+      "wordCount": 171,
+      "primaryArea": "linhagens",
+      "classifications": [
+        {
+          "area": "linhagens",
+          "label": "Linhagens",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bsangue\\b",
+            "\\bvampiro(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bgigante(?:s)?\\b",
+            "\\bhumano(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Herats\n\nExiste um certo tipo de criatura que os sábios não arriscam a classificarem como Vampiros. São os Herats, homens que fo-ram picados por morcegos amaldiçoados e que transformaram-se em projetos grotescos de chupadores de sangue.\n\nSeu comportamento é muito mais animal do que huma-no e vivem geralmente como líderes de bandos morcegos carní-voros. Seu aspecto lembra o de um morcego gigante, mas com membros e rosto humanos. Possuem asas de pele enegrecida e temem a luz do sol tanto quanto um verdadeiro vampiro, so-frendo danos gravíssimos se for exposto a ela.\n\nSeu porte é o de um verdadeiro predador noturno, dormin-do de cabeça para baixo em tocas escuras durante o dia, e a noite caçando presas para saciar sua sede. Dificilmente estabelece algum tipo de comunicação verbal (pois ele ainda pode faze-lo) com al-guém, preferindo manter-se afastado de qualquer assunto mortal.\n\nPoderes Possíveis: Presas, Matilha, Visão Noturna, Asas, Sombras, Aumento de Atributos, Sentido Aguçado.\n\nFraquezas : Transmissor, Vulnerável (luz do sol), Instintividade."
+    },
+    {
+      "id": "animalidade-seg-0045-licantropos",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Licantropos",
+      "paragraphRange": [
+        259,
+        266
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1513,
+      "wordCount": 241,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bmundo(?:s)?\\b",
+            "\\breino(?:s)?\\b",
+            "\\bcidade(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Licantropos\n\nSão os filhos de Licaon, um grande Rei de um dos Reinos da Antiga Grécia, que por um castigo de Zeus transformou os cin-qüenta filhos de Licaon em lobos e os baniu das terras de seu reino. Dando assim origem aos primeiros lobisomens. Esses primeiros homens lobo criaram suas famílias que também herdaram a sua missão que é voltar para sua terra de origem que agora está em Arcádia. Estes lobisomens são os guardiões dos portais do Plano Dos Contos De Fadas. Por isso eles protegem as florestas.\n\nSeus comportamentos são de humanos normais vivendo\n\nem grandes cidades tem boas relações com magos, algumas Or-dens de Cavaleiros Templários e até com os vampiros Vrikolakas. Esses feras não querem saber muito dos jogos de interes-\n\nses mortais. Preferem viver cuidando das florestas e viver isola-dos nas florestas e montanhas por todo mundo.\n\nMas existe uma grande facção deste feras que preferem caçar os vampiros ajudando os templários são os chamados caça-dores de cabeças. São um tipo muito complexo de meio feras pois possuem muitos subgrupos visto o numero de famílias que os chamados primogênitos criaram por isso cada família tem o nome de um primogênito. Alguns primogênitos são: Ménalo, Tesproto, Hélix, Caucón, Horo, Helisom, Acontes, Alífeo, Estínfalo, Macareu, Palante, Hereeo, Hipsas e Cromo.\n\nPoderes Possíveis: Garras, Presas, Matilha, Regeneração, Sen-tidos Aguçados, Comunicação Animal, Aumento de Atributos.\n\nFraquezas: Ligação à Terra, Espinhos, Vulnerável (prata ) e Fala Limitada."
+    },
+    {
+      "id": "animalidade-seg-0046-pantros",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Pantros",
+      "paragraphRange": [
+        267,
+        271
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 870,
+      "wordCount": 147,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bmonstro(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Pantros\n\nOs Pantros são uma raça de felinos criados da comunhão de uma pantera e de uma amazona que por castigo de matar uma pantera com crias um demônio a transformou em pantera para ser caçada por suas companheiras depois de muitos anos na sua vida como felina ela se tornou de novo uma humana foi quando Pantro, seu marido, naquela sua antiga vida a matou junto com seus filhos. Quando descobriu que havia matada seu fêmea ele pediu a piedade de Luna. A deusa os atendeu e depois deste dia, ele e seus descendentes teriam que passar a vida suas partes humanas e animais. Depois deste dia eles se tornaram os guerreiros de\n\nluna, defendendo a terra dos monstros vindos de Arkanun.\n\nPoderes Possíveis: Garras, Presas, Aumento de Atribu-tos, Sentidos Aguçados, Regeneração, Reprodutor e Matilha\n\nFraquezas: Ligação à Terra, Pânico (água), Instintividade e Fala Limitada."
+    },
+    {
+      "id": "animalidade-seg-0047-garudas",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Garudas",
+      "paragraphRange": [
+        272,
+        276
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 991,
+      "wordCount": 173,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 6.0,
+          "confidence": 0.673,
+          "evidence": [
+            "\\blenda(?:s)?\\b",
+            "\\bdeus(?:es)?\\b",
+            "\\bcidade(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [],
+      "text": "Garudas\n\nSão os homens pássaros das lendas incas. Esses Feras são um tipo especial de metamorfos, pois eles parecem ser a mistura de humanos e pássaros Arcanos. Na verdade, são filhos dos deuses demônios incas e humanos que, por algum motivo, ga-nharam o poder de se transformar em um tipo corrompido de falcão. Os Garudas vivem sempre em bandos de falcões e tem sempre muita atenção com as florestas.\n\nVivem na maior parte na floresta amazônica, pois dizem que lá existe um tipo de cidade onde eles vivem ou têm que visitá-la pelo menos uma vez na vida. Muitos já tentaram encon-trar essa cidade com a promessa que essa cidade seria o Eldorado, a cidade feita de ouro. Mas nunca ninguém a encontrou. Dizem que ela coexiste na Terra e em Arkanun, mas para saber só através de um Garuda que conheça a verdade por detrás das lendas.\n\nPoderes Possíveis: Garras, Bico, Asas, Regeneração, Mati-lha, Aumento de Atributos, e Pele Grossa.\n\nFraquezas: Decapitação, Ligação à Eldorado e Fala limitada."
+    },
+    {
+      "id": "animalidade-seg-0048-bastet",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Bastet",
+      "paragraphRange": [
+        277,
+        281
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 855,
+      "wordCount": 141,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bpovo(?:s)?\\b",
+            "\\bhumano(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Bastet\n\nSão os Feras filhos dos Anjos seguidores da deusa egípcia dos gatos, Bastet. Eles são uma variação dos nephalins, já que além de possuírem o Dom de se metamorfosear em gatos e também adquiriram a capacidade de assumirem uma forma guer-reira. Esses Feras são, na verdade, a primeira forma de defesa contra os Nagas, pois os Bastet são o povo fera que protege os humanos dos joguinhos de poder dos nagas.\n\nSão muito tranqüilos e bem humorados. Vivem com o povo egípcio e gostam de fazer amigos, porém são muito territoriais. Por isso não invada seu território porque o que eles odeiam mais que as nagas são os espiões e ladrões.\n\nPoderes Possíveis: Garras, Presas, Aumento de Atribu-tos, Sentidos Aguçados, Sentir o Sobrenatural, Regeneração, Matilha, Sombras e Visão Noturna.\n\nFraquezas: Espinheiro, decapitação, Reação a Estímulos e Pânico (água)."
+    },
+    {
+      "id": "animalidade-seg-0049-rocs",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Rocs",
+      "paragraphRange": [
+        282,
+        286
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1217,
+      "wordCount": 208,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 5.0,
+          "confidence": 0.618,
+          "evidence": [
+            "\\bpovo(?:s)?\\b",
+            "\\bgigante(?:s)?\\b",
+            "\\bhumano(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Rocs\n\nOs Rocs são o povo fera descrito na coleção das mil e uma noites. São descritos como aves gigantes capazes levantar uma homem. Na verdade, eles são um povo fera que se asseme-lha com os garudas. Têm o corpo humanóide com asas em suas costas, é recoberto por penas e possuem cabeça de ave. Dizem as lendas que um inimigo Magnus Petraak, um demônio de Arkanun, fez um dos seus experimentos cabalísticos na terra. Usou uma ave arcana e cruzou suas características com um ser humano nascendo ai o primeiro roc. Sem saber do que havia sido feito com ele o humano chamado Roc ele viu suas caracterís-ticas mudarem dando a ele capacidades especiais. Então Aeriton fez um pacto com Roc.\n\nOs Rocs poderiam passar suas habilidades para seus des-cendentes se eles destruíssem Petraak e seus discípulos. No en-tanto, com a morte de Aeriton, os Rocs estavam livres do pacto. Mas o ódio era tanto contra os magos petros que eles ainda caçam esses magos e Petraak. Agora são vulgarmente chamados de caçadores de peles.\n\nPoderes Possíveis: Asas, Bico, Garras, Pele grossa, Rege-neração, Aumento de Atributos, Comunicação Animal e Senti-dos aguçados.\n\nFraquezas: Fala Limitada, Instintividade, Reação a estí-mulos e transmissor."
+    },
+    {
+      "id": "animalidade-seg-0050-defensores-do-ragnarok",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Defensores do Ragnarok",
+      "paragraphRange": [
+        287,
+        291
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 952,
+      "wordCount": 155,
+      "primaryArea": "regras_base",
+      "classifications": [
+        {
+          "area": "regras_base",
+          "label": "Regras Base",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\batributo(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Defensores do Ragnarok\n\nEstes feras são outra variação de lobisomens. Mas neste caso estes são seres do folclore nórdico estes são guerreiros por natureza pois eles são as crias de Fenrir, o lobo citado no ragnarok (o apocalipse nórdico). Estes são as peças de loki no jogo de xadrez celestial. São uma raça que por tendência pêlos negros, ou então brancos com grandes manchas negras.\n\nEles esperam pela chegada de seu líder Fenrir para dar ini-cio a grande guerra do fim dos tempos. São os feras mais selva-gens pois foram criados para a guerra. Mas não só existem estes Feras do lado de Loki mas também do lado de Thor. Também são homens honrados e pacíficos querendo que seus irmãos esqueçam esta bobagem de Ragnarok.\n\nPoderes Possíveis: Garras, Presas, Sombras, Regenera-ção, Comunicação Animal, Sentir o Sobrenatural, Aumento de Atributos, Matilha e Sentido Aguçado.\n\nFraquezas: Reação a Estímulos, Instintividade, Vulnerá-vel (prata), Espinheiro."
+    },
+    {
+      "id": "animalidade-seg-0051-garras-de-sharikan",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Garras de Sharikan",
+      "paragraphRange": [
+        292,
+        297
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 977,
+      "wordCount": 161,
+      "primaryArea": "cenarios_lore",
+      "classifications": [
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bcl[aã](?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Garras de Sharikan\n\nEstes Feras são os descendentes de Sharikan o tigre prote-tor das florestas Indianas. Estes Feras por natureza honram a missão dada a eles por Vishinu, que é de defender as florestas da destruição. Para esse objetivo eles ajudam a Agni e os Daiphiris na sua caçada aos temíveis Rakshasas.\n\nOs Garras têm uma forte ligação com a família. Por isso vivem em clãs, com um território próprio. Onde vivem e treinam em contato com a natureza esperando novas missões. Eles espe-ram o dia em que encontraram o Espírito Ancestral Sharikan, e se tornar um líder de um dos clãs.\n\nMuitos Garras viajam com os ciganos entrando em conta-to com outros metamorfos. Daí eles compartilham o mesmo ideal destruir os vampiros. Pois eles corrompem as florestas tão veneradas por eles.\n\nPoderes Possíveis: Pele Grossa, Rapidez, Matilha, Garras, Presas e Sentir o Sobrenatural, Aumento de Atributos, Sombras.\n\nFraquezas: : Espinheiro, decapitação, Pânico (fogo) e Li-gação à terra."
+    },
+    {
+      "id": "animalidade-seg-0052-croatan",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Croatan",
+      "paragraphRange": [
+        298,
+        302
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 998,
+      "wordCount": 154,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.585,
+          "confidence": 0.484,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Croatan\n\nSão os Feras que mais se parecem com os dinossauros, mas são a mistura de Homem e crocodilo. São seres silenciosos e traiçoeiros, que a primeira vista podem ser muito parecido com alguns demônios de Arkanun. O que não é uma total mentira. Certos sábios dizem que os metamorfos, no caso dos croatan, são o primeiro indicio da destruição e corrupção de Atlântida. Muitos magos atlantes falam que os Croatans eram os soldados de elite da Rainha Seifried. Com poderes especiais dado pela rainha de Atlântida. Mas parece que os poderes dos Antigos Soldados afetou os descendentes deste guerreiros abençoados.\n\nDizem que estes são os seguidores e os guardiões de Seifried na terra tentando reencontrar todos os cristais Atlantis para reerguer a sua amada ilha destruída por Cthulhu.\n\nPoderes Possíveis: Aquático, Garras, Presas, Sentir o Sobrenatu-ral, Aumento de Atributos, Sangue Frio, Inspirar Terror, Regeneração.\n\nFraquezas: Época de Transformação, Vulnerável (fogo), Transformação Trocada."
+    },
+    {
+      "id": "animalidade-seg-0053-parentes",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Parentes",
+      "paragraphRange": [
+        303,
+        307
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 760,
+      "wordCount": 131,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 4.0,
+          "confidence": 0.562,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b",
+            "\\bhumano(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 3.322,
+          "confidence": 0.525,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Parentes\n\nOs parentes são um tipo diferente de Feras. Os parentes são aqueles que são indistingüiveis de homens comuns. Na ver-dade, têm o poder dos Feras em seu sangue, mas não foram os escolhidos para desempenhar a grande missão dos Feras que é de defender a terra dos ataques dos demônios e suas hordas.\n\nOs parentes podem ser os filhos, os irmãos, os pais ou qualquer tipo de outro parente do fera sendo assim os parentes são os feras que não desenvolveram o poder de se transformar em suas formas alternativas. Por isso eles tem o poder um pou-co menor que os feras. Os parentes humanos podem usar os outros poderes dos feras normalmente.\n\nPoderes Possíveis: Escolha uma raça\n\nFraquezas: Forma Perpetua (humano), qualquer outra fraqueza da raça escolhida."
+    },
+    {
+      "id": "animalidade-seg-0054-harpias",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Harpias",
+      "paragraphRange": [
+        308,
+        313
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1576,
+      "wordCount": 257,
+      "primaryArea": "poderes",
+      "classifications": [
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "cenarios_lore",
+          "label": "Cenarios e Lore",
+          "score": 2.0,
+          "confidence": 0.451,
+          "evidence": [
+            "\\blenda(?:s)?\\b",
+            "\\bordem(?:ns)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Harpias\n\nAs Harpias são um tipo especial de meio pássaros descen-dentes de uma das três Górgonas. Elas se dividem em uma ordem matriarcal, onde escolhem os cantos mais remotos da Terra para viver, pois foram incansavelmente perseguidas pela inquisição. Elas são as autenticas caçadoras das montanhas. Pou-cas Harpias se aventuram fora dos picos elevados, pois têm medo de sofrem novas represálias. Existem, contudo outras famílias de Harpias, mas estas já não fazem parte de nosso plano, uma vez que se refugiaram em Arcádia há muito tempo atrás.\n\nAs Harpias mais jovens temem a Magia, deixando, assim, para as anciãs cuidarem deste tipo de energia misteriosa. Por esse motivo apenas as Harpias anciãs escolhidas entre as guerreiras mais fortes da família são as únicas que sabem usar as energias mísiticas. Não existem Harpias masculinas. O único modo de uma Harpia\n\nconceber um filho é com um humano. A criança à qual a Harpia dará a luz será uma nova Harpia ou um menino mortal sem nenhuma diferença aparente. As lendas dizem que as Harpias seqüestravam os homens das aldeias com suas vozes melodiosas e os escravizavam como reprodutores. Também comenta-se que os corvos da Tower of London, na verdade, são filhos gerados pelas Harpias inglesas que tiveram seus poderes igualados aos de suas irmãs por um ritual misterioso para defender o tesouro da coroa inglesa. Sua aparência, no entanto, tornou-se semelhante à de corvos.\n\nPoderes possíveis: Asas, Reprodutor, Aumento de Atri-butos, Regeneração, Presas e Garras\n\nFraquezas: Forma Perpétua, Fome(carne), Ligação à Terra."
+    },
+    {
+      "id": "animalidade-seg-0055-filhos-de-aracne",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Filhos de Aracne",
+      "paragraphRange": [
+        314,
+        320
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 1142,
+      "wordCount": 186,
+      "primaryArea": "criaturas_npcs",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "label": "Criaturas e NPCs",
+          "score": 3.0,
+          "confidence": 0.507,
+          "evidence": [
+            "\\bcriatura(?:s)?\\b",
+            "\\bdem[oô]nio(?:s)?\\b",
+            "\\banjo(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification"
+      ],
+      "text": "Filhos de Aracne\n\nAs filhas de Aracne são também conhecidas como viúvas negras.\n\nDiz a lenda que a matriarca desta família era uma grande tecelã grega chamada Aracne, que ousou desafiar Athena para ver quem era a maior tecelã do universo. Apesar de ter vencido a deusa, foi trans-formada em aranha, juntamente com suas filhas, por seu orgulho. Lilith apiedou-se do destino de Aracne e deu-lhe uma nova chance de viver como uma mortal. Criou-se assim uma nova raça de meio-feras, conhecida como descendentes de Aracne. Vistos como uma aberração à serviço dos demônios, os Anjos e os demais Licantropos desprezam estes Feras, que são obrigados a\n\nviverem em escondidos da sociedade mortal.\n\nOs filhos homens são exímios guerreiros, tendo ganhado o nome de Fúrias de Ares, pois é a única divindade que vê qualidade em tais criaturas. Sua forma animal e diferente pois alguns podem se transformar em uma única aranha e outros em várias aranhas.\n\nPoderes Possíveis: Teia, Garras, Aumento de Atributos, Reprodutor, Pele Grossa, Sombras, Peçonha, Inspirar Terror.\n\nFraquezas: Fome (carne), Transformação Trocada, Rea-ção a Estímulos, Instintividade."
+    },
+    {
+      "id": "animalidade-seg-0056-crias-do-caos",
+      "source": "animalidade",
+      "sourceFile": "animalidade.docx",
+      "sourcePath": "Livros\\word\\animalidade.docx",
+      "sourceQualityStatus": "ok",
+      "title": "animalidade",
+      "heading": "Crias do Caos",
+      "paragraphRange": [
+        321,
+        325
+      ],
+      "blockKinds": [
+        "paragraph"
+      ],
+      "charCount": 859,
+      "wordCount": 146,
+      "primaryArea": "racas",
+      "classifications": [
+        {
+          "area": "racas",
+          "label": "Racas",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bra[cç]a(?:s)?\\b"
+          ]
+        },
+        {
+          "area": "poderes",
+          "label": "Poderes",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bpoder(?:es)?\\b"
+          ]
+        },
+        {
+          "area": "magias",
+          "label": "Magias",
+          "score": 1.0,
+          "confidence": 0.396,
+          "evidence": [
+            "\\bfeiti[cç]o(?:s)?\\b"
+          ]
+        }
+      ],
+      "reviewStatus": "draft_review",
+      "reviewFlags": [
+        "low_confidence_classification",
+        "multi_area_segment"
+      ],
+      "text": "Crias do Caos\n\nEste tipo de meio-fera é especial, fruto de uma maldição lançada por algum Mago muito poderoso. Recebem este nome pois não possuem controle e nem consciência de seus dons.\n\nMuitas vezes eles nem sabem o que lhes aconteceu realmente. A maldição faz com que a vítima transforme-se em uma besta irraci-onal toda a lua cheia e volte normal pela manhã. Durante este tempo o personagem não possuem consciência de seus atos (o Mestre é quem define o que ele fará) e nem mede suas conseqüências. Para livrar-se da maldição, é preciso matar o Mago que a lançou ou pedir para que ele a retire. O feitiço faz com que o personagem assuma apenas a forma de Fera que foi utilizada como fetiche.\n\nPoderes possíveis: Escolha uma raça.\n\nFraquezas: Instintividade, Época de Transformação, Vulne-rável (prata), Inconsciência, Transmissor, Decapitação, Espinheiro."
+    }
+  ],
+  "areaCounts": {
+    "aprimoramentos": 3,
+    "cenarios_lore": 8,
+    "classes": 3,
+    "criaturas_npcs": 11,
+    "linhagens": 1,
+    "magias": 2,
+    "pericias": 1,
+    "poderes": 7,
+    "racas": 6,
+    "regras_base": 14
+  },
+  "reviewFlagCounts": {
+    "low_confidence_classification": 44,
+    "multi_area_segment": 30
+  }
+}
