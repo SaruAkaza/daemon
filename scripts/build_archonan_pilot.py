@@ -149,29 +149,49 @@ def typed_item(
     }
 
 
-def split_stat_text(text: str, suffix: str = "") -> list[dict]:
+def stat_parts(text: str) -> dict[str, str]:
     marker_pattern = r"(Local de Nascimento:|Atributos:|Aprimoramentos:|Caminhos:|Perícias:)"
     matches = list(re.finditer(marker_pattern, text))
-    blocks: list[dict] = []
+    parts: dict[str, str] = {}
     for index, match in enumerate(matches):
         title = match.group(1).rstrip(":")
         start = match.end()
         end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
         value = normalize_text(text[start:end])
         if value:
-            section_title = f"{title} - {suffix}" if suffix else title
-            blocks.append(section(slugify(section_title), section_title, "criaturas_npcs", [value]))
-    return blocks
+            parts[title] = value
+    return parts
+
+
+def npc_stat_sections(stats: list[str]) -> list[dict]:
+    parts: dict[str, str] = {}
+    for stat in stats:
+        parts.update(stat_parts(stat))
+
+    sections: list[dict] = []
+    if parts.get("Atributos"):
+        sections.append(section("atributos", "Atributos", "criaturas_npcs", [parts["Atributos"]]))
+    if parts.get("Perícias"):
+        sections.append(section("pericias-e-combate", "Perícias e Combate", "criaturas_npcs", [parts["Perícias"]]))
+
+    abilities = []
+    for key in ("Aprimoramentos", "Caminhos"):
+        if parts.get(key):
+            abilities.append(f"{key}: {parts[key]}")
+    if abilities:
+        sections.append(section("habilidades", "Habilidades", "criaturas_npcs", abilities))
+
+    if parts.get("Local de Nascimento"):
+        sections.append(section("ficha", "Ficha", "criaturas_npcs", [parts["Local de Nascimento"]]))
+    return sections
 
 
 def npc_item(title: str, history: list[str], personality: list[str], stats: list[str]) -> dict:
-    sections: list[dict] = []
+    sections: list[dict] = npc_stat_sections(stats)
     if history:
         sections.append(section("historia", "História", "criaturas_npcs", history))
     if personality:
         sections.append(section("personalidade-e-objetivos", "Personalidade e Objetivos", "criaturas_npcs", personality))
-    for stat in stats:
-        sections.extend(split_stat_text(stat))
     return typed_item(
         title,
         "criaturas_npcs",
@@ -183,13 +203,41 @@ def npc_item(title: str, history: list[str], personality: list[str], stats: list
 
 
 def dual_npc_item(title: str, history: list[str], personality: list[str], max_stats: str, mike_stats: str) -> dict:
+    max_parts = stat_parts(max_stats)
+    mike_parts = stat_parts(mike_stats)
     sections: list[dict] = []
+    if max_parts.get("Atributos") or mike_parts.get("Atributos"):
+        values = []
+        if max_parts.get("Atributos"):
+            values.append(f"Max: {max_parts['Atributos']}")
+        if mike_parts.get("Atributos"):
+            values.append(f"Mike: {mike_parts['Atributos']}")
+        sections.append(section("atributos", "Atributos", "criaturas_npcs", values))
+    if max_parts.get("Perícias") or mike_parts.get("Perícias"):
+        values = []
+        if max_parts.get("Perícias"):
+            values.append(f"Max: {max_parts['Perícias']}")
+        if mike_parts.get("Perícias"):
+            values.append(f"Mike: {mike_parts['Perícias']}")
+        sections.append(section("pericias-e-combate", "Perícias e Combate", "criaturas_npcs", values))
+    abilities = []
+    for label, parts in (("Max", max_parts), ("Mike", mike_parts)):
+        for key in ("Aprimoramentos", "Caminhos"):
+            if parts.get(key):
+                abilities.append(f"{label} - {key}: {parts[key]}")
+    if abilities:
+        sections.append(section("habilidades", "Habilidades", "criaturas_npcs", abilities))
+    ficha = []
+    if max_parts.get("Local de Nascimento"):
+        ficha.append(f"Max: {max_parts['Local de Nascimento']}")
+    if mike_parts.get("Local de Nascimento"):
+        ficha.append(f"Mike: {mike_parts['Local de Nascimento']}")
+    if ficha:
+        sections.append(section("ficha", "Ficha", "criaturas_npcs", ficha))
     if history:
         sections.append(section("historia", "História", "criaturas_npcs", history))
     if personality:
         sections.append(section("personalidade-e-objetivos", "Personalidade e Objetivos", "criaturas_npcs", personality))
-    sections.extend(split_stat_text(max_stats, "Max"))
-    sections.extend(split_stat_text(mike_stats, "Mike"))
     return typed_item(
         title,
         "criaturas_npcs",
