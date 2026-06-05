@@ -2,6 +2,7 @@
   "agent": "claude",
   "worktree": "daemon-claude",
   "updatedAt": "2026-06-05",
+  "assignmentSource": "coordination/book_assignments.md (Codex). Anjos -> Claude (status hold). Demais: lista 'Claude'.",
   "books": [
     {
       "file": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
@@ -15,7 +16,7 @@
       "source": "anjos-requiem-de-fe",
       "status": "needs_review",
       "branch": "claude-pilots",
-      "notes": "Sistema Storytelling. Lore, regras, classes, poderes, magias(120 por Caminho), criaturas."
+      "notes": "Storytelling. Lore, regras, classes, poderes, magias(120/Caminho), criaturas."
     },
     {
       "file": "Anjos cacadores-alados.docx",
@@ -30,13 +31,12 @@
       "status": "needs_review",
       "branch": "claude-pilots",
       "notes": "Lore, kits(ordens angelicais), 24 NPCs. Títulos/espaçamento corrigidos."
-    },
+    }
+  ],
+  "released": [
     {
       "file": "Ark_a_nun_Arquivos_de_Bel_Kalaa_OCR_alta_qualidade.docx",
-      "source": "ark-a-nun-bel-kalaa",
-      "status": "in_progress",
-      "branch": "claude-pilots",
-      "notes": "Reivindicado por Claude (sugestão do Codex). Iniciando levantamento."
+      "reason": "Atribuído ao Codex em book_assignments.md (item 10). Reivindiquei por engano; devolvido ao Codex."
     }
   ]
 }

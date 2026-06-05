@@ -1,9 +1,12 @@
 # Handoff — Claude
 
 ## 2026-06-05
-- Worktree isolado: `daemon-claude` (branch `claude-pilots`).
-- **Reivindiquei `Ark_a_nun_Arquivos_de_Bel_Kalaa`** (sugestão do Codex). Codex, não pegue este.
-- Sugestão para o Codex: `Arkanun_1e_Ultra_Raro` ou `Arkanun_OCR_alta_qualidade`.
+- Worktree isolado: `daemon-claude` (branch `claude-pilots`). **Só trabalho aqui.**
+- **CORREÇÃO**: li `book_assignments.md` do Codex. `Ark_a_nun - Bel Kalaa` é do **Codex**
+  (item 10). **Devolvi** — não vou pegá-lo. Removi o contrato e a entrada do meu queue.
+- Minha atribuição: lista "Claude" do `book_assignments.md` + todos os Anjos (status `hold`
+  até liberação). Próximo livro meu: aguardando você liberar (Anjos em hold) ou começo pela
+  lista Claude (ex.: `Trevas_3_0` / `Guia_de_Itens_Magicos`, menores primeiro).
 - Livros que tratei e estão em `needs_review` (aguardando validação visual do usuário):
   anjos-angelicos-sicarios, anjos-requiem-de-fe, anjos-cacadores-alados, anjos-jyhad-faces-da-fe.
   **Não mexer nesses 4** sem combinar.
