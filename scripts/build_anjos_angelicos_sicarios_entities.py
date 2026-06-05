@@ -8,8 +8,6 @@ BEFORE sectioning, then splits powers/maneuvers/weapons into individual
 entities by their named anchors.
 """
 
-from pathlib import Path
-import json
 import re
 from datetime import datetime
 from docx import Document
@@ -74,9 +72,14 @@ def coherent_paragraphs() -> list[str]:
             i += 1
     raw = merged
 
-    is_noise = lambda l: bool(re.match(r"^\d{1,3}$", l.strip()))
-    is_epigraph = lambda l: l.lstrip().startswith("“")
-    ends_terminal = lambda l: l.rstrip().endswith((".", "!", "?", "”", ")", "]", ":"))
+    def is_noise(line: str) -> bool:
+        return bool(re.match(r"^\d{1,3}$", line.strip()))
+
+    def is_epigraph(line: str) -> bool:
+        return line.lstrip().startswith("“")
+
+    def ends_terminal(line: str) -> bool:
+        return line.rstrip().endswith((".", "!", "?", "”", ")", "]", ":"))
 
     result: list[str] = []
     buffer = ""
@@ -244,8 +247,6 @@ def build_pilot() -> dict:
 
     lore_sections = []
     # Apresentação (front matter)
-    fm_content = [p for p in front_matter if p not in SECTION_TITLES or p in
-                  ("O Evangelho de Judas", "Angélicos Sicários")]
     lore_sections.append(build_section("Apresentação", "cenarios_lore", front_matter))
 
     # Each lore title section

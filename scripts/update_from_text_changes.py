@@ -4,7 +4,6 @@ import argparse
 import subprocess
 import sys
 import time
-from pathlib import Path
 from typing import Any
 
 from common import INDEX_DIR, ROOT, TEXT_DIR, read_json, sha256_file, write_json

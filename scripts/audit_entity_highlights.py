@@ -2,15 +2,14 @@ from __future__ import annotations
 
 import re
 from collections import Counter
-from pathlib import Path
 from typing import Any
 
 from common import DATA_DIR, INDEX_DIR, ROOT, read_json, write_json
+from presentation_quality import TEXT_FIELDS, presentation_flags
 
 
 REPORT_JSON = INDEX_DIR / "entity-highlight-quality.json"
 REPORT_MD = ROOT / "docs" / "reports" / "entity-highlight-quality.md"
-from presentation_quality import TEXT_FIELDS, presentation_flags
 TRAILING_CONNECTORS = {
     "a", "ao", "aos", "as", "com", "como", "da", "das", "de", "do", "dos", "e", "em", "entre",
     "para", "por", "que", "se", "sem", "seu", "sua", "seus", "suas", "um", "uma", "o", "os", "no", "na",

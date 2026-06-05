@@ -4,8 +4,6 @@ Final categorized build for Anjos - Angélicos Sicários
 Groups content by topic: lore, powers, equipment, aprimoramentos
 """
 
-from pathlib import Path
-import json
 from datetime import datetime
 from docx import Document
 import re
@@ -127,7 +125,7 @@ def build_pilot() -> dict:
     }
 
 def main() -> None:
-    print(f"Building categorized pilot...")
+    print("Building categorized pilot...")
     payload = build_pilot()
 
     write_json(OUT_PATH, payload)

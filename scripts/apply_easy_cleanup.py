@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import re
-from pathlib import Path
 
 from common import INDEX_DIR, ROOT, TEXT_DIR, read_json, write_json
 from text_quality_report import split_pages

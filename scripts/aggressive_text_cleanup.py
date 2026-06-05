@@ -108,7 +108,7 @@ for pattern, replacement, desc in spacing_fixes:
     lines = [re.sub(pattern, replacement, line) for line in lines]
     # Count changes (rough estimate)
 
-print(f"4. Fixed spacing issues")
+print("4. Fixed spacing issues")
 
 # 5. Fix common OCR typos remaining
 typo_fixes = [
@@ -147,7 +147,7 @@ quote_fixes = [
 for old, new in quote_fixes:
     lines = [line.replace(old, new) for line in lines]
 
-print(f"6. Normalized quotes and dashes")
+print("6. Normalized quotes and dashes")
 
 # 7. Final validation - remove lines that are still corrupted
 valid_lines = []
@@ -163,14 +163,14 @@ for line in lines:
         valid_lines.append(line)
 
 lines = valid_lines
-print(f"7. Final validation complete")
+print("7. Final validation complete")
 
 # Save
 final_content = '\n'.join(lines)
 TEXT_PATH.write_text(final_content, encoding="utf-8")
 
 print("\n" + "=" * 80)
-print(f"✓ LIMPEZA COMPLETA")
+print("✓ LIMPEZA COMPLETA")
 print(f"  Linhas antes: {len(content.split(chr(10)))}")
 print(f"  Linhas depois: {len(lines)}")
 print(f"  Removidas: {len(content.split(chr(10))) - len(lines)}")

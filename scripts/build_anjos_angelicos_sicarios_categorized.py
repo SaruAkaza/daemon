@@ -4,8 +4,6 @@ Build categorized pilot JSON for: Anjos - Angélicos Sicários
 Separates lore, powers, equipment, and combat rules into distinct areas
 """
 
-from pathlib import Path
-import json
 import re
 from datetime import datetime
 from docx import Document

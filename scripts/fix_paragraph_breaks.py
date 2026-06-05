@@ -4,7 +4,6 @@ Fix improper paragraph breaks by joining fragments
 """
 
 from pathlib import Path
-import re
 
 TEXT_PATH = Path("data/text/anjos-angelicos-sicarios.txt")
 content = TEXT_PATH.read_text(encoding='utf-8')
@@ -73,4 +72,3 @@ print(f"Lines before: {before_count}")
 print(f"Lines after: {after_count}")
 print(f"Joined fragments: {before_count - after_count}")
 print("\nFixed!")
-EOF

@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "id": "tabelas",
+  "name": "Tabelas e Geradores",
+  "readySourceCount": 275,
+  "entityCount": 2,
+  "sourcePartCount": 1,
+  "subgroups": [],
+  "filters": {
+    "sources": [
+      {
+        "id": "anime-rpg-powers",
+        "title": "Anime RPG - Powers",
+        "sourceKind": "supplement",
+        "sourceKindLabel": "Suplemento de jogo/campanha",
+        "officialSource": false,
+        "sourceFamily": "adaptation_pop",
+        "sourceFamilyLabel": "Adaptações, anime, supers e cultura pop",
+        "count": 3
+      }
+    ],
+    "categories": [
+      {
+        "id": "table_generator",
+        "count": 3
+      }
+    ],
+    "subtypes": [
+      {
+        "id": "table_reference",
+        "count": 3
+      }
+    ],
+    "sourceKinds": [
+      {
+        "id": "supplement",
+        "label": "Suplemento de jogo/campanha",
+        "count": 3
+      }
+    ],
+    "sourceFamilies": [
+      {
+        "id": "adaptation_pop",
+        "label": "Adaptações, anime, supers e cultura pop",
+        "count": 3
+      }
+    ],
+    "areas": [
+      {
+        "id": "tabelas",
+        "count": 3
+      }
+    ]
+  },
+  "entities": [
+    {
+      "id": "tabela-de-armas-supers",
+      "name": "Tabela de Armas",
+      "area": "tabelas",
+      "category": "table_generator",
+      "source": "anime-rpg-powers",
+      "sourceTitle": "Anime RPG - Powers",
+      "page": 43,
+      "entries": [
+        "Tabela de armas com dano, penalidade, ROF, pente e observacoes em Anime RPG - Powers."
+      ],
+      "tags": [
+        "armas",
+        "supers",
+        "tabela",
+        "tabelas",
+        "table_generator"
+      ],
+      "confidence": 0.9,
+      "extractionMethod": "manual-pass-1",
+      "sourceKind": "supplement",
+      "sourceKindLabel": "Suplemento de jogo/campanha",
+      "officialSource": false,
+      "sourceFamily": "adaptation_pop",
+      "sourceFamilyLabel": "Adaptações, anime, supers e cultura pop",
+      "contentKind": "table_reference",
+      "contentKindLabel": "Tabela ou referência",
+      "qualityFlags": [],
+      "qualitySeverity": "ok",
+      "presentationStatus": "public",
+      "qualityStatus": "ok"
+    },
+    {
+      "id": "tabela-de-atributos-supers",
+      "name": "Tabela de Valores de Atributos",
+      "area": "tabelas",
+      "category": "table_generator",
+      "source": "anime-rpg-powers",
+      "sourceTitle": "Anime RPG - Powers",
+      "page": 42,
+      "entries": [
+        "Tabela de referencia para atributos, carga, bonus, IP natural e velocidade em Anime RPG - Powers."
+      ],
+      "tags": [
+        "atributos",
+        "supers",
+        "tabela",
+        "tabelas",
+        "table_generator"
+      ],
+      "confidence": 0.9,
+      "extractionMethod": "manual-pass-1",
+      "sourceKind": "supplement",
+      "sourceKindLabel": "Suplemento de jogo/campanha",
+      "officialSource": false,
+      "sourceFamily": "adaptation_pop",
+      "sourceFamilyLabel": "Adaptações, anime, supers e cultura pop",
+      "contentKind": "table_reference",
+      "contentKindLabel": "Tabela ou referência",
+      "qualityFlags": [],
+      "qualitySeverity": "ok",
+      "presentationStatus": "public",
+      "qualityStatus": "ok"
+    }
+  ],
+  "sourceParts": [
+    {
+      "id": "anime-rpg-powers--powers-tabelas",
+      "name": "Tabelas de atributos e armas",
+      "area": "tabelas",
+      "category": "table_generator",
+      "source": "anime-rpg-powers",
+      "sourceTitle": "Anime RPG - Powers",
+      "pages": [
+        [
+          42,
+          43
+        ]
+      ],
+      "page": null,
+      "summary": "Tabelas de valores de atributos, carga, bonus, IP natural, velocidade e lista de armas com dano, penalidade, ROF, pente e observacoes.",
+      "entityRefs": [
+        "tabela-de-atributos-supers",
+        "tabela-de-armas-supers"
+      ],
+      "tags": [
+        "tabelas",
+        "table_generator"
+      ],
+      "confidence": 0.84,
+      "extractionMethod": "book-part-area-pass-1",
+      "sourceKind": "supplement",
+      "sourceKindLabel": "Suplemento de jogo/campanha",
+      "officialSource": false,
+      "sourceFamily": "adaptation_pop",
+      "sourceFamilyLabel": "Adaptações, anime, supers e cultura pop",
+      "contentKind": "table_reference",
+      "contentKindLabel": "Tabela ou referência",
+      "editorialFlags": [
+        "raw_source_part_requires_review",
+        "source_part_without_specific_subject"
+      ],
+      "editorialStatus": "raw_review",
+      "presentationStatusHint": "quarantine",
+      "qualityFlags": [
+        "raw_source_part_requires_review",
+        "source_part_without_specific_subject"
+      ],
+      "qualitySeverity": "critical",
+      "presentationStatus": "quarantine",
+      "qualityStatus": "quarentena"
+    }
+  ]
+}

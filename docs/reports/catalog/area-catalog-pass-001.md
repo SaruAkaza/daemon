@@ -4,7 +4,7 @@ Initial navigation/population layer for the sources marked as ready to proceed.
 
 - Ready sources: 275
 - Areas: 14
-- Curated entities included: 2522
+- Curated entities included: 2797
 - Book parts indexed: 4023
 
 ## Areas

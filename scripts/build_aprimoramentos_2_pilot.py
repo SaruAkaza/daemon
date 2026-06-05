@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import re
 from datetime import datetime
-from pathlib import Path
 from typing import Iterable
 
 from docx import Document
@@ -26,7 +25,6 @@ DROP_EXACT = {
 }
 
 TEXT_FIXES = {
-    "corpo-acorpo": "corpo-a-corpo",
     "corpo-acorpo": "corpo-a-corpo",
     "dentre 9m": "dentro de 9m",
     "Barbaro": "Barbaro",

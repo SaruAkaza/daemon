@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Any
 
 from common import DATA_DIR, INDEX_DIR, read_json, write_json

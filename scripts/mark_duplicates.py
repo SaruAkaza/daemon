@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-from pathlib import Path
 
 from common import INDEX_DIR, ROOT, read_json, write_json
 

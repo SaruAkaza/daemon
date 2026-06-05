@@ -4,7 +4,6 @@ import json
 import re
 import shutil
 from datetime import datetime
-from pathlib import Path
 
 from docx import Document
 
@@ -392,7 +391,6 @@ def extract_stat_block(paragraphs: list[str]) -> dict:
         vitals["Ataques"] = normalize_text(attack_match.group(1))
 
     skills = []
-    special = []
     for paragraph in paragraphs:
         if re.search(r"\bPerícias\s*:", paragraph, re.IGNORECASE):
             skills.append(normalize_text(re.sub(r"^.*?\bPerícias\s*:\s*", "", paragraph, flags=re.IGNORECASE)))

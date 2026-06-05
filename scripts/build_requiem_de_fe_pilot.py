@@ -12,7 +12,7 @@ from pathlib import Path
 from datetime import datetime
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from requiem_clean import extract_blocks, dehyphenate, join_body  # noqa: E402
+from requiem_clean import extract_blocks  # noqa: E402
 from common import ROOT, slugify, write_json  # noqa: E402
 
 SOURCE = "anjos-requiem-de-fe"

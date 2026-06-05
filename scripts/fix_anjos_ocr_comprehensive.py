@@ -134,7 +134,6 @@ ALL_FIXES = {
 def apply_fixes(text: str) -> tuple[str, dict]:
     """Apply all fixes and return (corrected_text, stats)"""
     stats = Counter()
-    original_text = text
 
     for old, new in ALL_FIXES.items():
         if old in text:

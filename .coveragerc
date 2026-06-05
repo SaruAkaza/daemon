@@ -1,0 +1,24 @@
+[run]
+omit =
+    scripts/aggressive_text_cleanup.py
+    scripts/apply_easy_cleanup.py
+    scripts/apply_editorial_overrides.py
+    scripts/audit_*.py
+    scripts/build_*_pilot.py
+    scripts/build_anjos_*.py
+    scripts/build_area_catalog.py
+    scripts/build_github_pages_site.py
+    scripts/build_pilot_index.py
+    scripts/build_requiem_de_fe_pilot.py
+    scripts/categorize.py
+    scripts/certify_*.py
+    scripts/clean_*.py
+    scripts/consolidate_anjos_regras_base.py
+    scripts/extract_granular_*.py
+    scripts/final_text_cleanup.py
+    scripts/fix_*.py
+    scripts/mark_duplicates.py
+    scripts/process_book_batch.py
+    scripts/refine_*.py
+    scripts/sync_source_entities.py
+    scripts/update_from_text_changes.py

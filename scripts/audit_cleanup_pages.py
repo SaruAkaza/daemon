@@ -3,10 +3,9 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter
-from pathlib import Path
 from statistics import mean
 
-from audit_good_pages import classify_page, sample, symbol_ratio, weird_count, words
+from audit_good_pages import classify_page, sample, words
 from common import INDEX_DIR, ROOT, TEXT_DIR, write_json
 from text_quality_report import split_pages
 
@@ -85,7 +84,6 @@ def source_difficulty(page_rows: list[dict], page_count: int) -> str:
     hard = sum(1 for row in page_rows if row["difficulty"] == "hard")
     medium = sum(1 for row in page_rows if row["difficulty"] == "medium")
     easy = sum(1 for row in page_rows if row["difficulty"] == "easy")
-    affected = hard + medium + easy
     if hard:
         return "hard"
     if medium >= 8 or medium / max(1, page_count) >= 0.18:

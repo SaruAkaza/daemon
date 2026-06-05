@@ -97,7 +97,6 @@ def build_manobras(body):
     """Flat individual combat techniques from a style block (no grouping)."""
     out = []
     i = 0
-    skip_headers = {"técnicas", "manobras de hikarukendo"}
     current = None
     while i < len(body):
         p = body[i]

@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import re
-from pathlib import Path
 
 from common import INDEX_DIR, ROOT, TEXT_DIR, write_json
 from text_quality_report import count_weird_chars

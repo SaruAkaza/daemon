@@ -4,7 +4,6 @@ Phase 2 OCR fixes - Handle encoding issues and residual errors
 """
 
 from pathlib import Path
-import re
 import unicodedata
 
 SRC = Path(__file__).resolve().parents[1] / "data" / "text" / "anjos-a-cidade-de-prata.txt"
@@ -35,7 +34,6 @@ def normalize_accents(text: str) -> str:
 
 def apply_fixes(text: str) -> tuple[str, int]:
     """Apply phase 2 fixes"""
-    original = text
     count = 0
 
     for old, new in FIXES_PHASE2.items():
@@ -58,7 +56,7 @@ def main():
     print(f"Reading {SRC}...")
     original = SRC.read_text(encoding="utf-8")
 
-    print(f"Applying phase 2 fixes...")
+    print("Applying phase 2 fixes...")
     corrected, count = apply_fixes(original)
 
     if corrected == original:
@@ -66,7 +64,7 @@ def main():
         return True
 
     print(f"\nTotal fixes: {count}")
-    print(f"Writing corrected file...")
+    print("Writing corrected file...")
     SRC.write_text(corrected, encoding="utf-8")
     print("Done!")
     return True

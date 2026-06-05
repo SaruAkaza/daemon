@@ -9,7 +9,7 @@ from __future__ import annotations
 import re
 from typing import Any
 
-from common import DATA_DIR, INDEX_DIR, ROOT, slugify, read_json
+from common import DATA_DIR, INDEX_DIR, slugify, read_json
 
 
 BOOKS_DATA_DIR = DATA_DIR / "books"
@@ -32,7 +32,6 @@ AREA_LABELS = {
     "cenarios_lore": "Cenarios e Lore",
     "aventuras": "Aventuras",
     "tabelas": "Tabelas e Geradores",
-    "fontes": "Fontes",
 }
 
 CATEGORY_TO_AREA = {

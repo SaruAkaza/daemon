@@ -75,7 +75,10 @@ def join_body(raw_paragraphs: list[str]) -> list[str]:
     """Join sentence fragments within a single heading's body (no titles)."""
     paras = [normalize(p) for p in raw_paragraphs]
     paras = [p for p in paras if p]
-    ends_terminal = lambda l: l.rstrip().endswith((".", "!", "?", "”", "\"", ")", "]", ":"))
+
+    def ends_terminal(line: str) -> bool:
+        return line.rstrip().endswith((".", "!", "?", "”", "\"", ")", "]", ":"))
+
     result: list[str] = []
     buffer = ""
     def flush():
@@ -147,12 +150,14 @@ def coherent_paragraphs(raw_paragraphs: list[str], titles: set[str] | None = Non
     """
     titles = titles or set()
     if is_title is None:
-        is_title = lambda l: l in titles
+        def is_title(line: str) -> bool:
+            return line in titles
 
     paras = [normalize(p) for p in raw_paragraphs]
     paras = [p for p in paras if p]
 
-    ends_terminal = lambda l: l.rstrip().endswith((".", "!", "?", "”", "\"", ")", "]", ":"))
+    def ends_terminal(line: str) -> bool:
+        return line.rstrip().endswith((".", "!", "?", "”", "\"", ")", "]", ":"))
 
     result: list[str] = []
     buffer = ""
@@ -175,7 +180,6 @@ def coherent_paragraphs(raw_paragraphs: list[str], titles: set[str] | None = Non
             base = buffer.rstrip()[:-1]
             tail = line.split(" ", 1)
             head_word = tail[0]
-            rest = tail[1] if len(tail) > 1 else ""
             prefix = base.rsplit(" ", 1)[-1]
             if _keep_hyphen(prefix, head_word):
                 buffer = base + "-" + line

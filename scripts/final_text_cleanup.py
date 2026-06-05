@@ -49,7 +49,7 @@ TEXT_PATH.write_text(content, encoding="utf-8")
 
 print("\n" + "=" * 80)
 print(f"Fixes aplicados: {fixed_count}")
-print(f"\nERROS RESTANTES que requerem revisao manual:")
+print("\nERROS RESTANTES que requerem revisao manual:")
 print("  - Acentuacao (politica, milenio, demonio, etc.): ~32 erros")
 print("  - rn -> m (contexto ambiguo): 195 erros")
 print("  - Outros erros OCR complexos")

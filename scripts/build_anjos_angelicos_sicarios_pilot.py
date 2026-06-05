@@ -4,8 +4,6 @@ Build pilot JSON for: Anjos - A Cidade de Prata - Angélicos Sicários
 Lore/Scenario supplement focused on the Angelic Assassins class
 """
 
-from pathlib import Path
-import json
 import re
 from datetime import datetime
 from docx import Document

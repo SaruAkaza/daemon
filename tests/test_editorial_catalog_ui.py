@@ -49,18 +49,16 @@ def test_regras_base_is_certified_and_not_raw_source_parts() -> None:
     assert {entity["category"] for entity in area["entities"]} <= {"core_rule", "attribute_skill", "combat"}
 
 
-def test_ui_has_admin_panel_editorial_notes_and_table_renderer() -> None:
+def test_ui_has_current_navigation_and_filter_controls() -> None:
     app = (ROOT / "docs" / "assets" / "app.js").read_text(encoding="utf-8")
     html = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
-    css = (ROOT / "docs" / "assets" / "styles.css").read_text(encoding="utf-8")
 
-    assert "adminPanel" in html
-    assert "notesToggle" in html
-    assert "function renderQualityAlert" in app
-    assert "function renderTables" in app
-    assert "function renderStructuredText" in app
-    assert "function renderDuplicateHints" in app
-    assert "function renderEntityRefs" in app
-    assert ".rules-table" in css
-    assert ".semantic-section" in css
-    assert ".reference-chip" in css
+    assert "brandHomeButton" in html
+    assert "DAEMON/TREVAS" in html
+    assert "areaFilter" in html
+    assert "filterOpenButton" in html
+    assert "categoryFilterButton" in html
+    assert "globalFilters" in app
+    assert "function globalScopedItems" in app
+    assert "openFilters(\"global\")" in app
+    assert "openFilters(\"category\")" in app

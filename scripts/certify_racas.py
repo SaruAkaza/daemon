@@ -128,7 +128,6 @@ def certification_failure(
     if quality_failure := certification_quality_failure(entity):
         return quality_failure
 
-    mechanical_hits = len(MECHANICAL_RACE_RE.findall(body))
     strong_mechanical_race = has_strong_mechanical_race(body)
     if KITLIKE_RE.search(body) and not strong_mechanical_race:
         return "looks_like_kit_or_class"
