@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T01:31:46",
+  "generatedAt": "2026-06-05T02:50:21",
   "source": "anoes",
   "sourceFile": "Anoes_OCR_alta_qualidade.docx",
   "sourcePath": "Livros\\word\\feito\\Anoes_OCR_alta_qualidade.docx",
@@ -10,8 +10,8 @@
   "areas": [
     "aprimoramentos",
     "cenarios_lore",
-    "classes",
     "itens_equipamentos",
+    "kits",
     "racas"
   ],
   "groups": [
@@ -41,7 +41,7 @@
             "A razão disto é atribuída ao fato das lendas mencionarem os filhos de Ymir como tendo nascido em uma ninhada moldada em uma forma antropomórfica semelhante à do próprio Ymir.",
             "Como ele próprio fora criado da união entre as forças cósmicas da Criação e da Destruição, seus descendentes carregaram heranças dessas forças consigo, em proporções diferentes.",
             "Assim, alguns nasceram malignos e cruéis, medindo muitos metros de altura e que sabiam apenas espalhar a destruição por onde passavam, enquanto outros nasceram benevolentes e eruditos, embora ainda fossem gigantes colossais. Porém, também haviam aqueles que nasceram pequenos em estatura, mas igualmente sábios ou perversos: os Anões.",
-            "Se analisarmos com atenção, pode-se perceber que os Anões são muito semelhantes aos Gigantes. Ambos possuem uma aparência rústica, um corpo troncudo, fortes e resistentes ao frio e ao fogo. Sua diferença maior é, notavelmente, a estatura, apesar dos Anões também possuírem uma organização em sociedade e aprimoramentos tecnológicos muito mais desenvolvidos que os Gigantes, que conservam hábitos primitivos de vida."
+            "Se analisarmos com atenção, pode-se perceber que os Anões são muito semelhantes aos Gigantes. Ambos possuem uma aparência rústica, um corpo troncudo, fortes e resistentes ao frio e ao fogo. Sua diferença maior é, notavelmente, a estatura, apesar dos Anões também possuírem uma organização em sociedade e avanços tecnológicos muito mais desenvolvidos que os Gigantes, que conservam hábitos primitivos de vida."
           ]
         },
         {
@@ -157,18 +157,6 @@
           ]
         },
         {
-          "id": "o-trabalho-nas-forjas",
-          "title": "O Trabalho nas Forjas",
-          "area": "cenarios_lore",
-          "paragraphs": [
-            "Encontramos também artefatos lendários que este pequeno povo forjou em seu Reino e que são cobiçados por Magos de todas as nações, como o poderoso Mjolnir (o maravilhoso Martelo de Thor), a histórica Espada de Odhin (descrita nas canções nórdicas como a arma utilizada para destruir o dragão Fafnir), Ghungmir (a Lança de Odhin, capaz de controlar todas as tempestades na Terra ou em Paradísia), os grilhões de Fenrir (uma fita de seda tão resistente que nem mesmo os deuses foram capazes de parti-la) e o amaldiçoado Anel de Andvari (que multiplicava as riquezas do seu dono, à custa de preços terríveis).",
-            "A confecção de um objeto mágico é um trabalho que exige exímia habilidade e conhecimento. Os Anões são seres profundamente ligados à arte da forja, o que lhes torna capazes de realizar tal proeza, que para muitos Magos é laboriosa e complicada, com extrema facilidade. Para que um destes itens místicos seja produzido, deve-se levar em conta que um Anão emprega uma série de materiais retirados de suas minas (como metais, gemas e pedras dotadas de características especiais) e ingredientes não-convencionais (raízes da montanha, tendões de urso, saliva de pássaro, escamas de peixe, etc) numa dosagem resultante de longos séculos de experiência.",
-            "Contudo, a natureza mística destes objetos NÃO provém de nenhum tipo de encantamento ou feitiço. Todos aqueles que possuem algum tipo de poder são resultado de intricados processos e fórmulas, desenvolvidos pelos Anões para obter os efeitos sobrenaturais desejados. Desse modo, todas as armas e itens produzidos pelos artífices são criações únicas e espantosas, pois depois que um destes objetos está finalizado, não se pode encantá-lo magicamente de maneira nenhuma. Qualquer tentativa de aumentar os seus poderes ou desencantá-lo resultarão em fracasso.",
-            "Anões sabem forjar todo o tipo de arma e armadura normal (não-mágica). Seu conjunto predileto são armaduras de cota de malha ou armaduras de placa, juntamente com um machado ou martelo de combate. A maioria dos Anões trajados para o combate é vista usando estas peças.",
-            "Devido à suas incríveis habilidades com o manejo dos metais, o Mestre deve considerar que todos os Anões possuem valores diferentes para o tempo necessário para a construção ou conserto de uma arma brancas. Abaixo é sugerida uma tabela com a relação de armas e o tempo necessário para sua construção, caso um Anão a realize:"
-          ]
-        },
-        {
           "id": "campanha",
           "title": "Campanha",
           "area": "cenarios_lore",
@@ -227,17 +215,7 @@
         "De modo que o seu próprio corpo físico é passivo de mistérios, acreditando-se que talvez atue como um verdadeiro campo de força contra a Magia. Desde os primórdios de Nidavellir, quando as primeiras grandes minas foram abertas e as cidades começaram a ser talhadas na rocha, os Anões já forjavam extraordinários objetos e armas mágicas. Porém, apesar de serem capazes de criar tais itens, eles não possuíam nenhum conhecimento sobre Magia. Não existia nenhum Anão que tivesse contato com as artes arcanas e isso intrigava os deuses de Aasgard. Como poderiam aquelas criaturas fabricar artefatos tão poderosos se nem ao menos conheciam os conceitos da Magia?",
         "Ainda intrigados com essa questão, atualmente os sábios discutem possibilidades inusitadas para explicar o estranho fenômeno. Uma delas diz que os Anões haviam desenvolvido esta habilidade a partir do momento em que iniciaram a colonização do subterrâneo, onde percorreram lugares tão inóspitos das profundezas que obtiveram um contato com poderes ocultos da Roda dos Mundos. Alguns comentam que estes poderes estão relacionados, de alguma forma, com as raízes de Yggdrasil, a Árvore da Vida. Enquanto os Anjos preocuparam-se em estudar os ramos da árvore (que originaram os sephiroth), os Anões encontraram nas suas raízes os segredos do processo da criação e da construção mística.",
         "Por outro lado, há quem defenda que os Anões sejam apenas exímios artífices e que extraiam de suas minas minérios mágicos fabulosos, mas que dificilmente seriam encontrados se não fosse a escavação contínua das profundezas.",
-        "Personagens Anões Personagens anões são construídos da mesma forma que qualquer personagem de Arkanun/Trevas. Possuem as mesmas quantidades de pontos para gastar em seus Atributos, Perícias e Aprimoramentos, portanto, use sem problemas as regras do Sistema Daemon. Anões, além da baixa estatura, são encorpados e têm barbas muito espessas (os Duegares possuem a mesma aparência de um Anão qualquer, embora muitos apresentem deformidades demoníacas decorrentes do uso de Magia). Medem entre 1,20 e 1,50 metros de altura e vivem cerca de 300 anos.",
-        "Abaixo seguem alguns Kits de Personagens mais comuns entre os anões. Porém, note apenas duas importantes observações: apenas os Duegares podem comprar o Aprimoramento Poderes Mágicos (todos os Anões são proibidos, sem exceção), e para os Aprimoramentos Visão Noturna e Resistência à Magia, utilize os modelos:",
-        "Visão Noturna",
-        "2 pontos: Os anões possuem uma visão especial, além da visão normal. Esta é a habilidade de enxergar perfeitamente escuro, desde que haja por perto uma fonte qualquer de iluminação.",
-        "Tanto à noite quanto em ambientes fechados, o personagem pode ver normalmente sem sofrer qualquer penalidade devido ao escuro do ambiente. No entanto, deve haver algum tipo de iluminação, como uma tocha ou vela, dentro do campo de visão do personagem. Sem isso torna-se impossível enxergar na escuridão total. Os Anões utilizam muitas pedras especiais, que emitem luz própria, em suas cidades e túneis subterrâneos para auxiliá-los neste ponto.",
-        "Resistência à Magia O personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder). Assim, sempre que uma magia for empregada no personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir.",
-        "1 ponto: 1D de resistência.",
-        "2 pontos: 2D de resistência.",
-        "3 pontos: 3D de resistência.",
-        "4 pontos: 4D de resistência.",
-        "5 pontos: 5D de resistência."
+        "Personagens Anões Personagens anões são construídos da mesma forma que qualquer personagem de Arkanun/Trevas. Possuem as mesmas quantidades de pontos para gastar em seus Atributos, Perícias e Aprimoramentos, portanto, use sem problemas as regras do Sistema Daemon. Anões, além da baixa estatura, são encorpados e têm barbas muito espessas (os Duegares possuem a mesma aparência de um Anão qualquer, embora muitos apresentem deformidades demoníacas decorrentes do uso de Magia). Medem entre 1,20 e 1,50 metros de altura e vivem cerca de 300 anos."
       ],
       "sections": [
         {
@@ -286,8 +264,8 @@
           ]
         },
         {
-          "id": "restricoes-e-habilidades",
-          "title": "Restrições e Habilidades",
+          "id": "resistencia-natural-a-magia",
+          "title": "Resistência Natural à Magia",
           "area": "racas",
           "paragraphs": [
             "Oposição à Magia Não existem Anões Magos. Uma estranha resistência natural impede que os Anões desenvolvam aptidões para a Magia, pois sua essência vital impede que os efeitos místicos sejam realizados.",
@@ -295,18 +273,15 @@
             "Os cadáveres dos Anões, por alguma razão que jamais se soube explicar, são imunes aos feitiços de animar mortos-vivos.",
             "De modo que o seu próprio corpo físico é passivo de mistérios, acreditando-se que talvez atue como um verdadeiro campo de força contra a Magia. Desde os primórdios de Nidavellir, quando as primeiras grandes minas foram abertas e as cidades começaram a ser talhadas na rocha, os Anões já forjavam extraordinários objetos e armas mágicas. Porém, apesar de serem capazes de criar tais itens, eles não possuíam nenhum conhecimento sobre Magia. Não existia nenhum Anão que tivesse contato com as artes arcanas e isso intrigava os deuses de Aasgard. Como poderiam aquelas criaturas fabricar artefatos tão poderosos se nem ao menos conheciam os conceitos da Magia?",
             "Ainda intrigados com essa questão, atualmente os sábios discutem possibilidades inusitadas para explicar o estranho fenômeno. Uma delas diz que os Anões haviam desenvolvido esta habilidade a partir do momento em que iniciaram a colonização do subterrâneo, onde percorreram lugares tão inóspitos das profundezas que obtiveram um contato com poderes ocultos da Roda dos Mundos. Alguns comentam que estes poderes estão relacionados, de alguma forma, com as raízes de Yggdrasil, a Árvore da Vida. Enquanto os Anjos preocuparam-se em estudar os ramos da árvore (que originaram os sephiroth), os Anões encontraram nas suas raízes os segredos do processo da criação e da construção mística.",
-            "Por outro lado, há quem defenda que os Anões sejam apenas exímios artífices e que extraiam de suas minas minérios mágicos fabulosos, mas que dificilmente seriam encontrados se não fosse a escavação contínua das profundezas.",
-            "Personagens Anões Personagens anões são construídos da mesma forma que qualquer personagem de Arkanun/Trevas. Possuem as mesmas quantidades de pontos para gastar em seus Atributos, Perícias e Aprimoramentos, portanto, use sem problemas as regras do Sistema Daemon. Anões, além da baixa estatura, são encorpados e têm barbas muito espessas (os Duegares possuem a mesma aparência de um Anão qualquer, embora muitos apresentem deformidades demoníacas decorrentes do uso de Magia). Medem entre 1,20 e 1,50 metros de altura e vivem cerca de 300 anos.",
-            "Abaixo seguem alguns Kits de Personagens mais comuns entre os anões. Porém, note apenas duas importantes observações: apenas os Duegares podem comprar o Aprimoramento Poderes Mágicos (todos os Anões são proibidos, sem exceção), e para os Aprimoramentos Visão Noturna e Resistência à Magia, utilize os modelos:",
-            "Visão Noturna",
-            "2 pontos: Os anões possuem uma visão especial, além da visão normal. Esta é a habilidade de enxergar perfeitamente escuro, desde que haja por perto uma fonte qualquer de iluminação.",
-            "Tanto à noite quanto em ambientes fechados, o personagem pode ver normalmente sem sofrer qualquer penalidade devido ao escuro do ambiente. No entanto, deve haver algum tipo de iluminação, como uma tocha ou vela, dentro do campo de visão do personagem. Sem isso torna-se impossível enxergar na escuridão total. Os Anões utilizam muitas pedras especiais, que emitem luz própria, em suas cidades e túneis subterrâneos para auxiliá-los neste ponto.",
-            "Resistência à Magia O personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder). Assim, sempre que uma magia for empregada no personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir.",
-            "1 ponto: 1D de resistência.",
-            "2 pontos: 2D de resistência.",
-            "3 pontos: 3D de resistência.",
-            "4 pontos: 4D de resistência.",
-            "5 pontos: 5D de resistência."
+            "Por outro lado, há quem defenda que os Anões sejam apenas exímios artífices e que extraiam de suas minas minérios mágicos fabulosos, mas que dificilmente seriam encontrados se não fosse a escavação contínua das profundezas."
+          ]
+        },
+        {
+          "id": "uso-em-jogo",
+          "title": "Uso em Jogo",
+          "area": "racas",
+          "paragraphs": [
+            "Personagens Anões Personagens anões são construídos da mesma forma que qualquer personagem de Arkanun/Trevas. Possuem as mesmas quantidades de pontos para gastar em seus Atributos, Perícias e Aprimoramentos, portanto, use sem problemas as regras do Sistema Daemon. Anões, além da baixa estatura, são encorpados e têm barbas muito espessas (os Duegares possuem a mesma aparência de um Anão qualquer, embora muitos apresentem deformidades demoníacas decorrentes do uso de Magia). Medem entre 1,20 e 1,50 metros de altura e vivem cerca de 300 anos."
           ]
         }
       ]
@@ -438,10 +413,10 @@
     {
       "id": "ferreiro",
       "title": "Ferreiro",
-      "area": "classes",
-      "kind": "class",
-      "sectionId": "classe-kit",
-      "sectionTitle": "Classe/Kit",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
       "paragraphs": [
         "Custo: 2 pts. de Aprimoramento, 240 pts. de Perícia.",
         "Perícias: Machado 30/20, Martelo de Combate 30/20, Armeiro 50%, Artes (Arquitetura 20%, Escultura 15%, Joalheria 50%), Artífice (Carpinteiro 20%, Ferreiro 60%, Pedreiro 20%), Avaliação de Objetos 30%, Ciências (Arqueologia 10%), Mineração 30%, Sobrevivência (Montanhas 50%).",
@@ -454,7 +429,7 @@
         {
           "id": "custo",
           "title": "Custo",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "2 pts. de Aprimoramento, 240 pts. de Perícia."
           ]
@@ -462,7 +437,7 @@
         {
           "id": "pericias",
           "title": "Perícias",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Machado 30/20, Martelo de Combate 30/20, Armeiro 50%, Artes (Arquitetura 20%, Escultura 15%, Joalheria 50%), Artífice (Carpinteiro 20%, Ferreiro 60%, Pedreiro 20%), Avaliação de Objetos 30%, Ciências (Arqueologia 10%), Mineração 30%, Sobrevivência (Montanhas 50%)."
           ]
@@ -470,7 +445,7 @@
         {
           "id": "aprimoramentos",
           "title": "Aprimoramentos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1."
           ]
@@ -478,7 +453,7 @@
         {
           "id": "pontos-de-fe",
           "title": "Pontos de Fé",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -486,7 +461,7 @@
         {
           "id": "pontos-de-magia",
           "title": "Pontos de Magia",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -494,7 +469,7 @@
         {
           "id": "pontos-heroicos",
           "title": "Pontos Heróicos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "1 por nível."
           ]
@@ -504,10 +479,10 @@
     {
       "id": "guerreiro",
       "title": "Guerreiro",
-      "area": "classes",
-      "kind": "class",
-      "sectionId": "classe-kit",
-      "sectionTitle": "Classe/Kit",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
       "paragraphs": [
         "Custo: 2 pts. de Aprimoramento, 200 pts. de Perícia.",
         "Perícias: Machado 40/40, Martelo de Combate 40/40, Armeiro 30%, Artes (Arquitetura 10%, Escultura 15%, Joalheria 15%), Artífice (Ferreiro 25%), Armadilhas 30%, Avaliação de Objetos 15%, Mineração 30%, Manipulação (Intimidação 20%), Sobrevivência (Montanhas 50%).",
@@ -520,7 +495,7 @@
         {
           "id": "custo",
           "title": "Custo",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "2 pts. de Aprimoramento, 200 pts. de Perícia."
           ]
@@ -528,7 +503,7 @@
         {
           "id": "pericias",
           "title": "Perícias",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Machado 40/40, Martelo de Combate 40/40, Armeiro 30%, Artes (Arquitetura 10%, Escultura 15%, Joalheria 15%), Artífice (Ferreiro 25%), Armadilhas 30%, Avaliação de Objetos 15%, Mineração 30%, Manipulação (Intimidação 20%), Sobrevivência (Montanhas 50%)."
           ]
@@ -536,7 +511,7 @@
         {
           "id": "aprimoramentos",
           "title": "Aprimoramentos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1."
           ]
@@ -544,7 +519,7 @@
         {
           "id": "pontos-de-fe",
           "title": "Pontos de Fé",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -552,7 +527,7 @@
         {
           "id": "pontos-de-magia",
           "title": "Pontos de Magia",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -560,7 +535,7 @@
         {
           "id": "pontos-heroicos",
           "title": "Pontos Heróicos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "1 por nível."
           ]
@@ -570,10 +545,10 @@
     {
       "id": "ladrao",
       "title": "Ladrão",
-      "area": "classes",
-      "kind": "class",
-      "sectionId": "classe-kit",
-      "sectionTitle": "Classe/Kit",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
       "paragraphs": [
         "Custo: 2 pts. de Aprimoramento, 250 pts. de Perícia.",
         "Perícias: Adaga 25/25, Armeiro 20%, Armadilhas 50%, Artes (Atuação 20%, Escapismo 25%, Joalheria 10%), Artífice (Ferreiro 15%), Avaliação de Objetos 30%, Disfarce 30%, Furtar 40%, Furtividade 25%, Falsificação 20%, Mineração 30%, Manipulação (Lábia 15%), Manuseio de Fechaduras 20%, Sobrevivência (Montanhas 50%), Subterfúgio 20%.",
@@ -586,7 +561,7 @@
         {
           "id": "custo",
           "title": "Custo",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "2 pts. de Aprimoramento, 250 pts. de Perícia."
           ]
@@ -594,7 +569,7 @@
         {
           "id": "pericias",
           "title": "Perícias",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Adaga 25/25, Armeiro 20%, Armadilhas 50%, Artes (Atuação 20%, Escapismo 25%, Joalheria 10%), Artífice (Ferreiro 15%), Avaliação de Objetos 30%, Disfarce 30%, Furtar 40%, Furtividade 25%, Falsificação 20%, Mineração 30%, Manipulação (Lábia 15%), Manuseio de Fechaduras 20%, Sobrevivência (Montanhas 50%), Subterfúgio 20%."
           ]
@@ -602,7 +577,7 @@
         {
           "id": "aprimoramentos",
           "title": "Aprimoramentos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Visão Noturna 2, Resistência à Magia 1, Pontos Heróicos 1."
           ]
@@ -610,7 +585,7 @@
         {
           "id": "pontos-de-fe",
           "title": "Pontos de Fé",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -618,7 +593,7 @@
         {
           "id": "pontos-de-magia",
           "title": "Pontos de Magia",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -626,7 +601,7 @@
         {
           "id": "pontos-heroicos",
           "title": "Pontos Heróicos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "1 por nível."
           ]
@@ -636,10 +611,10 @@
     {
       "id": "clerigo",
       "title": "Clérigo",
-      "area": "classes",
-      "kind": "class",
-      "sectionId": "classe-kit",
-      "sectionTitle": "Classe/Kit",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
       "paragraphs": [
         "Custo: 3 pts. de Aprimoramento, 220 pts. de Perícia.",
         "Perícias: Ciências (Teologia 45%, Arqueologia 15%, Herbalismo 25%), Ciências Proibidas (Arcádia 15%), Armeiro 15%, Artes (Arquitetura 25%, Escultura 10%, Joalheria 10%), Artífice (Carpinteiro 10%, Ferreiro 20%), Etiqueta (Clero 25%), Primeiros Socorros 35%, Pesquisa/Investigação 20%, Avaliação de Objetos 15%, Manipulação (Empatia 20%), Mineração 30%, Sobrevivência (Montanhas 50%), Religião 50%.",
@@ -652,7 +627,7 @@
         {
           "id": "custo",
           "title": "Custo",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "3 pts. de Aprimoramento, 220 pts. de Perícia."
           ]
@@ -660,7 +635,7 @@
         {
           "id": "pericias",
           "title": "Perícias",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Ciências (Teologia 45%, Arqueologia 15%, Herbalismo 25%), Ciências Proibidas (Arcádia 15%), Armeiro 15%, Artes (Arquitetura 25%, Escultura 10%, Joalheria 10%), Artífice (Carpinteiro 10%, Ferreiro 20%), Etiqueta (Clero 25%), Primeiros Socorros 35%, Pesquisa/Investigação 20%, Avaliação de Objetos 15%, Manipulação (Empatia 20%), Mineração 30%, Sobrevivência (Montanhas 50%), Religião 50%."
           ]
@@ -668,7 +643,7 @@
         {
           "id": "aprimoramentos",
           "title": "Aprimoramentos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Visão Noturna 2, Resistência à Magia 1, Pontos de Fé 1."
           ]
@@ -676,7 +651,7 @@
         {
           "id": "pontos-de-fe",
           "title": "Pontos de Fé",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "1 + 1 a cada nível."
           ]
@@ -684,7 +659,7 @@
         {
           "id": "pontos-de-magia",
           "title": "Pontos de Magia",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -692,7 +667,7 @@
         {
           "id": "pontos-heroicos",
           "title": "Pontos Heróicos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -702,10 +677,10 @@
     {
       "id": "mago",
       "title": "Mago",
-      "area": "classes",
-      "kind": "class",
-      "sectionId": "classe-kit",
-      "sectionTitle": "Classe/Kit",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
       "paragraphs": [
         "Apenas para Duegares",
         "Custo: 3 pts. de Aprimoramento, 270 pts. de Perícia.",
@@ -720,7 +695,7 @@
         {
           "id": "pre-requisito",
           "title": "Pré-requisito",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Apenas para Duegares"
           ]
@@ -728,7 +703,7 @@
         {
           "id": "custo",
           "title": "Custo",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "3 pts. de Aprimoramento, 270 pts. de Perícia."
           ]
@@ -736,7 +711,7 @@
         {
           "id": "pericias",
           "title": "Perícias",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Machado 20/20, Armeiro 30%, Armadilhas 30%, Artes (Arquitetura 25%, Escultura 15%, Joalheria 30%), Artífice (Ferreiro 30%), Avaliação de Objetos 20%, Ciências (Arqueologia 20%, Herbalismo 30%, Teologia 10%), Ciências Proibidas (Oculto 20%, Rituais 30%, Teoria da Magia 40%), Idioma (Escolha uma Língua Antiga 30%), Manipulação (Tortura 20%), Pesquisa/Investigação 20%, Mineração 30%, Sobrevivência (Montanhas 50%)."
           ]
@@ -744,7 +719,7 @@
         {
           "id": "formas-e-caminhos-principais",
           "title": "Formas e Caminhos Principais",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Arkanun, Trevas, Criar."
           ]
@@ -752,7 +727,7 @@
         {
           "id": "aprimoramentos",
           "title": "Aprimoramentos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Visão Noturna 2, Poderes Mágicos 2, Pontos Heróicos 1."
           ]
@@ -760,7 +735,7 @@
         {
           "id": "pontos-de-fe",
           "title": "Pontos de Fé",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "0."
           ]
@@ -768,7 +743,7 @@
         {
           "id": "pontos-de-magia",
           "title": "Pontos de Magia",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "2 + 1 por nível."
           ]
@@ -776,7 +751,7 @@
         {
           "id": "pontos-heroicos",
           "title": "Pontos Heróicos",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "1 por nível."
           ]
@@ -784,13 +759,19 @@
       ]
     },
     {
-      "id": "tempo-de-construcao-de-armas",
-      "title": "Tempo de construção de armas",
+      "id": "forjas-e-criacao-de-itens-dos-anoes",
+      "title": "Forjas e criação de itens dos Anões",
       "area": "itens_equipamentos",
-      "kind": "equipment_table",
-      "sectionId": "tabela",
-      "sectionTitle": "Tabela",
+      "kind": "equipment_rules",
+      "sectionId": "item-equipamento",
+      "sectionTitle": "Item/Equipamento",
       "paragraphs": [
+        "No Reino subterrâneo dos Anões existem infinitas minas e locais onde são explorados materiais como carvão, chumbo, prata, cobre, ferro, ouro, zinco, cristais ou pedras preciosas. Os deuses de Aasgard freqüentemente procuram aos ferreiros anões para que fabriquem objetos especiais, capazes de solucionar os problemas enfrentados pelos Aesires. Os pedidos mais comuns incluem armas mágicas destinadas a infringirem dano maior em criaturas específicas (como uma Espada +2 contra Orcs, por exemplo), amuletos detectores de espíritos, colares de concedem bônus aos Atributos Físicos, escudos antimagia, robes místicos que aumentam os efeitos das magias, capuzes que garantiam a invisibilidade dos donos, anéis que projetam ilusões e muitos outros.",
+        "Encontramos também artefatos lendários que este pequeno povo forjou em seu Reino e que são cobiçados por Magos de todas as nações, como o poderoso Mjolnir (o maravilhoso Martelo de Thor), a histórica Espada de Odhin (descrita nas canções nórdicas como a arma utilizada para destruir o dragão Fafnir), Ghungmir (a Lança de Odhin, capaz de controlar todas as tempestades na Terra ou em Paradísia), os grilhões de Fenrir (uma fita de seda tão resistente que nem mesmo os deuses foram capazes de parti-la) e o amaldiçoado Anel de Andvari (que multiplicava as riquezas do seu dono, à custa de preços terríveis).",
+        "A confecção de um objeto mágico é um trabalho que exige exímia habilidade e conhecimento. Os Anões são seres profundamente ligados à arte da forja, o que lhes torna capazes de realizar tal proeza, que para muitos Magos é laboriosa e complicada, com extrema facilidade. Para que um destes itens místicos seja produzido, deve-se levar em conta que um Anão emprega uma série de materiais retirados de suas minas (como metais, gemas e pedras dotadas de características especiais) e ingredientes não-convencionais (raízes da montanha, tendões de urso, saliva de pássaro, escamas de peixe, etc) numa dosagem resultante de longos séculos de experiência.",
+        "Contudo, a natureza mística destes objetos NÃO provém de nenhum tipo de encantamento ou feitiço. Todos aqueles que possuem algum tipo de poder são resultado de intricados processos e fórmulas, desenvolvidos pelos Anões para obter os efeitos sobrenaturais desejados. Desse modo, todas as armas e itens produzidos pelos artífices são criações únicas e espantosas, pois depois que um destes objetos está finalizado, não se pode encantá-lo magicamente de maneira nenhuma. Qualquer tentativa de aumentar os seus poderes ou desencantá-lo resultarão em fracasso.",
+        "Anões sabem forjar todo o tipo de arma e armadura normal (não-mágica). Seu conjunto predileto são armaduras de cota de malha ou armaduras de placa, juntamente com um machado ou martelo de combate. A maioria dos Anões trajados para o combate é vista usando estas peças.",
+        "Devido à suas incríveis habilidades com o manejo dos metais, o Mestre deve considerar que todos os Anões possuem valores diferentes para o tempo necessário para a construção ou conserto de uma arma brancas. Abaixo é sugerida uma tabela com a relação de armas e o tempo necessário para sua construção, caso um Anão a realize:",
         "Adaga: 2 por dia",
         "Espada Curta: 2 dias",
         "Espada Longa/Bastarda: 3 dias",
@@ -802,12 +783,28 @@
         "Machado: 1 dia",
         "Martelo: 2 dias",
         "Mangual: 2 dias",
-        "Tridente: 2 dias"
+        "Tridente: 2 dias",
+        "Embora fabricar armas simples seja uma tarefa fácil para um Anão que esteja na Terra, ela torna-se ainda mais fácil se o Anão puder realizá-la nas forjas de Nidavellir. Considere que toda a arma construída usando o refinado material disponível no Reino dos Anões possua uma qualidade acima de qualquer trabalho semelhante, a ponto de melhorar as habilidades de quem a maneja e aumentar também o dano provocado pelos seus golpes. Portanto, trate-a como uma Arma +1 (onde o +1 representa um bônus de +1 para o dano e um acréscimo de 5% nas chances de acertar e defender um ataque), mas observe que ela continua sendo uma arma não-mágica, recebendo estes benefícios devido à superioridade de sua confecção.",
+        "Lembre-se de que os valores relativos à criação de um item mágico não se comparam aos descritos na tabela anterior. A fabricação de um objeto mágico exige um processo longo de produção, que deve ser feito com extrema cautela. Conforme a potência mística a ser empregado no objeto, o Anão precisa dispor de muitas exigências materiais, físicas e psicológicas, já que muitos ingredientes especiais precisam ser encontrados, um período intenso de concentração e trabalho, que provavelmente o privará de alimentos e até do sono. Isso acontece porque o Anão tem pouquíssimos intervalos em seu trabalho, ficando muitas vezes dias ininterruptos confinado ao preparo correto das fórmulas.",
+        "O Mestre deve estipular o tempo que considerar mais apropriado para o término da confecção de um item mágico. Este prazo deve levar em conta o objeto a ser fabricado (em tamanho, resistência e aparência do material) e, principalmente, o poder que ele conterá (quanto maior for, mais difícil será encontrar todos os materiais necessários e mais tempo será preciso para que todos eles sejam preparados corretamente)."
       ],
       "sections": [
         {
-          "id": "tabela",
-          "title": "Tabela",
+          "id": "forjas-de-nidavellir",
+          "title": "Forjas de Nidavellir",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "No Reino subterrâneo dos Anões existem infinitas minas e locais onde são explorados materiais como carvão, chumbo, prata, cobre, ferro, ouro, zinco, cristais ou pedras preciosas. Os deuses de Aasgard freqüentemente procuram aos ferreiros anões para que fabriquem objetos especiais, capazes de solucionar os problemas enfrentados pelos Aesires. Os pedidos mais comuns incluem armas mágicas destinadas a infringirem dano maior em criaturas específicas (como uma Espada +2 contra Orcs, por exemplo), amuletos detectores de espíritos, colares de concedem bônus aos Atributos Físicos, escudos antimagia, robes místicos que aumentam os efeitos das magias, capuzes que garantiam a invisibilidade dos donos, anéis que projetam ilusões e muitos outros.",
+            "Encontramos também artefatos lendários que este pequeno povo forjou em seu Reino e que são cobiçados por Magos de todas as nações, como o poderoso Mjolnir (o maravilhoso Martelo de Thor), a histórica Espada de Odhin (descrita nas canções nórdicas como a arma utilizada para destruir o dragão Fafnir), Ghungmir (a Lança de Odhin, capaz de controlar todas as tempestades na Terra ou em Paradísia), os grilhões de Fenrir (uma fita de seda tão resistente que nem mesmo os deuses foram capazes de parti-la) e o amaldiçoado Anel de Andvari (que multiplicava as riquezas do seu dono, à custa de preços terríveis).",
+            "A confecção de um objeto mágico é um trabalho que exige exímia habilidade e conhecimento. Os Anões são seres profundamente ligados à arte da forja, o que lhes torna capazes de realizar tal proeza, que para muitos Magos é laboriosa e complicada, com extrema facilidade. Para que um destes itens místicos seja produzido, deve-se levar em conta que um Anão emprega uma série de materiais retirados de suas minas (como metais, gemas e pedras dotadas de características especiais) e ingredientes não-convencionais (raízes da montanha, tendões de urso, saliva de pássaro, escamas de peixe, etc) numa dosagem resultante de longos séculos de experiência.",
+            "Contudo, a natureza mística destes objetos NÃO provém de nenhum tipo de encantamento ou feitiço. Todos aqueles que possuem algum tipo de poder são resultado de intricados processos e fórmulas, desenvolvidos pelos Anões para obter os efeitos sobrenaturais desejados. Desse modo, todas as armas e itens produzidos pelos artífices são criações únicas e espantosas, pois depois que um destes objetos está finalizado, não se pode encantá-lo magicamente de maneira nenhuma. Qualquer tentativa de aumentar os seus poderes ou desencantá-lo resultarão em fracasso.",
+            "Anões sabem forjar todo o tipo de arma e armadura normal (não-mágica). Seu conjunto predileto são armaduras de cota de malha ou armaduras de placa, juntamente com um machado ou martelo de combate. A maioria dos Anões trajados para o combate é vista usando estas peças.",
+            "Devido à suas incríveis habilidades com o manejo dos metais, o Mestre deve considerar que todos os Anões possuem valores diferentes para o tempo necessário para a construção ou conserto de uma arma brancas. Abaixo é sugerida uma tabela com a relação de armas e o tempo necessário para sua construção, caso um Anão a realize:"
+          ]
+        },
+        {
+          "id": "tempo-de-construcao",
+          "title": "Tempo de Construção",
           "area": "itens_equipamentos",
           "paragraphs": [
             "Adaga: 2 por dia",
@@ -823,6 +820,23 @@
             "Mangual: 2 dias",
             "Tridente: 2 dias"
           ]
+        },
+        {
+          "id": "qualidade-da-forja",
+          "title": "Qualidade da Forja",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Embora fabricar armas simples seja uma tarefa fácil para um Anão que esteja na Terra, ela torna-se ainda mais fácil se o Anão puder realizá-la nas forjas de Nidavellir. Considere que toda a arma construída usando o refinado material disponível no Reino dos Anões possua uma qualidade acima de qualquer trabalho semelhante, a ponto de melhorar as habilidades de quem a maneja e aumentar também o dano provocado pelos seus golpes. Portanto, trate-a como uma Arma +1 (onde o +1 representa um bônus de +1 para o dano e um acréscimo de 5% nas chances de acertar e defender um ataque), mas observe que ela continua sendo uma arma não-mágica, recebendo estes benefícios devido à superioridade de sua confecção."
+          ]
+        },
+        {
+          "id": "criacao-de-itens-magicos",
+          "title": "Criação de Itens Mágicos",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Lembre-se de que os valores relativos à criação de um item mágico não se comparam aos descritos na tabela anterior. A fabricação de um objeto mágico exige um processo longo de produção, que deve ser feito com extrema cautela. Conforme a potência mística a ser empregado no objeto, o Anão precisa dispor de muitas exigências materiais, físicas e psicológicas, já que muitos ingredientes especiais precisam ser encontrados, um período intenso de concentração e trabalho, que provavelmente o privará de alimentos e até do sono. Isso acontece porque o Anão tem pouquíssimos intervalos em seu trabalho, ficando muitas vezes dias ininterruptos confinado ao preparo correto das fórmulas.",
+            "O Mestre deve estipular o tempo que considerar mais apropriado para o término da confecção de um item mágico. Este prazo deve levar em conta o objeto a ser fabricado (em tamanho, resistência e aparência do material) e, principalmente, o poder que ele conterá (quanto maior for, mais difícil será encontrar todos os materiais necessários e mais tempo será preciso para que todos eles sejam preparados corretamente)."
+          ]
         }
       ]
     }
@@ -830,13 +844,15 @@
   "areaCounts": {
     "aprimoramentos": 2,
     "cenarios_lore": 1,
-    "classes": 5,
     "itens_equipamentos": 1,
+    "kits": 5,
     "racas": 2
   },
   "reviewNotes": [
     "Livro tratado individualmente após interrupção dos Anjos.",
     "Nenhum custo racial foi inferido para Anões ou Duegares, pois o texto não apresenta custo explícito para usar a raça.",
-    "Visão Noturna e Resistência à Magia foram tratados como aprimoramentos com custo separado."
+    "Visão Noturna e Resistência à Magia foram tratados como aprimoramentos com custo separado.",
+    "O bloco de forjas foi removido de Cenários e Lore e tratado como Itens e Equipamentos.",
+    "Custos e descrições de aprimoramentos não ficam duplicados em Raças."
   ]
 }

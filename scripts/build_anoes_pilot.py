@@ -26,6 +26,7 @@ def normalize_text(text: str) -> str:
     text = text.replace("â€œ", '"').replace("â€", '"').replace("â€™", "'")
     text = text.replace("entre os forças", "entre as forças")
     text = text.replace("muitos mais", "muito mais")
+    text = text.replace("aprimoramentos tecnológicos", "avanços tecnológicos")
     text = text.replace("um arquitetura", "uma arquitetura")
     text = text.replace("artificies", "artífices")
     text = text.replace("atraente e tampouco", "atraentes e tampouco")
@@ -159,7 +160,7 @@ def kit(title: str, raw_paragraphs: list[str]) -> dict:
     def flush() -> None:
         nonlocal current, current_title
         if current:
-            sections.append(section(slugify(current_title), current_title, "classes", current))
+            sections.append(section(slugify(current_title), current_title, "kits", current))
             current = []
 
     for paragraph in paragraphs:
@@ -176,22 +177,31 @@ def kit(title: str, raw_paragraphs: list[str]) -> dict:
             continue
         current.append(paragraph)
     flush()
-    return typed_item(title, "classes", "class", "Classe/Kit", paragraphs, sections)
+    return typed_item(title, "kits", "kit", "Kit", paragraphs, sections)
 
 
-def build_weapon_time_table(paragraphs: list[str]) -> dict:
+def build_forging_item(paragraphs: list[str]) -> dict:
+    forge_intro = collect(paragraphs, 90, 96)
+    if forge_intro and forge_intro[0].startswith("O Trabalho nas Forjas "):
+        forge_intro[0] = normalize_text(forge_intro[0].removeprefix("O Trabalho nas Forjas "))
     rows = collect(paragraphs, 96, 110)
     entries: list[str] = []
     for row in rows:
         match = re.match(r"^(.+?)\s+(\d+.+)$", row)
         entries.append(f"{match.group(1)}: {match.group(2)}" if match else row)
+    sections = [
+        section("forjas-de-nidavellir", "Forjas de Nidavellir", "itens_equipamentos", forge_intro),
+        section("tempo-de-construcao", "Tempo de Construção", "itens_equipamentos", entries),
+        section("qualidade-da-forja", "Qualidade da Forja", "itens_equipamentos", collect(paragraphs, 112, 113)),
+        section("criacao-de-itens-magicos", "Criação de Itens Mágicos", "itens_equipamentos", collect(paragraphs, 113, 115)),
+    ]
     return typed_item(
-        "Tempo de construção de armas",
+        "Forjas e criação de itens dos Anões",
         "itens_equipamentos",
-        "equipment_table",
-        "Tabela",
-        entries,
-        [section("tabela", "Tabela", "itens_equipamentos", entries)],
+        "equipment_rules",
+        "Item/Equipamento",
+        [paragraph for block in sections for paragraph in block["paragraphs"]],
+        sections,
     )
 
 
@@ -209,14 +219,14 @@ def build_pilot() -> dict:
         make_section(paragraphs, "Oposição à Magia", "cenarios_lore", 68, 74),
         make_section(paragraphs, "Os Irmãos Corrompidos", "cenarios_lore", 74, 80),
         make_section(paragraphs, "Duegares", "cenarios_lore", 81, 90),
-        make_section(paragraphs, "O Trabalho nas Forjas", "cenarios_lore", 90, 96),
         make_section(paragraphs, "Campanha", "cenarios_lore", 166, 170),
     ]
 
     race_anoes_sections = [
         section("descricao", "Descrição", "racas", clean(collect(paragraphs, 7, 10) + collect(paragraphs, 37, 49))),
         section("sociedade", "Sociedade", "racas", clean(collect(paragraphs, 49, 68))),
-        section("restricoes-e-habilidades", "Restrições e Habilidades", "racas", clean(collect(paragraphs, 68, 74) + collect(paragraphs, 115, 126))),
+        section("resistencia-natural-a-magia", "Resistência Natural à Magia", "racas", collect(paragraphs, 68, 74)),
+        section("uso-em-jogo", "Uso em Jogo", "racas", collect(paragraphs, 115, 116)),
     ]
     race_duegares_sections = [
         section("historia", "História", "racas", collect_after(paragraphs, 74, 90)),
@@ -249,7 +259,7 @@ def build_pilot() -> dict:
         ),
     ]
 
-    classes = [
+    kits = [
         kit("Ferreiro", paragraphs[127:134]),
         kit("Guerreiro", paragraphs[136:143]),
         kit("Ladrão", paragraphs[143:150]),
@@ -267,7 +277,7 @@ def build_pilot() -> dict:
             "sections": lore_sections,
         }
     ]
-    sections = races + enhancements + classes + [build_weapon_time_table(paragraphs)]
+    sections = races + enhancements + kits + [build_forging_item(paragraphs)]
     areas = sorted({group["area"] for group in groups} | {item["area"] for item in sections})
     area_counts = {
         area: len([group for group in groups if group["area"] == area])
@@ -292,6 +302,8 @@ def build_pilot() -> dict:
             "Livro tratado individualmente após interrupção dos Anjos.",
             "Nenhum custo racial foi inferido para Anões ou Duegares, pois o texto não apresenta custo explícito para usar a raça.",
             "Visão Noturna e Resistência à Magia foram tratados como aprimoramentos com custo separado.",
+            "O bloco de forjas foi removido de Cenários e Lore e tratado como Itens e Equipamentos.",
+            "Custos e descrições de aprimoramentos não ficam duplicados em Raças.",
         ],
     }
 

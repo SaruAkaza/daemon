@@ -75,6 +75,8 @@ A distinção entre aprimoramento, kit e raça no sistema Daemon:
 
 Portanto, itens como "Bruto Insano", "Ciborgue", "Caçador Sobrenatural", "Clone da Lenda" permanecem em `aprimoramentos` pois não possuem custo em perícias nem são apresentados como raça pelo livro.
 
+Quando um item tiver estrutura de kit — especialmente `Custo` em pontos de aprimoramento e/ou perícia + bloco/lista de `Perícias` — catalogar em `kits`, com tipo `kit`, não em `classes`. Exemplo: Ferreiro, Guerreiro, Ladrão, Clérigo e Mago em `Anões` são kits porque têm custo e perícias definidos.
+
 ## Aprimoramentos
 
 Todo aprimoramento deve ser detalhado com `Custo` antes de `Descrição`.

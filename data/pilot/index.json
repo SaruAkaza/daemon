@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T01:31:47",
+  "generatedAt": "2026-06-05T02:50:21",
   "sources": [
     {
       "source": "4killers",
@@ -137,8 +137,8 @@
       "areas": [
         "aprimoramentos",
         "cenarios_lore",
-        "classes",
         "itens_equipamentos",
+        "kits",
         "racas"
       ]
     }
