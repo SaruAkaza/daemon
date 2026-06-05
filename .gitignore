@@ -9,3 +9,6 @@ data/index/text-change-state.json
 .venv/
 __pycache__/
 *.pyc
+
+# Word lock/temp files
+~$*.docx
