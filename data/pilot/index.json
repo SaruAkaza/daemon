@@ -116,17 +116,12 @@
       ]
     },
     {
-      "source": "anjos-a-cidade-de-prata",
-      "title": "Anjos - A Cidade de Prata",
-      "file": "anjos-a-cidade-de-prata.json",
+      "source": "anjos-angelicos-sicarios",
+      "title": "Anjos - A Cidade de Prata - Angélicos Sicários",
+      "file": "anjos-angelicos-sicarios.json",
       "status": "pilot_review",
       "areas": [
-        "aprimoramentos",
-        "cenarios_lore",
-        "classes",
-        "itens_equipamentos",
-        "poderes",
-        "regras_base"
+        "cenarios_lore"
       ]
     },
     {
