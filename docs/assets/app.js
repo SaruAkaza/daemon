@@ -737,7 +737,7 @@ function renderPilotNpcDetail(item) {
     return found;
   };
 
-  renderSectionGroup("Custo", take((title) => title.includes("custo")), true);
+  renderSectionGroup("Atributos", take((title) => title.includes("atributo")), true);
   renderSectionGroup(
     "PerÃ­cias e Combate",
     take((title) => title.includes("pericia") || title.includes("combate") || title.includes("ataque")),
