@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T10:18:11",
+  "generatedAt": "2026-06-05T10:36:39",
   "source": "aprimoramentos-3",
   "sourceFile": "Aprimoramentos_3_OCR_alta_qualidade.docx",
   "sourcePath": "Livros\\word\\feito\\Aprimoramentos_3_OCR_alta_qualidade.docx",
@@ -600,6 +600,45 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Não importa o quão rico ou poderoso seu Personagem possa ser, para carregar armas de fogo, uma destas duas condições deve ser satisfeita: ou seu Personagem as adquiriu legalmente, possui certificados e licença (o que não é uma desculpa para entrar em um tiroteio) ou as adquiriu no mercado negro (e portanto, pode ser indiciado criminalmente por porte ilegal de armas). Qualquer que seja a razão, ela deve estar explicada em Background."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arquimago",
+      "title": "Arquimago",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
+        "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
+        "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
+        "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
+        "5 Pontos: O Mago pode ter Focus 7 em um Caminho.",
+        "Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
+            "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
+            "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
+            "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
+            "5 Pontos: O Mago pode ter Focus 7 em um Caminho."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes."
           ]
         }
       ]
@@ -1264,6 +1303,37 @@
           "paragraphs": [
             "o destino lhe sorri benignamente, preservando sua vida quando necessário ou quando sua própria insensatez a colocar em perigo. Uma vez por sessão de jogo, quando seu Personagem sofrer quaisquer tipos de ferimentos, você poderá fazer um Teste de CON.",
             "Se você for bem sucedido, seu Personagem não perde nenhum PV. Se falhar você permanece tão ferido quanto antes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cranio-do-conhecimento",
+      "title": "Crânio do Conhecimento",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1+ Ponto",
+        "o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1+ Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!)."
           ]
         }
       ]
@@ -3626,12 +3696,7 @@
         "1 Ponto: líder reconhecido de um bairro.",
         "2 Pontos: alguns bairros ou uma pequena cidade.",
         "3 Pontos: uma metrópole ou várias pequenas cidades.",
-        "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena. Talento 1 ponto por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate. Arquimago Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes.",
-        "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
-        "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
-        "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
-        "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
-        "11 Pontos: O Mago pode ter Focus 7 em um Caminho. Crânio do Conhecimento 1+ ponto: o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!).",
+        "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena.",
         "Status indica a reputação e o status entre os seres sobrenaturais (demônios, anjos, outros magos e até mesmo dragões). Quanto mais status seu Personagem tiver, melhor tratado (ou mais temido) pelos outros NPCs ele será."
       ],
       "sections": [
@@ -3643,12 +3708,7 @@
             "1 Ponto: líder reconhecido de um bairro.",
             "2 Pontos: alguns bairros ou uma pequena cidade.",
             "3 Pontos: uma metrópole ou várias pequenas cidades.",
-            "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena. Talento 1 ponto por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate. Arquimago Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes.",
-            "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
-            "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
-            "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
-            "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
-            "11 Pontos: O Mago pode ter Focus 7 em um Caminho. Crânio do Conhecimento 1+ ponto: o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!)."
+            "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena."
           ]
         },
         {
@@ -3745,6 +3805,37 @@
             "Cada",
             "Personagem pode escolher este Aprimoramento somente UMA vez e no máximo dois Personagens de cada grupo podem escolhê-lo.",
             "Durante o Jogo, o Mestre pode ajudar o Personagem em questões relacionadas a Perícia escolhida, com ideias, sugestões e o melhor procedimento a ser tomado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talento",
+      "title": "Talento",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate."
           ]
         }
       ]
@@ -4106,7 +4197,7 @@
     }
   ],
   "areaCounts": {
-    "aprimoramentos": 119,
+    "aprimoramentos": 122,
     "regras_base": 1
   },
   "reviewNotes": [
@@ -4114,6 +4205,6 @@
     "Texto revisado antes da catalogacao; paginas soltas e cabecalho OCR foram removidos.",
     "Entradas negativas foram separadas a partir da secao Negativos e/ou pelo sinal do custo.",
     "Entradas do tipo Vide Dependencia foram preservadas como referencias, sem inventar custo numerico.",
-    "Total de aprimoramentos catalogados: 119 (86 positivos, 33 negativos)."
+    "Total de aprimoramentos catalogados: 122 (89 positivos, 33 negativos)."
   ]
 }

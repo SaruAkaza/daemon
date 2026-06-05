@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """
-Build Anjos - Angélicos Sicários with individual equipment entities
+Build Anjos - Angélicos Sicários pilot.
+
+Reads the DOCX directly. Critical: the source has many soft line-breaks that
+split sentences mid-paragraph. This script reconstructs coherent paragraphs
+BEFORE sectioning, then splits powers/maneuvers/weapons into individual
+entities by their named anchors.
 """
 
 from pathlib import Path
 import json
+import re
 from datetime import datetime
 from docx import Document
-import re
 
 from common import ROOT, slugify, write_json
 
@@ -17,162 +22,283 @@ SOURCE_PATH = ROOT / "Livros" / "word" / "Anjos - A Cidade de Prata - Angélicos
 OUT_PATH = ROOT / "data" / "pilot" / f"{SOURCE}.json"
 DOCS_OUT_PATH = ROOT / "docs" / "assets" / "data" / "pilot" / f"{SOURCE}.json"
 
-def normalize_text(text: str) -> str:
-    text = text.replace(" ", " ")
-    text = text.replace("—", "-").replace("–", "-")
-    text = text.replace(""", '"').replace(""", '"').replace("'", "'")
-    text = re.sub(r"\s+", " ", text).strip()
-    text = re.sub(r"\s+([,.;:!?])", r"\1", text)
-    return text
+# Section titles that appear standalone (used as section delimiters / kept apart)
+SECTION_TITLES = {
+    "O Evangelho de Judas", "Angélicos Sicários", "Imagens internas:",
+    "Agradecimentos", "O Plano de Christos", "A Origem", "Organização",
+    "A Caçada sem fim", "Batalhas Patrísticas", "Atividades no Império Romano",
+    "A Idade Média", "As Cruzadas", "Grandes cismas", "A Inquisição",
+    "Reforma e Contrarreforma", "Iniquidades", "Arcádia", "Aasgard", "Katmaran",
+    "A Cidade Dourada de Ra", "Tir Na Nog", "ArK-A-Nun", "Limbo",
+    "O Mercado de Assassinos", "A Guilda", "Formas de Pagamento", "Especialistas",
+    "Argúcias (Sicários)", "O Credo do Silêncio",
+}
 
-def extract_paragraphs() -> list[str]:
+# Combat maneuvers (aprimoramentos) — anchored names, in document order
+MANEUVER_NAMES = [
+    "Desarmar com Asa", "Ataque Rolante", "Finta", "Mata-Dragão",
+    "Coração de Fafnir", "Calcanhar da Fera", "Asas Cortantes",
+]
+
+# Weapons / equipment — anchored names, in document order
+WEAPON_NAMES = [
+    "Yaldabaoth", "Nebro", "Saklas", "Harmathoth", "Galila", "Exarp", "Hcoma",
+    "Manto do Sicário", "Angélica Sica", "Nanta Biton", "Escudo de Orichalko",
+]
+
+# Prison entities (lore) — anchored names
+PRISON_NAMES = ["Shamayim", "Raquia", "Shehaquim", "Machanon"]
+
+
+def normalize(text: str) -> str:
+    text = text.replace("\xa0", " ").replace("—", "-").replace("–", "-")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def coherent_paragraphs() -> list[str]:
+    """Extract DOCX paragraphs, rejoining soft-broken fragments into
+    coherent paragraphs."""
     doc = Document(SOURCE_PATH)
-    paras = []
-    for p in doc.paragraphs:
-        text = normalize_text(p.text)
-        if text and text != TITLE:
-            paras.append(text)
-    return paras
+    raw = [normalize(p.text) for p in doc.paragraphs]
+    raw = [t for t in raw if t and t != TITLE]
+
+    # Merge the split title "Argúcias" + "(Sicários)"
+    merged = []
+    i = 0
+    while i < len(raw):
+        if raw[i] == "Argúcias" and i + 1 < len(raw) and raw[i + 1] == "(Sicários)":
+            merged.append("Argúcias (Sicários)")
+            i += 2
+        else:
+            merged.append(raw[i])
+            i += 1
+    raw = merged
+
+    is_noise = lambda l: bool(re.match(r"^\d{1,3}$", l.strip()))
+    is_epigraph = lambda l: l.lstrip().startswith("“")
+    ends_terminal = lambda l: l.rstrip().endswith((".", "!", "?", "”", ")", "]", ":"))
+
+    result: list[str] = []
+    buffer = ""
+
+    def flush():
+        nonlocal buffer
+        if buffer.strip():
+            result.append(buffer.strip())
+        buffer = ""
+
+    for line in raw:
+        if is_noise(line):
+            continue
+        if line in SECTION_TITLES:
+            flush()
+            result.append(line)
+            continue
+        if is_epigraph(line):
+            flush()
+            buffer = line
+            # Epigraph closes immediately unless attribution is still open
+            if not (buffer.rstrip().endswith("-") or buffer.rstrip().endswith("”")):
+                flush()
+            continue
+        if not buffer:
+            buffer = line
+        elif ends_terminal(buffer):
+            flush()
+            buffer = line
+        else:
+            if buffer.endswith("-") and not buffer.endswith(" -"):
+                buffer = buffer[:-1] + line  # hyphenated name (e.g. ArK-A-Nun)
+            else:
+                buffer = buffer + " " + line
+    flush()
+    return result
+
+
+def split_by_anchors(blob: str, names: list[str], require_colon: bool = False) -> list[tuple[str, str]]:
+    """Split a text blob into (name, text) chunks using known leading names.
+
+    Only the FIRST definition of each name is used as a split point (later
+    mentions inside descriptions are ignored). When require_colon is True the
+    name must be followed by an optional cost and a colon (the definition form,
+    e.g. ``Exarp:`` or ``Desarmar com Asa (25):``)."""
+    escaped = [re.escape(n) for n in names]
+    if require_colon:
+        anchor = r"(?:(?<=^)|(?<=[\s.]))(" + "|".join(escaped) + r")(?:\s*\([^)]*\))?\s*:"
+    else:
+        anchor = r"(?:(?<=^)|(?<=[\s.]))(" + "|".join(escaped) + r")\b"
+    pattern = re.compile(anchor)
+
+    # Keep only the first match per name, in document order
+    seen = set()
+    starts = []
+    for m in pattern.finditer(blob):
+        name = m.group(1)
+        if name in seen:
+            continue
+        seen.add(name)
+        starts.append((m.start(), name))
+    starts.sort()
+
+    chunks = []
+    for idx, (start, name) in enumerate(starts):
+        end = starts[idx + 1][0] if idx + 1 < len(starts) else len(blob)
+        chunks.append((name, blob[start:end].strip()))
+    return chunks
+
+
+def split_powers(blob: str) -> list[tuple[str, str]]:
+    """Split Argúcias by 'Nível N: Nome.' markers."""
+    # Normalize 'Nivel' -> 'Nível'
+    blob = re.sub(r"\bNivel\b", "Nível", blob)
+    pattern = re.compile(r"(Nível\s+\d+:\s*[^.]+\.)")
+    parts = pattern.split(blob)
+    chunks = []
+    # parts: [pre, marker1, body1, marker2, body2, ...]
+    i = 1
+    while i < len(parts):
+        marker = parts[i].strip()
+        body = parts[i + 1].strip() if i + 1 < len(parts) else ""
+        # marker looks like "Nível 1: Marca." -> name = "Marca"
+        mm = re.match(r"Nível\s+\d+:\s*(.+?)\.", marker)
+        name = mm.group(1).strip() if mm else marker
+        text = (marker + " " + body).strip()
+        chunks.append((name, text))
+        i += 2
+    return chunks
+
+
+def build_section(title, area, paragraphs):
+    return {
+        "id": slugify(title),
+        "title": title,
+        "area": area,
+        "paragraphs": [p for p in paragraphs if p.strip()],
+    }
+
+
+def build_entity(name, area, kind, paragraphs):
+    return {
+        "id": slugify(name),
+        "title": name,
+        "area": area,
+        "kind": kind,
+        "paragraphs": [p for p in paragraphs if p.strip()],
+        "sections": [],
+    }
+
 
 def build_pilot() -> dict:
-    paras = extract_paragraphs()
+    paras = coherent_paragraphs()
 
-    groups = []
-    sections_list = []
+    # Index helpers
+    def find(title):
+        return paras.index(title)
 
-    # 1. LORE & HISTÓRIA GROUP (9 subsections)
+    # ---- LORE sections (title -> content until next title) ----
+    lore_titles_in_order = [
+        "O Plano de Christos", "A Origem", "Organização", "A Caçada sem fim",
+        "Batalhas Patrísticas", "Atividades no Império Romano", "A Idade Média",
+        "As Cruzadas", "Grandes cismas", "A Inquisição", "Reforma e Contrarreforma",
+        "Iniquidades", "Arcádia", "Aasgard", "Katmaran", "A Cidade Dourada de Ra",
+        "Tir Na Nog", "ArK-A-Nun", "Limbo", "O Mercado de Assassinos", "A Guilda",
+        "Formas de Pagamento", "Especialistas",
+    ]
+
+    # Front matter = everything before first lore title
+    first_lore_idx = find(lore_titles_in_order[0])
+    front_matter = paras[:first_lore_idx]
+
     lore_sections = []
-    lore_subsections = {
-        "Origem e Contexto": (0, 50),
-        "Batalhas Patrísticas": (48, 70),
-        "Império Romano": (70, 86),
-        "Idade Média": (84, 99),
-        "Cruzadas e Cismas": (99, 120),
-        "Inquisição e Reforma": (120, 143),
-        "Iniquidades": (142, 150),
-        "Locais Estratégicos": (150, 175),
-        "Limbo e Prisões": (200, 206),
-    }
+    # Apresentação (front matter)
+    fm_content = [p for p in front_matter if p not in SECTION_TITLES or p in
+                  ("O Evangelho de Judas", "Angélicos Sicários")]
+    lore_sections.append(build_section("Apresentação", "cenarios_lore", front_matter))
 
-    for sec_title, (start, end) in lore_subsections.items():
-        if end > len(paras):
-            end = len(paras)
-        content = [p for p in paras[start:end] if p.strip()]
-        if content:
-            lore_sections.append({
-                "id": slugify(sec_title),
-                "title": sec_title,
-                "area": "cenarios_lore",
-                "paragraphs": content
-            })
+    # Each lore title section
+    all_title_positions = sorted(
+        [find(t) for t in lore_titles_in_order] +
+        [find("Argúcias (Sicários)")]
+    )
+    for t in lore_titles_in_order:
+        start = find(t)
+        # next title position after start
+        nexts = [pos for pos in all_title_positions if pos > start]
+        end = min(nexts) if nexts else len(paras)
+        content = paras[start + 1:end]
+        lore_sections.append(build_section(t, "cenarios_lore", content))
 
-    if lore_sections:
-        groups.append({
-            "id": "cenarios-lore-sicarios",
-            "title": "Lore & História",
-            "kind": "setting",
-            "area": "cenarios_lore",
-            "sectionTitle": "Cenário",
-            "sections": lore_sections
-        })
+    # ---- POWERS (Argúcias) ----
+    arg_idx = find("Argúcias (Sicários)")
+    credo_idx = find("O Credo do Silêncio")
+    powers_blob = " ".join(paras[arg_idx + 1:credo_idx])
+    power_chunks = split_powers(powers_blob)
+    power_entities = [build_entity(n, "poderes", "power", [t]) for n, t in power_chunks]
 
-    # 2. PODERES GROUP
-    power_content = [p for p in paras[152:166] if p.strip()]
-    if power_content:
-        groups.append({
-            "id": "poderes-sicarios",
-            "title": "Argúcias (Poderes)",
-            "kind": "power",
-            "area": "poderes",
-            "sectionTitle": "Poder",
-            "sections": [{
-                "id": "poderes-dos-sicarios",
-                "title": "Poderes dos Sicários",
-                "area": "poderes",
-                "paragraphs": power_content
-            }]
-        })
+    # ---- CREDO (lore) + verses ----
+    # Credo verses run from after credo_idx until first epigraph that precedes maneuvers
+    # Find the "Clube da Luta" epigraph (maneuvers start after it)
+    luta_idx = next(i for i, p in enumerate(paras)
+                    if p.startswith("“As lutas duram"))
+    credo_content = paras[credo_idx + 1:luta_idx]
+    lore_sections.append(build_section("O Credo do Silêncio", "cenarios_lore", credo_content))
 
-    # 3. APRIMORAMENTOS - TÉCNICAS DE COMBATE (individual manobras as entities)
-    technique_entities = []
-    technique_lines = {
-        "Desarmar com Asa": (178, 178),
-        "Ataque Rolante": (179, 179),
-        "Finta": (179, 179),
-        "Mata-Dragão": (179, 180),
-        "Coração de Fafnir": (180, 180),
-        "Calcanhar da Fera": (180, 180),
-        "Asas Cortantes": (181, 181),
-    }
+    # ---- MANEUVERS (aprimoramentos) ----
+    # From after Clube da Luta epigraph until the Looper epigraph
+    looper_idx = next(i for i, p in enumerate(paras)
+                      if p.startswith("“A única regra"))
+    maneuvers_blob = " ".join(paras[luta_idx + 1:looper_idx])
+    maneuver_chunks = split_by_anchors(maneuvers_blob, MANEUVER_NAMES, require_colon=True)
+    maneuver_entities = [build_entity(n, "aprimoramentos", "enhancement", [t])
+                         for n, t in maneuver_chunks]
 
-    for tech_name, (start, end) in technique_lines.items():
-        if end < len(paras):
-            content = [p for p in paras[start:end+1] if p.strip() and tech_name in p]
-            if content:
-                technique_entities.append({
-                    "id": slugify(tech_name),
-                    "title": tech_name,
-                    "area": "aprimoramentos",
-                    "kind": "enhancement",
-                    "paragraphs": content,
-                    "sections": []
-                })
+    # ---- WEAPONS (itens) ----
+    # From after Looper epigraph until the Nietzche/Abismo epigraph
+    abismo_idx = next(i for i, p in enumerate(paras)
+                      if p.startswith("“Não olhe muito tempo"))
+    weapons_blob = " ".join(paras[looper_idx + 1:abismo_idx])
+    weapon_chunks = split_by_anchors(weapons_blob, WEAPON_NAMES, require_colon=True)
+    weapon_entities = [build_entity(n, "itens_equipamentos", "equipment", [t])
+                       for n, t in weapon_chunks]
 
-    if technique_entities:
-        groups.append({
-            "id": "aprimoramentos-sicarios",
-            "title": "Manobras de Combate",
-            "kind": "enhancement",
-            "area": "aprimoramentos",
-            "sectionTitle": "Aprimoramento",
-            "sections": technique_entities
-        })
+    # ---- PRISONS (lore) ----
+    prisons_blob = " ".join(paras[abismo_idx + 1:])
+    # Keep the intro (As Luminárias...) as a lore section, then split prisons
+    prison_chunks = split_by_anchors(prisons_blob, PRISON_NAMES, require_colon=True)
+    intro_end = prisons_blob.find(prison_chunks[0][1]) if prison_chunks else len(prisons_blob)
+    prison_intro = prisons_blob[:intro_end].strip()
+    prison_sections = []
+    if prison_intro:
+        prison_sections.append(build_section("As Luminárias", "cenarios_lore", [prison_intro]))
+    for n, t in prison_chunks:
+        prison_sections.append(build_section(n, "cenarios_lore", [t]))
+    lore_sections.extend(prison_sections)
 
-    # 4. ITENS EQUIPAMENTOS - Individual weapons/artifacts as entities
-    weapon_defs = {
-        "Yaldabaoth": (183, 186),
-        "Nebro": (185, 186),
-        "Saklas": (186, 186),
-        "Harmathoth": (187, 188),
-        "Galila": (189, 190),
-        "Exarp": (191, 191),
-        "Hcoma": (191, 193),
-        "Manto do Sicário": (194, 195),
-        "Angélica Sica": (196, 197),
-        "Nanta Biton": (197, 198),
-        "Escudo de Orichalko": (199, 200),
-    }
+    # ---- Assemble groups ----
+    groups = [
+        {
+            "id": "cenarios-lore-sicarios", "title": "Lore & História",
+            "kind": "setting", "area": "cenarios_lore", "sectionTitle": "Cenário",
+            "sections": lore_sections,
+        },
+        {
+            "id": "poderes-sicarios", "title": "Argúcias (Poderes)",
+            "kind": "power", "area": "poderes", "sectionTitle": "Poder",
+            "sections": power_entities,
+        },
+        {
+            "id": "aprimoramentos-sicarios", "title": "Manobras de Combate",
+            "kind": "enhancement", "area": "aprimoramentos", "sectionTitle": "Aprimoramento",
+            "sections": maneuver_entities,
+        },
+        {
+            "id": "equipamentos-sicarios", "title": "Equipamentos & Armas",
+            "kind": "equipment", "area": "itens_equipamentos", "sectionTitle": "Equipamento",
+            "sections": weapon_entities,
+        },
+    ]
 
-    weapon_entities = []
-    for weapon_name, (start, end) in weapon_defs.items():
-        if end < len(paras):
-            content = [p for p in paras[start:end+1] if p.strip()]
-            if content:
-                weapon_entities.append({
-                    "id": slugify(weapon_name),
-                    "title": weapon_name,
-                    "area": "itens_equipamentos",
-                    "kind": "equipment",
-                    "paragraphs": content,
-                    "sections": []
-                })
-
-    if weapon_entities:
-        groups.append({
-            "id": "equipamentos-sicarios",
-            "title": "Equipamentos & Armas",
-            "kind": "equipment",
-            "area": "itens_equipamentos",
-            "sectionTitle": "Equipamento",
-            "sections": weapon_entities
-        })
-
-    # Count areas
-    area_counts = {}
-    for g in groups:
-        area = g["area"]
-        count = len(g.get("sections", []))
-        area_counts[area] = area_counts.get(area, 0) + count
+    area_counts = {g["area"]: len(g["sections"]) for g in groups}
 
     return {
         "version": 1,
@@ -182,24 +308,25 @@ def build_pilot() -> dict:
         "sourceFile": SOURCE_PATH.name,
         "sourcePath": str(SOURCE_PATH.relative_to(ROOT)),
         "title": TITLE,
-        "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos da Cidade de Prata. Inclui 9 seções de história/lore, 7 técnicas de combate (aprimoramentos), 11 armas/artefatos individuais, e poderes especiais.",
+        "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos da Cidade de Prata. História completa da Ordem, poderes (Argúcias), manobras de combate, armas/artefatos e prisões secretas.",
         "areas": sorted(area_counts.keys()),
         "groups": groups,
         "sections": [],
         "areaCounts": area_counts,
     }
 
-def main() -> None:
-    print(f"Building with individual equipment entities...")
-    payload = build_pilot()
 
+def main() -> None:
+    payload = build_pilot()
     write_json(OUT_PATH, payload)
     write_json(DOCS_OUT_PATH, payload)
-
     print(f"Groups: {len(payload['groups'])}")
-    for g in payload['groups']:
+    for g in payload["groups"]:
         print(f"  - {g['title']}: {len(g['sections'])} entities")
-    print(f"Total areas: {payload['areaCounts']}")
+        for s in g["sections"]:
+            print(f"      . {s['title']}")
+    print(f"Areas: {payload['areaCounts']}")
+
 
 if __name__ == "__main__":
     main()

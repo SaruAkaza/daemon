@@ -17,8 +17,8 @@ if not SOURCE_PATH.exists():
 OUT_PATH = ROOT / "data" / "pilot" / f"{SOURCE}.json"
 DOCS_OUT_PATH = ROOT / "docs" / "assets" / "data" / "pilot" / f"{SOURCE}.json"
 
-COST_RE = re.compile(r"^([+-]?\d+)\s+pontos?(?:\s+cada|\s+para cada sentido)?\s*[:.]?\s*(.*)$", re.IGNORECASE)
-INLINE_COST_RE = re.compile(r"\s([+-]?\d+\s+pontos?(?:\s+cada|\s+para cada sentido)?\s*:)", re.IGNORECASE)
+COST_RE = re.compile(r"^([+-]?\d+\+?)\s+pontos?(?:\s+cada|\s+para cada sentido)?\s*[:.]?\s*(.*)$", re.IGNORECASE)
+INLINE_COST_RE = re.compile(r"\s([+-]?\d+\+?\s+pontos?(?:\s+cada|\s+para cada sentido)?\s*:)", re.IGNORECASE)
 TOPIC_LABEL_RE = re.compile(r"^[A-ZÁÉÍÓÚÂÊÔÃÕÇ][A-Za-zÁÉÍÓÚÂÊÔÃÕÇáéíóúâêôãõç ]{2,42}:\s+")
 
 DROP_EXACT = {
@@ -69,6 +69,7 @@ TEXT_FIXES = {
     "11 ponto: 300": "5 pontos: 300",
     "11 ponto: 30 a 40 soldados": "5 pontos: 30 a 40 soldados",
     "11 ponto: renda de até US$ 32.000 mensais": "5 pontos: renda de até US$ 32.000 mensais",
+    "11 ponto: O Mago pode ter Focus 7": "5 pontos: O Mago pode ter Focus 7",
     "custo de 11 ponto (3+1,5 arredondado para cima)": "custo de 5 pontos (3+1,5 arredondado para cima)",
     "12 pontos: 350": "6 pontos: 350",
     "612 pontos": "62 pontos",
@@ -107,6 +108,7 @@ KNOWN_INLINE_TITLES = [
     "Amigo Fantasma",
     "Anjo da Guarda",
     "Armas de Fogo",
+    "Arquimago",
     "Biblioteca",
     "Biocinético",
     "Canalizador",
@@ -130,6 +132,7 @@ KNOWN_INLINE_TITLES = [
     "Mestre em Caminho",
     "Médium",
     "Conjuração",
+    "Crânio do Conhecimento",
     "Homúnculo",
     "Pacto",
     "Pactos",
@@ -143,6 +146,7 @@ KNOWN_INLINE_TITLES = [
     "Sociedade Secreta",
     "Sortudo",
     "Status",
+    "Talento",
     "Telecinético",
     "Telepata",
     "Teleportador",
@@ -228,15 +232,18 @@ def cost_label(text: str) -> str:
     if not match:
         return text
     raw_value = match.group(1)
-    value = int(raw_value)
+    is_minimum = raw_value.endswith("+")
+    numeric_value = raw_value.rstrip("+")
+    value = int(numeric_value)
     sign = "+" if raw_value.startswith("+") else ""
+    suffix = "+" if is_minimum else ""
     unit = "Ponto" if abs(value) == 1 else "Pontos"
     lower = text.lower()
     if "para cada sentido" in lower:
-        return f"{sign}{value} {unit} para cada sentido"
+        return f"{sign}{value}{suffix} {unit} para cada sentido"
     if re.match(r"^[+-]?\d+\s+pontos?\s+cada\b", text, flags=re.IGNORECASE):
-        return f"{sign}{value} {unit} cada"
-    return f"{sign}{value} {unit}"
+        return f"{sign}{value}{suffix} {unit} cada"
+    return f"{sign}{value}{suffix} {unit}"
 
 
 def format_cost_segment(text: str) -> str:
