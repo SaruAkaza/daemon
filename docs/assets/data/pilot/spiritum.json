@@ -11,13 +11,13 @@
     "classes",
     "criaturas_npcs",
     "kits",
+    "linhagens",
     "poderes",
-    "racas",
     "regras_base",
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-05T17:54:02",
+  "generatedAt": "2026-06-05T17:57:26",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -1784,9 +1784,9 @@
     {
       "id": "espiritos",
       "title": "Espíritos",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
       "sectionTitle": "Espíritos",
       "paragraphs": [
         "Espíritos são os habitantes de Spiritum, o Reino dos Mortos. Eles também englobam todos aqueles que residem nos Vales Espirituais. Um espírito não \"nasce\" ou \"cresce\", permanecendo pela eternidade com a última forma que adotou, ou mesmo modificando essa forma.",
@@ -1805,7 +1805,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Espíritos são os habitantes de Spiritum, o Reino dos Mortos. Eles também englobam todos aqueles que residem nos Vales Espirituais. Um espírito não \"nasce\" ou \"cresce\", permanecendo pela eternidade com a última forma que adotou, ou mesmo modificando essa forma.",
             "Normalmente, para começar uma campanha em que todos os Personagens estejam com o mesmo nível de poder, o Mestre deve determinar que os espíritos que participem da campanha tenham aproximadamente a mesma idade (entre 5 e 10 anos para Personagens do primeiro nível).",
@@ -1816,7 +1816,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "O Jogador deve criar o espírito a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o espírito passa por um processo de transição que pode durar meses ou anos.",
             "A partir deste ponto, escreva a história do espírito até o momento onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",
@@ -1831,9 +1831,9 @@
     {
       "id": "fantasmas",
       "title": "Fantasmas",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
       "sectionTitle": "Fantasmas",
       "paragraphs": [
         "Ao contrário de um espírito, um fantasma não conseguiu cumprir sua missão na Terra por causa de algum acidente inesperado (um desastre de carro, um assassinato, uma explosão ou qualquer evento que terminou com a vida do Personagem).",
@@ -1855,7 +1855,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Ao contrário de um espírito, um fantasma não conseguiu cumprir sua missão na Terra por causa de algum acidente inesperado (um desastre de carro, um assassinato, uma explosão ou qualquer evento que terminou com a vida do Personagem).",
             "Estes Personagens permanecem presos na Terra na forma de um fantasma, invisível e que quase sempre lembra de alguma forma sua morte (existem fantasmas com buracos abertos de balas nos peitos, cavaleiros sem cabeça, incendiados, mutilados e com uma série de problemas que não o afetam, mas podem assustar ou impressionar outras pessoas).",
@@ -1868,7 +1868,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "O Jogador deve criar o fantasma a partir de sua última encarnação, dando especial atenção à missão que ele deveria ter cumprido e à forma como ele morreu. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
             "A partir da morte do Personagem, escreva a história até o ponto onde começa a campanha.",
@@ -1884,9 +1884,9 @@
     {
       "id": "aparicao",
       "title": "Aparição",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
       "sectionTitle": "Aparição",
       "paragraphs": [
         "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornamse aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
@@ -1909,7 +1909,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornamse aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
             "Às aparições demoram a compreender o porquê de sua existência. Normalmente passam um a dois anos em choque, sem compreender exatamente o que está acontecendo... muitas vezes acordam ao lado de seus corpos, enterrados em um caixão, e passam meses ou até mesmo anos apodrecendo (bem... tendo a sensação de que apodrecem) até que consigam escapar novamente. Muitas inconscientemente apodrecem seus peispíritos até adquirirem formas que lembram corpos apodrecidos ou mesmo cadáveres decompostos.",
@@ -1922,7 +1922,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Assim como nos outros casos, o Jogador deve criar a aparição a partir de sua última encarnação, dando especial atenção à forma como ela se matou ou foi morta. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
             "A partir da morte do Personagem, escreva a história até o ponto onde começa a campanha.",
@@ -1939,9 +1939,9 @@
     {
       "id": "espectros",
       "title": "Espectros",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
       "sectionTitle": "Espectros",
       "paragraphs": [
         "Às primeiras referências aos espectros datam de aproximadamente 4.000 a.C., mas sabemos que estas criaturas existem desde a época em que Arkanun ocupava o lugar onde hoje está a Terra na Roda dos Mundos, assombrando os habitantes da Atlântida e Lemúria.",
@@ -1971,7 +1971,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Às primeiras referências aos espectros datam de aproximadamente 4.000 a.C., mas sabemos que estas criaturas existem desde a época em que Arkanun ocupava o lugar onde hoje está a Terra na Roda dos Mundos, assombrando os habitantes da Atlântida e Lemúria.",
             "Os espectros eram originalmente seres poderosíssimos de Infernun, cujos corpos físicos foram destruídos milênios atrás. Estes espíritos corrompidos vagaram pelas regiões mais densas do Umbral até conseguirem uma chance de se aproximar da Terra, através dos rituais de conjuração necromânticos.",
@@ -1988,7 +1988,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "O Jogador deve criar o espectro a partir de sua morte como humano e sua pós-vida durante os primeiros anos no Inferno. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
             "A partir da chegada do Personagem ao Inferno, escreva a história até o ponto onde começa a campanha. Detalhes sobre os Círculos do Inferno e dos Senhores de cada domínio podem ser encontradas no livro DEMÔNIOS: A DIVINA COMÉDIA.",
@@ -2008,9 +2008,9 @@
     {
       "id": "obsessores",
       "title": "Obsessores",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
       "sectionTitle": "Obsessores",
       "paragraphs": [
         "Obsessores são um tipo especial de espectro: uma pessoa que morreu mas ainda está presa à Terra por alguma emoção muito forte como paixão, ganância, ciúmes, ódio, inveja e outros. Este sentimento é tão forte que o espírito se alimenta dele para aumentar e canalizar seus poderes em Spiritum.",
@@ -2032,7 +2032,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Obsessores são um tipo especial de espectro: uma pessoa que morreu mas ainda está presa à Terra por alguma emoção muito forte como paixão, ganância, ciúmes, ódio, inveja e outros. Este sentimento é tão forte que o espírito se alimenta dele para aumentar e canalizar seus poderes em Spiritum.",
             "Os obsessores vivem nos Vales Umbralinos ou nas regiões de Spiritum que ficam mais próximas da Terra, para que fiquem bem perto de seus objetos de obsessão.",
@@ -2048,7 +2048,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "O Mestre deve criar DOIS Personagens (o obsessor a partir de sua última encarnação, dando especial atenção à missão que ele deveria ter cumprido e à forma como elemorreu. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
             "A partir da morte do Personagem, escreva a história até o ponto onde começa a Campanha, incluindo a relação entre os dois Personagens (obsessor e obsediado).",
@@ -2061,9 +2061,9 @@
     {
       "id": "mediuns",
       "title": "Médiuns",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "classes",
+      "kind": "class",
+      "sectionId": "class",
       "sectionTitle": "Médiuns",
       "paragraphs": [
         "Médiuns são as pessoas que possuem qualquer tipo de contato com o mundo espiritual. No mundo real, praticamente todas as pessoas possuem algum tipo de dom mediúnico, em maior ou menor grau. No Universo de Trevas, os Médiuns são mais poderosos que seus equivalentes reais, sendo capazes de grandes feitos sobrenaturais.",
@@ -2105,7 +2105,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "classes",
           "paragraphs": [
             "Médiuns são as pessoas que possuem qualquer tipo de contato com o mundo espiritual. No mundo real, praticamente todas as pessoas possuem algum tipo de dom mediúnico, em maior ou menor grau. No Universo de Trevas, os Médiuns são mais poderosos que seus equivalentes reais, sendo capazes de grandes feitos sobrenaturais.",
             "Tipos de Médium",
@@ -2136,7 +2136,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "classes",
           "paragraphs": [
             "O Personagem médium é criado com 101 pontos de atributo e pontos de perícia de acordo com sua INT e idade. A mediunidade é comprada com pontos de aprimoramento.",
             "O questionário de criação de Personagens é muito importante, principalmente a parte da história referente às primeiras experiências em relação aos poderes mediúnicos.",
@@ -2154,9 +2154,9 @@
     {
       "id": "nephalins",
       "title": "Nephalins",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "linhagens",
+      "kind": "lineage",
+      "sectionId": "lineage",
       "sectionTitle": "Nephalins",
       "paragraphs": [
         "OBS: pela sua complexidade, tanto na criação de Personagem quanto na construção das diversas histórias das reencarnações de um nephalin, recomenda-se que estes Personagens sejam utilizados apenas como NPCs ou controlados por Jogadores e Mestres experientes.",
@@ -2192,7 +2192,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "linhagens",
           "paragraphs": [
             "OBS: pela sua complexidade, tanto na criação de Personagem quanto na construção das diversas histórias das reencarnações de um nephalin, recomenda-se que estes Personagens sejam utilizados apenas como NPCs ou controlados por Jogadores e Mestres experientes.",
             "Pela definição tradicional, os nephalins são os filhos dos anjos com as mulheres humanas. Os primeiros nephalins que a Terra conheceu foram os filhos dos 200 anjos comandados por Samyaza na chamada Segunda Rebelião (veja mais detalhes sobre isso no livro ANJOS: A CIDADE DE PRATA).",
@@ -2224,7 +2224,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "linhagens",
           "paragraphs": [
             "Nephalins são criados com 101 pontos de atributo e pontos de perícia de acordo com sua INT e idade.",
             "O questionário de Criação de Personagens é muito importante, principalmente a parte da história referente às primeiras encarnações. O Mestre deve criar os detalhes a respeito das encarnações passadas, desenvolvendo-as de acordo com o desenrolar da campanha. Também deve determinar os principais NPCs que acompanharam o Personagem nessas encarnações, suas características e personalidade."
@@ -2235,9 +2235,9 @@
     {
       "id": "habitantes-do-sonhar",
       "title": "Habitantes do Sonhar",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
       "sectionTitle": "Habitantes do Sonhar",
       "paragraphs": [
         "Os habitantes do Sonhar não são exatamente Personagens. Criados pela forma-pensamento humana ou por desejo de Phantasus, Morpheus ou Proebetus, os habitantes do Sonhar possuem uma existência efêmera e dependente da vontade de outros. Por outro lado, enquanto houver energia espiritual para mantê-los na existência, podem ser considerados imortais.",
@@ -2277,7 +2277,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Os habitantes do Sonhar não são exatamente Personagens. Criados pela forma-pensamento humana ou por desejo de Phantasus, Morpheus ou Proebetus, os habitantes do Sonhar possuem uma existência efêmera e dependente da vontade de outros. Por outro lado, enquanto houver energia espiritual para mantê-los na existência, podem ser considerados imortais.",
             "O Reino dos Sonhos possui muitos condados formados por pessoas comuns que sonham todas as noites com os mesmos locais. Anos e anos de energias concentradas acabam por desenvolver formas próprias, sejam elas locais, objetos, animais ou mesmo pessoas.",
@@ -2291,7 +2291,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
             "do Sonhar",
@@ -2324,9 +2324,9 @@
     {
       "id": "loa",
       "title": "Loa",
-      "area": "racas",
-      "kind": "raca",
-      "sectionId": "raca",
+      "area": "criaturas_npcs",
+      "kind": "npc",
+      "sectionId": "npc",
       "sectionTitle": "Loa",
       "paragraphs": [
         "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Umiloa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
@@ -2345,7 +2345,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Umiloa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
             "Os loas normalmente são NPCs mas uma campanha envolvendo um viajante astral e seu loa conselheiro podem resultar em aventuras muito interessantes.",
@@ -2356,7 +2356,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "racas",
+          "area": "criaturas_npcs",
           "paragraphs": [
             "O Jogador deve criar o loa a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o loa passa por um processo de transição que pode durar meses ou anos.",
             "A partir deste ponto, escreva a história deste espírito até o ponto onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",

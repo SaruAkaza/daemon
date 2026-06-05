@@ -845,12 +845,14 @@ function itemTypeLabel(item) {
   if (item.kind === "enhancement") return "Aprimoramento";
   if (item.kind === "power") return "Poder";
   if (item.kind === "race") return "Raça";
+  if (item.kind === "lineage") return "Linhagem";
   if (item.kind === "ritual") return "Ritual";
   if (item.kind === "magia") return "Magia";
   if (item.kind === "class") return "Classe";
   if (item.kind === "maneuver") return "Manobra";
   if (item.kind === "equipment") return "Equipamento";
   if (item.kind === "kit") return "Kit";
+  if (item.kind === "creature") return "Criatura";
   if (item.kind === "group") return "Grupo";
   return "";
 }

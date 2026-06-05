@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T17:54:02",
+  "generatedAt": "2026-06-05T17:57:26",
   "sources": [
     {
       "source": "4killers",
@@ -273,8 +273,8 @@
         "classes",
         "criaturas_npcs",
         "kits",
+        "linhagens",
         "poderes",
-        "racas",
         "regras_base",
         "rituais"
       ]

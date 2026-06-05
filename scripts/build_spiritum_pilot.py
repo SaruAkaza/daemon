@@ -490,6 +490,30 @@ def make_classes() -> list[dict]:
     return results
 
 
+def make_spiritum_character_types() -> list[dict]:
+    remap = {
+        "Esp\u00edritos": ("criaturas_npcs", "creature"),
+        "Fantasmas": ("criaturas_npcs", "creature"),
+        "Apari\u00e7\u00e3o": ("criaturas_npcs", "creature"),
+        "Espectros": ("criaturas_npcs", "creature"),
+        "Obsessores": ("criaturas_npcs", "creature"),
+        "M\u00e9diuns": ("classes", "class"),
+        "Nephalins": ("linhagens", "lineage"),
+        "Habitantes do Sonhar": ("criaturas_npcs", "creature"),
+        "Loa": ("criaturas_npcs", "npc"),
+    }
+    results = []
+    for entry in make_races():
+        area, kind = remap[entry["title"]]
+        entry["area"] = area
+        entry["kind"] = kind
+        entry["sectionId"] = kind
+        for section in entry.get("sections", []):
+            section["area"] = area
+        results.append(entry)
+    return results
+
+
 def split_kit_paragraphs(paragraphs: list[str]) -> tuple[list[str], list[str], list[str]]:
     cost = [p for p in paragraphs if p.startswith("Custo:")]
     skill_start = next((i for i, p in enumerate(paragraphs) if p.startswith("Per\u00edcias:")), None)
@@ -625,7 +649,7 @@ def build_payload() -> dict:
     sections.extend(make_core_rules())
     sections.extend(make_aprimoramentos())
     sections.extend(make_character_options())
-    sections.extend(make_races())
+    sections.extend(make_spiritum_character_types())
     sections.extend(make_powers())
     sections.extend(make_rituals())
     sections.extend(make_items())
