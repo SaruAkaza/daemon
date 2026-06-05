@@ -1,0 +1,42 @@
+{
+  "agent": "claude",
+  "worktree": "daemon-claude",
+  "updatedAt": "2026-06-05",
+  "books": [
+    {
+      "file": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
+      "source": "anjos-angelicos-sicarios",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "Lore, poderes, manobras_combate, itens. Aguardando validação visual."
+    },
+    {
+      "file": "Anjos - Réquiem de Fé.docx",
+      "source": "anjos-requiem-de-fe",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "Sistema Storytelling. Lore, regras, classes, poderes, magias(120 por Caminho), criaturas."
+    },
+    {
+      "file": "Anjos cacadores-alados.docx",
+      "source": "anjos-cacadores-alados",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "d% clássico. Lore, racas(seitas), manobras, aprimoramentos, poderes(Nível), NPCs."
+    },
+    {
+      "file": "Anjos Jyhad - Faces da Fé.docx",
+      "source": "anjos-jyhad-faces-da-fe",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "Lore, kits(ordens angelicais), 24 NPCs. Títulos/espaçamento corrigidos."
+    },
+    {
+      "file": "Ark_a_nun_Arquivos_de_Bel_Kalaa_OCR_alta_qualidade.docx",
+      "source": "ark-a-nun-bel-kalaa",
+      "status": "in_progress",
+      "branch": "claude-pilots",
+      "notes": "Reivindicado por Claude (sugestão do Codex). Iniciando levantamento."
+    }
+  ]
+}
