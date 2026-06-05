@@ -839,6 +839,7 @@ nodes.flagFilter.addEventListener("change", (event) => {
 });
 
 nodes.refreshButton.addEventListener("click", () => {
+  state.selectedItemId = null;
   load().catch(showError);
 });
 

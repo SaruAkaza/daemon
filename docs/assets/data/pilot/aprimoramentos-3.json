@@ -1,10 +1,10 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T04:20:04",
+  "generatedAt": "2026-06-05T10:18:11",
   "source": "aprimoramentos-3",
   "sourceFile": "Aprimoramentos_3_OCR_alta_qualidade.docx",
-  "sourcePath": "Livros\\word\\Aprimoramentos_3_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\feito\\Aprimoramentos_3_OCR_alta_qualidade.docx",
   "title": "Aprimoramentos 3",
   "summary": "Compilacao de aprimoramentos conceituais, fisicos, mentais, sociais, sobrenaturais e negativos.",
   "areas": [
@@ -68,6 +68,108 @@
           "paragraphs": [
             "A margem de Acerto Crítico com UMA única perícia de Ataque é de 01-10%.",
             "Esse aprimoramento pode ser comprado mais de uma vez, cada uma para uma diferente perícia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afinidade-com-almas",
+      "title": "Afinidade com Almas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "o Personagem possui algum tipo de afinidade com o Reino dos Mortos. Espíritos vêm em busca de ajuda, auxílio em alguma missão ou mesmo conforto. Qualquer espírito não hostil sempre terá uma atitude amigável em relação ao Personagem (embora sua aparência possa ser assustadora e amedrontar o médium). Espíritos com problemas em uma área próxima do mago parecem senti-lo como um amigo. Cada problema que o Personagem resolve, ele acaba adquirindo um contato no mundo espiritual, que mais tarde poderá ajuda-lo em suas aventuras.",
+        "Este é um ótimo aprimoramento para ser utilizado como gancho para aventuras e campanhas."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "o Personagem possui algum tipo de afinidade com o Reino dos Mortos. Espíritos vêm em busca de ajuda, auxílio em alguma missão ou mesmo conforto. Qualquer espírito não hostil sempre terá uma atitude amigável em relação ao Personagem (embora sua aparência possa ser assustadora e amedrontar o médium). Espíritos com problemas em uma área próxima do mago parecem senti-lo como um amigo. Cada problema que o Personagem resolve, ele acaba adquirindo um contato no mundo espiritual, que mais tarde poderá ajuda-lo em suas aventuras.",
+            "Este é um ótimo aprimoramento para ser utilizado como gancho para aventuras e campanhas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afinidade-com-fadas",
+      "title": "Afinidade com Fadas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "3 Pontos: a presença do Personagem não assusta as fadas e outras criaturas de Arcádia; ao invés disso, ele as atrai e aguça sua curiosidade. Ao contrário dos outros humanos, as fadas, gnomos, ondinas e salamandras consideram seu Personagem diferente dos outros mortais.",
+        "4 Pontos: não só a presença do Personagem não assusta as fadas e outros seres de Arcádia, mas também ele possui 1 ou 2 amigos nos reinos de Arcádia. Detalhes da construção da ficha desses amigos ficam a cargo do Mestre, que deve utilizar esses NPCs como pano de fundo para Aventuras.",
+        "5 Pontos: o Personagem possui alguns companheiros nos reinos de Arcádia, bem como acesso a pelo menos um ou dois portais de ligação entre a Terra e o reino das fadas. Pode também possuir uma casa ou fortificação em um dos reinos. Detalhes devem ser sempre aprovados pelo Mestre."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 Pontos: a presença do Personagem não assusta as fadas e outras criaturas de Arcádia; ao invés disso, ele as atrai e aguça sua curiosidade. Ao contrário dos outros humanos, as fadas, gnomos, ondinas e salamandras consideram seu Personagem diferente dos outros mortais.",
+            "4 Pontos: não só a presença do Personagem não assusta as fadas e outros seres de Arcádia, mas também ele possui 1 ou 2 amigos nos reinos de Arcádia. Detalhes da construção da ficha desses amigos ficam a cargo do Mestre, que deve utilizar esses NPCs como pano de fundo para Aventuras.",
+            "5 Pontos: o Personagem possui alguns companheiros nos reinos de Arcádia, bem como acesso a pelo menos um ou dois portais de ligação entre a Terra e o reino das fadas. Pode também possuir uma casa ou fortificação em um dos reinos. Detalhes devem ser sempre aprovados pelo Mestre."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": "afinidade-com-magia",
+      "title": "Afinidade com Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "Apenas para não-magos.",
+        "seu Personagem, apesar de não ser um mago, possui algum tipo de afinidade com um dos Caminhos de Magia. Ele recebe sempre 1D de proteção contra Magias desse Caminho e pode realizar efeitos sutis (equivalentes a uma Magia de Focus 1) utilizando o Caminho escolhido.",
+        "Em compensação, receberá +1d6 de dano em Magias do Caminho Elemental oposto que sejam feitas contra ele.",
+        "Uma vez escolhido o Caminho, o Jogador não poderá mudá-lo mais tarde."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Apenas para não-magos.",
+            "seu Personagem, apesar de não ser um mago, possui algum tipo de afinidade com um dos Caminhos de Magia. Ele recebe sempre 1D de proteção contra Magias desse Caminho e pode realizar efeitos sutis (equivalentes a uma Magia de Focus 1) utilizando o Caminho escolhido.",
+            "Em compensação, receberá +1d6 de dano em Magias do Caminho Elemental oposto que sejam feitas contra ele.",
+            "Uma vez escolhido o Caminho, o Jogador não poderá mudá-lo mais tarde."
           ]
         }
       ]
@@ -680,12 +782,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 Pontos: também conhecidos por suas principais Disciplinas como Curandeiros e Vicissitologistas, podem controlar o fluxo da vida em todas as criaturas viventes, podendo comprar a Perícia Psíquica Força Vital. Afinidade com Almas",
-        "2 Pontos: o Personagem possui algum tipo de afinidade com o Reino dos Mortos. Espíritos vêm em busca de ajuda, auxílio em alguma missão ou mesmo conforto. Qualquer espírito não hostil sempre terá uma atitude amigável em relação ao Personagem (embora sua aparência possa ser assustadora e amedrontar o médium). Espíritos com problemas em uma área próxima do mago parecem senti-lo como um amigo. Cada problema que o Personagem resolve, ele acaba adquirindo um contato no mundo espiritual, que mais tarde poderá ajuda-lo em suas aventuras. Este é um ótimo aprimoramento para ser utilizado como gancho para aventuras e campanhas. Afinidade com Fadas",
-        "3 Pontos: a presença do Personagem não assusta as fadas e outras criaturas de Arcádia; ao invés disso, ele as atrai e aguça sua curiosidade. Ao contrário dos outros humanos, as fadas, gnomos, ondinas e salamandras consideram seu Personagem diferente dos outros mortais.",
-        "4 Pontos: não só a presença do Personagem não assusta as fadas e outros seres de Arcádia, mas também ele possui 1 ou 2 amigos nos reinos de Arcádia. Detalhes da construção da ficha desses amigos ficam a cargo do Mestre, que deve utilizar esses NPCs como pano de fundo para Aventuras.",
-        "5 Pontos: o Personagem possui alguns companheiros nos reinos de Arcádia, bem como acesso a pelo menos um ou dois portais de ligação entre a Terra e o reino das fadas. Pode também possuir uma casa ou fortificação em um dos reinos. Detalhes devem ser sempre aprovados pelo Mestre. Afinidade com Magia Apenas para não-magos.",
-        "1 Ponto: seu Personagem, apesar de não ser um mago, possui algum tipo de afinidade com um dos Caminhos de Magia. Ele recebe sempre 1D de proteção contra Magias desse Caminho e pode realizar efeitos sutis (equivalentes a uma Magia de Focus 1) utilizando o Caminho escolhido. Em compensação, receberá +1d6 de dano em Magias do Caminho Elemental oposto que sejam feitas contra ele. Uma vez escolhido o Caminho, o Jogador não poderá mudá-lo mais tarde."
+        "2 Pontos",
+        "também conhecidos por suas principais Disciplinas como Curandeiros e Vicissitologistas, podem controlar o fluxo da vida em todas as criaturas viventes, podendo comprar a Perícia Psíquica Força Vital."
       ],
       "sections": [
         {
@@ -693,19 +791,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 Pontos: também conhecidos por suas principais Disciplinas como Curandeiros e Vicissitologistas, podem controlar o fluxo da vida em todas as criaturas viventes, podendo comprar a Perícia Psíquica Força Vital. Afinidade com Almas",
-            "2 Pontos: o Personagem possui algum tipo de afinidade com o Reino dos Mortos. Espíritos vêm em busca de ajuda, auxílio em alguma missão ou mesmo conforto. Qualquer espírito não hostil sempre terá uma atitude amigável em relação ao Personagem (embora sua aparência possa ser assustadora e amedrontar o médium). Espíritos com problemas em uma área próxima do mago parecem senti-lo como um amigo. Cada problema que o Personagem resolve, ele acaba adquirindo um contato no mundo espiritual, que mais tarde poderá ajuda-lo em suas aventuras. Este é um ótimo aprimoramento para ser utilizado como gancho para aventuras e campanhas. Afinidade com Fadas",
-            "3 Pontos: a presença do Personagem não assusta as fadas e outras criaturas de Arcádia; ao invés disso, ele as atrai e aguça sua curiosidade. Ao contrário dos outros humanos, as fadas, gnomos, ondinas e salamandras consideram seu Personagem diferente dos outros mortais.",
-            "4 Pontos: não só a presença do Personagem não assusta as fadas e outros seres de Arcádia, mas também ele possui 1 ou 2 amigos nos reinos de Arcádia. Detalhes da construção da ficha desses amigos ficam a cargo do Mestre, que deve utilizar esses NPCs como pano de fundo para Aventuras.",
-            "5 Pontos: o Personagem possui alguns companheiros nos reinos de Arcádia, bem como acesso a pelo menos um ou dois portais de ligação entre a Terra e o reino das fadas. Pode também possuir uma casa ou fortificação em um dos reinos. Detalhes devem ser sempre aprovados pelo Mestre. Afinidade com Magia Apenas para não-magos.",
-            "1 Ponto: seu Personagem, apesar de não ser um mago, possui algum tipo de afinidade com um dos Caminhos de Magia. Ele recebe sempre 1D de proteção contra Magias desse Caminho e pode realizar efeitos sutis (equivalentes a uma Magia de Focus 1) utilizando o Caminho escolhido. Em compensação, receberá +1d6 de dano em Magias do Caminho Elemental oposto que sejam feitas contra ele. Uma vez escolhido o Caminho, o Jogador não poderá mudá-lo mais tarde."
+            "2 Pontos"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "também conhecidos por suas principais Disciplinas como Curandeiros e Vicissitologistas, podem controlar o fluxo da vida em todas as criaturas viventes, podendo comprar a Perícia Psíquica Força Vital."
+          ]
         }
       ]
     },
@@ -1062,10 +1157,19 @@
         "1 Ponto: um aliado importante.",
         "2 Pontos: dois aliados importantes.",
         "3 Pontos: quatro aliados importantes.",
-        "4 Pontos: oito aliados importantes. Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade. Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas. Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir). Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes. Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA). Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\". Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir? Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos.",
+        "4 Pontos: oito aliados importantes.",
         "Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer...). Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor.",
         "O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre).",
-        "Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente."
+        "Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente.",
+        "Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade.",
+        "Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações.",
+        "Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas.",
+        "Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir).",
+        "Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes.",
+        "Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA).",
+        "Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\".",
+        "Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir?",
+        "Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos."
       ],
       "sections": [
         {
@@ -1076,7 +1180,7 @@
             "1 Ponto: um aliado importante.",
             "2 Pontos: dois aliados importantes.",
             "3 Pontos: quatro aliados importantes.",
-            "4 Pontos: oito aliados importantes. Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade. Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas. Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir). Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes. Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA). Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\". Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir? Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos."
+            "4 Pontos: oito aliados importantes."
           ]
         },
         {
@@ -1086,7 +1190,16 @@
           "paragraphs": [
             "Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer...). Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor.",
             "O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre).",
-            "Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente."
+            "Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente.",
+            "Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade.",
+            "Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações.",
+            "Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas.",
+            "Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir).",
+            "Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes.",
+            "Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA).",
+            "Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\".",
+            "Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir?",
+            "Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos."
           ]
         }
       ]
@@ -1100,8 +1213,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 Pontos: também conhecido pelos cyberpunks por \"Colhões\". Você é totalmente desprovido do medo convencional, tal que em situações críticas, onde a maioria das pessoas fugiriam apavoradas, você continua firme. No caso de uma aventura de horror, ou em Testes de Resistência contra magias que gerem esse efeito, dobre a porcentagem dos Testes de WILL. Empatia com Animais",
-        "1 Ponto: os animais não vêem ameaça algumaa no personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados)."
+        "2 Pontos",
+        "também conhecido pelos cyberpunks por \"Colhões\". Você é totalmente desprovido do medo convencional, tal que em situações críticas, onde a maioria das pessoas fugiriam apavoradas, você continua firme. No caso de uma aventura de horror, ou em Testes de Resistência contra magias que gerem esse efeito, dobre a porcentagem dos Testes de WILL."
       ],
       "sections": [
         {
@@ -1109,15 +1222,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 Pontos: também conhecido pelos cyberpunks por \"Colhões\". Você é totalmente desprovido do medo convencional, tal que em situações críticas, onde a maioria das pessoas fugiriam apavoradas, você continua firme. No caso de uma aventura de horror, ou em Testes de Resistência contra magias que gerem esse efeito, dobre a porcentagem dos Testes de WILL. Empatia com Animais",
-            "1 Ponto: os animais não vêem ameaça algumaa no personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados)."
+            "2 Pontos"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "também conhecido pelos cyberpunks por \"Colhões\". Você é totalmente desprovido do medo convencional, tal que em situações críticas, onde a maioria das pessoas fugiriam apavoradas, você continua firme. No caso de uma aventura de horror, ou em Testes de Resistência contra magias que gerem esse efeito, dobre a porcentagem dos Testes de WILL."
+          ]
         }
       ]
     },
@@ -1492,6 +1606,37 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "você fala bem, com força ou doçura, conforme a ocasião exige, trazendo outras pessoas para o seu lado com discursos audaciosos. Você recebe um bônus igual a +25% em qualquer Teste envolvendo Etiqueta, Impressionar, Lábia e Liderança."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empatia-com-animais",
+      "title": "Empatia com Animais",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "os animais não vêem ameaça alguma no personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "os animais não vêem ameaça alguma no personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados)."
           ]
         }
       ]
@@ -3371,8 +3516,8 @@
       ]
     },
     {
-      "id": "sombras",
-      "title": "Sombras",
+      "id": "sombras-apenas-para-personagens-espiritos",
+      "title": "Sombras Apenas para Personagens Espíritos",
       "area": "aprimoramentos",
       "kind": "enhancement",
       "polarity": "negativo",
@@ -3380,7 +3525,6 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "-3 Pontos",
-        "Apenas para Personagens Espíritos",
         "o Personagem pecou demais quando em vida, e não obteve perdão algum.",
         "Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las.",
         "As sombras não podem ser enfrentadas normalmente pelo Personagem, porque são criadas com sua própria essência, sendo consideradas indestrutíveis por ele. Apenas alguns rituais secretos são capazes de afastá-las por algum tempo ou destruí-las durante alguns meses ou anos."
@@ -3399,7 +3543,6 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Apenas para Personagens Espíritos",
             "o Personagem pecou demais quando em vida, e não obteve perdão algum.",
             "Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las.",
             "As sombras não podem ser enfrentadas normalmente pelo Personagem, porque são criadas com sua própria essência, sendo consideradas indestrutíveis por ele. Apenas alguns rituais secretos são capazes de afastá-las por algum tempo ou destruí-las durante alguns meses ou anos."
@@ -3963,7 +4106,7 @@
     }
   ],
   "areaCounts": {
-    "aprimoramentos": 115,
+    "aprimoramentos": 119,
     "regras_base": 1
   },
   "reviewNotes": [
@@ -3971,6 +4114,6 @@
     "Texto revisado antes da catalogacao; paginas soltas e cabecalho OCR foram removidos.",
     "Entradas negativas foram separadas a partir da secao Negativos e/ou pelo sinal do custo.",
     "Entradas do tipo Vide Dependencia foram preservadas como referencias, sem inventar custo numerico.",
-    "Total de aprimoramentos catalogados: 115 (82 positivos, 33 negativos)."
+    "Total de aprimoramentos catalogados: 119 (86 positivos, 33 negativos)."
   ]
 }

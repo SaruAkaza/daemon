@@ -12,11 +12,14 @@ from common import ROOT, slugify, write_json
 SOURCE = "aprimoramentos-3"
 TITLE = "Aprimoramentos 3"
 SOURCE_PATH = ROOT / "Livros" / "word" / "Aprimoramentos_3_OCR_alta_qualidade.docx"
+if not SOURCE_PATH.exists():
+    SOURCE_PATH = ROOT / "Livros" / "word" / "feito" / "Aprimoramentos_3_OCR_alta_qualidade.docx"
 OUT_PATH = ROOT / "data" / "pilot" / f"{SOURCE}.json"
 DOCS_OUT_PATH = ROOT / "docs" / "assets" / "data" / "pilot" / f"{SOURCE}.json"
 
 COST_RE = re.compile(r"^([+-]?\d+)\s+pontos?(?:\s+cada|\s+para cada sentido)?\s*[:.]?\s*(.*)$", re.IGNORECASE)
 INLINE_COST_RE = re.compile(r"\s([+-]?\d+\s+pontos?(?:\s+cada|\s+para cada sentido)?\s*:)", re.IGNORECASE)
+TOPIC_LABEL_RE = re.compile(r"^[A-ZÁÉÍÓÚÂÊÔÃÕÇ][A-Za-zÁÉÍÓÚÂÊÔÃÕÇáéíóúâêôãõç ]{2,42}:\s+")
 
 DROP_EXACT = {
     "Aprimoramentos 3",
@@ -96,7 +99,13 @@ TITLE_MARKERS = [
 ]
 
 KNOWN_INLINE_TITLES = [
+    "Afinidade com Almas",
+    "Afinidade com Fadas",
+    "Afinidade com Magia",
     "Ambiente Favorável",
+    "Amigo Espírito",
+    "Amigo Fantasma",
+    "Anjo da Guarda",
     "Armas de Fogo",
     "Biblioteca",
     "Biocinético",
@@ -178,7 +187,7 @@ def should_join(previous: str, current: str) -> bool:
     if current in {"PM.", "PMs.", "Pontos de Magia."} and not previous.endswith((".", "!", "?", ":", ";", '"')):
         return True
     last_word = previous.split()[-1].lower().strip(".,;:!?")
-    if last_word in {"de", "do", "da", "dos", "das", "em", "por", "com", "para", "que", "o", "os", "as", "um", "uma", "no", "na", "e", "seu", "sua", "seus", "suas", "este", "esta", "esse", "essa"}:
+    if last_word in {"de", "do", "da", "dos", "das", "em", "por", "com", "para", "que", "o", "os", "as", "um", "uma", "no", "na", "e", "seu", "sua", "seus", "suas", "este", "esta", "esse", "essa", "desse", "dessa", "deste", "desta"}:
         return True
     if current[:1].islower() and not previous.endswith((".", "!", "?", ":", ";", '"')):
         return True
@@ -253,7 +262,7 @@ def is_heading(text: str) -> bool:
     if upper_ratio > 0.82:
         return True
     words = text.split()
-    if len(words) <= 5 and all(word[:1].isupper() or word.lower() in {"de", "da", "do", "e", "em", "a"} for word in words):
+    if len(words) <= 5 and all(word[:1].isupper() or word.lower() in {"de", "da", "do", "e", "em", "a", "com", "para"} for word in words):
         return True
     return False
 
@@ -337,12 +346,20 @@ def build_enhancement(title: str, raw_parts: list[str], fallback_polarity: str) 
         polarity = fallback_polarity
     else:
         intro: list[str] = []
+        trailing_description: list[str] = []
         cost_segments: list[list[str]] = []
         current_cost: list[str] | None = None
         for part in raw_parts:
             if is_cost(part):
                 current_cost = [part]
                 cost_segments.append(current_cost)
+                continue
+            if trailing_description:
+                trailing_description.append(part)
+                continue
+            if current_cost is not None and len(cost_segments) > 1 and TOPIC_LABEL_RE.match(part):
+                current_cost = None
+                trailing_description.append(part)
                 continue
             if current_cost is not None:
                 current_cost.append(part)
@@ -365,6 +382,7 @@ def build_enhancement(title: str, raw_parts: list[str], fallback_polarity: str) 
             for segment_parts in cost_segments:
                 first = format_cost_segment(segment_parts[0])
                 costs.append(normalize_text(" ".join([first, *segment_parts[1:]])))
+            description.extend(trailing_description)
 
     return {
         "id": slugify(title),
