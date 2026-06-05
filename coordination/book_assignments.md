@@ -20,7 +20,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 
 | Ordem | Livro | Tamanho | Respons?vel | Status |
 |---:|---|---:|---|---|
-| 1 | `Spiritum_OCR_parcial_com_imagens.docx` | 17.87 MB | Codex | review_required |
+| 1 | `Spiritum_OCR_parcial_com_imagens.docx` | 17.87 MB | Codex | pilot_review |
 | 2 | `Corondor.docx` | 9.03 MB | Codex | assigned |
 | 3 | `Varna_Chamado_da_Guerra_OCR_alta_qualidade.docx` | 4.77 MB | Codex | assigned |
 | 4 | `Kits Orientais.docx` | 2.40 MB | Codex | assigned |
@@ -307,4 +307,3 @@ Motivo: manter fora da execu??o normal at? libera??o expl?cita, para evitar repe
 
 | Livro | Respons?vel | Motivo |
 |---|---|---|
-| `Spiritum_OCR_parcial_com_imagens.docx` | Codex | DOCX majoritariamente em imagem; `data/text/spiritum.txt` ? parcialmente aproveit?vel, mas p?ginas 7-12, 100 e 112-114 t?m OCR muito ruim e tabelas/fichas precisam tratamento espec?fico. |

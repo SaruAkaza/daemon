@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T17:16:33",
+  "generatedAt": "2026-06-05T17:35:46",
   "sources": [
     {
       "source": "4killers",
@@ -249,6 +249,22 @@
       "areas": [
         "cenarios_lore",
         "criaturas_npcs"
+      ]
+    },
+    {
+      "source": "spiritum",
+      "title": "Spiritum",
+      "file": "spiritum.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
+        "poderes",
+        "racas",
+        "regras_base",
+        "rituais"
       ]
     }
   ]
