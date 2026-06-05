@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T11:58:19",
+  "generatedAt": "2026-06-05T14:23:40",
   "sources": [
     {
       "source": "4killers",
@@ -10,19 +10,6 @@
       "areas": [
         "criaturas_npcs",
         "cenarios_lore"
-      ]
-    },
-    {
-      "source": "abismo",
-      "title": "Abismo",
-      "file": "abismo.json",
-      "status": "pilot_review",
-      "areas": [
-        "aprimoramentos",
-        "cenarios_lore",
-        "classes",
-        "criaturas_npcs",
-        "regras_base"
       ]
     },
     {
@@ -36,6 +23,19 @@
         "classes",
         "front_matter",
         "itens_equipamentos",
+        "regras_base"
+      ]
+    },
+    {
+      "source": "abismo",
+      "title": "Abismo",
+      "file": "abismo.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
         "regras_base"
       ]
     },
@@ -215,6 +215,30 @@
       "areas": [
         "regras_base",
         "aprimoramentos"
+      ]
+    },
+    {
+      "source": "arcadia-nova-arcadia",
+      "title": "Arcádia - Nova Arcádia",
+      "file": "arcadia-nova-arcadia.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "racas",
+        "regras_base",
+        "aprimoramentos"
+      ]
+    },
+    {
+      "source": "arcanis",
+      "title": "Arcanis",
+      "file": "arcanis.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "regras_base",
+        "itens_equipamentos",
+        "kits"
       ]
     }
   ]

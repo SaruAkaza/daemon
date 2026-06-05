@@ -4,24 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daemon Pilotos</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20260605-sticky-enhancement-groups">
+    <link rel="stylesheet" href="assets/styles.css?v=20260605-brand-category-select">
   </head>
   <body>
     <header class="topbar">
-      <div class="brand">
-        <span class="eyebrow">Daemon/Trevas</span>
-        <h1>Pilotos de Tratamento</h1>
-      </div>
+      <button class="brand brand-home" id="brandHomeButton" type="button" aria-label="Ir para a página inicial">
+        <span>DAEMON/TREVAS</span>
+      </button>
       <div class="toolbar top-toolbar">
+        <label class="category-select">
+          <span>Categorias</span>
+          <select id="areaFilter"></select>
+        </label>
         <label class="search">
           <span>Busca</span>
           <input id="searchInput" type="search" placeholder="Nome, categoria ou trecho">
         </label>
-        <button class="filter-open" id="homeButton" type="button" hidden>Categorias</button>
         <button class="filter-open theme-toggle" id="themeToggle" type="button" aria-pressed="false">Tema escuro</button>
         <button class="icon-button" id="refreshButton" type="button" title="Recarregar" aria-label="Recarregar">↻</button>
         <button class="filter-open" id="filterOpenButton" type="button" hidden>Filtros</button>
-        <select id="areaFilter" hidden></select>
         <select id="flagFilter" hidden>
           <option value="all">Todos</option>
           <option value="intro">Introdução</option>
@@ -119,6 +120,6 @@
       </section>
     </template>
 
-    <script src="assets/app.js?v=20260605-filter-cache-optimized" type="module"></script>
+    <script src="assets/app.js?v=20260605-brand-category-select" type="module"></script>
   </body>
 </html>

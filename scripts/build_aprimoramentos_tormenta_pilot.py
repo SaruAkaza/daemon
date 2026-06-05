@@ -315,6 +315,8 @@ def build_item(title: str, area: str, kind: str, subtype: str, parts: list[str],
     sections = []
     if costs:
         sections.append(section("custo", "Custo", "aprimoramentos", costs))
+    if not costs and regions:
+        sections.append(section("pre-requisitos", "Pré-requisitos", "aprimoramentos", [f"Regional: {regions}"]))
     sections.append(section("descricao", "Descrição", "aprimoramentos", description))
     metadata = {"subtipo": subtype}
     if regions:

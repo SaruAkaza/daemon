@@ -100,6 +100,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Doherimm, Zakharov"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -124,6 +132,14 @@
         "Por ter vivido a maior parte do tempo em reinos quase totalmente florestais, o Personagem sabe guiar-se entre as árvores. Assim, o Personagem recebe +5% na perícia Sobrevivência (florestas) e +20% em Rastrear quando esta entre as árvores."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Sambúrdia, Tollon, União Púrpura"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -151,6 +167,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Namalkah"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -177,6 +201,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Khubar"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -201,6 +233,14 @@
         "Os nativos de Callistia sobrevivem da pesca e da água doce. Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Esportes (Natação e Pesca) e tem também +10% em Testes da perícia Sobrevivência, mas apenas no que diz respeito a rios e lagos."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Callistia"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -228,6 +268,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Montanhas Uivantes, União Púrpura, Sambúrdia"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -254,6 +302,14 @@
         "O Personagem jamais pode perder essa arma ou será como se tivesse perdido um ente querido."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Doherimm, Zakharov"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -284,6 +340,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Tollon"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -313,6 +377,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Salistick"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -339,6 +411,14 @@
         "Personagens com esse Aprimoramento Regional recebem +2/+10% em todos os Testes de Resistência de WILL, seja contra Magias, Poderes, habilidades psíquicas, poderes especiais, etc."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Salistick"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -367,6 +447,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Deheon, Petrynia"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -393,6 +481,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Ahlen, Doherimm, Portsmouth, Tapista, Sckharshantallas, Yuden"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -417,6 +513,14 @@
         "Nativos desses reinos costumam ser descendentes de bárbaros. Um Personagens com esse Aprimoramento Regional recebe +10% em todos os Testes das Perícias Sobrevivência e Armadilhas."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Khubar, Montanhas Uivantes, Namalkah, União Púrpura"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -446,6 +550,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Doherimm"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -474,6 +586,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Namalkah, Khubar"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -498,6 +618,14 @@
         "A cultura desses povos é fortemente baseada no comércio, e por isso muitos dos nativos são bons comerciantes. Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes de Avaliação de Objetos, Negociação (escolha apenas um dos seguintes subgrupos: Barganha, Burocracia ou Contabilidade) e em Testes de PER para detectar mentiras."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Hershey, Petrynia, Sambúrdia"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -524,6 +652,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Wynlla"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -549,6 +685,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Pondsmânia, Wynlla"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -573,6 +717,14 @@
         "Devido ao costume fortuniense de cultivar tradições, lendas e mitos, os Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes da Perícias Ciências (História e Literatura) e em Pesquisa/Investigação."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Fortuna"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -601,6 +753,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Wynlla"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -628,6 +788,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Petrynia"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -653,6 +821,14 @@
         "Apenas membros da mesma raça podem ser considerados colegas de equipe. Um líder é um Personagem que esteja dois ou mais Níveis acima da média da equipe ou que tenha a Perícia Liderança com 70% no mínimo."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Doherimm, Tapista, Yuden"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -680,6 +856,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Portsmouth"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -705,6 +889,14 @@
         "Personagens com esse Aprimoramento Regional podem comprar o Aprimoramento Berserker mesmo que não seja um humano ou anão. Se o Personagem já pertence a uma dessas raças (ou outra raça que possa comprar esse Aprimoramento) seu bônus de dano aumenta para +3 ao invés de mais e o bônus de Ataque aumenta para +15% ao invés de +10% quando entra em berserker."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Khubar, Montanhas Uivantes, Namalkah, União Púrpura"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -733,6 +925,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Pondsmânia"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -758,6 +958,14 @@
         "Os habitantes desse reino recebem muito bem os estrangeiros. Por isso os Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Etiqueta e Pesquisa/Investigação (apenas quando envolver obter informações com conversas) para com criaturas inteligentes nativas de outros reinos. Por outro lado, o Personagem recebe -5% em Testes das perícias Manipulação (Lábia e Intimidação) para com essas criaturas."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Nova Ghondriann"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -786,6 +994,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Ahlen, Petrynia"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -812,6 +1028,14 @@
         "O regente Sckhar proíbe a existência de outros dragões em seu reino, a não ser ele próprio. Por isso os Personagens com esse Aprimoramento Regional são treinados para combater dragões: recebem +4 de dano quando combatem qualquer tipo de dragão ou criaturas aparentadas (wyverns, hidras e protodracos)."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Sckharshantallas"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -840,6 +1064,14 @@
         "(1 ponto): Personagens que tenham passado por Tyrondir ou Lamnor podem comprar esse Aprimoramento Regional ao custo de 1 ponto, mesmo sem ser nativos do reino."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Tyrondir"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -870,6 +1102,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Ahlen, Doherimm, Yuden, Tapista"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -896,6 +1136,14 @@
         "Personagens com esse Aprimoramento Regional recebem +15% em Testes das Perícias Ciências (Heráldica) e Etiqueta."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Bielefeld"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -925,6 +1173,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Tapista"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -952,6 +1208,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Wynlla"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -976,6 +1240,14 @@
         "Os habitantes de Salistick rejeitam os deuses e clérigos, e por isso não possuem magias de cura. Por outro lado os nativos do reino são ótimos doutores e, caso escolham esse Aprimoramento Regional, recebem +20% em todos os Testes da Perícia Primeiros Socorros."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Salistick"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -1002,6 +1274,14 @@
         "Personagens com esse Aprimoramento Regional são capazes de ver na penumbra (da mesma forma que os elfos - necessitam de uma luminosidade mínima para ser capaz de enxergar) e recebem +10% em todos os Testes envolvendo a visão."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Collen"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -1033,6 +1313,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Collen"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1063,6 +1351,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Callistia, Collen, Hongari"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1090,6 +1386,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Fortuna, Hershey, Hongari, Nova Ghondriann, Salistick, Tyrondir, Zakharov"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1116,6 +1420,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Bielefeld, Deheon, Doherimm, Tapista, Yuden"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1141,6 +1453,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Hongari"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1165,6 +1485,14 @@
         "Apenas humanos podem ter esse Aprimoramento Regional. O Personagem pode fazer uma prece à deusa Valkaria para que uma criatura ou pessoa mortalmente ferida recupere 1 PV. Para isso deve-se fazer um Teste de CAR e, uma vez que o pedido seja atendido, cada nova tentativa oferece um redutor de -25% no Teste. Cada -25% de redutor desaparece após 30 dias sem que seja feita uma nova prece."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Deheon"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -1192,6 +1520,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Deheon, Hershey, Sambúrdia, Tyrondir"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1217,6 +1553,14 @@
         "Personagens com esse Aprimoramento Regional desde criança ouviram falar sobre o Panteão, deuses menores, sumo-sacerdotes, etc. Por isso o Personagem recebe +20% em Testes da ́perícia Ciências (Teologia/Religião)."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: todos, exceto Salistick"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -1244,6 +1588,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Lomatubar"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1270,6 +1622,14 @@
         "Os Personagens com esse Aprimoramento Regional recebem +10% em Testes da Perícia Sobrevivência quando em ambiente gelado. Além disso recebem também +10% em Testes de Resistência para resistir a qualquer forma de frio, seja natural ou mágico."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Montanhas Uivantes"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -1299,6 +1659,14 @@
         "(1 ponto): Personagens não nativos de Trebuck que tenham penetrado em uma área de Tormenta e tenham sobrevivido podem comprar esse Aprimoramento ao custo de 1 ponto."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Trebuck"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -1332,6 +1700,14 @@
       ],
       "sections": [
         {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Khubar"
+          ]
+        },
+        {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
@@ -1364,6 +1740,14 @@
         "Jogador): Escapismo (de Artes), Lábia (de Manipulação), Camuflagem, Disfarce, Furtar, Furtividade, Leitura Labial (de idiomas), Falsificação, Barganha (de Negociação) ou Subterfúgio."
       ],
       "sections": [
+        {
+          "id": "pre-requisitos",
+          "title": "Pré-requisitos",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Regional: Ahlen"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",
@@ -2105,5 +2489,5 @@
     "Aprimoramentos regionais sem custo explícito foram mantidos sem bloco de custo.",
     "Escalas como Status Social/Reputação foram mantidas dentro do mesmo item, preservando os níveis."
   ],
-  "generatedAt": "2026-06-05T11:57:53"
+  "generatedAt": "2026-06-05T13:25:12"
 }

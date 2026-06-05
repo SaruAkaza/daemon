@@ -58,7 +58,7 @@ const nodes = {
   searchInput: document.querySelector("#searchInput"),
   areaFilter: document.querySelector("#areaFilter"),
   flagFilter: document.querySelector("#flagFilter"),
-  homeButton: document.querySelector("#homeButton"),
+  brandHomeButton: document.querySelector("#brandHomeButton"),
   themeToggle: document.querySelector("#themeToggle"),
   refreshButton: document.querySelector("#refreshButton"),
   filterOpenButton: document.querySelector("#filterOpenButton"),
@@ -463,15 +463,21 @@ function selectedFilterCount() {
 
 function renderAreaSelect() {
   clearNode(nodes.areaFilter);
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "Selecionar categoria";
+  placeholder.disabled = true;
+  nodes.areaFilter.append(placeholder);
   for (const [area, label] of AREAS) {
+    if (area === "all") continue;
     const count = categoryCount(area);
-    if (area !== "all" && count === 0) continue;
+    if (count === 0) continue;
     const option = document.createElement("option");
     option.value = area;
-    option.textContent = label;
+    option.textContent = `${label} (${formatNumber(count)})`;
     nodes.areaFilter.append(option);
   }
-  nodes.areaFilter.value = categoryCount(state.selectedArea) ? state.selectedArea : "all";
+  nodes.areaFilter.value = state.selectedArea && categoryCount(state.selectedArea) ? state.selectedArea : "";
 }
 
 function selectCategory(area) {
@@ -871,7 +877,6 @@ function renderFilterButton() {
   nodes.filterOpenButton.textContent = active ? `Filtros (${formatNumber(active)})` : "Filtros";
   nodes.filterOpenButton.classList.toggle("active", active > 0);
   nodes.filterOpenButton.hidden = false;
-  nodes.homeButton.hidden = !state.selectedArea;
 }
 
 function render() {
@@ -904,9 +909,7 @@ nodes.searchInput.addEventListener("input", (event) => {
 });
 
 nodes.areaFilter.addEventListener("change", (event) => {
-  state.selectedArea = event.target.value;
-  state.selectedItemId = null;
-  render();
+  if (event.target.value) selectCategory(event.target.value);
 });
 
 nodes.flagFilter.addEventListener("change", (event) => {
@@ -921,10 +924,12 @@ nodes.refreshButton.addEventListener("click", () => {
   load().catch(showError);
 });
 
-nodes.homeButton.addEventListener("click", () => {
+nodes.brandHomeButton.addEventListener("click", () => {
   state.selectedArea = null;
   state.selectedItemId = null;
   state.filters = filtersWithDefaults({});
+  nodes.searchInput.value = "";
+  state.query = "";
   render();
 });
 

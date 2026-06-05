@@ -81,7 +81,7 @@ p {
 
 .topbar {
   display: grid;
-  grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
+  grid-template-columns: minmax(210px, 300px) minmax(0, 1fr);
   gap: 18px;
   align-items: center;
   min-height: 76px;
@@ -89,6 +89,29 @@ p {
   padding: 14px 18px;
   border-bottom: 1px solid var(--line);
   background: var(--surface);
+}
+
+.brand {
+  display: inline-grid;
+  justify-self: start;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.brand span {
+  color: var(--accent);
+  font-size: 1.45rem;
+  font-weight: 950;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.brand:hover span {
+  color: var(--blue);
 }
 
 .eyebrow {
@@ -266,6 +289,10 @@ h1 {
   padding: 0;
   border-bottom: 0;
   background: transparent;
+}
+
+.top-toolbar .category-select {
+  flex: 0 1 240px;
 }
 
 .top-toolbar .search {

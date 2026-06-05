@@ -1,0 +1,1406 @@
+{
+  "version": 1,
+  "source": "arcanis",
+  "title": "Arcanis",
+  "sourceFile": "Arcanis_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Suplemento da linhagem Arcanis, com lore, regras, serviços de academia e cabalas em formato de kits.",
+  "areas": [
+    "cenarios_lore",
+    "regras_base",
+    "itens_equipamentos",
+    "kits"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "arcanis",
+      "title": "Arcanis",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenario-lore",
+      "sectionTitle": "Cenário/Lore",
+      "paragraphs": [
+        "Um guia básico para complementar os personagens kansarianos da linhagem Arcanis",
+        "Os Arcanis são mais conhecidos por serem os únicos a terem habilidades suficientes para manipular magia e criar/consertar as poderosas (e eficientes) armas kansarianas. Têm pouco poder de combate se comparado as outras linhagens, mas também são aqueles que tem os “mais eficientes” habilidades. São os kansarianos manipuladores de magia, são os kansarianos-magos. Também são a grande “chave” na eterna guerra que envolve os Guerreiros Kansai e os Tegicnistas, agora e para todo o sempre (ou até que um dos clãs vença a batalha!). Nesse livro você encontrará as informações básicas e com regras e dados para turbinar personagens kansarianos, sejam personagens jogadores ou NPCs. A escolha é sua e a aventura também. Lembre-se que qualquer dúvida, crítica ou sugestão, estamos aí. Pela comunidade no Orkut, pelo meu próprio Orkut ou mesmo pelo e-mail aurak60@redejovem.net, e tá na hora de turbinar seus kansarianos Arcanis para a batalha!",
+        "O clã Arcanis não começou como os demais clãs kansarianos existentes, não foi formado para acabar com uma outra linhagem ou mesmo para dominar alguma coisa. A linhagem Arcanis se formou assim de repente e de uma forma tão simples... Os arcanis antigamente era uma escola de mágica luniana onde só aceitava-se membros kansarianos, era a escola Kansaines Arcanis, uma das mais influentes academias de magia existentes no multiverso e também a única a possuir membros kansarianos (só eles tem o segredo de transformar kansarianos em usuários de mágicas). E com o passar do tempo, a escola se tornou clã e “aprendeu” a criar armas kansarianas a partir de uma arma “celestial/kansariana” clonada chamada Espada Trevas (A Arma kansariana de Tegic Sanamaris, o mais poderoso e temido vilão das dimensões), e foi assim... a linhagem Arcanis nasceu e vive forte até hoje depois de 146 anos...",
+        "Todas as academias dessa linhagem podem ter “plantas” diferentes, mas no fundo todas são do mesmo formato. Toda academia Arcanis se parece como uma loja, que contém uma sala de atendimentos (onde os interessados vão e recrutam interessados em missões ou também compram itens); salas de magos (para aprendizados de mágicas); bibliotecas (para consultas); sala de informática (para consultas on-line); suítes (para alojamento de arcanis, assim como um hotel); salas de cirurgias (para reconstituição de membros perdidos e decepados através de mágicas) e outras coisas que só os arcanis possuem...",
+        "Aqui há uma lista com descrições básicas das 5 Famílias universais Arcanis. FAMÍLIAS ANTIGAS PERTENCENTES A LINHAGEM ARCANIS Panosian: Família de frios e calculistas. Pessoas que tenha o sangue Panosian no corpo costumam ser pessoas de temperamento frio, frieza que é tratada nas demais situações. Alguns exemplos de pessoas que tinham o sangue Panosian no corpo (mesmo não sendo um membro de primeiro grau.): Marcelo DD (Arcanis escritor de livros de Metafísica e dos conhecimentos do Oculto. Onde será que peguei esse nome?); Brian Tyller (Arcanis de Ética Moral Honra que lutou na Grande Guerra ao lados dos Guerreiros Kansai); Érica Nalya (Arcanis da Cabala dos Faérie que resgatou um item sagrado do clã quando este tinha sido roubado há três anos); Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis +10 Pms extras, suas mágicas oferecem dano de +5 extra e seus caminhos da magia aumentam temporariamente em +3 (todos). O cabelo cresce bastante (ficando longo e imenso), além de outra mudança no corpo, mas é variante de cada kansariano. Flowers: Família de grandes adoradores da natureza e demais criações de Deus. Pessoas que tenha o sangue Flowers no corpo costumam ser pessoas amigas dos animais, das plantas e que luta para preserva-las e todos os animais em sua maioria têndem a gostar também da pessoa. Alguns exemplos de pessoas que tinham o sangue Flowers no corpo (mesmo não sendo um membro de primeiro grau.): Igor Magnata (Arcanis responsável por encarar um grupo de tegicnistas em defesa de sua Academia Arcanis, e estando sozinho, deu uma surra dos servos de Tegic); Mia Karina (Grande apresentadora de televisão no canal KANSAI‘TV, ela apresenta programas sobre animais e é uma veterinária famosa); Nicolas Tyen (Grande estudioso dos animais e plantas e escreve livros sobre o assunto). Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis garras nas mãos (estas oferecem dano de 2d6+bônus de Fr por corte/perfuracão), +20 no IP natural (temporário), +1 extra em seus caminhos da magia (todos e temporariamente). Os olhos do kansariano mudam de cor, cresce na cabeça olheras gigantes de animais (a escolha do kansariano), além de outra mudança no corpo, mas é variante de cada kansariano. Bandush: Família de vigorosos e fortes. Pessoas que tenha o sangue Bandush no corpo costumam ser pessoas de torso forte e vigoroso, formoso, etc. Alguns exemplos de pessoas que tinham o sangue Bandush no corpo (mesmo não sendo um membro de primeiro grau.): Mario Merabomba (Arcanis conhecido pela força de seus músculos e dono de uma academia de ginástica); Crisália Meyling (Grande modelo internacional e multiversial dona de belas curvas); Ninja Bomba (Ator da série Ninja Bomba realizado pela KANSAI‘TV, um ninja todo marombado e burro. Série de Humor). Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis um bônus de +150 na FR e na CON. O Kansariano aumenta seus músculos, além de outra mudança no corpo, mas é variante de cada kansariano. Maurer: Família de poderosos e justos. Pessoas que tenha o sangue Maurer no corpo costumam ser pessoas de alegres, extrovertidas e cheias de vida. Alguns exemplos de pessoas que tinham o sangue Maurer no corpo (mesmo não sendo um membro de primeiro grau.): Kan Ichigami (Arcanis da Cabala dos Guerreiros Mágicos que lutou contra um grupo de cyber-kans a serviço de tegicnistas há três anos); Rune Karin (Arcanis responsável pela Cabala dos Faérie, ela com certeza é a Arcanis da Cabala dos Faérie mais poderosa do multiverso); Thiago Laubestein (Arcanis responsável por julga a morte os kansarianos arcanis Grad Turon¸ Jim Knutson, Steve Bradstreet, Larry Nielsen e Elmore Loose pelos crimes cometidos contra a linhagem) Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis um bônus de +3 em todos os Caminhos da Magia que possui e +2 nos que não possui, além de um bônus temporário de +10 no IP. O Kansariano cresce suas unhas e seu olhar se torna frio, além de outra mudança no corpo, mas é variante de cada kansariano. Ravi: Família de cômicos e engraçados. Pessoas que tenha o sangue Ravi no corpo costumam ser pessoas engraçadas, palhaças, risonhas, quase não levam nada a sério, infantis, etc. Alguns exemplos de pessoas que tinham o sangue Ravi no corpo (mesmo não sendo um membro de primeiro grau.): Kishimoto Kajishima (Arcanis condenado por destruição de várias academias da linhagem graças a sua falta de atenção); Jeferson Iron (Arcanis da Cabala dos Guerreiros Mágicos que venceu cinco tegicnistas em um ataque deles contra outros arcanis e GKs, o problema que o tal Jeferson era da ética moral Morte [portanto era para permitir os tegicnistas ou ajudá-los conforme sua vontade]); João Bap (Conhecido como um dos mais cômicos a mais poderosos arcanis que se tem notícia, chegando a força de Ozorani",
+        "Klasah, da família Klasah!)",
+        "Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis um bônus de +15% em todos os testes seguintes seja ataque/defesa/evasiva além de uma ação extra convencional (pois se locomove mais rápido que os outros), além de um bônus temporário de +4 no IP natural. O Kansariano fica com uma cara de idiota e as vezes não é levado a sério pelos seus adversários, além de outra mudança no corpo, mas é variante de cada kansariano.",
+        "Cada linhagem tem os tipos de seus membros, uma espécie de profissão ligada a linhagem e de uma função e uma especialização únicas. Nos GKs, são conhecidos como Castas; nos tegicnistas são conhecidas como Famílias; no clã dos Cyber-kans são chamados Mythus; no clã Necromânia são denominados Tribos; e por fim, no clã Arcanis, Cabalas. As Cabalas são ligadas a uma função que cabe melhor ao membro e têm funções e habilidades únicas, nesse capítulo você encontra as quatorze cabalas mais populares com o seu kit de personagem oficial em Sistema Daemon.",
+        "Existem diversos tipos de Arcanis, porque como numa organização, há diversidade de seus membros. Também algumas “cabalas” (nome dado aos tipos de GKs) são separados de acordo com o grau de status do próprio kansariano dentro da linhagem. Em RPGs, existe uma regra que permite você ganhar mais pontos de experiência (e personagem) se seguir corretamente um tipo de arcanis, você não é obrigado a escolher um, mas... se quiser, há um Kit próprio para cada casta de kansariano."
+      ],
+      "sections": [
+        {
+          "id": "apresentacao",
+          "title": "Apresentação",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Um guia básico para complementar os personagens kansarianos da linhagem Arcanis"
+          ]
+        },
+        {
+          "id": "arcanis",
+          "title": "Arcanis",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Os Arcanis são mais conhecidos por serem os únicos a terem habilidades suficientes para manipular magia e criar/consertar as poderosas (e eficientes) armas kansarianas. Têm pouco poder de combate se comparado as outras linhagens, mas também são aqueles que tem os “mais eficientes” habilidades. São os kansarianos manipuladores de magia, são os kansarianos-magos. Também são a grande “chave” na eterna guerra que envolve os Guerreiros Kansai e os Tegicnistas, agora e para todo o sempre (ou até que um dos clãs vença a batalha!). Nesse livro você encontrará as informações básicas e com regras e dados para turbinar personagens kansarianos, sejam personagens jogadores ou NPCs. A escolha é sua e a aventura também. Lembre-se que qualquer dúvida, crítica ou sugestão, estamos aí. Pela comunidade no Orkut, pelo meu próprio Orkut ou mesmo pelo e-mail aurak60@redejovem.net, e tá na hora de turbinar seus kansarianos Arcanis para a batalha!"
+          ]
+        },
+        {
+          "id": "origem-da-linhagem",
+          "title": "O Início dos Arcanis",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O clã Arcanis não começou como os demais clãs kansarianos existentes, não foi formado para acabar com uma outra linhagem ou mesmo para dominar alguma coisa. A linhagem Arcanis se formou assim de repente e de uma forma tão simples... Os arcanis antigamente era uma escola de mágica luniana onde só aceitava-se membros kansarianos, era a escola Kansaines Arcanis, uma das mais influentes academias de magia existentes no multiverso e também a única a possuir membros kansarianos (só eles tem o segredo de transformar kansarianos em usuários de mágicas). E com o passar do tempo, a escola se tornou clã e “aprendeu” a criar armas kansarianas a partir de uma arma “celestial/kansariana” clonada chamada Espada Trevas (A Arma kansariana de Tegic Sanamaris, o mais poderoso e temido vilão das dimensões), e foi assim... a linhagem Arcanis nasceu e vive forte até hoje depois de 146 anos..."
+          ]
+        },
+        {
+          "id": "academias-arcanis",
+          "title": "Como são as Academias Arcanis",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Todas as academias dessa linhagem podem ter “plantas” diferentes, mas no fundo todas são do mesmo formato. Toda academia Arcanis se parece como uma loja, que contém uma sala de atendimentos (onde os interessados vão e recrutam interessados em missões ou também compram itens); salas de magos (para aprendizados de mágicas); bibliotecas (para consultas); sala de informática (para consultas on-line); suítes (para alojamento de arcanis, assim como um hotel); salas de cirurgias (para reconstituição de membros perdidos e decepados através de mágicas) e outras coisas que só os arcanis possuem..."
+          ]
+        },
+        {
+          "id": "familias-arcanis",
+          "title": "Famílias Arcanis",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Aqui há uma lista com descrições básicas das 5 Famílias universais Arcanis. FAMÍLIAS ANTIGAS PERTENCENTES A LINHAGEM ARCANIS Panosian: Família de frios e calculistas. Pessoas que tenha o sangue Panosian no corpo costumam ser pessoas de temperamento frio, frieza que é tratada nas demais situações. Alguns exemplos de pessoas que tinham o sangue Panosian no corpo (mesmo não sendo um membro de primeiro grau.): Marcelo DD (Arcanis escritor de livros de Metafísica e dos conhecimentos do Oculto. Onde será que peguei esse nome?); Brian Tyller (Arcanis de Ética Moral Honra que lutou na Grande Guerra ao lados dos Guerreiros Kansai); Érica Nalya (Arcanis da Cabala dos Faérie que resgatou um item sagrado do clã quando este tinha sido roubado há três anos); Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis +10 Pms extras, suas mágicas oferecem dano de +5 extra e seus caminhos da magia aumentam temporariamente em +3 (todos). O cabelo cresce bastante (ficando longo e imenso), além de outra mudança no corpo, mas é variante de cada kansariano. Flowers: Família de grandes adoradores da natureza e demais criações de Deus. Pessoas que tenha o sangue Flowers no corpo costumam ser pessoas amigas dos animais, das plantas e que luta para preserva-las e todos os animais em sua maioria têndem a gostar também da pessoa. Alguns exemplos de pessoas que tinham o sangue Flowers no corpo (mesmo não sendo um membro de primeiro grau.): Igor Magnata (Arcanis responsável por encarar um grupo de tegicnistas em defesa de sua Academia Arcanis, e estando sozinho, deu uma surra dos servos de Tegic); Mia Karina (Grande apresentadora de televisão no canal KANSAI‘TV, ela apresenta programas sobre animais e é uma veterinária famosa); Nicolas Tyen (Grande estudioso dos animais e plantas e escreve livros sobre o assunto). Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis garras nas mãos (estas oferecem dano de 2d6+bônus de Fr por corte/perfuracão), +20 no IP natural (temporário), +1 extra em seus caminhos da magia (todos e temporariamente). Os olhos do kansariano mudam de cor, cresce na cabeça olheras gigantes de animais (a escolha do kansariano), além de outra mudança no corpo, mas é variante de cada kansariano. Bandush: Família de vigorosos e fortes. Pessoas que tenha o sangue Bandush no corpo costumam ser pessoas de torso forte e vigoroso, formoso, etc. Alguns exemplos de pessoas que tinham o sangue Bandush no corpo (mesmo não sendo um membro de primeiro grau.): Mario Merabomba (Arcanis conhecido pela força de seus músculos e dono de uma academia de ginástica); Crisália Meyling (Grande modelo internacional e multiversial dona de belas curvas); Ninja Bomba (Ator da série Ninja Bomba realizado pela KANSAI‘TV, um ninja todo marombado e burro. Série de Humor). Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis um bônus de +150 na FR e na CON. O Kansariano aumenta seus músculos, além de outra mudança no corpo, mas é variante de cada kansariano. Maurer: Família de poderosos e justos. Pessoas que tenha o sangue Maurer no corpo costumam ser pessoas de alegres, extrovertidas e cheias de vida. Alguns exemplos de pessoas que tinham o sangue Maurer no corpo (mesmo não sendo um membro de primeiro grau.): Kan Ichigami (Arcanis da Cabala dos Guerreiros Mágicos que lutou contra um grupo de cyber-kans a serviço de tegicnistas há três anos); Rune Karin (Arcanis responsável pela Cabala dos Faérie, ela com certeza é a Arcanis da Cabala dos Faérie mais poderosa do multiverso); Thiago Laubestein (Arcanis responsável por julga a morte os kansarianos arcanis Grad Turon¸ Jim Knutson, Steve Bradstreet, Larry Nielsen e Elmore Loose pelos crimes cometidos contra a linhagem) Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis um bônus de +3 em todos os Caminhos da Magia que possui e +2 nos que não possui, além de um bônus temporário de +10 no IP. O Kansariano cresce suas unhas e seu olhar se torna frio, além de outra mudança no corpo, mas é variante de cada kansariano. Ravi: Família de cômicos e engraçados. Pessoas que tenha o sangue Ravi no corpo costumam ser pessoas engraçadas, palhaças, risonhas, quase não levam nada a sério, infantis, etc. Alguns exemplos de pessoas que tinham o sangue Ravi no corpo (mesmo não sendo um membro de primeiro grau.): Kishimoto Kajishima (Arcanis condenado por destruição de várias academias da linhagem graças a sua falta de atenção); Jeferson Iron (Arcanis da Cabala dos Guerreiros Mágicos que venceu cinco tegicnistas em um ataque deles contra outros arcanis e GKs, o problema que o tal Jeferson era da ética moral Morte [portanto era para permitir os tegicnistas ou ajudá-los conforme sua vontade]); João Bap (Conhecido como um dos mais cômicos a mais poderosos arcanis que se tem notícia, chegando a força de Ozorani",
+            "Klasah, da família Klasah!)",
+            "Kansarianos que usem a lágrima do sangue do ódio, recebem sendo Arcanis um bônus de +15% em todos os testes seguintes seja ataque/defesa/evasiva além de uma ação extra convencional (pois se locomove mais rápido que os outros), além de um bônus temporário de +4 no IP natural. O Kansariano fica com uma cara de idiota e as vezes não é levado a sério pelos seus adversários, além de outra mudança no corpo, mas é variante de cada kansariano."
+          ]
+        },
+        {
+          "id": "cabalas-dos-arcanis",
+          "title": "Cabalas dos Arcanis",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Cada linhagem tem os tipos de seus membros, uma espécie de profissão ligada a linhagem e de uma função e uma especialização únicas. Nos GKs, são conhecidos como Castas; nos tegicnistas são conhecidas como Famílias; no clã dos Cyber-kans são chamados Mythus; no clã Necromânia são denominados Tribos; e por fim, no clã Arcanis, Cabalas. As Cabalas são ligadas a uma função que cabe melhor ao membro e têm funções e habilidades únicas, nesse capítulo você encontra as quatorze cabalas mais populares com o seu kit de personagem oficial em Sistema Daemon.",
+            "Existem diversos tipos de Arcanis, porque como numa organização, há diversidade de seus membros. Também algumas “cabalas” (nome dado aos tipos de GKs) são separados de acordo com o grau de status do próprio kansariano dentro da linhagem. Em RPGs, existe uma regra que permite você ganhar mais pontos de experiência (e personagem) se seguir corretamente um tipo de arcanis, você não é obrigado a escolher um, mas... se quiser, há um Kit próprio para cada casta de kansariano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regra-base-arcanis",
+      "title": "Regra base - Arcanis",
+      "area": "regras_base",
+      "kind": "ruleset",
+      "sectionId": "regra-base",
+      "sectionTitle": "Regra Base",
+      "paragraphs": [
+        "Pouco explicado no livro eletrônico YOSHIRO ROLE PLAYING GAME - Módulo Básico, as armas kansarianas na verdade são armas comuns revestidas por poder kansai do próprio dono da mesma, que pelo pk obtido, ficam mais poderosas com o tempo e se tornam armas vivas, com inteligência suficiente para obedecer ordens concretas, além disso, armas kansarianas são armas inquebráveis (quebram apenas com a técnica secreta Saint Hit ou através da proeza Destruir Estilo na arma) e também nunca se gastam. Em termos de RPG, toda arma kansariana aumenta +1 no dano a cada dois níveis de personagem dono da arma. Mais regras detalhadas para a construção de armas kansarianas são vistas bem mais adiante nesse livro.",
+        "Saint Hit: A técnica destruídora de Armas kansarianas! “Saint Hit” é o nome da técnica secreta criada por Dragão Milenar, o dragão vermelho mais poderoso do mundo e Mestre dos kansarianos Nakan (descrito no YOSHIRO ROLE PLAYING GAME - Módulo básico), Lee e o cômico Alfredo. Consiste num golpe único que pela concentração e pela violência do ataque, quebra de vez uma arma kansariana alvo. Mas no multiverso, apenas os discípulos do Dragão Milenar conhecem essa técnica poderosa e de difícil aprendizado.",
+        "A mágica praticada na dimensão Lua e nas demais dimensões que consiste o multiverso (e também vista na cronologia Yoshiro) é bem diferente da feitiçaria e bruxaria que vemos na Terra. A primeira coisa, é que os praticantes de magia luniana conseguem fazer efeitos mais poderosos e “impossíveis” em suas mágicas, como gerar bolas de fogo, cair raios do céu, explodir coisas... algo que os praticantes de magia negra não conseguem... A mágica luniana (praticada por humanos e kansarianos) é feita a partir de uma essência que fica na atmosfera das dimensões da Terra conhecida como Kansailar (já descrita no livro básico), uma essência derivada do poder kansai e que os magos retiram dela seus poderes. Caso um mago luniano queira usar uma magia dentro de qualquer dimensão que não faz parte do “plano” da Terra, seus poderes não funcionam. (Vem alguém e me pergunta: “-Ah! Tá, eu preciso estar em uma dimensão que faça parte das dimensões da Terra para usar meus poderes... isso é ridículo, se eu me tornar um mago comum, posso usar meus poderes onde e quando quiser...”) Tá, eu até aprecio isso, mas os magos lunianos em termos de RPG restauram 1 ponto de magia a cada cinco minutos dentro de uma dimensão que seja da Terra e suas mágicas recebem o dano de +1 extra a cada dois níveis de personagem. E para os arcanis que adoram viajar em dimensões que não sejam da Terra (algo improvável) existe uma poção que permite ao arcanis usar seus poderes, é uma espécie de suco de kansailar, com o nome Poção Maximun.",
+        "Mais detalhes sobre mágica luniana são vistos no livro YOSHIRO ROLE PLAYING GAME - módulo básico.",
+        "Para se tornar um arcanis, o candidato deve ser aceito em um conselho de kansarianos-arcanis experientes para depois passar pelo ritual Fada dos Sete Ventos e se tornar um kansariano da linhagem. Com isso ele tem o direito de aprender mágicas pagando pequenos “custos” (em dinheiro) para se tornar mais poderoso e respeitado. Os arcanis registrados já tem um emprego fixo na sua própria Linhagem e devem cumprir as missões de seus superiores.",
+        "O ritual acontece da seguinte forma, um grupo de candidatos a arcanis são recrutados a comparecerem num jardim florido, este que fica numa dimensão adjacente (ver no livro Guia Completo dos GK, para mais detalhe sobre essa dimensão). Chegando lá, os candidatos recebem uma única e simples ordem “-Para se tornar membro de nossa linhagem, é preciso que capturem esse ser mágico para provar sua astúcia e capacidade contra seres mitológicos e faéricos.” Assim os arcanis que estão realizando o ritual soltam algumas fadas e cabe a missão dos candidatos capturá-las sem qualquer outro tipo de poder se não for a própria inteligência. Apenas uma fada capturada já torna um novato em um arcanis. Esse ritual (que mais parece um teste) tem duração máxima de 7 horas, sendo que a cada 1 hora sem a captura de uma fada, os arcanis ao redor usam seus poderes criando um furacão que destrói tudo além de oferecer perigo de morte aos candidatos. Candidatos que tenham capturados pelo menos uma fada conseguem desenvolver a mágica luniana além de perder um pouco seu poder kansai natural no processo. (Redutor de -3 no PK), mas logo aprendem a habilidade de usar mágica e criar/consertar armas kansarianas.",
+        "A primeira coisa ao arcanis novato é decidir qual a sua ética moral. Éticas morais na verdade são uma tendência específica para denominar se o arcanis é uma pessoa boa/ruim e se trabalha apenas com GKs/tegicnistas. Todo arcanis precisa ter sua ética moral. A Ética Moral serve para que o clã possa perceber que tipo de pessoa o arcanis é e com quais tipos de pessoas ele pretende trabalhar nos serviços mercenários tão costumeiros. Existem apenas 3 éticas morais (eltihcisi miurishsi, no original em língua kansariana): Justiça, Honra e Morte. As três éticas morais correspondem ao lado que o arcanis atua na Eterna Guerra (confronto entre GKs e tegicnistas), sendo que Justiça corresponde ao lado dos Guerreiros Kansai; Morte corresponde ao lado dos Tegicnistas; e Honra corresponde a ambos os lados ou mesmo em nenhum deles.",
+        "É uma transformação secreta que todo kansariano pode utilizar em seus momentos mais críticos, esta consiste em usar toda a força do estilo do membro portador de pk, ele se fortalece muito, mas perde temporariamente todas as suas lembranças e éticas de “bem ou mal”, atacando seu inimigo com uma força de ataque tremenda, assim como o ódio. A transformação muda temporariamente o corpo do kansariano e ele segundo as lendas tem seu poder multiplicado por 7! O número da perfeição segundo a Bíblia Sagrada. Mas depois que vencer um determinado inimigo (a Lágrima do Sangue do Ódio só pode ser invocada para vencer um ou mais inimigos), o kansariano cai no chão e entra em coma, mais precisamente uma hibernação, entra em sono profundo onde ele e seu Estilo dormem para descansar do esforço, não acordando para nada, isso durante 2d6 dias +1 por nível de personagem. E mesmo que normalmente um Estilo sai do kansariano para protegê-lo quando o mesmo está dormindo, isso não acontece, pois nesse caso o Estilo está tão exausto quando o próprio portador do pk.",
+        "A transformação oferece ao kansariano em RPGs: multiplica os Atributos Kansarianos por 7 (Con, Fr, Dex e Agi), além de duplicar o valor dos pontos de vida que o kansariano estiver no momento + 100 PVs por nível de personagem, o kansariano também ganha +50 no IP! Mas para invocar a Lágrima do Sangue do Ódio o kansariano deve perder 1 turno se concentrando e não pode ser incomodado, caso tenha feito isso, se transforma de acordo com a Família Antiga que seu kansariano, e essa transformação dura 1d6 turnos +1 para cada nível de personagem. Caso o kansariano se concentre 2 ou mais turnos para invocar a lágrima, a transformação dura 2d6 turnos, se for 3, 3d6 turnos, sendo que 3d6 turnos é o máximo que os Kansarianos conseguem."
+      ],
+      "sections": [
+        {
+          "id": "arma-kansariana",
+          "title": "Arma Kansariana",
+          "area": "regras_base",
+          "paragraphs": [
+            "Pouco explicado no livro eletrônico YOSHIRO ROLE PLAYING GAME - Módulo Básico, as armas kansarianas na verdade são armas comuns revestidas por poder kansai do próprio dono da mesma, que pelo pk obtido, ficam mais poderosas com o tempo e se tornam armas vivas, com inteligência suficiente para obedecer ordens concretas, além disso, armas kansarianas são armas inquebráveis (quebram apenas com a técnica secreta Saint Hit ou através da proeza Destruir Estilo na arma) e também nunca se gastam. Em termos de RPG, toda arma kansariana aumenta +1 no dano a cada dois níveis de personagem dono da arma. Mais regras detalhadas para a construção de armas kansarianas são vistas bem mais adiante nesse livro.",
+            "Saint Hit: A técnica destruídora de Armas kansarianas! “Saint Hit” é o nome da técnica secreta criada por Dragão Milenar, o dragão vermelho mais poderoso do mundo e Mestre dos kansarianos Nakan (descrito no YOSHIRO ROLE PLAYING GAME - Módulo básico), Lee e o cômico Alfredo. Consiste num golpe único que pela concentração e pela violência do ataque, quebra de vez uma arma kansariana alvo. Mas no multiverso, apenas os discípulos do Dragão Milenar conhecem essa técnica poderosa e de difícil aprendizado."
+          ]
+        },
+        {
+          "id": "magica-luniana",
+          "title": "Mágica Luniana",
+          "area": "regras_base",
+          "paragraphs": [
+            "A mágica praticada na dimensão Lua e nas demais dimensões que consiste o multiverso (e também vista na cronologia Yoshiro) é bem diferente da feitiçaria e bruxaria que vemos na Terra. A primeira coisa, é que os praticantes de magia luniana conseguem fazer efeitos mais poderosos e “impossíveis” em suas mágicas, como gerar bolas de fogo, cair raios do céu, explodir coisas... algo que os praticantes de magia negra não conseguem... A mágica luniana (praticada por humanos e kansarianos) é feita a partir de uma essência que fica na atmosfera das dimensões da Terra conhecida como Kansailar (já descrita no livro básico), uma essência derivada do poder kansai e que os magos retiram dela seus poderes. Caso um mago luniano queira usar uma magia dentro de qualquer dimensão que não faz parte do “plano” da Terra, seus poderes não funcionam. (Vem alguém e me pergunta: “-Ah! Tá, eu preciso estar em uma dimensão que faça parte das dimensões da Terra para usar meus poderes... isso é ridículo, se eu me tornar um mago comum, posso usar meus poderes onde e quando quiser...”) Tá, eu até aprecio isso, mas os magos lunianos em termos de RPG restauram 1 ponto de magia a cada cinco minutos dentro de uma dimensão que seja da Terra e suas mágicas recebem o dano de +1 extra a cada dois níveis de personagem. E para os arcanis que adoram viajar em dimensões que não sejam da Terra (algo improvável) existe uma poção que permite ao arcanis usar seus poderes, é uma espécie de suco de kansailar, com o nome Poção Maximun.",
+            "Mais detalhes sobre mágica luniana são vistos no livro YOSHIRO ROLE PLAYING GAME - módulo básico."
+          ]
+        },
+        {
+          "id": "se-tornando-um-arcanis",
+          "title": "Se tornando um Arcanis",
+          "area": "regras_base",
+          "paragraphs": [
+            "Para se tornar um arcanis, o candidato deve ser aceito em um conselho de kansarianos-arcanis experientes para depois passar pelo ritual Fada dos Sete Ventos e se tornar um kansariano da linhagem. Com isso ele tem o direito de aprender mágicas pagando pequenos “custos” (em dinheiro) para se tornar mais poderoso e respeitado. Os arcanis registrados já tem um emprego fixo na sua própria Linhagem e devem cumprir as missões de seus superiores."
+          ]
+        },
+        {
+          "id": "ritual-fada-dos-sete-ventos",
+          "title": "Ritual Fada dos Sete Ventos",
+          "area": "regras_base",
+          "paragraphs": [
+            "O ritual acontece da seguinte forma, um grupo de candidatos a arcanis são recrutados a comparecerem num jardim florido, este que fica numa dimensão adjacente (ver no livro Guia Completo dos GK, para mais detalhe sobre essa dimensão). Chegando lá, os candidatos recebem uma única e simples ordem “-Para se tornar membro de nossa linhagem, é preciso que capturem esse ser mágico para provar sua astúcia e capacidade contra seres mitológicos e faéricos.” Assim os arcanis que estão realizando o ritual soltam algumas fadas e cabe a missão dos candidatos capturá-las sem qualquer outro tipo de poder se não for a própria inteligência. Apenas uma fada capturada já torna um novato em um arcanis. Esse ritual (que mais parece um teste) tem duração máxima de 7 horas, sendo que a cada 1 hora sem a captura de uma fada, os arcanis ao redor usam seus poderes criando um furacão que destrói tudo além de oferecer perigo de morte aos candidatos. Candidatos que tenham capturados pelo menos uma fada conseguem desenvolver a mágica luniana além de perder um pouco seu poder kansai natural no processo. (Redutor de -3 no PK), mas logo aprendem a habilidade de usar mágica e criar/consertar armas kansarianas."
+          ]
+        },
+        {
+          "id": "eticas-morais",
+          "title": "Éticas Morais dos Arcanis",
+          "area": "regras_base",
+          "paragraphs": [
+            "A primeira coisa ao arcanis novato é decidir qual a sua ética moral. Éticas morais na verdade são uma tendência específica para denominar se o arcanis é uma pessoa boa/ruim e se trabalha apenas com GKs/tegicnistas. Todo arcanis precisa ter sua ética moral. A Ética Moral serve para que o clã possa perceber que tipo de pessoa o arcanis é e com quais tipos de pessoas ele pretende trabalhar nos serviços mercenários tão costumeiros. Existem apenas 3 éticas morais (eltihcisi miurishsi, no original em língua kansariana): Justiça, Honra e Morte. As três éticas morais correspondem ao lado que o arcanis atua na Eterna Guerra (confronto entre GKs e tegicnistas), sendo que Justiça corresponde ao lado dos Guerreiros Kansai; Morte corresponde ao lado dos Tegicnistas; e Honra corresponde a ambos os lados ou mesmo em nenhum deles."
+          ]
+        },
+        {
+          "id": "lagrima-do-sangue-do-odio",
+          "title": "Lágrima do Sangue do Ódio",
+          "area": "regras_base",
+          "paragraphs": [
+            "É uma transformação secreta que todo kansariano pode utilizar em seus momentos mais críticos, esta consiste em usar toda a força do estilo do membro portador de pk, ele se fortalece muito, mas perde temporariamente todas as suas lembranças e éticas de “bem ou mal”, atacando seu inimigo com uma força de ataque tremenda, assim como o ódio. A transformação muda temporariamente o corpo do kansariano e ele segundo as lendas tem seu poder multiplicado por 7! O número da perfeição segundo a Bíblia Sagrada. Mas depois que vencer um determinado inimigo (a Lágrima do Sangue do Ódio só pode ser invocada para vencer um ou mais inimigos), o kansariano cai no chão e entra em coma, mais precisamente uma hibernação, entra em sono profundo onde ele e seu Estilo dormem para descansar do esforço, não acordando para nada, isso durante 2d6 dias +1 por nível de personagem. E mesmo que normalmente um Estilo sai do kansariano para protegê-lo quando o mesmo está dormindo, isso não acontece, pois nesse caso o Estilo está tão exausto quando o próprio portador do pk.",
+            "A transformação oferece ao kansariano em RPGs: multiplica os Atributos Kansarianos por 7 (Con, Fr, Dex e Agi), além de duplicar o valor dos pontos de vida que o kansariano estiver no momento + 100 PVs por nível de personagem, o kansariano também ganha +50 no IP! Mas para invocar a Lágrima do Sangue do Ódio o kansariano deve perder 1 turno se concentrando e não pode ser incomodado, caso tenha feito isso, se transforma de acordo com a Família Antiga que seu kansariano, e essa transformação dura 1d6 turnos +1 para cada nível de personagem. Caso o kansariano se concentre 2 ou mais turnos para invocar a lágrima, a transformação dura 2d6 turnos, se for 3, 3d6 turnos, sendo que 3d6 turnos é o máximo que os Kansarianos conseguem."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "servicos-e-equipamentos-das-academias-arcanis",
+      "title": "Serviços e equipamentos das Academias Arcanis",
+      "area": "itens_equipamentos",
+      "kind": "equipment_rules",
+      "sectionId": "item-equipamento",
+      "sectionTitle": "Item/Equipamento",
+      "paragraphs": [
+        "Os arcanis trabalham apenas de duas maneiras: com magias ou em serviços mercenários. Se for com mágicas, envolve tudo que seja no fator místico, isso inclui das aulas de magia aos itens mágicos vendidos, sem falar nas tão procuradas armas kansarianas, armas desejadas e que apenas os kansarianos dessa linhagem tem o poder de construir essas maravilhas. Se for através dos costumeiros serviços mercenários, envolve qualquer tipo de missão não importando a pessoa que contratou o arcanis. Aceitar o serviço ou não vai depender da própria ética moral do próprio kansariano-mago. Os serviços mercenários são realmente o que os arcanis fazem de melhor. Por isso que são relacionados como “Chave” no confronto direto contra GKs e tegicnistas. Os arcanis também tem seu preço pelo seu nível de poder (que são os mesmos quinze níveis de personagem no Sistema Daemon), sendo que o preço para o arcanis ser contratado é de 2.000$Sht (Sonathas, moeda das dimensões) para cada nível de personagem do próprio arcanis em questão (já incluindo o primeiro nível). A contratação do arcanis no serviço mercenário equivale no máximo o tempo de uma 1 semana (sete dias ou cinco dias úteis), sendo que se o arcanis for ferido mortalmente ou ficar mais tempo no serviço mercenário, o clã inserirá sob o contrato do cliente o que eles chamam de imposto de represália, onde o cliente deverá pagar uma taxa extra por não cumprir direito o trato de uma semana da contratação do kansariano-mago.",
+        "IMPOSTO DE REPRESÁLIA: imposto obrigatório nas Academias Arcanis a todos aqueles que não cumprirem o limite de tempo máximo para a contratação de um ou mais kansarianos da linhagem arcanis, que é de uma semana, sendo sete dias ou cinco dias úteis, tudo dependo do cliente. O imposto é uma taxa extra de 3000$Sht para cada dia sem trazer de volta o arcanis contratado de volta a sua academia. Caso o arcanis seja morto, a taxa é de 12.000$Sht (única).",
+        "Mesmo que os arcanis trabalhem em suas academias e fazem serviços mercenários para ganhar a vida. Os arcanis ainda precisam pagar para professores mais experientes para aprender suas magias. Mesmo porque, a linhagem vem da antiga escola de magia Arcanis Kansaines. Os preços desse ou mais serviços são vistos adiante.",
+        "O arcanis que preze em fazer serviços mercenários fica na academia esperando ou mesmo fazendo qualquer outra atividade. Ele pode trabalhar na academia de outras formas também enquanto espera vir algum cliente para contratá-lo a uma missão. Incluindo todos os serviços feitos na academia (tais como lavar o chão, tirar o pó, ensinar magias, ensinar proezas kansarianas, construir armas kansarianas, consertar armas kansarianas, ficar de atendente nos balcões dos clientes, ficar no telefone esperando ligações de clientes...) e qualquer outra coisa, o arcanis recebe no final do dia 445Sht fora o dinheiro dos demais serviços realizados. (OBS: O salário na dimensão Lua não é feito por mês e sim por dia inteiro de trabalho, caso a academia do arcanis específico não seja situada nessa dimensão, então ele receberá no final do mês cerca de 11.125Sht)",
+        "No universo Yoshiro não existe como se vê em demais ambientações de mangás, livros e RPGs algo que chamamos de poções mágicas. As tais poções podem ser chamadas de mágicas, mas na composição não são não. Elas são conhecidas pelo multiverso como poções científicas e são apenas comercializados nos balcões da linhagem Arcanis. As poções criadas são extrações de efeitos da Kansailar (essência de poder kansai nas dimensões pra quem não sabe!), e são existentes de várias colorações. As poções são inseridas e vendidas em pequenos canudos de vidro e que são tampados por rolhas (parecidas como as rolhas de vinho). Toda poção contém apenas uma dose, é tomar e esperar o efeito imediato. Demoram cerca de 3 dias (sendo que em média 36 horas de criação de cada). Sua composição é feita de vários materiais que contém grande quantidade de Kansailar, com ervas, grãos e sementes.",
+        "Poção Azul (Cura menor)",
+        "8.000$Sht cada",
+        "Poção Cinza (Cura média)",
+        "17.000$Sht cada",
+        "Poção Laranja (Cura Maior)",
+        "34.500$Sht cada",
+        "Poção Dourada (Restaura tudo)",
+        "70.000$Sht cada",
+        "Poção Vermelha (restaura 2d6 pms)",
+        "15.000$Sht cada",
+        "Antídoto (variantes, depende de cada veneno)",
+        "Entre 3000$Sht e 5000$Sht cada",
+        "DESCRIÇÃO DAS POÇÕES",
+        "Como já descrito, os arcanis são especialistas em serviços mercenários. Serviços onde seus clientes visitam suas academias correspondentes e contratam por no máximo 1 semana, um ou mais determinados arcanis. Mais detalhes foram vistas no capítulo anterior. Para se contratar um arcanis, é preciso pagar 2000 Sht por nível de poder do kansariano Arcanis (incluindo o primeiro nível!), ou seja, se um cliente quer contratar num serviço mercenário um arcanis de nível 3, ele pagará ao clã 6000 Sht, valor a vista; se for um kansariano arcanis de nível 7, será 14000 Sht, e assim por diante... O arcanis contratado recebe depois de cumprir o serviço cerca de 20% do valor recebido pela sua contração. Exemplo: “Se o arcanis de nível 3 cumpriu com sucesso sua missão, ele recebe na hora cerca de 1200 Sht.",
+        "Arcanis poderosos também são contratados para dar aulas de magias a alunos menos experientes no ramo místico. As aulas costumam ser de 4 horas por turma e o professor recebe cerca de 40 Sht por hora (incluindo aulas nas outras turmas). Use as demais regras do Sistema Daemon para utilizar magia, e para opções delas, procure pelo livro GRIMÓRIO, da Daemon Editora ou mesmo inspiração em livros de fantasia, filmes, animes, mangás e o que mais você gosta...",
+        "O arcanis também pode esquecer o bastão e o poder mágico para usar a vassoura e o esfregão. Arcanis menos conservadores podem resolver ganhar um pouco de grana extra fazendo serviços domésticos, como tirar o pó, limpar as salas de aulas de magias e/ou as salas de treinamento, limpar os banheiros (as privadas...), e outros serviços escravos que só estagiários tem a honra e a capacidade de fazer. Os arcanis mais avançados lhe pagam o salário de 55 Sht por hora de serviço doméstico. Pena que algumas cabalas da linhagem não gostem que seus membros se humilhem dessa forma para ganhar uma graninha...",
+        "Outra forma de ganhar dinheiro é ficar o dia todo atrás do balcão de uma academia arcanis anotando os serviços, conferindo em computador, recebendo pagamentos e mandando outros arcanis para as missões junto com os clientes. Essa é a função do balconista, que fica 12 horas sentados e falando com os clientes. Atendentes trabalham apenas por 12 horas, e recebem um salário de 250 Sht por dia inteiro de trabalho.",
+        "Um arcanis demora cerca de 3 ou 4 horas para montar uma nova arma kansariana novinha (isso com os materiais necessários em seu laboratório) e recebe cerca de 20.000 Sht por arma concluída (sendo que o preço dessas belezinhas dentro do clã é de 40.000Sht! Pois as armas precisam ser licenciadas). As regras em mecânica de jogo das armas kansarianas são vistas no livro YOSHIRO ROLE PLAYING GAME - Módulo Básico. Os arcanis são os únicos no multiverso a terem poder e inteligência suficiente para construir/consertar as tais armas kansarianas. Armas revestidas de poder kansai que são fiéis aos seus donos que custam 40.000Sht à vista ou em 40 prestações mensais de 1300Sht, valor cujo metade vai para as mãos do construtor da arma. A Cabala dos Construtores é que são os melhores especialistas nesse ramo (mais detalhes sobre essa cabala são vistas em seu capítulo correspondente.).",
+        "Assim como nas outras linhagens, existem salas de treinamento para o aprendizado de proezas kansarianas (poderes gerados a partir do poder kansai). Um arcanis que se preze a dar aulas a alunos sobre as proezas que eles querem realmente aprender a usar (e que o arcanis também saiba) recebe cerca de 40 Sht por hora e dá aulas em salas de treinamento, com turmas de no máximo 13 pessoas e em aulas que tenham duração máxima de 1: 30 h."
+      ],
+      "sections": [
+        {
+          "id": "servicos-mercenarios",
+          "title": "Serviços Mercenários",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Os arcanis trabalham apenas de duas maneiras: com magias ou em serviços mercenários. Se for com mágicas, envolve tudo que seja no fator místico, isso inclui das aulas de magia aos itens mágicos vendidos, sem falar nas tão procuradas armas kansarianas, armas desejadas e que apenas os kansarianos dessa linhagem tem o poder de construir essas maravilhas. Se for através dos costumeiros serviços mercenários, envolve qualquer tipo de missão não importando a pessoa que contratou o arcanis. Aceitar o serviço ou não vai depender da própria ética moral do próprio kansariano-mago. Os serviços mercenários são realmente o que os arcanis fazem de melhor. Por isso que são relacionados como “Chave” no confronto direto contra GKs e tegicnistas. Os arcanis também tem seu preço pelo seu nível de poder (que são os mesmos quinze níveis de personagem no Sistema Daemon), sendo que o preço para o arcanis ser contratado é de 2.000$Sht (Sonathas, moeda das dimensões) para cada nível de personagem do próprio arcanis em questão (já incluindo o primeiro nível). A contratação do arcanis no serviço mercenário equivale no máximo o tempo de uma 1 semana (sete dias ou cinco dias úteis), sendo que se o arcanis for ferido mortalmente ou ficar mais tempo no serviço mercenário, o clã inserirá sob o contrato do cliente o que eles chamam de imposto de represália, onde o cliente deverá pagar uma taxa extra por não cumprir direito o trato de uma semana da contratação do kansariano-mago.",
+            "IMPOSTO DE REPRESÁLIA: imposto obrigatório nas Academias Arcanis a todos aqueles que não cumprirem o limite de tempo máximo para a contratação de um ou mais kansarianos da linhagem arcanis, que é de uma semana, sendo sete dias ou cinco dias úteis, tudo dependo do cliente. O imposto é uma taxa extra de 3000$Sht para cada dia sem trazer de volta o arcanis contratado de volta a sua academia. Caso o arcanis seja morto, a taxa é de 12.000$Sht (única)."
+          ]
+        },
+        {
+          "id": "aprendendo-magicas",
+          "title": "Aprendendo Mágicas",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Mesmo que os arcanis trabalhem em suas academias e fazem serviços mercenários para ganhar a vida. Os arcanis ainda precisam pagar para professores mais experientes para aprender suas magias. Mesmo porque, a linhagem vem da antiga escola de magia Arcanis Kansaines. Os preços desse ou mais serviços são vistos adiante."
+          ]
+        },
+        {
+          "id": "salario",
+          "title": "Recebendo Salário",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "O arcanis que preze em fazer serviços mercenários fica na academia esperando ou mesmo fazendo qualquer outra atividade. Ele pode trabalhar na academia de outras formas também enquanto espera vir algum cliente para contratá-lo a uma missão. Incluindo todos os serviços feitos na academia (tais como lavar o chão, tirar o pó, ensinar magias, ensinar proezas kansarianas, construir armas kansarianas, consertar armas kansarianas, ficar de atendente nos balcões dos clientes, ficar no telefone esperando ligações de clientes...) e qualquer outra coisa, o arcanis recebe no final do dia 445Sht fora o dinheiro dos demais serviços realizados. (OBS: O salário na dimensão Lua não é feito por mês e sim por dia inteiro de trabalho, caso a academia do arcanis específico não seja situada nessa dimensão, então ele receberá no final do mês cerca de 11.125Sht)"
+          ]
+        },
+        {
+          "id": "pocoes-cientificas",
+          "title": "Poções Científicas",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "No universo Yoshiro não existe como se vê em demais ambientações de mangás, livros e RPGs algo que chamamos de poções mágicas. As tais poções podem ser chamadas de mágicas, mas na composição não são não. Elas são conhecidas pelo multiverso como poções científicas e são apenas comercializados nos balcões da linhagem Arcanis. As poções criadas são extrações de efeitos da Kansailar (essência de poder kansai nas dimensões pra quem não sabe!), e são existentes de várias colorações. As poções são inseridas e vendidas em pequenos canudos de vidro e que são tampados por rolhas (parecidas como as rolhas de vinho). Toda poção contém apenas uma dose, é tomar e esperar o efeito imediato. Demoram cerca de 3 dias (sendo que em média 36 horas de criação de cada). Sua composição é feita de vários materiais que contém grande quantidade de Kansailar, com ervas, grãos e sementes."
+          ]
+        },
+        {
+          "id": "pocoes-a-venda",
+          "title": "Poções à Venda",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Poção Azul (Cura menor)",
+            "8.000$Sht cada",
+            "Poção Cinza (Cura média)",
+            "17.000$Sht cada",
+            "Poção Laranja (Cura Maior)",
+            "34.500$Sht cada",
+            "Poção Dourada (Restaura tudo)",
+            "70.000$Sht cada",
+            "Poção Vermelha (restaura 2d6 pms)",
+            "15.000$Sht cada",
+            "Antídoto (variantes, depende de cada veneno)",
+            "Entre 3000$Sht e 5000$Sht cada",
+            "DESCRIÇÃO DAS POÇÕES"
+          ]
+        },
+        {
+          "id": "contratacao-de-servicos",
+          "title": "Contratação de Serviços Mercenários",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Como já descrito, os arcanis são especialistas em serviços mercenários. Serviços onde seus clientes visitam suas academias correspondentes e contratam por no máximo 1 semana, um ou mais determinados arcanis. Mais detalhes foram vistas no capítulo anterior. Para se contratar um arcanis, é preciso pagar 2000 Sht por nível de poder do kansariano Arcanis (incluindo o primeiro nível!), ou seja, se um cliente quer contratar num serviço mercenário um arcanis de nível 3, ele pagará ao clã 6000 Sht, valor a vista; se for um kansariano arcanis de nível 7, será 14000 Sht, e assim por diante... O arcanis contratado recebe depois de cumprir o serviço cerca de 20% do valor recebido pela sua contração. Exemplo: “Se o arcanis de nível 3 cumpriu com sucesso sua missão, ele recebe na hora cerca de 1200 Sht."
+          ]
+        },
+        {
+          "id": "ensinando-magias",
+          "title": "Ensinando Magias",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Arcanis poderosos também são contratados para dar aulas de magias a alunos menos experientes no ramo místico. As aulas costumam ser de 4 horas por turma e o professor recebe cerca de 40 Sht por hora (incluindo aulas nas outras turmas). Use as demais regras do Sistema Daemon para utilizar magia, e para opções delas, procure pelo livro GRIMÓRIO, da Daemon Editora ou mesmo inspiração em livros de fantasia, filmes, animes, mangás e o que mais você gosta..."
+          ]
+        },
+        {
+          "id": "servicos-domesticos",
+          "title": "Serviços Domésticos",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "O arcanis também pode esquecer o bastão e o poder mágico para usar a vassoura e o esfregão. Arcanis menos conservadores podem resolver ganhar um pouco de grana extra fazendo serviços domésticos, como tirar o pó, limpar as salas de aulas de magias e/ou as salas de treinamento, limpar os banheiros (as privadas...), e outros serviços escravos que só estagiários tem a honra e a capacidade de fazer. Os arcanis mais avançados lhe pagam o salário de 55 Sht por hora de serviço doméstico. Pena que algumas cabalas da linhagem não gostem que seus membros se humilhem dessa forma para ganhar uma graninha..."
+          ]
+        },
+        {
+          "id": "atendente",
+          "title": "Atendente",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Outra forma de ganhar dinheiro é ficar o dia todo atrás do balcão de uma academia arcanis anotando os serviços, conferindo em computador, recebendo pagamentos e mandando outros arcanis para as missões junto com os clientes. Essa é a função do balconista, que fica 12 horas sentados e falando com os clientes. Atendentes trabalham apenas por 12 horas, e recebem um salário de 250 Sht por dia inteiro de trabalho."
+          ]
+        },
+        {
+          "id": "armas-kansarianas",
+          "title": "Construir Armas Kansarianas",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Um arcanis demora cerca de 3 ou 4 horas para montar uma nova arma kansariana novinha (isso com os materiais necessários em seu laboratório) e recebe cerca de 20.000 Sht por arma concluída (sendo que o preço dessas belezinhas dentro do clã é de 40.000Sht! Pois as armas precisam ser licenciadas). As regras em mecânica de jogo das armas kansarianas são vistas no livro YOSHIRO ROLE PLAYING GAME - Módulo Básico. Os arcanis são os únicos no multiverso a terem poder e inteligência suficiente para construir/consertar as tais armas kansarianas. Armas revestidas de poder kansai que são fiéis aos seus donos que custam 40.000Sht à vista ou em 40 prestações mensais de 1300Sht, valor cujo metade vai para as mãos do construtor da arma. A Cabala dos Construtores é que são os melhores especialistas nesse ramo (mais detalhes sobre essa cabala são vistas em seu capítulo correspondente.)."
+          ]
+        },
+        {
+          "id": "ensinamentos-de-proezas",
+          "title": "Ensinamentos de Proezas",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Assim como nas outras linhagens, existem salas de treinamento para o aprendizado de proezas kansarianas (poderes gerados a partir do poder kansai). Um arcanis que se preze a dar aulas a alunos sobre as proezas que eles querem realmente aprender a usar (e que o arcanis também saiba) recebe cerca de 40 Sht por hora e dá aulas em salas de treinamento, com turmas de no máximo 13 pessoas e em aulas que tenham duração máxima de 1: 30 h."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-de-nisona",
+      "title": "Cabala de Nísona",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Cabala composta por ARCANIS especializados no caminho mágico da Cura e da vida. São uma espécie de Magos-Cirurgiões. Treinados principalmente para socorrer vítimas de atentados tegicnistas e outros demais. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "3 pontos de Aprimoramento",
+        "175 pontos de perícia",
+        "Báculo 20/40, Ciências (Anatomia 20%, Botânica 20%, Herbalismo 25%), Ciências Secretas (Teoria da Magia 25%), Furtividade 20%, Informática (Computação 20%), Medicina (Cirurgia 30%, Primeiros Socorros 25%)",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 3",
+        "5 Focus; 3 PMs"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Cabala composta por ARCANIS especializados no caminho mágico da Cura e da vida. São uma espécie de Magos-Cirurgiões. Treinados principalmente para socorrer vítimas de atentados tegicnistas e outros demais. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "3 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "175 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Báculo 20/40, Ciências (Anatomia 20%, Botânica 20%, Herbalismo 25%), Ciências Secretas (Teoria da Magia 25%), Furtividade 20%, Informática (Computação 20%), Medicina (Cirurgia 30%, Primeiros Socorros 25%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 3"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "5 Focus; 3 PMs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-meta-magicos",
+      "title": "Cabala dos Meta-Mágicos",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Composta por arcanis especializados em meta-física, a ciência luniana que permite aos seus estudantes abrir buracos no tempo e espaço para viajarem a outras dimensões sem mesmo um teleportador. Os membros dessa Cabala tem autorização do próprio Anjo das Dimensões Istik para usufruirem dessa Ciência Secreta que poucos sabem. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "155 pontos de perícia",
+        "Bastão 30/10, Ciencias (Astrologia 30%, Física 30%, Geografia 30%), Ciências Secretas (*Meta-física 30%), teoria da magia 30%), Furtividade 10%, Informática (Computação 30%)",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 3, Status 1(apenas entre os arcanis)",
+        "5 Focus; 3 PMs; é necessário pelo menos 2 Focus em Metamagia",
+        "*Meta-Física (0): Ciência perigosa e proibida que permite aos seus estudantes abrir buracos no tempo/espaço e ter acesso a viajar entre as dimensões sem um teleportador. Existem vários livros e sites na internet (plano e interdimensional) tratando do assunto. Ciência proibida pelo Anjo das Dimensões Istik, mas os membros da Cabala dos Meta-mágicos tem autorização por escrito para usufruirem dos conhecimentos dessa ciência. E como é perigosa e proibida, Meta-física faz parte do grupo Ciências Proibídas/Alternativas."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Composta por arcanis especializados em meta-física, a ciência luniana que permite aos seus estudantes abrir buracos no tempo e espaço para viajarem a outras dimensões sem mesmo um teleportador. Os membros dessa Cabala tem autorização do próprio Anjo das Dimensões Istik para usufruirem dessa Ciência Secreta que poucos sabem. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "155 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Bastão 30/10, Ciencias (Astrologia 30%, Física 30%, Geografia 30%), Ciências Secretas (*Meta-física 30%), teoria da magia 30%), Furtividade 10%, Informática (Computação 30%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 3, Status 1(apenas entre os arcanis)"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "5 Focus; 3 PMs; é necessário pelo menos 2 Focus em Metamagia"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "*Meta-Física (0): Ciência perigosa e proibida que permite aos seus estudantes abrir buracos no tempo/espaço e ter acesso a viajar entre as dimensões sem um teleportador. Existem vários livros e sites na internet (plano e interdimensional) tratando do assunto. Ciência proibida pelo Anjo das Dimensões Istik, mas os membros da Cabala dos Meta-mágicos tem autorização por escrito para usufruirem dos conhecimentos dessa ciência. E como é perigosa e proibida, Meta-física faz parte do grupo Ciências Proibídas/Alternativas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-justiceiros-misticos",
+      "title": "Cabala dos Justiceiros Místicos",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Cabalas de. arcanis treinados na arte de matar pessoas, são os assassinos natos e grande ferramenta num serviço mercenário que tenha a função de matar uma determinada pessoa ou monstro. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "270 pontos de perícia",
+        "Faca 40/10, Armadilhas 20%, Camuflagem 30%, Ciências (Anatomia 30%), Ciências Secretas (Teoria da Magia 30%), Disfarce 20%, Esportes (Acrobacia 20%), Furtividade 30%, Informática (Computação 20%), Manobras de Combate (Refém [15], imobilização [20], chave de membro [20]), Pesquisa 20%, Procura 20%, Rastreio 25%",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 4, Status 1(apenas entre os arcanis)",
+        "7 Focus; 5 PMs"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Cabalas de. arcanis treinados na arte de matar pessoas, são os assassinos natos e grande ferramenta num serviço mercenário que tenha a função de matar uma determinada pessoa ou monstro. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "270 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Faca 40/10, Armadilhas 20%, Camuflagem 30%, Ciências (Anatomia 30%), Ciências Secretas (Teoria da Magia 30%), Disfarce 20%, Esportes (Acrobacia 20%), Furtividade 30%, Informática (Computação 20%), Manobras de Combate (Refém [15], imobilização [20], chave de membro [20]), Pesquisa 20%, Procura 20%, Rastreio 25%"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 4, Status 1(apenas entre os arcanis)"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "7 Focus; 5 PMs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-guerreiros-magicos",
+      "title": "Cabala dos Guerreiros Mágicos",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Gladiadores treinados para guerrilha e magia, tudo para defender a linhagem dos perigos de eventuais inimigos. São sérios e frios em combate. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "5 pontos de Aprimoramento",
+        "150 pontos de perícia",
+        "Escolha três Armas Brancas com 20/20, Armadilhas 20%, Camuflagem 25%, Esportes (Acrobacia 20%, Salto 25%), Sobrevivência (Escolha dois terrenos com 20%), Ciências Secretas (Teoria da Magia 20%)",
+        "Patrono (linhagem Arcanis), Pontos Heroicos 4, Poderes Mágicos 2",
+        "3 Focus; 2 PMs",
+        "Pontos Heroicos: 4 por nível"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Gladiadores treinados para guerrilha e magia, tudo para defender a linhagem dos perigos de eventuais inimigos. São sérios e frios em combate. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "5 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "150 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Escolha três Armas Brancas com 20/20, Armadilhas 20%, Camuflagem 25%, Esportes (Acrobacia 20%, Salto 25%), Sobrevivência (Escolha dois terrenos com 20%), Ciências Secretas (Teoria da Magia 20%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Pontos Heroicos 4, Poderes Mágicos 2"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "Pontos Heroicos: 4 por nível"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-gatunos",
+      "title": "Cabala dos Gatunos",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Arcanis preparados para invadir locais de difícil acesso, preparados para infiltrar em áreas secretas e roubar dados secretos, são os verdadeiros gatunos mágicos. Uma das mais recomendadas para os serviços mercenários caso a missão seja para invadir um local e roubar alguma coisa. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "2 pontos de Aprimoramento",
+        "190 pontos de perícia",
+        "Bastão ou Faca 20/10, Armadilhas 25%, Camuflagem 20%, Ciências Secretas (Teoria da Magia 25%), Disfarce 30%, Escutar 20%, Esportes (Acrobacia 20%), Furtar 30%, Furtividade 35%, Informática (Computação 25%), Manuseio de Fechaduras 30%",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 2",
+        "3 Focus; 2 PMs"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Arcanis preparados para invadir locais de difícil acesso, preparados para infiltrar em áreas secretas e roubar dados secretos, são os verdadeiros gatunos mágicos. Uma das mais recomendadas para os serviços mercenários caso a missão seja para invadir um local e roubar alguma coisa. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "2 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "190 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Bastão ou Faca 20/10, Armadilhas 25%, Camuflagem 20%, Ciências Secretas (Teoria da Magia 25%), Disfarce 30%, Escutar 20%, Esportes (Acrobacia 20%), Furtar 30%, Furtividade 35%, Informática (Computação 25%), Manuseio de Fechaduras 30%"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 2"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-faerie",
+      "title": "Cabala dos Faérie",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Cabala de Arcanis composta apenas por garotas, que se vestem como fadas e tem implantadas asas de borboletas gigantes mágicas nas costas. Todos os membros dessa Cabala são muito bonitas e atraentes. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "165 pontos de perícia",
+        "Cajado 30/10, Artes (Atuação 20%, Canto 25%, Culinária 25%, Escapismo 20%), Ciências Secretas (Teoria da Magia 30%), Disfarce 20%, Esportes (Acrobacia 30%), Informática (Computação 25%), Medicina (Primeiros Socorros 25%)",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 2, *Levitação e Vôo 2 (graças as suas asas)",
+        "3 Focus; 2 PMs",
+        "(*Mesmo não comprando o kit, para ser membro dessa cabala a personagem deve empregar 1 ponto de aprimoramento no aprimoramento Levitação e Vôo, correspondendo as suas asas de borboleta nas costas. Caso não faça isso, a personagem será considerada por membros da própria Cabala como “Musgo”(veja no quadro abaixo).",
+        "MUSGO: As Arcanis da Cabala dos Faérie sem Asas... Musgo é o termo vulgar que uma arcanis da cabala dos faérie se refere a um membro da cabala que não teve as tais asas de borboleta “mágicas” impostas nas costas. Personagens que não tenham asas e que sejam dessa cabala (apesar de serem poucas) serão menosprezadas pelas colegas de cabala até que tenha suas asas, sendo chamada de Musgo, que dentro da Cabala e da linhagem Arcanis é uma ofensa, é o mesmo que te chamar de incapaz e burro."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Cabala de Arcanis composta apenas por garotas, que se vestem como fadas e tem implantadas asas de borboletas gigantes mágicas nas costas. Todos os membros dessa Cabala são muito bonitas e atraentes. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "165 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Cajado 30/10, Artes (Atuação 20%, Canto 25%, Culinária 25%, Escapismo 20%), Ciências Secretas (Teoria da Magia 30%), Disfarce 20%, Esportes (Acrobacia 30%), Informática (Computação 25%), Medicina (Primeiros Socorros 25%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 2, *Levitação e Vôo 2 (graças as suas asas)"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "(*Mesmo não comprando o kit, para ser membro dessa cabala a personagem deve empregar 1 ponto de aprimoramento no aprimoramento Levitação e Vôo, correspondendo as suas asas de borboleta nas costas. Caso não faça isso, a personagem será considerada por membros da própria Cabala como “Musgo”(veja no quadro abaixo).",
+            "MUSGO: As Arcanis da Cabala dos Faérie sem Asas... Musgo é o termo vulgar que uma arcanis da cabala dos faérie se refere a um membro da cabala que não teve as tais asas de borboleta “mágicas” impostas nas costas. Personagens que não tenham asas e que sejam dessa cabala (apesar de serem poucas) serão menosprezadas pelas colegas de cabala até que tenha suas asas, sendo chamada de Musgo, que dentro da Cabala e da linhagem Arcanis é uma ofensa, é o mesmo que te chamar de incapaz e burro."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-aqua",
+      "title": "Cabala dos Aqua",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Arcanis treinados nos mares e rios e grandes manipuladores do caminho mágico: Água. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "190 pontos de perícia",
+        "Lança 30/10, Animais (Treinamento de Animais 20%, Montaria 25%, Doma 25%), Camuflagem 30%, Ciências (Astronomia 20%, Botânica 20%, Zoologia 20%), Ciências Secretas (Teoria da Magia 20%), Esportes (Natação 20%), Informática (Computação 20%), Sobrevivência (Mares e Rios 30%)",
+        "Patrono (linhagem Arcanis), Pontos Heroicos 2, Poderes Mágicos 2",
+        "3 Focus; 2 PMs",
+        "Pontos Heroicos: 2 por nível"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Arcanis treinados nos mares e rios e grandes manipuladores do caminho mágico: Água. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "190 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Lança 30/10, Animais (Treinamento de Animais 20%, Montaria 25%, Doma 25%), Camuflagem 30%, Ciências (Astronomia 20%, Botânica 20%, Zoologia 20%), Ciências Secretas (Teoria da Magia 20%), Esportes (Natação 20%), Informática (Computação 20%), Sobrevivência (Mares e Rios 30%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Pontos Heroicos 2, Poderes Mágicos 2"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "Pontos Heroicos: 2 por nível"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-arqueiros-magicos",
+      "title": "Cabala dos Arqueiros Mágicos",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Cabala composta por membros treinados em arquearia junto com magia. São uma das defesas do clã contra os eventuais inimigos. Costumam não se dar bem com a Cabala dos Pistoleiros Mágicos simplesmente porque eles abandonaram as armas do passado (no caso Arco) e aderiram a modernidade. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "110 pontos de perícia",
+        "Arco “místico” 30/10, Camuflagem 20%, Ciências Secretas (Teoria da Magia 20%), Esportes (Acrobacia 30%), Furtividade 20%, Rastreio 20%, Sobrevivência (Escolha um terreno com 25%)",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 2, Pontos Heroicos 2",
+        "3 Focus; 2 PMs",
+        "Pontos Heroicos: 2 por nível",
+        "*OBS: Os arqueiros mágicos podem emendar suas magias junto com suas flechas inserindo suas mágicas nelas."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Cabala composta por membros treinados em arquearia junto com magia. São uma das defesas do clã contra os eventuais inimigos. Costumam não se dar bem com a Cabala dos Pistoleiros Mágicos simplesmente porque eles abandonaram as armas do passado (no caso Arco) e aderiram a modernidade. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "110 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Arco “místico” 30/10, Camuflagem 20%, Ciências Secretas (Teoria da Magia 20%), Esportes (Acrobacia 30%), Furtividade 20%, Rastreio 20%, Sobrevivência (Escolha um terreno com 25%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 2, Pontos Heroicos 2"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "Pontos Heroicos: 2 por nível",
+            "*OBS: Os arqueiros mágicos podem emendar suas magias junto com suas flechas inserindo suas mágicas nelas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-pistoleiros-magicos",
+      "title": "Cabala dos Pistoleiros Mágicos",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Cabala que tem membros treinados para defesa do clã. Usam armas de fogo para lançarem suas magias assim como o pessoal da Cabala dos Arqueiros Mágicos fazem com seus Arcos. Cabala que não se dá bem com os arqueiros, simplesmente eles aderem ao passado, usando armas velhas e primitivas. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "160 pontos de perícia",
+        "Pistola ou Rifle “místico” 30/0, Camuflagem 20%, Ciências Secretas (Teoria da Magia 30%), Disfarce 20%, Esportes (Acrobacia 20%, Salto 25%), Furtividade 20%, Informática (Computação 20%), Manipulação (Interrogatório 30%), Rastreio 25%",
+        "Patrono (linhagem Arcanis), Pontos Heroicos 2, Poderes Mágicos 2",
+        "3 Focus; 2 PMs",
+        "Pontos Heroicos: 2 por nível",
+        "*OBS: Os pistoleiros mágicos podem emendar suas magias junto com suas flechas inserindo suas mágicas nelas."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Cabala que tem membros treinados para defesa do clã. Usam armas de fogo para lançarem suas magias assim como o pessoal da Cabala dos Arqueiros Mágicos fazem com seus Arcos. Cabala que não se dá bem com os arqueiros, simplesmente eles aderem ao passado, usando armas velhas e primitivas. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "160 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Pistola ou Rifle “místico” 30/0, Camuflagem 20%, Ciências Secretas (Teoria da Magia 30%), Disfarce 20%, Esportes (Acrobacia 20%, Salto 25%), Furtividade 20%, Informática (Computação 20%), Manipulação (Interrogatório 30%), Rastreio 25%"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Pontos Heroicos 2, Poderes Mágicos 2"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "Pontos Heroicos: 2 por nível",
+            "*OBS: Os pistoleiros mágicos podem emendar suas magias junto com suas flechas inserindo suas mágicas nelas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-das-kitanas",
+      "title": "Cabala das Kitanas",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Outra Cabala composta apenas por mulheres. Consiste em assassinas treinadas não apenas para matar, mas também para seduzir suas vítimas. Nos serviços mercenários, é comum que membras da Cabala das Kitanas não mostrem seu rosto, tapando o mesmo (como ninja) ou mesmo usando uma máscara. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "Apenas Kansarianas",
+        "4 pontos de Aprimoramento",
+        "210 pontos de perícia",
+        "Faca 30/10, Armadilhas 10%, Camuflagem 25%, Ciências (Anatomia 25%, Botânica 20%), Ciências Secretas (Teoria da Magia 25%), Disfarce 20%, Esportes (Acrobacia 25%, Salto 20%, Natação 30%), Furtividade 20%, Informática (Computação 30%), Rastreio 25%",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 2, Pontos Heroicos 2",
+        "3 Focus; 2 PMs"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Outra Cabala composta apenas por mulheres. Consiste em assassinas treinadas não apenas para matar, mas também para seduzir suas vítimas. Nos serviços mercenários, é comum que membras da Cabala das Kitanas não mostrem seu rosto, tapando o mesmo (como ninja) ou mesmo usando uma máscara. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "kits",
+          "paragraphs": [
+            "Apenas Kansarianas"
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "210 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Faca 30/10, Armadilhas 10%, Camuflagem 25%, Ciências (Anatomia 25%, Botânica 20%), Ciências Secretas (Teoria da Magia 25%), Disfarce 20%, Esportes (Acrobacia 25%, Salto 20%, Natação 30%), Furtividade 20%, Informática (Computação 30%), Rastreio 25%"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 2, Pontos Heroicos 2"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-glacius",
+      "title": "Cabala dos Glacius",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Cabala de arcanis especializados na magia do frio, do gelo, os verdadeiros magos glaciais. São grandes manipuladores dos caminhos Água e Ar, sua especialidade é congelar objetos, animais, monumentos e o que o serviço mercenário permitir. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "5 pontos de Aprimoramento",
+        "110 pontos de perícia",
+        "Machados 30/10, Animais (Montaria 20%), Camuflagem 20%, Ciências Secretas (Teoria da Magia 25%), Sobrevivência (Gelo 30%, Montanha 30%)",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 3, Pontos Heroicos 2, Saúde de Ferro",
+        "5 Focus; 3 PMs; sendo que é preciso pelo menos 1 ponto empregado no caminho Água e Ar",
+        "Pontos Heroicos: 2 por nível"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Cabala de arcanis especializados na magia do frio, do gelo, os verdadeiros magos glaciais. São grandes manipuladores dos caminhos Água e Ar, sua especialidade é congelar objetos, animais, monumentos e o que o serviço mercenário permitir. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "5 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "110 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Machados 30/10, Animais (Montaria 20%), Camuflagem 20%, Ciências Secretas (Teoria da Magia 25%), Sobrevivência (Gelo 30%, Montanha 30%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 3, Pontos Heroicos 2, Saúde de Ferro"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "5 Focus; 3 PMs; sendo que é preciso pelo menos 1 ponto empregado no caminho Água e Ar"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "Pontos Heroicos: 2 por nível"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-das-folha-das-florestas",
+      "title": "Cabala das Folha-Das-Florestas",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Composta por arcanis que são grande manipuladores da natureza e dos animais, verdadeiros magos da floresta. Manipuladores dos Caminhos Plantas, Terra Animais. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "270 pontos de perícia",
+        "Lanças 25/25, Animais (Treinamento de Animais 20%, Montaria 25%, Doma 20%, Veterinária 20%), Armadilhas 25%, Camuflagem 30%, Ciências (Agricultura 20%, Botânica 25%, Geografia 20%, Herbalismo 30%, Zoologia 25%), Ciências Secretas (Teoria da Magia 30%), Esportes (Natação 25%), Sobrevivência (Floresta 30%)",
+        "Patrono (linhagem Arcanis), Pontos Heroicos 2, Poderes Mágicos 3",
+        "5 Focus; 3 PMs; sendo que pelo menos 1 ponto em Plantas e Animais",
+        "Pontos Heroicos: 2 por nível"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Composta por arcanis que são grande manipuladores da natureza e dos animais, verdadeiros magos da floresta. Manipuladores dos Caminhos Plantas, Terra Animais. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "270 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Lanças 25/25, Animais (Treinamento de Animais 20%, Montaria 25%, Doma 20%, Veterinária 20%), Armadilhas 25%, Camuflagem 30%, Ciências (Agricultura 20%, Botânica 25%, Geografia 20%, Herbalismo 30%, Zoologia 25%), Ciências Secretas (Teoria da Magia 30%), Esportes (Natação 25%), Sobrevivência (Floresta 30%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Pontos Heroicos 2, Poderes Mágicos 3"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "5 Focus; 3 PMs; sendo que pelo menos 1 ponto em Plantas e Animais"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "Pontos Heroicos: 2 por nível"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-olharis",
+      "title": "Cabala dos Olharis",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Cabala que tem membros arcanis especializados na hipnose e ilusionismo diante dos demais animais e criaturas. São especialistas no controle de mentes e alguns são aliados aos conhecimentos dos Psiocinista (classe de kansarianos terríveis que usam o poder psiquíco, revelado no livro GUIA COMPLETO DOS PSIOCINISTA); especializados no caminho Humanos e Animais. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "175 pontos de perícia",
+        "Bastão 20/10, Artes (Atuação 20%, Escapismo 10%, Ilusionismo 25%, Prestigitação 20%), Ciências (Psicologia 30%), Ciências Secretas (Psionicismo 35%, Teoria da Magia 20%), Escutar 20%, Idiomas/Línguas (Braile 20%, Leitura Labial 25%, Leitura de Sinais 20%)",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 2, *Super-Poderes 3 (para os poderes psíquicos)",
+        "3 Focus; 2 PMs; Sendo que é preciso pelo menos 1 ponto no Caminho Humanos",
+        "No jogo de RPG Yoshiro, os poderes sobrenaturais são obtidos seguindo as regras de Super-poderes (como se fossem poderes de Super-Heróis) descritos no livro SUPERS RPG, escolhendo os seguintes poderes descrito no livro visto abaixo: PODERES MENTAIS: todos. págs. 78 a 83; Além dos demais poderes: Alucinações, Animação de Imagens, Duplicação Ilusória e Ilusões (pág. 64); Campo de Força (pág. 67); Campo de Força Balístico, Defesa Mental (pág. 68); Detectar fraquezas (pág. 70); Detectar psiocinista (psiônico), Detectar Vida (pág. 71); Sexto Sentido (pág. 73); Teleportação, Vôo, Viagem dimensional (pág. 57); Golpe Cinético (pág. 52); Além dos poderes descritos no livro GUIA COMPLETO DOS PSIOCINISTAS."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Cabala que tem membros arcanis especializados na hipnose e ilusionismo diante dos demais animais e criaturas. São especialistas no controle de mentes e alguns são aliados aos conhecimentos dos Psiocinista (classe de kansarianos terríveis que usam o poder psiquíco, revelado no livro GUIA COMPLETO DOS PSIOCINISTA); especializados no caminho Humanos e Animais. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "175 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Bastão 20/10, Artes (Atuação 20%, Escapismo 10%, Ilusionismo 25%, Prestigitação 20%), Ciências (Psicologia 30%), Ciências Secretas (Psionicismo 35%, Teoria da Magia 20%), Escutar 20%, Idiomas/Línguas (Braile 20%, Leitura Labial 25%, Leitura de Sinais 20%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 2, *Super-Poderes 3 (para os poderes psíquicos)"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs; Sendo que é preciso pelo menos 1 ponto no Caminho Humanos"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "No jogo de RPG Yoshiro, os poderes sobrenaturais são obtidos seguindo as regras de Super-poderes (como se fossem poderes de Super-Heróis) descritos no livro SUPERS RPG, escolhendo os seguintes poderes descrito no livro visto abaixo: PODERES MENTAIS: todos. págs. 78 a 83; Além dos demais poderes: Alucinações, Animação de Imagens, Duplicação Ilusória e Ilusões (pág. 64); Campo de Força (pág. 67); Campo de Força Balístico, Defesa Mental (pág. 68); Detectar fraquezas (pág. 70); Detectar psiocinista (psiônico), Detectar Vida (pág. 71); Sexto Sentido (pág. 73); Teleportação, Vôo, Viagem dimensional (pág. 57); Golpe Cinético (pág. 52); Além dos poderes descritos no livro GUIA COMPLETO DOS PSIOCINISTAS."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-dragonmage",
+      "title": "Cabala dos DragonMage",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Uma das Cabalas mais respeitadas entre os arcanis. Membros dessa cabala tem treinamento duro em montaria e sua montaria são dragões jovens-adultos. Especializados em combate aéreo, onde une com competência táticas militares e magia. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "4 pontos de Aprimoramento",
+        "260 pontos de perícia",
+        "Báculo 30/20, Animais (Montaria 20%), Ciências Secretas (Teoria da Magia 30%), Esportes (Acrobacia 30%, Saltos 30%), Sobrevivência (Montanha 35%)",
+        "Patrono (linhagem Arcanis), Poderes Mágicos 4, Status 1 (apenas dentro da linhagem)",
+        "7 Focus; 5 PMs"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Uma das Cabalas mais respeitadas entre os arcanis. Membros dessa cabala tem treinamento duro em montaria e sua montaria são dragões jovens-adultos. Especializados em combate aéreo, onde une com competência táticas militares e magia. Estes recebem até 3 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "4 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "260 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Báculo 30/20, Animais (Montaria 20%), Ciências Secretas (Teoria da Magia 30%), Esportes (Acrobacia 30%, Saltos 30%), Sobrevivência (Montanha 35%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "Patrono (linhagem Arcanis), Poderes Mágicos 4, Status 1 (apenas dentro da linhagem)"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "7 Focus; 5 PMs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cabala-dos-gatosinej",
+      "title": "Cabala dos Gatosinej",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Kit",
+      "paragraphs": [
+        "Composta por arcanis manipuladores da magia da natureza e dos animais, só que os membros dessa linhagem têm uma coisa com gatos, isso mesmo, gatos!; membros dessa linhagem costumam andar sempre com 15 gatos de estimação, bichanos que costumam ficar com o arcanis todo o tempo e lhe ajudam nos tempos mais difíceis. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta.",
+        "3 pontos de Aprimoramento",
+        "150 pontos de perícia",
+        "Lança 30/20, Animais (Treinamento de Animais 20%, Doma 20%, Veterinária 20%), Camuflagem 25%, Ciências Secretas (Teoria da Magia 30%), Esportes (Natação 20%), Informática (Computação 20%), Sobrevivência (Escolha um terreno com 20%)",
+        "*Familiares 1 (cerca de 2d10-5 gatinhos que dão a vida por você), Patrono (linhagem Arcanis), Poderes Mágicos 2",
+        "3 Focus; 2 PMs",
+        "(*Mesmo não comprando o kit, para ser membro dessa cabala o personagem deve empregar 1 ponto de aprimoramento no aprimoramento Familiares, tendo direito a ter 2d10-5 gatinhos que são fiéis ao arcanis e o acompanham em todos os momentos. A planilha de RPGs deles pode ser preparada se o jogador assim desejar, utilizando as regras para Monstros de Bolso descritas no livro Anime RPG, pág. 90, como criaturas de 3 poderes.)"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Composta por arcanis manipuladores da magia da natureza e dos animais, só que os membros dessa linhagem têm uma coisa com gatos, isso mesmo, gatos!; membros dessa linhagem costumam andar sempre com 15 gatos de estimação, bichanos que costumam ficar com o arcanis todo o tempo e lhe ajudam nos tempos mais difíceis. Estes recebem até 2 pontos de experiência no final da aventura caso se comportem bem com esta casta."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "3 pontos de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "150 pontos de perícia"
+          ]
+        },
+        {
+          "id": "pericias",
+          "title": "Perícias",
+          "area": "kits",
+          "paragraphs": [
+            "Lança 30/20, Animais (Treinamento de Animais 20%, Doma 20%, Veterinária 20%), Camuflagem 25%, Ciências Secretas (Teoria da Magia 30%), Esportes (Natação 20%), Informática (Computação 20%), Sobrevivência (Escolha um terreno com 20%)"
+          ]
+        },
+        {
+          "id": "aprimoramentos",
+          "title": "Aprimoramentos",
+          "area": "kits",
+          "paragraphs": [
+            "*Familiares 1 (cerca de 2d10-5 gatinhos que dão a vida por você), Patrono (linhagem Arcanis), Poderes Mágicos 2"
+          ]
+        },
+        {
+          "id": "caminhos-da-magia",
+          "title": "Caminhos da Magia",
+          "area": "kits",
+          "paragraphs": [
+            "3 Focus; 2 PMs"
+          ]
+        },
+        {
+          "id": "observacoes",
+          "title": "Observações",
+          "area": "kits",
+          "paragraphs": [
+            "(*Mesmo não comprando o kit, para ser membro dessa cabala o personagem deve empregar 1 ponto de aprimoramento no aprimoramento Familiares, tendo direito a ter 2d10-5 gatinhos que são fiéis ao arcanis e o acompanham em todos os momentos. A planilha de RPGs deles pode ser preparada se o jogador assim desejar, utilizando as regras para Monstros de Bolso descritas no livro Anime RPG, pág. 90, como criaturas de 3 poderes.)"
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1,
+    "regras_base": 1,
+    "itens_equipamentos": 1,
+    "kits": 15,
+    "itens": 18
+  },
+  "reviewNotes": [
+    "Texto revisado antes da catalogação, com correções de OCR e normalização de quebras indevidas.",
+    "Cabalas foram catalogadas como kits por conterem custo de aprimoramento, custo de perícia, perícias e aprimoramentos.",
+    "Serviços, poções e armas vendidas/construídas em academias ficaram agrupados em Itens e Equipamentos."
+  ],
+  "generatedAt": "2026-06-05T14:23:09"
+}

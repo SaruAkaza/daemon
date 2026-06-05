@@ -1,0 +1,1748 @@
+{
+  "version": 1,
+  "source": "arcadia-nova-arcadia",
+  "title": "Arcádia - Nova Arcádia",
+  "sourceFile": "Arcadia_Nova_Arcadia_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Lore de Nova Arcádia, raças jogáveis, regra de construção racial e aprimoramentos raciais.",
+  "areas": [
+    "cenarios_lore",
+    "racas",
+    "regras_base",
+    "aprimoramentos"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "arcadia-nova-arcadia",
+      "title": "Arcádia - Nova Arcádia",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenario-lore",
+      "sectionTitle": "Cenário/Lore",
+      "paragraphs": [
+        "A história de Arcádia começa com os conceitos básicos da Roda dos Mundos: ela gira, e, enquanto gradualmente os mundos perdem sua energia mágica individual, a Roda girará, e a cada giro, os mundos sofrem mudanças e se deterioram. No início de todas as coisas, antes mesmo de existir qualquer noção acerca de seres vivos, existiu uma parte da Orbe de Satânia, um lugar chamado Plano das Ideias, uma dimensão de onde se originam todas as ideias. Eis que a própria existência daquele Plano fez a natureza do orbe dar origem a um lugar onde aquelas ideias venham a \"vazar\" do Plano das Ideias, uma vez que ainda não existia o conceito de vida. Esse lugar então evoluiu até assumir uma estabilidade cósmica, tornando-se um Plano espiritual.",
+        "Incontáveis eras se passaram enquanto a Roda dos Mundos assumia uma configuração, e criava outros Planos e seu próprio conceito de \"roda\". E mais tempo ainda se passou até estes criarem vida. No entanto, esse plano primordial, diferente de todos os outros, atraía as formas espirituais que se desprendiam de todos os outros, e ainda possuía total acesso à energia da Roda dos Mundos. Os outros Planos passaram a receber a influência do Plano das Ideias por meio de seres conscientes, e o Plano espiritual passou a materializar essa influência em formas inanimadas e seres inteligentes. Muito se passou até que esse Plano espiritual desenvolveu-se em dois territórios, onde um acolhia as formas espirituais desprendidas de seus outrora corpos vivos, e o outro recebia as ideias dos seres vivos, mas ainda recebia ideias e conceitos completamente originais, fruto do \"vazamento\" do Plano das Ideias para este. Esse Plano espiritual, então, se desenvolveu e cresceu, tornando-se tão rico quanto, virtualmente, infinito. Houve diversos contatos entre esse mundo e os outros Planos antes do Plano da Terra. Neste, começa a haver um contato significativo no século XX a. C., quando o rei da Pelasgia, na Grécia, chamado Licaon, e seus cruéis filhos, maltrataram seu povo e estes, suplicaram aos deuses por ajuda. Zeus, o líder dos Deuses Olimpianos, ouviu as preces do povo e veio ao Plano da Terra, sob a identidade de um lavrador. Este passou a instigar o povo à fé nos deuses, o que enfureceu o rei Licaon. O lavrador então teve um filho com uma mulher, uma criança chamada Arcas. Licaon soube disso, e elaborou um plano sádico: convidou o lavrador para um jantar, e serviu secretamente o bebê como prato principal. Zeus então ficou irado e transtornado com aquilo, e lavou a Grécia com o mais furioso dos dilúvios, além de amaldiçoar Licaon e seus filhos para serem, para sempre, seres meio homem, meio lobo.",
+        "Zeus não permitiu que seu filho reencarnasse nem continuasse o ciclo da reencarnação, passando assim a existir como um espírito livre. Como era apenas um bebê quando morreu, seu espírito era puro o bastante, ele existiu como um ser de ideias por muito tempo, até transcender sua forma para o próprio Plano das Ideias. Lá ele absorveu uma ínfima parcela de conhecimento, mas foi o suficiente para ele reger uma vastidão quase ilimitada de energias e bolsões no Plano espiritual, que agora receberia um nome em honra a seu novo regente. O Plano espiritual se chamaria Arcádia. E assim, Arcas (agora chamado Árcade)",
+        "criou, separou ou nomeou diversos bolsões por toda Arcádia. Árcade então tornou-se um regente desse mundo de sonhos, mas deixava o domínio dos bolsões para seus próprios nativos. Nova Arcádia teve como seu governante Oberon, uma fada valente, justa e benevolente, que reinou e ainda reina há incontáveis eras sobre Arcádia. Os contatos entre a Terra e Arcádia se deram muito frequentemente em eras antigas, mas nem sempre houve amistosidade. Para aplacar tais conflitos, houve o convite para o Rei e a Rainha das Fadas, Oberon e Titânia, para o casamento de Teseu, Rei de Atenas, e Hipólita, Rainha das Amazonas.",
+        "Entretanto em tal casamento houve diversos malentendidos que desembocaram em desastre, arruinando a relação entre homens e fadas. Começaram então diversas batalhas entre os dois povos, onde sempre havia maior ganho para os homens, que estavam sendo auxiliados pelos Deuses Olimpianos, e traídos por uma fada chamada Mab. Após a queda de Oberon e Titânia, Mab assumiu o trono de Nova Arcádia, e Oberon recusou o convite desta para reinar ao lado dela, expulsando-o para a Terra. Enquanto na Terra, Oberon participou de diversas batalhas ao lado de Merouach sob o nome de Alberich, e das guerras que colocaram Uther Pendragon no poder e destronaram Mab, que nessa época estava tentando manter sua influência na Terra. Rei Oberon então retomou seu trono e sua esposa, sendo mais uma vez o regente de Arcádia. Os mundos, entretanto, continuavam com o intercâmbio de culturas e seres fantásticos e mundanos. A situação mudou na Idade das Trevas, quando a Inquisição passou a perseguir as criaturas sobrenaturais. Então, as fadas na Terra retornaram para Arcádia. Mab, que também estava na Terra, retornou e conseguiu retomar parte de Nova Arcádia para si, separando o reino em Reino do Norte (Oberon) e Reino do Sul (Mab). As ideologias de Mab, onde as fadas deveriam reinar sobre os homens, ainda possuía muitos seguidores, e isso a fez estabelecer a supremacia da Corte Unseelie em seu reino. Oberon estabeleceu a Corte Seelie, visto que esta necessitaria de seu aval para a bondade perseverar em seu reino.",
+        "Azan é filho de Arcas (filho de Zeus e Calisto, cuja qual por sua vez é filha de Lycaon, a única que não recebeu a Maldição de Zeus) e da ninfa Erato, a Amável (filha de Zeus e Mnemósine). Sendo filho de um humano e uma ninfa, Azan herdou algumas habilidades: ele não envelhecia e a magia que corria em suas veias era poderosa. Quando jovem, seu avô, Zeus, visitou-o e disse-lhe que seu destino era tornar-se um rei em Arcádia. Então, o jovem Azan partiu rumo a este fim. Após alguns anos, quando Azan já estava adulto, ele encontrou e governou numa terra chamada Arcádia, num de seus territórios, cujo qual ele batizou em homenagem a si mesmo de Azania. No entanto, Zeus visitou-lhe uma segunda vez, para dizer-lhe que ali não era a verdadeira Arcádia. Azan ponderou bastante aquelas palavras, e partiu novamente numa cruzada, até conseguir descobrir com seu pai o que era Arcádia, e seguiu para lá por um dos portais existentes na época. Azan encontrou uma terra de magia e beleza, porém caótica e sem defesas. Então Azan se declarou o rei daquelas terras, e a batizou também de Azania. Logo, fazendo uso da magia, ergueu templos e casas gregas, tornando Azania o que poderia ser um pedaço da Velha Arcádia em outros tempos. Com o tempo, o sangue de Lycaon prevaleceu em Azan: ele tornou-se um rei egoísta, ambicioso e mesquinho. Porém, seu tio, Árcade, visitou-lhe e ensinou-lhe sobre a humildade. Azan rejeitou aquela lição, e o expulsou de seu reino. Em resposta, Árcade, que tinha controle sobre toda Arcádia, varreu o reino de Azania, destruindo as plantações e os povos dali, engolfando-os numa tempestade de areia nunca vista antes. E então Azan viu-se ainda vivo, no meio de todo aquele mar de areia, desolado. Muitos anos se passaram enquanto Azan tentava desfazer o mal que fez aquele povo e aquela terra, ajudando os povos sobreviventes a perseverar, inclusive unindo-se, em segredo, a grupos de viajantes e aventureiros das areias.",
+        "Enquanto isso, Azania passou a desenvolver uma cultura beduína, de povos mágicos sobrevivendo em meio ao deserto. Quando finalmente achou que Azan pagara por sua arrogância, Árcade passou a permitir que o reino de Azania florescesse novamente e, com o tempo, foi o que aconteceu. Árvores e lagos passaram a surgir, e novamente Azania era um reino de beleza e graça. No entanto, aquele povo houvera mudado bastante, e agora Azania era um mundo belo de novo, contrastando a cultura das fadas, grega e beduína numa só. Os elfos azanianos possuem hábitos diferentes dos elfos típicos, eles não vivem séculos em florestas, mas sim de modo nômade e mais misturados à população das cidades.",
+        "Muitos desenvolveram uma coloração morena, resultado do tempo que passam sob o sol de Azania em suas viagens. Diferente da maioria das cidades do mundo das fadas, as cidades de Azania são ao estilo grego, com casas de mármore branco e estruturas de madeira. Muitas delas possuem bazares de gnomos, anões e elfos azanianos nômades, cujos quais estão sempre passando pelas cidades.",
+        "O Reino de Azan não é nutrido unicamente com sua beleza e comércio: também tem suas maldições. Trarrukhan é um deles, um Lammazzus que tomou o território subterrâneo de Nidavellir que se localiza sob Azania. Lá ele plantou o terror, eliminando e escravizando todas as raças inteligentes, cravando suas garras ambiciosas em todas as riquezas ali localizadas.",
+        "Ele constantemente ataca Azania, sempre em busca de suas riquezas e poder, buscando também interceptar os maiores bazares do reino, e por esse motivo tais bazares sempre estão contratando os melhores aventureiros que conseguem encontrar para proteger suas preciosas cargas de cidade em cidade.",
+        "A oeste de Nova Arcádia, existe o Mar de Leonira, também conhecido como Reino de Leonira, o Reino Marinho de Nova Arcádia. Tal reino subaquático é o maior reino do Mundo Belo, e tão diversificado quanto os reinos da superfície. Ele tem como capital Atlantis, sendo a cidade uma imagem refletida da cidade perdida de Atlântida. Atlantis, diferente de sua cidade idônea da Terra, é habitada em sua maioria por sereias e tritões. Atlantis conta com uma imensa estrutura protegida por alta magia, cuja qual também faz toda a cidade funcionar por tecnomagia, desde fotosfátuos iluminando a cidade até o gigantesco círculo de proteção que envolve toda a metrópole. O Reino Marinho de Leonira é governado por ninguém menos que a Rainha Leonira, a rainha das fadas do mar, uma sereia meioedhênica, filha de Poseidon, cuja qual impõe seu domínio sobre os mares ferreamente, embora seja uma rainha benigna e justa. Muitos povos já tentaram tirá-la do poder, principalmente os Lullare, o povo-polvo, e os povos abissais. No entanto, Leonira mantém-se no trono, graças a seu imenso poder e a ajuda de seu pai. O deus edhênico acordou com sua filha que o Mar de Leonira seria responsabilidade dela e sua herança, mas que a ajudaria se esta precisasse. Entre os principais povos do Reino de Leonira, estão as sereias (mulheres-peixe), tritões (homens-peixe), grottoks (povo-sapo), lullare (povo-polvo), os honrados balaenanos (povo-baleia), elfos-do-mar (elfos aquáticos), e os Povos Abissais, um conjunto de raças malignas que vivem na Fenda Sem Fim, um abismo marinho de proporções gigantescas, onde habitam cardumes inteiros de seres abissais que lutam por território e caça, bem como destruir e pilhar os povos de fora da fenda. Mas não só de vida marinha é composto o Reino de Leonira. Tais mares são habitados pela mais terrível corja de piratas de Arcádia, cujos quais desenvolveram sua própria comunidade naval, vivendo sempre lutando uns contra os outros por tesouros, para enfim gastá-los na próxima ilha recheada de mulheres e rum. A principal ilha pirata de Leonira é a Ilha da Caveira, onde fica a maior cidade da superfície do reino, sendo que esta é habitada por um povo degenerado e decadente, que vivem em torno de negócios escusos, prostituição e bebida. Dentre os piores piratas de Leonira estão os capitães-pirata Barba",
+        "Negra (Swashbuckler 19), Barba Azul",
+        "(Swashbuckler 20) e um recente acréscimo a estes dois, um pirata que surgiu nos mares atacando e saqueando conhecido como Jack",
+        "Sparrow (Swashbuckler 17), evocado da grande quantidade de forma-pensamento da Terra sobre este. O capitão Sparrow, apesar de recente, já é alvo de diversas histórias, inclusive que ele é um morto-vivo, ou que já foi para o mundo dos mortos e retornou com seu navio, o Black Pearl."
+      ],
+      "sections": [
+        {
+          "id": "historia-de-nova-arcadia",
+          "title": "História de Nova Arcádia",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A história de Arcádia começa com os conceitos básicos da Roda dos Mundos: ela gira, e, enquanto gradualmente os mundos perdem sua energia mágica individual, a Roda girará, e a cada giro, os mundos sofrem mudanças e se deterioram. No início de todas as coisas, antes mesmo de existir qualquer noção acerca de seres vivos, existiu uma parte da Orbe de Satânia, um lugar chamado Plano das Ideias, uma dimensão de onde se originam todas as ideias. Eis que a própria existência daquele Plano fez a natureza do orbe dar origem a um lugar onde aquelas ideias venham a \"vazar\" do Plano das Ideias, uma vez que ainda não existia o conceito de vida. Esse lugar então evoluiu até assumir uma estabilidade cósmica, tornando-se um Plano espiritual.",
+            "Incontáveis eras se passaram enquanto a Roda dos Mundos assumia uma configuração, e criava outros Planos e seu próprio conceito de \"roda\". E mais tempo ainda se passou até estes criarem vida. No entanto, esse plano primordial, diferente de todos os outros, atraía as formas espirituais que se desprendiam de todos os outros, e ainda possuía total acesso à energia da Roda dos Mundos. Os outros Planos passaram a receber a influência do Plano das Ideias por meio de seres conscientes, e o Plano espiritual passou a materializar essa influência em formas inanimadas e seres inteligentes. Muito se passou até que esse Plano espiritual desenvolveu-se em dois territórios, onde um acolhia as formas espirituais desprendidas de seus outrora corpos vivos, e o outro recebia as ideias dos seres vivos, mas ainda recebia ideias e conceitos completamente originais, fruto do \"vazamento\" do Plano das Ideias para este. Esse Plano espiritual, então, se desenvolveu e cresceu, tornando-se tão rico quanto, virtualmente, infinito. Houve diversos contatos entre esse mundo e os outros Planos antes do Plano da Terra. Neste, começa a haver um contato significativo no século XX a. C., quando o rei da Pelasgia, na Grécia, chamado Licaon, e seus cruéis filhos, maltrataram seu povo e estes, suplicaram aos deuses por ajuda. Zeus, o líder dos Deuses Olimpianos, ouviu as preces do povo e veio ao Plano da Terra, sob a identidade de um lavrador. Este passou a instigar o povo à fé nos deuses, o que enfureceu o rei Licaon. O lavrador então teve um filho com uma mulher, uma criança chamada Arcas. Licaon soube disso, e elaborou um plano sádico: convidou o lavrador para um jantar, e serviu secretamente o bebê como prato principal. Zeus então ficou irado e transtornado com aquilo, e lavou a Grécia com o mais furioso dos dilúvios, além de amaldiçoar Licaon e seus filhos para serem, para sempre, seres meio homem, meio lobo.",
+            "Zeus não permitiu que seu filho reencarnasse nem continuasse o ciclo da reencarnação, passando assim a existir como um espírito livre. Como era apenas um bebê quando morreu, seu espírito era puro o bastante, ele existiu como um ser de ideias por muito tempo, até transcender sua forma para o próprio Plano das Ideias. Lá ele absorveu uma ínfima parcela de conhecimento, mas foi o suficiente para ele reger uma vastidão quase ilimitada de energias e bolsões no Plano espiritual, que agora receberia um nome em honra a seu novo regente. O Plano espiritual se chamaria Arcádia. E assim, Arcas (agora chamado Árcade)",
+            "criou, separou ou nomeou diversos bolsões por toda Arcádia. Árcade então tornou-se um regente desse mundo de sonhos, mas deixava o domínio dos bolsões para seus próprios nativos. Nova Arcádia teve como seu governante Oberon, uma fada valente, justa e benevolente, que reinou e ainda reina há incontáveis eras sobre Arcádia. Os contatos entre a Terra e Arcádia se deram muito frequentemente em eras antigas, mas nem sempre houve amistosidade. Para aplacar tais conflitos, houve o convite para o Rei e a Rainha das Fadas, Oberon e Titânia, para o casamento de Teseu, Rei de Atenas, e Hipólita, Rainha das Amazonas.",
+            "Entretanto em tal casamento houve diversos malentendidos que desembocaram em desastre, arruinando a relação entre homens e fadas. Começaram então diversas batalhas entre os dois povos, onde sempre havia maior ganho para os homens, que estavam sendo auxiliados pelos Deuses Olimpianos, e traídos por uma fada chamada Mab. Após a queda de Oberon e Titânia, Mab assumiu o trono de Nova Arcádia, e Oberon recusou o convite desta para reinar ao lado dela, expulsando-o para a Terra. Enquanto na Terra, Oberon participou de diversas batalhas ao lado de Merouach sob o nome de Alberich, e das guerras que colocaram Uther Pendragon no poder e destronaram Mab, que nessa época estava tentando manter sua influência na Terra. Rei Oberon então retomou seu trono e sua esposa, sendo mais uma vez o regente de Arcádia. Os mundos, entretanto, continuavam com o intercâmbio de culturas e seres fantásticos e mundanos. A situação mudou na Idade das Trevas, quando a Inquisição passou a perseguir as criaturas sobrenaturais. Então, as fadas na Terra retornaram para Arcádia. Mab, que também estava na Terra, retornou e conseguiu retomar parte de Nova Arcádia para si, separando o reino em Reino do Norte (Oberon) e Reino do Sul (Mab). As ideologias de Mab, onde as fadas deveriam reinar sobre os homens, ainda possuía muitos seguidores, e isso a fez estabelecer a supremacia da Corte Unseelie em seu reino. Oberon estabeleceu a Corte Seelie, visto que esta necessitaria de seu aval para a bondade perseverar em seu reino."
+          ]
+        },
+        {
+          "id": "azania",
+          "title": "Azania",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Azan é filho de Arcas (filho de Zeus e Calisto, cuja qual por sua vez é filha de Lycaon, a única que não recebeu a Maldição de Zeus) e da ninfa Erato, a Amável (filha de Zeus e Mnemósine). Sendo filho de um humano e uma ninfa, Azan herdou algumas habilidades: ele não envelhecia e a magia que corria em suas veias era poderosa. Quando jovem, seu avô, Zeus, visitou-o e disse-lhe que seu destino era tornar-se um rei em Arcádia. Então, o jovem Azan partiu rumo a este fim. Após alguns anos, quando Azan já estava adulto, ele encontrou e governou numa terra chamada Arcádia, num de seus territórios, cujo qual ele batizou em homenagem a si mesmo de Azania. No entanto, Zeus visitou-lhe uma segunda vez, para dizer-lhe que ali não era a verdadeira Arcádia. Azan ponderou bastante aquelas palavras, e partiu novamente numa cruzada, até conseguir descobrir com seu pai o que era Arcádia, e seguiu para lá por um dos portais existentes na época. Azan encontrou uma terra de magia e beleza, porém caótica e sem defesas. Então Azan se declarou o rei daquelas terras, e a batizou também de Azania. Logo, fazendo uso da magia, ergueu templos e casas gregas, tornando Azania o que poderia ser um pedaço da Velha Arcádia em outros tempos. Com o tempo, o sangue de Lycaon prevaleceu em Azan: ele tornou-se um rei egoísta, ambicioso e mesquinho. Porém, seu tio, Árcade, visitou-lhe e ensinou-lhe sobre a humildade. Azan rejeitou aquela lição, e o expulsou de seu reino. Em resposta, Árcade, que tinha controle sobre toda Arcádia, varreu o reino de Azania, destruindo as plantações e os povos dali, engolfando-os numa tempestade de areia nunca vista antes. E então Azan viu-se ainda vivo, no meio de todo aquele mar de areia, desolado. Muitos anos se passaram enquanto Azan tentava desfazer o mal que fez aquele povo e aquela terra, ajudando os povos sobreviventes a perseverar, inclusive unindo-se, em segredo, a grupos de viajantes e aventureiros das areias.",
+            "Enquanto isso, Azania passou a desenvolver uma cultura beduína, de povos mágicos sobrevivendo em meio ao deserto. Quando finalmente achou que Azan pagara por sua arrogância, Árcade passou a permitir que o reino de Azania florescesse novamente e, com o tempo, foi o que aconteceu. Árvores e lagos passaram a surgir, e novamente Azania era um reino de beleza e graça. No entanto, aquele povo houvera mudado bastante, e agora Azania era um mundo belo de novo, contrastando a cultura das fadas, grega e beduína numa só. Os elfos azanianos possuem hábitos diferentes dos elfos típicos, eles não vivem séculos em florestas, mas sim de modo nômade e mais misturados à população das cidades.",
+            "Muitos desenvolveram uma coloração morena, resultado do tempo que passam sob o sol de Azania em suas viagens. Diferente da maioria das cidades do mundo das fadas, as cidades de Azania são ao estilo grego, com casas de mármore branco e estruturas de madeira. Muitas delas possuem bazares de gnomos, anões e elfos azanianos nômades, cujos quais estão sempre passando pelas cidades.",
+            "O Reino de Azan não é nutrido unicamente com sua beleza e comércio: também tem suas maldições. Trarrukhan é um deles, um Lammazzus que tomou o território subterrâneo de Nidavellir que se localiza sob Azania. Lá ele plantou o terror, eliminando e escravizando todas as raças inteligentes, cravando suas garras ambiciosas em todas as riquezas ali localizadas.",
+            "Ele constantemente ataca Azania, sempre em busca de suas riquezas e poder, buscando também interceptar os maiores bazares do reino, e por esse motivo tais bazares sempre estão contratando os melhores aventureiros que conseguem encontrar para proteger suas preciosas cargas de cidade em cidade."
+          ]
+        },
+        {
+          "id": "leonira",
+          "title": "Leonira",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A oeste de Nova Arcádia, existe o Mar de Leonira, também conhecido como Reino de Leonira, o Reino Marinho de Nova Arcádia. Tal reino subaquático é o maior reino do Mundo Belo, e tão diversificado quanto os reinos da superfície. Ele tem como capital Atlantis, sendo a cidade uma imagem refletida da cidade perdida de Atlântida. Atlantis, diferente de sua cidade idônea da Terra, é habitada em sua maioria por sereias e tritões. Atlantis conta com uma imensa estrutura protegida por alta magia, cuja qual também faz toda a cidade funcionar por tecnomagia, desde fotosfátuos iluminando a cidade até o gigantesco círculo de proteção que envolve toda a metrópole. O Reino Marinho de Leonira é governado por ninguém menos que a Rainha Leonira, a rainha das fadas do mar, uma sereia meioedhênica, filha de Poseidon, cuja qual impõe seu domínio sobre os mares ferreamente, embora seja uma rainha benigna e justa. Muitos povos já tentaram tirá-la do poder, principalmente os Lullare, o povo-polvo, e os povos abissais. No entanto, Leonira mantém-se no trono, graças a seu imenso poder e a ajuda de seu pai. O deus edhênico acordou com sua filha que o Mar de Leonira seria responsabilidade dela e sua herança, mas que a ajudaria se esta precisasse. Entre os principais povos do Reino de Leonira, estão as sereias (mulheres-peixe), tritões (homens-peixe), grottoks (povo-sapo), lullare (povo-polvo), os honrados balaenanos (povo-baleia), elfos-do-mar (elfos aquáticos), e os Povos Abissais, um conjunto de raças malignas que vivem na Fenda Sem Fim, um abismo marinho de proporções gigantescas, onde habitam cardumes inteiros de seres abissais que lutam por território e caça, bem como destruir e pilhar os povos de fora da fenda. Mas não só de vida marinha é composto o Reino de Leonira. Tais mares são habitados pela mais terrível corja de piratas de Arcádia, cujos quais desenvolveram sua própria comunidade naval, vivendo sempre lutando uns contra os outros por tesouros, para enfim gastá-los na próxima ilha recheada de mulheres e rum. A principal ilha pirata de Leonira é a Ilha da Caveira, onde fica a maior cidade da superfície do reino, sendo que esta é habitada por um povo degenerado e decadente, que vivem em torno de negócios escusos, prostituição e bebida. Dentre os piores piratas de Leonira estão os capitães-pirata Barba",
+            "Negra (Swashbuckler 19), Barba Azul",
+            "(Swashbuckler 20) e um recente acréscimo a estes dois, um pirata que surgiu nos mares atacando e saqueando conhecido como Jack",
+            "Sparrow (Swashbuckler 17), evocado da grande quantidade de forma-pensamento da Terra sobre este. O capitão Sparrow, apesar de recente, já é alvo de diversas histórias, inclusive que ele é um morto-vivo, ou que já foi para o mundo dos mortos e retornou com seu navio, o Black Pearl."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "humano",
+      "title": "Humano",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "nenhum",
+        "Os humanos em Nova Arcádia chegaram há bastante tempo, em eras passadas, tornando-se bastante raros depois da Idade das Trevas, quando a maioria dos portais para a Terra foram fechados. Eles são apenas mais uma das raças que habitam aquele mundo. Eles não chegam a ser maioria e nem existem em grande número no Mundo Belo",
+        "possuem aparência humanóide, pele caucasiana, variando entre o negro, pardo e amarelo. Cabelos possuem cores ruivo, negro, castanho, branco e loiro, com variações de tons entre estes. Os olhos variam de castanho, verde e azul, com raros olhos cor de mel ou cinza.",
+        "nenhum.",
+        "nenhuma."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "nenhum"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os humanos em Nova Arcádia chegaram há bastante tempo, em eras passadas, tornando-se bastante raros depois da Idade das Trevas, quando a maioria dos portais para a Terra foram fechados. Eles são apenas mais uma das raças que habitam aquele mundo. Eles não chegam a ser maioria e nem existem em grande número no Mundo Belo"
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "possuem aparência humanóide, pele caucasiana, variando entre o negro, pardo e amarelo. Cabelos possuem cores ruivo, negro, castanho, branco e loiro, com variações de tons entre estes. Os olhos variam de castanho, verde e azul, com raros olhos cor de mel ou cinza."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "nenhum."
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "nenhuma."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anao",
+      "title": "Anão",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "1 ponto",
+        "Anões são uma raça atarracada e baixa, de grande determinação, honestidade e honra. Todos são treinados desde jovens na arte do combate, mineração, armoaria e comércio.",
+        "Geralmente encontra-se somente dois tipos de anões fora de Nidavellir: comerciantes e guerreiros. Os guerreiros geralmente estão a serviço de alguma nação, sempre com alguma causa nobre ou lucrativa, mas nunca desonrosa. São ferrenhos guerreiros, vivendo e morrendo pela honra, preferindo ser devorados vivos por demônios de Halzazee antes de morrer sem uma arma na mão. Se for comerciante, geralmente pertencerão a uma guilda de comércio, que estabelecerá uma tabela de preços para a maioria dos produtos a venda (produtos não-tabelados, como itens mágicos mais raros, ficam a cargo do comerciante), rotas de importação e exportação, financiamentos, etc. São absolutamente honestos, conhecidos como os melhores comerciantes de Arcádia, perdendo apenas para os donos dos bazares, mas definitivamente são os maiores comerciantes de armas, possuindo as com os melhores fios e maior dureza. Diferente dos outros reinos, Nidavellir não se encontra sobre o solo, e sim embaixo dele, logo, não há fronteiras entre Nidavellir e os outros reinos que não os subterrâneos. Então, Nova Arcádia e Nidavellir encontram-se no mesmo solo, a diferença é que um encontra-se sobre o solo, e o outro sob ele. A origem dos anões reconta que estes surgiram dos vermes que originaram-se do corpo de Ymir, um ser do Edhen, quando este morreu. Os \"vermes\" do mito eram tão somente formas mais primitivas de anões, que encontraram a gigantesca carcaça edhênica e alimentarem-se da sua carne divina, absorvendo parte de seu poder e conhecimento, mutando para formas mais civilizadas e inteligentes. Desde então eles desenvolveram sua sociedade e cultura, criando até sua própria linguagem, uma variante da linguagem nórdica e angelical. Eles passaram também a dividir-se em clãs ou famílias, e exaltam sua força e honra clamando ser quem retém a maior parte da essência divina de Ymir. Alguns clãs anões dominaram a arte da pólvora, e trocaram seus machados e maças por mosquetes.",
+        "anões são pessoas humanoides, baixos e atarracados. Possuem em média 1,30m a 1,50m e variam de 60kg a 100kg, podem atingir até 400 anos de idade. A raça como um todo costuma cultivar barbas longas. Diferente do que acreditam, as anãs não possuem barba. Eles também são donos de personalidades fortes, e não são luxuriosos nem introvertidos. São também muito teimosos.",
+        "FR+2, CON+2, DEX-2, AGI-2, INT-1, PER+1, CAR-1",
+        "Visão Noturna, Honestidade, Ganância, Teimosia, Armeiro +40%, Metalurgia +20%, Perícia com Arma (machado ou maça)+20%."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Anões são uma raça atarracada e baixa, de grande determinação, honestidade e honra. Todos são treinados desde jovens na arte do combate, mineração, armoaria e comércio.",
+            "Geralmente encontra-se somente dois tipos de anões fora de Nidavellir: comerciantes e guerreiros. Os guerreiros geralmente estão a serviço de alguma nação, sempre com alguma causa nobre ou lucrativa, mas nunca desonrosa. São ferrenhos guerreiros, vivendo e morrendo pela honra, preferindo ser devorados vivos por demônios de Halzazee antes de morrer sem uma arma na mão. Se for comerciante, geralmente pertencerão a uma guilda de comércio, que estabelecerá uma tabela de preços para a maioria dos produtos a venda (produtos não-tabelados, como itens mágicos mais raros, ficam a cargo do comerciante), rotas de importação e exportação, financiamentos, etc. São absolutamente honestos, conhecidos como os melhores comerciantes de Arcádia, perdendo apenas para os donos dos bazares, mas definitivamente são os maiores comerciantes de armas, possuindo as com os melhores fios e maior dureza. Diferente dos outros reinos, Nidavellir não se encontra sobre o solo, e sim embaixo dele, logo, não há fronteiras entre Nidavellir e os outros reinos que não os subterrâneos. Então, Nova Arcádia e Nidavellir encontram-se no mesmo solo, a diferença é que um encontra-se sobre o solo, e o outro sob ele. A origem dos anões reconta que estes surgiram dos vermes que originaram-se do corpo de Ymir, um ser do Edhen, quando este morreu. Os \"vermes\" do mito eram tão somente formas mais primitivas de anões, que encontraram a gigantesca carcaça edhênica e alimentarem-se da sua carne divina, absorvendo parte de seu poder e conhecimento, mutando para formas mais civilizadas e inteligentes. Desde então eles desenvolveram sua sociedade e cultura, criando até sua própria linguagem, uma variante da linguagem nórdica e angelical. Eles passaram também a dividir-se em clãs ou famílias, e exaltam sua força e honra clamando ser quem retém a maior parte da essência divina de Ymir. Alguns clãs anões dominaram a arte da pólvora, e trocaram seus machados e maças por mosquetes."
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "anões são pessoas humanoides, baixos e atarracados. Possuem em média 1,30m a 1,50m e variam de 60kg a 100kg, podem atingir até 400 anos de idade. A raça como um todo costuma cultivar barbas longas. Diferente do que acreditam, as anãs não possuem barba. Eles também são donos de personalidades fortes, e não são luxuriosos nem introvertidos. São também muito teimosos."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "FR+2, CON+2, DEX-2, AGI-2, INT-1, PER+1, CAR-1"
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Visão Noturna, Honestidade, Ganância, Teimosia, Armeiro +40%, Metalurgia +20%, Perícia com Arma (machado ou maça)+20%."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goblin",
+      "title": "Goblin",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "0 pontos",
+        "Goblins são provavelmente as criaturas com a maior infâmia de toda Nova Arcádia. Não por serem maus, mas por serem caóticos ao extremo. Os goblins originaram-se de gnomos de Halzazee que, junto de outras raças, tiveram sua forma e mente corrompida na época que um tenebrita meio-arcadiano corrompeu todo aquele reino. A partir dali, nasceram os goblins. Os goblins se espalharam por todos os cantos de Arcádia, e às vezes até mesmo navegam entre bolsões sem fazerem a menor ideia de como chegaram ali. Apesar de sua caoticidade, muitos conseguem ser bastante espertos dado à sua hiperatividade natural, e podem se tornar bons inventores. No entretanto, os ramos dos goblins não são restritos: existem goblins bárbaros, tribais, solitários, inventores, magos, comerciantes, ladinos, piratas e toda sorte de ocupações, todas elas tendo um representante goblin entre elas! Em Nova Arcádia, existem poucas tribos goblins selvagens, existindo algumas comunidades em Faerum",
+        "(geralmente organizadas em torno de uma guilda de ladrões) e em Irazztidorakk, a cidade portuária goblin, voltada ao comércio. Goblins geralmente tendem a usar a",
+        "Tradição dos Presentes com viajantes incautos, sempre deturpando a Tradição de modo a \"roubá-los com o consentimento de Oberon\".",
+        "Goblins são humanoides baixos, com orelhas grandes e pontiagudas. Seus narizes e bocas são igualmente grandes. Eles podem ou não possuírem pelos capilares.",
+        "Suas unhas, quando grandes, geralmente são afiadas. A grande maioria dos goblins é verde, mas já foram vistos goblins azuis, caucasianos e até amarronzados, embora este último provavelmente estava apenas sujo.",
+        "FR-2, DEX+2, CON-2, AGI+2, INT+1, CAR-4",
+        "Visão Noturna"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "0 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Goblins são provavelmente as criaturas com a maior infâmia de toda Nova Arcádia. Não por serem maus, mas por serem caóticos ao extremo. Os goblins originaram-se de gnomos de Halzazee que, junto de outras raças, tiveram sua forma e mente corrompida na época que um tenebrita meio-arcadiano corrompeu todo aquele reino. A partir dali, nasceram os goblins. Os goblins se espalharam por todos os cantos de Arcádia, e às vezes até mesmo navegam entre bolsões sem fazerem a menor ideia de como chegaram ali. Apesar de sua caoticidade, muitos conseguem ser bastante espertos dado à sua hiperatividade natural, e podem se tornar bons inventores. No entretanto, os ramos dos goblins não são restritos: existem goblins bárbaros, tribais, solitários, inventores, magos, comerciantes, ladinos, piratas e toda sorte de ocupações, todas elas tendo um representante goblin entre elas! Em Nova Arcádia, existem poucas tribos goblins selvagens, existindo algumas comunidades em Faerum",
+            "(geralmente organizadas em torno de uma guilda de ladrões) e em Irazztidorakk, a cidade portuária goblin, voltada ao comércio. Goblins geralmente tendem a usar a",
+            "Tradição dos Presentes com viajantes incautos, sempre deturpando a Tradição de modo a \"roubá-los com o consentimento de Oberon\"."
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "Goblins são humanoides baixos, com orelhas grandes e pontiagudas. Seus narizes e bocas são igualmente grandes. Eles podem ou não possuírem pelos capilares.",
+            "Suas unhas, quando grandes, geralmente são afiadas. A grande maioria dos goblins é verde, mas já foram vistos goblins azuis, caucasianos e até amarronzados, embora este último provavelmente estava apenas sujo."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "FR-2, DEX+2, CON-2, AGI+2, INT+1, CAR-4"
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Visão Noturna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "satiro",
+      "title": "Sátiro",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "0 pontos",
+        "Sátiros, também conhecidos como Faunos, originaram-se da Grécia Antiga, e migraram para Arcádia na Idade das Trevas junto das outras fadas. Sua raça viveu pela Velha Arcádia durante muito tempo, mas já se espalharam por outras partes de Arcádia, e são relativamente comuns em Nova Arcádia.",
+        "sátiros são criaturas humanoides, com o dorso de homem e a parte inferior do corpo de bode. Eles andam sob duas patas, possuindo ainda um pequeno par de chifres na testa. Sátiros são criaturas de pouca força de vontade pessoal, bastante luxuriosas e farristas, sempre recorrendo ao sexo, bebidas alcoólicas, comida e festa quando podem. Por sua natureza galante, muitos sátiros já deixaram filhos bastardos pelo mundo (na verdade, a maioria faz isso). De regra, sátiros conseguem engravidar fêmeas de QUALQUER raça, seja humanóide, eqüina, canina ou qual for. A cria será um ser típico da raça da mãe (exceto quando se tratarem de ninfas, estas darão luz à sátiros).",
+        "DEX+2, WILL-1, CAR+1",
+        "Armas Naturais (chifres, dano 1D+Força), Galante, Fanfarronice."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "0 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Sátiros, também conhecidos como Faunos, originaram-se da Grécia Antiga, e migraram para Arcádia na Idade das Trevas junto das outras fadas. Sua raça viveu pela Velha Arcádia durante muito tempo, mas já se espalharam por outras partes de Arcádia, e são relativamente comuns em Nova Arcádia."
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "sátiros são criaturas humanoides, com o dorso de homem e a parte inferior do corpo de bode. Eles andam sob duas patas, possuindo ainda um pequeno par de chifres na testa. Sátiros são criaturas de pouca força de vontade pessoal, bastante luxuriosas e farristas, sempre recorrendo ao sexo, bebidas alcoólicas, comida e festa quando podem. Por sua natureza galante, muitos sátiros já deixaram filhos bastardos pelo mundo (na verdade, a maioria faz isso). De regra, sátiros conseguem engravidar fêmeas de QUALQUER raça, seja humanóide, eqüina, canina ou qual for. A cria será um ser típico da raça da mãe (exceto quando se tratarem de ninfas, estas darão luz à sátiros)."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "DEX+2, WILL-1, CAR+1"
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Armas Naturais (chifres, dano 1D+Força), Galante, Fanfarronice."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pixie",
+      "title": "Pixie",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "1 ponto",
+        "Pixies são os exemplares mais conhecidos das fadas. Sua raça é nativa de Nova Arcádia, existindo no Reino das Fadas desde os tempos mais antigos, indeterminado por causa da ausência de gravação escrita da história pixie. Os pixies organizam-se em monarquias de Cortes menores, estabelecendo reinos inteiros dentro de florestas e, rarissimamente, em cidades (como é o caso do Reino Diminuto de Zahrilii, localizado numa única rua em Faerum, capital do Reino do Norte, em Nova Arcádia, cujo qual é oficialmente reconhecido por Oberon e Titânia como um reino independente e com os poderes de tal). O povo-fada pixie dá extrema importância à cortesia vinda dos \"gigantes\", mas não corresponde da mesma forma, caso não queiram, podendo ser extremamente simpáticos (e às vezes até irritantes) como bastante arrogantes e terríveis pregadores de peças. Visto a natureza reclusa da maioria dos pixies, eles têm pouquíssimo contato com o material mundano, vendo estes com grande euforia e entusiasmo. Um costume bastante difundido entre os pixies é de furtar ouro e objetos reluzentes de viajantes incautos para ornar suas cidades e casas.",
+        "As cidades pixies geralmente localizam-se na copa de uma única grande árvore ou uma clareira especialmente confortável e segura.",
+        "Suas casas possuem uma arquitetura única e bela, resultado da engenharia mágica que molda seus lares. A magia é extremamente difundida entre a raça pixie, sendo que eles à desenvolvem naturalmente, como",
+        "Feiticeiros.",
+        "Os Caminhos mais conhecidos entre eles são Ar e Luz, mas já ouviu-se falar de pixies necromânticos e poderosos lordes-fada arquimagos respeitados e temidos por Arcádia!",
+        "Pixies são criaturas humanoides diminutas que atingem uma altura máxima de 10 a 15cm. Seus corpos são semelhantes ao de elfos, porém possuem peles, olhos e cabelos de tons variados, de cores comuns e incomuns. Têm também dois pares de asas insetóides que usam para voar. Pixies são imortais (embora estipule-se que a vida máxima de um pixie possa ser 10. 000 anos de idade), mas suas mentes feéricas não retêm o conhecimento nem a experiência de uma vida tão longa, preferindo esquecer o passado e viver o momento. Alguns pixies não possuem asas, e outros possuem características insetóides mais acentuadas, como a parte inferior do corpo de um inseto como cigarra ou gafanhoto, ou olhos de besouro e antenas. Existem raças ainda menores ainda de pixies, que variam de tamanho (as regras abaixo não são aplicáveis a estes). Fala-se de uma dessas raças, uma das não-aladas, que chegam a atingir em média 10 mícrons (um milionésimo de metro), que possuem uma cidade inteira dentro de uma garrafa nos aposentos de Merlin no Castelo de Oberon!",
+        "FR-8, CON-8, DEX+6, AGI+6, PER+1, CAR+2",
+        "Asas Naturais, Poderes Mágicos 1, Imortal, Tamanho Reduzido, Memória curta (o pixie só consegue reter INT x 100 pontos de perícias, tendo que \"esquecer\" alguns pontos de perícias para dar lugar a outros)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Pixies são os exemplares mais conhecidos das fadas. Sua raça é nativa de Nova Arcádia, existindo no Reino das Fadas desde os tempos mais antigos, indeterminado por causa da ausência de gravação escrita da história pixie. Os pixies organizam-se em monarquias de Cortes menores, estabelecendo reinos inteiros dentro de florestas e, rarissimamente, em cidades (como é o caso do Reino Diminuto de Zahrilii, localizado numa única rua em Faerum, capital do Reino do Norte, em Nova Arcádia, cujo qual é oficialmente reconhecido por Oberon e Titânia como um reino independente e com os poderes de tal). O povo-fada pixie dá extrema importância à cortesia vinda dos \"gigantes\", mas não corresponde da mesma forma, caso não queiram, podendo ser extremamente simpáticos (e às vezes até irritantes) como bastante arrogantes e terríveis pregadores de peças. Visto a natureza reclusa da maioria dos pixies, eles têm pouquíssimo contato com o material mundano, vendo estes com grande euforia e entusiasmo. Um costume bastante difundido entre os pixies é de furtar ouro e objetos reluzentes de viajantes incautos para ornar suas cidades e casas.",
+            "As cidades pixies geralmente localizam-se na copa de uma única grande árvore ou uma clareira especialmente confortável e segura.",
+            "Suas casas possuem uma arquitetura única e bela, resultado da engenharia mágica que molda seus lares. A magia é extremamente difundida entre a raça pixie, sendo que eles à desenvolvem naturalmente, como",
+            "Feiticeiros.",
+            "Os Caminhos mais conhecidos entre eles são Ar e Luz, mas já ouviu-se falar de pixies necromânticos e poderosos lordes-fada arquimagos respeitados e temidos por Arcádia!"
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "Pixies são criaturas humanoides diminutas que atingem uma altura máxima de 10 a 15cm. Seus corpos são semelhantes ao de elfos, porém possuem peles, olhos e cabelos de tons variados, de cores comuns e incomuns. Têm também dois pares de asas insetóides que usam para voar. Pixies são imortais (embora estipule-se que a vida máxima de um pixie possa ser 10. 000 anos de idade), mas suas mentes feéricas não retêm o conhecimento nem a experiência de uma vida tão longa, preferindo esquecer o passado e viver o momento. Alguns pixies não possuem asas, e outros possuem características insetóides mais acentuadas, como a parte inferior do corpo de um inseto como cigarra ou gafanhoto, ou olhos de besouro e antenas. Existem raças ainda menores ainda de pixies, que variam de tamanho (as regras abaixo não são aplicáveis a estes). Fala-se de uma dessas raças, uma das não-aladas, que chegam a atingir em média 10 mícrons (um milionésimo de metro), que possuem uma cidade inteira dentro de uma garrafa nos aposentos de Merlin no Castelo de Oberon!"
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "FR-8, CON-8, DEX+6, AGI+6, PER+1, CAR+2"
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Asas Naturais, Poderes Mágicos 1, Imortal, Tamanho Reduzido, Memória curta (o pixie só consegue reter INT x 100 pontos de perícias, tendo que \"esquecer\" alguns pontos de perícias para dar lugar a outros)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "centauro",
+      "title": "Centauro",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "2 pontos",
+        "Os centauros são uma raça bárbara de homens-cavalo da Terra, que antigamente viviam nas montanhas de Tesália, uma região da Grécia. Os centauros nasceram de Kentauros, descendente do olimpiano Ixiom e da elemental maior do ar Nefele, quando este cruzou com algumas éguas. A história da linhagem de Ixiom é que este planejava manter relações sexuais com Hera, mas Zeus, Senhor do Olympus e marido de Hera, pediu a Poseidon que impedisse, então este enviou a elemental Nefele e a fez tomar a forma de Hera. Os centauros são muito conhecidos pela luta que mantiveram com os Lápitas, o povo guerreiro da Tessália, provocada pelo seu intento de raptar Hipodâmia no dia de seu casamento com Pirito, rei dos Lápitas e também filho de Ixiom. Teseu, um herói grego, ajudou o rei dos Lápitas a vencer os centauros, e estes fugiram para terras ermas. Os centauros foram diminuindo sua quantidade de tribos com o passar dos séculos até a Idade das Trevas, quando fugiram quase por completo da Terra por portais para Arcádia. No entanto, ainda pode-se encontrar um ou dois centauros ainda vivos em antigas florestas da Europa.",
+        "Inicialmente as tribos centauras viveram exclusivamente nos descampados da Velha Arcádia, mas por sua natureza nômade, muitas acabaram chegando na Nova Arcádia, e ali se estabeleceram.",
+        "Geralmente centauros não são vistos em cidades - exceto Faerum - sendo que suas tribos encontram-se em florestas profundas cheias de campos para cavalgarem ou áreas abertas com bastante espaço. Centauros prezam bastante sua liberdade, e lutarão ferozmente quando tiverem seu direito de nascença usurpado.",
+        "os centauros são uma raça de seres com o torso e cabeça de humano e o corpo de cavalo.",
+        "FR+3, CON+6, AGI-3",
+        "Carga Ampliada (pode carregar 2x mais peso), Velocidade ampliada (sua velocidade é o dobro do normal), Sobrevivência (Planície) +10%, Esportes (Corrida) +10%, Ataque Extra (cascos, dano 1D6+3), Coice (dano 2D6), Dependência Leve (vinho), Forma Estranha, Incapaz de andar em terrenos acidentados."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os centauros são uma raça bárbara de homens-cavalo da Terra, que antigamente viviam nas montanhas de Tesália, uma região da Grécia. Os centauros nasceram de Kentauros, descendente do olimpiano Ixiom e da elemental maior do ar Nefele, quando este cruzou com algumas éguas. A história da linhagem de Ixiom é que este planejava manter relações sexuais com Hera, mas Zeus, Senhor do Olympus e marido de Hera, pediu a Poseidon que impedisse, então este enviou a elemental Nefele e a fez tomar a forma de Hera. Os centauros são muito conhecidos pela luta que mantiveram com os Lápitas, o povo guerreiro da Tessália, provocada pelo seu intento de raptar Hipodâmia no dia de seu casamento com Pirito, rei dos Lápitas e também filho de Ixiom. Teseu, um herói grego, ajudou o rei dos Lápitas a vencer os centauros, e estes fugiram para terras ermas. Os centauros foram diminuindo sua quantidade de tribos com o passar dos séculos até a Idade das Trevas, quando fugiram quase por completo da Terra por portais para Arcádia. No entanto, ainda pode-se encontrar um ou dois centauros ainda vivos em antigas florestas da Europa.",
+            "Inicialmente as tribos centauras viveram exclusivamente nos descampados da Velha Arcádia, mas por sua natureza nômade, muitas acabaram chegando na Nova Arcádia, e ali se estabeleceram.",
+            "Geralmente centauros não são vistos em cidades - exceto Faerum - sendo que suas tribos encontram-se em florestas profundas cheias de campos para cavalgarem ou áreas abertas com bastante espaço. Centauros prezam bastante sua liberdade, e lutarão ferozmente quando tiverem seu direito de nascença usurpado."
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "os centauros são uma raça de seres com o torso e cabeça de humano e o corpo de cavalo."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "FR+3, CON+6, AGI-3"
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Carga Ampliada (pode carregar 2x mais peso), Velocidade ampliada (sua velocidade é o dobro do normal), Sobrevivência (Planície) +10%, Esportes (Corrida) +10%, Ataque Extra (cascos, dano 1D6+3), Coice (dano 2D6), Dependência Leve (vinho), Forma Estranha, Incapaz de andar em terrenos acidentados."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elfo-negro",
+      "title": "Elfo Negro",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "5 pontos",
+        "Elfos Negros são uma subraça de elfos que, há muito tempo, fora expulsa da convivência dos outros elfos por pactuarem com demônios. Também chamados de drows, eles migraram para terras obscuras, que foram chamadas de Halzazee. No entanto, a própria natureza ambiciosa dos drow fizeram guerrerarem por muitos séculos, no que foi chamado da Guerra de Um Milhão de Espadas Negras. Tal guerra enfraqueceu todas as famílias drow, o que os obrigou a criarem uma paz fria, que perdurou por algum tempo numa organização de rotação de poder das famílias drows, onde cada família ficava no poder de cada feudo por cem anos, até passar o poder para a próxima família. Entretanto, durante esse tempo, as famílias que sucederiam o poder tentavam eliminar umas às outras para adquirir seu lugar no poder antes das outras. Esse processo ainda perdura, mas os feudos ainda buscam guerrar uns contra os outros, visando aumentar sua gama de terras, influência e poder. Os elfos negros possuem também muitos clãs vassalos goblinóides, que servem à anos à estes, junto de escravos de guerra e/ou comercializados. A escravidão é bastante difundida em Halzazee. Pactos demoníacos também não são raros, uma vez que as terras de Halzazee ficam bastante próximas de Ark-a-Nun, existindo diversos portais entre os dois mundos.",
+        "Elfos negros são bastante semelhantes aos elfos de Nova Arcádia, com a diferença de suas peles, de tom enegrecido e olhos com íris de tons lavanda, violeta ou vermelhos.",
+        "Seus cabelos são completamente brancos, e seus corpos são um pouco mais robustos que o dos outros elfos.",
+        "DEX+2, AGI+2, INT+1, WILL+2, PER+2, CAR+4",
+        "Sentidos Aguçados, Visão Noturna, Longevidade."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "5 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Elfos Negros são uma subraça de elfos que, há muito tempo, fora expulsa da convivência dos outros elfos por pactuarem com demônios. Também chamados de drows, eles migraram para terras obscuras, que foram chamadas de Halzazee. No entanto, a própria natureza ambiciosa dos drow fizeram guerrerarem por muitos séculos, no que foi chamado da Guerra de Um Milhão de Espadas Negras. Tal guerra enfraqueceu todas as famílias drow, o que os obrigou a criarem uma paz fria, que perdurou por algum tempo numa organização de rotação de poder das famílias drows, onde cada família ficava no poder de cada feudo por cem anos, até passar o poder para a próxima família. Entretanto, durante esse tempo, as famílias que sucederiam o poder tentavam eliminar umas às outras para adquirir seu lugar no poder antes das outras. Esse processo ainda perdura, mas os feudos ainda buscam guerrar uns contra os outros, visando aumentar sua gama de terras, influência e poder. Os elfos negros possuem também muitos clãs vassalos goblinóides, que servem à anos à estes, junto de escravos de guerra e/ou comercializados. A escravidão é bastante difundida em Halzazee. Pactos demoníacos também não são raros, uma vez que as terras de Halzazee ficam bastante próximas de Ark-a-Nun, existindo diversos portais entre os dois mundos."
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "Elfos negros são bastante semelhantes aos elfos de Nova Arcádia, com a diferença de suas peles, de tom enegrecido e olhos com íris de tons lavanda, violeta ou vermelhos.",
+            "Seus cabelos são completamente brancos, e seus corpos são um pouco mais robustos que o dos outros elfos."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "DEX+2, AGI+2, INT+1, WILL+2, PER+2, CAR+4"
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Sentidos Aguçados, Visão Noturna, Longevidade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elfo",
+      "title": "Elfo",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "3 pontos",
+        "Os elfos de Nova Arcádia são bastante semelhantes aos súlfidos, por causas desconhecidas, mas os teóricos citam sobre imigrantes interplanares advindos de Paradísia para Arcádia em tempos antigos, cujos quais sofreram adaptações. Os elfos são uma raça imensamente longeva, vivendo cerca de 500 a 700 anos, mas para as demais raças, é tratada como imortais, uma vez que é raro encontrarem elfos velhos. Aqueles que abandonam as terras de Arcádia para viverem em outros mundos perdem sua longevidade, atingindo apenas 200 a 300 anos de idade no máximo, e são chamados de Elfos Selvagens.",
+        "Elfos são seres humanoides extremamente belos, esbeltos, de rostos imberbes e orelhas pontudas. Seus corpos geralmente não apresentam pelos em quantidade, a não ser na cabeça e sobrancelhas, além de não possuírem barba nenhuma. Os tons dos olhos e cabelos variam bastante.",
+        "FR-2, CON-2, DEX+2, AGI+2, INT+1, WILL+2, PER+2, CAR+4",
+        "Sentidos Aguçados, Longevidade."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "3 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os elfos de Nova Arcádia são bastante semelhantes aos súlfidos, por causas desconhecidas, mas os teóricos citam sobre imigrantes interplanares advindos de Paradísia para Arcádia em tempos antigos, cujos quais sofreram adaptações. Os elfos são uma raça imensamente longeva, vivendo cerca de 500 a 700 anos, mas para as demais raças, é tratada como imortais, uma vez que é raro encontrarem elfos velhos. Aqueles que abandonam as terras de Arcádia para viverem em outros mundos perdem sua longevidade, atingindo apenas 200 a 300 anos de idade no máximo, e são chamados de Elfos Selvagens."
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "Elfos são seres humanoides extremamente belos, esbeltos, de rostos imberbes e orelhas pontudas. Seus corpos geralmente não apresentam pelos em quantidade, a não ser na cabeça e sobrancelhas, além de não possuírem barba nenhuma. Os tons dos olhos e cabelos variam bastante."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "FR-2, CON-2, DEX+2, AGI+2, INT+1, WILL+2, PER+2, CAR+4"
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Sentidos Aguçados, Longevidade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gnomo",
+      "title": "Gnomo",
+      "area": "racas",
+      "kind": "race",
+      "sectionId": "raca-linhagem",
+      "sectionTitle": "Raça/Linhagem",
+      "paragraphs": [
+        "2 pontos",
+        "Gnomos são fadas semelhantes a anões bem pequenos, são os guardiões invisíveis da terra. Geralmente seu povo vive em florestas, tendo também suas pequenas cidades em minas de ouro e prata. Dentre os seres arcadianos, provavelmente são os que possuem a magia mais difundida entre eles, embora seu poderio individual realmente não seja grande, uma vez que os gnomos possuem uma boa índole e acumulam poder mágico unicamente para levarem uma vida pacífica e protegerem suas florestas e lares. Alguns gnomos vivem em Faerum, a capital de Nova Arcádia, bem como em outras cidades: esses são exemplares ávidos de sua raça, não contentando-se com a vida pacífica das florestas, geralmente tornando-se poderosos magos, tornando escritores e criadores de grimórios, grandes professores de escolas de magia, ou inigualáveis inventores e engenheiros, construindo grandes obras de arquitetura geniais, ou maquinário à vapor de tudo que é espécie (fala-se até mesmo de uma raça de golens vivos inventados por gnomos).",
+        "Gnomos possuem uma fisiologia humanóide, bem semelhante ao anão, e quando atingem a idade geralmente costumam manter longas barbas, e esta tornando-se alva rapidamente quando o gnomo atinge a maioridade. Medem aproximadamente 60cm, entre seus trajes muitas vezes conta-se com gorros. Gnomos vivem em média 400 anos.",
+        "FR-4, CON-4, AGI+3, INT+3, WILL+3.",
+        "Poderes Mágicos 1 (possuem 3 pontos de Focus e 2 pontos de Magia inicialmente)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Gnomos são fadas semelhantes a anões bem pequenos, são os guardiões invisíveis da terra. Geralmente seu povo vive em florestas, tendo também suas pequenas cidades em minas de ouro e prata. Dentre os seres arcadianos, provavelmente são os que possuem a magia mais difundida entre eles, embora seu poderio individual realmente não seja grande, uma vez que os gnomos possuem uma boa índole e acumulam poder mágico unicamente para levarem uma vida pacífica e protegerem suas florestas e lares. Alguns gnomos vivem em Faerum, a capital de Nova Arcádia, bem como em outras cidades: esses são exemplares ávidos de sua raça, não contentando-se com a vida pacífica das florestas, geralmente tornando-se poderosos magos, tornando escritores e criadores de grimórios, grandes professores de escolas de magia, ou inigualáveis inventores e engenheiros, construindo grandes obras de arquitetura geniais, ou maquinário à vapor de tudo que é espécie (fala-se até mesmo de uma raça de golens vivos inventados por gnomos)."
+          ]
+        },
+        {
+          "id": "aparencia",
+          "title": "Aparência",
+          "area": "racas",
+          "paragraphs": [
+            "Gnomos possuem uma fisiologia humanóide, bem semelhante ao anão, e quando atingem a idade geralmente costumam manter longas barbas, e esta tornando-se alva rapidamente quando o gnomo atinge a maioridade. Medem aproximadamente 60cm, entre seus trajes muitas vezes conta-se com gorros. Gnomos vivem em média 400 anos."
+          ]
+        },
+        {
+          "id": "modificadores-de-atributos",
+          "title": "Modificadores de Atributos",
+          "area": "racas",
+          "paragraphs": [
+            "FR-4, CON-4, AGI+3, INT+3, WILL+3."
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens",
+          "title": "Vantagens e Desvantagens",
+          "area": "racas",
+          "paragraphs": [
+            "Poderes Mágicos 1 (possuem 3 pontos de Focus e 2 pontos de Magia inicialmente)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regra-base-arcadia-nova-arcadia",
+      "title": "Regra base - Arcádia - Nova Arcádia",
+      "area": "regras_base",
+      "kind": "ruleset",
+      "sectionId": "regra-base",
+      "sectionTitle": "Regra Base",
+      "paragraphs": [
+        "Guia de Construção de Raças Arcadianas",
+        "Nova Arcádia, bem como Arcádia como um todo, é uma fonte das mais variadas formas de vida fantásticas. Elas não podem ser todas listadas nesse suplemento, porém são dadas regras para a construção de tais raças nas regras abaixo para PJs e Narradores.",
+        "Custo",
+        "Cada raça possui um custo em pontos de aprimoramento. O custo é definido de três formas: bônus de atributos, vantagens e desvantagens. Para cada bônus de +3 nos atributos, o custo racial aumenta em um ponto, e cada redutor de -3 o custo diminui em um ponto. Para cada vantagem racial, o custo também aumenta em um ponto, bem como reduz em um ponto caso seja uma desvantagem racial.",
+        "Vantagens e Desvantagens Raciais",
+        "Abaixo segue-se uma lista de referência para vantagens e desvantagens raciais. É só uma lista de referência, por isso qualquer um pode se sentir completamente livre para criar novas vantagens e desvantagens raciais que se apliquem à nova raça."
+      ],
+      "sections": [
+        {
+          "id": "introducao",
+          "title": "Introdução",
+          "area": "regras_base",
+          "paragraphs": [
+            "Guia de Construção de Raças Arcadianas",
+            "Nova Arcádia, bem como Arcádia como um todo, é uma fonte das mais variadas formas de vida fantásticas. Elas não podem ser todas listadas nesse suplemento, porém são dadas regras para a construção de tais raças nas regras abaixo para PJs e Narradores."
+          ]
+        },
+        {
+          "id": "custo-racial",
+          "title": "Custo Racial",
+          "area": "regras_base",
+          "paragraphs": [
+            "Custo",
+            "Cada raça possui um custo em pontos de aprimoramento. O custo é definido de três formas: bônus de atributos, vantagens e desvantagens. Para cada bônus de +3 nos atributos, o custo racial aumenta em um ponto, e cada redutor de -3 o custo diminui em um ponto. Para cada vantagem racial, o custo também aumenta em um ponto, bem como reduz em um ponto caso seja uma desvantagem racial."
+          ]
+        },
+        {
+          "id": "vantagens-e-desvantagens-raciais",
+          "title": "Vantagens e Desvantagens Raciais",
+          "area": "regras_base",
+          "paragraphs": [
+            "Vantagens e Desvantagens Raciais",
+            "Abaixo segue-se uma lista de referência para vantagens e desvantagens raciais. É só uma lista de referência, por isso qualquer um pode se sentir completamente livre para criar novas vantagens e desvantagens raciais que se apliquem à nova raça."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentidos-agucados",
+      "title": "Sentidos Aguçados",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui sentidos aguçados, sendo que todo teste Difícil para seus sentidos torna-se Médio, e todo teste Médio torna-se Fácil, e todo teste Fácil passa automaticamente."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui sentidos aguçados, sendo que todo teste Difícil para seus sentidos torna-se Médio, e todo teste Médio torna-se Fácil, e todo teste Fácil passa automaticamente."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "visao-noturna",
+      "title": "Visão Noturna",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça pode ver perfeitamente no escuro."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça pode ver perfeitamente no escuro."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "velocidade-ampliada",
+      "title": "Velocidade Ampliada",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui um modo de deslocar-se mais rapidamente que um humanóide bípede normal: seja possuindo a parte inferior do corpo como a de um cavalo, como os centauros, seja tendo sangue olimpiano de Hermes. Qualquer que seja a explicação, a raça pode deslocar-se bem mais rapidamente que um humano normal, podendo atingir o dobro, triplo, quádruplo ou mais vezes o deslocamento humano!"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui um modo de deslocar-se mais rapidamente que um humanóide bípede normal: seja possuindo a parte inferior do corpo como a de um cavalo, como os centauros, seja tendo sangue olimpiano de Hermes. Qualquer que seja a explicação, a raça pode deslocar-se bem mais rapidamente que um humano normal, podendo atingir o dobro, triplo, quádruplo ou mais vezes o deslocamento humano!"
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "tamanho",
+      "title": "Tamanho",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "variável",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "A raça pode possuir qualquer tamanho, contanto que os bônus de Força e Constituição acompanhem tal estatura. A cada 4m de altura a criatura têm de possuir um bônus (cumulativo) de +3 ou superior em FR e CON."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "variável"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A raça pode possuir qualquer tamanho, contanto que os bônus de Força e Constituição acompanhem tal estatura. A cada 4m de altura a criatura têm de possuir um bônus (cumulativo) de +3 ou superior em FR e CON."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "nao-precisa-comer-e-beber",
+      "title": "Não Precisa Comer e Beber",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "geralmente essa vantagem se aplica a raças não-orgânicas, como golens. A raça não precisa comer ou beber em nenhuma circunstância."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "geralmente essa vantagem se aplica a raças não-orgânicas, como golens. A raça não precisa comer ou beber em nenhuma circunstância."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "nao-precisa-dormir",
+      "title": "Não precisa dormir",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça não precisa dormir."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça não precisa dormir."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "pele-resistente",
+      "title": "Pele Resistente",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "variável",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui uma pele resistente, seja ela simplesmente um couro grosso, um exoesqueleto ósseo ou quitinoso, pele de pedra, rocha, ferro, aço, o que for. Em termos de regra, para cada bônus de +2 em IP a raça aumenta em um ponto seu custo racial."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "variável"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui uma pele resistente, seja ela simplesmente um couro grosso, um exoesqueleto ósseo ou quitinoso, pele de pedra, rocha, ferro, aço, o que for. Em termos de regra, para cada bônus de +2 em IP a raça aumenta em um ponto seu custo racial."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "corpo-insetoide",
+      "title": "Corpo Insetóide",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui a parte inferior do corpo, ou todo ele, em forma insetóide, podendo subir em superfícies verticais facilmente, como se estivesse andando.",
+        "O personagem não possui pernas humanoides, e sim de inseto. Geralmente isso significa que ele pode subir por superfícies verticais e saltar longas distâncias (em termos de regra, o personagem pode saltar 1,5m de altura e 1m de comprimento)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui a parte inferior do corpo, ou todo ele, em forma insetóide, podendo subir em superfícies verticais facilmente, como se estivesse andando.",
+            "O personagem não possui pernas humanoides, e sim de inseto. Geralmente isso significa que ele pode subir por superfícies verticais e saltar longas distâncias (em termos de regra, o personagem pode saltar 1,5m de altura e 1m de comprimento)."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "armas-naturais",
+      "title": "Armas Naturais",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "variável",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "A raça possui armas naturais, sejam elas caudas espinhudas, garras, chifres, presas, pinças, espinhos, sangue ácido, ou o que for. A cada 1D de dano a vantagem racial custa um ponto, podendo ser cumulativo. É aconselhável que quando o dano se torne bastante alto (como 4D+) a raça possua melhorias em sua arma natural, como veneno ou ácido, de modo a explicar melhor um dano tão alto."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "variável"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A raça possui armas naturais, sejam elas caudas espinhudas, garras, chifres, presas, pinças, espinhos, sangue ácido, ou o que for. A cada 1D de dano a vantagem racial custa um ponto, podendo ser cumulativo. É aconselhável que quando o dano se torne bastante alto (como 4D+) a raça possua melhorias em sua arma natural, como veneno ou ácido, de modo a explicar melhor um dano tão alto."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "imortal",
+      "title": "Imortal",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça não envelhece fisicamente, mantendo sempre o semblante de algum estágio de sua vida onde parou de envelhecer."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça não envelhece fisicamente, mantendo sempre o semblante de algum estágio de sua vida onde parou de envelhecer."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "acoes-extras",
+      "title": "Ações Extras",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto/ação extra",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "O personagem pode executar mais de uma ação por rodada. Os motivos podem variar, seja ele muito rápido ou seja por possuir mais de dois braços. Custa um ponto por ação extra."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto/ação extra"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem pode executar mais de uma ação por rodada. Os motivos podem variar, seja ele muito rápido ou seja por possuir mais de dois braços. Custa um ponto por ação extra."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "longevidade",
+      "title": "Longevidade",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui uma estimativa de vida extremamente longa, bem superior a de criaturas mortais comuns, podendo atingir idades bastante avançadas, como 400, 600 e até 700 anos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui uma estimativa de vida extremamente longa, bem superior a de criaturas mortais comuns, podendo atingir idades bastante avançadas, como 400, 600 e até 700 anos."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "olhos-de-inseto",
+      "title": "Olhos de Inseto",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "o personagem possui olhos insetóides, podendo enxergar no escuro e ter uma maior percepção dos espectros de luz. Em termos de regra, o pixie adquire visão no escuro e PER+1."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "o personagem possui olhos insetóides, podendo enxergar no escuro e ter uma maior percepção dos espectros de luz. Em termos de regra, o pixie adquire visão no escuro e PER+1."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "voo",
+      "title": "Voo",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui a habilidade racial de voar (seja com ou sem asas)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui a habilidade racial de voar (seja com ou sem asas)."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "antenas",
+      "title": "Antenas",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "o personagem possui um par de antenas de inseto, podendo utilizá-las como um radar para captar movimentos, calor e cheiros. Em termos de regra, o pixie adquire PER+3."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "o personagem possui um par de antenas de inseto, podendo utilizá-las como um radar para captar movimentos, calor e cheiros. Em termos de regra, o pixie adquire PER+3."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "poderes-magicos",
+      "title": "Poderes Mágicos",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "variável",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui a incrível habilidade de desenvolver a magia naturalmente. Essa vantagem se aplica a seres de natureza extremamente mágica, como pixies, gênios, etc. Segue a progressão: 1 ponto: 2 pontos de Focus, 1 ponto de Magia. 2 pontos: 3 pontos de Focus, 2 ponto de Magia. 3 pontos: 5 pontos de Focus, 3 ponto de Magia. 4 pontos: 7 pontos de Focus, 4 ponto de Magia. 5 pontos: 9 pontos de Focus, 5 ponto de Magia. 6 pontos: 11 pontos de Focus, 6 ponto de Magia. 7 pontos: 13 pontos de Focus, 7 ponto de Magia. 8 pontos: 15 pontos de Focus, 8 ponto de Magia."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "variável"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui a incrível habilidade de desenvolver a magia naturalmente. Essa vantagem se aplica a seres de natureza extremamente mágica, como pixies, gênios, etc. Segue a progressão: 1 ponto: 2 pontos de Focus, 1 ponto de Magia. 2 pontos: 3 pontos de Focus, 2 ponto de Magia. 3 pontos: 5 pontos de Focus, 3 ponto de Magia. 4 pontos: 7 pontos de Focus, 4 ponto de Magia. 5 pontos: 9 pontos de Focus, 5 ponto de Magia. 6 pontos: 11 pontos de Focus, 6 ponto de Magia. 7 pontos: 13 pontos de Focus, 7 ponto de Magia. 8 pontos: 15 pontos de Focus, 8 ponto de Magia."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "regeneracao",
+      "title": "Regeneração",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "variável",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça pode regenerar-se mais rapidamente que o normal (1 PV por dia). Segue a progressão: 1 ponto: a raça regenera 1 PV a cada 12 horas. 2 pontos: a raça regenera 1 PV a cada 3 horas. 3 pontos: a raça regenera 1 PV a cada hora. 4 pontos: a raça regenera 1 PV a cada 30 minutos. 5 pontos: a raça regenera 1 PV por rodada. 6 pontos: a raça regenera 2 PVs por rodada. 7 pontos: a raça regenera 3 PVs por rodada. 8 pontos: a raça regenera 4 PVs por rodada."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "variável"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça pode regenerar-se mais rapidamente que o normal (1 PV por dia). Segue a progressão: 1 ponto: a raça regenera 1 PV a cada 12 horas. 2 pontos: a raça regenera 1 PV a cada 3 horas. 3 pontos: a raça regenera 1 PV a cada hora. 4 pontos: a raça regenera 1 PV a cada 30 minutos. 5 pontos: a raça regenera 1 PV por rodada. 6 pontos: a raça regenera 2 PVs por rodada. 7 pontos: a raça regenera 3 PVs por rodada. 8 pontos: a raça regenera 4 PVs por rodada."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "anfibio",
+      "title": "Anfíbio",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça pode respirar embaixo d'água e acima dela."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça pode respirar embaixo d'água e acima dela."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "imune-a-calor-frio",
+      "title": "Imune a calor/frio",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça é imune a variações de temperatura, sejam altas ou baixas. O personagem pode ser pecilotérmico, pode possuir uma pelagem grossa; seja qual for o motivo, temperaturas altas que não sejam o próprio fogo ou a \"queimadura de gelo\", a raça não sentirá os males da mudança da temperatura."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça é imune a variações de temperatura, sejam altas ou baixas. O personagem pode ser pecilotérmico, pode possuir uma pelagem grossa; seja qual for o motivo, temperaturas altas que não sejam o próprio fogo ou a \"queimadura de gelo\", a raça não sentirá os males da mudança da temperatura."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "poderes",
+      "title": "Poderes",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "variável",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui um poder racial. Pode utilizar-se a lista de poderes dos livros ANJOS: A CIDADE DE PRATA, DEMÔNIOS: A DIVINA COMÉDIA, VAMPIROS MITOLÓGICOS, JYHAD: GUERRA SANTA, SPIRITUM: REINO DOS MORTOS, VIKINGS, DOMINI URBS, LOBISOMEM: A MALDIÇÃO, DAIPHIR: LEGADO DE SANGUE ou qualquer outro poder autorizado pelo Narrador. Esse poder deve possuir uma boa explicação para existir. Por exemplo, uma raça de larvas inteligentes pode possuir Comandos Complexos (Controle Mental, nível 2) por possuir um cérebro extremamente evoluído. Cada poder custa um ponto de aprimoramento."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "variável"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui um poder racial. Pode utilizar-se a lista de poderes dos livros ANJOS: A CIDADE DE PRATA, DEMÔNIOS: A DIVINA COMÉDIA, VAMPIROS MITOLÓGICOS, JYHAD: GUERRA SANTA, SPIRITUM: REINO DOS MORTOS, VIKINGS, DOMINI URBS, LOBISOMEM: A MALDIÇÃO, DAIPHIR: LEGADO DE SANGUE ou qualquer outro poder autorizado pelo Narrador. Esse poder deve possuir uma boa explicação para existir. Por exemplo, uma raça de larvas inteligentes pode possuir Comandos Complexos (Controle Mental, nível 2) por possuir um cérebro extremamente evoluído. Cada poder custa um ponto de aprimoramento."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "positivo"
+      }
+    },
+    {
+      "id": "tamanho-diminuto",
+      "title": "Tamanho Diminuto",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "-1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça é menor que a maioria das raças inteligentes. Por isso ele sofre diversos problemas quanto a seu tamanho, como atingir objetos altos, encontrar armaduras para seu tamanho, montarias pequenas, etc."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça é menor que a maioria das raças inteligentes. Por isso ele sofre diversos problemas quanto a seu tamanho, como atingir objetos altos, encontrar armaduras para seu tamanho, montarias pequenas, etc."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "negativo"
+      }
+    },
+    {
+      "id": "sem-asas",
+      "title": "Sem Asas",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "-1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "O personagem não possui asas, não podendo voar por meios naturais."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem não possui asas, não podendo voar por meios naturais."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "negativo"
+      }
+    },
+    {
+      "id": "memoria-curta",
+      "title": "Memória curta",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "-1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça só consegue reter INT x 100 pontos de perícias, tendo que \"esquecer\" alguns pontos de perícias para dar lugar a outros. Essa desvantagem é exclusiva para seres imortais."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça só consegue reter INT x 100 pontos de perícias, tendo que \"esquecer\" alguns pontos de perícias para dar lugar a outros. Essa desvantagem é exclusiva para seres imortais."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "negativo"
+      }
+    },
+    {
+      "id": "alergia-ferro-frio",
+      "title": "Alergia (ferro frio)",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "-1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça possui alergia a ferro frio, recebendo o dobro do dano quando atacado por armas feitas dessa substância."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça possui alergia a ferro frio, recebendo o dobro do dano quando atacado por armas feitas dessa substância."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "negativo"
+      }
+    },
+    {
+      "id": "pacifista",
+      "title": "Pacifista",
+      "area": "aprimoramentos",
+      "kind": "racial_enhancement",
+      "sectionId": "aprimoramento-racial",
+      "sectionTitle": "Aprimoramento Racial",
+      "paragraphs": [
+        "-1 ponto",
+        "Aprimoramento racial; usado na construção de raças arcadianas.",
+        "a raça é pacifista, possuindo uma doutrina ou filosofia de não-agressão, ou são tão fofinhos que não incomodam ninguém há eras, não sabendo os conceitos de ódio ou violência. De qualquer forma, o personagem não atacará outra criatura e só se defenderá quando atacado."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "-1 ponto"
+          ]
+        },
+        {
+          "id": "pre-requisito",
+          "title": "Pré-requisito",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Aprimoramento racial; usado na construção de raças arcadianas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "a raça é pacifista, possuindo uma doutrina ou filosofia de não-agressão, ou são tão fofinhos que não incomodam ninguém há eras, não sabendo os conceitos de ódio ou violência. De qualquer forma, o personagem não atacará outra criatura e só se defenderá quando atacado."
+          ]
+        }
+      ],
+      "metadata": {
+        "tipo": "aprimoramento-racial",
+        "polaridade": "negativo"
+      }
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1,
+    "racas": 9,
+    "regras_base": 1,
+    "aprimoramentos": 25,
+    "itens": 36
+  },
+  "reviewNotes": [
+    "Quebras de página e fragmentos de OCR foram removidos antes da catalogação.",
+    "O epílogo da última página foi descartado por estar com OCR severamente corrompido e não compor dados de jogo.",
+    "Custos raciais foram mantidos nos blocos de cada raça."
+  ],
+  "generatedAt": "2026-06-05T14:12:39"
+}
