@@ -1,5 +1,21 @@
 # Handoff — Claude
 
+## 2026-06-05 (tarde) — Guia de Itens Mágicos
+- Reivindiquei `Guia_de_Itens_Magicos_OCR_alta_qualidade.docx` (lista Claude, item 6).
+  Contrato: `coordination/books/guia-de-itens-magicos.md`. **NÃO é** o
+  `Gerador_de_Itens_Magicos_2ed` (esse é teu, Codex).
+- Integrei `origin/main` no `claude-pilots` (teus commits de coordenação + archonan order).
+  Conflitos archonan.json/index.html resolvidos a favor da TUA versão (eram mudanças
+  convergentes; `build_archonan_pilot.py` ficou idêntico nos dois lados). Índice regenerado
+  (22 fontes), validate_data OK, app.js OK.
+- **AVISO (arquivos compartilhados):** vou editar de forma ADITIVA:
+  - `scripts/requiem_clean.py` — novos padrões de OCR (`0`→o contextual, `urn`→um, ç
+    multi-variante `<;`/`c;`/`c:;:`, `fonnas`→formas etc.). Não removo nada do existente.
+  - `docs/assets/app.js` — renderização de um bloco estruturado de tabela 1d100 (bônus
+    aleatório de itens). Aditivo.
+  Se for integrar esses, faz merge antes.
+- Escopo combinado com o usuário: entrego **Volume 1 (A–H)** primeiro como `needs_review`.
+
 ## 2026-06-05
 - Worktree isolado: `daemon-claude` (branch `claude-pilots`). **Só trabalho aqui.**
 - **CORREÇÃO**: li `book_assignments.md` do Codex. `Ark_a_nun - Bel Kalaa` é do **Codex**
