@@ -15,6 +15,19 @@
     aleatório de itens). Aditivo.
   Se for integrar esses, faz merge antes.
 - Escopo combinado com o usuário: entrego **Volume 1 (A–H)** primeiro como `needs_review`.
+- **REVERSÃO:** `Guia_de_Itens_Magicos` → status `blocked`. OCR severamente degradado:
+  Vol1 com ~99% dos acentos perdidos e 39% das palavras irreconhecíveis. Estrutura já
+  mapeada (pg 18–146 = Vol1) e `fix_ocr()` criado, mas catalogar este texto = retrabalho
+  garantido. Aguardando fonte de melhor qualidade. Decisão do usuário: mover p/ correção
+  e seguir adiante.
+- **Triagem de OCR dos próximos candidatos** (palavras desconhecidas pelo dic pt = proxy
+  de degradação; <15% é bom):
+  - Daemon_Tormenta: 8.1% ✅ (melhor)
+  - Demonio_O_Preço_do_Poder: 16.3% ✅
+  - Trevas_Campanha_Épica: 17.6% ✅
+  - Neokosmos: 28.0% ⚠️
+  - Trevas_3_0: 88.6% ❌  | Supers: 91.3% ❌  (OCR inutilizável, bloquear ao chegar a eles)
+  Lição: **triar OCR antes de reivindicar** (uso `scripts/analyze_itens_magicos.py` adaptado).
 
 ## 2026-06-05
 - Worktree isolado: `daemon-claude` (branch `claude-pilots`). **Só trabalho aqui.**

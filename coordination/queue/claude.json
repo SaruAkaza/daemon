@@ -7,9 +7,9 @@
     {
       "file": "Guia_de_Itens_Magicos_OCR_alta_qualidade.docx",
       "source": "guia-de-itens-magicos",
-      "status": "in_progress",
+      "status": "blocked",
       "branch": "claude-pilots",
-      "notes": "Reivindicado 2026-06-05. Lista Claude item 6 (0.41 MB). Levantando estrutura do DOCX. NÃO confundir com Gerador_de_Itens_Magicos_2ed (Codex)."
+      "notes": "BLOQUEADO por OCR ruim (2026-06-05). Vol1 (pg18-146): ~99% dos acentos perdidos, 39% das palavras irreconhecíveis (abenoado=abençoado, aceleraao=aceleração). Estrutura mapeada e fix_ocr() criado, mas o texto-fonte precisa de melhor OCR antes de catalogar. Aguardando fonte de melhor qualidade. NÃO confundir com Gerador_de_Itens_Magicos_2ed (Codex)."
     },
     {
       "file": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
