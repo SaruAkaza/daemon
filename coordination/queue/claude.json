@@ -5,11 +5,19 @@
   "assignmentSource": "coordination/book_assignments.md (Codex). Anjos -> Claude (status hold). Demais: lista 'Claude'.",
   "books": [
     {
+      "file": "Daemon_Tormenta_OCR_alta_qualidade.docx",
+      "source": "daemon-tormenta",
+      "status": "in_progress",
+      "branch": "claude-pilots",
+      "notes": "Reivindicado 2026-06-05. Lista Claude item 11 (0.26 MB). OCR triado: 8.1% desconhecidas (melhor da fila). Levantando estrutura."
+    },
+    {
       "file": "Guia_de_Itens_Magicos_OCR_alta_qualidade.docx",
       "source": "guia-de-itens-magicos",
       "status": "blocked",
       "branch": "claude-pilots",
-      "notes": "BLOQUEADO por OCR ruim (2026-06-05). Vol1 (pg18-146): ~99% dos acentos perdidos, 39% das palavras irreconhecíveis (abenoado=abençoado, aceleraao=aceleração). Estrutura mapeada e fix_ocr() criado, mas o texto-fonte precisa de melhor OCR antes de catalogar. Aguardando fonte de melhor qualidade. NÃO confundir com Gerador_de_Itens_Magicos_2ed (Codex)."
+      "movedTo": "Livros/word/corrigir/Guia_de_Itens_Magicos_OCR_alta_qualidade.docx",
+      "notes": "BLOQUEADO por OCR ruim (2026-06-05). DOCX MOVIDO para Livros/word/corrigir (ver STATUS.md). Vol1 (pg18-146): ~99% dos acentos perdidos, 39% das palavras irreconhecíveis (abenoado=abençoado, aceleraao=aceleração). Estrutura mapeada e fix_ocr() criado; aguardando re-OCR. NÃO confundir com Gerador_de_Itens_Magicos_2ed (Codex)."
     },
     {
       "file": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
