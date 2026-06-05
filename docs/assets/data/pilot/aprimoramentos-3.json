@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T04:10:57",
+  "generatedAt": "2026-06-05T04:16:29",
   "source": "aprimoramentos-3",
   "sourceFile": "Aprimoramentos_3_OCR_alta_qualidade.docx",
   "sourcePath": "Livros\\word\\Aprimoramentos_3_OCR_alta_qualidade.docx",
@@ -77,21 +77,12 @@
       "title": "Alcance Mágico Extendido",
       "area": "aprimoramentos",
       "kind": "enhancement",
-      "polarity": "negativo",
+      "polarity": "positivo",
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: O alcance da magia é dobrado, com exceção das magias que exigem toque que não são afetadas. Para conjurar essa Magia você precisa ter 1 ponto de Focus a mais do que o normal, e o custo será de 1 ponto extra. Por exemplo, se uma Magia normalmente exige Focus 2 e consome 1 PM, essa mesma Magia com Alcance Mágico Extendido exigirá Focus 3 e consumirá 2 PM. Ambiente Favorável O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1D adicional em cada Magia que ele realizar.",
-        "1 Ponto: raro, durante um eclipse ou o equinócio.",
-        "2 Pontos: incomum, durante um mês especifico, um signo do zodíaco, quando chove ou neva.",
-        "3 Pontos: comum, durante uma fase da lua ou uma estação do ano.",
-        "4 Pontos: freqüente, durante o dia ou à noite. Canalizador Apenas para Personagens magos. O feiticeiro é capaz de conectar sua própria essência vital a seus Poderes Mágicos e, com isso, pode drenar energia mística de seu próprio corpo. Trata-se de uma habilidade mágica extremamente rara e perigosa, que frequentemente leva à morte seu praticante, principalmente os mais jovens e inexperientes. Em termos de jogo ele troca Pontos de Vida (PV) por Pontos de Magia. A Canalização consome uma rodada inteira para ser efetuada, em caso de combate. Pontos de Vida perdidos assim não podem ser recuperados por Magia, apenas por descanso natural.",
-        "2 Pontos: o mago pode trocar 6 Pontos de Vida por 1 Ponto de Magia sempre que precisar.",
-        "4 Pontos: o mago pode trocar 4 Pontos de Vida por 1 Ponto de Magia sempre que precisar. Grimório Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem.",
-        "1 Ponto: o grimório possui Feitiços e Rituais variados de até Complexidade 30%.",
-        "2 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 60%.",
-        "3 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 80%.",
-        "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo."
+        "1 Ponto",
+        "O alcance da magia é dobrado, com exceção das magias que exigem toque que não são afetadas. Para conjurar essa Magia você precisa ter 1 ponto de Focus a mais do que o normal, e o custo será de 1 ponto extra. Por exemplo, se uma Magia normalmente exige Focus 2 e consome 1 PM, essa mesma Magia com Alcance Mágico Extendido exigirá Focus 3 e consumirá 2 PM."
       ],
       "sections": [
         {
@@ -99,24 +90,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto: O alcance da magia é dobrado, com exceção das magias que exigem toque que não são afetadas. Para conjurar essa Magia você precisa ter 1 ponto de Focus a mais do que o normal, e o custo será de 1 ponto extra. Por exemplo, se uma Magia normalmente exige Focus 2 e consome 1 PM, essa mesma Magia com Alcance Mágico Extendido exigirá Focus 3 e consumirá 2 PM. Ambiente Favorável O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1D adicional em cada Magia que ele realizar.",
-            "1 Ponto: raro, durante um eclipse ou o equinócio.",
-            "2 Pontos: incomum, durante um mês especifico, um signo do zodíaco, quando chove ou neva.",
-            "3 Pontos: comum, durante uma fase da lua ou uma estação do ano.",
-            "4 Pontos: freqüente, durante o dia ou à noite. Canalizador Apenas para Personagens magos. O feiticeiro é capaz de conectar sua própria essência vital a seus Poderes Mágicos e, com isso, pode drenar energia mística de seu próprio corpo. Trata-se de uma habilidade mágica extremamente rara e perigosa, que frequentemente leva à morte seu praticante, principalmente os mais jovens e inexperientes. Em termos de jogo ele troca Pontos de Vida (PV) por Pontos de Magia. A Canalização consome uma rodada inteira para ser efetuada, em caso de combate. Pontos de Vida perdidos assim não podem ser recuperados por Magia, apenas por descanso natural.",
-            "2 Pontos: o mago pode trocar 6 Pontos de Vida por 1 Ponto de Magia sempre que precisar.",
-            "4 Pontos: o mago pode trocar 4 Pontos de Vida por 1 Ponto de Magia sempre que precisar. Grimório Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem.",
-            "1 Ponto: o grimório possui Feitiços e Rituais variados de até Complexidade 30%.",
-            "2 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 60%.",
-            "3 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 80%.",
-            "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo."
+            "1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "O alcance da magia é dobrado, com exceção das magias que exigem toque que não são afetadas. Para conjurar essa Magia você precisa ter 1 ponto de Focus a mais do que o normal, e o custo será de 1 ponto extra. Por exemplo, se uma Magia normalmente exige Focus 2 e consome 1 PM, essa mesma Magia com Alcance Mágico Extendido exigirá Focus 3 e consumirá 2 PM."
+          ]
         }
       ]
     },
@@ -193,8 +176,11 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 Pontos: (apenas para Personagens cristãos). Nenhum demônio ou espírito maligno é capaz de chegar perto de seu Personagem, muito menos tocá-lo ou atacá-lo enquanto o Personagem mantiver sua alma limpa (sem pecados, puro de pensamento e ações). O demônio ou espírito maligno pode permanecer na mesma sala que o Personagem ou dialogar com ele, porém será incapaz de atacá-lo fisicamente. Caso o Personagem quebre algum dos dez mandamentos, sua alma ficará maculada por, no mínimo, uma semana e um dia, e ele poderá ser atacado nesse período. O Personagem deve se confessar e pagar a penitência adequada para recuperar a pureza da alma. Poderes Demoníacos sofrem um redutor de 4D em relação ao Personagem enquanto este mantiver sua alma pura.",
-        "3 Pontos: igual o anterior, mas Poderes Demoníacos, ou Magias dos Caminhos de Arkanun e Trevas sofrem um redutor de 5D em relação ao Personagem enquanto este mantiver sua alma pura."
+        "2 Pontos",
+        "(apenas para Personagens cristãos).",
+        "Nenhum demônio ou espírito maligno é capaz de chegar perto de seu Personagem, muito menos tocá-lo ou atacá-lo enquanto o Personagem mantiver sua alma limpa (sem pecados, puro de pensamento e ações). O demônio ou espírito maligno pode permanecer na mesma sala que o Personagem ou dialogar com ele, porém será incapaz de atacá-lo fisicamente.",
+        "Caso o Personagem quebre algum dos dez mandamentos, sua alma ficará maculada por, no mínimo, uma semana e um dia, e ele poderá ser atacado nesse período.",
+        "O Personagem deve se confessar e pagar a penitência adequada para recuperar a pureza da alma."
       ],
       "sections": [
         {
@@ -202,15 +188,19 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 Pontos: (apenas para Personagens cristãos). Nenhum demônio ou espírito maligno é capaz de chegar perto de seu Personagem, muito menos tocá-lo ou atacá-lo enquanto o Personagem mantiver sua alma limpa (sem pecados, puro de pensamento e ações). O demônio ou espírito maligno pode permanecer na mesma sala que o Personagem ou dialogar com ele, porém será incapaz de atacá-lo fisicamente. Caso o Personagem quebre algum dos dez mandamentos, sua alma ficará maculada por, no mínimo, uma semana e um dia, e ele poderá ser atacado nesse período. O Personagem deve se confessar e pagar a penitência adequada para recuperar a pureza da alma. Poderes Demoníacos sofrem um redutor de 4D em relação ao Personagem enquanto este mantiver sua alma pura.",
-            "3 Pontos: igual o anterior, mas Poderes Demoníacos, ou Magias dos Caminhos de Arkanun e Trevas sofrem um redutor de 5D em relação ao Personagem enquanto este mantiver sua alma pura."
+            "2 Pontos"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "(apenas para Personagens cristãos).",
+            "Nenhum demônio ou espírito maligno é capaz de chegar perto de seu Personagem, muito menos tocá-lo ou atacá-lo enquanto o Personagem mantiver sua alma limpa (sem pecados, puro de pensamento e ações). O demônio ou espírito maligno pode permanecer na mesma sala que o Personagem ou dialogar com ele, porém será incapaz de atacá-lo fisicamente.",
+            "Caso o Personagem quebre algum dos dez mandamentos, sua alma ficará maculada por, no mínimo, uma semana e um dia, e ele poderá ser atacado nesse período.",
+            "O Personagem deve se confessar e pagar a penitência adequada para recuperar a pureza da alma."
+          ]
         }
       ]
     },
@@ -309,6 +299,43 @@
           "paragraphs": [
             "o Personagem pode manusear armas e instrumentos tanto com a mão direita quanto com a esquerda, com igual eficiência. Também pode usar duas armas brancas ao mesmo tempo, se forem pequenas o bastante para o uso com uma única mão. Estão fora dessa categoria: arcos, bestas, lanças, a maioria dos machados e martelos e as grandes espadas. A ambidestria afeta apenas Perícias baseadas em Destreza, não em Agilidade: boxe, artes marciais e outras não recebem benefícios pela ambidestria.",
             "Em termos de jogo, esse Aprimoramento confere um ataque extra caso o Personagem esteja usando duas armas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ambiente-favoravel",
+      "title": "Ambiente Favorável",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: raro, durante um eclipse ou o equinócio.",
+        "2 Pontos: incomum, durante um mês especifico, um signo do zodíaco, quando chove ou neva.",
+        "3 Pontos: comum, durante uma fase da lua ou uma estação do ano.",
+        "4 Pontos: freqüente, durante o dia ou à noite.",
+        "O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1D adicional em cada Magia que ele realizar."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: raro, durante um eclipse ou o equinócio.",
+            "2 Pontos: incomum, durante um mês especifico, um signo do zodíaco, quando chove ou neva.",
+            "3 Pontos: comum, durante uma fase da lua ou uma estação do ano.",
+            "4 Pontos: freqüente, durante o dia ou à noite."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1D adicional em cada Magia que ele realizar."
           ]
         }
       ]
@@ -441,6 +468,41 @@
       ]
     },
     {
+      "id": "armas-de-fogo",
+      "title": "Armas de Fogo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: o Personagem possui revólver, pistola, rifle ou arma semi-automática dentro do limite da lei.",
+        "2 Pontos: submetralhadoras, carabinas calibre 12, armas automáticas ou reservadas.",
+        "3 Pontos: metralhadoras pesadas, outras armas militares, armas pesadas.",
+        "Não importa o quão rico ou poderoso seu Personagem possa ser, para carregar armas de fogo, uma destas duas condições deve ser satisfeita: ou seu Personagem as adquiriu legalmente, possui certificados e licença (o que não é uma desculpa para entrar em um tiroteio) ou as adquiriu no mercado negro (e portanto, pode ser indiciado criminalmente por porte ilegal de armas). Qualquer que seja a razão, ela deve estar explicada em Background."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: o Personagem possui revólver, pistola, rifle ou arma semi-automática dentro do limite da lei.",
+            "2 Pontos: submetralhadoras, carabinas calibre 12, armas automáticas ou reservadas.",
+            "3 Pontos: metralhadoras pesadas, outras armas militares, armas pesadas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Não importa o quão rico ou poderoso seu Personagem possa ser, para carregar armas de fogo, uma destas duas condições deve ser satisfeita: ou seu Personagem as adquiriu legalmente, possui certificados e licença (o que não é uma desculpa para entrar em um tiroteio) ou as adquiriu no mercado negro (e portanto, pode ser indiciado criminalmente por porte ilegal de armas). Qualquer que seja a razão, ela deve estar explicada em Background."
+          ]
+        }
+      ]
+    },
+    {
       "id": "assassino-serial",
       "title": "Assassino Serial",
       "area": "aprimoramentos",
@@ -567,6 +629,49 @@
       ]
     },
     {
+      "id": "biblioteca",
+      "title": "Biblioteca",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: a biblioteca trata de 2 Subgrupos de Perícias.",
+        "2 Pontos: 6 Subgrupos.",
+        "3 Pontos: 10 Subgrupos.",
+        "4 Pontos: 14 Subgrupos.",
+        "O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz.",
+        "Se o Personagem estiver em condições de consultá-la, a biblioteca aumentará os conhecimentos do Personagem em alguns assuntos.",
+        "Uma biblioteca possui apenas conhecimentos estudados em livros.",
+        "Em termos de jogo, a biblioteca triplicará, até um máximo de 90%, o valor de alguns Subgrupos de Perícias, sempre relacionados a conhecimentos. O Jogador deve especificar, durante a Criação do Personagem, quais Subgrupos que a biblioteca dispõe. Podem ser Subgrupos de várias Perícias diferentes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: a biblioteca trata de 2 Subgrupos de Perícias.",
+            "2 Pontos: 6 Subgrupos.",
+            "3 Pontos: 10 Subgrupos.",
+            "4 Pontos: 14 Subgrupos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz.",
+            "Se o Personagem estiver em condições de consultá-la, a biblioteca aumentará os conhecimentos do Personagem em alguns assuntos.",
+            "Uma biblioteca possui apenas conhecimentos estudados em livros.",
+            "Em termos de jogo, a biblioteca triplicará, até um máximo de 90%, o valor de alguns Subgrupos de Perícias, sempre relacionados a conhecimentos. O Jogador deve especificar, durante a Criação do Personagem, quais Subgrupos que a biblioteca dispõe. Podem ser Subgrupos de várias Perícias diferentes."
+          ]
+        }
+      ]
+    },
+    {
       "id": "biocinetico",
       "title": "Biocinético",
       "area": "aprimoramentos",
@@ -635,6 +740,47 @@
             "todas as vezes que um Personagem que tenha bom senso for fazer alguma coisa obviamente estúpida, o Mestre pode dizer a ele que o que ele pretende fazer é uma burrice.",
             "Este Aprimoramento é muito útil para Jogadores iniciantes, como uma forma de justificar a ajuda que o Mestre dá aos",
             "Personagens que estão começando, sem enfurecer os demais Jogadores. O Mestre também pode obrigar aquele Jogador \"menos esperto\" a comprar este Aprimoramento."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canalizador",
+      "title": "Canalizador",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos: o mago pode trocar 6 Pontos de Vida por 1 Ponto de Magia sempre que precisar.",
+        "4 Pontos: o mago pode trocar 4 Pontos de Vida por 1 Ponto de Magia sempre que precisar.",
+        "Apenas para Personagens magos.",
+        "O feiticeiro é capaz de conectar sua própria essência vital a seus Poderes Mágicos e, com isso, pode drenar energia mística de seu próprio corpo.",
+        "Trata-se de uma habilidade mágica extremamente rara e perigosa, que frequentemente leva à morte seu praticante, principalmente os mais jovens e inexperientes.",
+        "Em termos de jogo ele troca Pontos de Vida (PV) por Pontos de Magia. A Canalização consome uma rodada inteira para ser efetuada, em caso de combate.",
+        "Pontos de Vida perdidos assim não podem ser recuperados por Magia, apenas por descanso natural."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos: o mago pode trocar 6 Pontos de Vida por 1 Ponto de Magia sempre que precisar.",
+            "4 Pontos: o mago pode trocar 4 Pontos de Vida por 1 Ponto de Magia sempre que precisar."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Apenas para Personagens magos.",
+            "O feiticeiro é capaz de conectar sua própria essência vital a seus Poderes Mágicos e, com isso, pode drenar energia mística de seu próprio corpo.",
+            "Trata-se de uma habilidade mágica extremamente rara e perigosa, que frequentemente leva à morte seu praticante, principalmente os mais jovens e inexperientes.",
+            "Em termos de jogo ele troca Pontos de Vida (PV) por Pontos de Magia. A Canalização consome uma rodada inteira para ser efetuada, em caso de combate.",
+            "Pontos de Vida perdidos assim não podem ser recuperados por Magia, apenas por descanso natural."
           ]
         }
       ]
@@ -728,6 +874,37 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "o Personagem é treinado para caçar vampiros e possui um amplo conhecimento sobre suas fraquezas, poderes e diferentes linhagens, mitos e lendas. Em termos de jogo, o Personagem adquire 30% na perícia Vampiros, além de se sentir no dever de caçá-los: caso se depare com uma situação que o possibilite matar uma dessas criaturas, ele deve fazer um teste de WILL para não fazê-lo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clarividente",
+      "title": "Clarividente",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "o Personagem pode separar sua consciência de seu corpo, podendo comprar a Perícia Psíquica Projeção de Consciência."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "o Personagem pode separar sua consciência de seu corpo, podendo comprar a Perícia Psíquica Projeção de Consciência."
           ]
         }
       ]
@@ -874,6 +1051,47 @@
       ]
     },
     {
+      "id": "contatos-e-aliados",
+      "title": "Contatos e Aliados",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: um aliado importante.",
+        "2 Pontos: dois aliados importantes.",
+        "3 Pontos: quatro aliados importantes.",
+        "4 Pontos: oito aliados importantes. Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade. Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas. Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir). Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes. Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA). Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\". Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir? Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos.",
+        "Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer...). Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor.",
+        "O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre).",
+        "Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: um aliado importante.",
+            "2 Pontos: dois aliados importantes.",
+            "3 Pontos: quatro aliados importantes.",
+            "4 Pontos: oito aliados importantes. Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade. Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas. Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir). Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes. Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA). Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\". Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir? Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer...). Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor.",
+            "O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre).",
+            "Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente."
+          ]
+        }
+      ]
+    },
+    {
       "id": "coragem",
       "title": "Coragem",
       "area": "aprimoramentos",
@@ -980,10 +1198,7 @@
         "-1 Ponto: mudo. Seu Personagem não é capaz de proferir nenhum tipo de som que não seja grunhidos.",
         "-1 Ponto: desajeitado. Seu Personagem é extremamente desajeitado. Qualquer Teste envolvendo AGI é tratado como se fosse Difícil. Além disso, fica complicado para ele esconder-se, passar por lugares apertados ou mesclar-se na multidão.",
         "-1 Ponto: desfigurado. Seu Personagem possui o rosto completamente destruído, seja por problemas de nascença, seja por tortura ou por alguma doença. O CAR não pode ser maior do que 10 e todas as pessoas comuns reagem negativamente a ele em um primeiro momento.",
-        "-2 Pontos: surdo. Seu Personagem não é capaz de ouvir nenhum tipo de som. Dependência O Personagem é viciado em algo. Seu vício geralmente é ilegal, mas não precisa ser. Essa dependência restringe a vontade do Personagem e, às vezes, o obriga a fazer coisas que não quer ou não gosta, e que frequentemente lhe trazem problemas. Um viciado deve ter sucesso em um Teste de WILL (Difícil) para evitar o vício quando estiver diante dele ou para evitar ir em direção ao vício. Lembrando que para um Personagem sob o efeito de substância psicoativa, TODOS os Testes são Difíceis. Se for viciado em substância química ou jogos, então quando tiver algum dinheiro sobrando vai logo procurar comprar a droga ou apostar tudo que tem. Se for obcecado por alguém, então vai perseguir, espionar ou telefonar para essa pessoa várias vezes ao dia. O objeto do vício pode ser alguma substância química psicoativa (álcool, cocaína, crack, LSD, heroína, anfetaminas, remédios psiquiátricos etc), jogos de azar (Bingo, Cartas, Cassinos, Loteria etc), uma pessoa (a garota que não sai da sua cabeça ou aquele rival que você odeia, numa obsessão doentia), um prazer bizarro (matar pessoas ou comer carne humana) ou uma perversão sexual (estupro, pedofilia, necrofilia, zoofilia, sadomasoquismo etc). Descreva em seu histórico os detalhes do vício de seu Personagem. Que droga costuma consumir, onde costuma encher a cara, quando, em que companhia, qual o perfil das pessoas que ele costuma matar, como é a vida da pessoa pela qual está obcecado etc. Tipos: Alcoolismo, Assassino Serial, Canibal, Drogado, Obsessão, Perversão Sexual, Viciado em Jogos etc.",
-        "-1 Ponto: estágio inicial. Nada que o Personagem tenha feito prejudicou outras pessoas ainda, apenas sua própria saúde física e mental. Ele pode fazer uso corriqueiro de drogas e álcool (chegar bêbado em casa todo dia), apostar habitualmente em cavalos ou estar amolando aquela pessoa há algum tempo. Se for um prazer bizarro ou perversão sexual, ele pesquisa e conversa com pessoas na internet, seguramente guarda muitas fotos no computador e, embora ainda não tenha feito nenhuma vítima, deseja muito!",
-        "-2 Pontos: estágio avançado. O Personagem já fez mal a alguém, cometeu crimes e a polícia está atrás dele. O desespero e o descontrole o levaram a cometer alguns ilícitos. Se dependente químico, já roubou. Se apostador, está endividado com agiotas. Se obcecado, já agrediu ou tentou matar aquela pessoa. Se for um prazer bizarro ou perversão sexual, já fez uma ou algumas vítimas. Em todos os casos, o Personagem está sendo procurado pela polícia, talvez até mesmo pela Polícia Federal.",
-        "-3 Pontos: estágio terminal. Igual ao anterior, mas ele já fez várias vítimas, e tem agora um destacamento inteiro da polícia e mais a imprensa em seu encalço. Além de perseguido, há esse problema da notoriedade. Um drogado poderia ter se tornado um traficante procurado, o assassinato daquela pessoa que ele \"amava\" (ou odiava) gerou repercussão nacional etc."
+        "-2 Pontos: surdo. Seu Personagem não é capaz de ouvir nenhum tipo de som."
       ],
       "sections": [
         {
@@ -995,7 +1210,41 @@
             "-1 Ponto: mudo. Seu Personagem não é capaz de proferir nenhum tipo de som que não seja grunhidos.",
             "-1 Ponto: desajeitado. Seu Personagem é extremamente desajeitado. Qualquer Teste envolvendo AGI é tratado como se fosse Difícil. Além disso, fica complicado para ele esconder-se, passar por lugares apertados ou mesclar-se na multidão.",
             "-1 Ponto: desfigurado. Seu Personagem possui o rosto completamente destruído, seja por problemas de nascença, seja por tortura ou por alguma doença. O CAR não pode ser maior do que 10 e todas as pessoas comuns reagem negativamente a ele em um primeiro momento.",
-            "-2 Pontos: surdo. Seu Personagem não é capaz de ouvir nenhum tipo de som. Dependência O Personagem é viciado em algo. Seu vício geralmente é ilegal, mas não precisa ser. Essa dependência restringe a vontade do Personagem e, às vezes, o obriga a fazer coisas que não quer ou não gosta, e que frequentemente lhe trazem problemas. Um viciado deve ter sucesso em um Teste de WILL (Difícil) para evitar o vício quando estiver diante dele ou para evitar ir em direção ao vício. Lembrando que para um Personagem sob o efeito de substância psicoativa, TODOS os Testes são Difíceis. Se for viciado em substância química ou jogos, então quando tiver algum dinheiro sobrando vai logo procurar comprar a droga ou apostar tudo que tem. Se for obcecado por alguém, então vai perseguir, espionar ou telefonar para essa pessoa várias vezes ao dia. O objeto do vício pode ser alguma substância química psicoativa (álcool, cocaína, crack, LSD, heroína, anfetaminas, remédios psiquiátricos etc), jogos de azar (Bingo, Cartas, Cassinos, Loteria etc), uma pessoa (a garota que não sai da sua cabeça ou aquele rival que você odeia, numa obsessão doentia), um prazer bizarro (matar pessoas ou comer carne humana) ou uma perversão sexual (estupro, pedofilia, necrofilia, zoofilia, sadomasoquismo etc). Descreva em seu histórico os detalhes do vício de seu Personagem. Que droga costuma consumir, onde costuma encher a cara, quando, em que companhia, qual o perfil das pessoas que ele costuma matar, como é a vida da pessoa pela qual está obcecado etc. Tipos: Alcoolismo, Assassino Serial, Canibal, Drogado, Obsessão, Perversão Sexual, Viciado em Jogos etc.",
+            "-2 Pontos: surdo. Seu Personagem não é capaz de ouvir nenhum tipo de som."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": []
+        }
+      ]
+    },
+    {
+      "id": "dependencia",
+      "title": "Dependência",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "-1 Ponto: estágio inicial. Nada que o Personagem tenha feito prejudicou outras pessoas ainda, apenas sua própria saúde física e mental. Ele pode fazer uso corriqueiro de drogas e álcool (chegar bêbado em casa todo dia), apostar habitualmente em cavalos ou estar amolando aquela pessoa há algum tempo. Se for um prazer bizarro ou perversão sexual, ele pesquisa e conversa com pessoas na internet, seguramente guarda muitas fotos no computador e, embora ainda não tenha feito nenhuma vítima, deseja muito!",
+        "-2 Pontos: estágio avançado. O Personagem já fez mal a alguém, cometeu crimes e a polícia está atrás dele. O desespero e o descontrole o levaram a cometer alguns ilícitos. Se dependente químico, já roubou. Se apostador, está endividado com agiotas. Se obcecado, já agrediu ou tentou matar aquela pessoa. Se for um prazer bizarro ou perversão sexual, já fez uma ou algumas vítimas. Em todos os casos, o Personagem está sendo procurado pela polícia, talvez até mesmo pela Polícia Federal.",
+        "-3 Pontos: estágio terminal. Igual ao anterior, mas ele já fez várias vítimas, e tem agora um destacamento inteiro da polícia e mais a imprensa em seu encalço. Além de perseguido, há esse problema da notoriedade. Um drogado poderia ter se tornado um traficante procurado, o assassinato daquela pessoa que ele \"amava\" (ou odiava) gerou repercussão nacional etc.",
+        "O Personagem é viciado em algo. Seu vício geralmente é ilegal, mas não precisa ser. Essa dependência restringe a vontade do Personagem e, às vezes, o obriga a fazer coisas que não quer ou não gosta, e que frequentemente lhe trazem problemas.",
+        "Um viciado deve ter sucesso em um Teste de WILL (Difícil) para evitar o vício quando estiver diante dele ou para evitar ir em direção ao vício. Lembrando que para um Personagem sob o efeito de substância psicoativa, TODOS os Testes são Difíceis. Se for viciado em substância química ou jogos, então quando tiver algum dinheiro sobrando vai logo procurar comprar a droga ou apostar tudo que tem. Se for obcecado por alguém, então vai perseguir, espionar ou telefonar para essa pessoa várias vezes ao dia.",
+        "O objeto do vício pode ser alguma substância química psicoativa (álcool, cocaína, crack, LSD, heroína, anfetaminas, remédios psiquiátricos etc), jogos de azar (Bingo, Cartas, Cassinos, Loteria etc), uma pessoa (a garota que não sai da sua cabeça ou aquele rival que você odeia, numa obsessão doentia), um prazer bizarro (matar pessoas ou comer carne humana) ou uma perversão sexual (estupro, pedofilia, necrofilia, zoofilia, sadomasoquismo etc).",
+        "Descreva em seu histórico os detalhes do vício de seu Personagem. Que droga costuma consumir, onde costuma encher a cara, quando, em que companhia, qual o perfil das pessoas que ele costuma matar, como é a vida da pessoa pela qual está obcecado etc.",
+        "Tipos: Alcoolismo, Assassino Serial, Canibal, Drogado, Obsessão, Perversão Sexual, Viciado em Jogos etc."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
             "-1 Ponto: estágio inicial. Nada que o Personagem tenha feito prejudicou outras pessoas ainda, apenas sua própria saúde física e mental. Ele pode fazer uso corriqueiro de drogas e álcool (chegar bêbado em casa todo dia), apostar habitualmente em cavalos ou estar amolando aquela pessoa há algum tempo. Se for um prazer bizarro ou perversão sexual, ele pesquisa e conversa com pessoas na internet, seguramente guarda muitas fotos no computador e, embora ainda não tenha feito nenhuma vítima, deseja muito!",
             "-2 Pontos: estágio avançado. O Personagem já fez mal a alguém, cometeu crimes e a polícia está atrás dele. O desespero e o descontrole o levaram a cometer alguns ilícitos. Se dependente químico, já roubou. Se apostador, está endividado com agiotas. Se obcecado, já agrediu ou tentou matar aquela pessoa. Se for um prazer bizarro ou perversão sexual, já fez uma ou algumas vítimas. Em todos os casos, o Personagem está sendo procurado pela polícia, talvez até mesmo pela Polícia Federal.",
             "-3 Pontos: estágio terminal. Igual ao anterior, mas ele já fez várias vítimas, e tem agora um destacamento inteiro da polícia e mais a imprensa em seu encalço. Além de perseguido, há esse problema da notoriedade. Um drogado poderia ter se tornado um traficante procurado, o assassinato daquela pessoa que ele \"amava\" (ou odiava) gerou repercussão nacional etc."
@@ -1005,7 +1254,13 @@
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "O Personagem é viciado em algo. Seu vício geralmente é ilegal, mas não precisa ser. Essa dependência restringe a vontade do Personagem e, às vezes, o obriga a fazer coisas que não quer ou não gosta, e que frequentemente lhe trazem problemas.",
+            "Um viciado deve ter sucesso em um Teste de WILL (Difícil) para evitar o vício quando estiver diante dele ou para evitar ir em direção ao vício. Lembrando que para um Personagem sob o efeito de substância psicoativa, TODOS os Testes são Difíceis. Se for viciado em substância química ou jogos, então quando tiver algum dinheiro sobrando vai logo procurar comprar a droga ou apostar tudo que tem. Se for obcecado por alguém, então vai perseguir, espionar ou telefonar para essa pessoa várias vezes ao dia.",
+            "O objeto do vício pode ser alguma substância química psicoativa (álcool, cocaína, crack, LSD, heroína, anfetaminas, remédios psiquiátricos etc), jogos de azar (Bingo, Cartas, Cassinos, Loteria etc), uma pessoa (a garota que não sai da sua cabeça ou aquele rival que você odeia, numa obsessão doentia), um prazer bizarro (matar pessoas ou comer carne humana) ou uma perversão sexual (estupro, pedofilia, necrofilia, zoofilia, sadomasoquismo etc).",
+            "Descreva em seu histórico os detalhes do vício de seu Personagem. Que droga costuma consumir, onde costuma encher a cara, quando, em que companhia, qual o perfil das pessoas que ele costuma matar, como é a vida da pessoa pela qual está obcecado etc.",
+            "Tipos: Alcoolismo, Assassino Serial, Canibal, Drogado, Obsessão, Perversão Sexual, Viciado em Jogos etc."
+          ]
         }
       ]
     },
@@ -1176,6 +1431,41 @@
       ]
     },
     {
+      "id": "divida-de-gratidao",
+      "title": "Dívida de Gratidão",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: alguém lhe deve alguns favores menores (como conseguir um desconto para comprar armas, uma autorização jurídica para prosseguir as investigações ou um testemunho falso) e os atenderá somente se isto não vier a prejudicá-lo sob circunstância nenhuma.",
+        "2 Pontos: a dívida lhe vale favores maiores (como fornecer informações sigilosas ou realizar algum \"serviço sujo\") e a pessoa que lhe deve irá ajudar mesmo que isso possa vir a colocá-la em situações perigosas.",
+        "3 Pontos: alguém lhe deve a vida, e fará tudo que estiver a seu alcance para ajudá-lo, não importam as consequências.",
+        "Você fez algo a alguém, e acabou caindo nas graças dessa pessoa. Agora, o Personagem pode se valer desta dívida para obter certos favores e benefícios para si próprio. No entanto, o Mestre deve decidir como serão os resultados desta ajuda. Os NPCs empenham-se em prestar ajuda conforme lhes for possível e conveniente."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: alguém lhe deve alguns favores menores (como conseguir um desconto para comprar armas, uma autorização jurídica para prosseguir as investigações ou um testemunho falso) e os atenderá somente se isto não vier a prejudicá-lo sob circunstância nenhuma.",
+            "2 Pontos: a dívida lhe vale favores maiores (como fornecer informações sigilosas ou realizar algum \"serviço sujo\") e a pessoa que lhe deve irá ajudar mesmo que isso possa vir a colocá-la em situações perigosas.",
+            "3 Pontos: alguém lhe deve a vida, e fará tudo que estiver a seu alcance para ajudá-lo, não importam as consequências."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você fez algo a alguém, e acabou caindo nas graças dessa pessoa. Agora, o Personagem pode se valer desta dívida para obter certos favores e benefícios para si próprio. No entanto, o Mestre deve decidir como serão os resultados desta ajuda. Os NPCs empenham-se em prestar ajuda conforme lhes for possível e conveniente."
+          ]
+        }
+      ]
+    },
+    {
       "id": "eloquente",
       "title": "Eloquente",
       "area": "aprimoramentos",
@@ -1276,11 +1566,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: Toda vez que o personagem precisa fazer um teste de AGI para receber metade do dano (Magias de projétil, bombas, sopro de dragão, entre outros...), ele faz para receber nenhum dano. Se ele falhar no teste, ele toma dano normal. Heroísmo Permite o Personagem realizar feitos heróicos, entre eles: Aumentar um atributo temporariamente. • Ganhar bônus em um único Teste temporariamente. • Ignorar parte do dano recebido. Em termos de jogo, ele não chega de fato a receber esse dano, desviando ou não sendo acertado por ele.",
-        "1 Ponto: O Personagem pode aumentar um Atributo em 1d6 ou um Teste em +10%. Pode ignorar 1d6 pontos de dano. Gasta 1 Mana.",
-        "2 Pontos: O Personagem pode aumentar um Atributo em 2d6 ou um Teste em +20%. Pode ignorar 2d6 pontos de dano. Gasta 2 Mana.",
-        "3 Pontos: O Personagem pode aumentar um Atributo em 3d6 ou um Teste em +30%. Pode ignorar 3d6 pontos de dano. Gasta 3 Mana.",
-        "4 Pontos: O Personagem pode aumentar um Atributo em 4d6 ou um Teste em +40%. Pode ignorar 4d6 pontos de dano. Gasta 4 Mana."
+        "1 Ponto",
+        "Toda vez que o personagem precisa fazer um teste de AGI para receber metade do dano (Magias de projétil, bombas, sopro de dragão, entre outros...), ele faz para receber nenhum dano. Se ele falhar no teste, ele toma dano normal."
       ],
       "sections": [
         {
@@ -1288,18 +1575,90 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto: Toda vez que o personagem precisa fazer um teste de AGI para receber metade do dano (Magias de projétil, bombas, sopro de dragão, entre outros...), ele faz para receber nenhum dano. Se ele falhar no teste, ele toma dano normal. Heroísmo Permite o Personagem realizar feitos heróicos, entre eles: Aumentar um atributo temporariamente. • Ganhar bônus em um único Teste temporariamente. • Ignorar parte do dano recebido. Em termos de jogo, ele não chega de fato a receber esse dano, desviando ou não sendo acertado por ele.",
-            "1 Ponto: O Personagem pode aumentar um Atributo em 1d6 ou um Teste em +10%. Pode ignorar 1d6 pontos de dano. Gasta 1 Mana.",
-            "2 Pontos: O Personagem pode aumentar um Atributo em 2d6 ou um Teste em +20%. Pode ignorar 2d6 pontos de dano. Gasta 2 Mana.",
-            "3 Pontos: O Personagem pode aumentar um Atributo em 3d6 ou um Teste em +30%. Pode ignorar 3d6 pontos de dano. Gasta 3 Mana.",
-            "4 Pontos: O Personagem pode aumentar um Atributo em 4d6 ou um Teste em +40%. Pode ignorar 4d6 pontos de dano. Gasta 4 Mana."
+            "1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "Toda vez que o personagem precisa fazer um teste de AGI para receber metade do dano (Magias de projétil, bombas, sopro de dragão, entre outros...), ele faz para receber nenhum dano. Se ele falhar no teste, ele toma dano normal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fama",
+      "title": "Fama",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: líder reconhecido de um bairro.",
+        "2 Pontos: alguns bairros, uma cidade pequena.",
+        "3 Pontos: algumas cidades pequenas, uma cidade.",
+        "4 Pontos: algumas cidades, um estado ou região. Família ou Mentor",
+        "Você é famoso por seus feitos entre as pessoas mortais, sendo uma figura de destaque na mídia, política, submundo ou algum outro tipo de ambiente mundano, onde todos reconhecem seu nome e ele é frequentemente um dos assuntos preferidos do público. Este tipo de reputação reflete um melhor tratamento por parte dos NPCs, uma série de convites para reuniões e festas, assédio de fãs, destaque na mídia e alvo constante de paparazzis."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: líder reconhecido de um bairro.",
+            "2 Pontos: alguns bairros, uma cidade pequena.",
+            "3 Pontos: algumas cidades pequenas, uma cidade.",
+            "4 Pontos: algumas cidades, um estado ou região. Família ou Mentor"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você é famoso por seus feitos entre as pessoas mortais, sendo uma figura de destaque na mídia, política, submundo ou algum outro tipo de ambiente mundano, onde todos reconhecem seu nome e ele é frequentemente um dos assuntos preferidos do público. Este tipo de reputação reflete um melhor tratamento por parte dos NPCs, uma série de convites para reuniões e festas, assédio de fãs, destaque na mídia e alvo constante de paparazzis."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "familiares",
+      "title": "Familiares",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: um animal relativamente simples e comum para um mago (gato, sapo, coruja, cobra, cachorro etc).",
+        "2 Pontos: um animal mais exótico ou maior (lobo, bode, pássaros raros, trobos etc).",
+        "Seu",
+        "Personagem possui um Familiar.",
+        "Familiares são animais que acompanham o Personagem, mas que possuem poderes e qualidades superiores as dos animais comuns."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: um animal relativamente simples e comum para um mago (gato, sapo, coruja, cobra, cachorro etc).",
+            "2 Pontos: um animal mais exótico ou maior (lobo, bode, pássaros raros, trobos etc)."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu",
+            "Personagem possui um Familiar.",
+            "Familiares são animais que acompanham o Personagem, mas que possuem poderes e qualidades superiores as dos animais comuns."
+          ]
         }
       ]
     },
@@ -1347,9 +1706,9 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "4 Pontos: o indivíduo nasceu ou foi concebido durante uma possessão por espectros, daquelas que chegam a afetar fisicamente o possuído. Isso o tornou diferente, alterando sua essência e sua alma. Ele tende a ser mais arredio, mais negro em seus pensamentos. Sua própria aparência é um pouco decadente, às vezes demonstrando o tumulto de sua alma. Poderes das trevas não afetam normalmente esse indivíduo, e ele pode senti-los sem problemas. O Personagem sabe exatamente quando alguém tenta usar o Caminho de Spiritum, Trevas ou Arkanun perto dele e ainda tem 4D de resistência à magia em relação a estes Caminhos. Esse tipo de Personagem não tende a ter muitos amigos. Familiares Seu Personagem possui um Familiar. Familiares são animais que acompanham o Personagem, mas que possuem poderes e qualidades superiores as dos animais comuns.",
-        "1 Ponto: um animal relativamente simples e comum para um mago (gato, sapo, coruja, cobra, cachorro etc).",
-        "2 Pontos: um animal mais exótico ou maior (lobo, bode, pássaros raros, trobos etc)."
+        "4 Pontos",
+        "o indivíduo nasceu ou foi concebido durante uma possessão por espectros, daquelas que chegam a afetar fisicamente o possuído. Isso o tornou diferente, alterando sua essência e sua alma. Ele tende a ser mais arredio, mais negro em seus pensamentos. Sua própria aparência é um pouco decadente, às vezes demonstrando o tumulto de sua alma.",
+        "Poderes das trevas não afetam normalmente esse indivíduo, e ele pode senti-los sem problemas. O Personagem sabe exatamente quando alguém tenta usar o Caminho de Spiritum, Trevas ou Arkanun perto dele e ainda tem 4D de resistência à magia em relação a estes Caminhos. Esse tipo de Personagem não tende a ter muitos amigos."
       ],
       "sections": [
         {
@@ -1357,16 +1716,17 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "4 Pontos: o indivíduo nasceu ou foi concebido durante uma possessão por espectros, daquelas que chegam a afetar fisicamente o possuído. Isso o tornou diferente, alterando sua essência e sua alma. Ele tende a ser mais arredio, mais negro em seus pensamentos. Sua própria aparência é um pouco decadente, às vezes demonstrando o tumulto de sua alma. Poderes das trevas não afetam normalmente esse indivíduo, e ele pode senti-los sem problemas. O Personagem sabe exatamente quando alguém tenta usar o Caminho de Spiritum, Trevas ou Arkanun perto dele e ainda tem 4D de resistência à magia em relação a estes Caminhos. Esse tipo de Personagem não tende a ter muitos amigos. Familiares Seu Personagem possui um Familiar. Familiares são animais que acompanham o Personagem, mas que possuem poderes e qualidades superiores as dos animais comuns.",
-            "1 Ponto: um animal relativamente simples e comum para um mago (gato, sapo, coruja, cobra, cachorro etc).",
-            "2 Pontos: um animal mais exótico ou maior (lobo, bode, pássaros raros, trobos etc)."
+            "4 Pontos"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "o indivíduo nasceu ou foi concebido durante uma possessão por espectros, daquelas que chegam a afetar fisicamente o possuído. Isso o tornou diferente, alterando sua essência e sua alma. Ele tende a ser mais arredio, mais negro em seus pensamentos. Sua própria aparência é um pouco decadente, às vezes demonstrando o tumulto de sua alma.",
+            "Poderes das trevas não afetam normalmente esse indivíduo, e ele pode senti-los sem problemas. O Personagem sabe exatamente quando alguém tenta usar o Caminho de Spiritum, Trevas ou Arkanun perto dele e ainda tem 4D de resistência à magia em relação a estes Caminhos. Esse tipo de Personagem não tende a ter muitos amigos."
+          ]
         }
       ]
     },
@@ -1459,6 +1819,45 @@
       ]
     },
     {
+      "id": "forcas-militares",
+      "title": "Forças Militares",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: 2 soldados.",
+        "2 Pontos: 4 a 5 soldados.",
+        "3 Pontos: 8 a 10 soldados.",
+        "4 Pontos: 15 a 20 soldados.",
+        "11 Pontos: 30 a 40 soldados.",
+        "O personagem tem acesso a um pequeno grupo de soldados, uma tropa de elite, guardacostas pessoais, falange de anjos, horda de demônios, grupo de einherjars, matilha de lobisomens ou mercenários contratados, podendo utilizar seus serviços em horas de emergência. Lembrando que esses soldados não precisam ser exatamente ligados ao exército de um país e ele só pode possuir seres sobrenaturais se ele for um deles ou se o cenário permitir. Esse Aprimoramento é mais fraco que Contatos e Aliados - ou seja, se o Personagem escolher 2 soldados com Forças Militares 1, cada um deles será mais fraco que se eu comprar um Contatos e Aliados 1 (soldado)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: 2 soldados.",
+            "2 Pontos: 4 a 5 soldados.",
+            "3 Pontos: 8 a 10 soldados.",
+            "4 Pontos: 15 a 20 soldados.",
+            "11 Pontos: 30 a 40 soldados."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem tem acesso a um pequeno grupo de soldados, uma tropa de elite, guardacostas pessoais, falange de anjos, horda de demônios, grupo de einherjars, matilha de lobisomens ou mercenários contratados, podendo utilizar seus serviços em horas de emergência. Lembrando que esses soldados não precisam ser exatamente ligados ao exército de um país e ele só pode possuir seres sobrenaturais se ele for um deles ou se o cenário permitir. Esse Aprimoramento é mais fraco que Contatos e Aliados - ou seja, se o Personagem escolher 2 soldados com Forças Militares 1, cada um deles será mais fraco que se eu comprar um Contatos e Aliados 1 (soldado)."
+          ]
+        }
+      ]
+    },
+    {
       "id": "fe-verdadeira",
       "title": "Fé Verdadeira",
       "area": "aprimoramentos",
@@ -1525,6 +1924,43 @@
       ]
     },
     {
+      "id": "grimorio",
+      "title": "Grimório",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "negativo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: o grimório possui Feitiços e Rituais variados de até Complexidade 30%.",
+        "2 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 60%.",
+        "3 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 80%.",
+        "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo.",
+        "Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: o grimório possui Feitiços e Rituais variados de até Complexidade 30%.",
+            "2 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 60%.",
+            "3 Pontos: o grimório possui Feitiços e Rituais de até Complexidade 80%.",
+            "-1 Ponto: o Jogador pode comprar essa desvantagem caso não possa arcar com o custo do Aprimoramento: o grimório é amaldiçoado e irá deturpar a mente do mago sempre que for lido: em termos de jogo, à cada vez que o Personagem for utilizar o grimório para aprender Feitiços ou Rituais, ele deverá testar sua WILL ou adquirir um Aprimoramento mental negativo."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Nem todo mago possui o privilégio de ter um tutor que lhe ensine os segredos da magia. Às vezes, ele apenas topou com um antigo tomo guardado à gerações no porão da mansão da família. Este Aprimoramento nem de longe é tão bom quanto Tutor - um Personagem que tente aprender magia sozinho mediante um grimório adquirido (presenteado, roubado, tomado, encontrado, etc.) deverá dispender o dobro de tempo para aprender Feitiços e Rituais. Vale lembrar que não precisa desse Aprimoramento para possuir um grimório pessoal, escrito pelo próprio Personagem."
+          ]
+        }
+      ]
+    },
+    {
       "id": "guardiao-de-artefato",
       "title": "Guardião de Artefato",
       "area": "aprimoramentos",
@@ -1557,6 +1993,51 @@
             "Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre escolher qual artefato seu Personagem possui e as razões dele estar com esse Personagem.",
             "ESTE APRIMORAMENTO NÃO DEVE SER",
             "USADO LEVIANAMENTE."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heroismo",
+      "title": "Heroísmo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: O Personagem pode aumentar um Atributo em 1d6 ou um Teste em +10%. Pode ignorar 1d6 pontos de dano. Gasta 1 Mana.",
+        "2 Pontos: O Personagem pode aumentar um Atributo em 2d6 ou um Teste em +20%. Pode ignorar 2d6 pontos de dano. Gasta 2 Mana.",
+        "3 Pontos: O Personagem pode aumentar um Atributo em 3d6 ou um Teste em +30%. Pode ignorar 3d6 pontos de dano. Gasta 3 Mana.",
+        "4 Pontos: O Personagem pode aumentar um Atributo em 4d6 ou um Teste em +40%. Pode ignorar 4d6 pontos de dano. Gasta 4 Mana.",
+        "Permite o Personagem realizar feitos heróicos, entre eles:",
+        "Aumentar um atributo temporariamente.",
+        "• Ganhar bônus em um único Teste temporariamente.",
+        "• Ignorar parte do dano recebido.",
+        "Em termos de jogo, ele não chega de fato a receber esse dano, desviando ou não sendo acertado por ele."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: O Personagem pode aumentar um Atributo em 1d6 ou um Teste em +10%. Pode ignorar 1d6 pontos de dano. Gasta 1 Mana.",
+            "2 Pontos: O Personagem pode aumentar um Atributo em 2d6 ou um Teste em +20%. Pode ignorar 2d6 pontos de dano. Gasta 2 Mana.",
+            "3 Pontos: O Personagem pode aumentar um Atributo em 3d6 ou um Teste em +30%. Pode ignorar 3d6 pontos de dano. Gasta 3 Mana.",
+            "4 Pontos: O Personagem pode aumentar um Atributo em 4d6 ou um Teste em +40%. Pode ignorar 4d6 pontos de dano. Gasta 4 Mana."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Permite o Personagem realizar feitos heróicos, entre eles:",
+            "Aumentar um atributo temporariamente.",
+            "• Ganhar bônus em um único Teste temporariamente.",
+            "• Ignorar parte do dano recebido.",
+            "Em termos de jogo, ele não chega de fato a receber esse dano, desviando ou não sendo acertado por ele."
           ]
         }
       ]
@@ -1638,17 +2119,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: o nome de sua família é famoso, sendo conhecido e considerado importante pela população, ou então seu mentor é um antigo herói cuja reputação e nobreza são admiradas. Na verdade este Aprimoramento equivale ao Aprimoramento Fama, entretanto o Personagem não é reconhecido por seus feitos, mas sim carrega consigo uma chance de provar sua dignidade por estar ligado ao bom nome da família ou do seu mentor (\"Você é filho de McFinn? Ele salvou minha família faz uns anos atrás. Venha, vou lhe dar alguma comida e abrigo.\" ou mesmo \"Se a Kuragari Corporation fez questão de seqüestrar o filho de Kawasaka para poder ‘empregá-lo’, é porque você vale muito. Você tem muita coragem em trair seu pai e vir para o nosso lado. Bem-vindo, Oroshi.\"). Forças Militares O personagem tem acesso a um pequeno grupo de soldados, uma tropa de elite, guardacostas pessoais, falange de anjos, horda de demônios, grupo de einherjars, matilha de lobisomens ou mercenários contratados, podendo utilizar seus serviços em horas de emergência. Lembrando que esses soldados não precisam ser exatamente ligados ao exército de um país e ele só pode possuir seres sobrenaturais se ele for um deles ou se o cenário permitir. Esse Aprimoramento é mais fraco que Contatos e Aliados - ou seja, se o Personagem escolher 2 soldados com Forças Militares 1, cada um deles será mais fraco que se eu comprar um Contatos e Aliados 1 (soldado).",
-        "1 Ponto: 2 soldados.",
-        "2 Pontos: 4 a 5 soldados.",
-        "3 Pontos: 8 a 10 soldados.",
-        "4 Pontos: 15 a 20 soldados.",
-        "11 Pontos: 30 a 40 soldados. Recurso e Dinheiro É quanto de dinheiro, jóias e posses seu Personagem conseguiu reunir ao longo de seus anos de vida. Inclui propriedades e outras fontes de renda que levam tempo até serem convertidas em dinheiro. Os valores a seguir são fornecidos em U$. O Personagem possui inicialmente ao todo cerca de 50 vezes o valor de sua renda, que também deve ser usado pra comprar uma residência (se tiver) ou pagar a hipoteca e o veículo (se tiver) ou seu parcelamento. Caso o Narrador não queira lidar com valores para Recursos de um Personagem, ele pode apenas fazer um teste de [(INT+CAR/2)x4+(Nível de Recursos x10)]%. Dependendo do item comprado, o Narrador pode tornar o teste Fácil, Médio ou Difícil, bem como impor penalidades, como a seguir: -10% se for um item incomum ou ilegal, -20% se for muito raro, tecnologia militar ou muito ilegal, - 30% se for único ou conferir poderosas vantagens que aumente o poder ou habilidade do Personagem. Os objetos descritos no decorrer deste livro não conterão preços, cabendo ao Narrador estipulá-los caso utilize a regra normal ou estipulá-los com bom senso se o teste de compra deve ser Fácil, Médio ou Difícil. Caso o Jogador tenha uma Falha Crítica nesse teste, o Personagem perderá 1 ponto de Recursos e Dinheiro permanentemente (talvez tenha gastado toda sua conta bancária na compra, suas contas do mês não poderiam arcar com aquela compra, precisou pedir empréstimos bancários com juros altíssimos, etc.).",
-        "1 Ponto: renda de até US$ 2.000 mensais.",
-        "2 Pontos: renda de até US$ 4.000 mensais.",
-        "3 Pontos: renda de até US$ 8.000 mensais.",
-        "4 Pontos: renda de até US$ 16.000 mensais.",
-        "11 Pontos: renda de até US$ 32.000 mensais."
+        "1 Ponto",
+        "o nome de sua família é famoso, sendo conhecido e considerado importante pela população, ou então seu mentor é um antigo herói cuja reputação e nobreza são admiradas. Na verdade este Aprimoramento equivale ao Aprimoramento Fama, entretanto o Personagem não é reconhecido por seus feitos, mas sim carrega consigo uma chance de provar sua dignidade por estar ligado ao bom nome da família ou do seu mentor (\"Você é filho de McFinn? Ele salvou minha família faz uns anos atrás. Venha, vou lhe dar alguma comida e abrigo.\" ou mesmo \"Se a Kuragari Corporation fez questão de seqüestrar o filho de Kawasaka para poder ‘empregá-lo’, é porque você vale muito. Você tem muita coragem em trair seu pai e vir para o nosso lado. Bem-vindo, Oroshi.\")."
       ],
       "sections": [
         {
@@ -1656,24 +2128,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto: o nome de sua família é famoso, sendo conhecido e considerado importante pela população, ou então seu mentor é um antigo herói cuja reputação e nobreza são admiradas. Na verdade este Aprimoramento equivale ao Aprimoramento Fama, entretanto o Personagem não é reconhecido por seus feitos, mas sim carrega consigo uma chance de provar sua dignidade por estar ligado ao bom nome da família ou do seu mentor (\"Você é filho de McFinn? Ele salvou minha família faz uns anos atrás. Venha, vou lhe dar alguma comida e abrigo.\" ou mesmo \"Se a Kuragari Corporation fez questão de seqüestrar o filho de Kawasaka para poder ‘empregá-lo’, é porque você vale muito. Você tem muita coragem em trair seu pai e vir para o nosso lado. Bem-vindo, Oroshi.\"). Forças Militares O personagem tem acesso a um pequeno grupo de soldados, uma tropa de elite, guardacostas pessoais, falange de anjos, horda de demônios, grupo de einherjars, matilha de lobisomens ou mercenários contratados, podendo utilizar seus serviços em horas de emergência. Lembrando que esses soldados não precisam ser exatamente ligados ao exército de um país e ele só pode possuir seres sobrenaturais se ele for um deles ou se o cenário permitir. Esse Aprimoramento é mais fraco que Contatos e Aliados - ou seja, se o Personagem escolher 2 soldados com Forças Militares 1, cada um deles será mais fraco que se eu comprar um Contatos e Aliados 1 (soldado).",
-            "1 Ponto: 2 soldados.",
-            "2 Pontos: 4 a 5 soldados.",
-            "3 Pontos: 8 a 10 soldados.",
-            "4 Pontos: 15 a 20 soldados.",
-            "11 Pontos: 30 a 40 soldados. Recurso e Dinheiro É quanto de dinheiro, jóias e posses seu Personagem conseguiu reunir ao longo de seus anos de vida. Inclui propriedades e outras fontes de renda que levam tempo até serem convertidas em dinheiro. Os valores a seguir são fornecidos em U$. O Personagem possui inicialmente ao todo cerca de 50 vezes o valor de sua renda, que também deve ser usado pra comprar uma residência (se tiver) ou pagar a hipoteca e o veículo (se tiver) ou seu parcelamento. Caso o Narrador não queira lidar com valores para Recursos de um Personagem, ele pode apenas fazer um teste de [(INT+CAR/2)x4+(Nível de Recursos x10)]%. Dependendo do item comprado, o Narrador pode tornar o teste Fácil, Médio ou Difícil, bem como impor penalidades, como a seguir: -10% se for um item incomum ou ilegal, -20% se for muito raro, tecnologia militar ou muito ilegal, - 30% se for único ou conferir poderosas vantagens que aumente o poder ou habilidade do Personagem. Os objetos descritos no decorrer deste livro não conterão preços, cabendo ao Narrador estipulá-los caso utilize a regra normal ou estipulá-los com bom senso se o teste de compra deve ser Fácil, Médio ou Difícil. Caso o Jogador tenha uma Falha Crítica nesse teste, o Personagem perderá 1 ponto de Recursos e Dinheiro permanentemente (talvez tenha gastado toda sua conta bancária na compra, suas contas do mês não poderiam arcar com aquela compra, precisou pedir empréstimos bancários com juros altíssimos, etc.).",
-            "1 Ponto: renda de até US$ 2.000 mensais.",
-            "2 Pontos: renda de até US$ 4.000 mensais.",
-            "3 Pontos: renda de até US$ 8.000 mensais.",
-            "4 Pontos: renda de até US$ 16.000 mensais.",
-            "11 Pontos: renda de até US$ 32.000 mensais."
+            "1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "o nome de sua família é famoso, sendo conhecido e considerado importante pela população, ou então seu mentor é um antigo herói cuja reputação e nobreza são admiradas. Na verdade este Aprimoramento equivale ao Aprimoramento Fama, entretanto o Personagem não é reconhecido por seus feitos, mas sim carrega consigo uma chance de provar sua dignidade por estar ligado ao bom nome da família ou do seu mentor (\"Você é filho de McFinn? Ele salvou minha família faz uns anos atrás. Venha, vou lhe dar alguma comida e abrigo.\" ou mesmo \"Se a Kuragari Corporation fez questão de seqüestrar o filho de Kawasaka para poder ‘empregá-lo’, é porque você vale muito. Você tem muita coragem em trair seu pai e vir para o nosso lado. Bem-vindo, Oroshi.\")."
+          ]
         }
       ]
     },
@@ -1810,8 +2274,7 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "1 Ponto",
-        "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior).",
-        "Mestre em Caminho O personagem deve possuir o Aprimoramento"
+        "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
       ],
       "sections": [
         {
@@ -1827,8 +2290,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior).",
-            "Mestre em Caminho O personagem deve possuir o Aprimoramento"
+            "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
           ]
         }
       ]
@@ -2101,45 +2563,6 @@
       ]
     },
     {
-      "id": "magicos",
-      "title": "Mágicos",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "polarity": "positivo",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
-        "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
-        "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
-        "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
-        "11 Pontos: O Mago pode ter Focus 7 em um Caminho. Crânio do Conhecimento 1+ ponto: o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!).",
-        "Arquimago Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
-            "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
-            "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
-            "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
-            "11 Pontos: O Mago pode ter Focus 7 em um Caminho. Crânio do Conhecimento 1+ ponto: o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!)."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Arquimago Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes."
-          ]
-        }
-      ]
-    },
-    {
       "id": "medium",
       "title": "Médium",
       "area": "aprimoramentos",
@@ -2346,8 +2769,9 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Ver referência",
-        "Vide Poderes Sobrenaturais."
+        "3 Pontos",
+        "sofrem um redutor de 4D em relação ao Personagem enquanto este mantiver sua alma pura.",
+        "igual o anterior, mas Poderes Demoníacos, ou Magias dos Caminhos de Arkanun e Trevas sofrem um redutor de 5D em relação ao Personagem enquanto este mantiver sua alma pura."
       ],
       "sections": [
         {
@@ -2355,7 +2779,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Ver referência"
+            "3 Pontos"
           ]
         },
         {
@@ -2363,7 +2787,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Vide Poderes Sobrenaturais."
+            "sofrem um redutor de 4D em relação ao Personagem enquanto este mantiver sua alma pura.",
+            "igual o anterior, mas Poderes Demoníacos, ou Magias dos Caminhos de Arkanun e Trevas sofrem um redutor de 5D em relação ao Personagem enquanto este mantiver sua alma pura."
           ]
         }
       ]
@@ -2410,12 +2835,7 @@
       "paragraphs": [
         "1 Ponto: O Mago pode adquirir a perícia Rituais e Teoria da Magia.",
         "2 Pontos: O Mago pode adquirir uma Perícia Mágica.",
-        "1 Ponto: O Mago pode adquirir uma Perícia Mágica extra. Tutor Todo o Personagem Mago teve, em algum momento de sua aprendizado, um Tutor que lhe ensinou sobre a Magia. Se você desejar que este Tutor ainda esteja com o seu personagem por alguma razão, então gaste seu pontos neste Aprimoramento. O Mestre deve criar toda a história e características do seu mentor, definindo à seu próprio gosto a personalidade, fraquezas, objetivos e problemas que ele enfrenta.",
-        "1 Ponto: seu Tutor é um humano que ainda vive e pode, ou não, morar com o Personagem.",
-        "2 Pontos: seu Tutor é uma criatura sobrenatural (um Anjo de Paradísia, um Demônio de Arkanun, um arkanita Djinn, um Vampiro ou mesmo o espírito de um mago morto).",
-        "3 Pontos: seu Tutor é uma criatura de Infernun (demônios muito poderosos, porém os menos confiáveis como mentores).",
-        "4 Pontos: seu Tutor é um Anjo mais poderoso, ou até um Arcanjo (podem acompanhar, de longe, o seu progresso e até, em raras ocasiões, descer dos céus para auxiliá-lo).",
-        "5 Pontos: seu Tutor é um Serafim ou uma divindade paradisiana (olimpianos, asgardianos, hindus, egípcio, etc.). Exemplos de divindades que possam ser bons tutores para magia são Loki, Toth ou Lug. Esse nível de Aprimoramento permite um tutor que sabe praticamente tudo sobre magias e todos os Rituais (com exceção de alguns mais modernos), porém ele será volátil e pode ensinar-lhe apenas o que ele acha pertinente, ou quem sabe pedir-lhe que faça alguma coisa para que possa aprender essa magia."
+        "1 Ponto: O Mago pode adquirir uma Perícia Mágica extra."
       ],
       "sections": [
         {
@@ -2425,12 +2845,7 @@
           "paragraphs": [
             "1 Ponto: O Mago pode adquirir a perícia Rituais e Teoria da Magia.",
             "2 Pontos: O Mago pode adquirir uma Perícia Mágica.",
-            "1 Ponto: O Mago pode adquirir uma Perícia Mágica extra. Tutor Todo o Personagem Mago teve, em algum momento de sua aprendizado, um Tutor que lhe ensinou sobre a Magia. Se você desejar que este Tutor ainda esteja com o seu personagem por alguma razão, então gaste seu pontos neste Aprimoramento. O Mestre deve criar toda a história e características do seu mentor, definindo à seu próprio gosto a personalidade, fraquezas, objetivos e problemas que ele enfrenta.",
-            "1 Ponto: seu Tutor é um humano que ainda vive e pode, ou não, morar com o Personagem.",
-            "2 Pontos: seu Tutor é uma criatura sobrenatural (um Anjo de Paradísia, um Demônio de Arkanun, um arkanita Djinn, um Vampiro ou mesmo o espírito de um mago morto).",
-            "3 Pontos: seu Tutor é uma criatura de Infernun (demônios muito poderosos, porém os menos confiáveis como mentores).",
-            "4 Pontos: seu Tutor é um Anjo mais poderoso, ou até um Arcanjo (podem acompanhar, de longe, o seu progresso e até, em raras ocasiões, descer dos céus para auxiliá-lo).",
-            "5 Pontos: seu Tutor é um Serafim ou uma divindade paradisiana (olimpianos, asgardianos, hindus, egípcio, etc.). Exemplos de divindades que possam ser bons tutores para magia são Loki, Toth ou Lug. Esse nível de Aprimoramento permite um tutor que sabe praticamente tudo sobre magias e todos os Rituais (com exceção de alguns mais modernos), porém ele será volátil e pode ensinar-lhe apenas o que ele acha pertinente, ou quem sabe pedir-lhe que faça alguma coisa para que possa aprender essa magia."
+            "1 Ponto: O Mago pode adquirir uma Perícia Mágica extra."
           ]
         },
         {
@@ -2442,8 +2857,8 @@
       ]
     },
     {
-      "id": "poderes-sobrenaturais-por-alguma-razao",
-      "title": "Poderes Sobrenaturais Por alguma razão,",
+      "id": "poderes-sobrenaturais",
+      "title": "Poderes Sobrenaturais",
       "area": "aprimoramentos",
       "kind": "enhancement",
       "polarity": "positivo",
@@ -2458,7 +2873,7 @@
         "6 Pontos: 11 pontos de Poder do tipo escolhido.",
         "7 Pontos: 13 pontos de Poder do tipo escolhido.",
         "8 Pontos: 15 pontos de Poder do tipo escolhido.",
-        "seu Personagem possui poderes de alguma criatura sobrenatural, ainda que limitados. Ele pode ser filho de uma dessas criaturas com um ser humano, e assim ser meio-sobrenatural. Ou pode ter recebido esses poderes através de alguma maldição, ritual, pacto ou qualquer outra razão. A origem desses poderes precisa ser explicada na história do Personagem.",
+        "Por alguma razão, seu Personagem possui poderes de alguma criatura sobrenatural, ainda que limitados. Ele pode ser filho de uma dessas criaturas com um ser humano, e assim ser meio-sobrenatural. Ou pode ter recebido esses poderes através de alguma maldição, ritual, pacto ou qualquer outra razão. A origem desses poderes precisa ser explicada na história do Personagem.",
         "Escolha o tipo de poder dentre os disponíveis abaixo. O Personagem só poderá gastar seus pontos de poderes entre os poderes daquele tipo de criatura. A relação de poderes está descrita no livro conforme indicado.",
         "Tipos: Poderes Angelicais (no livro ANJOS: A CIDADE DE PRATA), Poderes Demoníacos",
         "(no livro DEMÔNIOS: A DIVINA COMÉDIA), Poderes Espectrais (no livro SPIRITUM: O REINO",
@@ -2490,7 +2905,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "seu Personagem possui poderes de alguma criatura sobrenatural, ainda que limitados. Ele pode ser filho de uma dessas criaturas com um ser humano, e assim ser meio-sobrenatural. Ou pode ter recebido esses poderes através de alguma maldição, ritual, pacto ou qualquer outra razão. A origem desses poderes precisa ser explicada na história do Personagem.",
+            "Por alguma razão, seu Personagem possui poderes de alguma criatura sobrenatural, ainda que limitados. Ele pode ser filho de uma dessas criaturas com um ser humano, e assim ser meio-sobrenatural. Ou pode ter recebido esses poderes através de alguma maldição, ritual, pacto ou qualquer outra razão. A origem desses poderes precisa ser explicada na história do Personagem.",
             "Escolha o tipo de poder dentre os disponíveis abaixo. O Personagem só poderá gastar seus pontos de poderes entre os poderes daquele tipo de criatura. A relação de poderes está descrita no livro conforme indicado.",
             "Tipos: Poderes Angelicais (no livro ANJOS: A CIDADE DE PRATA), Poderes Demoníacos",
             "(no livro DEMÔNIOS: A DIVINA COMÉDIA), Poderes Espectrais (no livro SPIRITUM: O REINO",
@@ -2577,9 +2992,10 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: o Personagem é um portal natural para o mundo espiritual, simplesmente atraindo forças de Spiritum conforme seu estado de espírito. Quando está nervoso, tende a atrair fantasmas e poltergeists, manifestando sua fúria sem querer através deles (os poltergeists e outros espíritos zombeteiros conjurados podem realizar efeitos de até 1D na área onde o Personagem se encontra). Quando está calmo, espíritos do bem e guias espirituais se aproximam dele, dando um bônus de +4 em Carisma. Resistência à Magia Não pode ser comprada por Personagens que usam Magia.",
-        "1 Ponto: seu Personagem possui uma resistência sobrenatural à Magia. Todas as Magias feitas contra ele recebem um redutor de -1D automaticamente.",
-        "3 Pontos: idêntico ao acima, mas todas as Magias feitas contra ele recebem um redutor de -2D automaticamente."
+        "1 Ponto",
+        "o Personagem é um portal natural para o mundo espiritual, simplesmente atraindo forças de Spiritum conforme seu estado de espírito.",
+        "Quando está nervoso, tende a atrair fantasmas e poltergeists, manifestando sua fúria sem querer através deles (os poltergeists e outros espíritos zombeteiros conjurados podem realizar efeitos de até 1D na área onde o Personagem se encontra).",
+        "Quando está calmo, espíritos do bem e guias espirituais se aproximam dele, dando um bônus de +4 em Carisma."
       ],
       "sections": [
         {
@@ -2587,16 +3003,18 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto: o Personagem é um portal natural para o mundo espiritual, simplesmente atraindo forças de Spiritum conforme seu estado de espírito. Quando está nervoso, tende a atrair fantasmas e poltergeists, manifestando sua fúria sem querer através deles (os poltergeists e outros espíritos zombeteiros conjurados podem realizar efeitos de até 1D na área onde o Personagem se encontra). Quando está calmo, espíritos do bem e guias espirituais se aproximam dele, dando um bônus de +4 em Carisma. Resistência à Magia Não pode ser comprada por Personagens que usam Magia.",
-            "1 Ponto: seu Personagem possui uma resistência sobrenatural à Magia. Todas as Magias feitas contra ele recebem um redutor de -1D automaticamente.",
-            "3 Pontos: idêntico ao acima, mas todas as Magias feitas contra ele recebem um redutor de -2D automaticamente."
+            "1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "o Personagem é um portal natural para o mundo espiritual, simplesmente atraindo forças de Spiritum conforme seu estado de espírito.",
+            "Quando está nervoso, tende a atrair fantasmas e poltergeists, manifestando sua fúria sem querer através deles (os poltergeists e outros espíritos zombeteiros conjurados podem realizar efeitos de até 1D na área onde o Personagem se encontra).",
+            "Quando está calmo, espíritos do bem e guias espirituais se aproximam dele, dando um bônus de +4 em Carisma."
+          ]
         }
       ]
     },
@@ -2609,44 +3027,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 Pontos: você tem a habilidade de não ser notado, as pessoas só percebem sua presença quando você se anuncia. O personagem não está realmente invisível, mas parece tão insignificante que as pessoas não prestam atenção nele, a menos que venha a se expor abertamente. Sensitivo Seu Personagem possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas.",
-        "1 Ponto: o Personagem sonha com coisas sobrenaturais, que podem vir a ocorrer. Escreve livros, modela esculturas e pinta quadros a respeito. Esses objetos devem ser usados pelo Mestre como ajuda na preparação de Campanhas e Aventuras.",
-        "2 Pontos: o Personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o Jogador pode tentar um Teste de PER para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida ou a localização de um objeto perdido. Sociedade Secreta Obrigatório se o seu Personagem deseja pertencer ao Arkanun Arcanorum, Escola de Magia ou Ordem de Cavaleiros. Por suas habilidades, você foi escolhido e recrutado por uma Ordem Mística, onde você será treinado e aprenderá a refinar suas aptidões. Sendo membro de uma Sociedade Secreta, você receberá regalias e inimigos. Existem várias Ordens, tanto de magos quanto de cavaleiros, para saber quais os benefícios e malefícios de cada uma consulte o Mestre.",
-        "1 Ponto: seu Personagem pertence à Sociedade, mas como um membro dos círculos externos, ou aprendizes.",
-        "2 Pontos: seu Personagem já possui uma influência maior dentro da Sociedade e, assim, pertence aos círculos mais internos dela (possuindo talvez até algum título mais importante)."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "2 Pontos: você tem a habilidade de não ser notado, as pessoas só percebem sua presença quando você se anuncia. O personagem não está realmente invisível, mas parece tão insignificante que as pessoas não prestam atenção nele, a menos que venha a se expor abertamente. Sensitivo Seu Personagem possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas.",
-            "1 Ponto: o Personagem sonha com coisas sobrenaturais, que podem vir a ocorrer. Escreve livros, modela esculturas e pinta quadros a respeito. Esses objetos devem ser usados pelo Mestre como ajuda na preparação de Campanhas e Aventuras.",
-            "2 Pontos: o Personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o Jogador pode tentar um Teste de PER para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida ou a localização de um objeto perdido. Sociedade Secreta Obrigatório se o seu Personagem deseja pertencer ao Arkanun Arcanorum, Escola de Magia ou Ordem de Cavaleiros. Por suas habilidades, você foi escolhido e recrutado por uma Ordem Mística, onde você será treinado e aprenderá a refinar suas aptidões. Sendo membro de uma Sociedade Secreta, você receberá regalias e inimigos. Existem várias Ordens, tanto de magos quanto de cavaleiros, para saber quais os benefícios e malefícios de cada uma consulte o Mestre.",
-            "1 Ponto: seu Personagem pertence à Sociedade, mas como um membro dos círculos externos, ou aprendizes.",
-            "2 Pontos: seu Personagem já possui uma influência maior dentro da Sociedade e, assim, pertence aos círculos mais internos dela (possuindo talvez até algum título mais importante)."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": []
-        }
-      ]
-    },
-    {
-      "id": "psiquicos-telecinetico",
-      "title": "Psíquicos Telecinético",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "polarity": "positivo",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
         "2 Pontos",
-        "o Personagem detém o domínio da mente sobre a matéria, podendo comprar a Perícia Psíquica Telecinésia. Dentre os poderes associados, o Personagem pode criar um campo de força telecinética (Complexidade 10% para cada ponto de IP), agitar as moléculas até aquecer objetos (Complexidade 30%), mover objetos (Complexidade variável), voo (Complexidade 40%), manipulação de objetos como se os tivesse em suas próprias mãos (Complexidade 30%, aumenta em 10% para cada objeto extra) e outros."
+        "você tem a habilidade de não ser notado, as pessoas só percebem sua presença quando você se anuncia. O personagem não está realmente invisível, mas parece tão insignificante que as pessoas não prestam atenção nele, a menos que venha a se expor abertamente."
       ],
       "sections": [
         {
@@ -2662,7 +3044,83 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem detém o domínio da mente sobre a matéria, podendo comprar a Perícia Psíquica Telecinésia. Dentre os poderes associados, o Personagem pode criar um campo de força telecinética (Complexidade 10% para cada ponto de IP), agitar as moléculas até aquecer objetos (Complexidade 30%), mover objetos (Complexidade variável), voo (Complexidade 40%), manipulação de objetos como se os tivesse em suas próprias mãos (Complexidade 30%, aumenta em 10% para cada objeto extra) e outros."
+            "você tem a habilidade de não ser notado, as pessoas só percebem sua presença quando você se anuncia. O personagem não está realmente invisível, mas parece tão insignificante que as pessoas não prestam atenção nele, a menos que venha a se expor abertamente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recurso-e-dinheiro",
+      "title": "Recurso e Dinheiro",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: renda de até US$ 2.000 mensais.",
+        "2 Pontos: renda de até US$ 4.000 mensais.",
+        "3 Pontos: renda de até US$ 8.000 mensais.",
+        "4 Pontos: renda de até US$ 16.000 mensais.",
+        "11 Pontos: renda de até US$ 32.000 mensais.",
+        "É quanto de dinheiro, jóias e posses seu Personagem conseguiu reunir ao longo de seus anos de vida. Inclui propriedades e outras fontes de renda que levam tempo até serem convertidas em dinheiro. Os valores a seguir são fornecidos em U$. O Personagem possui inicialmente ao todo cerca de 50 vezes o valor de sua renda, que também deve ser usado pra comprar uma residência (se tiver) ou pagar a hipoteca e o veículo (se tiver) ou seu parcelamento.",
+        "Caso o Narrador não queira lidar com valores para Recursos de um Personagem, ele pode apenas fazer um teste de [(INT+CAR/2)x4+(Nível de Recursos x10)]%.",
+        "Dependendo do item comprado, o Narrador pode tornar o teste Fácil, Médio ou Difícil, bem como impor penalidades, como a seguir: -10% se for um item incomum ou ilegal, -20% se for muito raro, tecnologia militar ou muito ilegal, - 30% se for único ou conferir poderosas vantagens que aumente o poder ou habilidade do Personagem. Os objetos descritos no decorrer deste livro não conterão preços, cabendo ao Narrador estipulá-los caso utilize a regra normal ou estipulá-los com bom senso se o teste de compra deve ser Fácil, Médio ou Difícil. Caso o Jogador tenha uma Falha Crítica nesse teste, o Personagem perderá 1 ponto de Recursos e Dinheiro permanentemente (talvez tenha gastado toda sua conta bancária na compra, suas contas do mês não poderiam arcar com aquela compra, precisou pedir empréstimos bancários com juros altíssimos, etc.)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: renda de até US$ 2.000 mensais.",
+            "2 Pontos: renda de até US$ 4.000 mensais.",
+            "3 Pontos: renda de até US$ 8.000 mensais.",
+            "4 Pontos: renda de até US$ 16.000 mensais.",
+            "11 Pontos: renda de até US$ 32.000 mensais."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "É quanto de dinheiro, jóias e posses seu Personagem conseguiu reunir ao longo de seus anos de vida. Inclui propriedades e outras fontes de renda que levam tempo até serem convertidas em dinheiro. Os valores a seguir são fornecidos em U$. O Personagem possui inicialmente ao todo cerca de 50 vezes o valor de sua renda, que também deve ser usado pra comprar uma residência (se tiver) ou pagar a hipoteca e o veículo (se tiver) ou seu parcelamento.",
+            "Caso o Narrador não queira lidar com valores para Recursos de um Personagem, ele pode apenas fazer um teste de [(INT+CAR/2)x4+(Nível de Recursos x10)]%.",
+            "Dependendo do item comprado, o Narrador pode tornar o teste Fácil, Médio ou Difícil, bem como impor penalidades, como a seguir: -10% se for um item incomum ou ilegal, -20% se for muito raro, tecnologia militar ou muito ilegal, - 30% se for único ou conferir poderosas vantagens que aumente o poder ou habilidade do Personagem. Os objetos descritos no decorrer deste livro não conterão preços, cabendo ao Narrador estipulá-los caso utilize a regra normal ou estipulá-los com bom senso se o teste de compra deve ser Fácil, Médio ou Difícil. Caso o Jogador tenha uma Falha Crítica nesse teste, o Personagem perderá 1 ponto de Recursos e Dinheiro permanentemente (talvez tenha gastado toda sua conta bancária na compra, suas contas do mês não poderiam arcar com aquela compra, precisou pedir empréstimos bancários com juros altíssimos, etc.)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia-a-magia",
+      "title": "Resistência à Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: seu Personagem possui uma resistência sobrenatural à Magia. Todas as Magias feitas contra ele recebem um redutor de -1D automaticamente.",
+        "3 Pontos: idêntico ao acima, mas todas as Magias feitas contra ele recebem um redutor de -2D automaticamente.",
+        "Não pode ser comprada por Personagens que usam Magia."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: seu Personagem possui uma resistência sobrenatural à Magia. Todas as Magias feitas contra ele recebem um redutor de -1D automaticamente.",
+            "3 Pontos: idêntico ao acima, mas todas as Magias feitas contra ele recebem um redutor de -2D automaticamente."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Não pode ser comprada por Personagens que usam Magia."
           ]
         }
       ]
@@ -2738,11 +3196,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: seu Personagem recebe +25% em qualquer Teste envolvendo sedução. Além disso, ele exerce uma sedução natural em qualquer membro do sexo oposto (e em algumas pessoas do mesmo sexo também!). Status Status indica a reputação e o status entre os seres sobrenaturais (demônios, anjos, outros magos e até mesmo dragões). Quanto mais status seu Personagem tiver, melhor tratado (ou mais temido) pelos outros NPCs ele será.",
-        "1 Ponto: líder reconhecido de um bairro.",
-        "2 Pontos: alguns bairros ou uma pequena cidade.",
-        "3 Pontos: uma metrópole ou várias pequenas cidades.",
-        "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena. Talento 1 ponto por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate."
+        "1 Ponto",
+        "seu Personagem recebe +25% em qualquer Teste envolvendo sedução. Além disso, ele exerce uma sedução natural em qualquer membro do sexo oposto (e em algumas pessoas do mesmo sexo também!)."
       ],
       "sections": [
         {
@@ -2750,18 +3205,49 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto: seu Personagem recebe +25% em qualquer Teste envolvendo sedução. Além disso, ele exerce uma sedução natural em qualquer membro do sexo oposto (e em algumas pessoas do mesmo sexo também!). Status Status indica a reputação e o status entre os seres sobrenaturais (demônios, anjos, outros magos e até mesmo dragões). Quanto mais status seu Personagem tiver, melhor tratado (ou mais temido) pelos outros NPCs ele será.",
-            "1 Ponto: líder reconhecido de um bairro.",
-            "2 Pontos: alguns bairros ou uma pequena cidade.",
-            "3 Pontos: uma metrópole ou várias pequenas cidades.",
-            "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena. Talento 1 ponto por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate."
+            "1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "seu Personagem recebe +25% em qualquer Teste envolvendo sedução. Além disso, ele exerce uma sedução natural em qualquer membro do sexo oposto (e em algumas pessoas do mesmo sexo também!)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensitivo",
+      "title": "Sensitivo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: o Personagem sonha com coisas sobrenaturais, que podem vir a ocorrer. Escreve livros, modela esculturas e pinta quadros a respeito. Esses objetos devem ser usados pelo Mestre como ajuda na preparação de Campanhas e Aventuras.",
+        "2 Pontos: o Personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o Jogador pode tentar um Teste de PER para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida ou a localização de um objeto perdido.",
+        "Seu Personagem possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: o Personagem sonha com coisas sobrenaturais, que podem vir a ocorrer. Escreve livros, modela esculturas e pinta quadros a respeito. Esses objetos devem ser usados pelo Mestre como ajuda na preparação de Campanhas e Aventuras.",
+            "2 Pontos: o Personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o Jogador pode tentar um Teste de PER para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida ou a localização de um objeto perdido."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu Personagem possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas."
+          ]
         }
       ]
     },
@@ -2858,6 +3344,39 @@
       ]
     },
     {
+      "id": "sociedade-secreta",
+      "title": "Sociedade Secreta",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: seu Personagem pertence à Sociedade, mas como um membro dos círculos externos, ou aprendizes.",
+        "2 Pontos: seu Personagem já possui uma influência maior dentro da Sociedade e, assim, pertence aos círculos mais internos dela (possuindo talvez até algum título mais importante).",
+        "Obrigatório se o seu Personagem deseja pertencer ao Arkanun Arcanorum, Escola de Magia ou Ordem de Cavaleiros. Por suas habilidades, você foi escolhido e recrutado por uma Ordem Mística, onde você será treinado e aprenderá a refinar suas aptidões. Sendo membro de uma Sociedade Secreta, você receberá regalias e inimigos. Existem várias Ordens, tanto de magos quanto de cavaleiros, para saber quais os benefícios e malefícios de cada uma consulte o Mestre."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: seu Personagem pertence à Sociedade, mas como um membro dos círculos externos, ou aprendizes.",
+            "2 Pontos: seu Personagem já possui uma influência maior dentro da Sociedade e, assim, pertence aos círculos mais internos dela (possuindo talvez até algum título mais importante)."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Obrigatório se o seu Personagem deseja pertencer ao Arkanun Arcanorum, Escola de Magia ou Ordem de Cavaleiros. Por suas habilidades, você foi escolhido e recrutado por uma Ordem Mística, onde você será treinado e aprenderá a refinar suas aptidões. Sendo membro de uma Sociedade Secreta, você receberá regalias e inimigos. Existem várias Ordens, tanto de magos quanto de cavaleiros, para saber quais os benefícios e malefícios de cada uma consulte o Mestre."
+          ]
+        }
+      ]
+    },
+    {
       "id": "sombras",
       "title": "Sombras",
       "area": "aprimoramentos",
@@ -2903,21 +3422,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: seu Personagem possui sono leve e pode acordar com qualquer barulho, movimento brusco ou agitação próximo do local onde ele está dormindo. Muito bom para os que não querem ser pegos de surpresa durante o descanso. Armas de Fogo Não importa o quão rico ou poderoso seu Personagem possa ser, para carregar armas de fogo, uma destas duas condições deve ser satisfeita: ou seu Personagem as adquiriu legalmente, possui certificados e licença (o que não é uma desculpa para entrar em um tiroteio) ou as adquiriu no mercado negro (e portanto, pode ser indiciado criminalmente por porte ilegal de armas). Qualquer que seja a razão, ela deve estar explicada em Background.",
-        "1 Ponto: o Personagem possui revólver, pistola, rifle ou arma semi-automática dentro do limite da lei.",
-        "2 Pontos: submetralhadoras, carabinas calibre 12, armas automáticas ou reservadas.",
-        "3 Pontos: metralhadoras pesadas, outras armas militares, armas pesadas. Contatos e Aliados Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer...). Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor. O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre). Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente.",
-        "1 Ponto: um aliado importante.",
-        "2 Pontos: dois aliados importantes.",
-        "3 Pontos: quatro aliados importantes.",
-        "4 Pontos: oito aliados importantes. Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade. Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas. Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir). Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes. Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA). Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\". Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir? Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos. Dívida de Gratidão Você fez algo a alguém, e acabou caindo nas graças dessa pessoa. Agora, o Personagem pode se valer desta dívida para obter certos favores e benefícios para si próprio. No entanto, o Mestre deve decidir como serão os resultados desta ajuda. Os NPCs empenham-se em prestar ajuda conforme lhes for possível e conveniente.",
-        "1 Ponto: alguém lhe deve alguns favores menores (como conseguir um desconto para comprar armas, uma autorização jurídica para prosseguir as investigações ou um testemunho falso) e os atenderá somente se isto não vier a prejudicá-lo sob circunstância nenhuma.",
-        "2 Pontos: a dívida lhe vale favores maiores (como fornecer informações sigilosas ou realizar algum \"serviço sujo\") e a pessoa que lhe deve irá ajudar mesmo que isso possa vir a colocá-la em situações perigosas.",
-        "3 Pontos: alguém lhe deve a vida, e fará tudo que estiver a seu alcance para ajudá-lo, não importam as consequências. Fama Você é famoso por seus feitos entre as pessoas mortais, sendo uma figura de destaque na mídia, política, submundo ou algum outro tipo de ambiente mundano, onde todos reconhecem seu nome e ele é frequentemente um dos assuntos preferidos do público. Este tipo de reputação reflete um melhor tratamento por parte dos NPCs, uma série de convites para reuniões e festas, assédio de fãs, destaque na mídia e alvo constante de paparazzis.",
-        "1 Ponto: líder reconhecido de um bairro.",
-        "2 Pontos: alguns bairros, uma cidade pequena.",
-        "3 Pontos: algumas cidades pequenas, uma cidade.",
-        "4 Pontos: algumas cidades, um estado ou região. Família ou Mentor"
+        "1 Ponto",
+        "seu Personagem possui sono leve e pode acordar com qualquer barulho, movimento brusco ou agitação próximo do local onde ele está dormindo. Muito bom para os que não querem ser pegos de surpresa durante o descanso."
       ],
       "sections": [
         {
@@ -2925,28 +3431,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto: seu Personagem possui sono leve e pode acordar com qualquer barulho, movimento brusco ou agitação próximo do local onde ele está dormindo. Muito bom para os que não querem ser pegos de surpresa durante o descanso. Armas de Fogo Não importa o quão rico ou poderoso seu Personagem possa ser, para carregar armas de fogo, uma destas duas condições deve ser satisfeita: ou seu Personagem as adquiriu legalmente, possui certificados e licença (o que não é uma desculpa para entrar em um tiroteio) ou as adquiriu no mercado negro (e portanto, pode ser indiciado criminalmente por porte ilegal de armas). Qualquer que seja a razão, ela deve estar explicada em Background.",
-            "1 Ponto: o Personagem possui revólver, pistola, rifle ou arma semi-automática dentro do limite da lei.",
-            "2 Pontos: submetralhadoras, carabinas calibre 12, armas automáticas ou reservadas.",
-            "3 Pontos: metralhadoras pesadas, outras armas militares, armas pesadas. Contatos e Aliados Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer...). Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor. O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre). Cada Ponto de Contato equivale a alguns pequenos contatos (o Jogador deve especificar quais, dentro das áreas abaixo) ou a um contato importante (um NPC), de acordo com os Pontos gastos. Cada subgrupo deve ser comprado separadamente.",
-            "1 Ponto: um aliado importante.",
-            "2 Pontos: dois aliados importantes.",
-            "3 Pontos: quatro aliados importantes.",
-            "4 Pontos: oito aliados importantes. Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, secretários, vereadores, ou outros funcionários da burocracia pública. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade. Jurídico: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, advogados, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. Igreja: controle sobre o clero, sobre padres, bispos, fiéis, ativistas, caçadores de bruxas e, dependendo da época e local onde se estiver jogando: Templários, Inquisição e ordens militares religiosas. Indústrias: seu Personagem possui influência na área industrial, sobre organizações de trabalhadores, artesãos, operários, engenheiros, transportes e outras pessoas ligadas à área industrial. Pode conseguir equipamentos, projetos, especificações, cálculos ou outras operações ligadas à área de engenharia (ou cibernéticos, se a Campanha permitir). Mídia: controle sobre os meios de comunicação como um todo. Existem cada vez mais meios de comunicação e mídia, como Jornais, rádio, televisão, revistas, Internet e outros. Apesar de ninguém duvidar que a mídia é corrupta, até mesmo os Personagens se assustariam se descobrissem quem cobre os olhos da mídia às vezes. Polícia: inclui delegados, investigadores, escrivães, algumas forças especiais (SWAT, FBI, drogas e homicídios, DENARC, GARRA). Pode ajudar a conduzir investigações, se elas forem importantes, ou desviar a atenção da lei para casos mais \"interessantes\". Submundo: o que seria de um Personagem sem suas gangues de arruaceiros para cuidar de pequenos problemas que podem surgir? Submundo inclui um contato com alguma organização criminosa como a Máfia, a Cosa Nostra, a Tríade, a Yakusa ou os traficantes colombianos. Dívida de Gratidão Você fez algo a alguém, e acabou caindo nas graças dessa pessoa. Agora, o Personagem pode se valer desta dívida para obter certos favores e benefícios para si próprio. No entanto, o Mestre deve decidir como serão os resultados desta ajuda. Os NPCs empenham-se em prestar ajuda conforme lhes for possível e conveniente.",
-            "1 Ponto: alguém lhe deve alguns favores menores (como conseguir um desconto para comprar armas, uma autorização jurídica para prosseguir as investigações ou um testemunho falso) e os atenderá somente se isto não vier a prejudicá-lo sob circunstância nenhuma.",
-            "2 Pontos: a dívida lhe vale favores maiores (como fornecer informações sigilosas ou realizar algum \"serviço sujo\") e a pessoa que lhe deve irá ajudar mesmo que isso possa vir a colocá-la em situações perigosas.",
-            "3 Pontos: alguém lhe deve a vida, e fará tudo que estiver a seu alcance para ajudá-lo, não importam as consequências. Fama Você é famoso por seus feitos entre as pessoas mortais, sendo uma figura de destaque na mídia, política, submundo ou algum outro tipo de ambiente mundano, onde todos reconhecem seu nome e ele é frequentemente um dos assuntos preferidos do público. Este tipo de reputação reflete um melhor tratamento por parte dos NPCs, uma série de convites para reuniões e festas, assédio de fãs, destaque na mídia e alvo constante de paparazzis.",
-            "1 Ponto: líder reconhecido de um bairro.",
-            "2 Pontos: alguns bairros, uma cidade pequena.",
-            "3 Pontos: algumas cidades pequenas, uma cidade.",
-            "4 Pontos: algumas cidades, um estado ou região. Família ou Mentor"
+            "1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "seu Personagem possui sono leve e pode acordar com qualquer barulho, movimento brusco ou agitação próximo do local onde ele está dormindo. Muito bom para os que não querem ser pegos de surpresa durante o descanso."
+          ]
         }
       ]
     },
@@ -2959,14 +3453,9 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "2 Pontos: este Personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o Jogador pode Rolar novamente um dado caso tenha falhado em um Teste (qualquer tipo de rolagem de dados). Ele deve anunciar essa decisão ANTES de rolar os dados (ou seja, se conseguir logo na primeira tentativa, assim mesmo terá gasto a \"sorte\" da sessão). Superpoderes Você é um mutante, possuindo superpoderes que o diferenciam do restante da população. Talvez você tenha sido criado pela engenharia genética para ser um agente das megacorporações, talvez seja um avanço evolucionário, talvez a radiação de seu mundo pós-apocalíptico tenham mudado seus genes antes de seu nascimento ou talvez você tenha \"mudado\" depois de um acidente. O importante é que você desenvolveu poderes e agora é considerado um mutante. Para mais detalhes sobre o Aprimoramento Superpoderes e os poderes, consulte o capítulo Genética. Recomenda-se bastante discernimento para o narrador ao incluir seres superpoderosos em sua campanha. Dependendo do grau de realismo desta, alguns superpoderes devem ser vetados (como voo sem asas) e a compra de mais de um ponto do Aprimoramento Superpoderes.",
-        "1 Ponto: 100 pontos de poder para o personagem distribuir em até três poderes diferentes, em um máximo de 30 pontos em uma única característica.",
-        "2 Pontos: 150 pontos de poder para o personagem distribuir em até quatro poderes diferentes, em um máximo de 36 pontos em uma única característica.",
-        "3 Pontos: 200 pontos de poder para o personagem distribuir em até cinco poderes diferentes, em um máximo de 42 pontos em uma única característica.",
-        "4 Pontos: 250 pontos de poder para o personagem distribuir em até seis poderes diferentes, em um máximo de 48 pontos em uma única característica.",
-        "5 Pontos: 300 pontos de poder para o personagem distribuir em até sete poderes diferentes, em um máximo de 54 pontos em uma única característica.",
-        "6 Pontos: 350 pontos de poder para o personagem distribuir em até oito poderes diferentes, em um máximo de 60 pontos em uma única característica.",
-        "7 Pontos: 400 pontos de poder para o personagem distribuir em até nove poderes diferentes, em um máximo de 62 pontos em uma única característica."
+        "2 Pontos",
+        "este Personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o Jogador pode Rolar novamente um dado caso tenha falhado em um Teste (qualquer tipo de rolagem de dados).",
+        "Ele deve anunciar essa decisão ANTES de rolar os dados (ou seja, se conseguir logo na primeira tentativa, assim mesmo terá gasto a \"sorte\" da sessão)."
       ],
       "sections": [
         {
@@ -2974,7 +3463,94 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 Pontos: este Personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o Jogador pode Rolar novamente um dado caso tenha falhado em um Teste (qualquer tipo de rolagem de dados). Ele deve anunciar essa decisão ANTES de rolar os dados (ou seja, se conseguir logo na primeira tentativa, assim mesmo terá gasto a \"sorte\" da sessão). Superpoderes Você é um mutante, possuindo superpoderes que o diferenciam do restante da população. Talvez você tenha sido criado pela engenharia genética para ser um agente das megacorporações, talvez seja um avanço evolucionário, talvez a radiação de seu mundo pós-apocalíptico tenham mudado seus genes antes de seu nascimento ou talvez você tenha \"mudado\" depois de um acidente. O importante é que você desenvolveu poderes e agora é considerado um mutante. Para mais detalhes sobre o Aprimoramento Superpoderes e os poderes, consulte o capítulo Genética. Recomenda-se bastante discernimento para o narrador ao incluir seres superpoderosos em sua campanha. Dependendo do grau de realismo desta, alguns superpoderes devem ser vetados (como voo sem asas) e a compra de mais de um ponto do Aprimoramento Superpoderes.",
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "este Personagem é portador de uma sorte incrível. Uma vez por sessão de jogo, o Jogador pode Rolar novamente um dado caso tenha falhado em um Teste (qualquer tipo de rolagem de dados).",
+            "Ele deve anunciar essa decisão ANTES de rolar os dados (ou seja, se conseguir logo na primeira tentativa, assim mesmo terá gasto a \"sorte\" da sessão)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "title": "Status",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: líder reconhecido de um bairro.",
+        "2 Pontos: alguns bairros ou uma pequena cidade.",
+        "3 Pontos: uma metrópole ou várias pequenas cidades.",
+        "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena. Talento 1 ponto por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate. Arquimago Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes.",
+        "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
+        "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
+        "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
+        "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
+        "11 Pontos: O Mago pode ter Focus 7 em um Caminho. Crânio do Conhecimento 1+ ponto: o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!).",
+        "Status indica a reputação e o status entre os seres sobrenaturais (demônios, anjos, outros magos e até mesmo dragões). Quanto mais status seu Personagem tiver, melhor tratado (ou mais temido) pelos outros NPCs ele será."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: líder reconhecido de um bairro.",
+            "2 Pontos: alguns bairros ou uma pequena cidade.",
+            "3 Pontos: uma metrópole ou várias pequenas cidades.",
+            "4 Pontos: um estado ou região. Membro do conselho dos diáconos de uma cidade pequena. Talento 1 ponto por Arte: todos os Testes Normais ligados a uma determinada Arte (Perícia) são feitos como se fossem Testes Fáceis e Testes Difíceis são feitos como Normais. À critério do Mestre, outras Perícias podem ser escolhidas pelo Jogador, desde que não sejam Perícias de Combate. Arquimago Arquimago é um Aprimoramento que só pode ser comprado com Pontos de Aprimoramento recebidos com experiência, a partir do 10o nível. O aumento do limite de Focus serve apenas para UM Caminho que o jogador escolher, já as rolagens de dado servem para qualquer um dos Caminhos que o mago possua. Mesmo assim, nada impede que um personagem compre o Aprimoramento várias vezes para Caminhos diferentes.",
+            "1 Ponto: O Mago pode ter Focus 5 em um Caminho.",
+            "2 Pontos: Todos os 1 e 2 rolados em efeitos/danos são considerados \"2\".",
+            "3 Pontos: O Mago pode ter Focus 6 em um Caminho.",
+            "4 Pontos: Todos os 1, 2 e 3 rolados em efeitos/danos são considerados \"3\".",
+            "11 Pontos: O Mago pode ter Focus 7 em um Caminho. Crânio do Conhecimento 1+ ponto: o Personagem possui um Crânio do Conhecimento, um artefato místico feito de um crânio de um mago. O item consegue reter (após ser imantado de Mana, que poderá ser recuperada normalmente pelo mago) até 3 Mana. O inconveniente desse Aprimoramento é que o artefato pode ser roubado por outros magos, e assim o Personagem perder seus benefícios. Esse Aprimoramento pode ser comprado múltiplas vezes, cada ponto conferindo um novo Crânio do Conhecimento (que deve ser devidamente ocultado se o Personagem quiser andar poraí sem ter que dar explicações para autoridades de por quê possui um crânio humano preso em seu cinto!)."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Status indica a reputação e o status entre os seres sobrenaturais (demônios, anjos, outros magos e até mesmo dragões). Quanto mais status seu Personagem tiver, melhor tratado (ou mais temido) pelos outros NPCs ele será."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "superpoderes",
+      "title": "Superpoderes",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: 100 pontos de poder para o personagem distribuir em até três poderes diferentes, em um máximo de 30 pontos em uma única característica.",
+        "2 Pontos: 150 pontos de poder para o personagem distribuir em até quatro poderes diferentes, em um máximo de 36 pontos em uma única característica.",
+        "3 Pontos: 200 pontos de poder para o personagem distribuir em até cinco poderes diferentes, em um máximo de 42 pontos em uma única característica.",
+        "4 Pontos: 250 pontos de poder para o personagem distribuir em até seis poderes diferentes, em um máximo de 48 pontos em uma única característica.",
+        "5 Pontos: 300 pontos de poder para o personagem distribuir em até sete poderes diferentes, em um máximo de 54 pontos em uma única característica.",
+        "6 Pontos: 350 pontos de poder para o personagem distribuir em até oito poderes diferentes, em um máximo de 60 pontos em uma única característica.",
+        "7 Pontos: 400 pontos de poder para o personagem distribuir em até nove poderes diferentes, em um máximo de 62 pontos em uma única característica.",
+        "Você é um mutante, possuindo superpoderes que o diferenciam do restante da população.",
+        "Talvez você tenha sido criado pela engenharia genética para ser um agente das megacorporações, talvez seja um avanço evolucionário, talvez a radiação de seu mundo pós-apocalíptico tenham mudado seus genes antes de seu nascimento ou talvez você tenha \"mudado\" depois de um acidente.",
+        "O importante é que você desenvolveu poderes e agora é considerado um mutante. Para mais detalhes sobre o Aprimoramento Superpoderes e os poderes, consulte o capítulo Genética.",
+        "Recomenda-se bastante discernimento para o narrador ao incluir seres superpoderosos em sua campanha. Dependendo do grau de realismo desta, alguns superpoderes devem ser vetados (como voo sem asas) e a compra de mais de um ponto do Aprimoramento Superpoderes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
             "1 Ponto: 100 pontos de poder para o personagem distribuir em até três poderes diferentes, em um máximo de 30 pontos em uma única característica.",
             "2 Pontos: 150 pontos de poder para o personagem distribuir em até quatro poderes diferentes, em um máximo de 36 pontos em uma única característica.",
             "3 Pontos: 200 pontos de poder para o personagem distribuir em até cinco poderes diferentes, em um máximo de 42 pontos em uma única característica.",
@@ -2988,7 +3564,12 @@
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "Você é um mutante, possuindo superpoderes que o diferenciam do restante da população.",
+            "Talvez você tenha sido criado pela engenharia genética para ser um agente das megacorporações, talvez seja um avanço evolucionário, talvez a radiação de seu mundo pós-apocalíptico tenham mudado seus genes antes de seu nascimento ou talvez você tenha \"mudado\" depois de um acidente.",
+            "O importante é que você desenvolveu poderes e agora é considerado um mutante. Para mais detalhes sobre o Aprimoramento Superpoderes e os poderes, consulte o capítulo Genética.",
+            "Recomenda-se bastante discernimento para o narrador ao incluir seres superpoderosos em sua campanha. Dependendo do grau de realismo desta, alguns superpoderes devem ser vetados (como voo sem asas) e a compra de mais de um ponto do Aprimoramento Superpoderes."
+          ]
         }
       ]
     },
@@ -3032,6 +3613,37 @@
       ]
     },
     {
+      "id": "telecinetico",
+      "title": "Telecinético",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "2 Pontos",
+        "o Personagem detém o domínio da mente sobre a matéria, podendo comprar a Perícia Psíquica Telecinésia. Dentre os poderes associados, o Personagem pode criar um campo de força telecinética (Complexidade 10% para cada ponto de IP), agitar as moléculas até aquecer objetos (Complexidade 30%), mover objetos (Complexidade variável), voo (Complexidade 40%), manipulação de objetos como se os tivesse em suas próprias mãos (Complexidade 30%, aumenta em 10% para cada objeto extra) e outros."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "o Personagem detém o domínio da mente sobre a matéria, podendo comprar a Perícia Psíquica Telecinésia. Dentre os poderes associados, o Personagem pode criar um campo de força telecinética (Complexidade 10% para cada ponto de IP), agitar as moléculas até aquecer objetos (Complexidade 30%), mover objetos (Complexidade variável), voo (Complexidade 40%), manipulação de objetos como se os tivesse em suas próprias mãos (Complexidade 30%, aumenta em 10% para cada objeto extra) e outros."
+          ]
+        }
+      ]
+    },
+    {
       "id": "telepata",
       "title": "Telepata",
       "area": "aprimoramentos",
@@ -3065,37 +3677,6 @@
       ]
     },
     {
-      "id": "teleportador-clarividente",
-      "title": "Teleportador Clarividente",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "polarity": "positivo",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "2 Pontos",
-        "o Personagem pode separar sua consciência de seu corpo, podendo comprar a Perícia Psíquica Projeção de Consciência."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "2 Pontos"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "o Personagem pode separar sua consciência de seu corpo, podendo comprar a Perícia Psíquica Projeção de Consciência."
-          ]
-        }
-      ]
-    },
-    {
       "id": "tiro-certeiro",
       "title": "Tiro Certeiro",
       "area": "aprimoramentos",
@@ -3104,11 +3685,8 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 Ponto: Você ganha um bônus de +10% nas jogadas de ataque e +1 nas jogadas de dano com armas de ataque à distância dentre 9m. Biblioteca O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz. Se o Personagem estiver em condições de consultá-la, a biblioteca aumentará os conhecimentos do Personagem em alguns assuntos. Uma biblioteca possui apenas conhecimentos estudados em livros. Em termos de jogo, a biblioteca triplicará, até um máximo de 90%, o valor de alguns Subgrupos de Perícias, sempre relacionados a conhecimentos. O Jogador deve especificar, durante a Criação do Personagem, quais Subgrupos que a biblioteca dispõe. Podem ser Subgrupos de várias Perícias diferentes.",
-        "1 Ponto: a biblioteca trata de 2 Subgrupos de Perícias.",
-        "2 Pontos: 6 Subgrupos.",
-        "3 Pontos: 10 Subgrupos.",
-        "4 Pontos: 14 Subgrupos."
+        "1 Ponto",
+        "Você ganha um bônus de +10% nas jogadas de ataque e +1 nas jogadas de dano com armas de ataque à distância dentre 9m."
       ],
       "sections": [
         {
@@ -3116,18 +3694,16 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto: Você ganha um bônus de +10% nas jogadas de ataque e +1 nas jogadas de dano com armas de ataque à distância dentre 9m. Biblioteca O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz. Se o Personagem estiver em condições de consultá-la, a biblioteca aumentará os conhecimentos do Personagem em alguns assuntos. Uma biblioteca possui apenas conhecimentos estudados em livros. Em termos de jogo, a biblioteca triplicará, até um máximo de 90%, o valor de alguns Subgrupos de Perícias, sempre relacionados a conhecimentos. O Jogador deve especificar, durante a Criação do Personagem, quais Subgrupos que a biblioteca dispõe. Podem ser Subgrupos de várias Perícias diferentes.",
-            "1 Ponto: a biblioteca trata de 2 Subgrupos de Perícias.",
-            "2 Pontos: 6 Subgrupos.",
-            "3 Pontos: 10 Subgrupos.",
-            "4 Pontos: 14 Subgrupos."
+            "1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "Você ganha um bônus de +10% nas jogadas de ataque e +1 nas jogadas de dano com armas de ataque à distância dentre 9m."
+          ]
         }
       ]
     },
@@ -3188,6 +3764,45 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "o Personagem sofreu um severo trauma durante a infância, algo que nenhuma criança (e a maioria dos adultos) está preparada para enfrentar. Pode ter sido testemunha de um crime hediondo, de um ritual demoníaco (ou participou de um), ou foi molestado sexualmente. Qualquer menção aos fatos que traumatizaram o Personagem o obriga a fazer um Teste de WILL. Se falhar, será incapaz de agir coerentemente por uma rodada. Ele deverá fazer um Teste por rodada, durante 3d6 rodadas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tutor",
+      "title": "Tutor",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto: seu Tutor é um humano que ainda vive e pode, ou não, morar com o Personagem.",
+        "2 Pontos: seu Tutor é uma criatura sobrenatural (um Anjo de Paradísia, um Demônio de Arkanun, um arkanita Djinn, um Vampiro ou mesmo o espírito de um mago morto).",
+        "3 Pontos: seu Tutor é uma criatura de Infernun (demônios muito poderosos, porém os menos confiáveis como mentores).",
+        "4 Pontos: seu Tutor é um Anjo mais poderoso, ou até um Arcanjo (podem acompanhar, de longe, o seu progresso e até, em raras ocasiões, descer dos céus para auxiliá-lo).",
+        "5 Pontos: seu Tutor é um Serafim ou uma divindade paradisiana (olimpianos, asgardianos, hindus, egípcio, etc.). Exemplos de divindades que possam ser bons tutores para magia são Loki, Toth ou Lug. Esse nível de Aprimoramento permite um tutor que sabe praticamente tudo sobre magias e todos os Rituais (com exceção de alguns mais modernos), porém ele será volátil e pode ensinar-lhe apenas o que ele acha pertinente, ou quem sabe pedir-lhe que faça alguma coisa para que possa aprender essa magia.",
+        "Todo o Personagem Mago teve, em algum momento de sua aprendizado, um Tutor que lhe ensinou sobre a Magia. Se você desejar que este Tutor ainda esteja com o seu personagem por alguma razão, então gaste seu pontos neste Aprimoramento. O Mestre deve criar toda a história e características do seu mentor, definindo à seu próprio gosto a personalidade, fraquezas, objetivos e problemas que ele enfrenta."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: seu Tutor é um humano que ainda vive e pode, ou não, morar com o Personagem.",
+            "2 Pontos: seu Tutor é uma criatura sobrenatural (um Anjo de Paradísia, um Demônio de Arkanun, um arkanita Djinn, um Vampiro ou mesmo o espírito de um mago morto).",
+            "3 Pontos: seu Tutor é uma criatura de Infernun (demônios muito poderosos, porém os menos confiáveis como mentores).",
+            "4 Pontos: seu Tutor é um Anjo mais poderoso, ou até um Arcanjo (podem acompanhar, de longe, o seu progresso e até, em raras ocasiões, descer dos céus para auxiliá-lo).",
+            "5 Pontos: seu Tutor é um Serafim ou uma divindade paradisiana (olimpianos, asgardianos, hindus, egípcio, etc.). Exemplos de divindades que possam ser bons tutores para magia são Loki, Toth ou Lug. Esse nível de Aprimoramento permite um tutor que sabe praticamente tudo sobre magias e todos os Rituais (com exceção de alguns mais modernos), porém ele será volátil e pode ensinar-lhe apenas o que ele acha pertinente, ou quem sabe pedir-lhe que faça alguma coisa para que possa aprender essa magia."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Todo o Personagem Mago teve, em algum momento de sua aprendizado, um Tutor que lhe ensinou sobre a Magia. Se você desejar que este Tutor ainda esteja com o seu personagem por alguma razão, então gaste seu pontos neste Aprimoramento. O Mestre deve criar toda a história e características do seu mentor, definindo à seu próprio gosto a personalidade, fraquezas, objetivos e problemas que ele enfrenta."
           ]
         }
       ]
@@ -3354,7 +3969,7 @@
     }
   ],
   "areaCounts": {
-    "aprimoramentos": 97,
+    "aprimoramentos": 115,
     "regras_base": 1
   },
   "reviewNotes": [
@@ -3362,6 +3977,6 @@
     "Texto revisado antes da catalogacao; paginas soltas e cabecalho OCR foram removidos.",
     "Entradas negativas foram separadas a partir da secao Negativos e/ou pelo sinal do custo.",
     "Entradas do tipo Vide Dependencia foram preservadas como referencias, sem inventar custo numerico.",
-    "Total de aprimoramentos catalogados: 97 (65 positivos, 32 negativos)."
+    "Total de aprimoramentos catalogados: 115 (82 positivos, 33 negativos)."
   ]
 }

@@ -28,6 +28,8 @@ CATEGORY_HEADINGS = {
     "CONCEITUAIS",
     "FISICOS",
     "MENTAIS",
+    "MAGICOS",
+    "PSIQUICOS",
     "SOCIAIS",
     "SOBRENATURAIS",
     "NEGATIVOS",
@@ -90,17 +92,48 @@ TITLE_MARKERS = [
 ]
 
 KNOWN_INLINE_TITLES = [
+    "Ambiente Favorável",
     "Armas de Fogo",
     "Biblioteca",
+    "Biocinético",
+    "Canalizador",
+    "Clarividente",
     "Contatos e Aliados",
+    "Dependência",
+    "Defeito Físico",
     "Dívida de Gratidão",
     "Divida de Gratidão",
+    "Familiares",
+    "Fama",
+    "Forças Militares",
+    "Grimório",
     "Heroísmo",
+    "Homúnculo",
     "Mago de Combate",
+    "Magia Duradoura",
+    "Magia Máxima",
+    "Magia Sem Gestos",
+    "Magia Silenciosa",
+    "Mestre em Caminho",
     "Médium",
     "Conjuração",
     "Homúnculo",
     "Pacto",
+    "Pactos",
+    "Poderes Mágicos",
+    "Poderes Sobrenaturais",
+    "Portal Natural",
+    "Presença Invisível",
+    "Recurso e Dinheiro",
+    "Resistência à Magia",
+    "Sensitivo",
+    "Sociedade Secreta",
+    "Sortudo",
+    "Status",
+    "Telecinético",
+    "Telepata",
+    "Teleportador",
+    "Tiro Certeiro",
     "Tutor",
     "Superpoderes",
     "Poderes Angelicais",
@@ -112,6 +145,9 @@ KNOWN_INLINE_TITLES = [
 
 def strip_accents(value: str) -> str:
     return slugify(value).replace("-", " ").upper()
+
+
+KNOWN_INLINE_BY_NORMALIZED = {strip_accents(title): title for title in KNOWN_INLINE_TITLES}
 
 
 def normalize_text(text: str) -> str:
@@ -215,14 +251,34 @@ def is_heading(text: str) -> bool:
 
 
 def split_title_description(text: str) -> tuple[str, str]:
-    for title in KNOWN_INLINE_TITLES:
+    normalized_text = strip_accents(text)
+    for title in sorted(KNOWN_INLINE_TITLES, key=len, reverse=True):
         prefix = f"{title} "
         if text.startswith(prefix):
             return title, text[len(prefix) :].strip()
+        normalized_title = strip_accents(title)
+        if normalized_text == normalized_title:
+            return title, ""
+        if normalized_text.startswith(f"{normalized_title} "):
+            words = text.split()
+            title_word_count = len(title.split())
+            return title, " ".join(words[title_word_count:]).strip()
     for marker in TITLE_MARKERS:
         pos = text.find(marker)
         if pos > 1 and pos <= 44:
             return text[:pos].strip(), text[pos:].strip()
+    return text, ""
+
+
+def split_known_inline_title(text: str) -> tuple[str, str]:
+    normalized_text = strip_accents(text)
+    for normalized_title, title in sorted(KNOWN_INLINE_BY_NORMALIZED.items(), key=lambda item: len(item[0]), reverse=True):
+        if normalized_text == normalized_title:
+            return title, ""
+        if normalized_text.startswith(f"{normalized_title} "):
+            words = text.split()
+            title_word_count = len(title.split())
+            return title, " ".join(words[title_word_count:]).strip()
     return text, ""
 
 
@@ -371,6 +427,15 @@ def parse_content(paragraphs: list[str]) -> tuple[list[dict], list[dict]]:
             flush()
             index += 1
             continue
+
+        if current_title is not None:
+            title, description = split_known_inline_title(text)
+            if strip_accents(title) in KNOWN_INLINE_BY_NORMALIZED and title_case(title) != title_case(current_title):
+                flush()
+                current_title = title
+                current_parts = [description] if description else []
+                index += 1
+                continue
 
         next_text = content[index + 1] if index + 1 < len(content) else ""
         next_next = content[index + 2] if index + 2 < len(content) else ""
