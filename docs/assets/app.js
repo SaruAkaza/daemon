@@ -806,6 +806,7 @@ function itemTypeLabel(item) {
   if (item.kind === "class") return "Classe";
   if (item.kind === "maneuver") return "Manobra";
   if (item.kind === "equipment") return "Equipamento";
+  if (item.kind === "kit") return "Kit";
   if (item.kind === "group") return "Grupo";
   return "";
 }

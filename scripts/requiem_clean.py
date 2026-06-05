@@ -65,8 +65,14 @@ def dehyphenate(text: str) -> str:
     return HYPHEN_RE.sub(repl, HYPHEN_RE.sub(repl, text))
 
 
+LIGATURES = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl",
+             "ﬃ": "ffi", "ﬄ": "ffl", "ﬅ": "ft", "ﬆ": "st"}
+
+
 def normalize(text: str) -> str:
     text = text.replace("\xa0", " ")
+    for lig, repl in LIGATURES.items():
+        text = text.replace(lig, repl)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
