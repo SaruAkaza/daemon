@@ -158,9 +158,48 @@ def build_aprimoramento(title, body):
     return ent
 
 
+LEVEL_RE = re.compile(r"(N[íi]vel\s+\d+\s*[:\-])")
+
+
 def build_poder(title, body):
-    """Power tree: keep '(Casta)' descriptor + Nível blocks as paragraphs."""
-    return entity(title, "poderes", "power", "Poder", body)
+    """Power tree -> '(Casta)' descriptor block + one block per Nível.
+
+    The app renders each subsection as a titled block; titles 'Nível N: Nome'
+    also feed the Nível filter.
+    """
+    text = "\n".join(body)
+    parts = LEVEL_RE.split(text)
+    subs = []
+
+    intro = re.sub(r"\s+", " ", parts[0]).strip()
+    if intro:
+        subs.append(sec("descricao", "Descrição", "poderes", [intro]))
+
+    seen = {}
+    i = 1
+    while i < len(parts):
+        marker = parts[i].strip()
+        content = parts[i + 1].strip() if i + 1 < len(parts) else ""
+        lvl = re.search(r"\d+", marker).group()
+        m = re.match(r"([^.]{1,60}?)\.\s*(.*)", content, re.DOTALL)
+        name = m.group(1).strip(" *") if m else ""
+        # Treat the pre-period text as an ability NAME only if it is a short
+        # noun phrase (not a full sentence like a damage clarification).
+        if name and len(name) <= 35 and len(name.split()) <= 5:
+            desc = m.group(2).strip() or content
+            sectitle = f"Nível {lvl}: {name}"
+        else:
+            desc = content
+            sectitle = f"Nível {lvl}"
+        # de-duplicate ids when a level has several abilities
+        base = slugify(sectitle)
+        seen[base] = seen.get(base, 0) + 1
+        sid = base if seen[base] == 1 else f"{base}-{seen[base]}"
+        subs.append(sec(sid, sectitle, "poderes", [desc]))
+        i += 2
+
+    ent = entity(title, "poderes", "power", "Poder", body, subs=subs)
+    return ent
 
 
 STAT_HINT = re.compile(r"\b(CON|FR|DEX|AGI|INT|WILL|CAR|PER|IP|PVs|#Ataques|Perícias|Poderes|Magia|Regenera|Esquiva|Garras|Espada|Lança|Briga)\b|\d+/\d+|\d+%")

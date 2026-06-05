@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T13:01:53",
+  "generatedAt": "2026-06-05T13:05:03",
   "source": "anjos-cacadores-alados",
   "sourceFile": "Anjos cacadores-alados.docx",
   "sourcePath": "Livros\\word\\Anjos cacadores-alados.docx",
@@ -1577,7 +1577,176 @@
         "Nivel 7: Sentir Foragidos. Quando o Obscuri Captare se concentra ele terá a ciência de todos os seres foragidos, ou procurados pelo Inferno em um raio de 3 km de área. Possível APENAS para Obscuri Captare.",
         "Nivel 7: Chaves do Inferno. O Obscuri Captare pode enviar um foragido marcado, imediatamente para o Inferno, se for bem sucedido em um teste de WILL vs. WILL-3 da vitima. Possível APENAS para Obscuri Captare."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Captare) Alguns poderes descritos a seguir aplicam-se apenas para Obscuri Captare. Os poderes sem tal descritor são possíveis para qualquer Captare."
+          ]
+        },
+        {
+          "id": "nivel-1-marca-demoniaca",
+          "title": "Nível 1: Marca Demoníaca",
+          "area": "poderes",
+          "paragraphs": [
+            "Como o poder Marca dos Captares. Seres de Luz sentirão uma forte presença demoníaca no alvo deste poder. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-1-delator",
+          "title": "Nível 1: Delator",
+          "area": "poderes",
+          "paragraphs": [
+            "Com um teste de WILL vs WILL da vitima, o Obscuri Captare saberá de tudo o que a vitima sabe sobre quem esta caçando, mesmo que esta não saiba nem mesmo o que viu. O Captare Caído tem acesso aos vestígios de energias presos a aura da vitima. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-1-ecos",
+          "title": "Nível 1: Ecos",
+          "area": "poderes",
+          "paragraphs": [
+            "O Obscuri Captare é incapaz de produzir um único som se quer, durante a utilização deste poder. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-1-rastrear-luz",
+          "title": "Nível 1: Rastrear Luz",
+          "area": "poderes",
+          "paragraphs": [
+            "Os Obscrui Captares são capazes de rastrear qualquer ser que retire suas energias da luz, num raio de 3 km. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-1-andar-nas-paredes",
+          "title": "Nível 1: Andar nas Paredes",
+          "area": "poderes",
+          "paragraphs": [
+            "O Obscuri Captare é capaz de andar nas paredes. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-2-comunhao-com-a-caca",
+          "title": "Nível 2: Comunhão com a Caça",
+          "area": "poderes",
+          "paragraphs": [
+            "O Captare é capaz de reconehcer o cheiro, os passos, o gosto (de fluídos vitais) e a aura da vítima que esta procurando, bastando para isso toca-la."
+          ]
+        },
+        {
+          "id": "nivel-2-defesa-contra-o-marcado",
+          "title": "Nível 2: Defesa contra o Marcado",
+          "area": "poderes",
+          "paragraphs": [
+            "Numa disputa de WILL vs. WILL de quem tenha sido alvo do poder Marca Demoniaca, o Obscuri Captare se torna imune a todos os efeitos danosos vindos da vitima durante 1d6 turnos. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-2-defesa-contra-o-marcado-2",
+          "title": "Nível 2: Defesa contra o Marcado",
+          "area": "poderes",
+          "paragraphs": [
+            "Numa disputa de WILL vs WILL de quem tenha sido alvo do poder Marca Demoniaca, o Obscuri Captare se torna imune atodos os efeitos danosos vindos da vitima durante 24hrs. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-2-atravessar-paredes",
+          "title": "Nível 2: Atravessar Paredes",
+          "area": "poderes",
+          "paragraphs": [
+            "O Obscuri Captare é capaz de atravessar paredes e portas simples literalmente, não é capaz de atravessar paredes de igrejas, ou que nelas estejam presos símbolos religiosos. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-2-sentir-efeitos-misticos",
+          "title": "Nível 2: Sentir Efeitos Místicos",
+          "area": "poderes",
+          "paragraphs": [
+            "O Obscuri Captare pode sentir efeitos místicos num raio de 300m. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-2-arma-secreta",
+          "title": "Nível 2: Arma Secreta",
+          "area": "poderes",
+          "paragraphs": [
+            "O Obscruri Captare é capaz de carregar seu armamento dentro de seu corpo, sendo ele do tamanho de uma espada de duas mãos ou um arco longo. Isso não prejudica em nada o movimento do Demônio. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-3-ordem-de-caca",
+          "title": "Nível 3: Ordem de Caça",
+          "area": "poderes",
+          "paragraphs": [
+            "O Captare é capaz de colocar o rosto da vítima na lista dos procurados da Cidade de Prata, alertando a todos os Anjos que possuam conhecimento desta que a uma nova presa a ser caçada, bastando para isso fixar seu olhar no alvo."
+          ]
+        },
+        {
+          "id": "nivel-3-sangue-de-mercurio-fervente",
+          "title": "Nível 3: Sangue de Mercúrio Fervente",
+          "area": "poderes",
+          "paragraphs": [
+            "O sangue do Obscuri Captare é mercúrio, prateado, fervente e envenenara qualquer um que entre em contato com ele causando 1d10 , a vitima tem um direito a um teste de AGI para reduzir o dano a metade. O sangue também envenenará a vítima desintegrando suas células pouco a pouco, em termos de jogo o envenenamento por mercúrio causará dano de 1d6 a cada turno na vítima, até levá-la a morte ou até a mesma ser curada. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-4-dedicacao-superior",
+          "title": "Nível 4: Dedicação Superior",
+          "area": "poderes",
+          "paragraphs": [
+            "O Captare, quando parte no encalço de uma vítima específica, não poderá ser morto, a não ser que seus PVs chegarem a -4x o valor de PVs (por exemplo se a personagem possui 20 PVs, morrerá quando seus PVs chegarem a 80) Quando os Pvs do Anjo estiverem próximos do valor mortal, ele ja não enxergará nada mais alem do alvo, passando a atacar tudo em sua frente com um bônus de +4 em todos os testes. Quando a missão do Captare for concluida, ele sofrerá os mesmos efeitos que qualquer outro personagem: a morte."
+          ]
+        },
+        {
+          "id": "nivel-5-faixas-de-cytorak",
+          "title": "Nível 5: Faixas de Cytorak",
+          "area": "poderes",
+          "paragraphs": [
+            "O Obscuri Captare é capaz de utilizar as Faixas de Cytorak que são uma versão negra das Faixas de Luz da Cidade de Prata. As faixas podem ser invocadas a qualquer instante, causam 4d6 de dano e podem segurar inimigos com FR 24, mas precisam da Perícia Faixas de Cytorak para serem utilizadas. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-6-chamas-da-fogueira",
+          "title": "Nível 6: Chamas da Fogueira",
+          "area": "poderes",
+          "paragraphs": [
+            "Os olhos de um Obscuri Captare ardem em chamas, e apenas olhando para um inimigo, pode atear fogo no mesmo, com uma disputa de WILL vs WILL. O fogo perdura por 1D6 turnos e causa 4d6 pontos de dano. O contato visual pode ser mantido causando dano nos turnos que se seguem. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-6-tatica-perfeita",
+          "title": "Nível 6: Tática Perfeita",
+          "area": "poderes",
+          "paragraphs": [
+            "Passando umt urno observando o inimigo, o Obscuri Captare pode descobrir fraquezas em seu adversário. Em termos de jogo ele adquire bônus de +1 em todos os testes e dano feitos contra o seu inimigo, para cada turno que passar obervando sua vítima. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-7-tatica-primorosa",
+          "title": "Nível 7: Tática Primorosa",
+          "area": "poderes",
+          "paragraphs": [
+            "Passando dois turnos observando o inimigo, sem realizar nenhuma outra ação a não ser a esquiva, o Captare pode descobrir fraquezas em seu adversário. Em termos de jogo todos os ataques desferidos contra aquele inimigo nos próximos turnos, serão considerados ataques críticos e durarão até o término do combate."
+          ]
+        },
+        {
+          "id": "nivel-7-sentir-foragidos",
+          "title": "Nível 7: Sentir Foragidos",
+          "area": "poderes",
+          "paragraphs": [
+            "Quando o Obscuri Captare se concentra ele terá a ciência de todos os seres foragidos, ou procurados pelo Inferno em um raio de 3 km de área. Possível APENAS para Obscuri Captare."
+          ]
+        },
+        {
+          "id": "nivel-7-chaves-do-inferno",
+          "title": "Nível 7: Chaves do Inferno",
+          "area": "poderes",
+          "paragraphs": [
+            "O Obscuri Captare pode enviar um foragido marcado, imediatamente para o Inferno, se for bem sucedido em um teste de WILL vs. WILL-3 da vitima. Possível APENAS para Obscuri Captare."
+          ]
+        }
+      ]
     },
     {
       "id": "telecinesia",
@@ -1592,7 +1761,32 @@
         "Nível 5: Manusear dois objetos. O anjo pode manusear mais de um objeto por vez em um mesmo turno, sejam duas facas, duas pistolas, duas espadas, etc. O anjo manuseará qualquer objeto com até 50kg como se tivesse DEX 18 (o bônus da Perícia específica contará para testes).",
         "Nível 6: Manusear múltiplos objetos. O anjo pode manusear dois ou mais objetos por vez em um mesmo turno, sejam facas, pistolas, espadas, etc. O anjo manuseará qualquer objeto com até 50kg como se tivesse DEX 18 (o bônus da Perícia específica contará para testes). Cada objeto extra além do segundo causará um redutor de -20% na Perícia efetiva e todo teste de WILL durante o uso do poder será considerado Difícil."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Todas as Castas) O poder da mente sobre a matéria sempre foi uma habilidade demasiadamente bruta. O anjo consegue manipular um objeto como se o tivesse em suas mãos, utilizando a força telecinética que seu poder lhe permitir. Através de intenso refinamento do da força telecinética, alguns anjos adquiriram algumas habilidades mais interessantes."
+          ]
+        },
+        {
+          "id": "nivel-5-manusear-dois-objetos",
+          "title": "Nível 5: Manusear dois objetos",
+          "area": "poderes",
+          "paragraphs": [
+            "O anjo pode manusear mais de um objeto por vez em um mesmo turno, sejam duas facas, duas pistolas, duas espadas, etc. O anjo manuseará qualquer objeto com até 50kg como se tivesse DEX 18 (o bônus da Perícia específica contará para testes)."
+          ]
+        },
+        {
+          "id": "nivel-6-manusear-multiplos-objetos",
+          "title": "Nível 6: Manusear múltiplos objetos",
+          "area": "poderes",
+          "paragraphs": [
+            "O anjo pode manusear dois ou mais objetos por vez em um mesmo turno, sejam facas, pistolas, espadas, etc. O anjo manuseará qualquer objeto com até 50kg como se tivesse DEX 18 (o bônus da Perícia específica contará para testes). Cada objeto extra além do segundo causará um redutor de -20% na Perícia efetiva e todo teste de WILL durante o uso do poder será considerado Difícil."
+          ]
+        }
+      ]
     },
     {
       "id": "calculismo",
@@ -1613,7 +1807,88 @@
         "Nível 4: Coração Gelado. O Anjo se torna mestre de suas emoções. Ele se torna incapaz de sentir toda e qualquer emoção seja medo, tristeza ou até mesmo amor. De forma a executar sua missão com maestria o Captare sacrifica todo e qualquer tipo de emoção em prol de seu objetivo, restando no final apenas o seu amor por Deus. O Anjo recebe um bônus de 60 % em todos os testes para resistir a qualquer tipo de Controle Emocional.",
         "Nível 5: Escudo de Perseu. O Anjo protege sua mente e se torna imune contra qualquer tipo de controle ou influencia mental. Toda vez que algum ser tenta influenciá-lo mentalmente o Anjo tem direito a um teste de WILL vs WILL, caso vença, o efeito se inverte e o ser sofre os efeitos do próprio poder."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Algozes de Lilith)"
+          ]
+        },
+        {
+          "id": "nivel-1-sentir-influencia",
+          "title": "Nível 1: Sentir Influência",
+          "area": "poderes",
+          "paragraphs": [
+            "Observando a Aura das pessoas à sua volta o Anjo é capaz de perceber a atuação de poderes de Controle Mental e de Influencia Emocional sobre os humanos. Não é capaz de identificar quem está controlando o humano em questão e necessita de um turno de concentração para identificar as auras dos humanos sendo controlados. Caso o Ser que esteja Controlando o humano em questão esteja de alguma forma encobrindo esse ato um teste de WILL vs WILL se torna necessário."
+          ]
+        },
+        {
+          "id": "nivel-1-presenca",
+          "title": "Nível 1: Presença",
+          "area": "poderes",
+          "paragraphs": [
+            "Idêntico ao nível homônimo do poder Adlig. Retirado do Livro Vikings."
+          ]
+        },
+        {
+          "id": "nivel-1-mudar-aura",
+          "title": "Nível 1: Mudar Aura",
+          "area": "poderes",
+          "paragraphs": [
+            "Usando esse poder o Anjo é capaz de modificar a sua Aura como quiser. Isso é uma mudança em seu próprio espírito. Além de disfarçar seus sentimentos, ninguém será capaz de detectar se ele está mentindo."
+          ]
+        },
+        {
+          "id": "nivel-2-frieza",
+          "title": "Nível 2: Frieza",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo passa a possuir um grande controle sobre suas emoções. Ele não mais é influenciado pelo medo, tristeza ou qualquer outra emoção que possa influenciar em sua missão. O Anjo recebe um bônus de +20% em todos os testes para resistir a qualquer tipo de Controle Emocional."
+          ]
+        },
+        {
+          "id": "nivel-2-esconder-a-arma",
+          "title": "Nível 2: Esconder a Arma",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo se torna capaz de esconder sua arma no Plano Espiritual. Ninguém será capaz de percebê-la até que ele a saque."
+          ]
+        },
+        {
+          "id": "nivel-3-detectar-titereiro",
+          "title": "Nível 3: Detectar Titereiro",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo se torna capaz de detectar o fluxo de influencia mental sendo capaz de identificar uma criatura sobrenatural que esteja influenciando um humano mentalmente. Caso o Ser que esteja Controlando o humano em questão esteja de alguma forma encobrindo esse ato um teste de WILL vs WILL se torna necessário. Pré-requisito: Sentir Influência."
+          ]
+        },
+        {
+          "id": "nivel-3-natureza-ilusoria",
+          "title": "Nível 3: Natureza Ilusória",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo se torna capaz de suprimir a sua Natureza Angelical. Ao se utilizar desse poder nenhum ser será capaz de identificá-lo como um Anjo. Dessa mesma forma o Anjo será indetectável através de qualquer método de rastreio que busque por Anjos ou Seres de Paradisia."
+          ]
+        },
+        {
+          "id": "nivel-4-coracao-gelado",
+          "title": "Nível 4: Coração Gelado",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo se torna mestre de suas emoções. Ele se torna incapaz de sentir toda e qualquer emoção seja medo, tristeza ou até mesmo amor. De forma a executar sua missão com maestria o Captare sacrifica todo e qualquer tipo de emoção em prol de seu objetivo, restando no final apenas o seu amor por Deus. O Anjo recebe um bônus de 60 % em todos os testes para resistir a qualquer tipo de Controle Emocional."
+          ]
+        },
+        {
+          "id": "nivel-5-escudo-de-perseu",
+          "title": "Nível 5: Escudo de Perseu",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo protege sua mente e se torna imune contra qualquer tipo de controle ou influencia mental. Toda vez que algum ser tenta influenciá-lo mentalmente o Anjo tem direito a um teste de WILL vs WILL, caso vença, o efeito se inverte e o ser sofre os efeitos do próprio poder."
+          ]
+        }
+      ]
     },
     {
       "id": "uevarib",
@@ -1636,7 +1911,80 @@
         "Nível 3: O dano varia de 0 a 18 com teste de WILL difícil.",
         "Nível 3: Ramadi Ahmar. O Al´aainur pode invocar tentáculos de chamas para agarrarem seus inimigos, os tentáculos possuem FR 18 e causam 3d6 de dano por contato a cada turno ou em um único golpe. O alvo pode realizar um teste de esquiva para desviar dos tentáculos. Nível 4: Wallahagga. O Al´aainur pode envolver-se em uma aura que ira refletir qualquer projétil lançado contra ele (sendo de origem mística ou não) Wallahaga deflete projéteis que podem causar até 4d6 e dano no Al´aainur."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Al´aainur)"
+          ]
+        },
+        {
+          "id": "nivel-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O Al´aainur, se passar em um Teste de WILL vs WILL do oponente, pode impedir que seu oponente use algum tipo de poder demoníaco, por 1d4 turnos."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O Al´aainur, se passar em um Teste de WILL vs WILL do oponente, pode impedir que seu oponente use algum tipo de poder demoníaco, por 1d8 turnos."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "O Al´aainur, se passar em um Teste de WILL vs WILL do oponente, pode impedir que seu oponente use algum tipo de poder demoníaco, por 2d6 turnos.\nNur´bukra (Al´aainur)\nO Al´aainur invoca uma espécie de esfera aparentemente de fogo ou de luz com 30 centímetros de diâmetro que ao atingir o alvo não o queima e nem da danos físicos, mas o faz sentir um sofrimento cruel e inexplicável, e que é mais doloroso de acordo com os pecados cometidos á Allah, que só vale apenas a pecados Islâmicos, não vale a pecados católicos ou cometidos contra Christos.\nExemplos de alguns pecados: Desrespeito a Allah, ao grande profeta Maomé, e o ao livro sagrado Alcorão (AlQur’na). Caso o alvo for um Muçulmano e descumprir as leis do Alcorão pode ser considerado um pecado.\nObs: O dano é determinado pelo mestre de acordo com os pecados cometidos pelo alvo, se o dano for muito alto e o alvo for um mortal este pode enlouquecer ou vir até a falecer, e um teste de WILL pode ser feito para reduzir o dano a metade."
+          ]
+        },
+        {
+          "id": "nivel-1-2",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "O dano varia de 0 a 6 com um teste de WILL Fácil."
+          ]
+        },
+        {
+          "id": "nivel-2-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "O dano varia de 0 a 12 com teste de WILL Normal."
+          ]
+        },
+        {
+          "id": "nivel-3-2",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "O dano varia de 0 a 18 com teste de WILL difícil."
+          ]
+        },
+        {
+          "id": "nivel-3-ramadi-ahmar",
+          "title": "Nível 3: Ramadi Ahmar",
+          "area": "poderes",
+          "paragraphs": [
+            "O Al´aainur pode invocar tentáculos de chamas para agarrarem seus inimigos, os tentáculos possuem FR 18 e causam 3d6 de dano por contato a cada turno ou em um único golpe. O alvo pode realizar um teste de esquiva para desviar dos tentáculos."
+          ]
+        },
+        {
+          "id": "nivel-4-wallahagga",
+          "title": "Nível 4: Wallahagga",
+          "area": "poderes",
+          "paragraphs": [
+            "O Al´aainur pode envolver-se em uma aura que ira refletir qualquer projétil lançado contra ele (sendo de origem mística ou não) Wallahaga deflete projéteis que podem causar até 4d6 e dano no Al´aainur."
+          ]
+        }
+      ]
     },
     {
       "id": "akuna",
@@ -1656,7 +2004,88 @@
         "Nível 5: Fera da Savannah. Quando estiver em missão de caçar ou encontrar alguém, o Nyahbinghi poderá assumir a forma de um animal predador com quem tenha afinidade, recebendo ainda um bônus de +40% em todas as Perícias necessárias para encontrar o alvo. Seus ataques com garras, presas ou outras armas naturais terão ainda um bônus de +4.",
         "Nível 6: Mente Forte. Quando enfrentar criaturas em estado selvagem (Vampiros tomados pela Sede de Sangue, Teriantropos, abissais de Zarcattis, animais predadores e demônios K'uei), o Nyahbinghi poderá dominar suas mentes por 1 cena ao vencer uma disputa de WILL vs. WILL."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Nyahbinghi)"
+          ]
+        },
+        {
+          "id": "nivel-1-sentir-a-fera",
+          "title": "Nível 1: Sentir a Fera",
+          "area": "poderes",
+          "paragraphs": [
+            "O Nyahbinghi consegue detectar qualquer criatura paradisiana nas proximidades, e relativamente identifica o nível de poder (novato, mediano, experiente, herói)."
+          ]
+        },
+        {
+          "id": "nivel-2-furia-de-jah",
+          "title": "Nível 2: Fúria de Jah",
+          "area": "poderes",
+          "paragraphs": [
+            "O Nyahbinghi recebe +20% em bônus de combate para qualquer Perícia enquanto estiver lutando, e também causa +2 pontos de dano em todos os ataques até o fim do combate. Este poder só pode ser ativado contra uma criatura que tenha causado algum mal aos rastafari (ferir/ofender um fiel, profanar um local sagrado, etc.)."
+          ]
+        },
+        {
+          "id": "nivel-3-dormir",
+          "title": "Nível 3: Dormir",
+          "area": "poderes",
+          "paragraphs": [
+            "Este poder permite ao Nyahbinghi fundir-se a uma cachoeira enquanto recupera PVs e/ou Pontos de Fé. Neste estado, ele é impossível de ser detectado."
+          ]
+        },
+        {
+          "id": "nivel-3-savannah",
+          "title": "Nível 3: Savannah",
+          "area": "poderes",
+          "paragraphs": [
+            "Quando estiver em missão de caçar ou encontrar alguém, o Nyahbinghi receberá um bônus de +30% em todas as Perícias necessárias para encontrar o alvo. Ele também é capaz de ouvir os batimentos cardíacos ou a emoção do momento do alvo sempre que se concentrar. Este poder só vale para seres mortais (imortais, ressuscitados, mortos-vivos e construtos são imunes)."
+          ]
+        },
+        {
+          "id": "nivel-4-trombetas-de-gedeao",
+          "title": "Nível 4: Trombetas de Gedeão",
+          "area": "poderes",
+          "paragraphs": [
+            "O Nyahbinghi fortalece seu corpo com energia angelical, conseguindo enfurecer os espíritos da terra quando bate seus pés no chão. O efeito disso é um tremor forte que obriga todos a realizarem um teste de AGI ou caírem desequilibrados."
+          ]
+        },
+        {
+          "id": "nivel-4-grande-furia-de-jah",
+          "title": "Nível 4: Grande Fúria de Jah",
+          "area": "poderes",
+          "paragraphs": [
+            "O Nyahbinghi recebe +40% em bônus de combate para qualquer Perícia enquanto estiver lutando, e também causa +4 pontos de dano em todos os ataques até o fim do combate. Este poder só pode ser ativado contra uma criatura que tenha causado algum mal aos rastafari (ferir/ofender um fiel, profanar um local sagrado, etc.)."
+          ]
+        },
+        {
+          "id": "nivel-4-grito-de-jah",
+          "title": "Nível 4: Grito de Jah",
+          "area": "poderes",
+          "paragraphs": [
+            "Todos os seres mortais e de índole maligna que ouvirem o grito de fé do Nyahbinghi fugirão automaticamente (imortais, ressuscitados, mortos-vivos e construtos devem fazer uma disputa de WILL vs. WILL)."
+          ]
+        },
+        {
+          "id": "nivel-5-fera-da-savannah",
+          "title": "Nível 5: Fera da Savannah",
+          "area": "poderes",
+          "paragraphs": [
+            "Quando estiver em missão de caçar ou encontrar alguém, o Nyahbinghi poderá assumir a forma de um animal predador com quem tenha afinidade, recebendo ainda um bônus de +40% em todas as Perícias necessárias para encontrar o alvo. Seus ataques com garras, presas ou outras armas naturais terão ainda um bônus de +4."
+          ]
+        },
+        {
+          "id": "nivel-6-mente-forte",
+          "title": "Nível 6: Mente Forte",
+          "area": "poderes",
+          "paragraphs": [
+            "Quando enfrentar criaturas em estado selvagem (Vampiros tomados pela Sede de Sangue, Teriantropos, abissais de Zarcattis, animais predadores e demônios K'uei), o Nyahbinghi poderá dominar suas mentes por 1 cena ao vencer uma disputa de WILL vs. WILL."
+          ]
+        }
+      ]
     },
     {
       "id": "kalkydra",
@@ -1682,7 +2111,128 @@
         "Nível 5: Transmutação do Condenado. Um árcade de Forma-Pensamento (Archuti ou Xiphara) terá sua forma alterada para um dos monstros de Halzazee por 3d6 dias, caso não vença uma Disputa de WILL vs. WILL. Xipharas recebem um bônus de 15% para resistir.",
         "Nível 6: Chuva do Oblívio. O Captare invoca uma chuva de fogo em toda a área (100m2) por 10 rodadas, causando a perda de 1d6 pontos de CON em todos os seres árcades dentro desta área."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Chalkydri)"
+          ]
+        },
+        {
+          "id": "nivel-1-juba-do-manticora",
+          "title": "Nível 1: Juba do Mantícora",
+          "area": "poderes",
+          "paragraphs": [
+            "A região do busto e dos ombros do Captare adquire uma densa juba. Durante toda a cena, o Captare recebe +5% em todos os Testes envolvendo CAR para intimidar ou amedrontar."
+          ]
+        },
+        {
+          "id": "nivel-1-olhos-de-grifo",
+          "title": "Nível 1: Olhos de Grifo",
+          "area": "poderes",
+          "paragraphs": [
+            "Os olhos do Captare se garantem visão melhorada e a capacidade de enxergar mudanças de Forma-Pensamento na área (presença de seres árcades, manifestação de Magia), ganhando PER+6 até o fim da cena."
+          ]
+        },
+        {
+          "id": "nivel-2-bico-grifico",
+          "title": "Nível 2: Bico Grífico",
+          "area": "poderes",
+          "paragraphs": [
+            "A cabeça do Captare se transforma na cabeça de uma águia gigante, causando 1d4+bônus de FR, além de emitir um grito amedrontador que força qualquer ser árcade de Forma-Pensamento (Archuti ou Xiphara) a fugir caso erre numa Disputa de WILL vs. WILL. Este efeito dura até o final do combate."
+          ]
+        },
+        {
+          "id": "nivel-2-garras-do-grifo",
+          "title": "Nível 2: Garras do Grifo",
+          "area": "poderes",
+          "paragraphs": [
+            "As mãos do Captare se tornam semelhantes às garras dianteiras de um grifo, causando 1d6+2+bônus de FR."
+          ]
+        },
+        {
+          "id": "nivel-2-praga-do-mentiroso",
+          "title": "Nível 2: Praga do Mentiroso",
+          "area": "poderes",
+          "paragraphs": [
+            "Se o alvo tentar contar uma mentira (principalmente, fantasiar sobre uma estória real), o alvo deverá passar numa Disputa de WILL vs. WILL para que sua voz não sofra alterações como forte afinamento, grasnar como um pato, sua estória parecer tão enfadonha que não chama a atenção de ninguém próximo, etc."
+          ]
+        },
+        {
+          "id": "nivel-3-bencao-do-cruzado",
+          "title": "Nível 3: Bênção do Cruzado",
+          "area": "poderes",
+          "paragraphs": [
+            "Abençoa a arma que estiver empunhando, dando a ela +1 ponto de dano, +3 contra seres árcades, +6 contra seres de Halzazee e monstros de Languedoc. Esta arma fica abençoada até o fim do combate."
+          ]
+        },
+        {
+          "id": "nivel-3-pele-de-leao",
+          "title": "Nível 3: Pele de Leão",
+          "area": "poderes",
+          "paragraphs": [
+            "A estrutura corporal do Captare assume características felinas, como a capacidade de correr de forma quadrúpede (dobro da velocidade correndo bípede), preparo contra quedas (-1d6 pontos de dano em quedas), flexibilidade (+15% em quaisquer Testes de AGI) e ainda IP+1. O efeito dura um período inteiro (dia inteiro de sol, ou noite inteira)."
+          ]
+        },
+        {
+          "id": "nivel-3-presenca-do-manticora",
+          "title": "Nível 3: Presença do Mantícora",
+          "area": "poderes",
+          "paragraphs": [
+            "A forma física do Captare adquire uma aura de dominação sobre formas inferiores. Durante 1d6 rodadas, o Captare recebe +15% em todos os Testes envolvendo CAR (30% se for especificamente para intimidar ou amedrontar)."
+          ]
+        },
+        {
+          "id": "nivel-4-forma-grifica",
+          "title": "Nível 4: Forma Grífica",
+          "area": "poderes",
+          "paragraphs": [
+            "O Captare assume a forma de um homem-grifo, com os seguintes ajustes de Atributos: FR+4, CON+4, AGI+4, CAR+2, IP+3. Suas Asas, os Olhos de Grifo, as Garras do Grifo e a Pele de Leão estarão automaticamente ativados. Esta forma dura um período inteiro (dia inteiro de sol, ou noite inteira)."
+          ]
+        },
+        {
+          "id": "nivel-4-oblivio-na-fe",
+          "title": "Nível 4: Oblívio na Fé",
+          "area": "poderes",
+          "paragraphs": [
+            "Abençoa a arma que estiver empunhando e que já esteja sob efeito da Bênção do Cruzado, dando a ela +6 pontos de dano em qualquer situação (não cumulativos com o poder Bênção do Cruzado). Porém, cada ataque bem-sucedido elimina Forma-Pensamento de um ser árcade (o árcade atacado perde 3 pontos de CON por ataque). Esta arma fica abençoada até o fim do combate."
+          ]
+        },
+        {
+          "id": "nivel-4-ressurreicao-efemera",
+          "title": "Nível 4: Ressurreição Efêmera",
+          "area": "poderes",
+          "paragraphs": [
+            "Qualquer ser arcadiano que tenha sido destruído em até 1 hora pode ser ressuscitado na forma de uma espécie de “Zumbi Xiphara”: sua forma zumbi se degenerará com o passar do tempo, enquanto sua identidade será de acordo com a realidade onírica da região.\nEx: um Zumbi Xiphara vagando por Mavria assumirá a forma de um mandril falante, mas quando entrar na terra das 1001 Noites tomará a forma de um gênio, e quando entrar em Halzazee se parecerá com um Ogro, etc."
+          ]
+        },
+        {
+          "id": "nivel-5-imolacao-do-oblivio",
+          "title": "Nível 5: Imolação do Oblívio",
+          "area": "poderes",
+          "paragraphs": [
+            "O árcade pecador (segundo os preceitos da Cidade de Prata) deverá Disputar WILL vs. WILL para não perder imediatamente 1d6 pontos de CON, na forma de chamas sagradas que eliminam a existência feérica do árcade. Esse efeito dura uma Cena."
+          ]
+        },
+        {
+          "id": "nivel-5-transmutacao-do-condenado",
+          "title": "Nível 5: Transmutação do Condenado",
+          "area": "poderes",
+          "paragraphs": [
+            "Um árcade de Forma-Pensamento (Archuti ou Xiphara) terá sua forma alterada para um dos monstros de Halzazee por 3d6 dias, caso não vença uma Disputa de WILL vs. WILL. Xipharas recebem um bônus de 15% para resistir."
+          ]
+        },
+        {
+          "id": "nivel-6-chuva-do-oblivio",
+          "title": "Nível 6: Chuva do Oblívio",
+          "area": "poderes",
+          "paragraphs": [
+            "O Captare invoca uma chuva de fogo em toda a área (100m2) por 10 rodadas, causando a perda de 1d6 pontos de CON em todos os seres árcades dentro desta área."
+          ]
+        }
+      ]
     },
     {
       "id": "exorcismo",
@@ -1698,7 +2248,56 @@
         "Nível 4: Isca. Um poder arriscado que faz com que o Anjo pareça um alvo perfeito para a possessão. Caso o espírito falhe em um teste de WILL x WILL, passará a perseguir o personagem para tomar seu corpo, sem se importar com mais nada.",
         "Nível 5: Armadilha Corporal. O interior do corpo angelical é como uma fornalha celestial que queima todas as impurezas. Qualquer espírito que tentar possuir o anjo falhará pois levará 5d6 de dano e será imediatamente expulso do corpo celestial."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Caçadores Exorcistas)"
+          ]
+        },
+        {
+          "id": "nivel-1-sexto-sentido",
+          "title": "Nível 1: Sexto Sentido",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo consegue enxergar um espírito que esteja possuindo um ser humano. Um teste de WILL x WILL pode ser necessário para o espírito se esconder."
+          ]
+        },
+        {
+          "id": "nivel-2-golpear-a-alma",
+          "title": "Nível 2: Golpear a alma",
+          "area": "poderes",
+          "paragraphs": [
+            "O Anjo consegue atacar o espírito dentro do seu hospedeiro. O personagem deve fazer um teste de WILL para ativar o poder por 1d6 rodadas. Em caso de Falha Crítica o anjo atacará o hospedeiro, pensando estar golpeando o espírito invasor."
+          ]
+        },
+        {
+          "id": "nivel-3-arrancar-o-espirito",
+          "title": "Nível 3: Arrancar o espírito",
+          "area": "poderes",
+          "paragraphs": [
+            "Semelhante ao poder Recípere, porém permite arrancar o espírito invasor do hospedeiro."
+          ]
+        },
+        {
+          "id": "nivel-4-isca",
+          "title": "Nível 4: Isca",
+          "area": "poderes",
+          "paragraphs": [
+            "Um poder arriscado que faz com que o Anjo pareça um alvo perfeito para a possessão. Caso o espírito falhe em um teste de WILL x WILL, passará a perseguir o personagem para tomar seu corpo, sem se importar com mais nada."
+          ]
+        },
+        {
+          "id": "nivel-5-armadilha-corporal",
+          "title": "Nível 5: Armadilha Corporal",
+          "area": "poderes",
+          "paragraphs": [
+            "O interior do corpo angelical é como uma fornalha celestial que queima todas as impurezas. Qualquer espírito que tentar possuir o anjo falhará pois levará 5d6 de dano e será imediatamente expulso do corpo celestial."
+          ]
+        }
+      ]
     },
     {
       "id": "inquisicao",
@@ -1716,7 +2315,64 @@
         "Nível 3: Perceber o Pecado. Olhando diretamente nos olhos de um anjo ou outro ser, o inquisidor pode saber exatamente qual dos 10 Mandamentos ele já transgrediu e qual dos 7 Pecados Capitais mais lhe influencia.",
         "Nível 4: Exigir a Verdade. Mediante um teste de WILL vs. WILL e tocando a testa do alvo, o inquisidor pode exigir a resposta verdadeira de uma pergunta."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Inquisição Celestial)"
+          ]
+        },
+        {
+          "id": "nivel-1-sentir-o-mal",
+          "title": "Nível 1: Sentir o Mal",
+          "area": "poderes",
+          "paragraphs": [
+            "O inquisidor sabe quando o mal está no coração de anjos e outros seres. Ele percebe sua tendência para pecar, mas não sabe se o mesmo já pecou. Para usar esse poder, o inquisidor deve poder olhar nos olhos do alvo."
+          ]
+        },
+        {
+          "id": "nivel-1-perceber-o-anjo",
+          "title": "Nível 1: Perceber o Anjo",
+          "area": "poderes",
+          "paragraphs": [
+            "Apenas observando um anjo, o inquisidor pode discernir sua Casta, idade e quantos Pontos de Fé ele possui."
+          ]
+        },
+        {
+          "id": "nivel-2-disfarce-angelical",
+          "title": "Nível 2: Disfarce Angelical",
+          "area": "poderes",
+          "paragraphs": [
+            "O inquisidor pode mudar sua aparência, assemelhando-se com membros de outra Casta."
+          ]
+        },
+        {
+          "id": "nivel-2-reconhecer-a-vila",
+          "title": "Nível 2: Reconhecer a Vila",
+          "area": "poderes",
+          "paragraphs": [
+            "Concentrando-se durante três turnos em uma vila da Cidade de Prata, o inquisidor pode definir quem é o líder local e quais as principais castas residentes."
+          ]
+        },
+        {
+          "id": "nivel-3-perceber-o-pecado",
+          "title": "Nível 3: Perceber o Pecado",
+          "area": "poderes",
+          "paragraphs": [
+            "Olhando diretamente nos olhos de um anjo ou outro ser, o inquisidor pode saber exatamente qual dos 10 Mandamentos ele já transgrediu e qual dos 7 Pecados Capitais mais lhe influencia."
+          ]
+        },
+        {
+          "id": "nivel-4-exigir-a-verdade",
+          "title": "Nível 4: Exigir a Verdade",
+          "area": "poderes",
+          "paragraphs": [
+            "Mediante um teste de WILL vs. WILL e tocando a testa do alvo, o inquisidor pode exigir a resposta verdadeira de uma pergunta."
+          ]
+        }
+      ]
     },
     {
       "id": "combo",
@@ -1748,7 +2404,72 @@
         "Armadura de Combate HighTechMagic: em resposta à grande necessidade dos Captare de possuir poder bélico emergencial em algumas situações, foi desenvolvido, baseado no poder dos Protetore Virtude Tecnoanjo a Armadura de Combate HighTechMagic. É um traje de combate completo com asas metálicas e poder de vôo (dada a impossibilidade dos anjos utilizarem o poder Asas Astrais utilizando a armadura). O traje é fortalecido com placas de kevlar e aço místico propriamente amortecidos para absorver o impacto de golpes brutais e projéteis físicos, conferindo IP 12 cinético/10 balístico. Como acessórios, é armado com um sistema mágico de Cone Chamas concentrado em ambas as manoplas, permitindo o usuário emitir línguas de fogo plásmico que causam 4d6 de dano 5 vezes por dia de cada manopla. O capacete ainda possui um link com todo o restante do traje possibilitando saber precisamente quanto dano o traje ou seu usuário receberam. O usuário da Armadura de Combate HighTechMagic possui implantado em sua coluna vertebral uma “segunda coluna” metálica, externa ao corpo físico do anjo, cuja qual permite a conjuração/exconjuração da armadura. O uso dessa armadura é altamente controverso na Cidade de Prata: enquanto cientistas e armamentistas Captare mais vanguardistas, com apoio dos Virtudes, alegam que é apenas uma arma, conservadores inflamam-se acusando-os de buscarem melhorar os corpos angelicais criando a armadura no próprio formato de um anjo, até mesmo com asas, e assim a Criação pretender se tornar Criador, uma ofensa ao próprio Demiurgo.",
         "9,0 Simulacro Extra: mediante sua influência na Cidade de Prata, o anjo conseguiu um simulacro extra para si. Para utilizá-lo, o mesmo passou por uma cirurgia espiritual e intenso treinamento. Para adquirir esse item mágico, o personagem precisa do aprimoramento Alma Dupla (versão inversa, onde uma alma habitará dois corpos)."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "(Meta-anjos) Um dos mais terríveis poderes conhecidos entre os anjos, o Poder Angelical Combo visa a habilidade de um anjo de conjurar dois ou mais poderes ao mesmo tempo, uma vez que um anjo sem esse poder só poderá conjurar um poder por vez. Esse poder possui pouquíssimas restrições, como, por exemplo, poderes de múltiplas formas não podem ser combinados caso sejam incompatíveis, porém poderes de forma parcial, sim. Por exemplo, um anjo Chalkydri de Languedoc não poderá assumir sua forma de grifo (Forma Grífica, Nível 4) e sua forma de lobisomem (Poder Único, Nível 4), porém pode assumir a sua forma de anjo metálico (Tecnoanjo, poder Protetore, Nível 5)."
+          ]
+        },
+        {
+          "id": "nivel-1-combo",
+          "title": "Nível 1: Combo",
+          "area": "poderes",
+          "paragraphs": [
+            "O anjo pode conjurar dois Poderes Angelicais ao mesmo tempo sem penalidades. Ainda são necessários os devidos testes."
+          ]
+        },
+        {
+          "id": "nivel-2-supercombo",
+          "title": "Nível 2: SuperCombo",
+          "area": "poderes",
+          "paragraphs": [
+            "O anjo pode conjurar três Poderes Angelicais ao mesmo tempo sem penalidades. Ainda são necessários os devidos testes."
+          ]
+        },
+        {
+          "id": "nivel-3-megacombo",
+          "title": "Nível 3: MegaCombo",
+          "area": "poderes",
+          "paragraphs": [
+            "O anjo pode conjurar quatro Poderes Angelicais ao mesmo tempo sem penalidades. Ainda são necessários os devidos testes."
+          ]
+        },
+        {
+          "id": "nivel-3-amalgama-de-poder",
+          "title": "Nível 3: Amálgama de Poder",
+          "area": "poderes",
+          "paragraphs": [
+            "Quando o anjo ficar impossibilitado de lançar mais de dois poderes por impossibilidade física (por exemplo, se ele lança um cone de fogo por uma mão, um raio elétrico por outra e ainda tem capacidade para um terceiro poder mas não tem mais mãos para isso) ele pode combinar o efeito de dois poderes, somando os danos. O Narrador deve criar a forma amalgamada da combinação desses poderes. Esse poder só pode ser usado uma vez por ataque (caso o anjo possua diversos ataques em um mesmo turno, poderá utilizar em todos)."
+          ]
+        },
+        {
+          "id": "nivel-3-amalgama-de-poder-avancado",
+          "title": "Nível 3: Amálgama de Poder Avançado",
+          "area": "poderes",
+          "paragraphs": [
+            "Quando o anjo ficar impossibilitado de lançar mais de três poderes por impossibilidade física (por exemplo, se ele lança um cone de fogo e um raio elétrico, combina ambos com o uso do poder Amálgama de Poder e lança-os com uma mão, conjura uma espada de chamas com um terceiro poder na outra mão e ainda tem capacidade para um quarto poder mas não tem mais mãos para isso) ele pode combinar o efeito de até dois poderes diferentes duas vezes no mesmo ataque, somando os danos. O Narrador deve criar a forma amalgamada da combinação desses poderes. Note que poderes com um efeito único naquele turno não perduram com outros poderes de efeito contínuo (por exemplo, uma espada de fogo amalgamada com um raio elétrico não causará dano elétrico contínuo, e sim apenas naquele turno, e depois causará seu dano normal por fogo). Esse poder só pode ser usado uma vez por ataque (caso o anjo possua diversos ataques em um mesmo turno, poderá utilizar em todos)."
+          ]
+        },
+        {
+          "id": "nivel-4-ultracombo",
+          "title": "Nível 4: UltraCombo",
+          "area": "poderes",
+          "paragraphs": [
+            "O anjo pode conjurar cinco Poderes Angelicais ao mesmo tempo sem penalidades. Ainda são necessários os devidos testes. Esse poder só pode ser usado uma vez por ataque (caso o anjo possua diversos ataques em um mesmo turno, poderá utilizar em todos)."
+          ]
+        },
+        {
+          "id": "nivel-5-combo-supremo",
+          "title": "Nível 5: Combo Supremo",
+          "area": "poderes",
+          "paragraphs": [
+            "Como o poder Amálgama de Poder, só que pode amalgamar seus cinco poderes em um poder só. Só pode ser usado uma vez por Cena.\n0,5 Mácula do Pecador (0,5 ponto): Esse veneno pode ser inoculado em dardos, lâminas, bebidas ou em alimentos (não pode cozinhá-lo com o veneno). Mácula do Pecador é um veneno especial que, após inserido no organismo de sua vítima, ficará ativo durante 2d6 dias. Ele age neurologicamente, com efeitos sucessivos cada vez mais agressivos, reagindo sempre que a vítima envenenada cometer algum dos 7 Pecados Capitais ou infringir um dos 10 Mandamentos. Como é um veneno, não há margem para interpretações: o mesmo funciona no sentido mais literal e direto de todos os pecados, seja mentindo, roubando, sentindo inveja, gula (mesmo a mera fome), etc. As três primeiras vezes que o veneno entrar em ação, eliminará 1d6 PVs da vítima enquanto o mesmo estiver no organismo (ou seja, não regenera). O quarto e quinto efeito elimina 1d6 pontos no atributo inteligência e Força de Vontade, respectivamente. O sexto efeito causa paralisia parcial do corpo, perdendo 2d6 pontos de Destreza e Agilidade. O sétimo efeito causa paralisia total. Todos esses efeitos são permanentes, à não ser que o alvo recorra à curas mágicas, que NÃO farão efeito até o fim dos 2d6 dias. Os efeitos acima são gerados com uma dosagem; duas ou mais dosagens prolongam o efeito.\n1,0 Esfera Alarmante: uma esfera de metal cromado e polido do tamanho de uma laranja. Utilizada para alertar o usuário de movimentação ao seu redor. Também possui a função de emitir um alerta para atos visíveis à olho nu num raio de 3m ao seu redor.\nGranada do Sono: uma pequena algibeira contendo nada mais do que areia. A mesma, porém, quando desamarrada e jogada em uma área, faz qualquer um que não passe em um teste de WILL vs. 3D num raio de 30m cair em um sono profundo. A Granada do Sono funciona durante 3 rodadas, precisando de uma rodada para iniciar seus efeitos (tempo utilizado pelo anjo para jogá-la no alvo). Os alvos que caírem no sono, claro, continuarão dormindo até que algo os acorde. O item só pode ser utilizado uma vez.\n2,0 Ungüento do Espião Profano: untando o corpo com esse ungüento, para quaisquer formas de detecção de Focus 4 ou Nível 4 de poder ou inferior, o anjo é um Caído.\nAjna da Comunhão: esse objeto é um pequeno \"terceiro olho\" prateado do tamanho de uma unha. Permite a comunicação vocal com outro anjo que possua também um Ajna da Comunhão, não importa o Plano ou a distância. Muito utilizado para trabalhos em equipe, com um anjo de apoio logístico.\n3,0 Elmo da Prontidão: um elmo prateado com muitos olhos de um azul gélido, permite ao usuário nunca ser pêgo em um ataque surpresa.\n4,0 Anel da Invisibilidade: quando usando o anel, o anjo torna-se invisível.\n5,0 Olho de Prata: recentemente alguns magos Captare tentaram simular a tecnologia do metal líquido. O expoente atual é, além de alguns aparatos tecnomágicos experimentais, o Olho de Prata, que consiste em preencher o globo ocular vazio de um anjo com prata líquida mística. O processo é indolor. Uma vez que o olho é preenchido com a substância, a mesma se mantêm no globo, funcionando como um novo olho, porém sempre em movimento dentro do mesmo, deixando perceptível para qualquer um que olhe sua consistência metálica e prateada. O Olho de Prata confere ao usuário infravisão, visão noturna perfeita e detecção de magias.\n6,0 Tatuagem de Fé: uma tatuagem mágica que confere uma habilidade específica ao usuário. Dentre elas, estão (escolha uma):\n*Atributo +3 *Perícia +50% *Aprimoramento físico/mental/espiritual de 3 pontos *+20 pontos de Fé 8,0 Arma vs. Caídos: essa arma possui diversas versões, dentre estas, espadas, lanças, machados, e até mesmo pistolas de grosso calibre. É tratada como uma arma+8 que causa dano triplo em Anjos Caídos.\nArmadura de Combate HighTechMagic: em resposta à grande necessidade dos Captare de possuir poder bélico emergencial em algumas situações, foi desenvolvido, baseado no poder dos Protetore Virtude Tecnoanjo a Armadura de Combate HighTechMagic. É um traje de combate completo com asas metálicas e poder de vôo (dada a impossibilidade dos anjos utilizarem o poder Asas Astrais utilizando a armadura). O traje é fortalecido com placas de kevlar e aço místico propriamente amortecidos para absorver o impacto de golpes brutais e projéteis físicos, conferindo IP 12 cinético/10 balístico. Como acessórios, é armado com um sistema mágico de Cone Chamas concentrado em ambas as manoplas, permitindo o usuário emitir línguas de fogo plásmico que causam 4d6 de dano 5 vezes por dia de cada manopla. O capacete ainda possui um link com todo o restante do traje possibilitando saber precisamente quanto dano o traje ou seu usuário receberam. O usuário da Armadura de Combate HighTechMagic possui implantado em sua coluna vertebral uma “segunda coluna” metálica, externa ao corpo físico do anjo, cuja qual permite a conjuração/exconjuração da armadura. O uso dessa armadura é altamente controverso na Cidade de Prata: enquanto cientistas e armamentistas Captare mais vanguardistas, com apoio dos Virtudes, alegam que é apenas uma arma, conservadores inflamam-se acusando-os de buscarem melhorar os corpos angelicais criando a armadura no próprio formato de um anjo, até mesmo com asas, e assim a Criação pretender se tornar Criador, uma ofensa ao próprio Demiurgo.\n9,0 Simulacro Extra: mediante sua influência na Cidade de Prata, o anjo conseguiu um simulacro extra para si. Para utilizá-lo, o mesmo passou por uma cirurgia espiritual e intenso treinamento. Para adquirir esse item mágico, o personagem precisa do aprimoramento Alma Dupla (versão inversa, onde uma alma habitará dois corpos)."
+          ]
+        }
+      ]
     },
     {
       "id": "goghiel",
