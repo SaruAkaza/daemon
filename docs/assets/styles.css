@@ -1,5 +1,6 @@
 :root {
   color-scheme: light;
+  --page-max: 1280px;
   --bg: #eef2f1;
   --surface: #ffffff;
   --surface-alt: #f7f8f5;
@@ -84,10 +85,14 @@ p {
   grid-template-columns: minmax(210px, 300px) minmax(0, 1fr);
   gap: 18px;
   align-items: center;
+  justify-self: center;
+  width: min(100%, var(--page-max));
   min-height: 76px;
   height: auto;
   padding: 14px 18px;
+  border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+  border-left: 1px solid var(--line);
   background: var(--surface);
 }
 
@@ -130,9 +135,13 @@ h1 {
 
 .shell {
   display: grid;
+  justify-self: center;
+  width: min(100%, var(--page-max));
   height: 100%;
   min-height: 0;
   overflow: hidden;
+  border-right: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
 
 .panel-head {
@@ -745,10 +754,14 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  justify-self: center;
   gap: 12px;
+  width: min(100%, var(--page-max));
   min-height: 30px;
   padding: 5px 12px;
+  border-right: 1px solid var(--line);
   border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
   font-size: 0.76rem;
@@ -770,6 +783,12 @@ button:focus-visible {
 .classification span {
   color: var(--muted);
   font-size: 0.76rem;
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --page-max: 1240px;
+  }
 }
 
 @media (max-width: 980px) {
