@@ -406,7 +406,7 @@ function filterGroupsData() {
     }
   }
 
-  if (state.selectedArea === "aprimoramentos" || state.selectedArea === "racas") {
+  if (["aprimoramentos", "kits", "racas"].includes(state.selectedArea)) {
     groups.push({
       id: "costs",
       title: "Custo",

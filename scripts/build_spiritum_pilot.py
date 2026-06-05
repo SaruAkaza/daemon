@@ -490,6 +490,64 @@ def make_classes() -> list[dict]:
     return results
 
 
+def split_kit_paragraphs(paragraphs: list[str]) -> tuple[list[str], list[str], list[str]]:
+    cost = [p for p in paragraphs if p.startswith("Custo:")]
+    skill_start = next((i for i, p in enumerate(paragraphs) if p.startswith("Per\u00edcias:")), None)
+    skill_end_markers = (
+        "Aprimoramentos:",
+        "Caminhos Preferidos:",
+        "Pontos de F\u00e9:",
+        "Pontos de Magia:",
+        "Pontos Her\u00f3icos:",
+    )
+    skill_cost: list[str] = []
+    skill_indexes: set[int] = set()
+    if skill_start is not None:
+        skill_end = next(
+            (i for i in range(skill_start + 1, len(paragraphs)) if paragraphs[i].startswith(skill_end_markers)),
+            len(paragraphs),
+        )
+        skill_indexes = set(range(skill_start, skill_end))
+        skill_cost = paragraphs[skill_start:skill_end]
+    rest = [p for i, p in enumerate(paragraphs) if p not in cost and i not in skill_indexes]
+    return cost, skill_cost, rest
+
+
+def make_character_options() -> list[dict]:
+    class_specs = [
+        ("Vidente", extract_between([35, 36], "Videntes", "Si\u00edbilas")),
+        ("Sibila", extract_between([36], "Si\u00edbilas", "Cria\u00e7\u00e3o de Personagem")),
+    ]
+    kit_specs = [
+        ("Rosa Cruz", extract_between([32], "Rosa Cruz", "Explorador Astral")),
+        ("Explorador Astral", extract_between([32], "Explorador Astral", None)),
+        ("Viajante Espiritual", extract_between([42], "Viajante Espiritual", "Loa")),
+    ]
+    results = []
+
+    for title, paragraphs in class_specs:
+        if not paragraphs:
+            continue
+        results.append(item(title, "classes", "class", paragraphs, [
+            block("Descri\u00e7\u00e3o", "classes", paragraphs)
+        ]))
+
+    for title, paragraphs in kit_specs:
+        if not paragraphs:
+            continue
+        cost, skill_cost, rest = split_kit_paragraphs(paragraphs)
+        sections = []
+        if cost:
+            sections.append(block("Custo", "kits", cost))
+        if skill_cost:
+            sections.append(block("Custo de Per\u00edcia", "kits", skill_cost))
+        if rest:
+            sections.append(block("Descri\u00e7\u00e3o", "kits", rest))
+        results.append(item(title, "kits", "kit", rest, sections))
+
+    return results
+
+
 def make_settings() -> list[dict]:
     settings = [
         item("Cenarios/Lore - Spiritum", "cenarios_lore", "setting", [], [
@@ -566,7 +624,7 @@ def build_payload() -> dict:
     sections: list[dict] = []
     sections.extend(make_core_rules())
     sections.extend(make_aprimoramentos())
-    sections.extend(make_classes())
+    sections.extend(make_character_options())
     sections.extend(make_races())
     sections.extend(make_powers())
     sections.extend(make_rituals())

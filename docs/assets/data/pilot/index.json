@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T17:46:25",
+  "generatedAt": "2026-06-05T17:54:02",
   "sources": [
     {
       "source": "4killers",
@@ -272,6 +272,7 @@
         "cenarios_lore",
         "classes",
         "criaturas_npcs",
+        "kits",
         "poderes",
         "racas",
         "regras_base",

@@ -10,13 +10,14 @@
     "cenarios_lore",
     "classes",
     "criaturas_npcs",
+    "kits",
     "poderes",
     "racas",
     "regras_base",
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-05T17:46:25",
+  "generatedAt": "2026-06-05T17:54:02",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -1562,74 +1563,11 @@
       "polarity": "negativo"
     },
     {
-      "id": "rosa-cruz",
-      "title": "Rosa Cruz",
-      "area": "classes",
-      "kind": "classe",
-      "sectionId": "classe",
-      "sectionTitle": "Rosa Cruz",
-      "paragraphs": [
-        "Ciências Proibidas (Alquimia 30%, Astrologia 40%, Conhecimento de Espíritos 50%, Oculto 25%, Rituais 40%, Teoria da Magia 40%, Viagem Astral 50%), Manipulação (Impressionar 20%, Liderança 20%), Pesquisa /Investigação 20.",
-        "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 1.",
-        "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
-        "Pontos de Fé: 0.",
-        "Pontos de Magia: 2 + 1 por nível.",
-        "Pontos Heróicos: 1 por nível.",
-        "Explorador Astral",
-        "Ciências Proibidas (Alquimia 40%, Astrologia 50%, Conhecimento de Espíritos 50%, Oculto 25%, Rituais 40%, Teoria da Magia 40%, Viagem Astral 50%), Manipulação (Liderança 20%), Pesquisa /Investigação 50%.",
-        "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 2",
-        "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
-        "Pontos de Fé: 0.",
-        "Pontos de Magia: 2 + 1 por nível.",
-        "Pontos Heróicos: 2 por nível."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "classes",
-          "paragraphs": [
-            "Custo: 2 pts. de Aprimoramento, 270 pts. de Perícia.",
-            "Custo: 3 pts. de Aprimoramento, 280 pts. de Perícia."
-          ]
-        },
-        {
-          "id": "custo-de-pericia",
-          "title": "Custo de Perícia",
-          "area": "classes",
-          "paragraphs": [
-            "Perícias: Artes (escolha uma 20%), Ciências (Teologia 20%),",
-            "Perícias: Artes (escolha uma 20%), Ciências (Teologia 20%),"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "classes",
-          "paragraphs": [
-            "Ciências Proibidas (Alquimia 30%, Astrologia 40%, Conhecimento de Espíritos 50%, Oculto 25%, Rituais 40%, Teoria da Magia 40%, Viagem Astral 50%), Manipulação (Impressionar 20%, Liderança 20%), Pesquisa /Investigação 20.",
-            "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 1.",
-            "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
-            "Pontos de Fé: 0.",
-            "Pontos de Magia: 2 + 1 por nível.",
-            "Pontos Heróicos: 1 por nível.",
-            "Explorador Astral",
-            "Ciências Proibidas (Alquimia 40%, Astrologia 50%, Conhecimento de Espíritos 50%, Oculto 25%, Rituais 40%, Teoria da Magia 40%, Viagem Astral 50%), Manipulação (Liderança 20%), Pesquisa /Investigação 50%.",
-            "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 2",
-            "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
-            "Pontos de Fé: 0.",
-            "Pontos de Magia: 2 + 1 por nível.",
-            "Pontos Heróicos: 2 por nível."
-          ]
-        }
-      ]
-    },
-    {
       "id": "vidente",
       "title": "Vidente",
       "area": "classes",
-      "kind": "classe",
-      "sectionId": "classe",
+      "kind": "class",
+      "sectionId": "class",
       "sectionTitle": "Vidente",
       "paragraphs": [
         "Os videntes são médiuns especializados na previsão do futuro e nos acontecimentos desconhecidos. Existem desde o período romano e já auxiliaram diversos reis, aventureiros e governantes a realizarem missões de grande importância.",
@@ -1681,8 +1619,8 @@
       "id": "sibila",
       "title": "Sibila",
       "area": "classes",
-      "kind": "classe",
-      "sectionId": "classe",
+      "kind": "class",
+      "sectionId": "class",
       "sectionTitle": "Sibila",
       "paragraphs": [
         "Assim como seus irmãos videntes e oráculos, as sibilas também possuem poderes adivinhatórios, mas oriundos dos mundos mais destruídos na Roda dos Mundos, como Arkanun ou Inferno. Note que o fato de uma pessoa receber informações através de entidades demoníacas não significa que ela seja má, afinal, existem anjos e pastores mais perigosos e manipuladores do que muitos demônios por aíl",
@@ -1707,36 +1645,116 @@
       ]
     },
     {
+      "id": "rosa-cruz",
+      "title": "Rosa Cruz",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Rosa Cruz",
+      "paragraphs": [
+        "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 1.",
+        "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
+        "Pontos de Fé: 0.",
+        "Pontos de Magia: 2 + 1 por nível.",
+        "Pontos Heróicos: 1 por nível."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "Custo: 2 pts. de Aprimoramento, 270 pts. de Perícia."
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "Perícias: Artes (escolha uma 20%), Ciências (Teologia 20%),",
+            "Ciências Proibidas (Alquimia 30%, Astrologia 40%, Conhecimento de Espíritos 50%, Oculto 25%, Rituais 40%, Teoria da Magia 40%, Viagem Astral 50%), Manipulação (Impressionar 20%, Liderança 20%), Pesquisa /Investigação 20."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 1.",
+            "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
+            "Pontos de Fé: 0.",
+            "Pontos de Magia: 2 + 1 por nível.",
+            "Pontos Heróicos: 1 por nível."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explorador-astral",
+      "title": "Explorador Astral",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
+      "sectionTitle": "Explorador Astral",
+      "paragraphs": [
+        "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 2",
+        "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
+        "Pontos de Fé: 0.",
+        "Pontos de Magia: 2 + 1 por nível.",
+        "Pontos Heróicos: 2 por nível."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "kits",
+          "paragraphs": [
+            "Custo: 3 pts. de Aprimoramento, 280 pts. de Perícia."
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "Perícias: Artes (escolha uma 20%), Ciências (Teologia 20%),",
+            "Ciências Proibidas (Alquimia 40%, Astrologia 50%, Conhecimento de Espíritos 50%, Oculto 25%, Rituais 40%, Teoria da Magia 40%, Viagem Astral 50%), Manipulação (Liderança 20%), Pesquisa /Investigação 50%."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "kits",
+          "paragraphs": [
+            "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 2",
+            "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
+            "Pontos de Fé: 0.",
+            "Pontos de Magia: 2 + 1 por nível.",
+            "Pontos Heróicos: 2 por nível."
+          ]
+        }
+      ]
+    },
+    {
       "id": "viajante-espiritual",
       "title": "Viajante Espiritual",
-      "area": "classes",
-      "kind": "classe",
-      "sectionId": "classe",
+      "area": "kits",
+      "kind": "kit",
+      "sectionId": "kit",
       "sectionTitle": "Viajante Espiritual",
       "paragraphs": [
         "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 2.",
         "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
         "Pontos de Fé: 0.",
         "Pontos de Magia: 2 + 1 por nível.",
-        "Pontos Heróicos: 2 por nível.",
-        "Loa",
-        "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Umiloa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
-        "Os loas normalmente são NPCs mas uma campanha envolvendo um viajante astral e seu loa conselheiro podem resultar em aventuras muito interessantes.",
-        "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vaí acontecer!).",
-        "Assim como nos viajantes astrais, o uso de deslocamentos temporais por parte do loa deve ser controlado pelo Mestre, para evitar maiores problemas.",
-        "Criação de Personagem",
-        "O Jogador deve criar o loa a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o loa passa por um processo de transição que pode durar meses ou anos.",
-        "A partir deste ponto, escreva a história deste espírito até o ponto onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",
-        "Use o bom senso.",
-        "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos fisicos, loas precisam de poderes especiais (ver capítulo de Poderes Espectrais).",
-        "Um loa começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
-        "Um loa começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
+        "Pontos Heróicos: 2 por nível."
       ],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Custo: 3 pts. de aprimoramento, 300 pts. de perícia."
           ]
@@ -1744,7 +1762,7 @@
         {
           "id": "custo-de-pericia",
           "title": "Custo de Perícia",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Perícias: Ciências (Teologia 20%), Ciências Proibidas (Alquimia 30%, Astrologia 40%, Conhecimento de Espíritos 50%, Oculto 25%, Rituais 40%, Teoria da Magia 50%, Viagem Astral 50%), Manipulação (Impressionar 30%, Liderança 20%), Pesquisa /Investigação 40%."
           ]
@@ -1752,25 +1770,13 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "classes",
+          "area": "kits",
           "paragraphs": [
             "Aprimoramentos: Poderes Mágicos 2, Pontos Heróicos 2.",
             "Caminhos Preferidos: Metamagia, Spiritum, Humanos.",
             "Pontos de Fé: 0.",
             "Pontos de Magia: 2 + 1 por nível.",
-            "Pontos Heróicos: 2 por nível.",
-            "Loa",
-            "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Umiloa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
-            "Os loas normalmente são NPCs mas uma campanha envolvendo um viajante astral e seu loa conselheiro podem resultar em aventuras muito interessantes.",
-            "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vaí acontecer!).",
-            "Assim como nos viajantes astrais, o uso de deslocamentos temporais por parte do loa deve ser controlado pelo Mestre, para evitar maiores problemas.",
-            "Criação de Personagem",
-            "O Jogador deve criar o loa a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o loa passa por um processo de transição que pode durar meses ou anos.",
-            "A partir deste ponto, escreva a história deste espírito até o ponto onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",
-            "Use o bom senso.",
-            "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos fisicos, loas precisam de poderes especiais (ver capítulo de Poderes Espectrais).",
-            "Um loa começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
-            "Um loa começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
+            "Pontos Heróicos: 2 por nível."
           ]
         }
       ]
