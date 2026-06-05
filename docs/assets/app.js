@@ -718,9 +718,53 @@ function renderTextBlock(title, text) {
   return block;
 }
 
+function renderSectionGroup(title, sections, includeSectionTitles = false) {
+  const paragraphs = sections.flatMap((section) => {
+    const text = sectionText(section);
+    if (!text) return [];
+    if (includeSectionTitles) return [`${section.title}: ${text}`];
+    return [text];
+  });
+  if (paragraphs.length) nodes.detailPanel.append(renderTextBlock(title, paragraphs.join("\n\n")));
+}
+
+function renderPilotNpcDetail(item) {
+  const sections = item.sections || [];
+  const consumed = new Set();
+  const take = (predicate) => {
+    const found = sections.filter((section) => !consumed.has(section) && predicate(normalize(section.title || "")));
+    for (const section of found) consumed.add(section);
+    return found;
+  };
+
+  renderSectionGroup("Custo", take((title) => title.includes("custo")), true);
+  renderSectionGroup(
+    "PerÃ­cias e Combate",
+    take((title) => title.includes("pericia") || title.includes("combate") || title.includes("ataque")),
+    true,
+  );
+  renderSectionGroup(
+    "Habilidades",
+    take((title) => (
+      title.includes("habilidade")
+      || title.includes("aprimoramento")
+      || title.includes("caminho")
+      || title.includes("poder")
+      || title.includes("magia")
+      || title.includes("especial")
+    )),
+    true,
+  );
+
+  for (const section of sections) {
+    if (consumed.has(section)) continue;
+    nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
+  }
+}
+
 function renderNpcDetail(item) {
   if (!item.npc) {
-    renderGroupedDetail(item);
+    renderPilotNpcDetail(item);
     return;
   }
   const npc = item.npc;
