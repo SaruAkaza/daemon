@@ -177,6 +177,34 @@ def build_section(title, area, paragraphs):
     }
 
 
+def build_maneuver_entity(name, text):
+    """Combat maneuver: split inline '(custo):' from the description.
+    Per cataloging rules, a single cost shows only the value."""
+    m = re.match(r"^\s*.*?\(\s*(\d+)\s*\)\s*:\s*(.*)$", text, re.DOTALL)
+    cost = m.group(1).strip() if m else ""
+    desc = (m.group(2).strip() if m else text).strip()
+    sections = []
+    if cost:
+        sections.append({
+            "id": "custo", "title": "Custo", "area": "manobras_combate",
+            "paragraphs": [cost],
+        })
+    sections.append({
+        "id": "descricao", "title": "Descrição", "area": "manobras_combate",
+        "paragraphs": [desc],
+    })
+    return {
+        "id": slugify(name),
+        "title": name,
+        "area": "manobras_combate",
+        "kind": "maneuver",
+        "sectionId": "descricao",
+        "sectionTitle": "Manobra",
+        "paragraphs": [desc],
+        "sections": sections,
+    }
+
+
 def build_entity(name, area, kind, section_title, paragraphs):
     """Build an individual, browsable entity for the top-level `sections` array.
     The app renders each top-level section as its own list item (groups, by
@@ -255,8 +283,7 @@ def build_pilot() -> dict:
                       if p.startswith("“A única regra"))
     maneuvers_blob = " ".join(paras[luta_idx + 1:looper_idx])
     maneuver_chunks = split_by_anchors(maneuvers_blob, MANEUVER_NAMES, require_colon=True)
-    maneuver_entities = [build_entity(n, "manobras_combate", "maneuver", "Manobra", [t])
-                         for n, t in maneuver_chunks]
+    maneuver_entities = [build_maneuver_entity(n, t) for n, t in maneuver_chunks]
 
     # ---- WEAPONS (itens) ----
     # From after Looper epigraph until the Nietzche/Abismo epigraph

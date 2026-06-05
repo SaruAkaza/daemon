@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T10:51:29",
+  "generatedAt": "2026-06-05T10:53:55",
   "source": "anjos-angelicos-sicarios",
   "sourceFile": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "sourcePath": "Livros\\word\\Anjos - A Cidade de Prata - Angélicos Sicários.docx",
@@ -528,84 +528,203 @@
       "title": "Desarmar com Asa",
       "area": "manobras_combate",
       "kind": "maneuver",
-      "sectionId": "manobra",
+      "sectionId": "descricao",
       "sectionTitle": "Manobra",
       "paragraphs": [
-        "Desarmar com Asa (25): O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair."
+        "O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "25"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair."
+          ]
+        }
+      ]
     },
     {
       "id": "ataque-rolante",
       "title": "Ataque Rolante",
       "area": "manobras_combate",
       "kind": "maneuver",
-      "sectionId": "manobra",
+      "sectionId": "descricao",
       "sectionTitle": "Manobra",
       "paragraphs": [
-        "Ataque Rolante (40): O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente."
+        "O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "40"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O Anjo surpreende seu oponente, atacando com um rolamento em direção a seu inimigo, contrariando o que muitos esperam, que estes utilizem o alto. Com uma cambalhota rápida, o Anjo avança em direção ao oponente, realizando um teste de AGI, sendo bem-sucedido, ele poderá desferir um golpe sem direito a defesa, abaixo da linha da cintura do oponente."
+          ]
+        }
+      ]
     },
     {
       "id": "finta",
       "title": "Finta",
       "area": "manobras_combate",
       "kind": "maneuver",
-      "sectionId": "manobra",
+      "sectionId": "descricao",
       "sectionTitle": "Manobra",
       "paragraphs": [
-        "Finta (20): O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa."
+        "O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "20"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O Anjo move-se como se fosse realmente realizar um ataque contra seu inimigo, fazendo-o testar sua PER, em caso de falha, o Anjo poderá realizar um ataque contra seu oponente sem direito a defesa."
+          ]
+        }
+      ]
     },
     {
       "id": "mata-dragao",
       "title": "Mata-Dragão",
       "area": "manobras_combate",
       "kind": "maneuver",
-      "sectionId": "manobra",
+      "sectionId": "descricao",
       "sectionTitle": "Manobra",
       "paragraphs": [
-        "Mata-Dragão (60): Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%."
+        "Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "60"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Utilizando para atingir criaturas muito maiores em combate. O personagem utilizando esta manobra automaticamente será acertado, realizando um teste de AGI para que, no momento em que seu inimigo gigantesco tente abocanhá-lo ou esmaga-lo, ele se encolherá, em posição fetal, posicionando sua arma, para que o ataque de seu adversário desça sobre ela. O personagem realiza um teste de FR e se for bem-sucedido causa dano crítico e recebe um bônus de +20%."
+          ]
+        }
+      ]
     },
     {
       "id": "coracao-de-fafnir",
       "title": "Coração de Fafnir",
       "area": "manobras_combate",
       "kind": "maneuver",
-      "sectionId": "manobra",
+      "sectionId": "descricao",
       "sectionTitle": "Manobra",
       "paragraphs": [
-        "Coração de Fafnir (30): Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%."
+        "Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "30"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Com esta manobra, o personagem localiza com um único teste, um ponto fraco em uma criatura de grande porte, provavelmente onde seu coração estaria, fazendo com que todos os seus ataques contra a criatura, sejam acrescidos de um bônus de +40%."
+          ]
+        }
+      ]
     },
     {
       "id": "calcanhar-da-fera",
       "title": "Calcanhar da Fera",
       "area": "manobras_combate",
       "kind": "maneuver",
-      "sectionId": "manobra",
+      "sectionId": "descricao",
       "sectionTitle": "Manobra",
       "paragraphs": [
-        "Calcanhar da Fera (30): O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
+        "O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "30"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O Anjo ataca um membro que deseja enfraquecer, tentando rasgar os músculos da vítima. Um teste bem-sucedido causa dano e diminui em -1 tanto FR quanto DEX de seu alvo. O redutor desta manobra é cumulativo, e caso atinja nível -3, o membro estará inutilizado."
+          ]
+        }
+      ]
     },
     {
       "id": "asas-cortantes",
       "title": "Asas Cortantes",
       "area": "manobras_combate",
       "kind": "maneuver",
-      "sectionId": "manobra",
+      "sectionId": "descricao",
       "sectionTitle": "Manobra",
       "paragraphs": [
-        "Asas Cortantes (30): As pontas das asas de um sicário, são armas de corte, devido a seu treinamento. Um Sicário recebe um bônus de +3 de dano em todos os ataques realizados com suas asas."
+        "As pontas das asas de um sicário, são armas de corte, devido a seu treinamento. Um Sicário recebe um bônus de +3 de dano em todos os ataques realizados com suas asas."
       ],
-      "sections": []
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "30"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "As pontas das asas de um sicário, são armas de corte, devido a seu treinamento. Um Sicário recebe um bônus de +3 de dano em todos os ataques realizados com suas asas."
+          ]
+        }
+      ]
     },
     {
       "id": "yaldabaoth",
