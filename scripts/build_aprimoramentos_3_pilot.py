@@ -64,10 +64,14 @@ TEXT_FIXES = {
     "2 Mana à menos": "2 Mana a menos",
     "deferentes": "diferentes",
     "11 ponto: 300": "5 pontos: 300",
+    "11 ponto: 30 a 40 soldados": "5 pontos: 30 a 40 soldados",
+    "11 ponto: renda de até US$ 32.000 mensais": "5 pontos: renda de até US$ 32.000 mensais",
+    "custo de 11 ponto (3+1,5 arredondado para cima)": "custo de 5 pontos (3+1,5 arredondado para cima)",
     "12 pontos: 350": "6 pontos: 350",
     "612 pontos": "62 pontos",
     "312 pontos": "36 pontos",
     "COM ou AGI": "CON ou AGI",
+    "1ponto": "1 ponto",
 }
 
 TITLE_MARKERS = [
@@ -171,8 +175,10 @@ def should_join(previous: str, current: str) -> bool:
         return True
     if current.startswith("-") and re.match(r"^-\d+%", current):
         return True
+    if current in {"PM.", "PMs.", "Pontos de Magia."} and not previous.endswith((".", "!", "?", ":", ";", '"')):
+        return True
     last_word = previous.split()[-1].lower().strip(".,;:!?")
-    if last_word in {"de", "do", "da", "dos", "das", "em", "por", "com", "para", "que", "o", "no", "na", "e"}:
+    if last_word in {"de", "do", "da", "dos", "das", "em", "por", "com", "para", "que", "o", "os", "as", "um", "uma", "no", "na", "e", "seu", "sua", "seus", "suas", "este", "esta", "esse", "essa"}:
         return True
     if current[:1].islower() and not previous.endswith((".", "!", "?", ":", ";", '"')):
         return True
@@ -212,14 +218,16 @@ def cost_label(text: str) -> str:
     match = COST_RE.match(text)
     if not match:
         return text
-    value = int(match.group(1))
+    raw_value = match.group(1)
+    value = int(raw_value)
+    sign = "+" if raw_value.startswith("+") else ""
     unit = "Ponto" if abs(value) == 1 else "Pontos"
     lower = text.lower()
     if "para cada sentido" in lower:
-        return f"{value} {unit} para cada sentido"
+        return f"{sign}{value} {unit} para cada sentido"
     if re.match(r"^[+-]?\d+\s+pontos?\s+cada\b", text, flags=re.IGNORECASE):
-        return f"{value} {unit} cada"
-    return f"{value} {unit}"
+        return f"{sign}{value} {unit} cada"
+    return f"{sign}{value} {unit}"
 
 
 def format_cost_segment(text: str) -> str:
@@ -439,6 +447,15 @@ def parse_content(paragraphs: list[str]) -> tuple[list[dict], list[dict]]:
 
         next_text = content[index + 1] if index + 1 < len(content) else ""
         next_next = content[index + 2] if index + 2 < len(content) else ""
+        if (
+            current_title
+            and strip_accents(current_title) == "MESTRE EM CAMINHO"
+            and strip_accents(text) == "FOCO EM CAMINHO"
+            and is_cost(next_text)
+        ):
+            current_parts.append(text)
+            index += 1
+            continue
         if is_heading(text) and (is_cost(next_text) or is_cost(next_next) or not current_title):
             if normalized in CATEGORY_HEADINGS:
                 index += 1

@@ -1,16 +1,16 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T04:17:31",
+  "generatedAt": "2026-06-05T09:53:20",
   "source": "anjos-angelicos-sicarios",
   "sourceFile": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "sourcePath": "Livros\\word\\Anjos - A Cidade de Prata - Angélicos Sicários.docx",
   "title": "Anjos - A Cidade de Prata - Angélicos Sicários",
-  "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos e espiões da Cidade de Prata. Contém história completa da Ordem, habilidades (poderes), técnicas de combate, equipamentos especiais e informações sobre prisões secretas.",
+  "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos e espiões da Cidade de Prata. Contém história completa da Ordem, habilidades (poderes), aprimoramentos de combate, equipamentos especiais e informações sobre prisões secretas.",
   "areas": [
     "cenarios_lore",
     "poderes",
-    "regras_base",
+    "aprimoramentos",
     "itens_equipamentos"
   ],
   "groups": [
@@ -303,16 +303,16 @@
       ]
     },
     {
-      "id": "tecnicas-de-combate",
-      "title": "Técnicas de Combate",
-      "kind": "rule",
-      "area": "regras_base",
-      "sectionTitle": "Manobras",
+      "id": "manobras-de-combate",
+      "title": "Manobras de Combate",
+      "kind": "enhancement",
+      "area": "aprimoramentos",
+      "sectionTitle": "Técnicas",
       "sections": [
         {
-          "id": "manobras-de-combate",
-          "title": "Manobras de Combate",
-          "area": "regras_base",
+          "id": "tecnicas-de-combate",
+          "title": "Técnicas de Combate",
+          "area": "aprimoramentos",
           "paragraphs": [
             "“As lutas duram o tempo que for necessário” - 8ª Regra do Clube da Luta",
             "Desarmar com Asa (25): O Anjo é capaz de realizar uma manobra com sua asa, tentar retirar das mãos de um inimigo sua arma. O Anjo realiza um teste de DEX, e causa dano a arma do oponente, caso o dano ultrapasse 4 pontos de dano, o inimigo deixa sua arma cair.",
@@ -360,7 +360,7 @@
   "areaCounts": {
     "cenarios_lore": 9,
     "poderes": 1,
-    "regras_base": 1,
+    "aprimoramentos": 1,
     "itens_equipamentos": 1
   }
 }

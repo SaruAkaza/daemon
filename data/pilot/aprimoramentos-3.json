@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T04:16:29",
+  "generatedAt": "2026-06-05T04:20:04",
   "source": "aprimoramentos-3",
   "sourceFile": "Aprimoramentos_3_OCR_alta_qualidade.docx",
   "sourcePath": "Livros\\word\\Aprimoramentos_3_OCR_alta_qualidade.docx",
@@ -1636,8 +1636,7 @@
       "paragraphs": [
         "1 Ponto: um animal relativamente simples e comum para um mago (gato, sapo, coruja, cobra, cachorro etc).",
         "2 Pontos: um animal mais exótico ou maior (lobo, bode, pássaros raros, trobos etc).",
-        "Seu",
-        "Personagem possui um Familiar.",
+        "Seu Personagem possui um Familiar.",
         "Familiares são animais que acompanham o Personagem, mas que possuem poderes e qualidades superiores as dos animais comuns."
       ],
       "sections": [
@@ -1655,8 +1654,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Seu",
-            "Personagem possui um Familiar.",
+            "Seu Personagem possui um Familiar.",
             "Familiares são animais que acompanham o Personagem, mas que possuem poderes e qualidades superiores as dos animais comuns."
           ]
         }
@@ -1672,8 +1670,7 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "-2 Pontos",
-        "o ferro frio se opõe às coisas mágicas; seu",
-        "Personagem é altamente vulnerável ao toque do ferro frio - uma espécie de \"alergia mágica\". Basta um toque para que uma vermelhidão intensa apareça em sua pele.",
+        "o ferro frio se opõe às coisas mágicas; seu Personagem é altamente vulnerável ao toque do ferro frio - uma espécie de \"alergia mágica\". Basta um toque para que uma vermelhidão intensa apareça em sua pele.",
         "Exposição prolongada causa bolhas muito dolorosas. Desnecessário dizer que usar armas ou armaduras metálicas é um problema sério."
       ],
       "sections": [
@@ -1690,8 +1687,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o ferro frio se opõe às coisas mágicas; seu",
-            "Personagem é altamente vulnerável ao toque do ferro frio - uma espécie de \"alergia mágica\". Basta um toque para que uma vermelhidão intensa apareça em sua pele.",
+            "o ferro frio se opõe às coisas mágicas; seu Personagem é altamente vulnerável ao toque do ferro frio - uma espécie de \"alergia mágica\". Basta um toque para que uma vermelhidão intensa apareça em sua pele.",
             "Exposição prolongada causa bolhas muito dolorosas. Desnecessário dizer que usar armas ou armaduras metálicas é um problema sério."
           ]
         }
@@ -1784,41 +1780,6 @@
       ]
     },
     {
-      "id": "foco-em-caminho",
-      "title": "Foco em Caminho",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "polarity": "positivo",
-      "sectionId": "aprimoramento",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "1 Ponto",
-        "A sua especialidade e compreensão de um dos Caminhos da Magia tornou-se formidável. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +3.",
-        "Este bônus SUBSTITUI o bônus de Especialista em Caminho.",
-        "Este caminho escolhido, obrigatoriamente, tem de ser seu Caminho Principal. O custo da magia, em pontos de magia, não se altera."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "1 Ponto"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "A sua especialidade e compreensão de um dos Caminhos da Magia tornou-se formidável. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +3.",
-            "Este bônus SUBSTITUI o bônus de Especialista em Caminho.",
-            "Este caminho escolhido, obrigatoriamente, tem de ser seu Caminho Principal. O custo da magia, em pontos de magia, não se altera."
-          ]
-        }
-      ]
-    },
-    {
       "id": "forcas-militares",
       "title": "Forças Militares",
       "area": "aprimoramentos",
@@ -1831,7 +1792,7 @@
         "2 Pontos: 4 a 5 soldados.",
         "3 Pontos: 8 a 10 soldados.",
         "4 Pontos: 15 a 20 soldados.",
-        "11 Pontos: 30 a 40 soldados.",
+        "5 Pontos: 30 a 40 soldados.",
         "O personagem tem acesso a um pequeno grupo de soldados, uma tropa de elite, guardacostas pessoais, falange de anjos, horda de demônios, grupo de einherjars, matilha de lobisomens ou mercenários contratados, podendo utilizar seus serviços em horas de emergência. Lembrando que esses soldados não precisam ser exatamente ligados ao exército de um país e ele só pode possuir seres sobrenaturais se ele for um deles ou se o cenário permitir. Esse Aprimoramento é mais fraco que Contatos e Aliados - ou seja, se o Personagem escolher 2 soldados com Forças Militares 1, cada um deles será mais fraco que se eu comprar um Contatos e Aliados 1 (soldado)."
       ],
       "sections": [
@@ -1844,7 +1805,7 @@
             "2 Pontos: 4 a 5 soldados.",
             "3 Pontos: 8 a 10 soldados.",
             "4 Pontos: 15 a 20 soldados.",
-            "11 Pontos: 30 a 40 soldados."
+            "5 Pontos: 30 a 40 soldados."
           ]
         },
         {
@@ -1970,8 +1931,7 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "3 Pontos",
-        "como o próprio nome indica, o Personagem foi designado como guardião de um item de grande valor. Às vezes, este",
-        "Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre escolher qual artefato seu Personagem possui e as razões dele estar com esse Personagem.",
+        "como o próprio nome indica, o Personagem foi designado como guardião de um item de grande valor. Às vezes, este Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre escolher qual artefato seu Personagem possui e as razões dele estar com esse Personagem.",
         "ESTE APRIMORAMENTO NÃO DEVE SER",
         "USADO LEVIANAMENTE."
       ],
@@ -1989,8 +1949,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "como o próprio nome indica, o Personagem foi designado como guardião de um item de grande valor. Às vezes, este",
-            "Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre escolher qual artefato seu Personagem possui e as razões dele estar com esse Personagem.",
+            "como o próprio nome indica, o Personagem foi designado como guardião de um item de grande valor. Às vezes, este Aprimoramento pode ser menos vantajoso e mais daninho: objetos poderosos atraem a atenção de seres poderosos. Cabe ao Mestre escolher qual artefato seu Personagem possui e as razões dele estar com esse Personagem.",
             "ESTE APRIMORAMENTO NÃO DEVE SER",
             "USADO LEVIANAMENTE."
           ]
@@ -2274,7 +2233,7 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "1 Ponto",
-        "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
+        "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1 ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
       ],
       "sections": [
         {
@@ -2290,7 +2249,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
+            "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1 ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
           ]
         }
       ]
@@ -2306,9 +2265,8 @@
       "paragraphs": [
         "2 Pontos",
         "A Magia tem efeito máximo (dano máximo, cura máxima).",
-        "Os",
-        "Testes de Resistência não são afetados. Uma Magia Maximizada exige 2 pontos de Focus a mais para ser lançada e tem custo aumentado em 50% arredondado para cima.",
-        "Por exemplo, uma Bola de Fogo Maximizada com Focus 3 causará 18 pontos de dano (o máximo de 3d6) mas exigirá Focus 5 e terá custo de 11 ponto (3+1,5 arredondado para cima)."
+        "Os Testes de Resistência não são afetados. Uma Magia Maximizada exige 2 pontos de Focus a mais para ser lançada e tem custo aumentado em 50% arredondado para cima.",
+        "Por exemplo, uma Bola de Fogo Maximizada com Focus 3 causará 18 pontos de dano (o máximo de 3d6) mas exigirá Focus 5 e terá custo de 5 pontos (3+1,5 arredondado para cima)."
       ],
       "sections": [
         {
@@ -2325,9 +2283,8 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "A Magia tem efeito máximo (dano máximo, cura máxima).",
-            "Os",
-            "Testes de Resistência não são afetados. Uma Magia Maximizada exige 2 pontos de Focus a mais para ser lançada e tem custo aumentado em 50% arredondado para cima.",
-            "Por exemplo, uma Bola de Fogo Maximizada com Focus 3 causará 18 pontos de dano (o máximo de 3d6) mas exigirá Focus 5 e terá custo de 11 ponto (3+1,5 arredondado para cima)."
+            "Os Testes de Resistência não são afetados. Uma Magia Maximizada exige 2 pontos de Focus a mais para ser lançada e tem custo aumentado em 50% arredondado para cima.",
+            "Por exemplo, uma Bola de Fogo Maximizada com Focus 3 causará 18 pontos de dano (o máximo de 3d6) mas exigirá Focus 5 e terá custo de 5 pontos (3+1,5 arredondado para cima)."
           ]
         }
       ]
@@ -2373,8 +2330,7 @@
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
         "1 Ponto",
-        "A Magia pode ser conjurada em silêncio absoluto, mesmo quando o conjurador estiver mudo. O custo da Magia aumenta em 1",
-        "PM."
+        "A Magia pode ser conjurada em silêncio absoluto, mesmo quando o conjurador estiver mudo. O custo da Magia aumenta em 1 PM."
       ],
       "sections": [
         {
@@ -2390,8 +2346,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "A Magia pode ser conjurada em silêncio absoluto, mesmo quando o conjurador estiver mudo. O custo da Magia aumenta em 1",
-            "PM."
+            "A Magia pode ser conjurada em silêncio absoluto, mesmo quando o conjurador estiver mudo. O custo da Magia aumenta em 1 PM."
           ]
         }
       ]
@@ -2558,6 +2513,45 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "o pior mentiroso, dizem, é aquele que acredita na própria mentira. O Personagem é um deles. O Personagem mente por prazer e compulsão. Acredita no que diz, e pensa estar enganando a todos o tempo todo. Não consegue dizer meia dúzia de frases sem introduzir nelas uma mentira descarada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mestre-em-caminho",
+      "title": "Mestre em Caminho",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "polarity": "positivo",
+      "sectionId": "aprimoramento",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "1 Ponto",
+        "O personagem deve possuir o Aprimoramento",
+        "Foco em Caminho",
+        "A sua especialidade e compreensão de um dos Caminhos da Magia tornou-se formidável. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +3.",
+        "Este bônus SUBSTITUI o bônus de Especialista em Caminho.",
+        "Este caminho escolhido, obrigatoriamente, tem de ser seu Caminho Principal. O custo da magia, em pontos de magia, não se altera."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem deve possuir o Aprimoramento",
+            "Foco em Caminho",
+            "A sua especialidade e compreensão de um dos Caminhos da Magia tornou-se formidável. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +3.",
+            "Este bônus SUBSTITUI o bônus de Especialista em Caminho.",
+            "Este caminho escolhido, obrigatoriamente, tem de ser seu Caminho Principal. O custo da magia, em pontos de magia, não se altera."
           ]
         }
       ]
@@ -2835,7 +2829,7 @@
       "paragraphs": [
         "1 Ponto: O Mago pode adquirir a perícia Rituais e Teoria da Magia.",
         "2 Pontos: O Mago pode adquirir uma Perícia Mágica.",
-        "1 Ponto: O Mago pode adquirir uma Perícia Mágica extra."
+        "+1 Ponto: O Mago pode adquirir uma Perícia Mágica extra."
       ],
       "sections": [
         {
@@ -2845,7 +2839,7 @@
           "paragraphs": [
             "1 Ponto: O Mago pode adquirir a perícia Rituais e Teoria da Magia.",
             "2 Pontos: O Mago pode adquirir uma Perícia Mágica.",
-            "1 Ponto: O Mago pode adquirir uma Perícia Mágica extra."
+            "+1 Ponto: O Mago pode adquirir uma Perícia Mágica extra."
           ]
         },
         {
@@ -3062,7 +3056,7 @@
         "2 Pontos: renda de até US$ 4.000 mensais.",
         "3 Pontos: renda de até US$ 8.000 mensais.",
         "4 Pontos: renda de até US$ 16.000 mensais.",
-        "11 Pontos: renda de até US$ 32.000 mensais.",
+        "5 Pontos: renda de até US$ 32.000 mensais.",
         "É quanto de dinheiro, jóias e posses seu Personagem conseguiu reunir ao longo de seus anos de vida. Inclui propriedades e outras fontes de renda que levam tempo até serem convertidas em dinheiro. Os valores a seguir são fornecidos em U$. O Personagem possui inicialmente ao todo cerca de 50 vezes o valor de sua renda, que também deve ser usado pra comprar uma residência (se tiver) ou pagar a hipoteca e o veículo (se tiver) ou seu parcelamento.",
         "Caso o Narrador não queira lidar com valores para Recursos de um Personagem, ele pode apenas fazer um teste de [(INT+CAR/2)x4+(Nível de Recursos x10)]%.",
         "Dependendo do item comprado, o Narrador pode tornar o teste Fácil, Médio ou Difícil, bem como impor penalidades, como a seguir: -10% se for um item incomum ou ilegal, -20% se for muito raro, tecnologia militar ou muito ilegal, - 30% se for único ou conferir poderosas vantagens que aumente o poder ou habilidade do Personagem. Os objetos descritos no decorrer deste livro não conterão preços, cabendo ao Narrador estipulá-los caso utilize a regra normal ou estipulá-los com bom senso se o teste de compra deve ser Fácil, Médio ou Difícil. Caso o Jogador tenha uma Falha Crítica nesse teste, o Personagem perderá 1 ponto de Recursos e Dinheiro permanentemente (talvez tenha gastado toda sua conta bancária na compra, suas contas do mês não poderiam arcar com aquela compra, precisou pedir empréstimos bancários com juros altíssimos, etc.)."
@@ -3077,7 +3071,7 @@
             "2 Pontos: renda de até US$ 4.000 mensais.",
             "3 Pontos: renda de até US$ 8.000 mensais.",
             "4 Pontos: renda de até US$ 16.000 mensais.",
-            "11 Pontos: renda de até US$ 32.000 mensais."
+            "5 Pontos: renda de até US$ 32.000 mensais."
           ]
         },
         {

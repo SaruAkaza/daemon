@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Final categorized build for Anjos - Angélicos Sicários
-Groups content by topic: lore, powers, equipment, combat rules
+Groups content by topic: lore, powers, equipment, aprimoramentos
 """
 
 from pathlib import Path
@@ -64,12 +64,12 @@ def build_pilot() -> dict:
                 "Poderes dos Sicários": (152, 166),
             }
         },
-        "regras_base": {
-            "label": "Técnicas de Combate",
-            "kind": "rule",
-            "area": "regras_base",
+        "aprimoramentos": {
+            "label": "Manobras de Combate",
+            "kind": "enhancement",
+            "area": "aprimoramentos",
             "subsections": {
-                "Manobras de Combate": (177, 182),
+                "Técnicas de Combate": (177, 182),
             }
         },
         "itens_equipamentos": {
@@ -119,7 +119,7 @@ def build_pilot() -> dict:
         "sourceFile": SOURCE_PATH.name,
         "sourcePath": str(SOURCE_PATH.relative_to(ROOT)),
         "title": TITLE,
-        "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos e espiões da Cidade de Prata. Contém história completa da Ordem, habilidades (poderes), técnicas de combate, equipamentos especiais e informações sobre prisões secretas.",
+        "summary": "Suplemento de lore sobre os Angélicos Sicários: assassinos divinos e espiões da Cidade de Prata. Contém história completa da Ordem, habilidades (poderes), aprimoramentos de combate, equipamentos especiais e informações sobre prisões secretas.",
         "areas": list(area_counts.keys()),
         "groups": groups,
         "sections": [],
