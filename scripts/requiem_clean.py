@@ -69,6 +69,66 @@ LIGATURES = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl",
              "ﬃ": "ffi", "ﬄ": "ffl", "ﬅ": "ft", "ﬆ": "st"}
 
 
+# ---------------------------------------------------------------------------
+# OCR character/word repair (added for "Guia de Itens Mágicos", heavy OCR).
+# Additive and OPT-IN: fix_ocr() is NOT called by normalize(), so the Anjos
+# pipeline output is byte-for-byte unchanged. The Itens Mágicos build calls
+# fix_ocr() explicitly before normalize(). Safe/idempotent on clean text.
+# ---------------------------------------------------------------------------
+
+# Multi-variant 'ç' artefacts, longest first so 'c:;:' wins over 'c;'.
+_CEDILLA_RE = [
+    (re.compile(r"c:;:"), "ç"),
+    (re.compile(r"<;"), "ç"),
+    (re.compile(r"c;"), "ç"),
+]
+
+# Whole-word OCR fixes (case-sensitive where it matters). Applied on word
+# boundaries so we never touch substrings of legitimate words.
+_OCR_WORDS = {
+    "urn": "um", "Urn": "Um",
+    "dane": "dano", "s6": "só",
+    "fonna": "forma", "fonnas": "formas",
+    "Annadura": "Armadura", "annadura": "armadura",
+    "nan": "não", "enta": "então",  # 'enta~' -> after ~ stripping below
+}
+_OCR_WORD_RE = re.compile(
+    r"\b(" + "|".join(sorted(map(re.escape, _OCR_WORDS), key=len, reverse=True)) + r")\b"
+)
+
+# '1' misread as 'l'/'I' in dice tokens: ld6/Id6 -> 1d6, ld100/Id100 -> 1d100.
+_DICE_L_RE = re.compile(r"\b[lI]d(\d)")
+
+# Digit '0' standing in for the article 'o'/'O': only when isolated as a whole
+# token (surrounded by whitespace / sentence start), never adjacent to digits,
+# so numeric ranges in tables (e.g. '01-55', '7-0') are preserved.
+_ZERO_ART_RE = re.compile(r"(^|(?<=\s))0(?=\s)")
+
+
+def fix_ocr(text: str) -> str:
+    """Repair recurrent OCR artefacts seen in the Itens Mágicos scan.
+
+    Conservative by design: every rule is anchored (word boundary, isolated
+    token, or specific bigram) to avoid corrupting valid text or numeric tables.
+    Safe to run on already-clean text (idempotent / no-op).
+    """
+    # 'enta~' -> 'então' (handle the tilde form before generic ~ stripping).
+    text = re.sub(r"\benta~", "então", text)
+    # ç variants
+    for rx, rep in _CEDILLA_RE:
+        text = rx.sub(rep, text)
+    # leftover stray '~' that survived (kerning noise) -> drop
+    text = text.replace("~", "")
+    # dice 'l' -> '1'
+    text = _DICE_L_RE.sub(r"1d\1", text)
+    # isolated '0' article -> 'o' (preserve capitalisation at sentence start
+    # is ambiguous from OCR; lower 'o' is the overwhelmingly common case)
+    text = _ZERO_ART_RE.sub("o", text)
+    # whole-word fixes
+    text = _OCR_WORD_RE.sub(lambda m: _OCR_WORDS[m.group(1)], text)
+    return text
+
+
 _SPACED_RE = re.compile(r"(?:(?<![A-Za-zÀ-ÿ])[A-Za-zÀ-ÿ] ){3,}[A-Za-zÀ-ÿ](?![A-Za-zÀ-ÿ])")
 
 

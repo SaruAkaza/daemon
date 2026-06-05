@@ -30,8 +30,21 @@
 3. **Categorias:** **lista única alfabética** — uma categoria "Itens Mágicos", todos os
    itens em ordem alfabética (como o sumário).
 
+## Fronteira mapeada (2026-06-05) — via `scripts/analyze_itens_magicos.py`
+- Paginação OCR "Página N" é monotônica 1..288 (sem reinício) → âncora confiável.
+- pg 1–4: capa/créditos/introdução. pg 5–10: **Sumário** (~49% linhas-número).
+  pg 11–12: "Adaptando" + tabelas comparativas. pg 13–17: regras (Magia/Testes/Conversão).
+- **Corpo dos itens: pg 18 (A: "Abóbora em Carruagem") até pg 271 (Z: "Zarabatana Tellers").**
+- pg 272+: "Tabelas de Sorteio" (apêndice). pg 280: índice final. pg 283–287: propaganda+OGL.
+- **Fronteira A–H / H–Z:** itens H terminam em **pg 146** (Hóstia dos Cruzados);
+  **pg 147** começa o I (Incenso de Captura de Espíritos, título quebrado em 2 linhas).
+- **VOLUME 1 (entrega 1) = páginas 18–146** (A–H). Volume 2 = pg 147–271 (I–Z).
+- Títulos de item frequentemente quebrados em 2 linhas (ex.: "Incenso de Captura"/"de
+  Espíritos") — reconstruir. Muitos itens têm subtítulos internos (Personalidade, Os
+  Espíritos, Capacidade) que NÃO são itens.
+
 ## Plano de execução
-1. [ ] Delimitar no corpo onde termina o Vol 1 (A–H) e começa o Vol 2.
+1. [x] Delimitar no corpo onde termina o Vol 1 (A–H) e começa o Vol 2. → pg 18–146.
 2. [ ] Estender `requiem_clean.py` (aditivo) com os padrões de OCR acima — avisar no handoff.
 3. [ ] Limpar TODO o texto do Vol 1 antes de categorizar.
 4. [ ] Parsear itens: nome + descrição + tabela 1d100 estruturada.
