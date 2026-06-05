@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T13:09:30",
+  "generatedAt": "2026-06-05T13:18:53",
   "source": "anjos-cacadores-alados",
   "sourceFile": "Anjos cacadores-alados.docx",
   "sourcePath": "Livros\\word\\Anjos cacadores-alados.docx",
@@ -2470,46 +2470,48 @@
           ]
         }
       ]
-    },
+    }
+  ],
+  "characters": [
     {
       "id": "goghiel",
-      "title": "GOGHIEL",
-      "area": "criaturas_npcs",
-      "kind": "character",
-      "sectionId": "ficha",
-      "sectionTitle": "Ficha",
-      "paragraphs": [
-        "O Príncipe Elim Anjo Elim de 7.000 anos Escala Épica 2",
-        "Criar 4, Controlar 4, Entender 4, Fogo 6, Luz",
-        "6, Trevas 5, Humanos 4.",
-        "-Sempre ataca primeiro em um combate com acerto automático.",
-        "-Não gasta turno para sacar sua arma.",
-        "-Iniciativa é 1d10+63.",
-        "-Não sente dor.",
-        "-Não sente medo, natural ou sobrenatural.",
-        "-Não pode ter sua mente lida por nenhum meio mágico ou sobrenatural.",
-        "-Pode diminuir o Focus de um mago em 4d6 pontos por 1d6 rodadas.",
-        "-Possui 5D de resistência à qualquer magia e 12D de resistência à magias do caminho Spiritum.",
-        "-Pode voar com asas à 1200km/h (as asas “somem” de suas costas à vontade).",
-        "-Possui uma aura de poder que causa 4d10 de dano para quem tocá-lo (pode diminuir a aura à vontade).",
-        "-Pode emitir rajadas de energia de 3d8 de dano à vontade.",
-        "-Possui os aprimoramentos Local Sagrado 10 e Identidade Secreta 17, tendo então 10 locais de controle pessoais e 17 identidades alternativas falsas.",
-        "Considerado o primeiro Elim, Goghiel é na verdade um Apócrifo tão antigo quanto os populares Miguel, Gabriel, Metatron e outros. Suas tendências bélicas o levaram a se assumir como um Elim, e inclusive a ser considerado como Príncipe dos Elim – tal histórico lhe rendeu como epítetos “Primeiro Elim” e também “Príncipe Conquistador”.",
-        "Com o fim da Primeira Rebelião (evento que o tornou lendário na Cidade de Prata",
-        "após suas épicas batalhas e vitórias incontestáveis), Goghiel passou a caçar rebentos das falanges do Portador da Luz, até que um dia ele desceu ao Fosso de Leviathan e lá entrou em contato com o edhênico, evento que o fez repensar seus atos como Apócrifo de Demiurge e sua função verdadeira na ordem dos planos.",
-        "Nos séculos seguintes, Goghiel assumiu existências ilusórias para manipular eventos que trariam o Armageddon a todos os planos da Orbe. Entre suas ações estão a invasão ao Poço do Conhecimento (na Biblioteca dos Conhecimentos Akashicos), a aniquilação do Anjo do Silêncio Vahuuxiah (fato que lhe deu a liderança secreta da Ordem da Era de Aquário – um grupo muito restrito de Anjos que supostamente agem para preparar a Cidade de Prata e os fieis a Demiurge para os eventos apocalípticos) e os planos de invocação das Tzitzimime astecas, de várias Múmias poderosas e dos DemôniosNazistas do Reich.",
-        "Mesmo com sua grandiosa fama construída na Primeira Rebelião, Goghiel também é lembrado como um dos principais instrutores dos Chalkydri, os exóticos Anjos-Grifo que atualmente estão sediados e atuando com fervor no plano árcade de Languedoc. Diversos poderes ligados à fúria e a características animais foram aprimoradas por Goghiel, que é também tido como “padrinho” de todos os Elim com características de tigre.",
-        "Entre as histórias de grandes batalhas que são contadas aos Captares, Elim e Ophanim em treinamento, está a épica batalha de Goghiel contra Cernunnos, o deuscornudo dos celtas. Durante as campanhas de extermínio da Cidade de Prata contra as divindades pagãs espalhadas pela Europa junto aos povos bárbaros, Goghiel invadiu e enfrentou Cernunnos, combatendo dezenas de",
-        "milhares de animaisconstrutos que Cernunnos invocava ininterruptamente contra o Príncipe Conquistador. Com grandes habilidades, Goghiel destruiu cada construto e ainda lutou fisicamente contra a divindade celta, numa batalha que durou dias. Uma trégua foi instaurada após negociações entre Dagda e Miguel, mas esta rixa nunca foi totalmente resolvida entre os dois seres milenares.",
-        "Sua fama ainda se estende com sua ingressão disfarçada aos Campos de Caça da tenebrita Zarcattis, ato que lhe permitiu compreender os sistemas de caça e recompensa da tenebrita, o modus operandi dos Anjos Caídos e Anjos Metropolitanos que lá ingressavam, além de ter detectado (mas sem dados mais consolidados) os planos de Zarcattis quanto à criação da praga mágica da Zarcantropia.",
-        "Após tantas aventuras e histórias épicas famosas, Goghiel finalmente enfrentou e quase destruiu a existência de Miguel, quando o próprio Leviathan manifestou uma pequena parcela de sua essência para obliterar o Primeiro Elim definitivamente. Os Elim sentiram o choque desta perda e viram-se sob constantes olhares suspeitos do Conselho de Júpiter quanto às suas ações impulsivas e bélicas."
+      "name": "GOGHIEL",
+      "type": "character_npc",
+      "role": "O Príncipe Elim Anjo Elim de 7.000 anos Escala Épica 2",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 1.0,
+          "reason": "Ficha de NPC com atributos Daemon"
+        }
       ],
+      "statBlock": {
+        "attributes": {
+          "CON": 40,
+          "FR": 46,
+          "DEX": 60,
+          "AGI": 60,
+          "INT": 30,
+          "WILL": 44,
+          "PER": 50,
+          "CAR": 32
+        },
+        "vitals": {
+          "PV": "95+596",
+          "IP": "33",
+          "Ataques": "14"
+        },
+        "attributesText": "CON 40 FR 46 DEX 60 AGI 60 INT 30 WILL 44 PER 50 CAR 32",
+        "skills": "Garras 100/0 1d6+19\nEspada 150/120 1d10+2d6+25 Esquiva 100/0\nPrincipais Perícias: Briga 90/90, Esquiva 100%, Paradísia 90%, Spiritum 80%, Cárcere\ndas Feras 40%, Terra 100%, ArkaNun 80%,\nInfernun 70%, Tenebras 50%, Abismo 20%,\nOculto 100%, Rituais , Estratégia 110%,\nTática 110%, Liderança 125%, Intimidação\n85%, Empatia 75%, Naphttuliym 100%. Manobras de Combate: Evasão Angelical 40%, Ataques Aéreos 25%, Ataque com Asa 25%, Carga em Vôo 40%, Defesa com Asa 100%, Empurrão de Vento 25%, Flutuação 30%, Fortalecer a Asa 70%, Furar o Vento 25%, Levantar Poeira 15%, Skyflip 55%, Refém 40%, Lutar com Duas Armas 50%. Principais Poderes: Aumento de Atributos (Força 5, Destreza 10, Agilidade 10, Constituição 7, Força de Vontade 8, Carisma 4, Percepção 10), Asas Astrais 5, Avidan (\nBrandir a Espada, Marcar o Assassino, Passagem sem Rastros, Lâmina Ensangüentada, Ataque Súbito, Isca, Ataque Circular), Benção (Cura de Doenças Naturais, Abençoar, Água Benta, Cura de Venenos, Afastar Espíritos, Abençoar Armas, Rejuvenescimento, Beleza), Captare (Marca, Detectar Marcas, Sentir Característica, Rastreio, Objetos, Rastreio de Marcas, Baisea, Disfarce Sobrenatural, Apagar Características, Detecção de Teleporte, Enxergar, Rastrear Marcas Desconhecidas, Duplicar Marcas, Rastreio Avançado, A Marca de Iscariotis, Cheiro de Medo, Automarcação, Caçada, Anular Marca de Iscariotis), Combate (Imunidade à Dor, Aumento de Dano, Imunidade ao Medo, Esconjuro do Mal, Medo), Comunhão 3, Defesas 25, Defesas Especiais (Imunidade à Doenças, Alimentos, Imunidade à Venenos, Proteção vs. Mal, proteção vs. Bem, Campos Magnéticos, Oxigênio, Imunidade contra Armas Não-Mágicas, Imunidade à Dominação, Imunidade contra Armas Mágicas, Imunidade Astral, Invulnerabilidade à Poderes Árcades, Invulnerabilidade à Poderes Demoníacos), Disfarces (Máscara, Camaleão, Doppelganger), Energização (Força, Destreza, Constituição, Agilidade, Força de Vontade, Índice de Proteção, Fé,\nEnergia Mística, Vida), Glifo (Marca Angelical, Proteção contra Mortais, Proteção contra Espíritos, Proteção contra Psiônicos, Proteção contra Fadas, Proteção contra Demônios, Proteção contra Grandes Demônios), Neyzach (Despertar Instinto, Desejo de Vitória, Instinto Animal, Distúrbio da Razão, Fúria Divina, Pensamentos Instintivos, Vitória Furiosa, Conquistador Divino), Regeneração 11, Simulacro 4, Telecinésia 15, Templia (Carga, Ataque Cordenado, Espalhar Sangue, Ataque Brutal), Kalkydra (Olhos de Grifo, Garras do Grifo). Goghiel ainda possui diversos Poderes Únicos.",
+        "special": []
+      },
       "sections": [
         {
-          "id": "pericias-e-combate",
-          "title": "Perícias e Combate",
+          "id": "ficha",
+          "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "O Príncipe Elim Anjo Elim de 7.000 anos Escala Épica 2",
             "CON 40 FR 46 DEX 60 AGI 60 INT 30 WILL 44",
             "CAR 32 PER 50",
             "Garras 100/0 1d6+19",
@@ -2524,19 +2526,6 @@
             "Brandir a Espada, Marcar o Assassino, Passagem sem Rastros, Lâmina Ensangüentada, Ataque Súbito, Isca, Ataque Circular), Benção (Cura de Doenças Naturais, Abençoar, Água Benta, Cura de Venenos, Afastar Espíritos, Abençoar Armas, Rejuvenescimento, Beleza), Captare (Marca, Detectar Marcas, Sentir Característica, Rastreio, Objetos, Rastreio de Marcas, Baisea, Disfarce Sobrenatural, Apagar Características, Detecção de Teleporte, Enxergar, Rastrear Marcas Desconhecidas, Duplicar Marcas, Rastreio Avançado, A Marca de Iscariotis, Cheiro de Medo, Automarcação, Caçada, Anular Marca de Iscariotis), Combate (Imunidade à Dor, Aumento de Dano, Imunidade ao Medo, Esconjuro do Mal, Medo), Comunhão 3, Defesas 25, Defesas Especiais (Imunidade à Doenças, Alimentos, Imunidade à Venenos, Proteção vs. Mal, proteção vs. Bem, Campos Magnéticos, Oxigênio, Imunidade contra Armas Não-Mágicas, Imunidade à Dominação, Imunidade contra Armas Mágicas, Imunidade Astral, Invulnerabilidade à Poderes Árcades, Invulnerabilidade à Poderes Demoníacos), Disfarces (Máscara, Camaleão, Doppelganger), Energização (Força, Destreza, Constituição, Agilidade, Força de Vontade, Índice de Proteção, Fé,",
             "Energia Mística, Vida), Glifo (Marca Angelical, Proteção contra Mortais, Proteção contra Espíritos, Proteção contra Psiônicos, Proteção contra Fadas, Proteção contra Demônios, Proteção contra Grandes Demônios), Neyzach (Despertar Instinto, Desejo de Vitória, Instinto Animal, Distúrbio da Razão, Fúria Divina, Pensamentos Instintivos, Vitória Furiosa, Conquistador Divino), Regeneração 11, Simulacro 4, Telecinésia 15, Templia (Carga, Ataque Cordenado, Espalhar Sangue, Ataque Brutal), Kalkydra (Olhos de Grifo, Garras do Grifo). Goghiel ainda possui diversos Poderes Únicos.",
             "Poderes Sephiróticos: Paradísia (Submeter, Força dos Planos Superiores, Vontade, Submissão Múltipla, Poder Concentrado, Energia Elevada, Revitalização), Caos (Controle Fraco da Probabilidade, Movimento Livre, Um Pouco de Sorte, Energizar Arma, Desestabilizar Energia, Epifania), Arcádia (Dedução, Perceber a Fé, Estabilizar Energia, Convergência de Pensamentos, Dar Forma), Abjuração (Ilusão Estática, Obscurecimento, Interferir em Magia, Esquecimento, Segredo, Fechar Portais, Presença Arcana, Véu do Ocultamento, Grande Véu do Ocultamento, Aura Inexistente, Face de Sombras). Aprimoramentos: Afinidade com Fadas 5, Influência (Burocracia e Política; Cidade de Prata) 4, Fama (Cidade de Prata) 4, Ambidestria 2, Armas de Fogo 9, Recursos e Dinheiro 8, Contatos e Aliados 10, Poderes Mágicos 17, Afinidade Tecnológica 2, Item Mágico (cimitarra djinn +8) 8, Item Mágico (cinturão mágico, lhe confere o poder Ataques Extras 10, permitindo 6 ataques extras por rodada) 9, Memória 4, Pontos de Fé 6, Pontos Heróicos 8, Dívida de Gratidão 2, Forças Militares 300 (2.400 Captare Poderosos), Identidade Secreta 17, Resistência à Magia 5, Sábio (Rastreio) 1, Reputação 3, Sociedade Secreta (Ordem da Era de Aquário) 10, Fúria -2. Magia: 32 Pontos de Magia",
-            "-IP 43 contra poderes demoníacos.",
-            "-Todo inimigo à menos de 5m sofre -10% em ataques, defesas e qualquer teste de atributos.",
-            "-Possui uma aura de medo (WILL vs. WILL) contra criaturas malignas.",
-            "-Regenera 2PV/rodada.",
-            "-Regenera 1 Ponto de Vida, 1 Ponto de Magia e/ou 1 Ponto de Fé por rodada durante uma missa, podendo acumular até 10 PVs, 5PMs e/ou 5PFs."
-          ]
-        },
-        {
-          "id": "historia",
-          "title": "História",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "O Príncipe Elim Anjo Elim de 7.000 anos Escala Épica 2",
             "Criar 4, Controlar 4, Entender 4, Fogo 6, Luz",
             "6, Trevas 5, Humanos 4.",
             "-Sempre ataca primeiro em um combate com acerto automático.",
@@ -2544,13 +2533,61 @@
             "-Iniciativa é 1d10+63.",
             "-Não sente dor.",
             "-Não sente medo, natural ou sobrenatural.",
+            "-IP 43 contra poderes demoníacos.",
             "-Não pode ter sua mente lida por nenhum meio mágico ou sobrenatural.",
             "-Pode diminuir o Focus de um mago em 4d6 pontos por 1d6 rodadas.",
             "-Possui 5D de resistência à qualquer magia e 12D de resistência à magias do caminho Spiritum.",
+            "-Todo inimigo à menos de 5m sofre -10% em ataques, defesas e qualquer teste de atributos.",
+            "-Possui uma aura de medo (WILL vs. WILL) contra criaturas malignas.",
             "-Pode voar com asas à 1200km/h (as asas “somem” de suas costas à vontade).",
+            "-Regenera 2PV/rodada.",
+            "-Regenera 1 Ponto de Vida, 1 Ponto de Magia e/ou 1 Ponto de Fé por rodada durante uma missa, podendo acumular até 10 PVs, 5PMs e/ou 5PFs.",
             "-Possui uma aura de poder que causa 4d10 de dano para quem tocá-lo (pode diminuir a aura à vontade).",
             "-Pode emitir rajadas de energia de 3d8 de dano à vontade.",
             "-Possui os aprimoramentos Local Sagrado 10 e Identidade Secreta 17, tendo então 10 locais de controle pessoais e 17 identidades alternativas falsas.",
+            "Considerado o primeiro Elim, Goghiel é na verdade um Apócrifo tão antigo quanto os populares Miguel, Gabriel, Metatron e outros. Suas tendências bélicas o levaram a se assumir como um Elim, e inclusive a ser considerado como Príncipe dos Elim – tal histórico lhe rendeu como epítetos “Primeiro Elim” e também “Príncipe Conquistador”.",
+            "Com o fim da Primeira Rebelião (evento que o tornou lendário na Cidade de Prata",
+            "após suas épicas batalhas e vitórias incontestáveis), Goghiel passou a caçar rebentos das falanges do Portador da Luz, até que um dia ele desceu ao Fosso de Leviathan e lá entrou em contato com o edhênico, evento que o fez repensar seus atos como Apócrifo de Demiurge e sua função verdadeira na ordem dos planos.",
+            "Nos séculos seguintes, Goghiel assumiu existências ilusórias para manipular eventos que trariam o Armageddon a todos os planos da Orbe. Entre suas ações estão a invasão ao Poço do Conhecimento (na Biblioteca dos Conhecimentos Akashicos), a aniquilação do Anjo do Silêncio Vahuuxiah (fato que lhe deu a liderança secreta da Ordem da Era de Aquário – um grupo muito restrito de Anjos que supostamente agem para preparar a Cidade de Prata e os fieis a Demiurge para os eventos apocalípticos) e os planos de invocação das Tzitzimime astecas, de várias Múmias poderosas e dos DemôniosNazistas do Reich.",
+            "Mesmo com sua grandiosa fama construída na Primeira Rebelião, Goghiel também é lembrado como um dos principais instrutores dos Chalkydri, os exóticos Anjos-Grifo que atualmente estão sediados e atuando com fervor no plano árcade de Languedoc. Diversos poderes ligados à fúria e a características animais foram aprimoradas por Goghiel, que é também tido como “padrinho” de todos os Elim com características de tigre.",
+            "Entre as histórias de grandes batalhas que são contadas aos Captares, Elim e Ophanim em treinamento, está a épica batalha de Goghiel contra Cernunnos, o deuscornudo dos celtas. Durante as campanhas de extermínio da Cidade de Prata contra as divindades pagãs espalhadas pela Europa junto aos povos bárbaros, Goghiel invadiu e enfrentou Cernunnos, combatendo dezenas de",
+            "milhares de animaisconstrutos que Cernunnos invocava ininterruptamente contra o Príncipe Conquistador. Com grandes habilidades, Goghiel destruiu cada construto e ainda lutou fisicamente contra a divindade celta, numa batalha que durou dias. Uma trégua foi instaurada após negociações entre Dagda e Miguel, mas esta rixa nunca foi totalmente resolvida entre os dois seres milenares.",
+            "Sua fama ainda se estende com sua ingressão disfarçada aos Campos de Caça da tenebrita Zarcattis, ato que lhe permitiu compreender os sistemas de caça e recompensa da tenebrita, o modus operandi dos Anjos Caídos e Anjos Metropolitanos que lá ingressavam, além de ter detectado (mas sem dados mais consolidados) os planos de Zarcattis quanto à criação da praga mágica da Zarcantropia.",
+            "Após tantas aventuras e histórias épicas famosas, Goghiel finalmente enfrentou e quase destruiu a existência de Miguel, quando o próprio Leviathan manifestou uma pequena parcela de sua essência para obliterar o Primeiro Elim definitivamente. Os Elim sentiram o choque desta perda e viram-se sob constantes olhares suspeitos do Conselho de Júpiter quanto às suas ações impulsivas e bélicas."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Poderes Sephiróticos: Paradísia (Submeter, Força dos Planos Superiores, Vontade, Submissão Múltipla, Poder Concentrado, Energia Elevada, Revitalização), Caos (Controle Fraco da Probabilidade, Movimento Livre, Um Pouco de Sorte, Energizar Arma, Desestabilizar Energia, Epifania), Arcádia (Dedução, Perceber a Fé, Estabilizar Energia, Convergência de Pensamentos, Dar Forma), Abjuração (Ilusão Estática, Obscurecimento, Interferir em Magia, Esquecimento, Segredo, Fechar Portais, Presença Arcana, Véu do Ocultamento, Grande Véu do Ocultamento, Aura Inexistente, Face de Sombras). Aprimoramentos: Afinidade com Fadas 5, Influência (Burocracia e Política; Cidade de Prata) 4, Fama (Cidade de Prata) 4, Ambidestria 2, Armas de Fogo 9, Recursos e Dinheiro 8, Contatos e Aliados 10, Poderes Mágicos 17, Afinidade Tecnológica 2, Item Mágico (cimitarra djinn +8) 8, Item Mágico (cinturão mágico, lhe confere o poder Ataques Extras 10, permitindo 6 ataques extras por rodada) 9, Memória 4, Pontos de Fé 6, Pontos Heróicos 8, Dívida de Gratidão 2, Forças Militares 300 (2.400 Captare Poderosos), Identidade Secreta 17, Resistência à Magia 5, Sábio (Rastreio) 1, Reputação 3, Sociedade Secreta (Ordem da Era de Aquário) 10, Fúria -2. Magia: 32 Pontos de Magia",
+            "Criar 4, Controlar 4, Entender 4, Fogo 6, Luz",
+            "6, Trevas 5, Humanos 4.",
+            "-Sempre ataca primeiro em um combate com acerto automático.",
+            "-Não gasta turno para sacar sua arma.",
+            "-Iniciativa é 1d10+63.",
+            "-Não sente dor.",
+            "-Não sente medo, natural ou sobrenatural.",
+            "-IP 43 contra poderes demoníacos.",
+            "-Não pode ter sua mente lida por nenhum meio mágico ou sobrenatural.",
+            "-Pode diminuir o Focus de um mago em 4d6 pontos por 1d6 rodadas.",
+            "-Possui 5D de resistência à qualquer magia e 12D de resistência à magias do caminho Spiritum.",
+            "-Todo inimigo à menos de 5m sofre -10% em ataques, defesas e qualquer teste de atributos.",
+            "-Possui uma aura de medo (WILL vs. WILL) contra criaturas malignas.",
+            "-Pode voar com asas à 1200km/h (as asas “somem” de suas costas à vontade).",
+            "-Regenera 2PV/rodada.",
+            "-Regenera 1 Ponto de Vida, 1 Ponto de Magia e/ou 1 Ponto de Fé por rodada durante uma missa, podendo acumular até 10 PVs, 5PMs e/ou 5PFs.",
+            "-Possui uma aura de poder que causa 4d10 de dano para quem tocá-lo (pode diminuir a aura à vontade).",
+            "-Pode emitir rajadas de energia de 3d8 de dano à vontade.",
+            "-Possui os aprimoramentos Local Sagrado 10 e Identidade Secreta 17, tendo então 10 locais de controle pessoais e 17 identidades alternativas falsas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "criaturas_npcs",
+          "paragraphs": [
             "Considerado o primeiro Elim, Goghiel é na verdade um Apócrifo tão antigo quanto os populares Miguel, Gabriel, Metatron e outros. Suas tendências bélicas o levaram a se assumir como um Elim, e inclusive a ser considerado como Príncipe dos Elim – tal histórico lhe rendeu como epítetos “Primeiro Elim” e também “Príncipe Conquistador”.",
             "Com o fim da Primeira Rebelião (evento que o tornou lendário na Cidade de Prata",
             "após suas épicas batalhas e vitórias incontestáveis), Goghiel passou a caçar rebentos das falanges do Portador da Luz, até que um dia ele desceu ao Fosso de Leviathan e lá entrou em contato com o edhênico, evento que o fez repensar seus atos como Apócrifo de Demiurge e sua função verdadeira na ordem dos planos.",
@@ -2566,23 +2603,43 @@
     },
     {
       "id": "astrid",
-      "title": "Astrid",
-      "area": "criaturas_npcs",
-      "kind": "character",
-      "sectionId": "ficha",
-      "sectionTitle": "Ficha",
-      "paragraphs": [
-        "Caçadora de Estrelas",
-        "Oostegorita Escala Épica 2",
-        "A oostegorita Astrid foi uma poderosa aliada de Lúcifer na catequização de Oostegor e a construção de seu castelo no plano. Durante a colossal batalha de Demiurge no Abismo,",
-        "Aparentemente, os céus dos Campos de Marte, na Cidade de Prata, vêm observando a movimentação do asteroide Astrid, o que preocupa os generais Captares e principalmente o Conselho dos Nimbus. Os grandes governantes e conhecedores de Oostegor vêm se preparando caso o exército de Estrelas de Fé decidam entrar nos Campos de Marte."
+      "name": "Astrid",
+      "type": "character_npc",
+      "role": "Caçadora de Estrelas Oostegorita Escala Épica 2",
+      "classifications": [
+        {
+          "area": "criaturas_npcs",
+          "confidence": 1.0,
+          "reason": "Ficha de NPC com atributos Daemon"
+        }
       ],
+      "statBlock": {
+        "attributes": {
+          "CON": 36,
+          "FR": 35,
+          "DEX": 23,
+          "AGI": 25,
+          "INT": 20,
+          "WILL": 21,
+          "PER": 23,
+          "CAR": 17
+        },
+        "vitals": {
+          "PV": "75+120",
+          "IP": "13",
+          "Ataques": "4"
+        },
+        "attributesText": "CON 36 FR 35 DEX 23 AGI 25 INT 20 WILL 21 PER 23 CAR 17",
+        "skills": "Briga 150/150 3d6+11 Lança 90/90 1d6+13 Espada 100/100 1d10+11\nPrincipais Perícias: Estratégia 90%, Tática 110%, Interrogatório 80%, Intimidação 100%,\nLiderança 90%, Rastreio 120%,\nAtuação 69%, Disfarce 69%, Oculto 80%, Paradísia 70%, Conhecimento (Cidade de Prata) 30%, Conhecimento (Oostegor), Teologia 63%.",
+        "special": []
+      },
       "sections": [
         {
-          "id": "pericias-e-combate",
-          "title": "Perícias e Combate",
+          "id": "ficha",
+          "title": "Ficha",
           "area": "criaturas_npcs",
           "paragraphs": [
+            "Caçadora de Estrelas Oostegorita Escala Épica 2",
             "CON 36 FR 35 DEX 23 AGI 25 INT 20 WILL 21",
             "CAR 17 PER 23",
             "Briga 150/150 3d6+11 Lança 90/90 1d6+13 Espada 100/100 1d10+11",
@@ -2593,17 +2650,28 @@
             "Principais Poderes: Asas Astrais 5, Captare (Marca, Detectar Marcas, Sentir Característica, Rastreio, Objetos, Rastreio de Marcas, Baisea, Apagar Característica, Detecção de Teleporte, Enxergar, Marca de Iscariotis), Combate (Imunidade à Dor, Aumento de Dano, Imunidade ao Medo, Esconjuro do Mal, Medo), Defesas 30, Defesas Especiais (Proteção vs. Mal, Fogo 10, Imunidade a Doenças, Alimentos, Imunidade a Ácidos, Imunidade a Venenos, Proteção vs. Bem, Oxigênio, Campos Magnéticos, Aura de Medo, Imunidade contra Armas Não-Mágicas, Imune à Dominação, Imunidade contra Ataques Mágicos), Regeneração 16, Ataques Extras 6, Controle Mental (Hipnosis, Blenden, Leitura de Auras, Previsão, Mentira, Aversão, Vanish, Localização, LockVogel, Gross LockVogel), Garras 3.",
             "Magia: 15 Pontos de Magia. Criar 2, Controlar 3, Entender 2, Luz 5, Fogo 5.",
             "-Regenera 5PVs/rodada.",
-            "Astrid foi a responsável pela aniquilação dos monstros corrompidos que jorravam de cada gota de sangue do poderoso lorde tenebrita que enfrentou o criador da Cidade de Prata. De uma fé inabalável a Demiurge e lealdade incontestável a Lúcifer, Astrid defendeu até o fim os limites do Castelo Oostegor, até o momento em que Christos utilizou sua Espada de Mil Sóis para devastar todo o plano, quase exterminando a oostegorita, conhecida entre os seus como \"a Caçadora de Estrelas\", pois ela capturava espíritos de luz (Aether Spirits) para torná-los escravos a serviço da fé monoteísta do criador da cidade multiorbital, chamados Estrelas de Fé. Das ruínas do castelo, Astrid se retirou para um bolsão planar que ela própria criou sobre um asteroide do plano físico marciano, um asteroide que recebeu o nome terreno de Astrid, mesmo que astrônomos terrestres não distinguissem a verdade: o nome da oostegorita já ressoava na Arcádia, e esta ressonância é que influenciou o batismo do nome do asteróide."
+            "A oostegorita Astrid foi uma poderosa aliada de Lúcifer na catequização de Oostegor e a construção de seu castelo no plano. Durante a colossal batalha de Demiurge no Abismo,",
+            "Astrid foi a responsável pela aniquilação dos monstros corrompidos que jorravam de cada gota de sangue do poderoso lorde tenebrita que enfrentou o criador da Cidade de Prata. De uma fé inabalável a Demiurge e lealdade incontestável a Lúcifer, Astrid defendeu até o fim os limites do Castelo Oostegor, até o momento em que Christos utilizou sua Espada de Mil Sóis para devastar todo o plano, quase exterminando a oostegorita, conhecida entre os seus como \"a Caçadora de Estrelas\", pois ela capturava espíritos de luz (Aether Spirits) para torná-los escravos a serviço da fé monoteísta do criador da cidade multiorbital, chamados Estrelas de Fé. Das ruínas do castelo, Astrid se retirou para um bolsão planar que ela própria criou sobre um asteroide do plano físico marciano, um asteroide que recebeu o nome terreno de Astrid, mesmo que astrônomos terrestres não distinguissem a verdade: o nome da oostegorita já ressoava na Arcádia, e esta ressonância é que influenciou o batismo do nome do asteróide.",
+            "Aparentemente, os céus dos Campos de Marte, na Cidade de Prata, vêm observando a movimentação do asteroide Astrid, o que preocupa os generais Captares e principalmente o Conselho dos Nimbus. Os grandes governantes e conhecedores de Oostegor vêm se preparando caso o exército de Estrelas de Fé decidam entrar nos Campos de Marte."
           ]
         },
         {
-          "id": "historia",
-          "title": "História",
+          "id": "habilidades",
+          "title": "Habilidades",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Caçadora de Estrelas",
-            "Oostegorita Escala Épica 2",
+            "Principais Poderes: Asas Astrais 5, Captare (Marca, Detectar Marcas, Sentir Característica, Rastreio, Objetos, Rastreio de Marcas, Baisea, Apagar Característica, Detecção de Teleporte, Enxergar, Marca de Iscariotis), Combate (Imunidade à Dor, Aumento de Dano, Imunidade ao Medo, Esconjuro do Mal, Medo), Defesas 30, Defesas Especiais (Proteção vs. Mal, Fogo 10, Imunidade a Doenças, Alimentos, Imunidade a Ácidos, Imunidade a Venenos, Proteção vs. Bem, Oxigênio, Campos Magnéticos, Aura de Medo, Imunidade contra Armas Não-Mágicas, Imune à Dominação, Imunidade contra Ataques Mágicos), Regeneração 16, Ataques Extras 6, Controle Mental (Hipnosis, Blenden, Leitura de Auras, Previsão, Mentira, Aversão, Vanish, Localização, LockVogel, Gross LockVogel), Garras 3.",
+            "Magia: 15 Pontos de Magia. Criar 2, Controlar 3, Entender 2, Luz 5, Fogo 5.",
+            "-Regenera 5PVs/rodada."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "criaturas_npcs",
+          "paragraphs": [
             "A oostegorita Astrid foi uma poderosa aliada de Lúcifer na catequização de Oostegor e a construção de seu castelo no plano. Durante a colossal batalha de Demiurge no Abismo,",
+            "Astrid foi a responsável pela aniquilação dos monstros corrompidos que jorravam de cada gota de sangue do poderoso lorde tenebrita que enfrentou o criador da Cidade de Prata. De uma fé inabalável a Demiurge e lealdade incontestável a Lúcifer, Astrid defendeu até o fim os limites do Castelo Oostegor, até o momento em que Christos utilizou sua Espada de Mil Sóis para devastar todo o plano, quase exterminando a oostegorita, conhecida entre os seus como \"a Caçadora de Estrelas\", pois ela capturava espíritos de luz (Aether Spirits) para torná-los escravos a serviço da fé monoteísta do criador da cidade multiorbital, chamados Estrelas de Fé. Das ruínas do castelo, Astrid se retirou para um bolsão planar que ela própria criou sobre um asteroide do plano físico marciano, um asteroide que recebeu o nome terreno de Astrid, mesmo que astrônomos terrestres não distinguissem a verdade: o nome da oostegorita já ressoava na Arcádia, e esta ressonância é que influenciou o batismo do nome do asteróide.",
             "Aparentemente, os céus dos Campos de Marte, na Cidade de Prata, vêm observando a movimentação do asteroide Astrid, o que preocupa os generais Captares e principalmente o Conselho dos Nimbus. Os grandes governantes e conhecedores de Oostegor vêm se preparando caso o exército de Estrelas de Fé decidam entrar nos Campos de Marte."
           ]
         }

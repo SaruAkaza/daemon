@@ -202,24 +202,96 @@ def build_poder(title, body):
     return ent
 
 
-STAT_HINT = re.compile(r"\b(CON|FR|DEX|AGI|INT|WILL|CAR|PER|IP|PVs|#Ataques|Perícias|Poderes|Magia|Regenera|Esquiva|Garras|Espada|Lança|Briga)\b|\d+/\d+|\d+%")
+ATTR_KEYS = ["CON", "FR", "DEX", "AGI", "INT", "WILL", "PER", "CAR"]
+ATTR_LINE = re.compile(r"\bCON\b\s+\d+")
+HAB_PREFIX = ("Principais Poderes", "Poderes:", "Magia:", "Manobras de Combate",
+              "-Regenera", "Regenera", "Magia ")
 
 
-def build_npc(title, body):
-    ficha, historia = [], []
-    for p in body:
-        if STAT_HINT.search(p):
-            ficha.append(p)
-        else:
-            historia.append(p)
-    subs = []
-    if ficha:
-        subs.append(sec("pericias-e-combate", "Perícias e Combate", "criaturas_npcs", ficha))
-    if historia:
-        subs.append(sec("historia", "História", "criaturas_npcs", historia))
-    # kind 'character' (not 'npc') so the app renders our subsections via
-    # renderGroupedDetail instead of the statBlock-only renderNpcDetail.
-    return entity(title, "criaturas_npcs", "character", "Ficha", historia or ficha, subs=subs)
+def build_character(title, raw):
+    """Parse a stat block into the standard NPC character object.
+
+    renderNpcDetail shows: Atributos (statBlock.attributes+vitals),
+    Perícias e Combate (skills+special) and the non-'ficha' sections
+    (Habilidades, Descrição)."""
+    attr_idx = next((i for i, l in enumerate(raw) if ATTR_LINE.search(l)), None)
+    role = " ".join(raw[:attr_idx]).strip() if attr_idx is not None else ""
+    body = raw[attr_idx:] if attr_idx is not None else raw
+    text = " ".join(body)
+
+    attributes = {}
+    for k in ATTR_KEYS:
+        m = re.search(rf"\b{k}\b\s+(\d+)", text)
+        if m:
+            attributes[k] = int(m.group(1))
+    vitals = {}
+    m = re.search(r"PVs?\s*([\d+]+)", text)
+    if m:
+        vitals["PV"] = m.group(1)
+    m = re.search(r"\bIP\s*:?\s*([\d/]+)", text)
+    if m:
+        vitals["IP"] = m.group(1)
+    m = re.search(r"#?\s*Ataques\s*\[?(\d+)\]?", text)
+    if m:
+        vitals["Ataques"] = m.group(1)
+
+    attr_text = " ".join(f"{k} {v}" for k, v in attributes.items())
+
+    NARRATIVE = re.compile(
+        r"\b(foi|era|é|são|tem|possui|tinha|estava|nasceu|viveu|criou|lutou|"
+        r"aliada|aliado|responsável|começa|conhecido|conhecida|durante|após)\b")
+
+    def is_narrative(l):
+        return len(l) > 60 and bool(NARRATIVE.search(l))
+
+    HAB_TRIGGER = ("-", "Principais Poderes", "Poderes Sephiróticos", "Poderes:", "Magia")
+    skills, habilidades, descricao = [], [], []
+    phase = "skills"  # skills -> hab -> desc (NPC blocks come in this order)
+    for l in body:
+        if ATTR_LINE.search(l) or re.match(r"^\s*CAR\b", l) or re.match(r"^#?\s*Ataques", l):
+            continue  # folded into statBlock
+        if phase == "desc":
+            descricao.append(l)
+        elif phase == "skills":
+            if l.startswith(HAB_TRIGGER):
+                phase = "hab"
+                habilidades.append(l)
+            elif is_narrative(l) and "(" not in l and l.count(",") < 3:
+                # prose paragraph (not a parenthetical power/skill list)
+                phase = "desc"
+                descricao.append(l)
+            else:
+                skills.append(l)
+        else:  # hab
+            if l.startswith("-") or not is_narrative(l):
+                habilidades.append(l)
+            else:
+                phase = "desc"
+                descricao.append(l)
+
+    sections = [sec("ficha", "Ficha", "criaturas_npcs",
+                    [role] + body if role else body)]
+    if habilidades:
+        sections.append(sec("habilidades", "Habilidades", "criaturas_npcs", habilidades))
+    if descricao:
+        sections.append(sec("descricao", "Descrição", "criaturas_npcs", descricao))
+
+    return {
+        "id": slugify(title),
+        "name": title,
+        "type": "character_npc",
+        "role": role,
+        "classifications": [{"area": "criaturas_npcs", "confidence": 1.0,
+                             "reason": "Ficha de NPC com atributos Daemon"}],
+        "statBlock": {
+            "attributes": attributes,
+            "vitals": vitals,
+            "attributesText": attr_text,
+            "skills": "\n".join(skills),
+            "special": [],
+        },
+        "sections": sections,
+    }
 
 
 # ------------------------------------------------------------ assembly
@@ -285,14 +357,17 @@ def build():
         if p in bt:
             top.append(build_poder(p, bt[p]))
 
-    # NPCS (use raw lines so stat blocks aren't fragment-joined)
+    # NPCS -> characters[] with statBlock (standard NPC structure).
+    characters = []
     for n in NPCS:
         if n in braw:
-            top.append(build_npc(n, braw[n]))
+            characters.append(build_character(n, braw[n]))
 
     area_counts = {g["area"]: 1 for g in groups}
     for s in top:
         area_counts[s["area"]] = area_counts.get(s["area"], 0) + 1
+    if characters:
+        area_counts["criaturas_npcs"] = area_counts.get("criaturas_npcs", 0) + len(characters)
 
     return {
         "version": 1, "status": "pilot_review",
@@ -301,7 +376,8 @@ def build():
         "sourcePath": str(SOURCE_PATH.relative_to(ROOT)), "title": TITLE,
         "summary": "Caçadores Alados: a casta dos anjos caçadores. História, seitas (raças), estilos de combate, aprimoramentos, poderes e NPCs.",
         "areas": sorted(area_counts.keys()),
-        "groups": groups, "sections": top, "areaCounts": area_counts,
+        "groups": groups, "sections": top, "characters": characters,
+        "areaCounts": area_counts,
     }
 
 
