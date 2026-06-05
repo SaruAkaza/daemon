@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T11:42:13",
+  "generatedAt": "2026-06-05T11:58:19",
   "sources": [
     {
       "source": "4killers",
@@ -10,6 +10,19 @@
       "areas": [
         "criaturas_npcs",
         "cenarios_lore"
+      ]
+    },
+    {
+      "source": "abismo",
+      "title": "Abismo",
+      "file": "abismo.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
+        "regras_base"
       ]
     },
     {
@@ -23,19 +36,6 @@
         "classes",
         "front_matter",
         "itens_equipamentos",
-        "regras_base"
-      ]
-    },
-    {
-      "source": "abismo",
-      "title": "Abismo",
-      "file": "abismo.json",
-      "status": "pilot_review",
-      "areas": [
-        "aprimoramentos",
-        "cenarios_lore",
-        "classes",
-        "criaturas_npcs",
         "regras_base"
       ]
     },
@@ -128,6 +128,20 @@
       ]
     },
     {
+      "source": "anjos-cacadores-alados",
+      "title": "Anjos - Caçadores Alados",
+      "file": "anjos-cacadores-alados.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "criaturas_npcs",
+        "manobras_combate",
+        "poderes",
+        "racas"
+      ]
+    },
+    {
       "source": "anjos-requiem-de-fe",
       "title": "Anjos - Réquiem de Fé",
       "file": "anjos-requiem-de-fe.json",
@@ -190,6 +204,16 @@
       "file": "aprimoramentos-4.json",
       "status": "pilot_review",
       "areas": [
+        "aprimoramentos"
+      ]
+    },
+    {
+      "source": "aprimoramentos-tormenta",
+      "title": "Aprimoramentos Tormenta",
+      "file": "aprimoramentos-tormenta.json",
+      "status": "pilot_review",
+      "areas": [
+        "regras_base",
         "aprimoramentos"
       ]
     }

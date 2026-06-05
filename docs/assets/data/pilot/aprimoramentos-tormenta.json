@@ -1,0 +1,2109 @@
+{
+  "version": 1,
+  "source": "aprimoramentos-tormenta",
+  "title": "Aprimoramentos Tormenta",
+  "sourceFile": "Aprimoramentos_Tormenta_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Aprimoramentos regionais, gerais e metamágicos de Tormenta para Sistema Daemon.",
+  "areas": [
+    "regras_base",
+    "aprimoramentos"
+  ],
+  "groups": [
+    {
+      "id": "regra-base-aprimoramentos-tormenta",
+      "title": "Regra base - Aprimoramentos Tormenta",
+      "kind": "ruleset",
+      "area": "regras_base",
+      "sectionTitle": "Regra Base",
+      "sections": [
+        {
+          "id": "introducao",
+          "title": "Introdução",
+          "area": "regras_base",
+          "paragraphs": [
+            "Novos Aprimoramentos",
+            "Desenvolvimento: Maury \"Shi Dark\" Abreu - e-mail: maury.abreu@bol.com.br Shingo Felipe Watanabe - e-mail: mestre_felipe@hotmail.com",
+            "Conversão em pdf: Shingo Felipe Watanabe.",
+            "Baseado no material apresentado no livro O Reinado D20 e nas regras do Livro do Jogador D&D.",
+            "Todo material oficial no qual esse artigo foi baseado pertence aos autores de Tormenta.",
+            "Este é um artigo extra-oficial de distribuição gratuita, sua venda é PROIBIDA.",
+            "APRIMORAMENTOS REGIONAIS Os livros de O Reinado apresentam regras para personagens nativos de cada reino artoniano em 3D&T. Tormenta D20 faz o mesmo mas com regras para D&D; o suplemento O Reinado D20 aumenta ainda mais essa lista, com muitos novos Talentos Regionais. Embora as regras de 3D&T possam, em geral, ser aplicadas ao Sistema Daemon, elas não são claras.",
+            "Esse artigo extra-oficial apresenta os Aprimoramentos Regionais, o equivalente a Talentos Regionais do Tormenta D20 e O Reinado D20, mas voltado para Sistema Daemon. Esses Aprimoramentos não precisam ser comprados (quando houver uma exceção o custo irá ser citado), os Personagens recebeno gratuitamente bastando ser nativo de certo reino.",
+            "Em alguns casos os Personagens podem ter direito a mais de um Aprimoramento Regional.",
+            "Para ter direito a um Aprimoramento Regional o Personagem deve ter passado toda, ou a maior parte de sua infância no respectivo reino.",
+            "Esses Aprimoramentos jamais podem ser comprados por Personagens de outros reinos, a menos que o texto diga o contrário.",
+            "Aqui estão alguns novos Aprimoramentos que podem ser adotados por qualquer Personagem. O uso destes (incluindo as modificações nas regras de alguns já apresentados) não é obrigatório, fica à escolha do Mestre.",
+            "APRIMORAMENTOS METAMÁGICOS Eles tornam as Magias mais fortes, mas também exigem que seja conjurada como uma Magia superior."
+          ]
+        },
+        {
+          "id": "por-reino",
+          "title": "Aprimoramentos por Reino",
+          "area": "regras_base",
+          "paragraphs": [
+            "Aprimoramentos Regionais por Reino A seguir está a lista completa de Aprimoramentos Regionais que os Personagens de cada reino podem selecionar.",
+            "Ahlen: Bairrista, Impostor, Intolerância, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, florestas tropicais, montanhas ou pradarias), Trapaceiro Nato.",
+            "Bielefeld: Leal aos Cavaleiros, Patriota, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, florestas tropicais, montanhas, pradarias ou oceano).",
+            "Callistia: Amigo dos Rios, Paciente, Religioso, Talento Nativo (qualquer), Terreno Familiar (pradarias ou rios e lagos).",
+            "Collen: Todos os nativos de Collen tem o Aprimoramento Regional",
+            "Olhos Aguçados; os aventureiros podem escolher mais um entre os seguintes: Olhos Especiais, Paciente, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais ou florestas temperadas).",
+            "Deheon: Aventureiro Nato, Patriota, Prece para Valkaria, Prosperidade, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, montanhas, pradarias ou rios e lagos).",
+            "Doherimm: Todos os anões nativos de Doherimm recebem o Aprimoramento Regional Caminho para Doherimm. Os aventureiros podem escolher também um entre os seguintes: Amigo das Armas, Arma de Família, Bairrista, Espírito de Equipe, Intolerância, Patriota, Religioso, Talento Nativo (qualquer), Terreno Familiar (subterrâneos).",
+            "Fortuna: Conhecimento de Lendas, Pacifismo, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais, florestas temperadas, montanhas ou pradarias).",
+            "Hershey: Comerciante Nativo, Religioso, Pacifismo, Prosperidade, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, montanhas, pradarias ou oceanos).",
+            "Hongari: Paciente, Pacifismo, Prece para os Mortos, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais, pradarias, montanhas e oceanos).",
+            "Khubar: Amigo do Oceano, Barbarismo, Fúria Leal, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais, pradarias, montanhas ou oceanos).",
+            "Lomatubar: Religioso, Resistência à Doenças, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, montanhas ou oceanos).",
+            "Montanhas Uivantes: Arma Dupla, Barbarismo, Religioso, Resistência ao Frio, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, montanhas, pradarias, regiões geladas ou rios e lagos).",
+            "Namalkah: Amigo dos Cavalos, Barbarismo, Cavaleiro Nato, Fúria Leal, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais, montanhas ou pradarias).",
+            "Nova Ghondriann: Hospitalidade, Pacifismo, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas ou pradarias).",
+            "Petrynia: Aventureiro Nato, Comerciante Nato, Contador de Histórias, Impostor, Religioso, Talento Nativo (qualquer), Terreno",
+            "Familiar (florestas temperadas, montanhas ou pradarias).",
+            "Pondsmânia: Conhecimento de Magia, Furtividade das Fadas, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais ou rios e lagos).",
+            "Portsmounth: Bairrista, Faro para Magos, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, montanhas, oceanos ou pradarias).",
+            "Salistick: Ateu, Autoconfiança, Médico Nato, Pacifismo, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas ou pradarias).",
+            "Sambúrdia: Amigo das Árvores, Arma Dupla, Comerciante Nato, Prosperidade, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais, pradarias, rios e lagos ou oceanos).",
+            "Sckharshantallas: Bairrista, Inimigo de Dragões, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas tropicais, pradarias ou montanhas).",
+            "Tapista: Bairrista, Espírito de Equipe, Intolerância, Lógica Labiríntica, Patriota, Religioso, Talento Nativo (qualquer), Terreno Familiar (desertos, florestas tropicais, pradarias, montanhas, oceanos ou rios e lagos).",
+            "Trebuck: Religioso, Resistência à Tormenta, Talento Nativo (qualquer), Terreno Familiar (áreas de Tormenta, florestas tropicais, montanhas, pradarias ou rios e lagos).",
+            "Tyrondir: Inimigo de Goblinóides, Pacifismo, Prosperidade, Religioso, Talento Nativo (qualquer), Terreno",
+            "Familiar (florestas tropicais, florestas temperadas, montanhas, pradarias, oceanos ou rios e lagos).",
+            "União Púrpura: Amigo das Árvores, Arma Dupla, Barbarismo, Fúria Leal, Religioso, Talento Nativo (qualquer), Terreno Familiar (florestas temperadas, montanhas ou pradarias).",
+            "Wynlla: Conhecimento de Magia, Conhecimento de Itens Mágicos, Conquista da Magia, Mago Nato, Talento Nativo (qualquer), Terreno Familiar (montanhas ou pradarias).",
+            "Yuden: Amigo das Armas, Bairrista, Espírito de Equipe, Intolerância, Patriota, Talento",
+            "Nativo (qualquer), Terreno Familiar (florestas temperadas, montanhas ou pradarias).",
+            "Zakharov: Arma de Família, Pacifismo, Talento Nativo (qualquer), Terreno",
+            "Familiar (florestas temperadas, florestas tropicais, montanhas, pradarias ou rios e lagos).",
+            "Qualquer Personagem pode selecionar Talento Nativo como um Aprimoramento Regional. Funciona de forma semelhante como o Aprimoramento Talento (a dificuldade no Teste reduz em um nível - tarefas Normais são consideradas Fáceis, por exemplo); entretanto essa perícia não precisa ser obrigatoriamente do grupo Artes, são permitidas as seguintes perícias: Animais (qualquer um dos subgrupos), Armeiro, Artes (qualquer um dos subgrupos), Artesanato, Artífice, Avaliação de Objetos, Ciências (qualquer um dos subgrupos), Ciências Proibidas (qualquer um dos subgrupos), Etiqueta e Sobrevivências (no mesmo ambiente que seu reino nativo). Obrigatoriamente esse Talento Nativo deve ter alguma ligação com a cultura do reino nativo.",
+            "Qualquer Personagem pode selecionar Terreno Familiar como um Aprimoramento Regional. Nesse caso o terreno será o mesmo de seu reino de origem (o Jogador deve escolher somente um dos ambientes possíveis). Opcionalmente, o Personagem também pode ter sua cidade natal como Terreno Familiar, embora isso seja mais comum entre não-aventureiros.",
+            "Personagens nativos de regiões fora do Reinado podem ter como Aprimoramento Regional Terreno Familiar ou Talento, refletindo seu local nativo."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "amigo-das-armas",
+      "title": "Amigo das Armas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Doherimm, Zakharov"
+      },
+      "paragraphs": [
+        "Seu Personagem sabe como fabricar e cuidar de armas. Ele recebe +20% em todos os Testes da perícia Armeiro."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu Personagem sabe como fabricar e cuidar de armas. Ele recebe +20% em todos os Testes da perícia Armeiro."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amigo-das-arvores",
+      "title": "Amigo das Árvores",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Sambúrdia, Tollon, União Púrpura"
+      },
+      "paragraphs": [
+        "Por ter vivido a maior parte do tempo em reinos quase totalmente florestais, o Personagem sabe guiar-se entre as árvores. Assim, o Personagem recebe +5% na perícia Sobrevivência (florestas) e +20% em Rastrear quando esta entre as árvores."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Por ter vivido a maior parte do tempo em reinos quase totalmente florestais, o Personagem sabe guiar-se entre as árvores. Assim, o Personagem recebe +5% na perícia Sobrevivência (florestas) e +20% em Rastrear quando esta entre as árvores."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amigo-dos-cavalos",
+      "title": "Amigo dos Cavalos",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Namalkah"
+      },
+      "paragraphs": [
+        "Em Namalkah montaria e cavaleiro são como irmãos. Não raramente eles podem até mesmo comunicar-se. Personagens com esse Aprimoramento Regional são capazes de falar com cavalos livremente. A compreenção nem sempre é absoluta, pois a inteligência limitada do animal não permite uma comunicação clara. Em geral o Personagem apenas é capaz de ter sensações sobre aquilo que o cavalo sente ou imagina.",
+        "[Khubar (1 ponto)]: Os nativos de Khubar podem comprar esse Aprimoramento Regional ao custo de 1 ponto, mas voltado para o tumarkhân, o lagarto-elefante que existe na ilha. Não se trata de um Aprimoramento Regional, os nativos de Khubar devem pagar normalmente para poder usufruir dele."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Em Namalkah montaria e cavaleiro são como irmãos. Não raramente eles podem até mesmo comunicar-se. Personagens com esse Aprimoramento Regional são capazes de falar com cavalos livremente. A compreenção nem sempre é absoluta, pois a inteligência limitada do animal não permite uma comunicação clara. Em geral o Personagem apenas é capaz de ter sensações sobre aquilo que o cavalo sente ou imagina.",
+            "[Khubar (1 ponto)]: Os nativos de Khubar podem comprar esse Aprimoramento Regional ao custo de 1 ponto, mas voltado para o tumarkhân, o lagarto-elefante que existe na ilha. Não se trata de um Aprimoramento Regional, os nativos de Khubar devem pagar normalmente para poder usufruir dele."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amigo-do-oceano",
+      "title": "Amigo do Oceano",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Khubar"
+      },
+      "paragraphs": [
+        "Os nativos de Khubar passam a maior parte de suas vidas em ilhas e regiões litorâneas, e por isso aqueles que tem esse Aprimoramento Regional recebem +10% em todos os Testes das perícias Esportes (Natação e Pesca). Eles também recebem +10% em Testes da perícia Sobrevivência, mas apenas no que diz respeito ao mar."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos de Khubar passam a maior parte de suas vidas em ilhas e regiões litorâneas, e por isso aqueles que tem esse Aprimoramento Regional recebem +10% em todos os Testes das perícias Esportes (Natação e Pesca). Eles também recebem +10% em Testes da perícia Sobrevivência, mas apenas no que diz respeito ao mar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amigo-dos-rios",
+      "title": "Amigo dos Rios",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Callistia"
+      },
+      "paragraphs": [
+        "Os nativos de Callistia sobrevivem da pesca e da água doce. Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Esportes (Natação e Pesca) e tem também +10% em Testes da perícia Sobrevivência, mas apenas no que diz respeito a rios e lagos."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos de Callistia sobrevivem da pesca e da água doce. Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Esportes (Natação e Pesca) e tem também +10% em Testes da perícia Sobrevivência, mas apenas no que diz respeito a rios e lagos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arma-dupla",
+      "title": "Arma Dupla",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Montanhas Uivantes, União Púrpura, Sambúrdia"
+      },
+      "paragraphs": [
+        "Apenas Personagens que tenham também o Aprimoramento Ambidestria e a Manobra de Combate (perícia) Lutar com Duas Armas podem adotar esse Aprimoramento Regional.",
+        "O Personagem é capaz de utilizar uma arma dupla e com isso atacar duas vezes por rodada. Normalmente armas duplas são consideradas duas armas do mesmo tamanho, e por isso não podem ser usadas para atacar duas vezes na mesma rodada."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Apenas Personagens que tenham também o Aprimoramento Ambidestria e a Manobra de Combate (perícia) Lutar com Duas Armas podem adotar esse Aprimoramento Regional.",
+            "O Personagem é capaz de utilizar uma arma dupla e com isso atacar duas vezes por rodada. Normalmente armas duplas são consideradas duas armas do mesmo tamanho, e por isso não podem ser usadas para atacar duas vezes na mesma rodada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arma-de-familia",
+      "title": "Arma de Família",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Doherimm, Zakharov"
+      },
+      "paragraphs": [
+        "Em Zakharov as armas são parte da família. Personagens com esse Aprimoramento Regional terão uma arma de família de qualidade superior (tipo de arma à sua escolha). Uma arma de qualidade superior oferece sempre +5% em todos os Testes de Ataque OU de Defesa, e +1 no dano final, mas não são consideradas mágicas.",
+        "O Personagem jamais pode perder essa arma ou será como se tivesse perdido um ente querido."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Em Zakharov as armas são parte da família. Personagens com esse Aprimoramento Regional terão uma arma de família de qualidade superior (tipo de arma à sua escolha). Uma arma de qualidade superior oferece sempre +5% em todos os Testes de Ataque OU de Defesa, e +1 no dano final, mas não são consideradas mágicas.",
+            "O Personagem jamais pode perder essa arma ou será como se tivesse perdido um ente querido."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arma-de-madeira-tollon",
+      "title": "Arma de Madeira Tollon",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Tollon"
+      },
+      "paragraphs": [
+        "No reino de Tollon existe uma madeira mágica que oferece propriedades especiais às armas construídas com ela. Um Personagens com esse Aprimoramento Regional recebe gratuitamente uma arma feita com essa madeira (o tipo de arma fica à escolha do Jogador, mas ela deve ser totalmente feita de madeira, sem partes metálicas).",
+        "Uma arma feita com a madeira de Tollon não oferece nenhum bônus em combate, mas é considerada uma arma mágica +1. Assim, caso ela seja usada para atacar uma criatura que é imune apenas a armas mágicas +1 ou melhores, ela causa dano normal - mas não concede nenhum outro bônus.",
+        "Custo: Em Tollon uma arma feita de madeira mágica custa 10 vezes mais do que seu preço normal.",
+        "Em outros reinos o custo é de 20 vezes o custo normal da arma. Personagens com esse Aprimoramento Regional recebem uma arma gratuitamente."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "No reino de Tollon existe uma madeira mágica que oferece propriedades especiais às armas construídas com ela. Um Personagens com esse Aprimoramento Regional recebe gratuitamente uma arma feita com essa madeira (o tipo de arma fica à escolha do Jogador, mas ela deve ser totalmente feita de madeira, sem partes metálicas).",
+            "Uma arma feita com a madeira de Tollon não oferece nenhum bônus em combate, mas é considerada uma arma mágica +1. Assim, caso ela seja usada para atacar uma criatura que é imune apenas a armas mágicas +1 ou melhores, ela causa dano normal - mas não concede nenhum outro bônus.",
+            "Custo: Em Tollon uma arma feita de madeira mágica custa 10 vezes mais do que seu preço normal.",
+            "Em outros reinos o custo é de 20 vezes o custo normal da arma. Personagens com esse Aprimoramento Regional recebem uma arma gratuitamente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ateu",
+      "title": "Ateu",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Salistick"
+      },
+      "paragraphs": [
+        "Como os nativos de Salistick são totalmente descrentes da existência dos deuses, os clérigos e outros servos dos deuses tem mais dificuldades em afetá-los com suas Magias e poderes.",
+        "Personagens com esse Aprimoramento Regional recebem +2/+10% em todos os Testes de Resistência contra Magias ou Poderes de clérigos, druidas, xamãs e paladinos (em geral, todos os efeitos que consomem Pontos de Fé para serem utilizados)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Como os nativos de Salistick são totalmente descrentes da existência dos deuses, os clérigos e outros servos dos deuses tem mais dificuldades em afetá-los com suas Magias e poderes.",
+            "Personagens com esse Aprimoramento Regional recebem +2/+10% em todos os Testes de Resistência contra Magias ou Poderes de clérigos, druidas, xamãs e paladinos (em geral, todos os efeitos que consomem Pontos de Fé para serem utilizados)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "autoconfianca",
+      "title": "Autoconfiança",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Salistick"
+      },
+      "paragraphs": [
+        "A falta de fé divina do povo de Salistick faz com que sejam mais autoconfiantes.",
+        "Personagens com esse Aprimoramento Regional recebem +2/+10% em todos os Testes de Resistência de WILL, seja contra Magias, Poderes, habilidades psíquicas, poderes especiais, etc."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A falta de fé divina do povo de Salistick faz com que sejam mais autoconfiantes.",
+            "Personagens com esse Aprimoramento Regional recebem +2/+10% em todos os Testes de Resistência de WILL, seja contra Magias, Poderes, habilidades psíquicas, poderes especiais, etc."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aventureiro-nato",
+      "title": "Aventureiro Nato",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Deheon, Petrynia"
+      },
+      "paragraphs": [
+        "Personagens com esse Aprimoramento Regional são considerados acima da média, com uma inclinação natural para tornar-se aventureiro. Em regras, o Personagem recebe +1 ponto em um de seus Atributos: FR ou CON para guerreiros, DEX ou AGI para ladinos (ladrões, punguistas, assaltantes, assassinos, etc) e rangers, WILL para clérigos, druidas e xamãs, CAR para bardos e paladinos.",
+        "Outros kits ficam por conta do Mestre."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Personagens com esse Aprimoramento Regional são considerados acima da média, com uma inclinação natural para tornar-se aventureiro. Em regras, o Personagem recebe +1 ponto em um de seus Atributos: FR ou CON para guerreiros, DEX ou AGI para ladinos (ladrões, punguistas, assaltantes, assassinos, etc) e rangers, WILL para clérigos, druidas e xamãs, CAR para bardos e paladinos.",
+            "Outros kits ficam por conta do Mestre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bairrista",
+      "title": "Bairrista",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Ahlen, Doherimm, Portsmouth, Tapista, Sckharshantallas, Yuden"
+      },
+      "paragraphs": [
+        "Os habitantes desses reinos costumam ser muito desconfiados e intolerantes com relação a estrangeiros. Personagens com esse Aprimoramento Regional recebem +10% em Testes de Manipulação (Intimidação) e em Testes de PER para detectar mentiras, mas apenas contra criaturas inteligentes e que sejam nativas de um reino diferente do seu. Por outro lado, o Personagem também sofre -5% em Testes de Manipulação (Lábia), Etiqueta e Pesquisa/Investigação (apenas se tiver que conversar para obter informações) contra esses mesmos alvos."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os habitantes desses reinos costumam ser muito desconfiados e intolerantes com relação a estrangeiros. Personagens com esse Aprimoramento Regional recebem +10% em Testes de Manipulação (Intimidação) e em Testes de PER para detectar mentiras, mas apenas contra criaturas inteligentes e que sejam nativas de um reino diferente do seu. Por outro lado, o Personagem também sofre -5% em Testes de Manipulação (Lábia), Etiqueta e Pesquisa/Investigação (apenas se tiver que conversar para obter informações) contra esses mesmos alvos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barbarismo",
+      "title": "Barbarismo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Khubar, Montanhas Uivantes, Namalkah, União Púrpura"
+      },
+      "paragraphs": [
+        "Nativos desses reinos costumam ser descendentes de bárbaros. Um Personagens com esse Aprimoramento Regional recebe +10% em todos os Testes das Perícias Sobrevivência e Armadilhas."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Nativos desses reinos costumam ser descendentes de bárbaros. Um Personagens com esse Aprimoramento Regional recebe +10% em todos os Testes das Perícias Sobrevivência e Armadilhas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caminho-para-doherimm",
+      "title": "Caminho para Doherimm",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Doherimm"
+      },
+      "paragraphs": [
+        "O reino secreto dos anões é cercado de armadilhas e caminhos perigosos. Os nativos de Doherimm (todos anões) recebem +40% em todos os Testes de Sobrevivência apenas quando percorrem os intrincados corredores que levam ao reino dos anões.",
+        "Personagens não-anões jamais recebem esse Aprimoramento regional, já que nunca poderiam ser nativos de Doherimm. Por outro lado, aventureiros que tenham se aventurado no reino secreto podem comprar esse Aprimoramento Regional ao custo de 1 ponto.",
+        "Em geral apenas os anões conhecem a localização de seu reino. Sempre que alguém tenta obter essa informação através de leitura da mente ou algo semelhante, sofre imediatamente um contra-ataque mental sobre o conjurador, provocando-lhe 2d6 pontos de dano.",
+        "Todos os anões aventureiros nativos de Doherimm recebem esse Aprimoramento Regional e podem ainda escolher mais um (entre os permitidos aos nativos de Doherimm)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O reino secreto dos anões é cercado de armadilhas e caminhos perigosos. Os nativos de Doherimm (todos anões) recebem +40% em todos os Testes de Sobrevivência apenas quando percorrem os intrincados corredores que levam ao reino dos anões.",
+            "Personagens não-anões jamais recebem esse Aprimoramento regional, já que nunca poderiam ser nativos de Doherimm. Por outro lado, aventureiros que tenham se aventurado no reino secreto podem comprar esse Aprimoramento Regional ao custo de 1 ponto.",
+            "Em geral apenas os anões conhecem a localização de seu reino. Sempre que alguém tenta obter essa informação através de leitura da mente ou algo semelhante, sofre imediatamente um contra-ataque mental sobre o conjurador, provocando-lhe 2d6 pontos de dano.",
+            "Todos os anões aventureiros nativos de Doherimm recebem esse Aprimoramento Regional e podem ainda escolher mais um (entre os permitidos aos nativos de Doherimm)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cavaleiro-nato",
+      "title": "Cavaleiro Nato",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Namalkah, Khubar"
+      },
+      "paragraphs": [
+        "Personagens nascidos e criados nesses reinos tem grande talento como cavaleiros. Por isso Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes da Perícia Animais e todos os seus subgrupos (Tratamento de Animais, Treinamento de Animais, Montaria e Doma) mas apenas referente a cavalos (caso seja nativo de Namalkah) ou o tumarkhân (caso seja nativo de Khubar)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Personagens nascidos e criados nesses reinos tem grande talento como cavaleiros. Por isso Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes da Perícia Animais e todos os seus subgrupos (Tratamento de Animais, Treinamento de Animais, Montaria e Doma) mas apenas referente a cavalos (caso seja nativo de Namalkah) ou o tumarkhân (caso seja nativo de Khubar)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comerciante-nato",
+      "title": "Comerciante Nato",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Hershey, Petrynia, Sambúrdia"
+      },
+      "paragraphs": [
+        "A cultura desses povos é fortemente baseada no comércio, e por isso muitos dos nativos são bons comerciantes. Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes de Avaliação de Objetos, Negociação (escolha apenas um dos seguintes subgrupos: Barganha, Burocracia ou Contabilidade) e em Testes de PER para detectar mentiras."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A cultura desses povos é fortemente baseada no comércio, e por isso muitos dos nativos são bons comerciantes. Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes de Avaliação de Objetos, Negociação (escolha apenas um dos seguintes subgrupos: Barganha, Burocracia ou Contabilidade) e em Testes de PER para detectar mentiras."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conhecimento-de-itens-magicos",
+      "title": "Conhecimento de Itens Mágicos",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Wynlla"
+      },
+      "paragraphs": [
+        "Muitos nativos de Wynlla tem um forte conhecimento sobre itens mágicos. Em regras, o Personagem é capaz de identificar itens mágicos com 50% de chance de sucesso e mesmo que não seja um mago é capaz de ativar itens mágicos que exijam conhecimento arcano. Se já for um mago, será capaz de ativar itens mágicos mesmo que não tenha algos pré-requisitos de alguns itens mágicos (como pertencer a uma raça, possuir um certo Aprimoramento, etc). É necessário sucesso em um Teste de WILL para obter sucesso."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Muitos nativos de Wynlla tem um forte conhecimento sobre itens mágicos. Em regras, o Personagem é capaz de identificar itens mágicos com 50% de chance de sucesso e mesmo que não seja um mago é capaz de ativar itens mágicos que exijam conhecimento arcano. Se já for um mago, será capaz de ativar itens mágicos mesmo que não tenha algos pré-requisitos de alguns itens mágicos (como pertencer a uma raça, possuir um certo Aprimoramento, etc). É necessário sucesso em um Teste de WILL para obter sucesso."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conhecimento-de-magia",
+      "title": "Conhecimento de Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Pondsmânia, Wynlla"
+      },
+      "paragraphs": [
+        "A Magia é uma ferramenta muito comum nesses reinos, e por isso a maioria de seus habitantes tem grandes conhecimentos a respeito. Personagens com esse Aprimoramento Regional recebem +10% em Testes de Ciências Proibidas (Teoria da Magia e Rituais)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A Magia é uma ferramenta muito comum nesses reinos, e por isso a maioria de seus habitantes tem grandes conhecimentos a respeito. Personagens com esse Aprimoramento Regional recebem +10% em Testes de Ciências Proibidas (Teoria da Magia e Rituais)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conhecimento-de-lendas",
+      "title": "Conhecimento de Lendas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Fortuna"
+      },
+      "paragraphs": [
+        "Devido ao costume fortuniense de cultivar tradições, lendas e mitos, os Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes da Perícias Ciências (História e Literatura) e em Pesquisa/Investigação."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Devido ao costume fortuniense de cultivar tradições, lendas e mitos, os Personagens com esse Aprimoramento Regional recebem +10% em todos os Testes da Perícias Ciências (História e Literatura) e em Pesquisa/Investigação."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conquista-da-magia",
+      "title": "Conquista da Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Wynlla"
+      },
+      "paragraphs": [
+        "Esse Aprimoramento Regional apenas é permitido para Personagens que pertençam que normalmente não podem usar Magia (como minotauros e goblins).",
+        "Graças à cultura altamente mágica de Wynlla, praticamente todos os seus habitantes sabem realizar Magias, mesmo aqueles que normalmente são impossibilitados disso.",
+        "Personagens com esse Aprimoramento Regional podem aprender Magias (ou seja, podem ter Poderes Mágicos) mesmo que sua raça normalmente proíba isso. É mais comum entre minotauros e goblins - que geralmente não podem aprender Magias."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Esse Aprimoramento Regional apenas é permitido para Personagens que pertençam que normalmente não podem usar Magia (como minotauros e goblins).",
+            "Graças à cultura altamente mágica de Wynlla, praticamente todos os seus habitantes sabem realizar Magias, mesmo aqueles que normalmente são impossibilitados disso.",
+            "Personagens com esse Aprimoramento Regional podem aprender Magias (ou seja, podem ter Poderes Mágicos) mesmo que sua raça normalmente proíba isso. É mais comum entre minotauros e goblins - que geralmente não podem aprender Magias."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contador-de-historias",
+      "title": "Contador de Histórias",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Petrynia"
+      },
+      "paragraphs": [
+        "Os petrynianos são conhecidos como os maiores contadores de histórias de Arton, sejam elas verídicas ou não. Personagens com esse Aprimoramento Regional recebem +20% em todos os Testes da Perícia Manipulação (Lábia). Esse bônus é transformado em penalidade (-20%) caso o alvo saiba seu reino de origem..."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os petrynianos são conhecidos como os maiores contadores de histórias de Arton, sejam elas verídicas ou não. Personagens com esse Aprimoramento Regional recebem +20% em todos os Testes da Perícia Manipulação (Lábia). Esse bônus é transformado em penalidade (-20%) caso o alvo saiba seu reino de origem..."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espirito-de-equipe",
+      "title": "Espírito de Equipe",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Doherimm, Tapista, Yuden"
+      },
+      "paragraphs": [
+        "Nesses reinos a disciplina militar é muito valorizada e aplicada desde criança. Geralmente os nativos sabem trabalhar em equipe. Personagens com esse Aprimoramento Regional recebem +10% em jogadas de Ataque e Testes de Perícias quando agem em equipe (no mínimo 3 pessoas) seguindo as ordens de um superior. Todos os membros do grupo devem estar realizando a mesma tarefa (seguindo a mesma trilha, vasculhando o mesmo aposento...).",
+        "Apenas membros da mesma raça podem ser considerados colegas de equipe. Um líder é um Personagem que esteja dois ou mais Níveis acima da média da equipe ou que tenha a Perícia Liderança com 70% no mínimo."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Nesses reinos a disciplina militar é muito valorizada e aplicada desde criança. Geralmente os nativos sabem trabalhar em equipe. Personagens com esse Aprimoramento Regional recebem +10% em jogadas de Ataque e Testes de Perícias quando agem em equipe (no mínimo 3 pessoas) seguindo as ordens de um superior. Todos os membros do grupo devem estar realizando a mesma tarefa (seguindo a mesma trilha, vasculhando o mesmo aposento...).",
+            "Apenas membros da mesma raça podem ser considerados colegas de equipe. Um líder é um Personagem que esteja dois ou mais Níveis acima da média da equipe ou que tenha a Perícia Liderança com 70% no mínimo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faro-para-magos",
+      "title": "Faro para Magos",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Portsmouth"
+      },
+      "paragraphs": [
+        "Os nativos de Portsmouth são ensinados a detectar magos de qualquer tipo. Devido a isso Personagens com esse Aprimoramento Regional recebem +10% nas Perícias Manipulação (Lábia), Escutar e Testes de PER para detectar mentiras contra qualquer Personagem que tenha o Aprimoramento Poderes Mágicos (mas não Pontos de Fé)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos de Portsmouth são ensinados a detectar magos de qualquer tipo. Devido a isso Personagens com esse Aprimoramento Regional recebem +10% nas Perícias Manipulação (Lábia), Escutar e Testes de PER para detectar mentiras contra qualquer Personagem que tenha o Aprimoramento Poderes Mágicos (mas não Pontos de Fé)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furia-leal",
+      "title": "Fúria Leal",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Khubar, Montanhas Uivantes, Namalkah, União Púrpura"
+      },
+      "paragraphs": [
+        "Os nativos desses reinos geralmente descendem dos bárbaros que habitavam o norte de Arton antes de sua colonização.",
+        "Personagens com esse Aprimoramento Regional podem comprar o Aprimoramento Berserker mesmo que não seja um humano ou anão. Se o Personagem já pertence a uma dessas raças (ou outra raça que possa comprar esse Aprimoramento) seu bônus de dano aumenta para +3 ao invés de mais e o bônus de Ataque aumenta para +15% ao invés de +10% quando entra em berserker."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos desses reinos geralmente descendem dos bárbaros que habitavam o norte de Arton antes de sua colonização.",
+            "Personagens com esse Aprimoramento Regional podem comprar o Aprimoramento Berserker mesmo que não seja um humano ou anão. Se o Personagem já pertence a uma dessas raças (ou outra raça que possa comprar esse Aprimoramento) seu bônus de dano aumenta para +3 ao invés de mais e o bônus de Ataque aumenta para +15% ao invés de +10% quando entra em berserker."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furtividade-das-fadas",
+      "title": "Furtividade das Fadas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Pondsmânia"
+      },
+      "paragraphs": [
+        "Os nativos de Pondsmânia, todos de alguma forma ligados à raça das fadas, são furtivos e sabem como não ser notados.",
+        "Personagens com esse Aprimoramento Regional recebem +10% em Testes das Perícias Camuflagem, Furtividade e Subterfúgio."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos de Pondsmânia, todos de alguma forma ligados à raça das fadas, são furtivos e sabem como não ser notados.",
+            "Personagens com esse Aprimoramento Regional recebem +10% em Testes das Perícias Camuflagem, Furtividade e Subterfúgio."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hospitalidade",
+      "title": "Hospitalidade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Nova Ghondriann"
+      },
+      "paragraphs": [
+        "Os habitantes desse reino recebem muito bem os estrangeiros. Por isso os Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Etiqueta e Pesquisa/Investigação (apenas quando envolver obter informações com conversas) para com criaturas inteligentes nativas de outros reinos. Por outro lado, o Personagem recebe -5% em Testes das perícias Manipulação (Lábia e Intimidação) para com essas criaturas."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os habitantes desse reino recebem muito bem os estrangeiros. Por isso os Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Etiqueta e Pesquisa/Investigação (apenas quando envolver obter informações com conversas) para com criaturas inteligentes nativas de outros reinos. Por outro lado, o Personagem recebe -5% em Testes das perícias Manipulação (Lábia e Intimidação) para com essas criaturas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "impostor",
+      "title": "Impostor",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Ahlen, Petrynia"
+      },
+      "paragraphs": [
+        "Esse Aprimoramento Regional apenas é permitido a Personagens que tenham no mínimo CAR 13 e 10% na perícia Manipulação (Lábia - mas sem contar o bônus de CAR/Manha).",
+        "Personagens com esse Aprimoramento Regional são capazes de convencer seus espectadores de que tem certas habilidades ou conhecimentos quando na verdade não as possui. Em regras, você pode substituir o Teste de qualquer perícia (com exceção de perícias de combate, incluindo Esquiva quando usada em combate) por um Teste de Manipulação (Lábia). Você inspira tanta confiança em si mesmo que consegue fazê-lo, mesmo sem ter a perícia.",
+        "O Personagem pode fazer isso uma vez por dia para cada 2 pontos de CAR acima de 12 (1 vez por dia para CAR 13, duas vezes por dia para CAR 14-15, três vezes para CAR 16-17, e assim por diante)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Esse Aprimoramento Regional apenas é permitido a Personagens que tenham no mínimo CAR 13 e 10% na perícia Manipulação (Lábia - mas sem contar o bônus de CAR/Manha).",
+            "Personagens com esse Aprimoramento Regional são capazes de convencer seus espectadores de que tem certas habilidades ou conhecimentos quando na verdade não as possui. Em regras, você pode substituir o Teste de qualquer perícia (com exceção de perícias de combate, incluindo Esquiva quando usada em combate) por um Teste de Manipulação (Lábia). Você inspira tanta confiança em si mesmo que consegue fazê-lo, mesmo sem ter a perícia.",
+            "O Personagem pode fazer isso uma vez por dia para cada 2 pontos de CAR acima de 12 (1 vez por dia para CAR 13, duas vezes por dia para CAR 14-15, três vezes para CAR 16-17, e assim por diante)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inimigo-de-dragoes",
+      "title": "Inimigo de Dragões",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Sckharshantallas"
+      },
+      "paragraphs": [
+        "O regente Sckhar proíbe a existência de outros dragões em seu reino, a não ser ele próprio. Por isso os Personagens com esse Aprimoramento Regional são treinados para combater dragões: recebem +4 de dano quando combatem qualquer tipo de dragão ou criaturas aparentadas (wyverns, hidras e protodracos)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O regente Sckhar proíbe a existência de outros dragões em seu reino, a não ser ele próprio. Por isso os Personagens com esse Aprimoramento Regional são treinados para combater dragões: recebem +4 de dano quando combatem qualquer tipo de dragão ou criaturas aparentadas (wyverns, hidras e protodracos)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inimigo-de-goblinoides",
+      "title": "Inimigo de Goblinóides",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Tyrondir"
+      },
+      "paragraphs": [
+        "Com a ameaça da Aliança Negra, muitos nativos de Tyrondir desenvolveram um grande ódio por goblinóides. Personagens com esse Aprimoramento Regional recebem +10% em Testes das Perícias",
+        "Manipulação (Lábia), Escutar e Sobrevivência contra qualquer tipo de goblinóide (goblins, hobgoblins e bugbears apenas).",
+        "Esse Aprimoramento Regional é mais comum entre os nativos do lado sul de Tyrondir, que tem mais contato com a Aliança Negra.",
+        "(1 ponto): Personagens que tenham passado por Tyrondir ou Lamnor podem comprar esse Aprimoramento Regional ao custo de 1 ponto, mesmo sem ser nativos do reino."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Com a ameaça da Aliança Negra, muitos nativos de Tyrondir desenvolveram um grande ódio por goblinóides. Personagens com esse Aprimoramento Regional recebem +10% em Testes das Perícias",
+            "Manipulação (Lábia), Escutar e Sobrevivência contra qualquer tipo de goblinóide (goblins, hobgoblins e bugbears apenas).",
+            "Esse Aprimoramento Regional é mais comum entre os nativos do lado sul de Tyrondir, que tem mais contato com a Aliança Negra.",
+            "(1 ponto): Personagens que tenham passado por Tyrondir ou Lamnor podem comprar esse Aprimoramento Regional ao custo de 1 ponto, mesmo sem ser nativos do reino."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intolerancia",
+      "title": "Intolerância",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Ahlen, Doherimm, Yuden, Tapista"
+      },
+      "paragraphs": [
+        "Os nativos desses reinos costumam ser muito intolerantes e racistas. Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Manipulação (Intimidação) e Testes de PER para detecção de mentiras, mas apenas ao lidar com criaturas inteligentes de outras raças que não sejam a sua. Por outro lado, também recebe -5% nos Testes de Manipulação (Lábia), Etiqueta e Pesquisa/Investigação (quando envolve conversa para obter informações) contra esses mesmos alvos.",
+        "Para efeitos deste Aprimoramento, criaturas meio humanas (como meio-orcs e meio-elfos) não são considerados humanos."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos desses reinos costumam ser muito intolerantes e racistas. Personagens com esse Aprimoramento Regional recebem +10% em Testes das perícias Manipulação (Intimidação) e Testes de PER para detecção de mentiras, mas apenas ao lidar com criaturas inteligentes de outras raças que não sejam a sua. Por outro lado, também recebe -5% nos Testes de Manipulação (Lábia), Etiqueta e Pesquisa/Investigação (quando envolve conversa para obter informações) contra esses mesmos alvos.",
+            "Para efeitos deste Aprimoramento, criaturas meio humanas (como meio-orcs e meio-elfos) não são considerados humanos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leal-aos-cavaleiros",
+      "title": "Leal aos Cavaleiros",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Bielefeld"
+      },
+      "paragraphs": [
+        "Devido à forte influência dos Cavaleiros da Ordem da Luz, os nativos de Bielefeld tem grande conhecimento da nobreza e cavalaria, e por isso",
+        "Personagens com esse Aprimoramento Regional recebem +15% em Testes das Perícias Ciências (Heráldica) e Etiqueta."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Devido à forte influência dos Cavaleiros da Ordem da Luz, os nativos de Bielefeld tem grande conhecimento da nobreza e cavalaria, e por isso",
+            "Personagens com esse Aprimoramento Regional recebem +15% em Testes das Perícias Ciências (Heráldica) e Etiqueta."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logica-labirintica",
+      "title": "Lógica Labiríntica",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Tapista"
+      },
+      "paragraphs": [
+        "Os nascidos no reino dos minotauros (nem todos minotauros, alguns são humanos ou semi-humanos, escravos ou não) estão acostumados a percorrer corredores e ruas intrincadas.",
+        "Personagens com esse Aprimoramento Regional jamais se perdem em corredores e túneis, sendo capaz de lembrar o caminho por onde passou. Essa habilidade, no entanto, não funciona em florestas e outras áreas de céu aberto, apenas em túneis e corredores.",
+        "Todos os minotauros nativos de Tapista recebem esse Aprimoramento Regional e mais um que deve ser escolhido entre os permitidos em Tapista."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nascidos no reino dos minotauros (nem todos minotauros, alguns são humanos ou semi-humanos, escravos ou não) estão acostumados a percorrer corredores e ruas intrincadas.",
+            "Personagens com esse Aprimoramento Regional jamais se perdem em corredores e túneis, sendo capaz de lembrar o caminho por onde passou. Essa habilidade, no entanto, não funciona em florestas e outras áreas de céu aberto, apenas em túneis e corredores.",
+            "Todos os minotauros nativos de Tapista recebem esse Aprimoramento Regional e mais um que deve ser escolhido entre os permitidos em Tapista."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mago-nato",
+      "title": "Mago Nato",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Wynlla"
+      },
+      "paragraphs": [
+        "Os nativos do reino da Magia tem grande conhecimento sobre mágicas, mesmo que não sejam capazes de realizá-las. Personagens com esse Aprimoramento Regional recebem +5% em todos os Testes das Perícias Ciências Proibidas (Alquimia, Astrologia, Oculto, Rituais, Tarot e Teoria da Magia)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos do reino da Magia tem grande conhecimento sobre mágicas, mesmo que não sejam capazes de realizá-las. Personagens com esse Aprimoramento Regional recebem +5% em todos os Testes das Perícias Ciências Proibidas (Alquimia, Astrologia, Oculto, Rituais, Tarot e Teoria da Magia)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medico-nato",
+      "title": "Médico Nato",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Salistick"
+      },
+      "paragraphs": [
+        "Os habitantes de Salistick rejeitam os deuses e clérigos, e por isso não possuem magias de cura. Por outro lado os nativos do reino são ótimos doutores e, caso escolham esse Aprimoramento Regional, recebem +20% em todos os Testes da Perícia Primeiros Socorros."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os habitantes de Salistick rejeitam os deuses e clérigos, e por isso não possuem magias de cura. Por outro lado os nativos do reino são ótimos doutores e, caso escolham esse Aprimoramento Regional, recebem +20% em todos os Testes da Perícia Primeiros Socorros."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "olhos-agucados",
+      "title": "Olhos Aguçados",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Collen"
+      },
+      "paragraphs": [
+        "Em Collen todos os nativos tem esse Aprimoramento Regional e podem escolher mais um entre os permitidos para seu reino.",
+        "Personagens com esse Aprimoramento Regional são capazes de ver na penumbra (da mesma forma que os elfos - necessitam de uma luminosidade mínima para ser capaz de enxergar) e recebem +10% em todos os Testes envolvendo a visão."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Em Collen todos os nativos tem esse Aprimoramento Regional e podem escolher mais um entre os permitidos para seu reino.",
+            "Personagens com esse Aprimoramento Regional são capazes de ver na penumbra (da mesma forma que os elfos - necessitam de uma luminosidade mínima para ser capaz de enxergar) e recebem +10% em todos os Testes envolvendo a visão."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "olhos-especiais",
+      "title": "Olhos Especiais",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Collen"
+      },
+      "paragraphs": [
+        "Todos os nativos de Collen tem visão privilegiada. Entretanto, quando se tornam aventureiros também é comum que tenham olhos com poderes especiais.",
+        "Personagens com esse Aprimoramento Regional possuem um dos seguintes poderes válido para um de seus olhos: - Visão no Escuro: você pode enxergar no escuro absoluto, não apenas na penumbra.",
+        "- Ver o Invisível: você é capaz de ver criaturas e objetos invisíveis.",
+        "- Detecção de Magia: você é capaz de detectar Magias da mesma forma que no Aprimoramento de mesmo nome.",
+        "(2 pontos): Ao custo de 2 pontos um nativo de Collen pode ter uma habilidade especial para cada um dos olhos, escolhidos da lista acima. Entretanto, esse Aprimoramento apenas pode ser comprado no 1o Nível."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Todos os nativos de Collen tem visão privilegiada. Entretanto, quando se tornam aventureiros também é comum que tenham olhos com poderes especiais.",
+            "Personagens com esse Aprimoramento Regional possuem um dos seguintes poderes válido para um de seus olhos: - Visão no Escuro: você pode enxergar no escuro absoluto, não apenas na penumbra.",
+            "- Ver o Invisível: você é capaz de ver criaturas e objetos invisíveis.",
+            "- Detecção de Magia: você é capaz de detectar Magias da mesma forma que no Aprimoramento de mesmo nome.",
+            "(2 pontos): Ao custo de 2 pontos um nativo de Collen pode ter uma habilidade especial para cada um dos olhos, escolhidos da lista acima. Entretanto, esse Aprimoramento apenas pode ser comprado no 1o Nível."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paciente",
+      "title": "Paciente",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Callistia, Collen, Hongari"
+      },
+      "paragraphs": [
+        "Nativos desses reinos costumam ser calmos e pacientes.",
+        "Personagens com esse Aprimoramento Regional recebem +5% em todos os Testes que requerem tempo e paciência para serem realizados. Esse bônus de aplica, por exemplo, em um Teste de WILL que exige concentração."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Nativos desses reinos costumam ser calmos e pacientes.",
+            "Personagens com esse Aprimoramento Regional recebem +5% em todos os Testes que requerem tempo e paciência para serem realizados. Esse bônus de aplica, por exemplo, em um Teste de WILL que exige concentração."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pacifismo",
+      "title": "Pacifismo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Fortuna, Hershey, Hongari, Nova Ghondriann, Salistick, Tyrondir, Zakharov"
+      },
+      "paragraphs": [
+        "Esses reinos valorizam o pacifismo e refutam as guerras e batalhas. Personagens com esse Aprimoramento",
+        "Regional recebem 1 PV extra no 1o Nível e +10% em Testes da perícia Etiqueta."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Esses reinos valorizam o pacifismo e refutam as guerras e batalhas. Personagens com esse Aprimoramento",
+            "Regional recebem 1 PV extra no 1o Nível e +10% em Testes da perícia Etiqueta."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patriota",
+      "title": "Patriota",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Bielefeld, Deheon, Doherimm, Tapista, Yuden"
+      },
+      "paragraphs": [
+        "Personagens com esse Aprimoramento Regional são muito orgulhosos de sua pátria e/ou seu regente. Recebem +20% em todos os Testes Ciências (História) envolvendo seu reino."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Personagens com esse Aprimoramento Regional são muito orgulhosos de sua pátria e/ou seu regente. Recebem +20% em todos os Testes Ciências (História) envolvendo seu reino."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prece-para-os-mortos",
+      "title": "Prece para os Mortos",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Hongari"
+      },
+      "paragraphs": [
+        "Devido à forte influência dos deuses Hyninn e Thyatis muitos dos nativos de Hongari podem conversar com os mortos. Na presença de um cadáver, ou sobre seu túmulo, Personagens com esse Aprimoramento Regional podem fazer uma única pergunta para ser respondida, telepaticamente, com \"sim\" ou \"não\". Um mesmo Personagem não pode fazer outra pergunta ao mesmo morto."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Devido à forte influência dos deuses Hyninn e Thyatis muitos dos nativos de Hongari podem conversar com os mortos. Na presença de um cadáver, ou sobre seu túmulo, Personagens com esse Aprimoramento Regional podem fazer uma única pergunta para ser respondida, telepaticamente, com \"sim\" ou \"não\". Um mesmo Personagem não pode fazer outra pergunta ao mesmo morto."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prece-para-valkaria",
+      "title": "Prece para Valkaria",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Deheon"
+      },
+      "paragraphs": [
+        "Apenas humanos podem ter esse Aprimoramento Regional. O Personagem pode fazer uma prece à deusa Valkaria para que uma criatura ou pessoa mortalmente ferida recupere 1 PV. Para isso deve-se fazer um Teste de CAR e, uma vez que o pedido seja atendido, cada nova tentativa oferece um redutor de -25% no Teste. Cada -25% de redutor desaparece após 30 dias sem que seja feita uma nova prece."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Apenas humanos podem ter esse Aprimoramento Regional. O Personagem pode fazer uma prece à deusa Valkaria para que uma criatura ou pessoa mortalmente ferida recupere 1 PV. Para isso deve-se fazer um Teste de CAR e, uma vez que o pedido seja atendido, cada nova tentativa oferece um redutor de -25% no Teste. Cada -25% de redutor desaparece após 30 dias sem que seja feita uma nova prece."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prosperidade",
+      "title": "Prosperidade",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Deheon, Hershey, Sambúrdia, Tyrondir"
+      },
+      "paragraphs": [
+        "Seu reino nativo é muito mais próspero, e por isso seus nativos terão uma quantidade superior em dinheiro inicial.",
+        "Personagens com esse Aprimoramento Regional recebem 3d3+3 x10 Tibares em prata como dinheiro inicial (em adição aos 4d6x100 Tibares de prata como dinheiro inicial)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu reino nativo é muito mais próspero, e por isso seus nativos terão uma quantidade superior em dinheiro inicial.",
+            "Personagens com esse Aprimoramento Regional recebem 3d3+3 x10 Tibares em prata como dinheiro inicial (em adição aos 4d6x100 Tibares de prata como dinheiro inicial)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "religioso",
+      "title": "Religioso",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "todos, exceto Salistick"
+      },
+      "paragraphs": [
+        "Personagens com esse Aprimoramento Regional desde criança ouviram falar sobre o Panteão, deuses menores, sumo-sacerdotes, etc. Por isso o Personagem recebe +20% em Testes da ́perícia Ciências (Teologia/Religião)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Personagens com esse Aprimoramento Regional desde criança ouviram falar sobre o Panteão, deuses menores, sumo-sacerdotes, etc. Por isso o Personagem recebe +20% em Testes da ́perícia Ciências (Teologia/Religião)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia-a-doencas",
+      "title": "Resistência a Doenças",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Lomatubar"
+      },
+      "paragraphs": [
+        "A Praga Coral que assola Lomatubar fez com que seus nativos recebessem cuidados medicinais desde cedo, o que os tornou mais resistentes à doenças.",
+        "Personagens com esse Aprimoramento Regional recebem +40% em todos os Testes para resistir à doenças não mágicas, o que não inclui maldições, venenos, ácidos e a própria Praga Coral."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A Praga Coral que assola Lomatubar fez com que seus nativos recebessem cuidados medicinais desde cedo, o que os tornou mais resistentes à doenças.",
+            "Personagens com esse Aprimoramento Regional recebem +40% em todos os Testes para resistir à doenças não mágicas, o que não inclui maldições, venenos, ácidos e a própria Praga Coral."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia-ao-frio",
+      "title": "Resistência ao Frio",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Montanhas Uivantes"
+      },
+      "paragraphs": [
+        "Nascidos no reino de gelo, os nativos das Uivantes estão hhabituados ao frio extremo e à sobrevivência no ambiente gelado.",
+        "Os Personagens com esse Aprimoramento Regional recebem +10% em Testes da Perícia Sobrevivência quando em ambiente gelado. Além disso recebem também +10% em Testes de Resistência para resistir a qualquer forma de frio, seja natural ou mágico."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Nascidos no reino de gelo, os nativos das Uivantes estão hhabituados ao frio extremo e à sobrevivência no ambiente gelado.",
+            "Os Personagens com esse Aprimoramento Regional recebem +10% em Testes da Perícia Sobrevivência quando em ambiente gelado. Além disso recebem também +10% em Testes de Resistência para resistir a qualquer forma de frio, seja natural ou mágico."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia-a-tormenta",
+      "title": "Resistência à Tormenta",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Trebuck"
+      },
+      "paragraphs": [
+        "Recentemente o reino de Trebuck recebeu um vizinho inesperado e indesejado: uma área de Tormenta se formou no lado oposto ao reino, na margem oposta do Rio dos Deuses. Para piorar, a Tormenta avançou ainda mais, tomando o Forte Amarid. Esse evento deu início à primeira marcha em larga escala contra a tempestade rubra - o que resultou em fracasso, pois o maior exército do Reinado foi derrotado e quase totalmente dizimado pelos demônios.",
+        "Devido a isso os nativos de Trebuck são mais resistentes aos efeitos nocivos da Tormenta.",
+        "Personagens com esse Aprimoramento Regional recebem +5% em todos os Testes de Resistência contra efeitos nocivos da Tormenta (não incluindo dano provocado pelas criaturas - apenas nas situações que permitem um Teste de Resistência).",
+        "(1 ponto): Personagens não nativos de Trebuck que tenham penetrado em uma área de Tormenta e tenham sobrevivido podem comprar esse Aprimoramento ao custo de 1 ponto."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Recentemente o reino de Trebuck recebeu um vizinho inesperado e indesejado: uma área de Tormenta se formou no lado oposto ao reino, na margem oposta do Rio dos Deuses. Para piorar, a Tormenta avançou ainda mais, tomando o Forte Amarid. Esse evento deu início à primeira marcha em larga escala contra a tempestade rubra - o que resultou em fracasso, pois o maior exército do Reinado foi derrotado e quase totalmente dizimado pelos demônios.",
+            "Devido a isso os nativos de Trebuck são mais resistentes aos efeitos nocivos da Tormenta.",
+            "Personagens com esse Aprimoramento Regional recebem +5% em todos os Testes de Resistência contra efeitos nocivos da Tormenta (não incluindo dano provocado pelas criaturas - apenas nas situações que permitem um Teste de Resistência).",
+            "(1 ponto): Personagens não nativos de Trebuck que tenham penetrado em uma área de Tormenta e tenham sobrevivido podem comprar esse Aprimoramento ao custo de 1 ponto."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tatuagem-mistica",
+      "title": "Tatuagem Mística",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Khubar"
+      },
+      "paragraphs": [
+        "Esse",
+        "Aprimoramento Regional apenas é permitido a Personagens com WILL 15 ou mais e CON 11 ou mais.",
+        "Os khubarianos costumam apresentar tatuagens por todo o corpo. Alguns apresentam até mesmo tatuagens mágicas. Personagens com esse Aprimoramento Regional terão tatuagens mágicas, capazes de protegê-los contra inimigos.",
+        "Em regras, o Personagem pode conjurar, uma vez por dia, a Magia Proteção Mágica com Focus 1.",
+        "Entretanto essa proteção funciona apenas contra criaturas de comportamento oposto ao do Personagem - para Personagens malignos funcionará apenas contra inimigos bondosos, e vice-versa. Caótico e leal também são comportamentos opostos. Cabe ao Mestre determinar o comportamento do Personagem baseado, principalmente, em seus Aprimoramentos."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Esse",
+            "Aprimoramento Regional apenas é permitido a Personagens com WILL 15 ou mais e CON 11 ou mais.",
+            "Os khubarianos costumam apresentar tatuagens por todo o corpo. Alguns apresentam até mesmo tatuagens mágicas. Personagens com esse Aprimoramento Regional terão tatuagens mágicas, capazes de protegê-los contra inimigos.",
+            "Em regras, o Personagem pode conjurar, uma vez por dia, a Magia Proteção Mágica com Focus 1.",
+            "Entretanto essa proteção funciona apenas contra criaturas de comportamento oposto ao do Personagem - para Personagens malignos funcionará apenas contra inimigos bondosos, e vice-versa. Caótico e leal também são comportamentos opostos. Cabe ao Mestre determinar o comportamento do Personagem baseado, principalmente, em seus Aprimoramentos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trapaceiro-nato",
+      "title": "Trapaceiro Nato",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "regional",
+      "sectionTitle": "Aprimoramento Regional",
+      "metadata": {
+        "subtipo": "regional",
+        "regional": "Ahlen"
+      },
+      "paragraphs": [
+        "Os nativos de Ahlen com esse",
+        "Aprimoramento",
+        "Regional estão acostumados à pilantras e tranbiqueiros, e sabem como lidar com eles.",
+        "Todos os nativos recebem +10% em todos os Testes de duas entre as seguintes Perícias (escolhidas pelo",
+        "Jogador): Escapismo (de Artes), Lábia (de Manipulação), Camuflagem, Disfarce, Furtar, Furtividade, Leitura Labial (de idiomas), Falsificação, Barganha (de Negociação) ou Subterfúgio."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Os nativos de Ahlen com esse",
+            "Aprimoramento",
+            "Regional estão acostumados à pilantras e tranbiqueiros, e sabem como lidar com eles.",
+            "Todos os nativos recebem +10% em todos os Testes de duas entre as seguintes Perícias (escolhidas pelo",
+            "Jogador): Escapismo (de Artes), Lábia (de Manipulação), Camuflagem, Disfarce, Furtar, Furtividade, Leitura Labial (de idiomas), Falsificação, Barganha (de Negociação) ou Subterfúgio."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aparencia-inofensiva",
+      "title": "Aparência Inofensiva",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "Ninguém espera muito de seu Personagem. Por isso em situações de combate você recebe +4 em Testes de Iniciativa, surpreendendo seus adversários.",
+        "Além disso esse",
+        "Aprimoramento acrescenta os benefícios de uma boa aparência. Apenas para Personagens que tenham CAR 13 ou mais."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Ninguém espera muito de seu Personagem. Por isso em situações de combate você recebe +4 em Testes de Iniciativa, surpreendendo seus adversários.",
+            "Além disso esse",
+            "Aprimoramento acrescenta os benefícios de uma boa aparência. Apenas para Personagens que tenham CAR 13 ou mais."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cacador-de-criatura",
+      "title": "Caçador de Criatura",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto: o Personagem possui Conhecimento sobre o tipo de criatura que caça com 30%, além de saber como encontrá-los, ou mesmo como destruí-los. Também recebe +5% em todos os Testes de Perícia e combate contra essa criatura.",
+        "2 Pontos: o Personagem possui conhecimento de determinado tipo de criatura com 45% e conhece outros caçadores como ele. Pode vir a pertencer a um grupo organizado com esse fim. Também recebe +5% em todos os Testes de perícia e combate quando enfrenta a criatura inimiga.",
+        "Quando o Jogador escolhe este Aprimoramento, seu Personagem possui a \"missão\" de caçar e exterminar algum tipo de criatura específica (trolls, dragões, gigantes, mantícoras, etc) por um motivo qualquer (vingança, ódio, dinheiro, juramento). O Personagem passará a vida toda atrás desse objetivo e sempre se aliará a outros caçadores.",
+        "O Jogador pode escolher também uma raça inteira (humanos, elfos, anões, etc) como a criatura caçada, mas nesse caso será necessária uma boa explicação."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: o Personagem possui Conhecimento sobre o tipo de criatura que caça com 30%, além de saber como encontrá-los, ou mesmo como destruí-los. Também recebe +5% em todos os Testes de Perícia e combate contra essa criatura.",
+            "2 Pontos: o Personagem possui conhecimento de determinado tipo de criatura com 45% e conhece outros caçadores como ele. Pode vir a pertencer a um grupo organizado com esse fim. Também recebe +5% em todos os Testes de perícia e combate quando enfrenta a criatura inimiga."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Quando o Jogador escolhe este Aprimoramento, seu Personagem possui a \"missão\" de caçar e exterminar algum tipo de criatura específica (trolls, dragões, gigantes, mantícoras, etc) por um motivo qualquer (vingança, ódio, dinheiro, juramento). O Personagem passará a vida toda atrás desse objetivo e sempre se aliará a outros caçadores.",
+            "O Jogador pode escolher também uma raça inteira (humanos, elfos, anões, etc) como a criatura caçada, mas nesse caso será necessária uma boa explicação."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "facilidade-para-linguas",
+      "title": "Facilidade para Línguas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "Você tem uma facilidade incrível para aprender línguas. Em pouco tempo pode ser capaz de estar falando quase 10 línguas!",
+        "Com este Aprimoramento cada vez que você gastar pelo menos 10 % em qualquer perícia de línguas pode adicionar o valor da sua INT a ela."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você tem uma facilidade incrível para aprender línguas. Em pouco tempo pode ser capaz de estar falando quase 10 línguas!",
+            "Com este Aprimoramento cada vez que você gastar pelo menos 10 % em qualquer perícia de línguas pode adicionar o valor da sua INT a ela."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hierarquia-militar",
+      "title": "Hierarquia Militar",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto por nível",
+        "Este Aprimoramento reflete sua posição em um exército ou organização paramilitar, como por exemplo um grupo mercenário. Todo posto tem autoridade sobre os níveis inferiores.",
+        "Este Aprimoramento só reflete o posto inicial do personagem, dependendo muito da interpretação do personagem pode-se permitir que ele passe de posto, no decorrer da aventura, sem gastar os pontos de Aprimoramento necessários para o título.",
+        "Os títulos do posto variam de organização para organização, este Aprimoramento é muito comum em reinos militarizados como Yuden, mas não chega a ser um Aprimoramento Nativo.",
+        "Posto 8: Comandante de Unidade ou mais (General de Exército ou Almirante).",
+        "Posto 7: Comandante de Divisão (Brigadeiro ou General de Brigada).",
+        "Posto 6: Comandante de Brigada\\Grupo\\Regimento (Coronel ou Capitão).",
+        "Posto 5: Comandante de Batalhão (Tenente Coronel).",
+        "Posto 4: Comandante de Companhia (Capitão ou Major).",
+        "Posto 3: Comandante de Pelotão (Tenente ou Subtenente).",
+        "Posto 2: Oficial subalterno associado ao comando do pelotão (1o Sargento ou Sargento Ajudante).",
+        "Posto 1: Oficial subalterno associado ao comando do Pelotão (2o Sargento ou Sargento).",
+        "Posto 0: Militar sem Patente (soldado, marinheiro, etc).",
+        "Em exércitos profissionais, os Oficiais Superiores (5 ou 6 níveis de Aprimoramento) devem ter Liderança no mínimo 30%, Oficiais Generais (7 ou mais níveis de Aprimoramento) devem ter Liderança no mínimo 50%.",
+        "Incompetência não é tolerada em nenhuma forma nos cargos mais altos (mas profissionais incompetentes são comuns em forças menos profissionais)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto por nível"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Este Aprimoramento reflete sua posição em um exército ou organização paramilitar, como por exemplo um grupo mercenário. Todo posto tem autoridade sobre os níveis inferiores.",
+            "Este Aprimoramento só reflete o posto inicial do personagem, dependendo muito da interpretação do personagem pode-se permitir que ele passe de posto, no decorrer da aventura, sem gastar os pontos de Aprimoramento necessários para o título.",
+            "Os títulos do posto variam de organização para organização, este Aprimoramento é muito comum em reinos militarizados como Yuden, mas não chega a ser um Aprimoramento Nativo.",
+            "Posto 8: Comandante de Unidade ou mais (General de Exército ou Almirante).",
+            "Posto 7: Comandante de Divisão (Brigadeiro ou General de Brigada).",
+            "Posto 6: Comandante de Brigada\\Grupo\\Regimento (Coronel ou Capitão).",
+            "Posto 5: Comandante de Batalhão (Tenente Coronel).",
+            "Posto 4: Comandante de Companhia (Capitão ou Major).",
+            "Posto 3: Comandante de Pelotão (Tenente ou Subtenente).",
+            "Posto 2: Oficial subalterno associado ao comando do pelotão (1o Sargento ou Sargento Ajudante).",
+            "Posto 1: Oficial subalterno associado ao comando do Pelotão (2o Sargento ou Sargento).",
+            "Posto 0: Militar sem Patente (soldado, marinheiro, etc).",
+            "Em exércitos profissionais, os Oficiais Superiores (5 ou 6 níveis de Aprimoramento) devem ter Liderança no mínimo 30%, Oficiais Generais (7 ou mais níveis de Aprimoramento) devem ter Liderança no mínimo 50%.",
+            "Incompetência não é tolerada em nenhuma forma nos cargos mais altos (mas profissionais incompetentes são comuns em forças menos profissionais)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intuicao",
+      "title": "Intuição",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "2 Pontos",
+        "Você normalmente acerta suas conjecturas. Quando você estiver diante de várias alternativas e não tiver uma maneira lógica de escolher entre elas, você poderá usar a Intuição da seguinte forma: O Mestre soma a sua PER o número de alternativas \"corretas\" e subtrai o número de alternativas \"erradas\" e faz uma jogada, em segredo, contra o resultado. Um sucesso indica uma alternativa favorável ao personagem. Um sucesso crítico indicará a melhor opção.",
+        "Uma falha indica que você não recebeu nenhuma informação. Uma falha crítica indica uma opção ruim para o personagem... é sua Intuição falhou. O Mestre sempre que achar necessário poderá modificar estas regras para que elas sirvam em outras situações onde a Intuição pode ajudar.",
+        "Pode-se jogar apenas uma única vez contra qualquer problema. O Mestre não deve permitir o uso leviano deste Aprimoramento, nem que seja usado pra abreviar uma aventura. Se o Mestre acha que não ser capaz de controlar este Aprimoramento não deve permitir que ele seja adquirido."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você normalmente acerta suas conjecturas. Quando você estiver diante de várias alternativas e não tiver uma maneira lógica de escolher entre elas, você poderá usar a Intuição da seguinte forma: O Mestre soma a sua PER o número de alternativas \"corretas\" e subtrai o número de alternativas \"erradas\" e faz uma jogada, em segredo, contra o resultado. Um sucesso indica uma alternativa favorável ao personagem. Um sucesso crítico indicará a melhor opção.",
+            "Uma falha indica que você não recebeu nenhuma informação. Uma falha crítica indica uma opção ruim para o personagem... é sua Intuição falhou. O Mestre sempre que achar necessário poderá modificar estas regras para que elas sirvam em outras situações onde a Intuição pode ajudar.",
+            "Pode-se jogar apenas uma única vez contra qualquer problema. O Mestre não deve permitir o uso leviano deste Aprimoramento, nem que seja usado pra abreviar uma aventura. Se o Mestre acha que não ser capaz de controlar este Aprimoramento não deve permitir que ele seja adquirido."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nocao-exata-do-tempo",
+      "title": "Noção Exata do Tempo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "Você tem um relógio natural apurado. Se não estiver sob a influência de hipnotismo, for nocauteado ou estiver sobre qualquer interferência mental, você sabe a hora EXATA. Você também é capaz de medir qualquer espaço de tempo. O Sono não atrapalha esta sua capacidade, você pode inclusive acordar em um horário pré-determinado. Nenhuma mudança no horário, como fuso horário interfere nesta sua capacidade."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você tem um relógio natural apurado. Se não estiver sob a influência de hipnotismo, for nocauteado ou estiver sobre qualquer interferência mental, você sabe a hora EXATA. Você também é capaz de medir qualquer espaço de tempo. O Sono não atrapalha esta sua capacidade, você pode inclusive acordar em um horário pré-determinado. Nenhuma mudança no horário, como fuso horário interfere nesta sua capacidade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nocao-de-perigo",
+      "title": "Noção de Perigo",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "2 Pontos",
+        "Você de vez em quando sente um arrepio dizendo que há alguma coisa de errado. Toda vez que a situação envolver um desastre eminente, uma emboscada, ou qualquer perigo do gênero, o Mestre fará em segredo, um Teste de PER. Se obtiver um sucesso, ele te dirá que você pressente que alguma coisa está errada. Um acerto crítico fará com que o Mestre lhe dê alguns detalhes sobre a natureza do perigo."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você de vez em quando sente um arrepio dizendo que há alguma coisa de errado. Toda vez que a situação envolver um desastre eminente, uma emboscada, ou qualquer perigo do gênero, o Mestre fará em segredo, um Teste de PER. Se obtiver um sucesso, ele te dirá que você pressente que alguma coisa está errada. Um acerto crítico fará com que o Mestre lhe dê alguns detalhes sobre a natureza do perigo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patrono",
+      "title": "Patrono",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto: Uma organização pequena, como uma pequena guilda. O equipamento que poderá lhe fornecer é pequeno e simples.",
+        "2 Pontos: Uma organização de porte médio e certa importância, como uma grande guilda ou a guarda ou milícia de uma cidade pequena. Pode fornecer bons equipamentos, mas raramente equipamento mágico.",
+        "3 Pontos: Uma organização grande, como a guarda de uma grande cidade. O equipamento fornecido é bom, podendo ser de qualidade superior e, em certas situações, mágico.",
+        "Você serve a uma organização, que pode lhe fornecer armas e equipamentos quando necessário. Por outro lado, deve sempre cumprir com suas obrigações e deve obedecer ordens de seus superiores.",
+        "Geralmente um patrono apenas libera equipamento para missões que envolvem a própria organização ou missões de importância, não para resolver aventuras pessoais."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto: Uma organização pequena, como uma pequena guilda. O equipamento que poderá lhe fornecer é pequeno e simples.",
+            "2 Pontos: Uma organização de porte médio e certa importância, como uma grande guilda ou a guarda ou milícia de uma cidade pequena. Pode fornecer bons equipamentos, mas raramente equipamento mágico.",
+            "3 Pontos: Uma organização grande, como a guarda de uma grande cidade. O equipamento fornecido é bom, podendo ser de qualidade superior e, em certas situações, mágico."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você serve a uma organização, que pode lhe fornecer armas e equipamentos quando necessário. Por outro lado, deve sempre cumprir com suas obrigações e deve obedecer ordens de seus superiores.",
+            "Geralmente um patrono apenas libera equipamento para missões que envolvem a própria organização ou missões de importância, não para resolver aventuras pessoais."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reflexos-em-combate",
+      "title": "Reflexos em Combate",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "3 Pontos",
+        "Você tem reações extremamente rápidas e dificilmente é surpreendido. Você recebe um bônus de +5% em qualquer Defesa, +2 em Iniciativas e nunca tem sua defesa dificultada devido a surpresa.",
+        "Em uma batalha em um pequeno grupo seu lado recebe um bônus de +1 se você for o líder, além disto você recebe um bônus de +2 em WILL para sair de um atordoamento mental devido a surpresa."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "3 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você tem reações extremamente rápidas e dificilmente é surpreendido. Você recebe um bônus de +5% em qualquer Defesa, +2 em Iniciativas e nunca tem sua defesa dificultada devido a surpresa.",
+            "Em uma batalha em um pequeno grupo seu lado recebe um bônus de +1 se você for o líder, além disto você recebe um bônus de +2 em WILL para sair de um atordoamento mental devido a surpresa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "status-social-reputacao",
+      "title": "Status Social/Reputação",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto por nível",
+        "Indica a reputação e o status diante da sociedade.",
+        "Qualquer um determina seu Status social simplesmente olhando para você. Com Status elevado seu rosto pode ser facilmente conhecido. Status Social dá um bônus de 5% em testes de Etiqueta para cada ponto que seu personagem tem acima dos outros, o inverso também é verdadeiro, cada nível de Status social negativo dá uma penalidade de -5% para cada ponto que os outros personagens tem acima do seu. Além disso um status social elevado pode trazer outras vantagens e desvantagens, de acordo com o Mestre.",
+        "Já se seu personagem escolheu Reputação os bônus acima não são aplicados, os bônus serão aplicados de acordo com a sua Reputação. Ex: Gorask, o Orc, tem Reputação 2 por ser o maior guerreiro da sua aldeia, com isto ele recebe um bônus de 10% em testes de Intimidar, já que todos acreditam que ele é um guerreiro formidável.",
+        "8 pontos: Sumo sacerdote muito conhecido, Rei Thormy, Talude.",
+        "7 pontos: Rei de uma grande nação, Thwor Ironfist diante os goblinóides.",
+        "6 pontos: Príncipe de uma grande nação, Duque de uma grande nação, rei de uma nação pequena.",
+        "5 pontos: Barão, Conde de uma grande nação, herói reconhecido pelo povo.",
+        "4 pontos: Dono de terras, herói reconhecido pela população local.",
+        "3 pontos: Pequeno dono de terras.",
+        "2 pontos: Cavaleiro, prefeito, Grande comerciante.",
+        "1 ponto: Escudeiro, Capitão da guarda local.",
+        "0 pontos: Cidadão comum.",
+        "-1 ponto: Servo, criado.",
+        "-2 pontos: Forasteiro, pertencente ao Submundo.",
+        "-3 pontos: Mendigo.",
+        "-4 pontos: Escravidão total."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto por nível"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Indica a reputação e o status diante da sociedade.",
+            "Qualquer um determina seu Status social simplesmente olhando para você. Com Status elevado seu rosto pode ser facilmente conhecido. Status Social dá um bônus de 5% em testes de Etiqueta para cada ponto que seu personagem tem acima dos outros, o inverso também é verdadeiro, cada nível de Status social negativo dá uma penalidade de -5% para cada ponto que os outros personagens tem acima do seu. Além disso um status social elevado pode trazer outras vantagens e desvantagens, de acordo com o Mestre.",
+            "Já se seu personagem escolheu Reputação os bônus acima não são aplicados, os bônus serão aplicados de acordo com a sua Reputação. Ex: Gorask, o Orc, tem Reputação 2 por ser o maior guerreiro da sua aldeia, com isto ele recebe um bônus de 10% em testes de Intimidar, já que todos acreditam que ele é um guerreiro formidável.",
+            "8 pontos: Sumo sacerdote muito conhecido, Rei Thormy, Talude.",
+            "7 pontos: Rei de uma grande nação, Thwor Ironfist diante os goblinóides.",
+            "6 pontos: Príncipe de uma grande nação, Duque de uma grande nação, rei de uma nação pequena.",
+            "5 pontos: Barão, Conde de uma grande nação, herói reconhecido pelo povo.",
+            "4 pontos: Dono de terras, herói reconhecido pela população local.",
+            "3 pontos: Pequeno dono de terras.",
+            "2 pontos: Cavaleiro, prefeito, Grande comerciante.",
+            "1 ponto: Escudeiro, Capitão da guarda local.",
+            "0 pontos: Cidadão comum.",
+            "-1 ponto: Servo, criado.",
+            "-2 pontos: Forasteiro, pertencente ao Submundo.",
+            "-3 pontos: Mendigo.",
+            "-4 pontos: Escravidão total."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terreno-familiar",
+      "title": "Terreno Familiar",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "Seu Personagem é mais habituado a um tipo de terreno (geralmente o mesmo que sua perícia Sobrevivência). Sempre que age nesse ambiente, recebe +10% em todos os Testes de Perícia, com exceção das perícias altamente técnicas (que começam em 0) nas quais você não tem nenhum ponto gasto. Esse bônus também não se aplica às Perícias de combate.",
+        "Esse Aprimoramento pode ser comprado como um Aprimoramento Regional por qualquer Personagem, sendo que o terreno será determinado por seu reino (veja a descrição anteriormente). Entretanto, este não é um Aprimoramento Regional, portanto pode ser comprado por qualquer Personagem (ao custo de 1 ponto)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu Personagem é mais habituado a um tipo de terreno (geralmente o mesmo que sua perícia Sobrevivência). Sempre que age nesse ambiente, recebe +10% em todos os Testes de Perícia, com exceção das perícias altamente técnicas (que começam em 0) nas quais você não tem nenhum ponto gasto. Esse bônus também não se aplica às Perícias de combate.",
+            "Esse Aprimoramento pode ser comprado como um Aprimoramento Regional por qualquer Personagem, sendo que o terreno será determinado por seu reino (veja a descrição anteriormente). Entretanto, este não é um Aprimoramento Regional, portanto pode ser comprado por qualquer Personagem (ao custo de 1 ponto)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "torcida",
+      "title": "Torcida",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "comum",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "comum"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "Seu Personagem tem um grupo de fãs que torcem a seu favor, e isso o incentiva em combate e melhora suas habilidades. Sempre que sua torcida estiver presente você recebe +10% em todos os Testes de Perícia, inclusive combate."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu Personagem tem um grupo de fãs que torcem a seu favor, e isso o incentiva em combate e melhora suas habilidades. Sempre que sua torcida estiver presente você recebe +10% em todos os Testes de Perícia, inclusive combate."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aumentar-magia",
+      "title": "Aumentar Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "metamagico",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "metamagico"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "O alcance da Magia é dobrado, com exceção das Magias que exigem toque que não são afetadas. Para conjurar essa Magia você precisa ter 1 ponto de Focus a mais do que o normal, e o custo será de 1 ponto extra. Por exemplo, se uma Magia normalmente exige Focus 2 e consome 1 PM, essa mesma Magia Aumentada exigirá Focus 3 e consumirá 2 PM."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O alcance da Magia é dobrado, com exceção das Magias que exigem toque que não são afetadas. Para conjurar essa Magia você precisa ter 1 ponto de Focus a mais do que o normal, e o custo será de 1 ponto extra. Por exemplo, se uma Magia normalmente exige Focus 2 e consome 1 PM, essa mesma Magia Aumentada exigirá Focus 3 e consumirá 2 PM."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elevar-magia",
+      "title": "Elevar Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "metamagico",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "metamagico"
+      },
+      "paragraphs": [
+        "2 Pontos",
+        "Você pode aumentar o Focus dessa Magia, para assim causar mais dano ou aumentar a duração, entre outros efeitos. O problema é que o custo da Magia é aumentado na mesma proporção.",
+        "Por exemplo você quer conjurar Bola de Fogo e tem Focus 3 em Fogo, mas quer causar mais dano.",
+        "Pode conjurar essa Magia como se tivesse Focus 5 em Fogo, causando assim dano superior (mesmo sem ter realmente esse Focus). Por outro lado o custo da Magia também aumenta, na mesma proporção: se a Magia tem custo padrão (como é o caso da Bola de Fogo) ela terá custo como uma magia desse Focus (no exemplo, terá custo de 5 pontos aos invés de 3). Se a Magia tem um custo fixo, esse custo aumenta em +1 para cada 1 ponto de Focus aumentado (por exemplo, uma magia que exige Focus 3 e tem custo 2 pontos é Elevada para Focus 6 terá custo de 5 pontos)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você pode aumentar o Focus dessa Magia, para assim causar mais dano ou aumentar a duração, entre outros efeitos. O problema é que o custo da Magia é aumentado na mesma proporção.",
+            "Por exemplo você quer conjurar Bola de Fogo e tem Focus 3 em Fogo, mas quer causar mais dano.",
+            "Pode conjurar essa Magia como se tivesse Focus 5 em Fogo, causando assim dano superior (mesmo sem ter realmente esse Focus). Por outro lado o custo da Magia também aumenta, na mesma proporção: se a Magia tem custo padrão (como é o caso da Bola de Fogo) ela terá custo como uma magia desse Focus (no exemplo, terá custo de 5 pontos aos invés de 3). Se a Magia tem um custo fixo, esse custo aumenta em +1 para cada 1 ponto de Focus aumentado (por exemplo, uma magia que exige Focus 3 e tem custo 2 pontos é Elevada para Focus 6 terá custo de 5 pontos)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estender-magia",
+      "title": "Estender Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "metamagico",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "metamagico"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1 ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A duração da Magia é dobrada. No entanto para conjurar essa Magia deve-se ter 1 ponto de Focus a mais do que o normal e o custo é aumentado em 1 ponto(veja o exemplo anterior)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magia-sem-gestos",
+      "title": "Magia Sem Gestos",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "metamagico",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "metamagico"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "A Magia pode ser conjurada sem a necessidade de gestos, mas o custo é aumentado em +2 PMs."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A Magia pode ser conjurada sem a necessidade de gestos, mas o custo é aumentado em +2 PMs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magia-silenciosa",
+      "title": "Magia Silenciosa",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "metamagico",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "metamagico"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "A Magia pode ser conjurada em silêncio absoluto, mesmo quando o conjurador estiver mudo.",
+        "O custo da Magia aumenta em 1 PM."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A Magia pode ser conjurada em silêncio absoluto, mesmo quando o conjurador estiver mudo.",
+            "O custo da Magia aumenta em 1 PM."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maximizar-magia",
+      "title": "Maximizar Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "metamagico",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "metamagico"
+      },
+      "paragraphs": [
+        "2 Pontos",
+        "A Magia tem efeito máximo (dano máximo, cura máxima). Os Testes de Resistência não são afetados. Uma Magia Maximizada exige 2 Pontos de Focus a mais para ser lançada e tem custo aumentado em 50% arredondado para cima. Por exemplo uma Bola de Fogo Maximizada com Focus 3 causará 18 pontos de dano (o máximo de 3d6) mas exigirá Focus 5 e terá custo de 5 pontos (3+1,5 arredondado para cima)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "A Magia tem efeito máximo (dano máximo, cura máxima). Os Testes de Resistência não são afetados. Uma Magia Maximizada exige 2 Pontos de Focus a mais para ser lançada e tem custo aumentado em 50% arredondado para cima. Por exemplo uma Bola de Fogo Maximizada com Focus 3 causará 18 pontos de dano (o máximo de 3d6) mas exigirá Focus 5 e terá custo de 5 pontos (3+1,5 arredondado para cima)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "potencializar-magia",
+      "title": "Potencializar Magia",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "metamagico",
+      "sectionTitle": "Aprimoramento",
+      "metadata": {
+        "subtipo": "metamagico"
+      },
+      "paragraphs": [
+        "1 Ponto",
+        "Todos os efeitos da Magia são aumentados em 50% (como dano, alcance e duração).",
+        "Testes de Resistência não são afetados, e o custo da Magia também aumenta em 50% arredondado para cima (se antes o custo era de 2 PMs, agora será de 3 PMs)."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 Ponto"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Todos os efeitos da Magia são aumentados em 50% (como dano, alcance e duração).",
+            "Testes de Resistência não são afetados, e o custo da Magia também aumenta em 50% arredondado para cima (se antes o custo era de 2 PMs, agora será de 3 PMs)."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "aprimoramentos": 67,
+    "aprimoramentos_regionais": 48,
+    "aprimoramentos_comuns": 12,
+    "aprimoramentos_metamagicos": 7
+  },
+  "reviewNotes": [
+    "Quebras de página e títulos quebrados por OCR foram recompostos antes da catalogação.",
+    "Aprimoramentos regionais sem custo explícito foram mantidos sem bloco de custo.",
+    "Escalas como Status Social/Reputação foram mantidas dentro do mesmo item, preservando os níveis."
+  ],
+  "generatedAt": "2026-06-05T11:57:53"
+}
