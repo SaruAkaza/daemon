@@ -109,6 +109,41 @@ TEXT_FIXES.update({
     "30xm": "30cm",
     "um cova": "uma cova",
     "À armadura": "A armadura",
+    "dozes iniciantes": "iniciantes",
+    "Meta- Jogo": "Meta-Jogo",
+    "Personagens € uma trama": "Personagens e uma trama",
+    " € ": " e ",
+    "edemagos": "e de magos",
+    "originouse": "originou-se",
+    "fisicos": "físicos",
+    "ascenção": "ascensão",
+    "buscálo": "buscá-lo",
+    "Ark-a-nun": "Arkanun",
+    "diriegm": "dirigem",
+    "tipso": "tipos",
+    "recíperes": "recíperes",
+    "dificeis": "difíceis",
+    "importânica": "importância",
+    "nituais": "rituais",
+    "cmatividade": "criatividade",
+    "estvviverem": "estiverem",
+    "estvvviverem": "estiverem",
+    "rituzss": "rituais",
+    "nodes": "nodos",
+    "vz jantes": "viajantes",
+    "vz jant": "viajantes",
+    "Evrre-acesso": "livre acesso",
+    "mameiras": "maneiras",
+    "defeses": "defesas",
+    "inespugnáveis": "inexpugnáveis",
+    "guerza": "guerra",
+    "seme- Ihante": "semelhante",
+    "cons- a h trução": "construção",
+    "des- sas": "dessas",
+    "Kecpers": "Keepers",
+    "Saraphmacl": "Saraphmael",
+    "Kaclthorpe": "Kaelthorpe",
+    "À Doutrina": "A Doutrina",
 })
 
 DROP_PARAGRAPHS = {
@@ -133,6 +168,7 @@ def normalize_text(text: str) -> str:
     text = text.replace("—", "-").replace("–", "-")
     for old, new in TEXT_FIXES.items():
         text = text.replace(old, new)
+    text = re.sub(r"(?<=[A-Za-zÀ-ÿ])-\s+(?=[a-zà-ÿ])", "", text)
     text = re.sub(r"\s+", " ", text).strip()
     text = re.sub(r"\s+([,.;:!?])", r"\1", text)
     text = re.sub(r"\(\s+", "(", text)
@@ -744,6 +780,16 @@ def make_character_options() -> list[dict]:
     return results
 
 
+def setting_blocks_from_headings(pages: Iterable[int], headings: list[str]) -> list[dict]:
+    blocks = []
+    for index, heading in enumerate(headings):
+        next_heading = headings[index + 1] if index + 1 < len(headings) else None
+        paragraphs = extract_between(pages, heading, next_heading)
+        if paragraphs:
+            blocks.append(block(normalize_text(heading), "cenarios_lore", paragraphs))
+    return blocks
+
+
 def make_settings() -> list[dict]:
     settings = [
         item("Cenarios/Lore - Spiritum", "cenarios_lore", "setting", [], [
@@ -764,6 +810,160 @@ def make_settings() -> list[dict]:
         ]),
     ]
     return settings
+
+
+def make_settings() -> list[dict]:
+    sections: list[dict] = []
+    sections.extend(setting_blocks_from_headings([4], [
+        "Introdução",
+        "O que é o Meta-Jogo?",
+        "A Campanha",
+        "Humanos ou Espíritos?",
+        "A velha Campanha",
+    ]))
+    sections.extend(setting_blocks_from_headings([13, 14, 15, 16], [
+        "O Reino dos Mortos",
+        "Forma-Pensamento",
+        "Frequências Vibratórias",
+        "A Magia e os Fantasmas",
+        "O Plano Astral",
+        "O Plano Espiritual",
+        "Vales Espirituais",
+        "O Sonhar",
+        "Semiplanos Físicos",
+        "Simulacros",
+        "As Reencarnações",
+    ]))
+    sections.extend(setting_blocks_from_headings([31, 32], [
+        "Ordem da Rosa e da Cruz",
+        "Background",
+        "Características",
+        "Graus",
+        "Organização dos Templos",
+    ]))
+    sections.extend(setting_blocks_from_headings([33, 34], [
+        "Estudiosos do Umbral",
+        "Mesas Girantes",
+        "A Igreja c as Mentiras",
+        "À Doutrina",
+        "As Viagens Astrais",
+    ]))
+    sections.extend(setting_blocks_from_headings([79, 81, 82, 83, 84], [
+        "Spiritum",
+        "O Manto",
+        "O Perispírito",
+        "Plano Astral",
+        "Mapas Astrais",
+        "Entender Spiritum",
+        "Tempestades Astrais",
+        "O Cordão de Prata",
+        "As Caravelas Astrais",
+        "Cidades Astrais",
+        "Sistemas Monetários",
+        "Equipamentos",
+        "Como entrar no Plano Astral?",
+        "Simulacros",
+    ]))
+    sections.extend(setting_blocks_from_headings([85, 86, 87], [
+        "Umbral",
+        "As Cidades Trevosas",
+        "As Fortalezas Trevosas",
+        "As Prisões",
+        "Os Navios Fantasmas",
+        "Os Postos de Vigília",
+        "Embaixadores",
+        "Vales Espirituais",
+        "O Colégio Invisível",
+        "O Paraíso das 77 virgens",
+        "O Mundo Laranja",
+        "O Paraíso dos Justos",
+    ]))
+    sections.extend(setting_blocks_from_headings([89, 91, 92], [
+        "O Sonhar",
+        "Tempo e Espaço",
+        "As Cidades do Sonhar",
+        "As Tavernas",
+        "As Bibliotecas",
+        "O Palácio das Recordações",
+        "O Reino dos Pesadelos",
+        "O Castelo de Proebetus",
+        "O Castelo de Morpheus",
+        "O Castelo de Phantasus",
+        "As Ilhas e Rochas periféricas",
+        "A Taverna do Fim do Mundo",
+        "Os Reinos de Madelein",
+        "Como Viver em Sonhar",
+    ]))
+    sections.extend(setting_blocks_from_headings([93, 95, 96], [
+        "O Mercado de Almas",
+        "Afinal, como isso funciona?",
+        "O que é a Lei?",
+        "Quanto vale uma alma?",
+        "Para quê serve uma alma?",
+        "Os contratos",
+        "Como funcionam os Mercados?",
+        "Alguns negociadores Famosos",
+        "Saraphmacl, o Justo",
+        "Kaclthorpe",
+        "Rainha Cocaine",
+        "Senhor dos Prazeres",
+        "O Imperador Chin",
+    ]))
+    sections.extend(setting_blocks_from_headings([97, 98], [
+        "Lanka",
+        "A Origem",
+        "A Cidade",
+        "Kali",
+        "Raktabija",
+        "Bhairav",
+    ]))
+    sections.extend(setting_blocks_from_headings([99, 101, 102], [
+        "Metrópolis",
+        "A Arquitetura biomecânica",
+        "O Fosso",
+        "Três Mausoléus",
+        "A Torre de Marfim",
+        "Os Kecpers",
+        "Chezas",
+        "Cenobitas",
+        "Personagens de Nota",
+    ]))
+    sections.extend(setting_blocks_from_headings([103, 104], [
+        "Inferno",
+        "A Origem",
+        "Os círculos",
+    ]))
+    sections.extend(setting_blocks_from_headings([105, 106], [
+        "O Abismo",
+        "A Origem",
+        "Os 66 sobreviventes",
+        "Os Outros",
+        "Primeira Montanha",
+        "Segunda Montanha",
+        "Terceira Montanha",
+    ]))
+    sections.extend(setting_blocks_from_headings([107, 108], [
+        "Inferno Oriental",
+        "Montanha Sun Tow",
+        "Primeiro Palácio",
+        "Segundo Palácio",
+        "Terceiro Palácio",
+        "Quarto Palácio",
+        "Quinto Palácio",
+        "Sexto Palácio",
+        "Sétimo Palácio",
+        "Oitavo Palácio",
+        "Nono Palácio",
+        "Décimo Palácio",
+    ]))
+    sections.extend(setting_blocks_from_headings([109], [
+        "Arkanun",
+        "O poder corrompe...",
+        "Mas a guerra continuou...",
+        "A Fuga para o Paraíso",
+        "A Fortaleza de Ossos",
+    ]))
+    return [item("Cenarios/Lore - Spiritum", "cenarios_lore", "setting", [], sections)]
 
 
 def make_core_rules() -> list[dict]:
