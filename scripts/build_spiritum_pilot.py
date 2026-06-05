@@ -347,6 +347,22 @@ POWER_HEADINGS = [
 ]
 
 
+LEVEL_LABEL_RE = re.compile(r"(?<!\w)(N\u00edvel\s+\d+\s*[.:])")
+
+
+def split_embedded_power_levels(paragraph: str) -> list[str]:
+    matches = list(LEVEL_LABEL_RE.finditer(paragraph))
+    if len(matches) <= 1:
+        return [paragraph]
+    parts = []
+    if matches[0].start() > 0:
+        parts.append(paragraph[: matches[0].start()].strip())
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(paragraph)
+        parts.append(paragraph[match.start() : end].strip())
+    return [part for part in parts if part]
+
+
 def make_powers() -> list[dict]:
     results = []
     for index, heading in enumerate(POWER_HEADINGS[:-1]):
@@ -375,6 +391,40 @@ def make_powers() -> list[dict]:
         sections = []
         if intro:
             sections.append(block("Descrição", "poderes", intro))
+        sections.extend(level_sections)
+        results.append(item(title, "poderes", "poder", intro, sections))
+    return results
+
+
+def make_powers() -> list[dict]:
+    results = []
+    for index, heading in enumerate(POWER_HEADINGS[:-1]):
+        next_heading = POWER_HEADINGS[index + 1]
+        title = normalize_text(heading).replace("Id\u00e9ia", "Ideia").replace("Et\u00e9rca", "Et\u00e9rea")
+        paragraphs = extract_between(range(53, 61), heading, next_heading)
+        if not paragraphs:
+            continue
+        intro: list[str] = []
+        level_sections: list[dict] = []
+        current_title = ""
+        current_lines: list[str] = []
+        for original_paragraph in paragraphs:
+            for paragraph in split_embedded_power_levels(original_paragraph):
+                if paragraph.startswith("N\u00edvel "):
+                    if current_title:
+                        level_sections.append(block(current_title, "poderes", current_lines))
+                    label = paragraph.split(":", 1)[0].split(".", 1)[0]
+                    current_title = label
+                    current_lines = [paragraph]
+                elif current_title:
+                    current_lines.append(paragraph)
+                else:
+                    intro.append(paragraph)
+        if current_title:
+            level_sections.append(block(current_title, "poderes", current_lines))
+        sections = []
+        if intro:
+            sections.append(block("Descri\u00e7\u00e3o", "poderes", intro))
         sections.extend(level_sections)
         results.append(item(title, "poderes", "poder", intro, sections))
     return results

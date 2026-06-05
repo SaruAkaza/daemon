@@ -17,7 +17,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-05T17:57:26",
+  "generatedAt": "2026-06-05T18:00:09",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -2476,7 +2476,63 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: IP 1 vs. Spiritum. Nível 2: IP 2 vs. Spiritum. Nível 3: IP 3 vs. Spiritum. Nível 4: IP 4 vs. Spiritum. Nível 5: IP 5 vs. Spiritum. Nível 6: IP 6 vs. Spiritum. Nível 7: IP 7 vs. Spiritum. Nível 8: IP 8 vs. Spiritum."
+            "Nível 1: IP 1 vs. Spiritum."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: IP 2 vs. Spiritum."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: IP 3 vs. Spiritum."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: IP 4 vs. Spiritum."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: IP 5 vs. Spiritum."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: IP 6 vs. Spiritum."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: IP 7 vs. Spiritum."
+          ]
+        },
+        {
+          "id": "nivel-8",
+          "title": "Nível 8",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 8: IP 8 vs. Spiritum."
           ]
         }
       ]
@@ -2586,8 +2642,8 @@
           ]
         },
         {
-          "id": "nivel-4-banshee-o-espirito-nao-so-e-capaz-de-gritar-dentro-do-plano-fisico-como-este-grito-estridente-pode-vir-a-causar-danos-a-quem-estiver-a-ate-10m-de-distancia-para-cada-ponto-de-will-gasto-por-rodada-o-grito-causa-id6-pontos-de-dano-ate-um-maximo-de-4d6-por-rodada-a-vitima-pode-fazer-um-teste-de-con-para-reduzir-o-dano-a-metade-os-pontos-de-will-sao-recuperados-a-razao-de-um-ponto-a-cada-duas-horas",
-          "title": "Nível 4. Banshee. O espírito não só é capaz de gritar dentro do plano físico como este grito estridente pode vir a causar danos a quem estiver a até 10m de distância. Para cada ponto de WILL gasto por rodada, o grito causa Id6 pontos de dano (até um máximo de 4d6 por rodada). A vítima pode fazer um teste de CON para reduzir o dano à metade. Os pontos de WILL são recuperados à razão de um ponto a cada duas horas.",
+          "id": "nivel-4",
+          "title": "Nível 4",
           "area": "poderes",
           "paragraphs": [
             "Nível 4. Banshee. O espírito não só é capaz de gritar dentro do plano físico como este grito estridente pode vir a causar danos a quem estiver a até 10m de distância. Para cada ponto de WILL gasto por rodada, o grito causa Id6 pontos de dano (até um máximo de 4d6 por rodada). A vítima pode fazer um teste de CON para reduzir o dano à metade. Os pontos de WILL são recuperados à razão de um ponto a cada duas horas.",
@@ -2660,7 +2716,63 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: 1D para Detectar Mudança de Forma. Nível 2: 2D para Detectar Mudança de Forma. Nível 3: 3D para Deectar Mudança de Forma. Nível 4: 4D para Detectar Mudança de Forma. Nível 5: SD para Detectar Mudança de Forma. Nível 6: 6D para Detectar Mudança de Forma. Nível 7: 7D para Detectar Mudança de Forma. Nível 8: 8D para Detectar Mudança de Forma. E assim por diante."
+            "Nível 1: 1D para Detectar Mudança de Forma."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: 2D para Detectar Mudança de Forma."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: 3D para Deectar Mudança de Forma."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: 4D para Detectar Mudança de Forma."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: SD para Detectar Mudança de Forma."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: 6D para Detectar Mudança de Forma."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: 7D para Detectar Mudança de Forma."
+          ]
+        },
+        {
+          "id": "nivel-8",
+          "title": "Nível 8",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 8: 8D para Detectar Mudança de Forma. E assim por diante."
           ]
         }
       ]
@@ -2693,7 +2805,55 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: Emoções 1D. Nível 2: Emoções 2D. Nível 3: Emoções 3D. Nível 4: Emoções 4D. Nível 5: Emoções 5D. Nível 6: Emoções 6D. Nível 7: Emoções 7D. E assim por diante.",
+            "Nível 1: Emoções 1D."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: Emoções 2D."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: Emoções 3D."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: Emoções 4D."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: Emoções 5D."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: Emoções 6D."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: Emoções 7D. E assim por diante.",
             "Hagnor possui Emoções Ruins 5. Ele deseja causar medo em um investigador que está examinando uma sala, para que ele saia o mais rapidamente dali, sem encontrar o que está procurando. O Jogador de Hagnor joga 5d6 e Testa o resultado contra a WILL do investigador. Se vencer, o investigador sentirá medo na sala e terá de abandonála o mais rápido possível."
           ]
         }
@@ -2777,7 +2937,47 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: esta jornada demora 12 horas. Nível 2: esta jornada demora 6 horas. Nível 3: esta jornada demora 3 hora. Nível 4: esta jornada demora 1 hora. Nível 5: esta jornada demora 30 minutos. Nível 6: esta jornada demora 10 minutos.",
+            "Nível 1: esta jornada demora 12 horas."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: esta jornada demora 6 horas."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: esta jornada demora 3 hora."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: esta jornada demora 1 hora."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: esta jornada demora 30 minutos."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: esta jornada demora 10 minutos.",
             "Pessoa extra (1): o Personagem pode levar consigo uma pessoa a mais em sua jornada. Este poder espectral pode ser comprado diversas vezes."
           ]
         }
@@ -2868,7 +3068,55 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: Influência de 1D. Nível 2: Influéncia de 2D. Nível 3: Influência de 3D. Nível 4: Influência de 4D. Nível 5: Influência de SD. Nível 6: Influência de 6D. Nível 7: Influência de 7D.",
+            "Nível 1: Influência de 1D."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: Influéncia de 2D."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: Influência de 3D."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: Influência de 4D."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: Influência de SD."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: Influência de 6D."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: Influência de 7D.",
             "Este poder capacita o espírito a influenciar qualquer tipo de ação. Caso falhe no teste, não poderá utilizar sua influência sobre esta pessoa pelos próximos 3 dias."
           ]
         }
@@ -2904,7 +3152,55 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: Invisibilidade de 1D. Nível 2: Invisibilidade de 2D. Nível 3: Invisibilidade de 3D. Nível 4: Invisibilidade de 4D. Nível 5: Invisibilidade de SD. Nível 6: Invisibilidade de 6D. Nível 7: Invisibilidade de 7D. E assim por diante."
+            "Nível 1: Invisibilidade de 1D."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: Invisibilidade de 2D."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: Invisibilidade de 3D."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: Invisibilidade de 4D."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: Invisibilidade de SD."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: Invisibilidade de 6D."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: Invisibilidade de 7D. E assim por diante."
           ]
         }
       ]
@@ -2939,7 +3235,55 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: Intangibilidade de 1D. Nível 2: Intangibilidade de 2D. Nível 3: Intangibilidade de 3D. Nível 4: Intangibilidade de 4D. Nível 5: Intangibilidade de SD. Nível 6: Intangibilidade de 6D. Nível 7: Intangibilidade de 7D.",
+            "Nível 1: Intangibilidade de 1D."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: Intangibilidade de 2D."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: Intangibilidade de 3D."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: Intangibilidade de 4D."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: Intangibilidade de SD."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: Intangibilidade de 6D."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: Intangibilidade de 7D.",
             "Alguns valores comuns: como ponto de referência, objetos do plano material possuem frequência entre 6 (paredes, portas, etc.) e 12 (chão, objetos mais purificados), objetos espirituais possuem frequência entre 20 e 25, objetos em vales espirituais e reinos espirituais variam de 10 a 15 e assim por diante."
           ]
         }
@@ -2973,7 +3317,39 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: raio de 2m. Nível 2: raio de 4m. Nível 3: uma sala inteira. Nível 4: uma casa. Nível 5: uma mansão."
+            "Nível 1: raio de 2m."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: raio de 4m."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: uma sala inteira."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: uma casa."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: uma mansão."
           ]
         }
       ]
@@ -3101,7 +3477,47 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: localiza o outro espírito até um raio de 100m. Nível 2: localiza o outro espírito até um raio de 200m. Nível 3: localiza o outro espírito até um raio de 500m. Nível 4: localiza o outro espírito até um raio de 1km. Nível 5: localiza o outro espírito até um raio de 2km. Nível 6: localiza o outro espírito até um raio de Skm. E assim por diante."
+            "Nível 1: localiza o outro espírito até um raio de 100m."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: localiza o outro espírito até um raio de 200m."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: localiza o outro espírito até um raio de 500m."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: localiza o outro espírito até um raio de 1km."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: localiza o outro espírito até um raio de 2km."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: localiza o outro espírito até um raio de Skm. E assim por diante."
           ]
         }
       ]
@@ -3132,7 +3548,55 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: localiza o outro espírito até um raio de 100m. Nível 2: localiza o outro espírito até um raio de 200m. Nível 3: localiza o outro espírito até um raio de 500m. Nível 4: localiza o outro espírito até um raio de 1km. Nível 5: localiza o outro espírito até um raio de 2km. Nível 6: localiza o outro espírito até um raio de 5km. Nível 7: localiza o outro espírito até um raio de 10km. E assim por diante."
+            "Nível 1: localiza o outro espírito até um raio de 100m."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: localiza o outro espírito até um raio de 200m."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: localiza o outro espírito até um raio de 500m."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: localiza o outro espírito até um raio de 1km."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: localiza o outro espírito até um raio de 2km."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: localiza o outro espírito até um raio de 5km."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: localiza o outro espírito até um raio de 10km. E assim por diante."
           ]
         }
       ]
@@ -3161,7 +3625,55 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: Luzes de 1D. Nível 2: Luzes de 2D. Nível 3: Luzes de 3D. Nível 4: Luzes de 4D. Nível 5: Luzes de 5D. Nível 6: Luzes de 6D. Nível 7: Luzes de 7D. e assim por diante..."
+            "Nível 1: Luzes de 1D."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: Luzes de 2D."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: Luzes de 3D."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: Luzes de 4D."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: Luzes de 5D."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: Luzes de 6D."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: Luzes de 7D. e assim por diante..."
           ]
         }
       ]
@@ -3198,7 +3710,23 @@
           "title": "Nível 2",
           "area": "poderes",
           "paragraphs": [
-            "Nível 2: até 2 PVs podem ser transferidos por vez. Nível 3: até 3 PVs podem ser transferidos por vez. Nível 4: até 4 PVs podem ser transferidos por vez."
+            "Nível 2: até 2 PVs podem ser transferidos por vez."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: até 3 PVs podem ser transferidos por vez."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: até 4 PVs podem ser transferidos por vez."
           ]
         }
       ]
@@ -3282,7 +3810,55 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: Modificar Outros Espíritos de 1D. Nível 2: Modificar Outros Espíritos de 2D. Nível 3: Modificar Outros Espíritos de 3D. Nível 4: Modificar Outros Espíritos de 4D. Nível 5: Modificar Outros Espíritos de SD. Nível 6: Modificar Outros Espíritos de 6D. Nível 7: Modificar Outros Espíritos de 7D. E assim por diante."
+            "Nível 1: Modificar Outros Espíritos de 1D."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: Modificar Outros Espíritos de 2D."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: Modificar Outros Espíritos de 3D."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: Modificar Outros Espíritos de 4D."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: Modificar Outros Espíritos de SD."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: Modificar Outros Espíritos de 6D."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: Modificar Outros Espíritos de 7D. E assim por diante."
           ]
         }
       ]
@@ -3329,7 +3905,15 @@
           "title": "Nível 3",
           "area": "poderes",
           "paragraphs": [
-            "Nível 3: permite criar objetos do volume de uma pessoa. Nível 4: permite criar objetos de até 200kg."
+            "Nível 3: permite criar objetos do volume de uma pessoa."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: permite criar objetos de até 200kg."
           ]
         },
         {
@@ -3345,7 +3929,15 @@
           "title": "Nível 6",
           "area": "poderes",
           "paragraphs": [
-            "Nível 6: permite criar objetos com o volume de um carro. Nível 7: permite criar objetos de até 2 toneladas.",
+            "Nível 6: permite criar objetos com o volume de um carro."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: permite criar objetos de até 2 toneladas.",
             "e assim por diante..."
           ]
         }
@@ -3755,7 +4347,63 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: distância máxima de 10m. Nível 2: distância máxima de 100m. Nível 3: distância máxima de 500m. Nível 4: distância máxima de 1km. Nível 5: distância máxima de 5km. Nível 6: distância máxima de 10km. Nível 7: distância máxima de 50km. Nível 8: distância máxima de 100km."
+            "Nível 1: distância máxima de 10m."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: distância máxima de 100m."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: distância máxima de 500m."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: distância máxima de 1km."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: distância máxima de 5km."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: distância máxima de 10km."
+          ]
+        },
+        {
+          "id": "nivel-7",
+          "title": "Nível 7",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 7: distância máxima de 50km."
+          ]
+        },
+        {
+          "id": "nivel-8",
+          "title": "Nível 8",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 8: distância máxima de 100km."
           ]
         },
         {
@@ -3763,7 +4411,47 @@
           "title": "Nível 0",
           "area": "poderes",
           "paragraphs": [
-            "Nível 0: uma vez ao dia. Nível 1: duas vezes ao dia. Nível 2: três vezes por dia. Nível 3: quatro vezes por dia. Nível 4: seis vezes ao dia. Nível 5: dez vezes por dia.",
+            "Nível 0: uma vez ao dia."
+          ]
+        },
+        {
+          "id": "nivel-1",
+          "title": "Nível 1",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 1: duas vezes ao dia."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: três vezes por dia."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: quatro vezes por dia."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: seis vezes ao dia."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: dez vezes por dia.",
             "Este poder está limitado ao tipo de vale ou reino espiritual em que o Personagem esteja e não funciona (ou funciona de maneira diferente) em muitos reinos como o Sonhar ou o Inferno, cujas leis variam de acordo com a vontade do governante."
           ]
         }
@@ -3793,7 +4481,47 @@
           "title": "Nível 1",
           "area": "poderes",
           "paragraphs": [
-            "Nível 1: Aumenta a PER em +3. Nível 2: Aumenta a PER em +ó. Nível 3: Aumenta a PER em +9. Nível 4: Aumenta a PER em +12. Nível 5: Aumenta a PER em +15. Nível 6: Aumenta a PER em +18."
+            "Nível 1: Aumenta a PER em +3."
+          ]
+        },
+        {
+          "id": "nivel-2",
+          "title": "Nível 2",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 2: Aumenta a PER em +ó."
+          ]
+        },
+        {
+          "id": "nivel-3",
+          "title": "Nível 3",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 3: Aumenta a PER em +9."
+          ]
+        },
+        {
+          "id": "nivel-4",
+          "title": "Nível 4",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 4: Aumenta a PER em +12."
+          ]
+        },
+        {
+          "id": "nivel-5",
+          "title": "Nível 5",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 5: Aumenta a PER em +15."
+          ]
+        },
+        {
+          "id": "nivel-6",
+          "title": "Nível 6",
+          "area": "poderes",
+          "paragraphs": [
+            "Nível 6: Aumenta a PER em +18."
           ]
         }
       ]
