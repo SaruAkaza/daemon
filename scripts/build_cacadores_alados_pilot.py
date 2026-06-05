@@ -109,14 +109,14 @@ def build_manobras(body):
             current = {"name": name, "cost": cost, "desc": [desc], "prereq": ""}
             out.append(current)
         elif current is not None:
-            low = p.lower()
-            if low.startswith("pré-requisito"):
+            if p.lower().startswith("pré-requisito"):
                 current["prereq"] = p.split(":", 1)[-1].strip()
-            elif p.lower() in skip_headers or p.startswith("Adaptado do Netbook") or p.startswith("http"):
-                current = None
-            else:
-                # continuation of the current technique description
+            elif p[:1].islower():
+                # true continuation of the description (wrapped fragment)
                 current["desc"].append(p)
+            else:
+                # a new heading / style intro / noise: the technique is done
+                current = None
         i += 1
 
     entities = []
