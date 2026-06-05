@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T10:51:32",
+  "generatedAt": "2026-06-05T11:08:54",
   "sources": [
     {
       "source": "4killers",
@@ -10,6 +10,19 @@
       "areas": [
         "criaturas_npcs",
         "cenarios_lore"
+      ]
+    },
+    {
+      "source": "abismo",
+      "title": "Abismo",
+      "file": "abismo.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
+        "regras_base"
       ]
     },
     {
@@ -23,19 +36,6 @@
         "classes",
         "front_matter",
         "itens_equipamentos",
-        "regras_base"
-      ]
-    },
-    {
-      "source": "abismo",
-      "title": "Abismo",
-      "file": "abismo.json",
-      "status": "pilot_review",
-      "areas": [
-        "aprimoramentos",
-        "cenarios_lore",
-        "classes",
-        "criaturas_npcs",
         "regras_base"
       ]
     },
@@ -125,6 +125,20 @@
         "itens_equipamentos",
         "manobras_combate",
         "poderes"
+      ]
+    },
+    {
+      "source": "anjos-requiem-de-fe",
+      "title": "Anjos - Réquiem de Fé",
+      "file": "anjos-requiem-de-fe.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
+        "poderes",
+        "regras_base",
+        "rituais"
       ]
     },
     {

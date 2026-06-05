@@ -32,6 +32,9 @@ const THEME_KEY = "daemonPilots.theme";
 const state = {
   books: [],
   items: [],
+  areaCounts: new Map(),
+  filterGroupsCache: null,
+  filterGroupsCacheKey: "",
   selectedArea: null,
   selectedItemId: null,
   query: "",
@@ -125,13 +128,17 @@ function pill(label, tone = "") {
 }
 
 function baseItem(book, extra) {
-  return {
+  const item = {
     book,
     bookTitle: book.title,
     sourceFile: book.sourceFile,
     parentName: book.title,
     ...extra,
   };
+  if (item.area === "cenarios_lore") {
+    item.title = `Cenarios/Lore - ${book.title}`;
+  }
+  return item;
 }
 
 function buildCharacterItems(book) {
@@ -221,7 +228,7 @@ function buildItems(book) {
 
 function categoryCount(area) {
   if (area === "all") return state.items.length;
-  return state.items.filter((item) => item.area === area).length;
+  return state.areaCounts.get(area) || 0;
 }
 
 function countBy(items, getKey) {
@@ -231,6 +238,15 @@ function countBy(items, getKey) {
     for (const key of keys) counts.set(key, (counts.get(key) || 0) + 1);
   }
   return counts;
+}
+
+function invalidateFilterGroups() {
+  state.filterGroupsCache = null;
+  state.filterGroupsCacheKey = "";
+}
+
+function refreshAreaCounts() {
+  state.areaCounts = countBy(state.items, (item) => item.area);
 }
 
 function scopedFilterItems() {
@@ -245,19 +261,33 @@ function sectionByTitle(item, title) {
 }
 
 function sectionTitles(item) {
+  if (item._sectionTitles) return item._sectionTitles;
   return (item.sections || []).map((section) => section.title).filter(Boolean);
 }
 
 function itemCostOptions(item) {
-  const cost = sectionByTitle(item, "Custo");
-  if (!cost) return [];
-  return (cost.paragraphs || [])
-    .map((paragraph) => paragraph.match(/^\s*([+-]?\d+)\s+pontos?/i)?.[1])
-    .filter(Boolean)
-    .map((value) => `${value} ${Math.abs(Number(value)) === 1 ? "Ponto" : "Pontos"}`);
+  if (item._costOptions) return item._costOptions;
+  const costSections = (item.sections || []).filter((section) => {
+    const title = normalize(section.title);
+    return title === "custo" || title === "custo de pericia";
+  });
+  return costSections.flatMap((section) => (section.paragraphs || []).map((paragraph) => {
+    const text = String(paragraph).trim();
+    const points = text.match(/^\s*([+-]?\d+)\s+pontos?/i);
+    if (points) {
+      const value = Number(points[1]);
+      return `${points[1]} ${Math.abs(value) === 1 ? "Ponto" : "Pontos"}`;
+    }
+    const pts = text.match(/^\s*([+-]?\d+)\s+pts?\.?(?:\s+de\s+(.+?))?\.?\s*$/i);
+    if (pts) return pts[2] ? `${pts[1]} pts. ${pts[2]}` : `${pts[1]} pts.`;
+    const numeric = text.match(/^\s*([+-]?\d+)\s*$/);
+    if (numeric) return numeric[1];
+    return "";
+  })).filter(Boolean);
 }
 
 function itemPolarityOption(item) {
+  if (Object.prototype.hasOwnProperty.call(item, "_polarityOption")) return item._polarityOption;
   if (item.area !== "aprimoramentos") return null;
   if (item.polarity) return item.polarity;
   const values = itemCostOptions(item)
@@ -269,6 +299,7 @@ function itemPolarityOption(item) {
 }
 
 function itemLevelOptions(item) {
+  if (item._levelOptions) return item._levelOptions;
   return sectionTitles(item)
     .map((title) => normalize(title).match(/vel\s+(\d+)/i)?.[1])
     .filter(Boolean)
@@ -276,10 +307,21 @@ function itemLevelOptions(item) {
 }
 
 function itemPrerequisiteOptions(item) {
+  if (item._prerequisiteOptions) return item._prerequisiteOptions;
   const prerequisite = (item.sections || []).find((section) => normalize(section.title).includes("requisito"));
   return (prerequisite?.paragraphs || [])
     .map((paragraph) => paragraph.replace(/[()]/g, "").trim())
     .filter(Boolean);
+}
+
+function itemCaminhoOptions(item) {
+  const section = (item.sections || []).find((s) => normalize(s.title) === "caminho");
+  return (section?.paragraphs || []).map((p) => String(p).trim()).filter(Boolean);
+}
+
+function itemCirculoOptions(item) {
+  const section = (item.sections || []).find((s) => normalize(s.title) === "circulo");
+  return (section?.paragraphs || []).map((p) => `${String(p).trim()}º Círculo`).filter(Boolean);
 }
 
 function optionListFromCounts(counts) {
@@ -289,6 +331,11 @@ function optionListFromCounts(counts) {
 }
 
 function filterGroupsData() {
+  const cacheKey = `${state.selectedArea || ""}:${state.items.length}`;
+  if (state.filterGroupsCache && state.filterGroupsCacheKey === cacheKey) {
+    return state.filterGroupsCache;
+  }
+
   const scopedItems = scopedFilterItems();
   const bookCounts = countBy(scopedItems, (item) => item.book.source);
   const groups = [
@@ -354,12 +401,22 @@ function filterGroupsData() {
     if (levels.length) groups.push({ id: "levels", title: "Nível", options: levels });
   }
 
-  if (state.selectedArea !== "all" && state.selectedArea !== "aprimoramentos" && state.selectedArea !== "racas" && state.selectedArea !== "poderes") {
+  if (state.selectedArea === "rituais") {
+    const caminhos = optionListFromCounts(countBy(scopedItems, itemCaminhoOptions));
+    const circulos = optionListFromCounts(countBy(scopedItems, itemCirculoOptions));
+    if (caminhos.length) groups.push({ id: "caminhos", title: "Caminho", options: caminhos });
+    if (circulos.length) groups.push({ id: "circulos", title: "Círculo", options: circulos });
+  }
+
+  const blocksExcluded = ["all", "aprimoramentos", "racas", "poderes", "rituais"];
+  if (!blocksExcluded.includes(state.selectedArea)) {
     const blocks = optionListFromCounts(countBy(scopedItems, sectionTitles));
     if (blocks.length > 1) groups.push({ id: "blocks", title: "Blocos", options: blocks });
   }
 
-  return groups.filter((group) => group.options.length);
+  state.filterGroupsCache = groups.filter((group) => group.options.length);
+  state.filterGroupsCacheKey = cacheKey;
+  return state.filterGroupsCache;
 }
 
 function defaultFilters() {
@@ -379,8 +436,8 @@ function filtersWithDefaults(filters) {
   };
 }
 
-function filterAllows(groupId, value, filters = state.filters) {
-  const group = filterGroupsData().find((entry) => entry.id === groupId);
+function filterAllows(groupId, value, filters = state.filters, groupsById = null) {
+  const group = groupsById?.get(groupId) || filterGroupsData().find((entry) => entry.id === groupId);
   const allCount = group?.options.length || 0;
   const selected = filters[groupId];
   if (!selected || allCount === 0 || selected.size === allCount) return true;
@@ -388,8 +445,8 @@ function filterAllows(groupId, value, filters = state.filters) {
   return selected.has(value);
 }
 
-function filterAllowsAny(groupId, values) {
-  const group = filterGroupsData().find((entry) => entry.id === groupId);
+function filterAllowsAny(groupId, values, groupsById = null) {
+  const group = groupsById?.get(groupId) || filterGroupsData().find((entry) => entry.id === groupId);
   const selected = state.filters[groupId];
   if (!group || !selected || group.options.length === 0 || selected.size === group.options.length) return true;
   if (selected.size === 0) return false;
@@ -442,6 +499,7 @@ function renderCategoryHub() {
 }
 
 function itemSearchText(item) {
+  if (item._searchText) return item._searchText;
   return normalize([
     item.title,
     item.bookTitle,
@@ -454,20 +512,33 @@ function itemSearchText(item) {
   ].join(" "));
 }
 
+function prepareItem(item) {
+  item._sectionTitles = sectionTitles(item);
+  item._costOptions = itemCostOptions(item);
+  item._polarityOption = itemPolarityOption(item);
+  item._levelOptions = itemLevelOptions(item);
+  item._prerequisiteOptions = itemPrerequisiteOptions(item);
+  item._searchText = itemSearchText(item);
+  return item;
+}
+
 function visibleItems() {
   if (!state.selectedArea) return [];
   const query = normalize(state.query);
+  const groupsById = new Map(filterGroupsData().map((group) => [group.id, group]));
   return state.items.filter((item) => {
     if (state.selectedArea !== "all" && item.area !== state.selectedArea) return false;
     if (state.section !== "all" && item.kind === "npc" && item.sectionId !== state.section) return false;
-    if (!filterAllows("books", item.book.source)) return false;
-    if (!filterAllows("areas", item.area)) return false;
-    if (!filterAllows("kinds", item.kind || "section")) return false;
-    if (!filterAllows("polarity", itemPolarityOption(item))) return false;
-    if (!filterAllowsAny("costs", itemCostOptions(item))) return false;
-    if (!filterAllowsAny("prerequisites", itemPrerequisiteOptions(item))) return false;
-    if (!filterAllowsAny("levels", itemLevelOptions(item))) return false;
-    if (!filterAllowsAny("blocks", sectionTitles(item))) return false;
+    if (!filterAllows("books", item.book.source, state.filters, groupsById)) return false;
+    if (!filterAllows("areas", item.area, state.filters, groupsById)) return false;
+    if (!filterAllows("kinds", item.kind || "section", state.filters, groupsById)) return false;
+    if (!filterAllows("polarity", itemPolarityOption(item), state.filters, groupsById)) return false;
+    if (!filterAllowsAny("costs", itemCostOptions(item), groupsById)) return false;
+    if (!filterAllowsAny("prerequisites", itemPrerequisiteOptions(item), groupsById)) return false;
+    if (!filterAllowsAny("levels", itemLevelOptions(item), groupsById)) return false;
+    if (!filterAllowsAny("caminhos", itemCaminhoOptions(item), groupsById)) return false;
+    if (!filterAllowsAny("circulos", itemCirculoOptions(item), groupsById)) return false;
+    if (!filterAllowsAny("blocks", sectionTitles(item), groupsById)) return false;
     if (query && !itemSearchText(item).includes(query)) return false;
     return true;
   }).sort((a, b) => a.title.localeCompare(b.title, "pt-BR", { sensitivity: "base" }));
@@ -482,21 +553,7 @@ function previewForItem(item) {
 
 function metaPillsForItem(item) {
   const costs = itemCostOptions(item);
-  const levels = itemLevelOptions(item);
-  const prerequisites = itemPrerequisiteOptions(item);
-
-  if ((state.selectedArea === "aprimoramentos" || state.selectedArea === "racas") && costs.length) {
-    return [pill(costs.join(", "), "gold")];
-  }
-
-  if (state.selectedArea === "poderes") {
-    const chips = [];
-    if (levels.length) chips.push(pill(levels.length === 1 ? levels[0] : `${levels.length} níveis`, "green"));
-    if (prerequisites.length) chips.push(pill("Pré-requisito", "blue"));
-    return chips.length ? chips : [pill(itemTypeLabel(item), "")];
-  }
-
-  return [pill(itemTypeLabel(item), item.kind === "npc" ? "blue" : "")];
+  return costs.length ? [pill(costs.join(", "), "gold")] : [];
 }
 
 function renderSegmentRow(item) {
@@ -657,7 +714,7 @@ function itemTypeLabel(item) {
   if (item.kind === "race") return "Raça";
   if (item.kind === "ritual") return "Ritual";
   if (item.kind === "group") return "Grupo";
-  return "Bloco";
+  return "";
 }
 
 function renderDetail() {
@@ -686,7 +743,7 @@ function renderDetail() {
   const subtitle = document.createElement("p");
   subtitle.className = "detail-subtitle";
   const typeLabel = itemTypeLabel(item);
-  subtitle.textContent = `${typeLabel} · ${item.bookTitle} · ${item.sourceFile}`;
+  subtitle.textContent = [typeLabel, item.bookTitle, item.sourceFile].filter(Boolean).join(" · ");
   const tags = document.createElement("div");
   tags.className = "tag-row";
   tags.append(pill(areaLabel(item.area), "blue"));
@@ -813,7 +870,9 @@ async function load() {
   state.books = await Promise.all(
     index.sources.map((source) => fetchJson(`assets/data/pilot/${source.file}`)),
   );
-  state.items = state.books.flatMap(buildItems);
+  state.items = state.books.flatMap(buildItems).map(prepareItem);
+  refreshAreaCounts();
+  invalidateFilterGroups();
   state.filters = filtersWithDefaults(state.filters);
   if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
   render();

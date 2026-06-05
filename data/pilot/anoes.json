@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T02:50:21",
+  "generatedAt": "2026-06-05T11:08:54",
   "source": "anoes",
   "sourceFile": "Anoes_OCR_alta_qualidade.docx",
   "sourcePath": "Livros\\word\\feito\\Anoes_OCR_alta_qualidade.docx",
@@ -431,7 +431,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "2 pts. de Aprimoramento, 240 pts. de Perícia."
+            "2 pts. de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "240 pts. de Perícia"
           ]
         },
         {
@@ -497,7 +505,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "2 pts. de Aprimoramento, 200 pts. de Perícia."
+            "2 pts. de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "200 pts. de Perícia"
           ]
         },
         {
@@ -563,7 +579,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "2 pts. de Aprimoramento, 250 pts. de Perícia."
+            "2 pts. de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "250 pts. de Perícia"
           ]
         },
         {
@@ -629,7 +653,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "3 pts. de Aprimoramento, 220 pts. de Perícia."
+            "3 pts. de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "220 pts. de Perícia"
           ]
         },
         {
@@ -705,7 +737,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "3 pts. de Aprimoramento, 270 pts. de Perícia."
+            "3 pts. de Aprimoramento"
+          ]
+        },
+        {
+          "id": "custo-de-pericia",
+          "title": "Custo de Perícia",
+          "area": "kits",
+          "paragraphs": [
+            "270 pts. de Perícia"
           ]
         },
         {

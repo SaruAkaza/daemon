@@ -149,6 +149,17 @@ def enhancement(title: str, paragraphs: list[str], costs: list[str], description
     )
 
 
+def split_kit_cost(value: str) -> tuple[list[str], list[str]]:
+    parts = [part.strip().rstrip(".") for part in value.split(",", 1)]
+    if (
+        len(parts) == 2
+        and re.match(r"^\d+\s+pts?\.?\s+de\s+Aprimoramento$", parts[0], flags=re.IGNORECASE)
+        and re.match(r"^\d+\s+pts?\.?\s+de\s+Per", parts[1], flags=re.IGNORECASE)
+    ):
+        return [normalize_text(parts[0])], [normalize_text(parts[1])]
+    return [value], []
+
+
 def kit(title: str, raw_paragraphs: list[str]) -> dict:
     paragraphs = clean(raw_paragraphs)
     if paragraphs and paragraphs[0] == title:
@@ -168,7 +179,16 @@ def kit(title: str, raw_paragraphs: list[str]) -> dict:
         if match:
             flush()
             current_title = match.group(1)
-            current = [normalize_text(match.group(2))]
+            value = normalize_text(match.group(2))
+            if current_title == "Custo":
+                cost, skill_cost = split_kit_cost(value)
+                sections.append(section("custo", "Custo", "kits", cost))
+                if skill_cost:
+                    sections.append(section("custo-de-pericia", "Custo de Per\u00edcia", "kits", skill_cost))
+                current_title = "DescriÃ§Ã£o"
+                current = []
+                continue
+            current = [value]
             continue
         if paragraph == "Apenas para Duegares":
             flush()
