@@ -1697,14 +1697,6 @@
       ],
       "sections": [
         {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "0 anjo possui uma vasta biblioteca em seu refúgio, recebidos como herança de seu mentor, roubados de um outro mago, anjo ou demônio ou mesmo criado por ele mesmo em seus bons tempos de aprendiz. E pode consultar esta biblioteca em busca de outros efeitos de Magias (em Caminhos que possui), ou Rituais (em Caminhos que não possui). Também podem ajudá-lo em pesquisas ou na resolução de problemas relativos à Magia e ocultismo. Utilizar esta perícia (procurar informações em sua biblioteca) demora de l a 2 dias."
-          ]
-        },
-        {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
@@ -1712,6 +1704,14 @@
             "1 ponto: o personagem possui Rituais e livros conhecidos pela maioria dos magos. Considere que a biblioteca possui respostas para 25% das perguntas que o anjo possa ter de pesquisar.",
             "2 pontos: o personagem possui livros raros e muitas publicações de outros anjos e magos. Considere esta biblioteca como sendo uma perícia de 50% em relação a assuntos místicos.",
             "3 pontos: possui uma extensa biblioteca, com livros que há muito desapareceram da Terra. Considere a biblioteca como uma perícia de pesquisa 75% em relação a assuntos místicos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "0 anjo possui uma vasta biblioteca em seu refúgio, recebidos como herança de seu mentor, roubados de um outro mago, anjo ou demônio ou mesmo criado por ele mesmo em seus bons tempos de aprendiz. E pode consultar esta biblioteca em busca de outros efeitos de Magias (em Caminhos que possui), ou Rituais (em Caminhos que não possui). Também podem ajudá-lo em pesquisas ou na resolução de problemas relativos à Magia e ocultismo. Utilizar esta perícia (procurar informações em sua biblioteca) demora de l a 2 dias."
           ]
         }
       ]
@@ -1733,15 +1733,6 @@
       ],
       "sections": [
         {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Na Idade Média, o poder da Igreja era incontestável. Os inquisidores possuíam o poder de decisão sobre a vida e a morte, e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de zelar e tomar conta dos vilarejos, bem como organizar a parte social das pequenas comunidades. Quanto mais poder um clérigo possuir, maiores serão suas responsabilidades. Seu anjo pode estar infiltrado na Igreja, como parte de sua missão.",
-            "Clérigos recebem uma bonificação, nas perícias de religião e burocracia, de 10% para cada ponto de Aprimoramento"
-          ]
-        },
-        {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
@@ -1750,6 +1741,15 @@
             "2 pontos: bispo. O personagem é responsável por um condado ou região. Ele possui uma igreja de um tamanho razoável, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para invadir vilas a procura de bruxas ou investigar o desaparecimento de algum padre.",
             "3 pontos: arcebispo, o personagem possui uma grande área, e responsável por várias igrejas. Um arcebispo é responsável pela avaliação dos livros considerados blasfêmicos, e estuda os Rituais e os tipos de demônios e anjos.",
             "4 pontos: com este Aprimoramento, o anjo possui o conhecimento sobre a Forma-Pensamento e a capacidade de canalizar esta energia para os planos físicos. Com um Teste de Percepção, o anjo é capaz de tatear o mundo de Spiritum em busca de algum objeto, e materializá-lo onde estiver. O Teste é fácil para objetos pequenos (dinheiro, lápis, papel, coisas de uso cotidiano...); normal para objetos pequenos mas exóticos (jóias, armas, peças de roupa...) ou com mais de 30cm; e difícil para objetos únicos (a chave de uma porta, um documento específico, um disquete de computador com dados próprios...) ou feitos de metal ferroso. Os objetos conjurados dissipam-se em 3d6 rodadas."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Na Idade Média, o poder da Igreja era incontestável. Os inquisidores possuíam o poder de decisão sobre a vida e a morte, e sobre quem era ou não bruxo. Cabia a eles a responsabilidade de zelar e tomar conta dos vilarejos, bem como organizar a parte social das pequenas comunidades. Quanto mais poder um clérigo possuir, maiores serão suas responsabilidades. Seu anjo pode estar infiltrado na Igreja, como parte de sua missão.",
+            "Clérigos recebem uma bonificação, nas perícias de religião e burocracia, de 10% para cada ponto de Aprimoramento"
           ]
         }
       ]
@@ -1896,14 +1896,6 @@
       ],
       "sections": [
         {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "O personagem possui um ou mais objetos mágicos ou fetiches encantados com ele. Consulte o capítulo de Objetos Mágicos (pág 46) para gastar os pontos de Objetos Mágicos."
-          ]
-        },
-        {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
@@ -1913,6 +1905,14 @@
             "3 pontos: 5 pontos de Objetos mágicos",
             "4 pontos: 7 pontos de Objetos mágicos",
             "5 pontos: 10 pontos de Objetos mágicos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "O personagem possui um ou mais objetos mágicos ou fetiches encantados com ele. Consulte o capítulo de Objetos Mágicos (pág 46) para gastar os pontos de Objetos Mágicos."
           ]
         }
       ]
@@ -2027,14 +2027,6 @@
       ],
       "sections": [
         {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Obrigatório se o jogador desejar um anjo mago."
-          ]
-        },
-        {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
@@ -2044,6 +2036,14 @@
             "4 pontos: mago desenvolvido. Possui 7 pontos de Focus para dividir entre os Caminhos, e pelo menos um inimigo mortal (fica a cargo do Mestre). Possui 5 pontos de Magia.",
             "5 pontos: são personagens mais velhos, com muito poder acumulado e bastante conhecimento de Magia. Possui pelo menos DOIS inimigos mortais (a cargo do Mestre - e pode pegar pesado!). O personagem dispõe de 9 pontos de Focus e 7 pontos de Magia.",
             "6 pontos: um personagem bastante velho, já bem estabelecido e com muita fama entre os magos (tanto da Terra quanto de Paradísia). Possui bastante poder, e ao mesmo tempo uma grande coleção de inimigos (QUATRO, pelo menos). Começa com 11 pontos de Focus e 9 pontos de Magia."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Obrigatório se o jogador desejar um anjo mago."
           ]
         }
       ]
@@ -2062,20 +2062,20 @@
       ],
       "sections": [
         {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Seu anjo possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas."
-          ]
-        },
-        {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
             "1 ponto: o personagem sonha com coisas sobrenaturais. Esses sensitivos quase sempre dedicam-se a alguma forma de arte, reproduzindo as imagens que enxergam durante o sono. Escrevem livros, modelam esculturas e pintam quadros. Estes quadros devem ser usados pelo Mestre como ajuda na preparação de campanhas e aventuras. O personagem ganha também 10% em ciências proibidas e 20% em qualquer subgrupo da perícia artes.",
             "2 pontos: o personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o jogador pode tentar um Teste de Percepção para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida, a localização de um objeto perdido, etc."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Seu anjo possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas."
           ]
         }
       ]
@@ -2199,20 +2199,20 @@
       ],
       "sections": [
         {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Tutor é o anjo, deus ou entidade que ensinou a Magia ao seu personagem. Se você desejar que ele ainda esteja com você, ensinando-o ou protegendo, este é o lugar certo para gastar seus pontos de Aprimoramento. O tutor, ou mentor pode possuir até uma pequena biblioteca ou laboratório (que TALVEZ deixe você usar) e pode auxiliá-lo com algumas dúvidas. O Mestre possui liberdade total para definir a verdadeira história de seu tutor. Seus problemas, seus desejos e anseios, e seus objetivos (afinal, ele não iria ensinar Magia a você sem um bom motivo...)"
-          ]
-        },
-        {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
             "2 pontos: seu tutor é uma criatura sobrenatural. Pode ser um anjo da Cidade de Prata, de Aasgard ou de Olympus, ou ainda um espírito de um mago morto. Seu tutor pode ainda ser um oráculo ou um espírito da floresta (um elementar de água ou terra) ou mesmo um vampiro ou uma fúria.",
             "3 pontos: seu tutor pode ser um anjo mais poderoso ou até mesmo um arcanjo. Os motivos de um anjo ter descido dos céus e ensinado as artes místicas a seu personagem são tão obscuros quanto sua própria natureza. Geralmente, personagens com mentores de Edhen ou do Solarium tendem a se autoproclamarem mensageiros de Deus ou até mesmo messias (e portanto, merecem um tratamento \"especial\" da Inquisição, dos chezas e dos Captares). A maior vantagem destes tutores é que eles costumam acompanhar (de longe) o que seu pupilos andam fazendo (acompanhar, não auxiliar). E chegam até a descer dos céus para conversar com eles (muito raramente)."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Tutor é o anjo, deus ou entidade que ensinou a Magia ao seu personagem. Se você desejar que ele ainda esteja com você, ensinando-o ou protegendo, este é o lugar certo para gastar seus pontos de Aprimoramento. O tutor, ou mentor pode possuir até uma pequena biblioteca ou laboratório (que TALVEZ deixe você usar) e pode auxiliá-lo com algumas dúvidas. O Mestre possui liberdade total para definir a verdadeira história de seu tutor. Seus problemas, seus desejos e anseios, e seus objetivos (afinal, ele não iria ensinar Magia a você sem um bom motivo...)"
           ]
         }
       ]

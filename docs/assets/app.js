@@ -40,6 +40,7 @@ const state = {
     areas: new Set(),
     kinds: new Set(),
   },
+  collapsedGroups: new Set(),
   draftFilters: null,
   filterSearch: "",
 };
@@ -250,9 +251,20 @@ function itemCostOptions(item) {
   const cost = sectionByTitle(item, "Custo");
   if (!cost) return [];
   return (cost.paragraphs || [])
-    .map((paragraph) => paragraph.match(/^\s*(\d+)\s+pontos?/i)?.[1])
+    .map((paragraph) => paragraph.match(/^\s*([+-]?\d+)\s+pontos?/i)?.[1])
     .filter(Boolean)
-    .map((value) => `${value} ${Number(value) === 1 ? "Ponto" : "Pontos"}`);
+    .map((value) => `${value} ${Math.abs(Number(value)) === 1 ? "Ponto" : "Pontos"}`);
+}
+
+function itemPolarityOption(item) {
+  if (item.area !== "aprimoramentos") return null;
+  if (item.polarity) return item.polarity;
+  const values = itemCostOptions(item)
+    .map((cost) => Number(cost.match(/^[+-]?\d+/)?.[0]))
+    .filter((value) => Number.isFinite(value));
+  if (values.some((value) => value < 0)) return "negativo";
+  if (values.some((value) => value > 0)) return "positivo";
+  return "sem-marcacao";
 }
 
 function itemLevelOptions(item) {
@@ -309,6 +321,21 @@ function filterGroupsData() {
         .map((kind) => ({ id: kind, label: itemTypeLabel({ kind }), count: kindCounts.get(kind) || 0 }))
         .sort((a, b) => a.label.localeCompare(b.label, "pt-BR", { sensitivity: "base" })),
     });
+  }
+
+  if (state.selectedArea === "aprimoramentos") {
+    const polarityCounts = countBy(scopedItems, itemPolarityOption);
+    const polarityLabels = new Map([
+      ["negativo", "Negativos"],
+      ["positivo", "Positivos"],
+      ["sem-marcacao", "Sem marcacao"],
+    ]);
+    const polarityOptions = [...polarityLabels.entries()]
+      .map(([id, label]) => ({ id, label, count: polarityCounts.get(id) || 0 }))
+      .filter((option) => option.count > 0);
+    if (polarityOptions.length > 1) {
+      groups.push({ id: "polarity", title: "Natureza", options: polarityOptions });
+    }
   }
 
   if (state.selectedArea === "aprimoramentos" || state.selectedArea === "racas") {
@@ -435,6 +462,7 @@ function visibleItems() {
     if (!filterAllows("books", item.book.source)) return false;
     if (!filterAllows("areas", item.area)) return false;
     if (!filterAllows("kinds", item.kind || "section")) return false;
+    if (!filterAllows("polarity", itemPolarityOption(item))) return false;
     if (!filterAllowsAny("costs", itemCostOptions(item))) return false;
     if (!filterAllowsAny("prerequisites", itemPrerequisiteOptions(item))) return false;
     if (!filterAllowsAny("levels", itemLevelOptions(item))) return false;
@@ -470,6 +498,57 @@ function metaPillsForItem(item) {
   return [pill(itemTypeLabel(item), item.kind === "npc" ? "blue" : "")];
 }
 
+function renderSegmentRow(item) {
+  const row = nodes.segmentTemplate.content.firstElementChild.cloneNode(true);
+  row.dataset.itemId = item.id;
+  row.classList.toggle("active", item.id === state.selectedItemId);
+  row.querySelector(".segment-title").textContent = item.title;
+  row.querySelector(".segment-preview").textContent = previewForItem(item);
+  const meta = row.querySelector(".segment-meta");
+  meta.append(...metaPillsForItem(item));
+  row.addEventListener("click", () => {
+    state.selectedItemId = item.id;
+    updateActiveItem();
+    renderDetail();
+  });
+  return row;
+}
+
+function renderEnhancementGroup(id, title, items) {
+  const section = document.createElement("section");
+  section.className = "segment-group";
+  const collapsed = state.collapsedGroups.has(id);
+  section.classList.toggle("collapsed", collapsed);
+
+  const button = document.createElement("button");
+  button.className = "segment-group-head";
+  button.type = "button";
+  button.setAttribute("aria-expanded", String(!collapsed));
+
+  const label = document.createElement("span");
+  label.textContent = title;
+  const count = document.createElement("span");
+  count.textContent = `${formatNumber(items.length)} itens`;
+  const marker = document.createElement("span");
+  marker.className = "segment-group-marker";
+  marker.textContent = collapsed ? "+" : "-";
+  button.append(label, count, marker);
+  button.addEventListener("click", () => {
+    if (state.collapsedGroups.has(id)) state.collapsedGroups.delete(id);
+    else state.collapsedGroups.add(id);
+    renderItems();
+  });
+  section.append(button);
+
+  const body = document.createElement("div");
+  body.className = "segment-group-body";
+  if (!collapsed) {
+    for (const item of items) body.append(renderSegmentRow(item));
+  }
+  section.append(body);
+  nodes.segmentsList.append(section);
+}
+
 function renderItems() {
   const items = visibleItems();
   clearNode(nodes.segmentsList);
@@ -480,21 +559,15 @@ function renderItems() {
     state.selectedItemId = items[0]?.id || null;
   }
 
-  for (const item of items) {
-    const row = nodes.segmentTemplate.content.firstElementChild.cloneNode(true);
-    row.dataset.itemId = item.id;
-    row.classList.toggle("active", item.id === state.selectedItemId);
-    row.querySelector(".segment-title").textContent = item.title;
-    row.querySelector(".segment-preview").textContent = previewForItem(item);
-    const meta = row.querySelector(".segment-meta");
-    meta.append(...metaPillsForItem(item));
-    row.addEventListener("click", () => {
-      state.selectedItemId = item.id;
-      updateActiveItem();
-      renderDetail();
-    });
-    nodes.segmentsList.append(row);
+  if (state.selectedArea === "aprimoramentos") {
+    renderEnhancementGroup("enhancements-positive", "Aprimoramentos positivos", items.filter((item) => itemPolarityOption(item) === "positivo"));
+    renderEnhancementGroup("enhancements-negative", "Aprimoramentos negativos", items.filter((item) => itemPolarityOption(item) === "negativo"));
+    const unmarked = items.filter((item) => itemPolarityOption(item) === "sem-marcacao");
+    if (unmarked.length) renderEnhancementGroup("enhancements-unmarked", "Aprimoramentos sem marcacao", unmarked);
+    return;
   }
+
+  for (const item of items) nodes.segmentsList.append(renderSegmentRow(item));
 }
 
 function updateActiveItem() {
