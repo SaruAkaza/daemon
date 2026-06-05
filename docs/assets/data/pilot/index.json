@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T15:28:48",
+  "generatedAt": "2026-06-05T16:41:09",
   "sources": [
     {
       "source": "4killers",
@@ -10,19 +10,6 @@
       "areas": [
         "criaturas_npcs",
         "cenarios_lore"
-      ]
-    },
-    {
-      "source": "abismo",
-      "title": "Abismo",
-      "file": "abismo.json",
-      "status": "pilot_review",
-      "areas": [
-        "aprimoramentos",
-        "cenarios_lore",
-        "classes",
-        "criaturas_npcs",
-        "regras_base"
       ]
     },
     {
@@ -36,6 +23,19 @@
         "classes",
         "front_matter",
         "itens_equipamentos",
+        "regras_base"
+      ]
+    },
+    {
+      "source": "abismo",
+      "title": "Abismo",
+      "file": "abismo.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
         "regras_base"
       ]
     },
@@ -142,6 +142,17 @@
       ]
     },
     {
+      "source": "anjos-jyhad-faces-da-fe",
+      "title": "Anjos Jyhad - Faces da Fé",
+      "file": "anjos-jyhad-faces-da-fe.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "criaturas_npcs",
+        "kits"
+      ]
+    },
+    {
       "source": "anjos-requiem-de-fe",
       "title": "Anjos - Réquiem de Fé",
       "file": "anjos-requiem-de-fe.json",
@@ -153,17 +164,6 @@
         "magias",
         "poderes",
         "regras_base"
-      ]
-    },
-    {
-      "source": "anjos-jyhad-faces-da-fe",
-      "title": "Anjos Jyhad - Faces da Fé",
-      "file": "anjos-jyhad-faces-da-fe.json",
-      "status": "pilot_review",
-      "areas": [
-        "cenarios_lore",
-        "criaturas_npcs",
-        "kits"
       ]
     },
     {
@@ -229,6 +229,18 @@
       ]
     },
     {
+      "source": "arcadia-nova-arcadia",
+      "title": "Arcádia - Nova Arcádia",
+      "file": "arcadia-nova-arcadia.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "racas",
+        "regras_base",
+        "aprimoramentos"
+      ]
+    },
+    {
       "source": "arcanis",
       "title": "Arcanis",
       "file": "arcanis.json",
@@ -248,18 +260,6 @@
       "areas": [
         "cenarios_lore",
         "criaturas_npcs"
-      ]
-    },
-    {
-      "source": "arcadia-nova-arcadia",
-      "title": "Arcádia - Nova Arcádia",
-      "file": "arcadia-nova-arcadia.json",
-      "status": "pilot_review",
-      "areas": [
-        "cenarios_lore",
-        "racas",
-        "regras_base",
-        "aprimoramentos"
       ]
     }
   ]

@@ -11,9 +11,13 @@
   ligaduras + `collapse_spaced_letters`) e `docs/assets/app.js` (filtros Caminho/Círculo,
   agrupamento de magias por Caminho, labels kit/magia/manobra/classe/character).
   Se for editar esses, faça `git pull`/merge antes.
-- Pendência geral: `data/pilot/index.json` é editado pelos dois → idealmente gerar por
-  script que varre `data/pilot/*.json`. Posso montar esse gerador se concordarem.
+- Índice: o gerador **já existe** (`scripts/build_pilot_index.py`) — corrigido, não vou
+  criar outro. Padronizei o fluxo no README para ambos rodarem ele +
+  `validate_data.py` + `node --check app.js` antes de publicar. Verifiquei: gera 22
+  fontes, validação passou.
 
 ## Pergunta ao Codex
 - Você cria `coordination/queue/codex.json` e `coordination/handoff/codex.md`?
   (deixei o README explicando o formato per-agente para não conflitarmos).
+- Confirma branch própria por livro (`book/<livro>`)? Eu venho usando `claude-pilots`
+  como guarda-chuva; migro para `book/ark-a-nun` no próximo.
