@@ -16,7 +16,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-05T17:35:25",
+  "generatedAt": "2026-06-05T17:46:25",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -32,19 +32,16 @@
           "title": "Conceitos Básicos",
           "area": "regras_base",
           "paragraphs": [
-            "Conceitos Básicos",
-            "omo em qualquer jogo, é preciso conhecer as regras e os termos utilizados, para se poder jogar. O RPG não é uma exceção. No decorrer do jogo, ou mesmo quando você estiver criando seu Personagem, nós utilizaremos muitos termos que talvez você não esteja familiarizado. Esse conceitos termos usados no sistema de Magias e combates também são tratados neste capítulo.",
+            "Conceitos Básicos omo em qualquer jogo, é preciso conhecer as regras e os termos utilizados, para se poder jogar. O RPG não é uma exceção. No decorrer do jogo, ou mesmo quando você estiver criando seu Personagem, nós utilizaremos muitos termos que talvez você não esteja familiarizado. Esse conceitos termos usados no sistema de Magias e combates também são tratados neste capítulo.",
             "Personagem: antes de começar a jogar, cada Jogador precisa criar um Personagem, que é a representação deste Jogador no mundo fictício. Um Jogador pode criar um Personagem mago ou guerreiro, conforme desejar. Durante o jogo, o Personagem realiza as ações propostas pelo Jogador. Um Personagem não vai jogar os dados ou consultar as tabelas, da mesma forma que o Jogador não vai pular pela janela ou lutar com um vampiro.",
             "Ficha de Personagem: planilha onde são anotadas as características de cada Personagem. A ficha de Personagens encontra-se no final deste livro. Ela NÃO deve ser preenchida; cada Jogador deve tirar uma fotocópia da ficha para.seu uso.",
             "Mestre ou Narrador: É o Jogador que ficará responsável pelas regras do jogo. É uma espécie de diretor ou coordenador do jogo. Cabe a ele controlar todos os outros Personagens que não são controlados pelos Jogadores (ver NPCs) e criar e executar as Aventuras. Muito do sucesso ou fracasso de uma Aventura depende dele. Durante uma partida, é o Mestre quem irá propor um problema ou um mistério que os Jogadores tentarão resolver.",
             "Aventura: Uma história criada pelo Mestre, contendo em sium problema a ser resolvido pelos Jogadores. Uma Aventura pode ser curta, terminando em duas ou três horas, ou muito longa, exigindo sucessivas sessões de jogo. Teoricamente, uma Aventura poderia durar para sempre.",
             "Campanha: Uma sucessão de Aventuras, envolvendo a saga dos Personagens, desde a primeira partida.",
             "NPCs (Non Player Character), Personagens Não-Jogadores. Designa Personagens que são controlados pelo Mestre e não pelos Jogadores. NPCs geralmente servem como Personagens coadjuvantes nas Aventuras.",
-            "Atributos: Funcionam como uma forma de transportar um Personagem para o mundo fictício e estabelecer comparações entre elee as diversas criaturas. São os Atributos que descrevem seu Personagem como ele é. São em número de 8, divididos em físicos e mentais. Os Atributos físicos são Constituição, Força, Destreza e Agilidade eos mentais são Inteligência, Força de Vontade, Percepção e Carisma. Os Atributos",
-            "variam de acordo com seus dados de comparação, sendo que um humano possui normalmente 3D, com Atributos variando de 3 a 18 (ver Dados de Comparação).",
+            "Atributos: Funcionam como uma forma de transportar um Personagem para o mundo fictício e estabelecer comparações entre elee as diversas criaturas. São os Atributos que descrevem seu Personagem como ele é. São em número de 8, divididos em físicos e mentais. Os Atributos físicos são Constituição, Força, Destreza e Agilidade eos mentais são Inteligência, Força de Vontade, Percepção e Carisma. Os Atributos variam de acordo com seus dados de comparação, sendo que um humano possui normalmente 3D, com Atributos variando de 3 a 18 (ver Dados de Comparação).",
             "Kit: conjunto de Aprimoramentos e Perícias que definem uma profisão ou carreira. Seu uso não é obrigatório, mas facilita ainda mais criação de um Personagem. Quando criar seu próprio kit procure manter um máximo de 3 Aprimoramentos e 12 Perícias para não desbalancear o jogo.",
-            "Pontos de Aprimoramento: São pontos que um Jogador possui para \"refinar\" a história de seu Personagem. Podem ser utilizados para conseguir aliados, mais riquezas, mais poder, Magia; e depende de cada Jogador gastar seus pontos da maneira que achar melhor. Os Jogadores começam com 5 pontos de Aprimoramento por Personagem. Aprimoramentos são vantagens que um Jogador",
-            "pode comprar para melhorar seu Personagem, ou desvantagens que pode comprar para limitar Personagens muito poderosos.",
+            "Pontos de Aprimoramento: São pontos que um Jogador possui para \"refinar\" a história de seu Personagem. Podem ser utilizados para conseguir aliados, mais riquezas, mais poder, Magia; e depende de cada Jogador gastar seus pontos da maneira que achar melhor. Os Jogadores começam com 5 pontos de Aprimoramento por Personagem. Aprimoramentos são vantagens que um Jogador pode comprar para melhorar seu Personagem, ou desvantagens que pode comprar para limitar Personagens muito poderosos.",
             "Perícia: determina o que seu Personagem sabe fazer. Ele pode saber usar uma espada, ou ser um excelente carpinteiro. É a Perícia que diz o quão bom ele é em determinada profissão. As Perícias são representadas em porcentagem.",
             "Perícia com armas: Determina o quanto seu Personagem sabe lutar com uma arma. É composta de dois números, ataque e defesa. (Espada longa 35/ 30). Esses números são utilizados em Testes de ataque e defesa, quando seu Personagem está lutando com as armas. Também é utilizado para Perícias de Combate.",
             "Pontos de Magia: São os pontos que um Personagem mago possui, para indicar o quanto de Magias ele é capaz de fazer. Quanto mais pontos um Personagem possuir, mais poderoso ele será. Personagens que não são magos não possuem pontos de Magia.",
@@ -64,8 +61,7 @@
             "Rodada: Medida de tempo que equivale a aproximadamente 10 segundos. É utilizada para marcar o tempo durante as Aventuras. É uma medida abstrata e utilizada somente pelo Mestre e Jogadores, suficiente para todos os Personagens efetuarem uma ação.",
             "Cena: Medida de tempo não definida. Como em um filme, demora o tanto que for necessário para a narrativa de uma \"cena\". Pode ser de 3 a 10 rodadas, ou chegar a até dois ou três minutos.",
             "Teste: Em todo RPG, os Personagens fazem Testes para verificar se conseguiram abrir uma porta trancada, se encontraram o livro que procuravam na biblioteca ou para saber que arma matou o corpo que investigam. Isto é chamado Teste. Os Testes são feitos com porcentagens. Joga-se 1d100 com os modificadores e verifica-se se o número sorteado nos dados foi MENOR ou IGUAL ao número de Teste. Neste caso o Teste foi bem sucedido.",
-            "Ataque e Defesa: No Sistema Daemon, ataque e defesa são muito simples. Basta observar-se a Perícia de ataque ou de defesa com determinada arma. Joga-se 1d100 e se o número obtido for MENOR ou IGUAL ao valor da Perícia, considera-se",
-            "o ataque ou defesa corretamente efetuado.",
+            "Ataque e Defesa: No Sistema Daemon, ataque e defesa são muito simples. Basta observar-se a Perícia de ataque ou de defesa com determinada arma. Joga-se 1d100 e se o número obtido for MENOR ou IGUAL ao valor da Perícia, considera-se o ataque ou defesa corretamente efetuado.",
             "Índice Crítico: Divida o valor de Teste de ataque por 4.",
             "O valor, arredondado para baixo, é o índice crítico. Se a jogada de 1d100 for igual ou menor do que o índice crítico, considera-se que o golpe foi desferido contra um centro vital (cabeça, coração, pulmão, garganta...). O dano, nesse caso, é jogado duas vezes e somado aos bônus de força e outros. Por exemplo, alguém que possui Espada 50/30, acertará um golpe crítico sempre que tirar 12 ou menos em 1d100 em sua jogada de ataque.",
             "IP (Índice de Proteção): A \"armadura\" que seu personagem está utilizando. Pode ser uma armadura medieval, um colete à prova de balas ou um escudo energético. Cada IP protege contra um ou mais tipos específicos de dano (contusão, tiros, eletricidade, fogo, gelo, ácido, gases, etc.)",
@@ -177,8 +173,7 @@
             "Pontos de Perícia = 10 x Idade + 5 x INT",
             "Até um máximo de 500 pontos (recomendado).",
             "Atenção: alguns aprimoramentos podem modificar a Inteligência e isso vai afetar a quantidade de pontos de perícia. Calcule os pontos DEPOIS de fazer ajustes nos atributos.",
-            "Milena tem 20 anos e INT 15, o que lhe confere 275 Pontos de Perícia (200+75). A Jogadora de Milena decidiu gastar os pontos da",
-            "seguinte forma: Perícia Valor Inicial Gasto Total \"Armadilhas 16 (INT) 20 3% Facas 12/12 (DEX) 20/30 32/42 Bastões 12/12(DEX) 20/20 32/32 Medicina 0 40 40 Arrombamento 12 (DEX) 10 22 Ocultismo 0 30 30 Viampirismo 0 10 20 Intimidação 10 (WILL) = 10 20 Natação 1 (AGI) 30 E) Surf 11 (AGI) 25 3% Condução 11 (AGI) 10 2\"",
+            "Milena tem 20 anos e INT 15, o que lhe confere 275 Pontos de Perícia (200+75). A Jogadora de Milena decidiu gastar os pontos da seguinte forma: Perícia Valor Inicial Gasto Total \"Armadilhas 16 (INT) 20 3% Facas 12/12 (DEX) 20/30 32/42 Bastões 12/12(DEX) 20/20 32/32 Medicina 0 40 40 Arrombamento 12 (DEX) 10 22 Ocultismo 0 30 30 Viampirismo 0 10 20 Intimidação 10 (WILL) = 10 20 Natação 1 (AGI) 30 E) Surf 11 (AGI) 25 3% Condução 11 (AGI) 10 2\"",
             "Note que o exemplo acima é coerente com a história do Personagem. Não há armas de fogo, nem manobras militares avançadas, apenas conhecimentos mundanos que praticamente qualquer um pode ter. As perícias Ocultismo e Vampirismo tem valores relativamente baixos e foram explicados pela Jogadora de Milena como \"decorrentes do contato com os estudiosos do Umbral\".",
             "7. Pontos de Vida",
             "Some seus valores de Força e Constituição e depois divida o resultado por 2, arredondando para cima. Junte a esse total um ponto por nível e terá seus Pontos de Vida. Se o Personagem tem algum aprimoramento que acrescenta Pontos de Vida, acrescente também.",
@@ -198,8 +193,7 @@
             "Outra dica muito boa é desenhar o Personagem. Embora não seja obrigatório, ao criar a ilustração o Jogador ganha maior sintonia com o Personagem. Além disso fica mais simples descrevê-lo para os outros Jogadores e mesmo o Mestre terá mais facilidade de envolvê-lo nas cenas. E para quem não sabe, Evandro Gregório começou sua carreira desenhando os Personagens dos colegas de campanha...",
             "EQUIPAMENTOS",
             "Armas Brancas",
-            "Estes são os valores de jogo de algumas armas brancas. Muitas delas eram de uso comum na Idade Média, mas outras",
-            "são populares ainda nos dias de hoje.",
+            "Estes são os valores de jogo de algumas armas brancas. Muitas delas eram de uso comum na Idade Média, mas outras são populares ainda nos dias de hoje.",
             "Arma dano Iniciativa Alcance Faca 1d3+1 3 15/30 Espada Curta Idó +",
             "Sabre 1d6+2 -6",
             "Espada Longa 1d1o 5",
@@ -220,8 +214,7 @@
             "Tipo IP Penalidade (DEX/AGI",
             "Roupa Comum 0 0/0 Corselete de Tecido 1 -1/0 Corselete de Couro 1 1/0 Armadura de Couro Reforçado 1 1/2 Armadura de Anéis 2 1/-2 Armadura de Escamas 2 1/2 Cota de Malha 3 4/3 Manto de Ferro 4 2/4 Armadura de Placas 5 2/4 Armadura de Batalha 5 3/-6 Armadura de Batalha Completa 6 9/7 * todas as armaduras tem IP cinético.",
             "Coletes e Proteções",
-            "Tipo IP IP Penalidade",
-            "cinético balístico (DEX/AGI)",
+            "Tipo IP IP Penalidade cinético balístico (DEX/AGI)",
             "Roupa normal 0 0 0/0 Jaqueta de couro 1 0 0/4 Kevlar (cada 2 camadas) +1/2 +1 Kevlar 10 camadas 3 5 -2/-3 Kevlar 14 camadas 4 7 2/4 Kevlar 18 camadas 5 9 3/-5 Roupa de bombeiro IP 10 contra fogo Roupa de amianto IP 36 contra fogo Másca improvisada IP 10 contra gases Máscara contra gases IP 30 contra gases Roupa de Borracha IP 8 contra eletricidade Proteção contra ácidos IP 6 contra ácido Roupa Térmica IP 30 contra frio Roupa de Mergulhador IP 15contra vácuo e 8 contra frio Roupa de Astronauta IP 36 contra vácuo Porta de Madeira IP2a5 Parede de Tijolos IP8 Vidro à Prova de balas IP balístico 124 18 Parede de Concreto IP15a 24 Carro Blindado IP balístico 10 a 20 Porta de Aço IP25"
           ]
         },
@@ -233,25 +226,21 @@
             "Atributos são números que transportam para o jogo as características básicas de um Personagem. Esses números dizem como o Personagem é se comparado a outros Personagens, criaturas e até alguns objetos.",
             "Os Atributos apresentados aqui são compatíveis com ARKANUN, TREVAS, ANJOS, DEMÔNIOS e VAMPIROS bem como com todos os RPGs lançados pela Daemon Editora.",
             "São oito Atributos, divididos entre Físicos e Mentais. Os Físicos são a Constituição, Força, Destreza e Agilidade; os Mentais são a Inteligência, Força de Vontade, Percepção e Carisma.",
-            "Durante a criação do Personagem cada Jogador começa com um determinado número de pontos, de acordo com o tipo de Campanha, para distribuir entre esses Atributos. Noventa e nove porcento",
-            "das Campanhas de caçadores envolvem Personagens humanos, cujos Atributos variam de 5 a 18.",
+            "Durante a criação do Personagem cada Jogador começa com um determinado número de pontos, de acordo com o tipo de Campanha, para distribuir entre esses Atributos. Noventa e nove porcento das Campanhas de caçadores envolvem Personagens humanos, cujos Atributos variam de 5 a 18.",
             "Atributos Físicos Constituição (CON)",
             "Determina o vigor, saúde e condição física do Personagem.",
             "De modo geral, um Personagem com um baixo valor em Constituição é franzino e feio, enquanto um valor alto garante uma boa aparência - ou um aspecto de brutamontes, você decide. Isso não significa necessariamente que o Personagem seja forte ou fraco; isso é determinado pelo Atributo Força.",
             "A Constituição determina a quantidade de Pontos de Vida - quanto mais alta a CON, mais PV's o Personagem terá. Também serve para testar a resistência a venenos, fadiga e rigores climáticos e físicos.",
             "Força (FR)",
             "Determina a força física do Personagem, sua capacidade muscular. À Força não tem tanta influência sobre a aparência quanto a Constituição - um lutador magrinho de karatê pode ser forte o bastante para quebrar pilhas de tijolos, mas um fisiculturista musculoso difícilmente poderia igualar a proeza.",
-            "A Força, como a Constituição, tem influência sobre o cálculo dos Pontos de Vida. Quanto maior a FR, mais PVs um Personagem terá. A Força também afeta o dano que ele é capaz de causar com armas de combate corporal, e peso máximo que pode carregar ou sustentar (por poucos instantes), como mostra a",
-            "tabela na página seguinte.",
+            "A Força, como a Constituição, tem influência sobre o cálculo dos Pontos de Vida. Quanto maior a FR, mais PVs um Personagem terá. A Força também afeta o dano que ele é capaz de causar com armas de combate corporal, e peso máximo que pode carregar ou sustentar (por poucos instantes), como mostra a tabela na página seguinte.",
             "Destreza (DEX)",
             "Define a habilidade manual do Personagem, sua destreza com as mãos e/ou pés. Não inclui a agilidade corporal, apenas a destreza manual. Um Personagem com alta Destreza pode lidar melhor com armas, usar ferramentas, operar instrumentos delicados, atirar com arco-e-flecha, agarrar objetos em pleno ar...",
             "Agilidade (AGI)",
-            "Ao contrário da Destreza, a Agilidade não é válida para coisas feitas com as mãos - mas sim para o corpo todo. Com um alto valor em Agilidade um Personagem pode correr mais rápido, equilibrar-se melhor sobre um muro, dançar com mais",
-            "graça, esquivar-se de ataques... É importante fixar a diferença entre Destreza e Agilidade para fins de jogo.",
+            "Ao contrário da Destreza, a Agilidade não é válida para coisas feitas com as mãos - mas sim para o corpo todo. Com um alto valor em Agilidade um Personagem pode correr mais rápido, equilibrar-se melhor sobre um muro, dançar com mais graça, esquivar-se de ataques... É importante fixar a diferença entre Destreza e Agilidade para fins de jogo.",
             "Atributos Mentais",
             "Inteligência (INT)",
-            "Inteligência é a capacidade de resolver problemas, nem mais e nem menos. Um Personagem inteligente está mais apto",
-            "a compreender o que ocorre à sua volta e não se deixa enganar tão facilmente. Também lida com a memória, capacidade de abstrair conceitos e descobrir coisas novas.",
+            "Inteligência é a capacidade de resolver problemas, nem mais e nem menos. Um Personagem inteligente está mais apto a compreender o que ocorre à sua volta e não se deixa enganar tão facilmente. Também lida com a memória, capacidade de abstrair conceitos e descobrir coisas novas.",
             "Força de Vontade (WILL)",
             "Esta é a capacidade de concentração e determinação do Personagem. Uma alta Força de Vontade fará com que um Personagem resista a coisas como tortura, hipnose, pânico, tentações e controle da mente. O Mestre também pode exigir Testes de Força de Vontade para verificar se um Personagem não fica apavorado diante de uma situação amedrontadora. Também está relacionada com a Magia e poderes psíquicos.",
             "Carisma (CAR)",
@@ -312,8 +301,7 @@
             "Lista de Perícias",
             "A lista de Perícias está apresentada no seguinte formato: Grupo\"",
             "Subgrupos",
-            "Observação: o símbolo * só aparecerá em casos nos quais",
-            "a Perícia tiver subgrupos. Quando isso ocorrer, você deve escolher apenas UM dos subgrupos correspondentes.",
+            "Observação: o símbolo * só aparecerá em casos nos quais a Perícia tiver subgrupos. Quando isso ocorrer, você deve escolher apenas UM dos subgrupos correspondentes.",
             "Animais*",
             "Alguns subgrupos possíveis: Treinamento de animais (0), Montaria (AGI), Doma (0), Veterinária (0).",
             "Armadilhas (PER)",
@@ -400,11 +388,8 @@
             "Recuperando Pontos Heróicos",
             "Um Personagem recupera 1 Ponto Heróico por dia. Essa recuperação é independente da recuperação de Pontos de Vida (também um ponto por dia).",
             "Além disso, existem Rituais que conferem Pontos Heróicos temporários aos Personagens (Magias de Força de Vontade ou de Coragem, por exemplo).",
-            "Fé [do latim Fide] S.f. 1. Crença Religiosa. 2. Conjunto de Dogmas é Doutrinas que constituem um out. 3. A primeira virtude teohgal adesão e",
-            "anuência pessoal a Deus, seus desígmios e manifestações.",
-            "Pontos de Fé expressam o poder máximo dos deuses e clérigos: a Fé Divina. Em termos de jogo, Fé representa os pequenos",
-            "milagres que um investigador dedicado pode alcançar, através da",
-            "devoção a uma entidade. E quando se trata de caçadores de vampiros e demônios, toda a fé que se pode ter é bem vinda...",
+            "Fé [do latim Fide] S.f. 1. Crença Religiosa. 2. Conjunto de Dogmas é Doutrinas que constituem um out. 3. A primeira virtude teohgal adesão e anuência pessoal a Deus, seus desígmios e manifestações.",
+            "Pontos de Fé expressam o poder máximo dos deuses e clérigos: a Fé Divina. Em termos de jogo, Fé representa os pequenos milagres que um investigador dedicado pode alcançar, através da devoção a uma entidade. E quando se trata de caçadores de vampiros e demônios, toda a fé que se pode ter é bem vinda...",
             "Recuperando Pontos de Fé",
             "Os Pontos de Fé são recuperados com orações. Às vezes o Personagem também necessitará de repouso absoluto e silêncio enquanto ora. Para termos de comparação, assuma que um Personagem recupera um Ponto de Fé a cada meia hora rezando. Isso deve ser feito em um ambiente calmo e tranquilo, de preferência logo após o despertar.",
             "Pontos de Fé também estão ligados diretamente à devoção do Personagem e ao cumprimento de certas regras, definidas pelo deus ou entidade da qual o Personagem é devoto.",
@@ -417,8 +402,7 @@
             "Custo: 1 Ponto de Fé por pessoa.",
             "Durante uma cena, a pessoa abençoada recebe +10% para suas jogadas de defesa e subtrai 1 ponto de qualquer dano que receber nesse período. Este Ritual não á cumulativo.",
             "Afastar mortos-vivos",
-            "Custo: variável. Pormeio de Pontos de Fé, o Personagem pode usar um amuleto",
-            "espectros ou outras criaturas malignas. Para tanto, anuncia quantos Pontos de Fé está utilizando e testa WILL + Xdó (onde X éigualao número de Pontos de Fé empregados) vs. WILL da criatura. Caso a criatura perca a disputa, se afasta do fiel o mais rápido que conseguir.",
+            "Custo: variável. Pormeio de Pontos de Fé, o Personagem pode usar um amuleto espectros ou outras criaturas malignas. Para tanto, anuncia quantos Pontos de Fé está utilizando e testa WILL + Xdó (onde X éigualao número de Pontos de Fé empregados) vs. WILL da criatura. Caso a criatura perca a disputa, se afasta do fiel o mais rápido que conseguir.",
             "Amizade com Animais",
             "Custo: 1 Ponto.",
             "Com este Ritual simples, o clérigo consegue demonstrar a um animal que está bem intencionado e o animal não o atacará, amenos que seja provocado. Se o clérigo desejar, poderá renovar este Ritual algumas vezes e se demonstrar amizade sincera, o animal ira se tornar seu amigo verdadeiro.",
@@ -448,14 +432,12 @@
             "O Personagem pode utilizar 1 Ponto de Fé para curar 1d6 pontos de dano em si mesmo (até um máximo de um Ponto de Fé por dia), ou 2 Pontos de Fé para curar 1d6 PVs em outra pessoa, através do toque de suas mãos. Esse toque também pode ser feito em plantas ou animais.",
             "Cura de Doenças Custo: variável. pessoa. Quanto mais forte a doença, maior o custo em Pontos de Fé.",
             "Criação de água benta",
-            "Custo: 1 Ponto para cada pequeno frasco. Pontos de Fé podem ser usados para criar água benta a partir da água pura do orvalho, à razão de um pequeno frasco",
-            "para cada ponto gasto pelo Personagem.",
+            "Custo: 1 Ponto para cada pequeno frasco. Pontos de Fé podem ser usados para criar água benta a partir da água pura do orvalho, à razão de um pequeno frasco para cada ponto gasto pelo Personagem.",
             "Desencantar",
             "Custo: 3 Pontos.",
             "Este Ritual deve ser realizado sobre algum encantamento ou Ritual e o mago pode fazer um Teste de WILL vs. o Poder da Magia para tentar desencantá-la.",
             "Detectar Armadilhas",
-            "Custo: 2 Pontos. Este Ritual deve ser realizado em uma pequena área ou um",
-            "objeto. Caso haja alguma armadilha, o clérigo será capaz de identificála (mas não seu exato efeito ou como desarmá-la).",
+            "Custo: 2 Pontos. Este Ritual deve ser realizado em uma pequena área ou um objeto. Caso haja alguma armadilha, o clérigo será capaz de identificála (mas não seu exato efeito ou como desarmá-la).",
             "Detectar Magias",
             "Custo: 1 Ponto.",
             "Durante uma rodada, o clérigo pode utilizar este poder sobre uma área ou objeto específico e ser capaz de identificar a intensidade da Magia (fraca, média e forte) e seu Caminho Principal.",
@@ -497,15 +479,13 @@
             "Este é o mais simples de todos os Testes. Quando um Personagem é submetido a uma provação simples e direta, o Mestre pede para que ele faça um Teste de Atributo. Esse tipo de Teste deve ser solicitado quando nenhum tipo de treinamento pode ajudar o Personagem no momento de dificuldade. O valor do Teste é calculado como sendo o valor do Atributo vezes quatro,",
             "Ethan possui Agilidade 15. Ele está realizando uma escalada e sem querer pisa em uma pedra solta. O Mestre pede para que o Jogador faça um Teste de Agilidade porque a Agilidade é o Atributo mais relevante para essa situação. O valor do Teste é 15x 4= 60. O Jogador joga 1d100 e tira 71. O Personagem perde o equilíbrio ecai no chão, possivelmente sendo arrastado pela nibanceira. O Jogador poderia ter tirado um valor menor que 60. Nesse caso, o Personagem escorrega, mas é rápido o suficiente para se segurar em uma raiz e não cair. A Aventura continua a partir dessa ação.",
             "Para ter certeza de que o Teste se encaixa nesta categoria, verifique se não há alguma Perícia que poderia ser usada na situação. Se a resposta for afirmativa, trata-se de um Teste de Perícia.",
-            "Cada situação tem suas próprias particularidades. Alguns Testes são simples e o Personagem tem uma chance grande de",
-            "passar no Teste. Outras são complexas e as chances deveriam ser mínimas. Para diferenciar essas situações, o Mestre pode aplicar modificadores. Os modificadores podem ser valores a serem somados/subtraídos do valor de Teste ou divididos/multiplicados pelo valor de Teste.",
+            "Cada situação tem suas próprias particularidades. Alguns Testes são simples e o Personagem tem uma chance grande de passar no Teste. Outras são complexas e as chances deveriam ser mínimas. Para diferenciar essas situações, o Mestre pode aplicar modificadores. Os modificadores podem ser valores a serem somados/subtraídos do valor de Teste ou divididos/multiplicados pelo valor de Teste.",
             "Teste Fácil",
             "Este modificador é aplicado quando o Teste é considerado muito simples. Nesse caso, o Teste é feito com o Dobro do valor da Perícia ou Atributo respectivo.",
             "Obs: Caso o valor resultante seja maior do que 100%, considere o feito um sucesso automático.",
             "Márcio Alexsunder possui Destreza 12. Ele deseja soltar um pequeno mecanismo e tem tempo, iluminação e ferramentas disponíveis. O Mestre decide que o Teste é Fácil. O valor normal de Teste seria 12x4-48, mas como o Mestre julgou o Teste Fácil, o valor passa a ser 48x2 = 96, ou quase um sucesso automático.",
             "Teste Difícil",
-            "Em outras situações, o Teste pode se tornar mais difícil do que de costume, Falta de luz, pressão (um demônio se aproximando enquanto o Personagem tenta achar a saída daquele maldito labirinto), falta de equipamentos adequados e outras razões",
-            "configuram um Teste Difícil. Nesse caso, o Teste é feito com Metade do valor.",
+            "Em outras situações, o Teste pode se tornar mais difícil do que de costume, Falta de luz, pressão (um demônio se aproximando enquanto o Personagem tenta achar a saída daquele maldito labirinto), falta de equipamentos adequados e outras razões configuram um Teste Difícil. Nesse caso, o Teste é feito com Metade do valor.",
             "Márcio Alexsunder possui Destreza 12. Ele deseja soltar um pequeno mecanismo, mas como está muito escuro, o Mestre decidequeo Testeé Difícil Ovalor normal de Teste seria 12x4=48, mas como o Mestre julgou o Teste Dificil, o valor passa a ser 48/2 = 24.",
             "Observação: Recomendamos apenas a utilização de modificadores DOBRO e METADE. Modificadores que somam ou subtraem um valor do Teste são um tanto arbitrários, porém podem ser mais fáceis de serem controlados por Mestre iniciantes.",
             "Márcio Alexsunder tenta soltar um pequeno mecanismo, mas está penalidade de-10% em seu Teste.",
@@ -525,8 +505,7 @@
             "E o que se deve fazer quando vários Personagens estão tentado fazer algo juntos? Antes de mais nada é importante o Mestre determinar quantos Personagens REALMENTE podem se unir na tarefa. Empurrar uma pedra gigante permite que várias pessoas ajudem, mas tentar derrubar uma porta é uma tarefa para no máximo duas pessoas.",
             "Após decidir quantos e quem está ajudando, vamos calcular o Atributo Somado. Pegue o valor individual mais alto e separe dos demais. Some todos os outros valores e divida o resultado por 2, arredondando para cima. Some o valor mais alto que havia ficado separado. Esse é o que chamamos Atributo Somado.",
             "Robert, Janus, Gabriel e Luigi estão tentando levantar uma estátua de 400Kg, Eles têm FR 11, 16, 17e 8, respectivamente. Somando-se os menores, 16+11+8=35. Dividindo por 2, fica 18 (já arredondado). Agora somamos os 17 de Gabriel. Total 35. A estátua tem peso equivalente a FR 30. As chances deles levantarem a estátua são boas; 75%.",
-            "Ativo",
-            "o) n B M b zm a B mB",
+            "Ativo o) n B M b zm a B mB",
             "TD »:.385, 9:::20,,:8,.,.22; 123,48, (28.726 4.27,",
             "- Sucesso automático 95 - 90 s =)",
             "Teste de Resistência",
@@ -552,8 +531,7 @@
             "Emalguns casos, pode-se testar uma Perícia contra um Atributo. Quando isso ocorrer, proceda da mesma maneira que os casos acima. Utiliza-se a Perícia contra o valor de Teste do Atributo.",
             "Marcos um membro da Ordem de Khalmyr, está sendo torturado por um clérigo de Tenebra. O clérigo possui [Tortura 409%] e Marcos possui WILL 15 (Teste 60%). Após uma sessão de tortura, consultando a tabela, o clérigo possui 30% de chances de arrancar alguma informação de Marcos.",
             "Combate",
-            "No Sistema Daemon, o combate também é bastante simples. Para melhor entendê-lo, vamos dividir o combate em fases e",
-            "explicar cada uma delas. Durante cada rodada de combate, todas as quatro fases acontecem nesta ordem:",
+            "No Sistema Daemon, o combate também é bastante simples. Para melhor entendê-lo, vamos dividir o combate em fases e explicar cada uma delas. Durante cada rodada de combate, todas as quatro fases acontecem nesta ordem:",
             "1- Os Jogadores anunciam suas intenções.",
             "2- Todos os Jogadores jogam suas Iniciativas.",
             "3- Todos os Personagens fazem Ataques ou Ações. 4- Calcula-se os acertos e os danos.",
@@ -564,8 +542,7 @@
             "Rupert é um mago que conhece o Caminho do Fogo. O Jogador de Rupert quer lançar uma Bola de Fogo, mas tem medo de acertar seus companherros. O Jogador então declara que Rupert fará uma Bola de Fogo se não houver nenhumamigo seu perto do inquisidor inimigo. Se no momento detãzer a ação, for percebido queela não é uma boa ideia, Rupert não fará nada nessa rodada, mas",
             "2- Iniciativas",
             "Todos os Jogadores (e o Mestre, para cada um dos NPCs envolvidos no combate) jogam 1d10 e somam com a Agilidade (lembre-se dos bônus ou penalidades em efeito). Esse é o valor da iniciativa de cada Personagem.",
-            "As ações anunciadas na Fase 1 são resolvidas na ordem",
-            "decrescente dos valores de iniciativa (valores iguais são tratados como ações simultâneas).",
+            "As ações anunciadas na Fase 1 são resolvidas na ordem decrescente dos valores de iniciativa (valores iguais são tratados como ações simultâneas).",
             "3- Ataques ou ações",
             "Todos os Personagens envolvidos fazem seus ataques, suas ações ou utilizam suas Magias, de acordo com a ordem de iniciativa. Detalhes sobre como fazer um ataque serão discutidos mais adiante, nesse capítulo.",
             "4- Calcula-se os acertos e danos",
@@ -606,8 +583,7 @@
             "Iniciativa Negativa",
             "Se um Personagem, após ter os modificadores aplicados, ficar com iniciativa negativa, ele perde sua ação nessa rodada.",
             "Entende-se tal fato pela excessiva preparação do golpe por parte do Personagem, penalidades acumuladas de armaduras (armadura completa medieval), armas pesadas (uma espada montante) e outros.",
-            "Porém, na rodada seguinte, seu golpe está garantido, mesmo se ele tornar a ficar com a iniciativa negativa, Essa penalidade NÃO",
-            "pode ser aplicada duas vezes consecutivas. Dessa forma, o Personagem terá uma ação a cada 2 rodadas. Talvez seja melhor pensar novamente nas armas e armaduras escolhidas.",
+            "Porém, na rodada seguinte, seu golpe está garantido, mesmo se ele tornar a ficar com a iniciativa negativa, Essa penalidade NÃO pode ser aplicada duas vezes consecutivas. Dessa forma, o Personagem terá uma ação a cada 2 rodadas. Talvez seja melhor pensar novamente nas armas e armaduras escolhidas.",
             "Velocidade",
             "Se um Personagem possui múltiplas ações (por qualquer maldita razão que seja) e tiver uma iniciativa maior que o dobro da segunda maior iniciativa, permita a esse Personagem realizar sua segunda ação antes que os demais realizem a primeira.",
             "Caso sua iniciativa seja maior que o triplo da segunda maior iniciativa, permita também que a terceira ação aconteça antes das ações dos demais e assim por diante.",
@@ -662,8 +638,7 @@
             "Múltiplos Oponentes",
             "Ocorrem casos em que um Personagem está enfrentando dois ou mais inimigos. Quando isso acontece, ele terá problemas em utilizar sua defesa. Nesses casos, é permitido ao Personagem numericamente inferiorizado:",
             "- Dividir seu valor de defesa em quantas partes desejar. Se, por exemplo, ele possui 60% de defesa com espada curta, ele poderá realizar duas defesas com 30% cada.",
-            "- Decidir quais golpes ele tentará defender. Isso deve ser",
-            "decidido e anunciado ANTES dos atacantes realizarem seus respectivos ataques.",
+            "- Decidir quais golpes ele tentará defender. Isso deve ser decidido e anunciado ANTES dos atacantes realizarem seus respectivos ataques.",
             "Múltiplos Ataques",
             "Existem alguns casos que permitem ao Personagem realizar mais de um ataque. Existem itens mágicos, poções, Magias e poderes que trazem essa preciosa vantagem em combate. O caso mais mundano é o de Personagens com a Manobra de Combate Luta com Duas Armas.",
             "Quando isso ocorrer em combate, não há nenhuma complicação. Verifique a iniciativa de cada Personagem e permita-lhes uma ação, de acordo com a iniciativa. Depois que cada Personagem realizou sua primeira ação, verifique se algum deles ainda tem direito a ações. Permita as ações extras sempre por ordem de iniciativa, Tome cuidado apenas com a Regra da Velocidade.",
@@ -687,8 +662,7 @@
             "Ataques (1,1,3,3,4,5,7,7,7,9). Ele acerta 6 tiros, sendo 2 críticos. Cada navio carrega 20 homens, mas apenas 4 são considerados alvos. O Mestre decide que os dois primeiros levam 2 tiros cada, e os dois próximos 1 tiro.",
             "Granadas",
             "As granadas de mão possuem uma característica técnica chamada pulso, além, é claro do dano. O pulso possui dois valores, separados por uma barra. O primeiro é o raio de efeito e o segundo é redutor, ambos em metros. O dano aparece sempre no formato ndó, onde n é um número inteiro.",
-            "O dano apresentado é o dano que a granada provoca dentro da raio de efeito, em metros. À partir do raio de efeito, para",
-            "cada X metros reduza em um dado o dano da granada naquela área, onde X é o redutor da granada.",
+            "O dano apresentado é o dano que a granada provoca dentro da raio de efeito, em metros. À partir do raio de efeito, para cada X metros reduza em um dado o dano da granada naquela área, onde X é o redutor da granada.",
             "Um granada de dano 4d6, pulso 2/1 foi jogada contra o Personagem. Oarremesso não foi preciso e o Personagem estava a 4 metros da granada. Quem estava a até dois metros do ponto de impacto sofre 4d6, quem estava entre 2e 3 metros sofre apenas 3d6, enquanto o Personagem sofre 2d6.",
             "Ataque Localizado",
             "Outro caso especial acontece quando um Personagem deseja atingir uma parte específica do oponente. Pode ser um braço, o tórax, o pescoço ou algum objeto que esteja com o inimigo, com o objetivo de destruir (se possível) ou apenas de retirar de sua posse.",
@@ -698,8 +672,7 @@
             "Glynton está tentando derrotar um bandido que o está atacando. O bandido usa uma lanterna na mão esquerda para iluminar o galpão escuro enquanto Glynton enxerga apenas sombras e vultos. Glynton mira a lâmpada da lanterna. Sua Perícia é Pistola 40%, precisando portanto de 20 em 1d100. É um tiro difícil.",
             "O Jogador rola os dados e tira 18! Agora, com Glynton e seu inimigo no escuro, a luta é mais justa.",
             "Desarme",
-            "O Desarme é um golpe localizado. O atacante declara que está atacando o oponente com o intuito de lhe tirar a arma. Se o golpe for um acerto, o atacante não causa dano ao defensor, mas este perde sua arma, que é arremessada fora do alcance das mãos dos",
-            "lutadores. Se o defensor estiver usando duas armas, é preciso desarmar uma arma de cada vez. Se o número tirado no 1d100 for um acerto crítico de desarme, o atacante não apenas desarma o defensor, mas o faz de modo humilhante. Isso quer dizer jogar a arma do inimigo longe, em cima de uma mesa, ou até mesmo pegar a arma do defensor no ar. Um desarme humilhante deve ter efeitos práticos em jogo, sempre decididos pelo Mestre.",
+            "O Desarme é um golpe localizado. O atacante declara que está atacando o oponente com o intuito de lhe tirar a arma. Se o golpe for um acerto, o atacante não causa dano ao defensor, mas este perde sua arma, que é arremessada fora do alcance das mãos dos lutadores. Se o defensor estiver usando duas armas, é preciso desarmar uma arma de cada vez. Se o número tirado no 1d100 for um acerto crítico de desarme, o atacante não apenas desarma o defensor, mas o faz de modo humilhante. Isso quer dizer jogar a arma do inimigo longe, em cima de uma mesa, ou até mesmo pegar a arma do defensor no ar. Um desarme humilhante deve ter efeitos práticos em jogo, sempre decididos pelo Mestre.",
             "Mark está possuído por um espírito e ataca seu amigo Eris com uma faca. Enis não quer machucar seu companheiro descontrolado então decide tirar a faca de Mark. Eris tem Briga 45/40, precisando de 23 em 1d100 para derrubar a faca de Mark no chão.",
             "Ataque Total",
             "Também conhecido como Carga. O Personagem esquece todas as recomendações sobre prudência e ataca seu inimigo. Ele realiza um único ataque e não tem direito a defesa. Seu valor de ataque aumenta em 10% e o dano em +2. Além disso o dano de impacto passa a ser 3.",
@@ -708,12 +681,9 @@
             "Marcy fica descontrolada ao ver sua amiga Sandra levar um soco. Ela ataca o motoqueiro com toda fiúria, em Carga. Marcy tem Briga 30/ 30, precisando de 40 em 1d100 para acertar. Se isso ocorrer, fará 1d3+2 pontos de dano no motoqueiro, com mínimo de 3, já que a roupa do motoqueiro confere IP 2.",
             "O motoqueiro atacado por Marcy não quer brigar com ela também. Ele recua com os braços protegendo o rosto e desiste de atacar. Sandra e Marcy fazem um ataque cada uma e o motoqueiro poderá usar sua defesa em ambos os ataques.",
             "Ataque Surpresa",
-            "Existem casos nos quais um (ou mais) Personagem prepara uma emboscada. A ideia básica é surpreender o inimigo,",
-            "fazendo um Ataque sem que ele possa se defender. As situações mais comuns são em estradas que cortam matas densas ou em",
-            "subúrbios de cidades, em becos e outros locais escuros. Para que se configure o Ataque Surpresa, é necessário que a vítima não saiba que está sendo espreitada e nem tenha motivos para suspeitar. O ataque surpresa é realizado como um ataque Fácil e o lado surpreso não tem direito a defesa.",
+            "Existem casos nos quais um (ou mais) Personagem prepara uma emboscada. A ideia básica é surpreender o inimigo, fazendo um Ataque sem que ele possa se defender. As situações mais comuns são em estradas que cortam matas densas ou em subúrbios de cidades, em becos e outros locais escuros. Para que se configure o Ataque Surpresa, é necessário que a vítima não saiba que está sendo espreitada e nem tenha motivos para suspeitar. O ataque surpresa é realizado como um ataque Fácil e o lado surpreso não tem direito a defesa.",
             "Ataque pelas Costas",
-            "Existem dois tipos de Ataque pelas Costas. A diferença é se a vítima está ou não ciente do ataque. Se estiver, aplique uma penalidade de metade na defesa, devido à dificuldade de ver o oponente. Se a vítima não pode ver o oponente, considere um",
-            "ataque surpresa. Quando alguém faz este ataque, considere o ataque um Teste Fácil se a vítima estiver distraída ou prestando atenção a outras coisas.",
+            "Existem dois tipos de Ataque pelas Costas. A diferença é se a vítima está ou não ciente do ataque. Se estiver, aplique uma penalidade de metade na defesa, devido à dificuldade de ver o oponente. Se a vítima não pode ver o oponente, considere um ataque surpresa. Quando alguém faz este ataque, considere o ataque um Teste Fácil se a vítima estiver distraída ou prestando atenção a outras coisas.",
             "Victor surpreende Ronald atacando-o pelas costas. Ronald, que luta com [espada 30/30] ficará com valor de defesa 15 nessa rodada.",
             "Mira",
             "Um Personagem pode perder uma rodada inteira mirando um inimigo e, com isso, receber bonificações.",
@@ -724,14 +694,10 @@
             "Se estas condições forem satisfeitas, o atacante faz um teste Fácil para o Ataque mirado. Esta técnica é utilizada por snippers em seus tiros com rifles.",
             "Após mirar o alvo por uma rodada inteira, chega a hora de Eder atirar. Como ele não foi atrapalhado nem ameaçado durantea mira, pode fazer uso das vantagens de sua ação. Eder tem [rifle 359%), podendo agora fazer um ataque com 70% de chance de acertar.",
             "Luta às Cegas",
-            "Por algum motivo qualquer, o Personagem pode estar sem condições de enxergar. Pode estar escuro ou ele pode estar sob efeito de um veneno ou de uma Magia. O escuro pode ser tanto para um Personagem como para todos. Esta situação se aplica para cada Personagem impedido de ver. Se o Personagem possui a manobra de combate Luta às Cegas (ver Perícias), ele continua lutando normalmente enquanto seus outros sentidos",
-            "estviverem funcionando. Se o Personagem não possui a Manobra de Combate Luta",
-            "às Cegas, aplique uma penalidade metade tanto nos valores de ataque quanto nos de defesa.",
+            "Por algum motivo qualquer, o Personagem pode estar sem condições de enxergar. Pode estar escuro ou ele pode estar sob efeito de um veneno ou de uma Magia. O escuro pode ser tanto para um Personagem como para todos. Esta situação se aplica para cada Personagem impedido de ver. Se o Personagem possui a manobra de combate Luta às Cegas (ver Perícias), ele continua lutando normalmente enquanto seus outros sentidos estvvviverem funcionando. Se o Personagem não possui a Manobra de Combate Luta às Cegas, aplique uma penalidade metade tanto nos valores de ataque quanto nos de defesa.",
             "Robert e Ozaki lutavam quando a luz subitamente é apagada. Robert, que tem a manobra luta às cegas, continua a usar [briga 40/40), mas Ozaki enfrentará dificuldades: sua [briga 35/50] fica agora reduzida a apenas [briga 18/25]. Ozaki está em sérias dificuldades.",
             "Posição Desvantajosa",
-            "Acontece com alguma fregiiência de um dos combatentes",
-            "estar em posição desvantajosa no combate. Ele pode estar sentado em uma mesa quando é surpreendido pelo inimigo ou",
-            "pode ter caído no chão. Existem uma infinidade de situações que podem ser consideras desvantajosas.",
+            "Acontece com alguma fregiiência de um dos combatentes estar em posição desvantajosa no combate. Ele pode estar sentado em uma mesa quando é surpreendido pelo inimigo ou pode ter caído no chão. Existem uma infinidade de situações que podem ser consideras desvantajosas.",
             "Nestes casos, o Mestre deve aplicar uma penalidade tanto no valor de Ataque quanto no valor de Defesa. O modificador METADE (reduz os valores à metade) costuma funcionar bem. O modificador deve perdurar enquanto o Personagem estiver em situação desvantajosa, mas deve ficar claro ao Jogador o porquê da penalidade.",
             "Phil está no meio de um pátio sendo alvejado por 3 atiradores no telhado de uma casa Phil atira de volta enquanto corre buscando abrigo, mas está em posição desvantajosa. Seu [revolver 259] fica penalizado em Metade: apenas 13% de chance de acertar.",
             "Mão Oposta",
@@ -772,15 +738,12 @@
             "Morrendo",
             "Apesar de todos os esforços, seu Personagem pode morrer quando os Pontos de Vida dele chegam a -5.",
             "Qualquer Personagem que tenha seus Pontos de Vida zerados cai imediatamente desmaiado, perdendo 1 PV por rodada devido ao ferimento, até chegar em -5 e, se ninguém fizer nada por ele, será a morte certa!",
-            "DV Gai q pe",
-            "dd",
-            "ge",
+            "DV Gai q pe dd ge",
             ") '",
             "\" k à ] ê N F -)",
             "Dos outros quatro Personagens da Campanha, dois foram destruídos pela Inquisição, um ficou louco e o último acabou aprisionado em Arkanun para sempre.",
             "Em um RPG de horror, sobreviver a uma Aventura muitas vezes já é um prêmio em si, mas para recompensar os Personagens que resistiram bravamente aos anjos, templários, Inquisição e outros demônios e que conseguiram resolver uma Aventura (ou parte dela, ou saírem vivos, pelo menos), existe um sistema que permite aos Personagens aumentarem seus poderes durante suas Aventuras.",
-            "Esse sistema é chamado de Experiência. Personagens que sobrevivem a muitas Aventuras, encontram muitas criaturas desconhecidas ou enfrentam muitos perigos tornam-se mais experientes com o tempo, adquirem mais poderes e melhoram",
-            "suas habilidades naturais. Sempre que uma Aventura ou conjunto de Aventuras terminar, o Mestre deve avaliar a participação de cada Personagem e decidir quais estão aptos a aumentarem seus níveis de conhecimento (geralmente a cada três ou quatro Aventuras bem sucedidas ou ao final de uma pequena Campanha).",
+            "Esse sistema é chamado de Experiência. Personagens que sobrevivem a muitas Aventuras, encontram muitas criaturas desconhecidas ou enfrentam muitos perigos tornam-se mais experientes com o tempo, adquirem mais poderes e melhoram suas habilidades naturais. Sempre que uma Aventura ou conjunto de Aventuras terminar, o Mestre deve avaliar a participação de cada Personagem e decidir quais estão aptos a aumentarem seus níveis de conhecimento (geralmente a cada três ou quatro Aventuras bem sucedidas ou ao final de uma pequena Campanha).",
             "Às notas de O a 10",
             "O sistema de passagem de nível funciona da seguinte maneira: ao final de cada Aventura (e não de cada sessão de jogo) o Mestre deve se fazer este pequeno questionário a respeito de cada Jogador:",
             "1- O Jogador fez um bom Roleplay?",
@@ -816,8 +779,7 @@
             "Campanha. Outros prêmios",
             "Além dessas mudanças, que são reflexos do desenvolvimento do Jogador, os Personagens podem encontrar outras formas de melhorias no seu status, como por exemplo:",
             "Tabela de Avanço de Nível",
-            "PVs Atributos",
-            "tm x o z ê",
+            "PVs Atributos tm x o z ê",
             "120 107 180 108 250 109 400 10 no 550 o! 1 800 12 112 1.100 13 13 1.600 14 114 2.200 15 15",
             "DOI EU =So",
             "* Os PVs, Atributos, Pontos de Aprimoramento, Pontos de Perícia, Pontos de Magia e Pontos de Focus estão ACUMULADOS (ao chegar ao 7º nível, o Personagem ganha apenas 1 Pontos de Vida e não outros 6!!!),",
@@ -834,8 +796,7 @@
             "Cabe ao Mestre adicionar seitas, criaturas, pessoas e fatos que tornam cada mundo único e diferente dos outros. Os Personagens podem descobrir fatos obscuros sobre a cidade onde estejam jogando, sobre a seita que investigam, sobre os Anjos e Demônios ou a verdade por trás das lendas.",
             "Pontos de Focus",
             "Pontos de Perícia",
-            "Pontos de",
-            "inicial* inicial* +25 +50 +75 +10 +12 +150 +175 +200 +225 +250 +275 +300 +325 +350"
+            "Pontos de inicial* inicial* +25 +50 +75 +10 +12 +150 +175 +200 +225 +250 +275 +300 +325 +350"
           ]
         }
       ]
@@ -1195,8 +1156,7 @@
       "sectionTitle": "Poderes Espectrais ou Mediúnicos",
       "paragraphs": [
         "(para Fantasmas, Aparições, Espectros)",
-        "São os Poderes que tornam cada espírito único no Reino dos Mortos, ou cada médium, oráculo, Estudioso do Umbral ou Viajante Astral diferente de todos os outros. Com estes poderes espectrais ou mediúnicos, o Jogador pode escolher quais",
-        "poderes deseja para seu Personagem, de acordo com sua história"
+        "São os Poderes que tornam cada espírito único no Reino dos Mortos, ou cada médium, oráculo, Estudioso do Umbral ou Viajante Astral diferente de todos os outros. Com estes poderes espectrais ou mediúnicos, o Jogador pode escolher quais poderes deseja para seu Personagem, de acordo com sua história"
       ],
       "sections": [
         {
@@ -1205,7 +1165,13 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "1 Ponto: 1 Poder Espectral.",
-            "2 Pontos: 3 Poderes Espectrais. 3 Pontos: 5 Poderes Espectrais. 4 Pontos: 7 Poderes Espectrais. 5 Pontos: 9 Poderes Espectrais. 6 Pontos: 11 Poderes Espectrais. 7 Pontos: 13 Poderes Espectrais. 8 Pontos: 15 Poderes Espectrais"
+            "2 Pontos: 3 Poderes Espectrais.",
+            "3 Pontos: 5 Poderes Espectrais.",
+            "4 Pontos: 7 Poderes Espectrais.",
+            "5 Pontos: 9 Poderes Espectrais.",
+            "6 Pontos: 11 Poderes Espectrais.",
+            "7 Pontos: 13 Poderes Espectrais.",
+            "8 Pontos: 15 Poderes Espectrais"
           ]
         },
         {
@@ -1214,8 +1180,7 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "(para Fantasmas, Aparições, Espectros)",
-            "São os Poderes que tornam cada espírito único no Reino dos Mortos, ou cada médium, oráculo, Estudioso do Umbral ou Viajante Astral diferente de todos os outros. Com estes poderes espectrais ou mediúnicos, o Jogador pode escolher quais",
-            "poderes deseja para seu Personagem, de acordo com sua história"
+            "São os Poderes que tornam cada espírito único no Reino dos Mortos, ou cada médium, oráculo, Estudioso do Umbral ou Viajante Astral diferente de todos os outros. Com estes poderes espectrais ou mediúnicos, o Jogador pode escolher quais poderes deseja para seu Personagem, de acordo com sua história"
           ]
         }
       ],
@@ -1239,7 +1204,9 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "1 Ponto: 1 Ponto Heróico por nível.",
-            "2 Pontos: 2 Pontos Heróicos por nível. 3 Pontos: 3 Pontos Heróicos por nível. 4 Pontos: 4 Pontos Heróicos por nível."
+            "2 Pontos: 2 Pontos Heróicos por nível.",
+            "3 Pontos: 3 Pontos Heróicos por nível.",
+            "4 Pontos: 4 Pontos Heróicos por nível."
           ]
         },
         {
@@ -1271,7 +1238,8 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "1 Ponto: 1 ponto de Fé +1 a cada 2 níveis.",
-            "2 Pontos: 2 pontos de Fé +1 a cada 2 níveis. 3 Pontos: 3 pontos de Fé + 1 por nível.",
+            "2 Pontos: 2 pontos de Fé +1 a cada 2 níveis.",
+            "3 Pontos: 3 pontos de Fé + 1 por nível.",
             "4 Pontos: 5 pontos de Fé + 1 por nível."
           ]
         },
@@ -1461,25 +1429,22 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Alma Escravizada",
-      "paragraphs": [
-        "sua alma foi escravizada por habitantes de Spiritum, criaturas poderosas que agora o enviam para várias missões ou a cometer atos insanos. Muitas vezes, o Personagem possui livre arbítrio enquanto seu dono não necessita dele para alguma missão. Neste caso, todas as outras prioridades são ignoradas e o Personagem precisa realizar a missão imposta por seu Possuidor."
-      ],
+      "paragraphs": [],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-3 Pontos"
+            "-",
+            "3 Pontos: sua alma foi escravizada por habitantes de Spiritum, criaturas poderosas que agora o enviam para várias missões ou a cometer atos insanos. Muitas vezes, o Personagem possui livre arbítrio enquanto seu dono não necessita dele para alguma missão. Neste caso, todas as outras prioridades são ignoradas e o Personagem precisa realizar a missão imposta por seu Possuidor."
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": [
-            "sua alma foi escravizada por habitantes de Spiritum, criaturas poderosas que agora o enviam para várias missões ou a cometer atos insanos. Muitas vezes, o Personagem possui livre arbítrio enquanto seu dono não necessita dele para alguma missão. Neste caso, todas as outras prioridades são ignoradas e o Personagem precisa realizar a missão imposta por seu Possuidor."
-          ]
+          "paragraphs": []
         }
       ],
       "polarity": "negativo"
@@ -1491,25 +1456,22 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Alma Vendida",
-      "paragraphs": [
-        "seu Personagem vendeu sua alma muito tempo atrás (possivelmente em uma outra encarnação!) e todas as vantagens que ele já obteve se acabaram. Está na hora de pagar seu tributo. Se o personagem morrer, ele irá direto para as mãos de seu dono. Note que, muitas vezes, o fato de um Personagem estar reencarnado em um corpo (caso ele tenha vendido sua alma em outra encarnação) significa que ele fez algum tipo de pacto ou foi ajudado por espíritos com a intenção de conseguir revérter a compra (até o tempo de sua morte). Este Aprimoramento dá excelentes ideias para Campanhas."
-      ],
+      "paragraphs": [],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-3 Pontos"
+            "-",
+            "3 Pontos: seu Personagem vendeu sua alma muito tempo atrás (possivelmente em uma outra encarnação!) e todas as vantagens que ele já obteve se acabaram. Está na hora de pagar seu tributo. Se o personagem morrer, ele irá direto para as mãos de seu dono. Note que, muitas vezes, o fato de um Personagem estar reencarnado em um corpo (caso ele tenha vendido sua alma em outra encarnação) significa que ele fez algum tipo de pacto ou foi ajudado por espíritos com a intenção de conseguir revérter a compra (até o tempo de sua morte). Este Aprimoramento dá excelentes ideias para Campanhas."
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": [
-            "seu Personagem vendeu sua alma muito tempo atrás (possivelmente em uma outra encarnação!) e todas as vantagens que ele já obteve se acabaram. Está na hora de pagar seu tributo. Se o personagem morrer, ele irá direto para as mãos de seu dono. Note que, muitas vezes, o fato de um Personagem estar reencarnado em um corpo (caso ele tenha vendido sua alma em outra encarnação) significa que ele fez algum tipo de pacto ou foi ajudado por espíritos com a intenção de conseguir revérter a compra (até o tempo de sua morte). Este Aprimoramento dá excelentes ideias para Campanhas."
-          ]
+          "paragraphs": []
         }
       ],
       "polarity": "negativo"
@@ -1521,25 +1483,22 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Alucinado",
-      "paragraphs": [
-        "o Personagem enxerga coisas que ninguém mais vê. Ao mesmo tempo em que ele é capaz de vislumbrar pequenos aspectos do Sonhar, estas visões o assombram. Ele enxerga criaturas de Spiritum e do Sonhar como se estivessem presentes na Terra, mas ao mesmo tempo, vê coisas que não existem em outro lugar que não seja em sua própria mente."
-      ],
+      "paragraphs": [],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 Ponto"
+            "-",
+            "1 Ponto: o Personagem enxerga coisas que ninguém mais vê. Ao mesmo tempo em que ele é capaz de vislumbrar pequenos aspectos do Sonhar, estas visões o assombram. Ele enxerga criaturas de Spiritum e do Sonhar como se estivessem presentes na Terra, mas ao mesmo tempo, vê coisas que não existem em outro lugar que não seja em sua própria mente."
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": [
-            "o Personagem enxerga coisas que ninguém mais vê. Ao mesmo tempo em que ele é capaz de vislumbrar pequenos aspectos do Sonhar, estas visões o assombram. Ele enxerga criaturas de Spiritum e do Sonhar como se estivessem presentes na Terra, mas ao mesmo tempo, vê coisas que não existem em outro lugar que não seja em sua própria mente."
-          ]
+          "paragraphs": []
         }
       ],
       "polarity": "negativo"
@@ -1551,25 +1510,22 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Aura de Inquietude",
-      "paragraphs": [
-        "esse aprimoramento é o inverso do Empatia Sobrenatural. O Personagem não pode escolher se vai ou não afetar animais ou pessoas, mas se tentar ativamente fazer um animal ficar inquieto e vencer a disputa de WILL com diferença maior ou igual a 40%/o, o animal ataca qualquer ser vivo que esteja entre o espírito e ele, ou até mesmo diretamente atrás do espírito, com uma fúria cega. Não tem como afetar humanos desta maneira."
-      ],
+      "paragraphs": [],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 Ponto"
+            "-",
+            "1 Ponto: esse aprimoramento é o inverso do Empatia Sobrenatural. O Personagem não pode escolher se vai ou não afetar animais ou pessoas, mas se tentar ativamente fazer um animal ficar inquieto e vencer a disputa de WILL com diferença maior ou igual a 40%/o, o animal ataca qualquer ser vivo que esteja entre o espírito e ele, ou até mesmo diretamente atrás do espírito, com uma fúria cega. Não tem como afetar humanos desta maneira."
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": [
-            "esse aprimoramento é o inverso do Empatia Sobrenatural. O Personagem não pode escolher se vai ou não afetar animais ou pessoas, mas se tentar ativamente fazer um animal ficar inquieto e vencer a disputa de WILL com diferença maior ou igual a 40%/o, o animal ataca qualquer ser vivo que esteja entre o espírito e ele, ou até mesmo diretamente atrás do espírito, com uma fúria cega. Não tem como afetar humanos desta maneira."
-          ]
+          "paragraphs": []
         }
       ],
       "polarity": "negativo"
@@ -1582,7 +1538,6 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Sombras",
       "paragraphs": [
-        "o Personagem pecou demais quando em vida, e não obteve perdão algum. Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las.",
         "As sombras não podem ser enfrentadas normalmente pelo Personagem porque são criadas com sua própria essência, sendo consideradas indestrutíveis por ele. Apenas alguns rituais secretos são capazes de afastá-las por algum tempo ou destruí-la durante alguns meses ou anos."
       ],
       "sections": [
@@ -1591,7 +1546,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-3 Pontos"
+            "-",
+            "3 Pontos: o Personagem pecou demais quando em vida, e não obteve perdão algum. Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las."
           ]
         },
         {
@@ -1599,7 +1555,6 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem pecou demais quando em vida, e não obteve perdão algum. Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las.",
             "As sombras não podem ser enfrentadas normalmente pelo Personagem porque são criadas com sua própria essência, sendo consideradas indestrutíveis por ele. Apenas alguns rituais secretos são capazes de afastá-las por algum tempo ou destruí-la durante alguns meses ou anos."
           ]
         }
@@ -1689,12 +1644,9 @@
         "O Mestre deve criar os principais NPCs (anjos) que acompanham o Personagem, suas características e personalidade.",
         "Oráculos",
         "Os oráculos existem desde a Antigiiidade grega. Ao contrário das videntes, as oráculos são influenciadas por outros tipos de espíritos como elementais, fadas, gnomos, espíritos da natureza (alguns muito poderosos). À diferença entre as oráculos e as videntes são puramente em relação à origem de suas previsões. Enquanto as videntes são influenciadas pela Cidade de Prata, os oráculos são influenciadas pelas forças da natureza (e suas previsões e conselhos visam sempre a defesa das áreas selvagens, florestas, a natureza, a degradação humana e outros fatores relacionados).",
-        "Oráculos atuavam como conselheiras de heróis na Grécia Antiga e nos Reinos Celtas, indicando os melhores métodos para se enfrentar um monstro que estava destruindo uma região, métodos de se acabar com uma seca ou de se aplacar aos deuses",
-        "através de missões específicas.",
+        "Oráculos atuavam como conselheiras de heróis na Grécia Antiga e nos Reinos Celtas, indicando os melhores métodos para se enfrentar um monstro que estava destruindo uma região, métodos de se acabar com uma seca ou de se aplacar aos deuses através de missões específicas.",
         "Criação de Personagem",
-        "Personagens oráculos são criados com 101 pontos de atribu-",
-        "to e pontos de perícia de acordo com sua INT e idade. A capacidade de oráculo custa 4 pontos de aprimoramento e",
-        "incluí Contatos com fadas em Arcádia (embora o oráculo muitas vezes não saiba disso). De qualquer forma, em 75% dos casos, o oráculo não sabe da origem de seus poderes e de seus aliados.",
+        "Personagens oráculos são criados com 101 pontos de atribu- to e pontos de perícia de acordo com sua INT e idade. A capacidade de oráculo custa 4 pontos de aprimoramento e incluí Contatos com fadas em Arcádia (embora o oráculo muitas vezes não saiba disso). De qualquer forma, em 75% dos casos, o oráculo não sabe da origem de seus poderes e de seus aliados.",
         "O questionário de Criação de Personagens é muito importante, principalmente a parte da história referente às primeiras experiências em relação às revelações.",
         "O Mestre deve criar os principais NPCs que acompanham o as e personalidade."
       ],
@@ -1716,12 +1668,9 @@
             "O Mestre deve criar os principais NPCs (anjos) que acompanham o Personagem, suas características e personalidade.",
             "Oráculos",
             "Os oráculos existem desde a Antigiiidade grega. Ao contrário das videntes, as oráculos são influenciadas por outros tipos de espíritos como elementais, fadas, gnomos, espíritos da natureza (alguns muito poderosos). À diferença entre as oráculos e as videntes são puramente em relação à origem de suas previsões. Enquanto as videntes são influenciadas pela Cidade de Prata, os oráculos são influenciadas pelas forças da natureza (e suas previsões e conselhos visam sempre a defesa das áreas selvagens, florestas, a natureza, a degradação humana e outros fatores relacionados).",
-            "Oráculos atuavam como conselheiras de heróis na Grécia Antiga e nos Reinos Celtas, indicando os melhores métodos para se enfrentar um monstro que estava destruindo uma região, métodos de se acabar com uma seca ou de se aplacar aos deuses",
-            "através de missões específicas.",
+            "Oráculos atuavam como conselheiras de heróis na Grécia Antiga e nos Reinos Celtas, indicando os melhores métodos para se enfrentar um monstro que estava destruindo uma região, métodos de se acabar com uma seca ou de se aplacar aos deuses através de missões específicas.",
             "Criação de Personagem",
-            "Personagens oráculos são criados com 101 pontos de atribu-",
-            "to e pontos de perícia de acordo com sua INT e idade. A capacidade de oráculo custa 4 pontos de aprimoramento e",
-            "incluí Contatos com fadas em Arcádia (embora o oráculo muitas vezes não saiba disso). De qualquer forma, em 75% dos casos, o oráculo não sabe da origem de seus poderes e de seus aliados.",
+            "Personagens oráculos são criados com 101 pontos de atribu- to e pontos de perícia de acordo com sua INT e idade. A capacidade de oráculo custa 4 pontos de aprimoramento e incluí Contatos com fadas em Arcádia (embora o oráculo muitas vezes não saiba disso). De qualquer forma, em 75% dos casos, o oráculo não sabe da origem de seus poderes e de seus aliados.",
             "O questionário de Criação de Personagens é muito importante, principalmente a parte da história referente às primeiras experiências em relação às revelações.",
             "O Mestre deve criar os principais NPCs que acompanham o as e personalidade."
           ]
@@ -1844,8 +1793,7 @@
         "Use o bom senso.",
         "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos fisicos, espíritos precisam de poderes especiais (ver capítulo sobre Poderes).",
         "Um espírito começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
-        "Um espírito começa com 3 pontos de aprimoramento mais",
-        "um ponto a cada vinte anos em Spiritum."
+        "Um espírito começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
       ],
       "sections": [
         {
@@ -1869,8 +1817,7 @@
             "Use o bom senso.",
             "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos fisicos, espíritos precisam de poderes especiais (ver capítulo sobre Poderes).",
             "Um espírito começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
-            "Um espírito começa com 3 pontos de aprimoramento mais",
-            "um ponto a cada vinte anos em Spiritum."
+            "Um espírito começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
           ]
         }
       ]
@@ -2065,13 +2012,10 @@
         "Existem até mesmo grupos de obsessores na Terra: espíritos especializados em reunir ou atormentar determinatos tipos de pessoas ou locais. Um grupo muito conhecido é chamado Discípulos de Hobbes. São espíritos formados por filósofos e estudiosos que rondam as principais universidades do mundo a procura de outros estudiosos, atormentando-os até que estes se suicidem e se juntem ao grupo. Serial killers, amantes rejeitados, viciados e até mesmo workaboolics (maníacos por trabalho) tornam-se obsessores após suas mortes.",
         "Como este tipo de Personagem está sempre ligado de alguma maneira a um objeto ou pessoa, o Jogador precisa controlar dois Personagens: o obsessor eo obsediado.",
         "É claro que em campanhas com maior número de Jogadores, o Mestre pode estabelecer que um dos outros Jogadores controlará o Personagem obsediado.",
-        "O Personagem que será obsediado poderá ser construído utilizando as regras normais de Construção de Personagem ouregras especiais (magos, anjo, demônio... qualquer",
-        "tipo de criatura pode ser vítima de um obsessor). Lembramos que o obsediado não precisa ser necessariamente um humano. Ele",
-        "pode ser um animal (gato preto, coruja, lobo..)), pode ser um objeto (um amuleto amaldiçoado), um local (uma casa mal-assombrada, um cemitério, uma cidade), um anjo ou até mesmo OUTRO espírito. Use o que melhor se encaixar em sua campanha. \"Também lembramos que o obsessor não precisa ser necessariamente um membro da campanha, podendo ser um NPC que assombra um dos integrantes do grupo, neste caso, sendo tratado como um problema a ser resolvido pela campanha.",
+        "O Personagem que será obsediado poderá ser construído utilizando as regras normais de Construção de Personagem ouregras especiais (magos, anjo, demônio... qualquer tipo de criatura pode ser vítima de um obsessor). Lembramos que o obsediado não precisa ser necessariamente um humano. Ele pode ser um animal (gato preto, coruja, lobo..)), pode ser um objeto (um amuleto amaldiçoado), um local (uma casa mal-assombrada, um cemitério, uma cidade), um anjo ou até mesmo OUTRO espírito. Use o que melhor se encaixar em sua campanha. \"Também lembramos que o obsessor não precisa ser necessariamente um membro da campanha, podendo ser um NPC que assombra um dos integrantes do grupo, neste caso, sendo tratado como um problema a ser resolvido pela campanha.",
         "Obsessores possuem poderes voltados para a manipulação de sentimentos e emoções, especialmente em relação ao seu objeto de desejo. São capazes de influenciar ou mesmo controlar pequenos grupos de pes- W y soas. Podem ser capazes de movimentar obje- N tos no Plano Físico e alguns até mesmo conse- N guem realizar magias através do Plano Astral.",
         "Um obsessor pode assumir a forma que quiser (desde que tenha os poderes necessários) mas seu obsediado sempre será capaz de reconhecê-lo",
-        "Muitos obsessores também são capazes de localizar seus objetos ou pessoas de desejo não importando onde elas estviverem. Às vezes, apenas os rituais mais poderosos são capazes de mantê-los afastados. Por outro lado, existem",
-        "obsessores que estão presos à determinados locais e só podem se afastar utilizando magias muito poderosas.",
+        "Muitos obsessores também são capazes de localizar seus objetos ou pessoas de desejo não importando onde elas estvviverem. Às vezes, apenas os rituais mais poderosos são capazes de mantê-los afastados. Por outro lado, existem obsessores que estão presos à determinados locais e só podem se afastar utilizando magias muito poderosas.",
         "Criação de Personagem",
         "O Mestre deve criar DOIS Personagens (o obsessor a partir de sua última encarnação, dando especial atenção à missão que ele deveria ter cumprido e à forma como elemorreu. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
         "A partir da morte do Personagem, escreva a história até o ponto onde começa a Campanha, incluindo a relação entre os dois Personagens (obsessor e obsediado).",
@@ -2089,13 +2033,10 @@
             "Existem até mesmo grupos de obsessores na Terra: espíritos especializados em reunir ou atormentar determinatos tipos de pessoas ou locais. Um grupo muito conhecido é chamado Discípulos de Hobbes. São espíritos formados por filósofos e estudiosos que rondam as principais universidades do mundo a procura de outros estudiosos, atormentando-os até que estes se suicidem e se juntem ao grupo. Serial killers, amantes rejeitados, viciados e até mesmo workaboolics (maníacos por trabalho) tornam-se obsessores após suas mortes.",
             "Como este tipo de Personagem está sempre ligado de alguma maneira a um objeto ou pessoa, o Jogador precisa controlar dois Personagens: o obsessor eo obsediado.",
             "É claro que em campanhas com maior número de Jogadores, o Mestre pode estabelecer que um dos outros Jogadores controlará o Personagem obsediado.",
-            "O Personagem que será obsediado poderá ser construído utilizando as regras normais de Construção de Personagem ouregras especiais (magos, anjo, demônio... qualquer",
-            "tipo de criatura pode ser vítima de um obsessor). Lembramos que o obsediado não precisa ser necessariamente um humano. Ele",
-            "pode ser um animal (gato preto, coruja, lobo..)), pode ser um objeto (um amuleto amaldiçoado), um local (uma casa mal-assombrada, um cemitério, uma cidade), um anjo ou até mesmo OUTRO espírito. Use o que melhor se encaixar em sua campanha. \"Também lembramos que o obsessor não precisa ser necessariamente um membro da campanha, podendo ser um NPC que assombra um dos integrantes do grupo, neste caso, sendo tratado como um problema a ser resolvido pela campanha.",
+            "O Personagem que será obsediado poderá ser construído utilizando as regras normais de Construção de Personagem ouregras especiais (magos, anjo, demônio... qualquer tipo de criatura pode ser vítima de um obsessor). Lembramos que o obsediado não precisa ser necessariamente um humano. Ele pode ser um animal (gato preto, coruja, lobo..)), pode ser um objeto (um amuleto amaldiçoado), um local (uma casa mal-assombrada, um cemitério, uma cidade), um anjo ou até mesmo OUTRO espírito. Use o que melhor se encaixar em sua campanha. \"Também lembramos que o obsessor não precisa ser necessariamente um membro da campanha, podendo ser um NPC que assombra um dos integrantes do grupo, neste caso, sendo tratado como um problema a ser resolvido pela campanha.",
             "Obsessores possuem poderes voltados para a manipulação de sentimentos e emoções, especialmente em relação ao seu objeto de desejo. São capazes de influenciar ou mesmo controlar pequenos grupos de pes- W y soas. Podem ser capazes de movimentar obje- N tos no Plano Físico e alguns até mesmo conse- N guem realizar magias através do Plano Astral.",
             "Um obsessor pode assumir a forma que quiser (desde que tenha os poderes necessários) mas seu obsediado sempre será capaz de reconhecê-lo",
-            "Muitos obsessores também são capazes de localizar seus objetos ou pessoas de desejo não importando onde elas estviverem. Às vezes, apenas os rituais mais poderosos são capazes de mantê-los afastados. Por outro lado, existem",
-            "obsessores que estão presos à determinados locais e só podem se afastar utilizando magias muito poderosas."
+            "Muitos obsessores também são capazes de localizar seus objetos ou pessoas de desejo não importando onde elas estvviverem. Às vezes, apenas os rituais mais poderosos são capazes de mantê-los afastados. Por outro lado, existem obsessores que estão presos à determinados locais e só podem se afastar utilizando magias muito poderosas."
           ]
         },
         {
@@ -2301,20 +2242,17 @@
         "Os habitantes do Sonhar de Phantasus tendem a possuir formas elegantes, limpas e sempre alegres, como fadas, ondinas, gnomos, criaturas mitológicas (unicórnios, pégasus e outras criaturas benevolentes). Vivem em casas e castelos construídos nas copas de árvores gigantescas (realmente gigantescas!) onde vivem em comunidades em conjunto às fadas de Nova Arcádia.",
         "Geralmente vestem-se de branco ou cores brilhantes, são graciosos e muito ágeis, preferindo sempre a conversa do que a guerra. São estudiosos, pesquisadores e extremamente curiosos, servindo muitas vezes como professores para as crianças enquanto elas dormem. Costumam visitar a Terra, mas como possuem formas efêmeras, seu tempo de permanência no reino dos despertos costuma ser muito limitado.",
         "Criação de Personagem",
-        "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais",
-        "voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
+        "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
         "do Sonhar",
         "Morpheus",
         "Os habitantes do Sonhar que são governados por Lorde Morpheus são os mais numerosos de todos, pois estão em contato direto com os habitantes da Terra e de Arcádia.",
         "Sua descrição pode variar de maneira praticamente infinita, de acordo com a energia telúrica de cada um. Podem variar desde pequenos animais da floresta até grande ogros bonzinhos (criados a partir dos sonhos de alguma criança muito criativa). Geralmente possuem aspecto humano ou humanóide, mas qualquer tipo de forma é possível de ser encontrada.",
         "Existem personagens do Sonhar muito conhecidos, como os quatro Cavaleiros do Apocalipse, os personagens de todos os contos de Shakespeare, a Rainha Branca de Neve, dezenas e dezenas de versões de bruxas, de incontáveis histórias de fadas, animais falantes, bonecos de madeira falantes, príncipes encantados, cavaleiros em armadura brilhante, magos de chapéu pontudo e uma infinidade de criaturas. Sua imaginação é o limite.",
-        "Personagens do Sonhar são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores,",
-        "no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. O valor máximo inicial de um atributo de um habitante do Sonhar é 24.",
+        "Personagens do Sonhar são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. O valor máximo inicial de um atributo de um habitante do Sonhar é 24.",
         "Proebetus",
         "Os habitantes de Halzazee e Proebetia são mais parecidos com criaturas de pesadelos como orcs, trolls, goblins, monstros esquisitos que se escondem dentro de armários, bem como assemelham-se aos demônios de Arkanun, gárgulas e outras criaturas da mitologia religiosa. São muito desorganizados e vivem em acampamentos ou cidades que lembram muito vilas medievais. Eventualmente algum feiticeiro monta um vale espiritual em Proebetia e recruta essas criaturas como lacaios.",
         "Criação de Personagem",
-        "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua",
-        "ambientação e com a função que exercem no Sonhar.",
+        "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
         "Passeando pela Terra",
         "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionado E conjuração de seres fantásticos (Criar Metamagia 6+).",
         "Enquanto estviverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivesem em uma floresta ou campo); ou um ponto de WILL a cada & horas (se estviverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estviverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imedistamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
@@ -2349,20 +2287,17 @@
           "title": "Criação de Personagem",
           "area": "racas",
           "paragraphs": [
-            "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais",
-            "voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
+            "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
             "do Sonhar",
             "Morpheus",
             "Os habitantes do Sonhar que são governados por Lorde Morpheus são os mais numerosos de todos, pois estão em contato direto com os habitantes da Terra e de Arcádia.",
             "Sua descrição pode variar de maneira praticamente infinita, de acordo com a energia telúrica de cada um. Podem variar desde pequenos animais da floresta até grande ogros bonzinhos (criados a partir dos sonhos de alguma criança muito criativa). Geralmente possuem aspecto humano ou humanóide, mas qualquer tipo de forma é possível de ser encontrada.",
             "Existem personagens do Sonhar muito conhecidos, como os quatro Cavaleiros do Apocalipse, os personagens de todos os contos de Shakespeare, a Rainha Branca de Neve, dezenas e dezenas de versões de bruxas, de incontáveis histórias de fadas, animais falantes, bonecos de madeira falantes, príncipes encantados, cavaleiros em armadura brilhante, magos de chapéu pontudo e uma infinidade de criaturas. Sua imaginação é o limite.",
-            "Personagens do Sonhar são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores,",
-            "no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. O valor máximo inicial de um atributo de um habitante do Sonhar é 24.",
+            "Personagens do Sonhar são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. O valor máximo inicial de um atributo de um habitante do Sonhar é 24.",
             "Proebetus",
             "Os habitantes de Halzazee e Proebetia são mais parecidos com criaturas de pesadelos como orcs, trolls, goblins, monstros esquisitos que se escondem dentro de armários, bem como assemelham-se aos demônios de Arkanun, gárgulas e outras criaturas da mitologia religiosa. São muito desorganizados e vivem em acampamentos ou cidades que lembram muito vilas medievais. Eventualmente algum feiticeiro monta um vale espiritual em Proebetia e recruta essas criaturas como lacaios.",
             "Criação de Personagem",
-            "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua",
-            "ambientação e com a função que exercem no Sonhar.",
+            "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
             "Passeando pela Terra",
             "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionado E conjuração de seres fantásticos (Criar Metamagia 6+).",
             "Enquanto estviverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivesem em uma floresta ou campo); ou um ponto de WILL a cada & horas (se estviverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estviverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imedistamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
@@ -2519,8 +2454,7 @@
       "sectionId": "poder",
       "sectionTitle": "Armaduras Espectrais",
       "paragraphs": [
-        "Através da modificação de seu perispírito, um espírito pode aumentar seu IP, tornando-se mais resistente ao dano de armas",
-        "espirituais (este IP vale apenas para ataques realizados através de armas espirituais ou Magias de Spiritum)."
+        "Através da modificação de seu perispírito, um espírito pode aumentar seu IP, tornando-se mais resistente ao dano de armas espirituais (este IP vale apenas para ataques realizados através de armas espirituais ou Magias de Spiritum)."
       ],
       "sections": [
         {
@@ -2528,8 +2462,7 @@
           "title": "Descrição",
           "area": "poderes",
           "paragraphs": [
-            "Através da modificação de seu perispírito, um espírito pode aumentar seu IP, tornando-se mais resistente ao dano de armas",
-            "espirituais (este IP vale apenas para ataques realizados através de armas espirituais ou Magias de Spiritum)."
+            "Através da modificação de seu perispírito, um espírito pode aumentar seu IP, tornando-se mais resistente ao dano de armas espirituais (este IP vale apenas para ataques realizados através de armas espirituais ou Magias de Spiritum)."
           ]
         },
         {
@@ -2705,9 +2638,7 @@
       "sectionId": "poder",
       "sectionTitle": "Detectar Mudança de Forma",
       "paragraphs": [
-        "Vencendo um Teste de Detectar Mudança de Forma vs. o Nível da Mudança de Forma do suspeito, o espírito consegue sentir",
-        "se a vítima está em sua forma real ou se está utilizando-se do",
-        "poder espectral Mudança de Forma."
+        "Vencendo um Teste de Detectar Mudança de Forma vs. o Nível da Mudança de Forma do suspeito, o espírito consegue sentir se a vítima está em sua forma real ou se está utilizando-se do poder espectral Mudança de Forma."
       ],
       "sections": [
         {
@@ -2715,9 +2646,7 @@
           "title": "Descrição",
           "area": "poderes",
           "paragraphs": [
-            "Vencendo um Teste de Detectar Mudança de Forma vs. o Nível da Mudança de Forma do suspeito, o espírito consegue sentir",
-            "se a vítima está em sua forma real ou se está utilizando-se do",
-            "poder espectral Mudança de Forma."
+            "Vencendo um Teste de Detectar Mudança de Forma vs. o Nível da Mudança de Forma do suspeito, o espírito consegue sentir se a vítima está em sua forma real ou se está utilizando-se do poder espectral Mudança de Forma."
           ]
         },
         {
@@ -2738,8 +2667,7 @@
       "sectionId": "poder",
       "sectionTitle": "Emoções",
       "paragraphs": [
-        "Este poder espectral permite ao espírito causar, ampliar ou",
-        "modificar emoções em uma vítima. A simples presença do espísito em um lugar é suficiente para causar a sensação, desde que ele ative este poder. O espírito precisa escolher entre Emoções Boas ou Ruins (e uma vez escolhido seu caminho, não pode mudar, a menos que compre este poder novamente). A escolha do tipo de emoções que o espírito desperta está diretamente relacionada ao seu background e deve ser aprovada pelo Mestre.",
+        "Este poder espectral permite ao espírito causar, ampliar ou modificar emoções em uma vítima. A simples presença do espísito em um lugar é suficiente para causar a sensação, desde que ele ative este poder. O espírito precisa escolher entre Emoções Boas ou Ruins (e uma vez escolhido seu caminho, não pode mudar, a menos que compre este poder novamente). A escolha do tipo de emoções que o espírito desperta está diretamente relacionada ao seu background e deve ser aprovada pelo Mestre.",
         "Sentimentos ruins: medo, fome, raiva, desespero, angústia e solidão são os mais utilizados, principalmente para enfraquecer, afastar ou minar psicologicamente os adversários. dade, calma e relaxamento são os mais utilizados e são muito úteis quando em reuniões ou para agrupar pessoas em torno de um ideal.",
         "Para ativar o poder, o espírito joga 1d6 para cada nível de Emoções que possuir, e Testa o resultado contra a WILL da vítima na tabela da página 67."
       ],
@@ -2749,8 +2677,7 @@
           "title": "Descrição",
           "area": "poderes",
           "paragraphs": [
-            "Este poder espectral permite ao espírito causar, ampliar ou",
-            "modificar emoções em uma vítima. A simples presença do espísito em um lugar é suficiente para causar a sensação, desde que ele ative este poder. O espírito precisa escolher entre Emoções Boas ou Ruins (e uma vez escolhido seu caminho, não pode mudar, a menos que compre este poder novamente). A escolha do tipo de emoções que o espírito desperta está diretamente relacionada ao seu background e deve ser aprovada pelo Mestre.",
+            "Este poder espectral permite ao espírito causar, ampliar ou modificar emoções em uma vítima. A simples presença do espísito em um lugar é suficiente para causar a sensação, desde que ele ative este poder. O espírito precisa escolher entre Emoções Boas ou Ruins (e uma vez escolhido seu caminho, não pode mudar, a menos que compre este poder novamente). A escolha do tipo de emoções que o espírito desperta está diretamente relacionada ao seu background e deve ser aprovada pelo Mestre.",
             "Sentimentos ruins: medo, fome, raiva, desespero, angústia e solidão são os mais utilizados, principalmente para enfraquecer, afastar ou minar psicologicamente os adversários. dade, calma e relaxamento são os mais utilizados e são muito úteis quando em reuniões ou para agrupar pessoas em torno de um ideal.",
             "Para ativar o poder, o espírito joga 1d6 para cada nível de Emoções que possuir, e Testa o resultado contra a WILL da vítima na tabela da página 67."
           ]
@@ -2906,9 +2833,7 @@
           "title": "Nível 5",
           "area": "poderes",
           "paragraphs": [
-            "Nível 5: Incorporar grandes máquinas. Permite ao espírito ligar e controlar um carro, um trator ou um guindaste. Contudo, o",
-            "espírito não será capaz de fazer nada que o objeto ou máquina não",
-            "seria capaz de realizar normalmente. Em alguns casos, existem perícias correspondentes que devem ser conhecidas pelo espírito. Ex.: para guiar carros ou outros veículos, é necessário que o"
+            "Nível 5: Incorporar grandes máquinas. Permite ao espírito ligar e controlar um carro, um trator ou um guindaste. Contudo, o espírito não será capaz de fazer nada que o objeto ou máquina não seria capaz de realizar normalmente. Em alguns casos, existem perícias correspondentes que devem ser conhecidas pelo espírito. Ex.: para guiar carros ou outros veículos, é necessário que o"
           ]
         }
       ]
@@ -3334,8 +3259,7 @@
       "sectionTitle": "Modificar Outros Espíritos",
       "paragraphs": [
         "Usando este poder, o espírito é capaz de modificar o ectoplasma de outro espírito, da maneira que desejar. Pode ser usado para corrigir defeitos, modificar a aparência ou até mesmo deformar a vítima. O espírito trabalha o ectoplasma como se fosse argila, esculpindo a forma que desejar. A vítima pode fazer um Teste de CON vs. o nível de poder para resistir.",
-        "Uma vez modificado, a vítima permanece em sua nova",
-        "forma até que consiga retornar ao normal, o que pode demorar horas, dias, meses ou até mesmo anos."
+        "Uma vez modificado, a vítima permanece em sua nova forma até que consiga retornar ao normal, o que pode demorar horas, dias, meses ou até mesmo anos."
       ],
       "sections": [
         {
@@ -3344,8 +3268,7 @@
           "area": "poderes",
           "paragraphs": [
             "Usando este poder, o espírito é capaz de modificar o ectoplasma de outro espírito, da maneira que desejar. Pode ser usado para corrigir defeitos, modificar a aparência ou até mesmo deformar a vítima. O espírito trabalha o ectoplasma como se fosse argila, esculpindo a forma que desejar. A vítima pode fazer um Teste de CON vs. o nível de poder para resistir.",
-            "Uma vez modificado, a vítima permanece em sua nova",
-            "forma até que consiga retornar ao normal, o que pode demorar horas, dias, meses ou até mesmo anos."
+            "Uma vez modificado, a vítima permanece em sua nova forma até que consiga retornar ao normal, o que pode demorar horas, dias, meses ou até mesmo anos."
           ]
         },
         {
@@ -3366,8 +3289,7 @@
       "sectionId": "poder",
       "sectionTitle": "Modificar a Forma-Pensamento",
       "paragraphs": [
-        "Este poder permite ao espírito moldar a forma-pensamento da maneira que desejar, criando objetos para seu uso pessoal como livros, pergaminhos, utensílios domésticos e outros objetos que quiser. Este poder é utilizado por espíritos não tão evoluídos, que",
-        "da estão presos a velhos hábitos que possuíam quando eram humanos como comer, dormir, tomar banho e outros.",
+        "Este poder permite ao espírito moldar a forma-pensamento da maneira que desejar, criando objetos para seu uso pessoal como livros, pergaminhos, utensílios domésticos e outros objetos que quiser. Este poder é utilizado por espíritos não tão evoluídos, que da estão presos a velhos hábitos que possuíam quando eram humanos como comer, dormir, tomar banho e outros.",
         "Este poder, utilizado em um nível mais avançado, permite ao espírito construir salas, quartos e até mesmo casas, mansões e castelos. Em maiores escalas, fazem com que o espírito seja capaz de moldar até mesmo pequenos vales e reinos espirituais em Spiritum."
       ],
       "sections": [
@@ -3376,8 +3298,7 @@
           "title": "Descrição",
           "area": "poderes",
           "paragraphs": [
-            "Este poder permite ao espírito moldar a forma-pensamento da maneira que desejar, criando objetos para seu uso pessoal como livros, pergaminhos, utensílios domésticos e outros objetos que quiser. Este poder é utilizado por espíritos não tão evoluídos, que",
-            "da estão presos a velhos hábitos que possuíam quando eram humanos como comer, dormir, tomar banho e outros.",
+            "Este poder permite ao espírito moldar a forma-pensamento da maneira que desejar, criando objetos para seu uso pessoal como livros, pergaminhos, utensílios domésticos e outros objetos que quiser. Este poder é utilizado por espíritos não tão evoluídos, que da estão presos a velhos hábitos que possuíam quando eram humanos como comer, dormir, tomar banho e outros.",
             "Este poder, utilizado em um nível mais avançado, permite ao espírito construir salas, quartos e até mesmo casas, mansões e castelos. Em maiores escalas, fazem com que o espírito seja capaz de moldar até mesmo pequenos vales e reinos espirituais em Spiritum."
           ]
         },
@@ -3944,18 +3865,15 @@
       "sectionId": "ritual",
       "sectionTitle": "Armadura Espectral",
       "paragraphs": [
-        "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. À armadura",
-        "lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual.",
+        "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. À armadura lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual.",
         "Se o amuleto for retirado antes da duração do ritual, o feitiço é quebrado.",
         "Arrepio de Licantropo",
         "Este ritual foi desenvolvido pelos nórdicos no século VIII, quando começaram a se aventurar para o sul através das florestas protegidas pelos lobos. Quando acionar este ritual, o mago sente um arrepio se estiver a menos de 100 metros de um licantropo. Existem versões deste ritual para vampiros, demônios, anjos, espíritos, fadas e quaisquer outras criaturas sobrenaturais que o Mestre achar necessário.",
         "Atenção",
         "Área: 20m de raio",
-        "Este ritual faz um chamado astral para todas as pessoas em um",
-        "raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo.",
+        "Este ritual faz um chamado astral para todas as pessoas em um raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo.",
         "Casamento",
-        "Este ritual deve ser feito com os dois pretendentes junto ao",
-        "mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa.",
+        "Este ritual deve ser feito com os dois pretendentes junto ao mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa.",
         "Contato com Arkanun",
         "Área: 6m de raio",
         "Este é um dos primeiros contatos que o demonologista tem com os Reinos de Arkanun. Através dele, o feiticeiro consegue canalizar a essência de Arkanun para a Terra, causando uma aura de mal-estar ao redor de si mesmo.",
@@ -4005,18 +3923,15 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. À armadura",
-            "lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual.",
+            "Esta armadura espectral concede IP 4 ao mago, independente do tipo de armadura que ele possua, durante uma cena. À armadura lembra uma cota de malha fantasmagórica e bloqueia apenas ataques físicos (socos, espadadas, flechas, quedas, etc.). O mago deve colocar o amuleto ao redor do pescoço durante o ritual.",
             "Se o amuleto for retirado antes da duração do ritual, o feitiço é quebrado.",
             "Arrepio de Licantropo",
             "Este ritual foi desenvolvido pelos nórdicos no século VIII, quando começaram a se aventurar para o sul através das florestas protegidas pelos lobos. Quando acionar este ritual, o mago sente um arrepio se estiver a menos de 100 metros de um licantropo. Existem versões deste ritual para vampiros, demônios, anjos, espíritos, fadas e quaisquer outras criaturas sobrenaturais que o Mestre achar necessário.",
             "Atenção",
             "Área: 20m de raio",
-            "Este ritual faz um chamado astral para todas as pessoas em um",
-            "raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo.",
+            "Este ritual faz um chamado astral para todas as pessoas em um raio de 20m. Por uma rodada, todas elas prestarão atenção ao conjurador, não importando que língua elas falem ou o que estejam fazendo. Caso alguém dentro dessa área de efeito esteja lutando ou concentrado, ela tem o direito a fazer um teste de vontade (WILL) para ignorar o chamado de atenção astral e continuar o que esteja fazendo.",
             "Casamento",
-            "Este ritual deve ser feito com os dois pretendentes junto ao",
-            "mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa.",
+            "Este ritual deve ser feito com os dois pretendentes junto ao mago ou clérigo. Ele abençoa o casamento e recita todos os versos do ritual (que são diferentes para cada deus). Os efeitos deste ritual são os seguintes: enquanto os casados permanecerem fiéis e companheiros, se por algum problema um deles estiver em apuros, o cônjuge receberá um bônus de +1 em todos os testes, +1 em todas jogadas de ataque e +1 em dano, enquanto estiver tentando resgatar sua amada(o) do perigo e vice-versa.",
             "Contato com Arkanun",
             "Área: 6m de raio",
             "Este é um dos primeiros contatos que o demonologista tem com os Reinos de Arkanun. Através dele, o feiticeiro consegue canalizar a essência de Arkanun para a Terra, causando uma aura de mal-estar ao redor de si mesmo.",
@@ -4077,11 +3992,9 @@
         "O corpo do mago pode, em alguns casos (5%), ser vitima de algum tipo de assalto ou possessão por espíritos errantes durante a jornada fora de seu corpo.",
         "Ao custo de 5 pontos de magia, o mago pode alterar sua aparência e o ambiente em que trava a conversa com à vítima. Pesadelos também são possíveis com estas alterações, mas é impossível machucar a vítima fisicamente através de um sonho.",
         "Dor de Cabeça",
-        "Este ritual faz com que a vítima tenha de fazer um teste de",
-        "vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar.",
+        "Este ritual faz com que a vítima tenha de fazer um teste de vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar.",
         "Enxergar Pessoas Mortas",
-        "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentra-",
-        "ção, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua).",
+        "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentra- ção, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua).",
         "Se caso existirem mais espíritos do que ele seja capaz de enxergar, o mestre pode sortear quais serão os fantasmas que o mago será capaz de ver (note que eles podem variar cada vez que o mago faça o ritual, ou mesmo se magos diferentes fizerem o mesmo ritual)."
       ],
       "sections": [
@@ -4134,11 +4047,9 @@
             "O corpo do mago pode, em alguns casos (5%), ser vitima de algum tipo de assalto ou possessão por espíritos errantes durante a jornada fora de seu corpo.",
             "Ao custo de 5 pontos de magia, o mago pode alterar sua aparência e o ambiente em que trava a conversa com à vítima. Pesadelos também são possíveis com estas alterações, mas é impossível machucar a vítima fisicamente através de um sonho.",
             "Dor de Cabeça",
-            "Este ritual faz com que a vítima tenha de fazer um teste de",
-            "vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar.",
+            "Este ritual faz com que a vítima tenha de fazer um teste de vontade (WILL vs. WILL do mago) ou ficar com dor de cabeça por algumas rodadas. Uma pessoa com dor de cabeça não consegue se concentrar nem realizar ações complexas (leia-se: magias). Qualquer tentativa de lutar também é afetada e a vítima precisa passar em um teste de vontade (WILL) por rodada que desejar lutar.",
             "Enxergar Pessoas Mortas",
-            "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentra-",
-            "ção, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua).",
+            "Uma das mediunidades mais importante e ao mesmo tempo mais assustadora, a capacidade de enxergar espíritos é muito valorizada nos Estudiosos do Umbral. Com alguma concentra- ção, o mago fecha seus olhos e mentaliza o Plano Astral. Em poucos instantes, ele será capaz de visualizar espíritos que estejam no mesmo ambiente que ele (o mago consegue enxergar um espírito a cada três níveis que possua).",
             "Se caso existirem mais espíritos do que ele seja capaz de enxergar, o mestre pode sortear quais serão os fantasmas que o mago será capaz de ver (note que eles podem variar cada vez que o mago faça o ritual, ou mesmo se magos diferentes fizerem o mesmo ritual)."
           ]
         }
@@ -4190,8 +4101,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Iniciação",
       "paragraphs": [
-        "Este é o ritual de iniciação a qual todos os paladinos e clérigos",
-        "precisam passar para serem efetivamente considerados como tais. É mais uma festividade do que um ritual, sendo que para cada deus é feito de maneira completamente diferentes. Para Personagens que recebam Pontos de Fé, esse ritual oficializa a posição do personagem dentro de sua religião dando direito a partir de então aos Pontos de Fé."
+        "Este é o ritual de iniciação a qual todos os paladinos e clérigos precisam passar para serem efetivamente considerados como tais. É mais uma festividade do que um ritual, sendo que para cada deus é feito de maneira completamente diferentes. Para Personagens que recebam Pontos de Fé, esse ritual oficializa a posição do personagem dentro de sua religião dando direito a partir de então aos Pontos de Fé."
       ],
       "sections": [
         {
@@ -4211,8 +4121,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Este é o ritual de iniciação a qual todos os paladinos e clérigos",
-            "precisam passar para serem efetivamente considerados como tais. É mais uma festividade do que um ritual, sendo que para cada deus é feito de maneira completamente diferentes. Para Personagens que recebam Pontos de Fé, esse ritual oficializa a posição do personagem dentro de sua religião dando direito a partir de então aos Pontos de Fé."
+            "Este é o ritual de iniciação a qual todos os paladinos e clérigos precisam passar para serem efetivamente considerados como tais. É mais uma festividade do que um ritual, sendo que para cada deus é feito de maneira completamente diferentes. Para Personagens que recebam Pontos de Fé, esse ritual oficializa a posição do personagem dentro de sua religião dando direito a partir de então aos Pontos de Fé."
           ]
         }
       ]
@@ -4316,8 +4225,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Marca Pessoal",
       "paragraphs": [
-        "O mago pode armazenar 1 ponto de magia para manter",
-        "esse efeito por quanto tempo desejar."
+        "O mago pode armazenar 1 ponto de magia para manter esse efeito por quanto tempo desejar."
       ],
       "sections": [
         {
@@ -4333,8 +4241,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "O mago pode armazenar 1 ponto de magia para manter",
-            "esse efeito por quanto tempo desejar."
+            "O mago pode armazenar 1 ponto de magia para manter esse efeito por quanto tempo desejar."
           ]
         }
       ]
@@ -4370,7 +4277,6 @@
         "A grande vantagem deste tipo de ataque em relação aos demais é que pessoas comuns não perceberão nenhum tipo de anomalia, acreditando que a vítima tenha sofrido um ataque cardíaco ou algo semelhante.",
         "Contudo, este ritual deixa marcas profundas em Spiritum e essas marcas podem ser vistas ou rastreadas por outros espíritos que porventura passem por aquele local (as vibrações podem ser sentidas a 100m por ponto de dano causado por esse ritual).",
         "Olhar de Minerva",
-        "dominação mental, influência dos espíritos ou hipnose, O feiticeiro deve olhar diretamente nos olhos da pessoa e se concentrar por três rodadas. No final desse período, ele saberá se a vítima possui algum tipo de poder ou ritual influenciando sua vontade.",
         "Este ritual permite detectar a influência, mas não neutralizá-la."
       ],
       "sections": [
@@ -4385,7 +4291,7 @@
             "Alvo: 1 pessoa",
             "Duração: instantânea",
             "Teste de Resistência: vontade (WILL) anula",
-            "Entender Humanos/Spiritum 2 Componentes: V, G, FD (o símbolo de Minerva) Tempo de Formulação: 3 rodadas Alcance; Sm Alvo; 1 pessoa Duração; instantânea Teste de Resistência: nenhum Esta antiga magia romana permite ao sacerdote ou feiticeiro detectar se uma pessoa está sob os efeitos de algum tipo de"
+            "Entender Humanos/Spiritum 2 Componentes: V, G, FD (o símbolo de Minerva) Tempo de Formulação: 3 rodadas Alcance; Sm Alvo; 1 pessoa Duração; instantânea Teste de Resistência: nenhum Esta antiga magia romana permite ao sacerdote ou feiticeiro detectar se uma pessoa está sob os efeitos de algum tipo de dominação mental, influência dos espíritos ou hipnose, O feiticeiro deve olhar diretamente nos olhos da pessoa e se concentrar por três rodadas. No final desse período, ele saberá se a vítima possui algum tipo de poder ou ritual influenciando sua vontade."
           ]
         },
         {
@@ -4397,7 +4303,6 @@
             "A grande vantagem deste tipo de ataque em relação aos demais é que pessoas comuns não perceberão nenhum tipo de anomalia, acreditando que a vítima tenha sofrido um ataque cardíaco ou algo semelhante.",
             "Contudo, este ritual deixa marcas profundas em Spiritum e essas marcas podem ser vistas ou rastreadas por outros espíritos que porventura passem por aquele local (as vibrações podem ser sentidas a 100m por ponto de dano causado por esse ritual).",
             "Olhar de Minerva",
-            "dominação mental, influência dos espíritos ou hipnose, O feiticeiro deve olhar diretamente nos olhos da pessoa e se concentrar por três rodadas. No final desse período, ele saberá se a vítima possui algum tipo de poder ou ritual influenciando sua vontade.",
             "Este ritual permite detectar a influência, mas não neutralizá-la."
           ]
         }
@@ -4575,8 +4480,7 @@
         "Este ritual permite ao mago trazer uma pessoa de volta à vida. Deve ser feito no máximo 1 mês por ponto de Força de Vontade da pessoa após sua morte (por exemplo, até doze meses para uma pessoa que tenha WILL 12. Deve ser feito antes que o espírito dela se adapte totalmente a Spiritum. Para a realização deste ritual, é necessário o crânio da pessoa que se deseja trazer de volta, em boas condições.",
         "Os feiticeiros preparam um altar especial, no plano astral, onde realizarão a troca dos espíritos. Para isso, deve se colocar o crânio em uma mesa de mármore ao lado de uma pessoa de importância equivalente ao morto. Esta pessoa deverá ter sido assassinada de maneira correta, segundo os passos do ritual e seu corpo deverá estar bem conservado. Qualquer cicatriz que possua neste momento se tornará permanente quando o ritual for finalizado. Em seguida, deve ser feito um corte na altura da nuca e a forma-pensamento do crânio da vítima deve ser cuidadosamente retirado no Plano Astral, segundo as instruções do ritual.",
         "A preparação deste ritual é de extrema importância, pois durante todo o desenrolar da conjuração, todos os cirurgiões estarão em transe e completamente indefesos no Plano Material. Durante doze horas, os magos devem preparar o corpo pra receber o crânio que está sobre o altar. Os magos recitam os versos finais do ritual e conjuram o espírito original, que ocupará seu novo corpo.",
-        "No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado",
-        "ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
+        "No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
       ],
       "sections": [
         {
@@ -4598,8 +4502,7 @@
             "Este ritual permite ao mago trazer uma pessoa de volta à vida. Deve ser feito no máximo 1 mês por ponto de Força de Vontade da pessoa após sua morte (por exemplo, até doze meses para uma pessoa que tenha WILL 12. Deve ser feito antes que o espírito dela se adapte totalmente a Spiritum. Para a realização deste ritual, é necessário o crânio da pessoa que se deseja trazer de volta, em boas condições.",
             "Os feiticeiros preparam um altar especial, no plano astral, onde realizarão a troca dos espíritos. Para isso, deve se colocar o crânio em uma mesa de mármore ao lado de uma pessoa de importância equivalente ao morto. Esta pessoa deverá ter sido assassinada de maneira correta, segundo os passos do ritual e seu corpo deverá estar bem conservado. Qualquer cicatriz que possua neste momento se tornará permanente quando o ritual for finalizado. Em seguida, deve ser feito um corte na altura da nuca e a forma-pensamento do crânio da vítima deve ser cuidadosamente retirado no Plano Astral, segundo as instruções do ritual.",
             "A preparação deste ritual é de extrema importância, pois durante todo o desenrolar da conjuração, todos os cirurgiões estarão em transe e completamente indefesos no Plano Material. Durante doze horas, os magos devem preparar o corpo pra receber o crânio que está sobre o altar. Os magos recitam os versos finais do ritual e conjuram o espírito original, que ocupará seu novo corpo.",
-            "No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado",
-            "ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
+            "No pôr do sol do dia seguinte, o espírito já estará com total controle de seu novo corpo. Os Atributos Físicos (FR, CON, AGI, DEX) permanecem, mas os Atributos Mentais (os demais) tornam-se os mesmos do dono do crânio. A cicatriz é permanente e não pode ser removida de maneira nenhuma. O crânio original deve ser pulverizado e misturado ao vinho, que deve ser ingerido pelo novo corpo imediatamente, para finalizar o ritual."
           ]
         }
       ]
@@ -4612,8 +4515,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Rompimento Sagrado",
       "paragraphs": [
-        "Este poderoso ritual pode cortar a conexão de um clérigo e seu",
-        "deus por um breve período de tempo. Quando é utilizado, a vítima precisa passar em um teste de vontade (WILL) ou ficará incapacitada de utilizar-se dos poderes de seu deus (seja utilizar Magias, poderes garantidos ou até mesmo afastar ou controlar mortos-vivos)."
+        "Este poderoso ritual pode cortar a conexão de um clérigo e seu deus por um breve período de tempo. Quando é utilizado, a vítima precisa passar em um teste de vontade (WILL) ou ficará incapacitada de utilizar-se dos poderes de seu deus (seja utilizar Magias, poderes garantidos ou até mesmo afastar ou controlar mortos-vivos)."
       ],
       "sections": [
         {
@@ -4635,8 +4537,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Este poderoso ritual pode cortar a conexão de um clérigo e seu",
-            "deus por um breve período de tempo. Quando é utilizado, a vítima precisa passar em um teste de vontade (WILL) ou ficará incapacitada de utilizar-se dos poderes de seu deus (seja utilizar Magias, poderes garantidos ou até mesmo afastar ou controlar mortos-vivos)."
+            "Este poderoso ritual pode cortar a conexão de um clérigo e seu deus por um breve período de tempo. Quando é utilizado, a vítima precisa passar em um teste de vontade (WILL) ou ficará incapacitada de utilizar-se dos poderes de seu deus (seja utilizar Magias, poderes garantidos ou até mesmo afastar ou controlar mortos-vivos)."
           ]
         }
       ]
@@ -4720,8 +4621,7 @@
         "Raktabija",
         "Considerado o pai de todos os rakshasas, Raktabija foi um grande rei-feiticeiro em Arkanun até que seu reino foi destruído em uma guerra com um reino inimigo e Raktabija precisou conjurar um portal para a Terra, onde conseguiu escapar com um de seus exércitos de asuras (demônios alados).",
         "O principal poder de Raktabija é o de criar demônios a partir de cada gota de sangue derramada em batalha. Através deste poder, não demorou muito para que tivesse um grande exército de asuras enfrentando os governantes da Índia.",
-        "Raktabija tornou-se o principal e mais poderoso demônio indiano, até ser enfrentado por Durga e Kali. O combate foi",
-        "muito violento e dezenas de aldeias e cidades foram destruídas durante os combates. Ao final, usando de um estratagema, Kali o derrotou, vampirizando seus asuras e os devorando.",
+        "Raktabija tornou-se o principal e mais poderoso demônio indiano, até ser enfrentado por Durga e Kali. O combate foi muito violento e dezenas de aldeias e cidades foram destruídas durante os combates. Ao final, usando de um estratagema, Kali o derrotou, vampirizando seus asuras e os devorando.",
         "Raktabija foi derrotado por Kali mas não foi destruído completamente, pois conseguiu abrir um portal para Arkanun e escapar de Durga e Kali, retornando ao seu reino destruído.",
         "Muitos séculos mais tarde, foi procurado pelos sacerdotes rakshasas para que os liderasse na procura por Kali. Quando os sacerdotes explicaram a ele o que acontecera à sua antiga inimiga, Raktabija concordou em ajudá-los.",
         "Após a tomada de Lanka, Raktabija conjurou um novo portal e transferiu as ruínas de seu palácio para a região próxima da cidade, antes de transportar toda a região para os Reinos Umbrais. Hoje, Raktabija é considerado o senhor dos rakshasas.",
@@ -4742,8 +4642,7 @@
             "Raktabija",
             "Considerado o pai de todos os rakshasas, Raktabija foi um grande rei-feiticeiro em Arkanun até que seu reino foi destruído em uma guerra com um reino inimigo e Raktabija precisou conjurar um portal para a Terra, onde conseguiu escapar com um de seus exércitos de asuras (demônios alados).",
             "O principal poder de Raktabija é o de criar demônios a partir de cada gota de sangue derramada em batalha. Através deste poder, não demorou muito para que tivesse um grande exército de asuras enfrentando os governantes da Índia.",
-            "Raktabija tornou-se o principal e mais poderoso demônio indiano, até ser enfrentado por Durga e Kali. O combate foi",
-            "muito violento e dezenas de aldeias e cidades foram destruídas durante os combates. Ao final, usando de um estratagema, Kali o derrotou, vampirizando seus asuras e os devorando.",
+            "Raktabija tornou-se o principal e mais poderoso demônio indiano, até ser enfrentado por Durga e Kali. O combate foi muito violento e dezenas de aldeias e cidades foram destruídas durante os combates. Ao final, usando de um estratagema, Kali o derrotou, vampirizando seus asuras e os devorando.",
             "Raktabija foi derrotado por Kali mas não foi destruído completamente, pois conseguiu abrir um portal para Arkanun e escapar de Durga e Kali, retornando ao seu reino destruído.",
             "Muitos séculos mais tarde, foi procurado pelos sacerdotes rakshasas para que os liderasse na procura por Kali. Quando os sacerdotes explicaram a ele o que acontecera à sua antiga inimiga, Raktabija concordou em ajudá-los.",
             "Após a tomada de Lanka, Raktabija conjurou um novo portal e transferiu as ruínas de seu palácio para a região próxima da cidade, antes de transportar toda a região para os Reinos Umbrais. Hoje, Raktabija é considerado o senhor dos rakshasas.",
@@ -4851,8 +4750,7 @@
             "Uma campanha de Spiritum é definida em suas fundações: Quem são os Personagens? O que eles possuem de tão especial? Quem eles foram em outras encarnações? Eles são humanos ou espíritos? Qual a razão deles estarem todos juntos?",
             "O ponto forte deste tipo de campanha é que ela testará a cmatividade e o rokplay dos participantes de uma maneira mais smtensa que os outros RPGs. Outra vantagem é que você poderá aterligar campanhas distintas de Arkanun (que se passa na Idade Média) e Trevas (em outros períodos), conectando o espírito dos Personagens e suas façanhas através da Roda dos Mundos.",
             "Anjos, demônios e vampiros também não estão imunes sos caprichos dos espíritos: muito da construção de seus reinos = de sua Guerra Celestial são travadas no Plano Astral.",
-            "Artefatos, itens mágicos e maldições podem ser explicadas. O Mestre pode autorizar Jogadores a criar Personagens com maldições cujas raízes foram estabelecidas séculos atrás, em outra",
-            "encarnação, cuja solução dependa de uma campanha em busca dos responsáveis (estejam eles onde estviverem e na forma em que estviverem) para resolver o problema.",
+            "Artefatos, itens mágicos e maldições podem ser explicadas. O Mestre pode autorizar Jogadores a criar Personagens com maldições cujas raízes foram estabelecidas séculos atrás, em outra encarnação, cuja solução dependa de uma campanha em busca dos responsáveis (estejam eles onde estvviverem e na forma em que estvviverem) para resolver o problema.",
             "Como as vidas passadas variam imensamente na superfície da Terra, um brasileiro pode ter encarnado na França, Espanha, Ásia, Austrália ou até mesmo no Egito Antigo. Prepare-se para viajar! Campanhas de SPIRITUM normalmente envolvem viajar através do mundo. E prepare-se também para procurar sábios isolados em montanhas inacessíveis, necromânticos escondidos nas catacumbas de alguma cidade italiana ou professores de história e arqueologia que possuem o conhecimento do problema que seu grupo enfrentará. SPIRITUM privilegia a informação e o rokplay do grupo ao invés da pancadaria (mesmo porque muitas das entidades que seu grupo encontrará são simplesmente poderosas demais para serem enfrentadas diretamente).",
             "Humanos ou Espíritos?",
             "Boa parte da campanha de Spiritum se passa nos Reinos Espirituais, através de portais, rituais de passagem e rituais de simulacro. Estejam preparados para visitarem os Reinos mais fantásticos que sua imaginação possa criar. O Reino dos Sonhos possui tantas faces e tantas concepções diferentes que seria impossível descrevê-lo completamente. Além disso, esses reinos mudam de forma constantemente e nenhum caminho pode ser trilhado muitas",
@@ -5047,8 +4945,7 @@
             "Existem rumores de mapas astrais tão antigos ou complexos que são capazes de levar os espíritos dos viajantes para orbes fora da Terra ou até mesmo fora do Sistema Solar!",
             "Entender Spiritum",
             "Outra opção para se deslocar no plano astral é utilizar-se do Caminho Entender Spiritum, que funciona como uma espécie de bússola astral. Através dele, os magos conseguem obter informações sobre a direção e distância aproximada do local onde desejam ir (embora, novamente, locais mais guardados são mais dificeis de serem localizados).",
-            "Viagens no plano astral podem demorar minutos, horas ou mesmo dias, dependendo do Caminho escolhido (como não",
-            "existe correlação espaço-tempo, uma MESMA viagem feita entre dois pontos de Spiritum realizada com dois mapas astrais dife rentes podem demorar horas ou dias de diferença).",
+            "Viagens no plano astral podem demorar minutos, horas ou mesmo dias, dependendo do Caminho escolhido (como não existe correlação espaço-tempo, uma MESMA viagem feita entre dois pontos de Spiritum realizada com dois mapas astrais dife rentes podem demorar horas ou dias de diferença).",
             "Alguns rituais mais simples permitem ao mago estimar 2 \"distância\" (se podemos chamar assim...) entre dois pontos atra vés de Spiritum ou de outros planos espirituais. Outros rituais mais elaborados não apenas estimam este tempo mas fornecers dados para que o viajante consiga atravessas de maneira segurz. Os rituais mais poderosos (aliados a Metamagia) permitem a dz cruzar estas distâncias como se fossem portais.",
             "Tempestades Astrais",
             "Um dos maiores problemas para os magos e viajantes despreparados são as tempestades astrais. Estes redemoinhos de energia mística são formados por resíduos mágicos de rituzss ou nodes que acabam se acumulando em determinadas áreas do plano astral, formando grandes círculos etéreos que arrastam tudo que estiver em seu caminho.",
@@ -5073,8 +4970,7 @@
             "Falamos sobre as viagens entre pontos conhecidos, agora é hora de explicarmos um pouco sobre as Cidades Astrais (também conhecidas como cidades espirituais).",
             "Na verdade, esta divisão entre planos espirituais, cidades astrais, vales espirituais e semiplanos é meramente classificatória. TODAS são exatamente a mesma coisa: buracos abertos pelo pensamento organizado dentro do universo caótico de energia que é o plano astral.",
             "As cidades são formadas através de rituais de Metamagia que \"abrem\" espaço dentro das brumas astrais. Esses locais podem ser pequenos como um baú (todos os feitiços de distorção espacial costumam utilizar espaços dentro do plano astral como o volume extra), maiores como uma sala (rituais, portais ou salas que estão separadas da realidade) ou até mesmo torres e pequenas áreas verdes como bosques ou campos (muitos magos mais poderosos gostam de criar pequenos bolsões espirituais para vviverem quando se cansaram da vida na Terra).",
-            "Quando são um pouco maiores, estes bolsões recebem o nome de vales espirituais (por que realmente se assemelham a \"crateras\" ou vales escavados dentro do plano astral e espiritual. Estes vales podem ter desde alguns metros até quilômetros de raio e são organizados de acordo com a energia que o criou assim desejou. A grande maioria dos vales são formados por comunidades de espíritos que desejam organizar um local para residir segundo suas crenças. Estes Vales",
-            "incluem a cidade de Nosso lar, que permanece estacionada nos céus do Rio de Janeiro, o Colégio Invisível, criado pelos magos iluminados como sua principal escola de magia, a Cidade dos Prazeres, no Umbral, o Castelo de Hogwarts, nas fronteiras da Nova Arcádia, Metrópolis, lar dos keepers, em Paradísia, o Paraíso das Virgens e muitos outros locais.",
+            "Quando são um pouco maiores, estes bolsões recebem o nome de vales espirituais (por que realmente se assemelham a \"crateras\" ou vales escavados dentro do plano astral e espiritual. Estes vales podem ter desde alguns metros até quilômetros de raio e são organizados de acordo com a energia que o criou assim desejou. A grande maioria dos vales são formados por comunidades de espíritos que desejam organizar um local para residir segundo suas crenças. Estes Vales incluem a cidade de Nosso lar, que permanece estacionada nos céus do Rio de Janeiro, o Colégio Invisível, criado pelos magos iluminados como sua principal escola de magia, a Cidade dos Prazeres, no Umbral, o Castelo de Hogwarts, nas fronteiras da Nova Arcádia, Metrópolis, lar dos keepers, em Paradísia, o Paraíso das Virgens e muitos outros locais.",
             "Vales espirituais maiores são chamados de semiplanos, pois podem ser grandes como cidades ou até mesmo estados ou países. Os semiplanos incluem os Domínios de Madelein, no Sonhar, a Torre de Marfim, em Halzazee e até mesmo a própria Terra Média descrita por Tolkien. Não há limites físicos para estas regiões, embora elas estejam constantemente se deslocando no espaço astral (podendo se afastar ou se aproximar de outros vales e regiões criadas por outras pessoas).",
             "Quando um semiplano possui poder e energia mística suficiente, ele pode se \"ancorar\" em um ponto mais constante do tempo-espaço e passa a ser chamado de Reino Espiritual (embora esta definição muitas vezes seja confundida com os vales espirituais que possuam poder para se ancorarem também!). Quase todas as regiões mais conhecidas de Arcádia caem nessa definição.",
             "Os maiores reinos espirituais formam os planos espirituais, que são regiões muito antigas, tradicionais e conhecidas (como Arcádia, Spiritum, Sonhar, Inferno, Abismo e Umbral). Na orbe terrestre, graças à Muralha da China, o plano espiritual foi dividido em duas partes, que só entraram em contato mais profundo nestes últimos séculos, tendo permanecidos separados e isolados durante centenas de anos uns dos outros.",
@@ -5129,34 +5025,25 @@
             "Como no Umbral a forma-pensamento é mais densa, a imensa maioria dos habitantes destes locais acredita sofrer dor quando são atacados (mesmo que sejam espíritos), podendo ser torturados, violentados, massacrados e mutilados pelos soldados dos lordes espirituais.",
             "A maioria destes guerreiros utiliza-se de armas idênticas às armas mundanas (revólveres, pistolas, metralhadoras) mas formaas por material astral. Estas armas causam dano em espíritos que são estejam preparados para elas (o que inclui a grande maioria dos aventureiros que estão investigando onde não foram chamados).",
             "Para realizar qualquer tipo de expedição aos reinos =mbralinos, os aventureiros e viajantes espirituais precisarão de gstuais específicos de proteção e iluminação, caso contrário podesão ser vítimas das armas e dos poderes destes espíritos.",
-            "Os anjos possuem diversos tipos de rituais que mantém estes espíritos afastados e suas armas inefetivas (incluindo uma",
-            "gama de círculos de proteção e rituais de aprisionamento).",
+            "Os anjos possuem diversos tipos de rituais que mantém estes espíritos afastados e suas armas inefetivas (incluindo uma gama de círculos de proteção e rituais de aprisionamento).",
             "As Fortalezas Trevosas",
             "Ao contrários das cidades, as fortalezas não permitem o Evrre-acesso das pessoas da Terra. Construídas de diversas mameiras, muitas delas possuem milhares de anos e inúmeras defeses contra as forças do bem e da luz. São locais inespugnáveis, onde missões de espionagem já são consideradas extremamente perigosas. Estas fortalezas ficam nas regiões mais sombrias e afastadas do Umbral, distante muitos dias de viagem de qualquer local seguro para os aventureiros. As Prisões",
             "Além das cidades umbralinas existem também as chamadas prisões, que nada mais são do que grandes aglomerados de espíritos aprisionados em uma região tumultuada. Áreas de guerza e presídios são locais onde os portais para as prisões espirituais são mais abundantes.",
-            "Estas prisões seguem os padrões das mais terríveis e desumanas prisões da Terra, com uma pequena diferença: nestes locais, um espírito pode ser torturado o quanto os carcereiros quiserem e não morrerá jamais: pode ficar dias sem comer, sofrendo de fome e sede sem jamais morrer ou ter todos os ossos de seu corpo quebrados e ainda continuar respirando (e regenerando em algum tempo, afinal, às vezes a mente do condenado está tão debilitada que ele nem se lembra há quanto tempo está ali nem como seu braço voltou ao normal antes de receber nova",
-            "sessão de tortura). Estas prisões são governadas por grandes demônios negociantes de almas, capazes de garantir grandes poderes em troca da alma das pessoas, que uma vez falecidas, vão direto para suas prisões espirituais. Como o espaço e o tempo se distorcem nos reinos espirituais, ninguém até hoje foi capaz de mapear todos os caminhos das prisões espirituais do umbral.",
+            "Estas prisões seguem os padrões das mais terríveis e desumanas prisões da Terra, com uma pequena diferença: nestes locais, um espírito pode ser torturado o quanto os carcereiros quiserem e não morrerá jamais: pode ficar dias sem comer, sofrendo de fome e sede sem jamais morrer ou ter todos os ossos de seu corpo quebrados e ainda continuar respirando (e regenerando em algum tempo, afinal, às vezes a mente do condenado está tão debilitada que ele nem se lembra há quanto tempo está ali nem como seu braço voltou ao normal antes de receber nova sessão de tortura). Estas prisões são governadas por grandes demônios negociantes de almas, capazes de garantir grandes poderes em troca da alma das pessoas, que uma vez falecidas, vão direto para suas prisões espirituais. Como o espaço e o tempo se distorcem nos reinos espirituais, ninguém até hoje foi capaz de mapear todos os caminhos das prisões espirituais do umbral.",
             "As prisões também podem ser usadas para esconder pessoas, aprisionar inocentes ou castigar inimigos derrotados. Tudo por um preço, claro!",
-            "São comuns equipes de anjos corpore organizarem missões de resgate a almas que pedem auxílio dentro das prisões. São missões perigosas e extremamente sigilosas, pois muitas vezes toda a diplomacia entre regiões espirituais depende de determinados aspectos da política de prisioneiros de um local. Os senhores trevosos costumam apoiar os demônios donos das prisões espirituais, onde muitas vezes compram a \"liberdade\" de um preso para que sirvam como soldados em",
-            "seus territórios.",
+            "São comuns equipes de anjos corpore organizarem missões de resgate a almas que pedem auxílio dentro das prisões. São missões perigosas e extremamente sigilosas, pois muitas vezes toda a diplomacia entre regiões espirituais depende de determinados aspectos da política de prisioneiros de um local. Os senhores trevosos costumam apoiar os demônios donos das prisões espirituais, onde muitas vezes compram a \"liberdade\" de um preso para que sirvam como soldados em seus territórios.",
             "Os Navios Fantasmas",
-            "Os oceanos da Terra são habitados por muitos navios fantasmas, cuja tripulação muitas vezes nem sabe que o navio",
-            "afundou e continua com seus afazeres de viagem. O caso mais famoso, sem dúvida nenhuma, é o do navio",
+            "Os oceanos da Terra são habitados por muitos navios fantasmas, cuja tripulação muitas vezes nem sabe que o navio afundou e continua com seus afazeres de viagem. O caso mais famoso, sem dúvida nenhuma, é o do navio",
             "Titanic, que afundou no início do século XX mas cuja carcaça espiritual continua navegando pelos mares, podendo ser avistado em determinadas épocas do ano em algumas regiões ao norte, mas existem milhares de navios menores.",
-            "Os capitães destes navios agem de maneira muito seme- Ihante aos senhores trevosos, sendo responsáveis por sua tripulação (composta de espectros, fantasmas e espíritos), seus prisioneiros e os espíritos aprisionados, bem como dos vivos que",
-            "apareçam para investigar alguma coisa.",
+            "Os capitães destes navios agem de maneira muito seme- Ihante aos senhores trevosos, sendo responsáveis por sua tripulação (composta de espectros, fantasmas e espíritos), seus prisioneiros e os espíritos aprisionados, bem como dos vivos que apareçam para investigar alguma coisa.",
             "Os Postos de Vigília",
             "Nas margens das regiões onde o Umbral encontra Spiritum podem ser localizados muitos postos de vigília. Estes postos são como fortalezas onde os anjos e os espíritos iluminados montam guarda e vigiam os passos dos trevosos, bem como planejam suas missões de resgate e doutrinação.",
             "São protegidos por inúmeros rituais poderosíssimos de Spiritum e do Caminho da Luz, capazes de manter as magias necromânticas dos trevosos afastadas. Desnecessário dizer que vivem sob constante ataque dos monstros, criaturas e entidades dos reinos inferiores.",
-            "Estas bases servem como ponto de descanso para aventureiros e exploradores entre suas missões, desde que tenham boas intenções. Nestes locais, pode-se encontrar guias, diplomatas e até mesmo negociadores que conhecem as regiões umbralinas e",
-            "podem servir como auxiliares nas missões do grupo. Os postos de vigília são dificeis de serem acessados do",
-            "plano material, embora portais místicos possam ser criados em ocasiões especiais pelos coordenadores de cada posto. Em Spiritum, os viajantes normalmente conseguem identificar os postos à distância, mas para poderem entrar neles necessitam de algum passe especial ou autorização, caso contrário serão tratados como inimigos e mantidos à distância pelos campos fluídicos emanados pela estrutura do posto.",
+            "Estas bases servem como ponto de descanso para aventureiros e exploradores entre suas missões, desde que tenham boas intenções. Nestes locais, pode-se encontrar guias, diplomatas e até mesmo negociadores que conhecem as regiões umbralinas e podem servir como auxiliares nas missões do grupo. Os postos de vigília são dificeis de serem acessados do plano material, embora portais místicos possam ser criados em ocasiões especiais pelos coordenadores de cada posto. Em Spiritum, os viajantes normalmente conseguem identificar os postos à distância, mas para poderem entrar neles necessitam de algum passe especial ou autorização, caso contrário serão tratados como inimigos e mantidos à distância pelos campos fluídicos emanados pela estrutura do posto.",
             "Embaixadores",
-            "Anjos ou outros espíritos iluminados, os embaixadores são poderosos o suficiente para garantir sua própria proteção",
-            "quando estviverem nas regiões umbrais. Os embaixadores são respeitados e temidos (e odiados)",
+            "Anjos ou outros espíritos iluminados, os embaixadores são poderosos o suficiente para garantir sua própria proteção quando estvviverem nas regiões umbrais. Os embaixadores são respeitados e temidos (e odiados)",
             "pelos senhores trevosos, reconhecidos como embaixadores do \"mundo exterior\", desde, claro, que respeitem algumas regras pré-estabelecidas. Os embaixadores podem servir como guias para aventureiros, mas também estão presos às regras criadas pelos senhores dos domínios que estviverem visitando.",
-            "Os recíperes e os principados são os anjos mais requisitados pela Cidade de Prata para este tipo de missão, embora ocasionalmente nimbus ou até mesmo captares sejam indicados para",
-            "regiões mais importantes.",
+            "Os recíperes e os principados são os anjos mais requisitados pela Cidade de Prata para este tipo de missão, embora ocasionalmente nimbus ou até mesmo captares sejam indicados para regiões mais importantes.",
             "Como o próprio nome indica, os vales espirituais são regiões formadas em Spiritum por forma-pensamento organizada em uma área. O tamanho de um vale espiritual pode variar desde um simples campo de futebol até uma pequena cidade.",
             "Vales espirituais demoram anos para se formarem, acumulando grande massa de energia mental até que seja moldado no formato que seus idealizadores desejaram. Muitas vezes, um vale pode passar por vários idealizadores até que atinja a sua forma final e durante este tempo vai sofrendo mudanças de acordo com as formas-pensamento vigentes.",
             "Os vales recebem este nome por que se assemelham a \"crateras\" rodeadas por brumas de Spiritum, cujas bordas penetram o plano astral e espiritual, formando uma região finita e limitada por estas bordas. Normalmente, vales espirituais são criados por comunidades de espíritos que compartilham um mesmo gosto ou crença e seguem as regras que estes espíritos decidiram. A seguir apresentamos alguns dos vales espirituais mais conhecidos dos viajantes:",
@@ -5257,8 +5144,7 @@
           "area": "cenarios_lore",
           "paragraphs": [
             "Durante minhas viagens a Spiritum, um dos eventos mais interessantes que pude presenciar foi um mercado de almas.",
-            "Um mercado de almas funciona de maneira análoga ao mercado de drogas na Terra: é ilegal, passível de graves penalidades e perseguido pelos governantes, mas com um pouco de paciência e os contatos certos, pode-se encontrar praticamente o",
-            "que quiser... por um preço.",
+            "Um mercado de almas funciona de maneira análoga ao mercado de drogas na Terra: é ilegal, passível de graves penalidades e perseguido pelos governantes, mas com um pouco de paciência e os contatos certos, pode-se encontrar praticamente o que quiser... por um preço.",
             "Afinal, como isso funciona?",
             "Esta costuma ser a primeira pergunta que os viajantes fazem quando têm a oportunidade de visitar um destes mercados de almas. A resposta é um pouco complicada.",
             "Toda entidade criada na orbe terrestre é dotada de livre arbítrio, ou seja, a capacidade de tomar suas próprias decisões a respeito de sua vida e suas encarnações. Este livre arbítrio só é perdido em duas ocasiões: quando alguém se suicida ou quando vende sua alma com um contrato dentro da lei.",
@@ -5336,9 +5222,7 @@
             "Com o tempo, os rakshasas tornaram-se muito poderosos. Alguns rituais permitiam a eles contatar a deusa-vampira Kali em sonhos e receber orientações de sua rainha. Seguindo essas orientações, os rakshasas decidiram criar uma cidade para atuar como sua base de operações.",
             "Escolheram Lanka, uma cidade mística construída há quase mil anos e a apagaram da mente de todos os mortais, transportando partes dela para os Reinos Espirituais. Construíram um templo em homenagem a Kali e estabeleceram campos de treinamento e caçadas.",
             "Os rakshasas conseguiram contatar Raktabija e convenceram o feiticeiro-demônio a ajudá-los em sua missão.",
-            "O objetivo dos rakshasas é conseguir poder suficiente para libertar sua rainha do confinamento e trazê-la novamente à Terra, para que ela possa governar o mundo, tornando os humanos",
-            "escravos dos rakshasas. Durante a Idade Média, os rakshasas enfrentaram uma seita",
-            "de guerreiros descendentes distantes dos templários, chamada AGNI, mas mesmo os incansáveis ataques deles não foram suficientes para abalar a estrutura de poder dos vampiros. Nos dias de hoje, Lanka está praticamente invisível perante a civilização moderna, podendo ser alcançado apenas através de rituais.",
+            "O objetivo dos rakshasas é conseguir poder suficiente para libertar sua rainha do confinamento e trazê-la novamente à Terra, para que ela possa governar o mundo, tornando os humanos escravos dos rakshasas. Durante a Idade Média, os rakshasas enfrentaram uma seita de guerreiros descendentes distantes dos templários, chamada AGNI, mas mesmo os incansáveis ataques deles não foram suficientes para abalar a estrutura de poder dos vampiros. Nos dias de hoje, Lanka está praticamente invisível perante a civilização moderna, podendo ser alcançado apenas através de rituais.",
             "A Cidade",
             "A cidade dos rakshasas, como é conhecida nos dias de hoje, foi fundada em 520 a.C. pelo guerreiro chamado Jayavarmat, onde foi construído um pequeno templo dedicado a Kali.",
             "Considerada uma cidade mística, Lanka está localizada no exato centro geográfico da Índia e apresenta uma arquitetura impressionante. Toda construída em pedras, lembra muito outros templos antigos como Angkor Wat, Kailaija ou Lingaraj.",
@@ -5355,8 +5239,7 @@
             "Raktabija",
             "Considerado o pai de todos os rakshasas, Raktabija foi um grande rei-feiticeiro em Arkanun até que seu reino foi destruído em uma guerra com um reino inimigo e Raktabija precisou conjurar um portal para a Terra, onde conseguiu escapar com um de seus exércitos de asuras (demônios alados).",
             "O principal poder de Raktabija é o de criar demônios a partir de cada gota de sangue derramada em batalha. Através deste poder, não demorou muito para que tivesse um grande exército de asuras enfrentando os governantes da Índia.",
-            "Raktabija tornou-se o principal e mais poderoso demônio indiano, até ser enfrentado por Durga e Kali. O combate foi",
-            "muito violento e dezenas de aldeias e cidades foram destruídas durante os combates. Ao final, usando de um estratagema, Kali o derrotou, vampirizando seus asuras e os devorando.",
+            "Raktabija tornou-se o principal e mais poderoso demônio indiano, até ser enfrentado por Durga e Kali. O combate foi muito violento e dezenas de aldeias e cidades foram destruídas durante os combates. Ao final, usando de um estratagema, Kali o derrotou, vampirizando seus asuras e os devorando.",
             "Raktabija foi derrotado por Kali mas não foi destruído completamente, pois conseguiu abrir um portal para Arkanun e escapar de Durga e Kali, retornando ao seu reino destruído.",
             "Muitos séculos mais tarde, foi procurado pelos sacerdotes rakshasas para que os liderasse na procura por Kali. Quando os sacerdotes explicaram a ele o que acontecera à sua antiga inimiga, Raktabija concordou em ajudá-los.",
             "Após a tomada de Lanka, Raktabija conjurou um novo portal e transferiu as ruínas de seu palácio para a região próxima da cidade, antes de transportar toda a região para os Reinos Umbrais. Hoje, Raktabija é considerado o senhor dos rakshasas.",
@@ -5381,8 +5264,7 @@
             "A cidade de Metrópolis é uma aberração. Como seus habitantes (e a própria região ao redor do fosso) não obedecem os conceitos de tempo e espaço como o conhecemos, os edifícios de Metrópolis exibem ao mesmo tempo todos os tipos de arquitetura terrestre, influenciada pela aura maléfica de Leviatã.",
             "Torres de vidro e aço com centenas de metros de altura se confundem com choupanas, castelos medievais e casas vitoriadas, permeados de laboratórios biomecânicos, catedrais góticas e gárgulas... muitos gárgulas.",
             "Sombras e vultos podem ser vistos perambulando em suas ruas labirínticas. Criaturas humanoides, anjos caídos e humanos acorrentado são visões comuns em Metrópolis.",
-            "Não há um edifício principal na cidade, mas as quatro torres centrais, localizadas em pontos opostos do Fosso poderiam ser consideradas como edifícios importantes. Em cada uma des-",
-            "sas torres negras (as torres são curvadas para dentro do fosso, assemelhando-se a quatro grandes presas de mármore escuro sem janelas aparentes) vive um dos quatro cenobitas mais poderosos de Metrópolis, conhecidos como \"Os Quatro\". Poucas entidades já os encontraram, mas especula-se que eles sejam os primeiros cenobitas a terem evoluído a partir dos keepers. Tudo que se sabe é que são extremamente poderosos.",
+            "Não há um edifício principal na cidade, mas as quatro torres centrais, localizadas em pontos opostos do Fosso poderiam ser consideradas como edifícios importantes. Em cada uma des- sas torres negras (as torres são curvadas para dentro do fosso, assemelhando-se a quatro grandes presas de mármore escuro sem janelas aparentes) vive um dos quatro cenobitas mais poderosos de Metrópolis, conhecidos como \"Os Quatro\". Poucas entidades já os encontraram, mas especula-se que eles sejam os primeiros cenobitas a terem evoluído a partir dos keepers. Tudo que se sabe é que são extremamente poderosos.",
             "Abaixo deles, na hierarquia, estão 44 generais-de-campo. Cenobitas modificados pelos líquidos viscosos extraídos do fosso, com engenhos biomecânicos inseridos em seus corpos de uma forma tão alienígena que nem sua silhueta parece humana.",
             "Os generais são guerreiros, magos e tecnocratas extremamente poderosos, sendo auxiliados por anjos caídos refugiados da Cidade de Prata, necromânticos foragidos da Terra e outros seres demoníacos. Os generais raramente aparecem em público, exceto em caso de invasão ou guerra. São verdadeiras máquinas alienígenas de matar.",
             "Abaixo deles estão 4.444 cenobitas, divididos em 44 falanges. Cada um desses cenobitas possui sua própria morada, construída a partir de materias escavados por eles ou transportados de outras dimensões. Não existe nenhum tipo de padrão ou regra e seria impossível tentar catalogar essas fortalezas.",
@@ -5403,8 +5285,7 @@
             "É o nome que os antigos deram à torre de mármore branco que se destaca na paisagem de Metrópolis. Nessa torre costuma residir Khaelthope, o negociante de almas.",
             "A própria torre foi construída por uma legião de escravos que um dos reis-demônios de Arkanun possui. A torre é vigiada por espectros e demônios alados, sempre prontos a defendê-la de qualquer visitante indesejado.",
             "A torre possui uma centena de andares, permeados por escadas e passarelas. Esses andares, apesar de totalmente abertos, costumam estar completamente vazios. Apenas o último andar é habitado por Khaelthorpe e seus demônios.",
-            "Muitos dizem que a própria essência do edifício é construída de almas das pessoas que negociaram com ele. Quando precisa, Khaeltorn chama seus conselheiros, que aparecem da estrutura",
-            "da torre para auxiliá-lo em seus problemas.",
+            "Muitos dizem que a própria essência do edifício é construída de almas das pessoas que negociaram com ele. Quando precisa, Khaeltorn chama seus conselheiros, que aparecem da estrutura da torre para auxiliá-lo em seus problemas.",
             "Os Kecpers",
             "Os keepers são os guardiões do Fosso há dez milênios. Durante muitos séculos vieram à Terra em missão para os deuses do Fosso, para recuperar algum artefato importante ou para entrar em contato com os repugnantes humanos para vigiá-los.",
             "Aos nossos olhos eles parecem humanos normais, mas quem for capaz de enxergá-los em sua verdadeira forma poderá vê-los como realmente são: humanoides com cerca de dois metros de altura, imensamente gordos, que lembram vagamente um anjo com asas atrofiadas. Possuem longas unhas azuladas e uma língua vermelha arroxeada, com cerca de um palmo de comprimento. Sua pele é quase transparente, deixando mostrar as veias eartérias que pulsam debaixo da epiderme, escorrendo por entre a gordura e os músculos.",
@@ -5458,8 +5339,7 @@
             "VI- Neste círculo ficam os hereges, aprisionados em tumbas abertas que exalam odores terríveis. Este círculo é coberto de covas, sepulturas e tumbas. Os demônios que residem aqui moram em mausoléus.",
             "VII O sétimo circulo é considerado o primeiro e é guardado pelo Minotauro. É onde ficam os violentos. Este círculo é dividido em 3 compartimentos:",
             "VII-1- Um rio de sangue borbulhante, onde são punidos os que foram violentos com os outros ou com as posses dos outros. Os tiranos também ficam aqui. Centauros ficam de prontidão para flechar quem tentar sair do rio.",
-            "VII-2- Nesta área são punidos os violentos contra sí mesmos, que ficam presos na forma de grandes árvores, cujas folhas negras as hárpias arrancam; os dilapidadores dos próprios bens ficam soltos nestas florestas, sendo constantemente dilapidados",
-            "por cães, e se reformando em seguida. O Bosque dos Suicidas fica bastante próximo da Floresta Negra das Hárpias.",
+            "VII-2- Nesta área são punidos os violentos contra sí mesmos, que ficam presos na forma de grandes árvores, cujas folhas negras as hárpias arrancam; os dilapidadores dos próprios bens ficam soltos nestas florestas, sendo constantemente dilapidados por cães, e se reformando em seguida. O Bosque dos Suicidas fica bastante próximo da Floresta Negra das Hárpias.",
             "VIL3- O terceiro compartimento é um deserto de areias escaldantes, onde ficam os violentos contra Deus, contra a natureza e contra as artes. Neste compartimento, há ainda um lago de sangue, onde ficam os sodomitas. Os violentos contra as artes são obrigados a carregarem pesadas bolsas com os objetos que destruiram, e o brasão de suas famílias. Este compartimento é guardado por Gerion.",
             "VIIL- Malebolge: o oitavo circulo trata dos fraudulentos e está dividido em dez compartimentos concêntricos.",
             "VIIK-I-No primeiro compartimento são punidos com açoites das mãos dos demônios os alcoviteiros.",
@@ -5498,13 +5378,9 @@
             "Dois outros dos deuses de Tenebras cujos nomes são conhecidos são Dagon e Kthulhu, mas muito pouco se sabe sobre eles.",
             "Outras 53 entidades estão aprisionadas nos confins do Abismo e nunca demonstraram (até os dias de hoje) interesse em deixar seus domínios, embora para eles, o tempo e o espaço da Roda dos Mundos não faça muito sentido. Por outro lado, pode ser que eles já tenham se libertado há muito tempo e os aprisionados sejamos nós...",
             "Os Outros",
-            "O Abismo está dividido em 53 montanhas e 666 círculos menores. Embora o termo \"montanha\" seja uma tradução literal do arkanita, significando mais uma região",
-            "dimensional que está contida dentro dela mesma",
-            "(ou seja: um plano cuja área atinge várias outras",
-            "dimensões - nota do autor: o mesmo termo é",
-            "utilizado para definir a Montanha na qual a Cidade de Prata está erguida, que compreende múltiplas dimensões).",
-            "Não se sabe ao certo as dimensões de cada um dos círculos, porque eles simplesmente não podem ser mapeados. Os círculos não seguem",
-            "nenhuma divisão formal nem necessariamente seguem a ordem catalogada!",
+            "O Abismo está dividido em 53 montanhas e 666 círculos menores. Embora o termo \"montanha\" seja uma tradução literal do arkanita, significando mais uma região dimensional que está contida dentro dela mesma",
+            "(ou seja: um plano cuja área atinge várias outras dimensões - nota do autor: o mesmo termo é utilizado para definir a Montanha na qual a Cidade de Prata está erguida, que compreende múltiplas dimensões).",
+            "Não se sabe ao certo as dimensões de cada um dos círculos, porque eles simplesmente não podem ser mapeados. Os círculos não seguem nenhuma divisão formal nem necessariamente seguem a ordem catalogada!",
             "Cada uma das montanhas é governada por um dos demônios sobreviventes de Tenebras, apesar do conhecimento acerca destes demônios terem sido extraídos de relatos pouco confiáveis, encontrados em tomos provenientes das bibliotecas de demônios muito antigos que foram por algum motivo destruídos.",
             "Estas são as descrições das três primeiras regiões (montanhas) e de suas entidades governantes, de acordo com registros arkanitas conhecidos:",
             "Primeira Montanha",
@@ -5518,15 +5394,11 @@
             "Existem vários caminhos de ligação entre a primeira montanha e os círculos que compõem a segunda montanha. A segunda montanha é uma espécie de purgatório para as almas dos demônios de Arkanun, onde ficam os sofredores e aqueles cujas almas foram vendidas ainda no plano de Ark-a-nun.",
             "No primeiro círculo desta montanha estão as vilas de sofrimento, onde ficam os templos dos deuses antigos, cujos mortais não são capazes sequer de observar. Os templos são vigiados por espíritos de outras eras e dimensões, impossíveis de serem detectados por rituais da orbe terrestre. Assim como os outros círculos, a fraca luz azulada que emana das nuvens acima do círculo impede qualquer outro tipo de luminosidade, tornando as sombras disformes e imprecisas.",
             "Existem criaturas aladas gigantescas sobrevoando esse circulo, mas ninguém sabe exatamente sua forma porque elas voam entre as nuvens, formando apenas manchas escuras, iluminadas às vezes pelos reflexos dos relâmpagos. Estas criaturas realizam vôos constantes e regulares ao redor do círculo, como se estivessem vigiando alguma coisa perigosa em seu interior.",
-            "A partir deste círculo é possível encontrar cavernas para vários outros círculos (cerca de uma dezena) que compreendem uma rede subterrânea de cavernas e fossos intermináveis, alguns",
-            "com quilômetros de profundidade, onde vivem seres que se alimentam da carne e da essência dos deuses. Existe uma lenda que um antigo deus do Edhen, mais velho que Odin, teria sido capturado e levado para o interior deste complexo, onde estaria aprisionado até os dias de hoje e serviria de alimento material e espiritual para essas hordas subterrâneas. Esta montanha já está tão afastada de Spiritum que muitos a consideram outra região do espaço-tempo, uma espécie de barreria que protege a nossa realidade de algo completamente desconhecido e assustador. Hrgásh, o deus-cego, é o governante da segunda montanha, conhecido como bebedor da vida dos deuses. Não há nenhum registro ou texto a seu respeito, nem mesmo entre os sábios mais poderosos,",
+            "A partir deste círculo é possível encontrar cavernas para vários outros círculos (cerca de uma dezena) que compreendem uma rede subterrânea de cavernas e fossos intermináveis, alguns com quilômetros de profundidade, onde vivem seres que se alimentam da carne e da essência dos deuses. Existe uma lenda que um antigo deus do Edhen, mais velho que Odin, teria sido capturado e levado para o interior deste complexo, onde estaria aprisionado até os dias de hoje e serviria de alimento material e espiritual para essas hordas subterrâneas. Esta montanha já está tão afastada de Spiritum que muitos a consideram outra região do espaço-tempo, uma espécie de barreria que protege a nossa realidade de algo completamente desconhecido e assustador. Hrgásh, o deus-cego, é o governante da segunda montanha, conhecido como bebedor da vida dos deuses. Não há nenhum registro ou texto a seu respeito, nem mesmo entre os sábios mais poderosos,",
             "Terceira Montanha",
             "A terceira montanha é uma região gelada e escura, iluminada apenas pelo que se supõem serem estrelas (embora muitos acreditem que estes pontos luminosos sejam anjos muito antigos crucificados na abóbada de cada circulo). Os seres que habitam essa região lembram muito os peixes e criaturas que vivem nas fossas abissais na Terra, só que em tamanhos colossais. Criaturas com mandíbulas gigantescas, dentes afiados e inúmeros pontos bioluminosos espalhados pelo corpo flutuam na rarefeita atmosfera dos círculos, por entre as brumas negras e corrosivas, patrulhando as áreas ao redor das pequenas formações rochosas.",
-            "Isolados em pequenas ilhas, a salvo da fúria destas brumas, estão mausoléus onde vivem espíritos aprisionados de demônios do Inferno. Se você algum dia se perguntou o que acontecia com",
-            "aalma dos demônios mais poderosos quando eles eram destruídos em combate ou",
-            "através de magia, aqui pode estar a resposta para esta pergunta.",
-            "Llyanmákchi, das visões deturpadas, é a entidade que governa a terceira montanha e seus sessenta círculos. Especula-se",
-            "que Llyanmákchi seria uma entidade feminina, uma antiga sacerdotisa de Tenebras cujos textos arkanitas representam como uma velha deformada e cega, mas que pode assumir qualquer forma que desejar. A demônia se apresenta nesta forma a seus conjuradores, mas pode imediatamente assumir outras formas, ou multiplas formas e atacar seus conjuradores de muitas dimensões ao mesmo tempo, absorvendo-o."
+            "Isolados em pequenas ilhas, a salvo da fúria destas brumas, estão mausoléus onde vivem espíritos aprisionados de demônios do Inferno. Se você algum dia se perguntou o que acontecia com aalma dos demônios mais poderosos quando eles eram destruídos em combate ou através de magia, aqui pode estar a resposta para esta pergunta.",
+            "Llyanmákchi, das visões deturpadas, é a entidade que governa a terceira montanha e seus sessenta círculos. Especula-se que Llyanmákchi seria uma entidade feminina, uma antiga sacerdotisa de Tenebras cujos textos arkanitas representam como uma velha deformada e cega, mas que pode assumir qualquer forma que desejar. A demônia se apresenta nesta forma a seus conjuradores, mas pode imediatamente assumir outras formas, ou multiplas formas e atacar seus conjuradores de muitas dimensões ao mesmo tempo, absorvendo-o."
           ]
         },
         {
@@ -5577,8 +5449,7 @@
             "Inferno da língua cortada: para punir os que causaram mal a outras pessoas através da fala e da fofoca. As vítimas têm a língua cortada. Em alguns também são feitos buracos em suas bochechas.",
             "Oitavo Palácio",
             "Inferno dos Carros que Atropelam: para punir os estupradores, ingratos e sequestradores. Os condenados são atropelados por vagões de mina carregados pelos condenados do Inferno de Empurrar Carro.",
-            "Inferno dos Desmembramentos: para punir aqueles que machucaram os outros com crueldade. Os condenados têm os",
-            "braços e pernas arrancados e são jogados em um salão imenso junto com todos os outros condenados mutilados.",
+            "Inferno dos Desmembramentos: para punir aqueles que machucaram os outros com crueldade. Os condenados têm os braços e pernas arrancados e são jogados em um salão imenso junto com todos os outros condenados mutilados.",
             "Nono Palácio",
             "O nono palácio contém o rio das nove nagas, onde os espíritos guardiães descansam após cada missão.",
             "Inferno do Óleo Fervente Espirrado no Corpo: para punir aqueles que fizeram revistas ou desenhos de nus ou que tiraram fotos de pessoas nuas. Os condenados ficam amarrados às margens de um rio de óleo fervente enquanto os demônios respingam óleo borbulhante sobre eles.",

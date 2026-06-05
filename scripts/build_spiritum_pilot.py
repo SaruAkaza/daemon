@@ -143,8 +143,24 @@ def clean_block(text: str) -> list[str]:
             cleaned_lines.append(line)
         paragraph = normalize_text(" ".join(cleaned_lines))
         if paragraph and paragraph not in DROP_PARAGRAPHS:
-            paragraphs.append(paragraph)
+            if (
+                paragraphs
+                and paragraph[:1].islower()
+                and not paragraphs[-1].endswith((".", "!", "?", ":", ";", ")"))
+            ):
+                paragraphs[-1] = normalize_text(f"{paragraphs[-1]} {paragraph}")
+            else:
+                paragraphs.append(paragraph)
     return paragraphs
+
+
+def split_cost_options(costs: list[str]) -> list[str]:
+    split_costs: list[str] = []
+    cost_marker = re.compile(r"(?<!^)(?=\s*-?\d+\s+Pontos?:)", flags=re.IGNORECASE)
+    for cost in costs:
+        parts = [normalize_text(part) for part in cost_marker.split(cost) if part.strip()]
+        split_costs.extend(parts or [cost])
+    return split_costs
 
 
 def page_text(pages: Iterable[int]) -> str:
@@ -274,10 +290,11 @@ def make_aprimoramentos() -> list[dict]:
     for index, (_, start_end, title, polarity) in enumerate(positions):
         next_start = positions[index + 1][0] if index + 1 < len(positions) else len(text)
         paragraphs = clean_block(text[start_end:next_start])
-        costs = [p for p in paragraphs if re.match(r"^-?\d[\d\s/-]*(?:Ponto|ponto)", p)]
-        if not costs:
-            costs = [p for p in paragraphs if "ponto" in p.lower() and len(p) < 120]
-        description = [p for p in paragraphs if p not in costs]
+        raw_costs = [p for p in paragraphs if re.match(r"^-?\d[\d\s/-]*(?:Ponto|ponto)", p)]
+        if not raw_costs:
+            raw_costs = [p for p in paragraphs if "ponto" in p.lower() and len(p) < 120]
+        costs = split_cost_options(raw_costs)
+        description = [p for p in paragraphs if p not in raw_costs]
         # Multiple cost options keep their benefit text inside the cost block.
         if len(costs) == 1 and ":" in costs[0]:
             label, rest = costs[0].split(":", 1)
