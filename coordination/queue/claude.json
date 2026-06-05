@@ -1,0 +1,57 @@
+{
+  "agent": "claude",
+  "worktree": "daemon-claude",
+  "updatedAt": "2026-06-05",
+  "assignmentSource": "coordination/book_assignments.md (Codex). Anjos -> Claude (status hold). Demais: lista 'Claude'.",
+  "books": [
+    {
+      "file": "Daemon_Tormenta_OCR_alta_qualidade.docx",
+      "source": "daemon-tormenta",
+      "status": "in_progress",
+      "branch": "claude-pilots",
+      "notes": "Reivindicado 2026-06-05. Lista Claude item 11 (0.26 MB). OCR triado: 8.1% desconhecidas (melhor da fila). Levantando estrutura."
+    },
+    {
+      "file": "Guia_de_Itens_Magicos_OCR_alta_qualidade.docx",
+      "source": "guia-de-itens-magicos",
+      "status": "blocked",
+      "branch": "claude-pilots",
+      "movedTo": "Livros/word/corrigir/Guia_de_Itens_Magicos_OCR_alta_qualidade.docx",
+      "notes": "BLOQUEADO por OCR ruim (2026-06-05). DOCX MOVIDO para Livros/word/corrigir (ver STATUS.md). Vol1 (pg18-146): ~99% dos acentos perdidos, 39% das palavras irreconhecíveis (abenoado=abençoado, aceleraao=aceleração). Estrutura mapeada e fix_ocr() criado; aguardando re-OCR. NÃO confundir com Gerador_de_Itens_Magicos_2ed (Codex)."
+    },
+    {
+      "file": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
+      "source": "anjos-angelicos-sicarios",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "Lore, poderes, manobras_combate, itens. Aguardando validação visual."
+    },
+    {
+      "file": "Anjos - Réquiem de Fé.docx",
+      "source": "anjos-requiem-de-fe",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "Storytelling. Lore, regras, classes, poderes, magias(120/Caminho), criaturas."
+    },
+    {
+      "file": "Anjos cacadores-alados.docx",
+      "source": "anjos-cacadores-alados",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "d% clássico. Lore, racas(seitas), manobras, aprimoramentos, poderes(Nível), NPCs."
+    },
+    {
+      "file": "Anjos Jyhad - Faces da Fé.docx",
+      "source": "anjos-jyhad-faces-da-fe",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "Lore, kits(ordens angelicais), 24 NPCs. Títulos/espaçamento corrigidos."
+    }
+  ],
+  "released": [
+    {
+      "file": "Ark_a_nun_Arquivos_de_Bel_Kalaa_OCR_alta_qualidade.docx",
+      "reason": "Atribuído ao Codex em book_assignments.md (item 10). Reivindiquei por engano; devolvido ao Codex."
+    }
+  ]
+}

@@ -786,8 +786,24 @@ function renderAdventureDetail(item) {
   }
 }
 
-function renderGroupedDetail(item) {
-  for (const section of item.sections || []) {
+function npcSectionSort(a, b) {
+  const order = [
+    "atributos",
+    "pericias-e-combate",
+    "habilidades",
+    "ficha",
+    "historia",
+    "personalidade-e-objetivos",
+  ];
+  const aIndex = order.indexOf(a.id);
+  const bIndex = order.indexOf(b.id);
+  return (aIndex === -1 ? order.length : aIndex) - (bIndex === -1 ? order.length : bIndex);
+}
+
+function renderGroupedDetail(item, sortFunction = null) {
+  const sections = [...(item.sections || [])];
+  if (sortFunction) sections.sort(sortFunction);
+  for (const section of sections) {
     nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
   }
 }
@@ -806,6 +822,7 @@ function itemTypeLabel(item) {
   if (item.kind === "class") return "Classe";
   if (item.kind === "maneuver") return "Manobra";
   if (item.kind === "equipment") return "Equipamento";
+  if (item.kind === "kit") return "Kit";
   if (item.kind === "group") return "Grupo";
   return "";
 }

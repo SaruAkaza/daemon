@@ -1,5 +1,34 @@
 # Status de Livros Aguardando Correção
 
+## Guia de Itens Mágicos
+
+**Data de remoção:** 2026-06-05
+**Motivo:** OCR severamente degradado — inviável catalogar sem retrabalho garantido.
+**Status:** Aguardando fonte de melhor qualidade / re-OCR.
+
+### Diagnóstico (Volume 1, pg 18–146)
+| Métrica | Valor | Observação |
+|---|---|---|
+| Acentos preservados | ~1.0% das palavras | Em pt normal seria ~25–30% |
+| Palavras irreconhecíveis (dic pt) | 39% das únicas | OCR residual, não só acentos |
+| Exemplos | `abenoado`=abençoado, `aceleraao`=aceleração, `acerlar`=acertar | Reconstrução exigiria revisão linguística pesada |
+
+### O que já foi feito (reaproveitável quando houver OCR melhor)
+- **Estrutura mapeada** (`scripts/analyze_itens_magicos.py`): paginação 1–288 contínua;
+  corpo dos itens pg 18–271 (A→Z); **Vol 1 = pg 18–146 (A–H)**, Vol 2 = pg 147–271 (I–Z);
+  apêndices/sumário/OGL identificados para descarte.
+- **`scripts/requiem_clean.py::fix_ocr()`** (opt-in, aditivo): repara ç-variantes
+  (`<;` `c;` `c:;:`), `0`→o isolado (preserva tabelas), `urn`→um, `s6`→só, `dane`→dano,
+  `enta~`→então, `ld/Id+díg`→1d. NÃO resolve a acentuação perdida em massa.
+- Decisões de escopo registradas em `coordination/books/guia-de-itens-magicos.md`:
+  piloto por volume, tabelas 1d100 estruturadas, lista única alfabética.
+
+### Próximo passo
+Re-OCR do PDF original (ou fonte melhor). Com OCR decente, a estrutura e o `fix_ocr()`
+já permitem retomar direto pela catalogação do Vol 1.
+
+---
+
 ## Anjos - A Cidade de Prata
 
 **Data de remoção:** 2026-06-05  

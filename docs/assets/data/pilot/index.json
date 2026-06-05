@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-05T17:35:46",
+  "generatedAt": "2026-06-05T17:38:35",
   "sources": [
     {
       "source": "4killers",
@@ -139,6 +139,17 @@
         "manobras_combate",
         "poderes",
         "racas"
+      ]
+    },
+    {
+      "source": "anjos-jyhad-faces-da-fe",
+      "title": "Anjos Jyhad - Faces da Fé",
+      "file": "anjos-jyhad-faces-da-fe.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "criaturas_npcs",
+        "kits"
       ]
     },
     {
