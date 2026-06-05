@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-05T13:00:33",
+  "generatedAt": "2026-06-05T13:01:53",
   "source": "anjos-cacadores-alados",
   "sourceFile": "Anjos cacadores-alados.docx",
   "sourcePath": "Livros\\word\\Anjos cacadores-alados.docx",
@@ -308,6 +308,14 @@
         "Inimigos: os principais inimigos dos Anjos Exorcistas são Espectros e Obcessores."
       ],
       "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "racas",
+          "paragraphs": [
+            "2 pontos"
+          ]
+        },
         {
           "id": "descricao",
           "title": "Descrição",

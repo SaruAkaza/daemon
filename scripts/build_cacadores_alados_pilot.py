@@ -76,7 +76,9 @@ def build_raca(title, body):
     """Seita -> raça. Pull 'custa N ponto(s)' into a Custo subsection."""
     custo = ""
     for p in body:
-        m = re.search(r"custa\s+(\d+)\s+pontos?\s+de\s+aprimoramento", p, re.I)
+        # Cost phrasing varies: "custa 1 ponto...", "gasta-se 2 pontos...",
+        # "para se tornar um X, gasta-se N pontos de aprimoramento".
+        m = re.search(r"(\d+)\s+pontos?\s+de\s+aprimoramento", p, re.I)
         if m:
             n = m.group(1)
             custo = f"{n} ponto" if n == "1" else f"{n} pontos"
