@@ -17,7 +17,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-06T11:38:35",
+  "generatedAt": "2026-06-06T12:08:41",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -695,7 +695,7 @@
             "Se estas condições forem satisfeitas, o atacante faz um teste Fácil para o Ataque mirado. Esta técnica é utilizada por snippers em seus tiros com rifles.",
             "Após mirar o alvo por uma rodada inteira, chega a hora de Eder atirar. Como ele não foi atrapalhado nem ameaçado durantea mira, pode fazer uso das vantagens de sua ação. Eder tem [rifle 359%), podendo agora fazer um ataque com 70% de chance de acertar.",
             "Luta às Cegas",
-            "Por algum motivo qualquer, o Personagem pode estar sem condições de enxergar. Pode estar escuro ou ele pode estar sob efeito de um veneno ou de uma Magia. O escuro pode ser tanto para um Personagem como para todos. Esta situação se aplica para cada Personagem impedido de ver. Se o Personagem possui a manobra de combate Luta às Cegas (ver Perícias), ele continua lutando normalmente enquanto seus outros sentidos estviverem funcionando. Se o Personagem não possui a Manobra de Combate Luta às Cegas, aplique uma penalidade metade tanto nos valores de ataque quanto nos de defesa.",
+            "Por algum motivo qualquer, o Personagem pode estar sem condições de enxergar. Pode estar escuro ou ele pode estar sob efeito de um veneno ou de uma Magia. O escuro pode ser tanto para um Personagem como para todos. Esta situação se aplica para cada Personagem impedido de ver. Se o Personagem possui a manobra de combate Luta às Cegas (ver Perícias), ele continua lutando normalmente enquanto seus outros sentidos estiverem funcionando. Se o Personagem não possui a Manobra de Combate Luta às Cegas, aplique uma penalidade metade tanto nos valores de ataque quanto nos de defesa.",
             "Robert e Ozaki lutavam quando a luz subitamente é apagada. Robert, que tem a manobra luta às cegas, continua a usar [briga 40/40), mas Ozaki enfrentará dificuldades: sua [briga 35/50] fica agora reduzida a apenas [briga 18/25]. Ozaki está em sérias dificuldades.",
             "Posição Desvantajosa",
             "Acontece com alguma fregiiência de um dos combatentes estar em posição desvantajosa no combate. Ele pode estar sentado em uma mesa quando é surpreendido pelo inimigo ou pode ter caído no chão. Existem uma infinidade de situações que podem ser consideras desvantajosas.",
@@ -1867,7 +1867,54 @@
       ]
     },
     {
-      "id": "espiritos",
+      "id": "espiritos-raca",
+      "title": "Espíritos",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
+      "sectionTitle": "Espíritos",
+      "paragraphs": [
+        "Espíritos são os habitantes de Spiritum, o Reino dos Mortos. Eles também englobam todos aqueles que residem nos Vales Espirituais. Um espírito não \"nasce\" ou \"cresce\", permanecendo pela eternidade com a última forma que adotou, ou mesmo modificando essa forma.",
+        "Normalmente, para começar uma campanha em que todos os Personagens estejam com o mesmo nível de poder, o Mestre deve determinar que os espíritos que participem da campanha tenham aproximadamente a mesma idade (entre 5 e 10 anos para Personagens do primeiro nível).",
+        "Um espírito cumpriu boa parte de sua missão na Terra e está vivendo em harmonia em Spiritum ou no Vale Espiritual que escolheu. Frequentemente estuda ou participa de missões para o local onde reside, sejam elas de auxílio a humanos, doutrinação de espíritos, exploração dos Vales Umbrais ou pesquisas.",
+        "A aparência de um espírito pode variar (com Poderes) mas sua principal forma é de sua última encarnação. O Jogador escolhe qual a idade que ele deseja aparentar (criança, jovem, adulto, meia-idade ou idoso - isso não faz diferença nos Atributos), mas geralmente sua forma reflete um período da vida com o qual o espírito mais se identificou. Esta forma pode ser modificada mais tarde com certos Poderes Espectrais, de acordo com a vontade do Personagem.",
+        "Criação de Personagem",
+        "O Jogador deve criar o espírito a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o espírito passa por um processo de transição que pode durar meses ou anos.",
+        "A partir deste ponto, escreva a história do espírito até o momento onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",
+        "Use o bom senso.",
+        "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos físicos, espíritos precisam de poderes especiais (ver capítulo sobre Poderes).",
+        "Um espírito começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
+        "Um espírito começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Espíritos são os habitantes de Spiritum, o Reino dos Mortos. Eles também englobam todos aqueles que residem nos Vales Espirituais. Um espírito não \"nasce\" ou \"cresce\", permanecendo pela eternidade com a última forma que adotou, ou mesmo modificando essa forma.",
+            "Normalmente, para começar uma campanha em que todos os Personagens estejam com o mesmo nível de poder, o Mestre deve determinar que os espíritos que participem da campanha tenham aproximadamente a mesma idade (entre 5 e 10 anos para Personagens do primeiro nível).",
+            "Um espírito cumpriu boa parte de sua missão na Terra e está vivendo em harmonia em Spiritum ou no Vale Espiritual que escolheu. Frequentemente estuda ou participa de missões para o local onde reside, sejam elas de auxílio a humanos, doutrinação de espíritos, exploração dos Vales Umbrais ou pesquisas.",
+            "A aparência de um espírito pode variar (com Poderes) mas sua principal forma é de sua última encarnação. O Jogador escolhe qual a idade que ele deseja aparentar (criança, jovem, adulto, meia-idade ou idoso - isso não faz diferença nos Atributos), mas geralmente sua forma reflete um período da vida com o qual o espírito mais se identificou. Esta forma pode ser modificada mais tarde com certos Poderes Espectrais, de acordo com a vontade do Personagem."
+          ]
+        },
+        {
+          "id": "criacao-de-personagem",
+          "title": "Criação de Personagem",
+          "area": "racas",
+          "paragraphs": [
+            "O Jogador deve criar o espírito a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o espírito passa por um processo de transição que pode durar meses ou anos.",
+            "A partir deste ponto, escreva a história do espírito até o momento onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",
+            "Use o bom senso.",
+            "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos físicos, espíritos precisam de poderes especiais (ver capítulo sobre Poderes).",
+            "Um espírito começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
+            "Um espírito começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espiritos-creature",
       "title": "Espíritos",
       "area": "criaturas_npcs",
       "kind": "creature",
@@ -1914,7 +1961,58 @@
       ]
     },
     {
-      "id": "fantasmas",
+      "id": "fantasmas-raca",
+      "title": "Fantasmas",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
+      "sectionTitle": "Fantasmas",
+      "paragraphs": [
+        "Ao contrário de um espírito, um fantasma não conseguiu cumprir sua missão na Terra por causa de algum acidente inesperado (um desastre de carro, um assassinato, uma explosão ou qualquer evento que terminou com a vida do Personagem).",
+        "Estes Personagens permanecem presos na Terra na forma de um fantasma, invisível e que quase sempre lembra de alguma forma sua morte (existem fantasmas com buracos abertos de balas nos peitos, cavaleiros sem cabeça, incendiados, mutilados e com uma série de problemas que não o afetam, mas podem assustar ou impressionar outras pessoas).",
+        "Com o tempo, apenas as características mais marcantes do fantasma aparecem, e eles desenvolvem poderes para cancelar estas marcas por um curto período de tempo.",
+        "Um Fantasma possui uma missão a cumprir. Ela pode ser longa e complexa ou simples. Pode demorar dias, meses, anos ou até mesmo séculos, em alguns casos. Quem vai decidir exatamente que tipo de fantasma e qual a missão a cumprir é o Mestre.",
+        "Quando um fantasma consegue cumprir sua missão, ele está livre para evoluir novamente, seja reencarnando, seja saindo da Terra em direção aos reinos e vales espirituais mais avançados, para estudar e pesquisar outros assuntos.",
+        "Muitos dos Poderes Únicos que um fantasma podem desenvolver estão intimamente relacionados com o tipo de morte que o ele teve.",
+        "Criação de Personagem",
+        "O Jogador deve criar o fantasma a partir de sua última encarnação, dando especial atenção à missão que ele deveria ter cumprido e à forma como ele morreu. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
+        "A partir da morte do Personagem, escreva a história até o ponto onde começa a campanha.",
+        "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são os mesmos que o fantasma possuía quando vivo. Esses atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem a utilização de poderes espectrais.",
+        "Um fantasma começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
+        "Um fantasma começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
+        "Um fantasma pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Ao contrário de um espírito, um fantasma não conseguiu cumprir sua missão na Terra por causa de algum acidente inesperado (um desastre de carro, um assassinato, uma explosão ou qualquer evento que terminou com a vida do Personagem).",
+            "Estes Personagens permanecem presos na Terra na forma de um fantasma, invisível e que quase sempre lembra de alguma forma sua morte (existem fantasmas com buracos abertos de balas nos peitos, cavaleiros sem cabeça, incendiados, mutilados e com uma série de problemas que não o afetam, mas podem assustar ou impressionar outras pessoas).",
+            "Com o tempo, apenas as características mais marcantes do fantasma aparecem, e eles desenvolvem poderes para cancelar estas marcas por um curto período de tempo.",
+            "Um Fantasma possui uma missão a cumprir. Ela pode ser longa e complexa ou simples. Pode demorar dias, meses, anos ou até mesmo séculos, em alguns casos. Quem vai decidir exatamente que tipo de fantasma e qual a missão a cumprir é o Mestre.",
+            "Quando um fantasma consegue cumprir sua missão, ele está livre para evoluir novamente, seja reencarnando, seja saindo da Terra em direção aos reinos e vales espirituais mais avançados, para estudar e pesquisar outros assuntos.",
+            "Muitos dos Poderes Únicos que um fantasma podem desenvolver estão intimamente relacionados com o tipo de morte que o ele teve."
+          ]
+        },
+        {
+          "id": "criacao-de-personagem",
+          "title": "Criação de Personagem",
+          "area": "racas",
+          "paragraphs": [
+            "O Jogador deve criar o fantasma a partir de sua última encarnação, dando especial atenção à missão que ele deveria ter cumprido e à forma como ele morreu. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
+            "A partir da morte do Personagem, escreva a história até o ponto onde começa a campanha.",
+            "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são os mesmos que o fantasma possuía quando vivo. Esses atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem a utilização de poderes espectrais.",
+            "Um fantasma começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
+            "Um fantasma começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
+            "Um fantasma pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fantasmas-creature",
       "title": "Fantasmas",
       "area": "criaturas_npcs",
       "kind": "creature",
@@ -1933,8 +2031,7 @@
         "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são os mesmos que o fantasma possuía quando vivo. Esses atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem a utilização de poderes espectrais.",
         "Um fantasma começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
         "Um fantasma começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
-        "Um fantasma pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre).",
-        "dd dd di di can ie fã AR"
+        "Um fantasma pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
       ],
       "sections": [
         {
@@ -1960,22 +2057,21 @@
             "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são os mesmos que o fantasma possuía quando vivo. Esses atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem a utilização de poderes espectrais.",
             "Um fantasma começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
             "Um fantasma começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
-            "Um fantasma pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre).",
-            "dd dd di di can ie fã AR"
+            "Um fantasma pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
           ]
         }
       ]
     },
     {
-      "id": "aparicao",
+      "id": "aparicao-raca",
       "title": "Aparição",
-      "area": "criaturas_npcs",
-      "kind": "creature",
-      "sectionId": "creature",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
       "sectionTitle": "Aparição",
       "paragraphs": [
-        "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornamse aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
-        "Às aparições demoram a compreender o porquê de sua existência. Normalmente passam um a dois anos em choque, sem compreender exatamente o que está acontecendo... muitas vezes acordam ao lado de seus corpos, enterrados em um caixão, e passam meses ou até mesmo anos apodrecendo (bem... tendo a sensação de que apodrecem) até que consigam escapar novamente. Muitas inconscientemente apodrecem seus peispíritos até adquirirem formas que lembram corpos apodrecidos ou mesmo cadáveres decompostos.",
+        "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornam-se aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
+        "Às aparições demoram a compreender o porquê de sua existência. Normalmente passam um a dois anos em choque, sem compreender exatamente o que está acontecendo... muitas vezes acordam ao lado de seus corpos, enterrados em um caixão, e passam meses ou até mesmo anos apodrecendo (bem... tendo a sensação de que apodrecem) até que consigam escapar novamente. Muitas inconscientemente apodrecem seus perispíritos até adquirirem formas que lembram corpos apodrecidos ou mesmo cadáveres decompostos.",
         "De uma forma geral, o semblante de uma aparição geralmente reflete a forma como ela morreu, a idade aparente que tinha quando se suicidou e as roupas que usava naquela ocasião.",
         "Muitas apresentam cortes horrendos em seus pulsos, buracos de balas na cabeça, marcas de enforcamento ou esmagamento ou coisas muito, muito piores. Aparições que tiveram membros dilacerados ou decepados às vezes ainda possuem controle sobre estes membros, mesmo que estejam em pedaços.",
         "A maioria das aparições não é agradável de se ver, mas muitos precisam do auxílio de outros espíritos e dos feiticeiros para realizarem suas missões e encontrarem a paz.",
@@ -1986,9 +2082,58 @@
         "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são os mesmos que a Aparição possuía quando vivo. Estes Atributos funcionam somente no seu corpo Astral ou Espiritual, e não podem agir no Plano Físico sem a utilização de Poderes Espectrais.",
         "Uma aparição começa com as perícias que possuía somadas às Perícias que adquiriu em Spiritum.",
         "Uma Aparição começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
-        "Uma aparição pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre).",
-        "2a",
-        "Espectros e"
+        "Uma aparição pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornam-se aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
+            "Às aparições demoram a compreender o porquê de sua existência. Normalmente passam um a dois anos em choque, sem compreender exatamente o que está acontecendo... muitas vezes acordam ao lado de seus corpos, enterrados em um caixão, e passam meses ou até mesmo anos apodrecendo (bem... tendo a sensação de que apodrecem) até que consigam escapar novamente. Muitas inconscientemente apodrecem seus perispíritos até adquirirem formas que lembram corpos apodrecidos ou mesmo cadáveres decompostos.",
+            "De uma forma geral, o semblante de uma aparição geralmente reflete a forma como ela morreu, a idade aparente que tinha quando se suicidou e as roupas que usava naquela ocasião.",
+            "Muitas apresentam cortes horrendos em seus pulsos, buracos de balas na cabeça, marcas de enforcamento ou esmagamento ou coisas muito, muito piores. Aparições que tiveram membros dilacerados ou decepados às vezes ainda possuem controle sobre estes membros, mesmo que estejam em pedaços.",
+            "A maioria das aparições não é agradável de se ver, mas muitos precisam do auxílio de outros espíritos e dos feiticeiros para realizarem suas missões e encontrarem a paz.",
+            "O Mestre e o Jogador devem tomar cuidado com a escolha do tipo de morte que a aparição teve, pois isso faz parte da história e dos motivos por trás de seus poderes."
+          ]
+        },
+        {
+          "id": "criacao-de-personagem",
+          "title": "Criação de Personagem",
+          "area": "racas",
+          "paragraphs": [
+            "Assim como nos outros casos, o Jogador deve criar a aparição a partir de sua última encarnação, dando especial atenção à forma como ela se matou ou foi morta. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
+            "A partir da morte do Personagem, escreva a história até o ponto onde começa a campanha.",
+            "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são os mesmos que a Aparição possuía quando vivo. Estes Atributos funcionam somente no seu corpo Astral ou Espiritual, e não podem agir no Plano Físico sem a utilização de Poderes Espectrais.",
+            "Uma aparição começa com as perícias que possuía somadas às Perícias que adquiriu em Spiritum.",
+            "Uma Aparição começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
+            "Uma aparição pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aparicao-creature",
+      "title": "Aparição",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
+      "sectionTitle": "Aparição",
+      "paragraphs": [
+        "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornam-se aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
+        "Às aparições demoram a compreender o porquê de sua existência. Normalmente passam um a dois anos em choque, sem compreender exatamente o que está acontecendo... muitas vezes acordam ao lado de seus corpos, enterrados em um caixão, e passam meses ou até mesmo anos apodrecendo (bem... tendo a sensação de que apodrecem) até que consigam escapar novamente. Muitas inconscientemente apodrecem seus perispíritos até adquirirem formas que lembram corpos apodrecidos ou mesmo cadáveres decompostos.",
+        "De uma forma geral, o semblante de uma aparição geralmente reflete a forma como ela morreu, a idade aparente que tinha quando se suicidou e as roupas que usava naquela ocasião.",
+        "Muitas apresentam cortes horrendos em seus pulsos, buracos de balas na cabeça, marcas de enforcamento ou esmagamento ou coisas muito, muito piores. Aparições que tiveram membros dilacerados ou decepados às vezes ainda possuem controle sobre estes membros, mesmo que estejam em pedaços.",
+        "A maioria das aparições não é agradável de se ver, mas muitos precisam do auxílio de outros espíritos e dos feiticeiros para realizarem suas missões e encontrarem a paz.",
+        "O Mestre e o Jogador devem tomar cuidado com a escolha do tipo de morte que a aparição teve, pois isso faz parte da história e dos motivos por trás de seus poderes.",
+        "Criação de Personagem",
+        "Assim como nos outros casos, o Jogador deve criar a aparição a partir de sua última encarnação, dando especial atenção à forma como ela se matou ou foi morta. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
+        "A partir da morte do Personagem, escreva a história até o ponto onde começa a campanha.",
+        "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são os mesmos que a Aparição possuía quando vivo. Estes Atributos funcionam somente no seu corpo Astral ou Espiritual, e não podem agir no Plano Físico sem a utilização de Poderes Espectrais.",
+        "Uma aparição começa com as perícias que possuía somadas às Perícias que adquiriu em Spiritum.",
+        "Uma Aparição começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
+        "Uma aparição pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
       ],
       "sections": [
         {
@@ -1996,8 +2141,8 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornamse aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
-            "Às aparições demoram a compreender o porquê de sua existência. Normalmente passam um a dois anos em choque, sem compreender exatamente o que está acontecendo... muitas vezes acordam ao lado de seus corpos, enterrados em um caixão, e passam meses ou até mesmo anos apodrecendo (bem... tendo a sensação de que apodrecem) até que consigam escapar novamente. Muitas inconscientemente apodrecem seus peispíritos até adquirirem formas que lembram corpos apodrecidos ou mesmo cadáveres decompostos.",
+            "De poderes muito semelhantes aos de um fantasma, as aparições estão na Terra por terem ou se suicidado, vítimas do desespero, ou escapado do Vale dos Suicidas. Também tornam-se aparições as pessoas que foram mortas por lobisomens ou alguns tipos específicos de mortos-vivos. A diferença entre uma aparição e um fantasma é muito sutil, e alguns sábios sequer admitem essa separação de classes.",
+            "Às aparições demoram a compreender o porquê de sua existência. Normalmente passam um a dois anos em choque, sem compreender exatamente o que está acontecendo... muitas vezes acordam ao lado de seus corpos, enterrados em um caixão, e passam meses ou até mesmo anos apodrecendo (bem... tendo a sensação de que apodrecem) até que consigam escapar novamente. Muitas inconscientemente apodrecem seus perispíritos até adquirirem formas que lembram corpos apodrecidos ou mesmo cadáveres decompostos.",
             "De uma forma geral, o semblante de uma aparição geralmente reflete a forma como ela morreu, a idade aparente que tinha quando se suicidou e as roupas que usava naquela ocasião.",
             "Muitas apresentam cortes horrendos em seus pulsos, buracos de balas na cabeça, marcas de enforcamento ou esmagamento ou coisas muito, muito piores. Aparições que tiveram membros dilacerados ou decepados às vezes ainda possuem controle sobre estes membros, mesmo que estejam em pedaços.",
             "A maioria das aparições não é agradável de se ver, mas muitos precisam do auxílio de outros espíritos e dos feiticeiros para realizarem suas missões e encontrarem a paz.",
@@ -2014,15 +2159,50 @@
             "Um Personagem padrão é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGI são os mesmos que a Aparição possuía quando vivo. Estes Atributos funcionam somente no seu corpo Astral ou Espiritual, e não podem agir no Plano Físico sem a utilização de Poderes Espectrais.",
             "Uma aparição começa com as perícias que possuía somadas às Perícias que adquiriu em Spiritum.",
             "Uma Aparição começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
-            "Uma aparição pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre).",
-            "2a",
-            "Espectros e"
+            "Uma aparição pode começar com um Poder Especial único, decorrente de sua condição (depende da aprovação do Mestre)."
           ]
         }
       ]
     },
     {
-      "id": "espectros",
+      "id": "espectros-raca",
+      "title": "Espectros",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
+      "sectionTitle": "Espectros",
+      "paragraphs": [
+        "Às primeiras referências aos espectros datam de aproximadamente 4.000 a.C., mas sabemos que estas criaturas existem desde a época em que Arkanun ocupava o lugar onde hoje está a Terra na Roda dos Mundos, assombrando os habitantes da Atlântida e Lemúria.",
+        "Os espectros eram originalmente seres poderosíssimos de Infernun, cujos corpos físicos foram destruídos milênios atrás. Estes espíritos corrompidos vagaram pelas regiões mais densas do Umbral até conseguirem uma chance de se aproximar da Terra, através dos rituais de conjuração necromânticos.",
+        "Os espectros mais antigos formaram as bases da Legião, um grupo de espectros muito poderosos que vivem nos Círculos mais profundos do Inferno.",
+        "Considerados demônios, muitos dos espectros foram destruídos pelos anjos da Cidade de Prata, mas sua essência acabou por contaminar a Terra com maldade e crueldade.",
+        "As pessoas infectadas tiveram suas almas mescladas às dos Seres de Infernun, em especial o demônio Vampyr, e deram origem aos vampiros da raça ekimmu (a união de um espírito imortal a um corpo terreno). Todos os vampiros desta raça possuem dentro de si uma fração do poder original de Vampyr, que se torna cada noite mais poderoso. Alguns dizem que os vampiros mais antigos se alimentam da essência dos mais jovens na esperança de reunir novamente toda a essência de Vampyr e fazer com que ele domine a Terra.",
+        "Mais tarde, quando o mundo de Arkanun estava totalmente corrompido pela magia, muitos dos espíritos dos magos e feiticeiros também acabaram se tornando espectros, juntandose à grande Legião dos Mortos.",
+        "Os espectros, em sua verdadeira forma, assemelham-se aos fantasmas descritos nas lendas antigas e medievais: formas translúcidas ou acizentadas, cobertas por capas sujas e vestes rasgadas, cujo rosto ou fisionomia nunca pode ser exatamente discernido. Possuem garras grotescas e afiadíssimas, capazes de cortar espíritos com facilidade. Muitos utilizam-se também de armas como foices ou correntes, que são usadas para atacar outros espíritos ou mesmo humanos.",
+        "Mas seu principal poder é a capacidade de possuir e dominar corpos humanos, tomando o controle de seus movimentos. Não é uma tarefa simples, pois a maioria das pessoas possui força de vontade ou, em alguns casos, até mesmo um anjo da guarda para proteger-se destas intrusões. Eventualmente, os espectros encontram pessoas fragilizadas ou com baixa força de vontade e conseguem dominar seus corpos.",
+        "Muitos espectros visitam a Terra para cumprir suas missões pessoais ou a serviço dos Senhores do Inferno."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Às primeiras referências aos espectros datam de aproximadamente 4.000 a.C., mas sabemos que estas criaturas existem desde a época em que Arkanun ocupava o lugar onde hoje está a Terra na Roda dos Mundos, assombrando os habitantes da Atlântida e Lemúria.",
+            "Os espectros eram originalmente seres poderosíssimos de Infernun, cujos corpos físicos foram destruídos milênios atrás. Estes espíritos corrompidos vagaram pelas regiões mais densas do Umbral até conseguirem uma chance de se aproximar da Terra, através dos rituais de conjuração necromânticos.",
+            "Os espectros mais antigos formaram as bases da Legião, um grupo de espectros muito poderosos que vivem nos Círculos mais profundos do Inferno.",
+            "Considerados demônios, muitos dos espectros foram destruídos pelos anjos da Cidade de Prata, mas sua essência acabou por contaminar a Terra com maldade e crueldade.",
+            "As pessoas infectadas tiveram suas almas mescladas às dos Seres de Infernun, em especial o demônio Vampyr, e deram origem aos vampiros da raça ekimmu (a união de um espírito imortal a um corpo terreno). Todos os vampiros desta raça possuem dentro de si uma fração do poder original de Vampyr, que se torna cada noite mais poderoso. Alguns dizem que os vampiros mais antigos se alimentam da essência dos mais jovens na esperança de reunir novamente toda a essência de Vampyr e fazer com que ele domine a Terra.",
+            "Mais tarde, quando o mundo de Arkanun estava totalmente corrompido pela magia, muitos dos espíritos dos magos e feiticeiros também acabaram se tornando espectros, juntandose à grande Legião dos Mortos.",
+            "Os espectros, em sua verdadeira forma, assemelham-se aos fantasmas descritos nas lendas antigas e medievais: formas translúcidas ou acizentadas, cobertas por capas sujas e vestes rasgadas, cujo rosto ou fisionomia nunca pode ser exatamente discernido. Possuem garras grotescas e afiadíssimas, capazes de cortar espíritos com facilidade. Muitos utilizam-se também de armas como foices ou correntes, que são usadas para atacar outros espíritos ou mesmo humanos.",
+            "Mas seu principal poder é a capacidade de possuir e dominar corpos humanos, tomando o controle de seus movimentos. Não é uma tarefa simples, pois a maioria das pessoas possui força de vontade ou, em alguns casos, até mesmo um anjo da guarda para proteger-se destas intrusões. Eventualmente, os espectros encontram pessoas fragilizadas ou com baixa força de vontade e conseguem dominar seus corpos.",
+            "Muitos espectros visitam a Terra para cumprir suas missões pessoais ou a serviço dos Senhores do Inferno."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espectros-creature",
       "title": "Espectros",
       "area": "criaturas_npcs",
       "kind": "creature",
@@ -2037,20 +2217,7 @@
         "Mais tarde, quando o mundo de Arkanun estava totalmente corrompido pela magia, muitos dos espíritos dos magos e feiticeiros também acabaram se tornando espectros, juntandose à grande Legião dos Mortos.",
         "Os espectros, em sua verdadeira forma, assemelham-se aos fantasmas descritos nas lendas antigas e medievais: formas translúcidas ou acizentadas, cobertas por capas sujas e vestes rasgadas, cujo rosto ou fisionomia nunca pode ser exatamente discernido. Possuem garras grotescas e afiadíssimas, capazes de cortar espíritos com facilidade. Muitos utilizam-se também de armas como foices ou correntes, que são usadas para atacar outros espíritos ou mesmo humanos.",
         "Mas seu principal poder é a capacidade de possuir e dominar corpos humanos, tomando o controle de seus movimentos. Não é uma tarefa simples, pois a maioria das pessoas possui força de vontade ou, em alguns casos, até mesmo um anjo da guarda para proteger-se destas intrusões. Eventualmente, os espectros encontram pessoas fragilizadas ou com baixa força de vontade e conseguem dominar seus corpos.",
-        "Muitos espectros visitam a Terra para cumprir suas missões pessoais ou a serviço dos Senhores do Inferno.",
-        "Obsessores",
-        "Criação de Personagem",
-        "O Jogador deve criar o espectro a partir de sua morte como humano e sua pós-vida durante os primeiros anos no Inferno. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
-        "A partir da chegada do Personagem ao Inferno, escreva a história até o ponto onde começa a campanha. Detalhes sobre os Círculos do Inferno e dos Senhores de cada domínio podem ser encontradas no livro DEMÔNIOS: A DIVINA COMÉDIA.",
-        "Um espectro é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGlI são os mesmos que o espectro possuia quando era vivo. Estes atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem autilização de poderes espectrais. Na Terra, o espectro utiliza os atributos físicos do corpo que dominar.",
-        "Um espectro começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
-        "Um espectro começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
-        "Obsessores",
-        "Obsessores são um tipo especial de espectro: uma pessoa que morreu mas ainda está presa à Terra por alguma emoção muito forte como paixão, ganância, ciúmes, ódio, inveja e outros. Este sentimento é tão forte que o espírito se alimenta dele para aumentar e canalizar seus poderes em Spiritum.",
-        "Os obsessores vivem nos Vales Umbralinos ou nas regiões de Spiritum que ficam mais próximas da Terra, para que fiquem bem perto de seus objetos de obsessão.",
-        "Existem até mesmo grupos de obsessores na Terra: espíritos especializados em reunir ou atormentar determinatos tipos de pessoas ou locais. Um grupo muito conhecido é chamado Discípulos de Hobbes. São espíritos formados por filósofos e estudiosos que rondam as principais universidades do mundo a procura de outros estudiosos, atormentando-os até que estes se suicidem e se juntem ao grupo. Serial killers, amantes rejeitados, viciados e até mesmo workaboolics (maníacos por trabalho) tornam-se obsessores após suas mortes.",
-        "Como este tipo de Personagem está sempre ligado de alguma maneira a um objeto ou pessoa, o Jogador precisa controlar dois Personagens: o obsessor eo obsediado.",
-        "É claro que em campanhas com maior número de Jogadores, o Mestre pode estabelecer que um dos outros Jogadores controlará o Personagem obsediado."
+        "Muitos espectros visitam a Terra para cumprir suas missões pessoais ou a serviço dos Senhores do Inferno."
       ],
       "sections": [
         {
@@ -2066,32 +2233,66 @@
             "Mais tarde, quando o mundo de Arkanun estava totalmente corrompido pela magia, muitos dos espíritos dos magos e feiticeiros também acabaram se tornando espectros, juntandose à grande Legião dos Mortos.",
             "Os espectros, em sua verdadeira forma, assemelham-se aos fantasmas descritos nas lendas antigas e medievais: formas translúcidas ou acizentadas, cobertas por capas sujas e vestes rasgadas, cujo rosto ou fisionomia nunca pode ser exatamente discernido. Possuem garras grotescas e afiadíssimas, capazes de cortar espíritos com facilidade. Muitos utilizam-se também de armas como foices ou correntes, que são usadas para atacar outros espíritos ou mesmo humanos.",
             "Mas seu principal poder é a capacidade de possuir e dominar corpos humanos, tomando o controle de seus movimentos. Não é uma tarefa simples, pois a maioria das pessoas possui força de vontade ou, em alguns casos, até mesmo um anjo da guarda para proteger-se destas intrusões. Eventualmente, os espectros encontram pessoas fragilizadas ou com baixa força de vontade e conseguem dominar seus corpos.",
-            "Muitos espectros visitam a Terra para cumprir suas missões pessoais ou a serviço dos Senhores do Inferno.",
-            "Obsessores"
-          ]
-        },
-        {
-          "id": "criacao-de-personagem",
-          "title": "Criação de Personagem",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "O Jogador deve criar o espectro a partir de sua morte como humano e sua pós-vida durante os primeiros anos no Inferno. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
-            "A partir da chegada do Personagem ao Inferno, escreva a história até o ponto onde começa a campanha. Detalhes sobre os Círculos do Inferno e dos Senhores de cada domínio podem ser encontradas no livro DEMÔNIOS: A DIVINA COMÉDIA.",
-            "Um espectro é criado com 101 pontos em Atributos, sendo que FR, CON, DEX e AGlI são os mesmos que o espectro possuia quando era vivo. Estes atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem autilização de poderes espectrais. Na Terra, o espectro utiliza os atributos físicos do corpo que dominar.",
-            "Um espectro começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
-            "Um espectro começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum.",
-            "Obsessores",
-            "Obsessores são um tipo especial de espectro: uma pessoa que morreu mas ainda está presa à Terra por alguma emoção muito forte como paixão, ganância, ciúmes, ódio, inveja e outros. Este sentimento é tão forte que o espírito se alimenta dele para aumentar e canalizar seus poderes em Spiritum.",
-            "Os obsessores vivem nos Vales Umbralinos ou nas regiões de Spiritum que ficam mais próximas da Terra, para que fiquem bem perto de seus objetos de obsessão.",
-            "Existem até mesmo grupos de obsessores na Terra: espíritos especializados em reunir ou atormentar determinatos tipos de pessoas ou locais. Um grupo muito conhecido é chamado Discípulos de Hobbes. São espíritos formados por filósofos e estudiosos que rondam as principais universidades do mundo a procura de outros estudiosos, atormentando-os até que estes se suicidem e se juntem ao grupo. Serial killers, amantes rejeitados, viciados e até mesmo workaboolics (maníacos por trabalho) tornam-se obsessores após suas mortes.",
-            "Como este tipo de Personagem está sempre ligado de alguma maneira a um objeto ou pessoa, o Jogador precisa controlar dois Personagens: o obsessor eo obsediado.",
-            "É claro que em campanhas com maior número de Jogadores, o Mestre pode estabelecer que um dos outros Jogadores controlará o Personagem obsediado."
+            "Muitos espectros visitam a Terra para cumprir suas missões pessoais ou a serviço dos Senhores do Inferno."
           ]
         }
       ]
     },
     {
-      "id": "obsessores",
+      "id": "obsessores-raca",
+      "title": "Obsessores",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
+      "sectionTitle": "Obsessores",
+      "paragraphs": [
+        "Obsessores são um tipo especial de espectro: uma pessoa que morreu mas ainda está presa à Terra por alguma emoção muito forte como paixão, ganância, ciúmes, ódio, inveja e outros. Este sentimento é tão forte que o espírito se alimenta dele para aumentar e canalizar seus poderes em Spiritum.",
+        "Os obsessores vivem nos Vales Umbralinos ou nas regiões de Spiritum que ficam mais próximas da Terra, para que fiquem bem perto de seus objetos de obsessão.",
+        "Existem até mesmo grupos de obsessores na Terra: espíritos especializados em reunir ou atormentar determinatos tipos de pessoas ou locais. Um grupo muito conhecido é chamado Discípulos de Hobbes. São espíritos formados por filósofos e estudiosos que rondam as principais universidades do mundo a procura de outros estudiosos, atormentando-os até que estes se suicidem e se juntem ao grupo. Serial killers, amantes rejeitados, viciados e até mesmo workaboolics (maníacos por trabalho) tornam-se obsessores após suas mortes.",
+        "Como este tipo de Personagem está sempre ligado de alguma maneira a um objeto ou pessoa, o Jogador precisa controlar dois Personagens: o obsessor eo obsediado.",
+        "É claro que em campanhas com maior número de Jogadores, o Mestre pode estabelecer que um dos outros Jogadores controlará o Personagem obsediado.",
+        "O Personagem que será obsediado poderá ser construído utilizando as regras normais de Construção de Personagem ouregras especiais (magos, anjo, demônio... qualquer tipo de criatura pode ser vítima de um obsessor). Lembramos que o obsediado não precisa ser necessariamente um humano. Ele pode ser um animal (gato preto, coruja, lobo..)), pode ser um objeto (um amuleto amaldiçoado), um local (uma casa mal-assombrada, um cemitério, uma cidade), um anjo ou até mesmo OUTRO espírito. Use o que melhor se encaixar em sua campanha. \"Também lembramos que o obsessor não precisa ser necessariamente um membro da campanha, podendo ser um NPC que assombra um dos integrantes do grupo, neste caso, sendo tratado como um problema a ser resolvido pela campanha.",
+        "Obsessores possuem poderes voltados para a manipulação de sentimentos e emoções, especialmente em relação ao seu objeto de desejo. São capazes de influenciar ou mesmo controlar pequenos grupos de pes- W y soas. Podem ser capazes de movimentar obje- N tos no Plano Físico e alguns até mesmo conse- N guem realizar magias através do Plano Astral.",
+        "Um obsessor pode assumir a forma que quiser (desde que tenha os poderes necessários) mas seu obsediado sempre será capaz de reconhecê-lo",
+        "Muitos obsessores também são capazes de localizar seus objetos ou pessoas de desejo não importando onde elas estiverem. Às vezes, apenas os rituais mais poderosos são capazes de mantê-los afastados. Por outro lado, existem obsessores que estão presos à determinados locais e só podem se afastar utilizando magias muito poderosas.",
+        "Criação de Personagem",
+        "O Mestre deve criar DOIS Personagens (o obsessor a partir de sua última encarnação, dando especial atenção à missão que ele deveria ter cumprido e à forma como elemorreu. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
+        "A partir da morte do Personagem, escreva a história até o ponto onde começa a Campanha, incluindo a relação entre os dois Personagens (obsessor e obsediado).",
+        "Um obsessor é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são os mesmos que o obsessor possuía quando vivo. Estes atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem a utilização de Poderes Espectrais.",
+        "Um obsessor começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum. Um obsessor começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum. O obsediado recebe +1 ponto de aprimoramento."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Obsessores são um tipo especial de espectro: uma pessoa que morreu mas ainda está presa à Terra por alguma emoção muito forte como paixão, ganância, ciúmes, ódio, inveja e outros. Este sentimento é tão forte que o espírito se alimenta dele para aumentar e canalizar seus poderes em Spiritum.",
+            "Os obsessores vivem nos Vales Umbralinos ou nas regiões de Spiritum que ficam mais próximas da Terra, para que fiquem bem perto de seus objetos de obsessão.",
+            "Existem até mesmo grupos de obsessores na Terra: espíritos especializados em reunir ou atormentar determinatos tipos de pessoas ou locais. Um grupo muito conhecido é chamado Discípulos de Hobbes. São espíritos formados por filósofos e estudiosos que rondam as principais universidades do mundo a procura de outros estudiosos, atormentando-os até que estes se suicidem e se juntem ao grupo. Serial killers, amantes rejeitados, viciados e até mesmo workaboolics (maníacos por trabalho) tornam-se obsessores após suas mortes.",
+            "Como este tipo de Personagem está sempre ligado de alguma maneira a um objeto ou pessoa, o Jogador precisa controlar dois Personagens: o obsessor eo obsediado.",
+            "É claro que em campanhas com maior número de Jogadores, o Mestre pode estabelecer que um dos outros Jogadores controlará o Personagem obsediado.",
+            "O Personagem que será obsediado poderá ser construído utilizando as regras normais de Construção de Personagem ouregras especiais (magos, anjo, demônio... qualquer tipo de criatura pode ser vítima de um obsessor). Lembramos que o obsediado não precisa ser necessariamente um humano. Ele pode ser um animal (gato preto, coruja, lobo..)), pode ser um objeto (um amuleto amaldiçoado), um local (uma casa mal-assombrada, um cemitério, uma cidade), um anjo ou até mesmo OUTRO espírito. Use o que melhor se encaixar em sua campanha. \"Também lembramos que o obsessor não precisa ser necessariamente um membro da campanha, podendo ser um NPC que assombra um dos integrantes do grupo, neste caso, sendo tratado como um problema a ser resolvido pela campanha.",
+            "Obsessores possuem poderes voltados para a manipulação de sentimentos e emoções, especialmente em relação ao seu objeto de desejo. São capazes de influenciar ou mesmo controlar pequenos grupos de pes- W y soas. Podem ser capazes de movimentar obje- N tos no Plano Físico e alguns até mesmo conse- N guem realizar magias através do Plano Astral.",
+            "Um obsessor pode assumir a forma que quiser (desde que tenha os poderes necessários) mas seu obsediado sempre será capaz de reconhecê-lo",
+            "Muitos obsessores também são capazes de localizar seus objetos ou pessoas de desejo não importando onde elas estiverem. Às vezes, apenas os rituais mais poderosos são capazes de mantê-los afastados. Por outro lado, existem obsessores que estão presos à determinados locais e só podem se afastar utilizando magias muito poderosas."
+          ]
+        },
+        {
+          "id": "criacao-de-personagem",
+          "title": "Criação de Personagem",
+          "area": "racas",
+          "paragraphs": [
+            "O Mestre deve criar DOIS Personagens (o obsessor a partir de sua última encarnação, dando especial atenção à missão que ele deveria ter cumprido e à forma como elemorreu. Estes passos na criação de Personagens devem ser discutidos junto com o Mestre, para que a história fique bem amarrada.",
+            "A partir da morte do Personagem, escreva a história até o ponto onde começa a Campanha, incluindo a relação entre os dois Personagens (obsessor e obsediado).",
+            "Um obsessor é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são os mesmos que o obsessor possuía quando vivo. Estes atributos funcionam somente no seu corpo astral ou espiritual e não podem agir no plano físico sem a utilização de Poderes Espectrais.",
+            "Um obsessor começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum. Um obsessor começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum. O obsediado recebe +1 ponto de aprimoramento."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obsessores-creature",
       "title": "Obsessores",
       "area": "criaturas_npcs",
       "kind": "creature",
@@ -2144,7 +2345,7 @@
       ]
     },
     {
-      "id": "mediuns",
+      "id": "mediuns-class",
       "title": "Médiuns",
       "area": "classes",
       "kind": "class",
@@ -2182,9 +2383,9 @@
         "Ao criar o Personagem, o Jogador deve escolher qual dos seguintes tipos de médium é ele: tiptólogo, motor, de translações e suspensões, de aparições, de transportes, pneumatógrafo, curador, influenciador, audiente, falante, vidente, inspirado, de pressentimento, profético, sonâmbulo, extático ou desenhista.",
         "Depois de escolher o tipo de médium, o Personagem ganha o poder específico e características do tipo escolhido. Depois dessa parte inicial, o Jogador continua a Criação de Personagem de forma normal (atributos, aprimoramentos, perícias e poderes).",
         "Outra maneira de criar um Personagem médium interessante é deixar a escolha a cargo do Mestre. Nesse caso, a primeira parte da campanha seria justamente descobrir esse dom que seu Personagem tem.",
-        "Note que os poderes mediúnicos possuem muitos equivalentes em poderes angelicais, demoníacos, vampíricos, rituais e outros. Todos os poderes que estviverem ligados à Spiritum são, em essência, poderes mediúnicos, mesmo se forem tratados por outros nomes e outras interpretações.",
+        "Note que os poderes mediúnicos possuem muitos equivalentes em poderes angelicais, demoníacos, vampíricos, rituais e outros. Todos os poderes que estiverem ligados à Spiritum são, em essência, poderes mediúnicos, mesmo se forem tratados por outros nomes e outras interpretações.",
         "Poderes psiônicos (vistos em INVASÃO), por exemplo, são apenas uma variação da mediunidade, enquanto poderes de dominação de mentes, influência e até mesmo resistência sobrenatural a danos ou ataques podem ser simulados com a interferência de espíritos.",
-        "Dessa forma, quando o Jogador e o Mestre estviverem criando os poderes do Personagem, podem desenvolver poderes específicos e únicos que caracterizem o médium."
+        "Dessa forma, quando o Jogador e o Mestre estiverem criando os poderes do Personagem, podem desenvolver poderes específicos e únicos que caracterizem o médium."
       ],
       "sections": [
         {
@@ -2229,15 +2430,15 @@
             "Ao criar o Personagem, o Jogador deve escolher qual dos seguintes tipos de médium é ele: tiptólogo, motor, de translações e suspensões, de aparições, de transportes, pneumatógrafo, curador, influenciador, audiente, falante, vidente, inspirado, de pressentimento, profético, sonâmbulo, extático ou desenhista.",
             "Depois de escolher o tipo de médium, o Personagem ganha o poder específico e características do tipo escolhido. Depois dessa parte inicial, o Jogador continua a Criação de Personagem de forma normal (atributos, aprimoramentos, perícias e poderes).",
             "Outra maneira de criar um Personagem médium interessante é deixar a escolha a cargo do Mestre. Nesse caso, a primeira parte da campanha seria justamente descobrir esse dom que seu Personagem tem.",
-            "Note que os poderes mediúnicos possuem muitos equivalentes em poderes angelicais, demoníacos, vampíricos, rituais e outros. Todos os poderes que estviverem ligados à Spiritum são, em essência, poderes mediúnicos, mesmo se forem tratados por outros nomes e outras interpretações.",
+            "Note que os poderes mediúnicos possuem muitos equivalentes em poderes angelicais, demoníacos, vampíricos, rituais e outros. Todos os poderes que estiverem ligados à Spiritum são, em essência, poderes mediúnicos, mesmo se forem tratados por outros nomes e outras interpretações.",
             "Poderes psiônicos (vistos em INVASÃO), por exemplo, são apenas uma variação da mediunidade, enquanto poderes de dominação de mentes, influência e até mesmo resistência sobrenatural a danos ou ataques podem ser simulados com a interferência de espíritos.",
-            "Dessa forma, quando o Jogador e o Mestre estviverem criando os poderes do Personagem, podem desenvolver poderes específicos e únicos que caracterizem o médium."
+            "Dessa forma, quando o Jogador e o Mestre estiverem criando os poderes do Personagem, podem desenvolver poderes específicos e únicos que caracterizem o médium."
           ]
         }
       ]
     },
     {
-      "id": "nephalins",
+      "id": "nephalins-raca",
       "title": "Nephalins",
       "area": "racas",
       "kind": "raca",
@@ -2318,23 +2519,22 @@
       ]
     },
     {
-      "id": "habitantes-do-sonhar",
+      "id": "habitantes-do-sonhar-raca",
       "title": "Habitantes do Sonhar",
-      "area": "criaturas_npcs",
-      "kind": "creature",
-      "sectionId": "creature",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
       "sectionTitle": "Habitantes do Sonhar",
       "paragraphs": [
         "Os habitantes do Sonhar não são exatamente Personagens. Criados pela forma-pensamento humana ou por desejo de Phantasus, Morpheus ou Proebetus, os habitantes do Sonhar possuem uma existência efêmera e dependente da vontade de outros. Por outro lado, enquanto houver energia espiritual para mantê-los na existência, podem ser considerados imortais.",
         "O Reino dos Sonhos possui muitos condados formados por pessoas comuns que sonham todas as noites com os mesmos locais. Anos e anos de energias concentradas acabam por desenvolver formas próprias, sejam elas locais, objetos, animais ou mesmo pessoas.",
         "Um habitante do Sonhar pode assumir praticamente qualquer forma imaginável. Desde monstros criados por pesadelos até fadas dos contos de Grimm, passando por animais falantes, estátuas animadas e criaturas mitológicas.",
-        "Muitos deles assumem formas de acordo com o pensamento dos habitantes da Terra, modificando seu visual, seu guarda roupa e até mesmo suas maneiras com o passar do tempo. Muitos são conhecidos como os \"amigos invisíveis\" que as crianças possuem, amadurecendo com elas através da infância até desaparecer lentamente na puberdade, sumindo por completo quando o responsável chega à idade adulta (ou não).",
+        "Muitos deles assumem formas de acordo com o pensamento dos habitantes da Terra, modificando seu visual, seu guarda-roupa e até mesmo suas maneiras com o passar do tempo. Muitos são conhecidos como os \"amigos invisíveis\" que as crianças possuem, amadurecendo com elas através da infância até desaparecer lentamente na puberdade, sumindo por completo quando o responsável chega à idade adulta (ou não).",
         "Phantasus",
         "Os habitantes do Sonhar de Phantasus tendem a possuir formas elegantes, limpas e sempre alegres, como fadas, ondinas, gnomos, criaturas mitológicas (unicórnios, pégasus e outras criaturas benevolentes). Vivem em casas e castelos construídos nas copas de árvores gigantescas (realmente gigantescas!) onde vivem em comunidades em conjunto às fadas de Nova Arcádia.",
         "Geralmente vestem-se de branco ou cores brilhantes, são graciosos e muito ágeis, preferindo sempre a conversa do que a guerra. São estudiosos, pesquisadores e extremamente curiosos, servindo muitas vezes como professores para as crianças enquanto elas dormem. Costumam visitar a Terra, mas como possuem formas efêmeras, seu tempo de permanência no reino dos despertos costuma ser muito limitado.",
         "Criação de Personagem",
         "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
-        "do Sonhar",
         "Morpheus",
         "Os habitantes do Sonhar que são governados por Lorde Morpheus são os mais numerosos de todos, pois estão em contato direto com os habitantes da Terra e de Arcádia.",
         "Sua descrição pode variar de maneira praticamente infinita, de acordo com a energia telúrica de cada um. Podem variar desde pequenos animais da floresta até grande ogros bonzinhos (criados a partir dos sonhos de alguma criança muito criativa). Geralmente possuem aspecto humano ou humanóide, mas qualquer tipo de forma é possível de ser encontrada.",
@@ -2345,11 +2545,98 @@
         "Criação de Personagem",
         "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
         "Passeando pela Terra",
-        "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionado E conjuração de seres fantásticos (Criar Metamagia 6+).",
-        "Enquanto estviverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivesem em uma floresta ou campo); ou um ponto de WILL a cada & horas (se estviverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estviverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imedistamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
+        "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionada à conjuração de seres fantásticos (Criar Metamagia 6+).",
+        "Enquanto estiverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivessem em uma floresta ou campo); ou um ponto de WILL a cada 8 horas (se estiverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estiverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imediatamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
         "Os habitantes do Sonhar podem permanecer na Terra absorvendo pontos de Magia, na mesma taxa de pontos de Força de Vontade (um ponto de Magia para cada seis horas na Terra).",
         "Por esta razão, muitas criaturas do Sonhar precisam permanecer próximos a nodos ou aos magos que o chamaram, que normalmente armazenam pontos de Magia em sua conjuração.",
-        "Enquanto estviverem na Terra, os habitantes do Sonhar criam uma forma de ectoplasma (semelhante à que os fantasmas utilizam quando precisam interagir com o Plano Material) que é sólida e tangível, mas que, se a criatura for destruída, desaparece em poucos minutos. O ectoplasma regenera à razão de 1 Ponto de Vida a cada duas horas.",
+        "Enquanto estiverem na Terra, os habitantes do Sonhar criam uma forma de ectoplasma (semelhante à que os fantasmas utilizam quando precisam interagir com o Plano Material) que é sólida e tangível, mas que, se a criatura for destruída, desaparece em poucos minutos. O ectoplasma regenera à razão de 1 Ponto de Vida a cada duas horas.",
+        "À essência do Personagem retorna ao Sonhar, onde fica regenerando por 7 dias para cada ponto de WILL que o Personagem tinha abaixo de 24, só retornando após esse período de tempo.",
+        "Um Personagem que é destruído em sua forma ectoplásmica na Terra com WILL 10 permanece 14x7 dias no Sonhar.",
+        "Habitantes do Sonhar são afetados por Magias e rituais que envolvam o Caminho de Spiritum, da mesma forma que fantasmas, aparições ou espectros. Eles sentem dor e são afetados por armas mundanas (a menos que tenham poderes especiais que digam o contrário), mas esta dor é apenas passageira, pois quando o ectoplasma se regenerar, a dor passará.",
+        "Os habitantes do Sonhar possuem poderes e fraquezas únicos, característicos da forma que ele possui. Muitos personagens clássicos de contos de fadas existem e podem ser utilizados como Personagens de Jogadores. Podem visitar a Terra em busca da ajuda de alguém (normalmente crianças, loucos ou estudiosos do Umbral, que são os únicos que geralmente acreditam na existência desses seres fantásticos).",
+        "A destruição de um habitante do Sonhar",
+        "É muito difícil destruir totalmente um ser feito de essência de sonhos, mas é possível aprisioná-los e este é um dos castigos mais temidos pelos habitantes do Sonhar.",
+        "Também é possível escravizá-los, se souber o nome secreto de um deles. Nesse caso, o habitante do Sonhar não pode deixar de fazer favores (desde que não coloquem sua própria segurança em risco) nem atacar a pessoa que tiver este conhecimento."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Os habitantes do Sonhar não são exatamente Personagens. Criados pela forma-pensamento humana ou por desejo de Phantasus, Morpheus ou Proebetus, os habitantes do Sonhar possuem uma existência efêmera e dependente da vontade de outros. Por outro lado, enquanto houver energia espiritual para mantê-los na existência, podem ser considerados imortais.",
+            "O Reino dos Sonhos possui muitos condados formados por pessoas comuns que sonham todas as noites com os mesmos locais. Anos e anos de energias concentradas acabam por desenvolver formas próprias, sejam elas locais, objetos, animais ou mesmo pessoas.",
+            "Um habitante do Sonhar pode assumir praticamente qualquer forma imaginável. Desde monstros criados por pesadelos até fadas dos contos de Grimm, passando por animais falantes, estátuas animadas e criaturas mitológicas.",
+            "Muitos deles assumem formas de acordo com o pensamento dos habitantes da Terra, modificando seu visual, seu guarda-roupa e até mesmo suas maneiras com o passar do tempo. Muitos são conhecidos como os \"amigos invisíveis\" que as crianças possuem, amadurecendo com elas através da infância até desaparecer lentamente na puberdade, sumindo por completo quando o responsável chega à idade adulta (ou não).",
+            "Phantasus",
+            "Os habitantes do Sonhar de Phantasus tendem a possuir formas elegantes, limpas e sempre alegres, como fadas, ondinas, gnomos, criaturas mitológicas (unicórnios, pégasus e outras criaturas benevolentes). Vivem em casas e castelos construídos nas copas de árvores gigantescas (realmente gigantescas!) onde vivem em comunidades em conjunto às fadas de Nova Arcádia.",
+            "Geralmente vestem-se de branco ou cores brilhantes, são graciosos e muito ágeis, preferindo sempre a conversa do que a guerra. São estudiosos, pesquisadores e extremamente curiosos, servindo muitas vezes como professores para as crianças enquanto elas dormem. Costumam visitar a Terra, mas como possuem formas efêmeras, seu tempo de permanência no reino dos despertos costuma ser muito limitado."
+          ]
+        },
+        {
+          "id": "criacao-de-personagem",
+          "title": "Criação de Personagem",
+          "area": "racas",
+          "paragraphs": [
+            "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
+            "Morpheus",
+            "Os habitantes do Sonhar que são governados por Lorde Morpheus são os mais numerosos de todos, pois estão em contato direto com os habitantes da Terra e de Arcádia.",
+            "Sua descrição pode variar de maneira praticamente infinita, de acordo com a energia telúrica de cada um. Podem variar desde pequenos animais da floresta até grande ogros bonzinhos (criados a partir dos sonhos de alguma criança muito criativa). Geralmente possuem aspecto humano ou humanóide, mas qualquer tipo de forma é possível de ser encontrada.",
+            "Existem personagens do Sonhar muito conhecidos, como os quatro Cavaleiros do Apocalipse, os personagens de todos os contos de Shakespeare, a Rainha Branca de Neve, dezenas e dezenas de versões de bruxas, de incontáveis histórias de fadas, animais falantes, bonecos de madeira falantes, príncipes encantados, cavaleiros em armadura brilhante, magos de chapéu pontudo e uma infinidade de criaturas. Sua imaginação é o limite.",
+            "Personagens do Sonhar são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. O valor máximo inicial de um atributo de um habitante do Sonhar é 24.",
+            "Proebetus",
+            "Os habitantes de Halzazee e Proebetia são mais parecidos com criaturas de pesadelos como orcs, trolls, goblins, monstros esquisitos que se escondem dentro de armários, bem como assemelham-se aos demônios de Arkanun, gárgulas e outras criaturas da mitologia religiosa. São muito desorganizados e vivem em acampamentos ou cidades que lembram muito vilas medievais. Eventualmente algum feiticeiro monta um vale espiritual em Proebetia e recruta essas criaturas como lacaios.",
+            "Criação de Personagem",
+            "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
+            "Passeando pela Terra",
+            "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionada à conjuração de seres fantásticos (Criar Metamagia 6+).",
+            "Enquanto estiverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivessem em uma floresta ou campo); ou um ponto de WILL a cada 8 horas (se estiverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estiverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imediatamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
+            "Os habitantes do Sonhar podem permanecer na Terra absorvendo pontos de Magia, na mesma taxa de pontos de Força de Vontade (um ponto de Magia para cada seis horas na Terra).",
+            "Por esta razão, muitas criaturas do Sonhar precisam permanecer próximos a nodos ou aos magos que o chamaram, que normalmente armazenam pontos de Magia em sua conjuração.",
+            "Enquanto estiverem na Terra, os habitantes do Sonhar criam uma forma de ectoplasma (semelhante à que os fantasmas utilizam quando precisam interagir com o Plano Material) que é sólida e tangível, mas que, se a criatura for destruída, desaparece em poucos minutos. O ectoplasma regenera à razão de 1 Ponto de Vida a cada duas horas.",
+            "À essência do Personagem retorna ao Sonhar, onde fica regenerando por 7 dias para cada ponto de WILL que o Personagem tinha abaixo de 24, só retornando após esse período de tempo.",
+            "Um Personagem que é destruído em sua forma ectoplásmica na Terra com WILL 10 permanece 14x7 dias no Sonhar.",
+            "Habitantes do Sonhar são afetados por Magias e rituais que envolvam o Caminho de Spiritum, da mesma forma que fantasmas, aparições ou espectros. Eles sentem dor e são afetados por armas mundanas (a menos que tenham poderes especiais que digam o contrário), mas esta dor é apenas passageira, pois quando o ectoplasma se regenerar, a dor passará.",
+            "Os habitantes do Sonhar possuem poderes e fraquezas únicos, característicos da forma que ele possui. Muitos personagens clássicos de contos de fadas existem e podem ser utilizados como Personagens de Jogadores. Podem visitar a Terra em busca da ajuda de alguém (normalmente crianças, loucos ou estudiosos do Umbral, que são os únicos que geralmente acreditam na existência desses seres fantásticos).",
+            "A destruição de um habitante do Sonhar",
+            "É muito difícil destruir totalmente um ser feito de essência de sonhos, mas é possível aprisioná-los e este é um dos castigos mais temidos pelos habitantes do Sonhar.",
+            "Também é possível escravizá-los, se souber o nome secreto de um deles. Nesse caso, o habitante do Sonhar não pode deixar de fazer favores (desde que não coloquem sua própria segurança em risco) nem atacar a pessoa que tiver este conhecimento."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "habitantes-do-sonhar-creature",
+      "title": "Habitantes do Sonhar",
+      "area": "criaturas_npcs",
+      "kind": "creature",
+      "sectionId": "creature",
+      "sectionTitle": "Habitantes do Sonhar",
+      "paragraphs": [
+        "Os habitantes do Sonhar não são exatamente Personagens. Criados pela forma-pensamento humana ou por desejo de Phantasus, Morpheus ou Proebetus, os habitantes do Sonhar possuem uma existência efêmera e dependente da vontade de outros. Por outro lado, enquanto houver energia espiritual para mantê-los na existência, podem ser considerados imortais.",
+        "O Reino dos Sonhos possui muitos condados formados por pessoas comuns que sonham todas as noites com os mesmos locais. Anos e anos de energias concentradas acabam por desenvolver formas próprias, sejam elas locais, objetos, animais ou mesmo pessoas.",
+        "Um habitante do Sonhar pode assumir praticamente qualquer forma imaginável. Desde monstros criados por pesadelos até fadas dos contos de Grimm, passando por animais falantes, estátuas animadas e criaturas mitológicas.",
+        "Muitos deles assumem formas de acordo com o pensamento dos habitantes da Terra, modificando seu visual, seu guarda-roupa e até mesmo suas maneiras com o passar do tempo. Muitos são conhecidos como os \"amigos invisíveis\" que as crianças possuem, amadurecendo com elas através da infância até desaparecer lentamente na puberdade, sumindo por completo quando o responsável chega à idade adulta (ou não).",
+        "Phantasus",
+        "Os habitantes do Sonhar de Phantasus tendem a possuir formas elegantes, limpas e sempre alegres, como fadas, ondinas, gnomos, criaturas mitológicas (unicórnios, pégasus e outras criaturas benevolentes). Vivem em casas e castelos construídos nas copas de árvores gigantescas (realmente gigantescas!) onde vivem em comunidades em conjunto às fadas de Nova Arcádia.",
+        "Geralmente vestem-se de branco ou cores brilhantes, são graciosos e muito ágeis, preferindo sempre a conversa do que a guerra. São estudiosos, pesquisadores e extremamente curiosos, servindo muitas vezes como professores para as crianças enquanto elas dormem. Costumam visitar a Terra, mas como possuem formas efêmeras, seu tempo de permanência no reino dos despertos costuma ser muito limitado.",
+        "Criação de Personagem",
+        "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
+        "Morpheus",
+        "Os habitantes do Sonhar que são governados por Lorde Morpheus são os mais numerosos de todos, pois estão em contato direto com os habitantes da Terra e de Arcádia.",
+        "Sua descrição pode variar de maneira praticamente infinita, de acordo com a energia telúrica de cada um. Podem variar desde pequenos animais da floresta até grande ogros bonzinhos (criados a partir dos sonhos de alguma criança muito criativa). Geralmente possuem aspecto humano ou humanóide, mas qualquer tipo de forma é possível de ser encontrada.",
+        "Existem personagens do Sonhar muito conhecidos, como os quatro Cavaleiros do Apocalipse, os personagens de todos os contos de Shakespeare, a Rainha Branca de Neve, dezenas e dezenas de versões de bruxas, de incontáveis histórias de fadas, animais falantes, bonecos de madeira falantes, príncipes encantados, cavaleiros em armadura brilhante, magos de chapéu pontudo e uma infinidade de criaturas. Sua imaginação é o limite.",
+        "Personagens do Sonhar são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. O valor máximo inicial de um atributo de um habitante do Sonhar é 24.",
+        "Proebetus",
+        "Os habitantes de Halzazee e Proebetia são mais parecidos com criaturas de pesadelos como orcs, trolls, goblins, monstros esquisitos que se escondem dentro de armários, bem como assemelham-se aos demônios de Arkanun, gárgulas e outras criaturas da mitologia religiosa. São muito desorganizados e vivem em acampamentos ou cidades que lembram muito vilas medievais. Eventualmente algum feiticeiro monta um vale espiritual em Proebetia e recruta essas criaturas como lacaios.",
+        "Criação de Personagem",
+        "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
+        "Passeando pela Terra",
+        "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionada à conjuração de seres fantásticos (Criar Metamagia 6+).",
+        "Enquanto estiverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivessem em uma floresta ou campo); ou um ponto de WILL a cada 8 horas (se estiverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estiverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imediatamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
+        "Os habitantes do Sonhar podem permanecer na Terra absorvendo pontos de Magia, na mesma taxa de pontos de Força de Vontade (um ponto de Magia para cada seis horas na Terra).",
+        "Por esta razão, muitas criaturas do Sonhar precisam permanecer próximos a nodos ou aos magos que o chamaram, que normalmente armazenam pontos de Magia em sua conjuração.",
+        "Enquanto estiverem na Terra, os habitantes do Sonhar criam uma forma de ectoplasma (semelhante à que os fantasmas utilizam quando precisam interagir com o Plano Material) que é sólida e tangível, mas que, se a criatura for destruída, desaparece em poucos minutos. O ectoplasma regenera à razão de 1 Ponto de Vida a cada duas horas.",
         "À essência do Personagem retorna ao Sonhar, onde fica regenerando por 7 dias para cada ponto de WILL que o Personagem tinha abaixo de 24, só retornando após esse período de tempo.",
         "Um Personagem que é destruído em sua forma ectoplásmica na Terra com WILL 10 permanece 14x7 dias no Sonhar.",
         "Habitantes do Sonhar são afetados por Magias e rituais que envolvam o Caminho de Spiritum, da mesma forma que fantasmas, aparições ou espectros. Eles sentem dor e são afetados por armas mundanas (a menos que tenham poderes especiais que digam o contrário), mas esta dor é apenas passageira, pois quando o ectoplasma se regenerar, a dor passará.",
@@ -2367,7 +2654,7 @@
             "Os habitantes do Sonhar não são exatamente Personagens. Criados pela forma-pensamento humana ou por desejo de Phantasus, Morpheus ou Proebetus, os habitantes do Sonhar possuem uma existência efêmera e dependente da vontade de outros. Por outro lado, enquanto houver energia espiritual para mantê-los na existência, podem ser considerados imortais.",
             "O Reino dos Sonhos possui muitos condados formados por pessoas comuns que sonham todas as noites com os mesmos locais. Anos e anos de energias concentradas acabam por desenvolver formas próprias, sejam elas locais, objetos, animais ou mesmo pessoas.",
             "Um habitante do Sonhar pode assumir praticamente qualquer forma imaginável. Desde monstros criados por pesadelos até fadas dos contos de Grimm, passando por animais falantes, estátuas animadas e criaturas mitológicas.",
-            "Muitos deles assumem formas de acordo com o pensamento dos habitantes da Terra, modificando seu visual, seu guarda roupa e até mesmo suas maneiras com o passar do tempo. Muitos são conhecidos como os \"amigos invisíveis\" que as crianças possuem, amadurecendo com elas através da infância até desaparecer lentamente na puberdade, sumindo por completo quando o responsável chega à idade adulta (ou não).",
+            "Muitos deles assumem formas de acordo com o pensamento dos habitantes da Terra, modificando seu visual, seu guarda-roupa e até mesmo suas maneiras com o passar do tempo. Muitos são conhecidos como os \"amigos invisíveis\" que as crianças possuem, amadurecendo com elas através da infância até desaparecer lentamente na puberdade, sumindo por completo quando o responsável chega à idade adulta (ou não).",
             "Phantasus",
             "Os habitantes do Sonhar de Phantasus tendem a possuir formas elegantes, limpas e sempre alegres, como fadas, ondinas, gnomos, criaturas mitológicas (unicórnios, pégasus e outras criaturas benevolentes). Vivem em casas e castelos construídos nas copas de árvores gigantescas (realmente gigantescas!) onde vivem em comunidades em conjunto às fadas de Nova Arcádia.",
             "Geralmente vestem-se de branco ou cores brilhantes, são graciosos e muito ágeis, preferindo sempre a conversa do que a guerra. São estudiosos, pesquisadores e extremamente curiosos, servindo muitas vezes como professores para as crianças enquanto elas dormem. Costumam visitar a Terra, mas como possuem formas efêmeras, seu tempo de permanência no reino dos despertos costuma ser muito limitado."
@@ -2379,7 +2666,6 @@
           "area": "criaturas_npcs",
           "paragraphs": [
             "Phantasi (o plural de Phantasus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Phantasi possuem atributos mais voltados para INT, WILL e CAR e geralmente não possuem muita força física. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
-            "do Sonhar",
             "Morpheus",
             "Os habitantes do Sonhar que são governados por Lorde Morpheus são os mais numerosos de todos, pois estão em contato direto com os habitantes da Terra e de Arcádia.",
             "Sua descrição pode variar de maneira praticamente infinita, de acordo com a energia telúrica de cada um. Podem variar desde pequenos animais da floresta até grande ogros bonzinhos (criados a partir dos sonhos de alguma criança muito criativa). Geralmente possuem aspecto humano ou humanóide, mas qualquer tipo de forma é possível de ser encontrada.",
@@ -2390,11 +2676,11 @@
             "Criação de Personagem",
             "Proebeti (o plural de Proebetus) são criados com 101 pontos de atributo (mas podem ser criados com qualquer tipo de valores, no caso de um NPC) e pontos de perícia de acordo com sua INT e idade. Proebeti possuem atributos mais voltados para FR, CON e AGl e geralmente não possuem muito intelecto. Possuem perícias relacionadas com sua ambientação e com a função que exercem no Sonhar.",
             "Passeando pela Terra",
-            "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionado E conjuração de seres fantásticos (Criar Metamagia 6+).",
-            "Enquanto estviverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivesem em uma floresta ou campo); ou um ponto de WILL a cada & horas (se estviverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estviverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imedistamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
+            "Os habitantes do Sonhar podem visitar a Terra por curtos períodos de tempo, através de rituais de Metamagia relacionada à conjuração de seres fantásticos (Criar Metamagia 6+).",
+            "Enquanto estiverem em nosso plano, os Personagens do Sonhar perdem um ponto de WILL a cada 12 horas (se estivessem em uma floresta ou campo); ou um ponto de WILL a cada 8 horas (se estiverem em um ambiente urbano) ou um ponto de WILL a cada 3 horas (se estiverem em ambientes muito tecnológicos) e, se chegarem a 2 pontos de WILL, retornam imediatamente ao Sonhar, esgotados. Se, por algum problema chegarem a menos de zero pontos de WILL, eles são destruídos na Terra e demoram alguns meses para se recuperarem.",
             "Os habitantes do Sonhar podem permanecer na Terra absorvendo pontos de Magia, na mesma taxa de pontos de Força de Vontade (um ponto de Magia para cada seis horas na Terra).",
             "Por esta razão, muitas criaturas do Sonhar precisam permanecer próximos a nodos ou aos magos que o chamaram, que normalmente armazenam pontos de Magia em sua conjuração.",
-            "Enquanto estviverem na Terra, os habitantes do Sonhar criam uma forma de ectoplasma (semelhante à que os fantasmas utilizam quando precisam interagir com o Plano Material) que é sólida e tangível, mas que, se a criatura for destruída, desaparece em poucos minutos. O ectoplasma regenera à razão de 1 Ponto de Vida a cada duas horas.",
+            "Enquanto estiverem na Terra, os habitantes do Sonhar criam uma forma de ectoplasma (semelhante à que os fantasmas utilizam quando precisam interagir com o Plano Material) que é sólida e tangível, mas que, se a criatura for destruída, desaparece em poucos minutos. O ectoplasma regenera à razão de 1 Ponto de Vida a cada duas horas.",
             "À essência do Personagem retorna ao Sonhar, onde fica regenerando por 7 dias para cada ponto de WILL que o Personagem tinha abaixo de 24, só retornando após esse período de tempo.",
             "Um Personagem que é destruído em sua forma ectoplásmica na Terra com WILL 10 permanece 14x7 dias no Sonhar.",
             "Habitantes do Sonhar são afetados por Magias e rituais que envolvam o Caminho de Spiritum, da mesma forma que fantasmas, aparições ou espectros. Eles sentem dor e são afetados por armas mundanas (a menos que tenham poderes especiais que digam o contrário), mas esta dor é apenas passageira, pois quando o ectoplasma se regenerar, a dor passará.",
@@ -2407,16 +2693,63 @@
       ]
     },
     {
-      "id": "loa",
+      "id": "loa-raca",
+      "title": "Loa",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
+      "sectionTitle": "Loa",
+      "paragraphs": [
+        "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Um loa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
+        "Os loas normalmente são NPCs mas uma campanha envolvendo um viajante astral e seu loa conselheiro podem resultar em aventuras muito interessantes.",
+        "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vai acontecer!).",
+        "Assim como nos viajantes astrais, o uso de deslocamentos temporais por parte do loa deve ser controlado pelo Mestre, para evitar maiores problemas.",
+        "Criação de Personagem",
+        "O Jogador deve criar o loa a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o loa passa por um processo de transição que pode durar meses ou anos.",
+        "A partir deste ponto, escreva a história deste espírito até o ponto onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",
+        "Use o bom senso.",
+        "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos físicos, loas precisam de poderes especiais (ver capítulo de Poderes Espectrais).",
+        "Um loa começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
+        "Um loa começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "racas",
+          "paragraphs": [
+            "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Um loa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
+            "Os loas normalmente são NPCs mas uma campanha envolvendo um viajante astral e seu loa conselheiro podem resultar em aventuras muito interessantes.",
+            "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vai acontecer!).",
+            "Assim como nos viajantes astrais, o uso de deslocamentos temporais por parte do loa deve ser controlado pelo Mestre, para evitar maiores problemas."
+          ]
+        },
+        {
+          "id": "criacao-de-personagem",
+          "title": "Criação de Personagem",
+          "area": "racas",
+          "paragraphs": [
+            "O Jogador deve criar o loa a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o loa passa por um processo de transição que pode durar meses ou anos.",
+            "A partir deste ponto, escreva a história deste espírito até o ponto onde começa a campanha. O Mestre deve ter o cuidado de selecionar o nível de todos os Personagens para que sejam mais ou menos equilibrados entre si, pois este jogo permite uma variação muito grande de poderes e habilidades.",
+            "Use o bom senso.",
+            "Um Personagem padrão é criado com 101 pontos em atributos, sendo que FR, CON, DEX e AGI são válidos apenas em reinos ou vales espirituais. Para interagir com reinos físicos, loas precisam de poderes especiais (ver capítulo de Poderes Espectrais).",
+            "Um loa começa com as perícias que possuía somadas às perícias que adquiriu em Spiritum.",
+            "Um loa começa com 3 pontos de aprimoramento mais um ponto a cada vinte anos em Spiritum."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loa-npc",
       "title": "Loa",
       "area": "criaturas_npcs",
       "kind": "npc",
       "sectionId": "npc",
       "sectionTitle": "Loa",
       "paragraphs": [
-        "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Umiloa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
+        "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Um loa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
         "Os loas normalmente são NPCs mas uma campanha envolvendo um viajante astral e seu loa conselheiro podem resultar em aventuras muito interessantes.",
-        "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vaí acontecer!).",
+        "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vai acontecer!).",
         "Assim como nos viajantes astrais, o uso de deslocamentos temporais por parte do loa deve ser controlado pelo Mestre, para evitar maiores problemas.",
         "Criação de Personagem",
         "O Jogador deve criar o loa a partir de sua última encarnação. Respeitando os valores de perícia e atributos humanos. Uma vez desencarnado, o loa passa por um processo de transição que pode durar meses ou anos.",
@@ -2432,9 +2765,9 @@
           "title": "Descrição",
           "area": "criaturas_npcs",
           "paragraphs": [
-            "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Umiloa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
+            "Um loa é um espírito viajante, cujas regras de criação de Personagem são muito semelhantes a dos espíritos e aparições. Um loa está sempre ligado a um mortal, seja por parentesco, seja por afinidade, e quase sempre está ligado a esta pessoa por algum tipo de favor ancestral que deve ser cumprido.",
             "Os loas normalmente são NPCs mas uma campanha envolvendo um viajante astral e seu loa conselheiro podem resultar em aventuras muito interessantes.",
-            "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vaí acontecer!).",
+            "Loas também são capazes de realizar os rituais de viagem temporal, manifestando-se no passado como conselheiros e videntes (é simples ser um vidente quando você veio do futuro e sabe perfeitamente o que vai acontecer!).",
             "Assim como nos viajantes astrais, o uso de deslocamentos temporais por parte do loa deve ser controlado pelo Mestre, para evitar maiores problemas."
           ]
         },
@@ -3523,7 +3856,7 @@
           "title": "Nível 2",
           "area": "poderes",
           "paragraphs": [
-            "Nível 2: um pouco mais poderoso, as pessoas e objetos que estviverem próximos do Personagem envelhecem na razão de 2 anos para cada ano que passam junto a ele."
+            "Nível 2: um pouco mais poderoso, as pessoas e objetos que estiverem próximos do Personagem envelhecem na razão de 2 anos para cada ano que passam junto a ele."
           ]
         },
         {
@@ -4665,7 +4998,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Aríete Espectral",
       "paragraphs": [
-        "Este ritual conjura do Plano Astral um aríete espectral com grande força, capaz de arrombar a maioria das portas e portais existentes. O conjurador se posiciona na frente da porta que deseja arrombar e recita os versos do ritual. Quando terminar, o feiticeiro empurra o ar com seu punho esquerdo, que deve estar segurando a miniatura, enquanto uma força espectral golpeia a porta com For (FR) 24, causando 4d6 pontos de dano. Com algumas alterações, este ritual também pode ser utilizado contra alvos humanos, causando 4d6 pontos de dano divididos entre as pessoas que estviverem na área de efeito."
+        "Este ritual conjura do Plano Astral um aríete espectral com grande força, capaz de arrombar a maioria das portas e portais existentes. O conjurador se posiciona na frente da porta que deseja arrombar e recita os versos do ritual. Quando terminar, o feiticeiro empurra o ar com seu punho esquerdo, que deve estar segurando a miniatura, enquanto uma força espectral golpeia a porta com For (FR) 24, causando 4d6 pontos de dano. Com algumas alterações, este ritual também pode ser utilizado contra alvos humanos, causando 4d6 pontos de dano divididos entre as pessoas que estiverem na área de efeito."
       ],
       "sections": [
         {
@@ -4686,7 +5019,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Este ritual conjura do Plano Astral um aríete espectral com grande força, capaz de arrombar a maioria das portas e portais existentes. O conjurador se posiciona na frente da porta que deseja arrombar e recita os versos do ritual. Quando terminar, o feiticeiro empurra o ar com seu punho esquerdo, que deve estar segurando a miniatura, enquanto uma força espectral golpeia a porta com For (FR) 24, causando 4d6 pontos de dano. Com algumas alterações, este ritual também pode ser utilizado contra alvos humanos, causando 4d6 pontos de dano divididos entre as pessoas que estviverem na área de efeito."
+            "Este ritual conjura do Plano Astral um aríete espectral com grande força, capaz de arrombar a maioria das portas e portais existentes. O conjurador se posiciona na frente da porta que deseja arrombar e recita os versos do ritual. Quando terminar, o feiticeiro empurra o ar com seu punho esquerdo, que deve estar segurando a miniatura, enquanto uma força espectral golpeia a porta com For (FR) 24, causando 4d6 pontos de dano. Com algumas alterações, este ritual também pode ser utilizado contra alvos humanos, causando 4d6 pontos de dano divididos entre as pessoas que estiverem na área de efeito."
           ]
         }
       ]
@@ -5084,7 +5417,7 @@
       "sectionId": "ritual",
       "sectionTitle": "Espelho Secreto",
       "paragraphs": [
-        "Uma das maiores preocupações dos magos sempre foi a de guardar e proteger seus cobiçados objetos mágicos. Este ritual foi inventado com esse propósito. Para conjurar este espaço dimensional, o feiticeiro precisa de um espelho (a forma não importa) e das palavras de ativação corretas, além de seu símbolo rúnico entalhado em uma das pontas da superfície espelhada. Uma vez conjurado, o espelho pode ser atravessado (o efeito visual é o mesmo de se mergulhar a mão em um líquido) e qualquer objeto pode ser guardado dentro dessa câmara secreta, As dimensões internas da câmara são: a própria altura e largura do espelho e a profundidade igual ao maior valor delas, ou seja, um espelho de 20cm x 30cm formará um espaço dimensional de 20x30x30cm. Ao final da duração, qualquer objeto que esteja dentro do espelho será expelido para fora. Criaturas vivas também não podem permanecer dentro do espelho por mais do que uma rodada, sendo expelidas também. O único perigo deste ritual é que se o espelho for quebrado, existe 50% de chance dos objetos que estviverem dentro deles ficarem perdidos no Reino dos Espelhos, em Spiritum."
+        "Uma das maiores preocupações dos magos sempre foi a de guardar e proteger seus cobiçados objetos mágicos. Este ritual foi inventado com esse propósito. Para conjurar este espaço dimensional, o feiticeiro precisa de um espelho (a forma não importa) e das palavras de ativação corretas, além de seu símbolo rúnico entalhado em uma das pontas da superfície espelhada. Uma vez conjurado, o espelho pode ser atravessado (o efeito visual é o mesmo de se mergulhar a mão em um líquido) e qualquer objeto pode ser guardado dentro dessa câmara secreta, As dimensões internas da câmara são: a própria altura e largura do espelho e a profundidade igual ao maior valor delas, ou seja, um espelho de 20cm x 30cm formará um espaço dimensional de 20x30x30cm. Ao final da duração, qualquer objeto que esteja dentro do espelho será expelido para fora. Criaturas vivas também não podem permanecer dentro do espelho por mais do que uma rodada, sendo expelidas também. O único perigo deste ritual é que se o espelho for quebrado, existe 50% de chance dos objetos que estiverem dentro deles ficarem perdidos no Reino dos Espelhos, em Spiritum."
       ],
       "sections": [
         {
@@ -5106,7 +5439,7 @@
           "title": "Descrição",
           "area": "rituais",
           "paragraphs": [
-            "Uma das maiores preocupações dos magos sempre foi a de guardar e proteger seus cobiçados objetos mágicos. Este ritual foi inventado com esse propósito. Para conjurar este espaço dimensional, o feiticeiro precisa de um espelho (a forma não importa) e das palavras de ativação corretas, além de seu símbolo rúnico entalhado em uma das pontas da superfície espelhada. Uma vez conjurado, o espelho pode ser atravessado (o efeito visual é o mesmo de se mergulhar a mão em um líquido) e qualquer objeto pode ser guardado dentro dessa câmara secreta, As dimensões internas da câmara são: a própria altura e largura do espelho e a profundidade igual ao maior valor delas, ou seja, um espelho de 20cm x 30cm formará um espaço dimensional de 20x30x30cm. Ao final da duração, qualquer objeto que esteja dentro do espelho será expelido para fora. Criaturas vivas também não podem permanecer dentro do espelho por mais do que uma rodada, sendo expelidas também. O único perigo deste ritual é que se o espelho for quebrado, existe 50% de chance dos objetos que estviverem dentro deles ficarem perdidos no Reino dos Espelhos, em Spiritum."
+            "Uma das maiores preocupações dos magos sempre foi a de guardar e proteger seus cobiçados objetos mágicos. Este ritual foi inventado com esse propósito. Para conjurar este espaço dimensional, o feiticeiro precisa de um espelho (a forma não importa) e das palavras de ativação corretas, além de seu símbolo rúnico entalhado em uma das pontas da superfície espelhada. Uma vez conjurado, o espelho pode ser atravessado (o efeito visual é o mesmo de se mergulhar a mão em um líquido) e qualquer objeto pode ser guardado dentro dessa câmara secreta, As dimensões internas da câmara são: a própria altura e largura do espelho e a profundidade igual ao maior valor delas, ou seja, um espelho de 20cm x 30cm formará um espaço dimensional de 20x30x30cm. Ao final da duração, qualquer objeto que esteja dentro do espelho será expelido para fora. Criaturas vivas também não podem permanecer dentro do espelho por mais do que uma rodada, sendo expelidas também. O único perigo deste ritual é que se o espelho for quebrado, existe 50% de chance dos objetos que estiverem dentro deles ficarem perdidos no Reino dos Espelhos, em Spiritum."
           ]
         }
       ]
@@ -6040,7 +6373,7 @@
             "O Reino dos Sonhos é formado pela forma-pensamento inconsciente das pessoas. É um reino construído durante o sono por todos os seres vivos de todos os planos, durante toda a eternidade. Nele habitam todos os tipos de entidades imaginárias, criadas pelas fantasias, medos e ansiedades de centenas de milhares de encarnações.",
             "O Sonhar possui quatro governantes: Hypnos, senhor dos sonhos, criado na distante Grécia quatro mil anos atrás, é o responsável pelo equilíbrio e pela manutenção das Leis no Reino dos Sonhos. Seus três filhos, Morpheus, Phantasus e Proebetus cuidam, respectivamente, das regiões do Sonhar ligadas à Terra, Paradísia e Arkanun.",
             "O Sonhar funciona como um enorme e organizado vale espiritual, subdividido em infinitos reinos menores, chamadas Ilhas do Sonhar, cujos dominantes prestam reverência ao monarca no qual seu reino está incrustrado, em uma relação muito semelhante à vassalagem que existia na Terra durante a Idade Média. Apesar desta organização, existem diversas ilhas independentes, mantidas por lordes poderosos o suficiente para se proclamarem senhores de seu reino.",
-            "O Sonhar pode ser acessado através de rituais que envolvam o sono e o ato de sonhar. A jornada até o Reino dos Sonhos por outras maneiras é bastante complicada, pois o Sonhar é considerado um reino imaginário, onde corpos físicos e espirituais podem coexistir (mas, ao mesmo tempo, estão sujeitos às leis dos lordes da região onde estviverem, o que pode ser demasiadamente perigoso).",
+            "O Sonhar pode ser acessado através de rituais que envolvam o sono e o ato de sonhar. A jornada até o Reino dos Sonhos por outras maneiras é bastante complicada, pois o Sonhar é considerado um reino imaginário, onde corpos físicos e espirituais podem coexistir (mas, ao mesmo tempo, estão sujeitos às leis dos lordes da região onde estiverem, o que pode ser demasiadamente perigoso).",
             "É importante notar que muitos sábios não fazem distinção entre o Sonhar e os vales espirituais, alegando que os reinos de Hypnos não passam de um conjunto enorme de vales reunidos e organizados."
           ]
         },
@@ -6295,7 +6628,7 @@
           "area": "cenarios_lore",
           "paragraphs": [
             "Um dos maiores problemas para os magos e viajantes despreparados são as tempestades astrais. Estes redemoinhos de energia mística são formados por resíduos mágicos de rituais ou nodos que acabam se acumulando em determinadas áreas do plano astral, formando grandes círculos etéreos que arrastam tudo que estiver em seu caminho.",
-            "Uma tempestade pode ser suficiente para arrancar os viajantes de onde estviverem e os levar até um local completamente desconhecido (nas melhores hipóteses) ou mesmo dilacerar ses espírito pela eternidade. Elas podem ser sentidas a distânciz = afetam apenas o plano espiritual.",
+            "Uma tempestade pode ser suficiente para arrancar os viajantes de onde estiverem e os levar até um local completamente desconhecido (nas melhores hipóteses) ou mesmo dilacerar ses espírito pela eternidade. Elas podem ser sentidas a distânciz = afetam apenas o plano espiritual.",
             "As partes mais distantes do núcleo das Tempestades podem ser atravessadas por viajantes, embora já tenham descrito a sensação como \"atravessar uma tempestade de areia gelada\". Existem rituais capazes de criar redomas prismáticas capazes de agientar a fora destrutiva destas áreas mais afastadas da tempestade.",
             "Claro que existem tempestades mais fracas, que apenas atrapalham e atrasam as viagens entre os vales espirituais, forçam do os viajantes a escolherem outros caminhos mais longos = menos perigosos (ou não...).",
             "É difícil definir um tamanho para a área de uma tempeste de, visto que ela se propaga em várias dimensões fisicas e temperais, mas a maior tempestade astral detectada no Sistema Solar existe há algumas dezenas de milhares de anos e está localizads próxima da Orbe de Júpiter (e pode ser vista da Terra como um grande furacão na superfície do planeta, muitas vezes maior do que a própria Terra). Alguns sábios alegam que, na verdade, existe apenas UMA tempestade astral em todo o universo < 1 das as tempestades que nós já observamos são apenas facetas desta mesma anomalia espiritual e temporal.",
@@ -6359,7 +6692,7 @@
           "area": "cenarios_lore",
           "paragraphs": [
             "Com exceção de objetos mágicos, nenhum equipamento mundano pode penetrar nos planos astrais. O mago pode carregar apenas a roupa do corpo e pouco mais de alguns quilos de material consigo, desde que estejam todos em contato com seu corpo dentro do círculo de invocação para a viagem astral. Em geral, esses equipamentos são simples como canetas, adagas, pergaminhos, ingredientes para rituais e outros. Desnecessário dizer que qualquer objeto tecnológico como celulares ou laptops se transformam em uma casca inútil de plástico!",
-            "A maioria dos magos contorna este problema através de rituais simples de Metamagia que criam uma aura mágica ao redor de um objeto, transformando-o temporariamente em um objeto mágico (sem poderes, mas capaz de romper o tecido do manto e ser carregado para Spiritum). Isso é extremamente eficaz para se transportar armas (sejam elas espadas ou revólveres, embora apenas as balas que estviverem dentro da arma são consideradas mágicas e podem ser carregadas para outro plano).",
+            "A maioria dos magos contorna este problema através de rituais simples de Metamagia que criam uma aura mágica ao redor de um objeto, transformando-o temporariamente em um objeto mágico (sem poderes, mas capaz de romper o tecido do manto e ser carregado para Spiritum). Isso é extremamente eficaz para se transportar armas (sejam elas espadas ou revólveres, embora apenas as balas que estiverem dentro da arma são consideradas mágicas e podem ser carregadas para outro plano).",
             "Claro que, quando o efeito do ritual metamágico passar, estes objetos desaparecerão do simulacro do Personagem. Por esta razão, espadas mágicas, amuletos de proteção e poções são tão valiosos para os feiticeiros que gostam de se aventurar em regiões distantes da Terra.",
             "Da mesma forma, tesouros, objetos e armas encontradas em outros Planos permanecem nesses locais, não podendo ser transportados de volta para a Terra a menos que o personagem os traga através de portais (sempre lembrando que simulacros NÃO atravessam portais, pois são feitos com material do plano em que são criados e se dissolveriam imediatamente em outros planos, deixando o Personagem na forma astral e incapaz de proteger ou sequer interagir com os objetos que trouxe através do portal)."
           ]
@@ -6467,7 +6800,7 @@
           "area": "cenarios_lore",
           "paragraphs": [
             "Anjos ou outros espíritos iluminados, os embaixadores são poderosos o suficiente para garantir sua própria proteção quando estiverem nas regiões umbrais. Os embaixadores são respeitados e temidos (e odiados)",
-            "pelos senhores trevosos, reconhecidos como embaixadores do \"mundo exterior\", desde, claro, que respeitem algumas regras pré-estabelecidas. Os embaixadores podem servir como guias para aventureiros, mas também estão presos às regras criadas pelos senhores dos domínios que estviverem visitando.",
+            "pelos senhores trevosos, reconhecidos como embaixadores do \"mundo exterior\", desde, claro, que respeitem algumas regras pré-estabelecidas. Os embaixadores podem servir como guias para aventureiros, mas também estão presos às regras criadas pelos senhores dos domínios que estiverem visitando.",
             "Os recíperes e os principados são os anjos mais requisitados pela Cidade de Prata para este tipo de missão, embora ocasionalmente nimbus ou até mesmo captares sejam indicados para regiões mais importantes."
           ]
         },

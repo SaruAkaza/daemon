@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from copy import deepcopy
 from datetime import datetime
 from pathlib import Path
 from typing import Iterable
@@ -85,6 +86,7 @@ TEXT_FIXES = {
     "obcediar": "obsediar",
     "AGla": "AGI",
     "AGT": "AGI",
+    "AGlI": "AGI",
     "capza": "capaz",
     "Ysca": "Ysea",
     "Ysea são": "Ysea são",
@@ -128,6 +130,9 @@ TEXT_FIXES.update({
     "cmatividade": "criatividade",
     "estvviverem": "estiverem",
     "estvvviverem": "estiverem",
+    "estviverem": "estiverem",
+    "estivesem": "estivessem",
+    "imedistamente": "imediatamente",
     "rituzss": "rituais",
     "nodes": "nodos",
     "vz jantes": "viajantes",
@@ -144,11 +149,23 @@ TEXT_FIXES.update({
     "Saraphmacl": "Saraphmael",
     "Kaclthorpe": "Kaelthorpe",
     "À Doutrina": "A Doutrina",
+    "tornamse": "tornam-se",
+    "peispíritos": "perispíritos",
+    "autilização": "a utilização",
+    "Umiloa": "Um loa",
+    "vaí": "vai",
+    "guarda roupa": "guarda-roupa",
+    "Metamagia relacionado E conjuração": "Metamagia relacionada à conjuração",
+    "a cada & horas": "a cada 8 horas",
 })
 
 DROP_PARAGRAPHS = {
     TITLE,
     "Texto extraído por OCR / camada textual, com limpeza de quebras de linha e caracteres indevidos.",
+    "2a",
+    "Espectros e",
+    "dd dd di di can ie fã AR",
+    "do Sonhar",
 }
 
 
@@ -663,7 +680,7 @@ def make_races() -> list[dict]:
         ("Espíritos", [25], "Fantasmas"),
         ("Fantasmas", [25, 26], "Aparição"),
         ("Aparição", [26, 27], "Espectros"),
-        ("Espectros", [27], "Obsessores"),
+        ("Espectros", [27], "Obcessores"),
         ("Obsessores", [27, 28], "Médiuns"),
         ("Médiuns", [28, 29, 30], "Ordem da Rosa e da Cruz"),
         ("Nephalins", [37, 38], "Habitantes"),
@@ -721,27 +738,41 @@ def make_classes() -> list[dict]:
     return results
 
 
+def clone_character_type(entry: dict, area: str, kind: str, id_suffix: str) -> dict:
+    cloned = deepcopy(entry)
+    cloned["id"] = f"{cloned['id']}-{id_suffix}"
+    cloned["area"] = area
+    cloned["kind"] = kind
+    cloned["sectionId"] = kind
+    for section in cloned.get("sections", []):
+        section["area"] = area
+    return cloned
+
+
 def make_spiritum_character_types() -> list[dict]:
-    remap = {
-        "Esp\u00edritos": ("criaturas_npcs", "creature"),
-        "Fantasmas": ("criaturas_npcs", "creature"),
-        "Apari\u00e7\u00e3o": ("criaturas_npcs", "creature"),
-        "Espectros": ("criaturas_npcs", "creature"),
-        "Obsessores": ("criaturas_npcs", "creature"),
+    dual_types = {
+        "Esp\u00edritos": "creature",
+        "Fantasmas": "creature",
+        "Apari\u00e7\u00e3o": "creature",
+        "Espectros": "creature",
+        "Obsessores": "creature",
+        "Habitantes do Sonhar": "creature",
+        "Loa": "npc",
+    }
+    single_types = {
         "M\u00e9diuns": ("classes", "class"),
         "Nephalins": ("racas", "raca"),
-        "Habitantes do Sonhar": ("criaturas_npcs", "creature"),
-        "Loa": ("criaturas_npcs", "npc"),
     }
     results = []
     for entry in make_races():
-        area, kind = remap[entry["title"]]
-        entry["area"] = area
-        entry["kind"] = kind
-        entry["sectionId"] = kind
-        for section in entry.get("sections", []):
-            section["area"] = area
-        results.append(entry)
+        title = entry["title"]
+        if title in dual_types:
+            results.append(clone_character_type(entry, "racas", "raca", "raca"))
+            results.append(clone_character_type(entry, "criaturas_npcs", dual_types[title], dual_types[title]))
+            continue
+
+        area, kind = single_types[title]
+        results.append(clone_character_type(entry, area, kind, kind))
     return results
 
 
