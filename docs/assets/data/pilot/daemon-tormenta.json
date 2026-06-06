@@ -4,15 +4,395 @@
   "title": "Daemon Tormenta",
   "sourceFile": "Daemon_Tormenta_OCR_alta_qualidade.docx",
   "status": "pilot_review",
-  "summary": "Tormenta (Arton) para o Sistema Daemon: raças, kits/profissões, aprimoramentos, especialidades místicas e manobras de combate.",
+  "summary": "Tormenta (Arton) para o Sistema Daemon: regras, raças, kits/profissões, aprimoramentos, especialidades místicas e manobras de combate.",
   "areas": [
+    "regras_base",
     "racas",
     "kits",
     "aprimoramentos",
     "magias",
     "manobras_combate"
   ],
-  "groups": [],
+  "groups": [
+    {
+      "id": "regras-daemon-tormenta",
+      "title": "Regras e Sistema — Daemon Tormenta",
+      "kind": "ruleset",
+      "area": "regras_base",
+      "sectionTitle": "Regras",
+      "sections": [
+        {
+          "id": "introducao",
+          "title": "Introdução — O que é RPG / Como se Joga",
+          "area": "regras",
+          "paragraphs": [
+            "Caros Pais, Gostaríamos que vocês investissem um pouco do seu tempo lendo este texto, para entender um pouco mais à respeito de um dos hobbies que seu filho pratica, o RPG.",
+            "A sigla RPG. vem do inglês RolePlaying Game e significa \"Jogo de Interpretação de Personagem\", ou \"Jogo de faz-de-conta\". O RPG é basicamente um jogo de Teatro. Nele, seu filho e alguns amigos fazem o papel de atores, representando heróis em um mundo fictício criado pelo Diretor, também chamado Narrador ou Mestre de Jogo.",
+            "Todos os participantes criam personagens heróis como Guerreiros, Espiões, Mágicos, Samurais, Ninjas, Policiais, Detetives, Astronautas, Elfos, Anões e outros, e juntos montam um time que deve enfrentar os obstáculos, inimigos e monstros criados pelo Narrador, como em um videogame, mas utilizando lápis e papel. A Aventura rola enquanto os jogadores tomam decisões, Sentados à volta de uma mesa, anotando em papéis e jogando dados, eles precisam agir em grupo e tomar as melhores decisões para que seus Personagens consigam vencer os desafios do Narrador, da mesma maneira que um videogame, mas permitindo uma interatividade muito maior entre seu filho e os amigos dele. Jogar RPG é como assistir a um filme ou ler uma revista em quadrinhos, mas com VOCÊ participando da história!",
+            "Quais os benefícios do RPG?",
+            "Como atividade cooperativa e lúdica, os jogos de interpretação trazem muitos benefícios para seus participantes.",
+            "O RPG desenvolve a Criatividade (porque os jogadores precisam contar a história de seus Personagens para os outros jogadores), o Trabalho de equipe (o grupo só supera os desafios se mantiver unido), Cooperação (cada um dos personagens possui diferentes poderes e apenas a cooperação entre eles fará com que consigam resolver os enigmas), Socialização (pessoas tímidas usam o teatro para se soltarem mais e perderem o medo de falar em público).",
+            "Além disso, o RPG desenvolve nas crianças o gosto pela leitura e a curiosidade de buscar informações e fazer pesquisas. Escolas de Teatro usam o RPG para ensinar improviso aos seus atores, psicólogos utilizam o RPG como ludoterapia para tratar de crianças com problemas de socialização e professores utilizam o RPG em sala de aula como maneira de melhorar o aprendizado dos alunos. Muitos dos RPGistas gostam de desenhar, escrever histórias e praticar esportes com seus colegas de jogo.",
+            "Como se Joga?",
+            "Para jogar RPG, você não precisa de tabuleiro ou computador. Precisa apenas de um livro de regras, lápis, borracha, dados... e um grupo de amigos. Cada participante anota em uma Ficha os Atributos, Vantagens, Desvantagens e Poderes de seus Personagens enquanto o Mestre anota as mesmas características para os Monstros que os Personagens irão enfrentar.",
+            "Peça a seu filho que lhe mostre uma destas Fichas de Personagem e lhe explique para que servem cada um dos números. Tenho certeza que ele irá adorar fazer isso. Durante a Aventura, o Mestre coloca os desafios (um dragão que ataca uma vila indefesa, uma nave espacial cheia de piratas malignos, um bandido que aterroriza uma cidade, etc, etc...). Os Personagens, como heróis, precisam vencer os vilões e resolver os problemas.",
+            "Você Está Preparado?",
+            "Sim, está. RPG pode ser diferente de todos os outros jogos que você conhece, mas com certeza será familiar.",
+            "Em algum momento de sua vida você já brincou de faz de conta, o que é quase a mesma coisa. A única grande diferença é que, no RPG, existem regras"
+          ]
+        },
+        {
+          "id": "criacao-personagem",
+          "title": "Criação de Personagem (Passos 1–12)",
+          "area": "regras",
+          "paragraphs": [
+            "Em Tormenta a criação de um Personagem é algo bastante fácil de fazer. Normalmente existem muitas coisas a se decidir, que serão vitais para a sobrevivência e boa interpretação do seu Personagem no futuro.",
+            "Existem fatores relacionados com o background do Personagem, seus anseios, seus temores, sua história e sua caracterização.",
+            "Em Tormenta a história do seu Personagem vale muito mais do que seus pontos, pois atributos e perícias nada mais são do que um punhado de números que servem para traduzir o que o jogador imaginou para o sistema de regras.",
+            "Para a criação do seu Personagem siga esses passos e você não terá problemas. Para ajudá-lo vamos criar 4 personagens que poderão ser usados por seus jogadores.",
+            "Você sabe, o Personagem não!",
+            "Interpretar um papel é bem mais do que mudar o tom de voz e ficar repetindo frases de efeito. Quando se joga RPG, você precisa se tornar outra pessoa. Fazer o que ela faria, agir como ela agiria e, principalmente lembrarse do que ela lembraria.",
+            "Uma das coisas mais importantes ao interpretar um Personagem é separar as coisas que você sabe das coisas que ELE sabe. Lembre-se, seu Personagem é um aventureiro que está apenas começando a se aventurar pelo mundo de Arton. Ele não leu o Guia dos Monstros, portanto não sabe da fraqueza dos Trolls quanto ao fogo.",
+            "Quando cria seu Personagem, você precisa imaginar quais são suas lembranças e não pode excedê-las. O Personagem provavelmente sabe que existem Orcs, Trolls e Liches, mas dificilmente saberá de início como derrotá-los. Um Mestre realmente habilidoso pode conduzir o jogo de modo que os Jogadores NUNCA saibam mais do que seus Personagens. Para isto, basta mudar o que está no livro. SIM, Sacaneie! O Mestre PODE e DEVE fazer isto! Jogadores que confiarem demais nas informações contidas aqui podem se arrepender mais rápido do que imaginam.",
+            "Passo 1: Campanha e Cenário Na verdade esse passo não depende do jogador e sim do mestre, é ele quem vai definir quando e onde se passará a campanha. É função do mestre fornecer todos os subsídios necessários, referentes ao cenário da aventura, para que o jogador possa criar seu Personagem de acordo. O Personagem por sua vez terá essas informações como parâmetros na hora de construir seu Personagem.",
+            "Um narrador deve repreender e não autorizar um Personagem cujo histórico se distancia do proposto para a aventura.",
+            "Passo 2: Passado Imagine o que aconteceu com seu Personagem desde o seu nascimento até a data do início da Campanha.",
+            "Escreva a história primeiro, depois se preocupe com os detalhes numéricos. Números não são importantes, o importante é criar um Personagem coerente.",
+            "Escolha um nome, idade, local de nascimento, o nome de seus pais e irmãos (se tiver), como foi seu crescimento, que tipo de educação teve, e seu objetivo na vida. Para facilitar, fornecemos um pequeno questionário que deve auxiliar os Jogadores na construção de seus Personagens.",
+            "História 1. Qual é o nome dele? 2. Quantos anos ele tem? 3. Quando e onde ele nasceu e cresceu? 4. Ele conheceu seus pais? Como foi sua infância? 5. O que sente sobre eles? 6. Os pais dele ainda estão vivos? 7. Se sim, como e onde eles vivem? 8. Ele tem irmãos ou irmãs? Sabe onde eles estão e o que estão fazendo? (válido para outros tipos de parentes). 9. Ele teve amigos em sua juventude? Descreva-os. 10. Ele é casado (ou noivo ou viúvo)? Se for, como aconteceu? 11. Ele tem filhos? Se tem, como eles são? 12. Ele recebeu educação formal? Se teve até onde ela foi? 13. Como ele aprendeu o que ele faz hoje e a ser o que ele é? 14. O que seu Personagem faz para viver? 15. Por que ele escolheu essa profissão? 16. Como ele é fisicamente em detalhes? 17. Qual é o aspecto da aparência física dele que é mais distintiva ou mais facilmente notada?",
+            "Objetivos / Motivação 1. Ele tem algum objetivo? Se tem, qual é? 2. E por que ele tenta fazer isso? 3. O que ele vai fazer quando conseguir cumprir seu objetivo? 4. O que ele vai fazer se falhar? 5. O que ele considera seu maior obstáculo no seu sucesso? 6. O que ele faz para sobrepujar esses obstáculos? 7. Se ele pudesse mudar alguma coisa no mundo, o que seria? 8. Se ele pudesse mudar alguma coisa em si mesmo, o que seria? 9. Ele tem medo de alguma coisa?",
+            "Personalidade 1. Como as outras pessoas descrevem seu Personagem?",
+            "2. Como ele se auto-descreveria? 3. Qual é a atitude de seu Personagem em relação ao mundo? 4. Qual é a atitude dele em relação as outras pessoas? 5. Ele tem atitudes diferenciadas para certos grupos de pessoas?",
+            "Gostos e preferências 1. Como ele passa suas horas de lazer? 2. Que coisas ele gosta de vestir? 3. O que ele gosta mais no trabalho / ocupação? 4. O que ele gosta de comer? 5. Ele coleciona algo ou tem algum passatempo? 6. Ele tem algum animal de estimação? 7. Que tipo de companhia ele prefere? 8. E que tipo de amante?",
+            "Ambiente 1. Onde ele mora e como é esse lugar? 2. Como é o clima/atmosfera? 3. Por que ele mora lá? Quais são os problemas comuns lá? 4. Como é sua rotina diária?",
+            "O Mestre deve recompensar uma história bem construída, permitindo ao Jogador que utilize os amigos e familiares como contatos, caso seu Personagem necessite de ajuda durante o curso de uma Aventura.",
+            "Nosso exemplo será de um grupo padrão, formado por um Personagem de cada tipo possível, ou seja, um arcano, um combatente, um especialista e um sacerdote.",
+            "O primeiro Personagem dos 4 que criaremos será Eruwen Galuveriel uma elfa membro da Academia Arcana.",
+            "Órfã, Eruwen foi adotada ainda quando criança por uma família de nobres de Valkaria cuja mãe era meioelfa, durante a infância ela recebeu educação formal com as clérigas de Tannatoh, na sua juventude foi encaminhada para a Grande Academia Arcana para tornar-se uma maga. Após a morte de seus pais e sua formatura na Academia, ela, de posse da herança da família, resolveu usar o dinheiro para financiar suas aventuras em busca de informações, itens, livros ou qualquer coisa que lembre a cultura élfica.",
+            "O segundo Personagem será Ulfgar Barrend um anão guerreiro.",
+            "Nascido em Doherimm, numa família de mercadoreserrantes, Ulfgar possuía faro para bons negócios, mas não a mesma paciência que seu pai, certa vez ao passarem por Malpetrim decidiu por ali ficar, alistou-se na milícia local para aprimorar sua capacidade de combate. Após seu período de alistamento e após ouvir as várias histórias sobre tesouros que sempre circularam nas tavernas da cidade, ele decidiu trabalhar como mercenário.",
+            "O terceiro Personagem é Véndêr Class um halfling ladrão.",
+            "Nascido em Hongari o ágil Véndêr sempre teve um espírito mais audacioso do que os outros halflings, seu país era pequeno para conter sua curiosidade sobre o mundo. Quando uma caravana de mercadores passou pela região, levaram sem que soubessem um pequeno clandestino. Durante a viagem ele sobreviveu roubando um pouco de comida por dia e escondendo-se das outras pessoas, quando foi descoberto e acusado de ladrão, já estava perto de Malpetrim, rumou para a cidade e lá continuou com seu meio de sobrevivência até tentar roubar o anão errado. Ulfgar ao descobrir o pequeno ladrão ao invés de arrancar-lhe a mão decidiu aceitá-lo como parceiro.",
+            "O quarto e último Personagem é Ashram Bentovicks um humano Cavaleiro da Ordem da Luz.",
+            "Nascido de uma família de comerciantes emergentes, o pequeno burguês Ashram, quando atingiu a idade e após ter sido instruído nas maneiras da corte foi enviado para tornarse Cavaleiro, era uma honra para a família, além de garantir que assim seus pais seriam ingressados na nobreza. Ashram aprendeu com empenho os caminhos da honra e da justiça.",
+            "Ele sonhava o dia em que terminaria seu treinamento para casar-se com sua prometida, a filha de nobres amigos de seu pai. Porém quando voltou a Valkaria a elfa Eruwen, manifestou o desejo de não se casar e sim que sairia pelo mundo buscando resgatar a origem de sua raça, assim Ashram decidiu acompanhar sua amada para que pudesse garantir a sua segurança.",
+            "O grupo se reuniu quando Eruwen, acompanhada de Ashram, chegou em Malpetrim e precisava de ajuda para encontrar um local onde ela achava que poderia encontrar fragmentos de sua cultura, assim ela contrata o anão mercenário Ulfgar e seu parceiro o halfling Véndêr.",
+            "Passo 3: Características Escolha todas as características de seu Personagem e anote-as na ficha, nos locais indicados (nome, sexo, local de nascimento, profissão/kit, nível, altura, peso, idade, conduta, foco e pensamento). As informações ficaram assim: Eruwen, feminino, Valkaria, Membro da Academia Arcana, 1o nível, 1,65m, 56 Kg, 25 anos, Honrada, Introvertida, Divergente.",
+            "Ulfgar, masculino, Doherimm, Guerreiro, 1o nível, 1,30m, 80 Kg, 28 anos, Desonrada, Extrovertido, Linear. Véndêr, masculino, Hongari, Ladrão, 1o nível, 0,60cm, 15Kg, 17 anos, Desonrada, Extrovertido, Divergente. Ashram, masculino, Valkar, Cavaleiro de Khalmyr, 1o nível, 1,70m, 73Kg, 21 anos, Honrada, Introvertido, Linear.",
+            "Passo 3: Atributos Em Tormenta a distribuição dos atributos é feita distribuindo-se 85 pontos pontos entre os 8 atributos básicos.",
+            "Como regra opcional, o narrador pode permitir que cada jogar role 3d6 nove vezes e elimine o menor resultado, distribuindo o restante entre os atributos.",
+            "Coloque estes valores ao lado de cada Atributo correspondente, onde está escrito Valor Original. A segunda coluna, Modificadores faz referência ao modificador de atributo que poderá ser consultado na tabela do capítulo Atributos. Os números de Teste são usados para fazer testes referentes a um determinado Atributo. Para encontrar o Valor de Teste, multiplique o valor do Atributo por QUATRO.",
+            "Começaremos nossa distribuição respeitando a ordem original dos personagens, lembrando que os valores já levarão em consideração os modificadores raciais, ou seja, jogador, após distribuir os pontos de atributos, aplique o modificador racial caso haja algum.",
+            "O jogador de Eruwen decidiu distribuir seus pontos aumentando a sua INT, para garantir uma boa opção de recursos mágicos e reduziu seus atributos físicos, exceto a AGI, para não prejudicá-la na iniciativa, ficou da seguinte forma:",
+            "FOR 08 CON 09 DES 10 AGI 12 INT 15 PER11 WILL10 CAR 10 O jogador de Ulgar distribuiu os pontos de maneira a prevalecer os atributos essenciais de um guerreiro, FOR e CON favorecendo-se de seu bônus racial no atributo CON:",
+            "FOR 15 CON 15 DES 10 AGI 10 INT 09 PER 10 WILL10 CAR 07 O jogador do halfling Véndêr pediu ao narrador autorização para usar a regra opcional dos 3d6, ele rolou os atributos e conseguiu: 15, 14, 10, 04, 04, 06, 11, 14, 07. Apesar da regra opcional parecer vantajosa inicialmente, a aleatoriedade dos dados pode gerar resultados ruins que o jogador terá que utilizar devido a sua escolha, no caso de Vèndêr ele exclui o menor valor 04, e distribui os outros entre os atributos, ficando assim:",
+            "FOR 08 CON 09 DES 16 AGI 17 INT 14 PER 07 WILL 04 CAR 06 O jogador de Ashram, vendo a má sorte do jogador de Véndêr desiste da regra opcional e distribui seus pontos buscando um equilíbrio entre eles:",
+            "FOR 12 CON 11 DES 10 AGI 10 INT 10 PER 10 WILL 12 CAR 10 Passo 4: Vantagens raciais Esta parte da criação é rápida, mas extremamente importante, é neste momento que o jogador deverá anotar as vantagens raciais de sua raça, desde modificadores de atributos, bônus em perícias, aprimoramentos ou qualquer outro benefício e em alguns casos desvantagens da raça. O jogador deverá anotar todos os benefícios de raça em seus respectivos campos e recomenda-se que ele identifique de alguma forma essas vantagens para evitar problemas no momento de contabilizar os valores da ficha.",
+            "Eruwen é uma elfa e recebe como vantagens raciais um bônus de +2 no atributo AGI e um redutor de -2 no atributo CON, ambos já incluídos em sua ficha no passo 3. Ela também recebe o aprimoramento sentidos aguçados referentes a visão e audição, bem como recebe a manobra de combate foco em arma, selecionando a cimitarra como arma a receber o bônus.",
+            "Ela também sabe falar élfico e Valkar e recebe um bônus de +20% nas Perícias Falar Valkar e Falar Élfico.",
+            "Ulfgar é um anão e recebe como vantagens raciais um bônus de +2 em CON e m redutor de -2 em AGI, ambos já inclusos durante a distribuição dos pontos de aprimoramento. Ele também recebe gratuitamente os aprimoramentos infravisão, imunidade a venenos 1 e resistência a magia 1 e ainda recebem um bônus de +20% nas perícias Falar Valkar e Falar Anão.",
+            "Vèndêr é um halfling, e recebe como vantagens raciais um bônus de +2 de AGI e +2 de DES e uma penalidade de -2 em FOR e -2 em CON. Ainda recebe a manobra de combate foco em arma com qualquer arma de arremesso e um bônus de +5% nas perícias Salto, Alpinismo e Furtividade e um bônus de +20% nos idiomas Falar Valkar e Falar Halfling.",
+            "Ashram é um humano portanto não recebe nenhuma vantagem racial além de um bônus de +20% em Falar Valkar.",
+            "Passo 5: Profissão Nesta etapa os jogadores irão escolher uma profissão para o seu Personagem. Em Tormenta existem 4 profissões básicas: combatentes são personagens que escolheram o caminho da lâmina, sabem usar a maioria das armas e armaduras e tem as melhores capacidades e combate entre as 4 profissões.",
+            "Especialistas são personagens que trilharam o caminho da astúcia e da artimanha, possuem uma capacidade de combate limitada, com uma lista bem restrita de armas e armaduras, mas possuem conhecimentos e técnicas extremamente essenciais numa aventura.",
+            "Arcanos são personagens que escolheram o caminho da magia, suas capacidades de combate são ínfimas, possuem um poder bélico ridículo, mas compensam essa deficiência com um arsenal de magias poderosas.",
+            "Sacerdotes são os personagens que trilharam o caminho da fé, sua capacidade de combate não se compara com a dos combatentes, mas está acima da capacidade dos especialistas, possuem uma boa gama de opções entre armas e armaduras e ainda possuem os milagres que dão suporte a todos os membros do grupo.",
+            "A profissão define de forma genérica o perfil de cada Personagem, o que determina realmente suas características, perícias e aprimoramentos dentre outros fatores é a escolha do kit.",
+            "O kit é uma especialização da profissão escolhida pelo Personagem e reflete claramente suas reais capacidades. No capitulo de kits e profissões existe uma lista de kits, separados por profissão, para cada jogador escolher. Neste momento o jogador deverá escolher um kit para o seu Personagem.",
+            "O kit nada mais é do que uma lista de aprimoramentos e perícias a disposição do jogador. Essas perícias e aprimoramentos servem para orientar o jogador a como desenvolver o perfil do seu Personagem. Além de um conjunto de perícias e aprimoramentos o kit também concede uma habilidade especial pelo Personagem pertencer a determinado kit.",
+            "Os kits possuem um custo em pontos de perícias e de aprimoramentos que deverão ser descontados do total que o jogador possui. Neste momento o jogador deverá calcular seu total de pontos de perícias, esse total pode ser obtido pela fórmula:",
+            "Pontos de perícias = 10 x Idade + 5 x INT Neste momento o jogador apenas inclui na ficha as perícias e aprimoramentos recebidos pelo kit. Nos passos posteriores ele vai distribuir os valores restantes de pontos de perícia e aprimoramentos. O jogador deverá anotar os pontos de perícias ganhos por kit na coluna respectiva na ficha de Personagem.",
+            "O jogador da elfa Eruwen escolheu como kit ser membro da academia arcana, esse kit concede ao Personagem 5 pontos de focus e 3 pontos de magia , os focus foram distribuídos em Luz 3 e Ar 2 e ainda concede 3 pontos de sorte. O preço do kit é de 2 pontos de aprimoramento e 210 pontos de perícia que deverão ser descontados do total do Personagem. Os aprimoramentos concedidos pelo kit são Biblioteca mística 1 e Patrono e as perícias concedidas são:",
+            "Perícia Atributo kit Outros Falar Élfico* Falar Valkar* Foco em arma (cimitarra)*1 0 Montaria Alquimia Ocultismo Rituais Teoria da magia Esquiva Criar cajado Ignorar componente Etiqueta - nobreza Ler/Escrever Valkar Diplomacia Investigação Usar Instrumento mágico 15 Cajado 20/20 * Perícias concedidas por vantagens raciais. Eruwen possui INT 15 e 28 anos, aplicando a fórmula, chegamos ao total de 355 pontos de perícias. Como o kit de membro da academia arcana custa 210 pontos de perícias ela ainda fica com 145 pontos de perícias, (355 - 210 = 145), para distribuir nos próximos passos. Dos 5 pontos de aprimoramentos iniciais Eruwen gastou 2 pontos por ser elfo e 2 pontos pelo kit de membro da academia arcana restando apenas 1 ponto para gastar nos próximos passos.",
+            "O jogador de Ulfgar escolheu o kit de guerreiro que concede 5 pontos heróicos e 3 pontos de sorte. O preço do kit de guerreiro é de 1 ponto de aprimoramento e 205 pontos de perícias. O kit de guerreiro não concede nenhum ponto de aprimoramento e suas perícias são:",
+            "Perícia Atributo kit Outros Montaria Machado 10 30/30 Martelo 10 20/20 Briga 10 20/20 Escudo 0/30 Esquiva Alpinismo 10 Natação Intimidação Sobrevivência-cavernas Ataque Giratório Falar Valkar* Falar Anão* * Perícias concedidas por vantagens raciais. Ulfgar possui INT 09 e 25 anos o que lhe rende 295 pontos, pagando o preço do kit de 205 pontos ainda lhe restam 90 pontos para serem distribuídos posteriormente. Dos 5 pontos de aprimoramentos iniciais Ulfgar pagou 1 pelo kit de guerreiro e 2 para ser da raça dos anões, ficando com 3 pontos para distribuir posteriormente.",
+            "O jogador do halfling Véndêr escolheu o kit de ladrão, esse kit concede 3 pontos heróicos e 5 pontos de sorte. O preço do kit é de 1 ponto de aprimoramento e 235 pontos de perícias. O kit ainda concede o aprimoramento Inocência em nível 1 e as perícias do kit são:",
+            "Perícia Atributo kit Outros Montaria Avaliação de objetos Armadilhas Adaga 16 20/20 Besta 16 20/0 Escapismo Esquiva Alpinismo 5* Salto 5* Furtar Furtividade Lábia Ataque Furtivo Manuseio de fechaduras 16 30 Barganha 06 20 Investigação 14 20 Foco em arma - arremesso*1 Falar Valkar* 07 0 Falar Halfling* 07 o * Perícias concedidas por vantagens raciais.",
+            "Vèndêr possui 17 anos e INT 14 o que lhe rende 240 pontos de perícias e o kit de ladrão custa 235 pontos de perícias.",
+            "Véndêr gastou 1 ponto de aprimoramento para possuir o kit e 1 ponto por ser halfling, portanto ele ainda tem 3 pontos de aprimoramentos para gastar nos passos futuros.",
+            "O jogador do humano Ashram escolheu para si o kit de Cavaleiro de Khalmyr, esse kit concede 5 pontos de fé e 3 pontos heróicos. O preço do kit é de 210 pontos de perícias e 3 pontos de aprimoramentos. O kit concede os aprimoramentos Coragem, Hierarquia Militar e Influência (Direito) e as perícias do kit são:",
+            "Perícia Atributo kit Outros Montaria Espada longa 10 30/30 Martelo 10 20/20 Direito Teologia (Khalmyr)",
+            "Escudo 10 0/30 Esquiva Etiqueta (clero)",
+            "Ler/Escrever Valkar ' Interrogatório Diplomacia Medicina Falar Valkar* * Perícias concedidas por vantagens raciais.",
+            "Ashram possui 21 anos e INT 10 e consegue como total 260 pontos de perícia descontando o preço do kit de 220 pontos, ainda lhe sobram 40 pontos de perícias para distribuir posteriormente. A raça humana não custa pontos de aprimoramento e o kit de Cavaleiro de Khlamyr custa 3 pontos de aprimoramento deixando Ashram com 2 pontos para gastar nos passos futuros.",
+            "Neste pontos todos os personagens já terão definido suas características, já terão distribuído seus atributos, escolhido e anotado na ficha as perícias e aprimoramentos dos kits. Estamos chegando no fim da criação de personagens, ainda faltam alguns passos que são extremamente rápidos e fáceis de concluir, esses passos são: anotar as habilidades dos kits, distribuir os pontos de aprimoramentos e de perícias restantes, escolher as magias iniciais, escolher os milagres iniciais, escolher o equipamento e definir o total de pontos de vida, pontos de magia, pontos heróicos, pontos de fé, pontos de sorte e organizar suas perícias de combate.",
+            "Apesar de numerosos são passos rápidos e alguns nem chegam a atingir todos os personagens.",
+            "Passo 5: Habilidades de kit Este passo é apenas uma complementação do passo anterior e está separado apenas por um critério de organização, o jogador não precisará consultar outras partes do livro para cumprir este passo, bastando apenas anotar na ficha no campo específico como funciona a sua habilidade recebida por ter escolhido determinado kit.",
+            "Eruwen por ter escolhido o kit de membro da academia arcana possui como habilidade a capacidade de, sempre que passar de nível e fazer testes para aprender magias, realizar os testes com um grau de dificuldade a menos, bem como consumirem apenas metade do tempo para pesquisar novas magias.",
+            "Ulfgar por ser um guerreiro pode escolher 04 manobras de combate que ele receberá gratuitamente quando atingir os níveis 3, 6, 9 e 12. As manobras que ele escolheu foram: nível 3: especialização (machados), nível 6: foco em arma (machado), níveis 9 e 12: Trespassar (que custa 50).",
+            "Véndêr por ser um ladino pode escolher 04 manobras de combate de uma lista específica e recebê-las quando atingir os níveis 3,6,9 e 12. As manobras escolhidas foram: nível 3:",
+            "Saque Rápido, nível 6: Evasão, nível 9: Esquiva Sobrenatural e nível 12: Reflexos em combate.",
+            "Ashram por pertencer aos cavaleiros de Khalmyr pode gastar 1 ponto de fé para saber quando alguém está mentindo, gastar 2 pontos de fé para conceder as vantagens do aprimoramento Coragem aos seus aliados, e gastar 3 pontos de fé para receber um bônus de +10/+10 e +3 no dano sempre que lutar com criaturas malignas.",
+            "Passo 6: Aprimoramentos A próxima etapa é lapidar um pouco mais a história de seu Personagem. Para isto servem os pontos de Aprimoramento. Cada jogador possui inicialmente 5 pontos de aprimoramento que ele pode usar para comprar os aprimoramentos da lista. Ressalta-se que algumas raças e todos os kits possuem um custo em pontos de aprimoramentos que deverão ser descontados desse total, os pontos restantes podem ser usados para comprar outros aprimoramentos da lista.",
+            "Eruwen é uma elfa, o custo para pertencer a esta raça é de 2 pontos; ela ainda é membro da academia arcana, o custo deste kit é de 2 pontos de aprimoramentos, restando a ela apenas um ponto para comprar algum aprimoramento. Seu pontos ficaram assim:",
+            "Aprimoramentos Custo Elfa* (*Sentidos aguçados - visão e audição)",
+            "Membro da Academia Arcana* (*Biblioteca Mística 1 e Patrono)",
+            "Classe Social (uma casa em Valkaria)",
+            "Ulfgar é um anão o custo por pertencer a esta raça é de 2 pontos; ele escolheu o kit de guerreiro que custa 1 ponto de aprimoramento deixando-o com 2 pontos restantes. Seus aprimoramentos ficaram assim:",
+            "Aprimoramentos Custo Anão* (*infravisão, imunidade à venenos 1, resistência a magia 1)",
+            "Guerreiro Resistência à dor Saúde de ferro Deficiente físico (caolho)",
+            "-1 Vontade de ferro Véndêr é um halfling, o custo por pertencer a esta raça é de 1 ponto; ele ainda é um ladrão o que lhe custa 1 ponto de aprimoramento, sobrando 3 pontos de aprimoramentos. Seus pontos ficaram assim:",
+            "Aprimoramentos Custo Halfling Ladrão* (*inocência)",
+            "Ambidestria Rastro invisível (cidades)",
+            "Ashram é um humano e não precisa pagar pontos de aprimoramento por isso, seu kit, de Cavaleiro de Khalmyr custa 3 pontos de aprimoramento, restando-lhe 2 pontos. Seus pontos de aprimoramento ficaram assim:",
+            "Aprimoramentos Custo Humano Cavaleiro de Khalmyr* (*Coragem, Hierarquia Militar, Influência - Direito)",
+            "Patrono (Templo de Khalmyr em Valkaria)",
+            "Passo 7: Perícias Nesta etapa os personagens deverão escolher as perícias dos seus personagens. A maior parte do trabalho nesta etapa já terá sido feita devido a escolha do kit, cabendo ao jogador apenas distribuir os pontos de perícia que lhe sobrarem e então anotar o total de cada uma das perícias na coluna total na ficha do Personagem. Os pontos distribuídos nesta etapa devem ser anotados na coluna gastos da ficha de Personagem.",
+            "Eruwen ainda tem 145 pontos para distribuir e resolve gastá-los da seguinte forma:",
+            "Perícia Atributo kit Gasto Outros Arremesso Cimitarra História - elfos Avaliação de objetos 15 Furtividade Arqueologia TeologiaGlórienn 15 Ulfgar ainda possui 90 pontos para distribuir e resolve distribuí-los da seguinte forma:",
+            "Perícia Atributo kit Gasto Armeiro - Armas Brancas Armeiro - Armaduras e Escudos Barganha Combate desarmado Avaliação de Objetos Véndêr possui 05 pontos de perícias para gastar e resolve distribuí-los assim:",
+            "Perícia Atributo kit Gasto Acrobacias Ashram ainda possui 40 pontos de perícias e decide gastá-los da seguinte forma:",
+            "Perícia Atributo kit Gasto Combate montado Falar élfico Passo 8: Magias Esta etapa só é cumprida pelos personagens que possuem poderes mágicos, ou seja, que pertençam à profissão dos arcanos. Nesta etapa deve-se distribuir os pontos de focus (que no nosso caso já demos uma prévia de como vai ficar em etapas anteriores) e anotar na ficha as magias do Personagem.",
+            "Eruwen possui 5 pontos de focus para distribuir, ela deseja poder usar magias de relâmpagos, para isso ela precisa ter os caminhos do Ar e da Luz e distribui seus pontos assim:",
+            "Entender ( o )",
+            "Criar ( o )",
+            "Controlar ( o )",
+            "Relâmpagos ( Ar + Luz ) 2 As magias iniciais que Eruwen conhece pelo seu kit são: Ataque Mágico, Cancelamento de Magia, Corpo Elemental, Criatura Mágica, Explosão, Força Mágica, Invocação Elemental, Invulnerabilidade, Proteção Mágica, Proteção contra o Elemento, Transporte.",
+            "O kit de Membro da Academia Arcana ainda concede 2 rituais extras no primeiro nível, Eruwen escolhe esses rituais da lista contida no netbook Grimório: Borrão e Invisibilidade.",
+            "Passo 9: Milagres Esta etapa só é cumprida pelos personagens que possuem pontos de fé, ou seja, que pertençam à profissão dos sacerdotes. Nesta etapa deve-se escolher os milagres do Personagem, cada Personagem tem direito a 3 milagres da lista e recebem mais um milagre a cada nível que passarem.",
+            "Ashram possui 5 pontos de fé e escolhe pra si os seguinte milagres: Cura, Benção coletiva e Afastar mortos-vivos.",
+            "Passo 10: Equipamentos Nesta etapa os personagens deverão comprar os seus equipamentos e anotá-los nos campos devidos da ficha.",
+            "Cada Personagem possui 4d6 X 100 T$ para comprar os equipamentos da lista, ressalta-se que deve ser anotado a quantidade de itens comprados, o valor dos itens e seu respectivo peso.",
+            "Cada jogador rolou os seus dados e chegou aos seguintes valores: Eruwen possui 1300 tibares, Ulfgar possui 1300 tibares, Véndêr possui 1400 tibares e Ashram possui 1200 tibares. Eruwen_Tibares iniciais....................................................1.300T$ Equipamentos Qtde Preço Peso Cimitarra curta 1,5 Cajado 1,0 Cantil 2,0 Ração 1,0 Grimório 1,5 Traje da corte 3,0 Fogo grego 1,0 mochila 1,0 Tibares finais.............................................................................90 T$ Ulfgar_Tibares iniciais........................................................1.300T$ Equipamentos Qtde Preço Peso Mochila 1,0 Machado de guerra 10,0 Colelte de Malha 15,0 Cantil 2,0 Rações 1,0 Traje de explorador 4,0 Tibares Finais.........................................................................220T$ Véndêr_Tibares iniciais....................................................1.400T$ Equipamentos Qtde Preço Peso Mochila 1,0 Cantil 2,0 Rações 1,0 Traje de explorador 4,0 Adaga 1,0 Aljava 1,5 Besta Leve 3,0 Corselete de couro 7,5 Flechas (20)",
+            "1,5 Arpéu 2,0 Corda de cânhamo (15m)",
+            "5,0 Instrumentos de ladrão 0,5 Tibares Finais...........................................................................230T$ Ashram_Tibares iniciais.....................................................1.200T$ Equipamentos Qtde Preço Peso Traje de explorador 4,0 Espada longa 2,0 Colete de Malha 15,0 Escudo Grande 4,0 Tibares Finais................................................................................0 T$ Passo 11: PV ́s, PM ́s, PS, Fé, PH ́s, IP e Iniciativa.",
+            "Agora é só uma questão de matemática. Pontos de Vida são iguais à soma de Força mais Constituição divididos por 2 e arredondando para cima, soma-se ainda o modificador de CON, seja ele positivo ou negativo.",
+            "Eruwen possui FOR 08 e CON 09, aplicando a conta temos 8+9/2 = 8,5 que arredondado pra cima temos 09 pontos de vida, como o modificador de com 09 é +0, ela não soma nem subtrai nenhum valor ficando com 09 pontos de vida.",
+            "Ulfgar possui FOR 15 e CON 15, aplicando a conta temos 12+15/2 = 15 e aplicando o modificador positivo de CON seus pontos de vida aumentam em +3, ou seja, o total de pontos de vida de Ulfgar é 18.",
+            "Véndêr possui FOR 08 e CON 09, aplicando a conta temos 8+9/2 = 8,5 que arredondado pra cima daria 09 pontos de vida, como o modificador de com 09 é +0, ele não soma nem subtrai nenhum valor ficando com 09 pontos de vida.",
+            "Ashram possui FOR 12 e CON 11, aplicando a conta temos 12+11/2 = 11,5 que arredondado pra cima dá 11 pontos de vida, como o modificador de CON de Ashram é +1 seus pontos de vida vão para 12.",
+            "Os pontos de magia só são atribuídos aos personagens da profissão arcano, por padrão todos os arcanos, independente do kit começam com 5 pontos de focus e 3 pontos e magia, eles somam seu modificador de INT ao total de pontos de magia iniciais.",
+            "Eruwen distribui seus pontos de focus entre os caminhos da Luz 3 e do Ar 2, ainda conseguindo executar os rituais do caminho sencundário Relâmpagos 2 (Ar +Luz). Seus pontos e magia iniciais são 3 + seu modificador de INT +3, ficando com um total de 6 pontos de magia. Os pontos de sorte são distribuídos de acordo com o kit, lembrando que a profissão dos sacerdotes não recebe pontos de sorte. O valor dos pontos de sorte variam com a profissão escolhida e com o valor de CAR de cada Personagem. Eruwen por ser uma arcana começa com 3 pontos de sorte, seu CAR 10 não concede nenhum modificador a ser acrescido ou reduzido do valor inicial.",
+            "Ulfgar por ser um combatente começa com 3 pontos de sorte, seu CAR 07 impõe um redutor de -1, deixando-o apenas com 2 pontos de sorte.",
+            "Véndêr por ser um especialista começa com 5 pontos de sorte e seu CAR 06 implica num redutor de -2 deixando-o apenas com 3 pontos de sorte.",
+            "Ashram por ser um sacerdote não possui pontos de sorte e seu CAR 10 não implica em redutores.",
+            "Os pontos de fé só são atribuídos aos personagens da profissão sacerdote, por padrão todos os sacerdotes, independente do kit começam com 5 pontos de fé, eles somam seu modificador de WILL ao total de pontos de fé iniciais.",
+            "Ashram começa com 5 pontos de fé e soma seu modificador de WILL 12 (+2) a esse total ficando com 7 pontos de fé. Os pontos heróicos são distribuídos de acordo com o kit, lembrando que a profissão dos arcanos não recebe pontos heróicos. O valor dos pontos de heróicos variam com a profissão escolhida e com o valor de WILL de cada Personagem.",
+            "Eruwen não recebe pontos heróicos pois é uma arcana e seu modificador de Will 10 (+0) não aumenta esse valor.",
+            "Ulfgar por ser um combatente começa com 5 pontos heróicos e seu modificador de Will 10 (+0) não aumenta esse valor.",
+            "Véndêr por ser um especialista começa com 3 pontos heróicos mas seu modificador de Will 04 (-3) reduz esse valor a zero.",
+            "Ashram por ser um sacerdote começa com 3 pontos heróicos e seu modificador de Will 12 (+1) aumenta esse valor para 4.",
+            "O Índice de Proteção (IP) depende das armaduras e escudos que o Personagem estiver usando. Cada armadura ou escudo possui um IP e uma penalidade para iniciativa. Eruwen não usa armaduras portanto seu IP é 0.",
+            "Ulfgar usa um colete de malha que possui IP 4 e implica num redutor de -4 na iniciativa.",
+            "Véndêr usa um corselete de couro que possui IP 1 e implica num redutor de -2 na iniciativa.",
+            "Ashram usa um colete de malha que possui IP 4 e implica num redutor de -4 na iniciativa e um escudo grande de metal que possui IP 8 e iniciativa -2.",
+            "A iniciativa é determinada pela soma do modificador de AGI, modificador de PER, penalidade de armadura e penalidade de escudo. Esse valor será o valor de iniciativa base e é anotado na ficha no campo respectivo. A esse valor ainda será somado o modificador de arma que o Personagem estiver usando, mas isso será tratado no último passo, a seguir, agora deveremos apenas calcular a iniciativa base.",
+            "Eruwen possui AGI 12 (+1) e Per 11 (+0) e não usa nenhuma armadura ou escudo, sua iniciativa sera: 1+0+0+0 = +1 Ulfgar possui AGI 10 (+0) e PER 10(+0) e usa um colete de malha (-4), sua iniciativa será: +0+0-4+0 = -4.",
+            "Véndêr possui AGI 17 (+4) e PER 07 (-1) e usa um corselete de couro (-2), sua iniciativa será: +4-1-2+0 = +1 Ashram possui AGI 10 (+0) e PER 10 (+0) e usa um colete de malha (-4) e usa um escudo de metal pesado (-2), sua iniciativa será: +0+0-4-2= -6.",
+            "Passo 12: Perícias de combate Chegamos finalmente a última etapa, basta agora cada jogador anotar o valor de crítico de suas perícias de ataque com armas, anotar o dano de cada arma e seu respectivo modificador (FOR para armas brancas e DES para armas de longa distância) e o valor de iniciativa da arma somado ao valor de iniciativa base do jogador.",
+            "Toques Finais Agora concluímos todos os passos necessários para a construção de um Personagem, porém, todos os passos até agora fazem referência apenas à construção de personagens levando em consideração as regras do sistema.",
+            "Um Personagem precisa sim estar fundamentado em regras, respeitando todos os seus limites, porém, há um outro lado do Personagem a ser desenvolvido. Durante o desenvolvimento do seu histórico lidamos apenas com a origem e o passado do seu Personagem. É importante que o jogador pense na atual situação de seu Personagem e os motivos que o levaram a essa situação e desenvolver seus planos para o futuro.",
+            "Também é importante personalizar seu Personagem além das regras e do passado dando ele uma personalidade. Uma boa parte da personalidade pode ser desenvolvida apenas com a escolha de sua conduta, pensamento e foco, porém, existem coisas que vão além de conceitos de honra ou forma de pensar, coisas como tiques nervosos, manias, gírias, etc... Pense no seu Personagem, sua origem, sua profissão, suas perícias e seus aprimoramentos essas escolhas vão interferir no vocabulário e na opinião do seu Personagem, use esses fatores para personalizá-lo ainda mais.",
+            "Outro coisa interessante a se fazer é um desenho do seu Personagem, mesmo aqueles que não sabem desenhar podem usar de programas disponíveis gratuitamente na internet para criarem um desenho de seus personagens, eu deixo duas sugestões: O site Fábrica de Heróis: http://fabricadeherois.blogspot.com/ O site do programa HeroMachine: http://www.ugo.com/games/superherogeneratorheromachine-2-5 Os atributos são elementos importantes quando chega o momento de colocar em números as noções mais básicas do Personagem. Seja qual for o tipo de campanha, eles podem ser uma boa ferramenta para os mestres.",
+            "No Sistema Daemon, existem 8 atributos. Existem aqueles que regem o corpo da Personagem: Força, Constituição, Destreza e Agilidade. Também há aqueles que regem a mente: Inteligência, Força de Vontade, Percepção e Carisma.",
+            "Matematicamente, não há diferença entre eles, sendo iguais entre si. O que define cada um é o seu conceito e, conseqüentemente, vantagens de tê-los acima da média.",
+            "Quando o jogador for criar o Personagem é importante ele já ter uma definição em termos de conceito sobre os atributos antes de transformá-los em números, assim o jogador poderá distribuí-los da maneira que eles representem o que foi imaginado pelo jogador para o Personagem.",
+            "A tabela de atributos mostra os modificadores que deverão ser aplicados em cada um dos atributos, ela também possui uma escala de referência para o jogador, essa escala não é totalmente exata, é apenas uma referência genérica para ajudar os jogadores a construir seus personagens.",
+            "Um Personagem terá 85 pontos pra distribuir entre os seus atributos durante a criação de Personagem.",
+            "Regras e modificadores Cada atributo tem dois valores: Base e Teste. O valor de base serve justamente para ser trabalhado, pois é geralmente pequeno e de fácil uso em operações.",
+            "O Valor de Teste sempre será quatro vezes maior que o de Base.",
+            "Nos testes de atributo, geralmente o Valor Base é multiplicada por um modificador de dificuldade. Quanto maior este, maior a facilidade de realizar uma ação em roleplay e de passar no teste em regras.",
+            "Um teste de atributo é feito diante as seguintes condições: • Quando for necessário um teste de resistência de AGI caso seja um ataque em área que possa ser desviado; • de WILL caso seja um ataque de natureza mental; • ou CON caso seja um ataque que coloque em prova a condição física do PC. • Quando um teste não caracterizar uma perícia. • Quando o narrador considerar necessário."
+          ]
+        },
+        {
+          "id": "atributos",
+          "title": "Atributos e Testes",
+          "area": "regras",
+          "paragraphs": [
+            "Força (FOR)",
+            "Determina a força física do Personagem, sua capacidade muscular. A Força não tem tanta influência sobre a aparência quanto a Constituição - um monge magrinho pode ser forte o bastante para quebrar pilhas de tijolos, mas um bárbaro musculoso dificilmente poderia igualar a proeza.",
+            "A Força, como a Constituição, tem influência sobre o cálculo dos Pontos de Vida. Quanto maior a FR, mais PVs um Personagem terá. A Força também afeta o dano que ele é capaz de causar com armas de combate corporal, e peso máximo que pode carregar ou sustentar (por poucos instantes).",
+            "Acrescente o modificador de FOR ao dano causado com armas de combate corpo-a-corpo.",
+            "Constituição (CON)",
+            "Determina o vigor, saúde e condição física do Personagem. De modo geral, um Personagem com um baixo valor em Constituição é franzino e feio, enquanto um valor alto garante uma aparência musculosa. Isso não significa necessariamente que o Personagem seja forte ou fraco; isso é determinado pela Força.",
+            "A Constituição determina a quantidade de Pontos de Vida, quanto mais alta a CON, mais PVs o Personagem terá. Também serve para testar a resistência a venenos, fadiga e rigores climáticos e físicos.",
+            "Acrescente o modificador de CON ao total de pontos de vida recebidos pelo Personagem a cada nível.",
+            "Destreza (DES)",
+            "A Destreza é capacidade de utilizar com maestria os movimentos mais sutis e delicados que exigem precisão acima de tudo. A capacidade de mover uma espada, pegar flechas em pleno ar, cuspir numa mosca em pleno vôo ou escrever com os pés são uns exemplos do que se pode fazer com esse atributo.",
+            "Sua \"irmã\", a Agilidade já envolve alguns conceitos bastante iguais, porém opostos. Ela rege os movimentos que não exigem tanto a precisão, apesar dela ainda ser importante. A DES altera o dano causado com armas de combate à distância do Personagem.",
+            "Acrescente +1 ao dano causado com armas de combate à distância para cada +1 de bônus nesse atributo.",
+            "Agilidade (AGI)",
+            "Ao contrário da Destreza, a Agilidade não é válida para coisas feitas com as mãos - mas sim para o corpo todo. Com um alto valor em Agilidade um Personagem pode correr mais rápido, equilibrar-se melhor sobre um muro, dançar com mais graça, esquivar-se de ataques.",
+            "É importante fixar a diferença entre Destreza e Agilidade para fins de jogo.",
+            "Além de definir a iniciativa de cada Personagem a AGI também define o quanto cada Personagem pode se mover num turno, em termos de regras a cada turno cada Personagem pode se mover AGI metros e ainda executar uma ação, ou o dobro disso caso o jogador decida desistir de sua ação, ainda há a opção de a partir de um sucesso num teste de CON o Personagem se movimentar o triplo do valor de sua AGI ainda abdicando de sua ação.",
+            "Acrescente o modificador de AGI ao total de iniciativa do Personagem.",
+            "Inteligência (INT)",
+            "A Inteligência rege a capacidade de ver o mundo e entendê-lo. Resolver enigmas, estudar as ciências, ver os padrões imperceptíveis, imaginar respostas ou teorias do que acontece ao seu redor e traçar linhas de pensamento que cheguem a um resultado desejável.",
+            "Estes são alguns exemplos que um indivíduo com alta INT pode conseguir de maneira mais rápida que o normal. Ele se torna cada vez mais lógico, ou seja, ele consegue impor a lógica ao mundo que seus sentidos trazem a ele com maior eficiência e desempenho.",
+            "Acrescente o modificador de INT ao total de pontos de magia ganhos a cada nível.",
+            "Acrescente 5 X o modificador de INT ao total de pontos de perícia ganhos pelo Personagem cada vez que ele passar de nível.",
+            "Força de Vontade (WILL)",
+            "Enquanto a INT define a capacidade de abstração e velocidade do pensamento, a WILL define sua intensidade, sua força, assim como a perseverança da mente em não desistir dele, caso seja confrontado, seja na forma de habilidades de controle mental, seja num simples debate.",
+            "Quanto maior a WILL melhor deverá ser o argumento para que a idéia seja rejeitada pelo dono da mesma, mas isto não significa que ele se tornará uma \"mente fechada\", isto é uma característica da personalidade, distinta do atributo. De fato, as piores mentes fechadas são de pessoas com alta WILL, mas ele apenas não irá ser facilmente convencido do contrário de seu pensamento com tanta facilidade.",
+            "A WILL também representa a vontade de viver e resistir as dificuldades que os personagens passam, portanto estão diretamente ligadas à definição de pontos heróicos e por isso aumentam a quantidade de pontos heróicos de um Personagem.",
+            "Acrescente o modificador de WILL ao total de pontos de fé que um sacerdote recebe a cada nível.",
+            "Acrescente o modificador de WILL à quantidade de pontos heróicos que um Personagem recebe a cada nível.",
+            "Carisma (CAR)",
+            "Determina o charme do Personagem, sua capacidade de fazer com que outras pessoas gostem dele. Um alto valor em Carisma define também se o Personagem será bonito ou feio, porém além da beleza exterior o CAR também define a simpatia de cada Personagem, enquanto a beleza do corpo também é influenciada pela CON, esta simpatia citada é definida apenas pelo CAR, um Personagem com uma alta CON poderá ser belo, mas com baixo CAR com certeza será uma pessoa insuportável e sem amigos.",
+            "Acrescente o modificador de CAR ao total de pontos de sorte que um Personagem recebe a cada nível.",
+            "Percepção (PER)",
+            "É a capacidade de observar o mundo à volta e perceber detalhes importantes - como aquele cano de revólver aparecendo na curva do corredor. Um Personagem com alta Percepção está sempre atento a coisas estranhas e minúcias quase imperceptíveis, enquanto o sujeito com Percepção baixa é distraído e avoado.",
+            "Como a PER também representa a capacidade de receber ameaças ela também altera a iniciativa.",
+            "Acrescente o modificador de PER ao total de iniciativa de um Personagem.",
+            "Dados Atributo Modificador 1D 2D 3D 4D 5D 6D 7D 8D 9D 10D Carregar (Kg)",
+            "Velocidade (m /s)",
+            "As florestas élficas abrigam os lares dos elfos e seus aliados, não se encontram muitos anões ou meioorcs vivendo nesses locais. Por outro lado, os elfos, humanos, halflings e meioorcs são difíceis de serem encontrados nas fortalezas subterrâneas dos anões. Embora existam raças inumanas (anões, elfos, fadas, meioelfos, meioorcs e halflings) vivendo nas grandes cidades, atraídos pela possibilidade de enriquecer e acumular poder, a maior parte dos habitantes desses lugares é humana.",
+            "É possível interpretar personagens de qualquer raça e kit, mas algumas raças são mais eficientes quando seguem determinadas carreiras. Os halflings, por exemplo, podem se tornar guerreiros, mas sua baixa estatura e suas habilidades especiais lhes possibilitam se transformar em ladinos muito competentes.",
+            "A raça do Personagem oferece várias sugestões sobre o tipo de indivíduo que ele é, suas opiniões acerca das outras raças e suas motivações. Entretanto, lembre-se que as descrições das raças se aplicam à maioria dos integrantes daquela espécie. Em todas as raças, existem indivíduos diferentes da massa e o seu Personagem pode ser um deles.",
+            "Uma das primeiras coisas que um jogador terá que fazer é escolher qual será a raça do seu Personagem, pois isso determinará muito de sua história, seus costumes e sua cultura, bem como a forma que seu Personagem encara o mundo. Arton possui uma variedade imensa de raças para se escolher como personagens, cada uma tem suas características peculiares, suas habilidades e seus problemas.",
+            "A seguir será fornecida uma lista de raças que o jogador poderá escolher, cada raça tem um custo específico em pontos de aprimoramentos, que devem ser debitados do total de 5 pontos iniciais disponíveis para o jogador.",
+            "Tentamos manter um equilíbrio e baixar ao máximo o custo em pontos de aprimoramento, para isso usamos a regra do 2/3 do valor original e tentamos enxugar algumas habilidades raciais.",
+            "É muito importante que o jogador mantenha sua atenção voltada muito mais para a cultura da raça do que para as vantagens que a raça possui. Não adianta um jogador que gosta de interpretar personagens beberrões e brigões tentar colocar essas características num elfo, fica incoerente com os traços culturais da raça, seria mais verossímil se esse jogador tentasse interpretar um anão ou um meioorc ou até mesmo um humano.",
+            "É claro que conforme já foi dito anteriormente as características descritas para cada raça se enquadram apenas nos indivíduos mais comuns desta raça e espera-se que o jogador abandone os estereótipos e crie personagens diferentes, mas, o jogador deverá saber separar eficientemente que mudanças se enquadram como uma variação dos traços da raça e o que foge completamente daquilo que poderia ser considerado como parte das características daquela raça."
+          ]
+        },
+        {
+          "id": "sistema-de-magia",
+          "title": "Sistema de Magia (Caminhos, Círculos, Componentes)",
+          "area": "regras",
+          "paragraphs": [
+            "vêem, o caminho da luz também trata de magias do bem, da purificação.",
+            "Trevas: o caminho das sombras e da escuridão, morte e destruição, este caminho é mais utilizado por vilões como vampiros e demônios, heróis raramente seguem o caminho das trevas pois, este caminho está ligado ao mal e a decadência. Espíritos: este caminho lida com espíritos, fantasmas, aparições, mortos-vivos, o reino dos sonhos e alguns planos de existência, a necromancia é uma mistura de Espíritos e Trevas.",
+            "Plantas: esse caminho lida diretamente com plantas vegetais, frutas, plantas carnívoras, árvores, madeira e tudo que se refere ao reino vegetal.",
+            "Animais: este caminho lida diretamente com animais de todos os tipos desde inseto até mamíferos, com exceção de seres inteligentes, também lida com monstros.",
+            "Humanos: este caminho lida diretamente com seres humanos e semihumanos, encantamentos, mutações e leitura de mentes também entram nesse caminho.",
+            "Demônios: um caminho descoberto recentemente, lida com a Tormenta e seus demônios, é um caminho perigoso de ser trilhado.",
+            "Metamagia: este é o caminho que lida com a magia bruta, portais, detecção de magia, runas, distorção do tempo e espaço, criaturas mágicas, entre outros.",
+            "Focus Os magos possuem pontos de focus de acordo com o aprimoramento poderes mágicos, este aprimoramento define o focus inicial de um mago. Ele utiliza esses pontos de focus como o valor que define o quanto ele é avançado em determinado caminho ou forma, ao comprar este aprimoramento, o mago deve distribuir os pontos entre os caminhos e formas que escolher, desde que, no primeiro nível, não possua mais do que 4 pontos em um único caminho e mais que 10 pontos em uma única forma.",
+            "Os pontos de focus e magia crescem de acordo com a tabela da profissão Arcano do Personagem.",
+            "No Sistema Daemon usamos a seguinte nomenclatura para descrever uma magia: a forma seguida dos caminhos apropriados e o valor do focus total (soma de forma + caminhos).",
+            "Combinações de formas e caminhos são colocados separados por uma barra somando-se o menor valor entre as formas e os caminhos necessários para a realização da magia. Veja o exemplo:",
+            "Controlar o e Fogo 1 Controlar Fogo 1 Entender 1 e Água 2 Entender Água 3 Criar 1, Ar 2 Fogo 3 Criar Ar/Fogo 3 Grimório pessoal Não é porque o mago possui determinados números de pontos de focus em um caminho e forma que ele pode sair fazendo tudo o que quiser.",
+            "Para realizar um efeito mágico, o mago precisa primeiro estudar os rituais que deseja realizar, os gestos que precisa fazer, as frases, os desenhos e materiais necessários. Isso não precisa necessariamente estar escrito na forma de um Ritual, mas precisa estar escrito no que chamamos de Grimório Pessoal do mago . Quando escreve um grimório um mago muitas vezes o faz numa linguagem secreta, cifrada ou obscura, que somente ele e seus aprendizes poderão decifrar.",
+            "Armadilhas e efeitos colaterais, são acrescentados ao texto, de forma que um intruso acabe arruinando a magia se o leitor não souber evitá-los.",
+            "Ter Criar Fogo 3 não significa que o mago poderá criar fogo como bem entender. Primeiramente, o jogador precisa ter anotado quais são os efeitos mágicos que seu Personagem conhece, quais são as magias que ele sabe ou não executar, quais os materiais necessários ou coisa assim.",
+            "As magias constantes do Grimório de Arton estão apresentadas da seguinte forma:",
+            "Exigências: o mago precisa ter todas as formas e caminhos que constam em cada magia para poder realizá-lo.",
+            "Custo: para lançar suas magias, é verificado se o Personagem possui pontos de magia suficientes para realizar o efeito, esses pontos são subtraídos do total disponível e gastos na canalização da magia. Magias realizadas com focus 1,2 ou 3 custam 1 ponto de magia, magias com focus 4,5 ou 6 requerem 2 pontos de magia, magia com focus acima de 7 requerem 3 pontos de magia.",
+            "Alcance: a distância que as magias alcançam é determinada por esse parâmetro, magias instantâneas e sustentáveis se dissipam imediatamente após deixarem a área de efeito. Quando a magia dizer padrão significa que o alcance depende do focus, 50m para focus 1, 100m para focus 2, 200m para focus 3, 500m para focus 4 e 1 km para focus 5, daí por diante o alcance dobra a cada ponto de focus além de 5. Apesar destas longas distâncias é absolutamente necessário que o mago tenha contato visual com o ponto ou criatura onde a magia será lançada. Duração: Existem 3 tipos de duração para uma magia, instantânea, sustentável ou permanente.",
+            "Instantâneas: como o nome diz essas magias duram apenas um instante, elas realizam seus efeitos no momento em que são lançadas e então acabam, os pontos de magia retornam á razão de um ponto a cada meia hora.",
+            "Sustentáveis: magias sustentáveis, permanecem ativas pelo tempo que o mago quiser manter seus pontos de magia presos a ela, o mago tem total liberdade de lançar outra magia enquanto uma ou mais magias sustentáveis estiverem ativas. Os pontos de magia são armazenados e não podem ser utilizados em outros rituais enquanto o mago não dissipar o efeito que o criou, além da meia hora necessária para recuperar os pontos.",
+            "Permanentes: magias permanentes realizam seus efeitos quando são lançadas, mas o efeito se conserva ativo, como nas mágicas instantâneas os pontos de magia podem ser recuperados na primeira oportunidade.",
+            "Repare que algumas magias dizem permanente até ser cancelada, isso quer dizer que a mágica vai durar até ser interrompida por alguma outra mágica.",
+            "Magias Iniciais Os magos começam com uma quantidade de magias iguais as descritas em seus kits de profissões.",
+            "Por nível o mago recebe uma quantidade de magias igual ao modificador do seu atributo Inteligência, é claro que se por algum motivo esse modificador for negativo ele não desaprende, apenas deixa de ganhar magias extras.",
+            "Isso acontece porque durante suas aventuras, na verdade em intervalos delas, o mago concentra seus estudos no desenvolvimento de mais magias assim ao passar de nível significa também que ele chegou ao fim do estudos dessas novas magias.",
+            "Aprendendo Magias de um grimório Para aprender magias de um grimório o mago deverá ter, em primeiro lugar a magia anotada em algum lugar, então ele deverá informar ao mestre quais magias estará estudando, quando passar de nível, o mestre vai verificar qual o modificador de Inteligência do Personagem e informará quantas magias o mago poderá aprender.",
+            "Em seguida o mago realizará um teste da perícia Rituais para cada magia que ele deseja aprender, caso obtenha sucesso no teste da referida magia o mago pode adicioná-la ao seu grimório pessoal, caso tenha falhado ele perde a chance e só poderá testar no próximo nível.",
+            "Desenvolvendo suas próprias magias Em termos de jogo um Personagem leva 100 horas por nível de focus final da magia para pesquisar um efeito novo, partindo do zero. Esse tempo já leva em conta a pesquisa dos efeitos e resultados, a procura dos materiais corretos para as chaves mágicas.",
+            "O máximo de horas que um mago consegue trabalhar sem parar em uma magia é de CON + INT / 2 horas.",
+            "Após isso, ele precisa descansar por pelo menos 8 horas de sono para poder prosseguir com o seu trabalho.",
+            "Um mago pode interromper sua pesquisa quando desejar e até mesmo estudar duas magias ao mesmo tempo desde que ele informe quanto tempo dedicará a cada uma delas para a contabilização correta. Dois ou mais magos podem estudar juntos uma mesma magia, assim reduzindo o tempo necessário para aprender a magia, porém apenas 5 magos poderão estudar ao mesmo tempo uma mesma magia. Os aprendizes da Academia Arcana utilizam desta técnica para rapidamente avançarem em seus estudos, fazendo um estudo em grupo de suas magias.",
+            "Lançando um magia Agora será explicado passo a passo como uma magia é realizada. Através de dois âmbitos, o do jogador e o do Personagem. Primeiro passo:",
+            "Jogador: o jogador informa o mestre que vai lançar uma magia, ele escolhe qual magia lançar e verifica se possui pontos de magia suficientes, além disso ele precisa decidir se lançará a magia através de um ritual ou através da teoria da magia.",
+            "Magias lançadas através de rituais levam um número de rodadas para serem executadas igual ao focus da magia, no final da última rodada o arcano faz o teste e gasta os pontos de magia, se por ventura ele falhar no teste ele gastará apenas 1 ponto de magia.",
+            "Lançar uma magia por meio da teoria da magia consome apenas uma rodada mas a dificuldade do teste varia com o focus e pode ser consultada na descrição da perícia no capítulo de perícias, uma falha num teste de Teoria da Magia faz com que o Personagem perca 1 ponto de magia.",
+            "Personagem: O mago se concentra, mentaliza as magias que possui e verifica se seu corpo resistirá a descarga de energia mágica que a magia despende. Segundo passo:",
+            "Jogador: O jogador desconta os pontos de magia que a magia consumirá de seus pontos de magias atuais e faz um teste pra verificar se a magia funciona, o teste realizado será da pericia Rituais, caso ele esteja lançando um efeito que ele não conhece, ou seja, que não está em sua lista de magia ele deverá testar a pericia Teoria da Magia, deve-se atentar para o grau de dificuldades do teste.",
+            "Personagem: o Personagem concentra as energias mágicas ao redor de si e então tenta romper o véu de realidade e executar a magia. Terceiro passo:",
+            "Jogador: o jogador faz algum teste que a magia possa exigir, rola os dados para dano, ou outro efeito que a magia possua. O alvo da magia faz o teste de resistência referente, se a magia exigir algum teste por parte do alvo.",
+            "Personagem: o mago dispara a magia, ela segue seu rumo até o alvo/área desejada e então seu efeito se manifesta.",
+            "Interpretando uma magia Um fator muito importante da magia é a sua interpretação. A magia é um elemento comum um mundos da fantasia medieval, quando não é o elemento mais comum, porém nota-se em muitas mesas de rpg que sua interpretação não é levada a caráter bem como nunca vi um livro de rpg que incentiva-se a interpretação da magia.",
+            "Dos livros lidos as informações a respeito da magia referem-se sempre a dados como alcance, tempo de evocação, custo em pontos de magia ou similares, é evidente a importância dessas informações pois a magia é complicada de ser entendida e o mais simples uso pode gerar infinitas perguntas.",
+            "Mesmo assim insisto que era importante o incentivo a magia, conjurar uma bola de fogo não se resume a gastar os pontos de magia e realizar o teste. Se o jogador ler a descrição das perícias verá que o mais simples uso requer muita coisa, desde itens de ativação, frases e gestos de evocação e esses passos devem ser interpretados ou a magia perderá seu brilho interpretativo.",
+            "O jogador deve estar se perguntando sobre como interpretá-la, afinal não temos referências do mundo real do mundo da magia, é claro que ainda temos os desenhos animados, filmes e revistas em quadrinhos.",
+            "Pode-se tomar como exemplo Gandalf no filme O Senhor dos Anéis - as Duas Torres, na cena em que ele impede a passagem do Balrog há a interpretação da magia que ele evoca e fica nítido o quanto o jogo pode ficar mais emocionante se bem interpretado.",
+            "A primeira coisa a se fazer quando for interpretar o uso de suas magias é verificar algumas coisas, a saber: sua raça. Seu kit e suas formas e caminhos. Para explicar essa afirmação tomaremos como exemplo a evocação da magia Ataque mágico com focus em água invocada por diferentes tipos de personagens.",
+            "Elfo Feiticeiro: os elfos tem uma ligação natural com a magia e entendem o seu uso como algo comum como cantar uma música além disso os feiticeiros tem uma ligação com a magia diferente não necessitando repetir passo a passo a liturgia de conjuração de cada magia, portanto ao lançar um Ataque Mágico um elfo feiticeiro poderia fazê-lo cantando e então invocando a forma de um elemental de água que atinge o alvo.",
+            "Anão Mago de Combate: anões são metódicos e racionais e entendem a magia como a pedra, algo que precisa trabalhado com cuidado e perfeição, portanto um anão mago de combate traçaria alguma runa no ar ou no chão e então a destruiria com ser martelo mágico disparando então uma onda contra o alvo.",
+            "Humano mago: humanos são técnicos e sempre procuram o meio mais rápido de se chegar a um objetivo e os magos sempre procuram extrair o máximo da magia no menor tempo e com o menor custo possível, porém sua distância da magia os obrigam a cumprir certos quesitos, um humano mago poderia tirar o seu cantil da mochila e derramar a água enquanto movimenta suas mãos a água despejada se acompanharia o movimento de suas mão como se fosse uma faixa até a magia se complete e um círculo de água atinja o alvo.",
+            "Combinando Formas e Caminhos Caminhos e formas podem ser combinados para os chamados Efeitos Secundários. O arcano pode combinar caminhos diferentes para gerar novos efeitos, como combinar ar e luz para gerar eletricidade.",
+            "Para saber como a combinação funciona basta lembrar-se que leva em consideração o menor focus utilizado.",
+            "Por exemplo Criar 2 e Controlar 4 podem gerar combinações com no máximo 2pontos de focus. Se fosse Fogo 3 e Terra 1 unidos para gerar o caminho do Magma, o máximo atingido será o de menor valor ou seja, Magma 1.",
+            "Somando a combinação das formas e caminhos apresentados acima teremos Criar/Controlar 2 + Fogo/Terra 1 = Criar/Controlar Magma 3.",
+            "Pontos de Magia Cada vez que um arcano deseja realizar uma magia ele deve se concentrar, enquanto seu corpo age como uma bateria de descarga, reunindo esta energia mística e dissipando-a na forma de um efeito através dos fetiches, gestos e frases.",
+            "A relação de custo em pontos de magia por pontos de Focus demos o nome de Círculo de Magia, portanto magias realizadas com Focus1,3 ou 3 são chamadas de magia de Primeiro Círculo. Magias realizadas com Focus 4,5 ou 6 são chamadas de Segundo Círculo.",
+            "Magias realizadas com Focus 7, 8 ou 9 são chamadas de Terceiro Círculo e assim sucessivamente, onde para cada 3 pontos de focus equivale um círculo de magia.",
+            "As magias sempre consomem 1 ponto de magia para cada círculo a qual pertencem, ou seja, magias de Primeiro Círculo consomem 1 ponto de magia e magias de Terceiro Círculo consomem 3 pontos de magia.",
+            "Esse acúmulo de energia é necessário para acionar os gatilhos de cada efeito mágico, cada um deles exigindo maior concentração por parte do arcano.",
+            "Esta energia mágica fica próxima ao arcano que atua como uma bateria mística. Quando gasta, a energia se dissipa e o arcano precisa reuni-la novamente. Esse é um processo natural, que demora trinta minutos para cada ponto de magia, ou seja, o arcano recupera 1 ponto de magia a cada meia hora.",
+            "Componentes mágicos O uso da magia é um processo muito complicado e demorado, além disso para reunir a magia perto de si e utilizá-la de forma eficaz o arcano precisa recorrer a alguns componentes mágicos que o auxiliam na execução das magias. Esses componentes são divididos em 3 categorias, a saber: fetiches, gestos e frases ou como são mais conhecidos por jogadores do sistema D20: componentes materiais, gestuais ou verbais.",
+            "Para cada círculo de magia haverá a exigência de pelo menos um dos 3 tipos de componentes mágicos.",
+            "Levando isso em consideração chega-se a conclusão de que magias acima do Segundo Círculo sempre exigirão os 3 tipos de componentes mágicos, salvo se o Personagem possuir alguma especialidade mágica ou outra vantagem que o permita anular total ou parcialmente as exigências de componentes.",
+            "Fetiche: os fetiches são os componentes materiais necessários para a realização da magia, eles pode ser qualquer coisa que seja especialmente definida no momento que o arcano aprende a magia. Fetiche devem obrigatoriamente estar sendo segurados com pelo menos uma das mãos do mago no momento em que ele for conjurar a magia.",
+            "Eruwen usa como fetiche para sua magia Proteção Mágica uma jóia élfica que carrega sempre consigo, quando ela vai usar a Magia ela precisa segurar a jóia com suas mãos e se concentrar para realizar o efeito.",
+            "Gestos: os gestos são movimentos precisos e necessários para a realização da magia, eles podem ser desde um simples movimento realizando com as mãos ou uma dança, a única exigência é que um gesto como componente de magia deve obrigatoriamente usar ou os membros (superiores e inferiores) ou o tronco do arcano.",
+            "Entende-se como uso dos membros ou do tronco como o uso de sua totalidade, realizando movimentos que envolvam as extremidades de cada membro, ou seja, se um arcano usa os braços como componentes gestuais ele precisará usar nos movimentos desde os ombros até os seus dedos.",
+            "Eruwen usa como gesto para sua magia Força Mágica um movimento que consiste em erguer os braços aos céus e abaixá-los em movimentos oscilantes que imitam cobras, enquanto realiza esse movimento fortes ventos se formam ao redor do seu corpo e partem para atingir o seu alvo.",
+            "Frases: as frases são a combinação de palavras mágicas necessárias para a realização da magia, elas podem ser desde uma combinação simples de palavras, como uma canção ou a entonação de mantras, ficando a critério do jogador.",
+            "A única obrigatoriedade é que a frase escolhida deve ser composta de sons que só possam realizados com a abertura da boca e com a passagem de ar pelas cordas vocais, ou seja, é impossível lançar uma magia cujo componente seja verbal se o arcano estiver amordaçado , debaixo d ́água ou que de alguma forma ele esta impossibilitado de falar.",
+            "Eruwen usa como componente verbal para sua magia de Ataque Mágico um antigo poema élfico, enquanto ela recita os versos a energia se acumula a sua frente e na última estrofe ela sai em disparada atingindo o seu alvo.",
+            "Dano e Força Existem 3 tipos de dano quando se trata de magia, o dano único, o dano contínuo e o dano por objeto encantado.",
+            "Dano único é aquele causado uma vez em um ataque. O dano único realizado por magias nunca pode ser superior a 1D6 para cada ponto de focus utilizado, não importando que combinação o arcano utilize.",
+            "Eruwen após recitar seu poema cria um relâmpago a sua frente que ela pode disparar contra um alvo. Ela possui Luz 3 e Ar 2, ficando com Eletricidade 2, seu relâmpago causará 2D6 pontos de dano quando atingir o alvo e se dissipará logo em seguida.",
+            "O dano contínuo é um pouco mais complicado. Ele é dado pela Focus da magia até um máximo de 1 ponto de dano por Focus por rodada, mas o total de dano causado por uma magia contínua nunca pode ser maior do que 6 X Focus da magia. Neste caso a magia é dissipada sem causar danos adicionais.",
+            "Após realizar os movimentos que invocar um furacão Eruwen o lança contra um Orc, ela possui Ar 2, seu furação vai causar 2 pontos de dano por rodada até um máximo de 12 pontos de dano, até que a magia seja dissipada ou até que o Orc de alguma forma se livre do furacão.",
+            "Eruwen empunha sua jóia élfica e usa sua magia de Proteção Mágica para criar um globo de luz para protegê-la dos disparos de arqueiros orcs, ela possui Luz 3, o globo de luz vai resistir até 18 pontos de dano causados pelas flechas sendo dissipado assim que esse valor for ultrapassado.",
+            "O terceiro tipo de dano mágico é aquele causado por um objeto encantado, neste caso o dano varia de acordo com a coluna Aumento de Dano da tabela de efeitos mágicos.",
+            "Eruwen recita os cânticos e faz os gestos para conjurar sua magia de Aumento da dano sobre sua cimitarra, ela possui Luz 3, de acordo com a tabela temos que o aumento será de +1d6, a lâmina da cimitarra brilha com uma luz intensa pronta pra cortar algumas cabeças de orcs.",
+            "Contendo e dissipando ataques Um mago pode utilizar suas formas e caminhos para controlar, anular ou dissipar uma magia feita contra sua pessoa ou contra alvos que estejam no seu campo de visão.",
+            "Existem muitas possibilidades para conter ou anular magias que variam com o estilo da cada arcano. Para combater uma magia adversária o arcano precisa ter alguma magia de proteção adequada, geralmente a magia Proteção Mágica já é suficiente.",
+            "Para isso o narrador deve analisar o efeito causado pela magia (que em regras geralmente é expresso em 1D6 para cada ponto de focus da magia) de ataque e pela magia de proteção, então basta subtrair a proteção do dano causado para descobrir quanto de dano passou e vai atingir o mago defensor.",
+            "Um xamã orc conjura uma magia de ácido (Água + Trevas)",
+            "sobre Eruwen, a elfa usa sua magia de Proteção Mágica, como uma magia de contenção, para criar um globo de luz e protegê-la. Eruwen possui Luz 3 e o orc xamã possui Água 3 e Trevas 4, ficando com Ácido 3.",
+            "O xamã orc lança os dados e obtém: 4 + 2 + 6 = 12 Eruwen lança os dados e obtém: 3 + 5 + 1 = 9 Dos 12 pontos de dano causados pelo xamã Eruwen consegue bloquear apenas 9 pontos, os outros 3 pontos restantes atravessam o globo de luz e a atingem ferindo-a.",
+            "Alguns leitores podem se perguntar porque no exemplo acima o globo de luz de Eruwen foi bem mais fraco do que o exemplo dado sobre dano contínuo. A explicação é simples, no caso do dano contínuo Eruwen teve oportunidade de conjurar sua magia durante a sua ação, ou seja, ele teve tempo suficiente para preparar a sua magia.",
+            "Já no segundo caso, ela usou sua magia como uma contenção mágica, nesses casos as magias atuam de forma diferente, pois o tempo é curto demais para preparar uma magia de defesa eficaz.",
+            "Em termos de regras, a magia de contenção sempre vai se comportar de acordo com a magia que ela estiver defendendo, ficando a critério do narrador decidir se ela funciona normalmente como descrita ou se ela sofre alguma alteração."
+          ]
+        },
+        {
+          "id": "energias-heroicas",
+          "title": "Pontos Heróicos, de Sorte e de Fé",
+          "area": "regras",
+          "paragraphs": [
+            "Além dos pontos de vida normais outra forma de energia é aquela que aparece apenas em poucos indivíduos.",
+            "Uma capacidade de desafiar o perigo, de escapar a golpes mortais, de saltar para a segurança longe do hálito flamejante do dragão, de utilizar seus conhecimentos e experiências para evitar golpes e situações fatais a um ser humano comum. Enfim, rir face à morte.",
+            "Pontos heróicos funcionam como uma medida abstrata do heroísmo; eles não são exatamente pontos de vida extras, mas uma espécie de \"aura heróica\" que protege o corpo físico do aventureiro contra danos quando ele executa atos sobre-humanos de caráter heróico, como pular de um prédio para outro, ser arrastado intencionalmente por um cavalo, tentar desviar-se de flechas e virotes, enfrentar diversos capangas ou qualquer outro ato que envolva perigo e que o Personagem intencionalmente deseje participar.",
+            "Porque Pontos Heróicos?",
+            "O Sistema Daemon foi originalmente desenvolvido para ambientes realistas e a fragilidade dos humanos comuns não está de acordo com com a perfil de uma aventura de fantasia medieval.",
+            "Como fazer cavaleiros enfrentarem dúzias de mortos-vivos e saírem ilesos se apenas dois golpes de espada podem ser suficientes para matar esses cavaleiros e fazê-los se juntar aos mortos-vivos? Um sistema realista de dano não comporta o gênero de fantasia medieval e para resolver esse problema foi criado o conceito de Pontos Heróicos.",
+            "Pontos Heróicos são pontos extras que o jogador pode gastar sempre que realiza uma ação que normalmente não seria capaz de fazer.",
+            "Como funcionam?",
+            "Pontos Heróicos funcionam como pontos de vida a mais que o Personagem possui, mas que só podem ser gastos quando o Personagem executa atos heróicos. O uso de pontos heróicos não conta como uma ação, nem tampouco existe um limite de vezes que podem ser usados. Sempre que uma situação de jogo permitir, o jogador pode declarar que está usando pontos heróicos de modo a evitar danos físicos no Personagem. È importante frisar que eles não podem ser usados em situações não heróicas, por exemplo, se seu Personagem estiver dormindo e alguém cortar a garganta dele, ele não poderá usar os pontos heróicos.",
+            "As situações que não permitem o uso de pontos heróicos incluem envenenamento, ataque surpresa, quando o Personagem está sendo feito de refém de alguém, completamente indefeso, quando está dormindo, inconsciente, amarrado ou quando um Personagem não tenta se defender.",
+            "Interpretando os Pontos Heróicos Para os seres vivos ou mesmo mortos que possuam algum vigor - tais como esqueletos ou zumbis - os pontos heróicos podem ser traduzida no ímpeto de sobrevivência dos seres (heróis, combatentes, animais e criaturas em geral) engajados em combate.",
+            "Desta maneira, ao ser descontado os pontos heróicos de um Personagem não significa que este foi ferido profundamente. Ao contrário, significa um tipo de desgaste físico e emocional, justamente devido às tensões e ferimentos leves da batalha. Ou seja, o Personagem foi apenas levemente ferido ou mesmo amortecido o golpe por várias circunstâncias e algumas que fogem a simples lógica (tais como sorte, competência, astúcia, instinto de auto preservação ou táticas de combate).",
+            "O dano causado na EH pode ser interpretado também como uma perda de confiança, no cansaço, no desespero, a fadiga emocional, que o ataque causa no adversário.",
+            "Recuperando pontos heróicos Um Personagem recupera todos os seus pontos heróicos por dia, essa recuperação independe da recuperação de pontos de vida. Além disso, existem rituais e magias que recuperam o9u conferem pontos heróicos temporários.",
+            "Os incríveis reflexos dos ladrões, a mira perfeita dos arqueiros, a astúcia dos arcanos são exemplos da ação de uma força completamente caótica e consequentemente inconstante: a sorte.",
+            "Pontos de Sorte representam as bençãos que o acaso traz aos personagens, por isso mesmo os especialistas são os que tem maiores valores de pontos de sorte pois suas habilidades e profissões geralmente dependem das vicissitudes entrópicas da sorte.",
+            "Os arcanos e combatentes também possuem pontos de sorte pois algumas vezes o acaso toma a ação em seus atos, seja possibilitando uma esquiva impossível ou permitindo ao arcano deduzir quais letras compõem determinado alfabeto mágico.",
+            "Os sacerdotes não possuem pontos de sorte pois eles creditam os favores do destino a ação dos deuses e portanto não podem ser beneficiados pelo acaso.",
+            "Porque pontos de sorte?",
+            "A resposta verdadeira para esta pergunta é a seguinte:",
+            "Após termos votado que os atributos teriam modificadores, precisávamos decidir em que o modificador de CAR iria alterar no sistema, inicialmente essa alteração seria apenas na reação dos NPC ́s com os personagens, porém no livros e em netbooks tínhamos referência sobre o CAR influenciar a sorte de um Personagem, faltava decidir como a sorte funcionaria em regras.",
+            "Pode-se pensar que que a sorte já se manifesta na aleatoriedade dos dados porém concluímos que essa aleatoriedade reflete apenas a sorte do jogador e não do Personagem. Assim pensamos em como reproduzi-las então criamos os pontos de sorte.",
+            "Como funcionam?",
+            "Os pontos de sorte são utilizados como um bônus para ser aplicado em alguns testes, porém, existem situações específicas onde eles podem ou não ser usados.",
+            "Pode-se usar um ponto de sorte para mudar a categoria de um teste de Difícil para Normal, não se pode gastar pontos para tornar testes normais em fáceis.",
+            "Pode-se usar X pontos de sorte para receber um bônus de 5 * X% em qualquer teste de resistência.",
+            "Pode-se usar 3 pontos de sorte para cancelar uma falha crítica, tornando-a uma falha comum.",
+            "Pode-se usar 3 pontos de sorte para receber um bônus de +10% em Esquiva ou defesa.",
+            "Pode-se usar 2 pontos de sorte para cada 10% de bônus num teste de perícia, desde que seja uma perícia comum ou mística.",
+            "Nunca pode-se combinar os efeitos de gastos de ponto de sorte, ou seja, um Personagem que já gastou pontos de sorte para tornar um teste Difícil em Normal mas ao rolar os dados ele tirou uma falha crítica, ele não poderá usar pontos de sorte anular a falha crítica.",
+            "Recuperando pontos de sorte Os pontos de sorte são recuperados uma vez por sessão de jogo, porém só poderão ser usados na primeira cena desta sessão de jogo. Digamos que o narrador tenha interrompido a aventura numa cena onde os jogadores estavam numa festa, os jogadores só poderão usar seus pontos de sorte na próxima cena após a festa.",
+            "No mercado de uma grande cidade, os armoreiros e armeiros oferecem uma grande variedade de armas e armaduras que o ouro pode comprar. Nesses locais, são encontradas espadas práticas e resistentes e talvez até algumas lâminas élficas de qualidade excepcional. Os alquimistas vendem ácido, fogo grego e bastões de fumaça. Os magos (ou mais provavelmente, seus intermediários) vendem seus pergaminhos com magias, varinhas, armas encantadas e outros itens.",
+            "Esse capítulo descreve os objetos comuns e exóticos que os personagens poderiam comprar e como consegui-lo. Normalmente, um Personagem iniciante possui riqueza suficiente para comprar o básico: algumas armas, uma armadura adequada para seu Kit (se houver) e algum equipamento variado. Conforme o Personagem conclui aventuras e acumula riquezas, ele poderá comprar equipamentos melhores. No entanto, no inicio, as opções estão limitadas pelos seus recursos iniciais.",
+            "Observe que comprar o equipamento inicial desse modo é uma simplificação. O Personagem não entra em uma loja com todo o dinheiro necessário e compra item por item. Em vez disso, é provável que esses equipamentos sejam presentes da família do Personagem, equipamento de patronos ou material conservado desde o serviço militar, frutos de algum golpe e muitas outras possibilidades.",
+            "Assuma que qualquer Personagem possui uma troca de roupas normais, no mínimo. Escolha uma das roupas a seguir gratuitamente: traje de artesão, traje de entretenimento, traje de explorador, traje de monge, traje de plebeu, traje de sábio ou traje de viajante.",
+            "Tibar Tibar é a moeda corrente no mundo de Arton. Embora algumas regiões adotem seus próprios meios, é difícil recusar uma moeda criada por um Deus.",
+            "O Tibar de prata é a principal moeda, a tabela abaixo mostra o preço dos itens em Tibares de prata ou T$.",
+            "Existem também os Tibares de cobre que valem a décima parte de um Tibar de prata e os Tibares de ouro que valem dez vezes mais que os Tibares de prata.",
+            "Itens de prata custam 500 T$ a mais. Itens obra-prima acrescentam +10% aos testes da perícia respectiva.",
+            "Dinheiro Inicial Cada Personagem começa com uma quantidade inicial de Tibares igual a 4D6 x 100 Tibares.",
+            "Disponibilidade Todos os itens descritos nesse capítulo estão disponíveis para os personagens com recursos para comprá-los. Alguns desses itens são muito caros ou raros. Os personagens não os encontrarão no balcão de uma loja de qualquer cidade. No entanto, os"
+          ]
+        }
+      ]
+    }
+  ],
   "sections": [
     {
       "id": "humanos",
@@ -22,7 +402,7 @@
       "sectionId": "racas",
       "sectionTitle": "Raça",
       "paragraphs": [
-        "Os humanos possuem em média 1,60m a 1,80m de altura e pesam entre 80Kg a 60Kg, o tipo humano mais comum é o branco originário de Lamnor, representantes da raça negra são originários de tribos bárbaras do período anterior à colonização do continente e ainda temos os representantes da raça amarela oriundos de TamuRa, ainda existem outros tipos de humanos com diferentes traços mas em quantidade menor."
+        "Os humanos são a raça básica de Arton, são semelhantes aos humanos do mundo real possuindo a mesma variedade de traços raciais."
       ],
       "sections": [
         {
@@ -70,7 +450,7 @@
           "title": "Idiomas",
           "area": "racas",
           "paragraphs": [
-            "Valkar Os humanos são a raça básica de Arton, são semelhantes aos humanos do mundo real possuindo a mesma variedade de traços raciais."
+            "Valkar."
           ]
         },
         {
@@ -78,6 +458,7 @@
           "title": "Descrição",
           "area": "racas",
           "paragraphs": [
+            "Os humanos são a raça básica de Arton, são semelhantes aos humanos do mundo real possuindo a mesma variedade de traços raciais.",
             "Os humanos possuem em média 1,60m a 1,80m de altura e pesam entre 80Kg a 60Kg, o tipo humano mais comum é o branco originário de Lamnor, representantes da raça negra são originários de tribos bárbaras do período anterior à colonização do continente e ainda temos os representantes da raça amarela oriundos de TamuRa, ainda existem outros tipos de humanos com diferentes traços mas em quantidade menor.",
             "Os humanos da raça negra já povoam o continente artoniano formando tribos bárbaras, geralmente separatistas que guerreavam entre si por território e caça. A civilização surge com a migração dos humanos do continente de de Lamnor para o continente que hoje é chamado de Arton.",
             "A migração e estabilização dos humanos como povo governante de Arton foi possível graças a benção da deusa que os criou, Valkaria, que alimentou o instinto de ambição até que eles encontrassem uma estátua gigantesca de sua deusa onde formariam a primeira cidade do continente, hoje a capital do Reinado.",
@@ -258,7 +639,7 @@
       "sectionId": "racas",
       "sectionTitle": "Raça",
       "paragraphs": [
-        "Eles tem mais massa muscular do que os elfos e também herdaram desta raça os mesmos sentidos aguçados, suas orelhas podem ser levemente pontiagudas ou semelahante a dos humanos. Seu tom de pele pode variar do escuro (caso um dos seus pais seja um humano negro) até o claro albino, passando por todos os tons de pele intermediários, mas os meioelfos tendem a ser mais claros."
+        "Elfos e humanos são muito parecidos fisicamente e os meioelfos são o meio termo dessa união."
       ],
       "sections": [
         {
@@ -306,7 +687,7 @@
           "title": "Idiomas",
           "area": "racas",
           "paragraphs": [
-            "Valkar ou élfico Elfos e humanos são muito parecidos fisicamente e os meioelfos são o meio termo dessa união."
+            "Valkar ou élfico."
           ]
         },
         {
@@ -314,6 +695,7 @@
           "title": "Descrição",
           "area": "racas",
           "paragraphs": [
+            "Elfos e humanos são muito parecidos fisicamente e os meioelfos são o meio termo dessa união.",
             "Eles tem mais massa muscular do que os elfos e também herdaram desta raça os mesmos sentidos aguçados, suas orelhas podem ser levemente pontiagudas ou semelahante a dos humanos. Seu tom de pele pode variar do escuro (caso um dos seus pais seja um humano negro) até o claro albino, passando por todos os tons de pele intermediários, mas os meioelfos tendem a ser mais claros.",
             "Meioelfas de pais ou mães tamurianos são considerados de beleza exótica. Os meioelfos não foram criados por nenhum deus, eles surgiram em Arton após a derrota dos elfos na infinita guerra e sua migração forçada para o continente artoniano.",
             "A falta de um reino, a perda de sua cultura e a extinção do instinto de comunidade que assolaram os elfos, fez com que a aproximação de alguns membros dessa raça com os humanos fossem mais rápidas e sem os tabus de pureza étnica dos antigos senhores élficos muitos membros dessa raça começaram a desenvolver relacionamentos com os humanos, devido à semelhança destas duas raças a união entre um humano e um elfo é capaz de gerar a vida, foi assim, que surgiram em Arton os meioelfos.",
@@ -416,7 +798,7 @@
       "sectionId": "racas",
       "sectionTitle": "Raça",
       "paragraphs": [
-        "Halflings são criaturas pequeninas e beneficiam-se do seu tamanho sempre que estão em combate com seres de tamanho maior que o seu, além disso eles possuem um dom natural para a escalada, para andar sorrateiramente e para saltar obstáculos."
+        "Halflings são criaturas pequenas geralmente não ultrapassando os 90cm de altura e tendo e pesando no máximo 20 Kg, eles possuem orelhas levemente e alguns possuem pêlos nos pés e alguns possuem barbas e costeletas mas o uso de bigodes é muito raro, sua pele é geralmente rosada e seu corpo é esguio, seus olhos e cabelos geralmente são escuros."
       ],
       "sections": [
         {
@@ -464,7 +846,7 @@
           "title": "Idiomas",
           "area": "racas",
           "paragraphs": [
-            "Halfling e Valkar Halflings são criaturas pequenas geralmente não ultrapassando os 90cm de altura e tendo e pesando no máximo 20 Kg, eles possuem orelhas levemente e alguns possuem pêlos nos pés e alguns possuem barbas e costeletas mas o uso de bigodes é muito raro, sua pele é geralmente rosada e seu corpo é esguio, seus olhos e cabelos geralmente são escuros."
+            "Halfling e Valkar."
           ]
         },
         {
@@ -472,6 +854,7 @@
           "title": "Descrição",
           "area": "racas",
           "paragraphs": [
+            "Halflings são criaturas pequenas geralmente não ultrapassando os 90cm de altura e tendo e pesando no máximo 20 Kg, eles possuem orelhas levemente e alguns possuem pêlos nos pés e alguns possuem barbas e costeletas mas o uso de bigodes é muito raro, sua pele é geralmente rosada e seu corpo é esguio, seus olhos e cabelos geralmente são escuros.",
             "Halflings são criaturas pequeninas e beneficiam-se do seu tamanho sempre que estão em combate com seres de tamanho maior que o seu, além disso eles possuem um dom natural para a escalada, para andar sorrateiramente e para saltar obstáculos.",
             "Halflings ainda são peritos no arremesso de objetos, inclusive armas e suas habilidades são inigualáveis neste quesito. Os Halflings foram criados pelo deus Hynninn, porém, não se sabe realmente quando eles foram criados quando os humanos migraram para Arton não entraram em contato imediato com este povo, porém , após a expansão humana sobre o continente os humanos encontraram na ponta de uma península conhecida como Lança de Hynnin um reino já composto e organizado por este povo, sendo a tecnologia halfling muitas vezes mais avançada que a dos humanos, onde eles possuem até mesmo um sistema de esgoto que leva os dejetos para câmaras onde existem vermes da carniça que se alimentam dos restos halflings.",
             "Apesar de possuírem um reino antigo e bem organizado os halflings têm pouquíssimo poder político e inflência, pois, sempre procuraram manter-se longe dos assuntos dos \"altos\". Existem três coisas que os halflings valorizam mais do que tudo no mundo: conforto, uma boa comida e um bom fumo.",
@@ -571,7 +954,7 @@
       "sectionId": "racas",
       "sectionTitle": "Raça",
       "paragraphs": [
-        "Eles possuem corpos humanos muito musculosos e têm a cabeça bovina, podendo existir sub-raças com cabeças de antílope, búfalo, gnu, bisão e outros animais aparentados, sua pele é coberta por uma pelagem rala variando do preto ao dourado."
+        "Minotauros são humanóides de grande estatura, tendo entre 2,50m a 3,00m de altura e pesando de 100Kg a 150Kg."
       ],
       "sections": [
         {
@@ -619,7 +1002,7 @@
           "title": "Idiomas",
           "area": "racas",
           "paragraphs": [
-            "Valkar Minotauros são humanóides de grande estatura, tendo entre 2,50m a 3,00m de altura e pesando de 100Kg a 150Kg."
+            "Valkar."
           ]
         },
         {
@@ -627,6 +1010,7 @@
           "title": "Descrição",
           "area": "racas",
           "paragraphs": [
+            "Minotauros são humanóides de grande estatura, tendo entre 2,50m a 3,00m de altura e pesando de 100Kg a 150Kg.",
             "Eles possuem corpos humanos muito musculosos e têm a cabeça bovina, podendo existir sub-raças com cabeças de antílope, búfalo, gnu, bisão e outros animais aparentados, sua pele é coberta por uma pelagem rala variando do preto ao dourado.",
             "Além disso possuem cascos bipartidos ao invés de pés. Os chifres dos minotauros podem ser usados para ataque, de grande capacidade bélica os minotauros ainda tem como traço racial sua incapacidade de desenvolver poderes mágicos.",
             "Os minotauros são filhos da união do deus dos monstros Megallokk e da deusa da força e da coragem, a Divina Serpente, a criação dessa raça se deu como uma forma de resposta contra a atitude de Allihhanna de ter criado os centauros.",
@@ -887,7 +1271,7 @@
       "sectionId": "racas",
       "sectionTitle": "Raça",
       "paragraphs": [
-        "Quando um meio dragão nasce ele possui as características humanas de sua mãe, porém, com o passar do tempo começam a surgir as características dracônicas em seu corpo, escamas surgem, alguns sofrem mudanças no maxilar, outros adquirem chifres, pode ocorrer mudanças na coloração da pele e principalmente todos adquirem asas de dragão quando completam a maioridade."
+        "Meio-dragões são o fruto da união de um dragão com huma humana, o cruzamento de homens e dragoas não gera descendentes férteis."
       ],
       "sections": [
         {
@@ -935,7 +1319,7 @@
           "title": "Idiomas",
           "area": "racas",
           "paragraphs": [
-            "Valkar e dracônico Meio-dragões são o fruto da união de um dragão com huma humana, o cruzamento de homens e dragoas não gera descendentes férteis."
+            "Valkar e dracônico."
           ]
         },
         {
@@ -943,6 +1327,7 @@
           "title": "Descrição",
           "area": "racas",
           "paragraphs": [
+            "Meio-dragões são o fruto da união de um dragão com huma humana, o cruzamento de homens e dragoas não gera descendentes férteis.",
             "Quando um meio dragão nasce ele possui as características humanas de sua mãe, porém, com o passar do tempo começam a surgir as características dracônicas em seu corpo, escamas surgem, alguns sofrem mudanças no maxilar, outros adquirem chifres, pode ocorrer mudanças na coloração da pele e principalmente todos adquirem asas de dragão quando completam a maioridade.",
             "Além destas características físicas eles imunidade ao tipo de elemento de origem de seu pai. Não se sabe ao certo a origem dos meio-dragões em Arton, eles nascem da união de uma humana e um dragão e não se tem informações sobre quem teria sido o primeiro meio-dragão de Arton, isso acontece porque apesar de serem uma raça, meio-dragões não formam um povo, ou melhor, um país.",
             "Geralmente os dragões têm vários filhos e formam com eles reinos pessoais as vezes até travando guerras entre raças de dragões e meio-dragões diferentes. Um dos reinos conhecidos e temidos pelas outras raças é o reino do Dragão Scharshantallas, seus filhos meiodragões governam o reino com mãos de ferro subjugando a todos com seus poderes.",
@@ -964,7 +1349,7 @@
       "sectionId": "racas",
       "sectionTitle": "Raça",
       "paragraphs": [
-        "Os elfos negros possuem a mesma anatomia dos elfos, porém suas peles tendem a ser de cores entre o cinza e o azul e seus cabelos variam entre o branco, negro e o cinza. Suas orelhas também são pontudas, mas eles perderam os sentidos aguçados e sua habilidade com arcos e espadas, bençãos concedidas por Glórieen, que após o afastamento da raça retirou suas capacidades especiais."
+        "Subterrâneo e Valkar."
       ],
       "sections": [
         {
@@ -1012,7 +1397,7 @@
           "title": "Idiomas",
           "area": "racas",
           "paragraphs": [
-            "Élfico, Subterrâneo e Valkar."
+            "Élfico."
           ]
         },
         {
@@ -1020,6 +1405,7 @@
           "title": "Descrição",
           "area": "racas",
           "paragraphs": [
+            "Subterrâneo e Valkar.",
             "Os elfos negros possuem a mesma anatomia dos elfos, porém suas peles tendem a ser de cores entre o cinza e o azul e seus cabelos variam entre o branco, negro e o cinza. Suas orelhas também são pontudas, mas eles perderam os sentidos aguçados e sua habilidade com arcos e espadas, bençãos concedidas por Glórieen, que após o afastamento da raça retirou suas capacidades especiais.",
             "Porém, sua mudança para reinos subterrâneos fez com que desenvolvessem a habilidade de enxergar no escuro. Os elfos negros surgiram em Arton após a derrota dos elfos na infinita guerra. Com êxodo para o continente artoniano e seu posterior isolamento fez com que muitos elfos se recolhessem para meditar sobre o ocorrido, alguns destes pensadores, atingidos permanentemente pelas desgraças da guerra, viraram as costas para Glórienn, sua criadora, sentindo-se abandonados pela sua deusa.",
             "Muitos destes elfos tiveram uma postura diferente da maioria, e, ao invés, de espalharem-se pelo continente e não formarem mais comunidades, esses elfos marcados pela guerra reuniram-se em grupos cada vez maiores e caminharam para a escuridão das cavernas e lá, no subsolo, discutiram sobre o ocorrido propondo uma reorganização dos elfos e um novo ataque a aliança goblinóide, porém, poucos elfos atenderam ao chamado, devido a este motivo nova reunião foi organizada.",
@@ -1044,7 +1430,7 @@
       "sectionId": "racas",
       "sectionTitle": "Raça",
       "paragraphs": [
-        "Têm aproximadamente o mesmo tamanho de um ser humano, apesar de muitos deles atingirem os dois metros de altura e pesarem entre 100 e 120 quilos. Trogloditas não tem pele mas sim escamas, normalmente esverdeadas ou marrom claro."
+        "Seres bípedes, de aspecto reptiliano, selvagens e anfíbios."
       ],
       "sections": [
         {
@@ -1092,7 +1478,7 @@
           "title": "Idiomas",
           "area": "racas",
           "paragraphs": [
-            "Valkar e Dracônico Seres bípedes, de aspecto reptiliano, selvagens e anfíbios."
+            "Valkar e Dracônico."
           ]
         },
         {
@@ -1100,6 +1486,7 @@
           "title": "Descrição",
           "area": "racas",
           "paragraphs": [
+            "Seres bípedes, de aspecto reptiliano, selvagens e anfíbios.",
             "Têm aproximadamente o mesmo tamanho de um ser humano, apesar de muitos deles atingirem os dois metros de altura e pesarem entre 100 e 120 quilos. Trogloditas não tem pele mas sim escamas, normalmente esverdeadas ou marrom claro.",
             "Têm uma grande cauda que mede cerca de 1 metro ou até 1,5 metros de comprimento. Para nós humanos e semihumanos é muito difícil distinguir um macho de uma fêmea, devido à imensa semelhança entre os dois. Trogloditas podem enxergar no escuro normalmente, como os anões, e ainda possuem como capacidade especial a habilidade de projetar um óleo cujo odor causa náuseas em qualquer raça que não outros trogloditas.",
             "Os trogloditas foram criados por Megallokk ainda antes da expansão humana, ele os criou como irracionais, para serem criaturas que dominariam as áreas selvagens do mundo como predadores, porém, após a criação dos humanos e de outras raças, Megalokk viu a necessidade de diminuir a selvageria e animalidade de suas criaturas, que começavam a ser caçadas por outras raças e quase foram a extinção.",
@@ -1262,6 +1649,14 @@
           ]
         },
         {
+          "id": "armaduras",
+          "title": "Armaduras",
+          "area": "kits",
+          "paragraphs": [
+            "Armaduras leves e médias e Armas Brancas: Clava, Espada Montante, Maça, Machado, Mangual ou Martelo."
+          ]
+        },
+        {
           "id": "especial",
           "title": "Especial",
           "area": "kits",
@@ -1291,6 +1686,14 @@
           "area": "kits",
           "paragraphs": [
             "bárbaros desconhecem o raciocínio lógico, pois, sempre dependeram e sobreviveram pelo instinto, logo são divergentes, bárbaros não são tímidos mas, não sabem lidar com a sociedade assim são introvertidos e sua conduta varia mas geralmente são desonrados, não por maldade mas por desconhecer esse conceito."
+          ]
+        },
+        {
+          "id": "aventura",
+          "title": "Aventura",
+          "area": "kits",
+          "paragraphs": [
+            "os bárbaros apesar de viverem em tribos tendem a pelo menos durante uma fase de suas vidas, abandonar a tribo e percorrer o mundo, essa busca tende a satisfazer o espírito inquieto que acompanha todos os bárbaros."
           ]
         },
         {
@@ -1350,6 +1753,14 @@
           ]
         },
         {
+          "id": "armaduras",
+          "title": "Armaduras",
+          "area": "kits",
+          "paragraphs": [
+            "Armaduras leves,médias e pesadas, Armas Brancas: Espada Curta, Espada de 2 lâminas, Espada Longa, Espada Montante ou Lança e Armas de longa distância: Arco ou Besta."
+          ]
+        },
+        {
           "id": "especial",
           "title": "Especial",
           "area": "kits",
@@ -1379,6 +1790,14 @@
           "area": "kits",
           "paragraphs": [
             "A conduta e o foco dos Cavaleiros podem variar constantemente, seu pensamento, porém é sempre divergente, pois precisam ter o extinto sempre aceso para manter o contato com sua montaria."
+          ]
+        },
+        {
+          "id": "aventura",
+          "title": "Aventura",
+          "area": "kits",
+          "paragraphs": [
+            "Os cavaleiros alados originam-se geralmente ou dos exércitos de Vectora ou dos exércitos de Triunphus, pois estas duas cidades possuem academias de cavaleiros alados. Geralmente aventuram-se em nome de sua cidade ou de seus próprios interesses pessoais."
           ]
         },
         {
@@ -1427,6 +1846,14 @@
           "area": "kits",
           "paragraphs": [
             "Rastro invisível (Deserto) 1 e Senso de direção. . Perícias sugeridas: Montaria 20%, Escolha 1 Arma Branca 30/30 e outra 20/20, Escudo 0/30, Esquiva 30%, Rastreio (Deserto) 20%, Idiomas - Falar (Escolha 1 idioma) 20%, Tortura 20%, Escolha entre Acuidade com Arma ou Combate Montado (25), Sobrevivência (Deserto) 20%."
+          ]
+        },
+        {
+          "id": "armaduras",
+          "title": "Armaduras",
+          "area": "kits",
+          "paragraphs": [
+            "Armaduras Leves e Armas Brancas: Adaga, Cimitarra,Sabre ou Lança."
           ]
         },
         {
@@ -1562,6 +1989,14 @@
           "area": "kits",
           "paragraphs": [
             "Qualquer um, guerreiros não seguem um padrão pois a própria profissão engloba todos aqueles cujas funções não possam ser catalogadas em outros profissões."
+          ]
+        },
+        {
+          "id": "aventura",
+          "title": "Aventura",
+          "area": "kits",
+          "paragraphs": [
+            "A escolha do caminha da lâmina já coloca o guerreiro no rumo da aventura, seja para acumular riquezas e fama, seja defendendo um exército. Um Personagem guerreiro deverá ter em mente a aventura tomará a sua vida mais cedo ou mais tarde e não há fuga."
           ]
         },
         {
@@ -2025,6 +2460,14 @@
           "area": "kits",
           "paragraphs": [
             "Treinamento de Animais 30%, Montaria 20%, Armadilhas 20%, Escolha uma arma 20/20, Arco 20/0, Herbalismo 20%, Esquiva 20%, Camuflagem 20%, Rastreio (Escolha ambiente) 30%, Lutar com 2 armas (50), Sobrevivência (Escolha um ambiente) 30%."
+          ]
+        },
+        {
+          "id": "armaduras",
+          "title": "Armaduras",
+          "area": "kits",
+          "paragraphs": [
+            "Armaduras Leves e médias e Armas Brancas: Adaga, Cimitarra, Espada Curta, Espada de 2 lâminas, Sabre, ou Lança."
           ]
         },
         {
@@ -2914,7 +3357,7 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "[?] pontos de aprimoramento e 210 pontos de perícias"
+            "1 ponto de aprimoramento e 210 pontos de perícias"
           ]
         },
         {
@@ -3618,6 +4061,14 @@
           ]
         },
         {
+          "id": "armaduras",
+          "title": "Armaduras",
+          "area": "kits",
+          "paragraphs": [
+            "nenhuma armadura e Armas Brancas: Adaga, Cimitarra ou Lança."
+          ]
+        },
+        {
           "id": "especial",
           "title": "Especial",
           "area": "kits",
@@ -4251,7 +4702,7 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "[?] pontos de aprimoramentos e 190 pontos de perícias. Obrigações e"
+            "2 pontos de aprimoramentos e 190 pontos de perícias. Obrigações e"
           ]
         },
         {
@@ -4807,7 +5258,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "1 ponto de aprimoramento e 190 pontos de perícias. Obrigações e restrições: um clérigo da Mãe Noite jamais pode ser tocado pelo sol, devendo agir apenas a noite ou em subterrâneos. Caso recebe a luz do sol, seja de forma intencional ou não, perde imediatamente seus poderes que serão recuperados apenas no próximo anoitecer"
+            "1 ponto de aprimoramento e 190 pontos de perícias"
+          ]
+        },
+        {
+          "id": "obrigacoes-e-restricoes",
+          "title": "Obrigações e restrições",
+          "area": "kits",
+          "paragraphs": [
+            "um clérigo da Mãe Noite jamais pode ser tocado pelo sol, devendo agir apenas a noite ou em subterrâneos. Caso recebe a luz do sol, seja de forma intencional ou não, perde imediatamente seus poderes que serão recuperados apenas no próximo anoitecer."
           ]
         },
         {
@@ -4895,7 +5354,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "[?] pontos de aprimoramentos e 245 pontos de aprimoramentos. Obrigações e restrições: Servos de TannaToh jamais podem recusar uma missão que envolva a busca de conhecimento ou informação; investigar rumores sobre um livro perdido, procurar uma aldeia lendária, pesquisar os hábitos de uma criatura desconhecida,esse tipo de coisa. Um servo do conhecimento sempre diz a verdade, e nunca pode ser recusar a responder a uma perguntar, mesmo que isso resulte em sua própria morte. É totalmente proibido para eles esconder qualquer conhecimento"
+            "2 pontos de aprimoramentos e 245 pontos de aprimoramentos"
+          ]
+        },
+        {
+          "id": "obrigacoes-e-restricoes",
+          "title": "Obrigações e restrições",
+          "area": "kits",
+          "paragraphs": [
+            "Servos de TannaToh jamais podem recusar uma missão que envolva a busca de conhecimento ou informação; investigar rumores sobre um livro perdido, procurar uma aldeia lendária, pesquisar os hábitos de uma criatura desconhecida,esse tipo de coisa. Um servo do conhecimento sempre diz a verdade, e nunca pode ser recusar a responder a uma perguntar, mesmo que isso resulte em sua própria morte. É totalmente proibido para eles esconder qualquer conhecimento."
           ]
         },
         {
@@ -4983,7 +5450,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "2 pontos de aprimoramentos e 150 pontos de perícias. Obrigações e restrições: muitas vezes, quando ressuscita alguém, o clérigo pode experimentar uma visão durante a qual recebe uma mensagem dos deuses, uma missão para vítima que acaba de salvar. O ressuscitado deve cumprir a missão como pagamento pela dádiva recebida. Caso a vitima recuse ou desista da missão, começa a perde um ponto de vida por turno e seu corpo é reduzido a cinzas, sem que nenhum outro poder consiga trazêla de volta a vida. Servos deste deus são proibidos de matar seres inteligentes (criaturas com INT 3 ou mais). Podem combater e ate ferir essas criaturas, mas nunca matá-las"
+            "2 pontos de aprimoramentos e 150 pontos de perícias"
+          ]
+        },
+        {
+          "id": "obrigacoes-e-restricoes",
+          "title": "Obrigações e restrições",
+          "area": "kits",
+          "paragraphs": [
+            "muitas vezes, quando ressuscita alguém, o clérigo pode experimentar uma visão durante a qual recebe uma mensagem dos deuses, uma missão para vítima que acaba de salvar. O ressuscitado deve cumprir a missão como pagamento pela dádiva recebida. Caso a vitima recuse ou desista da missão, começa a perde um ponto de vida por turno e seu corpo é reduzido a cinzas, sem que nenhum outro poder consiga trazêla de volta a vida. Servos deste deus são proibidos de matar seres inteligentes (criaturas com INT 3 ou mais). Podem combater e ate ferir essas criaturas, mas nunca matá-las."
           ]
         },
         {
@@ -5071,7 +5546,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "2 pontos de aprimoramentos e 185 pontos de perícias. Obrigações e restrições: por ter sua deusa presa no reino de Deheon os clérigos de Valkaria não pode sair por muito tempo do reino, tendo sempre que voltar (no máximo 3 meses fora) para renovar sua Fé, mas enquanto o clérigo estiver fora de sua região ele deve sempre separar um tempo para rezar (pelo menos 30 minutos por dia) para sua deusa. Caso ele fique mais que 3 meses fora de Deheon ele perde todos os poderes que a deusa lhe oferece, para se recuperar deve ir até um templo da Deusa e pedir perdão"
+            "2 pontos de aprimoramentos e 185 pontos de perícias"
+          ]
+        },
+        {
+          "id": "obrigacoes-e-restricoes",
+          "title": "Obrigações e restrições",
+          "area": "kits",
+          "paragraphs": [
+            "por ter sua deusa presa no reino de Deheon os clérigos de Valkaria não pode sair por muito tempo do reino, tendo sempre que voltar (no máximo 3 meses fora) para renovar sua Fé, mas enquanto o clérigo estiver fora de sua região ele deve sempre separar um tempo para rezar (pelo menos 30 minutos por dia) para sua deusa. Caso ele fique mais que 3 meses fora de Deheon ele perde todos os poderes que a deusa lhe oferece, para se recuperar deve ir até um templo da Deusa e pedir perdão"
           ]
         },
         {
@@ -5158,7 +5641,15 @@
           "title": "Custo",
           "area": "kits",
           "paragraphs": [
-            "2 pontos de aprimoramentos e 220 pontos de perícias. Obrigações e restrições: apenas personagens femininas capazes de conjurar magia arcana, ou com qualquer habilidade similar a magia, podem ser clérigos de Wynna"
+            "2 pontos de aprimoramentos e 220 pontos de perícias"
+          ]
+        },
+        {
+          "id": "obrigacoes-e-restricoes",
+          "title": "Obrigações e restrições",
+          "area": "kits",
+          "paragraphs": [
+            "apenas personagens femininas capazes de conjurar magia arcana, ou com qualquer habilidade similar a magia, podem ser clérigos de Wynna."
           ]
         },
         {
@@ -10184,6 +10675,7 @@
     }
   ],
   "counts": {
+    "regras_blocos": 5,
     "racas": 14,
     "kits": 43,
     "aprimoramentos": 117,
@@ -10192,8 +10684,8 @@
   },
   "reviewNotes": [
     "OCR decente (8.1% palavras desconhecidas) porém fragmentado; texto unido via join_body. Conferir descrições longas e campos de kit.",
-    "Magias = especialidades místicas (criação de itens mágicos + metamagia), por decisão do usuário ('trate como magia'). O livro não traz fichas de feitiços. Sistema de magia em si fica como regras (não catalogado aqui).",
-    "Group de regras (criação de personagem/atributos/combate) ainda não incluído neste piloto — pendente."
+    "Magias = especialidades místicas (criação de itens mágicos + metamagia), por decisão do usuário ('trate como magia'). O livro não traz fichas de feitiços individuais.",
+    "Group de regras: cobertura por blocos temáticos (introdução, criação de personagem, atributos, sistema de magia, energias heroicas). Não é transcrição exaustiva — trechos muito fragmentados/exemplos foram omitidos."
   ],
-  "generatedAt": "2026-06-06T11:52:57"
+  "generatedAt": "2026-06-06T12:41:06"
 }

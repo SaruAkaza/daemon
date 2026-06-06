@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-06T11:53:05",
+  "generatedAt": "2026-06-06T12:41:29",
   "sources": [
     {
       "source": "4killers",
@@ -268,6 +268,7 @@
       "file": "daemon-tormenta.json",
       "status": "pilot_review",
       "areas": [
+        "regras_base",
         "racas",
         "kits",
         "aprimoramentos",

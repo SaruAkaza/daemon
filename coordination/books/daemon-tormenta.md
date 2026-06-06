@@ -77,17 +77,23 @@
 - Bloco **Custo antes de Descrição** em todas as categorias (regra de ouro). Raças com Custo
   explícito. Magias = especialidades místicas (decisão "trate como magia").
 
-## PENDÊNCIAS (declaradas, p/ revisão)
-1. **Group de Regras NÃO incluído** (decisão do usuário: "publicar entidades agora; regras
-   depois"). `groups: []`. Próxima etapa: criar group lore (criação de personagem,
-   atributos, combate, sistema de magia) pg 4–24 + dispersas.
-2. **Raça Humanos**: campo "Idiomas" engloba início da descrição — o OCR não pôs ponto após
-   "Valkar"; sem terminador não dá pra cortar com segurança. (13/14 raças OK.)
-3. **3 kits com custo plural sem número** (OCR perdeu o dígito), marcados `[?] pontos`:
-   Invocador Arcano, Clérigo de Marah, Clérigo de Tanna-Toh. (8 casos "ponto" singular
-   foram reconstruídos com segurança p/ "1 ponto".)
-4. **Acentos esporádicos / `0`→o**: OCR bom mas com perdas pontuais; `causa 0 dano`→`causa o
-   dano` pode ocorrer (0 como artigo vs numeral sem count-noun). Revisar na leitura.
-5. **App: hub de categorias aparece vazio no estado inicial** (dropdown mostra categorias de
-   um NPC, não as áreas globais). Parece PRÉ-EXISTENTE (não toquei app.js/index.html; único
-   erro de console = favicon 404; meu JSON valida 100%). Investigar à parte antes do `done`.
+## CORREÇÕES APLICADAS (2026-06-06, pós-feedback do usuário)
+- [x] **Group de Regras adicionado**: 1 group `regras_base` (kind ruleset), 5 blocos / 334
+  parágrafos: Introdução, Criação de Personagem (Passos 1–12), Atributos e Testes, Sistema
+  de Magia, Energias Heroicas (Pontos Heróicos/Sorte/Fé). Cobertura por blocos temáticos
+  (não transcrição exaustiva; trechos muito fragmentados/exemplos omitidos).
+- [x] **Humanos Idiomas = "Valkar."** (corrigido via `_trim_idiomas` + lista de idiomas Arton).
+- [x] **Custos confirmados pelo usuário** (override em `KIT_COST_OVERRIDE`): Invocador
+  Arcano = 1 ponto, Clérigo de Marah = 2 pontos, Clérigo de Tanna-Toh = 2 pontos.
+- [x] Bônus: "Obrigações e restrições" virou campo próprio de kit (antes colava no Custo).
+
+## PENDÊNCIAS REMANESCENTES (menores, p/ revisão na leitura)
+1. **Acentos esporádicos / `0`→o**: OCR bom mas com perdas pontuais; `causa 0 dano`→`causa o
+   dano` pode ocorrer (0 como artigo vs numeral sem count-noun).
+2. **Group de Regras — bloco "Criação de Personagem"** inclui alguns exemplos de ficha
+   fundidos como texto corrido ("FOR 08 CON 09..."). É contexto válido de regras, mas não
+   ideal visualmente. Aceitável para lore navegável.
+3. **App: hub de categorias aparece vazio no estado inicial** (dropdown mostra categorias de
+   um NPC). Parece PRÉ-EXISTENTE (não toquei app.js/index.html; único erro de console =
+   favicon 404; meu JSON valida 100% e carrega no navegador). Investigar à parte antes do
+   `done`.
