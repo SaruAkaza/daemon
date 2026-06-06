@@ -7,7 +7,6 @@ const AREAS = [
   ["kits", "Kits"],
   ["classes", "Classes"],
   ["racas", "Raças"],
-  ["linhagens", "Linhagens"],
   ["poderes", "Poderes"],
   ["magias", "Magias"],
   ["rituais", "Rituais"],
@@ -847,7 +846,7 @@ function itemTypeLabel(item) {
   if (item.kind === "enhancement") return "Aprimoramento";
   if (item.kind === "power") return "Poder";
   if (item.kind === "race") return "Raça";
-  if (item.kind === "lineage") return "Linhagem";
+  if (item.kind === "lineage") return "Raça";
   if (item.kind === "ritual") return "Ritual";
   if (item.kind === "magia") return "Magia";
   if (item.kind === "class") return "Classe";

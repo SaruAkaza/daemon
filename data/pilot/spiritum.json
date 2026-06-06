@@ -11,13 +11,13 @@
     "classes",
     "criaturas_npcs",
     "kits",
-    "linhagens",
     "poderes",
+    "racas",
     "regras_base",
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-06T11:36:18",
+  "generatedAt": "2026-06-06T11:38:35",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -2239,9 +2239,9 @@
     {
       "id": "nephalins",
       "title": "Nephalins",
-      "area": "linhagens",
-      "kind": "lineage",
-      "sectionId": "lineage",
+      "area": "racas",
+      "kind": "raca",
+      "sectionId": "raca",
       "sectionTitle": "Nephalins",
       "paragraphs": [
         "OBS: pela sua complexidade, tanto na criação de Personagem quanto na construção das diversas histórias das reencarnações de um nephalin, recomenda-se que estes Personagens sejam utilizados apenas como NPCs ou controlados por Jogadores e Mestres experientes.",
@@ -2277,7 +2277,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "linhagens",
+          "area": "racas",
           "paragraphs": [
             "OBS: pela sua complexidade, tanto na criação de Personagem quanto na construção das diversas histórias das reencarnações de um nephalin, recomenda-se que estes Personagens sejam utilizados apenas como NPCs ou controlados por Jogadores e Mestres experientes.",
             "Pela definição tradicional, os nephalins são os filhos dos anjos com as mulheres humanas. Os primeiros nephalins que a Terra conheceu foram os filhos dos 200 anjos comandados por Samyaza na chamada Segunda Rebelião (veja mais detalhes sobre isso no livro ANJOS: A CIDADE DE PRATA).",
@@ -2309,7 +2309,7 @@
         {
           "id": "criacao-de-personagem",
           "title": "Criação de Personagem",
-          "area": "linhagens",
+          "area": "racas",
           "paragraphs": [
             "Nephalins são criados com 101 pontos de atributo e pontos de perícia de acordo com sua INT e idade.",
             "O questionário de Criação de Personagens é muito importante, principalmente a parte da história referente às primeiras encarnações. O Mestre deve criar os detalhes a respeito das encarnações passadas, desenvolvendo-as de acordo com o desenrolar da campanha. Também deve determinar os principais NPCs que acompanharam o Personagem nessas encarnações, suas características e personalidade."

@@ -729,7 +729,7 @@ def make_spiritum_character_types() -> list[dict]:
         "Espectros": ("criaturas_npcs", "creature"),
         "Obsessores": ("criaturas_npcs", "creature"),
         "M\u00e9diuns": ("classes", "class"),
-        "Nephalins": ("linhagens", "lineage"),
+        "Nephalins": ("racas", "raca"),
         "Habitantes do Sonhar": ("criaturas_npcs", "creature"),
         "Loa": ("criaturas_npcs", "npc"),
     }
