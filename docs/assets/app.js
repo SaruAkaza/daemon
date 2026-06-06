@@ -5,8 +5,7 @@ const AREAS = [
   ["aprimoramentos", "Aprimoramentos"],
   ["manobras_combate", "Manobras de Combate"],
   ["kits", "Kits"],
-  ["classes", "Classes"],
-  ["racas", "Raças"],
+  ["classes_racas", "Classes e Raças"],
   ["poderes", "Poderes"],
   ["magias", "Magias"],
   ["rituais", "Rituais"],
@@ -119,6 +118,12 @@ function applyTheme(theme) {
 
 function areaLabel(area) {
   return AREAS.find(([id]) => id === area)?.[1] || area;
+}
+
+function displayArea(itemOrArea) {
+  const area = typeof itemOrArea === "string" ? itemOrArea : itemOrArea?.area;
+  if (area === "classes" || area === "racas") return "classes_racas";
+  return area;
 }
 
 function sectionText(section) {
@@ -234,7 +239,7 @@ function buildItems(book) {
 function categoryCount(area) {
   const items = globalScopedItems();
   if (area === "all") return items.length;
-  return items.filter((item) => item.area === area).length;
+  return items.filter((item) => displayArea(item) === area).length;
 }
 
 function countBy(items, getKey) {
@@ -252,14 +257,14 @@ function invalidateFilterGroups() {
 }
 
 function refreshAreaCounts() {
-  state.areaCounts = countBy(state.items, (item) => item.area);
+  state.areaCounts = countBy(state.items, displayArea);
 }
 
 function scopedFilterItems() {
   const items = globalScopedItems();
   if (!state.selectedArea) return items;
   if (state.selectedArea === "all") return items;
-  return items.filter((item) => item.area === state.selectedArea);
+  return items.filter((item) => displayArea(item) === state.selectedArea);
 }
 
 function sectionByTitle(item, title) {
@@ -371,7 +376,7 @@ function filterGroupsData() {
   const groups = [];
 
   if (!state.selectedArea || state.selectedArea === "all") {
-    const areaCounts = countBy(scopedItems, (item) => item.area);
+    const areaCounts = countBy(scopedItems, displayArea);
     groups.push({
       id: "areas",
       title: "Categorias",
@@ -407,7 +412,7 @@ function filterGroupsData() {
     }
   }
 
-  if (["aprimoramentos", "kits", "racas"].includes(state.selectedArea)) {
+  if (["aprimoramentos", "kits", "classes_racas"].includes(state.selectedArea)) {
     groups.push({
       id: "costs",
       title: "Custo",
@@ -427,7 +432,7 @@ function filterGroupsData() {
     if (circulos.length) groups.push({ id: "circulos", title: "Círculo", options: circulos });
   }
 
-  const blocksExcluded = ["all", "aprimoramentos", "racas", "poderes", "magias"];
+  const blocksExcluded = ["all", "aprimoramentos", "classes_racas", "poderes", "magias"];
   if (!blocksExcluded.includes(state.selectedArea)) {
     const blocks = optionListFromCounts(countBy(scopedItems, sectionTitles));
     if (blocks.length > 1) groups.push({ id: "blocks", title: "Blocos", options: blocks });
@@ -533,6 +538,7 @@ function itemSearchText(item) {
     item.bookTitle,
     item.sourceFile,
     item.area,
+    areaLabel(displayArea(item)),
     item.sectionTitle,
     ...(item.sections || []).map((section) => section.title),
     item.paragraphs.join(" "),
@@ -555,7 +561,7 @@ function visibleItems() {
   const query = normalize(state.query);
   const groupsById = new Map(filterGroupsData().map((group) => [group.id, group]));
   return globalScopedItems().filter((item) => {
-    if (state.selectedArea !== "all" && item.area !== state.selectedArea) return false;
+    if (state.selectedArea !== "all" && displayArea(item) !== state.selectedArea) return false;
     if (state.section !== "all" && item.kind === "npc" && item.sectionId !== state.section) return false;
     if (!filterAllows("kinds", item.kind || "section", state.filters, groupsById)) return false;
     if (!filterAllows("polarity", itemPolarityOption(item), state.filters, groupsById)) return false;
@@ -887,7 +893,7 @@ function renderDetail() {
   subtitle.textContent = [typeLabel, item.bookTitle, item.sourceFile].filter(Boolean).join(" · ");
   const tags = document.createElement("div");
   tags.className = "tag-row";
-  tags.append(pill(areaLabel(item.area), "blue"));
+  tags.append(pill(areaLabel(displayArea(item)), "blue"));
   if (item.npc) tags.append(pill(item.npc.name, "gold"));
   head.append(title, subtitle, tags);
 
