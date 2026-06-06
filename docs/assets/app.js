@@ -298,6 +298,8 @@ function itemPolarityOption(item) {
   if (Object.prototype.hasOwnProperty.call(item, "_polarityOption")) return item._polarityOption;
   if (item.area !== "aprimoramentos") return null;
   if (item.polarity) return item.polarity;
+  if (item.metadata?.polarity) return item.metadata.polarity;
+  if (item.metadata?.polaridade) return item.metadata.polaridade;
   const values = itemCostOptions(item)
     .map((cost) => Number(cost.match(/^[+-]?\d+/)?.[0]))
     .filter((value) => Number.isFinite(value));

@@ -17,7 +17,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-05T18:13:05",
+  "generatedAt": "2026-06-06T11:36:18",
   "sections": [
     {
       "id": "regra-base-spiritum",
@@ -832,7 +832,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "afinidade-com-fadas",
@@ -860,7 +863,10 @@
           "paragraphs": []
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "alma-pura",
@@ -887,7 +893,10 @@
           "paragraphs": []
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "amigo-espirito",
@@ -917,7 +926,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "anjo-da-guarda",
@@ -944,7 +956,10 @@
           "paragraphs": []
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "capaz-de-enxergar-auras",
@@ -974,7 +989,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "conjuracao",
@@ -1006,7 +1024,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "contatos-e-aliados",
@@ -1057,7 +1078,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "desalmado",
@@ -1087,7 +1111,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "empatia-sobrenatural",
@@ -1114,7 +1141,10 @@
           "paragraphs": []
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "filho-de-espectros",
@@ -1146,7 +1176,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "poderes-espectrais-ou-mediunicos",
@@ -1185,7 +1218,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "pontos-heroicos",
@@ -1220,7 +1256,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "pontos-de-fe",
@@ -1253,7 +1292,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "portal-natural",
@@ -1287,7 +1329,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "sensitivo",
@@ -1318,7 +1363,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "vampiro-psiquico",
@@ -1355,7 +1403,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "viagem-astral",
@@ -1387,7 +1438,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "ysea",
@@ -1421,7 +1475,10 @@
           ]
         }
       ],
-      "polarity": "positivo"
+      "metadata": {
+        "polarity": "positivo",
+        "polaridade": "positivo"
+      }
     },
     {
       "id": "alma-escravizada",
@@ -1430,25 +1487,31 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Alma Escravizada",
-      "paragraphs": [],
+      "paragraphs": [
+        "sua alma foi escravizada por habitantes de Spiritum, criaturas poderosas que agora o enviam para várias missões ou a cometer atos insanos. Muitas vezes, o Personagem possui livre arbítrio enquanto seu dono não necessita dele para alguma missão. Neste caso, todas as outras prioridades são ignoradas e o Personagem precisa realizar a missão imposta por seu Possuidor."
+      ],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-",
-            "3 Pontos: sua alma foi escravizada por habitantes de Spiritum, criaturas poderosas que agora o enviam para várias missões ou a cometer atos insanos. Muitas vezes, o Personagem possui livre arbítrio enquanto seu dono não necessita dele para alguma missão. Neste caso, todas as outras prioridades são ignoradas e o Personagem precisa realizar a missão imposta por seu Possuidor."
+            "-3 Pontos"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "sua alma foi escravizada por habitantes de Spiritum, criaturas poderosas que agora o enviam para várias missões ou a cometer atos insanos. Muitas vezes, o Personagem possui livre arbítrio enquanto seu dono não necessita dele para alguma missão. Neste caso, todas as outras prioridades são ignoradas e o Personagem precisa realizar a missão imposta por seu Possuidor."
+          ]
         }
       ],
-      "polarity": "negativo"
+      "metadata": {
+        "polarity": "negativo",
+        "polaridade": "negativo"
+      }
     },
     {
       "id": "alma-vendida",
@@ -1457,25 +1520,31 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Alma Vendida",
-      "paragraphs": [],
+      "paragraphs": [
+        "seu Personagem vendeu sua alma muito tempo atrás (possivelmente em uma outra encarnação!) e todas as vantagens que ele já obteve se acabaram. Está na hora de pagar seu tributo. Se o personagem morrer, ele irá direto para as mãos de seu dono. Note que, muitas vezes, o fato de um Personagem estar reencarnado em um corpo (caso ele tenha vendido sua alma em outra encarnação) significa que ele fez algum tipo de pacto ou foi ajudado por espíritos com a intenção de conseguir revérter a compra (até o tempo de sua morte). Este Aprimoramento dá excelentes ideias para Campanhas."
+      ],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-",
-            "3 Pontos: seu Personagem vendeu sua alma muito tempo atrás (possivelmente em uma outra encarnação!) e todas as vantagens que ele já obteve se acabaram. Está na hora de pagar seu tributo. Se o personagem morrer, ele irá direto para as mãos de seu dono. Note que, muitas vezes, o fato de um Personagem estar reencarnado em um corpo (caso ele tenha vendido sua alma em outra encarnação) significa que ele fez algum tipo de pacto ou foi ajudado por espíritos com a intenção de conseguir revérter a compra (até o tempo de sua morte). Este Aprimoramento dá excelentes ideias para Campanhas."
+            "-3 Pontos"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "seu Personagem vendeu sua alma muito tempo atrás (possivelmente em uma outra encarnação!) e todas as vantagens que ele já obteve se acabaram. Está na hora de pagar seu tributo. Se o personagem morrer, ele irá direto para as mãos de seu dono. Note que, muitas vezes, o fato de um Personagem estar reencarnado em um corpo (caso ele tenha vendido sua alma em outra encarnação) significa que ele fez algum tipo de pacto ou foi ajudado por espíritos com a intenção de conseguir revérter a compra (até o tempo de sua morte). Este Aprimoramento dá excelentes ideias para Campanhas."
+          ]
         }
       ],
-      "polarity": "negativo"
+      "metadata": {
+        "polarity": "negativo",
+        "polaridade": "negativo"
+      }
     },
     {
       "id": "alucinado",
@@ -1484,25 +1553,31 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Alucinado",
-      "paragraphs": [],
+      "paragraphs": [
+        "o Personagem enxerga coisas que ninguém mais vê. Ao mesmo tempo em que ele é capaz de vislumbrar pequenos aspectos do Sonhar, estas visões o assombram. Ele enxerga criaturas de Spiritum e do Sonhar como se estivessem presentes na Terra, mas ao mesmo tempo, vê coisas que não existem em outro lugar que não seja em sua própria mente."
+      ],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-",
-            "1 Ponto: o Personagem enxerga coisas que ninguém mais vê. Ao mesmo tempo em que ele é capaz de vislumbrar pequenos aspectos do Sonhar, estas visões o assombram. Ele enxerga criaturas de Spiritum e do Sonhar como se estivessem presentes na Terra, mas ao mesmo tempo, vê coisas que não existem em outro lugar que não seja em sua própria mente."
+            "-1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "o Personagem enxerga coisas que ninguém mais vê. Ao mesmo tempo em que ele é capaz de vislumbrar pequenos aspectos do Sonhar, estas visões o assombram. Ele enxerga criaturas de Spiritum e do Sonhar como se estivessem presentes na Terra, mas ao mesmo tempo, vê coisas que não existem em outro lugar que não seja em sua própria mente."
+          ]
         }
       ],
-      "polarity": "negativo"
+      "metadata": {
+        "polarity": "negativo",
+        "polaridade": "negativo"
+      }
     },
     {
       "id": "aura-de-inquietude",
@@ -1511,25 +1586,31 @@
       "kind": "aprimoramento",
       "sectionId": "aprimoramento",
       "sectionTitle": "Aura de Inquietude",
-      "paragraphs": [],
+      "paragraphs": [
+        "esse aprimoramento é o inverso do Empatia Sobrenatural. O Personagem não pode escolher se vai ou não afetar animais ou pessoas, mas se tentar ativamente fazer um animal ficar inquieto e vencer a disputa de WILL com diferença maior ou igual a 40%/o, o animal ataca qualquer ser vivo que esteja entre o espírito e ele, ou até mesmo diretamente atrás do espírito, com uma fúria cega. Não tem como afetar humanos desta maneira."
+      ],
       "sections": [
         {
           "id": "custo",
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-",
-            "1 Ponto: esse aprimoramento é o inverso do Empatia Sobrenatural. O Personagem não pode escolher se vai ou não afetar animais ou pessoas, mas se tentar ativamente fazer um animal ficar inquieto e vencer a disputa de WILL com diferença maior ou igual a 40%/o, o animal ataca qualquer ser vivo que esteja entre o espírito e ele, ou até mesmo diretamente atrás do espírito, com uma fúria cega. Não tem como afetar humanos desta maneira."
+            "-1 Ponto"
           ]
         },
         {
           "id": "descricao",
           "title": "Descrição",
           "area": "aprimoramentos",
-          "paragraphs": []
+          "paragraphs": [
+            "esse aprimoramento é o inverso do Empatia Sobrenatural. O Personagem não pode escolher se vai ou não afetar animais ou pessoas, mas se tentar ativamente fazer um animal ficar inquieto e vencer a disputa de WILL com diferença maior ou igual a 40%/o, o animal ataca qualquer ser vivo que esteja entre o espírito e ele, ou até mesmo diretamente atrás do espírito, com uma fúria cega. Não tem como afetar humanos desta maneira."
+          ]
         }
       ],
-      "polarity": "negativo"
+      "metadata": {
+        "polarity": "negativo",
+        "polaridade": "negativo"
+      }
     },
     {
       "id": "sombras",
@@ -1539,6 +1620,7 @@
       "sectionId": "aprimoramento",
       "sectionTitle": "Sombras",
       "paragraphs": [
+        "o Personagem pecou demais quando em vida, e não obteve perdão algum. Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las.",
         "As sombras não podem ser enfrentadas normalmente pelo Personagem porque são criadas com sua própria essência, sendo consideradas indestrutíveis por ele. Apenas alguns rituais secretos são capazes de afastá-las por algum tempo ou destruí-la durante alguns meses ou anos."
       ],
       "sections": [
@@ -1547,8 +1629,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-",
-            "3 Pontos: o Personagem pecou demais quando em vida, e não obteve perdão algum. Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las."
+            "-3 Pontos"
           ]
         },
         {
@@ -1556,11 +1637,15 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
+            "o Personagem pecou demais quando em vida, e não obteve perdão algum. Quando desencarnou seu espírito deveria ter sido levado ao inferno, mas por algum motivo (definido pelo Mestre) ele conseguiu evitar esse destino, permanecendo na Terra. O problema é que agora ele é perseguido por um grupo de sombras que podem manifestar-se a qualquer hora e local para buscá-lo, e passa sua vida tentando se esconder delas, além de procurar incansavelmente uma maneira de derrotá-las.",
             "As sombras não podem ser enfrentadas normalmente pelo Personagem porque são criadas com sua própria essência, sendo consideradas indestrutíveis por ele. Apenas alguns rituais secretos são capazes de afastá-las por algum tempo ou destruí-la durante alguns meses ou anos."
           ]
         }
       ],
-      "polarity": "negativo"
+      "metadata": {
+        "polarity": "negativo",
+        "polaridade": "negativo"
+      }
     },
     {
       "id": "vidente",

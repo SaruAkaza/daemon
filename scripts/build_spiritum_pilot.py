@@ -208,8 +208,11 @@ def clean_block(text: str) -> list[str]:
 
 def split_cost_options(costs: list[str]) -> list[str]:
     split_costs: list[str] = []
-    cost_marker = re.compile(r"(?<!^)(?=\s*-?\d+\s+Pontos?:)", flags=re.IGNORECASE)
+    cost_marker = re.compile(r"(?<!^)(?<![-+])(?=\s*-?\d+\s+Pontos?:)", flags=re.IGNORECASE)
     for cost in costs:
+        cost = normalize_text(cost)
+        if cost.startswith("- "):
+            cost = "-" + cost[2:].lstrip()
         parts = [normalize_text(part) for part in cost_marker.split(cost) if part.strip()]
         split_costs.extend(parts or [cost])
     return split_costs
@@ -280,6 +283,10 @@ def sectioned_from_pages(title: str, pages: Iterable[int], headings: list[str], 
 
 
 def aprimoramento(title: str, cost: list[str], description: list[str], polarity: str) -> dict:
+    metadata = {
+        "polarity": polarity,
+        "polaridade": polarity,
+    }
     return item(
         title,
         "aprimoramentos",
@@ -289,7 +296,7 @@ def aprimoramento(title: str, cost: list[str], description: list[str], polarity:
             block("Custo", "aprimoramentos", cost),
             block("Descrição", "aprimoramentos", description),
         ],
-        polarity=polarity,
+        metadata=metadata,
     )
 
 
@@ -342,6 +349,22 @@ def make_aprimoramentos() -> list[dict]:
     for index, (_, start_end, title, polarity) in enumerate(positions):
         next_start = positions[index + 1][0] if index + 1 < len(positions) else len(text)
         paragraphs = clean_block(text[start_end:next_start])
+        merged_paragraphs: list[str] = []
+        skip_next = False
+        for paragraph_index, paragraph in enumerate(paragraphs):
+            if skip_next:
+                skip_next = False
+                continue
+            if (
+                paragraph == "-"
+                and paragraph_index + 1 < len(paragraphs)
+                and re.match(r"^\d[\d\s/-]*(?:Ponto|ponto)", paragraphs[paragraph_index + 1])
+            ):
+                merged_paragraphs.append(normalize_text(f"-{paragraphs[paragraph_index + 1]}"))
+                skip_next = True
+            else:
+                merged_paragraphs.append(paragraph)
+        paragraphs = merged_paragraphs
         raw_costs = [p for p in paragraphs if re.match(r"^-?\d[\d\s/-]*(?:Ponto|ponto)", p)]
         if not raw_costs:
             raw_costs = [p for p in paragraphs if "ponto" in p.lower() and len(p) < 120]
