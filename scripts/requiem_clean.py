@@ -101,8 +101,12 @@ _DICE_L_RE = re.compile(r"\b[lI]d(\d)")
 
 # Digit '0' standing in for the article 'o'/'O': only when isolated as a whole
 # token (surrounded by whitespace / sentence start), never adjacent to digits,
-# so numeric ranges in tables (e.g. '01-55', '7-0') are preserved.
-_ZERO_ART_RE = re.compile(r"(^|(?<=\s))0(?=\s)")
+# so numeric ranges in tables (e.g. '01-55', '7-0') are preserved. Also skip
+# when followed by a counting noun ('0 pontos', '0 vezes', '0 metros'): there
+# the '0' is a genuine numeral, not the article 'o'.
+_COUNT_NOUN = (r"pontos?|pts?|vezes|vez|metros?|m|horas?|rodadas?|turnos?|n[íi]veis|"
+               r"n[íi]vel|dados?|d[ée]cimos?|por\s+cento|%")
+_ZERO_ART_RE = re.compile(r"(^|(?<=\s))0(?=\s)(?!\s*(?:" + _COUNT_NOUN + r")\b)")
 
 
 def fix_ocr(text: str) -> str:

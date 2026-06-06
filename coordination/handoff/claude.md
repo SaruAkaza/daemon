@@ -15,7 +15,15 @@
     aleatório de itens). Aditivo.
   Se for integrar esses, faz merge antes.
 - Escopo combinado com o usuário: entrego **Volume 1 (A–H)** primeiro como `needs_review`.
-- **REVERSÃO:** `Guia_de_Itens_Magicos` → status `blocked`. OCR severamente degradado:
+- **DAEMON TORMENTA — entrega 1 publicada (needs_review):** 223 entidades (racas 14,
+  kits 43, aprimoramentos 117, magias 19, manobras_combate 30). Scripts novos:
+  `build_daemon_tormenta.py`, `analyze_daemon_tormenta.py`. Pipeline OK (índice 23 fontes).
+  Group de Regras fica p/ etapa 2 (decisão do usuário). Pendências em
+  `coordination/books/daemon-tormenta.md`.
+  - **Editei `scripts/requiem_clean.py` de novo (aditivo):** refinei `_ZERO_ART_RE` p/ não
+    converter `0`→o antes de count-noun (`0 pontos` preservado). Anjos seguem intactos
+    (normalize não chama fix_ocr). Se for integrar, faz merge.
+- **REVERSÃO:** `Guia_de_Itens_Magicos` → status `blocked` (movido p/ Livros/word/corrigir). OCR severamente degradado:
   Vol1 com ~99% dos acentos perdidos e 39% das palavras irreconhecíveis. Estrutura já
   mapeada (pg 18–146 = Vol1) e `fix_ocr()` criado, mas catalogar este texto = retrabalho
   garantido. Aguardando fonte de melhor qualidade. Decisão do usuário: mover p/ correção

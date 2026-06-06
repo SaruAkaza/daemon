@@ -7,9 +7,9 @@
     {
       "file": "Daemon_Tormenta_OCR_alta_qualidade.docx",
       "source": "daemon-tormenta",
-      "status": "in_progress",
+      "status": "needs_review",
       "branch": "claude-pilots",
-      "notes": "Reivindicado 2026-06-05. Lista Claude item 11 (0.26 MB). OCR triado: 8.1% desconhecidas (melhor da fila). Levantando estrutura."
+      "notes": "Entrega 1 (entidades): 223 seções — racas 14, kits 43, aprimoramentos 117, magias 19, manobras_combate 30. Pipeline OK (build_pilot_index 23 fontes, validate_data OK, node --check OK, JSON validado no navegador). Pendências em coordination/books/daemon-tormenta.md: group de Regras (próxima etapa), 1 raça (Idiomas/Humanos), 3 kits custo plural [?], hub da app vazio (parece pré-existente). Aguardando validação visual."
     },
     {
       "file": "Guia_de_Itens_Magicos_OCR_alta_qualidade.docx",
