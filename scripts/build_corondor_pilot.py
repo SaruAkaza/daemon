@@ -532,6 +532,23 @@ def race_or_creature(title: str, paragraphs: list[str]) -> list[dict]:
     return [race, creature]
 
 
+def make_race(title: str, paragraphs: list[str], kind: str = "race") -> dict:
+    return typed_item(title, "racas", kind, [section("descricao", "Descrição", "racas", paragraphs)], paragraphs)
+
+
+def make_creature(title: str, paragraphs: list[str], kind: str = "creature") -> dict:
+    blocks: list[dict] = []
+    attrs = [value for value in paragraphs if re.search(r"\b(CON|FOR|FR)\b.*\b(DEX|AGI)\b", value)]
+    skills = [value for value in paragraphs if value.startswith(("Perícias", "Pericias")) or "Dano" in value or "#Ataques" in value]
+    abilities = [value for value in paragraphs if value not in attrs and value not in skills]
+    if attrs:
+        blocks.append(section("atributos", "Atributos", "criaturas_npcs", attrs))
+    if skills:
+        blocks.append(section("pericias-e-combate", "Perícias e Combate", "criaturas_npcs", skills))
+    blocks.append(section("habilidades", "Habilidades", "criaturas_npcs", abilities))
+    return typed_item(title, "criaturas_npcs", kind, blocks, paragraphs)
+
+
 def build_races_and_lore(paragraphs: list[str]) -> list[dict]:
     items: list[dict] = []
     lore_sections = [
@@ -541,10 +558,23 @@ def build_races_and_lore(paragraphs: list[str]) -> list[dict]:
         section("aves", "Aves", "cenarios_lore", collect(paragraphs, 146, 150)),
     ]
     items.append(typed_item("Cenarios/Lore - Corondor", "cenarios_lore", "setting", lore_sections))
-    items.extend(race_or_creature("Insectóides", collect(paragraphs, 150, 168)))
-    items.extend(race_or_creature("Minotauros", collect(paragraphs, 178, 183)))
-    items.extend(race_or_creature("Draconianos", collect(paragraphs, 183, 227)))
-    items.extend(race_or_creature("Mecanóides", collect(paragraphs, 497, 561)))
+    items.extend(race_or_creature("Insectóides", collect(paragraphs, 150, 153)))
+    items.extend(race_or_creature("Mantídeos", collect(paragraphs, 153, 161)))
+    items.extend(race_or_creature("Nerubiano", collect(paragraphs, 161, 165)))
+    items.extend(race_or_creature("Drider", collect(paragraphs, 165, 168)))
+    items.extend(race_or_creature("Minotauros", collect(paragraphs, 178, 181)))
+    items.extend(race_or_creature("Draconianos", collect(paragraphs, 183, 193)))
+    for title, start, end in [
+        ("Aurak", 193, 203),
+        ("Baaz", 203, 208),
+        ("Bozak", 208, 214),
+        ("Kapak", 214, 220),
+        ("Sivak", 220, 227),
+    ]:
+        values = collect(paragraphs, start, end)
+        items.append(make_race(title, values, "draconian_subrace"))
+        items.append(make_creature(title, values, "draconian_creature"))
+    items.append(make_race("Mecanóides", collect(paragraphs, 559, 561), "race"))
     return items
 
 
@@ -562,7 +592,18 @@ def build_items(paragraphs: list[str]) -> list[dict]:
                 section("armaduras-e-escudos", "Armaduras e Escudos", "itens_equipamentos", collect(values, 697, 714)),
                 section("inscricoes-magicas-dos-anoes", "Inscrições Mágicas dos Anões", "itens_equipamentos", collect(values, 714, 794)),
             ],
-        )
+        ),
+        typed_item(
+            "Mecanóides - Corpos e Componentes",
+            "itens_equipamentos",
+            "item_rule",
+            [
+                section("conceito", "Conceito", "itens_equipamentos", collect(values, 497, 505)),
+                section("membro-mecanico-magico", "Membro Mecânico Mágico", "itens_equipamentos", collect(values, 505, 512)),
+                section("corpos-mecanoides", "Corpos Mecanóides", "itens_equipamentos", collect(values, 512, 546)),
+                section("modelos-de-combate", "Modelos de Combate", "itens_equipamentos", collect(values, 529, 555)),
+            ],
+        ),
     ]
 
 
@@ -595,6 +636,28 @@ def build_kits(paragraphs: list[str]) -> list[dict]:
             )
         )
     return items
+
+
+def build_mechanoid_kit(paragraphs: list[str]) -> list[dict]:
+    values = clean(paragraphs[555:559])
+    costs = [value.replace("Custo: ", "") for value in values if value.startswith("Custo:")]
+    skills = [value.replace("Perícias: ", "") for value in values if value.startswith("Perícias:")]
+    enhancements = [value.replace("Aprimoramentos: ", "") for value in values if value.startswith("Aprimoramentos:")]
+    description = [value for value in values if not value.startswith(("Custo:", "Perícias:", "Aprimoramentos:"))]
+    return [
+        typed_item(
+            "Máquina de Guerra Mecanóide",
+            "kits",
+            "kit",
+            [
+                section("custo", "Custo", "kits", costs),
+                section("custo-de-pericia", "Custo de Perícia", "kits", skills),
+                section("aprimoramentos", "Aprimoramentos", "kits", enhancements),
+                section("descricao", "Descrição", "kits", description),
+            ],
+            values,
+        )
+    ]
 
 
 def build_totems(paragraphs: list[str]) -> list[dict]:
@@ -690,6 +753,7 @@ def build_payload() -> dict:
     sections.extend(build_enhancements(paragraphs))
     sections.extend(build_items(paragraphs))
     sections.extend(build_kits(paragraphs))
+    sections.extend(build_mechanoid_kit(paragraphs))
     sections.extend(build_totems(paragraphs))
     sections.extend(parse_named_rituals(paragraphs, 984, len(paragraphs)))
 
