@@ -53,6 +53,13 @@ merge de `main`, **rode de novo** para reconciliar o índice (saída determinís
    ```
 4. Evitar os dois mexerem ao mesmo tempo em `docs/assets/app.js`,
    `scripts/requiem_clean.py` e regras globais — avisar no handoff.
+5. **Ao TERMINAR cada trabalho, sincronizar o `main`** (ambos os agentes fazem isso):
+   - `git fetch` + `git merge origin/main` na branch de trabalho (conflito de `index.json`
+     → aceitar uma versão e rodar `build_pilot_index.py`);
+   - validar (`validate_data.py`, `node --check app.js`);
+   - `git branch -f main <minha-branch>` (fast-forward) e `git push origin main`;
+   - confirmar `git rev-list --left-right --count origin/main...main` == `0 0`.
+   O site (GitHub Pages) serve de `origin/main`; sem push o trabalho não aparece online.
 
 ## Arquivos compartilhados sensíveis (cuidado no merge)
 `scripts/requiem_clean.py`, `docs/assets/app.js`. Mudanças aditivas; avisar no
