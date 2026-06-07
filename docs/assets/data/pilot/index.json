@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T02:54:01",
+  "generatedAt": "2026-06-07T03:01:40",
   "sources": [
     {
       "source": "4killers",
@@ -325,6 +325,16 @@
         "manobras_combate",
         "poderes",
         "regras_base"
+      ]
+    },
+    {
+      "source": "masmorra-goblin",
+      "title": "Masmorra Goblin",
+      "file": "masmorra-goblin.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "itens_equipamentos"
       ]
     },
     {

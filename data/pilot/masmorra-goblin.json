@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "source": "masmorra-goblin",
+  "title": "Masmorra Goblin",
+  "sourceFile": "Masmorra  Goblin.docx",
+  "sourcePath": "Livros\\word\\feito\\Masmorra  Goblin.docx",
+  "status": "pilot_review",
+  "summary": "Mini masmorra goblin com rolagens de tesouro, encontros e armaduras mágicas sorteáveis.",
+  "areas": [
+    "cenarios_lore",
+    "itens_equipamentos"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "cenarios-lore-masmorra-goblin",
+      "title": "Cenários/Lore - Masmorra Goblin",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenario",
+      "sectionTitle": "Cenário",
+      "paragraphs": [
+        "Os números indicam onde são encontrados baús com tesouros que foram saqueados durante anos (role 1D6 para definir quantos baús e o tipo de tesouro encontrado, mas os Goblins não são burros e fizeram algumas armadilhas no lugar dos tesouros), o lugar é vigiado por cerca de 1D6+1 Goblins que farão o possível para proteger os seus tesouros, mas não arriscarão suas próprias vidas por elas.",
+        "Role 1D6 para cada 5m que os jogadores avançarem na masmorra para determinar se sofreram ataques, se cair 4-5 role 1D6+2 Goblins que os jogadores enfrentarão.",
+        "1. 10 peças de ouro",
+        "2. Uma espada longa de prata (01) ou 10 flechas de prata (02) ou 100 peças de ouro em joias (03) ou um anel de armas mágicas +1 (04) ou uma capa de proteção +1 (05) ou um símbolo religioso +2 (06), rolado em 1D6, se repetirem os itens role 1D10 em peças de ouro.",
+        "3. Adaga de Diamante (01) ou um amuleto de combate +1 (02) ou uma armadura do viajante (03) ou 1D10 frascos de cura de 1D6 (04) ou uma capa de proteção +1 (05) ou um símbolo religioso +1 (06), rolado em 1D6, se repetirem os itens role 1D10 em peças de ouro.",
+        "4. fogo salta próximo ao baú causando 1D6 de dano por 3 rodadas a todos que estiverem até 2m de distância.",
+        "5. flechas são disparadas para todos os lados role 1D3 flechas em cada alvo próximo do baú a uma distância de 10m, os alvos podem fazer um teste de AGI para fugir das mesmas.",
+        "6. nada."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Os números indicam onde são encontrados baús com tesouros que foram saqueados durante anos (role 1D6 para definir quantos baús e o tipo de tesouro encontrado, mas os Goblins não são burros e fizeram algumas armadilhas no lugar dos tesouros), o lugar é vigiado por cerca de 1D6+1 Goblins que farão o possível para proteger os seus tesouros, mas não arriscarão suas próprias vidas por elas."
+          ]
+        },
+        {
+          "id": "encontros",
+          "title": "Encontros",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Role 1D6 para cada 5m que os jogadores avançarem na masmorra para determinar se sofreram ataques, se cair 4-5 role 1D6+2 Goblins que os jogadores enfrentarão."
+          ]
+        },
+        {
+          "id": "baus-de-tesouros",
+          "title": "Baús de Tesouros",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "1. 10 peças de ouro",
+            "2. Uma espada longa de prata (01) ou 10 flechas de prata (02) ou 100 peças de ouro em joias (03) ou um anel de armas mágicas +1 (04) ou uma capa de proteção +1 (05) ou um símbolo religioso +2 (06), rolado em 1D6, se repetirem os itens role 1D10 em peças de ouro.",
+            "3. Adaga de Diamante (01) ou um amuleto de combate +1 (02) ou uma armadura do viajante (03) ou 1D10 frascos de cura de 1D6 (04) ou uma capa de proteção +1 (05) ou um símbolo religioso +1 (06), rolado em 1D6, se repetirem os itens role 1D10 em peças de ouro.",
+            "4. fogo salta próximo ao baú causando 1D6 de dano por 3 rodadas a todos que estiverem até 2m de distância.",
+            "5. flechas são disparadas para todos os lados role 1D3 flechas em cada alvo próximo do baú a uma distância de 10m, os alvos podem fazer um teste de AGI para fugir das mesmas.",
+            "6. nada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tabela-de-armaduras-magicas",
+      "title": "Tabela de Armaduras Mágicas",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura 1D100",
+        "Corselete de Couro 01-05",
+        "Corselete de Couro Reforçado 06-12",
+        "Armadura de Anéis 13-52",
+        "Armadura de Escamas 53-58",
+        "Cota de Malha 59-66",
+        "Manto de Ferro 67-70",
+        "Armadura de Placas 71-97",
+        "Armadura de Batalha Completa 98-99",
+        "Armadura de Batalha Nobre 00",
+        "Armadura 1D10 para determinar a Habilidade da Armadura e se cair 09-00, pode sortear outra habilidade para a armadura."
+      ],
+      "sections": [
+        {
+          "id": "tipo-de-armadura",
+          "title": "Tipo de Armadura",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura 1D100",
+            "Corselete de Couro 01-05",
+            "Corselete de Couro Reforçado 06-12",
+            "Armadura de Anéis 13-52",
+            "Armadura de Escamas 53-58",
+            "Cota de Malha 59-66",
+            "Manto de Ferro 67-70",
+            "Armadura de Placas 71-97",
+            "Armadura de Batalha Completa 98-99",
+            "Armadura de Batalha Nobre 00"
+          ]
+        },
+        {
+          "id": "habilidade",
+          "title": "Habilidade da Armadura",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura 1D10 para determinar a Habilidade da Armadura e se cair 09-00, pode sortear outra habilidade para a armadura."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-x",
+      "title": "Armadura +X",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura +X = 01 Este é o modelo básico de Armadura Mágica. A Armadura + X aumenta o IP do usuário em +N a partir de seu nível básico para aquele tipo de armadura.",
+        "IP 1D100",
+        "+1 | 01-55",
+        "+2 | 56-80",
+        "+3 | 81-90",
+        "+4 | 91-97",
+        "+5 | 98-00"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura +X = 01 Este é o modelo básico de Armadura Mágica. A Armadura + X aumenta o IP do usuário em +N a partir de seu nível básico para aquele tipo de armadura."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "IP",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "IP 1D100",
+            "+1 | 01-55",
+            "+2 | 56-80",
+            "+3 | 81-90",
+            "+4 | 91-97",
+            "+5 | 98-00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-de-disfarce",
+      "title": "Armadura de Disfarce",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura de Disfarce = 02 Esta armadura possui um forte encantamento que a faz parecer, cheirar e até mesmo sentir como uma roupa normal. o usuário pode escolher a aparência da roupa, embora só possa ser mudada duas vezes por dia. o peso da armadura não muda, não importando a forma que ela assumir.",
+        "Variantes Conhecidas 1D10",
+        "3 | formas diferentes 1-6",
+        "Múltiplas formas 7-0"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura de Disfarce = 02 Esta armadura possui um forte encantamento que a faz parecer, cheirar e até mesmo sentir como uma roupa normal. o usuário pode escolher a aparência da roupa, embora só possa ser mudada duas vezes por dia. o peso da armadura não muda, não importando a forma que ela assumir."
+          ]
+        },
+        {
+          "id": "variantes",
+          "title": "Variantes Conhecidas",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Variantes Conhecidas 1D10",
+            "3 | formas diferentes 1-6",
+            "Múltiplas formas 7-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-de-imolacao-n",
+      "title": "Armadura de Imolação +N",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura de Imolação +N = 03",
+        "Esta antiga armadura de combate dos Magos da Ordem Mármore possui algumas estranhas runas esculpidas em seu peito. Quando o usuário toca estas runas e recita as palavras de ativação. Isto faz com que a armadura se torne extremamente quente (mas não causa dano ao usuário), causando 1D6 pontos de dano a todos que estiverem a até 2m dO personagem (Vítimas podem fazer um teste de CON para reduzir o dano à metade).",
+        "IP 1D100",
+        "+1 | 01-55",
+        "+2 | 56-80",
+        "+3 | 81-90",
+        "+4 | 91-97",
+        "+5 | 98-00"
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura de Imolação +N = 03",
+            "Esta antiga armadura de combate dos Magos da Ordem Mármore possui algumas estranhas runas esculpidas em seu peito. Quando o usuário toca estas runas e recita as palavras de ativação. Isto faz com que a armadura se torne extremamente quente (mas não causa dano ao usuário), causando 1D6 pontos de dano a todos que estiverem a até 2m dO personagem (Vítimas podem fazer um teste de CON para reduzir o dano à metade)."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "IP",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "IP 1D100",
+            "+1 | 01-55",
+            "+2 | 56-80",
+            "+3 | 81-90",
+            "+4 | 91-97",
+            "+5 | 98-00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-de-invisibilidade",
+      "title": "Armadura de Invisibilidade",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura de Invisibilidade = 04 Esta armadura age como uma armadura + X. Lindas runas que um Mago experiente pode decifrar como pertencentes a Escola de Magia da Luz estão desenhadas próximas as manoplas. Existem dois tipos desta armadura (sorteie independentemente para o tipo e o bônus de IP):",
+        "Tipo de Armadura 1D10",
+        "Versão Simples 1-8",
+        "Versão prateada 9-0",
+        "IP 1D100",
+        "+1 | 01-55",
+        "+2 | 56-80",
+        "+3 | 81-90",
+        "+4 | 91-97",
+        "+5 | 98-00",
+        "Versão simples: Pode deixar o Usuário Invisível uma vez por dia, durante cerca de uma hora (caso o Usuário faça uma magia ou um ataque, o feitiço será quebrado). Versão prateada: Pode deixar o usuário invisível durante 3d6 rodadas (mas, nesta forma de invisibilidade, podendo inclusive atacar sem quebrar o feitiço)."
+      ],
+      "sections": [
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura de Invisibilidade = 04 Esta armadura age como uma armadura + X. Lindas runas que um Mago experiente pode decifrar como pertencentes a Escola de Magia da Luz estão desenhadas próximas as manoplas. Existem dois tipos desta armadura (sorteie independentemente para o tipo e o bônus de IP):"
+          ]
+        },
+        {
+          "id": "tipo",
+          "title": "Tipo de Armadura",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Tipo de Armadura 1D10",
+            "Versão Simples 1-8",
+            "Versão prateada 9-0"
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "IP",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "IP 1D100",
+            "+1 | 01-55",
+            "+2 | 56-80",
+            "+3 | 81-90",
+            "+4 | 91-97",
+            "+5 | 98-00"
+          ]
+        },
+        {
+          "id": "versoes",
+          "title": "Versões",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Versão simples: Pode deixar o Usuário Invisível uma vez por dia, durante cerca de uma hora (caso o Usuário faça uma magia ou um ataque, o feitiço será quebrado). Versão prateada: Pode deixar o usuário invisível durante 3d6 rodadas (mas, nesta forma de invisibilidade, podendo inclusive atacar sem quebrar o feitiço)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-do-viajante",
+      "title": "Armadura do Viajante",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura do Viajante = 05 Esta armadura de couro não possui bônus mágicos, mas em compensação, anula a fadiga do usuário quando este caminha, capacitando-o a andar até três dias sem parar e sem precisar descansar, dormir ou comer. Depois de três dias. O usuário retorna a seu estado normal."
+      ],
+      "sections": [
+        {
+          "id": "armadura-do-viajante-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura do Viajante = 05 Esta armadura de couro não possui bônus mágicos, mas em compensação, anula a fadiga do usuário quando este caminha, capacitando-o a andar até três dias sem parar e sem precisar descansar, dormir ou comer. Depois de três dias. O usuário retorna a seu estado normal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-regenerativa",
+      "title": "Armadura Regenerativa",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura Regenerativa = 06 Esta armadura pode se consertar magicamente. Se sobrar algum pedaço dela inteiro após uma batalha, ela começará a se reconstruir, ficando pronta como nova em até uma semana (dependendo dos estragos). Existem versões mais poderosas. Dizem que a armadura do grande comandante AF, das legiões Captares, possuía uma armadura capaz de se regenerar totalmente em minutos."
+      ],
+      "sections": [
+        {
+          "id": "armadura-regenerativa-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura Regenerativa = 06 Esta armadura pode se consertar magicamente. Se sobrar algum pedaço dela inteiro após uma batalha, ela começará a se reconstruir, ficando pronta como nova em até uma semana (dependendo dos estragos). Existem versões mais poderosas. Dizem que a armadura do grande comandante AF, das legiões Captares, possuía uma armadura capaz de se regenerar totalmente em minutos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-sem-peso",
+      "title": "Armadura Sem Peso",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura Sem Peso = 07 Apenas dezesseis armaduras sem peso foram fabricadas durante as guerras púnicas, e outras vinte ou vinte e cinco mais tarde, por Magos da Casa de Chronos. A pedido de Zeus, Hermes lançou uma magia sobre elas para que seus pesos ficassem presos em Olympus, e as armaduras ficassem silenciosas e sem peso. Esta armadura de design grego clássico pesa praticamente a mesma coisa que roupas normais, e permite um movimento perfeito e silencioso. É um dos itens Mágicos mais raros e cobiçados pelos ladrões. A armadura fornece Proteção, mas nenhuma penalidade em DEX ou AGI, como era de se esperar."
+      ],
+      "sections": [
+        {
+          "id": "armadura-sem-peso-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura Sem Peso = 07 Apenas dezesseis armaduras sem peso foram fabricadas durante as guerras púnicas, e outras vinte ou vinte e cinco mais tarde, por Magos da Casa de Chronos. A pedido de Zeus, Hermes lançou uma magia sobre elas para que seus pesos ficassem presos em Olympus, e as armaduras ficassem silenciosas e sem peso. Esta armadura de design grego clássico pesa praticamente a mesma coisa que roupas normais, e permite um movimento perfeito e silencioso. É um dos itens Mágicos mais raros e cobiçados pelos ladrões. A armadura fornece Proteção, mas nenhuma penalidade em DEX ou AGI, como era de se esperar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armadura-de-levitacao",
+      "title": "Armadura de Levitação",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Armadura de Levitação = 08 Versão mais fraca da Armadura de Voo, possivelmente um produto com defeito. O personagem move-se apenas na vertical, e com velocidade máxima igual a 5m/s."
+      ],
+      "sections": [
+        {
+          "id": "armadura-de-levitacao-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Armadura de Levitação = 08 Versão mais fraca da Armadura de Voo, possivelmente um produto com defeito. O personagem move-se apenas na vertical, e com velocidade máxima igual a 5m/s."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1,
+    "itens_equipamentos": 9
+  },
+  "reviewNotes": [
+    "Goblins aparecem apenas como encontro sem ficha, portanto não foram criados como NPCs.",
+    "Armaduras mágicas foram extraídas como itens/equipamentos individuais."
+  ],
+  "generatedAt": "2026-06-07T06:01:40Z"
+}
