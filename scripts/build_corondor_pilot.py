@@ -202,6 +202,7 @@ def normalize_text(text: str) -> str:
     text = re.sub(r"\bId6\b", "1d6", text)
     text = re.sub(r"\bIPn\b", "IP natural", text, flags=re.IGNORECASE)
     text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"^([+-])\s+(\d+\s+pontos?)", r"\1\2", text, flags=re.IGNORECASE)
     text = re.sub(r"\s+([,.;:!?])", r"\1", text)
     text = re.sub(r"\(\s+", "(", text)
     text = re.sub(r"\s+\)", ")", text)

@@ -17,7 +17,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-07T00:09:45",
+  "generatedAt": "2026-06-07T00:12:43",
   "sections": [
     {
       "id": "aprimoramentos-aceleracao",
@@ -399,9 +399,9 @@
       "sectionTitle": "Caçado",
       "paragraphs": [
         "Alguém colocou um prêmio sobre a cabeça de seu personagem, e ele é constantemente atormentado por caçadores de recompensas ou oportunistas. Nenhum lugar é realmente seguro, e a ganância das pessoas o torna alguém que não pode confiar plenamente em ninguém.",
-        "- 1 ponto: Há um preço considerável por você; ultrapassando D$ 10.000,00 (que equivalem a 1.000 Peças de Ouro)",
-        "- 2 pontos: Os valores sobre sua cabeça são altos e até seus melhores amigos ficarão tentados a traí-lo pelo prêmio. Em valores, ultrapassam facilmente o montante de D$100.000,00 (ou 10.000 Peças de Ouro).",
-        "- 3 pontos: O valor de prêmio pela sua vida é de tal forma tentador, que você será caçado e conhecido como uma das cabeças premiadas mais cobiçadas de todo o mundo. Recompensa total superior aos D$ 1.000.000,00 (Valor equivalente a 100.000 Peças de Ouro)"
+        "-1 ponto: Há um preço considerável por você; ultrapassando D$ 10.000,00 (que equivalem a 1.000 Peças de Ouro)",
+        "-2 pontos: Os valores sobre sua cabeça são altos e até seus melhores amigos ficarão tentados a traí-lo pelo prêmio. Em valores, ultrapassam facilmente o montante de D$100.000,00 (ou 10.000 Peças de Ouro).",
+        "-3 pontos: O valor de prêmio pela sua vida é de tal forma tentador, que você será caçado e conhecido como uma das cabeças premiadas mais cobiçadas de todo o mundo. Recompensa total superior aos D$ 1.000.000,00 (Valor equivalente a 100.000 Peças de Ouro)"
       ],
       "sections": [
         {
@@ -409,9 +409,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "- 1 ponto: Há um preço considerável por você; ultrapassando D$ 10.000,00 (que equivalem a 1.000 Peças de Ouro)",
-            "- 2 pontos: Os valores sobre sua cabeça são altos e até seus melhores amigos ficarão tentados a traí-lo pelo prêmio. Em valores, ultrapassam facilmente o montante de D$100.000,00 (ou 10.000 Peças de Ouro).",
-            "- 3 pontos: O valor de prêmio pela sua vida é de tal forma tentador, que você será caçado e conhecido como uma das cabeças premiadas mais cobiçadas de todo o mundo. Recompensa total superior aos D$ 1.000.000,00 (Valor equivalente a 100.000 Peças de Ouro)"
+            "-1 ponto: Há um preço considerável por você; ultrapassando D$ 10.000,00 (que equivalem a 1.000 Peças de Ouro)",
+            "-2 pontos: Os valores sobre sua cabeça são altos e até seus melhores amigos ficarão tentados a traí-lo pelo prêmio. Em valores, ultrapassam facilmente o montante de D$100.000,00 (ou 10.000 Peças de Ouro).",
+            "-3 pontos: O valor de prêmio pela sua vida é de tal forma tentador, que você será caçado e conhecido como uma das cabeças premiadas mais cobiçadas de todo o mundo. Recompensa total superior aos D$ 1.000.000,00 (Valor equivalente a 100.000 Peças de Ouro)"
           ]
         },
         {
@@ -871,8 +871,8 @@
       "sectionTitle": "Fracote",
       "paragraphs": [
         "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúdes perfeitos.",
-        "- 1 ponto: Os pontos de vida (PVS) iniciais do personagem são a metade obtida com o cálculo normal;",
-        "- 2 pontos: Os PVs iniciais são a metade do normal e o ganho por nível é a metade do ganho normal por nível."
+        "-1 ponto: Os pontos de vida (PVS) iniciais do personagem são a metade obtida com o cálculo normal;",
+        "-2 pontos: Os PVs iniciais são a metade do normal e o ganho por nível é a metade do ganho normal por nível."
       ],
       "sections": [
         {
@@ -880,8 +880,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "- 1 ponto: Os pontos de vida (PVS) iniciais do personagem são a metade obtida com o cálculo normal;",
-            "- 2 pontos: Os PVs iniciais são a metade do normal e o ganho por nível é a metade do ganho normal por nível."
+            "-1 ponto: Os pontos de vida (PVS) iniciais do personagem são a metade obtida com o cálculo normal;",
+            "-2 pontos: Os PVs iniciais são a metade do normal e o ganho por nível é a metade do ganho normal por nível."
           ]
         },
         {
@@ -1142,9 +1142,9 @@
       "sectionTitle": "Inábil",
       "paragraphs": [
         "Seu personagem não possui a menor habilidade para qualquer coisa, sendo um completo inútil para a maioria das atividades que requeiram um pouco mais de cérebro.",
-        "- 1 ponto: O personagem calcula seus pontos de perícia com metade do valor da Inteligência.",
-        "- 2 pontos: O personagem calcula seus pontos de perícia com metade do valor da Idade.",
-        "- 3 pontos: O valor total dos pontos de perícia do personagem (calculados normalmente) são divididos pela metade."
+        "-1 ponto: O personagem calcula seus pontos de perícia com metade do valor da Inteligência.",
+        "-2 pontos: O personagem calcula seus pontos de perícia com metade do valor da Idade.",
+        "-3 pontos: O valor total dos pontos de perícia do personagem (calculados normalmente) são divididos pela metade."
       ],
       "sections": [
         {
@@ -1152,9 +1152,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "- 1 ponto: O personagem calcula seus pontos de perícia com metade do valor da Inteligência.",
-            "- 2 pontos: O personagem calcula seus pontos de perícia com metade do valor da Idade.",
-            "- 3 pontos: O valor total dos pontos de perícia do personagem (calculados normalmente) são divididos pela metade."
+            "-1 ponto: O personagem calcula seus pontos de perícia com metade do valor da Inteligência.",
+            "-2 pontos: O personagem calcula seus pontos de perícia com metade do valor da Idade.",
+            "-3 pontos: O valor total dos pontos de perícia do personagem (calculados normalmente) são divididos pela metade."
           ]
         },
         {
@@ -1327,9 +1327,9 @@
       "sectionTitle": "Marcado a Ferro",
       "paragraphs": [
         "O personagem possui uma marca no corpo que o torna facilmente reconhecível por seus inimigos.",
-        "- 1 ponto: A marca é pequena, em uma parte do corpo oculta ou é facilmente ocultável;",
-        "- 2 pontos: Sua marca é grande ou está num lugar óbvio, sendo difícil de ser ocultada;",
-        "- 3 pontos: É impossível ocultá-la, pois todo o seu corpo está marcado por ela."
+        "-1 ponto: A marca é pequena, em uma parte do corpo oculta ou é facilmente ocultável;",
+        "-2 pontos: Sua marca é grande ou está num lugar óbvio, sendo difícil de ser ocultada;",
+        "-3 pontos: É impossível ocultá-la, pois todo o seu corpo está marcado por ela."
       ],
       "sections": [
         {
@@ -1337,9 +1337,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "- 1 ponto: A marca é pequena, em uma parte do corpo oculta ou é facilmente ocultável;",
-            "- 2 pontos: Sua marca é grande ou está num lugar óbvio, sendo difícil de ser ocultada;",
-            "- 3 pontos: É impossível ocultá-la, pois todo o seu corpo está marcado por ela."
+            "-1 ponto: A marca é pequena, em uma parte do corpo oculta ou é facilmente ocultável;",
+            "-2 pontos: Sua marca é grande ou está num lugar óbvio, sendo difícil de ser ocultada;",
+            "-3 pontos: É impossível ocultá-la, pois todo o seu corpo está marcado por ela."
           ]
         },
         {
@@ -1569,8 +1569,8 @@
       "sectionTitle": "Ponto Fraco",
       "paragraphs": [
         "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um crítico, os pontos de vida do personagem caem para 0.",
-        "- 1 ponto: Minúsculo. Precisa de um teste difícil de PER para ser notado e um teste difícil para ser atingido;",
-        "- 2 pontos: Médio. Precisa de um teste de PER para ser notado e um teste de ataque normal para ser atingido."
+        "-1 ponto: Minúsculo. Precisa de um teste difícil de PER para ser notado e um teste difícil para ser atingido;",
+        "-2 pontos: Médio. Precisa de um teste de PER para ser notado e um teste de ataque normal para ser atingido."
       ],
       "sections": [
         {
@@ -1578,8 +1578,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "- 1 ponto: Minúsculo. Precisa de um teste difícil de PER para ser notado e um teste difícil para ser atingido;",
-            "- 2 pontos: Médio. Precisa de um teste de PER para ser notado e um teste de ataque normal para ser atingido."
+            "-1 ponto: Minúsculo. Precisa de um teste difícil de PER para ser notado e um teste difícil para ser atingido;",
+            "-2 pontos: Médio. Precisa de um teste de PER para ser notado e um teste de ataque normal para ser atingido."
           ]
         },
         {
@@ -2058,9 +2058,9 @@
       "sectionTitle": "Vulnerabilidade",
       "paragraphs": [
         "O corpo de seu personagem é especialmente vulnerável a alguma substância ou tipo de ataque, que gera muito mais dano do que iria causar em uma pessoa normal. Em termos de regras, quando atacado com o objeto que lhe causa vulnerabilidade, seu personagem:",
-        "- 1 ponto: Perde duas vezes mais pontos de vida com um tipo de ataque.",
-        "- 2 pontos: Perde metade dos pontos de vida com um tipo de ataque ou duas vezes mais pontos de vida com 3 tipos de ataque;",
-        "- 3 pontos: Perde todos os pontos de vida com um determinado tipo de ataque ou duas vezes mais pontos de vida com 5 tipos de ataque."
+        "-1 ponto: Perde duas vezes mais pontos de vida com um tipo de ataque.",
+        "-2 pontos: Perde metade dos pontos de vida com um tipo de ataque ou duas vezes mais pontos de vida com 3 tipos de ataque;",
+        "-3 pontos: Perde todos os pontos de vida com um determinado tipo de ataque ou duas vezes mais pontos de vida com 5 tipos de ataque."
       ],
       "sections": [
         {
@@ -2068,9 +2068,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "- 1 ponto: Perde duas vezes mais pontos de vida com um tipo de ataque.",
-            "- 2 pontos: Perde metade dos pontos de vida com um tipo de ataque ou duas vezes mais pontos de vida com 3 tipos de ataque;",
-            "- 3 pontos: Perde todos os pontos de vida com um determinado tipo de ataque ou duas vezes mais pontos de vida com 5 tipos de ataque."
+            "-1 ponto: Perde duas vezes mais pontos de vida com um tipo de ataque.",
+            "-2 pontos: Perde metade dos pontos de vida com um tipo de ataque ou duas vezes mais pontos de vida com 3 tipos de ataque;",
+            "-3 pontos: Perde todos os pontos de vida com um determinado tipo de ataque ou duas vezes mais pontos de vida com 5 tipos de ataque."
           ]
         },
         {

@@ -284,10 +284,11 @@ function itemCostOptions(item) {
   });
   return costSections.flatMap((section) => (section.paragraphs || []).map((paragraph) => {
     const text = String(paragraph).trim();
-    const points = text.match(/^\s*([+-]?\d+)\s+pontos?/i);
+    const points = text.match(/^\s*([+-]?)\s*(\d+)\s+pontos?/i);
     if (points) {
-      const value = Number(points[1]);
-      return `${points[1]} ${Math.abs(value) === 1 ? "Ponto" : "Pontos"}`;
+      const sign = points[1] === "-" ? "-" : "";
+      const value = Number(`${sign}${points[2]}`);
+      return `${value} ${Math.abs(value) === 1 ? "Ponto" : "Pontos"}`;
     }
     const pts = text.match(/^\s*([+-]?\d+)\s+pts?\.?(?:\s+de\s+(.+?))?\.?\s*$/i);
     if (pts) return pts[2] ? `${pts[1]} pts. ${pts[2]}` : `${pts[1]} pts.`;
