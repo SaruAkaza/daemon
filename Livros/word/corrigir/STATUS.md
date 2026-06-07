@@ -1,5 +1,21 @@
 # Status de Livros Aguardando Correção
 
+## Vampiros Mitológicos
+
+**Data de remoção:** 2026-06-06
+**Motivo:** OCR severamente degradado — 86% das palavras irreconhecíveis pelo dic pt
+(só 6.9% com acento). Inviável catalogar sem re-OCR.
+**Status:** Aguardando fonte de melhor qualidade / re-OCR.
+**Obs.:** NÃO confundir com `Vampiros_Mitologicos_1_OCR_alta_qualidade.docx` (do Codex,
+ainda em `Livros/word`).
+
+## Hi-Brazil
+
+**Data de remoção:** 2026-06-06
+**Motivo:** OCR ruim — 43% das palavras irreconhecíveis pelo dic pt. Catalogação geraria
+retrabalho.
+**Status:** Aguardando fonte de melhor qualidade / re-OCR.
+
 ## Guia de Itens Mágicos
 
 **Data de remoção:** 2026-06-05

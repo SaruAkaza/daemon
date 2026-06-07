@@ -1,9 +1,32 @@
 {
   "agent": "claude",
   "worktree": "daemon-claude",
-  "updatedAt": "2026-06-05",
+  "updatedAt": "2026-06-06",
   "assignmentSource": "coordination/book_assignments.md (Codex). Anjos -> Claude (status hold). Demais: lista 'Claude'.",
   "books": [
+    {
+      "file": "Daemon_Medieval_OCR_alta_qualidade.docx",
+      "source": "daemon-medieval",
+      "status": "in_progress",
+      "branch": "claude-pilots",
+      "notes": "Reivindicado 2026-06-06. Lista Claude item 18 (0.18 MB). OCR triado: 6.3% desconhecidas (melhor da fila). Núcleo Daemon, cenário medieval. Levantando estrutura."
+    },
+    {
+      "file": "Vampiros_Mitologicos_OCR_alta_qualidade.docx",
+      "source": "vampiros-mitologicos",
+      "status": "blocked",
+      "branch": "claude-pilots",
+      "movedTo": "Livros/word/corrigir/Vampiros_Mitologicos_OCR_alta_qualidade.docx",
+      "notes": "BLOQUEADO 2026-06-06: OCR 86% desconhecidas. Movido p/ corrigir. NÃO confundir com Vampiros_Mitologicos_1 (Codex)."
+    },
+    {
+      "file": "Hi_Brazil_OCR_alta_qualidade.docx",
+      "source": "hi-brazil",
+      "status": "blocked",
+      "branch": "claude-pilots",
+      "movedTo": "Livros/word/corrigir/Hi_Brazil_OCR_alta_qualidade.docx",
+      "notes": "BLOQUEADO 2026-06-06: OCR 43% desconhecidas. Movido p/ corrigir."
+    },
     {
       "file": "Daemon_Tormenta_OCR_alta_qualidade.docx",
       "source": "daemon-tormenta",
