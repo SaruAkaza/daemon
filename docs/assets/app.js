@@ -25,6 +25,38 @@ const SECTION_LABELS = {
 
 const THEME_KEY = "daemonPilots.theme";
 
+const AREA_ROUTES = new Map([
+  ["regras_base", "regras-base"],
+  ["aprimoramentos", "aprimoramentos"],
+  ["manobras_combate", "manobras-e-especialidades"],
+  ["kits", "kits"],
+  ["classes_racas", "classes-racas"],
+  ["poderes", "poderes"],
+  ["magias", "magias"],
+  ["rituais", "rituais"],
+  ["itens_equipamentos", "itens-e-equipamentos"],
+  ["criaturas_npcs", "criaturas-npcs"],
+  ["cenarios_lore", "cenarios-lore"],
+  ["tabelas", "tabelas"],
+]);
+
+const ROUTE_AREAS = new Map([
+  ...[...AREA_ROUTES].map(([area, route]) => [route, area]),
+  ["regra-base", "regras_base"],
+  ["manobras-combate", "manobras_combate"],
+  ["classes", "classes_racas"],
+  ["racas", "classes_racas"],
+  ["raças", "classes_racas"],
+  ["itens", "itens_equipamentos"],
+  ["equipamentos", "itens_equipamentos"],
+  ["criaturas", "criaturas_npcs"],
+  ["npcs", "criaturas_npcs"],
+  ["cenario-lore", "cenarios_lore"],
+  ["cenário-lore", "cenarios_lore"],
+  ["cenarios-e-lore", "cenarios_lore"],
+  ["cenários-e-lore", "cenarios_lore"],
+]);
+
 const state = {
   books: [],
   items: [],
@@ -122,6 +154,41 @@ function displayArea(itemOrArea) {
   const area = typeof itemOrArea === "string" ? itemOrArea : itemOrArea?.area;
   if (area === "classes" || area === "racas") return "classes_racas";
   return area;
+}
+
+function routeSlug(value) {
+  return normalize(value).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function areaFromHash() {
+  const raw = decodeURIComponent(window.location.hash || "").replace(/^#\/?/, "");
+  if (!raw) return null;
+  const [route] = raw.split("/");
+  return ROUTE_AREAS.get(routeSlug(route)) || null;
+}
+
+function hashForArea(area) {
+  return area ? `#/${AREA_ROUTES.get(area) || routeSlug(area)}` : "#/";
+}
+
+function syncHashFromState(replace = false) {
+  const nextHash = hashForArea(state.selectedArea);
+  if (window.location.hash === nextHash) return;
+  if (replace) {
+    window.history.replaceState(null, "", nextHash);
+  } else {
+    window.location.hash = nextHash;
+  }
+}
+
+function applyRouteFromHash() {
+  const area = areaFromHash();
+  const nextArea = area && categoryCount(area) ? area : null;
+  if (state.selectedArea === nextArea) return;
+  state.selectedArea = nextArea;
+  state.selectedItemId = null;
+  state.filters = filtersWithDefaults({});
+  render();
 }
 
 function sectionText(section) {
@@ -515,6 +582,7 @@ function selectCategory(area) {
   state.selectedItemId = null;
   state.filters = filtersWithDefaults({});
   nodes.areaFilter.value = area;
+  syncHashFromState();
   render();
 }
 
@@ -1006,6 +1074,7 @@ function applyFilters() {
   }
   state.selectedItemId = null;
   closeFilters();
+  syncHashFromState(true);
   render();
 }
 
@@ -1043,6 +1112,9 @@ async function load() {
     : defaultFilters(globalFilterGroupsData());
   state.filters = filtersWithDefaults(state.filters);
   if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
+  const routedArea = areaFromHash();
+  if (routedArea && categoryCount(routedArea)) state.selectedArea = routedArea;
+  syncHashFromState(true);
   render();
 }
 
@@ -1075,8 +1147,11 @@ nodes.brandHomeButton.addEventListener("click", () => {
   state.filters = filtersWithDefaults({});
   nodes.searchInput.value = "";
   state.query = "";
+  syncHashFromState();
   render();
 });
+
+window.addEventListener("hashchange", applyRouteFromHash);
 
 nodes.themeToggle.addEventListener("click", () => {
   const current = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
