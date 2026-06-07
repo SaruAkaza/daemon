@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T00:27:48",
+  "generatedAt": "2026-06-07T00:40:12",
   "sources": [
     {
       "source": "4killers",
@@ -303,6 +303,19 @@
         "aprimoramentos",
         "magias",
         "manobras_combate"
+      ]
+    },
+    {
+      "source": "kits-orientais",
+      "title": "Kits Orientais",
+      "file": "kits-orientais.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "kits",
+        "manobras_combate",
+        "poderes",
+        "regras_base"
       ]
     },
     {
