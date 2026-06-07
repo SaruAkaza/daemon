@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-06T23:55:48",
+  "generatedAt": "2026-06-06T23:50:30",
   "sources": [
     {
       "source": "4killers",
@@ -260,6 +260,23 @@
       "areas": [
         "cenarios_lore",
         "criaturas_npcs"
+      ]
+    },
+    {
+      "source": "corondor",
+      "title": "Corondor",
+      "file": "corondor.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "cenarios_lore",
+        "criaturas_npcs",
+        "itens_equipamentos",
+        "kits",
+        "pericias",
+        "poderes",
+        "racas",
+        "rituais"
       ]
     },
     {
