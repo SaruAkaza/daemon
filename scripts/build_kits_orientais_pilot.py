@@ -138,6 +138,8 @@ STOP_TITLES = {
     "Marionetes do Anime Naruto",
 }
 
+TECHNIQUE_AREA = "manobras_combate"
+
 
 def normalize_text(text: str) -> str:
     text = text.replace("\u00a0", " ")
@@ -433,6 +435,30 @@ def candidate_title(text: str, next_text: str = "") -> bool:
     return False
 
 
+def technique_availability(title: str, subsections: list[dict]) -> list[str]:
+    labels = {section["title"]: section for section in subsections}
+    users = labels.get("Quem usa") or labels.get("Usuários")
+    rank = labels.get("Rank")
+    title_text = slugify(title).replace("-", " ")
+    if "cla" in title_text.split():
+        return [
+            "Agrupador ou especialidade de clã: usar como contexto/restrição das técnicas vinculadas, não como poder universal."
+        ]
+    user_text = " ".join(users.get("paragraphs", [])) if users else ""
+    if users:
+        if normalize_text(user_text).lower() in {"técnica ninja básica", "tecnica ninja basica"}:
+            return ["Técnica básica: o texto indica uso geral por praticantes ninja, sem clã ou personagem exclusivo neste trecho."]
+        return [
+            "Restrita/contextual: o texto informa usuários conhecidos, clãs ou personagens associados. Não tratar como poder universal sem aprovação do Mestre.",
+            f"Usuários conhecidos: {user_text}",
+        ]
+    if rank:
+        if any(word in title_text for word in ["konoha", "suna", "ho ", "mokuton", "raiton", "suiton", "doton", "fuuton", "katon", "hyuuga", "uchiha"]):
+            return ["Técnica contextual: possui rank e tema/clã/escola específico; confirmar pré-requisitos na mesa antes de liberar para personagens."]
+        return ["Técnica aprendível: o texto apresenta rank, mas não informa usuário ou clã exclusivo neste trecho."]
+    return ["Técnica ou especialidade sem restrição explícita no trecho catalogado."]
+
+
 def parse_technique_body(body: list[str], title: str) -> list[dict]:
     buckets: dict[str, list[str]] = {}
     order: list[str] = []
@@ -461,8 +487,19 @@ def parse_technique_body(body: list[str], title: str) -> list[dict]:
                 if label not in buckets:
                     buckets[label] = []
                     order.append(label)
-                if label_match.group(2).strip():
-                    buckets[label].append(label_match.group(2).strip())
+                value = label_match.group(2).strip()
+                if label == "Rank" and value:
+                    rank_match = re.match(r"^([A-Z?/-]+)\.?\s*(.*)", value, re.IGNORECASE)
+                    if rank_match:
+                        buckets[label].append(rank_match.group(1).strip())
+                        if rank_match.group(2).strip():
+                            buckets.setdefault("Descrição", []).append(rank_match.group(2).strip())
+                            if "Descrição" not in order:
+                                order.append("Descrição")
+                    else:
+                        buckets[label].append(value)
+                elif value:
+                    buckets[label].append(value)
             elif line.startswith("(") and "Subtítulo" not in buckets:
                 buckets.setdefault("Subtítulo", []).append(line)
                 if "Subtítulo" not in order:
@@ -471,7 +508,7 @@ def parse_technique_body(body: list[str], title: str) -> list[dict]:
                 buckets.setdefault(current, []).append(line)
                 if current not in order:
                     order.append(current)
-    return [block(f"{title}-{name}", name, "poderes", values) for name in order if (values := buckets.get(name))]
+    return [block(f"{title}-{name}", name, TECHNIQUE_AREA, values) for name in order if (values := buckets.get(name))]
 
 
 def build_techniques(texts: list[str]) -> list[dict]:
@@ -492,9 +529,14 @@ def build_techniques(texts: list[str]) -> list[dict]:
             current_body = []
             return
         subsections = parse_technique_body(current_body, clean_title)
+        if not subsections:
+            current_title = None
+            current_body = []
+            return
+        subsections.insert(0, block(f"{clean_title}-disponibilidade", "Disponibilidade", TECHNIQUE_AREA, technique_availability(clean_title, subsections)))
         paragraphs = [p for section in subsections for p in section.get("paragraphs", [])]
         if paragraphs or current_body:
-            sections.append(item("poderes", "power", clean_title, paragraphs or current_body, subsections or [block(f"{clean_title}-descricao", "Descrição", "poderes", current_body)]))
+            sections.append(item(TECHNIQUE_AREA, "technique", clean_title, paragraphs or current_body, subsections))
         current_title = None
         current_body = []
 
