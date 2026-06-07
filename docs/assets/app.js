@@ -5,9 +5,7 @@ const AREAS = [
   ["aprimoramentos", "Aprimoramentos"],
   ["manobras_combate", "Manobras de Combate"],
   ["kits", "Kits"],
-  ["classes", "Classes"],
-  ["racas", "Raças"],
-  ["linhagens", "Linhagens"],
+  ["classes_racas", "Classes e Raças"],
   ["poderes", "Poderes"],
   ["magias", "Magias"],
   ["rituais", "Rituais"],
@@ -120,6 +118,12 @@ function applyTheme(theme) {
 
 function areaLabel(area) {
   return AREAS.find(([id]) => id === area)?.[1] || area;
+}
+
+function displayArea(itemOrArea) {
+  const area = typeof itemOrArea === "string" ? itemOrArea : itemOrArea?.area;
+  if (area === "classes" || area === "racas") return "classes_racas";
+  return area;
 }
 
 function sectionText(section) {
@@ -235,7 +239,7 @@ function buildItems(book) {
 function categoryCount(area) {
   const items = globalScopedItems();
   if (area === "all") return items.length;
-  return items.filter((item) => item.area === area).length;
+  return items.filter((item) => displayArea(item) === area).length;
 }
 
 function countBy(items, getKey) {
@@ -253,14 +257,14 @@ function invalidateFilterGroups() {
 }
 
 function refreshAreaCounts() {
-  state.areaCounts = countBy(state.items, (item) => item.area);
+  state.areaCounts = countBy(state.items, displayArea);
 }
 
 function scopedFilterItems() {
   const items = globalScopedItems();
   if (!state.selectedArea) return items;
   if (state.selectedArea === "all") return items;
-  return items.filter((item) => item.area === state.selectedArea);
+  return items.filter((item) => displayArea(item) === state.selectedArea);
 }
 
 function sectionByTitle(item, title) {
@@ -298,6 +302,8 @@ function itemPolarityOption(item) {
   if (Object.prototype.hasOwnProperty.call(item, "_polarityOption")) return item._polarityOption;
   if (item.area !== "aprimoramentos") return null;
   if (item.polarity) return item.polarity;
+  if (item.metadata?.polarity) return item.metadata.polarity;
+  if (item.metadata?.polaridade) return item.metadata.polaridade;
   const values = itemCostOptions(item)
     .map((cost) => Number(cost.match(/^[+-]?\d+/)?.[0]))
     .filter((value) => Number.isFinite(value));
@@ -370,7 +376,7 @@ function filterGroupsData() {
   const groups = [];
 
   if (!state.selectedArea || state.selectedArea === "all") {
-    const areaCounts = countBy(scopedItems, (item) => item.area);
+    const areaCounts = countBy(scopedItems, displayArea);
     groups.push({
       id: "areas",
       title: "Categorias",
@@ -406,7 +412,7 @@ function filterGroupsData() {
     }
   }
 
-  if (state.selectedArea === "aprimoramentos" || state.selectedArea === "racas") {
+  if (["aprimoramentos", "kits", "classes_racas"].includes(state.selectedArea)) {
     groups.push({
       id: "costs",
       title: "Custo",
@@ -426,7 +432,7 @@ function filterGroupsData() {
     if (circulos.length) groups.push({ id: "circulos", title: "Círculo", options: circulos });
   }
 
-  const blocksExcluded = ["all", "aprimoramentos", "racas", "poderes", "magias"];
+  const blocksExcluded = ["all", "aprimoramentos", "classes_racas", "poderes", "magias"];
   if (!blocksExcluded.includes(state.selectedArea)) {
     const blocks = optionListFromCounts(countBy(scopedItems, sectionTitles));
     if (blocks.length > 1) groups.push({ id: "blocks", title: "Blocos", options: blocks });
@@ -532,6 +538,7 @@ function itemSearchText(item) {
     item.bookTitle,
     item.sourceFile,
     item.area,
+    areaLabel(displayArea(item)),
     item.sectionTitle,
     ...(item.sections || []).map((section) => section.title),
     item.paragraphs.join(" "),
@@ -554,7 +561,7 @@ function visibleItems() {
   const query = normalize(state.query);
   const groupsById = new Map(filterGroupsData().map((group) => [group.id, group]));
   return globalScopedItems().filter((item) => {
-    if (state.selectedArea !== "all" && item.area !== state.selectedArea) return false;
+    if (state.selectedArea !== "all" && displayArea(item) !== state.selectedArea) return false;
     if (state.section !== "all" && item.kind === "npc" && item.sectionId !== state.section) return false;
     if (!filterAllows("kinds", item.kind || "section", state.filters, groupsById)) return false;
     if (!filterAllows("polarity", itemPolarityOption(item), state.filters, groupsById)) return false;
@@ -718,6 +725,34 @@ function renderTextBlock(title, text) {
   return block;
 }
 
+function renderListBlock(title, paragraphs) {
+  const block = document.createElement("section");
+  block.className = "section";
+  const heading = document.createElement("h3");
+  heading.textContent = title;
+  const body = document.createElement("div");
+  body.className = "text-block text-list";
+  for (const paragraph of paragraphs.filter(Boolean)) {
+    const row = document.createElement("div");
+    row.className = "text-list-row";
+    row.textContent = paragraph;
+    body.append(row);
+  }
+  block.append(heading, body);
+  return block;
+}
+
+function shouldRenderAsList(section) {
+  const title = normalize(section.title || "");
+  return title === "custo" || title === "custo de pericia";
+}
+
+function renderDetailSection(section) {
+  const paragraphs = section.paragraphs || [];
+  if (shouldRenderAsList(section)) return renderListBlock(section.title, paragraphs);
+  return renderTextBlock(section.title, sectionText(section));
+}
+
 function renderSectionGroup(title, sections, includeSectionTitles = false) {
   const paragraphs = sections.flatMap((section) => {
     const text = sectionText(section);
@@ -758,7 +793,7 @@ function renderPilotNpcDetail(item) {
 
   for (const section of sections) {
     if (consumed.has(section)) continue;
-    nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
+    nodes.detailPanel.append(renderDetailSection(section));
   }
 }
 
@@ -782,7 +817,7 @@ function renderSectionDetail(item) {
 
 function renderAdventureDetail(item) {
   for (const section of item.sections || []) {
-    nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
+    nodes.detailPanel.append(renderDetailSection(section));
   }
 }
 
@@ -804,7 +839,7 @@ function renderGroupedDetail(item, sortFunction = null) {
   const sections = [...(item.sections || [])];
   if (sortFunction) sections.sort(sortFunction);
   for (const section of sections) {
-    nodes.detailPanel.append(renderTextBlock(section.title, sectionText(section)));
+    nodes.detailPanel.append(renderDetailSection(section));
   }
 }
 
@@ -817,12 +852,14 @@ function itemTypeLabel(item) {
   if (item.kind === "enhancement") return "Aprimoramento";
   if (item.kind === "power") return "Poder";
   if (item.kind === "race") return "Raça";
+  if (item.kind === "lineage") return "Raça";
   if (item.kind === "ritual") return "Ritual";
   if (item.kind === "magia") return "Magia";
   if (item.kind === "class") return "Classe";
   if (item.kind === "maneuver") return "Manobra";
   if (item.kind === "equipment") return "Equipamento";
   if (item.kind === "kit") return "Kit";
+  if (item.kind === "creature") return "Criatura";
   if (item.kind === "group") return "Grupo";
   return "";
 }
@@ -856,7 +893,7 @@ function renderDetail() {
   subtitle.textContent = [typeLabel, item.bookTitle, item.sourceFile].filter(Boolean).join(" · ");
   const tags = document.createElement("div");
   tags.className = "tag-row";
-  tags.append(pill(areaLabel(item.area), "blue"));
+  tags.append(pill(areaLabel(displayArea(item)), "blue"));
   if (item.npc) tags.append(pill(item.npc.name, "gold"));
   head.append(title, subtitle, tags);
 
@@ -998,7 +1035,9 @@ async function load() {
   state.items = state.books.flatMap(buildItems).map(prepareItem);
   refreshAreaCounts();
   invalidateFilterGroups();
-  state.globalFilters = filtersWithDefaults(state.globalFilters, globalFilterGroupsData());
+  state.globalFilters = state.globalFilters.books.size
+    ? filtersWithDefaults(state.globalFilters, globalFilterGroupsData())
+    : defaultFilters(globalFilterGroupsData());
   state.filters = filtersWithDefaults(state.filters);
   if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
   render();

@@ -582,7 +582,7 @@ button:focus-visible {
 .segment-row {
   display: grid;
   width: 100%;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) minmax(82px, 42%);
   gap: 12px;
   align-items: start;
   padding: 10px 12px;
@@ -625,14 +625,17 @@ button:focus-visible {
 }
 
 .segment-meta {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   justify-items: end;
   gap: 4px;
   min-width: 82px;
+  min-height: 22px;
 }
 
 .pill {
-  display: inline-flex;
+  display: -webkit-box;
   align-items: center;
   max-width: 100%;
   min-height: 22px;
@@ -642,6 +645,13 @@ button:focus-visible {
   color: var(--ink);
   font-size: 0.76rem;
   font-weight: 800;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  text-align: left;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .pill.green {
@@ -748,6 +758,22 @@ button:focus-visible {
   border: 1px solid var(--line);
   background: var(--surface);
   line-height: 1.52;
+}
+
+.text-list {
+  display: grid;
+  gap: 8px;
+  white-space: normal;
+}
+
+.text-list-row {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.text-list-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .footer {

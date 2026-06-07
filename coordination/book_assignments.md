@@ -20,7 +20,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 
 | Ordem | Livro | Tamanho | Respons?vel | Status |
 |---:|---|---:|---|---|
-| 1 | `Spiritum_OCR_parcial_com_imagens.docx` | 17.87 MB | Codex | assigned |
+| 1 | `Spiritum_OCR_parcial_com_imagens.docx` | 17.87 MB | Codex | pilot_review |
 | 2 | `Corondor.docx` | 9.03 MB | Codex | assigned |
 | 3 | `Varna_Chamado_da_Guerra_OCR_alta_qualidade.docx` | 4.77 MB | Codex | assigned |
 | 4 | `Kits Orientais.docx` | 2.40 MB | Codex | assigned |
@@ -301,3 +301,9 @@ Motivo: manter fora da execu??o normal at? libera??o expl?cita, para evitar repe
 - Ap?s processar, mover o DOCX para `Livros/word/feito`.
 - Rodar `python scripts\build_pilot_index.py`, `python scripts\validate_data.py` e `node --check docs\assets\app.js` antes de publicar.
 - Altera??es em `docs/assets/app.js`, scripts comuns de limpeza ou regras globais devem ser avisadas no handoff antes do outro agente integrar.
+- Status `review_required` significa que o livro foi auditado, mas n?o deve ser catalogado sem uma etapa dedicada de revis?o/OCR.
+
+## Livros Com Revis?o Necess?ria
+
+| Livro | Respons?vel | Motivo |
+|---|---|---|

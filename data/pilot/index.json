@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-06T12:41:29",
+  "generatedAt": "2026-06-06T12:08:41",
   "sources": [
     {
       "source": "4killers",
@@ -263,17 +263,20 @@
       ]
     },
     {
-      "source": "daemon-tormenta",
-      "title": "Daemon Tormenta",
-      "file": "daemon-tormenta.json",
+      "source": "spiritum",
+      "title": "Spiritum",
+      "file": "spiritum.json",
       "status": "pilot_review",
       "areas": [
-        "regras_base",
-        "racas",
-        "kits",
         "aprimoramentos",
-        "magias",
-        "manobras_combate"
+        "cenarios_lore",
+        "classes",
+        "criaturas_npcs",
+        "kits",
+        "poderes",
+        "racas",
+        "regras_base",
+        "rituais"
       ]
     }
   ]
