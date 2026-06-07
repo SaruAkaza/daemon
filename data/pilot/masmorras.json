@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "source": "masmorras",
+  "title": "Masmorras",
+  "sourceFile": "Masmorras.docx",
+  "sourcePath": "Livros\\word\\feito\\Masmorras.docx",
+  "status": "pilot_review",
+  "summary": "Mini suplemento de exploração do Castelo Voador Sneerra, com três áreas de masmorra e tabelas de baús, encontros, armadilhas e tesouros.",
+  "areas": [
+    "cenarios_lore",
+    "regras_base"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "cenarios-lore-masmorras",
+      "title": "Cenários/Lore - Masmorras",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenario",
+      "sectionTitle": "Cenário",
+      "paragraphs": [
+        "Castelo voador Sneerra",
+        "Lá existem três dungeons ainda não exploradas:",
+        "O castelo possui três áreas exploráveis catalogadas: Fundações, Masmorras e Geonúcleo. Cada uma possui sua própria regra de busca por baús, encontros, armadilhas e tesouros.",
+        "Nada. Hahahahahahha!!!!",
+        "Eitaa quanto ar aqui dentro!!!",
+        "Cada quadrado tem 5m."
+      ],
+      "sections": [
+        {
+          "id": "masmorras-castelo",
+          "title": "Castelo Voador Sneerra",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Castelo voador Sneerra",
+            "Lá existem três dungeons ainda não exploradas:"
+          ]
+        },
+        {
+          "id": "masmorras-dungeons",
+          "title": "Dungeons não exploradas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O castelo possui três áreas exploráveis catalogadas: Fundações, Masmorras e Geonúcleo. Cada uma possui sua própria regra de busca por baús, encontros, armadilhas e tesouros."
+          ]
+        },
+        {
+          "id": "masmorras-mapa",
+          "title": "Observações do mapa",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Nada. Hahahahahahha!!!!",
+            "Eitaa quanto ar aqui dentro!!!",
+            "Cada quadrado tem 5m."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regra-base-masmorras",
+      "title": "Regra base - Masmorras",
+      "area": "regras_base",
+      "kind": "ruleset",
+      "sectionId": "regra-base",
+      "sectionTitle": "Regra Base",
+      "paragraphs": [
+        "As fundações possuem cerca de 10 baús de tesouro de 1 a 2 tesouros, de 3 a 4 nada, 5 a 7 ataques de criaturas, 8 a 10 armadilhas. Cada baú deve ser rolado para determinar se é um tesouro ou uma armadilha, os tesouros ou armadilhas são rolados em 1D3 para determinar o que tem no baú. Para encontrar um baú é necessário um teste de PER -10% para cada 30m vasculhados.",
+        "1. Asfixor, pag. 10.",
+        "2. Esqueletos, pag. 43.",
+        "3. Fantasma, pag. 45.",
+        "4. Fogo-fátuo, pag. 48.",
+        "5. Ghoul, pag. 52.",
+        "6. Horror dos túmulos, pag. 68.",
+        "7. Lesma carnívora, pag. 72.",
+        "8. Neblina-fantasma, pag. 82.",
+        "9. Ratazans comuns e gigantes, pag. 98.",
+        "10. Zumbis, pag. 122.",
+        "Ruim Flechas mágicas (1D6+3 flechas são disparadas contra todas as pessoas até 15m do baú, causando 1D6+1 pontos de dano).",
+        "Péssimo Esqueletos dos operários (2D6+3 esqueletos surgem devido a uma antiga maldição e atacam todos que estiverem próximos).",
+        "Deu merda Rock in Rolls (rochas caem magicamente do teto próximos do baú até 5m de raio causando 2d6+6 de dano.",
+        "Bom encontraram 100 de peças de ouro ou um anel de fire ball 4D6 de dano em 4m de raio até 50m 2 vezes ao dia, ou anel de luz contínua que ilumina por até 30 minutos a 20m ou pode cegar a todos a sua volta por 2D6 Rodadas e recarrega após 30 min, ou um colar de focus e mana + 1.",
+        "Excelente encontraram 500 de peças de ouro ou uma espada de cavaleiro + 1+3 vs mortos-vivos, ou uma adaga do Troll +1 (o dano causado com essa adaga não pode ser regenerado por criaturas com regeneração) e um amuleto dos padres contra mortos vivos corpóreos +1 (teste de WILL vs WILL).",
+        "Maravilha encontraram um baú cheio de bons tesouros mágicos; um amuleto elemental da terra (permite ao usuário através de muita concentração atravessar as paredes como se fosse material gelatinoso, porém se perder a concentração ficará preso, e se o medalhão for retirado o usuário morre) ou um anel de armas mágicas (Ao empunhar uma arma qualquer e essa arma se tornará uma arma mágica +3, basta empunhar a arma na mesma mão onde está o anel), ou uma Runa aplicável da imolação (após tocar as runas no peito da armadura ou outro objeto, está cria uma aura de calor intenso que causará a todos a 2m do objeto um dano de 1D6 e concede +3 de IP ou dano), ou Uma batina do exorcista com 4pts de fé extras, uma capa de proteção +3 (+30% para defesas), ou um Frasco de poção Infinita (Cura até 1D6 de vida se bebido e se enche depois de 5 turnos, em combate perde-se a vez para beber a poção).",
+        "As Masmorras possuem cerca de 10 baús de tesouro de 1 a 2 tesouros, de 3 a 4 nada, 5 a 7 ataques de criaturas, 8 a 10 armadilhas. Cada baú deve ser rolado para determinar se é um tesouro ou uma armadilha, os tesouros ou armadilhas são rolados em 1D5 para determinar o que tem no baú. Para encontrar um baú é necessário um teste de PER -20% para cada 30m vasculhados.",
+        "1. Asfixor, pag. 10.",
+        "2. Esqueletos, pag. 43.",
+        "3. Fantasma, pag. 45.",
+        "4. Fogo-fátuo, pag. 48.",
+        "5. Ghoul, pag. 52.",
+        "6. Horror dos túmulos, pag. 68.",
+        "7. Lesma carnívora, pag. 72.",
+        "8. Neblina-fantasma, pag. 82.",
+        "9. Ratazans comuns e gigantes, pag. 98.",
+        "10. Soldado-mortos, pag. 107.",
+        "Ruim Flechas mágicas (1D6+3 flechas são disparadas contra todas as pessoas até 15m do baú, causando 1D6+1 pontos de dano).",
+        "Péssimo Esqueletos dos operários (2D6+3 esqueletos surgem devido a uma antiga maldição e atacam todos que estiverem próximos).",
+        "Deu merda Rock in Rolls (rochas caem magicamente do teto próximos do baú até 5m de raio causando 2d6+6 de dano.",
+        "Nada bom óleo inflamável é expelido pelo baú causando graves queimaduras (3d6 de dano) a todos (em 3m de raio) que não passarem em um teste de agilidade -10%.",
+        "Puta merda a casa caiu, o chão próximo do baú é muito frágil e começa a desabar teste de AGI dificil para não cair em um amontoado de estácas que geralmente está a uma profundidade de 10m (não é necessario rolar dano se não morre pela queda ficará preso nas estácas e morrerá com o tempo).",
+        "Bom conseguiram 250 peças de ouro ou um colar de proteção + 4 (40% para defesa), ou um escudo mágico +3 (15% para defesa e IP + 4) ou uma capa de proteção +2 (+20% para defesas), ou Caixa de poções (deixa as poções intactas enquanto estiverem dentro da caixa espaço para 6 frascos).",
+        "Muito bom 1000 peças de ouro ou um robe da batalha com IP 4, ou Robe de Ironsilk (reduz pela metade qualquer dano cortante ou perfurante).",
+        "Excelente conseguiram 1500 peças de ouro ou uma tocha mágica (uma tocha de ferro que ao recitar as palavras mágicas ela se incendeia e gera uma luz avermelhada capaz de iluminar ate 20m ao redor da tocha), ou uma varinha de esmeralda (abre uma passagem de 1m de diâmetro em uma superfície de pedra ou terra).",
+        "Maravilha conseguiram um par de braceletes do arqueiro (Quando colocados, o dono dos braceletes recebe a perícia Arquearia 50% e caso já possua recebe +20%), ou Uma Caixa dos planos, ou um cajado de concentração (50% de chance para não perder a concentração ou uma caneca do café da manhã.",
+        "Nossa!!! 2000 peças de ouro, ou um martelo de esmeraldas (este martelo de ferro frio possuem esmeraldas encaixados ao lado de suas cabeças, estes martelos são considerados armas +30% em ataque e +6 nos danos. Podem criar uma rajada de luz verde 1 vez ao dia que causa 5D6 de dano (com direito a teste de resistência). Pode invocar quando batido no chão e as palavras mágicas ditas, uma vez a cada 7 dias, o golpe especial terremoto de esmeralda que gera um pulso de energia no solo em raio de 20m. Este pulso funciona como um pequeno terremoto, desequilibrando todos (com exceção do dono do martelo) e destruindo objetos e estruturas. Só existe um baú deste.",
+        "O Geonúcleo possui cerca de 10 baús de tesouro de 1 a 2 tesouros, de 3 a 4 nada, 5 a 7 ataques de criaturas, 8 a 10 armadilhas. Cada baú deve ser rolado para determinar se é um tesouro ou uma armadilha, os tesouros ou armadilhas são rolados em 1D6 para determinar o que tem no baú. Para encontrar um baú é necessário um teste de PER -30% para cada 30m vasculhados.",
+        "1. Asfixor, pag. 10.",
+        "2. Esqueletos, pag. 43.",
+        "3. Fantasma, pag. 45.",
+        "4. Fogo-fátuo, pag. 48.",
+        "5. Ghoul, pag. 52.",
+        "6. Horror dos túmulos, pag. 68.",
+        "7. Lesma carnívora, pag. 72.",
+        "8. Neblina-fantasma, pag. 82.",
+        "9. Ratazans comuns e gigantes, pag. 98.",
+        "10. Soldado-mortos, pag. 107.",
+        "Ruim Flechas mágicas (1D6+3 flechas são disparadas contra todas as pessoas até 15m do baú, causando 1D6+1 pontos de dano).",
+        "Péssimo Esqueletos dos operários (2D6+3 esqueletos surgem devido a uma antiga maldição e atacam todos que estiverem próximos).",
+        "Deu merda Rock in Rolls (rochas caem magicamente do teto próximos do baú até 5m de raio causando 2d6+6 de dano.",
+        "Nada bom óleo inflamável é expelido pelo baú causando graves queimaduras (3d6 de dano) a todos (em 3m de raio) que não passarem em um teste de agilidade -10%.",
+        "Puta merda a casa caiu, o chão próximo do baú é muito frágil e começa a desabar teste de AGI dificil para não cair em um amontoado de estácas que geralmente está a uma profundidade de 10m (não é necessario rolar dano se não morre pela queda ficará preso nas estácas e morrerá com o tempo).",
+        "Corre piranha corre!! Um grupo de 1D6+2 Guerreiros esqueletos surgem do chão maldito e atacam que estiver na área.",
+        "Muito Bom conseguiram 3500 peças de ouro ou um robe da batalha com IP 4, ou Robe de Ironsilk (reduz pela metade qualquer dano cortante ou perfurante pela metade), ou Arco de Rubi possuem rubis encaixados nas laterais do arco. Estes arcos são considerados armas com um bônus de +40% em ataque e +3 nos danos. As flechas disparadas deste arco incendeiam-se magicamente assim que deixam o arco, causando este dano extra (dano mágico). Pode provocar, quando apontados para um alvo e recitado as palavras mágicas, uma vez a cada 7 dias, o golpe explosão de rubi que gera uma pequena chuva de flechas incandescentes (5+2D6 Flechas) com alcance de 30m. Todos os atingidos pelas flechas recebem 1D6+2 pontos de dano.",
+        "Excelente conseguiram 4000 peças de ouro ou um par de braceletes do arqueiro (Quando colocados, o dono dos braceletes recebe a perícia Arquearia 50% e caso já possua recebe +20%), ou um cajado de concentração (50% de chance para não perder a concentração ou uma caneca do café da manhã. ou um robe da batalha com IP 4, ou Robe de Ironsilk (reduz pela metade qualquer dano cortante ou perfurante pela metade), ou Espada de diamante, estás espadas de ferro frio possuem diamantes encaixados na guarda. Estes espadas são considerados armas com um bônus de +40% em ataque e +5 nos danos. A espada é considerada abençoada e qualquer criatura maléfica que se aproxime dela mais do que 5m sofre 1D3 pontos de dano por rodada. Pode invocar, quando recitado as palavras mágicas, uma vez a cada 7 dias, o golpe a luz sagrada que gera uma onda de energia luminosa que causa 7D6 pontos de dano em qualquer criatura morta-viva ou maligna que estejam em um raio de 10m mas contudo as vítimas tem direito a testes de resistência.",
+        "Excelente 2 conseguiram 4500 peças de ouro ou uma Espada de diamante, estás espadas de ferro frio possuem diamantes encaixados na guarda. Estes espadas são considerados armas com um bônus de +40% em ataque e +5 nos danos. A espada é considerada abençoada e qualquer criatura maléfica que se aproxime dela mais do que 5m sofre 1D3 pontos de dano por rodada. Pode invocar, quando recitado as palavras mágicas, uma vez a cada 7 dias, o golpe a luz sagrada que gera uma onda de energia luminosa que causa 7D6 pontos de dano em qualquer criatura morta-viva ou maligna que estejam em um raio de 10m mas contudo as vítimas tem direito a testes de resistência, ou Arco de Rubi possuem rubis encaixados nas laterais do arco. Estes arcos são considerados armas com um bônus de +40% em ataque e +3 nos danos. As flechas disparadas deste arco incendeiam-se magicamente assim que deixam o arco, causando este dano extra (dano mágico). Pode provocar, quando apontados para um alvo e recitado as palavras mágicas, uma vez a cada 7 dias, o golpe explosão de rubi que gera uma pequena chuva de flechas incandescentes (5+2D6 Flechas) com alcance de 30m. Todos os atingidos pelas flechas recebem 1D6+2 pontos de dano, ou um martelo de esmeraldas (este martelo de ferro frio possuem esmeraldas encaixados ao lado de suas cabeças, estes martelos são considerados armas +30% em ataque e +6 nos danos. Podem criar uma rajada de luz verde 1 vez ao dia que causa 5D6 de dano (com direito a teste de resistência). Pode invocar quando batido no chão e as palavras mágicas ditas, uma vez a cada 7 dias, o golpe especial terremoto de esmeralda que gera um pulso de energia no solo em raio de 20m. Este pulso funciona como um pequeno terremoto, desequilibrando todos (com exceção do dono do martelo) e destruindo objetos e estruturas, ou 2 Lanças de safira (estás lanças de ferro frio possuem uma safira encaixada entre a lâmina e o cabo ricamente ornamentado, são consideradas armas +20% em ataque e +4 em dano. Quando arremessada (a até 25m de distância), a lança volta magicamente para a mão do usuário no final da rodada. Além disso, a partir da safira, a lança pode criar uma rajada de luz azulada 1 vez por dia que causa 5D6 pontos de dano (com direito a testes). As lanças possuem um poder especial, chamado safira flamejante. 1 vez por semana, sob comando mágico, a safira transforma a ponta da lança em uma bola de energia azulada e causa uma explosão azul até 30m de distância. Todos a 3m do centro da explosão sofrem 6D6 de dano (com direito a teste de resistência)."
+      ],
+      "sections": [
+        {
+          "id": "fundacoes-regra",
+          "title": "Fundações - Baús",
+          "area": "regras_base",
+          "paragraphs": [
+            "As fundações possuem cerca de 10 baús de tesouro de 1 a 2 tesouros, de 3 a 4 nada, 5 a 7 ataques de criaturas, 8 a 10 armadilhas. Cada baú deve ser rolado para determinar se é um tesouro ou uma armadilha, os tesouros ou armadilhas são rolados em 1D3 para determinar o que tem no baú. Para encontrar um baú é necessário um teste de PER -10% para cada 30m vasculhados."
+          ]
+        },
+        {
+          "id": "fundacoes-criaturas",
+          "title": "Fundações - Encontros Aleatórios",
+          "area": "regras_base",
+          "paragraphs": [
+            "1. Asfixor, pag. 10.",
+            "2. Esqueletos, pag. 43.",
+            "3. Fantasma, pag. 45.",
+            "4. Fogo-fátuo, pag. 48.",
+            "5. Ghoul, pag. 52.",
+            "6. Horror dos túmulos, pag. 68.",
+            "7. Lesma carnívora, pag. 72.",
+            "8. Neblina-fantasma, pag. 82.",
+            "9. Ratazans comuns e gigantes, pag. 98.",
+            "10. Zumbis, pag. 122."
+          ]
+        },
+        {
+          "id": "fundacoes-armadilhas",
+          "title": "Fundações - Armadilhas",
+          "area": "regras_base",
+          "paragraphs": [
+            "Ruim Flechas mágicas (1D6+3 flechas são disparadas contra todas as pessoas até 15m do baú, causando 1D6+1 pontos de dano).",
+            "Péssimo Esqueletos dos operários (2D6+3 esqueletos surgem devido a uma antiga maldição e atacam todos que estiverem próximos).",
+            "Deu merda Rock in Rolls (rochas caem magicamente do teto próximos do baú até 5m de raio causando 2d6+6 de dano."
+          ]
+        },
+        {
+          "id": "fundacoes-tesouros",
+          "title": "Fundações - Tesouros",
+          "area": "regras_base",
+          "paragraphs": [
+            "Bom encontraram 100 de peças de ouro ou um anel de fire ball 4D6 de dano em 4m de raio até 50m 2 vezes ao dia, ou anel de luz contínua que ilumina por até 30 minutos a 20m ou pode cegar a todos a sua volta por 2D6 Rodadas e recarrega após 30 min, ou um colar de focus e mana + 1.",
+            "Excelente encontraram 500 de peças de ouro ou uma espada de cavaleiro + 1+3 vs mortos-vivos, ou uma adaga do Troll +1 (o dano causado com essa adaga não pode ser regenerado por criaturas com regeneração) e um amuleto dos padres contra mortos vivos corpóreos +1 (teste de WILL vs WILL).",
+            "Maravilha encontraram um baú cheio de bons tesouros mágicos; um amuleto elemental da terra (permite ao usuário através de muita concentração atravessar as paredes como se fosse material gelatinoso, porém se perder a concentração ficará preso, e se o medalhão for retirado o usuário morre) ou um anel de armas mágicas (Ao empunhar uma arma qualquer e essa arma se tornará uma arma mágica +3, basta empunhar a arma na mesma mão onde está o anel), ou uma Runa aplicável da imolação (após tocar as runas no peito da armadura ou outro objeto, está cria uma aura de calor intenso que causará a todos a 2m do objeto um dano de 1D6 e concede +3 de IP ou dano), ou Uma batina do exorcista com 4pts de fé extras, uma capa de proteção +3 (+30% para defesas), ou um Frasco de poção Infinita (Cura até 1D6 de vida se bebido e se enche depois de 5 turnos, em combate perde-se a vez para beber a poção)."
+          ]
+        },
+        {
+          "id": "masmorras-regra",
+          "title": "Masmorras - Baús",
+          "area": "regras_base",
+          "paragraphs": [
+            "As Masmorras possuem cerca de 10 baús de tesouro de 1 a 2 tesouros, de 3 a 4 nada, 5 a 7 ataques de criaturas, 8 a 10 armadilhas. Cada baú deve ser rolado para determinar se é um tesouro ou uma armadilha, os tesouros ou armadilhas são rolados em 1D5 para determinar o que tem no baú. Para encontrar um baú é necessário um teste de PER -20% para cada 30m vasculhados."
+          ]
+        },
+        {
+          "id": "masmorras-criaturas",
+          "title": "Masmorras - Encontros Aleatórios",
+          "area": "regras_base",
+          "paragraphs": [
+            "1. Asfixor, pag. 10.",
+            "2. Esqueletos, pag. 43.",
+            "3. Fantasma, pag. 45.",
+            "4. Fogo-fátuo, pag. 48.",
+            "5. Ghoul, pag. 52.",
+            "6. Horror dos túmulos, pag. 68.",
+            "7. Lesma carnívora, pag. 72.",
+            "8. Neblina-fantasma, pag. 82.",
+            "9. Ratazans comuns e gigantes, pag. 98.",
+            "10. Soldado-mortos, pag. 107."
+          ]
+        },
+        {
+          "id": "masmorras-armadilhas",
+          "title": "Masmorras - Armadilhas",
+          "area": "regras_base",
+          "paragraphs": [
+            "Ruim Flechas mágicas (1D6+3 flechas são disparadas contra todas as pessoas até 15m do baú, causando 1D6+1 pontos de dano).",
+            "Péssimo Esqueletos dos operários (2D6+3 esqueletos surgem devido a uma antiga maldição e atacam todos que estiverem próximos).",
+            "Deu merda Rock in Rolls (rochas caem magicamente do teto próximos do baú até 5m de raio causando 2d6+6 de dano.",
+            "Nada bom óleo inflamável é expelido pelo baú causando graves queimaduras (3d6 de dano) a todos (em 3m de raio) que não passarem em um teste de agilidade -10%.",
+            "Puta merda a casa caiu, o chão próximo do baú é muito frágil e começa a desabar teste de AGI dificil para não cair em um amontoado de estácas que geralmente está a uma profundidade de 10m (não é necessario rolar dano se não morre pela queda ficará preso nas estácas e morrerá com o tempo)."
+          ]
+        },
+        {
+          "id": "masmorras-tesouros",
+          "title": "Masmorras - Tesouros",
+          "area": "regras_base",
+          "paragraphs": [
+            "Bom conseguiram 250 peças de ouro ou um colar de proteção + 4 (40% para defesa), ou um escudo mágico +3 (15% para defesa e IP + 4) ou uma capa de proteção +2 (+20% para defesas), ou Caixa de poções (deixa as poções intactas enquanto estiverem dentro da caixa espaço para 6 frascos).",
+            "Muito bom 1000 peças de ouro ou um robe da batalha com IP 4, ou Robe de Ironsilk (reduz pela metade qualquer dano cortante ou perfurante).",
+            "Excelente conseguiram 1500 peças de ouro ou uma tocha mágica (uma tocha de ferro que ao recitar as palavras mágicas ela se incendeia e gera uma luz avermelhada capaz de iluminar ate 20m ao redor da tocha), ou uma varinha de esmeralda (abre uma passagem de 1m de diâmetro em uma superfície de pedra ou terra).",
+            "Maravilha conseguiram um par de braceletes do arqueiro (Quando colocados, o dono dos braceletes recebe a perícia Arquearia 50% e caso já possua recebe +20%), ou Uma Caixa dos planos, ou um cajado de concentração (50% de chance para não perder a concentração ou uma caneca do café da manhã.",
+            "Nossa!!! 2000 peças de ouro, ou um martelo de esmeraldas (este martelo de ferro frio possuem esmeraldas encaixados ao lado de suas cabeças, estes martelos são considerados armas +30% em ataque e +6 nos danos. Podem criar uma rajada de luz verde 1 vez ao dia que causa 5D6 de dano (com direito a teste de resistência). Pode invocar quando batido no chão e as palavras mágicas ditas, uma vez a cada 7 dias, o golpe especial terremoto de esmeralda que gera um pulso de energia no solo em raio de 20m. Este pulso funciona como um pequeno terremoto, desequilibrando todos (com exceção do dono do martelo) e destruindo objetos e estruturas. Só existe um baú deste."
+          ]
+        },
+        {
+          "id": "geonucleo-regra",
+          "title": "Geonúcleo - Baús",
+          "area": "regras_base",
+          "paragraphs": [
+            "O Geonúcleo possui cerca de 10 baús de tesouro de 1 a 2 tesouros, de 3 a 4 nada, 5 a 7 ataques de criaturas, 8 a 10 armadilhas. Cada baú deve ser rolado para determinar se é um tesouro ou uma armadilha, os tesouros ou armadilhas são rolados em 1D6 para determinar o que tem no baú. Para encontrar um baú é necessário um teste de PER -30% para cada 30m vasculhados."
+          ]
+        },
+        {
+          "id": "geonucleo-criaturas",
+          "title": "Geonúcleo - Encontros Aleatórios",
+          "area": "regras_base",
+          "paragraphs": [
+            "1. Asfixor, pag. 10.",
+            "2. Esqueletos, pag. 43.",
+            "3. Fantasma, pag. 45.",
+            "4. Fogo-fátuo, pag. 48.",
+            "5. Ghoul, pag. 52.",
+            "6. Horror dos túmulos, pag. 68.",
+            "7. Lesma carnívora, pag. 72.",
+            "8. Neblina-fantasma, pag. 82.",
+            "9. Ratazans comuns e gigantes, pag. 98.",
+            "10. Soldado-mortos, pag. 107."
+          ]
+        },
+        {
+          "id": "geonucleo-armadilhas",
+          "title": "Geonúcleo - Armadilhas",
+          "area": "regras_base",
+          "paragraphs": [
+            "Ruim Flechas mágicas (1D6+3 flechas são disparadas contra todas as pessoas até 15m do baú, causando 1D6+1 pontos de dano).",
+            "Péssimo Esqueletos dos operários (2D6+3 esqueletos surgem devido a uma antiga maldição e atacam todos que estiverem próximos).",
+            "Deu merda Rock in Rolls (rochas caem magicamente do teto próximos do baú até 5m de raio causando 2d6+6 de dano.",
+            "Nada bom óleo inflamável é expelido pelo baú causando graves queimaduras (3d6 de dano) a todos (em 3m de raio) que não passarem em um teste de agilidade -10%.",
+            "Puta merda a casa caiu, o chão próximo do baú é muito frágil e começa a desabar teste de AGI dificil para não cair em um amontoado de estácas que geralmente está a uma profundidade de 10m (não é necessario rolar dano se não morre pela queda ficará preso nas estácas e morrerá com o tempo).",
+            "Corre piranha corre!! Um grupo de 1D6+2 Guerreiros esqueletos surgem do chão maldito e atacam que estiver na área."
+          ]
+        },
+        {
+          "id": "geonucleo-tesouros",
+          "title": "Geonúcleo - Tesouros",
+          "area": "regras_base",
+          "paragraphs": [
+            "Muito Bom conseguiram 3500 peças de ouro ou um robe da batalha com IP 4, ou Robe de Ironsilk (reduz pela metade qualquer dano cortante ou perfurante pela metade), ou Arco de Rubi possuem rubis encaixados nas laterais do arco. Estes arcos são considerados armas com um bônus de +40% em ataque e +3 nos danos. As flechas disparadas deste arco incendeiam-se magicamente assim que deixam o arco, causando este dano extra (dano mágico). Pode provocar, quando apontados para um alvo e recitado as palavras mágicas, uma vez a cada 7 dias, o golpe explosão de rubi que gera uma pequena chuva de flechas incandescentes (5+2D6 Flechas) com alcance de 30m. Todos os atingidos pelas flechas recebem 1D6+2 pontos de dano.",
+            "Excelente conseguiram 4000 peças de ouro ou um par de braceletes do arqueiro (Quando colocados, o dono dos braceletes recebe a perícia Arquearia 50% e caso já possua recebe +20%), ou um cajado de concentração (50% de chance para não perder a concentração ou uma caneca do café da manhã. ou um robe da batalha com IP 4, ou Robe de Ironsilk (reduz pela metade qualquer dano cortante ou perfurante pela metade), ou Espada de diamante, estás espadas de ferro frio possuem diamantes encaixados na guarda. Estes espadas são considerados armas com um bônus de +40% em ataque e +5 nos danos. A espada é considerada abençoada e qualquer criatura maléfica que se aproxime dela mais do que 5m sofre 1D3 pontos de dano por rodada. Pode invocar, quando recitado as palavras mágicas, uma vez a cada 7 dias, o golpe a luz sagrada que gera uma onda de energia luminosa que causa 7D6 pontos de dano em qualquer criatura morta-viva ou maligna que estejam em um raio de 10m mas contudo as vítimas tem direito a testes de resistência.",
+            "Excelente 2 conseguiram 4500 peças de ouro ou uma Espada de diamante, estás espadas de ferro frio possuem diamantes encaixados na guarda. Estes espadas são considerados armas com um bônus de +40% em ataque e +5 nos danos. A espada é considerada abençoada e qualquer criatura maléfica que se aproxime dela mais do que 5m sofre 1D3 pontos de dano por rodada. Pode invocar, quando recitado as palavras mágicas, uma vez a cada 7 dias, o golpe a luz sagrada que gera uma onda de energia luminosa que causa 7D6 pontos de dano em qualquer criatura morta-viva ou maligna que estejam em um raio de 10m mas contudo as vítimas tem direito a testes de resistência, ou Arco de Rubi possuem rubis encaixados nas laterais do arco. Estes arcos são considerados armas com um bônus de +40% em ataque e +3 nos danos. As flechas disparadas deste arco incendeiam-se magicamente assim que deixam o arco, causando este dano extra (dano mágico). Pode provocar, quando apontados para um alvo e recitado as palavras mágicas, uma vez a cada 7 dias, o golpe explosão de rubi que gera uma pequena chuva de flechas incandescentes (5+2D6 Flechas) com alcance de 30m. Todos os atingidos pelas flechas recebem 1D6+2 pontos de dano, ou um martelo de esmeraldas (este martelo de ferro frio possuem esmeraldas encaixados ao lado de suas cabeças, estes martelos são considerados armas +30% em ataque e +6 nos danos. Podem criar uma rajada de luz verde 1 vez ao dia que causa 5D6 de dano (com direito a teste de resistência). Pode invocar quando batido no chão e as palavras mágicas ditas, uma vez a cada 7 dias, o golpe especial terremoto de esmeralda que gera um pulso de energia no solo em raio de 20m. Este pulso funciona como um pequeno terremoto, desequilibrando todos (com exceção do dono do martelo) e destruindo objetos e estruturas, ou 2 Lanças de safira (estás lanças de ferro frio possuem uma safira encaixada entre a lâmina e o cabo ricamente ornamentado, são consideradas armas +20% em ataque e +4 em dano. Quando arremessada (a até 25m de distância), a lança volta magicamente para a mão do usuário no final da rodada. Além disso, a partir da safira, a lança pode criar uma rajada de luz azulada 1 vez por dia que causa 5D6 pontos de dano (com direito a testes). As lanças possuem um poder especial, chamado safira flamejante. 1 vez por semana, sob comando mágico, a safira transforma a ponta da lança em uma bola de energia azulada e causa uma explosão azul até 30m de distância. Todos a 3m do centro da explosão sofrem 6D6 de dano (com direito a teste de resistência)."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1,
+    "regras_base": 1
+  },
+  "reviewNotes": [
+    "Referências a criaturas por página foram mantidas como tabela de encontros, não como NPCs sem ficha.",
+    "Tesouros foram mantidos dentro da regra de rolagem; itens mágicos individuais podem ser extraídos depois se o usuário quiser esse nível de granularidade.",
+    "O DOCX possui 72 parágrafos úteis e não apresenta tabelas estruturais."
+  ],
+  "generatedAt": "2026-06-07T04:19:15Z"
+}
