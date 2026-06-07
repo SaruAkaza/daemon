@@ -1,5 +1,28 @@
 # Handoff — Claude
 
+## 2026-06-06 — BUG no app.js (hub vazio) — diagnosticado, NÃO corrigido
+- **Sintoma:** ao abrir a app, o hub de Categorias e o dropdown de categorias aparecem
+  VAZIOS (body fica `is-home`, 0 cards). Só populam se o usuário entrar no filtro "Livros"
+  e (re)selecionar algo.
+- **Causa raiz (pré-existente, do commit `7128116 feat: implement global and category
+  filters` — NÃO é regressão de pilotos):**
+  - `state.globalFilters.books` inicia `new Set()` vazio (app.js ~L47).
+  - Em `load()` (app.js ~L1001): `state.globalFilters = filtersWithDefaults(state.globalFilters, ...)`.
+  - `filtersWithDefaults` = `{...defaultFilters(TODOS), ...cloneFilters(atual)}`. O `books`
+    vazio do estado atual **sobrescreve** os defaults → nenhum livro selecionado.
+  - `globalScopedItems()` retorna `[]` quando `books.size===0` (app.js ~L358) → todos os
+    `categoryCount()` = 0 → hub e dropdown vazios.
+- **Correção sugerida (mínima, NÃO aplicada — app.js é compartilhado, aguardando combinar
+  com Codex):** no `load()`, na 1ª carga não deixar `books` vazio sobrescrever os defaults:
+  ```js
+  state.globalFilters = state.globalFilters.books.size
+    ? filtersWithDefaults(state.globalFilters, globalFilterGroupsData())
+    : defaultFilters(globalFilterGroupsData());
+  ```
+  (ou inicializar `books` com todos no 1º load). Decisão do usuário: **só registrar agora**.
+- Confirmado que NÃO é causado pelos pilotos: meu `daemon-tormenta.json` valida e carrega
+  100% no navegador (6 áreas, 223 entidades + group). Único erro de console = favicon 404.
+
 ## 2026-06-05 (tarde) — Guia de Itens Mágicos
 - Reivindiquei `Guia_de_Itens_Magicos_OCR_alta_qualidade.docx` (lista Claude, item 6).
   Contrato: `coordination/books/guia-de-itens-magicos.md`. **NÃO é** o
