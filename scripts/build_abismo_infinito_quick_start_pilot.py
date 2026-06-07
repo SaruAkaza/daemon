@@ -63,10 +63,10 @@ SECTION_AREAS = {
     "males do Espaço": "regras_base",
     "manifestações dos medos": "regras_base",
     "narrando manifestações e ilusões": "regras_base",
-    "a história": "aventuras",
-    "fase 1: despertar": "aventuras",
-    "fase 2: Pesadelo": "aventuras",
-    "fase 3: Redenção": "aventuras",
+    "a história": "cenarios_lore",
+    "fase 1: despertar": "cenarios_lore",
+    "fase 2: Pesadelo": "cenarios_lore",
+    "fase 3: Redenção": "cenarios_lore",
 }
 
 CARGO_NAMES = {
@@ -324,9 +324,6 @@ def build_pilot() -> dict:
                 "sections": grouped_sections[area],
             }
         )
-    if adventure_sections:
-        area_counts["aventuras"] = 1
-
     return {
         "version": 1,
         "status": "pilot_review",
@@ -339,19 +336,12 @@ def build_pilot() -> dict:
         "areas": sorted(area_counts),
         "sections": sections,
         "groups": groups,
-        "adventures": [
-            {
-                "id": "abismo-infinito",
-                "title": "Abismo Infinito",
-                "area": "aventuras",
-                "sections": adventure_sections,
-            }
-        ] if adventure_sections else [],
+        "adventures": [],
         "areaCounts": area_counts,
         "reviewNotes": [
             "Piloto por seções explícitas do livro.",
             "Cargos foram tratados como classes/opções de função de personagem.",
-            "As fases Despertar, Pesadelo e Redenção foram tratadas como estrutura de aventura.",
+            "As fases Despertar, Pesadelo e Redenção foram incorporadas ao cenário/lore do Abismo Infinito.",
             "Ainda precisa de revisão humana antes de virar entidade final da base.",
         ],
     }

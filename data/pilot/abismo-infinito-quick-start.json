@@ -1,14 +1,13 @@
 {
   "version": 1,
   "status": "pilot_review",
-  "generatedAt": "2026-06-04T16:11:57",
+  "generatedAt": "2026-06-07T00:27:34",
   "source": "abismo-infinito-quick-start",
   "sourceFile": "Abismo-Infinito-Quick-Start.docx",
   "sourcePath": "Livros\\word\\feito\\Abismo-Infinito-Quick-Start.docx",
   "title": "Abismo Infinito - Quick Start",
   "summary": "Quick start de horror espacial com regras introdutórias, cenário, cargos de astronauta e estrutura de aventura.",
   "areas": [
-    "aventuras",
     "cenarios_lore",
     "classes",
     "front_matter",
@@ -565,20 +564,11 @@
             "A quantidade de membros de uma expedição pode variar dependendo do objetivo e tipo da missão, pode haver situações em que dezenas de astronautas são necessários e podem haver situações em que apenas em grupo especialmente pequeno é suficiente.",
             "Missões de exploração são geralmente destinadas a longas distâncias no espaço, longe de qualquer estrutura humana conhecida, deixam os astronautas expedicionários sozinhos, incomunicáveis, sem contato nenhum com a Terra ou com qualquer base da Cronos, pois nenhum sinal, dependendo da distância, consegue ir tão longe no espaço em menos de algumas dezenas, centenas ou milhares de anos, e, na grande maioria das vezes, se perde por algum erro de percurso ou influencia magnética de algum corpo celeste imprevisível. Além disso, como a estrutura do espaço e do tempo é distorcida para executar a dobra, as noções de horário também são prejudicadas. O computador central tenta calibrar os relógios da nave em relação à distorção temporal, sincronizando o horário do cruzador com o padrão da Cronos, levando em consideração o fuso em relação a localização galáctica. Assim os astronautas não perdem a noção de tempo."
           ]
-        }
-      ]
-    }
-  ],
-  "adventures": [
-    {
-      "id": "abismo-infinito",
-      "title": "Abismo Infinito",
-      "area": "aventuras",
-      "sections": [
+        },
         {
           "id": "a-historia",
           "title": "A história",
-          "area": "aventuras",
+          "area": "cenarios_lore",
           "paragraphs": [
             "As histórias em Abismo Infinito se dividem em três fases: Despertar, Pesadelo e Redenção (início, meio e fim). Cada fase leva os personagens a condições extremas de pressão psicológica até, quem sabe, conseguirem se livrar das manifestações do medo e trama dos sonhos (ou não)."
           ]
@@ -586,7 +576,7 @@
         {
           "id": "fase-1-despertar",
           "title": "fase 1: despertar",
-          "area": "aventuras",
+          "area": "cenarios_lore",
           "paragraphs": [
             "Os protagonistas despertam em suas cápsulas de hibernação...",
             "Esta é a fase do terror, de criar medo e estimular a curiosidade dos protagonistas (e jogadores). O Mestre começa a brincar com o psicológico de cada um, adicionando mistério e criando um certo clima investigativo conspiratório. As manifestações do medo estão em plena atividade, mas ainda não são explícitas (ou os astronautas ainda não tomam consciência delas), a realidade onírica ainda não é perceptível e os protagonistas acreditam piamente que estão acordados.",
@@ -596,7 +586,7 @@
         {
           "id": "fase-2-pesadelo",
           "title": "fase 2: Pesadelo",
-          "area": "aventuras",
+          "area": "cenarios_lore",
           "paragraphs": [
             "Os protagonistas se perdem em uma trama caótica de ilusões oníricas...",
             "Todos os personagens ganham 1 ponto de Trauma automático em Medo Particular. Esta é a fase do horror, é o momento de extrapolar nas descrições bizarras e torcer o cérebro dos protagonistas (e jogadores). É neste ponto que as manifestações começam a ficar explícitas, a coisa deixa de apenas criar tensão psicológica ou confundir as realidades e começa a atacar diretamente os protagonistas. Tentar matálos. Tudo fica mais agressivo, mais repulsivo e mais perturbador. Esse é o momento de trazer o caos ao jogo, despedaçar a realidade e abusar dos medos particulares dos astronautas. Tudo se torna extremamente dramático e, as vezes, incompreensível para os tripulantes.",
@@ -606,7 +596,7 @@
         {
           "id": "fase-3-redencao",
           "title": "fase 3: Redenção",
-          "area": "aventuras",
+          "area": "cenarios_lore",
           "paragraphs": [
             "Os protagonistas tem a chance de se salvarem...",
             "Todos os personagens ganham 1 ponto de Trauma automático em Sonolência. Os tripulantes não vão conseguir voltar para casa facilmente, podem tentar, mas não vão conseguir, podem ter a ilusão que conseguiram, mas logo vão descobrir que continuam nos confins do universo. Eles talvez teorizem que aquela região do universo simplesmente não quer que eles se vão, e talvez, essa não seja apenas uma teoria. Eles vão continuar perdidos em sonhos ruins, sendo atormentados por seus medos até encontrarem a única forma de se livrar desse lugar maldito: a Redenção Pessoal.",
@@ -619,18 +609,18 @@
       ]
     }
   ],
+  "adventures": [],
   "areaCounts": {
     "front_matter": 1,
     "classes": 11,
     "itens_equipamentos": 1,
     "regras_base": 1,
-    "cenarios_lore": 1,
-    "aventuras": 1
+    "cenarios_lore": 1
   },
   "reviewNotes": [
     "Piloto por seções explícitas do livro.",
     "Cargos foram tratados como classes/opções de função de personagem.",
-    "As fases Despertar, Pesadelo e Redenção foram tratadas como estrutura de aventura.",
+    "As fases Despertar, Pesadelo e Redenção foram incorporadas ao cenário/lore do Abismo Infinito.",
     "Ainda precisa de revisão humana antes de virar entidade final da base."
   ]
 }

@@ -11,7 +11,6 @@ const AREAS = [
   ["itens_equipamentos", "Itens e Equipamentos"],
   ["criaturas_npcs", "Criaturas e NPCs"],
   ["cenarios_lore", "Cenários e Lore"],
-  ["aventuras", "Aventuras"],
   ["tabelas", "Tabelas"],
 ];
 

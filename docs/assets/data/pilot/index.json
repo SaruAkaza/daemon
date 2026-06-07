@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T00:23:51",
+  "generatedAt": "2026-06-07T00:27:48",
   "sources": [
     {
       "source": "4killers",
@@ -18,7 +18,6 @@
       "file": "abismo-infinito-quick-start.json",
       "status": "pilot_review",
       "areas": [
-        "aventuras",
         "cenarios_lore",
         "classes",
         "front_matter",
