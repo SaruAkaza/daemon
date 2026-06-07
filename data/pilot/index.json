@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-06T23:56:26",
+  "generatedAt": "2026-06-07T00:02:55",
   "sources": [
     {
       "source": "4killers",
@@ -273,7 +273,7 @@
         "criaturas_npcs",
         "itens_equipamentos",
         "kits",
-        "pericias",
+        "manobras_combate",
         "poderes",
         "racas",
         "rituais"

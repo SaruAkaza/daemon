@@ -508,12 +508,12 @@ def build_specialties(paragraphs: list[str]) -> list[dict]:
     def flush() -> None:
         nonlocal current_title, current
         if current_title:
-            items.append(simple_item(current_title, "pericias", "skill_specialty", current))
+            items.append(simple_item(current_title, "manobras_combate", "skill_specialty", current))
         current_title = None
         current = []
 
     if intro:
-        items.append(simple_item("Especialidades Mágicas", "pericias", "skill_rule", intro))
+        items.append(simple_item("Especialidades Mágicas", "manobras_combate", "skill_rule", intro))
     for value in values[1:]:
         if title_re.match(value):
             flush()

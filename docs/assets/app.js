@@ -1,9 +1,8 @@
 const AREAS = [
   ["all", "Todas"],
   ["regras_base", "Regras Base"],
-  ["pericias", "Perícias"],
   ["aprimoramentos", "Aprimoramentos"],
-  ["manobras_combate", "Manobras de Combate"],
+  ["manobras_combate", "Manobras e Especialidades"],
   ["kits", "Kits"],
   ["classes_racas", "Classes e Raças"],
   ["poderes", "Poderes"],

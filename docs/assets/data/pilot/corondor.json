@@ -11,13 +11,13 @@
     "criaturas_npcs",
     "itens_equipamentos",
     "kits",
-    "pericias",
+    "manobras_combate",
     "poderes",
     "racas",
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-06T23:48:19",
+  "generatedAt": "2026-06-07T00:02:54",
   "sections": [
     {
       "id": "aprimoramentos-aceleracao",
@@ -4583,9 +4583,9 @@
       ]
     },
     {
-      "id": "pericias-aumentar-magia-25",
+      "id": "manobras-combate-aumentar-magia-25",
       "title": "Aumentar Magia [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "aumentar-magia-25",
       "sectionTitle": "Aumentar Magia [25]",
@@ -4596,7 +4596,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "Com esta especialidade o arcano pode dobrar o alcance normal de uma magia, todas as magias podem ser afetadas por essa especialidade exceto as magias que têm como alcance o toque. As magias que o jogador ampliar terão um aumento de +1 em seu custo de pontos de magia total."
           ]
@@ -4604,9 +4604,9 @@
       ]
     },
     {
-      "id": "pericias-criar-armaduras-magicas-50",
+      "id": "manobras-combate-criar-armaduras-magicas-50",
       "title": "Criar Armaduras Mágicas [50]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "criar-armaduras-magicas-50",
       "sectionTitle": "Criar Armaduras Mágicas [50]",
@@ -4617,7 +4617,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas."
           ]
@@ -4625,9 +4625,9 @@
       ]
     },
     {
-      "id": "pericias-criar-armas-magicas-50",
+      "id": "manobras-combate-criar-armas-magicas-50",
       "title": "Criar Armas Mágicas [50]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "criar-armas-magicas-50",
       "sectionTitle": "Criar Armas Mágicas [50]",
@@ -4641,7 +4641,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "Você é capaz de criar armas mágicas, para tal é necessário ter a perícia Armeiro, pois o mago precisa ter construído ele próprio a arma que será encantada, ele precisará conhecer a magia Permanência, que pelo seu custo (Entender/Criar Metamagia 6) exige do mago um mínimo de 60% em Rituais e Teoria da Magia, além disso o arcano deverá possuir os Focus necessários para lançar a magia com qual encantará a arma. Cumprido os requisitos o mago deverá iniciar o processo de construção do item mágico, para tal ele seguirá as seguintes etapas:",
             "1º - Construção da arma: o arcano deverá ter sucesso num teste da perícia Armeiros, sempre atendendo aos requisitos da mesma, ou seja, deve-se respeitar o tempo de construção da arma, deve-se gastar o valor necessário para o material para a construção da arma (o custo do material é de 30% do valor de uma arma já pronta).",
@@ -4652,9 +4652,9 @@
       ]
     },
     {
-      "id": "pericias-criar-bastao-25",
+      "id": "manobras-combate-criar-bastao-25",
       "title": "Criar Bastão [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "criar-bastao-25",
       "sectionTitle": "Criar Bastão [25]",
@@ -4665,7 +4665,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas, porém a perícia necessária é a perícia Carpintaria ao invés de Armeiro."
           ]
@@ -4673,9 +4673,9 @@
       ]
     },
     {
-      "id": "pericias-criar-cajados-25",
+      "id": "manobras-combate-criar-cajados-25",
       "title": "Criar Cajados [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "criar-cajados-25",
       "sectionTitle": "Criar Cajados [25]",
@@ -4686,7 +4686,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas, porém a perícia necessária é a perícia Carpintaria ao invés de Armeiro."
           ]
@@ -4694,9 +4694,9 @@
       ]
     },
     {
-      "id": "pericias-criar-objeto-magico-25",
+      "id": "manobras-combate-criar-objeto-magico-25",
       "title": "Criar Objeto Mágico [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "criar-objeto-magico-25",
       "sectionTitle": "Criar Objeto Mágico [25]",
@@ -4707,7 +4707,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas, porém a perícia necessária varia de acordo com o objeto a ser construído."
           ]
@@ -4715,9 +4715,9 @@
       ]
     },
     {
-      "id": "pericias-criar-varinhas-25",
+      "id": "manobras-combate-criar-varinhas-25",
       "title": "Criar Varinhas [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "criar-varinhas-25",
       "sectionTitle": "Criar Varinhas [25]",
@@ -4728,7 +4728,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas, porém a perícia necessária é a perícia Ferreira ao invés de Armeiro."
           ]
@@ -4736,9 +4736,9 @@
       ]
     },
     {
-      "id": "pericias-escrever-pergaminhos-25",
+      "id": "manobras-combate-escrever-pergaminhos-25",
       "title": "Escrever Pergaminhos [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "escrever-pergaminhos-25",
       "sectionTitle": "Escrever Pergaminhos [25]",
@@ -4749,7 +4749,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas, porém a perícia necessária é a perícia Ler/Escrever (Idioma) ao invés de Armeiro."
           ]
@@ -4757,9 +4757,9 @@
       ]
     },
     {
-      "id": "pericias-especialidades-magicas",
+      "id": "manobras-combate-especialidades-magicas",
       "title": "Especialidades Mágicas",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_rule",
       "sectionId": "especialidades-magicas",
       "sectionTitle": "Especialidades Mágicas",
@@ -4770,7 +4770,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "Especialidades Mágicas"
           ]
@@ -4778,9 +4778,9 @@
       ]
     },
     {
-      "id": "pericias-forjar-anel-25",
+      "id": "manobras-combate-forjar-anel-25",
       "title": "Forjar Anel [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "forjar-anel-25",
       "sectionTitle": "Forjar Anel [25]",
@@ -4791,7 +4791,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas, porém a perícia necessária é a perícia Joalheria ao invés de Armeiro."
           ]
@@ -4799,9 +4799,9 @@
       ]
     },
     {
-      "id": "pericias-preparar-pocao-25",
+      "id": "manobras-combate-preparar-pocao-25",
       "title": "Preparar Poção [25]",
-      "area": "pericias",
+      "area": "manobras_combate",
       "kind": "skill_specialty",
       "sectionId": "preparar-pocao-25",
       "sectionTitle": "Preparar Poção [25]",
@@ -4812,7 +4812,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "pericias",
+          "area": "manobras_combate",
           "paragraphs": [
             "O processo é idêntico ao de Criar Armas Mágicas, porém a perícia necessária é a perícia Herbalismo ou Alquimia ao invés de Armeiro."
           ]
