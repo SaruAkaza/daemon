@@ -304,6 +304,8 @@ function itemPolarityOption(item) {
   if (item.polarity) return item.polarity;
   if (item.metadata?.polarity) return item.metadata.polarity;
   if (item.metadata?.polaridade) return item.metadata.polaridade;
+  if (item.kind === "enhancement_negative") return "negativo";
+  if (item.kind === "enhancement") return "positivo";
   const values = itemCostOptions(item)
     .map((cost) => Number(cost.match(/^[+-]?\d+/)?.[0]))
     .filter((value) => Number.isFinite(value));
