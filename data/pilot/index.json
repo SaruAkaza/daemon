@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-06T12:08:41",
+  "generatedAt": "2026-06-06T23:25:17",
   "sources": [
     {
       "source": "4killers",
@@ -260,6 +260,20 @@
       "areas": [
         "cenarios_lore",
         "criaturas_npcs"
+      ]
+    },
+    {
+      "source": "daemon-tormenta",
+      "title": "Daemon Tormenta",
+      "file": "daemon-tormenta.json",
+      "status": "pilot_review",
+      "areas": [
+        "regras_base",
+        "racas",
+        "kits",
+        "aprimoramentos",
+        "magias",
+        "manobras_combate"
       ]
     },
     {
