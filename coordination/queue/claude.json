@@ -7,9 +7,9 @@
     {
       "file": "Daemon_Medieval_OCR_alta_qualidade.docx",
       "source": "daemon-medieval",
-      "status": "in_progress",
+      "status": "needs_review",
       "branch": "claude-pilots",
-      "notes": "Reivindicado 2026-06-06. Lista Claude item 18 (0.18 MB). OCR triado: 6.3% desconhecidas (melhor da fila). Núcleo Daemon, cenário medieval. Levantando estrutura."
+      "notes": "Entrega completa: 230 seções — racas 6, kits 12, aprimoramentos 104, itens_equipamentos 108, + group regras (6 blocos). Magia = regras (sistema gerativo, sem feitiços). Pipeline OK (índice 25 fontes, validate_data, node --check, data==docs). Validado no navegador: hub popula (correção do Codex ativa), 230 seções, 5 áreas+group. Pendências em coordination/books/daemon-medieval.md (alguns aprim. truncados por OCR). Aguardando validação visual."
     },
     {
       "file": "Vampiros_Mitologicos_OCR_alta_qualidade.docx",
