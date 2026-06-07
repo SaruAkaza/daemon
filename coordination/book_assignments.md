@@ -21,7 +21,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | Ordem | Livro | Tamanho | Respons?vel | Status |
 |---:|---|---:|---|---|
 | 1 | `Spiritum_OCR_parcial_com_imagens.docx` | 17.87 MB | Codex | pilot_review |
-| 2 | `Corondor.docx` | 9.03 MB | Codex | assigned |
+| 2 | `Corondor.docx` | 9.03 MB | Codex | pilot_review |
 | 3 | `Varna_Chamado_da_Guerra_OCR_alta_qualidade.docx` | 4.77 MB | Codex | assigned |
 | 4 | `Kits Orientais.docx` | 2.40 MB | Codex | assigned |
 | 5 | `Masmorras.docx` | 1.17 MB | Codex | assigned |
