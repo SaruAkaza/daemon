@@ -588,7 +588,7 @@ def build_races_and_lore(paragraphs: list[str]) -> list[dict]:
         ("Baaz", 203, 208),
         ("Bozak", 208, 214),
         ("Kapak", 214, 220),
-        ("Sivak", 220, 227),
+        ("Sivak", 220, 226),
     ]:
         values = collect(paragraphs, start, end)
         items.append(make_race(title, values, "draconian_subrace"))
