@@ -5720,7 +5720,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Este aprimoramento só pode ser comprado a partir do 5o nível, com pontos de aprimoramento adquiridos durante a campanha. A principal vantagem de ter este aprimoramento é que o mago pode possuir focus acima de 4 em seus caminhos. Este aprimoramento pode ser comprado em diversos níveis, é importante observar que é mais vantajoso adquiri-lo quando um Personagem chegar a focus 4 num caminho e desejar ampliá-lo: 1 ponto - o mago ganha um ponto no caminho escolhido, chegando a focus 5; 2 pontos - o mago ganha um ponto no caminho escolhido, chegando a focus 6; 3 pontos - o mago ganha um ponto no caminho escolhido, chegando a focus 7; 4 pontos - todos os seus 1 na rolagem de dados se tornam 3; 5 pontos - todos os 1 e 2 na rolagem de dados se tornam 3."
+        "Este aprimoramento só pode ser comprado a partir do 5o nível, com pontos de aprimoramento adquiridos durante a campanha. A principal vantagem de ter este aprimoramento é que o mago pode possuir focus acima de 4 em seus caminhos."
       ],
       "sections": [
         {
@@ -5728,7 +5728,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -5736,7 +5736,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Este aprimoramento só pode ser comprado a partir do 5o nível, com pontos de aprimoramento adquiridos durante a campanha. A principal vantagem de ter este aprimoramento é que o mago pode possuir focus acima de 4 em seus caminhos. Este aprimoramento pode ser comprado em diversos níveis, é importante observar que é mais vantajoso adquiri-lo quando um Personagem chegar a focus 4 num caminho e desejar ampliá-lo: 1 ponto - o mago ganha um ponto no caminho escolhido, chegando a focus 5; 2 pontos - o mago ganha um ponto no caminho escolhido, chegando a focus 6; 3 pontos - o mago ganha um ponto no caminho escolhido, chegando a focus 7; 4 pontos - todos os seus 1 na rolagem de dados se tornam 3; 5 pontos - todos os 1 e 2 na rolagem de dados se tornam 3."
+            "Este aprimoramento só pode ser comprado a partir do 5o nível, com pontos de aprimoramento adquiridos durante a campanha. A principal vantagem de ter este aprimoramento é que o mago pode possuir focus acima de 4 em seus caminhos.",
+            "Este aprimoramento pode ser comprado em diversos níveis, é importante observar que é mais vantajoso adquiri-lo quando um Personagem chegar a focus 4 num caminho e desejar ampliá-lo: 1 ponto - o mago ganha um ponto no caminho escolhido, chegando a focus 5; 2 pontos - o mago ganha um ponto no caminho escolhido, chegando a focus 6; 3 pontos - o mago ganha um ponto no caminho escolhido, chegando a focus 7; 4 pontos - todos os seus 1 na rolagem de dados se tornam 3; 5 pontos - todos os 1 e 2 na rolagem de dados se tornam 3."
           ]
         }
       ]
@@ -5749,7 +5750,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "O Personagem possui uma aptidão para magia, além de possuir uma afinidade natural com as energias místicas necessárias para realizá-la, podendo se tornar um grande mago facilmente."
+        "O Personagem possui uma aptidão para magia, além de possuir uma afinidade natural com as energias místicas necessárias para realizá-la, podendo se tornar um grande mago facilmente. Você recebe automaticamente focus 1 em todos as formas de magia - e mais tarde pode elevar cada focus em separado, com pontos, de forma normal."
       ],
       "sections": [
         {
@@ -5765,8 +5766,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O Personagem possui uma aptidão para magia, além de possuir uma afinidade natural com as energias místicas necessárias para realizá-la, podendo se tornar um grande mago facilmente.",
-            "Você recebe automaticamente focus 1 em todos as formas de magia - e mais tarde pode elevar cada focus em separado, com pontos, de forma normal. Os níveis que você ganha com esta vantagem não podem ser remanejados."
+            "O Personagem possui uma aptidão para magia, além de possuir uma afinidade natural com as energias místicas necessárias para realizá-la, podendo se tornar um grande mago facilmente. Você recebe automaticamente focus 1 em todos as formas de magia - e mais tarde pode elevar cada focus em separado, com pontos, de forma normal.",
+            "Os níveis que você ganha com esta vantagem não podem ser remanejados."
           ]
         }
       ]
@@ -5808,7 +5809,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1 a mais de focus em todos os Caminhos de magia que ele possuir."
+        "O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1 a mais de focus em todos os Caminhos de magia que ele possuir. Se o narrador desejar verificar aleatoriamente se a condição do ambiente favorável se fará, ele pode rolar 1D100 no inicio de cada sessão de jogo, cena, combate ou período de tempo e verificar se a porcentagem é menor que a chance do ambiente favorável acontecer. 1 ponto: raro, durante um eclipse ou o equinócio (10%). 2 pontos: incomum, durante um mês especifico,um signo do zodíaco, quando chove ou neva (20%). 3 pontos: comum, durante uma fase da lua ou uma estação do ano (30%) 4 pontos: freqüente, durante o dia ou à noite (50%)."
       ],
       "sections": [
         {
@@ -5816,7 +5817,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 4 pontos"
           ]
         },
         {
@@ -5824,8 +5825,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1 a mais de focus em todos os Caminhos de magia que ele possuir.",
-            "Se o narrador desejar verificar aleatoriamente se a condição do ambiente favorável se fará, ele pode rolar 1D100 no inicio de cada sessão de jogo, cena, combate ou período de tempo e verificar se a porcentagem é menor que a chance do ambiente favorável acontecer. 1 ponto: raro, durante um eclipse ou o equinócio (10%). 2 pontos: incomum, durante um mês especifico,um signo do zodíaco, quando chove ou neva (20%). 3 pontos: comum, durante uma fase da lua ou uma estação do ano (30%) 4 pontos: freqüente, durante o dia ou à noite (50%)."
+            "O mago se torna mais poderoso durante um período ou situação em particular. Durante esse período, o mago ganha um 1 a mais de focus em todos os Caminhos de magia que ele possuir. Se o narrador desejar verificar aleatoriamente se a condição do ambiente favorável se fará, ele pode rolar 1D100 no inicio de cada sessão de jogo, cena, combate ou período de tempo e verificar se a porcentagem é menor que a chance do ambiente favorável acontecer. 1 ponto: raro, durante um eclipse ou o equinócio (10%). 2 pontos: incomum, durante um mês especifico,um signo do zodíaco, quando chove ou neva (20%). 3 pontos: comum, durante uma fase da lua ou uma estação do ano (30%) 4 pontos: freqüente, durante o dia ou à noite (50%)."
           ]
         }
       ]
@@ -5838,7 +5838,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "você ama alguém do fundo do seu coração, e não importa o que ou quem tente interferir neste relacionamento, nada abalará o amor mútuo entre vocês. Independente da situação, você vai ter forças para defender seu amor."
+        "você ama alguém do fundo do seu coração, e não importa o que ou quem tente interferir neste relacionamento, nada abalará o amor mútuo entre vocês. Independente da situação, você vai ter forças para defender seu amor. Em toda a situação que a pessoa que você ama estiver em apuros, o Personagem recebe um bônus especial de +10% em todos os seus Testes de Atributos Físicos e Perícias que forem realizados na tentativa de ajudá-la."
       ],
       "sections": [
         {
@@ -5854,8 +5854,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "você ama alguém do fundo do seu coração, e não importa o que ou quem tente interferir neste relacionamento, nada abalará o amor mútuo entre vocês. Independente da situação, você vai ter forças para defender seu amor.",
-            "Em toda a situação que a pessoa que você ama estiver em apuros, o Personagem recebe um bônus especial de +10% em todos os seus Testes de Atributos Físicos e Perícias que forem realizados na tentativa de ajudá-la.",
+            "você ama alguém do fundo do seu coração, e não importa o que ou quem tente interferir neste relacionamento, nada abalará o amor mútuo entre vocês. Independente da situação, você vai ter forças para defender seu amor. Em toda a situação que a pessoa que você ama estiver em apuros, o Personagem recebe um bônus especial de +10% em todos os seus Testes de Atributos Físicos e Perícias que forem realizados na tentativa de ajudá-la.",
             "Também reduz em um nível a dificuldade dos testes de WILL contra a Perícia Sedução."
           ]
         }
@@ -5869,7 +5868,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "você não aparenta ser perigoso. Na verdade, os oponentes menosprezam sua presença, ninguém acredita que você seja capaz de realizar algum grande feito e dificilmente o tomarão como uma ameaça (a não ser aqueles que já conhecem o Personagem). Considere que o Personagem automaticamente vence a Iniciativa quando um combate começar. Porém, depois de enfrentar um adversário uma vez, ele poderá já estar ciente do seu potencial e não lhe permitirá nenhuma vantagem (então a Iniciativa deve ser testada normalmente)."
+        "você não aparenta ser perigoso. Na verdade, os oponentes menosprezam sua presença, ninguém acredita que você seja capaz de realizar algum grande feito e dificilmente o tomarão como uma ameaça (a não ser aqueles que já conhecem o Personagem)."
       ],
       "sections": [
         {
@@ -5885,7 +5884,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "você não aparenta ser perigoso. Na verdade, os oponentes menosprezam sua presença, ninguém acredita que você seja capaz de realizar algum grande feito e dificilmente o tomarão como uma ameaça (a não ser aqueles que já conhecem o Personagem). Considere que o Personagem automaticamente vence a Iniciativa quando um combate começar. Porém, depois de enfrentar um adversário uma vez, ele poderá já estar ciente do seu potencial e não lhe permitirá nenhuma vantagem (então a Iniciativa deve ser testada normalmente)."
+            "você não aparenta ser perigoso. Na verdade, os oponentes menosprezam sua presença, ninguém acredita que você seja capaz de realizar algum grande feito e dificilmente o tomarão como uma ameaça (a não ser aqueles que já conhecem o Personagem).",
+            "Considere que o Personagem automaticamente vence a Iniciativa quando um combate começar. Porém, depois de enfrentar um adversário uma vez, ele poderá já estar ciente do seu potencial e não lhe permitirá nenhuma vantagem (então a Iniciativa deve ser testada normalmente)."
           ]
         }
       ]
@@ -5898,7 +5898,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "seu Personagem possui uma preciosa bioarmadura. Ele pode ter consciência do valor ou não que ela possui. Bioarmaduras fornecem IP4 contra golpes físicos, IP2 contra quedas e ataques maiores, sem penalidade de AGI ou DEX como as armaduras normais. A única desvantagem dessas biormaduras é que elas lembram demais os demônios da Tormenta e isto pode causar transtornos ao Personagem, caso ele seja visto com a bioarmadura o Personagem receberá o aprimoramento negativo Má fama."
+        "seu Personagem possui uma preciosa bioarmadura. Ele pode ter consciência do valor ou não que ela possui. Bioarmaduras fornecem IP4 contra golpes físicos, IP2 contra quedas e ataques maiores, sem penalidade de AGI ou DEX como as armaduras normais."
       ],
       "sections": [
         {
@@ -5906,7 +5906,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos"
+            "1 a 2 pontos"
           ]
         },
         {
@@ -5914,8 +5914,10 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "seu Personagem possui uma preciosa bioarmadura. Ele pode ter consciência do valor ou não que ela possui. Bioarmaduras fornecem IP4 contra golpes físicos, IP2 contra quedas e ataques maiores, sem penalidade de AGI ou DEX como as armaduras normais. A única desvantagem dessas biormaduras é que elas lembram demais os demônios da Tormenta e isto pode causar transtornos ao Personagem, caso ele seja visto com a bioarmadura o Personagem receberá o aprimoramento negativo Má fama.",
-            "O Personagem normalmente tem controle sob o uso da bioarmadura, porém, em situações de stress ou perigo onde a bioarmadura poderá ajudá-lo a resolver o problema, ele precisará passar num teste de WILL caso deseje evitar a a transformação. Algumas bioarmaduras possuem habilidades extras que podem ser compradas conforme a lista abaixo: + 1ponto: respirar debaixo d ́água. +1 ponto: asas que permitem planar. +1 ponto: camuflagem equivalente a 80%. +1 ponto: tentáculos de até 2m de comprimento que não podem atacar, mas podem executar tarefas mais simples. +1 ponto: Espinhos que disparam e causam 1d6 de dano a todos num raio de 6m, 1x dia. +1 ponto: Espadas de queratina que brotam do braço da bioarmadura que causam 1d8 de dano."
+            "seu Personagem possui uma preciosa bioarmadura. Ele pode ter consciência do valor ou não que ela possui. Bioarmaduras fornecem IP4 contra golpes físicos, IP2 contra quedas e ataques maiores, sem penalidade de AGI ou DEX como as armaduras normais.",
+            "A única desvantagem dessas biormaduras é que elas lembram demais os demônios da Tormenta e isto pode causar transtornos ao Personagem, caso ele seja visto com a bioarmadura o Personagem receberá o aprimoramento negativo Má fama.",
+            "O Personagem normalmente tem controle sob o uso da bioarmadura, porém, em situações de stress ou perigo onde a bioarmadura poderá ajudá-lo a resolver o problema, ele precisará passar num teste de WILL caso deseje evitar a a transformação.",
+            "Algumas bioarmaduras possuem habilidades extras que podem ser compradas conforme a lista abaixo: + 1ponto: respirar debaixo d ́água. +1 ponto: asas que permitem planar. +1 ponto: camuflagem equivalente a 80%. +1 ponto: tentáculos de até 2m de comprimento que não podem atacar, mas podem executar tarefas mais simples. +1 ponto: Espinhos que disparam e causam 1d6 de dano a todos num raio de 6m, 1x dia. +1 ponto: Espadas de queratina que brotam do braço da bioarmadura que causam 1d8 de dano."
           ]
         }
       ]
@@ -5928,7 +5930,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz."
+        "O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz. Se o Personagem estiver em condições de consultá-la, a biblioteca aumentará os conhecimentos do Personagem em alguns assuntos."
       ],
       "sections": [
         {
@@ -5936,7 +5938,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 4 pontos"
           ]
         },
         {
@@ -5944,10 +5946,10 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz.",
-            "Se o Personagem estiver em condições de consultá-la, a biblioteca aumentará os conhecimentos do Personagem em alguns assuntos. Uma biblioteca possui apenas conhecimentos estudados em livros. Em termos de jogo, a biblioteca dobra o valor de alguns Subgrupos de Perícias, sempre relacionados a conhecimentos. O Jogador deve especificar durante a Criação do Personagem quais Subgrupos que a biblioteca dispõe. Podem ser Subgrupos de várias Perícias diferentes.",
-            "Deve-se ressaltar que o bônus só é aplicado enquanto o Personagem estiver na sua biblioteca e puder consultar os seus livros. Um Personagem poderá mover sua biblioteca de um lugar para outro, mas a quantidade de livros para que se atinja o bônus é grande demais para se levar numa aventura, obrigando-o a sempre estar na sua biblioteca para receber o bônus. O narrador tem a palavra final sobre a escolha das perícias e se elas se encaixam no perfil para receber o bônus.",
-            "1 ponto: trata de 3 Subgrupos de Perícias. 2 pontos: 5 Subgrupos 3 pontos: 7 Subgrupos 4 pontos: 9 Subgrupos"
+            "O Personagem possui uma vasta biblioteca em seu refúgio, recebida como herança de seu mentor, roubada, adquirida, ou até criada por ele mesmo em seus bons tempos de aprendiz. Se o Personagem estiver em condições de consultá-la, a biblioteca aumentará os conhecimentos do Personagem em alguns assuntos.",
+            "Uma biblioteca possui apenas conhecimentos estudados em livros. Em termos de jogo, a biblioteca dobra o valor de alguns Subgrupos de Perícias, sempre relacionados a conhecimentos. O Jogador deve especificar durante a Criação do Personagem quais Subgrupos que a biblioteca dispõe.",
+            "Podem ser Subgrupos de várias Perícias diferentes. Deve-se ressaltar que o bônus só é aplicado enquanto o Personagem estiver na sua biblioteca e puder consultar os seus livros. Um Personagem poderá mover sua biblioteca de um lugar para outro, mas a quantidade de livros para que se atinja o bônus é grande demais para se levar numa aventura, obrigando-o a sempre estar na sua biblioteca para receber o bônus.",
+            "O narrador tem a palavra final sobre a escolha das perícias e se elas se encaixam no perfil para receber o bônus. 1 ponto: trata de 3 Subgrupos de Perícias. 2 pontos: 5 Subgrupos 3 pontos: 7 Subgrupos 4 pontos: 9 Subgrupos"
           ]
         }
       ]
@@ -5968,7 +5970,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 3 pontos"
           ]
         },
         {
@@ -5989,7 +5991,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "todas as vezes que um Personagem que tenha bom senso for fazer alguma coisa obviamente estúpida, o Mestre pode dizer a ele que o que ele pretende fazer é uma burrice."
+        "todas as vezes que um Personagem que tenha bom senso for fazer alguma coisa obviamente estúpida, o Mestre pode dizer a ele que o que ele pretende fazer é uma burrice. Este Aprimoramento é muito útil para Jogadores iniciantes, como uma forma de justificar a ajuda que o Mestre dá aos Personagens que estão começando, sem enfurecer os demais Jogadores."
       ],
       "sections": [
         {
@@ -6005,8 +6007,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "todas as vezes que um Personagem que tenha bom senso for fazer alguma coisa obviamente estúpida, o Mestre pode dizer a ele que o que ele pretende fazer é uma burrice.",
-            "Este Aprimoramento é muito útil para Jogadores iniciantes, como uma forma de justificar a ajuda que o Mestre dá aos Personagens que estão começando, sem enfurecer os demais Jogadores.",
+            "todas as vezes que um Personagem que tenha bom senso for fazer alguma coisa obviamente estúpida, o Mestre pode dizer a ele que o que ele pretende fazer é uma burrice. Este Aprimoramento é muito útil para Jogadores iniciantes, como uma forma de justificar a ajuda que o Mestre dá aos Personagens que estão começando, sem enfurecer os demais Jogadores.",
             "O Mestre também pode obrigar aquele Jogador \"menos esperto\" a comprar este Aprimoramento. O mestre só pode dar um número de dicas igual ao modificador de Carisma do Personagem."
           ]
         }
@@ -6020,7 +6021,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Você é treinado nas técnicas de caça de um determinado tipo de criatura, suas habilidades estão definidas para ampliar as possibilidades de destruir sua presa."
+        "Você é treinado nas técnicas de caça de um determinado tipo de criatura, suas habilidades estão definidas para ampliar as possibilidades de destruir sua presa. O Personagem recebe um bônus de +10% em Treinamento de Animais, Camuflagem, Rastreio e nas perícias de combate contra o determinado tipo de criatura."
       ],
       "sections": [
         {
@@ -6036,8 +6037,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Você é treinado nas técnicas de caça de um determinado tipo de criatura, suas habilidades estão definidas para ampliar as possibilidades de destruir sua presa.",
-            "O Personagem recebe um bônus de +10% em Treinamento de Animais, Camuflagem, Rastreio e nas perícias de combate contra o determinado tipo de criatura. É necessário escolher o tipo de criatura a qual o bônus será aplicado."
+            "Você é treinado nas técnicas de caça de um determinado tipo de criatura, suas habilidades estão definidas para ampliar as possibilidades de destruir sua presa. O Personagem recebe um bônus de +10% em Treinamento de Animais, Camuflagem, Rastreio e nas perícias de combate contra o determinado tipo de criatura.",
+            "É necessário escolher o tipo de criatura a qual o bônus será aplicado."
           ]
         }
       ]
@@ -6087,7 +6088,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 3 pontos"
           ]
         },
         {
@@ -6096,8 +6097,8 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Trata-se de um local especial que você possui, um tipo de imóvel que lhe foi dado como herança ou mesmo construído por você. Não é preciso ter Recursos e Dinheiro para ter Classe Social, nem vice-versa. 1 ponto: O Personagem possui uma torre, com cerca de 1 a 3 empregados, ou uma pequena loja ou taverna.",
-            "Pode, ainda, trabalhar a serviço de um Nobre ou Senhor Feudal. 2 pontos: O Personagem possui um pequeno castelo ou feudo, ou é relacionado com o burgomestre da vila.",
-            "Possui de 5 a 7 empregados. Pode ainda possuir pequenas lojas ou uma companhia de navegação. 3 pontos: O Personagem pertence à nobreza, e possui talvez um castelo, com 13 a 15 servos, ou uma pequena cidade. O Personagem pode ser um Nobre ou Embaixador."
+            "Pode, ainda, trabalhar a serviço de um Nobre ou Senhor Feudal. 2 pontos: O Personagem possui um pequeno castelo ou feudo, ou é relacionado com o burgomestre da vila. Possui de 5 a 7 empregados. Pode ainda possuir pequenas lojas ou uma companhia de navegação. 3 pontos: O Personagem pertence à nobreza, e possui talvez um castelo, com 13 a 15 servos, ou uma pequena cidade.",
+            "O Personagem pode ser um Nobre ou Embaixador."
           ]
         }
       ]
@@ -6110,7 +6111,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é um padre ou clérigo responsável por um pequeno templo em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis e organização da comunidade. 2 pontos: o Personagem é um bispo ou clérigo responsável por uma região ou condado. Ele possui um templo de tamanho razoável em uma cidade maior, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para realizar missões e deve supervisionar o andamento dos padres de sua região. 3 pontos: o Personagem é um alto sacerdote responsável por uma grande área e os vários templos contidos nela. Possui notória influência sobre a política regional."
+        "o Personagem é um padre ou clérigo responsável por um pequeno templo em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis e organização da comunidade. 2 pontos: o Personagem é um bispo ou clérigo responsável por uma região ou condado."
       ],
       "sections": [
         {
@@ -6118,7 +6119,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto"
+            "1 a 3 pontos"
           ]
         },
         {
@@ -6126,7 +6127,9 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é um padre ou clérigo responsável por um pequeno templo em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis e organização da comunidade. 2 pontos: o Personagem é um bispo ou clérigo responsável por uma região ou condado. Ele possui um templo de tamanho razoável em uma cidade maior, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para realizar missões e deve supervisionar o andamento dos padres de sua região. 3 pontos: o Personagem é um alto sacerdote responsável por uma grande área e os vários templos contidos nela. Possui notória influência sobre a política regional."
+            "o Personagem é um padre ou clérigo responsável por um pequeno templo em um vilarejo ou pequena cidade. O padre é responsável pelo bom andamento dos fiéis e organização da comunidade. 2 pontos: o Personagem é um bispo ou clérigo responsável por uma região ou condado.",
+            "Ele possui um templo de tamanho razoável em uma cidade maior, e cuida de assuntos mais abrangentes, como organizar grupos de paladinos para realizar missões e deve supervisionar o andamento dos padres de sua região. 3 pontos: o Personagem é um alto sacerdote responsável por uma grande área e os vários templos contidos nela.",
+            "Possui notória influência sobre a política regional."
           ]
         }
       ]
@@ -6169,7 +6172,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Este aprimoramento determina que o Personagem possua amigos, pessoas conhecidas que poderão ajudálo em algumas situações."
+        "Este aprimoramento determina que o Personagem possua amigos, pessoas conhecidas que poderão ajudálo em algumas situações. Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer)."
       ],
       "sections": [
         {
@@ -6177,7 +6180,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 4 pontos"
           ]
         },
         {
@@ -6185,9 +6188,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Este aprimoramento determina que o Personagem possua amigos, pessoas conhecidas que poderão ajudálo em algumas situações.",
-            "Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer). Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor.",
-            "O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre). 1 ponto: um aliado importante. 2 pontos: dois aliados importantes. 3 pontos: quatro aliados importantes. 4 pontos: oito aliados importantes."
+            "Este aprimoramento determina que o Personagem possua amigos, pessoas conhecidas que poderão ajudálo em algumas situações. Lembre-se que os aliados podem morrer com o passar do tempo (bom, até mesmo seres sobrenaturais podem morrer).",
+            "Quando isso ocorrer, assume-se que o Personagem conseguiu outro aliado no mesmo ramo, passou a conhecer os descendentes dele ou seu sucessor. O Mestre deve sempre se lembrar de que os contatos e aliados do Personagem também têm seus próprios problemas, não estando à disposição de seu Personagem sempre que acontecer algum problema e que ocasionalmente também cobrarão favores ou pedirão ajuda a ele (isso pode ser usado como fonte de Aventuras pelo Mestre). 1 ponto: um aliado importante. 2 pontos: dois aliados importantes. 3 pontos: quatro aliados importantes. 4 pontos: oito aliados importantes."
           ]
         }
       ]
@@ -6259,7 +6261,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "você fala bem, com força ou doçura, conforme a ocasião exige, trazendo outras pessoas para o seu lado com discursos audaciosos. Você recebe um bônus igual a +10% em testes sociais."
+        "você fala bem, com força ou doçura, conforme a ocasião exige, trazendo outras pessoas para o seu lado com discursos audaciosos. Você recebe um bônus igual a +10% em testes sociais. Empatia com Animais 1 ponto: os animais não veem ameaça algum no Personagem, chegando até a verem-no como um semelhante."
       ],
       "sections": [
         {
@@ -6275,9 +6277,9 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "você fala bem, com força ou doçura, conforme a ocasião exige, trazendo outras pessoas para o seu lado com discursos audaciosos. Você recebe um bônus igual a +10% em testes sociais.",
-            "Empatia com Animais 1 ponto: os animais não veem ameaça algum no Personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados).Todos os testes envolvendo animais recebem um bônus de +10%.",
-            "Facilidade para Línguas 1 ponto: Você tem uma facilidade incrível para aprender línguas. Em pouco tempo pode ser capaz de estar falando quase 10 línguas! Com este Aprimoramento o jogador adiciona o dobro da sua INT em qualquer perícia de idioma, seja Ler/Escrever ou Falar o idioma, porém ele deverá gastar pelo menos 10 pontos em cada idioma que possuir."
+            "você fala bem, com força ou doçura, conforme a ocasião exige, trazendo outras pessoas para o seu lado com discursos audaciosos. Você recebe um bônus igual a +10% em testes sociais. Empatia com Animais 1 ponto: os animais não veem ameaça algum no Personagem, chegando até a verem-no como um semelhante.",
+            "Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados).Todos os testes envolvendo animais recebem um bônus de +10%. Facilidade para Línguas 1 ponto: Você tem uma facilidade incrível para aprender línguas.",
+            "Em pouco tempo pode ser capaz de estar falando quase 10 línguas! Com este Aprimoramento o jogador adiciona o dobro da sua INT em qualquer perícia de idioma, seja Ler/Escrever ou Falar o idioma, porém ele deverá gastar pelo menos 10 pontos em cada idioma que possuir."
           ]
         }
       ]
@@ -6290,7 +6292,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Seu Personagem possui uma criatura como familiar."
+        "Seu Personagem possui uma criatura como familiar. Familiares são animais que acompanham o Personagem, mas que possuem poderes ou qualidades superiores as dos animais comuns. O Personagem pode se comunicar mentalmente com o seu familiar tendo a INT do animal como limite de comunicação. 1 ponto: um animal relativamente simples e comum. (gato, sapo, coruja, bode, cachorro, etc...) 2 pontos: em animal mais exótico ou maior. (lobo, pássaros raros, trobos, etc..) 3 pontos: Animais raros difíceis de serem encontrados ou grandes (leões, tigres, crocodilos, tubarões, etc...) 4 pontos: Criaturas místicas. (Unicórnios, mantícores, grifos, etc...)"
       ],
       "sections": [
         {
@@ -6298,7 +6300,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 4 pontos"
           ]
         },
         {
@@ -6306,9 +6308,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Seu Personagem possui uma criatura como familiar.",
-            "Familiares são animais que acompanham o Personagem, mas que possuem poderes ou qualidades superiores as dos animais comuns.",
-            "O Personagem pode se comunicar mentalmente com o seu familiar tendo a INT do animal como limite de comunicação. 1 ponto: um animal relativamente simples e comum. (gato, sapo, coruja, bode, cachorro, etc...) 2 pontos: em animal mais exótico ou maior. (lobo, pássaros raros, trobos, etc..) 3 pontos: Animais raros difíceis de serem encontrados ou grandes (leões, tigres, crocodilos, tubarões, etc...) 4 pontos: Criaturas místicas. (Unicórnios, mantícores, grifos, etc...)"
+            "Seu Personagem possui uma criatura como familiar. Familiares são animais que acompanham o Personagem, mas que possuem poderes ou qualidades superiores as dos animais comuns. O Personagem pode se comunicar mentalmente com o seu familiar tendo a INT do animal como limite de comunicação. 1 ponto: um animal relativamente simples e comum. (gato, sapo, coruja, bode, cachorro, etc...) 2 pontos: em animal mais exótico ou maior. (lobo, pássaros raros, trobos, etc..) 3 pontos: Animais raros difíceis de serem encontrados ou grandes (leões, tigres, crocodilos, tubarões, etc...) 4 pontos: Criaturas místicas. (Unicórnios, mantícores, grifos, etc...)"
           ]
         }
       ]
@@ -6329,7 +6329,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 4 pontos"
           ]
         },
         {
@@ -6359,7 +6359,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6367,36 +6367,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O Personagem tem acesso a um pequeno grupo de soldados, guarda-costas pessoais ou mercenários contratados, podendo utilizar seus serviços em horas de emergência. Eles estão equipados com uma armadura de couro reforçado,uma espada curta e um escudo pequeno de ferro."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "soldado",
-      "title": "Soldado",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramentos",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "FOR12 CON12 DES12(11) AGI12(10) INT10 WILL10 CAR10 PER10 PV ́s 12 IP 2 Iniciativa -2 Espada Curta 30 / 30 dano 1d6 Escudo o / 30 Ip 5 1 ponto: 3 soldados. 2 pontos: 4 a 5 soldados. 3 pontos: 8 a 10 soldados. 4 pontos: 15 a 20 soldados. 5 pontos: 30 a 40 soldados."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Variável"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "FOR12 CON12 DES12(11) AGI12(10) INT10 WILL10 CAR10 PER10 PV ́s 12 IP 2 Iniciativa -2 Espada Curta 30 / 30 dano 1d6 Escudo o / 30 Ip 5 1 ponto: 3 soldados. 2 pontos: 4 a 5 soldados. 3 pontos: 8 a 10 soldados. 4 pontos: 15 a 20 soldados. 5 pontos: 30 a 40 soldados."
+            "O Personagem tem acesso a um pequeno grupo de soldados, guarda-costas pessoais ou mercenários contratados, podendo utilizar seus serviços em horas de emergência. Eles estão equipados com uma armadura de couro reforçado,uma espada curta e um escudo pequeno de ferro.",
+            "Soldado FOR12 CON12 DES12(11) AGI12(10) INT10 WILL10 CAR10 PER10 PV ́s 12 IP 2 Iniciativa -2 Espada Curta 30 / 30 dano 1d6 Escudo o / 30 Ip 5 1 ponto: 3 soldados. 2 pontos: 4 a 5 soldados. 3 pontos: 8 a 10 soldados. 4 pontos: 15 a 20 soldados. 5 pontos: 30 a 40 soldados."
           ]
         }
       ]
@@ -6409,7 +6381,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "1 ponto por posto: Este Aprimoramento reflete sua posição em um exército ou organização paramilitar, como por exemplo um grupo mercenário. Todo posto tem autoridade sobre os níveis inferiores."
+        "Este Aprimoramento reflete sua posição em um exército ou organização paramilitar, como por exemplo um grupo mercenário. Todo posto tem autoridade sobre os níveis inferiores. Este Aprimoramento só reflete o posto inicial do Personagem, dependendo muito da interpretação do Personagem pode-se permitir que ele passe de posto, no decorrer da aventura, sem gastar os pontos de Aprimoramento necessários para o título."
       ],
       "sections": [
         {
@@ -6417,7 +6389,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 ponto"
           ]
         },
         {
@@ -6425,12 +6397,9 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto por posto: Este Aprimoramento reflete sua posição em um exército ou organização paramilitar, como por exemplo um grupo mercenário. Todo posto tem autoridade sobre os níveis inferiores.",
-            "Este Aprimoramento só reflete o posto inicial do Personagem, dependendo muito da interpretação do Personagem pode-se permitir que ele passe de posto, no decorrer da aventura, sem gastar os pontos de Aprimoramento necessários para o título. Os títulos do posto variam de organização para organização.",
-            "Posto 8: Comandante de Unidade ou mais (General de Exército). Posto 7: Comandante de Divisão (General de Brigada).",
-            "Posto 6: Comandante de Brigada\\Grupo\\Regimento (Coronel ou Capitão).",
-            "Posto 5: Comandante de Batalhão (Tenente-Coronel). Posto 4: Comandante de Companhia (Capitão ou Major). Posto 3: Comandante de Pelotão (Tenente). Posto 2: Oficial subalterno (Sargento).",
-            "Posto1: Soldado"
+            "Este Aprimoramento reflete sua posição em um exército ou organização paramilitar, como por exemplo um grupo mercenário. Todo posto tem autoridade sobre os níveis inferiores. Este Aprimoramento só reflete o posto inicial do Personagem, dependendo muito da interpretação do Personagem pode-se permitir que ele passe de posto, no decorrer da aventura, sem gastar os pontos de Aprimoramento necessários para o título.",
+            "Os títulos do posto variam de organização para organização. Posto 8: Comandante de Unidade ou mais (General de Exército). Posto 7: Comandante de Divisão (General de Brigada). Posto 6: Comandante de Brigada\\Grupo\\Regimento (Coronel ou Capitão).",
+            "Posto 5: Comandante de Batalhão (Tenente-Coronel). Posto 4: Comandante de Companhia (Capitão ou Major). Posto 3: Comandante de Pelotão (Tenente). Posto 2: Oficial subalterno (Sargento). Posto1: Soldado"
           ]
         }
       ]
@@ -6482,7 +6451,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 3 pontos"
           ]
         },
         {
@@ -6511,7 +6480,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6520,11 +6489,11 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Este é um Aprimoramento muito versátil, pois possibilita ao Personagem a manipulação e controle sobre uma região e a sociedade que vive nela. O tipo de vínculo que o Personagem possui pode colocá-lo em algum cargo importante dentro da organização, um contato principal ou mesmo como membro principal dos círculos internos.",
-            "Todos os seus testes sociais envolvendo seu grupo de influência recebem um bônus de +10%. Esse tipo de comando pode ser estabelecido sobre diversas áreas, que irão causar uma influência sobre uma determinada parcela da população. Entre as possíveis formas de Influência estão:",
-            "Burocracia e Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, burocratas, ou outros funcionários. Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade.",
-            "Direito e Jurisprudência: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, promotores e juízes. Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações.",
-            "Igreja: controle sobre o clero e ordens militares religiosas.",
-            "Submundo: o que seria de um Personagem sem suas gangues e arruaceiros para cuidar de pequenos problemas que podem surgir? Submundo inclui um contato com alguma organização criminosa. 1 ponto: um bairro, sindicato ou estação local. 2 pontos: alguns bairros, uma cidade pequena. 3 pontos: algumas cidades pequenas, uma metrópole. 4 pontos: algumas metrópoles, um estado. 5 pontos: dois ou três estados, um pequeno pais."
+            "Todos os seus testes sociais envolvendo seu grupo de influência recebem um bônus de +10%. Esse tipo de comando pode ser estabelecido sobre diversas áreas, que irão causar uma influência sobre uma determinada parcela da população.",
+            "Entre as possíveis formas de Influência estão: Burocracia e Política: inclui manter o controle burocrático sobre a região, não importando através de que meios. Pode ser controlando o prefeito, burocratas, ou outros funcionários.",
+            "Permite ao Personagem manipular (ou mesmo mudar) as leis e regras que compõem uma sociedade. Direito e Jurisprudência: seu Personagem conhece as leis ou aqueles que fazem as leis. Mantém contato com senadores, legisladores, promotores e juízes.",
+            "Pode fazer multas e pequenas acusações se \"perderem na papelada\", cancelar casos, modificar penas ou atrapalhar investigações. Igreja: controle sobre o clero e ordens militares religiosas. Submundo: o que seria de um Personagem sem suas gangues e arruaceiros para cuidar de pequenos problemas que podem surgir?",
+            "Submundo inclui um contato com alguma organização criminosa. 1 ponto: um bairro, sindicato ou estação local. 2 pontos: alguns bairros, uma cidade pequena. 3 pontos: algumas cidades pequenas, uma metrópole. 4 pontos: algumas metrópoles, um estado. 5 pontos: dois ou três estados, um pequeno pais."
           ]
         }
       ]
@@ -6567,7 +6536,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem tem uma habilidade quase sobrenatural de passar a impressão de ser inocente em qualquer acusação sem testemunhas. Ele consegue facilmente arrumar álibis, provar que \"comprou aquela bolsa na feira local\" ou que outra pessoa arrombou a porta. O Personagem recebe +10% em Lábia. 2 pontos: funciona da mesma maneira que a anterior, mas desta vez até mesmo uma testemunha pode se convencer de que se enganou ao acusar o Personagem (para isso, deve passar em um Teste Normal de Lábia)."
+        "o Personagem tem uma habilidade quase sobrenatural de passar a impressão de ser inocente em qualquer acusação sem testemunhas. Ele consegue facilmente arrumar álibis, provar que \"comprou aquela bolsa na feira local\" ou que outra pessoa arrombou a porta."
       ],
       "sections": [
         {
@@ -6575,7 +6544,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto"
+            "1 a 2 pontos"
           ]
         },
         {
@@ -6583,7 +6552,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem tem uma habilidade quase sobrenatural de passar a impressão de ser inocente em qualquer acusação sem testemunhas. Ele consegue facilmente arrumar álibis, provar que \"comprou aquela bolsa na feira local\" ou que outra pessoa arrombou a porta. O Personagem recebe +10% em Lábia. 2 pontos: funciona da mesma maneira que a anterior, mas desta vez até mesmo uma testemunha pode se convencer de que se enganou ao acusar o Personagem (para isso, deve passar em um Teste Normal de Lábia).",
+            "o Personagem tem uma habilidade quase sobrenatural de passar a impressão de ser inocente em qualquer acusação sem testemunhas. Ele consegue facilmente arrumar álibis, provar que \"comprou aquela bolsa na feira local\" ou que outra pessoa arrombou a porta.",
+            "O Personagem recebe +10% em Lábia. 2 pontos: funciona da mesma maneira que a anterior, mas desta vez até mesmo uma testemunha pode se convencer de que se enganou ao acusar o Personagem (para isso, deve passar em um Teste Normal de Lábia).",
             "Ele ainda aumenta em um nível todos os Teste de Interrogatório."
           ]
         }
@@ -6614,8 +6584,7 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "seu relógio biológico é extremamente regular, sendo este sincronizado com a passagem de tempo dos relógios. O Personagem é capaz de adivinhar o horário sem nem ao menos precisar consultar um relógio, ver a posição do sol ou valer-se de qualquer outro método para isso.",
-            "Permite calcular com exatidão quase precisa o tempo que se passou desde o momento que ele ficou inconsciente, saber há quanto tempo está viajando e etc.",
-            "Essa noção temporal acurada permite ao usuário reagir de maneira mais útil as ações dos outros personagens, acrescente um bônus de +1 ao total de iniciativa do Personagem."
+            "Permite calcular com exatidão quase precisa o tempo que se passou desde o momento que ele ficou inconsciente, saber há quanto tempo está viajando e etc. Essa noção temporal acurada permite ao usuário reagir de maneira mais útil as ações dos outros personagens, acrescente um bônus de +1 ao total de iniciativa do Personagem."
           ]
         }
       ]
@@ -6628,7 +6597,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "um patrono é alguém ou uma organização para qual o Personagem trabalha. Pode ser um governador, um vampiro, uma ordem militar religiosa, um clube de caça, etc."
+        "um patrono é alguém ou uma organização para qual o Personagem trabalha. Pode ser um governador, um vampiro, uma ordem militar religiosa, um clube de caça, etc. O seu patrono fornece, dentro de certo limites, todo o tipo de equipamento, armamento e financiamento que o Personagem precisar, mas em troca ele deve realizar todas as missões, cumprir ordens e obter todos os resultados que lhe forem solicitados."
       ],
       "sections": [
         {
@@ -6644,8 +6613,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "um patrono é alguém ou uma organização para qual o Personagem trabalha. Pode ser um governador, um vampiro, uma ordem militar religiosa, um clube de caça, etc.",
-            "O seu patrono fornece, dentro de certo limites, todo o tipo de equipamento, armamento e financiamento que o Personagem precisar, mas em troca ele deve realizar todas as missões, cumprir ordens e obter todos os resultados que lhe forem solicitados. Um jogador com este aprimoramento pode começar uma aventura com seu equipamento \"doado\" pelo seu patrono e posteriormente pode solicitar mais equipamentos ou ajuda de sua sociedade, porém, cada vez que um pedido de equipamento ou ajuda for solicitado o Personagem terá que realizar uma tarefa para a sua organização.",
+            "um patrono é alguém ou uma organização para qual o Personagem trabalha. Pode ser um governador, um vampiro, uma ordem militar religiosa, um clube de caça, etc. O seu patrono fornece, dentro de certo limites, todo o tipo de equipamento, armamento e financiamento que o Personagem precisar, mas em troca ele deve realizar todas as missões, cumprir ordens e obter todos os resultados que lhe forem solicitados.",
+            "Um jogador com este aprimoramento pode começar uma aventura com seu equipamento \"doado\" pelo seu patrono e posteriormente pode solicitar mais equipamentos ou ajuda de sua sociedade, porém, cada vez que um pedido de equipamento ou ajuda for solicitado o Personagem terá que realizar uma tarefa para a sua organização.",
             "Ressalta-se que o equipamento doado ou a ajuda recebida é sempre direcionado ao Personagem que possui o aprimoramento, ou seja, ele não conseguirá apoio ou equipamento para qualquer outro jogador."
           ]
         }
@@ -6688,7 +6657,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. 1 ponto: Começou a estudar as artes arcanas a muito pouco tempo. Possui 3 pontos de Focus e 1 ponto de Magia. 2 pontos: Possui alguns conhecimentos de efeitos de Magia. Possui 5 pontos de Focus para dividir entre os caminhos que desejar. Começa o jogo com 3 pontos de Magia. 3 pontos: Mago. Já praticava as artes arcanas há algum tempo. Começa o jogo com 7 pontos de Focus e 5 pontos de Magia. 4 pontos: Mago desenvolvido. Possui 9 pontos de Focus para dividir entre os caminhos, e pelo menos um inimigo mortal a mais do que já possuiria (fica a cargo do Mestre). Começa com 7 pontos de magia. 5 pontos: São personagens mais velhos, com muito poder acumulado e bastante conhecimento de magia."
+        "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. 1 ponto: Começou a estudar as artes arcanas a muito pouco tempo."
       ],
       "sections": [
         {
@@ -6696,7 +6665,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6704,8 +6673,11 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. 1 ponto: Começou a estudar as artes arcanas a muito pouco tempo. Possui 3 pontos de Focus e 1 ponto de Magia. 2 pontos: Possui alguns conhecimentos de efeitos de Magia. Possui 5 pontos de Focus para dividir entre os caminhos que desejar. Começa o jogo com 3 pontos de Magia. 3 pontos: Mago. Já praticava as artes arcanas há algum tempo. Começa o jogo com 7 pontos de Focus e 5 pontos de Magia. 4 pontos: Mago desenvolvido. Possui 9 pontos de Focus para dividir entre os caminhos, e pelo menos um inimigo mortal a mais do que já possuiria (fica a cargo do Mestre). Começa com 7 pontos de magia. 5 pontos: São personagens mais velhos, com muito poder acumulado e bastante conhecimento de magia.",
-            "Possui pelo menos DOIS inimigos mortais a mais dos que já possuiria (a cargo do Mestre - e pode pegar pesado !). O Personagem dispõe de 12 pontos de Focus e 9 pontos de Magia."
+            "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. 1 ponto: Começou a estudar as artes arcanas a muito pouco tempo.",
+            "Possui 3 pontos de Focus e 1 ponto de Magia. 2 pontos: Possui alguns conhecimentos de efeitos de Magia. Possui 5 pontos de Focus para dividir entre os caminhos que desejar. Começa o jogo com 3 pontos de Magia. 3 pontos: Mago.",
+            "Já praticava as artes arcanas há algum tempo. Começa o jogo com 7 pontos de Focus e 5 pontos de Magia. 4 pontos: Mago desenvolvido. Possui 9 pontos de Focus para dividir entre os caminhos, e pelo menos um inimigo mortal a mais do que já possuiria (fica a cargo do Mestre).",
+            "Começa com 7 pontos de magia. 5 pontos: São personagens mais velhos, com muito poder acumulado e bastante conhecimento de magia. Possui pelo menos DOIS inimigos mortais a mais dos que já possuiria (a cargo do Mestre - e pode pegar pesado !).",
+            "O Personagem dispõe de 12 pontos de Focus e 9 pontos de Magia."
           ]
         }
       ]
@@ -6718,7 +6690,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Obs: o mestre deve restringir esse aprimoramento de acordo com a sua campanha, não é recomendável permitir que jogadores comprem esse aprimoramento."
+        "Obs: o mestre deve restringir esse aprimoramento de acordo com a sua campanha, não é recomendável permitir que jogadores comprem esse aprimoramento. O método de criação de itens mágicos é baseado na distribuição de pontos de itens mágicos."
       ],
       "sections": [
         {
@@ -6726,7 +6698,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "a partir de 1 ponto"
           ]
         },
         {
@@ -6734,9 +6706,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Obs: o mestre deve restringir esse aprimoramento de acordo com a sua campanha, não é recomendável permitir que jogadores comprem esse aprimoramento.",
-            "O método de criação de itens mágicos é baseado na distribuição de pontos de itens mágicos. Com esses pontos são comprados o tipo do item e seus efeitos.",
-            "Os pontos de itens mágicos são comprados com pontos de aprimoramento na seguinte progressão: 1 pt de aprimoramento: 1 pt de item mágico 2 pts de aprimoramento: 3 pts de item mágico 3 pts de aprimoramento: 5 pts de item mágico 4 pts de aprimoramento: 7 pts de item mágico 5 pts de aprimoramento: 9 pts de item mágico 6 pts de aprimoramento: 12 pts de item mágico 7 pts de aprimoramento: 15 pts de item mágico 8 pts de aprimoramento: 18 pts de item mágico"
+            "Obs: o mestre deve restringir esse aprimoramento de acordo com a sua campanha, não é recomendável permitir que jogadores comprem esse aprimoramento. O método de criação de itens mágicos é baseado na distribuição de pontos de itens mágicos.",
+            "Com esses pontos são comprados o tipo do item e seus efeitos. Os pontos de itens mágicos são comprados com pontos de aprimoramento na seguinte progressão: 1 pt de aprimoramento: 1 pt de item mágico 2 pts de aprimoramento: 3 pts de item mágico 3 pts de aprimoramento: 5 pts de item mágico 4 pts de aprimoramento: 7 pts de item mágico 5 pts de aprimoramento: 9 pts de item mágico 6 pts de aprimoramento: 12 pts de item mágico 7 pts de aprimoramento: 15 pts de item mágico 8 pts de aprimoramento: 18 pts de item mágico"
           ]
         }
       ]
@@ -6749,7 +6720,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo."
+        "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. Em termos de jogo, a Fé representa os pequenos milagres que um Personagem dedicado pode alcançar, através da devoção a uma entidade."
       ],
       "sections": [
         {
@@ -6757,7 +6728,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6765,8 +6736,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo.",
-            "Em termos de jogo, a Fé representa os pequenos milagres que um Personagem dedicado pode alcançar, através da devoção a uma entidade. A compra de Pontos de Fé deve ser autorizada pelo Mestre. 1 ponto: Seguidor. 3 pontos de Fé. 2 pontos: Fiel. 5 pontos de Fé. 3 pontos: Entusiasta. 7 pontos de Fé. 4 pontos: Fanático. 9 pontos de Fé. 5 pontos: Radical. 12 pontos de Fé."
+            "Este aprimoramento é usado apenas como referência para os kits de Personagem, só o mestre deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. Em termos de jogo, a Fé representa os pequenos milagres que um Personagem dedicado pode alcançar, através da devoção a uma entidade.",
+            "A compra de Pontos de Fé deve ser autorizada pelo Mestre. 1 ponto: Seguidor. 3 pontos de Fé. 2 pontos: Fiel. 5 pontos de Fé. 3 pontos: Entusiasta. 7 pontos de Fé. 4 pontos: Fanático. 9 pontos de Fé. 5 pontos: Radical. 12 pontos de Fé."
           ]
         }
       ]
@@ -6779,7 +6750,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Este aprimoramento é usado apenas como referência para os kits de personagens,o mestre não deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo."
+        "Este aprimoramento é usado apenas como referência para os kits de personagens,o mestre não deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. Pontos Heróicos funcionam como Pontos de Vida a mais que um Personagem possui, mas que só podem ser gastos quando ele executa atos heróicos (durante uma briga com mais de um oponente, quando cai de uma janela, atacado pelo sopro de um dragão, recebe flechadas ou outros atos dignos de um Aventureiro)."
       ],
       "sections": [
         {
@@ -6787,7 +6758,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6795,8 +6766,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Este aprimoramento é usado apenas como referência para os kits de personagens,o mestre não deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo.",
-            "Pontos Heróicos funcionam como Pontos de Vida a mais que um Personagem possui, mas que só podem ser gastos quando ele executa atos heróicos (durante uma briga com mais de um oponente, quando cai de uma janela, atacado pelo sopro de um dragão, recebe flechadas ou outros atos dignos de um Aventureiro).",
+            "Este aprimoramento é usado apenas como referência para os kits de personagens,o mestre não deve permitir que jogadores comprem mais níveis desse aprimoramento com o risco de isso acabar desequilibrando o jogo. Pontos Heróicos funcionam como Pontos de Vida a mais que um Personagem possui, mas que só podem ser gastos quando ele executa atos heróicos (durante uma briga com mais de um oponente, quando cai de uma janela, atacado pelo sopro de um dragão, recebe flechadas ou outros atos dignos de um Aventureiro).",
             "Cabe ao Mestre aprovar o uso de Pontos Heróicos em uma campanha. Assim, se ele permitir o uso de Pontos Heróicos, tanto personagens quanto NPCs poderão possuí-los. 1 ponto: Corajoso. 3 Pontos Heróicos. 2 pontos: Destemido. 5 Pontos Heróicos. 3 pontos: Valoroso. 7 Pontos Heróicos. 4 pontos: Intrépido. 9 Pontos Heróicos. 5 pontos: Herói. 12 Pontos Heróicos."
           ]
         }
@@ -6810,7 +6780,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Este aprimoramento é usado apenas como referência para os kits de personagens, o mestre não deve permitir que jogadores comprem mais níveis nesse aprimoramento com o risco de isso acabar desequilibrando o jogo."
+        "Este aprimoramento é usado apenas como referência para os kits de personagens, o mestre não deve permitir que jogadores comprem mais níveis nesse aprimoramento com o risco de isso acabar desequilibrando o jogo. Os pontos de sorte são recuperados apenas uma vez por sessão de jogo, por isso devem ser usado com cautela, pois seu uso em situações levianas podem impedir o jogador de usá-los em situações inusitadas. 1 ponto: 3 pontos de sorte. 2 pontos: 5 pontos de sorte. 3 pontos: 7 pontos de sorte. 4 pontos: 9 pontos de sorte. 5 pontos: 12 pontos de sorte."
       ],
       "sections": [
         {
@@ -6818,7 +6788,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6826,8 +6796,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Este aprimoramento é usado apenas como referência para os kits de personagens, o mestre não deve permitir que jogadores comprem mais níveis nesse aprimoramento com o risco de isso acabar desequilibrando o jogo.",
-            "Os pontos de sorte são recuperados apenas uma vez por sessão de jogo, por isso devem ser usado com cautela, pois seu uso em situações levianas podem impedir o jogador de usá-los em situações inusitadas. 1 ponto: 3 pontos de sorte. 2 pontos: 5 pontos de sorte. 3 pontos: 7 pontos de sorte. 4 pontos: 9 pontos de sorte. 5 pontos: 12 pontos de sorte."
+            "Este aprimoramento é usado apenas como referência para os kits de personagens, o mestre não deve permitir que jogadores comprem mais níveis nesse aprimoramento com o risco de isso acabar desequilibrando o jogo. Os pontos de sorte são recuperados apenas uma vez por sessão de jogo, por isso devem ser usado com cautela, pois seu uso em situações levianas podem impedir o jogador de usá-los em situações inusitadas. 1 ponto: 3 pontos de sorte. 2 pontos: 5 pontos de sorte. 3 pontos: 7 pontos de sorte. 4 pontos: 9 pontos de sorte. 5 pontos: 12 pontos de sorte."
           ]
         }
       ]
@@ -6840,7 +6809,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "alguém gosta de você, tanto que o ajuda. Essa pessoa age de uma forma sutil, mas efetiva, fornecendo informações, ou agindo como guia. Esse protetor é um NPC de 3 níveis acima do Personagem. 3 pontos: Seu protetor o defende em tempo integral, lhe salvando de situações criticas, tais como: aquela flecha que ia direto de encontro ao seu coração, ou quando você cai inconsciente diante de um inimigo. Esse protetor é um NPC de 5 níveis acima do nível do Personagem."
+        "alguém gosta de você, tanto que o ajuda. Essa pessoa age de uma forma sutil, mas efetiva, fornecendo informações, ou agindo como guia. Esse protetor é um NPC de 3 níveis acima do Personagem. 3 pontos: Seu protetor o defende em tempo integral, lhe salvando de situações criticas, tais como: aquela flecha que ia direto de encontro ao seu coração, ou quando você cai inconsciente diante de um inimigo."
       ],
       "sections": [
         {
@@ -6848,7 +6817,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2 pontos"
+            "2 a 3 pontos"
           ]
         },
         {
@@ -6856,7 +6825,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "alguém gosta de você, tanto que o ajuda. Essa pessoa age de uma forma sutil, mas efetiva, fornecendo informações, ou agindo como guia. Esse protetor é um NPC de 3 níveis acima do Personagem. 3 pontos: Seu protetor o defende em tempo integral, lhe salvando de situações criticas, tais como: aquela flecha que ia direto de encontro ao seu coração, ou quando você cai inconsciente diante de um inimigo. Esse protetor é um NPC de 5 níveis acima do nível do Personagem."
+            "alguém gosta de você, tanto que o ajuda. Essa pessoa age de uma forma sutil, mas efetiva, fornecendo informações, ou agindo como guia. Esse protetor é um NPC de 3 níveis acima do Personagem. 3 pontos: Seu protetor o defende em tempo integral, lhe salvando de situações criticas, tais como: aquela flecha que ia direto de encontro ao seu coração, ou quando você cai inconsciente diante de um inimigo.",
+            "Esse protetor é um NPC de 5 níveis acima do nível do Personagem."
           ]
         }
       ]
@@ -6877,7 +6847,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 Ponto"
+            "1 a 2 pontos"
           ]
         },
         {
@@ -6907,7 +6877,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6929,7 +6899,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem possui alta resistência à dor, não importa quanto dano físico sofra, ele não sentirá os ferimentos com a mesma intensidade que as demais pessoas sentem, e nem receber penalidades correspondentes por isso."
+        "o Personagem possui alta resistência à dor, não importa quanto dano físico sofra, ele não sentirá os ferimentos com a mesma intensidade que as demais pessoas sentem, e nem receber penalidades correspondentes por isso. Considere que o Personagem fica consciente mesmo quando seus PVs atingirem o valor 0, e só irá desmaiar (morrer) quando chegarem a - 5 (à exceção de golpes localizados na cabeça, desferidos para atordoá-lo)."
       ],
       "sections": [
         {
@@ -6945,8 +6915,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem possui alta resistência à dor, não importa quanto dano físico sofra, ele não sentirá os ferimentos com a mesma intensidade que as demais pessoas sentem, e nem receber penalidades correspondentes por isso.",
-            "Considere que o Personagem fica consciente mesmo quando seus PVs atingirem o valor 0, e só irá desmaiar (morrer) quando chegarem a - 5 (à exceção de golpes localizados na cabeça, desferidos para atordoá-lo)."
+            "o Personagem possui alta resistência à dor, não importa quanto dano físico sofra, ele não sentirá os ferimentos com a mesma intensidade que as demais pessoas sentem, e nem receber penalidades correspondentes por isso. Considere que o Personagem fica consciente mesmo quando seus PVs atingirem o valor 0, e só irá desmaiar (morrer) quando chegarem a - 5 (à exceção de golpes localizados na cabeça, desferidos para atordoá-lo)."
           ]
         }
       ]
@@ -6959,7 +6928,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "O Personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder). Assim, sempre que uma magia for empregada no Personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir. 1 ponto: 1D de resistência. 2 pontos: 2D de resistência. 3 pontos: 3D de resistência. 4 pontos: 4D de resistência. 5 pontos: 5D de resistência."
+        "O Personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder)."
       ],
       "sections": [
         {
@@ -6967,7 +6936,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 5 pontos"
           ]
         },
         {
@@ -6975,7 +6944,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O Personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder). Assim, sempre que uma magia for empregada no Personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir. 1 ponto: 1D de resistência. 2 pontos: 2D de resistência. 3 pontos: 3D de resistência. 4 pontos: 4D de resistência. 5 pontos: 5D de resistência."
+            "O Personagem possui uma aura de proteção contra magias arcanas. Na verdade, ele não é totalmente imune à Magia, apenas possui uma resistência sobrenatural capaz de diminuir a intensidade dos efeitos causados contra ele (isso pode reduzir o dano que uma magia, mas também diminuirá os bônus que ela pode conceder).",
+            "Assim, sempre que uma magia for empregada no Personagem, reduza seu efeito conforme o nível de Resistência à Magia que ele possuir. 1 ponto: 1D de resistência. 2 pontos: 2D de resistência. 3 pontos: 3D de resistência. 4 pontos: 4D de resistência. 5 pontos: 5D de resistência."
           ]
         }
       ]
@@ -7084,7 +7054,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "1 a 2 pontos"
           ]
         },
         {
@@ -7093,7 +7063,8 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Seu Personagem possui grande intuição, uma sensibilidade extrema que lhe permite saber sobre coisas mesmo sem ter acesso a informações sobre elas. 1 ponto: o Personagem sonha com coisas sobrenaturais, que podem vir a ocorrer, escreve livros, modela esculturas e pinta quadros a respeito.",
-            "Esses quadros devem ser usados pelo Mestre como ajuda na preparação de Campanhas e Aventuras. O Personagem tem uma chance igual a 10% vezes o modificador de carisma de conseguir alguma informação sobre o assunto. 2 pontos: o Personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade. Em alguns casos, com a permissão do Mestre, o Jogador pode tentar um Teste de Percepção para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida ou a localização de um objeto perdido."
+            "Esses quadros devem ser usados pelo Mestre como ajuda na preparação de Campanhas e Aventuras. O Personagem tem uma chance igual a 10% vezes o modificador de carisma de conseguir alguma informação sobre o assunto. 2 pontos: o Personagem possui uma espécie de sexto sentido, uma percepção extra-sensorial que beira a paranormalidade.",
+            "Em alguns casos, com a permissão do Mestre, o Jogador pode tentar um Teste de Percepção para notar coisas que estão além dos sentidos normais: uma presença sobrenatural, um risco para sua vida ou a localização de um objeto perdido."
           ]
         }
       ]
@@ -7106,7 +7077,37 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "seu Personagem sabe se orientar, mesmo sem bases visuais ele não precisa de bússola, do Sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido. Ele recebe +10% em todos os subgrupos da perícia Sobrevivência. 2 pontos: O mesmo que a habilidade acima, mas funciona em importa em que plano de existência o Personagem esteja."
+        "seu Personagem sabe se orientar, mesmo sem bases visuais ele não precisa de bússola, do Sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "1 a 2 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "seu Personagem sabe se orientar, mesmo sem bases visuais ele não precisa de bússola, do Sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido.",
+            "Ele recebe +10% em todos os subgrupos da perícia Sobrevivência. 2 pontos: O mesmo que a habilidade acima, mas funciona em importa em que plano de existência o Personagem esteja."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentidos-agucados",
+      "title": "Sentidos Aguçados",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionId": "aprimoramentos",
+      "sectionTitle": "Aprimoramento",
+      "paragraphs": [
+        "o Personagem possui sentidos mais aguçados do que os outros Personagens. Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos. Em Testes de Percepção que utilizem esses sentidos, o Mestre. deve reduzir a dificuldade em um nível."
       ],
       "sections": [
         {
@@ -7122,38 +7123,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "seu Personagem sabe se orientar, mesmo sem bases visuais ele não precisa de bússola, do Sol, estrelas ou outros pontos de referência para saber onde ficam os pontos cardeais. Sempre será capaz de lembrar-se de um caminho que tenha percorrido. Ele recebe +10% em todos os subgrupos da perícia Sobrevivência. 2 pontos: O mesmo que a habilidade acima, mas funciona em importa em que plano de existência o Personagem esteja."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "sentidos-agucados",
-      "title": "Sentidos Aguçados",
-      "area": "aprimoramentos",
-      "kind": "enhancement",
-      "sectionId": "aprimoramentos",
-      "sectionTitle": "Aprimoramento",
-      "paragraphs": [
-        "1 ponto para cada sentido: o Personagem possui sentidos mais aguçados do que os outros Personagens."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Variável"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "1 ponto para cada sentido: o Personagem possui sentidos mais aguçados do que os outros Personagens.",
-            "Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos.",
-            "Em Testes de Percepção que utilizem esses sentidos, o Mestre. deve reduzir a dificuldade em um nível. Cabe ressaltar que os sentidos do Personagem contemplados por este aprimoramento também tem seu alcance ampliado, geralmente dobrando ou até mesmo triplicando o alcance dos seus sentidos."
+            "o Personagem possui sentidos mais aguçados do que os outros Personagens. Sua visão, audição, tato, olfato e/ou paladar são muito mais desenvolvidos. Em Testes de Percepção que utilizem esses sentidos, o Mestre. deve reduzir a dificuldade em um nível.",
+            "Cabe ressaltar que os sentidos do Personagem contemplados por este aprimoramento também tem seu alcance ampliado, geralmente dobrando ou até mesmo triplicando o alcance dos seus sentidos."
           ]
         }
       ]
@@ -7174,7 +7145,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto"
+            "1 a 2 pontos"
           ]
         },
         {
@@ -7195,7 +7166,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem recebe um bônus de +10% em determinado grupo de perícias a sua escolha, mediante aprovação do teste. O Personagem deve escolher um grupo de perícias, por exemplo a perícia Manipulação, ele receberá o bônus de +10% em todas as perícias deste grupo. Estão fora desta escolha as perícias do grupo Armas Brancas, Briga, Armas de Combate à Distância, Esquiva e todas as Manobras de Combate."
+        "o Personagem recebe um bônus de +10% em determinado grupo de perícias a sua escolha, mediante aprovação do teste. O Personagem deve escolher um grupo de perícias, por exemplo a perícia Manipulação, ele receberá o bônus de +10% em todas as perícias deste grupo."
       ],
       "sections": [
         {
@@ -7211,7 +7182,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem recebe um bônus de +10% em determinado grupo de perícias a sua escolha, mediante aprovação do teste. O Personagem deve escolher um grupo de perícias, por exemplo a perícia Manipulação, ele receberá o bônus de +10% em todas as perícias deste grupo. Estão fora desta escolha as perícias do grupo Armas Brancas, Briga, Armas de Combate à Distância, Esquiva e todas as Manobras de Combate."
+            "o Personagem recebe um bônus de +10% em determinado grupo de perícias a sua escolha, mediante aprovação do teste. O Personagem deve escolher um grupo de perícias, por exemplo a perícia Manipulação, ele receberá o bônus de +10% em todas as perícias deste grupo.",
+            "Estão fora desta escolha as perícias do grupo Armas Brancas, Briga, Armas de Combate à Distância, Esquiva e todas as Manobras de Combate."
           ]
         }
       ]
@@ -7313,7 +7285,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é alérgico a alguma coisa (poeira, pêlo de animais, certos perfumes). Ao entrar em contato com essa substância, começa a espirar sem parar, o que prejudica suas ações físicas (Todos os testes recebem uma penalidade de -10%). -2 pontos: idêntico ao anterior, porém os efeitos são bem mais graves. Uma rápida exposição, pode gerar irritação nos olhos, e quanto mais tempo durar, maiores serão os males, tais como: irritação na pele, vômitos, etc. Todos os testes são difíceis enquanto o Personagem estiver exposto a substância da qual é alérgico. -3 pontos: idêntico ao anterior, porém os efeitos são bem mais graves, causando . Uma rápida exposição, pode causar parada respiratória e uma exposição prolongada pode levar à morte. Todos os testes são aumentam em um nível sua dificuldade e se o Personagem ficar exposto a sua irritação por um número de turnos maior que metade de sua CON começará a perder um PV enquanto durar a exposição."
+        "o Personagem é alérgico a alguma coisa (poeira, pêlo de animais, certos perfumes). Ao entrar em contato com essa substância, começa a espirar sem parar, o que prejudica suas ações físicas (Todos os testes recebem uma penalidade de -10%). -2 pontos: idêntico ao anterior, porém os efeitos são bem mais graves."
       ],
       "sections": [
         {
@@ -7321,7 +7293,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto"
+            "-3 a -1 pontos"
           ]
         },
         {
@@ -7329,7 +7301,9 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é alérgico a alguma coisa (poeira, pêlo de animais, certos perfumes). Ao entrar em contato com essa substância, começa a espirar sem parar, o que prejudica suas ações físicas (Todos os testes recebem uma penalidade de -10%). -2 pontos: idêntico ao anterior, porém os efeitos são bem mais graves. Uma rápida exposição, pode gerar irritação nos olhos, e quanto mais tempo durar, maiores serão os males, tais como: irritação na pele, vômitos, etc. Todos os testes são difíceis enquanto o Personagem estiver exposto a substância da qual é alérgico. -3 pontos: idêntico ao anterior, porém os efeitos são bem mais graves, causando . Uma rápida exposição, pode causar parada respiratória e uma exposição prolongada pode levar à morte. Todos os testes são aumentam em um nível sua dificuldade e se o Personagem ficar exposto a sua irritação por um número de turnos maior que metade de sua CON começará a perder um PV enquanto durar a exposição."
+            "o Personagem é alérgico a alguma coisa (poeira, pêlo de animais, certos perfumes). Ao entrar em contato com essa substância, começa a espirar sem parar, o que prejudica suas ações físicas (Todos os testes recebem uma penalidade de -10%). -2 pontos: idêntico ao anterior, porém os efeitos são bem mais graves.",
+            "Uma rápida exposição, pode gerar irritação nos olhos, e quanto mais tempo durar, maiores serão os males, tais como: irritação na pele, vômitos, etc. Todos os testes são difíceis enquanto o Personagem estiver exposto a substância da qual é alérgico. -3 pontos: idêntico ao anterior, porém os efeitos são bem mais graves, causando .",
+            "Uma rápida exposição, pode causar parada respiratória e uma exposição prolongada pode levar à morte. Todos os testes são aumentam em um nível sua dificuldade e se o Personagem ficar exposto a sua irritação por um número de turnos maior que metade de sua CON começará a perder um PV enquanto durar a exposição."
           ]
         }
       ]
@@ -7371,7 +7345,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem sofre constantes alucinações, tendo uma visão distorcida da realidade. Nem tudo que seu Personagem vê está mesmo ali, e nem tudo que está ali ele vê. O Mestre deve exigir constantes Testes de INT (e não de PER) para discernir a realidade das alucinações. Podem ser visões, sons misteriosos ou vultos que atraem sua atenção e o fazem esquecer do resto à sua volta."
+        "o Personagem sofre constantes alucinações, tendo uma visão distorcida da realidade. Nem tudo que seu Personagem vê está mesmo ali, e nem tudo que está ali ele vê. O Mestre deve exigir constantes Testes de INT (e não de PER) para discernir a realidade das alucinações."
       ],
       "sections": [
         {
@@ -7387,8 +7361,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem sofre constantes alucinações, tendo uma visão distorcida da realidade. Nem tudo que seu Personagem vê está mesmo ali, e nem tudo que está ali ele vê. O Mestre deve exigir constantes Testes de INT (e não de PER) para discernir a realidade das alucinações. Podem ser visões, sons misteriosos ou vultos que atraem sua atenção e o fazem esquecer do resto à sua volta.",
-            "Sempre que estiver em combate faça um teste de INT para cada ataque que realizar, se falhar no teste o Personagem terá atingido uma de suas visões."
+            "o Personagem sofre constantes alucinações, tendo uma visão distorcida da realidade. Nem tudo que seu Personagem vê está mesmo ali, e nem tudo que está ali ele vê. O Mestre deve exigir constantes Testes de INT (e não de PER) para discernir a realidade das alucinações.",
+            "Podem ser visões, sons misteriosos ou vultos que atraem sua atenção e o fazem esquecer do resto à sua volta. Sempre que estiver em combate faça um teste de INT para cada ataque que realizar, se falhar no teste o Personagem terá atingido uma de suas visões."
           ]
         }
       ]
@@ -7401,7 +7375,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem esquece facilmente as coisas, desde fatos recentes até sua própria identidade. Para se recordar de fatos passados, faça um Teste de INT (Fácil para fatos dos últimos dias, Normal para ocorrências das últimas semanas, e Difícil sobre meses ou anos atrás). -1 ponto: o Personagem tem a aparência física trocada, seu corpo tem os traços do sexo oposto, o que faz com que ele seja facilmente confundido com uma mulher (se o Personagem for um homem) ou com um homem (se for uma mulher). Terá um corpo truculento, se for mulher, e um corpo frágil se for homem. Reduza em -3 seu modificador de CAR para verificar a reação dos NPC ́s."
+        "o Personagem esquece facilmente as coisas, desde fatos recentes até sua própria identidade. Para se recordar de fatos passados, faça um Teste de INT (Fácil para fatos dos últimos dias, Normal para ocorrências das últimas semanas, e Difícil sobre meses ou anos atrás). -1 ponto: o Personagem tem a aparência física trocada, seu corpo tem os traços do sexo oposto, o que faz com que ele seja facilmente confundido com uma mulher (se o Personagem for um homem) ou com um homem (se for uma mulher)."
       ],
       "sections": [
         {
@@ -7417,7 +7391,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem esquece facilmente as coisas, desde fatos recentes até sua própria identidade. Para se recordar de fatos passados, faça um Teste de INT (Fácil para fatos dos últimos dias, Normal para ocorrências das últimas semanas, e Difícil sobre meses ou anos atrás). -1 ponto: o Personagem tem a aparência física trocada, seu corpo tem os traços do sexo oposto, o que faz com que ele seja facilmente confundido com uma mulher (se o Personagem for um homem) ou com um homem (se for uma mulher). Terá um corpo truculento, se for mulher, e um corpo frágil se for homem. Reduza em -3 seu modificador de CAR para verificar a reação dos NPC ́s."
+            "o Personagem esquece facilmente as coisas, desde fatos recentes até sua própria identidade. Para se recordar de fatos passados, faça um Teste de INT (Fácil para fatos dos últimos dias, Normal para ocorrências das últimas semanas, e Difícil sobre meses ou anos atrás). -1 ponto: o Personagem tem a aparência física trocada, seu corpo tem os traços do sexo oposto, o que faz com que ele seja facilmente confundido com uma mulher (se o Personagem for um homem) ou com um homem (se for uma mulher).",
+            "Terá um corpo truculento, se for mulher, e um corpo frágil se for homem. Reduza em -3 seu modificador de CAR para verificar a reação dos NPC ́s."
           ]
         }
       ]
@@ -7430,7 +7405,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é incrivelmente idêntico a outra pessoa, ambos são fisicamente iguais, mas possuem personalidades e comportamento muito diferentes."
+        "o Personagem é incrivelmente idêntico a outra pessoa, ambos são fisicamente iguais, mas possuem personalidades e comportamento muito diferentes. Mesmo para os amigos mais próximos, é quase impossível distinguir quem é quem apenas baseando-se na aparência."
       ],
       "sections": [
         {
@@ -7446,8 +7421,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é incrivelmente idêntico a outra pessoa, ambos são fisicamente iguais, mas possuem personalidades e comportamento muito diferentes.",
-            "Mesmo para os amigos mais próximos, é quase impossível distinguir quem é quem apenas baseando-se na aparência. Isso pode trazer muitos problemas para o Personagem, pois geralmente o seu \"gêmeo\" costuma meter-se em encrencas e você acaba sendo considerado o culpado."
+            "o Personagem é incrivelmente idêntico a outra pessoa, ambos são fisicamente iguais, mas possuem personalidades e comportamento muito diferentes. Mesmo para os amigos mais próximos, é quase impossível distinguir quem é quem apenas baseando-se na aparência.",
+            "Isso pode trazer muitos problemas para o Personagem, pois geralmente o seu \"gêmeo\" costuma meter-se em encrencas e você acaba sendo considerado o culpado."
           ]
         }
       ]
@@ -7460,7 +7435,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Por algum motivo que só seu Personagem conhece, ele mata pessoas. Pode fazer isso de forma cuidadosa e fria, ou em grandes ataques de violência. -2 pontos: já matou algumas pessoas, e tem algum tipo de marca registrada, ligada ao tipo de vítima (apenas crianças, ruivas, estrangeiros, pessoas religiosas), ou método de execução. Isso colocou o Personagem na lista de caça das autoridades, e dos caçadores de recompensas. Ele precisa fazer um teste de WILL por mês para não fazer uma nova vítima. -3 pontos: igual ao anterior, mas ele já fez varias vítimas, e tomou gosto pelo sangue,tanto que quando está próximo a uma possível vítima, deve fazer um Teste de WILL para resistir à oportunidade de matar."
+        "Por algum motivo que só seu Personagem conhece, ele mata pessoas. Pode fazer isso de forma cuidadosa e fria, ou em grandes ataques de violência. -2 pontos: já matou algumas pessoas, e tem algum tipo de marca registrada, ligada ao tipo de vítima (apenas crianças, ruivas, estrangeiros, pessoas religiosas), ou método de execução."
       ],
       "sections": [
         {
@@ -7468,7 +7443,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "-3 a -2 pontos"
           ]
         },
         {
@@ -7476,7 +7451,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Por algum motivo que só seu Personagem conhece, ele mata pessoas. Pode fazer isso de forma cuidadosa e fria, ou em grandes ataques de violência. -2 pontos: já matou algumas pessoas, e tem algum tipo de marca registrada, ligada ao tipo de vítima (apenas crianças, ruivas, estrangeiros, pessoas religiosas), ou método de execução. Isso colocou o Personagem na lista de caça das autoridades, e dos caçadores de recompensas. Ele precisa fazer um teste de WILL por mês para não fazer uma nova vítima. -3 pontos: igual ao anterior, mas ele já fez varias vítimas, e tomou gosto pelo sangue,tanto que quando está próximo a uma possível vítima, deve fazer um Teste de WILL para resistir à oportunidade de matar."
+            "Por algum motivo que só seu Personagem conhece, ele mata pessoas. Pode fazer isso de forma cuidadosa e fria, ou em grandes ataques de violência. -2 pontos: já matou algumas pessoas, e tem algum tipo de marca registrada, ligada ao tipo de vítima (apenas crianças, ruivas, estrangeiros, pessoas religiosas), ou método de execução.",
+            "Isso colocou o Personagem na lista de caça das autoridades, e dos caçadores de recompensas. Ele precisa fazer um teste de WILL por mês para não fazer uma nova vítima. -3 pontos: igual ao anterior, mas ele já fez varias vítimas, e tomou gosto pelo sangue,tanto que quando está próximo a uma possível vítima, deve fazer um Teste de WILL para resistir à oportunidade de matar."
           ]
         }
       ]
@@ -7548,7 +7524,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "seu Personagem precisa roubar alguma coisa de todos os lugares que visita. Pode ser algum tipo específico de objeto, coisas aleatórias, e até mesmo objetos de muito valor."
+        "seu Personagem precisa roubar alguma coisa de todos os lugares que visita. Pode ser algum tipo específico de objeto, coisas aleatórias, e até mesmo objetos de muito valor. Muitas vezes a cleptomania funciona de maneira inconsciente - o Personagem não se lembra de ter roubado o objeto."
       ],
       "sections": [
         {
@@ -7564,8 +7540,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "seu Personagem precisa roubar alguma coisa de todos os lugares que visita. Pode ser algum tipo específico de objeto, coisas aleatórias, e até mesmo objetos de muito valor.",
-            "Muitas vezes a cleptomania funciona de maneira inconsciente - o Personagem não se lembra de ter roubado o objeto. Caso o Personagem não tente roubar alguma coisa numa sessão ele não terá direito a pontos de experiência nessa sessão."
+            "seu Personagem precisa roubar alguma coisa de todos os lugares que visita. Pode ser algum tipo específico de objeto, coisas aleatórias, e até mesmo objetos de muito valor. Muitas vezes a cleptomania funciona de maneira inconsciente - o Personagem não se lembra de ter roubado o objeto.",
+            "Caso o Personagem não tente roubar alguma coisa numa sessão ele não terá direito a pontos de experiência nessa sessão."
           ]
         }
       ]
@@ -7578,7 +7554,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem segue algum rígido código de conduta e jamais poderá desobedecê-lo, nem mesmo que sua vida dependa disso. Existem muitos códigos de honra, como o Código dos Cavalheiros, o Código do Caçador (nunca abandonar uma caça abatida ou matar filhotes ou fêmeas grávidas de qualquer espécie, no máximo combater e capturá-los) e o Código dos Heróis (sempre cumprir sua palavra, sempre proteger qualquer pessoa ou criatura mais fraca que você, jamais recusar um pedido de ajuda)."
+        "cada: o Personagem segue algum rígido código de conduta e jamais poderá desobedecê-lo, nem mesmo que sua vida dependa disso. Existem muitos códigos de honra, como o Código dos Cavalheiros, o Código do Caçador (nunca abandonar uma caça abatida ou matar filhotes ou fêmeas grávidas de qualquer espécie, no máximo combater e capturá-los) e o Código dos Heróis (sempre cumprir sua palavra, sempre proteger qualquer pessoa ou criatura mais fraca que você, jamais recusar um pedido de ajuda)."
       ],
       "sections": [
         {
@@ -7586,7 +7562,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto cada"
+            "-1 ponto"
           ]
         },
         {
@@ -7594,7 +7570,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem segue algum rígido código de conduta e jamais poderá desobedecê-lo, nem mesmo que sua vida dependa disso. Existem muitos códigos de honra, como o Código dos Cavalheiros, o Código do Caçador (nunca abandonar uma caça abatida ou matar filhotes ou fêmeas grávidas de qualquer espécie, no máximo combater e capturá-los) e o Código dos Heróis (sempre cumprir sua palavra, sempre proteger qualquer pessoa ou criatura mais fraca que você, jamais recusar um pedido de ajuda).",
+            "cada: o Personagem segue algum rígido código de conduta e jamais poderá desobedecê-lo, nem mesmo que sua vida dependa disso. Existem muitos códigos de honra, como o Código dos Cavalheiros, o Código do Caçador (nunca abandonar uma caça abatida ou matar filhotes ou fêmeas grávidas de qualquer espécie, no máximo combater e capturá-los) e o Código dos Heróis (sempre cumprir sua palavra, sempre proteger qualquer pessoa ou criatura mais fraca que você, jamais recusar um pedido de ajuda).",
             "Caso o Personagem não obedeça ao seu código coisa numa sessão ele não terá direito a pontos de experiência nessa sessão."
           ]
         }
@@ -7655,8 +7631,8 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "você se sente terrivelmente culpado por alguma coisa que fez no passado e julga-se responsável porto das as consequências disto. Às vezes, o motivo do acontecimento realmente foi culpa sua, em outros casos não, mas igualmente o Personagem se atribui como um responsável direto.",
-            "Em todas as situações que lembrem o motivo que ocasionou seu complexo, deve fazer um Teste de WILL.",
-            "Em caso de falha, o Personagem ficará extremamente deprimido e todos os seus Testes mentais se tornam Difíceis, até o final da cena. Caso o Personagem não interprete seu complexo numa sessão ele não terá direito a pontos de experiência nessa sessão."
+            "Em todas as situações que lembrem o motivo que ocasionou seu complexo, deve fazer um Teste de WILL. Em caso de falha, o Personagem ficará extremamente deprimido e todos os seus Testes mentais se tornam Difíceis, até o final da cena.",
+            "Caso o Personagem não interprete seu complexo numa sessão ele não terá direito a pontos de experiência nessa sessão."
           ]
         }
       ]
@@ -7686,8 +7662,8 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "o Personagem se sente inferior aos outros, não importa o quão forte ou hábil ele seja, até mesmo a pessoa mais fraca parece ser superior a ele. Isso o impede de se confrontar com qualquer um, ele já sabe que não pode vencer ninguém mesmo.",
-            "Para entrar em um desafio ou realizar qualquer tipo de ação heróica, é preciso ser bem sucedido em um Teste Difícil de WILL, em caso de falha todos os testes sociais passam a ser difíceis.",
-            "Mesmo que ele vença, o Personagem ainda se julgará inferior, atribuindo a derrota do adversário à sorte. Caso o Personagem interprete seu complexo numa sessão ele não terá direito a pontos de experiência nessa sessão."
+            "Para entrar em um desafio ou realizar qualquer tipo de ação heróica, é preciso ser bem sucedido em um Teste Difícil de WILL, em caso de falha todos os testes sociais passam a ser difíceis. Mesmo que ele vença, o Personagem ainda se julgará inferior, atribuindo a derrota do adversário à sorte.",
+            "Caso o Personagem interprete seu complexo numa sessão ele não terá direito a pontos de experiência nessa sessão."
           ]
         }
       ]
@@ -7730,7 +7706,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "seu Personagem tem um senso de sobrevivência muito aguçado, muito além da compreensão de seus companheiros. Isso o leva a tomar atitudes extremas para se manter vivo, tais como fugir ou se esconder ao menor sinal de perigo. Portanto, o Personagem nunca irá envolver-se me situações que ofereçam um grande risco. Mesmo que queira, só será capaz de deixar sua segurança de lado se for bem sucedido em um Teste de WILL. Caso o Personagem não interprete sua covardia numa sessão ele não terá direito a pontos de experiência nessa sessão."
+        "seu Personagem tem um senso de sobrevivência muito aguçado, muito além da compreensão de seus companheiros. Isso o leva a tomar atitudes extremas para se manter vivo, tais como fugir ou se esconder ao menor sinal de perigo."
       ],
       "sections": [
         {
@@ -7746,7 +7722,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "seu Personagem tem um senso de sobrevivência muito aguçado, muito além da compreensão de seus companheiros. Isso o leva a tomar atitudes extremas para se manter vivo, tais como fugir ou se esconder ao menor sinal de perigo. Portanto, o Personagem nunca irá envolver-se me situações que ofereçam um grande risco. Mesmo que queira, só será capaz de deixar sua segurança de lado se for bem sucedido em um Teste de WILL. Caso o Personagem não interprete sua covardia numa sessão ele não terá direito a pontos de experiência nessa sessão."
+            "seu Personagem tem um senso de sobrevivência muito aguçado, muito além da compreensão de seus companheiros. Isso o leva a tomar atitudes extremas para se manter vivo, tais como fugir ou se esconder ao menor sinal de perigo.",
+            "Portanto, o Personagem nunca irá envolver-se me situações que ofereçam um grande risco. Mesmo que queira, só será capaz de deixar sua segurança de lado se for bem sucedido em um Teste de WILL. Caso o Personagem não interprete sua covardia numa sessão ele não terá direito a pontos de experiência nessa sessão."
           ]
         }
       ]
@@ -7759,7 +7736,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é uma pessoa extremamente crédula e ingênua, inocente ao ponto de acreditar em qualquer coisa que digam a ele. Para ele, todas as pessoas são boas e confiáveis, e só querem o seu bem."
+        "o Personagem é uma pessoa extremamente crédula e ingênua, inocente ao ponto de acreditar em qualquer coisa que digam a ele. Para ele, todas as pessoas são boas e confiáveis, e só querem o seu bem. Isso faz com que seja facilmente enganado, traído e iludido."
       ],
       "sections": [
         {
@@ -7775,8 +7752,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é uma pessoa extremamente crédula e ingênua, inocente ao ponto de acreditar em qualquer coisa que digam a ele. Para ele, todas as pessoas são boas e confiáveis, e só querem o seu bem.",
-            "Isso faz com que seja facilmente enganado, traído e iludido. Todos os testes de Lábia feitos contra ele são considerados sucessos."
+            "o Personagem é uma pessoa extremamente crédula e ingênua, inocente ao ponto de acreditar em qualquer coisa que digam a ele. Para ele, todas as pessoas são boas e confiáveis, e só querem o seu bem. Isso faz com que seja facilmente enganado, traído e iludido.",
+            "Todos os testes de Lábia feitos contra ele são considerados sucessos."
           ]
         }
       ]
@@ -7819,7 +7796,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é algum perdido no mundo. Ele não possui o menor senso de direção e distância, sendo que os sentidos de direção (norte, sul, horizontal, vertical) regras métricas e até mesmo o tempo para transpô-las não lhe significam nada. Para ele não há diferença entre norte ou sul, ou entre um metro e um km, além do que, ambos demoram mais de um mês para serem percorridos!"
+        "o Personagem é algum perdido no mundo. Ele não possui o menor senso de direção e distância, sendo que os sentidos de direção (norte, sul, horizontal, vertical) regras métricas e até mesmo o tempo para transpô-las não lhe significam nada."
       ],
       "sections": [
         {
@@ -7835,8 +7812,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é algum perdido no mundo. Ele não possui o menor senso de direção e distância, sendo que os sentidos de direção (norte, sul, horizontal, vertical) regras métricas e até mesmo o tempo para transpô-las não lhe significam nada. Para ele não há diferença entre norte ou sul, ou entre um metro e um km, além do que, ambos demoram mais de um mês para serem percorridos!",
-            "Todos os testes de Sobrevivência com a intenção de localizar-se são considerados falhas automaticamente, se ele estiver num ambiente com mais de 4 cômodos ele não conseguirá achar a saída."
+            "o Personagem é algum perdido no mundo. Ele não possui o menor senso de direção e distância, sendo que os sentidos de direção (norte, sul, horizontal, vertical) regras métricas e até mesmo o tempo para transpô-las não lhe significam nada.",
+            "Para ele não há diferença entre norte ou sul, ou entre um metro e um km, além do que, ambos demoram mais de um mês para serem percorridos! Todos os testes de Sobrevivência com a intenção de localizar-se são considerados falhas automaticamente, se ele estiver num ambiente com mais de 4 cômodos ele não conseguirá achar a saída."
           ]
         }
       ]
@@ -7849,7 +7826,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "você possui uma deficiência pequena, como ser cego de um olho, não ter uma mão ou até ser quase surdo. Todos os Testes Fáceis de Atributos relacionados à sua deficiência são considerados Normais, e os Normais considerados Difíceis. -2 pontos: sua deficiência é um pouco mais grave, podendo ser completamente cego, não ter um braço, ser surdo ou não sentir cheiros. Todos os Testes de Atributos relacionados à sua deficiência são considerados Difíceis. -3 pontos: sua deficiência é grave e prejudica muito sua vida. Você pode ser um paraplégico, ser surdo-mudo ou não ter ambos os braços. Você não pode realizar certas proezas relacionadas à sua deficiência, como andar, escutar ou falar."
+        "você possui uma deficiência pequena, como ser cego de um olho, não ter uma mão ou até ser quase surdo. Todos os Testes Fáceis de Atributos relacionados à sua deficiência são considerados Normais, e os Normais considerados Difíceis. -2 pontos: sua deficiência é um pouco mais grave, podendo ser completamente cego, não ter um braço, ser surdo ou não sentir cheiros."
       ],
       "sections": [
         {
@@ -7857,7 +7834,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto"
+            "-3 a -1 pontos"
           ]
         },
         {
@@ -7865,7 +7842,9 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "você possui uma deficiência pequena, como ser cego de um olho, não ter uma mão ou até ser quase surdo. Todos os Testes Fáceis de Atributos relacionados à sua deficiência são considerados Normais, e os Normais considerados Difíceis. -2 pontos: sua deficiência é um pouco mais grave, podendo ser completamente cego, não ter um braço, ser surdo ou não sentir cheiros. Todos os Testes de Atributos relacionados à sua deficiência são considerados Difíceis. -3 pontos: sua deficiência é grave e prejudica muito sua vida. Você pode ser um paraplégico, ser surdo-mudo ou não ter ambos os braços. Você não pode realizar certas proezas relacionadas à sua deficiência, como andar, escutar ou falar."
+            "você possui uma deficiência pequena, como ser cego de um olho, não ter uma mão ou até ser quase surdo. Todos os Testes Fáceis de Atributos relacionados à sua deficiência são considerados Normais, e os Normais considerados Difíceis. -2 pontos: sua deficiência é um pouco mais grave, podendo ser completamente cego, não ter um braço, ser surdo ou não sentir cheiros.",
+            "Todos os Testes de Atributos relacionados à sua deficiência são considerados Difíceis. -3 pontos: sua deficiência é grave e prejudica muito sua vida. Você pode ser um paraplégico, ser surdo-mudo ou não ter ambos os braços.",
+            "Você não pode realizar certas proezas relacionadas à sua deficiência, como andar, escutar ou falar."
           ]
         }
       ]
@@ -7878,7 +7857,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "para se manter vivo a Personagem precisa se alimentar de algo exótico e que causa um grande asco aos humanos, como carne de recém nascidos, sangue de unicórnio, ou outra coisa proibida."
+        "para se manter vivo a Personagem precisa se alimentar de algo exótico e que causa um grande asco aos humanos, como carne de recém nascidos, sangue de unicórnio, ou outra coisa proibida. O Personagem deve ingerir uma quantidade satisfatória desse alimento desumano todo o dia."
       ],
       "sections": [
         {
@@ -7894,8 +7873,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "para se manter vivo a Personagem precisa se alimentar de algo exótico e que causa um grande asco aos humanos, como carne de recém nascidos, sangue de unicórnio, ou outra coisa proibida.",
-            "O Personagem deve ingerir uma quantidade satisfatória desse alimento desumano todo o dia. Senão o fizer, perderá 1 PV a cada dia, até morrer ou até que volte a se alimentar."
+            "para se manter vivo a Personagem precisa se alimentar de algo exótico e que causa um grande asco aos humanos, como carne de recém nascidos, sangue de unicórnio, ou outra coisa proibida. O Personagem deve ingerir uma quantidade satisfatória desse alimento desumano todo o dia.",
+            "Senão o fizer, perderá 1 PV a cada dia, até morrer ou até que volte a se alimentar."
           ]
         }
       ]
@@ -7908,7 +7887,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é gago, tem a língua presa, ou qualquer outro problema de dicção que dificulte o entendimento do que ele fala pelas outras pessoas."
+        "o Personagem é gago, tem a língua presa, ou qualquer outro problema de dicção que dificulte o entendimento do que ele fala pelas outras pessoas. Diminua em -10% todos os testes sociais realizados pelo Personagem."
       ],
       "sections": [
         {
@@ -7924,8 +7903,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é gago, tem a língua presa, ou qualquer outro problema de dicção que dificulte o entendimento do que ele fala pelas outras pessoas.",
-            "Diminua em -10% todos os testes sociais realizados pelo Personagem."
+            "o Personagem é gago, tem a língua presa, ou qualquer outro problema de dicção que dificulte o entendimento do que ele fala pelas outras pessoas. Diminua em -10% todos os testes sociais realizados pelo Personagem."
           ]
         }
       ]
@@ -7997,7 +7975,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "por algum motivo o Personagem é considerado um pária da sociedade. Todos que vivem naquela região o rejeitam e até o temem."
+        "por algum motivo o Personagem é considerado um pária da sociedade. Todos que vivem naquela região o rejeitam e até o temem. O tipo de estigma social varia de várias formas. O Personagem pode ser considerado um herege, um bárbaro, um leproso ou simplesmente ser evitado por ter hábitos muito estranhos (como só sair à noite, viver trancado em casa, esse tipo de coisa)."
       ],
       "sections": [
         {
@@ -8013,8 +7991,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "por algum motivo o Personagem é considerado um pária da sociedade. Todos que vivem naquela região o rejeitam e até o temem.",
-            "O tipo de estigma social varia de várias formas. O Personagem pode ser considerado um herege, um bárbaro, um leproso ou simplesmente ser evitado por ter hábitos muito estranhos (como só sair à noite, viver trancado em casa, esse tipo de coisa). O seu modificador de CAR para verificar a reação dos npc ́s é considerado negativo."
+            "por algum motivo o Personagem é considerado um pária da sociedade. Todos que vivem naquela região o rejeitam e até o temem. O tipo de estigma social varia de várias formas. O Personagem pode ser considerado um herege, um bárbaro, um leproso ou simplesmente ser evitado por ter hábitos muito estranhos (como só sair à noite, viver trancado em casa, esse tipo de coisa).",
+            "O seu modificador de CAR para verificar a reação dos npc ́s é considerado negativo."
           ]
         }
       ]
@@ -8027,7 +8005,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "seus descendentes ou seu mestre cometeram crimes terríveis no passado, e hoje você paga por isso, sendo descriminado e condenado como culpado também."
+        "seus descendentes ou seu mestre cometeram crimes terríveis no passado, e hoje você paga por isso, sendo descriminado e condenado como culpado também. Embora não haja realmente culpa sua, o Personagem ainda carrega essa má fama consigo por ter sido aprendiz de um mentor desonrado ou fazer parte de uma família que todos desprezam, recebendo um tratamento frio e desconfiado mesmo de quem antes o achava uma boa pessoa."
       ],
       "sections": [
         {
@@ -8043,8 +8021,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "seus descendentes ou seu mestre cometeram crimes terríveis no passado, e hoje você paga por isso, sendo descriminado e condenado como culpado também.",
-            "Embora não haja realmente culpa sua, o Personagem ainda carrega essa má fama consigo por ter sido aprendiz de um mentor desonrado ou fazer parte de uma família que todos desprezam, recebendo um tratamento frio e desconfiado mesmo de quem antes o achava uma boa pessoa.",
+            "seus descendentes ou seu mestre cometeram crimes terríveis no passado, e hoje você paga por isso, sendo descriminado e condenado como culpado também. Embora não haja realmente culpa sua, o Personagem ainda carrega essa má fama consigo por ter sido aprendiz de um mentor desonrado ou fazer parte de uma família que todos desprezam, recebendo um tratamento frio e desconfiado mesmo de quem antes o achava uma boa pessoa.",
             "O seu modificador de CAR para verificar a reação dos npc ́s é considerado negativo."
           ]
         }
@@ -8058,7 +8035,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "sua vida é devotada a algum objetivo específico. O Personagem persegue incessantemente esse objetivo, e todos seus atos são guiados por ele."
+        "sua vida é devotada a algum objetivo específico. O Personagem persegue incessantemente esse objetivo, e todos seus atos são guiados por ele. Toda a vida dele é regida por esta causa e nada o fará desistir dela, pois ele acredita que valha qualquer sacrifício em seu nome."
       ],
       "sections": [
         {
@@ -8074,9 +8051,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "sua vida é devotada a algum objetivo específico. O Personagem persegue incessantemente esse objetivo, e todos seus atos são guiados por ele.",
-            "Toda a vida dele é regida por esta causa e nada o fará desistir dela, pois ele acredita que valha qualquer sacrifício em seu nome. Pode ser fanatismo religioso, nacionalismo fervoroso, a busca incansável por um artefato lendário, uma vingança pessoal.",
-            "Caso o Personagem não interprete seu fanatismo ele não terá direito a pontos de experiência."
+            "sua vida é devotada a algum objetivo específico. O Personagem persegue incessantemente esse objetivo, e todos seus atos são guiados por ele. Toda a vida dele é regida por esta causa e nada o fará desistir dela, pois ele acredita que valha qualquer sacrifício em seu nome.",
+            "Pode ser fanatismo religioso, nacionalismo fervoroso, a busca incansável por um artefato lendário, uma vingança pessoal. Caso o Personagem não interprete seu fanatismo ele não terá direito a pontos de experiência."
           ]
         }
       ]
@@ -8089,7 +8065,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "O Personagem é um trovador. Sempre está contando vantagem de si mesmo. Conta histórias absurdas sobre coisas que fez (ou que os outros fizeram, dizendo que foi ele mesmo), se julga superior aos outros e não gosta que lhe olhem atravessado. Quer se demonstrar o maioral e isso geralmente incomoda os outros (não é um Megalomaníaco, mas às vezes pode agir como tal)."
+        "O Personagem é um trovador. Sempre está contando vantagem de si mesmo. Conta histórias absurdas sobre coisas que fez (ou que os outros fizeram, dizendo que foi ele mesmo), se julga superior aos outros e não gosta que lhe olhem atravessado."
       ],
       "sections": [
         {
@@ -8097,7 +8073,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 Ponto"
+            "-1 ponto"
           ]
         },
         {
@@ -8105,8 +8081,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O Personagem é um trovador. Sempre está contando vantagem de si mesmo. Conta histórias absurdas sobre coisas que fez (ou que os outros fizeram, dizendo que foi ele mesmo), se julga superior aos outros e não gosta que lhe olhem atravessado. Quer se demonstrar o maioral e isso geralmente incomoda os outros (não é um Megalomaníaco, mas às vezes pode agir como tal).",
-            "Caso o Personagem não interprete sua fanfarronice ele não terá direito a pontos de experiência."
+            "O Personagem é um trovador. Sempre está contando vantagem de si mesmo. Conta histórias absurdas sobre coisas que fez (ou que os outros fizeram, dizendo que foi ele mesmo), se julga superior aos outros e não gosta que lhe olhem atravessado.",
+            "Quer se demonstrar o maioral e isso geralmente incomoda os outros (não é um Megalomaníaco, mas às vezes pode agir como tal). Caso o Personagem não interprete sua fanfarronice ele não terá direito a pontos de experiência."
           ]
         }
       ]
@@ -8136,8 +8112,7 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "o ferro frio se opõe às coisas mágicas, seu Personagem é altamente vulnerável ao toque do ferro frio, é uma espécie de ''alergia mágica''. Basta um toque para que uma vermelhidão intensa apareça em sua pele. Exposição prolongada causas dores intensas.",
-            "Desnecessário dizer que usar armas ou armaduras metálicas é um problema.",
-            "Cada turno de exposição causa ao Personagem 1 ponto de dano até que ele deixe de tocar o ferro frio."
+            "Desnecessário dizer que usar armas ou armaduras metálicas é um problema. Cada turno de exposição causa ao Personagem 1 ponto de dano até que ele deixe de tocar o ferro frio."
           ]
         }
       ]
@@ -8150,7 +8125,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "a Personagem precisa de um tipo de chave para poder usar sua magia. Essa chave é um objeto que ele carrega sempre com ele, uma espécie de receptáculo do seu poder mágico (como um cajado, amuleto, bola de cristal ou anel). Sem esse objeto, o Personagem não consegue realizar nenhum efeito mágico (caso ele seja destruído, será preciso encantar um novo objeto, o que é um processo longo e demorado para o Mago). -2 pontos: idem ao anterior, porém o fetiche do Personagem é um objeto muito grande e difícil de ser deslocado (um altar de mármore maciço, um órgão ou até uma árvore)."
+        "a Personagem precisa de um tipo de chave para poder usar sua magia. Essa chave é um objeto que ele carrega sempre com ele, uma espécie de receptáculo do seu poder mágico (como um cajado, amuleto, bola de cristal ou anel)."
       ],
       "sections": [
         {
@@ -8158,7 +8133,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto"
+            "-2 a -1 pontos"
           ]
         },
         {
@@ -8166,7 +8141,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "a Personagem precisa de um tipo de chave para poder usar sua magia. Essa chave é um objeto que ele carrega sempre com ele, uma espécie de receptáculo do seu poder mágico (como um cajado, amuleto, bola de cristal ou anel). Sem esse objeto, o Personagem não consegue realizar nenhum efeito mágico (caso ele seja destruído, será preciso encantar um novo objeto, o que é um processo longo e demorado para o Mago). -2 pontos: idem ao anterior, porém o fetiche do Personagem é um objeto muito grande e difícil de ser deslocado (um altar de mármore maciço, um órgão ou até uma árvore)."
+            "a Personagem precisa de um tipo de chave para poder usar sua magia. Essa chave é um objeto que ele carrega sempre com ele, uma espécie de receptáculo do seu poder mágico (como um cajado, amuleto, bola de cristal ou anel).",
+            "Sem esse objeto, o Personagem não consegue realizar nenhum efeito mágico (caso ele seja destruído, será preciso encantar um novo objeto, o que é um processo longo e demorado para o Mago). -2 pontos: idem ao anterior, porém o fetiche do Personagem é um objeto muito grande e difícil de ser deslocado (um altar de mármore maciço, um órgão ou até uma árvore)."
           ]
         }
       ]
@@ -8179,7 +8155,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "você teme algo (lugares fechados ou altos, aranhas, espinhos, mortos, cobras, fogo, demônios), e quando se vê próximo ao objeto de seu temor, deve fazer um Teste de WILL. Caso falhe, todos os Testes seguintes que forem Fáceis passam a serem Normais, os Normais passam a serem Difícies e os Difícieis serão considerados falhas automáticas. No caso de uma falha crítica, você simplesmente entra em desespero e foge imediatamente. -2 pontos: idêntico ao anterior, mas aqui você sente um pavor indescritível por algo, e caso se depare com a causa deste medo irracional, deverá fazer um Teste de WILL. Em caso de uma falha, o Personagem foge em pânico. No caso de uma falha critica, ele fica paralisado e impedido de realizar qualquer ação por 3d6 rodadas."
+        "você teme algo (lugares fechados ou altos, aranhas, espinhos, mortos, cobras, fogo, demônios), e quando se vê próximo ao objeto de seu temor, deve fazer um Teste de WILL. Caso falhe, todos os Testes seguintes que forem Fáceis passam a serem Normais, os Normais passam a serem Difícies e os Difícieis serão considerados falhas automáticas."
       ],
       "sections": [
         {
@@ -8187,7 +8163,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto"
+            "-2 a -1 pontos"
           ]
         },
         {
@@ -8195,7 +8171,9 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "você teme algo (lugares fechados ou altos, aranhas, espinhos, mortos, cobras, fogo, demônios), e quando se vê próximo ao objeto de seu temor, deve fazer um Teste de WILL. Caso falhe, todos os Testes seguintes que forem Fáceis passam a serem Normais, os Normais passam a serem Difícies e os Difícieis serão considerados falhas automáticas. No caso de uma falha crítica, você simplesmente entra em desespero e foge imediatamente. -2 pontos: idêntico ao anterior, mas aqui você sente um pavor indescritível por algo, e caso se depare com a causa deste medo irracional, deverá fazer um Teste de WILL. Em caso de uma falha, o Personagem foge em pânico. No caso de uma falha critica, ele fica paralisado e impedido de realizar qualquer ação por 3d6 rodadas."
+            "você teme algo (lugares fechados ou altos, aranhas, espinhos, mortos, cobras, fogo, demônios), e quando se vê próximo ao objeto de seu temor, deve fazer um Teste de WILL. Caso falhe, todos os Testes seguintes que forem Fáceis passam a serem Normais, os Normais passam a serem Difícies e os Difícieis serão considerados falhas automáticas.",
+            "No caso de uma falha crítica, você simplesmente entra em desespero e foge imediatamente. -2 pontos: idêntico ao anterior, mas aqui você sente um pavor indescritível por algo, e caso se depare com a causa deste medo irracional, deverá fazer um Teste de WILL.",
+            "Em caso de uma falha, o Personagem foge em pânico. No caso de uma falha critica, ele fica paralisado e impedido de realizar qualquer ação por 3d6 rodadas."
           ]
         }
       ]
@@ -8208,7 +8186,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "seu Personagem é um sedutor nato (ou ao menos tenta ser um). Possui um fraco pelo sexo oposto, nunca deixando passar a chance de conquistar um novo \"troféu\"."
+        "seu Personagem é um sedutor nato (ou ao menos tenta ser um). Possui um fraco pelo sexo oposto, nunca deixando passar a chance de conquistar um novo \"troféu\". Faça um Teste de WILL para resistir à oportunidade de tentar conquistar um(a) amante."
       ],
       "sections": [
         {
@@ -8224,8 +8202,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "seu Personagem é um sedutor nato (ou ao menos tenta ser um). Possui um fraco pelo sexo oposto, nunca deixando passar a chance de conquistar um novo \"troféu\".",
-            "Faça um Teste de WILL para resistir à oportunidade de tentar conquistar um(a) amante. Caso o Personagem não interprete seus galanteios ele não terá direito a pontos de experiência."
+            "seu Personagem é um sedutor nato (ou ao menos tenta ser um). Possui um fraco pelo sexo oposto, nunca deixando passar a chance de conquistar um novo \"troféu\". Faça um Teste de WILL para resistir à oportunidade de tentar conquistar um(a) amante.",
+            "Caso o Personagem não interprete seus galanteios ele não terá direito a pontos de experiência."
           ]
         }
       ]
@@ -8268,7 +8246,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o apetite do Personagem é algo fora dos padrões normais, ele come o dobro ou o triplo do que uma pessoa comum. Além disso, o Personagem sempre encontra tempo para um lanchinho nas ocasiões mais inusitadas."
+        "o apetite do Personagem é algo fora dos padrões normais, ele come o dobro ou o triplo do que uma pessoa comum. Além disso, o Personagem sempre encontra tempo para um lanchinho nas ocasiões mais inusitadas. Caso o Personagem não interprete sua gula ele não terá direito a pontos de experiência."
       ],
       "sections": [
         {
@@ -8284,8 +8262,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o apetite do Personagem é algo fora dos padrões normais, ele come o dobro ou o triplo do que uma pessoa comum. Além disso, o Personagem sempre encontra tempo para um lanchinho nas ocasiões mais inusitadas.",
-            "Caso o Personagem não interprete sua gula ele não terá direito a pontos de experiência."
+            "o apetite do Personagem é algo fora dos padrões normais, ele come o dobro ou o triplo do que uma pessoa comum. Além disso, o Personagem sempre encontra tempo para um lanchinho nas ocasiões mais inusitadas. Caso o Personagem não interprete sua gula ele não terá direito a pontos de experiência."
           ]
         }
       ]
@@ -8327,7 +8304,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem acredita fervorosamente que está doente, ou que irá pegar uma doença em breve mesmo estando ele bem. O Mestre deve exigir um teste de WILL toda vez que algum tipo de contágio de uma doença for perceptível (como andar na chuva, aproximar-se de leprosos, ficar perto de uma pessoa que espirra, etc.) para que o Personagem não enlouqueça imaginando que está doente. Se falhar, ele se descontrolará e irá querer combater a doença a qualquer custo (tomando todos os remédios que encontrar pela frente, indo a vários médicos e, talvez até, procurar um demônio para fazer um pacto)."
+        "o Personagem acredita fervorosamente que está doente, ou que irá pegar uma doença em breve mesmo estando ele bem. O Mestre deve exigir um teste de WILL toda vez que algum tipo de contágio de uma doença for perceptível (como andar na chuva, aproximar-se de leprosos, ficar perto de uma pessoa que espirra, etc.) para que o Personagem não enlouqueça imaginando que está doente."
       ],
       "sections": [
         {
@@ -8343,8 +8320,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem acredita fervorosamente que está doente, ou que irá pegar uma doença em breve mesmo estando ele bem. O Mestre deve exigir um teste de WILL toda vez que algum tipo de contágio de uma doença for perceptível (como andar na chuva, aproximar-se de leprosos, ficar perto de uma pessoa que espirra, etc.) para que o Personagem não enlouqueça imaginando que está doente. Se falhar, ele se descontrolará e irá querer combater a doença a qualquer custo (tomando todos os remédios que encontrar pela frente, indo a vários médicos e, talvez até, procurar um demônio para fazer um pacto).",
-            "Caso o Personagem não interprete sua hipocondria ele não terá direito a pontos de experiência."
+            "o Personagem acredita fervorosamente que está doente, ou que irá pegar uma doença em breve mesmo estando ele bem. O Mestre deve exigir um teste de WILL toda vez que algum tipo de contágio de uma doença for perceptível (como andar na chuva, aproximar-se de leprosos, ficar perto de uma pessoa que espirra, etc.) para que o Personagem não enlouqueça imaginando que está doente.",
+            "Se falhar, ele se descontrolará e irá querer combater a doença a qualquer custo (tomando todos os remédios que encontrar pela frente, indo a vários médicos e, talvez até, procurar um demônio para fazer um pacto). Caso o Personagem não interprete sua hipocondria ele não terá direito a pontos de experiência."
           ]
         }
       ]
@@ -8357,7 +8334,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem representa perigo para alguém, ou alguém o quer morto por algum motivo. Seu inimigo sempre será bem mais forte que você."
+        "cada: o Personagem representa perigo para alguém, ou alguém o quer morto por algum motivo. Seu inimigo sempre será bem mais forte que você. O inimigo tem dois níveis acima do Personagem e caso ele seja vencido outro aparecerá com dois níveis acima do nível do Personagem."
       ],
       "sections": [
         {
@@ -8365,7 +8342,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto cada"
+            "-1 ponto"
           ]
         },
         {
@@ -8373,8 +8350,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem representa perigo para alguém, ou alguém o quer morto por algum motivo. Seu inimigo sempre será bem mais forte que você.",
-            "O inimigo tem dois níveis acima do Personagem e caso ele seja vencido outro aparecerá com dois níveis acima do nível do Personagem."
+            "cada: o Personagem representa perigo para alguém, ou alguém o quer morto por algum motivo. Seu inimigo sempre será bem mais forte que você. O inimigo tem dois níveis acima do Personagem e caso ele seja vencido outro aparecerá com dois níveis acima do nível do Personagem."
           ]
         }
       ]
@@ -8387,7 +8363,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "existe algo que você não tolera, seja uma situação (ver alguém batendo numa mulher, reprimir-lhe apontando o dedo indicador), um animal, ou alguma coisa."
+        "existe algo que você não tolera, seja uma situação (ver alguém batendo numa mulher, reprimir-lhe apontando o dedo indicador), um animal, ou alguma coisa. Quando o Personagem encontra-se na circunstância que causa sua intolerância, ele imediatamente deixará tudo o que está fazendo de lado e irá tomar satisfações com o responsável."
       ],
       "sections": [
         {
@@ -8403,9 +8379,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "existe algo que você não tolera, seja uma situação (ver alguém batendo numa mulher, reprimir-lhe apontando o dedo indicador), um animal, ou alguma coisa.",
-            "Quando o Personagem encontra-se na circunstância que causa sua intolerância, ele imediatamente deixará tudo o que está fazendo de lado e irá tomar satisfações com o responsável. Pode chegar a agredi-lo caso tenha motivo para isso (o Mestre pode exigir um Teste de Will para verificar se o Personagem perdeu totalmente a calma com ele).",
-            "Caso o Personagem não interprete sua intolerância ele não terá direito a pontos de experiência."
+            "existe algo que você não tolera, seja uma situação (ver alguém batendo numa mulher, reprimir-lhe apontando o dedo indicador), um animal, ou alguma coisa. Quando o Personagem encontra-se na circunstância que causa sua intolerância, ele imediatamente deixará tudo o que está fazendo de lado e irá tomar satisfações com o responsável.",
+            "Pode chegar a agredi-lo caso tenha motivo para isso (o Mestre pode exigir um Teste de Will para verificar se o Personagem perdeu totalmente a calma com ele). Caso o Personagem não interprete sua intolerância ele não terá direito a pontos de experiência."
           ]
         }
       ]
@@ -8418,7 +8393,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Você é alguém famoso, mas devido aos seus crimes."
+        "Você é alguém famoso, mas devido aos seus crimes. Basicamente funciona exatamente como o Aprimoramento Fama, porém de uma maneira negativa, que faz a sociedade considerá-lo uma \"má pessoa\" ou um elemento perigoso, estando sempre sob suspeita e descrença."
       ],
       "sections": [
         {
@@ -8426,7 +8401,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "-3 a -1 pontos"
           ]
         },
         {
@@ -8434,8 +8409,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Você é alguém famoso, mas devido aos seus crimes.",
-            "Basicamente funciona exatamente como o Aprimoramento Fama, porém de uma maneira negativa, que faz a sociedade considerá-lo uma \"má pessoa\" ou um elemento perigoso, estando sempre sob suspeita e descrença. Seus testes de reação tem um modificador de -3. -1 ponto: alguns bairros, uma cidade pequena. -2 pontos: algumas cidades pequenas, uma metrópole. -3 pontos: algumas metrópoles, um estado ou região."
+            "Você é alguém famoso, mas devido aos seus crimes. Basicamente funciona exatamente como o Aprimoramento Fama, porém de uma maneira negativa, que faz a sociedade considerá-lo uma \"má pessoa\" ou um elemento perigoso, estando sempre sob suspeita e descrença.",
+            "Seus testes de reação tem um modificador de -3. -1 ponto: alguns bairros, uma cidade pequena. -2 pontos: algumas cidades pequenas, uma metrópole. -3 pontos: algumas metrópoles, um estado ou região."
           ]
         }
       ]
@@ -8448,7 +8423,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é extremamente paranóico, acreditando fervorosamente que \"eles\" estão atrás dele, que está sempre sendo vigiado ou perseguido onde quer que ele vá. O Personagem sempre irá desconfiar de todos, por mais amigos que sejam, todos os testes sociais que seu Personagem realizar tem um redutor de -10%. -2 pontos: igual ao anterior, mas nesse caso ele realmente está sendo perseguido por alguém (embora não tenha certeza absoluta disso). Pode ser algum espírito, demônio, caçadores ou uma outra entidade que está no seu encalço e ele teme se encontrar com ela."
+        "o Personagem é extremamente paranóico, acreditando fervorosamente que \"eles\" estão atrás dele, que está sempre sendo vigiado ou perseguido onde quer que ele vá. O Personagem sempre irá desconfiar de todos, por mais amigos que sejam, todos os testes sociais que seu Personagem realizar tem um redutor de -10%. -2 pontos: igual ao anterior, mas nesse caso ele realmente está sendo perseguido por alguém (embora não tenha certeza absoluta disso)."
       ],
       "sections": [
         {
@@ -8456,7 +8431,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto"
+            "-2 a -1 pontos"
           ]
         },
         {
@@ -8464,7 +8439,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é extremamente paranóico, acreditando fervorosamente que \"eles\" estão atrás dele, que está sempre sendo vigiado ou perseguido onde quer que ele vá. O Personagem sempre irá desconfiar de todos, por mais amigos que sejam, todos os testes sociais que seu Personagem realizar tem um redutor de -10%. -2 pontos: igual ao anterior, mas nesse caso ele realmente está sendo perseguido por alguém (embora não tenha certeza absoluta disso). Pode ser algum espírito, demônio, caçadores ou uma outra entidade que está no seu encalço e ele teme se encontrar com ela."
+            "o Personagem é extremamente paranóico, acreditando fervorosamente que \"eles\" estão atrás dele, que está sempre sendo vigiado ou perseguido onde quer que ele vá. O Personagem sempre irá desconfiar de todos, por mais amigos que sejam, todos os testes sociais que seu Personagem realizar tem um redutor de -10%. -2 pontos: igual ao anterior, mas nesse caso ele realmente está sendo perseguido por alguém (embora não tenha certeza absoluta disso).",
+            "Pode ser algum espírito, demônio, caçadores ou uma outra entidade que está no seu encalço e ele teme se encontrar com ela."
           ]
         }
       ]
@@ -8507,7 +8483,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "os animais reconhecem o Personagem como uma ameaça, fugindo quando sentem sua aproximação."
+        "os animais reconhecem o Personagem como uma ameaça, fugindo quando sentem sua aproximação. Em alguns casos, os animais podem ser mais agressivos e tentar atacá-lo para se protegerem, ou a suas proles. Todos os testes envolvendo animais são considerados difíceis."
       ],
       "sections": [
         {
@@ -8523,9 +8499,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "os animais reconhecem o Personagem como uma ameaça, fugindo quando sentem sua aproximação.",
-            "Em alguns casos, os animais podem ser mais agressivos e tentar atacá-lo para se protegerem, ou a suas proles.",
-            "Todos os testes envolvendo animais são considerados difíceis."
+            "os animais reconhecem o Personagem como uma ameaça, fugindo quando sentem sua aproximação. Em alguns casos, os animais podem ser mais agressivos e tentar atacá-lo para se protegerem, ou a suas proles. Todos os testes envolvendo animais são considerados difíceis."
           ]
         }
       ]
@@ -8538,7 +8512,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem parece sempre acordar com o pé esquerdo, o que faz com que ele sempre esteja irritado, zangado, nervoso e de mau humor. Quando alguém fala com o Personagem, ele só responde grosserias."
+        "o Personagem parece sempre acordar com o pé esquerdo, o que faz com que ele sempre esteja irritado, zangado, nervoso e de mau humor. Quando alguém fala com o Personagem, ele só responde grosserias. Todos os Teste de perícias baseadas em CAR são dificeis."
       ],
       "sections": [
         {
@@ -8554,8 +8528,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem parece sempre acordar com o pé esquerdo, o que faz com que ele sempre esteja irritado, zangado, nervoso e de mau humor. Quando alguém fala com o Personagem, ele só responde grosserias.",
-            "Todos os Teste de perícias baseadas em CAR são dificeis. Caso o Personagem não interprete seu mau humor ele não terá direito a pontos de experiência."
+            "o Personagem parece sempre acordar com o pé esquerdo, o que faz com que ele sempre esteja irritado, zangado, nervoso e de mau humor. Quando alguém fala com o Personagem, ele só responde grosserias. Todos os Teste de perícias baseadas em CAR são dificeis.",
+            "Caso o Personagem não interprete seu mau humor ele não terá direito a pontos de experiência."
           ]
         }
       ]
@@ -8598,7 +8572,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "dizem que o pior mentiroso é aquele que acredita nas próprias mentiras. E o Personagem é um deles. Ele mente por prazer e compulsão. Acredita no que diz, e pensa estar enganando a todos o tempo todo."
+        "dizem que o pior mentiroso é aquele que acredita nas próprias mentiras. E o Personagem é um deles. Ele mente por prazer e compulsão. Acredita no que diz, e pensa estar enganando a todos o tempo todo. Não consegue dizer meia dúzia de frases sem introduzir nelas uma mentira descarada."
       ],
       "sections": [
         {
@@ -8614,8 +8588,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "dizem que o pior mentiroso é aquele que acredita nas próprias mentiras. E o Personagem é um deles. Ele mente por prazer e compulsão. Acredita no que diz, e pensa estar enganando a todos o tempo todo.",
-            "Não consegue dizer meia dúzia de frases sem introduzir nelas uma mentira descarada.",
+            "dizem que o pior mentiroso é aquele que acredita nas próprias mentiras. E o Personagem é um deles. Ele mente por prazer e compulsão. Acredita no que diz, e pensa estar enganando a todos o tempo todo. Não consegue dizer meia dúzia de frases sem introduzir nelas uma mentira descarada.",
             "O Personagem nunca fala a verdade completa, no mínimo ele exagera na verdade, caso o jogador não interprete ele não receberá pontos de experiência na sessão."
           ]
         }
@@ -8629,7 +8602,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "a aparência física do Personagem é hedionda."
+        "a aparência física do Personagem é hedionda. Qualquer um que o veja, hesita em aproximar-se ou até olhar para você. Tentativas de relacionar-se com pessoas desconhecidas resulta em graves problemas, e os Testes de CAR do Personagem SEMPRE serão Difíceis (isso quando ele tive a chance de realizar um Teste)."
       ],
       "sections": [
         {
@@ -8645,8 +8618,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "a aparência física do Personagem é hedionda.",
-            "Qualquer um que o veja, hesita em aproximar-se ou até olhar para você. Tentativas de relacionar-se com pessoas desconhecidas resulta em graves problemas, e os Testes de CAR do Personagem SEMPRE serão Difíceis (isso quando ele tive a chance de realizar um Teste)."
+            "a aparência física do Personagem é hedionda. Qualquer um que o veja, hesita em aproximar-se ou até olhar para você. Tentativas de relacionar-se com pessoas desconhecidas resulta em graves problemas, e os Testes de CAR do Personagem SEMPRE serão Difíceis (isso quando ele tive a chance de realizar um Teste)."
           ]
         }
       ]
@@ -8659,7 +8631,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Existe algum forte motivo, que deve ser explicado no background do Personagem que o leva a evitar as situações de combate. Pode ser algum fator cultural, religioso ou ético. -1 ponto: o Personagem é misericordioso com seus oponentes, permitindo que vivam depois de derrotá-los. -2 pontos: o Personagem só irá lutar se for a última saída, preferindo sempre encontrar um meio de fugir ou contornar a situação. -3 pontos: o Personagem jamais luta. Pode defender-se dos golpes dos oponentes, mas em hipótese alguma irá atacar."
+        "Existe algum forte motivo, que deve ser explicado no background do Personagem que o leva a evitar as situações de combate. Pode ser algum fator cultural, religioso ou ético. -1 ponto: o Personagem é misericordioso com seus oponentes, permitindo que vivam depois de derrotá-los. -2 pontos: o Personagem só irá lutar se for a última saída, preferindo sempre encontrar um meio de fugir ou contornar a situação. -3 pontos: o Personagem jamais luta."
       ],
       "sections": [
         {
@@ -8667,7 +8639,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "-3 a -1 pontos"
           ]
         },
         {
@@ -8675,7 +8647,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Existe algum forte motivo, que deve ser explicado no background do Personagem que o leva a evitar as situações de combate. Pode ser algum fator cultural, religioso ou ético. -1 ponto: o Personagem é misericordioso com seus oponentes, permitindo que vivam depois de derrotá-los. -2 pontos: o Personagem só irá lutar se for a última saída, preferindo sempre encontrar um meio de fugir ou contornar a situação. -3 pontos: o Personagem jamais luta. Pode defender-se dos golpes dos oponentes, mas em hipótese alguma irá atacar."
+            "Existe algum forte motivo, que deve ser explicado no background do Personagem que o leva a evitar as situações de combate. Pode ser algum fator cultural, religioso ou ético. -1 ponto: o Personagem é misericordioso com seus oponentes, permitindo que vivam depois de derrotá-los. -2 pontos: o Personagem só irá lutar se for a última saída, preferindo sempre encontrar um meio de fugir ou contornar a situação. -3 pontos: o Personagem jamais luta.",
+            "Pode defender-se dos golpes dos oponentes, mas em hipótese alguma irá atacar."
           ]
         }
       ]
@@ -8718,7 +8691,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "O Personagem sofre de sérios distúrbios mentais, que o levam a fazer sexo de maneira não-convencional. -1 ponto: fantasias inofensivas, vestir roupas do sexo oposto ou fazer amor em locais públicos. -2 pontos: sadomasoquismo, sexo com animais. -3 pontos: as perversões mais grotescas e bizarras, consideradas criminosas. Incluem estupro seguido ou não de morte, sexo com crianças, sexo com cadáveres, tortura e tudo o que a sua imaginação doentia permitir."
+        "O Personagem sofre de sérios distúrbios mentais, que o levam a fazer sexo de maneira não-convencional. -1 ponto: fantasias inofensivas, vestir roupas do sexo oposto ou fazer amor em locais públicos. -2 pontos: sadomasoquismo, sexo com animais. -3 pontos: as perversões mais grotescas e bizarras, consideradas criminosas."
       ],
       "sections": [
         {
@@ -8726,7 +8699,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "-3 a -1 pontos"
           ]
         },
         {
@@ -8734,8 +8707,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "O Personagem sofre de sérios distúrbios mentais, que o levam a fazer sexo de maneira não-convencional. -1 ponto: fantasias inofensivas, vestir roupas do sexo oposto ou fazer amor em locais públicos. -2 pontos: sadomasoquismo, sexo com animais. -3 pontos: as perversões mais grotescas e bizarras, consideradas criminosas. Incluem estupro seguido ou não de morte, sexo com crianças, sexo com cadáveres, tortura e tudo o que a sua imaginação doentia permitir.",
-            "Em todos os casos caso o Personagem não interprete sua perversão numa sessão de jogo ele não ganhará pontos de experiência nesta sessão."
+            "O Personagem sofre de sérios distúrbios mentais, que o levam a fazer sexo de maneira não-convencional. -1 ponto: fantasias inofensivas, vestir roupas do sexo oposto ou fazer amor em locais públicos. -2 pontos: sadomasoquismo, sexo com animais. -3 pontos: as perversões mais grotescas e bizarras, consideradas criminosas.",
+            "Incluem estupro seguido ou não de morte, sexo com crianças, sexo com cadáveres, tortura e tudo o que a sua imaginação doentia permitir. Em todos os casos caso o Personagem não interprete sua perversão numa sessão de jogo ele não ganhará pontos de experiência nesta sessão."
           ]
         }
       ]
@@ -8786,7 +8759,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "-3 a -1 pontos"
           ]
         },
         {
@@ -8837,7 +8810,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "quando o Personagem entra em uma batalha, esta será até o fim. Não existe misericórdia ou rendição: um dos dois lados deve perder obrigatoriamente. Para o Personagem, a luta se prolongará até que ele reduza seus inimigos à poças de sangue. Assim como não aceita rendições, o próprio Personagem nega-se a desistir, preferindo morrer em combate a entregar-se."
+        "quando o Personagem entra em uma batalha, esta será até o fim. Não existe misericórdia ou rendição: um dos dois lados deve perder obrigatoriamente. Para o Personagem, a luta se prolongará até que ele reduza seus inimigos à poças de sangue."
       ],
       "sections": [
         {
@@ -8853,8 +8826,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "quando o Personagem entra em uma batalha, esta será até o fim. Não existe misericórdia ou rendição: um dos dois lados deve perder obrigatoriamente. Para o Personagem, a luta se prolongará até que ele reduza seus inimigos à poças de sangue. Assim como não aceita rendições, o próprio Personagem nega-se a desistir, preferindo morrer em combate a entregar-se.",
-            "Caso o Personagem negue-se a interpretar sua desvantagem ele não receberá pontos de experiência nessa sessão de jogo."
+            "quando o Personagem entra em uma batalha, esta será até o fim. Não existe misericórdia ou rendição: um dos dois lados deve perder obrigatoriamente. Para o Personagem, a luta se prolongará até que ele reduza seus inimigos à poças de sangue.",
+            "Assim como não aceita rendições, o próprio Personagem nega-se a desistir, preferindo morrer em combate a entregar-se. Caso o Personagem negue-se a interpretar sua desvantagem ele não receberá pontos de experiência nessa sessão de jogo."
           ]
         }
       ]
@@ -8867,7 +8840,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem dorme como uma pedra, ficando completamente fora de prontidão. Sempre perde o horário, dificilmente será acordado por ruídos (mesmo os mais altos) e facilmente dorme se estiver cansado."
+        "o Personagem dorme como uma pedra, ficando completamente fora de prontidão. Sempre perde o horário, dificilmente será acordado por ruídos (mesmo os mais altos) e facilmente dorme se estiver cansado. Testes de PER para verificar se o Personagem desperta serão sempre Difíceis."
       ],
       "sections": [
         {
@@ -8883,8 +8856,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem dorme como uma pedra, ficando completamente fora de prontidão. Sempre perde o horário, dificilmente será acordado por ruídos (mesmo os mais altos) e facilmente dorme se estiver cansado.",
-            "Testes de PER para verificar se o Personagem desperta serão sempre Difíceis."
+            "o Personagem dorme como uma pedra, ficando completamente fora de prontidão. Sempre perde o horário, dificilmente será acordado por ruídos (mesmo os mais altos) e facilmente dorme se estiver cansado. Testes de PER para verificar se o Personagem desperta serão sempre Difíceis."
           ]
         }
       ]
@@ -8897,7 +8869,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "acredita em todo tipo de superstição. Carrega trevos de quatro folhas, pés de coelho e outros talismãs."
+        "acredita em todo tipo de superstição. Carrega trevos de quatro folhas, pés de coelho e outros talismãs. Caso passe por baixo de escadas, quebre um espelho ou coisa parecida, o Personagem deverá fazer um Teste de INT e, em caso de falha, receberá o Aprimoramento Azarado por 3d4 dias, ou o dobro em caso de falha crítica."
       ],
       "sections": [
         {
@@ -8913,8 +8885,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "acredita em todo tipo de superstição. Carrega trevos de quatro folhas, pés de coelho e outros talismãs.",
-            "Caso passe por baixo de escadas, quebre um espelho ou coisa parecida, o Personagem deverá fazer um Teste de INT e, em caso de falha, receberá o Aprimoramento Azarado por 3d4 dias, ou o dobro em caso de falha crítica."
+            "acredita em todo tipo de superstição. Carrega trevos de quatro folhas, pés de coelho e outros talismãs. Caso passe por baixo de escadas, quebre um espelho ou coisa parecida, o Personagem deverá fazer um Teste de INT e, em caso de falha, receberá o Aprimoramento Azarado por 3d4 dias, ou o dobro em caso de falha crítica."
           ]
         }
       ]
@@ -8927,7 +8898,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "-1 ponto o Personagem é extremamente sarcástico (irônico), não perdendo a oportunidade de zombar ou fazer observações maldosas a respeito dos outros o tempo todo. Se o jogador não interpretar esta desvantagem, o Mestre pode usá-la para colocar o Personagem em enrascadas, como fazê-lo ser sarcástico ao conversar com um agente da milícia de pavio-curto."
+        "o Personagem é extremamente sarcástico (irônico), não perdendo a oportunidade de zombar ou fazer observações maldosas a respeito dos outros o tempo todo. Se o jogador não interpretar esta desvantagem, o Mestre pode usá-la para colocar o Personagem em enrascadas, como fazê-lo ser sarcástico ao conversar com um agente da milícia de pavio-curto."
       ],
       "sections": [
         {
@@ -8935,7 +8906,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Variável"
+            "-1 ponto"
           ]
         },
         {
@@ -8943,7 +8914,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "-1 ponto o Personagem é extremamente sarcástico (irônico), não perdendo a oportunidade de zombar ou fazer observações maldosas a respeito dos outros o tempo todo. Se o jogador não interpretar esta desvantagem, o Mestre pode usá-la para colocar o Personagem em enrascadas, como fazê-lo ser sarcástico ao conversar com um agente da milícia de pavio-curto.",
+            "o Personagem é extremamente sarcástico (irônico), não perdendo a oportunidade de zombar ou fazer observações maldosas a respeito dos outros o tempo todo. Se o jogador não interpretar esta desvantagem, o Mestre pode usá-la para colocar o Personagem em enrascadas, como fazê-lo ser sarcástico ao conversar com um agente da milícia de pavio-curto.",
             "Caso o Personagem não interprete seu sarcasmo ele não terá direito a receber pontos de experiência na sessão de jogo."
           ]
         }
@@ -8957,7 +8928,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "Apenas arcanos podem possuir este Aprimoramento. O Personagem é totalmente incapaz de drenar a energia mística para realizar suas magias."
+        "Apenas arcanos podem possuir este Aprimoramento. O Personagem é totalmente incapaz de drenar a energia mística para realizar suas magias. Então, ele precisa destruir a força vital da própria Arton para fazer seus feitiços."
       ],
       "sections": [
         {
@@ -8973,8 +8944,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Apenas arcanos podem possuir este Aprimoramento. O Personagem é totalmente incapaz de drenar a energia mística para realizar suas magias.",
-            "Então, ele precisa destruir a força vital da própria Arton para fazer seus feitiços.",
+            "Apenas arcanos podem possuir este Aprimoramento. O Personagem é totalmente incapaz de drenar a energia mística para realizar suas magias. Então, ele precisa destruir a força vital da própria Arton para fazer seus feitiços.",
             "Cada vez que ele cria um efeito mágico, toda a vida vegetal em um raio equivalente ao Focus da magia X 5 metros é destruída. Plantas morrem, árvores apodrecem e terrenos tornam-se estéreis durante anos."
           ]
         }
@@ -8988,7 +8958,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o mero toque dos dedos do Personagem destrói pequenas ervas e mata pequenos mamíferos."
+        "o mero toque dos dedos do Personagem destrói pequenas ervas e mata pequenos mamíferos. Plantas e outros vegetais apodrecem se o Personagem ficar perto deles por muito tempo."
       ],
       "sections": [
         {
@@ -9004,8 +8974,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o mero toque dos dedos do Personagem destrói pequenas ervas e mata pequenos mamíferos.",
-            "Plantas e outros vegetais apodrecem se o Personagem ficar perto deles por muito tempo."
+            "o mero toque dos dedos do Personagem destrói pequenas ervas e mata pequenos mamíferos. Plantas e outros vegetais apodrecem se o Personagem ficar perto deles por muito tempo."
           ]
         }
       ]
@@ -9018,7 +8987,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "este Personagem sofreu um severo trauma durante a infância, algo que nenhuma criança, nem a maioria dos adultos, estaria pronta para enfrentar (foi testemunha de um crime hediondo, ou foi molestada sexualmente)."
+        "este Personagem sofreu um severo trauma durante a infância, algo que nenhuma criança, nem a maioria dos adultos, estaria pronta para enfrentar (foi testemunha de um crime hediondo, ou foi molestada sexualmente). Qualquer menção aos fatos que traumatizaram o Personagem o obrigam a fazer um Teste de WILL."
       ],
       "sections": [
         {
@@ -9034,8 +9003,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "este Personagem sofreu um severo trauma durante a infância, algo que nenhuma criança, nem a maioria dos adultos, estaria pronta para enfrentar (foi testemunha de um crime hediondo, ou foi molestada sexualmente).",
-            "Qualquer menção aos fatos que traumatizaram o Personagem o obrigam a fazer um Teste de WILL. Se falhar, todos os seus Testes se tornam Difíceis pêlos próximos 3d6 turnos."
+            "este Personagem sofreu um severo trauma durante a infância, algo que nenhuma criança, nem a maioria dos adultos, estaria pronta para enfrentar (foi testemunha de um crime hediondo, ou foi molestada sexualmente). Qualquer menção aos fatos que traumatizaram o Personagem o obrigam a fazer um Teste de WILL.",
+            "Se falhar, todos os seus Testes se tornam Difíceis pêlos próximos 3d6 turnos."
           ]
         }
       ]
@@ -9048,7 +9017,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é extremamente tímido, receando falar e até se aproximar das outras pessoas."
+        "o Personagem é extremamente tímido, receando falar e até se aproximar das outras pessoas. Raramente irá emitir suas opiniões (a não ser que seja questionado), sempre hesita ao máximo falar diante de desconhecidos e tem sérias dificuldades para relacionarse com o sexo oposto."
       ],
       "sections": [
         {
@@ -9064,8 +9033,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é extremamente tímido, receando falar e até se aproximar das outras pessoas.",
-            "Raramente irá emitir suas opiniões (a não ser que seja questionado), sempre hesita ao máximo falar diante de desconhecidos e tem sérias dificuldades para relacionarse com o sexo oposto.",
+            "o Personagem é extremamente tímido, receando falar e até se aproximar das outras pessoas. Raramente irá emitir suas opiniões (a não ser que seja questionado), sempre hesita ao máximo falar diante de desconhecidos e tem sérias dificuldades para relacionarse com o sexo oposto.",
             "Para um Personagem com Timidez, todos os Testes de perícias que tem como atributo base CAR são considerados Difíceis."
           ]
         }
@@ -9197,7 +9165,7 @@
       "sectionId": "aprimoramentos",
       "sectionTitle": "Aprimoramento",
       "paragraphs": [
-        "o Personagem é extremamente suscetível à desistência e passividade. Sempre que uma tarefa parecer muito difícil, ele logo a abandonará (ou nem tentará realizá-la). Também é facilmente manipulado e controlado pelos outros. Acrescente uma penalidade de, pelo menos, -10% em qualquer Teste envolvendo Resistência mental (WILL)."
+        "o Personagem é extremamente suscetível à desistência e passividade. Sempre que uma tarefa parecer muito difícil, ele logo a abandonará (ou nem tentará realizá-la). Também é facilmente manipulado e controlado pelos outros."
       ],
       "sections": [
         {
@@ -9213,7 +9181,8 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "o Personagem é extremamente suscetível à desistência e passividade. Sempre que uma tarefa parecer muito difícil, ele logo a abandonará (ou nem tentará realizá-la). Também é facilmente manipulado e controlado pelos outros. Acrescente uma penalidade de, pelo menos, -10% em qualquer Teste envolvendo Resistência mental (WILL)."
+            "o Personagem é extremamente suscetível à desistência e passividade. Sempre que uma tarefa parecer muito difícil, ele logo a abandonará (ou nem tentará realizá-la). Também é facilmente manipulado e controlado pelos outros.",
+            "Acrescente uma penalidade de, pelo menos, -10% em qualquer Teste envolvendo Resistência mental (WILL)."
           ]
         }
       ]
@@ -10678,7 +10647,7 @@
     "regras_blocos": 5,
     "racas": 14,
     "kits": 43,
-    "aprimoramentos": 117,
+    "aprimoramentos": 116,
     "magias": 19,
     "manobras_combate": 30
   },
@@ -10687,5 +10656,5 @@
     "Magias = especialidades místicas (criação de itens mágicos + metamagia), por decisão do usuário ('trate como magia'). O livro não traz fichas de feitiços individuais.",
     "Group de regras: cobertura por blocos temáticos (introdução, criação de personagem, atributos, sistema de magia, energias heroicas). Não é transcrição exaustiva — trechos muito fragmentados/exemplos foram omitidos."
   ],
-  "generatedAt": "2026-06-06T12:41:06"
+  "generatedAt": "2026-06-06T23:55:38"
 }

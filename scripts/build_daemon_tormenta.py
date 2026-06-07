@@ -434,15 +434,22 @@ def parse_aprimoramentos(lines) -> list[dict]:
     for k, i in enumerate(idxs):
         end = idxs[k + 1] if k + 1 < len(idxs) else len(raw)
         name = raw[i].strip()
-        rest = raw[i + 1:end]
+        rest = clean_body(raw[i + 1:end])
         cost, desc = _extract_cost(rest)
-        entries.append((name, cost, clean_body(desc)))
+        entries.append((name, cost, desc))
     return [build_enhancement(n, c, d) for n, c, d in entries]
+
+
+# Names that are NOT standalone enhancements: 'Soldado' is the internal stat
+# block of the 'Forças Militares' enhancement (must stay inside it, not split off).
+_ENH_REJECT = {"Soldado"}
 
 
 def _is_enh_name(raw, i) -> bool:
     t = raw[i].strip()
     if not (3 <= len(t) <= 32) or not t[0].isupper():
+        return False
+    if t in _ENH_REJECT:
         return False
     if _ENH_COST.match(t) or t.endswith((".", ",", ":", "?", "!", "%", '"')):
         return False
@@ -457,16 +464,71 @@ def _is_enh_name(raw, i) -> bool:
     return bool(_ENH_COST.match(nxt) or len(nxt) > 40)
 
 
+# Cost markers, in priority order, looked up at the START of the description:
+#   'N pontos:' / 'N ponto por posto:' / 'N ponto para cada sentido:' / '-N ponto ...'
+# When 'por/para/(a) cada' is present we also consume the qualifier noun and any
+# trailing ':' so it doesn't leak into the description (e.g. 'posto:').
+_COST_HEAD = re.compile(
+    r"^\s*([+-]?\d+)\s*pontos?\b"
+    r"(?:\s+(?:por|para|a)\s+(?:cada\s+)?\w+)?"
+    r"\s*:?\s*",
+    re.I,
+)
+# Per-level costs anywhere in the description: 'N pontos:' / 'N ponto:' /
+# 'N pontos -' / 'N ponto –' (some entries use a dash instead of a colon).
+_COST_LEVELS = re.compile(r"(?:^|[.;]\s*|\s)([+-]?\d+)\s*pontos?\s*[:\-–]", re.I)
+
+
 def _extract_cost(rest: list[str]):
-    """Pull the cost from the first line if it's 'N pontos:'; else mark Variável."""
-    if rest and _ENH_COST.match(rest[0]):
-        m = _ENH_COST.match(rest[0])
-        cost = re.sub(r"\s+", " ", m.group(1)).strip()
-        head = rest[0][m.end():].strip()
-        body = ([head] if head else []) + rest[1:]
-        return cost, body
-    # cost-less inline: look for an embedded 'N pontos:' to label as variable
+    """Derive the real cost, preferring explicit per-level costs over 'Variável'.
+
+    Order:
+      1) explicit 'Variável:' lead  -> Variável (the book says so);
+      2) a cost marker at the very start of the description (incl. 'por/para/cada');
+      3) per-level costs found across the description -> a range 'A a B pontos';
+      4) fallback 'Variável'.
+    The leading cost marker is stripped from the description text.
+    """
+    text = " ".join(rest).strip()
+    if not text:
+        return "Variável", rest
+    full = " ".join(rest)
+
+    # strip an explicit 'Variável:' lead but keep scanning for per-level costs
+    explicit_var = bool(re.match(r"^\s*Vari[áa]vel\s*:", text, re.I))
+    if explicit_var:
+        text = re.sub(r"^\s*Vari[áa]vel\s*:\s*", "", text, flags=re.I)
+
+    # cost marker at the very start ('N pontos', 'N ponto por/para/cada')
+    m = _COST_HEAD.match(text)
+    lead_cost = None
+    if m:
+        lead_cost = _fmt_points(m.group(1))
+        text = text[m.end():].lstrip(" :")
+
+    # per-level costs anywhere in the description -> range
+    levels = [int(x) for x in _COST_LEVELS.findall(full)]
+    if levels:
+        lo, hi = min(levels), max(levels)
+        cost = _fmt_points(str(lo)) if lo == hi else f"{lo} a {hi} pontos"
+        return cost, _resplit(text) if text else _resplit(full)
+
+    if lead_cost:
+        return lead_cost, _resplit(text) if text else []
+
+    # progression in 'pt'/'pts de aprimoramento' (e.g. Pontos de Item Mágico)
+    pt = re.search(r"(\d+)\s*pts?\s+de\s+aprimoramento", full, re.I)
+    if pt:
+        return f"a partir de {pt.group(1)} ponto", _resplit(full)
+
+    # genuinely variable (book says so and no levels found)
     return "Variável", rest
+
+
+def _fmt_points(n: str) -> str:
+    val = int(n)
+    unit = "ponto" if abs(val) == 1 else "pontos"
+    return f"{n} {unit}"
 
 
 def build_enhancement(name: str, cost: str, desc: list[str]) -> dict:
