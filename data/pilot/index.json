@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-06T23:48:19",
+  "generatedAt": "2026-06-06T23:50:30",
   "sources": [
     {
       "source": "4killers",
@@ -277,6 +277,19 @@
         "poderes",
         "racas",
         "rituais"
+      ]
+    },
+    {
+      "source": "daemon-medieval",
+      "title": "Daemon Medieval",
+      "file": "daemon-medieval.json",
+      "status": "pilot_review",
+      "areas": [
+        "regras_base",
+        "racas",
+        "kits",
+        "aprimoramentos",
+        "itens_equipamentos"
       ]
     },
     {

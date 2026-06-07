@@ -1,9 +1,32 @@
 {
   "agent": "claude",
   "worktree": "daemon-claude",
-  "updatedAt": "2026-06-05",
+  "updatedAt": "2026-06-06",
   "assignmentSource": "coordination/book_assignments.md (Codex). Anjos -> Claude (status hold). Demais: lista 'Claude'.",
   "books": [
+    {
+      "file": "Daemon_Medieval_OCR_alta_qualidade.docx",
+      "source": "daemon-medieval",
+      "status": "needs_review",
+      "branch": "claude-pilots",
+      "notes": "Entrega completa: 230 seções — racas 6, kits 12, aprimoramentos 104, itens_equipamentos 108, + group regras (6 blocos). Magia = regras (sistema gerativo, sem feitiços). Pipeline OK (índice 25 fontes, validate_data, node --check, data==docs). Validado no navegador: hub popula (correção do Codex ativa), 230 seções, 5 áreas+group. Pendências em coordination/books/daemon-medieval.md (alguns aprim. truncados por OCR). Aguardando validação visual."
+    },
+    {
+      "file": "Vampiros_Mitologicos_OCR_alta_qualidade.docx",
+      "source": "vampiros-mitologicos",
+      "status": "blocked",
+      "branch": "claude-pilots",
+      "movedTo": "Livros/word/corrigir/Vampiros_Mitologicos_OCR_alta_qualidade.docx",
+      "notes": "BLOQUEADO 2026-06-06: OCR 86% desconhecidas. Movido p/ corrigir. NÃO confundir com Vampiros_Mitologicos_1 (Codex)."
+    },
+    {
+      "file": "Hi_Brazil_OCR_alta_qualidade.docx",
+      "source": "hi-brazil",
+      "status": "blocked",
+      "branch": "claude-pilots",
+      "movedTo": "Livros/word/corrigir/Hi_Brazil_OCR_alta_qualidade.docx",
+      "notes": "BLOQUEADO 2026-06-06: OCR 43% desconhecidas. Movido p/ corrigir."
+    },
     {
       "file": "Daemon_Tormenta_OCR_alta_qualidade.docx",
       "source": "daemon-tormenta",
