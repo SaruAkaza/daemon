@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T02:01:22",
+  "generatedAt": "2026-06-07T02:54:01",
   "sources": [
     {
       "source": "4killers",
@@ -335,6 +335,15 @@
       "areas": [
         "cenarios_lore",
         "regras_base"
+      ]
+    },
+    {
+      "source": "phage",
+      "title": "Phage",
+      "file": "phage.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore"
       ]
     },
     {
