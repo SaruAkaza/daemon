@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "source": "cabala-forum",
+  "title": "Cabala",
+  "sourceFile": "cabala.docx",
+  "sourcePath": "Livros\\word\\feito\\cabala.docx",
+  "status": "pilot_review",
+  "summary": "Recorte de conversa sobre a organização Cabala, seu papel em Otária, membros citados, locais de influência e conflitos.",
+  "areas": [
+    "cenarios_lore"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "cenarios-lore-cabala",
+      "title": "Cenários/Lore - Cabala",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenario",
+      "sectionTitle": "Cenário",
+      "paragraphs": [
+        "A Cabala foi uma organização criada depois do Apocalipse, no continente de Otária. Seu líder era o Patriarca da Cabala.",
+        "A organização buscava controlar o continente e disputava influência com a Ordem, descrita como formada por nômades e soldados brancos de Odisseia.",
+        "Seus métodos incluíam tortura, necromancia e poderes mentais para controlar regiões, comércio e redes de influência.",
+        "Patriarca da Cabala: chefe da organização.",
+        "Braids: invocadora de demência e assecla poderosa, associada à loucura.",
+        "Chainer: membro capaz de trazer seus pesadelos para o mundo real.",
+        "Phage, a Intocável: identificada como Jeska, irmã de Kamal, transformada pela Cabala.",
+        "Aphetto é descrita como uma região de pântanos e ilhas, usada como base de operações da Cabala.",
+        "As liças da Cabala aparecem como arenas de luta; o Grande Coliseu é citado como projeto maior, ligado a apostas e lucro de investidores do continente.",
+        "A Cabala mantinha membros espalhados como rede de espionagem e controle regional.",
+        "A Cabala disputava influência com a Ordem e possuía rixas com os Cefálidas.",
+        "O conflito é descrito mais como uma Guerra Fria do que como guerra aberta constante.",
+        "Com o surgimento de Karona, a Cabala perde membros para novas alianças e Otária passa por guerras e devastações.",
+        "O material preserva perguntas sobre a localização da cidadela da Cabala, detalhes de Braids e diferenças exatas entre liças e Grande Coliseu.",
+        "Como o documento é um recorte de conversa, essas perguntas foram mantidas como pendências de lore, não como fatos consolidados.",
+        "O DOCX original possui 49 linhas úteis extraídas de uma conversa de fórum.",
+        "A conversa foi consolidada em tópicos de lore para evitar exibir abreviações, perguntas repetidas e ruído de chat na aplicação."
+      ],
+      "sections": [
+        {
+          "id": "visao-geral",
+          "title": "Visão Geral",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Cabala foi uma organização criada depois do Apocalipse, no continente de Otária. Seu líder era o Patriarca da Cabala.",
+            "A organização buscava controlar o continente e disputava influência com a Ordem, descrita como formada por nômades e soldados brancos de Odisseia.",
+            "Seus métodos incluíam tortura, necromancia e poderes mentais para controlar regiões, comércio e redes de influência."
+          ]
+        },
+        {
+          "id": "membros-citados",
+          "title": "Membros Citados",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Patriarca da Cabala: chefe da organização.",
+            "Braids: invocadora de demência e assecla poderosa, associada à loucura.",
+            "Chainer: membro capaz de trazer seus pesadelos para o mundo real.",
+            "Phage, a Intocável: identificada como Jeska, irmã de Kamal, transformada pela Cabala."
+          ]
+        },
+        {
+          "id": "locais-e-influencia",
+          "title": "Locais e Influência",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Aphetto é descrita como uma região de pântanos e ilhas, usada como base de operações da Cabala.",
+            "As liças da Cabala aparecem como arenas de luta; o Grande Coliseu é citado como projeto maior, ligado a apostas e lucro de investidores do continente.",
+            "A Cabala mantinha membros espalhados como rede de espionagem e controle regional."
+          ]
+        },
+        {
+          "id": "conflitos",
+          "title": "Conflitos",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "A Cabala disputava influência com a Ordem e possuía rixas com os Cefálidas.",
+            "O conflito é descrito mais como uma Guerra Fria do que como guerra aberta constante.",
+            "Com o surgimento de Karona, a Cabala perde membros para novas alianças e Otária passa por guerras e devastações."
+          ]
+        },
+        {
+          "id": "duvidas-abertas",
+          "title": "Dúvidas Abertas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O material preserva perguntas sobre a localização da cidadela da Cabala, detalhes de Braids e diferenças exatas entre liças e Grande Coliseu.",
+            "Como o documento é um recorte de conversa, essas perguntas foram mantidas como pendências de lore, não como fatos consolidados."
+          ]
+        },
+        {
+          "id": "notas-da-fonte",
+          "title": "Notas da Fonte",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O DOCX original possui 49 linhas úteis extraídas de uma conversa de fórum.",
+            "A conversa foi consolidada em tópicos de lore para evitar exibir abreviações, perguntas repetidas e ruído de chat na aplicação."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1
+  },
+  "reviewNotes": [
+    "Documento é uma conversa de fórum; foi tratado como lore consolidado com bloco de fonte, não como regra mecânica.",
+    "Membros citados não possuem ficha própria, portanto não foram criados como NPCs."
+  ],
+  "generatedAt": "2026-06-07T05:01:21Z"
+}

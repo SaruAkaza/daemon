@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T01:29:58",
+  "generatedAt": "2026-06-07T02:01:22",
   "sources": [
     {
       "source": "4killers",
@@ -259,6 +259,15 @@
       "areas": [
         "cenarios_lore",
         "criaturas_npcs"
+      ]
+    },
+    {
+      "source": "cabala-forum",
+      "title": "Cabala",
+      "file": "cabala-forum.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore"
       ]
     },
     {
