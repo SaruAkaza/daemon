@@ -13,7 +13,7 @@
     "regras_base"
   ],
   "groups": [],
-  "generatedAt": "2026-06-07T00:39:46",
+  "generatedAt": "2026-06-07T00:56:15",
   "sections": [
     {
       "id": "kits-samurai",
@@ -92,8 +92,15 @@
           "title": "Aprimoramentos",
           "area": "kits",
           "paragraphs": [
-            "Pontos Heróicos 3 pontos, Mestre. (4 pontos de Chi + 1 por nível. Técnica 5 e 1 a cada 2 níveis) 4 pontos, Classe social 2, Coragem 2 pontos, Código de Honra (Bushidô) -2, Inimigo (Seu Daymio) -1",
-            "*Características da classe",
+            "Pontos Heróicos 3 pontos, Mestre. (4 pontos de Chi + 1 por nível. Técnica 5 e 1 a cada 2 níveis) 4 pontos, Classe social 2, Coragem 2 pontos, Código de Honra (Bushidô) -2, Inimigo (Seu Daymio) -1"
+          ]
+        },
+        {
+          "id": "samurai-caracteristicas",
+          "title": "Características",
+          "area": "kits",
+          "paragraphs": [
+            "Características da classe",
             "Código de Conduta: um samurai deve ser leal, ele desonra a si próprio, sua família e sua espada se cometer um ato caótico, além disso, o código samurai do bushido exige que ele obedeça a seu senhor, não recue diante da morte, vingue qualquer desonra e jamais demonstre covardia. Violar estes princípios de honra, lealdade e coragem resultam em desonra, que pode fazer o samurai não ter mais direito de usar o nome de sua família, veja a diante ex-samurai.",
             "Espadas ancestrais: Todo samurai começa o jogo com um o Daisho, um conjunto formado por uma Katana e uma Wakizashi, sem custos adicionais. Esta arma provavelmente pertence a sua família, foi usada pelos seus ancestrais e fazem parte de sua própria alma.",
             "Conforme o samurai avança de nível, os espíritos ancestrais podem despertar poderes mágicos em suas armas: uma delas (apenas uma) recebe um bônus mágico de +1 para cada dois níveis do samurai. Graças a essa providência o samurai não precisa desfazer-se de sua arma, mesmo quando atingem níveis elevados, ao contrario quando ocorre com armas mágicas comuns, que não evoluem com seu dono.",
@@ -102,12 +109,12 @@
             "Antes da espada ancestral de um samurai se tornar uma espada +1, ela é uma simples arma de ótima qualidade em todos os sentidos. Seus poderes latentes não fazem com que ela seja considerada uma arma mágica até que seus poderes latentes sejam despertados.",
             "Um Samurai que perca suas espadas ancestrais está desonrado até que a recupere, não pode melhorar nenhuma outra arma dessa forma.",
             "Nota: Um Samurai pode começar o jogo com outra arma ancestral ao invés de uma Katana, como uma Tulwar (Cimitarra) ou Jian (Espada longa).",
-            "*Manobras de combate extras:",
+            "Manobras de combate extras:",
             "No 1º nível, o Samurai recebe duas manobras de combate extra. sem gastar pontos de perícias (Aprimoramento Manobras de combate 1 ponto)",
             "2º nível grito de kiai: A partir do 2º nível, o Samurai aprende a concentrar suas forças interiores em um ataque devastador. O samurai emite um grito de kiai (que não conta como uma ação) e, durante aquela rodada, recebe um bônus de +2 em sua força. Esse bônus aumenta para +4 no 4º nível, +6 no 6º e assim por diante.",
             "O grito de kiai pode ser usado uma vez por dia para cada 2 pontos de suaWill.",
             "3º nível acuidade com arma: o personagem recebe um bônus de +1 para cada dois níveis que possua, mas somente com a arma escolhida (Aprimoramento Acuidade com arma 1 ponto).",
-            "*Ex-samurais:",
+            "Ex-samurais:",
             "Um Samurai que abandone a lealdade ou viole os princípios do Bushido (Virtudes do Bushido 1. GI - Justiça e oralidade Atitude direta, razão correta, decidir sem hesitar; 2.YU - Coragem Bravura heróica; 3.JIN - Compaixão Benevolência, simpatia, amor incondicional para com a humanidade; 4.REI - Polidez e Cortesia Amabilidade; 5.MAKOTO - Sinceridade Veracidade total, nunca mentir; 6.MEIYO - Honra Glória; 7.CHUGO - Dever e Lealdade Devoção, Lealdade), não pode adquirir mais níveis como samurai, ele mantem suas manobras adcionais, mas sua espada ancestral perde quaisquer habilidades mágicas despertadas que possua. Se o Samurai retornar ao Bushido, ainda precisa cumprir um penitência adequada e recuperar a sua honra restaurar suas armas e status, para depois continuar adquirindo novos níveis em sua classe."
           ]
         }
@@ -249,14 +256,21 @@
           "title": "Aprimoramentos",
           "area": "kits",
           "paragraphs": [
-            "Pontos Heróicos 4 pontos, Mestre. (4 pontos de Chi + 1 por nível. Técnica 5 e 1 a cada 2 níveis) 5 pontos,",
-            "*Características da classe: Todas as habilidades a seguir funcionam apenas quando o mestre de Iaijutsu esta sem armaduras e quando usa uma Katana ou uma espada especial.",
+            "Pontos Heróicos 4 pontos, Mestre. (4 pontos de Chi + 1 por nível. Técnica 5 e 1 a cada 2 níveis) 5 pontos,"
+          ]
+        },
+        {
+          "id": "mestre-de-iaijutsu-caracteristicas",
+          "title": "Características",
+          "area": "kits",
+          "paragraphs": [
+            "Características da classe: Todas as habilidades a seguir funcionam apenas quando o mestre de Iaijutsu esta sem armaduras e quando usa uma Katana ou uma espada especial.",
             "1º nível acuidade com arma: O personagem recebe um bônus de +1 para cada dois níveis que possua, mas somente com a arma escolhida (Aprimoramento Acuidade com arma 1 ponto).",
             "2º nível lâmina relâmpago: O personagem recebe um ponto extra em AGI a cada dois níveis e + 1d6 a mais em iniciativa (Aprimoramento Agilidade aprimorada 2 pontos).",
             "4º nível manobra de combate extra: O mestre de Iaijutsu ganha um conjunto de manobras de combate extra sem gastar pontos de perícias (Aprimoramento Manobras de combate 1 ponto).",
             "5º nível ataque do vácuo: O mestre de Iaijutsu pode subtrair um valor de todas as jogadas de ataque e somá-lo a todas as jogadas de dano, sendo que cada 5% aumenta o dano em +1. As alterações permanecem apenas por uma rodada (Aprimoramento Ataque poderoso 1 ponto).",
             "8º nível um ataque dois cortes: O mestre de Iaijutsu pode fazer um ataque extra por roda com a katana (Aprimoramento Ataque em movimento 1 ponto e Trespassar 2 pontos.)",
-            "*Foco em Iaijutsu",
+            "Foco em Iaijutsu",
             "Iaijutsu é uma modalidade de luta com espada que consiste em vencer o combate com um único e mortal golpe, aplicado ao retirar a espada da banhinha. O mesmo movimento empregado para sacar a espada é usado para atingir o inimigo (Perícia Iaijutsu).",
             "Benefícios: no início de um combate você pode provocar mais dano no eu primeiro ataque ao sacar a espada, de acordo com o resultado de seu teste em foco em Iaijutsu: até 16% +1; 17 a 33%= +2, 34 a 65%= +1d6; 66 a 81%= +2d6; 82 a 99%= +3d6; 100%= +4d6 (Maximo).",
             "Especial: ao duelar com outro personagem que também possua foco em Iaijutsu, os dois substituem a sua jogada de iniciativa por um teste de foco em Iaijutsu. Isto é chamado duelo Iaijutsu"
@@ -272,7 +286,6 @@
       "sectionId": "ninja",
       "sectionTitle": "Ninja",
       "paragraphs": [
-        "Ninjas",
         "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto.",
         "Restrições: Nenhuma",
         "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 30%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 40%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
@@ -284,7 +297,6 @@
           "title": "Descrição",
           "area": "kits",
           "paragraphs": [
-            "Ninjas",
             "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto."
           ]
         },
@@ -338,13 +350,7 @@
       "sectionId": "shinobi",
       "sectionTitle": "Shinobi",
       "paragraphs": [
-        "Ninjas",
         "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto.",
-        "Kit Ninja",
-        "Custo: 4 pontos, 320 pontos de Perícias.",
-        "Restrições: Nenhuma",
-        "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 30%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 40%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
-        "Aprimoramentos: Pontos heróicos 4 pontos, Expert em combate corporal 1 ponto, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Presença Invisível (2 pontos), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos).",
         "Restrições: Nenhuma",
         "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Ciências Proibidas (Teoria de Magia [0] 20%); Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 20%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 30%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
         "Aprimoramentos: Pontos heróicos 3 pontos, Mestre. (5 pontos de Chi + 1 por nível. Técnica 4 e 1 a cada 2 níveis) 4 pontos, Expert em combate corporal 1 ponto, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos)."
@@ -355,13 +361,7 @@
           "title": "Descrição",
           "area": "kits",
           "paragraphs": [
-            "Ninjas",
-            "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto.",
-            "Kit Ninja",
-            "Custo: 4 pontos, 320 pontos de Perícias.",
-            "Restrições: Nenhuma",
-            "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 30%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 40%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
-            "Aprimoramentos: Pontos heróicos 4 pontos, Expert em combate corporal 1 ponto, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Presença Invisível (2 pontos), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos)."
+            "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto."
           ]
         },
         {
@@ -414,18 +414,7 @@
       "sectionId": "ninja-regra-antiga",
       "sectionTitle": "Ninja Regra antiga",
       "paragraphs": [
-        "Ninjas",
         "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto.",
-        "Kit Ninja",
-        "Custo: 4 pontos, 320 pontos de Perícias.",
-        "Restrições: Nenhuma",
-        "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 30%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 40%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
-        "Aprimoramentos: Pontos heróicos 4 pontos, Expert em combate corporal 1 ponto, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Presença Invisível (2 pontos), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos).",
-        "Kit Shinobi",
-        "Custo: 5 pontos, 320 pontos de Perícia.",
-        "Restrições: Nenhuma",
-        "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Ciências Proibidas (Teoria de Magia [0] 20%); Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 20%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 30%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
-        "Aprimoramentos: Pontos heróicos 3 pontos, Mestre. (5 pontos de Chi + 1 por nível. Técnica 4 e 1 a cada 2 níveis) 4 pontos, Expert em combate corporal 1 ponto, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos).",
         "Restrições: Nenhuma",
         "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 30%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 40%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Rastreio [PER] 20%; Veneficio [INT] 10%.",
         "Aprimoramentos: Pontos heróicos 2 pontos, Expert em combate corporal 2 pontos, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Presença Invisível (2 pontos) ou Sedutor (1 ponto), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos).",
@@ -433,7 +422,7 @@
         "Pontos de Técnicas: 3 (+ 1 cada Nível par).",
         "Pontos Heróicos: 2 por nível",
         "*Shinobi Shozoku",
-        "Aroupa que os ninjas usam é conhecida como Shinobi Shozoku, além de ocultar a identidade de quem a vestia, servia para melhor camuflar o ninja. Se a estiver utilizando, concede um bônus de 10% em teste de camuflagem.",
+        "A roupa que os ninjas usam é conhecida como Shinobi Shozoku, além de ocultar a identidade de quem a vestia, servia para melhor camuflar o ninja. Se a estiver utilizando, concede um bônus de 10% em teste de camuflagem.",
         "*Kunoichi",
         "As mulheres, sempre fizeram parte do mundo ninja, recebendo denominação especial: kunoichi. Mas penas seus engajados integrantes sabiam que por trás da máscara de um kunoichi estava uma mulher. Mais do que guerreiras, as ninjas eram sensuais e sabiam se aproveitar dessa peculiaridade para seduzir e, na sequência, aniquilar os inimigos. Elas se davam ao luxo de ter até uniforme exclusivo que estrategicamente, deixavam suas lindas pernas à mostra. Um ninja mulher começa automaticamente com 20% na perícia sedução. Elas eram muito competentes e quase sempre conseguiam cumprir seus objetivos."
       ],
@@ -443,18 +432,7 @@
           "title": "Descrição",
           "area": "kits",
           "paragraphs": [
-            "Ninjas",
-            "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto.",
-            "Kit Ninja",
-            "Custo: 4 pontos, 320 pontos de Perícias.",
-            "Restrições: Nenhuma",
-            "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 30%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 40%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
-            "Aprimoramentos: Pontos heróicos 4 pontos, Expert em combate corporal 1 ponto, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Presença Invisível (2 pontos), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos).",
-            "Kit Shinobi",
-            "Custo: 5 pontos, 320 pontos de Perícia.",
-            "Restrições: Nenhuma",
-            "Perícias: Escolha Três Armas Orientais [DEX/DEX] 20/20; Armadilhas [INT] 20%; Artes (Atuação [CAR] 20%); Camuflagem [PER] 40%; Ciências Proibidas (Teoria de Magia [0] 20%); Disfarces [INT] 20%; Esquiva [AGI] 20%; Escutar [PER] 20%; Escapismo [AGI] 20%; Esportes (Arremesso [DEX] 20%, Acrobacia [AGI] 15%, Alpinismo [AGI] 15%, Ninjitsu [AGI/AGI] 20/20; Natação [AGI] 15%, Salto [AGI] 15%); Furtividade [AGI] 30%; Fechaduras [DEX] 20%; Herbalismo [0] 20%; Idiomas (Linguagem Secreta 10%); Manipulação (Intimidação [WILL] 20%, Hipnose [0] 20%); Subterfúgio [PER] 30%; Veneficio [INT] 10%.",
-            "Aprimoramentos: Pontos heróicos 3 pontos, Mestre. (5 pontos de Chi + 1 por nível. Técnica 4 e 1 a cada 2 níveis) 4 pontos, Expert em combate corporal 1 ponto, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos)."
+            "Os ninjas eram os guerreiros das sombras, mercenários pagos para fazerem os mais variados tipos de serviços furtivos, entre eles: sabotagem, assassinatos e especialmente o de espionagem. Eles não se importavam em utilizar-se de métodos covardes para alcançar seus objetivos, mesmo porque tinham sua identidade sob sigilo em suas missões, de forma que não prejudicariam a sua imagem. Suas armas não eram tão importantes quanto eram para os samurais convencionais, pois eram apenas ferramentas. Além disso, o ninja não tinha treinamento para se defrontar com inimigos de frente. Seu armamento era mais furtivo. Alguns senhores feudais costumavam contratar esses mercenários para fazer uns \"serviços sujos\". Embora os ninjas dificilmente pudessem ser capturados, esse tipo de acordo não era nem um pouco seguro, pois nada garantia que o ninja não iria delatar o contratador caso fosse capturado, ou até mesmo Executá-lo caso a vítima oferecesse um pagamento melhor. Os ninjas evitavam ao máximo utilizar suas armas, pois se matassem alguém com elas ficaria evidente que ocorrera um assassinato. Eles preferiam utilizar diversos tipos de venenos e sua astúcia para matar sem deixar vestígios. Muitas mortes que oficialmente eram registradas como \"acidentes\" ou \"intoxicações\" eram na verdade obra dos ninjas. Não eram apenas nobres corruptos que recorriam a esse tipo de serviço, até mesmo o governo costumavam contratar ninjas para espionar governos de outros países ou para que matassem os generais inimigos antes de uma guerra, o que desestruturava o exército inimigo. Nem sempre os ninjas precisavam assassinar pessoas, muitas das encomendas que recebiam evolviam obter informações secretas, \"calar a boca\" de alguém, sabotar documentos para incriminar alguém e assim por diante. Os ninjas eram organizados em clãs. Seus rostos eram escondidos por trás de panos, de modo que o ninja mantinha sua identidade sob sigilo em suas missões. O ninja descoberto era instruído a se matar, pois não tinha mais valor. Em pouco tempo seria caçado e morto."
           ]
         },
         {
@@ -494,13 +472,27 @@
           "title": "Aprimoramentos",
           "area": "kits",
           "paragraphs": [
-            "Pontos heróicos 2 pontos, Expert em combate corporal 2 pontos, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Presença Invisível (2 pontos) ou Sedutor (1 ponto), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos).",
+            "Pontos heróicos 2 pontos, Expert em combate corporal 2 pontos, Coragem (2 pontos), Patrono (2 pontos, sua Escola), Presença Invisível (2 pontos) ou Sedutor (1 ponto), Devoção (-2 pontos, com sua Escola), Segredo (-3 pontos)."
+          ]
+        },
+        {
+          "id": "ninja-regra-antiga-progressao",
+          "title": "Progressão",
+          "area": "kits",
+          "paragraphs": [
             "Pontos de Chi Iniciais: 5 (+1 por Nível)",
             "Pontos de Técnicas: 3 (+ 1 cada Nível par).",
-            "Pontos Heróicos: 2 por nível",
-            "*Shinobi Shozoku",
-            "Aroupa que os ninjas usam é conhecida como Shinobi Shozoku, além de ocultar a identidade de quem a vestia, servia para melhor camuflar o ninja. Se a estiver utilizando, concede um bônus de 10% em teste de camuflagem.",
-            "*Kunoichi",
+            "Pontos Heróicos: 2 por nível"
+          ]
+        },
+        {
+          "id": "ninja-regra-antiga-caracteristicas",
+          "title": "Características",
+          "area": "kits",
+          "paragraphs": [
+            "Shinobi Shozoku",
+            "A roupa que os ninjas usam é conhecida como Shinobi Shozoku, além de ocultar a identidade de quem a vestia, servia para melhor camuflar o ninja. Se a estiver utilizando, concede um bônus de 10% em teste de camuflagem.",
+            "Kunoichi",
             "As mulheres, sempre fizeram parte do mundo ninja, recebendo denominação especial: kunoichi. Mas penas seus engajados integrantes sabiam que por trás da máscara de um kunoichi estava uma mulher. Mais do que guerreiras, as ninjas eram sensuais e sabiam se aproveitar dessa peculiaridade para seduzir e, na sequência, aniquilar os inimigos. Elas se davam ao luxo de ter até uniforme exclusivo que estrategicamente, deixavam suas lindas pernas à mostra. Um ninja mulher começa automaticamente com 20% na perícia sedução. Elas eram muito competentes e quase sempre conseguiam cumprir seus objetivos."
           ]
         }
@@ -699,9 +691,16 @@
           "title": "Aprimoramentos",
           "area": "kits",
           "paragraphs": [
-            "Pontos Heróicos (3 pontos), Pontos de Fé (1 ponto), Alma Pura* (2 pontos), Contatos e Aliados (1 ponto, outros monges), Inocência (1 ponto), \"Satori\"- A Iluminação. 7 pontos de Chi + 1 por nível. Técnica 6 e 1 a cada 2 níveis (5 pontos), Castidade** (-1 ponto), Honestidade** (-1 ponto), Pobreza** (-1 ponto), Pacifismo** (-2 pontos)",
-            "* O jogador deve escolher a religião de seu personagem com cuidado. Mestre e jogador devem ter um conhecimento razoável dos dogmas da religião escolhida para seu personagem, caso contrário este Aprimoramento não poderá ser devidamente interpretado.",
-            "** Estes Aprimoramentos podem ser \"pagos\" pelo jogador gastando seus Pontos de Aprimoramento, livrando assim seu personagem de sofrer as limitações impostas por eles.",
+            "Pontos Heróicos (3 pontos), Pontos de Fé (1 ponto), Alma Pura* (2 pontos), Contatos e Aliados (1 ponto, outros monges), Inocência (1 ponto), \"Satori\"- A Iluminação. 7 pontos de Chi + 1 por nível. Técnica 6 e 1 a cada 2 níveis (5 pontos), Castidade** (-1 ponto), Honestidade** (-1 ponto), Pobreza** (-1 ponto), Pacifismo** (-2 pontos)"
+          ]
+        },
+        {
+          "id": "monge-caracteristicas",
+          "title": "Características",
+          "area": "kits",
+          "paragraphs": [
+            "O jogador deve escolher a religião de seu personagem com cuidado. Mestre e jogador devem ter um conhecimento razoável dos dogmas da religião escolhida para seu personagem, caso contrário este Aprimoramento não poderá ser devidamente interpretado.",
+            "Estes Aprimoramentos podem ser \"pagos\" pelo jogador gastando seus Pontos de Aprimoramento, livrando assim seu personagem de sofrer as limitações impostas por eles.",
             "Porém, vale a pena lembrar que um Monge que seja visto tendo relações sexuais ou começando brigas poderá ser mal visto pelas outras pessoas, podendo facilmente perder o respeito e apoio de seu Sensei ou mesmo sofrer penas mais severas."
           ]
         }
@@ -751,9 +750,16 @@
           "title": "Aprimoramentos",
           "area": "kits",
           "paragraphs": [
-            "Pontos Heróicos 4, Doutrinado. 3 pontos de Chi + 1 por nível. Técnica 2 e 1 a cada 2 níveis 3 pontos, Obsessivo (5 pontos de técnica por nível) 5 pontos, Castidade** (-1 ponto), Honestidade** (-1 ponto), Pobreza** (-1 ponto), Pacifismo** (-2 pontos)",
-            "* O jogador deve escolher a religião de seu personagem com cuidado. Mestre e jogador devem ter um conhecimento razoável dos dogmas da religião escolhida para seu personagem, caso contrário este Aprimoramento não poderá ser devidamente interpretado.",
-            "** Estes Aprimoramentos podem ser \"pagos\" pelo jogador gastando seus Pontos de Aprimoramento, livrando assim seu personagem de sofrer as limitações impostas por eles.",
+            "Pontos Heróicos 4, Doutrinado. 3 pontos de Chi + 1 por nível. Técnica 2 e 1 a cada 2 níveis 3 pontos, Obsessivo (5 pontos de técnica por nível) 5 pontos, Castidade** (-1 ponto), Honestidade** (-1 ponto), Pobreza** (-1 ponto), Pacifismo** (-2 pontos)"
+          ]
+        },
+        {
+          "id": "monge-shaolin-caracteristicas",
+          "title": "Características",
+          "area": "kits",
+          "paragraphs": [
+            "O jogador deve escolher a religião de seu personagem com cuidado. Mestre e jogador devem ter um conhecimento razoável dos dogmas da religião escolhida para seu personagem, caso contrário este Aprimoramento não poderá ser devidamente interpretado.",
+            "Estes Aprimoramentos podem ser \"pagos\" pelo jogador gastando seus Pontos de Aprimoramento, livrando assim seu personagem de sofrer as limitações impostas por eles.",
             "Porém, vale a pena lembrar que um Monge que seja visto tendo relações sexuais ou começando brigas poderá ser mal visto pelas outras pessoas, podendo facilmente perder o respeito e apoio de seu Sensei ou mesmo sofrer penas mais severas."
           ]
         }

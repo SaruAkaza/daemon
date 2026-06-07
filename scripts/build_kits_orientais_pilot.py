@@ -49,6 +49,7 @@ TEXT_FIXES = {
     "magico": "mágico",
     "Magico": "Mágico",
     "marcias": "marciais",
+    "Aroupa": "A roupa",
     "Armeiro": "Armeiro",
     "Heroicos": "Heróicos",
     "heroicos": "heróicos",
@@ -234,6 +235,20 @@ def parse_labelled(lines: list[str], area: str, prefix: str) -> list[dict]:
     order: list[str] = []
     current = "Descrição"
     for line in lines:
+        if line.startswith("*"):
+            current = "Características"
+            if current not in buckets:
+                buckets[current] = []
+                order.append(current)
+            buckets[current].append(line.lstrip("*").strip())
+            continue
+        if re.match(r"^Pontos de (Chi|T[ée]cnicas|Her[óo]icos)(?:\s+Iniciais)?\s*:", line, re.IGNORECASE):
+            current = "Progressão"
+            if current not in buckets:
+                buckets[current] = []
+                order.append(current)
+            buckets[current].append(line)
+            continue
         match = re.match(r"^(Restrições|Restrição|Perícias|Aprimoramentos|Bônus|Penalidades|Descrição|Pontos de Técnica)\s*:\s*(.*)", line, re.IGNORECASE)
         if match:
             current = {
@@ -262,7 +277,10 @@ def parse_labelled(lines: list[str], area: str, prefix: str) -> list[dict]:
 def build_kits(texts: list[str]) -> list[dict]:
     sections: list[dict] = []
     for title, desc_start, kit_index, end in KIT_SPECS:
-        description = [line for line in texts[desc_start:kit_index] if line not in {title, "Informações de jogo", "Informação de jogo"}]
+        description_end = kit_index
+        if title in {"Shinobi", "Ninja Regra antiga"}:
+            description_end = 59
+        description = [line for line in texts[desc_start:description_end] if line not in {title, "Ninjas", "Informações de jogo", "Informação de jogo"}]
         cost: list[str] = []
         skill_cost: list[str] = []
         rest: list[str] = []
