@@ -860,6 +860,8 @@ function itemTypeLabel(item) {
   if (item.kind === "class") return "Classe";
   if (item.kind === "maneuver") return "Manobra";
   if (item.kind === "equipment") return "Equipamento";
+  if (item.kind === "totem") return "Totem";
+  if (item.kind === "totem_rule") return "Totem";
   if (item.kind === "kit") return "Kit";
   if (item.kind === "creature") return "Criatura";
   if (item.kind === "group") return "Grupo";

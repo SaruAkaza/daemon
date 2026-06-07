@@ -684,11 +684,11 @@ def build_totems(paragraphs: list[str]) -> list[dict]:
     items.append(
         typed_item(
             "Totens",
-            "poderes",
-            "power_rule",
+            "itens_equipamentos",
+            "totem_rule",
             [
-                section("custo", "Custo", "poderes", collect(paragraphs, 810, 825)),
-                section("descricao", "Descrição", "poderes", ["Regras de custo e permanência para totens do Shaman."]),
+                section("custo", "Custo", "itens_equipamentos", collect(paragraphs, 810, 825)),
+                section("descricao", "Descrição", "itens_equipamentos", ["Regras de custo e permanência para totens do Shaman."]),
             ],
         )
     )
@@ -705,12 +705,12 @@ def build_totems(paragraphs: list[str]) -> list[dict]:
         items.append(
             typed_item(
                 title,
-                "criaturas_npcs",
-                "creature",
+                "itens_equipamentos",
+                "totem",
                 [
-                    section("atributos", "Atributos", "criaturas_npcs", attrs),
-                    section("pericias-e-combate", "Perícias e Combate", "criaturas_npcs", skills),
-                    section("habilidades", "Habilidades", "criaturas_npcs", abilities),
+                    section("atributos", "Atributos", "itens_equipamentos", attrs),
+                    section("pericias-e-combate", "Perícias e Combate", "itens_equipamentos", skills),
+                    section("habilidades", "Habilidades", "itens_equipamentos", abilities),
                 ],
                 values,
             )
@@ -740,11 +740,11 @@ def build_totems(paragraphs: list[str]) -> list[dict]:
             items.append(
                 typed_item(
                     current_title.rstrip("."),
-                    "poderes",
-                    "power",
+                    "itens_equipamentos",
+                    "totem",
                     [
-                        section("custo", "Custo", "poderes", costs),
-                        section("descricao", "Descrição", "poderes", description),
+                        section("custo", "Custo", "itens_equipamentos", costs),
+                        section("descricao", "Descrição", "itens_equipamentos", description),
                     ],
                     current,
                 )

@@ -17,7 +17,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-07T00:17:12",
+  "generatedAt": "2026-06-07T00:23:43",
   "sections": [
     {
       "id": "aprimoramentos-aceleracao",
@@ -3064,214 +3064,119 @@
       ]
     },
     {
-      "id": "criaturas-npcs-totem-elemental-da-tempestade",
-      "title": "Totem Elemental da Tempestade",
-      "area": "criaturas_npcs",
-      "kind": "creature",
-      "sectionId": "totem-elemental-da-tempestade",
-      "sectionTitle": "Totem Elemental da Tempestade",
+      "id": "itens-equipamentos-earthbind-totem",
+      "title": "Earthbind Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "earthbind-totem",
+      "sectionTitle": "Earthbind Totem",
       "paragraphs": [
-        "Totem Elemental da Tempestade de 3 Pts de Totem.",
-        "Todos os elementais da tempestade recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no ar. Contra oponentes sob o solo ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Todos eles tem a Magia Corpo Elemental (Eletricidade 5, corpo de eletricidade pura, sendo capaz de mover-se à uma velocidade muito maior que o normal (deslocamento), além de eletrocutar qualquer coisa que tocar (dano de 4d6), pode voar com a velocidade de 80m/s, pode disparar descargas elétricas com dano de 5d6+Will, pode mover-se na velocidade da luz e viajar normalmente através de correntes elétricas. Nestas condições, recebe +5d6 de iniciativa e a manobra Ataques Múltiplos 150.) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
-        "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos.",
-        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
-        "Tempo de permanência:",
-        "0,5pontos: 1 turno",
-        "1 pontos: 3 turnos",
-        "1,5 pontos: 5 turnos",
-        "CON 15, FR 15, DEX 15, AGI 14,",
-        "INT 13, WILL 19, CAR 05, PER 16.",
-        "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
-        "Idade desconhecida, altura 3,00 m, peso desconhecido.",
-        "Perícias: 275 +40Pts",
-        "Garras 90/90 + 15/15 = 105/105, Critico 15 Dano 4D6 ou 5D6 + Will.",
-        "Esquiva 00/90 + 00/14 = 00/104,",
-        "Perícias não gastas 45pts.",
-        "Magia: 03 de Focus e 05 de magia",
-        "Caminho da Magia",
-        "Formas: Caminho:",
-        "Entender (1). Raio* (5)",
-        "Criar (1).",
-        "Controlar (1)."
+        "Invoca um totem da Prisão de pedra com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 15 metros pelo próximo 1min.",
+        "Diminuição de velocidade: esse efeito diminui a velocidade dos inimigos enquanto o totem estiver perto.",
+        "0,5 ponto: -3 em Agilidade.",
+        "1 pontos: -6 em Agilidade.",
+        "1,5 pontos: -9 em Agilidade.",
+        "2 pontos: -12 em Agilidade.",
+        "2,5 pontos: -15 em Agilidade."
       ],
       "sections": [
         {
-          "id": "atributos",
-          "title": "Atributos",
-          "area": "criaturas_npcs",
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
           "paragraphs": [
-            "CON 15, FR 15, DEX 15, AGI 14,"
+            "0,5 ponto: -3 em Agilidade.",
+            "1 pontos: -6 em Agilidade.",
+            "1,5 pontos: -9 em Agilidade.",
+            "2 pontos: -12 em Agilidade.",
+            "2,5 pontos: -15 em Agilidade."
           ]
         },
         {
-          "id": "pericias-e-combate",
-          "title": "Perícias e Combate",
-          "area": "criaturas_npcs",
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
           "paragraphs": [
-            "Perícias: 275 +40Pts",
-            "Garras 90/90 + 15/15 = 105/105, Critico 15 Dano 4D6 ou 5D6 + Will."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Totem Elemental da Tempestade de 3 Pts de Totem.",
-            "Todos os elementais da tempestade recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no ar. Contra oponentes sob o solo ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Todos eles tem a Magia Corpo Elemental (Eletricidade 5, corpo de eletricidade pura, sendo capaz de mover-se à uma velocidade muito maior que o normal (deslocamento), além de eletrocutar qualquer coisa que tocar (dano de 4d6), pode voar com a velocidade de 80m/s, pode disparar descargas elétricas com dano de 5d6+Will, pode mover-se na velocidade da luz e viajar normalmente através de correntes elétricas. Nestas condições, recebe +5d6 de iniciativa e a manobra Ataques Múltiplos 150.) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
-            "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos.",
-            "INT 13, WILL 19, CAR 05, PER 16.",
-            "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
-            "Idade desconhecida, altura 3,00 m, peso desconhecido.",
-            "Esquiva 00/90 + 00/14 = 00/104,",
-            "Perícias não gastas 45pts.",
-            "Magia: 03 de Focus e 05 de magia",
-            "Caminho da Magia",
-            "Formas: Caminho:",
-            "Entender (1). Raio* (5)",
-            "Criar (1).",
-            "Controlar (1)."
+            "Invoca um totem da Prisão de pedra com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 15 metros pelo próximo 1min.",
+            "Diminuição de velocidade: esse efeito diminui a velocidade dos inimigos enquanto o totem estiver perto."
           ]
         }
       ]
     },
     {
-      "id": "criaturas-npcs-totem-elemental-da-terra",
-      "title": "Totem Elemental da Terra",
-      "area": "criaturas_npcs",
-      "kind": "creature",
-      "sectionId": "totem-elemental-da-terra",
-      "sectionTitle": "Totem Elemental da Terra",
+      "id": "itens-equipamentos-elemental-resistance-totem",
+      "title": "Elemental Resistance Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "elemental-resistance-totem",
+      "sectionTitle": "Elemental Resistance Totem",
       "paragraphs": [
-        "Totem Elemental da Terra de 3 Pts de Totem.",
-        "Todos os elementais da terra recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no solo. Contra oponentes alados ou aquáticos ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Todos eles tem a Magia Corpo Elemental (Terra 5, uma criatura rochosa, lenta, mas extremamente difícil de ferir. você tem Armadura Extra contra[No sistema Daemon, o IP do personagem é multiplicado por 6 contra aquele ataque específico], TODOS os ataques, mesmo que seja atacado com magia, armas mágicas ou ar, sua jogada de Armadura terá sempre resultado máximo) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
-        "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos; são também imunes a Acertos Críticos.",
-        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
-        "Tempo de permanência:",
-        "0,5pontos: 1 turno",
-        "1 pontos: 3 turnos",
-        "1,5 pontos: 5 turnos",
-        "CON 26, FR 33, DEX 10, AGI 08,",
-        "INT 06, WILL 13, CAR 10, PER 05.",
-        "#Ataques [1], IP (ver descrição), PVs 31, Nível 01 Xp:",
-        "Idade desconhecida, altura 3,00 m, peso desconhecido.",
-        "Perícias: 240 Pts",
-        "Pancada 50/50 + 10/10 = 60/60, Critico 15 Dano",
-        "Magia: 03 de Focus e 05 de magia",
-        "Caminho da Magia",
-        "Formas: Caminho:",
-        "Entender (0). Terra* (4)",
-        "Criar (0).",
-        "Controlar (1)."
+        "Invoca um totem de Resistência Elemental com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 30 metros pelo próximo 7min.",
+        "Proteção contra Elemento",
+        "0,5 ponto: Xd6",
+        "O totem gera uma defesa especial contra um elemento escolhido (Fogo, Água, Ar, Terra, Luz, Trevas). Cada 0,5 ponto gasto nesta Proteção eqüivale a 1d6 que deve ser rolado e subtraído de qualquer efeito místico lançado contra a criatura, seja dano, força ou qualquer outro efeito direto."
       ],
       "sections": [
         {
-          "id": "atributos",
-          "title": "Atributos",
-          "area": "criaturas_npcs",
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
           "paragraphs": [
-            "CON 26, FR 33, DEX 10, AGI 08,"
+            "0,5 ponto: Xd6"
           ]
         },
         {
-          "id": "pericias-e-combate",
-          "title": "Perícias e Combate",
-          "area": "criaturas_npcs",
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
           "paragraphs": [
-            "Perícias: 240 Pts",
-            "Pancada 50/50 + 10/10 = 60/60, Critico 15 Dano"
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Totem Elemental da Terra de 3 Pts de Totem.",
-            "Todos os elementais da terra recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no solo. Contra oponentes alados ou aquáticos ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Todos eles tem a Magia Corpo Elemental (Terra 5, uma criatura rochosa, lenta, mas extremamente difícil de ferir. você tem Armadura Extra contra[No sistema Daemon, o IP do personagem é multiplicado por 6 contra aquele ataque específico], TODOS os ataques, mesmo que seja atacado com magia, armas mágicas ou ar, sua jogada de Armadura terá sempre resultado máximo) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
-            "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos; são também imunes a Acertos Críticos.",
-            "INT 06, WILL 13, CAR 10, PER 05.",
-            "#Ataques [1], IP (ver descrição), PVs 31, Nível 01 Xp:",
-            "Idade desconhecida, altura 3,00 m, peso desconhecido.",
-            "Magia: 03 de Focus e 05 de magia",
-            "Caminho da Magia",
-            "Formas: Caminho:",
-            "Entender (0). Terra* (4)",
-            "Criar (0).",
-            "Controlar (1)."
+            "Invoca um totem de Resistência Elemental com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 30 metros pelo próximo 7min.",
+            "Proteção contra Elemento",
+            "O totem gera uma defesa especial contra um elemento escolhido (Fogo, Água, Ar, Terra, Luz, Trevas). Cada 0,5 ponto gasto nesta Proteção eqüivale a 1d6 que deve ser rolado e subtraído de qualquer efeito místico lançado contra a criatura, seja dano, força ou qualquer outro efeito direto."
           ]
         }
       ]
     },
     {
-      "id": "criaturas-npcs-totem-elemental-do-fogo",
-      "title": "Totem Elemental do Fogo",
-      "area": "criaturas_npcs",
-      "kind": "creature",
-      "sectionId": "totem-elemental-do-fogo",
-      "sectionTitle": "Totem Elemental do Fogo",
+      "id": "itens-equipamentos-flametongue-totem",
+      "title": "Flametongue Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "flametongue-totem",
+      "sectionTitle": "Flametongue Totem",
       "paragraphs": [
-        "Totem Elemental do fogo de 3 Pts de Totem.",
-        "Corpo de Fogo: Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Recebe um bônus de IP 4 contra ataques baseados em fogo mágico. Passa a causar 4d6 pontos de dano caso ataque com as extensões de seu corpo e 4d6 + Força de Vontade caso envolva seus inimigos completamente. Ele não pode segurar nada nem tocar sem queimar enquanto estiver nessa forma, mas pode se regenerar (1 Pv por rodada) se entrar inteiramente no elemento que o batiza.",
-        "Altas Temperaturas: Ele pode aumentar a temperatura de sua aura em 15 graus Celsius para cada ponto de força de vontade que possuir. Normalmente, um Elemental do fogo apresenta uma temperatura de 150 graus. Os mais velhos podem fundir metais apenas com um toque. Cada 15 graus aumentados dá um bônus de + 1 no dano. Esta aura afeta 1m de raio para cada dois pontos em Will do elemantal.",
-        "Todos os elementais são imunes: a o veneno, sono, paralisia.",
-        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
-        "Tempo de permanência:",
-        "0,5pontos: 1 turno",
-        "1 pontos: 3 turnos",
-        "1,5 pontos: 5 turnos",
-        "CON 15, FR 14, DEX 16, AGI 17,",
-        "INT 13, WILL 19, CAR 05, PER 13.",
-        "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
-        "Idade desconhecida, altura 3,00 m, peso desconhecido.",
-        "Perícias: 275 Pts",
-        "Garras 50/50 + 16/16 = 66/66, Critico 15 Dano 4D6 ou 4D6 + Will.",
-        "Magia: 03 de Focus e 05 de magia",
-        "Caminho da Magia",
-        "Formas: Caminho:",
-        "Entender (0). Fogo* (4)",
-        "Criar (1).",
-        "Controlar (0).",
-        "Totens:",
-        "0,5 pts de Totem"
+        "Invoca um Totem de Labaredas com 5pvs aos pés do invocador. O totem aumenta a força das magias de todos os aliados a uma distância de 40m pelo próximo 7min.",
+        "Amuleto Místico",
+        "O Totem atua como uma espécie de amuleto místico do personagem, um verdadeiro receptáculo de poderes mágicos, conferindo-lhe bônus em suas magias sempre que estiver por perto do Mago.",
+        "0,5 ponto: bônus de +1 Ponto de Magia.",
+        "1 ponto: bônus de +1 Ponto de Magia e +1 Ponto de Focus.",
+        "2 pontos: bônus de +2 Pontos de Magia e +1 Ponto de Focus.",
+        "3 pontos: bônus de +2 Pontos de Magia e +2 Pontos de Focus.",
+        "4 pontos: bônus de +3 Pontos de Magia e +3 Pontos de Focus.",
+        "5 pontos: bônus de +4 Pontos de Magia e +3 Pontos de Focus"
       ],
       "sections": [
         {
-          "id": "atributos",
-          "title": "Atributos",
-          "area": "criaturas_npcs",
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
           "paragraphs": [
-            "CON 15, FR 14, DEX 16, AGI 17,"
+            "0,5 ponto: bônus de +1 Ponto de Magia.",
+            "1 ponto: bônus de +1 Ponto de Magia e +1 Ponto de Focus.",
+            "2 pontos: bônus de +2 Pontos de Magia e +1 Ponto de Focus.",
+            "3 pontos: bônus de +2 Pontos de Magia e +2 Pontos de Focus.",
+            "4 pontos: bônus de +3 Pontos de Magia e +3 Pontos de Focus.",
+            "5 pontos: bônus de +4 Pontos de Magia e +3 Pontos de Focus"
           ]
         },
         {
-          "id": "pericias-e-combate",
-          "title": "Perícias e Combate",
-          "area": "criaturas_npcs",
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
           "paragraphs": [
-            "Perícias: 275 Pts",
-            "Garras 50/50 + 16/16 = 66/66, Critico 15 Dano 4D6 ou 4D6 + Will."
-          ]
-        },
-        {
-          "id": "habilidades",
-          "title": "Habilidades",
-          "area": "criaturas_npcs",
-          "paragraphs": [
-            "Totem Elemental do fogo de 3 Pts de Totem.",
-            "Corpo de Fogo: Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Recebe um bônus de IP 4 contra ataques baseados em fogo mágico. Passa a causar 4d6 pontos de dano caso ataque com as extensões de seu corpo e 4d6 + Força de Vontade caso envolva seus inimigos completamente. Ele não pode segurar nada nem tocar sem queimar enquanto estiver nessa forma, mas pode se regenerar (1 Pv por rodada) se entrar inteiramente no elemento que o batiza.",
-            "Altas Temperaturas: Ele pode aumentar a temperatura de sua aura em 15 graus Celsius para cada ponto de força de vontade que possuir. Normalmente, um Elemental do fogo apresenta uma temperatura de 150 graus. Os mais velhos podem fundir metais apenas com um toque. Cada 15 graus aumentados dá um bônus de + 1 no dano. Esta aura afeta 1m de raio para cada dois pontos em Will do elemantal.",
-            "Todos os elementais são imunes: a o veneno, sono, paralisia.",
-            "INT 13, WILL 19, CAR 05, PER 13.",
-            "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
-            "Idade desconhecida, altura 3,00 m, peso desconhecido.",
-            "Magia: 03 de Focus e 05 de magia",
-            "Caminho da Magia",
-            "Formas: Caminho:",
-            "Entender (0). Fogo* (4)",
-            "Criar (1).",
-            "Controlar (0).",
-            "Totens:"
+            "Invoca um Totem de Labaredas com 5pvs aos pés do invocador. O totem aumenta a força das magias de todos os aliados a uma distância de 40m pelo próximo 7min.",
+            "Amuleto Místico",
+            "O Totem atua como uma espécie de amuleto místico do personagem, um verdadeiro receptáculo de poderes mágicos, conferindo-lhe bônus em suas magias sempre que estiver por perto do Mago."
           ]
         }
       ]
@@ -3788,6 +3693,138 @@
       ]
     },
     {
+      "id": "itens-equipamentos-grounding-totem",
+      "title": "Grounding Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "grounding-totem",
+      "sectionTitle": "Grounding Totem",
+      "paragraphs": [
+        "Invoca um totem de Aterramento com 5pvs aos pés do invocador pelos próximos 45seg. O totem atrai para si um feitiço nocivo lançado contra qualquer membro do seu grupo, sendo destruído no processo, não afetas magias em área e demora 25seg para se recarregar.",
+        "4,5 pontos"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "4,5 pontos"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem de Aterramento com 5pvs aos pés do invocador pelos próximos 45seg. O totem atrai para si um feitiço nocivo lançado contra qualquer membro do seu grupo, sendo destruído no processo, não afetas magias em área e demora 25seg para se recarregar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-healing-stream-totem",
+      "title": "Healing Stream Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "healing-stream-totem",
+      "sectionTitle": "Healing Stream Totem",
+      "paragraphs": [
+        "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem cura todos os aliados a uma distância de 30m pelo próximo 7min.",
+        "Regeneração",
+        "0,5 ponto: regenera 1 PV a cada 10 Rodadas.",
+        "1 ponto: regenera 1 PV a cada 8 Rodadas.",
+        "1,5 pontos: regenera 1 PV a cada 6 Rodadas.",
+        "2 pontos: regenera 1 PV a cada 4 Rodadas.",
+        "2,5 pontos: regenera 1 PV a cada 2 Rodadas.",
+        "3 pontos: regenera 1 PV a cada rodada.",
+        "3,5 pontos: regenera 2 PVs a cada rodada.",
+        "4 pontos: regenera 3 PVs a cada rodada.",
+        "4,5 pontos: regenera 4 PVs a cada rodada.",
+        "5 pontos: regenera 5 PVs a cada rodada."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "0,5 ponto: regenera 1 PV a cada 10 Rodadas.",
+            "1 ponto: regenera 1 PV a cada 8 Rodadas.",
+            "1,5 pontos: regenera 1 PV a cada 6 Rodadas.",
+            "2 pontos: regenera 1 PV a cada 4 Rodadas.",
+            "2,5 pontos: regenera 1 PV a cada 2 Rodadas.",
+            "3 pontos: regenera 1 PV a cada rodada.",
+            "3,5 pontos: regenera 2 PVs a cada rodada.",
+            "4 pontos: regenera 3 PVs a cada rodada.",
+            "4,5 pontos: regenera 4 PVs a cada rodada.",
+            "5 pontos: regenera 5 PVs a cada rodada."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem cura todos os aliados a uma distância de 30m pelo próximo 7min.",
+            "Regeneração"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-mana-spring-totem",
+      "title": "Mana Spring Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "mana-spring-totem",
+      "sectionTitle": "Mana Spring Totem",
+      "paragraphs": [
+        "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem restaura os pontos de magia de todos os aliados a uma distância de 40m pelo próximo 7min.",
+        "Regeneração",
+        "Regeneração",
+        "0,5 ponto: a mascote regenera 1 PM a cada 10 Rodadas.",
+        "1 ponto: a mascote regenera 1 PM a cada 8 Rodadas.",
+        "1,5 pontos: a mascote regenera 1 PM a cada 6 Rodadas.",
+        "2 pontos: a mascote regenera 1 PM a cada 4 Rodadas.",
+        "2,5 pontos: a mascote regenera 1 PM a cada 2 Rodadas.",
+        "3 pontos: a mascote regenera 1 PMa cada rodada.",
+        "3,5 pontos: a mascote regenera 2 PMs a cada rodada.",
+        "4 pontos: a mascote regenera 3 PMs a cada rodada.",
+        "4,5 pontos: a mascote regenera 4 PMs a cada rodada.",
+        "5 pontos: a mascote regenera 5 PMs a cada rodada."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "0,5 ponto: a mascote regenera 1 PM a cada 10 Rodadas.",
+            "1 ponto: a mascote regenera 1 PM a cada 8 Rodadas.",
+            "1,5 pontos: a mascote regenera 1 PM a cada 6 Rodadas.",
+            "2 pontos: a mascote regenera 1 PM a cada 4 Rodadas.",
+            "2,5 pontos: a mascote regenera 1 PM a cada 2 Rodadas.",
+            "3 pontos: a mascote regenera 1 PMa cada rodada.",
+            "3,5 pontos: a mascote regenera 2 PMs a cada rodada.",
+            "4 pontos: a mascote regenera 3 PMs a cada rodada.",
+            "4,5 pontos: a mascote regenera 4 PMs a cada rodada.",
+            "5 pontos: a mascote regenera 5 PMs a cada rodada."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem restaura os pontos de magia de todos os aliados a uma distância de 40m pelo próximo 7min.",
+            "Regeneração",
+            "Regeneração"
+          ]
+        }
+      ]
+    },
+    {
       "id": "itens-equipamentos-mecanoides-corpos-e-componentes",
       "title": "Mecanóides - Corpos e Componentes",
       "area": "itens_equipamentos",
@@ -4041,6 +4078,475 @@
             "Índice de Proteção: 30",
             "Perícias Sugeridas: Rastreio, Briga, Esquiva,",
             "Armas Brancas, Medicina."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-searing-totem",
+      "title": "Searing Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "searing-totem",
+      "sectionTitle": "Searing Totem",
+      "paragraphs": [
+        "Invoca um totem Calcinaté com 5pvs aos pés do invocador. O totem ataca um alvo próximo com dardos flamejantes a até uma distância de 30m pelo próximo 1min.",
+        "0,5 ponto: 1d3 de dano por ataque.",
+        "1 ponto: 1d6 de dano por ataque.",
+        "2 pontos: 2d6 de dano por ataque.",
+        "3 pontos: 3d6 de dano."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "0,5 ponto: 1d3 de dano por ataque.",
+            "1 ponto: 1d6 de dano por ataque.",
+            "2 pontos: 2d6 de dano por ataque.",
+            "3 pontos: 3d6 de dano."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem Calcinaté com 5pvs aos pés do invocador. O totem ataca um alvo próximo com dardos flamejantes a até uma distância de 30m pelo próximo 1min."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-stoneskin-totem",
+      "title": "Stoneskin Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "stoneskin-totem",
+      "sectionTitle": "Stoneskin Totem",
+      "paragraphs": [
+        "Invoca um totem de Litopele com 5pvs aos pés do invocador. O totem protege todos os aliados que estejam a até 40 metros, aumentando o Ip pelos próximos 7min.",
+        "Aumento de IP: o item é encantado para aumentar o índice de proteção do usuário. Caso o usuário esteja usando uma armadura, o IP gerado por esse efeito será somado a ele.",
+        "0,5 ponto: IP +1",
+        "1 ponto: IP +2",
+        "1,5 ponto: IP +3",
+        "2 pontos: IP +4",
+        "2,5 pontos: IP +5",
+        "3 pontos: IP +6",
+        "3,5 pontos: IP +7",
+        "4 pontos: IP +8",
+        "4,5 pontos: IP +9",
+        "5 pontos: IP +10"
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "0,5 ponto: IP +1",
+            "1 ponto: IP +2",
+            "1,5 ponto: IP +3",
+            "2 pontos: IP +4",
+            "2,5 pontos: IP +5",
+            "3 pontos: IP +6",
+            "3,5 pontos: IP +7",
+            "4 pontos: IP +8",
+            "4,5 pontos: IP +9",
+            "5 pontos: IP +10"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem de Litopele com 5pvs aos pés do invocador. O totem protege todos os aliados que estejam a até 40 metros, aumentando o Ip pelos próximos 7min.",
+            "Aumento de IP: o item é encantado para aumentar o índice de proteção do usuário. Caso o usuário esteja usando uma armadura, o IP gerado por esse efeito será somado a ele."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-strength-of-earth-totem",
+      "title": "Strength of Earth Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "strength-of-earth-totem",
+      "sectionTitle": "Strength of Earth Totem",
+      "paragraphs": [
+        "Invoca um totem da Força da Terra com 5pvs aos pés do invocador. O totem aumenta a sua força e a sua agilidade de todos os aliados a uma distância de 40m pelo próximo 7min.",
+        "Aumento de Atributo: esse efeito aumenta a AGI e a FR enquanto estiver próximo do totem.",
+        "0,5 ponto: +3 nos dois atributos.",
+        "2 pontos: +6 nos dois atributos.",
+        "3 pontos: +9 nos dois atributos.",
+        "4 pontos: +12 nos dois atributos.",
+        "5 pontos: +15 nos dois atributos.",
+        "6 pontos: +18 nos dois atributos.",
+        "7 pontos: +21 nos dois atributos.",
+        "8 pontos: +24 nos dois atributos.",
+        "9 pontos: +27 nos dois atributos.",
+        "10 pontos: +30 nos dois atributos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "0,5 ponto: +3 nos dois atributos.",
+            "2 pontos: +6 nos dois atributos.",
+            "3 pontos: +9 nos dois atributos.",
+            "4 pontos: +12 nos dois atributos.",
+            "5 pontos: +15 nos dois atributos.",
+            "6 pontos: +18 nos dois atributos.",
+            "7 pontos: +21 nos dois atributos.",
+            "8 pontos: +24 nos dois atributos.",
+            "9 pontos: +27 nos dois atributos.",
+            "10 pontos: +30 nos dois atributos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem da Força da Terra com 5pvs aos pés do invocador. O totem aumenta a sua força e a sua agilidade de todos os aliados a uma distância de 40m pelo próximo 7min.",
+            "Aumento de Atributo: esse efeito aumenta a AGI e a FR enquanto estiver próximo do totem."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-totem-elemental-da-tempestade",
+      "title": "Totem Elemental da Tempestade",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "totem-elemental-da-tempestade",
+      "sectionTitle": "Totem Elemental da Tempestade",
+      "paragraphs": [
+        "Totem Elemental da Tempestade de 3 Pts de Totem.",
+        "Todos os elementais da tempestade recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no ar. Contra oponentes sob o solo ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Todos eles tem a Magia Corpo Elemental (Eletricidade 5, corpo de eletricidade pura, sendo capaz de mover-se à uma velocidade muito maior que o normal (deslocamento), além de eletrocutar qualquer coisa que tocar (dano de 4d6), pode voar com a velocidade de 80m/s, pode disparar descargas elétricas com dano de 5d6+Will, pode mover-se na velocidade da luz e viajar normalmente através de correntes elétricas. Nestas condições, recebe +5d6 de iniciativa e a manobra Ataques Múltiplos 150.) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
+        "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos.",
+        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
+        "Tempo de permanência:",
+        "0,5pontos: 1 turno",
+        "1 pontos: 3 turnos",
+        "1,5 pontos: 5 turnos",
+        "CON 15, FR 15, DEX 15, AGI 14,",
+        "INT 13, WILL 19, CAR 05, PER 16.",
+        "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
+        "Idade desconhecida, altura 3,00 m, peso desconhecido.",
+        "Perícias: 275 +40Pts",
+        "Garras 90/90 + 15/15 = 105/105, Critico 15 Dano 4D6 ou 5D6 + Will.",
+        "Esquiva 00/90 + 00/14 = 00/104,",
+        "Perícias não gastas 45pts.",
+        "Magia: 03 de Focus e 05 de magia",
+        "Caminho da Magia",
+        "Formas: Caminho:",
+        "Entender (1). Raio* (5)",
+        "Criar (1).",
+        "Controlar (1)."
+      ],
+      "sections": [
+        {
+          "id": "atributos",
+          "title": "Atributos",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "CON 15, FR 15, DEX 15, AGI 14,"
+          ]
+        },
+        {
+          "id": "pericias-e-combate",
+          "title": "Perícias e Combate",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Perícias: 275 +40Pts",
+            "Garras 90/90 + 15/15 = 105/105, Critico 15 Dano 4D6 ou 5D6 + Will."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Totem Elemental da Tempestade de 3 Pts de Totem.",
+            "Todos os elementais da tempestade recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no ar. Contra oponentes sob o solo ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Todos eles tem a Magia Corpo Elemental (Eletricidade 5, corpo de eletricidade pura, sendo capaz de mover-se à uma velocidade muito maior que o normal (deslocamento), além de eletrocutar qualquer coisa que tocar (dano de 4d6), pode voar com a velocidade de 80m/s, pode disparar descargas elétricas com dano de 5d6+Will, pode mover-se na velocidade da luz e viajar normalmente através de correntes elétricas. Nestas condições, recebe +5d6 de iniciativa e a manobra Ataques Múltiplos 150.) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
+            "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos.",
+            "INT 13, WILL 19, CAR 05, PER 16.",
+            "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
+            "Idade desconhecida, altura 3,00 m, peso desconhecido.",
+            "Esquiva 00/90 + 00/14 = 00/104,",
+            "Perícias não gastas 45pts.",
+            "Magia: 03 de Focus e 05 de magia",
+            "Caminho da Magia",
+            "Formas: Caminho:",
+            "Entender (1). Raio* (5)",
+            "Criar (1).",
+            "Controlar (1)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-totem-elemental-da-terra",
+      "title": "Totem Elemental da Terra",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "totem-elemental-da-terra",
+      "sectionTitle": "Totem Elemental da Terra",
+      "paragraphs": [
+        "Totem Elemental da Terra de 3 Pts de Totem.",
+        "Todos os elementais da terra recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no solo. Contra oponentes alados ou aquáticos ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Todos eles tem a Magia Corpo Elemental (Terra 5, uma criatura rochosa, lenta, mas extremamente difícil de ferir. você tem Armadura Extra contra[No sistema Daemon, o IP do personagem é multiplicado por 6 contra aquele ataque específico], TODOS os ataques, mesmo que seja atacado com magia, armas mágicas ou ar, sua jogada de Armadura terá sempre resultado máximo) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
+        "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos; são também imunes a Acertos Críticos.",
+        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
+        "Tempo de permanência:",
+        "0,5pontos: 1 turno",
+        "1 pontos: 3 turnos",
+        "1,5 pontos: 5 turnos",
+        "CON 26, FR 33, DEX 10, AGI 08,",
+        "INT 06, WILL 13, CAR 10, PER 05.",
+        "#Ataques [1], IP (ver descrição), PVs 31, Nível 01 Xp:",
+        "Idade desconhecida, altura 3,00 m, peso desconhecido.",
+        "Perícias: 240 Pts",
+        "Pancada 50/50 + 10/10 = 60/60, Critico 15 Dano",
+        "Magia: 03 de Focus e 05 de magia",
+        "Caminho da Magia",
+        "Formas: Caminho:",
+        "Entender (0). Terra* (4)",
+        "Criar (0).",
+        "Controlar (1)."
+      ],
+      "sections": [
+        {
+          "id": "atributos",
+          "title": "Atributos",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "CON 26, FR 33, DEX 10, AGI 08,"
+          ]
+        },
+        {
+          "id": "pericias-e-combate",
+          "title": "Perícias e Combate",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Perícias: 240 Pts",
+            "Pancada 50/50 + 10/10 = 60/60, Critico 15 Dano"
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Totem Elemental da Terra de 3 Pts de Totem.",
+            "Todos os elementais da terra recebem +5% nos Ataques e Defesas e +1 no dano quando enfrentam seus inimigos no solo. Contra oponentes alados ou aquáticos ele sofre -20%/-4 de penalidade em Ataques, Defesas e danos. Todos eles tem a Magia Corpo Elemental (Terra 5, uma criatura rochosa, lenta, mas extremamente difícil de ferir. você tem Armadura Extra contra[No sistema Daemon, o IP do personagem é multiplicado por 6 contra aquele ataque específico], TODOS os ataques, mesmo que seja atacado com magia, armas mágicas ou ar, sua jogada de Armadura terá sempre resultado máximo) ativa continuamente, e por isso são imunes a ataques naturais - apenas Magias e armas mágicas podem feri-los.",
+            "Todos os elementais são imunes: a o veneno, sono, paralisia e atordoamento, naturais ou mágicos; são também imunes a Acertos Críticos.",
+            "INT 06, WILL 13, CAR 10, PER 05.",
+            "#Ataques [1], IP (ver descrição), PVs 31, Nível 01 Xp:",
+            "Idade desconhecida, altura 3,00 m, peso desconhecido.",
+            "Magia: 03 de Focus e 05 de magia",
+            "Caminho da Magia",
+            "Formas: Caminho:",
+            "Entender (0). Terra* (4)",
+            "Criar (0).",
+            "Controlar (1)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-totem-elemental-do-fogo",
+      "title": "Totem Elemental do Fogo",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "totem-elemental-do-fogo",
+      "sectionTitle": "Totem Elemental do Fogo",
+      "paragraphs": [
+        "Totem Elemental do fogo de 3 Pts de Totem.",
+        "Corpo de Fogo: Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Recebe um bônus de IP 4 contra ataques baseados em fogo mágico. Passa a causar 4d6 pontos de dano caso ataque com as extensões de seu corpo e 4d6 + Força de Vontade caso envolva seus inimigos completamente. Ele não pode segurar nada nem tocar sem queimar enquanto estiver nessa forma, mas pode se regenerar (1 Pv por rodada) se entrar inteiramente no elemento que o batiza.",
+        "Altas Temperaturas: Ele pode aumentar a temperatura de sua aura em 15 graus Celsius para cada ponto de força de vontade que possuir. Normalmente, um Elemental do fogo apresenta uma temperatura de 150 graus. Os mais velhos podem fundir metais apenas com um toque. Cada 15 graus aumentados dá um bônus de + 1 no dano. Esta aura afeta 1m de raio para cada dois pontos em Will do elemantal.",
+        "Todos os elementais são imunes: a o veneno, sono, paralisia.",
+        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
+        "Tempo de permanência:",
+        "0,5pontos: 1 turno",
+        "1 pontos: 3 turnos",
+        "1,5 pontos: 5 turnos",
+        "CON 15, FR 14, DEX 16, AGI 17,",
+        "INT 13, WILL 19, CAR 05, PER 13.",
+        "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
+        "Idade desconhecida, altura 3,00 m, peso desconhecido.",
+        "Perícias: 275 Pts",
+        "Garras 50/50 + 16/16 = 66/66, Critico 15 Dano 4D6 ou 4D6 + Will.",
+        "Magia: 03 de Focus e 05 de magia",
+        "Caminho da Magia",
+        "Formas: Caminho:",
+        "Entender (0). Fogo* (4)",
+        "Criar (1).",
+        "Controlar (0).",
+        "Totens:",
+        "0,5 pts de Totem"
+      ],
+      "sections": [
+        {
+          "id": "atributos",
+          "title": "Atributos",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "CON 15, FR 14, DEX 16, AGI 17,"
+          ]
+        },
+        {
+          "id": "pericias-e-combate",
+          "title": "Perícias e Combate",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Perícias: 275 Pts",
+            "Garras 50/50 + 16/16 = 66/66, Critico 15 Dano 4D6 ou 4D6 + Will."
+          ]
+        },
+        {
+          "id": "habilidades",
+          "title": "Habilidades",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Totem Elemental do fogo de 3 Pts de Totem.",
+            "Corpo de Fogo: Ele não pode ser atingido por danos físicos, a não ser que sejam armas mágicas com o bônus acima de 2. Recebe um bônus de IP 4 contra ataques baseados em fogo mágico. Passa a causar 4d6 pontos de dano caso ataque com as extensões de seu corpo e 4d6 + Força de Vontade caso envolva seus inimigos completamente. Ele não pode segurar nada nem tocar sem queimar enquanto estiver nessa forma, mas pode se regenerar (1 Pv por rodada) se entrar inteiramente no elemento que o batiza.",
+            "Altas Temperaturas: Ele pode aumentar a temperatura de sua aura em 15 graus Celsius para cada ponto de força de vontade que possuir. Normalmente, um Elemental do fogo apresenta uma temperatura de 150 graus. Os mais velhos podem fundir metais apenas com um toque. Cada 15 graus aumentados dá um bônus de + 1 no dano. Esta aura afeta 1m de raio para cada dois pontos em Will do elemantal.",
+            "Todos os elementais são imunes: a o veneno, sono, paralisia.",
+            "INT 13, WILL 19, CAR 05, PER 13.",
+            "#Ataques [1], IP (ver descrição), PVs 19, Nível 01 Xp:",
+            "Idade desconhecida, altura 3,00 m, peso desconhecido.",
+            "Magia: 03 de Focus e 05 de magia",
+            "Caminho da Magia",
+            "Formas: Caminho:",
+            "Entender (0). Fogo* (4)",
+            "Criar (1).",
+            "Controlar (0).",
+            "Totens:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-totens",
+      "title": "Totens",
+      "area": "itens_equipamentos",
+      "kind": "totem_rule",
+      "sectionId": "totens",
+      "sectionTitle": "Totens",
+      "paragraphs": [
+        "Totens:",
+        "05 pts de Totem",
+        "Totens Elementais. O elemental deve esperar ½ hora antes de ser invocado novamente.",
+        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
+        "2 pontos: 121 pts de atributo, pts de perícia 240 + INT x5, 2 pts de aprimoramento, focus 7 e 5 pts de magia.",
+        "3 pontos: 131 pts de atributo, pts de perícia 270 + INT x5, 3 pts de aprimoramento, focus 9 e 7 pts de magia.",
+        "4 pontos: 141 pts de atributo, pts de perícia 300 + INT x5, 4 pts de aprimoramento, focus 11 e 9 pts de magia.",
+        "5 pontos: 151 pts de atributo, pts de perícia 330 + INT x5, 5 pts de aprimoramento, focus 13 e 11 pts de magia.",
+        "Tempo de permanência:",
+        "0,5ponto: 1 turno",
+        "1 pontos: 3 turnos",
+        "1,5 pontos: 5 turnos",
+        "2 pontos: 7 turnos",
+        "2,5 pontos: 9 turnos",
+        "3 pontos: ½ hora",
+        "Regras de custo e permanência para totens do Shaman."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Totens:",
+            "05 pts de Totem",
+            "Totens Elementais. O elemental deve esperar ½ hora antes de ser invocado novamente.",
+            "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
+            "2 pontos: 121 pts de atributo, pts de perícia 240 + INT x5, 2 pts de aprimoramento, focus 7 e 5 pts de magia.",
+            "3 pontos: 131 pts de atributo, pts de perícia 270 + INT x5, 3 pts de aprimoramento, focus 9 e 7 pts de magia.",
+            "4 pontos: 141 pts de atributo, pts de perícia 300 + INT x5, 4 pts de aprimoramento, focus 11 e 9 pts de magia.",
+            "5 pontos: 151 pts de atributo, pts de perícia 330 + INT x5, 5 pts de aprimoramento, focus 13 e 11 pts de magia.",
+            "Tempo de permanência:",
+            "0,5ponto: 1 turno",
+            "1 pontos: 3 turnos",
+            "1,5 pontos: 5 turnos",
+            "2 pontos: 7 turnos",
+            "2,5 pontos: 9 turnos",
+            "3 pontos: ½ hora"
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Regras de custo e permanência para totens do Shaman."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-tremor-totem",
+      "title": "Tremor Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "tremor-totem",
+      "sectionTitle": "Tremor Totem",
+      "paragraphs": [
+        "Invoca um totem Sísmico com 5pvs aos pés do invocador pelos próximos 8seg. O totem faz o chão tremer removendo qualquer efeito de sono, medo e encantamento que gere efeito parecido, a todos os aliados em um raio de 30m e demora 1min para se recarregar. Pode ser lançado mesmo se o invocador também estiver sob esses efeitos.",
+        "2,5 pontos."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "2,5 pontos."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem Sísmico com 5pvs aos pés do invocador pelos próximos 8seg. O totem faz o chão tremer removendo qualquer efeito de sono, medo e encantamento que gere efeito parecido, a todos os aliados em um raio de 30m e demora 1min para se recarregar. Pode ser lançado mesmo se o invocador também estiver sob esses efeitos."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itens-equipamentos-windfury-totem",
+      "title": "Windfury Totem",
+      "area": "itens_equipamentos",
+      "kind": "totem",
+      "sectionId": "windfury-totem",
+      "sectionTitle": "Windfury Totem",
+      "paragraphs": [
+        "Invoca um totem da Fúria dos Ventos com 5pvs aos pés do invocador. O totem aumenta a Iniciativa de todos os aliados a uma distância de 40m pelo próximo 5min.",
+        "Aumento de Velocidade",
+        "0,5 ponto: confere bônus de +3 nas jogadas de iniciativa. Pode ser comprado várias vezes."
+      ],
+      "sections": [
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "0,5 ponto: confere bônus de +3 nas jogadas de iniciativa. Pode ser comprado várias vezes."
+          ]
+        },
+        {
+          "id": "descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Invoca um totem da Fúria dos Ventos com 5pvs aos pés do invocador. O totem aumenta a Iniciativa de todos os aliados a uma distância de 40m pelo próximo 5min.",
+            "Aumento de Velocidade"
           ]
         }
       ]
@@ -4948,124 +5454,6 @@
       ]
     },
     {
-      "id": "poderes-earthbind-totem",
-      "title": "Earthbind Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "earthbind-totem",
-      "sectionTitle": "Earthbind Totem",
-      "paragraphs": [
-        "Invoca um totem da Prisão de pedra com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 15 metros pelo próximo 1min.",
-        "Diminuição de velocidade: esse efeito diminui a velocidade dos inimigos enquanto o totem estiver perto.",
-        "0,5 ponto: -3 em Agilidade.",
-        "1 pontos: -6 em Agilidade.",
-        "1,5 pontos: -9 em Agilidade.",
-        "2 pontos: -12 em Agilidade.",
-        "2,5 pontos: -15 em Agilidade."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: -3 em Agilidade.",
-            "1 pontos: -6 em Agilidade.",
-            "1,5 pontos: -9 em Agilidade.",
-            "2 pontos: -12 em Agilidade.",
-            "2,5 pontos: -15 em Agilidade."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem da Prisão de pedra com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 15 metros pelo próximo 1min.",
-            "Diminuição de velocidade: esse efeito diminui a velocidade dos inimigos enquanto o totem estiver perto."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "poderes-elemental-resistance-totem",
-      "title": "Elemental Resistance Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "elemental-resistance-totem",
-      "sectionTitle": "Elemental Resistance Totem",
-      "paragraphs": [
-        "Invoca um totem de Resistência Elemental com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 30 metros pelo próximo 7min.",
-        "Proteção contra Elemento",
-        "0,5 ponto: Xd6",
-        "O totem gera uma defesa especial contra um elemento escolhido (Fogo, Água, Ar, Terra, Luz, Trevas). Cada 0,5 ponto gasto nesta Proteção eqüivale a 1d6 que deve ser rolado e subtraído de qualquer efeito místico lançado contra a criatura, seja dano, força ou qualquer outro efeito direto."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: Xd6"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem de Resistência Elemental com 5pvs aos pés do invocador. O totem reduz a velocidade todos os inimigos que estejam a até 30 metros pelo próximo 7min.",
-            "Proteção contra Elemento",
-            "O totem gera uma defesa especial contra um elemento escolhido (Fogo, Água, Ar, Terra, Luz, Trevas). Cada 0,5 ponto gasto nesta Proteção eqüivale a 1d6 que deve ser rolado e subtraído de qualquer efeito místico lançado contra a criatura, seja dano, força ou qualquer outro efeito direto."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "poderes-flametongue-totem",
-      "title": "Flametongue Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "flametongue-totem",
-      "sectionTitle": "Flametongue Totem",
-      "paragraphs": [
-        "Invoca um Totem de Labaredas com 5pvs aos pés do invocador. O totem aumenta a força das magias de todos os aliados a uma distância de 40m pelo próximo 7min.",
-        "Amuleto Místico",
-        "O Totem atua como uma espécie de amuleto místico do personagem, um verdadeiro receptáculo de poderes mágicos, conferindo-lhe bônus em suas magias sempre que estiver por perto do Mago.",
-        "0,5 ponto: bônus de +1 Ponto de Magia.",
-        "1 ponto: bônus de +1 Ponto de Magia e +1 Ponto de Focus.",
-        "2 pontos: bônus de +2 Pontos de Magia e +1 Ponto de Focus.",
-        "3 pontos: bônus de +2 Pontos de Magia e +2 Pontos de Focus.",
-        "4 pontos: bônus de +3 Pontos de Magia e +3 Pontos de Focus.",
-        "5 pontos: bônus de +4 Pontos de Magia e +3 Pontos de Focus"
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: bônus de +1 Ponto de Magia.",
-            "1 ponto: bônus de +1 Ponto de Magia e +1 Ponto de Focus.",
-            "2 pontos: bônus de +2 Pontos de Magia e +1 Ponto de Focus.",
-            "3 pontos: bônus de +2 Pontos de Magia e +2 Pontos de Focus.",
-            "4 pontos: bônus de +3 Pontos de Magia e +3 Pontos de Focus.",
-            "5 pontos: bônus de +4 Pontos de Magia e +3 Pontos de Focus"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um Totem de Labaredas com 5pvs aos pés do invocador. O totem aumenta a força das magias de todos os aliados a uma distância de 40m pelo próximo 7min.",
-            "Amuleto Místico",
-            "O Totem atua como uma espécie de amuleto místico do personagem, um verdadeiro receptáculo de poderes mágicos, conferindo-lhe bônus em suas magias sempre que estiver por perto do Mago."
-          ]
-        }
-      ]
-    },
-    {
       "id": "poderes-garras",
       "title": "Garras",
       "area": "poderes",
@@ -5123,86 +5511,6 @@
       ]
     },
     {
-      "id": "poderes-grounding-totem",
-      "title": "Grounding Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "grounding-totem",
-      "sectionTitle": "Grounding Totem",
-      "paragraphs": [
-        "Invoca um totem de Aterramento com 5pvs aos pés do invocador pelos próximos 45seg. O totem atrai para si um feitiço nocivo lançado contra qualquer membro do seu grupo, sendo destruído no processo, não afetas magias em área e demora 25seg para se recarregar.",
-        "4,5 pontos"
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "4,5 pontos"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem de Aterramento com 5pvs aos pés do invocador pelos próximos 45seg. O totem atrai para si um feitiço nocivo lançado contra qualquer membro do seu grupo, sendo destruído no processo, não afetas magias em área e demora 25seg para se recarregar."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "poderes-healing-stream-totem",
-      "title": "Healing Stream Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "healing-stream-totem",
-      "sectionTitle": "Healing Stream Totem",
-      "paragraphs": [
-        "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem cura todos os aliados a uma distância de 30m pelo próximo 7min.",
-        "Regeneração",
-        "0,5 ponto: regenera 1 PV a cada 10 Rodadas.",
-        "1 ponto: regenera 1 PV a cada 8 Rodadas.",
-        "1,5 pontos: regenera 1 PV a cada 6 Rodadas.",
-        "2 pontos: regenera 1 PV a cada 4 Rodadas.",
-        "2,5 pontos: regenera 1 PV a cada 2 Rodadas.",
-        "3 pontos: regenera 1 PV a cada rodada.",
-        "3,5 pontos: regenera 2 PVs a cada rodada.",
-        "4 pontos: regenera 3 PVs a cada rodada.",
-        "4,5 pontos: regenera 4 PVs a cada rodada.",
-        "5 pontos: regenera 5 PVs a cada rodada."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: regenera 1 PV a cada 10 Rodadas.",
-            "1 ponto: regenera 1 PV a cada 8 Rodadas.",
-            "1,5 pontos: regenera 1 PV a cada 6 Rodadas.",
-            "2 pontos: regenera 1 PV a cada 4 Rodadas.",
-            "2,5 pontos: regenera 1 PV a cada 2 Rodadas.",
-            "3 pontos: regenera 1 PV a cada rodada.",
-            "3,5 pontos: regenera 2 PVs a cada rodada.",
-            "4 pontos: regenera 3 PVs a cada rodada.",
-            "4,5 pontos: regenera 4 PVs a cada rodada.",
-            "5 pontos: regenera 5 PVs a cada rodada."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem cura todos os aliados a uma distância de 30m pelo próximo 7min.",
-            "Regeneração"
-          ]
-        }
-      ]
-    },
-    {
       "id": "poderes-inspirar-terror",
       "title": "Inspirar Terror",
       "area": "poderes",
@@ -5246,58 +5554,6 @@
           "area": "poderes",
           "paragraphs": [
             "Todos que observarem ou escutarem seu método de intimidação, deverão fazer um teste de WILL para se aproximarem mais que 10 metros do personagem. Uma falha crítica resulta em pânico e fuga histérica."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "poderes-mana-spring-totem",
-      "title": "Mana Spring Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "mana-spring-totem",
-      "sectionTitle": "Mana Spring Totem",
-      "paragraphs": [
-        "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem restaura os pontos de magia de todos os aliados a uma distância de 40m pelo próximo 7min.",
-        "Regeneração",
-        "Regeneração",
-        "0,5 ponto: a mascote regenera 1 PM a cada 10 Rodadas.",
-        "1 ponto: a mascote regenera 1 PM a cada 8 Rodadas.",
-        "1,5 pontos: a mascote regenera 1 PM a cada 6 Rodadas.",
-        "2 pontos: a mascote regenera 1 PM a cada 4 Rodadas.",
-        "2,5 pontos: a mascote regenera 1 PM a cada 2 Rodadas.",
-        "3 pontos: a mascote regenera 1 PMa cada rodada.",
-        "3,5 pontos: a mascote regenera 2 PMs a cada rodada.",
-        "4 pontos: a mascote regenera 3 PMs a cada rodada.",
-        "4,5 pontos: a mascote regenera 4 PMs a cada rodada.",
-        "5 pontos: a mascote regenera 5 PMs a cada rodada."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: a mascote regenera 1 PM a cada 10 Rodadas.",
-            "1 ponto: a mascote regenera 1 PM a cada 8 Rodadas.",
-            "1,5 pontos: a mascote regenera 1 PM a cada 6 Rodadas.",
-            "2 pontos: a mascote regenera 1 PM a cada 4 Rodadas.",
-            "2,5 pontos: a mascote regenera 1 PM a cada 2 Rodadas.",
-            "3 pontos: a mascote regenera 1 PMa cada rodada.",
-            "3,5 pontos: a mascote regenera 2 PMs a cada rodada.",
-            "4 pontos: a mascote regenera 3 PMs a cada rodada.",
-            "4,5 pontos: a mascote regenera 4 PMs a cada rodada.",
-            "5 pontos: a mascote regenera 5 PMs a cada rodada."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem Torrente Curativa com 5pvs aos pés do invocador. O totem restaura os pontos de magia de todos os aliados a uma distância de 40m pelo próximo 7min.",
-            "Regeneração",
-            "Regeneração"
           ]
         }
       ]
@@ -5730,42 +5986,6 @@
       ]
     },
     {
-      "id": "poderes-searing-totem",
-      "title": "Searing Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "searing-totem",
-      "sectionTitle": "Searing Totem",
-      "paragraphs": [
-        "Invoca um totem Calcinaté com 5pvs aos pés do invocador. O totem ataca um alvo próximo com dardos flamejantes a até uma distância de 30m pelo próximo 1min.",
-        "0,5 ponto: 1d3 de dano por ataque.",
-        "1 ponto: 1d6 de dano por ataque.",
-        "2 pontos: 2d6 de dano por ataque.",
-        "3 pontos: 3d6 de dano."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: 1d3 de dano por ataque.",
-            "1 ponto: 1d6 de dano por ataque.",
-            "2 pontos: 2d6 de dano por ataque.",
-            "3 pontos: 3d6 de dano."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem Calcinaté com 5pvs aos pés do invocador. O totem ataca um alvo próximo com dardos flamejantes a até uma distância de 30m pelo próximo 1min."
-          ]
-        }
-      ]
-    },
-    {
       "id": "poderes-sentir-o-sobrenatural",
       "title": "Sentir o Sobrenatural",
       "area": "poderes",
@@ -5855,106 +6075,6 @@
       ]
     },
     {
-      "id": "poderes-stoneskin-totem",
-      "title": "Stoneskin Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "stoneskin-totem",
-      "sectionTitle": "Stoneskin Totem",
-      "paragraphs": [
-        "Invoca um totem de Litopele com 5pvs aos pés do invocador. O totem protege todos os aliados que estejam a até 40 metros, aumentando o Ip pelos próximos 7min.",
-        "Aumento de IP: o item é encantado para aumentar o índice de proteção do usuário. Caso o usuário esteja usando uma armadura, o IP gerado por esse efeito será somado a ele.",
-        "0,5 ponto: IP +1",
-        "1 ponto: IP +2",
-        "1,5 ponto: IP +3",
-        "2 pontos: IP +4",
-        "2,5 pontos: IP +5",
-        "3 pontos: IP +6",
-        "3,5 pontos: IP +7",
-        "4 pontos: IP +8",
-        "4,5 pontos: IP +9",
-        "5 pontos: IP +10"
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: IP +1",
-            "1 ponto: IP +2",
-            "1,5 ponto: IP +3",
-            "2 pontos: IP +4",
-            "2,5 pontos: IP +5",
-            "3 pontos: IP +6",
-            "3,5 pontos: IP +7",
-            "4 pontos: IP +8",
-            "4,5 pontos: IP +9",
-            "5 pontos: IP +10"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem de Litopele com 5pvs aos pés do invocador. O totem protege todos os aliados que estejam a até 40 metros, aumentando o Ip pelos próximos 7min.",
-            "Aumento de IP: o item é encantado para aumentar o índice de proteção do usuário. Caso o usuário esteja usando uma armadura, o IP gerado por esse efeito será somado a ele."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "poderes-strength-of-earth-totem",
-      "title": "Strength of Earth Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "strength-of-earth-totem",
-      "sectionTitle": "Strength of Earth Totem",
-      "paragraphs": [
-        "Invoca um totem da Força da Terra com 5pvs aos pés do invocador. O totem aumenta a sua força e a sua agilidade de todos os aliados a uma distância de 40m pelo próximo 7min.",
-        "Aumento de Atributo: esse efeito aumenta a AGI e a FR enquanto estiver próximo do totem.",
-        "0,5 ponto: +3 nos dois atributos.",
-        "2 pontos: +6 nos dois atributos.",
-        "3 pontos: +9 nos dois atributos.",
-        "4 pontos: +12 nos dois atributos.",
-        "5 pontos: +15 nos dois atributos.",
-        "6 pontos: +18 nos dois atributos.",
-        "7 pontos: +21 nos dois atributos.",
-        "8 pontos: +24 nos dois atributos.",
-        "9 pontos: +27 nos dois atributos.",
-        "10 pontos: +30 nos dois atributos."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: +3 nos dois atributos.",
-            "2 pontos: +6 nos dois atributos.",
-            "3 pontos: +9 nos dois atributos.",
-            "4 pontos: +12 nos dois atributos.",
-            "5 pontos: +15 nos dois atributos.",
-            "6 pontos: +18 nos dois atributos.",
-            "7 pontos: +21 nos dois atributos.",
-            "8 pontos: +24 nos dois atributos.",
-            "9 pontos: +27 nos dois atributos.",
-            "10 pontos: +30 nos dois atributos."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem da Força da Terra com 5pvs aos pés do invocador. O totem aumenta a sua força e a sua agilidade de todos os aliados a uma distância de 40m pelo próximo 7min.",
-            "Aumento de Atributo: esse efeito aumenta a AGI e a FR enquanto estiver próximo do totem."
-          ]
-        }
-      ]
-    },
-    {
       "id": "poderes-tamanho",
       "title": "Tamanho",
       "area": "poderes",
@@ -6012,94 +6132,6 @@
       ]
     },
     {
-      "id": "poderes-totens",
-      "title": "Totens",
-      "area": "poderes",
-      "kind": "power_rule",
-      "sectionId": "totens",
-      "sectionTitle": "Totens",
-      "paragraphs": [
-        "Totens:",
-        "05 pts de Totem",
-        "Totens Elementais. O elemental deve esperar ½ hora antes de ser invocado novamente.",
-        "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
-        "2 pontos: 121 pts de atributo, pts de perícia 240 + INT x5, 2 pts de aprimoramento, focus 7 e 5 pts de magia.",
-        "3 pontos: 131 pts de atributo, pts de perícia 270 + INT x5, 3 pts de aprimoramento, focus 9 e 7 pts de magia.",
-        "4 pontos: 141 pts de atributo, pts de perícia 300 + INT x5, 4 pts de aprimoramento, focus 11 e 9 pts de magia.",
-        "5 pontos: 151 pts de atributo, pts de perícia 330 + INT x5, 5 pts de aprimoramento, focus 13 e 11 pts de magia.",
-        "Tempo de permanência:",
-        "0,5ponto: 1 turno",
-        "1 pontos: 3 turnos",
-        "1,5 pontos: 5 turnos",
-        "2 pontos: 7 turnos",
-        "2,5 pontos: 9 turnos",
-        "3 pontos: ½ hora",
-        "Regras de custo e permanência para totens do Shaman."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "Totens:",
-            "05 pts de Totem",
-            "Totens Elementais. O elemental deve esperar ½ hora antes de ser invocado novamente.",
-            "1 ponto: 111 pts de atributo, pts de perícia 210 + INT x5, 1 pts de aprimoramento, focus 5 e 3 pts de magia.",
-            "2 pontos: 121 pts de atributo, pts de perícia 240 + INT x5, 2 pts de aprimoramento, focus 7 e 5 pts de magia.",
-            "3 pontos: 131 pts de atributo, pts de perícia 270 + INT x5, 3 pts de aprimoramento, focus 9 e 7 pts de magia.",
-            "4 pontos: 141 pts de atributo, pts de perícia 300 + INT x5, 4 pts de aprimoramento, focus 11 e 9 pts de magia.",
-            "5 pontos: 151 pts de atributo, pts de perícia 330 + INT x5, 5 pts de aprimoramento, focus 13 e 11 pts de magia.",
-            "Tempo de permanência:",
-            "0,5ponto: 1 turno",
-            "1 pontos: 3 turnos",
-            "1,5 pontos: 5 turnos",
-            "2 pontos: 7 turnos",
-            "2,5 pontos: 9 turnos",
-            "3 pontos: ½ hora"
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Regras de custo e permanência para totens do Shaman."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "poderes-tremor-totem",
-      "title": "Tremor Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "tremor-totem",
-      "sectionTitle": "Tremor Totem",
-      "paragraphs": [
-        "Invoca um totem Sísmico com 5pvs aos pés do invocador pelos próximos 8seg. O totem faz o chão tremer removendo qualquer efeito de sono, medo e encantamento que gere efeito parecido, a todos os aliados em um raio de 30m e demora 1min para se recarregar. Pode ser lançado mesmo se o invocador também estiver sob esses efeitos.",
-        "2,5 pontos."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "2,5 pontos."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem Sísmico com 5pvs aos pés do invocador pelos próximos 8seg. O totem faz o chão tremer removendo qualquer efeito de sono, medo e encantamento que gere efeito parecido, a todos os aliados em um raio de 30m e demora 1min para se recarregar. Pode ser lançado mesmo se o invocador também estiver sob esses efeitos."
-          ]
-        }
-      ]
-    },
-    {
       "id": "poderes-visao-noturna",
       "title": "Visão Noturna",
       "area": "poderes",
@@ -6125,38 +6157,6 @@
           "area": "poderes",
           "paragraphs": [
             "O personagem pode enxergar perfeitamente na escuridão sem que haja qualquer fonte de iluminação."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "poderes-windfury-totem",
-      "title": "Windfury Totem",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "windfury-totem",
-      "sectionTitle": "Windfury Totem",
-      "paragraphs": [
-        "Invoca um totem da Fúria dos Ventos com 5pvs aos pés do invocador. O totem aumenta a Iniciativa de todos os aliados a uma distância de 40m pelo próximo 5min.",
-        "Aumento de Velocidade",
-        "0,5 ponto: confere bônus de +3 nas jogadas de iniciativa. Pode ser comprado várias vezes."
-      ],
-      "sections": [
-        {
-          "id": "custo",
-          "title": "Custo",
-          "area": "poderes",
-          "paragraphs": [
-            "0,5 ponto: confere bônus de +3 nas jogadas de iniciativa. Pode ser comprado várias vezes."
-          ]
-        },
-        {
-          "id": "descricao",
-          "title": "Descrição",
-          "area": "poderes",
-          "paragraphs": [
-            "Invoca um totem da Fúria dos Ventos com 5pvs aos pés do invocador. O totem aumenta a Iniciativa de todos os aliados a uma distância de 40m pelo próximo 5min.",
-            "Aumento de Velocidade"
           ]
         }
       ]
