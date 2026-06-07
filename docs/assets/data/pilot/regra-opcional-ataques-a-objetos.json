@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "source": "regra-opcional-ataques-a-objetos",
+  "title": "Regra Opcional: Ataques a Objetos",
+  "sourceFile": "Regra Opcional Ataques a Objetos.docx",
+  "sourcePath": "Livros\\word\\feito\\Regra Opcional Ataques a Objetos.docx",
+  "status": "pilot_review",
+  "summary": "Regra opcional para atacar, quebrar e danificar objetos, incluindo IP/PVs por material e dano em armas, escudos e armaduras.",
+  "areas": [
+    "regras_base"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "regra-base-ataques-a-objetos",
+      "title": "Regra base - Ataques a Objetos",
+      "area": "regras_base",
+      "kind": "ruleset",
+      "sectionId": "regra-base",
+      "sectionTitle": "Regra Base",
+      "paragraphs": [
+        "Muitas vezes, os personagens precisarão atacar ou quebrar objetos, como por exemplo, quando quiserem arrebentar uma corda ou derrubar uma porta.",
+        "Objetos geralmente são fáceis de golpear, pois não vão se defender ou se mover do lugar. Entretanto, alguns objetos podem se mover (por qualquer motivo que seja). Neste caso o Mestre deve considerar a Velocidade em que o objeto se move como um equivalente à Agilidade que está sendo empregada, e então realizar um teste de Ataque vs. AGI do objeto (consulte a tabela de Valores de Atributos para obter esses valores). Por exemplo, um objeto que se move a 3,5 m/s (ou cerca de 12,6 km/h) teria uma AGI equivalente a 10 (Valor de teste 40%). Entretanto, na maioria das vezes o objeto não se moverá, então será necessário apenas um teste Fácil de ataque para ser bem sucedido.",
+        "A quantidade de dano que um objeto pode suportar dependerá do material que é feito e de seu tamanho. Todos os objetos têm um IP, representando sua \"rijeza\" inata, e Pontos de Vida, representando a quantidade de dano que ele pode sofrer antes de ser cortado, quebrado ou esmagado.",
+        "É necessário ter bom senso em alguns casos. Por exemplo, um machado cortando uma corda precisa de um dano bem menor para cortá-la do que um martelo precisaria para esmagá-la até que se separasse. Por outro lado, o mesmo martelo seria bem mais eficaz ao tentar quebrar um muro do que o machado ou uma espada. Uma lança, por mais forte que fosse lançada contra uma porta, apenas a perfuraria, mas nunca iria derrubá-la. A tabela abaixo demonstra o IP e os Pontos de Vida médios de alguns materiais comuns, e o tipo de arma que deve ser utilizado para afetá-lo. Via de regra, caso seja utilizado um outro tipo de arma, o IP e os PVs do objeto dobram.",
+        "Corda Fina (0,9 cm) | IP 1 | PVs 2 | Qualquer",
+        "Corda Grossa (1,8 cm) | IP 3 | PVs 6 | Com fio",
+        "Amarra | IP 4 | PVs 10 | Com fio",
+        "Cabo de aço (0,6 cm) | IP 2 | PVs 8 | Não perfurante",
+        "Cabo de Aço (1,2 cm) | IP 4 | PVs 16 | Com fio",
+        "Cabo de Aço (2,5 cm) | IP 6 | PVs 30 | Machado",
+        "Haste de Madeira(2,5 cm) | IP 1 | PVs 3 | Qualquer",
+        "Haste de Madeira (5 cm) | IP 3 | PVs 8 | Não perfurante",
+        "Haste de Madeira(7,5 cm) | IP 4 | PVs 12 | Com fio",
+        "Haste de Madeira(10 cm) | IP 6 | PVs 20 | Machado",
+        "Haste de Madeira(15 cm) | IP 6 | PVs 30 | Machado",
+        "Haste de Madeira(20 cm) | IP 6 | PVs 50 | Machado",
+        "Barra de Ferro (1,2 cm) | IP 1 | PVs 4 | Não perfurante",
+        "Barra de Ferro (2,5 cm) | IP 3 | PVs 20 | Machado/Martelo",
+        "Barra de Ferro (5 cm) | IP 3 | PVs 60 | Machado",
+        "Barra de aço (1,2 cm) | IP 2 | PVs 6 | Machado/Martelo",
+        "Barra de aço (2,5 cm) | IP 6 | PVs 25 | Machado",
+        "Barra de aço (5 cm) | IP 8 | PVs 80 | Machado",
+        "Aglomerado de Madeira (1,2 cm) | IP 1 | PVs 5 | Não perfurante",
+        "Compensado (1,2 cm) | IP 3 | PVs 15 | Não perfurante",
+        "Prancha de Madeira(2,5 cm) | IP 2 | PVs 10 | Qualquer",
+        "Prancha de Madeira(5 cm) | IP 4 | PVs 20 | Não perfurante",
+        "Prancha de Madeira(7,5 cm) | IP 6 | PVs 30 | Machado/Martelo/Clava",
+        "Placa de Ferro (0,3 cm) | IP 3 | PVs 6 | Não perfurante",
+        "Placa de Ferro (0,6 cm) | IP 4 | PVs 12 | Machado/Martelo/Clava",
+        "Placa de Ferro (1,2 cm) | IP 6 | PVs 25 | Machado/Martelo/Clava",
+        "Muro de Ferro (2,5 cm) | IP 8 | PVs 50 | Machado/Martelo/Clava",
+        "Placa de Aço (0,3 cm) | IP 4 | PVs 10 | Não perfurante",
+        "Placa de Aço (0,6 cm) | IP 6 | PVs 20 | Machado/Martelo/Clava",
+        "Placa de Aço (1,2 cm) | IP 7 | PVs 40 | Machado/Martelo",
+        "Placa de Aço (2,5 cm) | IP 8 | PVs 80 | Machado",
+        "Muro de Tijolo (8 cm) | IP 6 | PVs 40 | Machado/Martelo/Clava",
+        "Muro de Concreto(15 cm) | IP 4 | PVs 60 | Machado/Martelo",
+        "Muro de Pedra (15 cm) | IP 8 | PVs 90 | Machado/Martelo",
+        "Muro de Pedra (30 cm) | IP 8 | PVs 180 | Machado/Martelo",
+        "Com essa regra é possível aplicar uma regra opcional também aos combates (e que seria o terror dos combatentes): o dano aplicado às armas e armaduras. Ora, o que é uma espada senão uma placa de aço com cerca de 0,3 cm? Um bordão não passa de uma haste de madeira de cerca de 2,5 cm. Portanto, sempre que esses objetos acertarem a armadura de um adversário, ou estes apararem seus golpes com suas armas, as armas do atacante deveriam receber dano. Um escudo, por mais forte que seja não dura para sempre. E espadas quebradas são comuns.",
+        "Como regra opcional, todo o dano que for defendido por um escudo ou armadura é aplicado nos Pontos de Vida da própria armadura (nesse caso a armadura terá PVs específicos para cada uma de suas partes) ou do próprio escudo (nada mais que uma haste de madeira ou uma placa de ferro). E para a arma retorna um dano igual ao IP do escudo ou armadura. Nestes casos, é claro, é subtraído do dano o IP tanto do objeto de defesa quanto do objeto de ataque. Lembre-se da regra do tipo de arma utilizado: se for diferente do listado na tabela, o IP e PVs serão dobrados.",
+        "No caso de o defensor utilizar sua própria arma para se defender, aparando o golpe, as regras utilizadas são as mesmas. Entretanto, essa regra pode deixar os combates muito lentos e cheio de contas. Use por sua conta e risco."
+      ],
+      "sections": [
+        {
+          "id": "funcionamento",
+          "title": "Funcionamento",
+          "area": "regras_base",
+          "paragraphs": [
+            "Muitas vezes, os personagens precisarão atacar ou quebrar objetos, como por exemplo, quando quiserem arrebentar uma corda ou derrubar uma porta.",
+            "Objetos geralmente são fáceis de golpear, pois não vão se defender ou se mover do lugar. Entretanto, alguns objetos podem se mover (por qualquer motivo que seja). Neste caso o Mestre deve considerar a Velocidade em que o objeto se move como um equivalente à Agilidade que está sendo empregada, e então realizar um teste de Ataque vs. AGI do objeto (consulte a tabela de Valores de Atributos para obter esses valores). Por exemplo, um objeto que se move a 3,5 m/s (ou cerca de 12,6 km/h) teria uma AGI equivalente a 10 (Valor de teste 40%). Entretanto, na maioria das vezes o objeto não se moverá, então será necessário apenas um teste Fácil de ataque para ser bem sucedido.",
+            "A quantidade de dano que um objeto pode suportar dependerá do material que é feito e de seu tamanho. Todos os objetos têm um IP, representando sua \"rijeza\" inata, e Pontos de Vida, representando a quantidade de dano que ele pode sofrer antes de ser cortado, quebrado ou esmagado.",
+            "É necessário ter bom senso em alguns casos. Por exemplo, um machado cortando uma corda precisa de um dano bem menor para cortá-la do que um martelo precisaria para esmagá-la até que se separasse. Por outro lado, o mesmo martelo seria bem mais eficaz ao tentar quebrar um muro do que o machado ou uma espada. Uma lança, por mais forte que fosse lançada contra uma porta, apenas a perfuraria, mas nunca iria derrubá-la. A tabela abaixo demonstra o IP e os Pontos de Vida médios de alguns materiais comuns, e o tipo de arma que deve ser utilizado para afetá-lo. Via de regra, caso seja utilizado um outro tipo de arma, o IP e os PVs do objeto dobram."
+          ]
+        },
+        {
+          "id": "materiais-ip-pvs",
+          "title": "Materiais, IP e PVs",
+          "area": "regras_base",
+          "paragraphs": [
+            "Corda Fina (0,9 cm) | IP 1 | PVs 2 | Qualquer",
+            "Corda Grossa (1,8 cm) | IP 3 | PVs 6 | Com fio",
+            "Amarra | IP 4 | PVs 10 | Com fio",
+            "Cabo de aço (0,6 cm) | IP 2 | PVs 8 | Não perfurante",
+            "Cabo de Aço (1,2 cm) | IP 4 | PVs 16 | Com fio",
+            "Cabo de Aço (2,5 cm) | IP 6 | PVs 30 | Machado",
+            "Haste de Madeira(2,5 cm) | IP 1 | PVs 3 | Qualquer",
+            "Haste de Madeira (5 cm) | IP 3 | PVs 8 | Não perfurante",
+            "Haste de Madeira(7,5 cm) | IP 4 | PVs 12 | Com fio",
+            "Haste de Madeira(10 cm) | IP 6 | PVs 20 | Machado",
+            "Haste de Madeira(15 cm) | IP 6 | PVs 30 | Machado",
+            "Haste de Madeira(20 cm) | IP 6 | PVs 50 | Machado",
+            "Barra de Ferro (1,2 cm) | IP 1 | PVs 4 | Não perfurante",
+            "Barra de Ferro (2,5 cm) | IP 3 | PVs 20 | Machado/Martelo",
+            "Barra de Ferro (5 cm) | IP 3 | PVs 60 | Machado",
+            "Barra de aço (1,2 cm) | IP 2 | PVs 6 | Machado/Martelo",
+            "Barra de aço (2,5 cm) | IP 6 | PVs 25 | Machado",
+            "Barra de aço (5 cm) | IP 8 | PVs 80 | Machado",
+            "Aglomerado de Madeira (1,2 cm) | IP 1 | PVs 5 | Não perfurante",
+            "Compensado (1,2 cm) | IP 3 | PVs 15 | Não perfurante",
+            "Prancha de Madeira(2,5 cm) | IP 2 | PVs 10 | Qualquer",
+            "Prancha de Madeira(5 cm) | IP 4 | PVs 20 | Não perfurante",
+            "Prancha de Madeira(7,5 cm) | IP 6 | PVs 30 | Machado/Martelo/Clava",
+            "Placa de Ferro (0,3 cm) | IP 3 | PVs 6 | Não perfurante",
+            "Placa de Ferro (0,6 cm) | IP 4 | PVs 12 | Machado/Martelo/Clava",
+            "Placa de Ferro (1,2 cm) | IP 6 | PVs 25 | Machado/Martelo/Clava",
+            "Muro de Ferro (2,5 cm) | IP 8 | PVs 50 | Machado/Martelo/Clava",
+            "Placa de Aço (0,3 cm) | IP 4 | PVs 10 | Não perfurante",
+            "Placa de Aço (0,6 cm) | IP 6 | PVs 20 | Machado/Martelo/Clava",
+            "Placa de Aço (1,2 cm) | IP 7 | PVs 40 | Machado/Martelo",
+            "Placa de Aço (2,5 cm) | IP 8 | PVs 80 | Machado",
+            "Muro de Tijolo (8 cm) | IP 6 | PVs 40 | Machado/Martelo/Clava",
+            "Muro de Concreto(15 cm) | IP 4 | PVs 60 | Machado/Martelo",
+            "Muro de Pedra (15 cm) | IP 8 | PVs 90 | Machado/Martelo",
+            "Muro de Pedra (30 cm) | IP 8 | PVs 180 | Machado/Martelo"
+          ]
+        },
+        {
+          "id": "dano-em-armas-e-armaduras",
+          "title": "Dano em Armas e Armaduras",
+          "area": "regras_base",
+          "paragraphs": [
+            "Com essa regra é possível aplicar uma regra opcional também aos combates (e que seria o terror dos combatentes): o dano aplicado às armas e armaduras. Ora, o que é uma espada senão uma placa de aço com cerca de 0,3 cm? Um bordão não passa de uma haste de madeira de cerca de 2,5 cm. Portanto, sempre que esses objetos acertarem a armadura de um adversário, ou estes apararem seus golpes com suas armas, as armas do atacante deveriam receber dano. Um escudo, por mais forte que seja não dura para sempre. E espadas quebradas são comuns.",
+            "Como regra opcional, todo o dano que for defendido por um escudo ou armadura é aplicado nos Pontos de Vida da própria armadura (nesse caso a armadura terá PVs específicos para cada uma de suas partes) ou do próprio escudo (nada mais que uma haste de madeira ou uma placa de ferro). E para a arma retorna um dano igual ao IP do escudo ou armadura. Nestes casos, é claro, é subtraído do dano o IP tanto do objeto de defesa quanto do objeto de ataque. Lembre-se da regra do tipo de arma utilizado: se for diferente do listado na tabela, o IP e PVs serão dobrados.",
+            "No caso de o defensor utilizar sua própria arma para se defender, aparando o golpe, as regras utilizadas são as mesmas. Entretanto, essa regra pode deixar os combates muito lentos e cheio de contas. Use por sua conta e risco."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "regras_base": 1
+  },
+  "reviewNotes": [
+    "Documento sem OCR pesado; limpeza concentrou-se em palavras coladas pela extração do DOCX.",
+    "Tabela preservada como linhas estruturadas no bloco de regra, sem criar itens individuais."
+  ],
+  "generatedAt": "2026-06-07T04:29:58Z"
+}

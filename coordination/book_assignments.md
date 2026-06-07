@@ -137,7 +137,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | 115 | `Ficha_Mago_Trevas_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 116 | `Phage.docx` | 0.03 MB | Codex | assigned |
 | 117 | `cabala.docx` | 0.03 MB | Codex | assigned |
-| 118 | `Regra Opcional Ataques a Objetos.docx` | 0.01 MB | Codex | assigned |
+| 118 | `Regra Opcional Ataques a Objetos.docx` | 0.01 MB | Codex | pilot_review |
 | 119 | `Compendio de regras DAEMON Trevas.docx` | 0.00 MB | Codex | assigned |
 | 120 | `Tabela e Regras para magos.docx` | 0.00 MB | Codex | assigned |
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T01:19:15",
+  "generatedAt": "2026-06-07T01:29:58",
   "sources": [
     {
       "source": "4killers",
@@ -325,6 +325,15 @@
       "status": "pilot_review",
       "areas": [
         "cenarios_lore",
+        "regras_base"
+      ]
+    },
+    {
+      "source": "regra-opcional-ataques-a-objetos",
+      "title": "Regra Opcional: Ataques a Objetos",
+      "file": "regra-opcional-ataques-a-objetos.json",
+      "status": "pilot_review",
+      "areas": [
         "regras_base"
       ]
     },
