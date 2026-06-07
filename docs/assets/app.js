@@ -1035,7 +1035,9 @@ async function load() {
   state.items = state.books.flatMap(buildItems).map(prepareItem);
   refreshAreaCounts();
   invalidateFilterGroups();
-  state.globalFilters = filtersWithDefaults(state.globalFilters, globalFilterGroupsData());
+  state.globalFilters = state.globalFilters.books.size
+    ? filtersWithDefaults(state.globalFilters, globalFilterGroupsData())
+    : defaultFilters(globalFilterGroupsData());
   state.filters = filtersWithDefaults(state.filters);
   if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
   render();
