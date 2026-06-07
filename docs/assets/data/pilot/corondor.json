@@ -17,7 +17,7 @@
     "rituais"
   ],
   "groups": [],
-  "generatedAt": "2026-06-07T00:06:22",
+  "generatedAt": "2026-06-07T00:09:45",
   "sections": [
     {
       "id": "aprimoramentos-aceleracao",
@@ -47,14 +47,6 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": []
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -83,14 +75,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Você tem facilidade para lidar com armas, aprender novas técnicas e improvisar novos golpes. Esta Vantagem permite mudar o tipo de arma com a qual você foi treinado sem sofrer nenhuma penalidade, como se fosse sua própria arma inicial, porém não podem somar os valores de atributo para armas que não são as suas armas principais."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -122,14 +106,6 @@
           "paragraphs": [
             "Pra cada ponto gasto nessa Habilidade, o personagem pode se adaptar a um ambiente ao qual sua raça não esteja acostumada. Caso receba dano de alguma forma por algo ao qual está adaptado, ele receberá IP 2. Dentre alguns tipos de ambientes estão: ácidos/básicos, regiões interdimensionais, pressões extremas, frio intenso (gelo), calor intenso (fogo), eletricidade, gases tóxicos, trevas, luz, radiação e subaquático."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -158,14 +134,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O arcano pode conjurar magias que surtirão efeito num curto período de tempo depois. O jogador pode escolher entre 1 ou 5 turnos após a conjuração da magia para que ela tenha efeito, não é possível alterar esse turno após a tomada de decisão a menos que o arcano use alguma magia de dissipação. A magia também poderá ser detectada a partir do momento que ela foi conjurada e o arcano deve decidir todas as variantes no momento da conjuração."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -196,14 +164,6 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": []
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -233,14 +193,6 @@
           "paragraphs": [
             "O personagem possui um lugar no qual ele se sente em casa, sua \"arena\". Em termos de regras, ele recebe um bônus de 20% em testes de perícias envolvendo o lugar, além de 20% em perícias de defesa, perícias de ataque e testes de resistência enquanto se encontra no ambiente especial. A cada novo nível há um acréscimo de +5% em bônus de Ambiente."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -269,14 +221,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Você pode ampliar a área de efeito de uma magia. Qualquer magia de área terá seu valor dobrado, porém essa magia custará 3 pontos de magia a mais."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -309,14 +253,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O personagem possui um tipo de arma natural de sua raça, tais como garras, dentes afiados, tentáculos, caudas e até braços adicionais. Pode ser comprado mais de uma vez, para cada tipo diferente de arma natural."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -392,14 +328,6 @@
             "O personagem possui um ataque especial que causa um dano maior que o normal. Para cada 1 pontos de aprimoramento gastos em Ataque Especial, o personagem recebe a capacidade de causar 1d6 de dano. O seu ataque pode ainda ser personalizado, possuindo algumas vantagens ou desvantagens únicas, sendo que para isso, recebem um custo (ou bônus) adicional em pontos:",
             "Disparos Limitados: O ataque especial só pode ser usado poucas vezes por dia. 5 vezes, por -1 ponto. 3 vezes, por -2 pontos. 1 vez, por -3 pontos;"
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -430,14 +358,6 @@
           "paragraphs": [
             "O personagem recebe 1 ataque adicional por turno para cada 2 pontos gastos neste aprimoramento. Assim, um atirador com Ataque Extra 2, por exemplo, poderá em um único turno efetuar dois ataques completos além do seu ataque padrão."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -466,14 +386,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "A criatura projeta 1 metro a criatura defensora por ponto de dano que acertar o alvo independente do seu IP, o alvo tem direito a um teste de CON para reduzir a distância a metade."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -509,14 +421,6 @@
           "paragraphs": [
             "Alguém colocou um prêmio sobre a cabeça de seu personagem, e ele é constantemente atormentado por caçadores de recompensas ou oportunistas. Nenhum lugar é realmente seguro, e a ganância das pessoas o torna alguém que não pode confiar plenamente em ninguém."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -545,14 +449,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O Personagem uma vez por rodada pode ao sofrer um ataque bem sucedido ou defendido de um oponente em um combate corpo-a-corpo, realizar um contra ataque automático. O Personagem realiza um teste difícil de sua perícia de defesa, e em caso de sucesso, pode realizar um ataque simples extra contra o oponente. Será sem direito a esquivas ou defesas, mas podem fazer teste de contitução normal ou agilidade dificil para escapar. O Personagem NÃO perde seu ataque e defesas normais de seu turno. Será o ÚLTIMO ataque da rodada, iniciativa igual à menor em cena."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -583,14 +479,6 @@
           "paragraphs": [
             "Igual ao de cima, mas o teste passa a ser normal e o personagem pode usar armas e técnicas (Manobras de Combate) no contra ataque."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -619,14 +507,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O personagem possui um corpo maleável, podendo dobrar-se em posições que seriam consideradas estranhas pela maioria das pessoas. Recebe um IP 6 contra ataques de concussão, mas não pode possuir Força maior que 10."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -657,14 +537,6 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": []
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -693,14 +565,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O Personagem é capaz de mover-se tão rápido que escapa aos olhos destreinados, permitindo que ele reapareça secretamente em qualquer local (até AGI metros de distância) sem ser notado. Um adversário pode tentar encontrá-lo mediante um teste Difícil de PER. Caso oponente não seja bem sucedido, seu personagem poderá realizar um Ataque Surpresa NO MESMO TURNO desde que possa atacar no mesmo."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -731,14 +595,6 @@
           "paragraphs": [
             "O mesmo que o Deslocamento em Velocidade mas a distância é dobrada."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -765,14 +621,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Para cada ponto gasto nessa Habilidade, o personagem pode se mover em sua velocidade normal em um ambiente ao qual sua raça não esteja acostumada ou de uma forma inesperada. Tipos de deslocamentos especiais são: Aquático, Andar nas paredes, Balançar em Cordas, Caminhar sobre as águas, Deslizar sobre o gelo, Indetectável, Quicar nas Paredes, Passos na Areia, Passos no Gelo, Subterrâneo."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -803,14 +651,6 @@
           "paragraphs": [
             "Você há muito tempo perdeu sua liberdade, sendo mantido em regime de escravidão por alguém ou por alguma grande corporação. Deve cumprir tarefas sob a ordem direta de seus superiores e jamais questionar suas decisões. Sua vida pertence a eles, e nada do que você fizer passará despercebido por aqueles que lhe dominam."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -839,14 +679,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O personagem pode esticar ou contorcer seus membros e seu corpo num nível sobre-humano. Ele pode esticar-se até 10 metros de distância e recebe um bônus de +5% nos testes de ataque e defesa para agarrar. Este aprimoramento pode ser comprado mais de uma vez para aumentar a distância e o bônus recebido."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -877,14 +709,6 @@
           "paragraphs": [
             "Os animais não vêem ameaça alguma no personagem, chegando até a verem-no como um semelhante. Sua presença não afugenta animais selvagens e sua aproximação não os fará atacá-lo (a menos que estejam sendo controlados por outro)."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -913,14 +737,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Com um teste de Força de Vontade o personagem pode recuperar todos os seus pontos de vida. Essa habilidade só pode ser usada um número de vezes por dia igual à sua Força de Vontade (WILL) dividida por cinco e arredondada para baixo."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -951,14 +767,6 @@
           "paragraphs": [
             "O personagem possui uma aptidão natural em certos conhecimentos. Ele pode escolher até três perícias comuns, iniciando o jogo com 40% em cada uma delas e aumentando este bônus em mais 5% por nível. Contudo, o personagem não poderá gastar mais pontos de perícia inicialmente neste mesmo subgrupo. Isto poderá ser feito apenas futuramente com os pontos recebidos pela passagem de nível."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -979,7 +787,11 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1 ponto"
+            "1 ponto: 3 pontos de Focus e (WILL/5) Pontos de Magia; Ou seja, a Força de Vontade dividida por cinco e arredondada para baixo.",
+            "2 pontos: 5 pontos de Focus e (WILL/5 x2) Pontos de Magia;",
+            "3 pontos: 7 pontos de Focus e (WILL/5 x3) Pontos de Magia;",
+            "4 pontos: 9 pontos de Focus e (WILL/5 x4) Pontos de Magia;",
+            "5 pontos: 11 pontos de Focus e (WILL) Pontos de Magia."
           ]
         },
         {
@@ -987,16 +799,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "3 pontos de Focus e (WILL/5) Pontos de Magia; Ou seja, a Força de Vontade dividida por cinco e arredondada para baixo. 2 pontos: 5 pontos de Focus e (WILL/5 x2) Pontos de Magia; 3 pontos: 7 pontos de Focus e (WILL/5 x3) Pontos de Magia; 4 pontos: 9 pontos de Focus e (WILL/5 x4) Pontos de Magia; 5 pontos: 11 pontos de Focus e (WILL) Pontos de Magia.",
             "O personagem fez algum pacto com uma entidade que o permite conjurar as energias místicas sem precisar de rituais, de forma espontânea. Em termos de regras o personagem recebe alguns pontos de focus para distribuir nos caminhos e pontos de magia. Por mais 3 pontos o personagem pode ter conseguido os poderes sem precisar de um pacto, nascendo com esse dom. Mesmo assim, para cada ponto gasto com Feitiçaria, o personagem ganha uma Deformação."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1027,14 +830,6 @@
           "paragraphs": [
             "O personagem é especialista em um dos caminhos da magia. Todas as magias que você faz com este caminho são consideradas como se possuíssem Focus +1. Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1063,14 +858,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O personagem possui uma forma alternativa. Em termos de regras, todas as suas habilidades e atributos (com exceção de Inteligência, Força de Vontade e Carisma) podem ser remontados em uma nova ficha. Perícias e Aprimoramentos Negativos continuam idênticos."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1104,14 +891,6 @@
           "paragraphs": [
             "Seu personagem possui saúde frágil e não é exatamente um exemplo de vigor físico. Franzino e de aspecto delicado, ele nunca conseguirá chegar a plenitude de uma força e saúdes perfeitos."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -1141,14 +920,6 @@
           "paragraphs": [
             "O personagem é um gênio nato. Todas as perícias comuns possuem o valor da Inteligência somada em seus testes."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1175,14 +946,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Para cada ponto gasto nesse aprimoramento, o personagem recebe mais 100 pontos de perícia para gastar de acordo com sua escolha."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1212,14 +975,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O personagem pode conjurar magias sem a necessidade dos seus componentes. O jogador deverá escolher qual dos três componentes deverá ser ignorado entre: Verbal, Gestual e Material. Após a escolha o personagem ignora a necessidade desses componentes sempre que for conjurar suas magias ou rituais. É possível escolher outro componente pagando mais 1 ponto de aprimoramento, porém, uma magia sempre tem que ter no mínimo um componente."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1256,14 +1011,6 @@
             "Um bebe gnomo crescerá em 1d6 dias até alcançar a idade do corpo antigo e manterá todas as memórias e perícias que o anterior possuía. O outro será um novo ser que crescerá de forma natural.",
             "Para cada vida perdida, o personagem perde um ponto em Constituição e Força (afetando inclusive os PV's). Esta imortalidade funciona apenas sete vezes no decorrer da vida do personagem (se ele tiver Constituição e Força suficiente), e só será efetiva se o corpo não for completamente destruído antes da decomposição total (incinerado, por exemplo)"
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1284,7 +1031,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "3 pontos"
+            "3 pontos: Seu personagem é imune a venenos ou doenças;",
+            "5 pontos: Seu personagem é imune a venenos ou doenças mágicas;",
+            "15 pontos: Seu personagem é imune a um elemento ou tipo de dano (Calor/Fogo, Frio/Gelo, Luz/Laser; Eletricidade; Vento/Som; Água/Ácido; Trevas; Contusão; Corte; Explosão; Perfuração; etc.)."
           ]
         },
         {
@@ -1292,16 +1041,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Seu personagem é imune a venenos ou doenças; 5 pontos: Seu personagem é imune a venenos ou doenças mágicas; 15 pontos: Seu personagem é imune a um elemento ou tipo de dano (Calor/Fogo, Frio/Gelo, Luz/Laser; Eletricidade; Vento/Som; Água/Ácido; Trevas; Contusão; Corte; Explosão; Perfuração; etc.).",
             "O personagem possui uma imunidade ao dano e aos efeitos adversos de uma determinada arma, elemento, droga ou evento. Pode ser comprado mais de uma vez, e seus efeitos são cumulativos."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1332,14 +1072,6 @@
           "paragraphs": [
             "Quem possuir esse aprimoramento não precisa rolar a sua iniciativa no inicio do combate elas sempre agem primeiro caso ela enfrente outra criatura com a mesma habilidade a iniciativa e rolada entre elas."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1369,14 +1101,6 @@
           "paragraphs": [
             "O personagem se torna invisível a um sentido ou técnica (visão, audição, olfato, astral, etérea, infravermelha, mental, radar, radiação, sonar, espiritual, ultravioleta, vibrações, etc.). Pode ser comprado várias vezes para tornar-se invisível à um novo sentido ou técnica."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1405,14 +1129,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "As criaturas que o arcano invocar são mais poderosas. O jogador escolhe um atributo da criaturas que será aumentado em 1D, caso o jogador escolha ele pode pagar 2 pontos de magia a mais para aumentar outro atributo em +1D, não é possível aumentar o atributo da criatura em +2D."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1448,14 +1164,6 @@
           "paragraphs": [
             "Seu personagem não possui a menor habilidade para qualquer coisa, sendo um completo inútil para a maioria das atividades que requeiram um pouco mais de cérebro."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -1484,14 +1192,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O personagem possui um item especial, um objeto que possui e lhe confere determinados poderes. Em termos de regras, para cada 2 pontos de aprimoramento do personagem gastos com o ítem, ele recebe 5 pontos para adquirir aprimoramentos para o item. Note que os pontos não podem ser remanejados novamente para o personagem, e que o item pode ser perdido, destruido, furtado..."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1523,14 +1223,6 @@
           "paragraphs": [
             "O personagem possui uma ligação natural com outra pessoa (personagem ou NPC, e ambos precisam ter esse aprimoramento). Cada um poderá saber os pensamentos superficiais um do outro e se comunicarem apenas mantendo contato visual. Se estiverem afastados, um sempre será capaz de localizar o outro e sentir suas emoções básicas.",
             "Se um morrer, o outro precisa passar em um teste de Constituição (CON) e um teste de Força de Vontade (WILL). Se não passar no teste de Constituição, desmaiará por 6 horas. Se não passar no teste de Força de Vontade, todos os seus testes terão sua dificuldade aumentada por uma semana."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1565,14 +1257,6 @@
             "Restrição: O personagem deve possuir o Aprimoramento Foco em Caminho.",
             "Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1602,14 +1286,6 @@
           "paragraphs": [
             "Dois arcanos podem lançar suas magias em conjunto para conseguir efeitos maiores. Para que esse efeito funcione é necessário que os dois conjuradores tenham esta especialidade, assim, quando eles decidirem lançar uma magia em conjunto eles podem somar seus focus a fim de realizar a magia. Ambos os arcanos devem possuir a magia que vão lançar e todos devem ter sucesso em seus testes para lançar a magia. A magia consumirá uma quantidade de pontos de magia de acordo com a soma dos focus de cada arcano que lançar a magia, esse valor deverá ser pago por todos os arcanos que lançarem a magia. A magia é conjurada na menor iniciativa dos arcanos que participarem da conjuração."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1638,14 +1314,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Você consegue lançar magias que atingem vários alvos sequencialmente, além do primeiro. Essa especialidade funciona com qualquer magia que tenha um único alvo e o alcance diferente de toque. A magia em sequência afetará o primeiro alvo normalmente, a partir dele, a magia atinge outro alvo que esteja a até nove metros, o limite de alvos é igual ao focus da magia. Se a magia causa dano, os alvos secundários recebem metade do dano apenas e podem fazer seus testes de resistência caso a magia permita. Uma magia sequenciada custa 2 pontos de magia a mais."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1681,14 +1349,6 @@
           "paragraphs": [
             "O personagem possui uma marca no corpo que o torna facilmente reconhecível por seus inimigos."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -1717,14 +1377,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "A memória do personagem é infalível e gigantesca, podendo lembrar cenas, gestos, sons e odores perfeitamente. Ele pode até simular qualquer perícia que já tenha visto ser realizada por outra pessoa, como se tivesse 20% de habilidade nela."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1755,14 +1407,6 @@
           "paragraphs": [
             "cada Você tem mais de uma mente na sua cabeça (ou mais de uma cabeça...) Por conta disso poderá fazer duas ações mentais num mesmo turno, como executar Magias ou outros Poderes. As suas mentes podem discordar algumas vezes e entrar em conflito."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1791,14 +1435,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Oculto pela escuridão, o personagem é capaz de mover-se sem ser notado nas sombras. Nestas condições, testes de Furtividade e Camuflagem diminuem sua dificuldade em um ponto (Difíceis se tornam Normais, e Normais se tornam Fáceis)"
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1829,14 +1465,6 @@
           "paragraphs": [
             "O personagem possui uma técnica que paralisa um oponente caso ele não passe num Teste de Resistência. Essa paralisia dura cinco turnos ou até que o alvo paralisado seja atingido."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1865,14 +1493,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Por algum motivo sua pele é feita de metal, permitindo um índice de proteção superior contra o dano. Para todos os efeitos, cada nível de Pele Metálica lhe confere um IP2 natural."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1908,14 +1528,6 @@
           "paragraphs": [
             "Por um motivo qualquer o personagem está fora da média até para seus próprios irmãos. Seu grau de conhecimento de seus poderes é um pouco maior que de seus irmãos. Este é um dos Aprimoramentos preferidos pelos iniciantes, mas os poderes têm de serem condizentes com os poderes da raça que você escolheu."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -1944,14 +1556,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em seus atributos. E como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre seus atributos. Cada ponto gasto com a aprimoramento significa 1D6+1 pontos para usar. Se você tem Poder Oculto 3, pode distribuir 3D6+3 pontos entre quaisquer Atributos, podendo até ultrapassar os seus limites. Você poderia, por exemplo, escolher Força +2D6+2 e Destreza +1D6+1 ou qualquer outra combinação. A única restrição é que, mesmo com Poder Oculto acima de 3, você nunca pode colocar um bônus superior a +3D6+3 em um único Atributo. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que mover os pontos, precisa gastar 1 Ponto de Ki. Mover pontos no meio de um combate conta como uma ação completa e leva um turno, mas se quiser você pode mover mais de um ponto ao mesmo tempo. Se a qualquer momento você ficar com 0 PVs, seus pontos de Poder Oculto desaparecem e terão que ser invocados outra vez."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -1985,14 +1589,6 @@
           "paragraphs": [
             "Seu personagem possui determinado ponto em seu corpo que é mais frágil ou debilitado. Qualquer ataque contra seu ponto fraco é encarado como um acerto crítico. Caso o atacante já tenha rolado um crítico, os pontos de vida do personagem caem para 0."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -2021,14 +1617,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O personagem possui pontos de vida a mais além do seu limite de Constituição. Em termos de regras, o personagem possuirá pontos de vida como se tivesse um bônus de +10, adicional, na Constituição atual. Pode ser comprado mais de uma vez."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -2059,14 +1647,6 @@
           "paragraphs": [
             "Você tem a habilidade de não ser notado, as pessoas só percebem sua presença quando você se anuncia. O personagem não está realmente invisível, mas parece tão insignificante que as pessoas não prestam atenção nele, a menos que venha a se expor abertamente."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -2096,14 +1676,6 @@
           "paragraphs": [
             "Quando atacado, o personagem pode fazer um teste de Defesa (Armas e escudos também são beneficiadas pelo aprimoramento) e devolver o projétil mágicos contra o seu atacante ou em direção a qualquer alvo que ele desejar. O teste para saber se foi bem sucedido e; para cada 1ponto de dano que a magia causaria no personagem esta gera uma penalidade em -1% no teste de defesa, se passar no teste a magia será como descrita, se o alvo for o mesmo lançador este não tem direito a um teste de agilidade, somente podendo fazer teste de Constituição para reduzir o dano a metade."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -2124,7 +1696,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "5 pontos"
+            "5 pontos: Seu personagem recupera 1 PV a cada 3 turnos.",
+            "7 pontos: Seu personagem recupera 1 PV a cada 2 turnos.",
+            "9 pontos: Seu personagem recupera 1 PV a cada 1 turno."
           ]
         },
         {
@@ -2132,16 +1706,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Seu personagem recupera 1 PV a cada 3 turnos. 7 pontos: Seu personagem recupera 1 PV a cada 2 turnos. 9 pontos: Seu personagem recupera 1 PV a cada 1 turno.",
             "Seu personagem possui um fator de cura impressionante, sendo capaz de regenerar uma enorme quantidade de dano rapidamente. Os motivos para este poder devem ser explicados pelo personagem. Em termos de regras, os custos de Regeneração variam de acordo com a quantidade de pontos de vida recuperados a cada turno. Um personagem nunca pode possuir mais pontos de vida do que o seu total final."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -2171,14 +1736,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "O seu personagem possui uma Resistência maior a um tipo de dano (Contusão; Corte; Explosão; Perfuração; Mágico; etc.). Em termos de regras, seus testes de Resistência quando envolvem o tipo de dano cujo seu personagem é resistente são diminuídos em um nível de dificuldade (Normais se tornam fáceis, por exemplo)."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -2218,14 +1775,6 @@
           "paragraphs": [
             "O personagem conseguiu de alguma forma desenvolver a habilidade de manipular a magia. Através de rituais complexos em seu grimório, ele pode realizar magias que conheça e tenha preparado. Para cada ponto gasto em Ritualismo o personagem ganha uma Deformação, melhor detalhados no capítulo Magia do Módulo Básico."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -2254,14 +1803,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Você treinou bastante a técnica de sacar uma arma (seja ela de fogo ou branca), antes mesmo de seus oponentes verem você. Você pode sacar uma arma sem gastar um turno e ganha +4 na sua iniciativa neste turno."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -2292,14 +1833,6 @@
           "paragraphs": [
             "Seu personagem possui imunidade total a qualquer doença ou veneno não mágicos. Contudo, isso não o impede de ser um transmissor dos males que carrega inertes em seu corpo."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -2329,14 +1862,6 @@
           "paragraphs": [
             "Seu personagem pertence a uma raça ou possui alguma maldição ou defeito que torna sua visão sensível a luz do dia. Para todos os efeitos de regras, um personagem com Sensibilidade a Luz irá enxergar apenas seis metros à luz do dia, e mesmo assim de forma precária. Além disso, todos os testes (excetuando-se combate corpo-a-corpo) envolvendo visão durante o dia aumentam em um grau de Dificuldade."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -2363,14 +1888,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "1 a 2 pontos: Esse aviso interno de perigo é também chamado de Sentido de Combate. O nível deste aprimoramento pode ser usada no lugar da Agilidade, com o propósito de se esquivar de ataques. Um Personagem com o aprimoramento Sentido de Perigo de não poderá ser surpreendido - isso é, você declara uma ação em qualquer turno onde alguém declarar um ataque surpresa no seu personagem. Isso não revela o tipo de ataque, apenas que um ataque está vindo. O Narrador poderá lhe dizer que há algo perigoso atrás de uma porta antes que o personagem a abra, mas não dirá exatamente o que se esconde ali. com 2 pontos Você ganha a pericia Esquiva com 30% e +5% por Nível sem precisar gastar pontos para isso, mas pode gastar para chegar a valores acima de 100%."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -2405,14 +1922,6 @@
             "Restrição: O personagem deve possuir o Aprimoramento Maestria em Caminho.",
             "Este caminho escolhido, obrigatoriamente, tem de ser seu caminho principal. O custo da magia, em pontos de magia, não se altera, e pode-se lançar uma magia extra para cada 5 pontos em Int, desde que estas sejam magias de lançamento imediato."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -2441,14 +1950,6 @@
           "area": "aprimoramentos",
           "paragraphs": [
             "Seu corpo é muito diferente do padrão humanóide, o que irá impossibilitar o uso de qualquer arma, roupa ou equipamento que não tenha sido projetado especialmente para você. Pode ser muito grande, ou pequeno demais, possuir braços de tamanhos diversos, a explicação depende do seu background. Em certos casos, todos os membros de sua raça possuirão esta desvantagem."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
           ]
         }
       ]
@@ -2482,14 +1983,6 @@
           "paragraphs": [
             "É o dom de ler e captar a mente das pessoas. Usar Telepatia exige um turno."
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },
@@ -2510,7 +2003,9 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "3 pontos"
+            "3 pontos: A distância segura é de 10m, a distância máxima é de 1 km;",
+            "4 pontos: A distância segura é de 30m, a distância máxima é de 3 km;",
+            "5 pontos: A distância segura é de 50m, a distância máxima é de 5 km."
           ]
         },
         {
@@ -2518,16 +2013,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "A distância segura é de 10m, a distância máxima é de 1 km; 4 pontos: A distância segura é de 30m, a distância máxima é de 3 km; 5 pontos: A distância segura é de 50m, a distância máxima é de 5 km.",
             "O teletransporte permite que o personagem se transporte instantaneamente de um lugar para o outro, sem cruzar o espaço intermediário. Ele concede um bônus automático de +10% em Esquiva. O teletransporte só é possível se o personagem já visitou alguma vez o local de destino ou possa vê-lo ou senti-lo claramente (com o uso de sentidos aguçados e/ou sensitivo). Para conseguir alcançar a distância máxima, é necessário um teste de Força de Vontade."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -2560,14 +2046,6 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": []
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -2602,14 +2080,6 @@
           "paragraphs": [
             "O corpo de seu personagem é especialmente vulnerável a alguma substância ou tipo de ataque, que gera muito mais dano do que iria causar em uma pessoa normal. Em termos de regras, quando atacado com o objeto que lhe causa vulnerabilidade, seu personagem:"
           ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Negativo"
-          ]
         }
       ]
     },
@@ -2640,14 +2110,6 @@
           "paragraphs": [
             "Qualquer secreção emanada por seu corpo contém alguma doença nele hospedada. Em caso de sucesso em um ataque corpo-a-corpo, qualquer oponente precisa passar em um teste de Resistência de CON pra evitar ser infectado.",
             "Secreções corporais exigem um Teste fácil (1d3 de dano); dejetos exigem um teste normal (1d6 de dano e testes aumentam uma dificuldade); Sangue e órgãos exigem um teste difícil (1d10 de dano e todos os testes tornam-se dificeis)."
-          ]
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
           ]
         }
       ]
@@ -2680,14 +2142,6 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": []
-        },
-        {
-          "id": "polaridade",
-          "title": "Tipo",
-          "area": "aprimoramentos",
-          "paragraphs": [
-            "Aprimoramento Positivo"
-          ]
         }
       ]
     },

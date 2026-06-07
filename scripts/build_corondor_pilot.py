@@ -336,6 +336,25 @@ def split_single_cost(value: str) -> tuple[str, str] | None:
     return normalize_text(match.group(1)), normalize_text(match.group(2))
 
 
+def expand_inline_cost_options(costs: list[str], description: list[str]) -> tuple[list[str], list[str]]:
+    if len(costs) != 1 or not description:
+        return costs, description
+    first = description[0]
+    matches = list(re.finditer(r"(?<!\w)(-?\s*\d+(?:,\d+)?\s+pontos?)\s*:\s*", first, flags=re.IGNORECASE))
+    if not matches:
+        return costs, description
+
+    expanded = costs[:]
+    prefix = normalize_text(first[: matches[0].start()])
+    if prefix:
+        expanded[0] = normalize_text(f"{expanded[0]}: {prefix}")
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(first)
+        option_text = normalize_text(first[match.end() : end])
+        expanded.append(normalize_text(f"{match.group(1)}: {option_text}"))
+    return expanded, description[1:]
+
+
 def build_enhancements(paragraphs: list[str]) -> list[dict]:
     segments = split_compound_segments(paragraphs[415:497])
     items: list[dict] = []
@@ -356,6 +375,7 @@ def build_enhancements(paragraphs: list[str]) -> list[dict]:
             if split:
                 costs = [split[0]]
                 description.insert(0, split[1])
+        costs, description = expand_inline_cost_options(costs, description)
         paren_cost = re.search(r"\(([^)]*\d+\s+(?:Pontos?|pontos?)[^)]*)\)$", current_title)
         if not costs and paren_cost:
             costs.append(normalize_text(paren_cost.group(1)))
@@ -365,11 +385,9 @@ def build_enhancements(paragraphs: list[str]) -> list[dict]:
         if not costs and re.search(r"\s+\d+\s+pontos?(?:\s+por\s+\w+)?$", current_title, re.IGNORECASE):
             title = re.sub(r"\s+\d+\s+pontos?(?:\s+por\s+\w+)?$", "", current_title, flags=re.IGNORECASE).strip()
             costs.append(current_title[len(title):].strip())
-        polarity = "Aprimoramento Negativo" if negative else "Aprimoramento Positivo"
         sections = [
             section("custo", "Custo", "aprimoramentos", costs),
             section("descricao", "Descrição", "aprimoramentos", description),
-            section("polaridade", "Tipo", "aprimoramentos", [polarity]),
         ]
         items.append(typed_item(title, "aprimoramentos", "enhancement_negative" if negative else "enhancement", sections, values))
         current_title = None
