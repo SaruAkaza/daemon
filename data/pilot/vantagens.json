@@ -115,7 +115,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Você é imune aos efeitos de maldições, símbolos religiosos ostentados por você causam os efeitos de uma fobia grave à maioria dos mortos-vivos, seu sangue é venenoso como água benta aos vampiros e você ainda é capaz de sentir a aproximação de objetos ou seres malignos (não exatamente onde estão, apenas que estão por perto). Caso cometa algo contra sua Fé precisará pagar uma penitência durante 2D dias."
       ],
       "sections": [
@@ -124,7 +124,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -177,7 +177,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Hábil com as duas mãos. Usar a mão inábil reduz em -2 a Habilidade. Para atacar mais vezes precisa da Vantagem Ataque Múltiplo. Útil para personagens com Membros Extra."
       ],
       "sections": [
@@ -186,7 +186,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -353,7 +353,10 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "2-4 Pontos",
+        "4 Pontos: qualquer ataque com Poder de Fogo.",
+        "3 Pontos: qualquer ataque com Força.",
+        "3 Pontos: magia e armas mágicas.",
+        "2 Pontos cada: corte, perfuração, contusão, explosão, calor/fogo, frio/gelo, luz, eletricidade, vento/som ou químico.",
         "Esta Vantagem torna você mais resistente a certos tipos de dano: sua Armadura será duas vezes maior, mas apenas contra aquele dano. O custo depende daquilo a que você é resistente: Qualquer ataque com Poder de Fogo (4 ptos) Qualquer ataque com Força (3 ptos) Magia e Armas Mágicas (3 ptos) Corte; Perfur"
       ],
       "sections": [
@@ -362,7 +365,10 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2-4 Pontos"
+            "4 Pontos: qualquer ataque com Poder de Fogo.",
+            "3 Pontos: qualquer ataque com Força.",
+            "3 Pontos: magia e armas mágicas.",
+            "2 Pontos cada: corte, perfuração, contusão, explosão, calor/fogo, frio/gelo, luz, eletricidade, vento/som ou químico."
           ]
         },
         {
@@ -558,7 +564,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Você pode causar explosões baseadas em seu PdF com tempo retardado a sua escolha, mas é preciso estar em contato visual com sua bomba para iniciar a contagem regressiva."
       ],
       "sections": [
@@ -567,7 +573,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -589,7 +595,8 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "2-4 Pontos",
+        "2 Pontos: role 1D6 para definir o efeito do canto.",
+        "4 Pontos: dispensa o teste e permite escolher o efeito.",
         "O personagem tem uma voz poderosa, e um grito dele pode provocar efeitos variados; role 1D6 e verifique a tabela: 1 Provoca loucura momentânea no alvo 2 Coloca o alvo pra dormir 3 Paralisa o alvo 4 Provoca medo no alvo 5 Deixa o alvo surdo 6 causa dano por som [FA= H+R+1D6] (resistência pulmonar é tudo) Ativar este poder consome 2 PMs por 4 pontos você dispensa o teste e ESCOLHE o efeito."
       ],
       "sections": [
@@ -598,7 +605,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2-4 Pontos"
+            "2 Pontos: role 1D6 para definir o efeito do canto.",
+            "4 Pontos: dispensa o teste e permite escolher o efeito."
           ]
         },
         {
@@ -775,7 +783,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Você não sente qualquer forma de Medo: ou tem nervos de aço ou é louco mesmo."
       ],
       "sections": [
@@ -784,7 +792,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1054,7 +1062,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Bônus de +1 nos testes de Resistência envolvendo ações físicas e saúde. Por exemplo, venenos, desmaios, etc, mas não ações de Força de Vontade."
       ],
       "sections": [
@@ -1063,7 +1071,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1085,7 +1093,8 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "1-2 Pontos",
+        "1 Ponto: só pode usar Energia Extra quando estiver Perto da Morte.",
+        "2 Pontos: Energia Extra pode ser usada a qualquer momento.",
         "Quando ferido, você consegue invocar forças interiores para se recuperar espantosamente, recarregando seus PVs. Você pode gastar 2 PMs para recuperar todos os seus PVs. Usar a Energia Extra leva um turno Existem dois níveis para esta Vantagem: Por 1 ponto você só pode usar a Energia Extra quando estiver Perto da Morte Mas por 2 pontos a Energia Extra pode ser usada a qualquer momento."
       ],
       "sections": [
@@ -1094,7 +1103,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1-2 Pontos"
+            "1 Ponto: só pode usar Energia Extra quando estiver Perto da Morte.",
+            "2 Pontos: Energia Extra pode ser usada a qualquer momento."
           ]
         },
         {
@@ -1286,7 +1296,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Bônus de +1 na FA quando usar uma arma específica. Esta Vantagem só pode ser adquirida uma vez."
       ],
       "sections": [
@@ -1295,7 +1305,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1317,8 +1327,8 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
-        "Aptidão em uma determinada Especialização recebendo um bônus de +2 nos testes. Não afeta FA ou FD. Forma Alternativa (2 ou 4 ptos): Você pode mudar de forma e de poderes. Para cada Forma Alternativa que tiver, você pode construir um personagem diferente com a mesma quantidade de pontos. Monstruoso é a única Desvantagem que NÃO precisa ser partilhada por todas as Formas. Você pode ter quantas Formas Alternativas quiser, se pagar por elas. Contudo, lembre-se que você vai acumular os problemas de todas as Formas! Mudar para uma Forma Alternativa leva um turno. A mudança nunca vai aumentar seus PVs ou Magia atuais mas pode REDUZILOS, caso a nova Forma tenha Resistência baixa demais. O custo de cada Forma Alternativa é 2 pontos para Máquinas e 4 pontos para personagens."
+        "1 Ponto",
+        "Aptidão em uma determinada Especialização recebendo um bônus de +2 nos testes. Não afeta FA ou FD."
       ],
       "sections": [
         {
@@ -1326,7 +1336,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1334,7 +1344,40 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Aptidão em uma determinada Especialização recebendo um bônus de +2 nos testes. Não afeta FA ou FD. Forma Alternativa (2 ou 4 ptos): Você pode mudar de forma e de poderes. Para cada Forma Alternativa que tiver, você pode construir um personagem diferente com a mesma quantidade de pontos. Monstruoso é a única Desvantagem que NÃO precisa ser partilhada por todas as Formas. Você pode ter quantas Formas Alternativas quiser, se pagar por elas. Contudo, lembre-se que você vai acumular os problemas de todas as Formas! Mudar para uma Forma Alternativa leva um turno. A mudança nunca vai aumentar seus PVs ou Magia atuais mas pode REDUZILOS, caso a nova Forma tenha Resistência baixa demais. O custo de cada Forma Alternativa é 2 pontos para Máquinas e 4 pontos para personagens."
+            "Aptidão em uma determinada Especialização recebendo um bônus de +2 nos testes. Não afeta FA ou FD."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forma-alternativa",
+      "title": "Forma Alternativa",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionTitle": "Aprimoramento",
+      "cost": null,
+      "type": "Aprimoramento Positivo",
+      "paragraphs": [
+        "2 Pontos: para Máquinas.",
+        "4 Pontos: para personagens.",
+        "Você pode mudar de forma e de poderes. Para cada Forma Alternativa que tiver, você pode construir um personagem diferente com a mesma quantidade de pontos. Monstruoso é a única Desvantagem que NÃO precisa ser partilhada por todas as Formas. Você pode ter quantas Formas Alternativas quiser, se pagar por elas. Contudo, lembre-se que você vai acumular os problemas de todas as Formas! Mudar para uma Forma Alternativa leva um turno. A mudança nunca vai aumentar seus PVs ou Magia atuais mas pode REDUZILOS, caso a nova Forma tenha Resistência baixa demais. O custo de cada Forma Alternativa é 2 pontos para Máquinas e 4 pontos para personagens."
+      ],
+      "sections": [
+        {
+          "id": "forma-alternativa-custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "2 Pontos: para Máquinas.",
+            "4 Pontos: para personagens."
+          ]
+        },
+        {
+          "id": "forma-alternativa-descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Você pode mudar de forma e de poderes. Para cada Forma Alternativa que tiver, você pode construir um personagem diferente com a mesma quantidade de pontos. Monstruoso é a única Desvantagem que NÃO precisa ser partilhada por todas as Formas. Você pode ter quantas Formas Alternativas quiser, se pagar por elas. Contudo, lembre-se que você vai acumular os problemas de todas as Formas! Mudar para uma Forma Alternativa leva um turno. A mudança nunca vai aumentar seus PVs ou Magia atuais mas pode REDUZILOS, caso a nova Forma tenha Resistência baixa demais. O custo de cada Forma Alternativa é 2 pontos para Máquinas e 4 pontos para personagens."
           ]
         }
       ]
@@ -1441,7 +1484,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Você parou de envelhecer. Não pode sofrer os efeitos de poderes que causam envelhecimento. Esta condição gera alguns inconvenientes para quem precisa manter sua imortalidade em segredo."
       ],
       "sections": [
@@ -1450,7 +1493,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1706,7 +1749,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "O disparo é uma teia, arpão ou cabo que causam dano mínimo ao atingir o alvo, mas útil para escaladas e atrair adversários de combate á distância para corpo-a-corpo. Possui capacidade de carga (Força) equivalente a do atirador."
       ],
       "sections": [
@@ -1715,7 +1758,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1799,7 +1842,8 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "1-2 Pontos",
+        "1 Ponto: pode ver através das paredes gastando 1 PM.",
+        "2 Pontos: pode atravessar paredes gastando 2 PMs.",
         "Por 1 ponto com este poder o personagem pode ver através das paredes gastando 1PMs, sejam feitas de qualquer material, isso permite ao personagem ver monstros, armadilhas, pessoas e animais que estejam do outro lado; por 2 pontos você pode atravessar as paredes gastando 2PMs."
       ],
       "sections": [
@@ -1808,7 +1852,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1-2 Pontos"
+            "1 Ponto: pode ver através das paredes gastando 1 PM.",
+            "2 Pontos: pode atravessar paredes gastando 2 PMs."
           ]
         },
         {
@@ -1830,7 +1875,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Você envelhece pelo menos três vezes mais devagar que os humanos. Qualquer tentativa de alterar sua idade causará apenas 1/3 do efeito desejado."
       ],
       "sections": [
@@ -1839,7 +1884,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1892,7 +1937,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Os normais magos podem aprender todas as magias (não todas, mas de tipos variados), só que um mago especialista se especializa em um tipo de magia. Um Mago Especialista só pode usar um tipo de magia, ou seja ele só pode ter caminho em um Focus, ou só use magias de telepatia (que tenham a vantagem Telepatia como exigência)... Mas como você tem muito tempo para treinar essas magias você pode soltá-las uma vez por dia tendo acerto automático, dano e efeito máximo."
       ],
       "sections": [
@@ -1901,7 +1946,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1923,7 +1968,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Um Aliado animal, robô ou equivalente construído com metade de seus Pontos de Personagem arredondados para baixo. Sua Mascote será seu Protegido Indefeso."
       ],
       "sections": [
@@ -1932,7 +1977,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -1954,7 +1999,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Uma língua, tentáculos ou cauda com a capacidade de manipular objetos com H-1, mas não capaz de atacar."
       ],
       "sections": [
@@ -1963,7 +2008,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -2079,7 +2124,7 @@
       "type": "Aprimoramento Positivo",
       "paragraphs": [
         "2 Pontos",
-        "Corpo maleável como massa de modelar. Você pode se trnasformar em qualquer objeto. Também ignora o dano por quedas em qualquer altura. Mutilação (0 ou 1 pto): Caso você seja feito em pedaços poderá colar suas partes de volta desde que os membros, peças ou órgãos estejam por perto. Você também pode se despedaçar à vontade. Para controlar partes mutiladas até a distância de seu campo de visão adquira esta capacidade pelo custo de (1 pto)."
+        "Corpo maleável como massa de modelar. Você pode se trnasformar em qualquer objeto. Também ignora o dano por quedas em qualquer altura."
       ],
       "sections": [
         {
@@ -2095,7 +2140,38 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Corpo maleável como massa de modelar. Você pode se trnasformar em qualquer objeto. Também ignora o dano por quedas em qualquer altura. Mutilação (0 ou 1 pto): Caso você seja feito em pedaços poderá colar suas partes de volta desde que os membros, peças ou órgãos estejam por perto. Você também pode se despedaçar à vontade. Para controlar partes mutiladas até a distância de seu campo de visão adquira esta capacidade pelo custo de (1 pto)."
+            "Corpo maleável como massa de modelar. Você pode se trnasformar em qualquer objeto. Também ignora o dano por quedas em qualquer altura."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mutilacao",
+      "title": "Mutilação",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionTitle": "Aprimoramento",
+      "cost": null,
+      "type": "Aprimoramento Positivo",
+      "paragraphs": [
+        "0 ou 1 Pontos",
+        "Caso você seja feito em pedaços poderá colar suas partes de volta desde que os membros, peças ou órgãos estejam por perto. Você também pode se despedaçar à vontade. Para controlar partes mutiladas até a distância de seu campo de visão adquira esta capacidade pelo custo de (1 pto)."
+      ],
+      "sections": [
+        {
+          "id": "mutilacao-custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "0 ou 1 Pontos"
+          ]
+        },
+        {
+          "id": "mutilacao-descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "Caso você seja feito em pedaços poderá colar suas partes de volta desde que os membros, peças ou órgãos estejam por perto. Você também pode se despedaçar à vontade. Para controlar partes mutiladas até a distância de seu campo de visão adquira esta capacidade pelo custo de (1 pto)."
           ]
         }
       ]
@@ -2233,7 +2309,8 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "1-2 Pontos",
+        "1 Ponto: para Máquinas.",
+        "2 Pontos: para personagens comuns.",
         "O custo de um Parceiro é 2 pontos para personagens comuns, e 1 ponto para Máquinas. É um colega de batalha que age em sincronia perfeita com seus movimentos. Quando você e seu Parceiro se unem para atacar, agem como se fossem um só lutador! Quando lutam em dupla vocês atacam apenas uma vez por turno, mas podem combinar as Características mais altas de cada um. Seu Parceiro pode ser um NPC ou outro personagem jogador, feito com a mesma quantidade de pontos (e ele também deve pagar dois pontos pela Vantagem Parceiro). Atenção: lutar com um Parceiro é o único caso em que você pode derrotar um oponente em desvantagem numérica e ainda assim receber Pontos de Experiência."
       ],
       "sections": [
@@ -2242,7 +2319,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1-2 Pontos"
+            "1 Ponto: para Máquinas.",
+            "2 Pontos: para personagens comuns."
           ]
         },
         {
@@ -2318,6 +2396,37 @@
       ]
     },
     {
+      "id": "piratas",
+      "title": "Piratas",
+      "area": "aprimoramentos",
+      "kind": "enhancement",
+      "sectionTitle": "Aprimoramento",
+      "cost": null,
+      "type": "Aprimoramento Positivo",
+      "paragraphs": [
+        "0 ou 4 Pontos",
+        "São navegantes, criminosos. Viajam pelos mares em busca de tesouros, fama..."
+      ],
+      "sections": [
+        {
+          "id": "piratas-custo",
+          "title": "Custo",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "0 ou 4 Pontos"
+          ]
+        },
+        {
+          "id": "piratas-descricao",
+          "title": "Descrição",
+          "area": "aprimoramentos",
+          "paragraphs": [
+            "São navegantes, criminosos. Viajam pelos mares em busca de tesouros, fama..."
+          ]
+        }
+      ]
+    },
+    {
       "id": "poder-oculto",
       "title": "Poder Oculto",
       "area": "aprimoramentos",
@@ -2326,7 +2435,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "1-5 Pontos",
+        "1 a 5 Pontos: cada ponto representa reserva para distribuir temporariamente entre Características ou Focus.",
         "Você é mais poderoso do que parece. Em situações de combate e outras emergências (a critério do Mestre), pode ter bônus extras em suas Características ou Focus. É como se você tivesse um ou mais pontos guardados em um \"reservatório secreto\" para colocar livremente entre suas Características ou Focus. A única restrição é que, mesmo com Poder Oculto acima de 2, você nunca pode colocar um bônus superior a +2 em uma única Característica ou Focus. Você pode manter os pontos onde quiser durante até uma hora. Cada vez que move um ponto, precisa gastar 1 Ponto de Magia. Mover pontos no meio de um combate conta como uma ação e leva uma rodada, mas se quiser você pode mover mais de um ponto ao mesmo tempo."
       ],
       "sections": [
@@ -2335,7 +2444,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1-5 Pontos"
+            "1 a 5 Pontos: cada ponto representa reserva para distribuir temporariamente entre Características ou Focus."
           ]
         },
         {
@@ -2451,7 +2560,7 @@
       "type": "Aprimoramento Positivo",
       "paragraphs": [
         "1 Ponto",
-        "Em situações extremas, quando estiver com PVs iguais à sua Resistência ou menos, você pode gastar um turno e jogar um dado para cada ponto de sua Resistência; acrescente o resultado a seus PVs (mas sem ultrapassar o valor inicial). Piratas (0 ou 4pts): São navegantes, criminosos. Viajam pelos mares em busca de tesouros, fama..."
+        "Em situações extremas, quando estiver com PVs iguais à sua Resistência ou menos, você pode gastar um turno e jogar um dado para cada ponto de sua Resistência; acrescente o resultado a seus PVs (mas sem ultrapassar o valor inicial)."
       ],
       "sections": [
         {
@@ -2467,7 +2576,7 @@
           "title": "Descrição",
           "area": "aprimoramentos",
           "paragraphs": [
-            "Em situações extremas, quando estiver com PVs iguais à sua Resistência ou menos, você pode gastar um turno e jogar um dado para cada ponto de sua Resistência; acrescente o resultado a seus PVs (mas sem ultrapassar o valor inicial). Piratas (0 ou 4pts): São navegantes, criminosos. Viajam pelos mares em busca de tesouros, fama..."
+            "Em situações extremas, quando estiver com PVs iguais à sua Resistência ou menos, você pode gastar um turno e jogar um dado para cada ponto de sua Resistência; acrescente o resultado a seus PVs (mas sem ultrapassar o valor inicial)."
           ]
         }
       ]
@@ -2731,7 +2840,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "A fonte de seu poder de fogo não é uma arma. Seu PdF tem como origem seus olhos, suas mãos, etc."
       ],
       "sections": [
@@ -2740,7 +2849,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -2762,7 +2871,8 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "1-2 Pontos",
+        "1 Ponto: escolha três Sentidos Especiais.",
+        "2 Pontos: possui todos os Sentidos Especiais.",
         "Ao custo de 1 ponto você pode escolher, na lista abaixo, três Sentidos Especiais. Por 2 pontos você pode possuir todos eles. Audição Aguçada: Você pode ouvir sons muito baixos ou muito distantes. Audição Seletiva: Você pode selecionar um foco de som para captar, pode ser desde uma conversa em particular entre uma multidão ou até cancelar sua audição por completo. Este sentido sozinho não concede Audição Aguçada. Faro Aguçado: Você tem sensores químicos capazes de farejar tão bem quanto um perdigueiro. Infravisão: Você pode ver o calor das coisas. e também pode enxergar no escuro, mas apenas quando não há fontes de calor intenso por perto. Lutar as Cegas: Pode realizar normalmente combates corpo a corpo mesmo sem enxergar seus adversários. Você também nunca pode ser surpreendido tendo sempre direito a testes normais de Esquiva e Iniciativa.",
         "Radar: Você ver na escuridão total e também perceber tudo à sua volta, formas e objetos (mas não cores), mesmo de costas ou de olhos vendados. Tato Aguçado: Você pode perceber variações mínimas de temperatura, pressão, vibrações e movimento nas proximidades, mas não do outro lado da parede. Ver o Invisível: Você pode ver coisas invisíveis. A Vantagem e a magia Invisibilidade são inúteis contra você. Visão Aguçada: Você é equipado com visão microscópica (coisas minúsculas) e telescópica (a grandes distâncias). Visão de 360°: Você pode enxergar em todas as direções e ainda combinar esta habilidade com outros Sentidos Especiais ligados à visão. Visão de Raios-X: Você pode ver através de portas e paredes, exceto aquelas feitas de chumbo, ou outros materiais muito densos ou mágicos.",
         "Visão Ultra-Violeta: Como os raios ultravioletas não são absorvidos pela água ou umidade do ar da mesma maneira que os raios luminosos, a Visão Ultra-Violeta permite que o personagem enxergue perfeitamente mesmo dentro de nevoeiros, fumaça, ou debaixo d’água."
@@ -2773,7 +2883,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "1-2 Pontos"
+            "1 Ponto: escolha três Sentidos Especiais.",
+            "2 Pontos: possui todos os Sentidos Especiais."
           ]
         },
         {
@@ -2900,7 +3011,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 - 1 Pontos",
+        "1 Ponto: confere status social, autoridade, acesso ou projeção conforme aprovado pelo Mestre.",
         "Confere o direito de portar armas ou guarda pessoal, ser julgado apenas por tribunais específicos, livre acesso a praticamente qualquer lugar, confiabilidade quase inquestionável, estar acima das leis, influenciar os rumos do poder, da opinião pública e dos tribunais em uma região. Outro beneficio é o bônus de +1 em todas as Especializações da Perícia Manipulação. Caso seu status seja de menor projeção não podendo receber o bônus de manipulação está se torna uma Vantagem de apenas (0 pto)."
       ],
       "sections": [
@@ -2909,7 +3020,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 - 1 Pontos"
+            "1 Ponto: confere status social, autoridade, acesso ou projeção conforme aprovado pelo Mestre."
           ]
         },
         {
@@ -3148,7 +3259,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Sua rajada de energia pode ser disparada continuamente durante 1D + 3 turnos com um alcance igual à sua Habilidade em metros. Você faz as mesmas jogadas de dano e ataque, mas agora tem o diferencial de poder manter seus adversários à distância, causar um efeito de sinalização entre outras manobras."
       ],
       "sections": [
@@ -3157,7 +3268,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -3272,7 +3383,8 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "2-3 Pontos",
+        "2 Pontos: exige teste na tabela de transformação.",
+        "3 Pontos: dispensa o teste e permite transformar-se em animais.",
         "O personagem pode se transformar em qualquer pessoa que já tenha visto. A transformação gasta 1PMs, role 1D6 e consulte a tabela: 1-2 A transformação é perfeita 3-4 Fica parecido, mas não muito convincente [testes de disfarces podem ser necessários com bônus de +2] 5-6 Engana de longe, ou coberto por mantos [confere +1 de bônus num teste de disfarce] por 3 pontos o poder dispensa o teste, além de permitir se transformar em animais."
       ],
       "sections": [
@@ -3281,7 +3393,8 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "2-3 Pontos"
+            "2 Pontos: exige teste na tabela de transformação.",
+            "3 Pontos: dispensa o teste e permite transformar-se em animais."
           ]
         },
         {
@@ -3303,7 +3416,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Sua Máquina é apenas um meio de transporte que sempre aparece quando você chama. Você não tem qualquer laço emocional com seu Transporte e caso ele seja destruído você logo poderá substituí-lo. Seu transporte deve ser construído com a metade de seus pontos iniciais de Personagem arredondado para cima, além disso, é permitido que sua montaria tenha como Vantagens, mas nada relacionadas a combate."
       ],
       "sections": [
@@ -3312,7 +3425,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -3334,7 +3447,7 @@
       "cost": null,
       "type": "Aprimoramento Positivo",
       "paragraphs": [
-        "0 Pontos",
+        "1 Ponto",
         "Resistente aos rigores do vácuo espacial ou condições similares."
       ],
       "sections": [
@@ -3343,7 +3456,7 @@
           "title": "Custo",
           "area": "aprimoramentos",
           "paragraphs": [
-            "0 Pontos"
+            "1 Ponto"
           ]
         },
         {
@@ -4261,14 +4374,15 @@
     }
   ],
   "counts": {
-    "aprimoramentos": 106,
+    "aprimoramentos": 109,
     "racas": 14,
     "kits": 14
   },
   "reviewNotes": [
     "O DOCX original possui todo o conteúdo em um único parágrafo; a divisão foi reconstruída pelo padrão Nome (custo): descrição.",
     "Subopções de Arma Especial, Ataque Especial, Familiar e Implantes foram mantidas dentro do item pai.",
-    "Raças e kits explícitos foram separados de aprimoramentos para manter coerência semântica."
+    "Raças e kits explícitos foram separados de aprimoramentos para manter coerência semântica.",
+    "Aprimoramentos originalmente marcados como 0 ponto foram normalizados para 1 ponto; custos variáveis foram detalhados por opção quando o texto diferencia o benefício por custo."
   ],
-  "generatedAt": "2026-06-11T13:50:41Z"
+  "generatedAt": "2026-06-11T14:29:44Z"
 }

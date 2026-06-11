@@ -99,6 +99,49 @@ SUBOPTION_PARENTS = {
     "Implantes": {"Comunicador", "Espionagem", "Hacker", "Infiltrador", "Suporte de Vida"},
 }
 
+COST_OPTION_OVERRIDES = {
+    "Armadura Extra": [
+        "4 Pontos: qualquer ataque com Poder de Fogo.",
+        "3 Pontos: qualquer ataque com Força.",
+        "3 Pontos: magia e armas mágicas.",
+        "2 Pontos cada: corte, perfuração, contusão, explosão, calor/fogo, frio/gelo, luz, eletricidade, vento/som ou químico.",
+    ],
+    "Canto do Canário": [
+        "2 Pontos: role 1D6 para definir o efeito do canto.",
+        "4 Pontos: dispensa o teste e permite escolher o efeito.",
+    ],
+    "Energia Extra": [
+        "1 Ponto: só pode usar Energia Extra quando estiver Perto da Morte.",
+        "2 Pontos: Energia Extra pode ser usada a qualquer momento.",
+    ],
+    "Forma Alternativa": [
+        "2 Pontos: para Máquinas.",
+        "4 Pontos: para personagens.",
+    ],
+    "Lince": [
+        "1 Ponto: pode ver através das paredes gastando 1 PM.",
+        "2 Pontos: pode atravessar paredes gastando 2 PMs.",
+    ],
+    "Parceiro": [
+        "1 Ponto: para Máquinas.",
+        "2 Pontos: para personagens comuns.",
+    ],
+    "Poder Oculto": [
+        "1 a 5 Pontos: cada ponto representa reserva para distribuir temporariamente entre Características ou Focus.",
+    ],
+    "Sentidos Especiais": [
+        "1 Ponto: escolha três Sentidos Especiais.",
+        "2 Pontos: possui todos os Sentidos Especiais.",
+    ],
+    "Status": [
+        "1 Ponto: confere status social, autoridade, acesso ou projeção conforme aprovado pelo Mestre.",
+    ],
+    "Transfigurar": [
+        "2 Pontos: exige teste na tabela de transformação.",
+        "3 Pontos: dispensa o teste e permite transformar-se em animais.",
+    ],
+}
+
 
 def normalize_text(text: str) -> str:
     text = text.replace("\u00a0", " ")
@@ -119,6 +162,8 @@ def cost_label(cost: str) -> str:
     cleaned = re.sub(r"\s+", " ", cost).strip()
     if cleaned.lower() == "igual o custo em focus":
         return "Igual ao custo em Focus"
+    if re.search(r"\s+ou\s+", cleaned):
+        return f"{cleaned} Pontos"
     if "-" in cleaned and not cleaned.strip().startswith("-"):
         return f"{cleaned} Pontos"
     value = int(cleaned)
@@ -145,7 +190,7 @@ def title_from_prefix(prefix: str) -> str:
 
 
 def marker_entries(text: str) -> list[dict]:
-    marker = re.compile(r"\(([-+]?\d+(?:\s*-\s*\d+)?|igual o custo em focus)\s*p(?:ontos?|tos?|ts?)\)\s*:")
+    marker = re.compile(r"\(([-+]?\d+(?:\s*(?:-|ou)\s*\d+)?|igual o custo em focus)\s*p(?:ontos?|tos?|ts?)\)\s*:")
     matches = list(marker.finditer(text))
     headers: list[dict] = []
     for match in matches:
@@ -248,7 +293,7 @@ def build_sections(entries: list[dict], text: str) -> list[dict]:
 def make_item(entry: dict, options: list[str]) -> dict:
     title = entry["title"]
     area, kind, section_title = classify(title)
-    cost_lines = [entry["cost"]]
+    cost_lines = cost_lines_for(title, area, entry["cost"])
     detail_sections = [block(f"{title}-custo", "Custo", area, cost_lines)]
     if options:
         detail_sections.append(block(f"{title}-opcoes", "Opções", area, options))
@@ -265,6 +310,18 @@ def make_item(entry: dict, options: list[str]) -> dict:
         "sections": detail_sections,
     }
     return payload
+
+
+def cost_lines_for(title: str, area: str, cost: str) -> list[str]:
+    if area != "aprimoramentos":
+        return [cost]
+    if title in COST_OPTION_OVERRIDES:
+        return COST_OPTION_OVERRIDES[title]
+    if cost == "0 Pontos":
+        return ["1 Ponto"]
+    if cost.startswith("0 -"):
+        return [re.sub(r"^0\s*-\s*", "", cost).replace("Pontos", "Ponto")]
+    return [cost]
 
 
 def insert_implantes(sections: list[dict], entries: list[dict], text: str) -> list[dict]:
@@ -322,6 +379,7 @@ def build_payload() -> dict:
             "O DOCX original possui todo o conteúdo em um único parágrafo; a divisão foi reconstruída pelo padrão Nome (custo): descrição.",
             "Subopções de Arma Especial, Ataque Especial, Familiar e Implantes foram mantidas dentro do item pai.",
             "Raças e kits explícitos foram separados de aprimoramentos para manter coerência semântica.",
+            "Aprimoramentos originalmente marcados como 0 ponto foram normalizados para 1 ponto; custos variáveis foram detalhados por opção quando o texto diferencia o benefício por custo.",
         ],
         "generatedAt": datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z"),
     }
