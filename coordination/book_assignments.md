@@ -83,7 +83,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | 61 | `ceifadores_OCR_alta_qualidade.docx` | 0.06 MB | Codex | assigned |
 | 62 | `Gerador_de_Itens_Magicos_2ed_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
 | 63 | `Umbral_e_seus_Vales_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
-| 64 | `Vantagens.docx` | 0.05 MB | Codex | assigned |
+| 64 | `Vantagens.docx` | 0.05 MB | Codex | pilot_review |
 | 65 | `Mitraismo_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
 | 66 | `Desentsu_Senshi_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
 | 67 | `Novos_Kits_Arkanun_Trevas_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |

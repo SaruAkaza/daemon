@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-11T10:41:13",
+  "generatedAt": "2026-06-11T10:50:43",
   "sources": [
     {
       "source": "4killers",
@@ -380,6 +380,17 @@
         "racas",
         "regras_base",
         "rituais"
+      ]
+    },
+    {
+      "source": "vantagens",
+      "title": "Vantagens",
+      "file": "vantagens.json",
+      "status": "pilot_review",
+      "areas": [
+        "aprimoramentos",
+        "kits",
+        "racas"
       ]
     }
   ]
