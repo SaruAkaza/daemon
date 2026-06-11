@@ -8,7 +8,6 @@
   "areas": [
     "cenarios_lore",
     "regras_base",
-    "itens_equipamentos",
     "kits"
   ],
   "groups": [],
@@ -100,6 +99,30 @@
         "Para se tornar um arcanis, o candidato deve ser aceito em um conselho de kansarianos-arcanis experientes para depois passar pelo ritual Fada dos Sete Ventos e se tornar um kansariano da linhagem. Com isso ele tem o direito de aprender mágicas pagando pequenos “custos” (em dinheiro) para se tornar mais poderoso e respeitado. Os arcanis registrados já tem um emprego fixo na sua própria Linhagem e devem cumprir as missões de seus superiores.",
         "O ritual acontece da seguinte forma, um grupo de candidatos a arcanis são recrutados a comparecerem num jardim florido, este que fica numa dimensão adjacente (ver no livro Guia Completo dos GK, para mais detalhe sobre essa dimensão). Chegando lá, os candidatos recebem uma única e simples ordem “-Para se tornar membro de nossa linhagem, é preciso que capturem esse ser mágico para provar sua astúcia e capacidade contra seres mitológicos e faéricos.” Assim os arcanis que estão realizando o ritual soltam algumas fadas e cabe a missão dos candidatos capturá-las sem qualquer outro tipo de poder se não for a própria inteligência. Apenas uma fada capturada já torna um novato em um arcanis. Esse ritual (que mais parece um teste) tem duração máxima de 7 horas, sendo que a cada 1 hora sem a captura de uma fada, os arcanis ao redor usam seus poderes criando um furacão que destrói tudo além de oferecer perigo de morte aos candidatos. Candidatos que tenham capturados pelo menos uma fada conseguem desenvolver a mágica luniana além de perder um pouco seu poder kansai natural no processo. (Redutor de -3 no PK), mas logo aprendem a habilidade de usar mágica e criar/consertar armas kansarianas.",
         "A primeira coisa ao arcanis novato é decidir qual a sua ética moral. Éticas morais na verdade são uma tendência específica para denominar se o arcanis é uma pessoa boa/ruim e se trabalha apenas com GKs/tegicnistas. Todo arcanis precisa ter sua ética moral. A Ética Moral serve para que o clã possa perceber que tipo de pessoa o arcanis é e com quais tipos de pessoas ele pretende trabalhar nos serviços mercenários tão costumeiros. Existem apenas 3 éticas morais (eltihcisi miurishsi, no original em língua kansariana): Justiça, Honra e Morte. As três éticas morais correspondem ao lado que o arcanis atua na Eterna Guerra (confronto entre GKs e tegicnistas), sendo que Justiça corresponde ao lado dos Guerreiros Kansai; Morte corresponde ao lado dos Tegicnistas; e Honra corresponde a ambos os lados ou mesmo em nenhum deles.",
+        "Os arcanis trabalham apenas de duas maneiras: com magias ou em serviços mercenários. Se for com mágicas, envolve tudo que seja no fator místico, isso inclui das aulas de magia aos itens mágicos vendidos, sem falar nas tão procuradas armas kansarianas, armas desejadas e que apenas os kansarianos dessa linhagem tem o poder de construir essas maravilhas. Se for através dos costumeiros serviços mercenários, envolve qualquer tipo de missão não importando a pessoa que contratou o arcanis. Aceitar o serviço ou não vai depender da própria ética moral do próprio kansariano-mago. Os serviços mercenários são realmente o que os arcanis fazem de melhor. Por isso que são relacionados como “Chave” no confronto direto contra GKs e tegicnistas. Os arcanis também tem seu preço pelo seu nível de poder (que são os mesmos quinze níveis de personagem no Sistema Daemon), sendo que o preço para o arcanis ser contratado é de 2.000$Sht (Sonathas, moeda das dimensões) para cada nível de personagem do próprio arcanis em questão (já incluindo o primeiro nível). A contratação do arcanis no serviço mercenário equivale no máximo o tempo de uma 1 semana (sete dias ou cinco dias úteis), sendo que se o arcanis for ferido mortalmente ou ficar mais tempo no serviço mercenário, o clã inserirá sob o contrato do cliente o que eles chamam de imposto de represália, onde o cliente deverá pagar uma taxa extra por não cumprir direito o trato de uma semana da contratação do kansariano-mago.",
+        "IMPOSTO DE REPRESÁLIA: imposto obrigatório nas Academias Arcanis a todos aqueles que não cumprirem o limite de tempo máximo para a contratação de um ou mais kansarianos da linhagem arcanis, que é de uma semana, sendo sete dias ou cinco dias úteis, tudo dependo do cliente. O imposto é uma taxa extra de 3000$Sht para cada dia sem trazer de volta o arcanis contratado de volta a sua academia. Caso o arcanis seja morto, a taxa é de 12.000$Sht (única).",
+        "Mesmo que os arcanis trabalhem em suas academias e fazem serviços mercenários para ganhar a vida. Os arcanis ainda precisam pagar para professores mais experientes para aprender suas magias. Mesmo porque, a linhagem vem da antiga escola de magia Arcanis Kansaines. Os preços desse ou mais serviços são vistos adiante.",
+        "O arcanis que preze em fazer serviços mercenários fica na academia esperando ou mesmo fazendo qualquer outra atividade. Ele pode trabalhar na academia de outras formas também enquanto espera vir algum cliente para contratá-lo a uma missão. Incluindo todos os serviços feitos na academia (tais como lavar o chão, tirar o pó, ensinar magias, ensinar proezas kansarianas, construir armas kansarianas, consertar armas kansarianas, ficar de atendente nos balcões dos clientes, ficar no telefone esperando ligações de clientes...) e qualquer outra coisa, o arcanis recebe no final do dia 445Sht fora o dinheiro dos demais serviços realizados. (OBS: O salário na dimensão Lua não é feito por mês e sim por dia inteiro de trabalho, caso a academia do arcanis específico não seja situada nessa dimensão, então ele receberá no final do mês cerca de 11.125Sht)",
+        "No universo Yoshiro não existe como se vê em demais ambientações de mangás, livros e RPGs algo que chamamos de poções mágicas. As tais poções podem ser chamadas de mágicas, mas na composição não são não. Elas são conhecidas pelo multiverso como poções científicas e são apenas comercializados nos balcões da linhagem Arcanis. As poções criadas são extrações de efeitos da Kansailar (essência de poder kansai nas dimensões pra quem não sabe!), e são existentes de várias colorações. As poções são inseridas e vendidas em pequenos canudos de vidro e que são tampados por rolhas (parecidas como as rolhas de vinho). Toda poção contém apenas uma dose, é tomar e esperar o efeito imediato. Demoram cerca de 3 dias (sendo que em média 36 horas de criação de cada). Sua composição é feita de vários materiais que contém grande quantidade de Kansailar, com ervas, grãos e sementes.",
+        "Poção Azul (Cura menor)",
+        "8.000$Sht cada",
+        "Poção Cinza (Cura média)",
+        "17.000$Sht cada",
+        "Poção Laranja (Cura Maior)",
+        "34.500$Sht cada",
+        "Poção Dourada (Restaura tudo)",
+        "70.000$Sht cada",
+        "Poção Vermelha (restaura 2d6 pms)",
+        "15.000$Sht cada",
+        "Antídoto (variantes, depende de cada veneno)",
+        "Entre 3000$Sht e 5000$Sht cada",
+        "DESCRIÇÃO DAS POÇÕES",
+        "Como já descrito, os arcanis são especialistas em serviços mercenários. Serviços onde seus clientes visitam suas academias correspondentes e contratam por no máximo 1 semana, um ou mais determinados arcanis. Mais detalhes foram vistas no capítulo anterior. Para se contratar um arcanis, é preciso pagar 2000 Sht por nível de poder do kansariano Arcanis (incluindo o primeiro nível!), ou seja, se um cliente quer contratar num serviço mercenário um arcanis de nível 3, ele pagará ao clã 6000 Sht, valor a vista; se for um kansariano arcanis de nível 7, será 14000 Sht, e assim por diante... O arcanis contratado recebe depois de cumprir o serviço cerca de 20% do valor recebido pela sua contração. Exemplo: “Se o arcanis de nível 3 cumpriu com sucesso sua missão, ele recebe na hora cerca de 1200 Sht.",
+        "Arcanis poderosos também são contratados para dar aulas de magias a alunos menos experientes no ramo místico. As aulas costumam ser de 4 horas por turma e o professor recebe cerca de 40 Sht por hora (incluindo aulas nas outras turmas). Use as demais regras do Sistema Daemon para utilizar magia, e para opções delas, procure pelo livro GRIMÓRIO, da Daemon Editora ou mesmo inspiração em livros de fantasia, filmes, animes, mangás e o que mais você gosta...",
+        "O arcanis também pode esquecer o bastão e o poder mágico para usar a vassoura e o esfregão. Arcanis menos conservadores podem resolver ganhar um pouco de grana extra fazendo serviços domésticos, como tirar o pó, limpar as salas de aulas de magias e/ou as salas de treinamento, limpar os banheiros (as privadas...), e outros serviços escravos que só estagiários tem a honra e a capacidade de fazer. Os arcanis mais avançados lhe pagam o salário de 55 Sht por hora de serviço doméstico. Pena que algumas cabalas da linhagem não gostem que seus membros se humilhem dessa forma para ganhar uma graninha...",
+        "Outra forma de ganhar dinheiro é ficar o dia todo atrás do balcão de uma academia arcanis anotando os serviços, conferindo em computador, recebendo pagamentos e mandando outros arcanis para as missões junto com os clientes. Essa é a função do balconista, que fica 12 horas sentados e falando com os clientes. Atendentes trabalham apenas por 12 horas, e recebem um salário de 250 Sht por dia inteiro de trabalho.",
+        "Um arcanis demora cerca de 3 ou 4 horas para montar uma nova arma kansariana novinha (isso com os materiais necessários em seu laboratório) e recebe cerca de 20.000 Sht por arma concluída (sendo que o preço dessas belezinhas dentro do clã é de 40.000Sht! Pois as armas precisam ser licenciadas). As regras em mecânica de jogo das armas kansarianas são vistas no livro YOSHIRO ROLE PLAYING GAME - Módulo Básico. Os arcanis são os únicos no multiverso a terem poder e inteligência suficiente para construir/consertar as tais armas kansarianas. Armas revestidas de poder kansai que são fiéis aos seus donos que custam 40.000Sht à vista ou em 40 prestações mensais de 1300Sht, valor cujo metade vai para as mãos do construtor da arma. A Cabala dos Construtores é que são os melhores especialistas nesse ramo (mais detalhes sobre essa cabala são vistas em seu capítulo correspondente.).",
+        "Assim como nas outras linhagens, existem salas de treinamento para o aprendizado de proezas kansarianas (poderes gerados a partir do poder kansai). Um arcanis que se preze a dar aulas a alunos sobre as proezas que eles querem realmente aprender a usar (e que o arcanis também saiba) recebe cerca de 40 Sht por hora e dá aulas em salas de treinamento, com turmas de no máximo 13 pessoas e em aulas que tenham duração máxima de 1: 30 h.",
         "É uma transformação secreta que todo kansariano pode utilizar em seus momentos mais críticos, esta consiste em usar toda a força do estilo do membro portador de pk, ele se fortalece muito, mas perde temporariamente todas as suas lembranças e éticas de “bem ou mal”, atacando seu inimigo com uma força de ataque tremenda, assim como o ódio. A transformação muda temporariamente o corpo do kansariano e ele segundo as lendas tem seu poder multiplicado por 7! O número da perfeição segundo a Bíblia Sagrada. Mas depois que vencer um determinado inimigo (a Lágrima do Sangue do Ódio só pode ser invocada para vencer um ou mais inimigos), o kansariano cai no chão e entra em coma, mais precisamente uma hibernação, entra em sono profundo onde ele e seu Estilo dormem para descansar do esforço, não acordando para nada, isso durante 2d6 dias +1 por nível de personagem. E mesmo que normalmente um Estilo sai do kansariano para protegê-lo quando o mesmo está dormindo, isso não acontece, pois nesse caso o Estilo está tão exausto quando o próprio portador do pk.",
         "A transformação oferece ao kansariano em RPGs: multiplica os Atributos Kansarianos por 7 (Con, Fr, Dex e Agi), além de duplicar o valor dos pontos de vida que o kansariano estiver no momento + 100 PVs por nível de personagem, o kansariano também ganha +50 no IP! Mas para invocar a Lágrima do Sangue do Ódio o kansariano deve perder 1 turno se concentrando e não pode ser incomodado, caso tenha feito isso, se transforma de acordo com a Família Antiga que seu kansariano, e essa transformação dura 1d6 turnos +1 para cada nível de personagem. Caso o kansariano se concentre 2 ou mais turnos para invocar a lágrima, a transformação dura 2d6 turnos, se for 3, 3d6 turnos, sendo que 3d6 turnos é o máximo que os Kansarianos conseguem."
       ],
@@ -147,54 +170,9 @@
           ]
         },
         {
-          "id": "lagrima-do-sangue-do-odio",
-          "title": "Lágrima do Sangue do Ódio",
-          "area": "regras_base",
-          "paragraphs": [
-            "É uma transformação secreta que todo kansariano pode utilizar em seus momentos mais críticos, esta consiste em usar toda a força do estilo do membro portador de pk, ele se fortalece muito, mas perde temporariamente todas as suas lembranças e éticas de “bem ou mal”, atacando seu inimigo com uma força de ataque tremenda, assim como o ódio. A transformação muda temporariamente o corpo do kansariano e ele segundo as lendas tem seu poder multiplicado por 7! O número da perfeição segundo a Bíblia Sagrada. Mas depois que vencer um determinado inimigo (a Lágrima do Sangue do Ódio só pode ser invocada para vencer um ou mais inimigos), o kansariano cai no chão e entra em coma, mais precisamente uma hibernação, entra em sono profundo onde ele e seu Estilo dormem para descansar do esforço, não acordando para nada, isso durante 2d6 dias +1 por nível de personagem. E mesmo que normalmente um Estilo sai do kansariano para protegê-lo quando o mesmo está dormindo, isso não acontece, pois nesse caso o Estilo está tão exausto quando o próprio portador do pk.",
-            "A transformação oferece ao kansariano em RPGs: multiplica os Atributos Kansarianos por 7 (Con, Fr, Dex e Agi), além de duplicar o valor dos pontos de vida que o kansariano estiver no momento + 100 PVs por nível de personagem, o kansariano também ganha +50 no IP! Mas para invocar a Lágrima do Sangue do Ódio o kansariano deve perder 1 turno se concentrando e não pode ser incomodado, caso tenha feito isso, se transforma de acordo com a Família Antiga que seu kansariano, e essa transformação dura 1d6 turnos +1 para cada nível de personagem. Caso o kansariano se concentre 2 ou mais turnos para invocar a lágrima, a transformação dura 2d6 turnos, se for 3, 3d6 turnos, sendo que 3d6 turnos é o máximo que os Kansarianos conseguem."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "servicos-e-equipamentos-das-academias-arcanis",
-      "title": "Serviços e equipamentos das Academias Arcanis",
-      "area": "itens_equipamentos",
-      "kind": "equipment_rules",
-      "sectionId": "item-equipamento",
-      "sectionTitle": "Item/Equipamento",
-      "paragraphs": [
-        "Os arcanis trabalham apenas de duas maneiras: com magias ou em serviços mercenários. Se for com mágicas, envolve tudo que seja no fator místico, isso inclui das aulas de magia aos itens mágicos vendidos, sem falar nas tão procuradas armas kansarianas, armas desejadas e que apenas os kansarianos dessa linhagem tem o poder de construir essas maravilhas. Se for através dos costumeiros serviços mercenários, envolve qualquer tipo de missão não importando a pessoa que contratou o arcanis. Aceitar o serviço ou não vai depender da própria ética moral do próprio kansariano-mago. Os serviços mercenários são realmente o que os arcanis fazem de melhor. Por isso que são relacionados como “Chave” no confronto direto contra GKs e tegicnistas. Os arcanis também tem seu preço pelo seu nível de poder (que são os mesmos quinze níveis de personagem no Sistema Daemon), sendo que o preço para o arcanis ser contratado é de 2.000$Sht (Sonathas, moeda das dimensões) para cada nível de personagem do próprio arcanis em questão (já incluindo o primeiro nível). A contratação do arcanis no serviço mercenário equivale no máximo o tempo de uma 1 semana (sete dias ou cinco dias úteis), sendo que se o arcanis for ferido mortalmente ou ficar mais tempo no serviço mercenário, o clã inserirá sob o contrato do cliente o que eles chamam de imposto de represália, onde o cliente deverá pagar uma taxa extra por não cumprir direito o trato de uma semana da contratação do kansariano-mago.",
-        "IMPOSTO DE REPRESÁLIA: imposto obrigatório nas Academias Arcanis a todos aqueles que não cumprirem o limite de tempo máximo para a contratação de um ou mais kansarianos da linhagem arcanis, que é de uma semana, sendo sete dias ou cinco dias úteis, tudo dependo do cliente. O imposto é uma taxa extra de 3000$Sht para cada dia sem trazer de volta o arcanis contratado de volta a sua academia. Caso o arcanis seja morto, a taxa é de 12.000$Sht (única).",
-        "Mesmo que os arcanis trabalhem em suas academias e fazem serviços mercenários para ganhar a vida. Os arcanis ainda precisam pagar para professores mais experientes para aprender suas magias. Mesmo porque, a linhagem vem da antiga escola de magia Arcanis Kansaines. Os preços desse ou mais serviços são vistos adiante.",
-        "O arcanis que preze em fazer serviços mercenários fica na academia esperando ou mesmo fazendo qualquer outra atividade. Ele pode trabalhar na academia de outras formas também enquanto espera vir algum cliente para contratá-lo a uma missão. Incluindo todos os serviços feitos na academia (tais como lavar o chão, tirar o pó, ensinar magias, ensinar proezas kansarianas, construir armas kansarianas, consertar armas kansarianas, ficar de atendente nos balcões dos clientes, ficar no telefone esperando ligações de clientes...) e qualquer outra coisa, o arcanis recebe no final do dia 445Sht fora o dinheiro dos demais serviços realizados. (OBS: O salário na dimensão Lua não é feito por mês e sim por dia inteiro de trabalho, caso a academia do arcanis específico não seja situada nessa dimensão, então ele receberá no final do mês cerca de 11.125Sht)",
-        "No universo Yoshiro não existe como se vê em demais ambientações de mangás, livros e RPGs algo que chamamos de poções mágicas. As tais poções podem ser chamadas de mágicas, mas na composição não são não. Elas são conhecidas pelo multiverso como poções científicas e são apenas comercializados nos balcões da linhagem Arcanis. As poções criadas são extrações de efeitos da Kansailar (essência de poder kansai nas dimensões pra quem não sabe!), e são existentes de várias colorações. As poções são inseridas e vendidas em pequenos canudos de vidro e que são tampados por rolhas (parecidas como as rolhas de vinho). Toda poção contém apenas uma dose, é tomar e esperar o efeito imediato. Demoram cerca de 3 dias (sendo que em média 36 horas de criação de cada). Sua composição é feita de vários materiais que contém grande quantidade de Kansailar, com ervas, grãos e sementes.",
-        "Poção Azul (Cura menor)",
-        "8.000$Sht cada",
-        "Poção Cinza (Cura média)",
-        "17.000$Sht cada",
-        "Poção Laranja (Cura Maior)",
-        "34.500$Sht cada",
-        "Poção Dourada (Restaura tudo)",
-        "70.000$Sht cada",
-        "Poção Vermelha (restaura 2d6 pms)",
-        "15.000$Sht cada",
-        "Antídoto (variantes, depende de cada veneno)",
-        "Entre 3000$Sht e 5000$Sht cada",
-        "DESCRIÇÃO DAS POÇÕES",
-        "Como já descrito, os arcanis são especialistas em serviços mercenários. Serviços onde seus clientes visitam suas academias correspondentes e contratam por no máximo 1 semana, um ou mais determinados arcanis. Mais detalhes foram vistas no capítulo anterior. Para se contratar um arcanis, é preciso pagar 2000 Sht por nível de poder do kansariano Arcanis (incluindo o primeiro nível!), ou seja, se um cliente quer contratar num serviço mercenário um arcanis de nível 3, ele pagará ao clã 6000 Sht, valor a vista; se for um kansariano arcanis de nível 7, será 14000 Sht, e assim por diante... O arcanis contratado recebe depois de cumprir o serviço cerca de 20% do valor recebido pela sua contração. Exemplo: “Se o arcanis de nível 3 cumpriu com sucesso sua missão, ele recebe na hora cerca de 1200 Sht.",
-        "Arcanis poderosos também são contratados para dar aulas de magias a alunos menos experientes no ramo místico. As aulas costumam ser de 4 horas por turma e o professor recebe cerca de 40 Sht por hora (incluindo aulas nas outras turmas). Use as demais regras do Sistema Daemon para utilizar magia, e para opções delas, procure pelo livro GRIMÓRIO, da Daemon Editora ou mesmo inspiração em livros de fantasia, filmes, animes, mangás e o que mais você gosta...",
-        "O arcanis também pode esquecer o bastão e o poder mágico para usar a vassoura e o esfregão. Arcanis menos conservadores podem resolver ganhar um pouco de grana extra fazendo serviços domésticos, como tirar o pó, limpar as salas de aulas de magias e/ou as salas de treinamento, limpar os banheiros (as privadas...), e outros serviços escravos que só estagiários tem a honra e a capacidade de fazer. Os arcanis mais avançados lhe pagam o salário de 55 Sht por hora de serviço doméstico. Pena que algumas cabalas da linhagem não gostem que seus membros se humilhem dessa forma para ganhar uma graninha...",
-        "Outra forma de ganhar dinheiro é ficar o dia todo atrás do balcão de uma academia arcanis anotando os serviços, conferindo em computador, recebendo pagamentos e mandando outros arcanis para as missões junto com os clientes. Essa é a função do balconista, que fica 12 horas sentados e falando com os clientes. Atendentes trabalham apenas por 12 horas, e recebem um salário de 250 Sht por dia inteiro de trabalho.",
-        "Um arcanis demora cerca de 3 ou 4 horas para montar uma nova arma kansariana novinha (isso com os materiais necessários em seu laboratório) e recebe cerca de 20.000 Sht por arma concluída (sendo que o preço dessas belezinhas dentro do clã é de 40.000Sht! Pois as armas precisam ser licenciadas). As regras em mecânica de jogo das armas kansarianas são vistas no livro YOSHIRO ROLE PLAYING GAME - Módulo Básico. Os arcanis são os únicos no multiverso a terem poder e inteligência suficiente para construir/consertar as tais armas kansarianas. Armas revestidas de poder kansai que são fiéis aos seus donos que custam 40.000Sht à vista ou em 40 prestações mensais de 1300Sht, valor cujo metade vai para as mãos do construtor da arma. A Cabala dos Construtores é que são os melhores especialistas nesse ramo (mais detalhes sobre essa cabala são vistas em seu capítulo correspondente.).",
-        "Assim como nas outras linhagens, existem salas de treinamento para o aprendizado de proezas kansarianas (poderes gerados a partir do poder kansai). Um arcanis que se preze a dar aulas a alunos sobre as proezas que eles querem realmente aprender a usar (e que o arcanis também saiba) recebe cerca de 40 Sht por hora e dá aulas em salas de treinamento, com turmas de no máximo 13 pessoas e em aulas que tenham duração máxima de 1: 30 h."
-      ],
-      "sections": [
-        {
           "id": "servicos-mercenarios",
           "title": "Serviços Mercenários",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Os arcanis trabalham apenas de duas maneiras: com magias ou em serviços mercenários. Se for com mágicas, envolve tudo que seja no fator místico, isso inclui das aulas de magia aos itens mágicos vendidos, sem falar nas tão procuradas armas kansarianas, armas desejadas e que apenas os kansarianos dessa linhagem tem o poder de construir essas maravilhas. Se for através dos costumeiros serviços mercenários, envolve qualquer tipo de missão não importando a pessoa que contratou o arcanis. Aceitar o serviço ou não vai depender da própria ética moral do próprio kansariano-mago. Os serviços mercenários são realmente o que os arcanis fazem de melhor. Por isso que são relacionados como “Chave” no confronto direto contra GKs e tegicnistas. Os arcanis também tem seu preço pelo seu nível de poder (que são os mesmos quinze níveis de personagem no Sistema Daemon), sendo que o preço para o arcanis ser contratado é de 2.000$Sht (Sonathas, moeda das dimensões) para cada nível de personagem do próprio arcanis em questão (já incluindo o primeiro nível). A contratação do arcanis no serviço mercenário equivale no máximo o tempo de uma 1 semana (sete dias ou cinco dias úteis), sendo que se o arcanis for ferido mortalmente ou ficar mais tempo no serviço mercenário, o clã inserirá sob o contrato do cliente o que eles chamam de imposto de represália, onde o cliente deverá pagar uma taxa extra por não cumprir direito o trato de uma semana da contratação do kansariano-mago.",
             "IMPOSTO DE REPRESÁLIA: imposto obrigatório nas Academias Arcanis a todos aqueles que não cumprirem o limite de tempo máximo para a contratação de um ou mais kansarianos da linhagem arcanis, que é de uma semana, sendo sete dias ou cinco dias úteis, tudo dependo do cliente. O imposto é uma taxa extra de 3000$Sht para cada dia sem trazer de volta o arcanis contratado de volta a sua academia. Caso o arcanis seja morto, a taxa é de 12.000$Sht (única)."
@@ -203,7 +181,7 @@
         {
           "id": "aprendendo-magicas",
           "title": "Aprendendo Mágicas",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Mesmo que os arcanis trabalhem em suas academias e fazem serviços mercenários para ganhar a vida. Os arcanis ainda precisam pagar para professores mais experientes para aprender suas magias. Mesmo porque, a linhagem vem da antiga escola de magia Arcanis Kansaines. Os preços desse ou mais serviços são vistos adiante."
           ]
@@ -211,7 +189,7 @@
         {
           "id": "salario",
           "title": "Recebendo Salário",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "O arcanis que preze em fazer serviços mercenários fica na academia esperando ou mesmo fazendo qualquer outra atividade. Ele pode trabalhar na academia de outras formas também enquanto espera vir algum cliente para contratá-lo a uma missão. Incluindo todos os serviços feitos na academia (tais como lavar o chão, tirar o pó, ensinar magias, ensinar proezas kansarianas, construir armas kansarianas, consertar armas kansarianas, ficar de atendente nos balcões dos clientes, ficar no telefone esperando ligações de clientes...) e qualquer outra coisa, o arcanis recebe no final do dia 445Sht fora o dinheiro dos demais serviços realizados. (OBS: O salário na dimensão Lua não é feito por mês e sim por dia inteiro de trabalho, caso a academia do arcanis específico não seja situada nessa dimensão, então ele receberá no final do mês cerca de 11.125Sht)"
           ]
@@ -219,7 +197,7 @@
         {
           "id": "pocoes-cientificas",
           "title": "Poções Científicas",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "No universo Yoshiro não existe como se vê em demais ambientações de mangás, livros e RPGs algo que chamamos de poções mágicas. As tais poções podem ser chamadas de mágicas, mas na composição não são não. Elas são conhecidas pelo multiverso como poções científicas e são apenas comercializados nos balcões da linhagem Arcanis. As poções criadas são extrações de efeitos da Kansailar (essência de poder kansai nas dimensões pra quem não sabe!), e são existentes de várias colorações. As poções são inseridas e vendidas em pequenos canudos de vidro e que são tampados por rolhas (parecidas como as rolhas de vinho). Toda poção contém apenas uma dose, é tomar e esperar o efeito imediato. Demoram cerca de 3 dias (sendo que em média 36 horas de criação de cada). Sua composição é feita de vários materiais que contém grande quantidade de Kansailar, com ervas, grãos e sementes."
           ]
@@ -227,7 +205,7 @@
         {
           "id": "pocoes-a-venda",
           "title": "Poções à Venda",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Poção Azul (Cura menor)",
             "8.000$Sht cada",
@@ -247,7 +225,7 @@
         {
           "id": "contratacao-de-servicos",
           "title": "Contratação de Serviços Mercenários",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Como já descrito, os arcanis são especialistas em serviços mercenários. Serviços onde seus clientes visitam suas academias correspondentes e contratam por no máximo 1 semana, um ou mais determinados arcanis. Mais detalhes foram vistas no capítulo anterior. Para se contratar um arcanis, é preciso pagar 2000 Sht por nível de poder do kansariano Arcanis (incluindo o primeiro nível!), ou seja, se um cliente quer contratar num serviço mercenário um arcanis de nível 3, ele pagará ao clã 6000 Sht, valor a vista; se for um kansariano arcanis de nível 7, será 14000 Sht, e assim por diante... O arcanis contratado recebe depois de cumprir o serviço cerca de 20% do valor recebido pela sua contração. Exemplo: “Se o arcanis de nível 3 cumpriu com sucesso sua missão, ele recebe na hora cerca de 1200 Sht."
           ]
@@ -255,7 +233,7 @@
         {
           "id": "ensinando-magias",
           "title": "Ensinando Magias",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Arcanis poderosos também são contratados para dar aulas de magias a alunos menos experientes no ramo místico. As aulas costumam ser de 4 horas por turma e o professor recebe cerca de 40 Sht por hora (incluindo aulas nas outras turmas). Use as demais regras do Sistema Daemon para utilizar magia, e para opções delas, procure pelo livro GRIMÓRIO, da Daemon Editora ou mesmo inspiração em livros de fantasia, filmes, animes, mangás e o que mais você gosta..."
           ]
@@ -263,7 +241,7 @@
         {
           "id": "servicos-domesticos",
           "title": "Serviços Domésticos",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "O arcanis também pode esquecer o bastão e o poder mágico para usar a vassoura e o esfregão. Arcanis menos conservadores podem resolver ganhar um pouco de grana extra fazendo serviços domésticos, como tirar o pó, limpar as salas de aulas de magias e/ou as salas de treinamento, limpar os banheiros (as privadas...), e outros serviços escravos que só estagiários tem a honra e a capacidade de fazer. Os arcanis mais avançados lhe pagam o salário de 55 Sht por hora de serviço doméstico. Pena que algumas cabalas da linhagem não gostem que seus membros se humilhem dessa forma para ganhar uma graninha..."
           ]
@@ -271,7 +249,7 @@
         {
           "id": "atendente",
           "title": "Atendente",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Outra forma de ganhar dinheiro é ficar o dia todo atrás do balcão de uma academia arcanis anotando os serviços, conferindo em computador, recebendo pagamentos e mandando outros arcanis para as missões junto com os clientes. Essa é a função do balconista, que fica 12 horas sentados e falando com os clientes. Atendentes trabalham apenas por 12 horas, e recebem um salário de 250 Sht por dia inteiro de trabalho."
           ]
@@ -279,7 +257,7 @@
         {
           "id": "armas-kansarianas",
           "title": "Construir Armas Kansarianas",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Um arcanis demora cerca de 3 ou 4 horas para montar uma nova arma kansariana novinha (isso com os materiais necessários em seu laboratório) e recebe cerca de 20.000 Sht por arma concluída (sendo que o preço dessas belezinhas dentro do clã é de 40.000Sht! Pois as armas precisam ser licenciadas). As regras em mecânica de jogo das armas kansarianas são vistas no livro YOSHIRO ROLE PLAYING GAME - Módulo Básico. Os arcanis são os únicos no multiverso a terem poder e inteligência suficiente para construir/consertar as tais armas kansarianas. Armas revestidas de poder kansai que são fiéis aos seus donos que custam 40.000Sht à vista ou em 40 prestações mensais de 1300Sht, valor cujo metade vai para as mãos do construtor da arma. A Cabala dos Construtores é que são os melhores especialistas nesse ramo (mais detalhes sobre essa cabala são vistas em seu capítulo correspondente.)."
           ]
@@ -287,9 +265,18 @@
         {
           "id": "ensinamentos-de-proezas",
           "title": "Ensinamentos de Proezas",
-          "area": "itens_equipamentos",
+          "area": "regras_base",
           "paragraphs": [
             "Assim como nas outras linhagens, existem salas de treinamento para o aprendizado de proezas kansarianas (poderes gerados a partir do poder kansai). Um arcanis que se preze a dar aulas a alunos sobre as proezas que eles querem realmente aprender a usar (e que o arcanis também saiba) recebe cerca de 40 Sht por hora e dá aulas em salas de treinamento, com turmas de no máximo 13 pessoas e em aulas que tenham duração máxima de 1: 30 h."
+          ]
+        },
+        {
+          "id": "lagrima-do-sangue-do-odio",
+          "title": "Lágrima do Sangue do Ódio",
+          "area": "regras_base",
+          "paragraphs": [
+            "É uma transformação secreta que todo kansariano pode utilizar em seus momentos mais críticos, esta consiste em usar toda a força do estilo do membro portador de pk, ele se fortalece muito, mas perde temporariamente todas as suas lembranças e éticas de “bem ou mal”, atacando seu inimigo com uma força de ataque tremenda, assim como o ódio. A transformação muda temporariamente o corpo do kansariano e ele segundo as lendas tem seu poder multiplicado por 7! O número da perfeição segundo a Bíblia Sagrada. Mas depois que vencer um determinado inimigo (a Lágrima do Sangue do Ódio só pode ser invocada para vencer um ou mais inimigos), o kansariano cai no chão e entra em coma, mais precisamente uma hibernação, entra em sono profundo onde ele e seu Estilo dormem para descansar do esforço, não acordando para nada, isso durante 2d6 dias +1 por nível de personagem. E mesmo que normalmente um Estilo sai do kansariano para protegê-lo quando o mesmo está dormindo, isso não acontece, pois nesse caso o Estilo está tão exausto quando o próprio portador do pk.",
+            "A transformação oferece ao kansariano em RPGs: multiplica os Atributos Kansarianos por 7 (Con, Fr, Dex e Agi), além de duplicar o valor dos pontos de vida que o kansariano estiver no momento + 100 PVs por nível de personagem, o kansariano também ganha +50 no IP! Mas para invocar a Lágrima do Sangue do Ódio o kansariano deve perder 1 turno se concentrando e não pode ser incomodado, caso tenha feito isso, se transforma de acordo com a Família Antiga que seu kansariano, e essa transformação dura 1d6 turnos +1 para cada nível de personagem. Caso o kansariano se concentre 2 ou mais turnos para invocar a lágrima, a transformação dura 2d6 turnos, se for 3, 3d6 turnos, sendo que 3d6 turnos é o máximo que os Kansarianos conseguem."
           ]
         }
       ]
@@ -1393,14 +1380,13 @@
   "counts": {
     "cenarios_lore": 1,
     "regras_base": 1,
-    "itens_equipamentos": 1,
     "kits": 15,
-    "itens": 18
+    "itens": 17
   },
   "reviewNotes": [
     "Texto revisado antes da catalogação, com correções de OCR e normalização de quebras indevidas.",
     "Cabalas foram catalogadas como kits por conterem custo de aprimoramento, custo de perícia, perícias e aprimoramentos.",
-    "Serviços, poções e armas vendidas/construídas em academias ficaram agrupados em Itens e Equipamentos."
+    "Serviços, poções e armas vendidas/construídas em academias foram mantidos em Regras Base por funcionarem como procedimentos econômicos e regras de uso das Academias Arcanis."
   ],
-  "generatedAt": "2026-06-05T14:23:09"
+  "generatedAt": "2026-06-11T10:53:58"
 }

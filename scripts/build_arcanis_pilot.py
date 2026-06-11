@@ -324,29 +324,23 @@ def build_payload() -> dict:
     )
 
     service_sections = [
-        section("servicos-mercenarios", "Serviços Mercenários", "itens_equipamentos", collect_body(paragraphs, 40, 43, "Serviços Mercenários")),
-        section("aprendendo-magicas", "Aprendendo Mágicas", "itens_equipamentos", collect_body(paragraphs, 43, 45, "Aprendendo Mágicas")),
-        section("salario", "Recebendo Salário", "itens_equipamentos", collect_body(paragraphs, 48, 50, "Recebendo salário")),
-        section("pocoes-cientificas", "Poções Científicas", "itens_equipamentos", collect_body(paragraphs, 51, 53, "Venda de Poções científicas")),
-        section("pocoes-a-venda", "Poções à Venda", "itens_equipamentos", collect_body(paragraphs, 53, 68, "Poções a Venda", "Preço")),
-        section("contratacao-de-servicos", "Contratação de Serviços Mercenários", "itens_equipamentos", collect_body(paragraphs, 69, 71, "Contratação de Serviços Mercenários")),
-        section("ensinando-magias", "Ensinando Magias", "itens_equipamentos", collect_body(paragraphs, 71, 73, "Ensinando Magias")),
-        section("servicos-domesticos", "Serviços Domésticos", "itens_equipamentos", collect_body(paragraphs, 73, 75, "Serviços Domésticos")),
-        section("atendente", "Atendente", "itens_equipamentos", collect_body(paragraphs, 75, 77, "Atendente")),
-        section("armas-kansarianas", "Construir Armas Kansarianas", "itens_equipamentos", collect_body(paragraphs, 78, 80, "Construir Armas Kansarianas")),
-        section("ensinamentos-de-proezas", "Ensinamentos de Proezas", "itens_equipamentos", collect_body(paragraphs, 80, 82, "Ensinamentos de Proezas")),
+        section("servicos-mercenarios", "Serviços Mercenários", "regras_base", collect_body(paragraphs, 40, 43, "Serviços Mercenários")),
+        section("aprendendo-magicas", "Aprendendo Mágicas", "regras_base", collect_body(paragraphs, 43, 45, "Aprendendo Mágicas")),
+        section("salario", "Recebendo Salário", "regras_base", collect_body(paragraphs, 48, 50, "Recebendo salário")),
+        section("pocoes-cientificas", "Poções Científicas", "regras_base", collect_body(paragraphs, 51, 53, "Venda de Poções científicas")),
+        section("pocoes-a-venda", "Poções à Venda", "regras_base", collect_body(paragraphs, 53, 68, "Poções a Venda", "Preço")),
+        section("contratacao-de-servicos", "Contratação de Serviços Mercenários", "regras_base", collect_body(paragraphs, 69, 71, "Contratação de Serviços Mercenários")),
+        section("ensinando-magias", "Ensinando Magias", "regras_base", collect_body(paragraphs, 71, 73, "Ensinando Magias")),
+        section("servicos-domesticos", "Serviços Domésticos", "regras_base", collect_body(paragraphs, 73, 75, "Serviços Domésticos")),
+        section("atendente", "Atendente", "regras_base", collect_body(paragraphs, 75, 77, "Atendente")),
+        section("armas-kansarianas", "Construir Armas Kansarianas", "regras_base", collect_body(paragraphs, 78, 80, "Construir Armas Kansarianas")),
+        section("ensinamentos-de-proezas", "Ensinamentos de Proezas", "regras_base", collect_body(paragraphs, 80, 82, "Ensinamentos de Proezas")),
     ]
-    services_item = typed_item(
-        "Serviços e equipamentos das Academias Arcanis",
-        "itens_equipamentos",
-        "equipment_rules",
-        "Item/Equipamento",
-        [paragraph for block in service_sections for paragraph in block["paragraphs"]],
-        service_sections,
-    )
+    rule_item["sections"] = [*rule_item["sections"][:-1], *service_sections, rule_item["sections"][-1]]
+    rule_item["paragraphs"] = [paragraph for block in rule_item["sections"] for paragraph in block["paragraphs"]]
 
     kits = build_kits(paragraphs)
-    sections = [lore_item, rule_item, services_item, *kits]
+    sections = [lore_item, rule_item, *kits]
 
     return {
         "version": 1,
@@ -355,20 +349,19 @@ def build_payload() -> dict:
         "sourceFile": SOURCE_PATH.name,
         "status": "pilot_review",
         "summary": "Suplemento da linhagem Arcanis, com lore, regras, serviços de academia e cabalas em formato de kits.",
-        "areas": ["cenarios_lore", "regras_base", "itens_equipamentos", "kits"],
+        "areas": ["cenarios_lore", "regras_base", "kits"],
         "groups": [],
         "sections": sections,
         "counts": {
             "cenarios_lore": 1,
             "regras_base": 1,
-            "itens_equipamentos": 1,
             "kits": len(kits),
             "itens": len(sections),
         },
         "reviewNotes": [
             "Texto revisado antes da catalogação, com correções de OCR e normalização de quebras indevidas.",
             "Cabalas foram catalogadas como kits por conterem custo de aprimoramento, custo de perícia, perícias e aprimoramentos.",
-            "Serviços, poções e armas vendidas/construídas em academias ficaram agrupados em Itens e Equipamentos.",
+            "Serviços, poções e armas vendidas/construídas em academias foram mantidos em Regras Base por funcionarem como procedimentos econômicos e regras de uso das Academias Arcanis.",
         ],
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
     }
