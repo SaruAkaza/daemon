@@ -124,18 +124,18 @@ def make_equipment(title: str, paragraphs: list[str], sections: list[dict] | Non
 def build_payload() -> dict:
     paragraphs = clean(raw_paragraphs())
 
-    lore_sections = [
-        block("descricao", "Descrição", "cenarios_lore", paragraphs[1:2]),
-        block("encontros", "Encontros", "cenarios_lore", paragraphs[2:3]),
-        block("baus-de-tesouros", "Baús de Tesouros", "cenarios_lore", [parse_roll_line(line) for line in paragraphs[4:10]]),
+    rule_sections = [
+        block("descricao", "Descrição", "regras_base", paragraphs[1:2]),
+        block("encontros", "Encontros", "regras_base", paragraphs[2:3]),
+        block("baus-de-tesouros", "Baús de Tesouros", "regras_base", [parse_roll_line(line) for line in paragraphs[4:10]]),
     ]
-    lore = item(
-        "Cenários/Lore - Masmorra Goblin",
-        "cenarios_lore",
-        "setting",
-        "Cenário",
-        [paragraph for section in lore_sections for paragraph in section["paragraphs"]],
-        lore_sections,
+    rule = item(
+        "Regra base - Masmorra Goblin",
+        "regras_base",
+        "rule",
+        "Regras Base",
+        [paragraph for section in rule_sections for paragraph in section["paragraphs"]],
+        rule_sections,
     )
 
     armor_table = make_equipment(
@@ -186,7 +186,7 @@ def build_payload() -> dict:
     levitation = make_equipment("Armadura de Levitação", [" ".join(paragraphs[68:71])])
 
     sections = [
-        lore,
+        rule,
         armor_table,
         armor_x,
         disguise,
@@ -211,6 +211,7 @@ def build_payload() -> dict:
         "sections": sections,
         "counts": dict(counts),
         "reviewNotes": [
+            "O procedimento da masmorra, encontros e baús foi classificado como regra base por funcionar como instrução de uso/rolagem.",
             "Goblins aparecem apenas como encontro sem ficha, portanto não foram criados como NPCs.",
             "Armaduras mágicas foram extraídas como itens/equipamentos individuais.",
         ],

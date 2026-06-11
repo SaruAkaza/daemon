@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T03:01:40",
+  "generatedAt": "2026-06-11T10:41:13",
   "sources": [
     {
       "source": "4killers",
@@ -333,8 +333,8 @@
       "file": "masmorra-goblin.json",
       "status": "pilot_review",
       "areas": [
-        "cenarios_lore",
-        "itens_equipamentos"
+        "itens_equipamentos",
+        "regras_base"
       ]
     },
     {

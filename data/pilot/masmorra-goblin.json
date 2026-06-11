@@ -7,18 +7,18 @@
   "status": "pilot_review",
   "summary": "Mini masmorra goblin com rolagens de tesouro, encontros e armaduras mágicas sorteáveis.",
   "areas": [
-    "cenarios_lore",
-    "itens_equipamentos"
+    "itens_equipamentos",
+    "regras_base"
   ],
   "groups": [],
   "sections": [
     {
-      "id": "cenarios-lore-masmorra-goblin",
-      "title": "Cenários/Lore - Masmorra Goblin",
-      "area": "cenarios_lore",
-      "kind": "setting",
-      "sectionId": "cenario",
-      "sectionTitle": "Cenário",
+      "id": "regra-base-masmorra-goblin",
+      "title": "Regra base - Masmorra Goblin",
+      "area": "regras_base",
+      "kind": "rule",
+      "sectionId": "regras-base",
+      "sectionTitle": "Regras Base",
       "paragraphs": [
         "Os números indicam onde são encontrados baús com tesouros que foram saqueados durante anos (role 1D6 para definir quantos baús e o tipo de tesouro encontrado, mas os Goblins não são burros e fizeram algumas armadilhas no lugar dos tesouros), o lugar é vigiado por cerca de 1D6+1 Goblins que farão o possível para proteger os seus tesouros, mas não arriscarão suas próprias vidas por elas.",
         "Role 1D6 para cada 5m que os jogadores avançarem na masmorra para determinar se sofreram ataques, se cair 4-5 role 1D6+2 Goblins que os jogadores enfrentarão.",
@@ -33,7 +33,7 @@
         {
           "id": "descricao",
           "title": "Descrição",
-          "area": "cenarios_lore",
+          "area": "regras_base",
           "paragraphs": [
             "Os números indicam onde são encontrados baús com tesouros que foram saqueados durante anos (role 1D6 para definir quantos baús e o tipo de tesouro encontrado, mas os Goblins não são burros e fizeram algumas armadilhas no lugar dos tesouros), o lugar é vigiado por cerca de 1D6+1 Goblins que farão o possível para proteger os seus tesouros, mas não arriscarão suas próprias vidas por elas."
           ]
@@ -41,7 +41,7 @@
         {
           "id": "encontros",
           "title": "Encontros",
-          "area": "cenarios_lore",
+          "area": "regras_base",
           "paragraphs": [
             "Role 1D6 para cada 5m que os jogadores avançarem na masmorra para determinar se sofreram ataques, se cair 4-5 role 1D6+2 Goblins que os jogadores enfrentarão."
           ]
@@ -49,7 +49,7 @@
         {
           "id": "baus-de-tesouros",
           "title": "Baús de Tesouros",
-          "area": "cenarios_lore",
+          "area": "regras_base",
           "paragraphs": [
             "1. 10 peças de ouro",
             "2. Uma espada longa de prata (01) ou 10 flechas de prata (02) ou 100 peças de ouro em joias (03) ou um anel de armas mágicas +1 (04) ou uma capa de proteção +1 (05) ou um símbolo religioso +2 (06), rolado em 1D6, se repetirem os itens role 1D10 em peças de ouro.",
@@ -373,12 +373,13 @@
     }
   ],
   "counts": {
-    "cenarios_lore": 1,
+    "regras_base": 1,
     "itens_equipamentos": 9
   },
   "reviewNotes": [
+    "O procedimento da masmorra, encontros e baús foi classificado como regra base por funcionar como instrução de uso/rolagem.",
     "Goblins aparecem apenas como encontro sem ficha, portanto não foram criados como NPCs.",
     "Armaduras mágicas foram extraídas como itens/equipamentos individuais."
   ],
-  "generatedAt": "2026-06-07T06:01:40Z"
+  "generatedAt": "2026-06-11T13:41:11Z"
 }
