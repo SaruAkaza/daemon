@@ -3,7 +3,6 @@ from __future__ import annotations
 import re
 from copy import deepcopy
 from datetime import datetime
-from pathlib import Path
 from typing import Iterable
 
 from common import ROOT, slugify, write_json
@@ -82,7 +81,6 @@ TEXT_FIXES = {
     "obcessões": "obsessões",
     "obcediado": "obsediado",
     "obcediados": "obsediados",
-    "obcediado": "obsediado",
     "obcediar": "obsediar",
     "AGla": "AGI",
     "AGT": "AGI",
@@ -92,7 +90,6 @@ TEXT_FIXES = {
     "Ysea são": "Ysea são",
     "petimitériiaos": "permitem aos",
     "iverem": "viverem",
-    "fomece": "fornece",
     "definído": "definido",
     "sacrificio": "sacrifício",
 }
@@ -459,39 +456,6 @@ def make_powers() -> list[dict]:
     results = []
     for index, heading in enumerate(POWER_HEADINGS[:-1]):
         next_heading = POWER_HEADINGS[index + 1]
-        title = normalize_text(heading).replace("Idéia", "Ideia").replace("Etérca", "Etérea")
-        paragraphs = extract_between(range(53, 61), heading, next_heading)
-        if not paragraphs:
-            continue
-        intro: list[str] = []
-        level_sections: list[dict] = []
-        current_title = ""
-        current_lines: list[str] = []
-        for paragraph in paragraphs:
-            if paragraph.startswith("Nível "):
-                if current_title:
-                    level_sections.append(block(current_title, "poderes", current_lines))
-                label = paragraph.split(":", 1)[0]
-                current_title = label
-                current_lines = [paragraph]
-            elif current_title:
-                current_lines.append(paragraph)
-            else:
-                intro.append(paragraph)
-        if current_title:
-            level_sections.append(block(current_title, "poderes", current_lines))
-        sections = []
-        if intro:
-            sections.append(block("Descrição", "poderes", intro))
-        sections.extend(level_sections)
-        results.append(item(title, "poderes", "poder", intro, sections))
-    return results
-
-
-def make_powers() -> list[dict]:
-    results = []
-    for index, heading in enumerate(POWER_HEADINGS[:-1]):
-        next_heading = POWER_HEADINGS[index + 1]
         title = normalize_text(heading).replace("Id\u00e9ia", "Ideia").replace("Et\u00e9rca", "Et\u00e9rea")
         paragraphs = extract_between(range(53, 61), heading, next_heading)
         if not paragraphs:
@@ -544,29 +508,6 @@ RITUAL_HEADINGS = [
     "Rompimento Sagrado",
     "Servos Mumificados",
 ]
-
-
-def make_rituals() -> list[dict]:
-    results = []
-    for index, heading in enumerate(RITUAL_HEADINGS):
-        next_heading = RITUAL_HEADINGS[index + 1] if index + 1 < len(RITUAL_HEADINGS) else "Regras e Testes"
-        paragraphs = extract_between(range(61, 68), heading, next_heading)
-        if not paragraphs:
-            continue
-        meta: list[str] = []
-        desc: list[str] = []
-        for paragraph in paragraphs:
-            if re.match(r"^(Criar|Controlar|Entender|Componentes|Tempo de Formulação|Alcance|Alvo|Efeitos|Duração|Teste de Resistência)", paragraph):
-                meta.append(paragraph)
-            else:
-                desc.append(paragraph)
-        sections = []
-        if meta:
-            sections.append(block("Ficha do Ritual", "rituais", meta))
-        if desc:
-            sections.append(block("Descrição", "rituais", desc))
-        results.append(item(heading, "rituais", "ritual", desc, sections))
-    return results
 
 
 RITUAL_HEADINGS_COMPLETE = [
@@ -842,28 +783,6 @@ def setting_blocks_from_headings(pages: Iterable[int], headings: list[str]) -> l
         if paragraphs:
             blocks.append(block(normalize_text(heading), "cenarios_lore", paragraphs))
     return blocks
-
-
-def make_settings() -> list[dict]:
-    settings = [
-        item("Cenarios/Lore - Spiritum", "cenarios_lore", "setting", [], [
-            block("Introdução e Meta-Jogo", "cenarios_lore", paragraphs_from_pages([4], drop_headings=["Introdução"])),
-            block("O Reino dos Mortos", "cenarios_lore", paragraphs_from_pages([13, 14, 15, 16], drop_headings=["O Reino dos Mortos"])),
-            block("Ordem da Rosa e da Cruz", "cenarios_lore", extract_between([31, 32], "Ordem da Rosa e da Cruz", "Rosa Cruz")),
-            block("Estudiosos do Umbral", "cenarios_lore", extract_between([33, 34], "Estudiosos do Umbral", "Videntes, Oráculos e Sibilas")),
-            block("Spiritum e Plano Astral", "cenarios_lore", paragraphs_from_pages([79, 81, 82, 83, 84], drop_headings=["Spiritum", "Plano Astral"])),
-            block("Umbral e Vales Espirituais", "cenarios_lore", paragraphs_from_pages([85, 86, 87], drop_headings=["Umbral", "Vales Espirituais"])),
-            block("O Sonhar", "cenarios_lore", paragraphs_from_pages([89, 91, 92], drop_headings=["Sonhar"])),
-            block("O Mercado de Almas", "cenarios_lore", paragraphs_from_pages([93, 95, 96], drop_headings=["O Mercado de Almas"])),
-            block("Lanka", "cenarios_lore", paragraphs_from_pages([97, 98], drop_headings=["Lanka"])),
-            block("Metrópolis", "cenarios_lore", paragraphs_from_pages([99, 101, 102], drop_headings=["Metrópolis"])),
-            block("Inferno", "cenarios_lore", paragraphs_from_pages([103, 104], drop_headings=["Inferno"])),
-            block("O Abismo", "cenarios_lore", paragraphs_from_pages([105, 106], drop_headings=["O Abismo"])),
-            block("Inferno Oriental", "cenarios_lore", paragraphs_from_pages([107, 108], drop_headings=["Inferno Oriental"])),
-            block("Arkanun", "cenarios_lore", paragraphs_from_pages([109], drop_headings=["Arkanun"])),
-        ]),
-    ]
-    return settings
 
 
 def make_settings() -> list[dict]:

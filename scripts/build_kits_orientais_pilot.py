@@ -3,7 +3,6 @@ from __future__ import annotations
 import re
 import shutil
 from datetime import datetime
-from pathlib import Path
 from typing import Iterable
 
 from docx import Document
@@ -470,7 +469,6 @@ def parse_technique_body(body: list[str], title: str) -> list[dict]:
             if label_match:
                 raw_label = label_match.group(1).lower()
                 label = {
-                    "quem usa": "Quem usa",
                     "quem usa": "Quem usa",
                     "usuários": "Usuários",
                     "rank": "Rank",
