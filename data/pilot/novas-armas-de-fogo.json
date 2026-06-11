@@ -1,0 +1,629 @@
+{
+  "version": 1,
+  "source": "novas-armas-de-fogo",
+  "title": "Novas Armas de Fogo",
+  "sourceFile": "Novas_Armas_de_Fogo_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\feito\\Novas_Armas_de_Fogo_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Lista de novas armas de fogo para Sistema Daemon, com munição, pente, alcance, dano e ROF.",
+  "areas": [
+    "itens_equipamentos",
+    "regras_base"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "regra-base-novas-armas-de-fogo",
+      "title": "Regra base - Novas Armas de Fogo",
+      "area": "regras_base",
+      "kind": "ruleset",
+      "sectionId": "regras-base",
+      "sectionTitle": "Regras Base",
+      "paragraphs": [
+        "Neste livro virtual vocês encontrarão uma lista com novas armas de fogo para o Sistema Daemon, vocês também encontrarão a ilustração de todas elas acompanhando.",
+        "ATENÇÃO: Você irá precisar conhecer as regras do Sistema Daemon para utilizar estas armas, você pode encontrar o manual básico no site da Editora - www.daemon.com.br."
+      ],
+      "sections": [
+        {
+          "id": "uso",
+          "title": "Uso",
+          "area": "regras_base",
+          "paragraphs": [
+            "Neste livro virtual vocês encontrarão uma lista com novas armas de fogo para o Sistema Daemon, vocês também encontrarão a ilustração de todas elas acompanhando.",
+            "ATENÇÃO: Você irá precisar conhecer as regras do Sistema Daemon para utilizar estas armas, você pode encontrar o manual básico no site da Editora - www.daemon.com.br."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-680",
+      "title": "A-680",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .600",
+        "Pente: 6",
+        "Alcance: 650 m",
+        "Dano: 2d6+2",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "a-680-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .600",
+            "Pente: 6",
+            "Alcance: 650 m",
+            "Dano: 2d6+2",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsa-5t-84",
+      "title": "BSA-5T-84",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: cal. 12",
+        "Pente: 10",
+        "Alcance: 500 m",
+        "Dano: 2d6+4",
+        "ROF: 2"
+      ],
+      "sections": [
+        {
+          "id": "bsa-5t-84-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: cal. 12",
+            "Pente: 10",
+            "Alcance: 500 m",
+            "Dano: 2d6+4",
+            "ROF: 2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carabina-40",
+      "title": "Carabina .40",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .40",
+        "Pente: 50",
+        "Alcance: 700 m",
+        "Dano: 2d6+6",
+        "ROF: 8"
+      ],
+      "sections": [
+        {
+          "id": "carabina-40-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .40",
+            "Pente: 50",
+            "Alcance: 700 m",
+            "Dano: 2d6+6",
+            "ROF: 8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cbc-586-2p-7-pg",
+      "title": "CBC 586 2P-7 PG",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: 5.56mm",
+        "Pente: 40",
+        "Alcance: 800 m",
+        "Dano: 1d10+2",
+        "ROF: 4"
+      ],
+      "sections": [
+        {
+          "id": "cbc-586-2p-7-pg-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: 5.56mm",
+            "Pente: 40",
+            "Alcance: 800 m",
+            "Dano: 1d10+2",
+            "ROF: 4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metralhadora-portatil-turus-famae",
+      "title": "Metralhadora portátil Turus-Famae",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .40",
+        "Pente: 100",
+        "Alcance: 250 m",
+        "Dano: 2d6",
+        "ROF: 10"
+      ],
+      "sections": [
+        {
+          "id": "metralhadora-portatil-turus-famae-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .40",
+            "Pente: 100",
+            "Alcance: 250 m",
+            "Dano: 2d6",
+            "ROF: 10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magnum-44-cp",
+      "title": "Magnum .44 CP",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .44",
+        "Pente: 6",
+        "Alcance: 60 m",
+        "Dano: 1d6+4",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "magnum-44-cp-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .44",
+            "Pente: 6",
+            "Alcance: 60 m",
+            "Dano: 1d6+4",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magnum-357-cp",
+      "title": "Magnum .357 CP",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .357",
+        "Pente: 6",
+        "Alcance: 40 m",
+        "Dano: 1d6+1",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "magnum-357-cp-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .357",
+            "Pente: 6",
+            "Alcance: 40 m",
+            "Dano: 1d6+1",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt-917c",
+      "title": "PT 917C",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: 9mm",
+        "Pente: 8",
+        "Alcance: 50 m",
+        "Dano: 1d6+2",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "pt-917c-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: 9mm",
+            "Pente: 8",
+            "Alcance: 50 m",
+            "Dano: 1d6+2",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rossi-775",
+      "title": "Rossi 775",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: cal. 12",
+        "Pente: 6",
+        "Alcance: 400 m",
+        "Dano: 2d6",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "rossi-775-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: cal. 12",
+            "Pente: 6",
+            "Alcance: 400 m",
+            "Dano: 2d6",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rossi-636",
+      "title": "Rossi 636",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .38",
+        "Pente: 6",
+        "Alcance: 35 m",
+        "Dano: 1d6",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "rossi-636-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .38",
+            "Pente: 6",
+            "Alcance: 35 m",
+            "Dano: 1d6",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "casull-454",
+      "title": "Casull .454",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .454",
+        "Pente: 6",
+        "Alcance: 45 m",
+        "Dano: 1d6+1",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "casull-454-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .454",
+            "Pente: 6",
+            "Alcance: 45 m",
+            "Dano: 1d6+1",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "title": ".38",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .38",
+        "Pente: 6",
+        "Alcance: 40 m",
+        "Dano: 1d6",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "38-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .38",
+            "Pente: 6",
+            "Alcance: 40 m",
+            "Dano: 1d6",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": ".22",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .22",
+        "Pente: 6",
+        "Alcance: 50 m",
+        "Dano: 1d6+1",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "22-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .22",
+            "Pente: 6",
+            "Alcance: 50 m",
+            "Dano: 1d6+1",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt-938",
+      "title": "PT 938",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .380",
+        "Pente: 10",
+        "Alcance: 60 m",
+        "Dano: 1d6+2",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "pt-938-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .380",
+            "Pente: 10",
+            "Alcance: 60 m",
+            "Dano: 1d6+2",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cbc-sniper-122-2",
+      "title": "CBC Sniper 122.2",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .600",
+        "Pente: 8",
+        "Alcance: 450 m",
+        "Dano: 2d6+1",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "cbc-sniper-122-2-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .600",
+            "Pente: 8",
+            "Alcance: 450 m",
+            "Dano: 2d6+1",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "era-2001",
+      "title": "ERA 2001",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: cal. 12",
+        "Pente: 7",
+        "Alcance: 400 m",
+        "Dano: 1d10+2",
+        "ROF: 2 (cano duplo)"
+      ],
+      "sections": [
+        {
+          "id": "era-2001-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: cal. 12",
+            "Pente: 7",
+            "Alcance: 400 m",
+            "Dano: 1d10+2",
+            "ROF: 2 (cano duplo)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cbc-7022",
+      "title": "CBC 7022",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .600",
+        "Pente: 8",
+        "Alcance: 300 m",
+        "Dano: 2d6",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "cbc-7022-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .600",
+            "Pente: 8",
+            "Alcance: 300 m",
+            "Dano: 2d6",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt-99",
+      "title": "PT 99",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: .40",
+        "Pente: 8",
+        "Alcance: 55 m",
+        "Dano: 1d6+2",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "pt-99-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: .40",
+            "Pente: 8",
+            "Alcance: 55 m",
+            "Dano: 1d6+2",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cbc-586-2-4",
+      "title": "CBC 586 2-4",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: cal. 12",
+        "Pente: 9",
+        "Alcance: 500 m",
+        "Dano: 1d10+2",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "cbc-586-2-4-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: cal. 12",
+            "Pente: 9",
+            "Alcance: 500 m",
+            "Dano: 1d10+2",
+            "ROF: 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cbc-586-2p-7",
+      "title": "CBC 586 2P-7",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Munição: cal. 12",
+        "Pente: 8",
+        "Alcance: 300 m",
+        "Dano: 1d10+2",
+        "ROF: 1"
+      ],
+      "sections": [
+        {
+          "id": "cbc-586-2p-7-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Munição: cal. 12",
+            "Pente: 8",
+            "Alcance: 300 m",
+            "Dano: 1d10+2",
+            "ROF: 1"
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "regras_base": 1,
+    "itens_equipamentos": 20
+  },
+  "reviewNotes": [
+    "Créditos, avisos editoriais e divulgação foram removidos da catalogação por não agregarem regra ou item jogável.",
+    "Cada arma foi separada como item/equipamento com ficha técnica própria.",
+    "A grafia 'Pente: .6' da arma .38 foi normalizada para 'Pente: 6' por coerência com o padrão das demais armas."
+  ],
+  "generatedAt": "2026-06-11T14:57:04Z"
+}

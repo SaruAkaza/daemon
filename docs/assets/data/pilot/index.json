@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-11T11:29:46",
+  "generatedAt": "2026-06-11T11:57:47",
   "sources": [
     {
       "source": "4killers",
@@ -343,6 +343,16 @@
       "status": "pilot_review",
       "areas": [
         "cenarios_lore",
+        "regras_base"
+      ]
+    },
+    {
+      "source": "novas-armas-de-fogo",
+      "title": "Novas Armas de Fogo",
+      "file": "novas-armas-de-fogo.json",
+      "status": "pilot_review",
+      "areas": [
+        "itens_equipamentos",
         "regras_base"
       ]
     },
