@@ -98,7 +98,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | 76 | `Fada_da_Luz_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
 | 77 | `Spawn_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
 | 78 | `Modulo_Combate_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
-| 79 | `Juppongatana_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
+| 79 | `Juppongatana_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
 | 80 | `Seitas_Ceu_Inferno_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 81 | `Se_Eu_Pudesse_Voar_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 82 | `Magia_Negra_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |

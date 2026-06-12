@@ -1,0 +1,819 @@
+{
+  "version": 1,
+  "source": "juppongatana",
+  "title": "Juppongatana",
+  "sourceFile": "Juppongatana_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\Juppongatana_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Suplemento de Samurai X sobre o Juppongatana, com contexto histórico, membros em ficha e técnicas de combate.",
+  "areas": [
+    "cenarios_lore",
+    "criaturas_npcs",
+    "manobras_combate"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "cenarios-lore-juppongatana",
+      "title": "Cenarios/Lore - Juppongatana",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenarios-lore",
+      "sectionTitle": "Cenários/Lore",
+      "paragraphs": [
+        "O Shogunato foi um período da história japonesa comparável ao feudalismo europeu. Com a Restauração Meiji, o Japão deixou o governo ditatorial dos xoguns e iniciou sua abertura ao mundo.",
+        "A chegada do capitão Matthew Perry, com navios de guerra norte-americanos, pressionou o Japão a abrir seus portos. O conflito político resultante alimentou a guerra civil conhecida como Bakumatsu.",
+        "A facção Meiji Ishin reuniu províncias descontentes e lutou por um novo Japão. Em resposta, o governo Edo criou o Shinsengumi, polícia especial em Kyoto encarregada de reprimir os revolucionários.",
+        "Com a vitória da Meiji Ishin, iniciou-se a Era Meiji. As mudanças sociais marginalizaram muitos samurais, que perderam privilégios e passaram a viver como professores, mercenários, criminosos ou andarilhos.",
+        "O Juppon Gatana, ou Dez Espadas, é uma tropa de assassinos de elite liderada por Makoto Shishio, antigo agente do governo que sobreviveu à tentativa de execução pelo fogo.",
+        "Shishio reuniu guerreiros como Sohjiro, Yumi, Hoji Sadojima e Uonuma Usui para desafiar o novo governo Meiji.",
+        "Kenshin parte para enfrentar Shishio, acompanhado por aliados como Sano, Kaoru, Yahiko, Misao e Hajime Saitou. A saga termina com a derrota de vários membros do grupo e a morte definitiva de Shishio.",
+        "Saizuchi é o mestre de Fuji e age como estrategista, dando ordens para que Fuji as execute.",
+        "Iwanbou é citado como membro que não atua diretamente nesta saga e ficaria para um suplemento posterior.",
+        "Houji Sadojima é o administrador e organizador do Juppon Gatana, responsável por estruturar o grupo e obter recursos, incluindo a compra da fragata de ferro.",
+        "Yumi foi uma oiran de alto status antes de conhecer Shishio e se tornar sua companheira."
+      ],
+      "sections": [
+        {
+          "id": "restauracao-meiji",
+          "title": "Do Shogunato para a Restauração Meiji",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O Shogunato foi um período da história japonesa comparável ao feudalismo europeu. Com a Restauração Meiji, o Japão deixou o governo ditatorial dos xoguns e iniciou sua abertura ao mundo.",
+            "A chegada do capitão Matthew Perry, com navios de guerra norte-americanos, pressionou o Japão a abrir seus portos. O conflito político resultante alimentou a guerra civil conhecida como Bakumatsu.",
+            "A facção Meiji Ishin reuniu províncias descontentes e lutou por um novo Japão. Em resposta, o governo Edo criou o Shinsengumi, polícia especial em Kyoto encarregada de reprimir os revolucionários.",
+            "Com a vitória da Meiji Ishin, iniciou-se a Era Meiji. As mudanças sociais marginalizaram muitos samurais, que perderam privilégios e passaram a viver como professores, mercenários, criminosos ou andarilhos."
+          ]
+        },
+        {
+          "id": "maior-das-batalhas",
+          "title": "A Maior das Batalhas",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "O Juppon Gatana, ou Dez Espadas, é uma tropa de assassinos de elite liderada por Makoto Shishio, antigo agente do governo que sobreviveu à tentativa de execução pelo fogo.",
+            "Shishio reuniu guerreiros como Sohjiro, Yumi, Hoji Sadojima e Uonuma Usui para desafiar o novo governo Meiji.",
+            "Kenshin parte para enfrentar Shishio, acompanhado por aliados como Sano, Kaoru, Yahiko, Misao e Hajime Saitou. A saga termina com a derrota de vários membros do grupo e a morte definitiva de Shishio."
+          ]
+        },
+        {
+          "id": "outros-membros",
+          "title": "Outros Membros",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Saizuchi é o mestre de Fuji e age como estrategista, dando ordens para que Fuji as execute.",
+            "Iwanbou é citado como membro que não atua diretamente nesta saga e ficaria para um suplemento posterior.",
+            "Houji Sadojima é o administrador e organizador do Juppon Gatana, responsável por estruturar o grupo e obter recursos, incluindo a compra da fragata de ferro.",
+            "Yumi foi uma oiran de alto status antes de conhecer Shishio e se tornar sua companheira."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battou-jutsu",
+      "title": "Battou-jutsu",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "A técnica consiste em sacar a espada rapidamente.",
+        "O lutador declara a manobra, recebe -30% no ataque e compara ataque contra defesa. A cada 10% de margem, soma +1 ao dano, com mínimo de +1.",
+        "Usado por Kenshin e Soujiro. Estilo: N/A."
+      ],
+      "sections": [
+        {
+          "id": "battou-jutsu-descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "A técnica consiste em sacar a espada rapidamente."
+          ]
+        },
+        {
+          "id": "battou-jutsu-sistema",
+          "title": "Sistema",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O lutador declara a manobra, recebe -30% no ataque e compara ataque contra defesa. A cada 10% de margem, soma +1 ao dano, com mínimo de +1."
+          ]
+        },
+        {
+          "id": "battou-jutsu-uso",
+          "title": "Uso",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Usado por Kenshin e Soujiro. Estilo: N/A."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "futae-no-kiwami",
+      "title": "Futae no Kiwami",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "A técnica aplica um golpe e, em intervalo mínimo, um segundo impacto. É difícil de executar, mas muito eficiente.",
+        "1 ponto de Energia Heróica; +1 ponto adicional para atingir adversários no campo de visão.",
+        "Causa 1d8+6 de dano em combate corpo a corpo. Pode ser usado com soco ou chute.",
+        "Usado por Anji e Sanosuke. Estilo desconhecido."
+      ],
+      "sections": [
+        {
+          "id": "futae-no-kiwami-descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "A técnica aplica um golpe e, em intervalo mínimo, um segundo impacto. É difícil de executar, mas muito eficiente."
+          ]
+        },
+        {
+          "id": "futae-no-kiwami-custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "1 ponto de Energia Heróica; +1 ponto adicional para atingir adversários no campo de visão."
+          ]
+        },
+        {
+          "id": "futae-no-kiwami-sistema",
+          "title": "Sistema",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Causa 1d8+6 de dano em combate corpo a corpo. Pode ser usado com soco ou chute."
+          ]
+        },
+        {
+          "id": "futae-no-kiwami-uso",
+          "title": "Uso",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Usado por Anji e Sanosuke. Estilo desconhecido."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gatotsu",
+      "title": "Gatotsu",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "A técnica consiste em atacar com a espada durante um salto.",
+        "O lutador declara a manobra, recebe -30% no ataque e adiciona +1d6 ao dano.",
+        "Usado por Saitou. Estilo: Mizoguchi Maitou Ryu."
+      ],
+      "sections": [
+        {
+          "id": "gatotsu-descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "A técnica consiste em atacar com a espada durante um salto."
+          ]
+        },
+        {
+          "id": "gatotsu-sistema",
+          "title": "Sistema",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O lutador declara a manobra, recebe -30% no ataque e adiciona +1d6 ao dano."
+          ]
+        },
+        {
+          "id": "gatotsu-uso",
+          "title": "Uso",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Usado por Saitou. Estilo: Mizoguchi Maitou Ryu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homura-dama",
+      "title": "Homura-Dama",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "Com esta manobra, Shishio faz sua espada ser tomada por chamas.",
+        "2 pontos de Energia Heróica ou 2 Pontos de Vida.",
+        "Acrescenta 2d6 ao dano da espada.",
+        "Usado por Makoto Shishio. Estilo: Ware Ryu."
+      ],
+      "sections": [
+        {
+          "id": "homura-dama-descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Com esta manobra, Shishio faz sua espada ser tomada por chamas."
+          ]
+        },
+        {
+          "id": "homura-dama-custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "2 pontos de Energia Heróica ou 2 Pontos de Vida."
+          ]
+        },
+        {
+          "id": "homura-dama-sistema",
+          "title": "Sistema",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Acrescenta 2d6 ao dano da espada."
+          ]
+        },
+        {
+          "id": "homura-dama-uso",
+          "title": "Uso",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Usado por Makoto Shishio. Estilo: Ware Ryu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guren-kaina",
+      "title": "Guren Kaina",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "Shishio agarra o adversário pelo rosto e provoca uma explosão.",
+        "Causa 2d6+1 de dano.",
+        "Usado por Makoto Shishio. Estilo: Ware Ryu."
+      ],
+      "sections": [
+        {
+          "id": "guren-kaina-descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Shishio agarra o adversário pelo rosto e provoca uma explosão."
+          ]
+        },
+        {
+          "id": "guren-kaina-sistema",
+          "title": "Sistema",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Causa 2d6+1 de dano."
+          ]
+        },
+        {
+          "id": "guren-kaina-uso",
+          "title": "Uso",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Usado por Makoto Shishio. Estilo: Ware Ryu."
+          ]
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "chyou-sawagejou",
+      "name": "Chyou Sawagejou",
+      "sections": [
+        {
+          "id": "chyou-sawagejou-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: 7",
+            "Força 12; Constituição 12; Destreza 16; Agilidade 16; Inteligência 12; Força de Vontade 12; Percepção 13; Carisma 14."
+          ]
+        },
+        {
+          "id": "chyou-sawagejou-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Arte Marcial 35/35; Armas Brancas 45/45 (escolha 4 espadas); Armas Brancas 65/65 (No-Dachi); Esquiva 40%; Acrobacia 40%; Etiqueta 20%; Heráldica 30%; Furtividade 40%; História 20%; Idioma Nativo 30%; Ler e Escrever 30%; Investigação 60%; Interrogatório 45%; Liderança 20%; Impressionar 50%; Lutar com 2 Armas 50%; Rastreio 40%; Sobrevivência 30% (escolha 3 ambientes); Armeiro 40%."
+          ]
+        },
+        {
+          "id": "chyou-sawagejou-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Bom Senso 1; Aliados 2; Sentidos Aguçados 1; Saúde de Ferro 1; Senso Numérico 1; Mestre 2; Energia Heróica 5; Inimigos -2; Proteger Indefesos -1.",
+            "Pontos de Vida: 13 + 14; Energia Heróica: 70; Pontos de Fé: 0; Equipamento: katana, No-Dachi e outras espadas."
+          ]
+        },
+        {
+          "id": "chyou-sawagejou-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Chyou é o membro mais fraco e limitado do Juppongatana em combate direto, mas é um excelente investigador. É conhecido por sua coleção de espadas."
+          ]
+        },
+        {
+          "id": "chyou-sawagejou-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "É calmo, compulsivo por colecionar espadas e, em combate, torna-se convencido e despreza seus adversários."
+          ]
+        },
+        {
+          "id": "chyou-sawagejou-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Tem porte físico mediano, usa faixa vermelha na cabeça e cabelo loiro arrepiado. Costuma vestir kimono vermelho combinado com sua coleção de espadas."
+          ]
+        },
+        {
+          "id": "chyou-sawagejou-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Kendo Básico.",
+            "Conceito: Colecionador de espadas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "henya-kariwa",
+      "name": "Henya Kariwa",
+      "sections": [
+        {
+          "id": "henya-kariwa-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: 8",
+            "Força 11; Constituição 11; Destreza 20; Agilidade 20; Inteligência 14; Força de Vontade 14; Percepção 15; Carisma 13."
+          ]
+        },
+        {
+          "id": "henya-kariwa-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Arte Marcial 25/25; Armas Brancas 30/30 (escolha 3); Arremesso 65%; Esquiva 50%; Acrobacia 55%; Voo 55%; Etiqueta 20%; Heráldica 30%; Furtividade 55%; História 20%; Idioma Nativo 30%; Ler e Escrever 30%; Investigação 55%; Interrogatório 35%; Liderança 35%; Impressionar 50%; Rastreio 45%; Sobrevivência 30% (escolha 3 ambientes); Armeiro 35%."
+          ]
+        },
+        {
+          "id": "henya-kariwa-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Patrono 2; Sentidos Aguçados 1; Senso Numérico 1; Senso de Direção 1; Energia Heróica 3; Habilidade Especial Voo 2; Inimigos -1; Dever -1.",
+            "Pontos de Vida: 11 + 8; Energia Heróica: 24; Pontos de Fé: 0; Equipamento: faca e explosivos."
+          ]
+        },
+        {
+          "id": "henya-kariwa-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Henya é fraco individualmente, mas perigoso em conjunto. Sua técnica se baseia em voar e atacar inimigos com explosivos, podendo atingir grandes grupos."
+          ]
+        },
+        {
+          "id": "henya-kariwa-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "É convencido por causa de sua técnica de voo explosivo e prefere matar inimigos lentamente."
+          ]
+        },
+        {
+          "id": "henya-kariwa-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "É baixo, magro e de estrutura frágil, o que favorece sua técnica de voo. Veste roupa preta lembrando um morcego e tem aparência associada a um corvo."
+          ]
+        },
+        {
+          "id": "henya-kariwa-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Voo Explosivo. Sensei desconhecido.",
+            "Conceito: Voador alado"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kamatari-honzo",
+      "name": "Kamatari Honzo",
+      "sections": [
+        {
+          "id": "kamatari-honzo-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: 10",
+            "Força 12; Constituição 12; Destreza 16; Agilidade 16; Inteligência 13; Força de Vontade 14; Percepção 13; Carisma 14."
+          ]
+        },
+        {
+          "id": "kamatari-honzo-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Perícias do OCR aparecem incompletas no documento. Informação preservada: Armas Brancas 95/95 (katana), além de referências a Arte Marcial, Esquiva, Acrobacia, Etiqueta, Heráldica, Furtividade, História, Idioma Nativo, Ler e Escrever, Investigação, Interrogatório, Liderança, Impressionar, Rastreio, Religião, Ocultismo, Sobrevivência, Meditação, Armeiro, Ferreiro e Pedagogia sem valores legíveis."
+          ]
+        },
+        {
+          "id": "kamatari-honzo-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Bom Senso 1; Aliados 2; Sentidos Aguçados 1; Saúde de Ferro 1; Senso Numérico 1; Mestre 2; Energia Heróica 5; Inimigos -2; Proteger Indefesos -1.",
+            "Pontos de Vida: 12 + 10; Energia Heróica: 40; Pontos de Fé: 0; Equipamento: foice e corrente."
+          ]
+        },
+        {
+          "id": "kamatari-honzo-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Kamatari é membro secundário do Juppongatana e sente atração por Shishio. Tenta provar valor seguindo suas ordens."
+          ]
+        },
+        {
+          "id": "kamatari-honzo-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Apresenta comportamento alegre e positivo, aceita ordens sem questionar e se esforça para completá-las como forma de demonstrar sentimentos por Shishio."
+          ]
+        },
+        {
+          "id": "kamatari-honzo-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Tem aparência feminina, cabelo curto e bem tratado, usa kimono em bom estado e combate com uma grande foice presa a uma corrente."
+          ]
+        },
+        {
+          "id": "kamatari-honzo-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Honjou.",
+            "Conceito: A grande foice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fuji",
+      "name": "Fuji",
+      "sections": [
+        {
+          "id": "fuji-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: 10",
+            "Força 20; Constituição 20; Destreza 12; Agilidade 12; Inteligência 12; Força de Vontade 13; Percepção 12; Carisma 11."
+          ]
+        },
+        {
+          "id": "fuji-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Arte Marcial 30/30; Armas Brancas 30/30 (escolha 5); Armas Brancas 65/65 (katana); Esquiva 40%; Etiqueta 20%; Heráldica 20%; Idioma Nativo 30%; Ler e Escrever 30%; Intimidar 40%; Liderança 30%; Impressionar 50%; Rastreio 30%; Sobrevivência 40% (escolha 6 ambientes); Meditação 40%; Armeiro 30%; Ferreiro 30%."
+          ]
+        },
+        {
+          "id": "fuji-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Mestre 1; Saúde de Ferro 1; Inocência 1; Senso de Direção 1; Energia Heróica 5; Inimigos -2; Dever -1.",
+            "Pontos de Vida: 20 + 10; Energia Heróica: 50; Pontos de Fé: 0; Equipamento: katana e armadura completa."
+          ]
+        },
+        {
+          "id": "fuji-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Fuji é um homem gigantesco rejeitado por sua aparência. Foi quase linchado e acolhido por Saizuchi, a quem serve por gratidão."
+          ]
+        },
+        {
+          "id": "fuji-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Tem bom caráter, mas vive amargurado por ser tratado como monstro. Deseja uma vida normal e aceitação."
+          ]
+        },
+        {
+          "id": "fuji-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Tem mais de 3 metros de altura, porte físico enorme, cabelos longos e usa armadura completa feita sob medida."
+          ]
+        },
+        {
+          "id": "fuji-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Kendo Básico. Sensei: Saizuchi.",
+            "Conceito: Armadura da destruição"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anji-yuukyuzan",
+      "name": "Anji Yuukyuzan",
+      "sections": [
+        {
+          "id": "anji-yuukyuzan-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: Monge 3 + Guerreiro 9",
+            "Força 16; Constituição 16; Destreza 14; Agilidade 14; Inteligência 13; Força de Vontade 13; Percepção 13; Carisma 13."
+          ]
+        },
+        {
+          "id": "anji-yuukyuzan-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Arte Marcial 80/80; Armas Brancas 65/65 (faca); Esquiva 70%; Acrobacia 40%; Etiqueta 40%; Heráldica 40%; Furtividade 40%; História 45%; Idioma Nativo 45%; Ler e Escrever 45%; Investigação 25%; Interrogatório 30%; Liderança 45%; Impressionar 50%; Rastreio 35%; Religião 55%; Ocultismo 45%; Sobrevivência 50% (escolha 4 ambientes); Meditação 60%; Pedagogia 60%."
+          ]
+        },
+        {
+          "id": "anji-yuukyuzan-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Bom Senso 1; Aliados 2; Sentidos Aguçados 1; Saúde de Ferro 1; Senso Numérico 1; Mestre 2; Energia Heróica 4; Inimigos -2; Proteger Indefesos -1.",
+            "Pontos de Vida: 16 + 12; Energia Heróica: 45; Pontos de Fé: 4; Equipamento: faca e Futae no Kiwami."
+          ]
+        },
+        {
+          "id": "anji-yuukyuzan-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Anji era um monge pacífico que cuidava de órfãos no templo budista. Após o templo ser queimado com as pessoas dentro, tornou-se o Deus da Destruição dentro do Juppongatana."
+          ]
+        },
+        {
+          "id": "anji-yuukyuzan-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "É um monge renegado que busca agir pelo bem das crianças. Aceitou entrar no grupo se pudesse decidir sobre vida e morte, até contrariando ordens de Shishio."
+          ]
+        },
+        {
+          "id": "anji-yuukyuzan-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "O texto não traz descrição física específica para Anji neste DOCX."
+          ]
+        },
+        {
+          "id": "anji-yuukyuzan-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Karate. Sensei: alto treinamento.",
+            "Conceito: Hakai-So"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usui-uonuma",
+      "name": "Usui Uonuma",
+      "sections": [
+        {
+          "id": "usui-uonuma-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: 12",
+            "Força 14; Constituição 14; Destreza 14; Agilidade 14; Inteligência 14; Força de Vontade 12; Percepção 18; Carisma 12."
+          ]
+        },
+        {
+          "id": "usui-uonuma-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Arte Marcial 30/30; Armas Brancas 30/30 (escolha 4); Tinbeh 40/80; Lança 75/75 (Ro-Chin); Esquiva 55%; Acrobacia 75%; Etiqueta 35%; Heráldica 40%; Furtividade 55%; História 35%; Idioma Nativo 35%; Ler e Escrever 35%; Investigação 40%; Interrogatório 40%; Tortura 65%; Liderança 30%; Impressionar 50%; Rastreio 40%; Religião 20%; Ocultismo 35%; Sobrevivência 40% (escolha 3 ambientes); Meditação 40%; Armeiro 30%; Ferreiro 20%."
+          ]
+        },
+        {
+          "id": "usui-uonuma-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Bom Senso 1; Aliados 2; Sentidos Aguçados 1; Saúde de Ferro 1; Senso Numérico 1; Mestre 2; Energia Heróica 5; Inimigos -2; Proteger Indefesos -1.",
+            "Pontos de Vida: 13 + 14; Energia Heróica: 70; Pontos de Fé: 0; Equipamento: Ro-Chin e Tinbeh."
+          ]
+        },
+        {
+          "id": "usui-uonuma-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Usui era samurai do xogunato e caçava retalhadores. Após lutar contra Shishio, teve os olhos cortados, ficou cego e treinou até dominar a técnica Shingan."
+          ]
+        },
+        {
+          "id": "usui-uonuma-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Faz parte do Juppongatana por um acordo: quando Shishio apresentar uma brecha, Usui terá o direito de matá-lo."
+          ]
+        },
+        {
+          "id": "usui-uonuma-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Tem porte físico mediano, usa roupas pitorescas com vários olhos e cobre os olhos com uma faixa. Mantém o Tinbeh nas costas até enfrentar adversários perigosos."
+          ]
+        },
+        {
+          "id": "usui-uonuma-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Estilo desconhecido.",
+            "Conceito: Espada sem luz"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sohjiroh-seta",
+      "name": "Sohjiroh Seta",
+      "sections": [
+        {
+          "id": "sohjiroh-seta-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: 14",
+            "Força 12; Constituição 12; Destreza 18; Agilidade 20; Inteligência 13; Força de Vontade 13; Percepção 13; Carisma 13."
+          ]
+        },
+        {
+          "id": "sohjiroh-seta-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Arte Marcial 40/40; Armas Brancas 30/30 (escolha 3); Armas Brancas 92/92 (katana); Esquiva 75%; Acrobacia 55%; Etiqueta 40%; Heráldica 40%; Furtividade 60%; História 25%; Idioma Nativo 30%; Ler e Escrever 30%; Investigação 40%; Interrogatório 40%; Liderança 50%; Impressionar 50%; Rastreio 30%; Luta às Cegas 40%; Sobrevivência 40% (escolha 3 ambientes); Meditação 40%; Armeiro 40%; Ferreiro 20%."
+          ]
+        },
+        {
+          "id": "sohjiroh-seta-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Bom Senso 1; Patrono 2; Sentidos Aguçados 1; Senso Numérico 1; Mestre 2; Energia Heróica 5; Inimigos -2.",
+            "Pontos de Vida: 12 + 14; Energia Heróica: 70; Pontos de Fé: 0; Equipamento: katana."
+          ]
+        },
+        {
+          "id": "sohjiroh-seta-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Braço direito de Makoto Shishio. Após uma infância de abusos, foi poupado e treinado por Shishio depois de presenciar um assassinato e receber dele uma espada."
+          ]
+        },
+        {
+          "id": "sohjiroh-seta-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "É praticamente sem emoção, sempre sorridente e inexpressivo. Essa combinação com seu estilo de luta o torna um inimigo implacável."
+          ]
+        },
+        {
+          "id": "sohjiroh-seta-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Tem porte físico mediano, usa kimono de cores claras, carrega uma katana na bainha e mantém o rosto sorridente."
+          ]
+        },
+        {
+          "id": "sohjiroh-seta-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Battou-jutsu. Sensei: Makoto Shishio.",
+            "Conceito: Espada Celestial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "makoto-shishio",
+      "name": "Makoto Shishio",
+      "sections": [
+        {
+          "id": "makoto-shishio-atributos",
+          "title": "Atributos",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Nível: 15",
+            "Força 16; Constituição 14; Destreza 15; Agilidade 15; Inteligência 15; Força de Vontade 15; Percepção 15; Carisma 15."
+          ]
+        },
+        {
+          "id": "makoto-shishio-pericias",
+          "title": "Perícias e Combate",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Arte Marcial 50/50; Armas Brancas 30/30 (escolha 3); Armas Brancas 95/95 (katana); Esquiva 70%; Etiqueta 40%; Heráldica 40%; Furtividade 50%; História 30%; Idioma Nativo 30%; Ler e Escrever 30%; Investigação 30%; Interrogatório 30%; Liderança 65%; Impressionar 50%; Luta às Cegas 40%; Intimidar 40%; Tortura 40%; Sobrevivência 40% (escolha 5 ambientes); Meditação 30%; Armeiro 40%; Ferreiro 20%; Pedagogia 65%."
+          ]
+        },
+        {
+          "id": "makoto-shishio-habilidades",
+          "title": "Habilidades",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Aprimoramentos: Aliados 2; Bom Senso 1; Contatos 2; Energia Heróica 5; Grupo de Aliados 3; Herança 2; Recursos 4; Sentidos Aguçados 1; Saúde de Ferro 1; Senso Numérico 1; Inimigos -2; Maldição -3.",
+            "Pontos de Vida: 15 + 15; Energia Heróica: 75; Pontos de Fé: 0; Equipamento: katana Mugenji (2d6+2)."
+          ]
+        },
+        {
+          "id": "makoto-shishio-historia",
+          "title": "História",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Shishio foi sucessor de Battousai durante a Restauração Meiji. O governo tentou eliminá-lo por saber demais, mas ele sobreviveu queimado e passou a construir seu próprio domínio."
+          ]
+        },
+        {
+          "id": "makoto-shishio-personalidade",
+          "title": "Personalidade",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "É carismático, determinado e guiado pela filosofia: para os fortes, a vida; para os fracos, a morte."
+          ]
+        },
+        {
+          "id": "makoto-shishio-aparencia",
+          "title": "Aparência",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Tem corpo coberto por ataduras devido às queimaduras e usa kimono roxo."
+          ]
+        },
+        {
+          "id": "makoto-shishio-estilo",
+          "title": "Estilo e Conceito",
+          "area": "criaturas_npcs",
+          "paragraphs": [
+            "Ware Ryu.",
+            "Conceito: Anarquista"
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1,
+    "manobras_combate": 5,
+    "criaturas_npcs": 8
+  },
+  "reviewNotes": [
+    "Páginas, cabeçalhos repetidos, agradecimentos e lista de episódios foram removidos da catalogação.",
+    "Membros com ficha mecânica foram classificados como Criaturas e NPCs.",
+    "Técnicas foram classificadas como Manobras e Especialidades, não como Poderes.",
+    "Kamatari tem perícias incompletas no OCR; os campos legíveis foram preservados e a lacuna foi sinalizada no bloco de perícias."
+  ],
+  "generatedAt": "2026-06-12T03:42:08Z"
+}

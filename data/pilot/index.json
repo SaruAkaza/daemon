@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-11T23:33:25",
+  "generatedAt": "2026-06-12T00:42:39",
   "sources": [
     {
       "source": "4killers",
@@ -320,6 +320,17 @@
       "status": "pilot_review",
       "areas": [
         "cenarios_lore"
+      ]
+    },
+    {
+      "source": "juppongatana",
+      "title": "Juppongatana",
+      "file": "juppongatana.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore",
+        "criaturas_npcs",
+        "manobras_combate"
       ]
     },
     {
