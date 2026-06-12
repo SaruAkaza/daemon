@@ -244,6 +244,7 @@ function buildCharacterItems(book) {
   }
 
   for (const npc of book.characters || []) {
+    const sections = npc.sections || [];
     items.push(baseItem(book, {
       id: `${book.source}:npc-${npc.id}`,
       kind: "npc",
@@ -251,7 +252,8 @@ function buildCharacterItems(book) {
       title: npc.name,
       sectionId: "ficha",
       sectionTitle: "NPC",
-      paragraphs: npc.sections.flatMap((section) => section.paragraphs),
+      paragraphs: sections.flatMap((section) => section.paragraphs || []),
+      sections,
       npc,
     }));
   }
@@ -658,7 +660,7 @@ function visibleItems() {
 
 function previewForItem(item) {
   if (item.kind === "npc" && item.npc) {
-    return `${item.bookTitle} · ${item.npc.role} · ${item.npc.sections.length} blocos internos`;
+    return `${item.bookTitle} · ${item.npc.role || "NPC"} · ${(item.npc.sections || []).length} blocos internos`;
   }
   return `${item.bookTitle} · ${item.paragraphs.join(" ").replace(/\s+/g, " ").slice(0, 170)}`;
 }
@@ -878,7 +880,7 @@ function renderPilotNpcDetail(item) {
 }
 
 function renderNpcDetail(item) {
-  if (!item.npc) {
+  if (!item.npc?.statBlock) {
     renderPilotNpcDetail(item);
     return;
   }
