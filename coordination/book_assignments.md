@@ -97,7 +97,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | 75 | `Judaismo_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
 | 76 | `Fada_da_Luz_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
 | 77 | `Spawn_OCR_alta_qualidade.docx` | 0.05 MB | Codex | assigned |
-| 78 | `Modulo_Combate_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
+| 78 | `Modulo_Combate_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
 | 79 | `Juppongatana_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 80 | `Seitas_Ceu_Inferno_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 81 | `Se_Eu_Pudesse_Voar_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
@@ -138,7 +138,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | 116 | `Phage.docx` | 0.03 MB | Codex | pilot_review |
 | 117 | `cabala.docx` | 0.03 MB | Codex | pilot_review |
 | 118 | `Regra Opcional Ataques a Objetos.docx` | 0.01 MB | Codex | pilot_review |
-| 119 | `Compendio de regras DAEMON Trevas.docx` | 0.00 MB | Codex | assigned |
+| 119 | `Compendio de regras DAEMON Trevas.docx` | 0.00 MB | Codex | needs_source |
 | 120 | `Tabela e Regras para magos.docx` | 0.00 MB | Codex | review_required |
 
 ## Claude

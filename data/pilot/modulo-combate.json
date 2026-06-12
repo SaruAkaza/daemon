@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "source": "modulo-combate",
+  "title": "Módulo Combate",
+  "sourceFile": "Modulo_Combate_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\Modulo_Combate_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Módulo alternativo de combate para 3D&T, com regras de dano, PV, PM, manobras especiais, armas e armaduras.",
+  "areas": [
+    "itens_equipamentos",
+    "manobras_combate",
+    "regras_base"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "regra-base-modulo-combate",
+      "title": "Regra base - Módulo Combate",
+      "area": "regras_base",
+      "kind": "rule",
+      "sectionId": "regras-base",
+      "sectionTitle": "Regras Base",
+      "paragraphs": [
+        "O módulo substitui a lógica tradicional de FA/FD de 3D&T por rolagens diretas de dados para ataque e defesa. Para cada ponto em Força ou Poder de Fogo, o personagem rola 1d e soma os resultados para determinar o dano.",
+        "A defesa funciona da mesma forma: cada ponto de Armadura gera 1d, e a soma reduz o dano recebido. O dano restante é subtraído dos Pontos de Vida.",
+        "Os Pontos de Vida passam a ser sorteados com base na Resistência. O personagem multiplica Resistência por 10 e soma 1d6 ao resultado.",
+        "Resistência 0: 1 PV.",
+        "Resistência 1: 1d6 + 10 PV.",
+        "Resistência 2: 1d6 + 20 PV.",
+        "Resistência 3: 1d6 + 30 PV.",
+        "Resistência 4: 1d6 + 40 PV.",
+        "Resistência 5: 1d6 + 50 PV.",
+        "A progressão segue o mesmo padrão para valores maiores de Resistência.",
+        "Para recuperar Pontos de Vida, o personagem precisa descansar por pelo menos 8 horas. O Mestre define a recuperação em descansos interrompidos.",
+        "Pontos de Magia são usados para realizar Manobras Especiais ou Ataques Especiais.",
+        "O personagem recebe Pontos de Magia iguais ao valor de Resistência multiplicado por 5.",
+        "Resistência 0: 0 PM.",
+        "Resistência 1: 5 PM.",
+        "Resistência 2: 10 PM.",
+        "Resistência 3: 15 PM.",
+        "Resistência 4: 20 PM.",
+        "Resistência 5: 25 PM.",
+        "A progressão segue o mesmo padrão para valores maiores de Resistência.",
+        "A recuperação acontece por meditação: a cada 30 minutos, 2 PM são recuperados. Descanso também recupera 2 PM a cada 8 horas.",
+        "O combate é dividido em turnos e rodadas. No início, cada envolvido rola 1d e soma Habilidade para definir a Iniciativa.",
+        "A ordem das ações segue do maior valor de iniciativa para o menor. Empates ocorrem simultaneamente.",
+        "A iniciativa recebe +1 com Aceleração, +2 com Teleporte, +1 com arma veloz e -1 com arma lenta. Aceleração e Teleporte não são cumulativos.",
+        "Em um turno, o personagem pode realizar uma ação e dois deslocamentos, ou três deslocamentos sem ação.",
+        "Opcionalmente, quando efeitos alteram a Habilidade durante o combate, o Mestre pode pedir nova rolagem de Iniciativa.",
+        "O personagem com maior iniciativa age primeiro e declara seu ataque. Em condições normais, o golpe acerta automaticamente, salvo situações especiais como atacar às cegas ou com a mão ruim.",
+        "A vítima escolhe uma reação: Bloqueio, Esquiva ou Contra-Ataque.",
+        "Bloqueio: o personagem permanece imóvel e soma o valor fixo de Armadura à rolagem de absorção. Se o bloqueio superar o dano, nenhum dano mínimo é recebido.",
+        "Esquiva: o personagem testa Habilidade. Em sucesso, evita todo o golpe; em falha, não pode bloquear e rola apenas Armadura para reduzir o dano.",
+        "Ações múltiplas opcionais: o número de defesas e ataques por rodada pode ser limitado pela Habilidade. Abrir mão da ação seguinte permite defender até o dobro da Habilidade.",
+        "Contra-ataque simultâneo: o personagem abre mão da defesa e acerta o oponente, mas recebe o ataque normalmente. A Armadura é reduzida ao seu valor mínimo fixo.",
+        "Um oponente ferido por contra-ataque perde a sequência de golpes daquele turno.",
+        "Contra-ataque resistido: ocorre quando dois combatentes disparam energia um contra o outro usando Poder de Fogo. Os dados são comparados um a um até definir quem vence a disputa.",
+        "Manobras Especiais e Ataques Especiais podem ser usados no contra-ataque. No simultâneo, funcionam apenas para ataques baseados em Força; no resistido, exigem Poder de Fogo dos dois lados.",
+        "Cada ponto de Força ou Poder de Fogo usado no ataque é convertido em 1d de dano.",
+        "Cada ponto de Armadura do alvo é convertido em 1d de absorção. O dano não absorvido reduz os Pontos de Vida.",
+        "Todos os ataques causam pelo menos 1 ponto de dano, mesmo quando a Armadura absorve todo o dano. A exceção é o Bloqueio bem-sucedido, que pode anular completamente o dano.",
+        "Para acertar um local específico, o atacante deve passar em um teste de Habilidade -1. Em falha, o local atingido é definido aleatoriamente.",
+        "Tabela de localização: 1 - local escolhido pelo atacante; 2 - cabeça; 3 - tronco; 4 - braços; 5 - pernas; 6 - o atacante erra por se concentrar demais no ponto específico.",
+        "Armaduras muito pesadas podem reduzir Habilidade. Some a FD total das proteções e escudos, divida por 4 e compare com a Força. Cada ponto acima da Força gera H-1."
+      ],
+      "sections": [
+        {
+          "id": "lutadores",
+          "title": "Lutadores",
+          "area": "regras_base",
+          "paragraphs": [
+            "O módulo substitui a lógica tradicional de FA/FD de 3D&T por rolagens diretas de dados para ataque e defesa. Para cada ponto em Força ou Poder de Fogo, o personagem rola 1d e soma os resultados para determinar o dano.",
+            "A defesa funciona da mesma forma: cada ponto de Armadura gera 1d, e a soma reduz o dano recebido. O dano restante é subtraído dos Pontos de Vida."
+          ]
+        },
+        {
+          "id": "pontos-de-vida",
+          "title": "Pontos de Vida",
+          "area": "regras_base",
+          "paragraphs": [
+            "Os Pontos de Vida passam a ser sorteados com base na Resistência. O personagem multiplica Resistência por 10 e soma 1d6 ao resultado.",
+            "Resistência 0: 1 PV.",
+            "Resistência 1: 1d6 + 10 PV.",
+            "Resistência 2: 1d6 + 20 PV.",
+            "Resistência 3: 1d6 + 30 PV.",
+            "Resistência 4: 1d6 + 40 PV.",
+            "Resistência 5: 1d6 + 50 PV.",
+            "A progressão segue o mesmo padrão para valores maiores de Resistência.",
+            "Para recuperar Pontos de Vida, o personagem precisa descansar por pelo menos 8 horas. O Mestre define a recuperação em descansos interrompidos."
+          ]
+        },
+        {
+          "id": "pontos-de-magia",
+          "title": "Pontos de Magia",
+          "area": "regras_base",
+          "paragraphs": [
+            "Pontos de Magia são usados para realizar Manobras Especiais ou Ataques Especiais.",
+            "O personagem recebe Pontos de Magia iguais ao valor de Resistência multiplicado por 5.",
+            "Resistência 0: 0 PM.",
+            "Resistência 1: 5 PM.",
+            "Resistência 2: 10 PM.",
+            "Resistência 3: 15 PM.",
+            "Resistência 4: 20 PM.",
+            "Resistência 5: 25 PM.",
+            "A progressão segue o mesmo padrão para valores maiores de Resistência.",
+            "A recuperação acontece por meditação: a cada 30 minutos, 2 PM são recuperados. Descanso também recupera 2 PM a cada 8 horas."
+          ]
+        },
+        {
+          "id": "estrutura-do-combate",
+          "title": "Estrutura do Combate",
+          "area": "regras_base",
+          "paragraphs": [
+            "O combate é dividido em turnos e rodadas. No início, cada envolvido rola 1d e soma Habilidade para definir a Iniciativa.",
+            "A ordem das ações segue do maior valor de iniciativa para o menor. Empates ocorrem simultaneamente.",
+            "A iniciativa recebe +1 com Aceleração, +2 com Teleporte, +1 com arma veloz e -1 com arma lenta. Aceleração e Teleporte não são cumulativos.",
+            "Em um turno, o personagem pode realizar uma ação e dois deslocamentos, ou três deslocamentos sem ação.",
+            "Opcionalmente, quando efeitos alteram a Habilidade durante o combate, o Mestre pode pedir nova rolagem de Iniciativa."
+          ]
+        },
+        {
+          "id": "ataque-e-reacao",
+          "title": "Ataque e Reação",
+          "area": "regras_base",
+          "paragraphs": [
+            "O personagem com maior iniciativa age primeiro e declara seu ataque. Em condições normais, o golpe acerta automaticamente, salvo situações especiais como atacar às cegas ou com a mão ruim.",
+            "A vítima escolhe uma reação: Bloqueio, Esquiva ou Contra-Ataque.",
+            "Bloqueio: o personagem permanece imóvel e soma o valor fixo de Armadura à rolagem de absorção. Se o bloqueio superar o dano, nenhum dano mínimo é recebido.",
+            "Esquiva: o personagem testa Habilidade. Em sucesso, evita todo o golpe; em falha, não pode bloquear e rola apenas Armadura para reduzir o dano.",
+            "Ações múltiplas opcionais: o número de defesas e ataques por rodada pode ser limitado pela Habilidade. Abrir mão da ação seguinte permite defender até o dobro da Habilidade."
+          ]
+        },
+        {
+          "id": "contra-ataque",
+          "title": "Contra-Ataque",
+          "area": "regras_base",
+          "paragraphs": [
+            "Contra-ataque simultâneo: o personagem abre mão da defesa e acerta o oponente, mas recebe o ataque normalmente. A Armadura é reduzida ao seu valor mínimo fixo.",
+            "Um oponente ferido por contra-ataque perde a sequência de golpes daquele turno.",
+            "Contra-ataque resistido: ocorre quando dois combatentes disparam energia um contra o outro usando Poder de Fogo. Os dados são comparados um a um até definir quem vence a disputa.",
+            "Manobras Especiais e Ataques Especiais podem ser usados no contra-ataque. No simultâneo, funcionam apenas para ataques baseados em Força; no resistido, exigem Poder de Fogo dos dois lados."
+          ]
+        },
+        {
+          "id": "dano",
+          "title": "Dano",
+          "area": "regras_base",
+          "paragraphs": [
+            "Cada ponto de Força ou Poder de Fogo usado no ataque é convertido em 1d de dano.",
+            "Cada ponto de Armadura do alvo é convertido em 1d de absorção. O dano não absorvido reduz os Pontos de Vida.",
+            "Todos os ataques causam pelo menos 1 ponto de dano, mesmo quando a Armadura absorve todo o dano. A exceção é o Bloqueio bem-sucedido, que pode anular completamente o dano."
+          ]
+        },
+        {
+          "id": "dano-localizado",
+          "title": "Dano Localizado",
+          "area": "regras_base",
+          "paragraphs": [
+            "Para acertar um local específico, o atacante deve passar em um teste de Habilidade -1. Em falha, o local atingido é definido aleatoriamente.",
+            "Tabela de localização: 1 - local escolhido pelo atacante; 2 - cabeça; 3 - tronco; 4 - braços; 5 - pernas; 6 - o atacante erra por se concentrar demais no ponto específico.",
+            "Armaduras muito pesadas podem reduzir Habilidade. Some a FD total das proteções e escudos, divida por 4 e compare com a Força. Cada ponto acima da Força gera H-1."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manobras-especiais",
+      "title": "Manobras Especiais",
+      "area": "manobras_combate",
+      "kind": "technique_rule",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "Manobras Especiais são variações do ataque normal do lutador: golpes secretos que causam efeitos extras além do dano.",
+        "Em jogo, basta declarar a manobra escolhida. Ela causa o dano normal do ataque e aplica o efeito descrito em sua ficha.",
+        "Vertical: própria para atingir oponentes acima do personagem, como em saltos ou plataformas.",
+        "Horizontal: usada contra oponentes à frente do personagem.",
+        "Rasteiro: afeta oponentes no chão e à frente do usuário.",
+        "Total: pode ser usada em qualquer situação.",
+        "Usar uma manobra em condição diferente do alcance indicado reduz o dano em -1d. Uma manobra pode ter mais de um alcance.",
+        "O personagem pode conhecer um número de Manobras Especiais igual à sua Habilidade.",
+        "Para aprender uma nova manobra quando já atingiu esse limite, deve esquecer uma manobra antiga.",
+        "Algumas manobras possuem um efeito extra que exige gasto de 1 Ponto de Magia para ser ativado."
+      ],
+      "sections": [
+        {
+          "id": "manobras-especiais-descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Manobras Especiais são variações do ataque normal do lutador: golpes secretos que causam efeitos extras além do dano.",
+            "Em jogo, basta declarar a manobra escolhida. Ela causa o dano normal do ataque e aplica o efeito descrito em sua ficha."
+          ]
+        },
+        {
+          "id": "manobras-especiais-alcance",
+          "title": "Alcance",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Vertical: própria para atingir oponentes acima do personagem, como em saltos ou plataformas.",
+            "Horizontal: usada contra oponentes à frente do personagem.",
+            "Rasteiro: afeta oponentes no chão e à frente do usuário.",
+            "Total: pode ser usada em qualquer situação.",
+            "Usar uma manobra em condição diferente do alcance indicado reduz o dano em -1d. Uma manobra pode ter mais de um alcance."
+          ]
+        },
+        {
+          "id": "manobras-especiais-limite",
+          "title": "Limite",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O personagem pode conhecer um número de Manobras Especiais igual à sua Habilidade.",
+            "Para aprender uma nova manobra quando já atingiu esse limite, deve esquecer uma manobra antiga."
+          ]
+        },
+        {
+          "id": "manobras-especiais-extra",
+          "title": "Extra",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Algumas manobras possuem um efeito extra que exige gasto de 1 Ponto de Magia para ser ativado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fireball",
+      "title": "Fireball",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "Total.",
+        "Calor/Fogo.",
+        "Ataque básico por Poder de Fogo.",
+        "O oponente deve fazer um teste de Resistência para não ser derrubado. Se cair, precisa de 1 turno para se levantar."
+      ],
+      "sections": [
+        {
+          "id": "fireball-alcance",
+          "title": "Alcance",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Total."
+          ]
+        },
+        {
+          "id": "fireball-dano",
+          "title": "Dano",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Calor/Fogo."
+          ]
+        },
+        {
+          "id": "fireball-efeito",
+          "title": "Efeito",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Ataque básico por Poder de Fogo."
+          ]
+        },
+        {
+          "id": "fireball-extra",
+          "title": "Extra",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O oponente deve fazer um teste de Resistência para não ser derrubado. Se cair, precisa de 1 turno para se levantar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aerial-strike",
+      "title": "Aerial Strike",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "Vertical.",
+        "Luz.",
+        "Ataque básico por Força.",
+        "O oponente deve fazer um teste de Resistência para não ser arremessado. A distância é de 2 metros por ponto de dano causado."
+      ],
+      "sections": [
+        {
+          "id": "aerial-strike-alcance",
+          "title": "Alcance",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Vertical."
+          ]
+        },
+        {
+          "id": "aerial-strike-dano",
+          "title": "Dano",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Luz."
+          ]
+        },
+        {
+          "id": "aerial-strike-efeito",
+          "title": "Efeito",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Ataque básico por Força."
+          ]
+        },
+        {
+          "id": "aerial-strike-extra",
+          "title": "Extra",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O oponente deve fazer um teste de Resistência para não ser arremessado. A distância é de 2 metros por ponto de dano causado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yamibarai",
+      "title": "Yamibarai",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "Rasteiro.",
+        "Calor/Fogo.",
+        "Ataque básico por Poder de Fogo.",
+        "O oponente fica em chamas e o ataque recebe +1d de dano."
+      ],
+      "sections": [
+        {
+          "id": "yamibarai-alcance",
+          "title": "Alcance",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Rasteiro."
+          ]
+        },
+        {
+          "id": "yamibarai-dano",
+          "title": "Dano",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Calor/Fogo."
+          ]
+        },
+        {
+          "id": "yamibarai-efeito",
+          "title": "Efeito",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Ataque básico por Poder de Fogo."
+          ]
+        },
+        {
+          "id": "yamibarai-extra",
+          "title": "Extra",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O oponente fica em chamas e o ataque recebe +1d de dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-ataques-especiais",
+      "title": "Super Ataques Especiais",
+      "area": "manobras_combate",
+      "kind": "technique_rule",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
+      "paragraphs": [
+        "Gasta Pontos de Magia em quantidade igual à Habilidade do personagem.",
+        "O personagem soma a Habilidade ao dano como bônus em dados. Exemplo: Força 2 e Habilidade 4 resultam em +4d no dano.",
+        "Esta versão substitui a antiga vantagem Ataque Especial, que ainda custa 1 ponto.",
+        "Depois de usar o Super Ataque Especial, o personagem fica exausto e sua Habilidade é considerada 0 no próximo turno.",
+        "Como variante, o personagem pode usar apenas metade da Habilidade no ataque e conservar a outra metade para o turno seguinte."
+      ],
+      "sections": [
+        {
+          "id": "super-ataques-custo",
+          "title": "Custo",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "Gasta Pontos de Magia em quantidade igual à Habilidade do personagem."
+          ]
+        },
+        {
+          "id": "super-ataques-descricao",
+          "title": "Descrição",
+          "area": "manobras_combate",
+          "paragraphs": [
+            "O personagem soma a Habilidade ao dano como bônus em dados. Exemplo: Força 2 e Habilidade 4 resultam em +4d no dano.",
+            "Esta versão substitui a antiga vantagem Ataque Especial, que ainda custa 1 ponto.",
+            "Depois de usar o Super Ataque Especial, o personagem fica exausto e sua Habilidade é considerada 0 no próximo turno.",
+            "Como variante, o personagem pode usar apenas metade da Habilidade no ataque e conservar a outra metade para o turno seguinte."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pistola",
+      "title": "Pistola",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Alcance: 15 m.",
+        "SDT: 1.",
+        "Pente: 7.",
+        "Dano: 2d+2.",
+        "Arma leve, geralmente usada com apenas uma das mãos e adequada a combate rápido."
+      ],
+      "sections": [
+        {
+          "id": "pistola-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Alcance: 15 m.",
+            "SDT: 1.",
+            "Pente: 7.",
+            "Dano: 2d+2."
+          ]
+        },
+        {
+          "id": "pistola-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Arma leve, geralmente usada com apenas uma das mãos e adequada a combate rápido."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metralhadora",
+      "title": "Metralhadora",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Alcance: 25 m.",
+        "SDT: 5.",
+        "Pente: 30.",
+        "Dano: 3d+1.",
+        "Arma média para ataques em massa, capaz de realizar vários disparos no mesmo turno."
+      ],
+      "sections": [
+        {
+          "id": "metralhadora-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Alcance: 25 m.",
+            "SDT: 5.",
+            "Pente: 30.",
+            "Dano: 3d+1."
+          ]
+        },
+        {
+          "id": "metralhadora-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Arma média para ataques em massa, capaz de realizar vários disparos no mesmo turno."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escopeta",
+      "title": "Escopeta",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Alcance: 10 m.",
+        "SDT: 1.",
+        "Pente: 5.",
+        "Dano: 4d+3.",
+        "Arma pesada de combate, usada com as duas mãos. Personagens com Força 0 ou 1 sofrem recuo intenso."
+      ],
+      "sections": [
+        {
+          "id": "escopeta-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Alcance: 10 m.",
+            "SDT: 1.",
+            "Pente: 5.",
+            "Dano: 4d+3."
+          ]
+        },
+        {
+          "id": "escopeta-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Arma pesada de combate, usada com as duas mãos. Personagens com Força 0 ou 1 sofrem recuo intenso."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arco",
+      "title": "Arco",
+      "area": "itens_equipamentos",
+      "kind": "equipment",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "Alcance: 25 m.",
+        "SDT: igual ao Poder de Fogo.",
+        "Pente: não se aplica.",
+        "Dano: 1d.",
+        "Arma de ataque à distância em cenários medievais. Arcos modernos com mira acrescentam +3 ao dano."
+      ],
+      "sections": [
+        {
+          "id": "arco-ficha",
+          "title": "Ficha",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Alcance: 25 m.",
+            "SDT: igual ao Poder de Fogo.",
+            "Pente: não se aplica.",
+            "Dano: 1d."
+          ]
+        },
+        {
+          "id": "arco-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Arma de ataque à distância em cenários medievais. Arcos modernos com mira acrescentam +3 ao dano."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armas-brancas",
+      "title": "Armas Brancas",
+      "area": "itens_equipamentos",
+      "kind": "equipment_group",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "O ataque com arma branca funciona como um ataque desarmado: o personagem declara o ataque e acerta automaticamente em condições normais.",
+        "Armas brancas podem causar dano por Força quando usadas em combate corpo a corpo ou por Poder de Fogo quando arremessadas.",
+        "Espada Leve: F+1d+4; PdF+2d+6; veloz.",
+        "Espada Média: F+2d+4; PdF+2d+5.",
+        "Espada Pesada: F+3d+2; PdF+2d+6; duas mãos; vorpal.",
+        "Machado de Arremesso: F+1d+3; PdF+2d+5.",
+        "Machado Leve: F+2d+4; PdF+1d+5.",
+        "Machado Pesado: F+3d+5; PdF+2d+3; duas mãos; vorpal.",
+        "Maça: F+2d+2; PdF+2d+4.",
+        "Mangual: F+2d+6; PdF+2d+5; Ataque Múltiplo.",
+        "Foice: F+2d+2; PdF+1d+1; duas mãos.",
+        "Marreta: F+3d+4; PdF+2d+1; duas mãos.",
+        "Lança Comum: F+2d+5; PdF+2d+4; duas mãos.",
+        "Lança de Guerra: F+2d+7; PdF+2d+10; duas mãos.",
+        "Bastão de Treino: F+1d+6; PdF+1d+1; duas mãos.",
+        "Bastão de Combate: F+2d+1; PdF+2d+5; duas mãos.",
+        "Shuriken: F+2; PdF+4; veloz.",
+        "Faca/Adaga: F+4; PdF+1d.",
+        "Punhal: F+1d+1; PdF+6; veloz.",
+        "Cajado: F+1d; PdF+3.",
+        "Cetro: F+1d+5; PdF+1d."
+      ],
+      "sections": [
+        {
+          "id": "armas-brancas-regras",
+          "title": "Regras",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "O ataque com arma branca funciona como um ataque desarmado: o personagem declara o ataque e acerta automaticamente em condições normais.",
+            "Armas brancas podem causar dano por Força quando usadas em combate corpo a corpo ou por Poder de Fogo quando arremessadas."
+          ]
+        },
+        {
+          "id": "armas-brancas-lista",
+          "title": "Lista",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "Espada Leve: F+1d+4; PdF+2d+6; veloz.",
+            "Espada Média: F+2d+4; PdF+2d+5.",
+            "Espada Pesada: F+3d+2; PdF+2d+6; duas mãos; vorpal.",
+            "Machado de Arremesso: F+1d+3; PdF+2d+5.",
+            "Machado Leve: F+2d+4; PdF+1d+5.",
+            "Machado Pesado: F+3d+5; PdF+2d+3; duas mãos; vorpal.",
+            "Maça: F+2d+2; PdF+2d+4.",
+            "Mangual: F+2d+6; PdF+2d+5; Ataque Múltiplo.",
+            "Foice: F+2d+2; PdF+1d+1; duas mãos.",
+            "Marreta: F+3d+4; PdF+2d+1; duas mãos.",
+            "Lança Comum: F+2d+5; PdF+2d+4; duas mãos.",
+            "Lança de Guerra: F+2d+7; PdF+2d+10; duas mãos.",
+            "Bastão de Treino: F+1d+6; PdF+1d+1; duas mãos.",
+            "Bastão de Combate: F+2d+1; PdF+2d+5; duas mãos.",
+            "Shuriken: F+2; PdF+4; veloz.",
+            "Faca/Adaga: F+4; PdF+1d.",
+            "Punhal: F+1d+1; PdF+6; veloz.",
+            "Cajado: F+1d; PdF+3.",
+            "Cetro: F+1d+5; PdF+1d."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armaduras",
+      "title": "Armaduras",
+      "area": "itens_equipamentos",
+      "kind": "equipment_rule",
+      "sectionId": "itens-e-equipamentos",
+      "sectionTitle": "Itens e Equipamentos",
+      "paragraphs": [
+        "As proteções são divididas em cinco partes: cabeça, tronco, braços, pernas e proteção total.",
+        "Na descrição das peças aparece a Força de Defesa (FD), somada ao resultado final do teste de Armadura quando o local protegido é atingido.",
+        "Exemplo: um personagem com Armadura 2 e elmo de FD 1 rola 2d+1 quando atingido na cabeça."
+      ],
+      "sections": [
+        {
+          "id": "armaduras-descricao",
+          "title": "Descrição",
+          "area": "itens_equipamentos",
+          "paragraphs": [
+            "As proteções são divididas em cinco partes: cabeça, tronco, braços, pernas e proteção total.",
+            "Na descrição das peças aparece a Força de Defesa (FD), somada ao resultado final do teste de Armadura quando o local protegido é atingido.",
+            "Exemplo: um personagem com Armadura 2 e elmo de FD 1 rola 2d+1 quando atingido na cabeça."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "regras_base": 1,
+    "manobras_combate": 5,
+    "itens_equipamentos": 6
+  },
+  "reviewNotes": [
+    "Editorial, créditos, páginas vazias e marcas de OCR foram removidos da catalogação.",
+    "O núcleo do livro foi tratado como uma única regra base, pois os subtópicos explicam o mesmo módulo de combate.",
+    "Manobras Especiais e Super Ataques Especiais foram catalogados em Manobras e Especialidades, não em Poderes.",
+    "Armas e armaduras foram separadas como Itens e Equipamentos, com fichas em linhas próprias para evitar aglutinação."
+  ],
+  "generatedAt": "2026-06-12T02:32:45Z"
+}

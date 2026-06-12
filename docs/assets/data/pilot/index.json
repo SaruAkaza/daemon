@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-11T23:21:45",
+  "generatedAt": "2026-06-11T23:33:25",
   "sources": [
     {
       "source": "4killers",
@@ -352,6 +352,17 @@
       "status": "pilot_review",
       "areas": [
         "cenarios_lore",
+        "regras_base"
+      ]
+    },
+    {
+      "source": "modulo-combate",
+      "title": "Módulo Combate",
+      "file": "modulo-combate.json",
+      "status": "pilot_review",
+      "areas": [
+        "itens_equipamentos",
+        "manobras_combate",
         "regras_base"
       ]
     },
