@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-11T23:00:04",
+  "generatedAt": "2026-06-11T23:16:27",
   "sources": [
     {
       "source": "4killers",
@@ -353,7 +353,7 @@
       "status": "pilot_review",
       "areas": [
         "classes",
-        "poderes"
+        "manobras_combate"
       ]
     },
     {

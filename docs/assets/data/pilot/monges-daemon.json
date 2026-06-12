@@ -5,10 +5,10 @@
   "sourceFile": "Monges_Daemon_OCR_alta_qualidade.docx",
   "sourcePath": "Livros\\word\\feito\\Monges_Daemon_OCR_alta_qualidade.docx",
   "status": "pilot_review",
-  "summary": "Adaptação de monges para Sistema Daemon, com classe Monge, dano desarmado por nível e poderes compráveis.",
+  "summary": "Adaptação de monges para Sistema Daemon, com classe Monge, dano desarmado por nível e técnicas compráveis.",
   "areas": [
     "classes",
-    "poderes"
+    "manobras_combate"
   ],
   "groups": [],
   "sections": [
@@ -75,10 +75,10 @@
     {
       "id": "desviar-flechas",
       "title": "Desviar Flechas",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "poderes",
-      "sectionTitle": "Poderes",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
       "paragraphs": [
         "25 pontos",
         "quando atacado com arcos ou bestas o monge pode fazer um teste de Defesa de sua arte marcial ou de briga para “aparar” as flechas desviando-as. (o monge NÃO pode desviar o projétil na direção de outro alvo)."
@@ -87,7 +87,7 @@
         {
           "id": "desviar-flechas-custo",
           "title": "Custo",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "25 pontos"
           ]
@@ -95,7 +95,7 @@
         {
           "id": "desviar-flechas-descricao",
           "title": "Descrição",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "quando atacado com arcos ou bestas o monge pode fazer um teste de Defesa de sua arte marcial ou de briga para “aparar” as flechas desviando-as. (o monge NÃO pode desviar o projétil na direção de outro alvo)."
           ]
@@ -105,10 +105,10 @@
     {
       "id": "mente-calma",
       "title": "Mente Calma",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "poderes",
-      "sectionTitle": "Poderes",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
       "paragraphs": [
         "30 pontos",
         "com este poder, graças ao estado que sua mente alcança pela meditação, o monge se torna mais resistente a magias de influência e controle mental. Ele terá direito a um teste de WILL vs WILL em qualquer magia com um bônus de +30%."
@@ -117,7 +117,7 @@
         {
           "id": "mente-calma-custo",
           "title": "Custo",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "30 pontos"
           ]
@@ -125,7 +125,7 @@
         {
           "id": "mente-calma-descricao",
           "title": "Descrição",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "com este poder, graças ao estado que sua mente alcança pela meditação, o monge se torna mais resistente a magias de influência e controle mental. Ele terá direito a um teste de WILL vs WILL em qualquer magia com um bônus de +30%."
           ]
@@ -135,10 +135,10 @@
     {
       "id": "pureza-do-corpo",
       "title": "Pureza do Corpo",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "poderes",
-      "sectionTitle": "Poderes",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
       "paragraphs": [
         "40 pontos",
         "com este poder o monge se torna imune a doenças não mágicas."
@@ -147,7 +147,7 @@
         {
           "id": "pureza-do-corpo-custo",
           "title": "Custo",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "40 pontos"
           ]
@@ -155,7 +155,7 @@
         {
           "id": "pureza-do-corpo-descricao",
           "title": "Descrição",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "com este poder o monge se torna imune a doenças não mágicas."
           ]
@@ -165,10 +165,10 @@
     {
       "id": "plenitude-do-corpo",
       "title": "Plenitude do Corpo",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "poderes",
-      "sectionTitle": "Poderes",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
       "paragraphs": [
         "50 pontos",
         "o controle do monge sobre o seu corpo é tal que ele pode curar seus próprios ferimentos. Uma vez por dia, ele pode recuperar 1d10 pontos de vida. O Monge não pode curar outras pessoas com essa habilidade."
@@ -177,7 +177,7 @@
         {
           "id": "plenitude-do-corpo-custo",
           "title": "Custo",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "50 pontos"
           ]
@@ -185,7 +185,7 @@
         {
           "id": "plenitude-do-corpo-descricao",
           "title": "Descrição",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "o controle do monge sobre o seu corpo é tal que ele pode curar seus próprios ferimentos. Uma vez por dia, ele pode recuperar 1d10 pontos de vida. O Monge não pode curar outras pessoas com essa habilidade."
           ]
@@ -195,10 +195,10 @@
     {
       "id": "golpe-do-ki",
       "title": "Golpe do Ki",
-      "area": "poderes",
-      "kind": "power",
-      "sectionId": "poderes",
-      "sectionTitle": "Poderes",
+      "area": "manobras_combate",
+      "kind": "technique",
+      "sectionId": "manobras-e-especialidades",
+      "sectionTitle": "Manobras e Especialidades",
       "paragraphs": [
         "65 pontos",
         "com este poder, os monges são fortalecidos por sua energia interior, o ki. Seus golpes se tornam tão poderosos que podem ferir criaturas vulneráveis apenas a magia, ou seja, atuam como armas mágicas. Assim, criaturas como gárgulas e vultos, que só podem ser atingidas por armas mágicas, sofrem dano pelos punhos de um Monge com este poder."
@@ -207,7 +207,7 @@
         {
           "id": "golpe-do-ki-custo",
           "title": "Custo",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "65 pontos"
           ]
@@ -215,7 +215,7 @@
         {
           "id": "golpe-do-ki-descricao",
           "title": "Descrição",
-          "area": "poderes",
+          "area": "manobras_combate",
           "paragraphs": [
             "com este poder, os monges são fortalecidos por sua energia interior, o ki. Seus golpes se tornam tão poderosos que podem ferir criaturas vulneráveis apenas a magia, ou seja, atuam como armas mágicas. Assim, criaturas como gárgulas e vultos, que só podem ser atingidas por armas mágicas, sofrem dano pelos punhos de um Monge com este poder."
           ]
@@ -225,12 +225,12 @@
   ],
   "counts": {
     "classes": 1,
-    "poderes": 5
+    "manobras_combate": 5
   },
   "reviewNotes": [
     "Créditos, rodapé e nota de distribuição foram removidos da catalogação.",
     "Monge foi tratado como classe, pois o próprio texto descreve o arquétipo como classe e traz progressão por nível.",
-    "Poderes compráveis foram separados individualmente com bloco de custo e descrição."
+    "As técnicas compráveis foram classificadas como Manobras e Especialidades, pois são compradas junto das perícias e descrevem recursos de treinamento marcial."
   ],
-  "generatedAt": "2026-06-12T01:59:42Z"
+  "generatedAt": "2026-06-12T02:16:26Z"
 }

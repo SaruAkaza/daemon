@@ -42,7 +42,7 @@ TEXT_FIXES = {
 
 
 PAGE_RE = re.compile(r"^Página\s+\d+$", flags=re.IGNORECASE)
-POWER_RE = re.compile(r"^(?P<title>.+?)\s+\((?P<cost>\d+\s+pontos?)\)\s*[–-]\s*(?P<desc>.+)$", flags=re.IGNORECASE)
+TECHNIQUE_RE = re.compile(r"^(?P<title>.+?)\s+\((?P<cost>\d+\s+pontos?)\)\s*[–-]\s*(?P<desc>.+)$", flags=re.IGNORECASE)
 LEVEL_DAMAGE_RE = re.compile(r"(\d+º nível)\s*[–-]\s*(.+?)(?=\s+\d+º nível|$)")
 
 
@@ -127,22 +127,22 @@ def make_monk_class(paragraphs: list[str]) -> dict:
     )
 
 
-def make_power(paragraph: str) -> dict:
-    match = POWER_RE.match(paragraph)
+def make_technique(paragraph: str) -> dict:
+    match = TECHNIQUE_RE.match(paragraph)
     if not match:
-        raise ValueError(f"Não foi possível interpretar poder: {paragraph}")
+        raise ValueError(f"Não foi possível interpretar manobra/especialidade: {paragraph}")
     title = match.group("title").strip()
     cost = match.group("cost").strip().capitalize()
     desc = match.group("desc").strip()
     sections = [
-        block(f"{title}-custo", "Custo", "poderes", [cost]),
-        block(f"{title}-descricao", "Descrição", "poderes", [desc]),
+        block(f"{title}-custo", "Custo", "manobras_combate", [cost]),
+        block(f"{title}-descricao", "Descrição", "manobras_combate", [desc]),
     ]
     return item(
         title,
-        "poderes",
-        "power",
-        "Poderes",
+        "manobras_combate",
+        "technique",
+        "Manobras e Especialidades",
         [cost, desc],
         sections,
     )
@@ -150,10 +150,10 @@ def make_power(paragraph: str) -> dict:
 
 def build_payload() -> dict:
     paragraphs = content_paragraphs()
-    power_paragraphs = [paragraph for paragraph in paragraphs if POWER_RE.match(paragraph)]
+    technique_paragraphs = [paragraph for paragraph in paragraphs if TECHNIQUE_RE.match(paragraph)]
     sections = [
         make_monk_class(paragraphs),
-        *[make_power(paragraph) for paragraph in power_paragraphs],
+        *[make_technique(paragraph) for paragraph in technique_paragraphs],
     ]
     counts = Counter(section["area"] for section in sections)
     return {
@@ -163,7 +163,7 @@ def build_payload() -> dict:
         "sourceFile": SOURCE_PATH.name,
         "sourcePath": str(SOURCE_PATH.relative_to(ROOT)),
         "status": "pilot_review",
-        "summary": "Adaptação de monges para Sistema Daemon, com classe Monge, dano desarmado por nível e poderes compráveis.",
+        "summary": "Adaptação de monges para Sistema Daemon, com classe Monge, dano desarmado por nível e técnicas compráveis.",
         "areas": sorted(counts),
         "groups": [],
         "sections": sections,
@@ -171,7 +171,7 @@ def build_payload() -> dict:
         "reviewNotes": [
             "Créditos, rodapé e nota de distribuição foram removidos da catalogação.",
             "Monge foi tratado como classe, pois o próprio texto descreve o arquétipo como classe e traz progressão por nível.",
-            "Poderes compráveis foram separados individualmente com bloco de custo e descrição.",
+            "As técnicas compráveis foram classificadas como Manobras e Especialidades, pois são compradas junto das perícias e descrevem recursos de treinamento marcial.",
         ],
         "generatedAt": datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z"),
     }
