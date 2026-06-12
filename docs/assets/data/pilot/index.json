@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-11T11:57:47",
+  "generatedAt": "2026-06-11T23:00:04",
   "sources": [
     {
       "source": "4killers",
@@ -344,6 +344,16 @@
       "areas": [
         "cenarios_lore",
         "regras_base"
+      ]
+    },
+    {
+      "source": "monges-daemon",
+      "title": "Monges Daemon",
+      "file": "monges-daemon.json",
+      "status": "pilot_review",
+      "areas": [
+        "classes",
+        "poderes"
       ]
     },
     {

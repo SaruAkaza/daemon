@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "source": "monges-daemon",
+  "title": "Monges Daemon",
+  "sourceFile": "Monges_Daemon_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\feito\\Monges_Daemon_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Adaptação de monges para Sistema Daemon, com classe Monge, dano desarmado por nível e poderes compráveis.",
+  "areas": [
+    "classes",
+    "poderes"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "monge",
+      "title": "Monge",
+      "area": "classes",
+      "kind": "class",
+      "sectionId": "classes-e-racas",
+      "sectionTitle": "Classes e Raças",
+      "paragraphs": [
+        "Os monges vivem em monastérios (um tipo de igreja isolada), seguindo uma rotina simples e desprovida de luxos, seguindo os ensinamentos de Buda. Em algum ponto de seu treinamento, eles recebem a tarefa de percorrer o mundo para espalhar os ensinamentos budistas, ou para realizar missões específicas.",
+        "O Monge não acumula riquezas ou bens materiais, pois eles acreditam que a felicidade ou evolução provenham dessas coisas. Suas roupas são simples e funcionais como as dos camponeses mais pobres.",
+        "Monges são mestres do combate desarmado.",
+        "Suas mãos podem ser mais letais que espadas ou machados. Possuem um aprimoramento técnico, evoluindo a cada nível esse poder.",
+        "Os monges são uma classe de muito poder, por isso cabe ao mestre decidir por cobrar pontos de aprimoramentos ou não para que o personagem seja um monge, segue agora a lista de poder que um Monge tem direito.",
+        "1º nível: 1d6+bônus de Força",
+        "4º nível: 1d6+1+bônus de Força",
+        "6º nível: 1d6+3+bônus de Força",
+        "8º nível: 1d10+bônus de Força",
+        "10º nível: 1d10+2+bônus de Força"
+      ],
+      "sections": [
+        {
+          "id": "conceito",
+          "title": "Conceito",
+          "area": "classes",
+          "paragraphs": [
+            "Os monges vivem em monastérios (um tipo de igreja isolada), seguindo uma rotina simples e desprovida de luxos, seguindo os ensinamentos de Buda. Em algum ponto de seu treinamento, eles recebem a tarefa de percorrer o mundo para espalhar os ensinamentos budistas, ou para realizar missões específicas.",
+            "O Monge não acumula riquezas ou bens materiais, pois eles acreditam que a felicidade ou evolução provenham dessas coisas. Suas roupas são simples e funcionais como as dos camponeses mais pobres."
+          ]
+        },
+        {
+          "id": "combate-desarmado",
+          "title": "Combate Desarmado",
+          "area": "classes",
+          "paragraphs": [
+            "Monges são mestres do combate desarmado.",
+            "Suas mãos podem ser mais letais que espadas ou machados. Possuem um aprimoramento técnico, evoluindo a cada nível esse poder."
+          ]
+        },
+        {
+          "id": "custo",
+          "title": "Custo",
+          "area": "classes",
+          "paragraphs": [
+            "Os monges são uma classe de muito poder, por isso cabe ao mestre decidir por cobrar pontos de aprimoramentos ou não para que o personagem seja um monge, segue agora a lista de poder que um Monge tem direito."
+          ]
+        },
+        {
+          "id": "dano-desarmado",
+          "title": "Dano Desarmado",
+          "area": "classes",
+          "paragraphs": [
+            "1º nível: 1d6+bônus de Força",
+            "4º nível: 1d6+1+bônus de Força",
+            "6º nível: 1d6+3+bônus de Força",
+            "8º nível: 1d10+bônus de Força",
+            "10º nível: 1d10+2+bônus de Força"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desviar-flechas",
+      "title": "Desviar Flechas",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poderes",
+      "sectionTitle": "Poderes",
+      "paragraphs": [
+        "25 pontos",
+        "quando atacado com arcos ou bestas o monge pode fazer um teste de Defesa de sua arte marcial ou de briga para “aparar” as flechas desviando-as. (o monge NÃO pode desviar o projétil na direção de outro alvo)."
+      ],
+      "sections": [
+        {
+          "id": "desviar-flechas-custo",
+          "title": "Custo",
+          "area": "poderes",
+          "paragraphs": [
+            "25 pontos"
+          ]
+        },
+        {
+          "id": "desviar-flechas-descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "quando atacado com arcos ou bestas o monge pode fazer um teste de Defesa de sua arte marcial ou de briga para “aparar” as flechas desviando-as. (o monge NÃO pode desviar o projétil na direção de outro alvo)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mente-calma",
+      "title": "Mente Calma",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poderes",
+      "sectionTitle": "Poderes",
+      "paragraphs": [
+        "30 pontos",
+        "com este poder, graças ao estado que sua mente alcança pela meditação, o monge se torna mais resistente a magias de influência e controle mental. Ele terá direito a um teste de WILL vs WILL em qualquer magia com um bônus de +30%."
+      ],
+      "sections": [
+        {
+          "id": "mente-calma-custo",
+          "title": "Custo",
+          "area": "poderes",
+          "paragraphs": [
+            "30 pontos"
+          ]
+        },
+        {
+          "id": "mente-calma-descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "com este poder, graças ao estado que sua mente alcança pela meditação, o monge se torna mais resistente a magias de influência e controle mental. Ele terá direito a um teste de WILL vs WILL em qualquer magia com um bônus de +30%."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pureza-do-corpo",
+      "title": "Pureza do Corpo",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poderes",
+      "sectionTitle": "Poderes",
+      "paragraphs": [
+        "40 pontos",
+        "com este poder o monge se torna imune a doenças não mágicas."
+      ],
+      "sections": [
+        {
+          "id": "pureza-do-corpo-custo",
+          "title": "Custo",
+          "area": "poderes",
+          "paragraphs": [
+            "40 pontos"
+          ]
+        },
+        {
+          "id": "pureza-do-corpo-descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "com este poder o monge se torna imune a doenças não mágicas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plenitude-do-corpo",
+      "title": "Plenitude do Corpo",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poderes",
+      "sectionTitle": "Poderes",
+      "paragraphs": [
+        "50 pontos",
+        "o controle do monge sobre o seu corpo é tal que ele pode curar seus próprios ferimentos. Uma vez por dia, ele pode recuperar 1d10 pontos de vida. O Monge não pode curar outras pessoas com essa habilidade."
+      ],
+      "sections": [
+        {
+          "id": "plenitude-do-corpo-custo",
+          "title": "Custo",
+          "area": "poderes",
+          "paragraphs": [
+            "50 pontos"
+          ]
+        },
+        {
+          "id": "plenitude-do-corpo-descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "o controle do monge sobre o seu corpo é tal que ele pode curar seus próprios ferimentos. Uma vez por dia, ele pode recuperar 1d10 pontos de vida. O Monge não pode curar outras pessoas com essa habilidade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "golpe-do-ki",
+      "title": "Golpe do Ki",
+      "area": "poderes",
+      "kind": "power",
+      "sectionId": "poderes",
+      "sectionTitle": "Poderes",
+      "paragraphs": [
+        "65 pontos",
+        "com este poder, os monges são fortalecidos por sua energia interior, o ki. Seus golpes se tornam tão poderosos que podem ferir criaturas vulneráveis apenas a magia, ou seja, atuam como armas mágicas. Assim, criaturas como gárgulas e vultos, que só podem ser atingidas por armas mágicas, sofrem dano pelos punhos de um Monge com este poder."
+      ],
+      "sections": [
+        {
+          "id": "golpe-do-ki-custo",
+          "title": "Custo",
+          "area": "poderes",
+          "paragraphs": [
+            "65 pontos"
+          ]
+        },
+        {
+          "id": "golpe-do-ki-descricao",
+          "title": "Descrição",
+          "area": "poderes",
+          "paragraphs": [
+            "com este poder, os monges são fortalecidos por sua energia interior, o ki. Seus golpes se tornam tão poderosos que podem ferir criaturas vulneráveis apenas a magia, ou seja, atuam como armas mágicas. Assim, criaturas como gárgulas e vultos, que só podem ser atingidas por armas mágicas, sofrem dano pelos punhos de um Monge com este poder."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "classes": 1,
+    "poderes": 5
+  },
+  "reviewNotes": [
+    "Créditos, rodapé e nota de distribuição foram removidos da catalogação.",
+    "Monge foi tratado como classe, pois o próprio texto descreve o arquétipo como classe e traz progressão por nível.",
+    "Poderes compráveis foram separados individualmente com bloco de custo e descrição."
+  ],
+  "generatedAt": "2026-06-12T01:59:42Z"
+}

@@ -130,11 +130,11 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | 108 | `Escudos_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 109 | `Equipamentos_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 110 | `Diferencas_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
-| 111 | `Monges_Daemon_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
+| 111 | `Monges_Daemon_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
 | 112 | `Novas_Armas_de_Fogo_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
 | 113 | `Masmorra  Goblin.docx` | 0.04 MB | Codex | pilot_review |
 | 114 | `Universo_Daemon_01_OCR_alta_qualidade.docx` | 0.04 MB | Codex | review_required |
-| 115 | `Ficha_Mago_Trevas_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
+| 115 | `Ficha_Mago_Trevas_OCR_alta_qualidade.docx` | 0.04 MB | Codex | review_required |
 | 116 | `Phage.docx` | 0.03 MB | Codex | pilot_review |
 | 117 | `cabala.docx` | 0.03 MB | Codex | pilot_review |
 | 118 | `Regra Opcional Ataques a Objetos.docx` | 0.01 MB | Codex | pilot_review |
