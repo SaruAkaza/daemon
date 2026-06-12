@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "source": "diferencas",
+  "title": "Diferenças",
+  "sourceFile": "Diferencas_OCR_alta_qualidade.docx",
+  "sourcePath": "Livros\\word\\feito\\Diferencas_OCR_alta_qualidade.docx",
+  "status": "pilot_review",
+  "summary": "Texto de Maytréia que diferencia Elementais, Elementares, Conceitos e Egrégoras nos planos.",
+  "areas": [
+    "cenarios_lore"
+  ],
+  "groups": [],
+  "sections": [
+    {
+      "id": "cenarios-lore-diferencas",
+      "title": "Cenarios/Lore - Diferenças",
+      "area": "cenarios_lore",
+      "kind": "setting",
+      "sectionId": "cenarios-lore",
+      "sectionTitle": "Cenários/Lore",
+      "paragraphs": [
+        "Maytréia - As Diferenças entre os Diversos Seres dos Planos",
+        "Quando em Maytréia nos referimos a Elementais, Elementares, Conceitos e Egrégoras, alguns podem pensar que não existem diferenças fundamentais entre eles. Isso não é verdade. Vamos explicar a diferença existente em cada um na tabela abaixo. Lembramos que estamos falando de forma simplificada. Cabe ao Mestre fazer a adaptação ou modificação que considerar pertinente.",
+        "Maytréia tem uma \"fauna\" e \"flora\" extremamente rica. Cada um dos quatro planos físico, etérico, astral e mental - tem a sua própria carga de seres diversos. Mas, para facilitar, muitos seres são agrupados sob os mesmos títulos, devido a algumas características que têm em comum. Os principais seriam Elementais, Elementares, Conceitos e Egrégoras. Vamos apresentar ao jogador ou Mestre uma forma de identificá-los com maior precisão e certeza. Eles podem ser encontrados atuando em todos os planos, mas nos dois mais sutis - astral e mental - costumam ser mais comuns ou suas ações mais perceptíveis.",
+        "Não devemos, no entanto, achar que aqui temos tudo o que pode ser encontrado nos planos. A classificação é bem genérica e não envolve toda a riqueza da Criação. Podemos citar como exemplo o artigo sobre os \"Intrusos\" já publicado aqui.",
+        "Além disso, uma percepção estática destes seres pode atrapalhar a compreensão e o andamento de Maytréia. Por exemplo, as Egrégoras não se manifestam nos planos etérico e físico, mas sua influência pode ser percebida pelo estado de consciência demonstrado por pessoas (em especial multidões) ou por \"tentáculos\" de energia psíquica atuando sobre os seres que podem ser identificados pelos Iniciados. Portanto, apesar de não se manifestar fisicamente, uma Egrégora pode ser percebida no físico.",
+        "Por isso, é importante entender que os quatro planos e a Hierarquia Intuitiva se interpenetram e influenciam. Na verdade, pela mecânica do jogo fica muito mais emocionante e divertido para os jogadores e Mestre essa flexibilidade. Na verdade, estimulamos os Mestres a surpreenderem seus jogadores com reações inesperadas dos seres em Maytréia.",
+        "Natureza | Elemental: Faz parte da fauna do plano. | Elementar: Surge de pensamentos e/ou sentimentos simples de uma pessoa. | Conceito: Manifesta-se de planos superiores (Hierarquia Intuitiva). | Egrégora: É a resultante psíquica de 2 ou mais mentes.",
+        "Vínculo | Elemental: Segue as leis do seu plano de origem. | Elementar: Tenta cumprir o objetivo pensado. | Conceito: Não está preso à lei do plano e já surge completo; pode ser vivido ou ignorado pela humanidade. | Egrégora: É criada com uma intenção e existe apenas para ela.",
+        "Influência | Elemental: Afeta apenas o seu plano de origem. | Elementar: Afeta apenas o seu plano de origem. | Conceito: Pode afetar outros planos através da humanidade. | Egrégora: Afeta diretamente a humanidade em qualquer plano.",
+        "Poder | Elemental: Poder mínimo. | Elementar: Poder mínimo, mas pode crescer conforme seu objetivo é repetido pelo invocador. | Conceito: Poder que pode afetar a Maya como um todo, mas pode precisar de humanos para sua defesa. | Egrégora: Grande capacidade de manipulação de massas e defesa impressionante.",
+        "Relação com a humanidade | Elemental: Indiferente à existência humana. | Elementar: Depende completamente de quem pensa nele. | Conceito: Surge independentemente, mas depende da humanidade para sua manifestação. | Egrégora: Tem relação simbiótica com a humanidade, influenciando e sendo influenciada por ela.",
+        "Manifestação | Elemental: Não sai de seu plano. | Elementar: Não sai de seu plano. | Conceito: Atua no plano mental, mas se origina do Intuitivo e influencia os planos mais densos. | Egrégora: Surge nos planos astral e mental ao mesmo tempo e influencia o físico e o etérico."
+      ],
+      "sections": [
+        {
+          "id": "introducao",
+          "title": "Introdução",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Maytréia - As Diferenças entre os Diversos Seres dos Planos",
+            "Quando em Maytréia nos referimos a Elementais, Elementares, Conceitos e Egrégoras, alguns podem pensar que não existem diferenças fundamentais entre eles. Isso não é verdade. Vamos explicar a diferença existente em cada um na tabela abaixo. Lembramos que estamos falando de forma simplificada. Cabe ao Mestre fazer a adaptação ou modificação que considerar pertinente.",
+            "Maytréia tem uma \"fauna\" e \"flora\" extremamente rica. Cada um dos quatro planos físico, etérico, astral e mental - tem a sua própria carga de seres diversos. Mas, para facilitar, muitos seres são agrupados sob os mesmos títulos, devido a algumas características que têm em comum. Os principais seriam Elementais, Elementares, Conceitos e Egrégoras. Vamos apresentar ao jogador ou Mestre uma forma de identificá-los com maior precisão e certeza. Eles podem ser encontrados atuando em todos os planos, mas nos dois mais sutis - astral e mental - costumam ser mais comuns ou suas ações mais perceptíveis.",
+            "Não devemos, no entanto, achar que aqui temos tudo o que pode ser encontrado nos planos. A classificação é bem genérica e não envolve toda a riqueza da Criação. Podemos citar como exemplo o artigo sobre os \"Intrusos\" já publicado aqui.",
+            "Além disso, uma percepção estática destes seres pode atrapalhar a compreensão e o andamento de Maytréia. Por exemplo, as Egrégoras não se manifestam nos planos etérico e físico, mas sua influência pode ser percebida pelo estado de consciência demonstrado por pessoas (em especial multidões) ou por \"tentáculos\" de energia psíquica atuando sobre os seres que podem ser identificados pelos Iniciados. Portanto, apesar de não se manifestar fisicamente, uma Egrégora pode ser percebida no físico.",
+            "Por isso, é importante entender que os quatro planos e a Hierarquia Intuitiva se interpenetram e influenciam. Na verdade, pela mecânica do jogo fica muito mais emocionante e divertido para os jogadores e Mestre essa flexibilidade. Na verdade, estimulamos os Mestres a surpreenderem seus jogadores com reações inesperadas dos seres em Maytréia."
+          ]
+        },
+        {
+          "id": "classificacao-comparativa",
+          "title": "Classificação Comparativa",
+          "area": "cenarios_lore",
+          "paragraphs": [
+            "Natureza | Elemental: Faz parte da fauna do plano. | Elementar: Surge de pensamentos e/ou sentimentos simples de uma pessoa. | Conceito: Manifesta-se de planos superiores (Hierarquia Intuitiva). | Egrégora: É a resultante psíquica de 2 ou mais mentes.",
+            "Vínculo | Elemental: Segue as leis do seu plano de origem. | Elementar: Tenta cumprir o objetivo pensado. | Conceito: Não está preso à lei do plano e já surge completo; pode ser vivido ou ignorado pela humanidade. | Egrégora: É criada com uma intenção e existe apenas para ela.",
+            "Influência | Elemental: Afeta apenas o seu plano de origem. | Elementar: Afeta apenas o seu plano de origem. | Conceito: Pode afetar outros planos através da humanidade. | Egrégora: Afeta diretamente a humanidade em qualquer plano.",
+            "Poder | Elemental: Poder mínimo. | Elementar: Poder mínimo, mas pode crescer conforme seu objetivo é repetido pelo invocador. | Conceito: Poder que pode afetar a Maya como um todo, mas pode precisar de humanos para sua defesa. | Egrégora: Grande capacidade de manipulação de massas e defesa impressionante.",
+            "Relação com a humanidade | Elemental: Indiferente à existência humana. | Elementar: Depende completamente de quem pensa nele. | Conceito: Surge independentemente, mas depende da humanidade para sua manifestação. | Egrégora: Tem relação simbiótica com a humanidade, influenciando e sendo influenciada por ela.",
+            "Manifestação | Elemental: Não sai de seu plano. | Elementar: Não sai de seu plano. | Conceito: Atua no plano mental, mas se origina do Intuitivo e influencia os planos mais densos. | Egrégora: Surge nos planos astral e mental ao mesmo tempo e influencia o físico e o etérico."
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "cenarios_lore": 1
+  },
+  "reviewNotes": [
+    "Título interno preservado no bloco de introdução: Maytréia - As Diferenças entre os Diversos Seres dos Planos.",
+    "A tabela do OCR foi reconstruída como comparação textual por linhas, mantendo os quatro tipos e seus critérios.",
+    "Não foram criadas criaturas/NPCs porque o texto não apresenta fichas, atributos ou estatísticas individuais."
+  ],
+  "generatedAt": "2026-06-12T02:21:13Z"
+}

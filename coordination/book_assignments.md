@@ -129,7 +129,7 @@ Status padr?o: `assigned`. Livros de Anjos ficam com respons?vel Claude, mas sta
 | 107 | `Venenos_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 108 | `Escudos_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
 | 109 | `Equipamentos_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
-| 110 | `Diferencas_OCR_alta_qualidade.docx` | 0.04 MB | Codex | assigned |
+| 110 | `Diferencas_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
 | 111 | `Monges_Daemon_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
 | 112 | `Novas_Armas_de_Fogo_OCR_alta_qualidade.docx` | 0.04 MB | Codex | pilot_review |
 | 113 | `Masmorra  Goblin.docx` | 0.04 MB | Codex | pilot_review |

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-11T23:16:27",
+  "generatedAt": "2026-06-11T23:21:45",
   "sources": [
     {
       "source": "4killers",
@@ -311,6 +311,15 @@
         "aprimoramentos",
         "magias",
         "manobras_combate"
+      ]
+    },
+    {
+      "source": "diferencas",
+      "title": "Diferenças",
+      "file": "diferencas.json",
+      "status": "pilot_review",
+      "areas": [
+        "cenarios_lore"
       ]
     },
     {
