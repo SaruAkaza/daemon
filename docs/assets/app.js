@@ -24,6 +24,8 @@ const SECTION_LABELS = {
 };
 
 const THEME_KEY = "daemonPilots.theme";
+const DATA_INDEX_PATH = "assets/data/pilot/index.json";
+const AUTO_REFRESH_INTERVAL_MS = 30000;
 
 const AREA_ROUTES = new Map([
   ["regras_base", "regras-base"],
@@ -79,6 +81,8 @@ const state = {
   collapsedGroups: new Set(),
   draftFilters: null,
   filterSearch: "",
+  indexSignature: "",
+  isLoading: false,
 };
 
 const nodes = {
@@ -116,6 +120,13 @@ async function fetchJson(path) {
   const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) throw new Error(`Falha ao carregar ${path}`);
   return response.json();
+}
+
+function indexSignature(index) {
+  return JSON.stringify({
+    generatedAt: index.generatedAt || "",
+    sources: (index.sources || []).map((source) => [source.source, source.file, source.status]),
+  });
 }
 
 function normalize(value) {
@@ -1099,23 +1110,53 @@ function render() {
   renderFilterButton();
 }
 
-async function load() {
-  const index = await fetchJson("assets/data/pilot/index.json");
-  state.books = await Promise.all(
-    index.sources.map((source) => fetchJson(`assets/data/pilot/${source.file}`)),
-  );
-  state.items = state.books.flatMap(buildItems).map(prepareItem);
-  refreshAreaCounts();
-  invalidateFilterGroups();
-  state.globalFilters = state.globalFilters.books.size
-    ? filtersWithDefaults(state.globalFilters, globalFilterGroupsData())
-    : defaultFilters(globalFilterGroupsData());
-  state.filters = filtersWithDefaults(state.filters);
-  if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
-  const routedArea = areaFromHash();
-  if (routedArea && categoryCount(routedArea)) state.selectedArea = routedArea;
-  syncHashFromState(true);
-  render();
+async function load(options = {}) {
+  if (state.isLoading) return;
+  state.isLoading = true;
+  const wasGlobalDefault = !selectedFilterCount(state.globalFilters, globalFilterGroupsData());
+  const wasCategoryDefault = !selectedFilterCount(state.filters, filterGroupsData());
+  const previousSelectedItemId = state.selectedItemId;
+  try {
+    const index = options.index || await fetchJson(DATA_INDEX_PATH);
+    state.indexSignature = indexSignature(index);
+    state.books = await Promise.all(
+      index.sources.map((source) => fetchJson(`assets/data/pilot/${source.file}`)),
+    );
+    state.items = state.books.flatMap(buildItems).map(prepareItem);
+    refreshAreaCounts();
+    invalidateFilterGroups();
+    state.globalFilters = wasGlobalDefault
+      ? defaultFilters(globalFilterGroupsData())
+      : filtersWithDefaults(state.globalFilters, globalFilterGroupsData());
+    state.filters = wasCategoryDefault ? defaultFilters() : filtersWithDefaults(state.filters);
+    if (state.selectedArea && !categoryCount(state.selectedArea)) state.selectedArea = null;
+    if (previousSelectedItemId && state.items.some((item) => item.id === previousSelectedItemId)) {
+      state.selectedItemId = previousSelectedItemId;
+    } else if (previousSelectedItemId) {
+      state.selectedItemId = null;
+    }
+    const routedArea = areaFromHash();
+    if (routedArea && categoryCount(routedArea)) state.selectedArea = routedArea;
+    syncHashFromState(true);
+    render();
+  } finally {
+    state.isLoading = false;
+  }
+}
+
+async function checkForRemoteUpdates() {
+  if (document.hidden || state.isLoading) return;
+  try {
+    const index = await fetchJson(DATA_INDEX_PATH);
+    const nextSignature = indexSignature(index);
+    if (!state.indexSignature) {
+      state.indexSignature = nextSignature;
+      return;
+    }
+    if (nextSignature !== state.indexSignature) await load({ index });
+  } catch (error) {
+    console.warn(error);
+  }
 }
 
 nodes.searchInput.addEventListener("input", (event) => {
@@ -1183,6 +1224,10 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && !nodes.filterBackdrop.hidden) closeFilters();
 });
 
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) checkForRemoteUpdates();
+});
+
 function showError(error) {
   clearNode(nodes.detailPanel);
   const node = document.createElement("div");
@@ -1193,3 +1238,4 @@ function showError(error) {
 
 applyTheme(preferredTheme());
 load().catch(showError);
+setInterval(checkForRemoteUpdates, AUTO_REFRESH_INTERVAL_MS);
