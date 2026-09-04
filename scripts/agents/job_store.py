@@ -16,8 +16,8 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_JOBS_DIR = (ROOT / "coordination" / "jobs").resolve()
 
 
-class JobStoreError(Exception):
-    """Base exception for all JobStore operations and validation errors."""
+class JobStoreError(RuntimeError):
+    """Base exception for JobStore operational and storage errors."""
     pass
 
 
@@ -32,7 +32,7 @@ class JobNotFoundError(JobStoreError):
 
 
 class JobStore:
-    """Persistent storage and lifecycle validation for Agent Jobs."""
+    """Persistent storage and lifecycle management for Agent Jobs."""
 
     def __init__(self, root: Path | str | None = None) -> None:
         if root is None:
@@ -84,24 +84,16 @@ class JobStore:
         """Validate and create a new persistent Job.
 
         Raises:
+            ContractValidationError: If job_data fails schema validation or is not a dict.
             JobAlreadyExistsError: If a job with this ID already exists.
-            JobStoreError: If validation fails or job_data is invalid.
+            JobStoreError: If I/O or filesystem persistence fails.
         """
-        if not isinstance(job_data, dict):
-            raise JobStoreError(f"job_data must be a dict, got {type(job_data).__name__}")
+        validate_payload("agent-job", job_data)
 
-        job_id = job_data.get("jobId")
-        if not job_id or not isinstance(job_id, str):
-            raise JobStoreError("job_data must contain a non-empty 'jobId' string property.")
-
+        job_id = job_data["jobId"]
         target_path = self._job_path(job_id)
         if target_path.exists():
             raise JobAlreadyExistsError(f"Job '{job_id}' already exists at {target_path}")
-
-        try:
-            validate_payload("agent-job", job_data)
-        except ContractValidationError as e:
-            raise JobStoreError(f"Job validation failed for '{job_id}': {e}") from e
 
         safe_copy = copy.deepcopy(job_data)
         self._atomic_write(target_path, safe_copy)
@@ -112,21 +104,15 @@ class JobStore:
 
         Raises:
             JobNotFoundError: If the job file does not exist.
-            JobStoreError: If reading fails or schema validation fails.
+            ContractValidationError: If stored JSON is malformed or violates schema.
+            JobStoreError: If path is unsafe or I/O fails.
         """
         target_path = self._job_path(job_id)
         if not target_path.is_file():
             raise JobNotFoundError(f"Job '{job_id}' not found at {target_path}")
 
-        try:
-            data = load_json(target_path)
-        except ContractValidationError as e:
-            raise JobStoreError(f"Failed loading job file for '{job_id}': {e}") from e
-
-        try:
-            validate_payload("agent-job", data)
-        except ContractValidationError as e:
-            raise JobStoreError(f"Stored job '{job_id}' failed schema validation: {e}") from e
+        data = load_json(target_path)
+        validate_payload("agent-job", data)
 
         return copy.deepcopy(data)
 
@@ -134,24 +120,16 @@ class JobStore:
         """Validate and update an existing persistent Job (no upsert).
 
         Raises:
+            ContractValidationError: If job_data fails schema validation or is not a dict.
             JobNotFoundError: If the job does not already exist.
-            JobStoreError: If validation fails or update cannot be persisted.
+            JobStoreError: If I/O or filesystem persistence fails.
         """
-        if not isinstance(job_data, dict):
-            raise JobStoreError(f"job_data must be a dict, got {type(job_data).__name__}")
+        validate_payload("agent-job", job_data)
 
-        job_id = job_data.get("jobId")
-        if not job_id or not isinstance(job_id, str):
-            raise JobStoreError("job_data must contain a non-empty 'jobId' string property.")
-
+        job_id = job_data["jobId"]
         target_path = self._job_path(job_id)
         if not target_path.is_file():
             raise JobNotFoundError(f"Cannot update non-existent job '{job_id}' at {target_path}")
-
-        try:
-            validate_payload("agent-job", job_data)
-        except ContractValidationError as e:
-            raise JobStoreError(f"Job validation failed for '{job_id}': {e}") from e
 
         safe_copy = copy.deepcopy(job_data)
         self._atomic_write(target_path, safe_copy)

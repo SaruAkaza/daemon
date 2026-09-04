@@ -20,6 +20,18 @@ def load_fixture(name: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Hierarchy & Type Tests
+# ---------------------------------------------------------------------------
+
+
+def test_job_store_error_hierarchy():
+    assert issubclass(JobStoreError, RuntimeError)
+    assert issubclass(JobAlreadyExistsError, JobStoreError)
+    assert issubclass(JobNotFoundError, JobStoreError)
+    assert not issubclass(ContractValidationError, JobStoreError)
+
+
+# ---------------------------------------------------------------------------
 # Initialization Tests
 # ---------------------------------------------------------------------------
 
@@ -74,10 +86,16 @@ def test_job_store_create_rejects_invalid_schema(tmp_path):
     fixture = copy.deepcopy(load_fixture("job-book-trevas.json"))
     fixture["status"] = "invalid_status_enum"
 
-    with pytest.raises(JobStoreError):
+    with pytest.raises(ContractValidationError):
         store.create(fixture)
 
     assert not (tmp_path / f"{fixture['jobId']}.json").exists()
+
+
+def test_job_store_create_rejects_non_dict_payload(tmp_path):
+    store = JobStore(root=tmp_path)
+    with pytest.raises(ContractValidationError):
+        store.create(["not", "a", "dict"])
 
 
 def test_job_store_create_path_traversal(tmp_path):
@@ -133,22 +151,22 @@ def test_job_store_load_revalidates_and_rejects_corrupted_file(tmp_path):
     fixture = load_fixture("job-book-trevas.json")
     store.create(fixture)
 
-    # Corrupt the payload on disk
+    # Corrupt the payload on disk (stored schema violation)
     job_file = tmp_path / f"{fixture['jobId']}.json"
     corrupted = copy.deepcopy(fixture)
     corrupted["status"] = "corrupted_status"
     job_file.write_text(json.dumps(corrupted), encoding="utf-8")
 
-    with pytest.raises(JobStoreError):
+    with pytest.raises(ContractValidationError):
         store.load(fixture["jobId"])
 
 
-def test_job_store_load_rejects_invalid_json_syntax(tmp_path):
+def test_job_store_load_rejects_malformed_json_syntax(tmp_path):
     store = JobStore(root=tmp_path)
     job_file = tmp_path / "SYNTAX-ERROR.json"
     job_file.write_text("unclosed { json", encoding="utf-8")
 
-    with pytest.raises(JobStoreError):
+    with pytest.raises(ContractValidationError):
         store.load("SYNTAX-ERROR")
 
 
@@ -195,7 +213,7 @@ def test_job_store_update_rejects_invalid_payload(tmp_path):
     invalid_payload = copy.deepcopy(fixture)
     invalid_payload["status"] = "non_existent_status"
 
-    with pytest.raises(JobStoreError):
+    with pytest.raises(ContractValidationError):
         store.update(invalid_payload)
 
     # Confirm original file on disk remains unchanged
