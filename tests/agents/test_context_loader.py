@@ -5,6 +5,7 @@ from pathlib import Path
 import pytest
 
 from scripts.agents.context_loader import (
+    ContextEncodingError,
     ContextLoader,
     ContextLoaderError,
     ContextNotFoundError,
@@ -149,12 +150,19 @@ def test_context_loader_error_hierarchy():
     assert issubclass(ContextLoaderError, RuntimeError)
     assert issubclass(ContextNotFoundError, ContextLoaderError)
     assert issubclass(ContextPathError, ContextLoaderError)
+    assert issubclass(ContextEncodingError, ContextLoaderError)
 
 
 def test_context_loader_is_strictly_read_only():
     loader = ContextLoader()
-    for forbidden_method in ["write", "save", "update", "create", "delete", "upsert"]:
+    for forbidden_method in ["write", "save", "update", "create", "delete", "upsert", "rename", "move"]:
         assert not hasattr(loader, forbidden_method), f"Forbidden method '{forbidden_method}' found on ContextLoader"
+
+
+def test_context_loader_has_no_premature_methods():
+    loader = ContextLoader()
+    for attr in ["load_json", "load_raw", "exists", "root_dir", "resolve_path"]:
+        assert not hasattr(loader, attr), f"Premature attribute '{attr}' found on ContextLoader"
 
 
 # ---------------------------------------------------------------------------
@@ -237,6 +245,20 @@ def test_context_loader_resolve_invalid_empty_or_whitespace(tmp_path):
         loader.resolve("   ")
 
 
+def test_context_loader_resolve_invalid_types(tmp_path):
+    loader = ContextLoader(root=tmp_path)
+    for invalid_input in [None, 123, [], {}, 3.14]:
+        with pytest.raises(ContextPathError):
+            loader.resolve(invalid_input)
+
+
+def test_context_loader_resolve_nonexistent_returns_path_without_error(tmp_path):
+    loader = ContextLoader(root=tmp_path)
+    resolved = loader.resolve("docs/missing.md")
+    assert resolved == (tmp_path / "docs" / "missing.md").resolve()
+    assert not resolved.exists()
+
+
 # ---------------------------------------------------------------------------
 # Load Text Tests
 # ---------------------------------------------------------------------------
@@ -297,18 +319,23 @@ def test_context_loader_load_text_directory_fails(tmp_path):
     target_dir = tmp_path / "docs" / "architecture"
     target_dir.mkdir(parents=True)
 
-    with pytest.raises(ContextLoaderError):
+    with pytest.raises(ContextNotFoundError) as exc_info:
         loader.load_text("docs/architecture")
+    assert "docs/architecture" in str(exc_info.value)
+    assert isinstance(exc_info.value, ContextLoaderError)
 
 
 def test_context_loader_load_text_non_utf8_fails(tmp_path):
     loader = ContextLoader(root=tmp_path)
     binary_file = tmp_path / "invalid_utf8.bin"
-    binary_file.write_bytes(b"\x80\x81\xff\xfe\x00")
+    binary_file.write_bytes(b"\xff\xfe\xfa")
 
-    with pytest.raises(ContextLoaderError) as exc_info:
+    with pytest.raises(ContextEncodingError) as exc_info:
         loader.load_text("invalid_utf8.bin")
-    assert "UTF-8" in str(exc_info.value) or "decode" in str(exc_info.value).lower()
+    assert "invalid_utf8.bin" in str(exc_info.value)
+    assert isinstance(exc_info.value, ContextLoaderError)
+    assert "\xff" not in str(exc_info.value)
+
 
 
 def test_context_loader_symlink_escape_protection(tmp_path):

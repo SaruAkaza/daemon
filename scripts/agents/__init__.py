@@ -1,4 +1,5 @@
 from scripts.agents.context_loader import (
+    ContextEncodingError,
     ContextLoader,
     ContextLoaderError,
     ContextNotFoundError,
@@ -40,4 +41,6 @@ __all__ = [
     "ContextLoaderError",
     "ContextNotFoundError",
     "ContextPathError",
+    "ContextEncodingError",
 ]
+

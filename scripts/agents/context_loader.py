@@ -11,12 +11,17 @@ class ContextLoaderError(RuntimeError):
 
 
 class ContextNotFoundError(ContextLoaderError):
-    """Raised when a requested context file does not exist."""
+    """Raised when a requested context file does not exist or is a directory."""
     pass
 
 
 class ContextPathError(ContextLoaderError):
-    """Raised when a path is invalid, absolute, or attempts to escape the root directory."""
+    """Raised when a path is invalid, empty, absolute, or attempts to escape the root directory."""
+    pass
+
+
+class ContextEncodingError(ContextLoaderError):
+    """Raised when a context file cannot be decoded as valid UTF-8."""
     pass
 
 
@@ -37,8 +42,10 @@ class ContextLoader:
     def resolve(self, relative_path: str | Path) -> Path:
         """Safely resolve a repository-relative path within the root directory.
 
+        Does not require the target path to exist on disk.
+
         Raises:
-            ContextPathError: If relative_path is empty, absolute, or escapes the root directory.
+            ContextPathError: If relative_path is empty, invalid, absolute, or escapes the root directory.
         """
         if not isinstance(relative_path, (str, Path)):
             raise ContextPathError(
@@ -72,8 +79,9 @@ class ContextLoader:
 
         Raises:
             ContextPathError: If path resolution fails or escapes the root.
-            ContextNotFoundError: If the file does not exist.
-            ContextLoaderError: If target is a directory, not a file, or decoding fails.
+            ContextNotFoundError: If the file does not exist or is not a regular file.
+            ContextEncodingError: If file content is not valid UTF-8.
+            ContextLoaderError: If reading fails due to OS or permission errors.
         """
         target = self.resolve(relative_path)
 
@@ -81,13 +89,13 @@ class ContextLoader:
             raise ContextNotFoundError(f"Context file not found: '{relative_path}'")
 
         if not target.is_file():
-            raise ContextLoaderError(f"Path is not a regular file: '{relative_path}'")
+            raise ContextNotFoundError(f"Path is not a regular file: '{relative_path}'")
 
         try:
             return target.read_text(encoding="utf-8")
         except UnicodeDecodeError as e:
-            raise ContextLoaderError(
-                f"Failed to decode file '{relative_path}' as UTF-8: {e}"
+            raise ContextEncodingError(
+                f"Failed to decode file '{relative_path}' as UTF-8 ({e.reason})"
             ) from e
         except Exception as e:
             raise ContextLoaderError(
