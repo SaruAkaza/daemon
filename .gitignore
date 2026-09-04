@@ -12,3 +12,7 @@ __pycache__/
 
 # Word lock/temp files
 ~$*.docx
+
+# Obsidian workspace local cache
+.obsidian/
+

@@ -1,0 +1,24 @@
+{
+  "name": "Daemon Project Brain",
+  "vaultRoot": "repository root",
+  "entry": "PROJECT-BRAIN.md",
+  "files": [
+    "PROJECT-BRAIN.md",
+    "docs/context/books/.gitkeep",
+    "docs/missions/.gitkeep",
+    "docs/obsidian/GITIGNORE-SNIPPET.txt",
+    "docs/obsidian/README.md",
+    "docs/obsidian/mocs/Agents.md",
+    "docs/obsidian/mocs/Architecture.md",
+    "docs/obsidian/mocs/Books.md",
+    "docs/obsidian/mocs/Decisions.md",
+    "docs/obsidian/mocs/Development.md",
+    "docs/obsidian/mocs/Domain.md",
+    "docs/obsidian/mocs/Missions.md",
+    "docs/obsidian/templates/adr-template.md",
+    "docs/obsidian/templates/book-template.md",
+    "docs/obsidian/templates/human-review-template.md",
+    "docs/obsidian/templates/mission-template.md",
+    "docs/obsidian/templates/precedent-template.md"
+  ]
+}

@@ -1,4 +1,4 @@
-﻿# Daemon Tools — Agent Entry Point
+# Daemon Tools — Agent Entry Point
 
 Este repositório transforma livros do universo Daemon/Trevas em uma referência digital rastreável, validada e pesquisável, inspirada no modelo 5e.tools.
 

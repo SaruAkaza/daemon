@@ -22,8 +22,10 @@ O 5e.tools organiza conteudo de RPG como entidades filtraveis, com busca, filtro
 ## Coordenação agentic
 
 - `AGENTS.md` — entrada para agentes
+- `PROJECT-BRAIN.md` — entrada central de conhecimento (Obsidian Vault entry)
 - `docs/architecture/` — regras e arquitetura
 - `docs/reference/` — regras editoriais e modelo de dados
+- `docs/obsidian/` — MOCs e templates do Daemon Project Brain
 - `coordination/` — estado operacional e coordenação
 
 ## Fluxo de trabalho
