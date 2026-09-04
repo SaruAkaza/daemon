@@ -1,3 +1,9 @@
+from scripts.agents.context_loader import (
+    ContextLoader,
+    ContextLoaderError,
+    ContextNotFoundError,
+    ContextPathError,
+)
 from scripts.agents.contracts import (
     ContractValidationError,
     load_json,
@@ -30,4 +36,8 @@ __all__ = [
     "HandoffStoreError",
     "HandoffAlreadyExistsError",
     "HandoffNotFoundError",
+    "ContextLoader",
+    "ContextLoaderError",
+    "ContextNotFoundError",
+    "ContextPathError",
 ]
