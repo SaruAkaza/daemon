@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/context-pack.schema.json",
+  "title": "Context Pack",
+  "description": "Pacote de contexto mínimo suficiente e instrução entregue a um agente especialista.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "contextPackId",
+    "jobId",
+    "agent",
+    "stage",
+    "mandatory",
+    "domain",
+    "bookContext",
+    "jobContext",
+    "handoffContext",
+    "task",
+    "outputContract"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Versão do schema do context pack (ex: '1.0')."
+    },
+    "contextPackId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único do context pack (ex: 'CTX-TREVAS-EDITORIAL-001')."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do job correspondente."
+    },
+    "agent": {
+      "type": "string",
+      "enum": [
+        "source-agent",
+        "extraction-agent",
+        "editorial-agent",
+        "entity-agent",
+        "relations-agent",
+        "frontend-agent",
+        "qa-release-agent",
+        "orchestrator"
+      ],
+      "description": "Papel lógico destinatário do pacote."
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release"
+      ],
+      "description": "Estágio a ser executado com este contexto."
+    },
+    "mandatory": {
+      "type": "array",
+      "description": "Caminhos relativos de documentos constitucionais e arquiteturais obrigatórios.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "domain": {
+      "type": "array",
+      "description": "Caminhos relativos de regras canônicas de domínio, taxonomia e padrões.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "bookContext": {
+      "type": "array",
+      "description": "Caminhos relativos de contratos e metadados específicos da obra.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "jobContext": {
+      "type": "array",
+      "description": "Caminhos relativos de estado de filas e definições do job.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "handoffContext": {
+      "type": "array",
+      "description": "Caminhos relativos de handoffs anteriores relevantes.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "task": {
+      "type": "object",
+      "description": "Instrução operacional precisa e escopo da tarefa imediata.",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identificador do tipo de tarefa a executar."
+        },
+        "scope": {
+          "type": "object",
+          "description": "Delimitação de páginas, livros ou categorias alvo."
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Parâmetros complementares para a execução da tarefa."
+        }
+      }
+    },
+    "outputContract": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Caminho do schema formal exigido como contrato de saída (ex: 'schemas/agent-handoff.schema.json')."
+    }
+  }
+}

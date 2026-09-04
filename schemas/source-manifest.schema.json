@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/source-manifest.schema.json",
+  "title": "Source Manifest",
+  "description": "Manifesto e metadados de proveniência e direitos de uma fonte original em Livros/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sourceId",
+    "title",
+    "path",
+    "extension",
+    "sha256",
+    "rightsStatus",
+    "visibility",
+    "publicationMode"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Versão do schema do manifesto (ex: '1.0')."
+    },
+    "sourceId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único estável da fonte."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Título formal da obra."
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Caminho relativo do arquivo original em Livros/."
+    },
+    "extension": {
+      "type": "string",
+      "enum": [".pdf", ".docx"],
+      "description": "Extensão do arquivo original."
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$",
+      "description": "Hash SHA-256 de 64 caracteres hexadecimais para validação de integridade."
+    },
+    "rightsStatus": {
+      "type": "string",
+      "enum": [
+        "AUTHORIZED",
+        "PRIVATE",
+        "PUBLIC_DOMAIN",
+        "METADATA_ONLY",
+        "UNKNOWN"
+      ],
+      "description": "Status legal e de direitos autorais da fonte."
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "private",
+        "internal",
+        "public"
+      ],
+      "description": "Nível de visibilidade da obra."
+    },
+    "publicationMode": {
+      "type": "string",
+      "enum": [
+        "FULL_TEXT",
+        "SUMMARY_AND_METADATA",
+        "METADATA_ONLY",
+        "NOT_PUBLIC"
+      ],
+      "description": "Modo de publicação permitido na distribuição pública."
+    },
+    "edition": {
+      "type": "string",
+      "description": "Edição da obra (ex: '3a Edição')."
+    },
+    "publicationYear": {
+      "type": "integer",
+      "minimum": 1980,
+      "maximum": 2100,
+      "description": "Ano de publicação original."
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Editora original."
+    },
+    "system": {
+      "type": "string",
+      "description": "Sistema de RPG da obra (ex: 'Daemon', 'Trevas')."
+    },
+    "setting": {
+      "type": "string",
+      "description": "Cenário da obra (ex: 'Trevas', 'Arkanum', 'Tormenta')."
+    },
+    "language": {
+      "type": "string",
+      "description": "Idioma principal do texto (ex: 'pt-BR')."
+    }
+  }
+}

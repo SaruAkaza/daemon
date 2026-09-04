@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/relation.schema.json",
+  "title": "Entity Relation",
+  "description": "Vínculo semântico ou dependência de regras entre entidades no Daemon Tools.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "type",
+    "sourceEntityId",
+    "targetEntityId",
+    "source",
+    "page",
+    "confidence"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Versão do schema de relação (ex: '1.0')."
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único estável da relação (ex: 'rel-cacador-teologia-001')."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "REQUIRES",
+        "GRANTS",
+        "BELONGS_TO",
+        "DERIVED_FROM",
+        "APPEARS_IN",
+        "MODIFIES",
+        "REPLACES",
+        "ALTERNATIVE_TO",
+        "HAS_POWER",
+        "HAS_SKILL",
+        "USES_RULE"
+      ],
+      "description": "Tipo de relação semântica estritamente alinhado a relation-types.md."
+    },
+    "sourceEntityId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ID da entidade de origem (ex: 'kit:cacador-de-bruxas')."
+    },
+    "targetEntityId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ID da entidade de destino (ex: 'skill:teologia')."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do livro/fonte onde a relação é afirmada."
+    },
+    "page": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Número da página do livro original onde a relação é fundamentada."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Nível de confiança da relação (0.0 a 1.0)."
+    }
+  }
+}

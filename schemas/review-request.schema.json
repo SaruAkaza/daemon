@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/review-request.schema.json",
+  "title": "Review Request",
+  "description": "Registro formal de solicitação e resolução de decisões ou validações humanas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reviewId",
+    "jobId",
+    "requestedBy",
+    "purpose",
+    "question",
+    "options",
+    "decision",
+    "rationale",
+    "decidedBy",
+    "status",
+    "createdAt",
+    "resolvedAt"
+  ],
+  "properties": {
+    "reviewId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único da solicitação de revisão (ex: 'REV-TREVAS-FINAL-001')."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do job relacionado."
+    },
+    "requestedBy": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Papel lógico ou componente solicitante (ex: 'qa-release-agent', 'system')."
+    },
+    "purpose": {
+      "type": "string",
+      "enum": [
+        "semantic_ambiguity",
+        "source_conflict",
+        "rights_review",
+        "architecture_change",
+        "destructive_change",
+        "final_validation",
+        "other"
+      ],
+      "description": "Motivo formal da solicitação de decisão humana."
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Pergunta ou ponto central que requer deliberação humana."
+    },
+    "options": {
+      "type": "array",
+      "description": "Opções de resposta apresentadas ao revisor (pode ser vazia para respostas abertas).",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision": {
+      "type": ["string", "null"],
+      "description": "Decisão ou escolha registrada pelo revisor humano."
+    },
+    "rationale": {
+      "type": ["string", "null"],
+      "description": "Justificativa da decisão tomada."
+    },
+    "decidedBy": {
+      "type": ["string", "null"],
+      "description": "Identificação do revisor humano (ex: 'Matheus', 'editorial-reviewer')."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "resolved",
+        "cancelled"
+      ],
+      "description": "Estado atual da solicitação de revisão."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp ISO 8601 de abertura da solicitação."
+    },
+    "resolvedAt": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Timestamp ISO 8601 de resolução ou cancelamento."
+    }
+  }
+}
