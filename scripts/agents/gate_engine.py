@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any
@@ -185,13 +185,6 @@ class GateEngine:
 
         validate_payload("agent-job.schema.json", job)
 
-        if source_manifest is not None:
-            if not isinstance(source_manifest, dict):
-                raise GateEngineError(
-                    f"source_manifest must be a dict, got {type(source_manifest).__name__}"
-                )
-            validate_payload("source-manifest.schema.json", source_manifest)
-
         stages_map = job.get("stages", {})
         qa_status = stages_map.get("qa")
 
@@ -202,21 +195,35 @@ class GateEngine:
                 reasons=(f"QA stage is '{qa_status}', required 'pass' before release.",),
             )
 
-        if source_manifest is not None:
-            rights = source_manifest.get("rightsStatus")
-            pub_mode = source_manifest.get("publicationMode")
+        if source_manifest is None:
+            return GateDecision(
+                allowed=False,
+                code="SOURCE_MANIFEST_REQUIRED",
+                reasons=("Source manifest with rights evidence is required for release evaluation.",),
+            )
 
-            if rights in ("UNKNOWN", "PRIVATE") or pub_mode == "NOT_PUBLIC":
-                return GateDecision(
-                    allowed=False,
-                    code="RIGHTS_BLOCK_RELEASE",
-                    reasons=(
-                        f"Rights status '{rights}' with publicationMode '{pub_mode}' blocks release.",
-                    ),
-                )
+        if not isinstance(source_manifest, dict):
+            raise GateEngineError(
+                f"source_manifest must be a dict, got {type(source_manifest).__name__}"
+            )
+
+        validate_payload("source-manifest.schema.json", source_manifest)
+
+        rights = source_manifest.get("rightsStatus")
+        pub_mode = source_manifest.get("publicationMode")
+
+        if rights in ("UNKNOWN", "PRIVATE") or pub_mode == "NOT_PUBLIC":
+            return GateDecision(
+                allowed=False,
+                code="RIGHTS_BLOCK_RELEASE",
+                reasons=(
+                    f"Rights status '{rights}' with publicationMode '{pub_mode}' blocks release.",
+                ),
+            )
 
         return GateDecision(
             allowed=True,
             code="ALLOW",
-            reasons=("Release conditions satisfied.",),
+            reasons=("Release conditions and rights evidence satisfied.",),
         )
+

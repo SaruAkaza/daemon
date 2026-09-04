@@ -1,4 +1,4 @@
-﻿import copy
+import copy
 from pathlib import Path
 import pytest
 
@@ -347,15 +347,15 @@ def test_release_gate_allows_valid_rights_and_publication(rights_status, pub_mod
 
     decision = engine.evaluate_release(job, source_manifest=manifest)
     assert decision.allowed is True
-    assert decision.code == "ALLOW"
-
-
-def test_release_gate_without_source_manifest_evaluates_qa_only():
+def test_release_gate_denies_when_source_manifest_is_none():
     engine = GateEngine()
     job = _valid_job_payload(stage_statuses={"qa": "pass"})
     decision = engine.evaluate_release(job, source_manifest=None)
-    assert decision.allowed is True
-    assert decision.code == "ALLOW"
+    assert decision.allowed is False
+    assert decision.code == "SOURCE_MANIFEST_REQUIRED"
+    assert len(decision.reasons) > 0
+    assert "source manifest" in decision.reasons[0].lower()
+
 
 
 def test_release_gate_invalid_source_manifest_schema_raises():
