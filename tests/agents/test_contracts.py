@@ -1,9 +1,14 @@
-﻿import copy
+import copy
 import json
 from pathlib import Path
 import pytest
-from jsonschema import Draft202012Validator
-from jsonschema.exceptions import ValidationError
+
+from scripts.agents.contracts import (
+    ContractValidationError,
+    load_json,
+    load_schema,
+    validate_payload,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -17,58 +22,115 @@ SCHEMAS = [
 ]
 
 
-def load_schema(name: str) -> dict:
-    path = ROOT / "schemas" / name
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
 def load_fixture(name: str) -> dict:
     path = ROOT / "tests" / "agents" / "fixtures" / name
     return json.loads(path.read_text(encoding="utf-8"))
 
 
 # ---------------------------------------------------------------------------
-# Schema Self-Validation
+# Schema Self-Validation & Loading Tests
 # ---------------------------------------------------------------------------
 
 
-def test_agent_schemas_are_valid_json_objects():
-    for name in SCHEMAS:
-        path = ROOT / "schemas" / name
-        assert path.exists(), f"Schema file not found: {name}"
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        assert payload["type"] == "object"
-        assert "$schema" in payload
-        assert "additionalProperties" in payload
+@pytest.mark.parametrize("schema_name", SCHEMAS)
+def test_load_schema_accepts_all_agent_schemas(schema_name: str):
+    schema = load_schema(schema_name)
+    assert isinstance(schema, dict)
+    assert schema["type"] == "object"
+    assert "$schema" in schema
+    assert "additionalProperties" in schema
 
 
-def test_all_schemas_are_valid_draft202012():
-    for name in SCHEMAS:
-        schema = load_schema(name)
-        Draft202012Validator.check_schema(schema)
+def test_load_schema_accepts_name_without_extension():
+    schema = load_schema("agent-job")
+    assert isinstance(schema, dict)
+    assert schema["title"] == "Agent Job"
+
+
+def test_load_schema_non_existent():
+    with pytest.raises(ContractValidationError) as exc_info:
+        load_schema("non-existent-schema")
+    assert "not found" in str(exc_info.value).lower() or "schema" in str(exc_info.value).lower()
+
+
+def test_load_schema_path_traversal():
+    with pytest.raises(ContractValidationError):
+        load_schema("../agent-job.schema.json")
+    with pytest.raises(ContractValidationError):
+        load_schema("subdir/../../agent-job.schema.json")
+
+
+def test_load_schema_invalid_schema_structure(tmp_path, monkeypatch):
+    invalid_schema_file = tmp_path / "bad.schema.json"
+    invalid_schema_file.write_text(
+        json.dumps({"$schema": "https://json-schema.org/draft/2020-12/schema", "type": "invalid_type"}),
+        encoding="utf-8"
+    )
+    import scripts.agents.contracts as contracts_mod
+    monkeypatch.setattr(contracts_mod, "SCHEMAS_DIR", tmp_path)
+
+    with pytest.raises(ContractValidationError) as exc_info:
+        load_schema("bad.schema.json")
+    # Must raise ContractValidationError, not jsonschema.exceptions.SchemaError
+    assert isinstance(exc_info.value, ContractValidationError)
 
 
 # ---------------------------------------------------------------------------
-# Positive Tests
+# load_json Tests
 # ---------------------------------------------------------------------------
 
 
-def test_job_fixture_validates():
-    schema = load_schema("agent-job.schema.json")
+def test_load_json_valid(tmp_path):
+    f = tmp_path / "valid.json"
+    f.write_text('{"key": "value", "count": 1}', encoding="utf-8")
+    data = load_json(f)
+    assert data == {"key": "value", "count": 1}
+
+
+def test_load_json_non_existent(tmp_path):
+    f = tmp_path / "missing.json"
+    with pytest.raises(ContractValidationError):
+        load_json(f)
+
+
+def test_load_json_invalid_syntax(tmp_path):
+    f = tmp_path / "syntax_error.json"
+    f.write_text('{"unclosed": "brace"', encoding="utf-8")
+    with pytest.raises(ContractValidationError) as exc_info:
+        load_json(f)
+    assert "JSON" in str(exc_info.value) or "syntax" in str(exc_info.value).lower() or "decode" in str(exc_info.value).lower()
+
+
+def test_load_json_top_level_non_object(tmp_path):
+    array_file = tmp_path / "array.json"
+    array_file.write_text('[1, 2, 3]', encoding="utf-8")
+    with pytest.raises(ContractValidationError):
+        load_json(array_file)
+
+    string_file = tmp_path / "string.json"
+    string_file.write_text('"just a string"', encoding="utf-8")
+    with pytest.raises(ContractValidationError):
+        load_json(string_file)
+
+
+# ---------------------------------------------------------------------------
+# Positive Validation Tests
+# ---------------------------------------------------------------------------
+
+
+def test_validate_payload_accepts_valid_job():
     fixture = load_fixture("job-book-trevas.json")
-    validator = Draft202012Validator(schema)
-    validator.validate(fixture)
+    validate_payload("agent-job.schema.json", fixture)
+    # Also test with short name
+    validate_payload("agent-job", fixture)
 
 
 def test_extraction_handoff_fixture_validates():
-    schema = load_schema("agent-handoff.schema.json")
     fixture = load_fixture("handoff-extraction.json")
-    validator = Draft202012Validator(schema)
-    validator.validate(fixture)
+    validate_payload("agent-handoff.schema.json", fixture)
 
 
 def test_context_pack_fixture_validates():
-    schema = load_schema("context-pack.schema.json")
     payload = {
         "schemaVersion": "1.0",
         "contextPackId": "CTX-TREVAS-EDITORIAL-001",
@@ -104,12 +166,10 @@ def test_context_pack_fixture_validates():
         },
         "outputContract": "schemas/agent-handoff.schema.json"
     }
-    validator = Draft202012Validator(schema)
-    validator.validate(payload)
+    validate_payload("context-pack.schema.json", payload)
 
 
 def test_review_request_fixture_validates():
-    schema = load_schema("review-request.schema.json")
     payload = {
         "reviewId": "REV-TREVAS-FINAL-001",
         "jobId": "BOOK-TREVAS-001",
@@ -124,12 +184,10 @@ def test_review_request_fixture_validates():
         "createdAt": "2026-09-04T10:30:00-03:00",
         "resolvedAt": "2026-09-04T10:45:00-03:00"
     }
-    validator = Draft202012Validator(schema)
-    validator.validate(payload)
+    validate_payload("review-request.schema.json", payload)
 
 
 def test_source_manifest_fixture_validates():
-    schema = load_schema("source-manifest.schema.json")
     payload = {
         "schemaVersion": "1.0",
         "sourceId": "trevas-3-0",
@@ -147,12 +205,10 @@ def test_source_manifest_fixture_validates():
         "setting": "Trevas",
         "language": "pt-BR"
     }
-    validator = Draft202012Validator(schema)
-    validator.validate(payload)
+    validate_payload("source-manifest.schema.json", payload)
 
 
 def test_relation_fixture_validates():
-    schema = load_schema("relation.schema.json")
     payload = {
         "schemaVersion": "1.0",
         "id": "rel-cacador-teologia-001",
@@ -163,57 +219,58 @@ def test_relation_fixture_validates():
         "page": 14,
         "confidence": 1.0
     }
-    validator = Draft202012Validator(schema)
-    validator.validate(payload)
+    validate_payload("relation.schema.json", payload)
 
 
 # ---------------------------------------------------------------------------
-# Negative Tests
+# Negative & Mutation Validation Tests
 # ---------------------------------------------------------------------------
 
 
-def test_job_negative_invalid_status():
-    schema = load_schema("agent-job.schema.json")
+def test_validate_payload_rejects_invalid_job_state():
     payload = copy.deepcopy(load_fixture("job-book-trevas.json"))
     payload["status"] = "invented-status"
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("agent-job.schema.json", payload)
 
 
-def test_job_negative_invalid_stage_status():
-    schema = load_schema("agent-job.schema.json")
+def test_validate_payload_error_path():
     payload = copy.deepcopy(load_fixture("job-book-trevas.json"))
     payload["stages"]["entities"] = "magically_done"
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError) as exc_info:
+        validate_payload("agent-job.schema.json", payload)
+    assert "stages.entities" in str(exc_info.value)
 
 
-def test_job_negative_unknown_property():
-    schema = load_schema("agent-job.schema.json")
+def test_validate_payload_unknown_property():
     payload = copy.deepcopy(load_fixture("job-book-trevas.json"))
     payload["surprise"] = True
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("agent-job.schema.json", payload)
+
+
+def test_validate_payload_does_not_mutate_input():
+    original = load_fixture("job-book-trevas.json")
+    payload = copy.deepcopy(original)
+    validate_payload("agent-job.schema.json", payload)
+    assert payload == original
 
 
 def test_handoff_negative_status_done():
-    schema = load_schema("agent-handoff.schema.json")
     payload = copy.deepcopy(load_fixture("handoff-extraction.json"))
     payload["status"] = "done"  # 'done' belongs to Job, not Handoff
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("agent-handoff.schema.json", payload)
 
 
 def test_handoff_negative_unknown_agent():
-    schema = load_schema("agent-handoff.schema.json")
     payload = copy.deepcopy(load_fixture("handoff-extraction.json"))
     payload["agent"] = "random-rogue-agent"
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("agent-handoff.schema.json", payload)
 
 
 def test_relation_negative_invalid_type():
-    schema = load_schema("relation.schema.json")
     payload = {
         "schemaVersion": "1.0",
         "id": "rel-001",
@@ -224,12 +281,11 @@ def test_relation_negative_invalid_type():
         "page": 14,
         "confidence": 1.0
     }
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("relation.schema.json", payload)
 
 
 def test_relation_negative_invalid_confidence():
-    schema = load_schema("relation.schema.json")
     payload = {
         "schemaVersion": "1.0",
         "id": "rel-001",
@@ -240,12 +296,11 @@ def test_relation_negative_invalid_confidence():
         "page": 14,
         "confidence": 1.4  # Must be <= 1.0
     }
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("relation.schema.json", payload)
 
 
 def test_source_manifest_negative_invalid_sha256():
-    schema = load_schema("source-manifest.schema.json")
     payload = {
         "schemaVersion": "1.0",
         "sourceId": "trevas-3-0",
@@ -257,12 +312,11 @@ def test_source_manifest_negative_invalid_sha256():
         "visibility": "internal",
         "publicationMode": "SUMMARY_AND_METADATA"
     }
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("source-manifest.schema.json", payload)
 
 
 def test_source_manifest_negative_invalid_rights_status():
-    schema = load_schema("source-manifest.schema.json")
     payload = {
         "schemaVersion": "1.0",
         "sourceId": "trevas-3-0",
@@ -274,12 +328,11 @@ def test_source_manifest_negative_invalid_rights_status():
         "visibility": "internal",
         "publicationMode": "SUMMARY_AND_METADATA"
     }
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("source-manifest.schema.json", payload)
 
 
 def test_review_request_negative_invalid_purpose():
-    schema = load_schema("review-request.schema.json")
     payload = {
         "reviewId": "REV-001",
         "jobId": "BOOK-001",
@@ -294,5 +347,6 @@ def test_review_request_negative_invalid_purpose():
         "createdAt": "2026-09-04T10:30:00-03:00",
         "resolvedAt": None
     }
-    with pytest.raises(ValidationError):
-        Draft202012Validator(schema).validate(payload)
+    with pytest.raises(ContractValidationError):
+        validate_payload("review-request.schema.json", payload)
+
