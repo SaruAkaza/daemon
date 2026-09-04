@@ -1,41 +1,44 @@
 # Obsidian — Daemon Project Brain
 
-Esta pasta adiciona uma camada de navegação em Obsidian ao repositório Daemon Tools.
+Esta pasta integra a camada de navegação humana do Daemon Tools no Obsidian.
 
 ## Como abrir
-1. Abra o Obsidian.
-2. Escolha **Open folder as vault / Abrir pasta como cofre**.
-3. Selecione:
+
+1. Abra o Obsidian;
+2. Escolha **Open folder as vault** (Abrir pasta como cofre);
+3. Selecione a raiz do projeto:
    `C:\Users\TI Prevent\Documents\Daemon Tools`
-4. Abra `PROJECT-BRAIN.md`.
+4. Abra a página inicial:
+   `PROJECT-BRAIN.md`
 
-## Princípio
-Não existe uma segunda documentação para o Obsidian.
-O Vault usa os mesmos arquivos Markdown já versionados pelo Git.
+## Regra Fundamental
 
-## Plugins
-Nenhum plugin comunitário é obrigatório. Os recursos nativos são suficientes:
-- Graph View
-- Backlinks
-- Outgoing Links
-- Search
-- Properties
-- Templates
+> **Git é a fonte da verdade. Obsidian é a interface de conhecimento.**
 
-## Git
-Recomendação inicial: adicionar ao `.gitignore`:
+Não duplique regras documentadas. Se algo já existe em:
+- `docs/architecture/`
+- `docs/agents/`
+- `docs/context/`
+- `docs/reference/`
 
-```gitignore
-.obsidian/
-```
+utilize `[[links]]` (wikilinks ou links relativos). Não copie o conteúdo da regra.
 
-## Conteúdo novo
-- Missões: `docs/missions/`
-- Decisões: `docs/context/decisions/`
-- Precedentes: `docs/context/precedents/`
-- Notas de livros: `docs/context/books/`
-- Índices Obsidian: `docs/obsidian/mocs/`
-- Templates: `docs/obsidian/templates/`
+## Plugins e Recursos
 
-## Regra contra duplicação
-Se uma informação já existe em documento canônico, crie um link em vez de copiar a regra.
+Nenhum plugin comunitário é obrigatório. Utilize os recursos nativos do Obsidian:
+- Graph View (Visualização gráfica de nós e conexões)
+- Backlinks (Links bidirecionais reversos)
+- Outgoing Links (Links de saída)
+- Search (Busca textual e por propriedades)
+- Properties (Propriedades/frontmatter estruturadas)
+- Templates (Modelos de missões, livros, ADRs, precedentes e revisões humanas)
+
+## Estrutura do Vault
+
+- **Página Inicial**: `PROJECT-BRAIN.md`
+- **MOCs (Maps of Content)**: `docs/obsidian/mocs/`
+- **Templates**: `docs/obsidian/templates/`
+- **Notas de Livros**: `docs/context/books/`
+- **Missões**: `docs/missions/`
+- **Decisões (ADRs)**: `docs/context/decisions/`
+- **Precedentes**: `docs/context/precedents/`

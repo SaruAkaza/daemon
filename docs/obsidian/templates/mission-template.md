@@ -8,20 +8,30 @@ executor: Antigravity + Gemini 3.7 High
 created:
 completed:
 ---
-# Missão {{mission_id}} — Nome
+# Missão {{mission_id}} — Título
 
 ## Objetivo
+
 ## Contexto obrigatório
+
 ## Escopo
 ### Fazer
 ### Não fazer
-## Arquivos esperados
-## Gates / critérios de aceitação
+
+## Arquivos
+### Arquivos esperados / criados
+### Arquivos modificados
+
+## Gates
+
 ## Testes
+
 ## Resultado
-## Arquivos criados
-## Arquivos modificados
+
 ## Decisões
-## Problemas / blockers
+
+## Problemas
+
 ## Commit
+
 ## Próxima missão

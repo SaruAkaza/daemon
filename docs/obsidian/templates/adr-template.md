@@ -9,10 +9,14 @@ created:
 Proposed
 
 ## Context
+
 ## Decision
+
 ## Consequences
 ### Positive
 ### Negative / Trade-offs
+
 ## Alternatives Considered
+
 ## Supersedes
 None

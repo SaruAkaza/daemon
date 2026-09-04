@@ -32,6 +32,7 @@ REQUIRED_DOMAIN_CONTEXT_FILES = [
     "docs/context/domain/relation-types.md",
     "docs/context/decisions/ADR-0001-repository-context-is-agent-memory.md",
     "docs/context/decisions/ADR-0002-human-validation-required-for-done.md",
+    "docs/context/decisions/ADR-0003-development-fork-and-upstream-release-model.md",
 ]
 
 REQUIRED_PROJECT_BRAIN_FILES = [

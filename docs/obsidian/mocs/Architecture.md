@@ -11,10 +11,33 @@ area: architecture
 - [[docs/architecture/context-system|Context System]]
 - [[docs/architecture/decision-policy|Decision Policy]]
 
-## Fluxo
-Source → Extraction → Editorial → Entities → Relations → Frontend → QA → Release → Human Validation → Done
+## Fluxo da Pipeline
 
-## Relacionados
-- [[docs/obsidian/mocs/Agents|Agentes]]
-- [[docs/obsidian/mocs/Development|Desenvolvimento]]
-- [[docs/obsidian/mocs/Decisions|Decisões]]
+```text
+Source
+ ↓
+Extraction
+ ↓
+Editorial
+ ↓
+Entities
+ ↓
+Relations
+ ↓
+Frontend
+ ↓
+QA
+ ↓
+Release
+ ↓
+Human Validation
+ ↓
+Done
+```
+
+Consulte [[docs/architecture/pipeline|Pipeline]] para a definição canônica dos gates e critérios de transição.
+
+## Mapas Relacionados
+- [[docs/obsidian/mocs/Agents|Mapa dos Agentes]]
+- [[docs/obsidian/mocs/Decisions|Mapa de Decisões]]
+- [[docs/obsidian/mocs/Development|Mapa de Desenvolvimento]]

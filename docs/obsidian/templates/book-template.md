@@ -7,29 +7,35 @@ rights_status: UNKNOWN
 current_stage:
 source_path:
 ---
-# Livro — Título
+# Livro — {{title}}
 
-## Fonte
+## Metadados e Fonte
 - Arquivo:
-- Hash:
+- SHA-256:
 - Edição:
 - Direitos:
 
-## Estado da pipeline
-| Stage | Estado |
-|---|---|
-| Source | |
-| Extraction | |
-| Editorial | |
-| Entities | |
-| Relations | |
-| Frontend | |
-| QA | |
-| Release | |
+## Estado da Pipeline
 
-## Áreas encontradas
-## Entidades principais
-## Ambiguidades
-## Decisões relacionadas
-## Jobs / Handoffs
-## Observações humanas
+| Stage | Estado | Responsável | Handoff |
+|---|---|---|---|
+| Source | | source-agent | |
+| Extraction | | extraction-agent | |
+| Editorial | | editorial-agent | |
+| Entities | | entity-agent | |
+| Relations | | relations-agent | |
+| Frontend | | frontend-agent | |
+| QA | | qa-release-agent | |
+| Release | | qa-release-agent | |
+
+## Áreas e Seções Encontradas
+
+## Entidades Principais
+
+## Ambiguidades e Precedentes
+
+## Decisões Relacionadas
+
+## Jobs e Handoffs
+
+## Observações Humanas

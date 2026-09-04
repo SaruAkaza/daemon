@@ -28,6 +28,16 @@ O 5e.tools organiza conteudo de RPG como entidades filtraveis, com busca, filtro
 - `docs/obsidian/` — MOCs e templates do Daemon Project Brain
 - `coordination/` — estado operacional e coordenação
 
+## Project Brain / Obsidian
+
+O repositório pode ser aberto diretamente como um Vault do Obsidian.
+
+Página inicial:
+
+`PROJECT-BRAIN.md`
+
+O Obsidian é uma camada de navegação sobre a documentação versionada; ele não substitui Git nem cria uma segunda fonte da verdade.
+
 ## Fluxo de trabalho
 
 1. Gerar inventario:

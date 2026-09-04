@@ -13,16 +13,31 @@ area: agents
 - [[docs/agents/editorial-agent|Editorial Agent]]
 - [[docs/agents/entity-agent|Entity Agent]]
 - [[docs/agents/relations-agent|Relations Agent]]
-- [[docs/agents/frontend-agent|Frontend Agent]]
+- [[docs/agents/frontend-agent|Frontend & Search Agent]]
 - [[docs/agents/qa-release-agent|QA & Release Agent]]
 
-## Contexto
+## Ciclo de Execução
+
+```text
+Orchestrator
+     ↓
+Context Pack
+     ↓
+Specialist
+     ↓
+Handoff
+     ↓
+Gate / QA
+```
+
+## Contexto e Contratos
 - [[docs/architecture/context-system|Context System]]
 - [[docs/context/domain/taxonomy|Taxonomy]]
 - [[docs/context/domain/entity-patterns|Entity Patterns]]
 - [[docs/context/domain/relation-types|Relation Types]]
 
-## Executor atual
-Antigravity + Gemini 3.7 High.
+## Executor Atual
 
-Os papéis são lógicos e não dependem permanentemente do executor.
+> Atualmente os papéis são executados principalmente por Antigravity + Gemini 3.7 High.
+
+> Papel lógico e modelo executor são conceitos separados. A arquitetura permanece provider-neutral.

@@ -4,13 +4,16 @@ area: decisions
 ---
 # MOC — Decisões
 
-## Aceitas
-- [[docs/context/decisions/ADR-0001-repository-context-is-agent-memory|ADR-0001]]
-- [[docs/context/decisions/ADR-0002-human-validation-required-for-done|ADR-0002]]
+## Architecture Decision Records (ADRs)
 
-## Política
+- [[docs/context/decisions/ADR-0001-repository-context-is-agent-memory|ADR-0001 — Repository Context is Agent Memory]]
+- [[docs/context/decisions/ADR-0002-human-validation-required-for-done|ADR-0002 — Human Validation Required for Done]]
+- [[docs/context/decisions/ADR-0003-development-fork-and-upstream-release-model|ADR-0003 — Development Fork and Upstream Release Model]]
+
+## Políticas de Decisão
 - [[docs/architecture/decision-policy|Decision Policy]]
 - [[docs/architecture/constitution|Constitution]]
 
-## Nova decisão
-Use [[docs/obsidian/templates/adr-template|Template — ADR]].
+## Novo Registro
+Para propor um novo ADR, utilize o template:
+- [[docs/obsidian/templates/adr-template|Template — ADR]]

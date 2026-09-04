@@ -4,21 +4,22 @@ area: domain
 ---
 # MOC — Domínio Daemon
 
-## Regras canônicas
+## Regras Canônicas
 - [[docs/reference/cataloging-rules|Cataloging Rules]]
 - [[docs/reference/data-model|Data Model]]
 
-## Vocabulário
+## Vocabulário e Padrões
 - [[docs/context/domain/taxonomy|Taxonomy]]
 - [[docs/context/domain/entity-patterns|Entity Patterns]]
 - [[docs/context/domain/relation-types|Relation Types]]
 
-## Conceitos
-- Fonte: documento original.
-- Extração: representação textual rastreável.
-- Segmento: bloco editorial coerente.
-- Entidade: elemento identificável.
-- Relação: conexão entre entidades/regras.
-- Apresentação: forma de exibição dos dados certificados.
+## Conceitos Centrais
 
-**Interface não é fonte. OCR não é fonte. Entidade não substitui a fonte.**
+- **Fonte**: documento original preservado (PDF/Docx).
+- **Extração**: representação textual rastreável página a página.
+- **Segmento**: bloco editorial coerente e classificado.
+- **Entidade**: elemento de jogo identificável (kit, aprimoramento, poder, magia, perícia, etc.).
+- **Relação**: conexão tipada entre entidades/regras (ex.: `REQUIRES`, `PROVIDES`).
+- **Apresentação**: forma de exibição dos dados certificados na interface do usuário.
+
+> **Regra Central**: Interface não é fonte. OCR não é fonte. Entidade não substitui a fonte.

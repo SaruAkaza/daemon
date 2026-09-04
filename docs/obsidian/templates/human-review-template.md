@@ -7,14 +7,25 @@ status: open
 created:
 resolved:
 ---
-# Human Review — Título
+# Human Review — {{review_id}}
 
 ## Job
-## Solicitado por
-## Pergunta
-## Evidência
-## Opções
-## Decisão humana
+{{job_id}}
+
+## Requested By
+
+## Purpose
+
+## Question
+
+## Evidence
+
+## Options
+
+## Human Decision
+
 ## Rationale
-## Impacto
-## Estágios a revalidar
+
+## Impact
+
+## Stages to Revalidate

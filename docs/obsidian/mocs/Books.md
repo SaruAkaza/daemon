@@ -4,13 +4,15 @@ area: books
 ---
 # MOC — Livros
 
-## Fonte da verdade
-- Originais: `Livros/`
-- Contratos/estado: `coordination/books/`
-- Índice: `data/index/`
-- Notas humanas: `docs/context/books/`
+## Camadas de Informação dos Livros
 
-## Novo livro
-Use [[docs/obsidian/templates/book-template|Template — Livro]].
+- `Livros/` → Arquivos fonte originais preservados (PDFs/Docx).
+- `data/index/` → Inventário catalogado dos arquivos fonte (`sources.json`).
+- `coordination/books/` → Contratos de contexto e estado de processamento dos livros.
+- `docs/context/books/` → Notas humanas navegáveis de cada livro processado.
 
-A nota de livro não substitui arquivo-fonte, Job, Handoff ou dados certificados.
+## Novo Livro
+Para registrar uma nova nota humana de livro, utilize o template:
+- [[docs/obsidian/templates/book-template|Template — Livro]]
+
+> A nota humana de livro não substitui o arquivo-fonte, os Jobs/Handoffs ou os dados JSON certificados.
