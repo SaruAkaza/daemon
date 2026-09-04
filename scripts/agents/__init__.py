@@ -4,6 +4,12 @@ from scripts.agents.contracts import (
     load_schema,
     validate_payload,
 )
+from scripts.agents.handoff_store import (
+    HandoffAlreadyExistsError,
+    HandoffNotFoundError,
+    HandoffStore,
+    HandoffStoreError,
+)
 from scripts.agents.job_store import (
     JobAlreadyExistsError,
     JobNotFoundError,
@@ -20,4 +26,8 @@ __all__ = [
     "JobStoreError",
     "JobAlreadyExistsError",
     "JobNotFoundError",
+    "HandoffStore",
+    "HandoffStoreError",
+    "HandoffAlreadyExistsError",
+    "HandoffNotFoundError",
 ]
