@@ -19,6 +19,13 @@ O 5e.tools organiza conteudo de RPG como entidades filtraveis, com busca, filtro
 - `schemas/`: JSON Schemas para validar entidades.
 - `scripts/`: automacoes de inventario, extracao e categorizacao.
 
+## Coordenação agentic
+
+- `AGENTS.md` — entrada para agentes
+- `docs/architecture/` — regras e arquitetura
+- `docs/reference/` — regras editoriais e modelo de dados
+- `coordination/` — estado operacional e coordenação
+
 ## Fluxo de trabalho
 
 1. Gerar inventario:

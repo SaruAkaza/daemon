@@ -33,8 +33,9 @@ Motivo: o usuário não deve precisar revisar novamente logo depois de uma confi
 
 ## Estrutura de Navegação
 
-- A barra lateral esquerda lista categorias/segmentos gerais: regras base, cenários e lore, poderes, aprimoramentos, rituais, raças, criaturas e NPCs, itens e equipamentos etc.
-- A coluna central lista entidades da categoria selecionada.
+- As categorias aparecem no hub inicial da aplicação.
+- A barra lateral esquerda lista categorias/segmentos gerais: regras base, cenários e lore, poderes, aprimoramentos, rituais, magias, manobras de combate, kits, raças, criaturas e NPCs, itens e equipamentos etc.
+- A coluna central lista as entidades da categoria selecionada. Filtros e itens pertencem à categoria ativa.
 - A coluna direita detalha a entidade selecionada em blocos internos.
 - Nem todo subtítulo vira item na coluna central. Subtítulos podem ser apenas blocos internos de uma entidade maior.
 
@@ -98,6 +99,9 @@ Regra para o bloco `Descrição`:
 - Se existir uma descrição geral antes das opções de custo, usar essa descrição geral.
 - Se não existir descrição geral separada, usar os efeitos das opções de custo como descrição contínua.
 
+Filtros de Aprimoramentos:
+- Filtro de polaridade na coluna de listagem/filtros: positivos, negativos e sem-marcação.
+
 ## Raças e Linhagens
 
 Raças/linhagens só devem ter bloco `Custo` quando o livro informar explicitamente um custo de compra, uso ou seleção da raça.
@@ -124,6 +128,26 @@ Todo poder deve ser detalhado assim:
 - Primeiro bloco: `Pré-requisito`, quando o texto informar algo como `(Alastores)`, `(Cainitas)` etc.
 - Em seguida, um bloco por nível: `Nível 1`, `Nível 2`, `Nível 3` etc.
 - Quando vários níveis estiverem grudados na mesma linha, separar cada ocorrência de `Nível X:` em bloco próprio.
+- O descritor de casta ou introdução geral deve compor o bloco `Descrição`.
+
+## Manobras de Combate
+
+- Categoria própria `manobras_combate`.
+- Cada técnica individual estruturada com `Custo` + `Descrição` (e `Pré-requisito`, quando aplicável).
+- Não segregar por estilo de combate na taxonomia geral; as manobras formam uma lista unificada navegável.
+
+## Magias e Rituais
+
+- Categorias `magias` e `rituais`.
+- Lista recolhível por **Caminho** na coluna esquerda/filtros.
+- Cada magia individual deve estruturar, quando disponíveis no texto original:
+  - `Caminho`
+  - `Círculo`
+  - `Atributo`
+  - `Custo`
+  - `Duração`
+  - `Alcance`
+  - `Efeito` / `Descrição`
 
 ## NPCs e Criaturas
 
@@ -134,12 +158,20 @@ Todo poder deve ser detalhado assim:
 - Frases explicativas como "pode causar...", "pode usar...", "caso o alvo...", "seu item/poder..." ou "vezes por dia" são habilidade/efeito, mesmo quando mencionam dano, teste, veneno ou rodada.
 - Esta separação vale para todos os livros anteriores e futuros para manter coerência entre fichas de criaturas/NPCs.
 - História, curiosidades e personalidade específicas de um NPC não devem virar `Cenários e Lore` global.
-- Poderes internos de NPC não devem virar categoria global `Poderes`.
+- Poderes internos de NPC não devem virar categoria global `Poderes`. Não criar aprimoramentos ou poderes globais a partir de dados operacionais internos de NPC.
 
-## Limpeza de Texto
+## Títulos e Cabeçalhos
 
-- Juntar hifenização quebrada: `fa-` + `ces` -> `faces`.
+- Reconstruir títulos truncados por quebras de linha ou corpo de texto (ex.: heading `Observadores das` seguido por `95 Teses` no corpo -> título normalizado `Observadores das 95 Teses`).
+- Dehifenizar cabeçalhos.
+- Descartar back-matter residual e numerações de página que interfiram no título.
+
+## Limpeza e Normalização Textual
+
+- Corrigir ligaduras tipográficas corrompidas (`ﬁ` -> `fi`, `ﬂ` -> `fl`, `ffi` -> `ffi`, `ffl` -> `ffl`).
+- Corrigir letras artificialmente espaçadas por formatação de cabeçalho (`T e n d ê n c i a` -> `Tendência`, `D e m i u r g o` -> `Demiurgo`).
+- Juntar hifenização de quebra de linha/coluna: `fa-` + `ces` -> `faces`, `De-` + `miurgo` -> `Demiurgo`.
 - Juntar fragmentos quando o parágrafo anterior ficou aberto.
 - Juntar linhas iniciadas por modificador/bônus quando a linha anterior ficou aberta: `você ganha` + `+3 Poderes...`.
-- Remover assinaturas soltas de citação quando forem ruído isolado.
+- Remover assinaturas soltas de citação e resíduos de cabeçalho/rodapé quando forem ruído isolado.
 - Preservar bullets/listas quando forem conteúdo real.
