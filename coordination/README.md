@@ -3,6 +3,17 @@
 O repositório é a fonte da verdade — os agentes não compartilham memória.
 Protocolo para trabalharmos em paralelo **sem colisão**.
 
+## Legacy and Current Coordination
+
+O repositório contém atualmente tanto artefatos de coordenação legados quanto o novo substrato validado de coordenação multiagente:
+
+- `coordination/handoff/` (singular) → Handoffs legados em markdown livre.
+- `coordination/handoffs/` (plural) → Novo armazenamento canônico e validado (`HandoffStore`).
+- `coordination/jobs/` → Novo armazenamento canônico de Agent Jobs (`JobStore`).
+
+Documentação canônica de migração e regras de coexistência:
+- `docs/architecture/legacy-coordination-migration.md`
+
 ## Isolamento físico (git worktrees)
 - **Codex**: `...\Repositorio\daemon` (branch própria, ex: `book/<livro>`)
 - **Claude**: `...\Repositorio\daemon-claude` (branch `claude-pilots` ou `book/<livro>`)

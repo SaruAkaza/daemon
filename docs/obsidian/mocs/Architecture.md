@@ -10,6 +10,7 @@ area: architecture
 - [[docs/architecture/pipeline|Pipeline]]
 - [[docs/architecture/context-system|Context System]]
 - [[docs/architecture/decision-policy|Decision Policy]]
+- [[docs/architecture/legacy-coordination-migration|Legacy Coordination Migration]]
 
 ## Fluxo da Pipeline
 
