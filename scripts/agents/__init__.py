@@ -17,6 +17,7 @@ from scripts.agents.contracts import (
     validate_payload,
 )
 from scripts.agents.gate_engine import (
+    PERMITTED_RIGHTS_COMBINATIONS,
     PIPELINE_STAGES,
     GateDecision,
     GateEngine,
@@ -60,6 +61,7 @@ __all__ = [
     "GateDecision",
     "GateEngineError",
     "PIPELINE_STAGES",
+    "PERMITTED_RIGHTS_COMBINATIONS",
 ]
 
 

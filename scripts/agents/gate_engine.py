@@ -17,6 +17,17 @@ PIPELINE_STAGES: tuple[str, ...] = (
 )
 
 
+PERMITTED_RIGHTS_COMBINATIONS: frozenset[tuple[str, str]] = frozenset({
+    ("AUTHORIZED", "FULL_TEXT"),
+    ("AUTHORIZED", "SUMMARY_AND_METADATA"),
+    ("AUTHORIZED", "METADATA_ONLY"),
+    ("PUBLIC_DOMAIN", "FULL_TEXT"),
+    ("PUBLIC_DOMAIN", "SUMMARY_AND_METADATA"),
+    ("PUBLIC_DOMAIN", "METADATA_ONLY"),
+    ("METADATA_ONLY", "METADATA_ONLY"),
+})
+
+
 class GateEngineError(RuntimeError):
     """Raised when gate evaluation fails due to invalid arguments, unknown stages, or type mismatch."""
     pass
@@ -212,12 +223,12 @@ class GateEngine:
         rights = source_manifest.get("rightsStatus")
         pub_mode = source_manifest.get("publicationMode")
 
-        if rights in ("UNKNOWN", "PRIVATE") or pub_mode == "NOT_PUBLIC":
+        if (rights, pub_mode) not in PERMITTED_RIGHTS_COMBINATIONS:
             return GateDecision(
                 allowed=False,
                 code="RIGHTS_BLOCK_RELEASE",
                 reasons=(
-                    f"Rights status '{rights}' with publicationMode '{pub_mode}' blocks release.",
+                    f"Rights status '{rights}' is incompatible with publicationMode '{pub_mode}'.",
                 ),
             )
 

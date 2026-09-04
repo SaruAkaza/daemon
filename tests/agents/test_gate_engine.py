@@ -308,45 +308,75 @@ def test_release_gate_denies_when_qa_stage_not_passed():
     assert "qa" in decision.reasons[0].lower()
 
 
-@pytest.mark.parametrize("blocked_rights", ["UNKNOWN", "PRIVATE"])
-def test_release_gate_denies_blocked_rights_statuses(blocked_rights):
-    engine = GateEngine()
-    job = _valid_job_payload(stage_statuses={"qa": "pass"})
-    manifest = _valid_source_manifest(rights_status=blocked_rights)
+ALL_RIGHTS_STATUSES = [
+    "AUTHORIZED",
+    "PUBLIC_DOMAIN",
+    "METADATA_ONLY",
+    "PRIVATE",
+    "UNKNOWN",
+]
 
-    decision = engine.evaluate_release(job, source_manifest=manifest)
-    assert decision.allowed is False
-    assert decision.code == "RIGHTS_BLOCK_RELEASE"
-    assert blocked_rights in decision.reasons[0]
-
-
-def test_release_gate_denies_not_public_publication_mode():
-    engine = GateEngine()
-    job = _valid_job_payload(stage_statuses={"qa": "pass"})
-    manifest = _valid_source_manifest(rights_status="AUTHORIZED", publication_mode="NOT_PUBLIC")
-
-    decision = engine.evaluate_release(job, source_manifest=manifest)
-    assert decision.allowed is False
-    assert decision.code == "RIGHTS_BLOCK_RELEASE"
-    assert "NOT_PUBLIC" in decision.reasons[0]
+ALL_PUBLICATION_MODES = [
+    "FULL_TEXT",
+    "SUMMARY_AND_METADATA",
+    "METADATA_ONLY",
+    "NOT_PUBLIC",
+]
 
 
-@pytest.mark.parametrize(
-    "rights_status,pub_mode",
-    [
-        ("AUTHORIZED", "FULL_TEXT"),
-        ("PUBLIC_DOMAIN", "FULL_TEXT"),
-        ("METADATA_ONLY", "METADATA_ONLY"),
-        ("AUTHORIZED", "SUMMARY_AND_METADATA"),
-    ]
-)
-def test_release_gate_allows_valid_rights_and_publication(rights_status, pub_mode):
+@pytest.mark.parametrize("rights_status", ALL_RIGHTS_STATUSES)
+@pytest.mark.parametrize("pub_mode", ALL_PUBLICATION_MODES)
+def test_release_gate_full_matrix_combinations(rights_status, pub_mode):
     engine = GateEngine()
     job = _valid_job_payload(stage_statuses={"qa": "pass"})
     manifest = _valid_source_manifest(rights_status=rights_status, publication_mode=pub_mode)
 
     decision = engine.evaluate_release(job, source_manifest=manifest)
+
+    expected_allowed = (
+        (rights_status in ("AUTHORIZED", "PUBLIC_DOMAIN") and pub_mode in ("FULL_TEXT", "SUMMARY_AND_METADATA", "METADATA_ONLY"))
+        or (rights_status == "METADATA_ONLY" and pub_mode == "METADATA_ONLY")
+    )
+
+    if expected_allowed:
+        assert decision.allowed is True
+        assert decision.code == "ALLOW"
+    else:
+        assert decision.allowed is False
+        assert decision.code == "RIGHTS_BLOCK_RELEASE"
+        assert len(decision.reasons) > 0
+
+
+def test_release_gate_metadata_only_rejects_full_text():
+    engine = GateEngine()
+    job = _valid_job_payload(stage_statuses={"qa": "pass"})
+    manifest = _valid_source_manifest(rights_status="METADATA_ONLY", publication_mode="FULL_TEXT")
+
+    decision = engine.evaluate_release(job, source_manifest=manifest)
+    assert decision.allowed is False
+    assert decision.code == "RIGHTS_BLOCK_RELEASE"
+
+
+def test_release_gate_metadata_only_rejects_summary_and_metadata():
+    engine = GateEngine()
+    job = _valid_job_payload(stage_statuses={"qa": "pass"})
+    manifest = _valid_source_manifest(rights_status="METADATA_ONLY", publication_mode="SUMMARY_AND_METADATA")
+
+    decision = engine.evaluate_release(job, source_manifest=manifest)
+    assert decision.allowed is False
+    assert decision.code == "RIGHTS_BLOCK_RELEASE"
+
+
+def test_release_gate_metadata_only_allows_metadata_only():
+    engine = GateEngine()
+    job = _valid_job_payload(stage_statuses={"qa": "pass"})
+    manifest = _valid_source_manifest(rights_status="METADATA_ONLY", publication_mode="METADATA_ONLY")
+
+    decision = engine.evaluate_release(job, source_manifest=manifest)
     assert decision.allowed is True
+    assert decision.code == "ALLOW"
+
+
 def test_release_gate_denies_when_source_manifest_is_none():
     engine = GateEngine()
     job = _valid_job_payload(stage_statuses={"qa": "pass"})
@@ -357,7 +387,6 @@ def test_release_gate_denies_when_source_manifest_is_none():
     assert "source manifest" in decision.reasons[0].lower()
 
 
-
 def test_release_gate_invalid_source_manifest_schema_raises():
     engine = GateEngine()
     job = _valid_job_payload(stage_statuses={"qa": "pass"})
@@ -366,6 +395,7 @@ def test_release_gate_invalid_source_manifest_schema_raises():
 
     with pytest.raises(ContractValidationError):
         engine.evaluate_release(job, source_manifest=bad_manifest)
+
 
 
 # ---------------------------------------------------------------------------
