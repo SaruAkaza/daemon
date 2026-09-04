@@ -259,6 +259,10 @@ def test_e2e_context_pack_and_handoff_integration(tmp_path: Path):
     book_path.parent.mkdir(parents=True, exist_ok=True)
     book_path.write_text("# Book Context\nBook structural analysis.", encoding="utf-8")
 
+    job_text_path = repo_dir / "coordination" / "jobs" / "JOB-E2E-001.json"
+    job_text_path.parent.mkdir(parents=True, exist_ok=True)
+    job_text_path.write_text('{"jobId": "JOB-E2E-001", "status": "in_progress"}', encoding="utf-8")
+
     handoff_text_path = repo_dir / "coordination" / "handoffs" / "HND-E2E-EXTRACTION-001.md"
     handoff_text_path.parent.mkdir(parents=True, exist_ok=True)
     handoff_text_path.write_text("# Extraction Handoff Summary\n150 pages extracted.", encoding="utf-8")
@@ -304,6 +308,9 @@ def test_e2e_context_pack_and_handoff_integration(tmp_path: Path):
         "bookContext": [
             "docs/context/books/test-book.md"
         ],
+        "jobContext": [
+            "coordination/jobs/JOB-E2E-001.json"
+        ],
         "handoffContext": [
             "coordination/handoffs/HND-E2E-EXTRACTION-001.md"
         ]
@@ -318,10 +325,12 @@ def test_e2e_context_pack_and_handoff_integration(tmp_path: Path):
     assert pack["mandatory"] == ["docs/architecture/constitution.md"]
     assert pack["domain"] == ["docs/reference/cataloging-rules.md"]
     assert pack["bookContext"] == ["docs/context/books/test-book.md"]
+    assert pack["jobContext"] == ["coordination/jobs/JOB-E2E-001.json"]
     assert pack["handoffContext"] == ["coordination/handoffs/HND-E2E-EXTRACTION-001.md"]
 
     assert "Inviolable rules." in loader.load_text(pack["mandatory"][0])
     assert "Taxonomy definitions." in loader.load_text(pack["domain"][0])
+    assert "JOB-E2E-001" in loader.load_text(pack["jobContext"][0])
     assert "150 pages extracted." in loader.load_text(pack["handoffContext"][0])
 
     # Minimum sufficient context: stray file is strictly excluded from all layers
