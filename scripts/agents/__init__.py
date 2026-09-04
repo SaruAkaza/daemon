@@ -5,6 +5,11 @@ from scripts.agents.context_loader import (
     ContextNotFoundError,
     ContextPathError,
 )
+from scripts.agents.context_pack_builder import (
+    CANONICAL_LAYERS,
+    ContextPackBuilder,
+    ContextPackBuilderError,
+)
 from scripts.agents.contracts import (
     ContractValidationError,
     load_json,
@@ -42,5 +47,9 @@ __all__ = [
     "ContextNotFoundError",
     "ContextPathError",
     "ContextEncodingError",
+    "ContextPackBuilder",
+    "ContextPackBuilderError",
+    "CANONICAL_LAYERS",
 ]
+
 
