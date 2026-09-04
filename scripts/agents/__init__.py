@@ -16,6 +16,12 @@ from scripts.agents.contracts import (
     load_schema,
     validate_payload,
 )
+from scripts.agents.gate_engine import (
+    PIPELINE_STAGES,
+    GateDecision,
+    GateEngine,
+    GateEngineError,
+)
 from scripts.agents.handoff_store import (
     HandoffAlreadyExistsError,
     HandoffNotFoundError,
@@ -50,6 +56,11 @@ __all__ = [
     "ContextPackBuilder",
     "ContextPackBuilderError",
     "CANONICAL_LAYERS",
+    "GateEngine",
+    "GateDecision",
+    "GateEngineError",
+    "PIPELINE_STAGES",
 ]
+
 
 
