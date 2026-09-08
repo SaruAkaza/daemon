@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/execution-bundle.schema.json",
+  "title": "Execution Bundle Envelope",
+  "description": "Envelope de transporte imutável para uma requisição de execução V2 manual.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "executionBundleId",
+    "requestId",
+    "jobId",
+    "stage",
+    "bookId",
+    "attemptNumber",
+    "inputManifestSha256",
+    "executionRequestPath",
+    "promptPath",
+    "outputContractPath",
+    "contextManifestPath",
+    "instructionsPath",
+    "createdAt"
+  ],
+  "properties": {
+    "executionBundleId": {
+      "type": "string",
+      "pattern": "^EB-[A-Za-z0-9_-]+$",
+      "description": "Identificador determinístico do Execution Bundle."
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador da ExecutionRequest correspondente."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do job de trabalho."
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "SOURCE",
+        "EXTRACTION",
+        "EDITORIAL",
+        "ENTITIES",
+        "RELATIONS",
+        "QA",
+        "PREVIEW"
+      ],
+      "description": "Estágio do pipeline associado ao bundle."
+    },
+    "bookId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Identificador canônico do livro."
+    },
+    "attemptNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Número sequencial da tentativa (1-indexed)."
+    },
+    "inputManifestSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Hash SHA-256 do manifesto de contexto de entrada."
+    },
+    "executionRequestPath": {
+      "type": "string",
+      "const": "execution-request.json"
+    },
+    "promptPath": {
+      "type": "string",
+      "const": "prompt.md"
+    },
+    "outputContractPath": {
+      "type": "string",
+      "const": "output-contract.json"
+    },
+    "contextManifestPath": {
+      "type": "string",
+      "const": "context-manifest.json"
+    },
+    "instructionsPath": {
+      "type": "string",
+      "const": "ANTIGRAVITY-INSTRUCTIONS.md"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
+

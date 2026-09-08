@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/result-bundle.schema.json",
+  "title": "Result Bundle Envelope",
+  "description": "Envelope de recepção e integridade para resultado de execução retornado manualmente.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "resultBundleId",
+    "executionBundleId",
+    "requestId",
+    "bookId",
+    "attemptNumber",
+    "resultManifestSha256",
+    "executionResultPath",
+    "resultManifestPath",
+    "artifacts",
+    "completedAt"
+  ],
+  "properties": {
+    "resultBundleId": {
+      "type": "string",
+      "pattern": "^RB-[A-Za-z0-9_-]+$",
+      "description": "Identificador determinístico do Result Bundle."
+    },
+    "executionBundleId": {
+      "type": "string",
+      "pattern": "^EB-[A-Za-z0-9_-]+$",
+      "description": "Identificador do Execution Bundle associado."
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador da ExecutionRequest associada."
+    },
+    "bookId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Identificador canônico do livro."
+    },
+    "attemptNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Número sequencial da tentativa."
+    },
+    "resultManifestSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Hash SHA-256 do result-manifest."
+    },
+    "executionResultPath": {
+      "type": "string",
+      "const": "execution-result.json"
+    },
+    "resultManifestPath": {
+      "type": "string",
+      "const": "result-manifest.json"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "sizeBytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "sizeBytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
+
