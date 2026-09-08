@@ -1,230 +1,229 @@
 # Daemon Tools — Version 2.2 Design Specification
 # Pilot Content Pipeline (End-to-End Book Verification)
 
-## 1. Purpose
+## 1. Visão Geral e Contexto
 
-Esta especificação define a arquitetura, contratos de dados, máquina de estados, governança de revisão e fluxo de execução da **Version 2.2 — Pilot Content Pipeline** do repositório Daemon Tools.
+Esta especificação define a arquitetura, contratos de dados, máquina de estados, governança de direitos autorais, protocolo de revisão humana e fluxo de execução da **Version 2.2 — Pilot Content Pipeline** do repositório Daemon Tools.
 
-O objetivo central da Versão 2.2 é fechar o ciclo de ponta a ponta processando **um livro real** desde sua fonte original não estruturada até sua visualização navegável, pesquisável e com relações ativas no frontend atual, exercitando todas as camadas do pipeline:
+O objetivo central da Versão 2.2 é fechar o ciclo operacional completo de transformação de dados processando **um livro real** desde sua fonte original não estruturada até sua visualização navegável, pesquisável e com relações ativas no frontend atual, exercitando todas as camadas do pipeline:
 ```text
 Fonte Original (Livros/)
   ↓
-SOURCE
+SOURCE (Inventário, integridade, direitos)
   ↓
-EXTRACTION
+EXTRACTION (Texto bruto, limpeza, parágrafos)
   ↓
-EDITORIAL
+EDITORIAL (Segmentação, classificação, cobertura de páginas)
   ↓
-ENTITIES
+ENTITIES (Extração e tipagem canônica de entidades)
   ↓
-RELATIONS
+RELATIONS (Grafos de regras, vínculos e referências cruzadas)
   ↓
-VALIDATION
+VALIDATION (Validação técnica determinística de schemas e contratos)
   ↓
-LEGACY COMPARISON
+LEGACY COMPARISON (Comparação determinística sem LLM contra histórico)
   ↓
-PILOT HUMAN REVIEW
+PILOT HUMAN REVIEW (Solicitação formal vs Decisão humana hash-bound)
   ↓
-V2.1 PERSISTENCE (Safe Filesystem Mutation)
+V2.1 PERSISTENCE (Mutação atômica segura via ApplicationCoordinator)
   ↓
-QA / RELEASE GATES
+QA / RELEASE GATES (Validação determinística de conformidade e integridade)
   ↓
-FRONTEND PREVIEW
+PREVIEW PROJECTION (Projeção determinística de dados para o frontend)
+  ↓
+FRONTEND LOCAL PREVIEW (Navegação, busca e relações clicáveis)
 ```
 
 ---
 
-## 2. V2.1 Baseline
+## 2. V2.1 Baseline e Cláusulas Pétreas
 
 A Versão 2.2 tem como alicerce estrito a **Version 2.1 — Persistence/Application Layer**, congelada e verificada na tag:
 - **Tag:** `multiagent-persistence-v2.1`
 - **SHA:** `d4622b3cdee956f5cb8dfff34df0a98e3e4dfe13`
 
-Todas as garantias e invariantes de segurança da V2.1 permanecem vigentes e invioláveis:
-1. **Nenhuma mutação fora da V2.1:** Toda e qualquer escrita no repositório passa obrigatoriamente pela `ApplicationCoordinator` / `ChangeSetApplier` da V2.1. O pipeline piloto não possui autoridade direta sobre o sistema de arquivos.
-2. **ACCEPT Boundary:** O construtor de alterações (`ChangeSetBuilder`) e o coordenador de aplicação exigem deterministamente veredicto `ACCEPT` emitido pelo validador técnico.
-3. **Interseção Estrita de Autoridade:** $\text{Scope} = \text{allowedWriteScope} \cap \text{AutoApplyRoots} \cap \text{ApplicationPolicy}$.
-4. **Proteção TOCTOU e Primitivas Atômicas:** Revalidação imediata pré-mutação em disco, `open(..., "xb")` para `CREATE`, `os.replace` no mesmo volume para `UPDATE`, e journal de reversão compensatória.
-5. **Neutralidade de Provedor e Isolamento de Bundles:** Os bundles operacionais residem fora da árvore versionada do Git, em diretório de runtime seguro no mesmo filesystem.
+Todas as garantias e invariantes de segurança da V2.1 permanecem vigentes e inalteradas:
+1. **Zero Mutação Fora da V2.1:** Toda e qualquer escrita de dados no repositório passa obrigatoriamente pelo `ApplicationCoordinator` / `ChangeSetApplier` da V2.1. O pipeline piloto e seus agentes não possuem autoridade de escrita direta no repositório.
+2. **ACCEPT Boundary Inviolável:** O construtor de alterações (`ChangeSetBuilder`) e o coordenador de aplicação exigem deterministamente que o veredicto de validação técnica seja `ACCEPT`.
+3. **Interseção Estrita de Autoridade:** $\text{Scope} = \text{allowedWriteScope} \cap \text{AutoApplyRoots} \cap \text{ApplicationPolicy}$. O request jamais pode expandir raízes de aplicação.
+4. **Proteção TOCTOU e Primitivas Atômicas:** Revalidação de estado em disco na Fase 4 pré-mutação, criação atômica exclusiva (`open(..., "xb")` / `O_EXCL`), substituição unitária no mesmo volume (`os.replace`) e journal de rollback compensatório com detecção de adulteração concorrente.
+5. **Isolamento de Staging e Bundles:** Os pacotes operacionais e áreas de staging residem fora da árvore Git, no mesmo sistema de arquivos do repositório (`<repo-parent>/.daemon_runtime/`).
 
 ---
 
-## 3. Goals (Metas da Versão 2.2)
+## 3. Goals e Non-Goals
 
-1. **Processar 1 Livro Real:** Executar a extração, estruturação, catalogação e integração de uma obra completa a partir de seu arquivo original em `Livros/`.
-2. **Exercitar Todos os Estágios do Pipeline:** SOURCE, EXTRACTION, EDITORIAL, ENTITIES, RELATIONS, FRONTEND, QA e RELEASE.
-3. **Operacionalizar a Ponte de Transporte Manual com Antigravity:** Implementar o protocolo estruturado e auditável de exportação de `ExecutionBundle` e importação de `ResultBundle` para uso pelo operador humano, sem automações frágeis.
-4. **Vínculo Criptográfico Bidirecional de Bundles:** Garantir que o `ResultBundle` esteja vinculado por hashes imutáveis (`requestId`, `executionBundleId`, `inputManifestSha256`, `artifactHashes`) ao lote de entrada correspondente.
+### 3.1 Goals (Metas da Versão 2.2)
+1. **Processar 1 Livro Real:** Executar a cadeia completa de extração, estruturação, catalogação e integração de uma obra a partir de sua fonte original em `Livros/word/`.
+2. **Exercitar Todos os Estágios do Pipeline:** SOURCE, EXTRACTION, EDITORIAL, ENTITIES, RELATIONS, VALIDATION, FRONTEND, QA e RELEASE.
+3. **Operacionalizar a Ponte de Transporte Manual com Antigravity:** Implementar o protocolo estruturado de exportação de `ExecutionBundle` e importação de `ResultBundle` para operação assistida por humano, sem automações frágeis.
+4. **Vínculo Criptográfico Bidirecional de Bundles:** Garantir que o pacote de resposta esteja amarrado por hashes imutáveis (`requestId`, `executionBundleId`, `inputManifestSha256`, `artifactHashes`) ao pacote de entrada.
 5. **Validador de Integridade de Importação:** Estabelecer a fronteira `BundleIntegrityValidator` para barrar dados corrompidos, incompletos ou adulterados antes de qualquer avaliação de regras de negócio.
-6. **Comparador com Dados Legados (`LegacyComparator`):** Contrastar semanticamente o resultado do pipeline com referências derivadas antigas para detectar regressões, omissões ou refinamentos legítimos, sem conferir autoridade ao legado.
-7. **Revisão Humana Obrigatória no Piloto:** Nenhuma persistência ocorre no primeiro piloto sem decisão explícita e registrada de aprovação humana vinculada ao hash do manifesto.
-8. **Integração Mínima com Frontend Atual:** Permitir que as novas entidades e relações do livro piloto sejam navegadas, filtradas e buscadas no visualizador existente (`docs/index.html`, `docs/assets/app.js`), sem refatorações de framework.
-9. **Ambiente de Preview Local/Branch:** Garantir a validação visual do livro em servidor local ou preview de branch, sem deploy automático para o GitHub Pages de produção.
-10. **Testabilidade Hermética:** 100% dos novos componentes testáveis offline, sem dependência de tokens, redes ou serviços externos.
+6. **Comparador Determinístico com Legado (`LegacyComparator`):** Contrastar estruturalmente o resultado do pipeline com referências derivadas antigas para alertar o operador humano sobre divergências mecânicas, sem uso de LLM e sem conferir autoridade ao legado.
+7. **Separação Formal entre Review Request e Review Decision:** Registrar a solicitação de revisão e vincular criptograficamente a decisão humana de aprovação ao hash SHA-256 exato do manifesto do resultado revisado.
+8. **Projeção Determinística para Frontend (`PreviewProjector`):** Projetar dados canônicos aprovados para o caminho estático consumido pelo frontend (`docs/assets/data/pilot/`), somente após aprovação nos gates de QA e direitos.
+9. **Integração Mínima com o Frontend Existente:** Permitir navegação, filtragem, busca e visualização de relações no visualizador existente (`docs/index.html`, `docs/assets/app.js`), sem refatorações de stack.
+10. **Ambiente de Preview Local/Branch:** Validar o livro em servidor local (`localhost`) ou na branch de trabalho, mantendo o GitHub Pages público intocado.
+11. **Testabilidade Hermética:** 100% dos novos componentes testáveis offline em fixtures isoladas, sem tokens, segredos ou chamadas externas.
+
+### 3.2 Non-Goals (Fora do Escopo da Versão 2.2)
+1. **Automação de API com Antigravity / Gemini:** A integração programática de rede permanece classificada como `DEFERRED_PENDING_RUNTIME_API`.
+2. **Automação de Interface ou Navegador:** Proibido o uso de Selenium, Playwright, Puppeteer, PyAutoGUI ou similares.
+3. **Assinaturas Digitais PKI:** A integridade é garantida por hashes SHA-256 e amarração de manifestos; infraestrutura de certificados assimétricos é postergada.
+4. **Reconciliação Semântica Automática:** O `LegacyComparator` não interpreta significados nem usa IA. Divergências semânticas exigem deliberação humana.
+5. **Publicação Automática em Produção:** O GitHub Pages público oficial não recebe deploy durante os testes do piloto.
+6. **Redesign do Frontend ou Migração de Stack:** Nenhuma reescrita em React, Vue, Svelte ou Next.js. Proibida a introdução de novos design systems ou bibliotecas pesadas de UI.
+7. **Processamento em Lote Multi-Livro ou Swarm:** Apenas 1 livro piloto será processado em sequência controlada.
 
 ---
 
-## 4. Non-Goals (Fora do Escopo da Versão 2.2)
+## 4. Critérios de Sucesso do Piloto (`V2.2 VERIFIED`)
 
-1. **Automação de API com Antigravity / Gemini:** Integração de rede direta continua classificada como `DEFERRED_PENDING_RUNTIME_API`.
-2. **Automação de Navegador ou Interface Gráfica:** Proibido o uso de Selenium, Playwright, Puppeteer, PyAutoGUI ou scripts de controle de navegador.
-3. **Assinaturas Digitais PKI:** A integridade é garantida por hashes SHA-256 e amarração de manifestos; infraestrutura de chaves assimétricas fica postergada.
-4. **Reconciliação Semântica Automática:** Divergências semânticas entre novo dado e legado exigem revisão humana; não haverá heurística de resolução automática de regras de RPG.
-5. **Publicação Automática em Produção:** O GitHub Pages oficial não recebe deploy durante os testes do piloto.
-6. **Redesign do Frontend ou Migração de Stack:** Nenhuma reescrita em React, Vue, Svelte, Next.js ou adoção de novo design system. Apenas ajustes pontuais na aplicação vanilla existente.
-7. **Processamento em Lote Multi-Livro:** Apenas 1 livro piloto será processado. Não haverá processamento massivo simultâneo.
-8. **Execução Paralela de Agentes em Swarm:** Os jobs são executados sequencialmente em lotes controlados.
-
----
-
-## 5. Critérios de Sucesso do Piloto (`V2.2 VERIFIED`)
-
-Para que a Versão 2.2 seja declarada **VERIFIED**, é necessário satisfazer todos os seguintes critérios objetivos:
+A Versão 2.2 só atinge o estado `V2.2 VERIFIED` quando os 12 critérios a seguir forem plenamente atendidos:
 
 1. **Fonte Real Processada:** 1 livro selecionado deterministicamente a partir de seu arquivo original em `Livros/`.
 2. **Cadeia Completa Concluída:** Dados transformados através de todos os estágios formais do pipeline.
-3. **Ponte Manual Operada com Sucesso:** Exportação de bundles pelo Daemon, preenchimento assistido pelo Antigravity/Gemini e importação sem falhas de formato.
+3. **Ponte Manual Operada com Sucesso:** Exportação de bundles pelo Daemon, inferência assistida pelo Antigravity/Gemini e importação sem falhas de formato.
 4. **Integridade de Bundle Validada:** `BundleIntegrityValidator` aprova a amarração de identidade, hashes de manifestos e ausência de adulteração.
-5. **Divergências Semânticas Auditadas:** O `LegacyComparator` classifica todas as alterações e direciona diferenças semânticas para aprovação.
-6. **Aprovação Humana Registrada:** Decisão formal de revisão emitida e vinculada criptograficamente ao manifesto do resultado.
+5. **Divergências Semânticas Auditadas:** O `LegacyComparator` classifica todas as alterações e direciona diferenças para aprovação humana.
+6. **Aprovação Humana Registrada e Vinculada:** Decisão formal de revisão emitida e vinculada criptograficamente ao manifesto do resultado.
 7. **Persistência Exclusiva via V2.1:** Arquivos gravados no repositório estritamente através do `ApplicationCoordinator` da V2.1, com journals limpos e sem violações TOCTOU.
-8. **QA Automatizado Verde:** Suíte de testes (`pytest`), `validate_data.py`, `check_book_coverage.py` e sintaxe JS aprovados.
+8. **QA Automatizado Verde:** Suíte de testes (`pytest`), `validate_data.py`, `check_book_coverage.py` e sintaxe JS aprovados com exit code 0.
 9. **Navegabilidade Comprovada:** O livro piloto aparece no visualizador local, com listagem de seções e entidades.
 10. **Busca Funcional:** Termos e entidades do livro piloto retornam nos filtros e busca do frontend.
 11. **Relações Clicáveis:** Links cruzados entre entidades (ex.: poderes associados, pré-requisitos, regras de raça/kit) navegam corretamente na interface.
+12. **Governança de Direitos Respeitada:** O livro permanece em modo de publicação compatível com seu status de direitos auditado, sem vazamento não autorizado para a base pública.
 
 ---
 
-## 6. Procedimento de Seleção do Livro Piloto
+## 5. Seleção Determinística do Livro Piloto e Evidência Canônica de Direitos
 
-### 6.1 Critérios Determinísticos de Avaliação
+### 5.1 Critérios Determinísticos de Avaliação da Shortlist
+A seleção obedece a 6 dimensões determinísticas auditáveis:
+- **C1. Disponibilidade de Fonte Original:** Arquivo DOCX íntegro em `Livros/word/`.
+- **C2. Existência de Dados Legados:** Presença prévia em `data/books/` e `data/pilot/`.
+- **C3. Qualidade da Fonte:** Documento com `badLineScore == 0.0` no relatório de qualidade (`word-docx-quality-report.json`).
+- **C4. Extensão Gerenciável:** Entre 10 e 50 páginas (permite ciclo ágil de transporte manual sem cansaço operacional).
+- **C5. Representatividade do Domínio Daemon:** Variedade de classes de entidades (mínimo 4 áreas: Lore, Regras, Opções/Poderes, NPCs).
+- **C6. Governança de Direitos Canônicos:** Status de direitos auditado com base em evidência documental, sem inferências implícitas.
 
-A seleção da obra para o primeiro teste integrado do pipeline obedece a uma pontuação determinística baseada em 6 dimensões fundamentais:
+### 5.2 Shortlist Auditada e Evidência Canônica de Direitos
 
-| Critério | Descrição | Peso | Métrica Ideal |
-|:---|:---|:---:|:---|
-| **C1. Disponibilidade de Fonte Original** | Arquivo limpo em `Livros/word/` ou `Livros/` | 20% | DOCX íntegro com parsing verificado |
-| **C2. Existência de Dados Legados** | Presença em `data/books/` e `data/pilot/` | 20% | Cobertura prévia 100% e áreas catalogadas |
-| **C3. Qualidade da Fonte** | Baixo ruído de OCR e formatação consistente | 20% | `badLineScore == 0.0` no relatório de qualidade |
-| **C4. Complexidade e Extensão Gerenciável** | Extensão viável para transporte manual controlado | 15% | 10 a 50 páginas (evita micro-fragmentos e behemoths) |
-| **C5. Representatividade do Domínio Daemon** | Variedade de classes de entidades | 15% | Mínimo 4 áreas (Lore, Regras, Opções/Poderes, NPCs) |
-| **C6. Compatibilidade de Direitos e Publicação** | Suplemento com direitos claros/abertos para referência | 10% | Material de regras e fichas sem embaraço autoral |
+Em conformidade com a Constituição do Projeto (Seção 8):
+> **Regra de Ouro de Direitos:** `UNKNOWN` nunca deve virar permissão implícita. Na ausência de documento formal de liberação assinado pelos detentores dos direitos ou comprovação de domínio público, o status canônico padrão é estritamente `rightsStatus = UNKNOWN` e o modo de publicação é `publicationMode = NOT_PUBLIC`.
 
-### 6.2 Shortlist Auditável de Candidatos
+| Livro Candidato | Págs. | Chars | Áreas Representadas | Registro Canônico | rightsStatus | publicationMode | eligible_for_local_pilot | eligible_for_public_release |
+|:---|:---:|:---:|:---|:---|:---:|:---:|:---:|:---:|
+| **1. animalidade** | 13 | 58.659 | Lore, Regras, Rituais, Poderes, Aprimoramentos, Raças, NPCs | `data/index/sources.json` (`Livros/animalidade.pdf`, `Livros/word/animalidade.docx`) | `UNKNOWN` | `NOT_PUBLIC` | **SIM** | **NÃO** |
+| **2. alastores-a-justica-infernal** | 43 | 88.518 | Lore, Poderes, Aprimoramentos, Classes, Itens, Rituais, NPCs | `data/index/sources.json` (`Livros/Alastores - A Justiça Infernal.pdf`) | `UNKNOWN` | `NOT_PUBLIC` | **SIM** | **NÃO** |
+| **3. anoes** | 8 | 37.190 | Aprimoramentos, Lore, Itens, Kits, Raças | `data/index/sources.json` (`Livros/anoes.pdf`) | `UNKNOWN` | `NOT_PUBLIC` | **SIM** | **NÃO** |
+| **4. anjos-cacadores-alados** | 43 | 116.108 | Lore, Raças, Manobras, Aprimoramentos, Poderes, NPCs | `data/index/sources.json` (`Livros/Anjos cacadores-alados.pdf`) | `UNKNOWN` | `NOT_PUBLIC` | **SIM** | **NÃO** |
 
-A auditoria direta sobre os 228 arquivos DOCX em `Livros/word/` cruzados com `data/books/` e `data/pilot/` resultou na seguinte shortlist ordenada:
-
-```text
-+--------------------------------+-------+----------+---------+-----------------------------------------+--------------------+
-| Livro Candidato                | Págs. | Chars    | Tables  | Áreas Representadas                     | Classificação      |
-+--------------------------------+-------+----------+---------+-----------------------------------------+--------------------+
-| 1. animalidade                 |    13 |   58.659 |       0 | Lore, Regras, Rituais, Poderes,         | RECOMENDADO        |
-|                                |       |          |         | Aprimoramentos, Raças, NPCs             | (Piloto Principal) |
-+--------------------------------+-------+----------+---------+-----------------------------------------+--------------------+
-| 2. alastores-a-justica-infernal|    43 |   88.518 |       0 | Lore, Poderes, Aprimoramentos, Classes, | ALTERNATIVA A      |
-|                                |       |          |         | Itens, Rituais, Criaturas/NPCs          | (Piloto Médio)     |
-+--------------------------------+-------+----------+---------+-----------------------------------------+--------------------+
-| 3. anoes                       |     8 |   37.190 |       0 | Aprimoramentos, Lore, Itens, Kits, Raças| ALTERNATIVA B      |
-|                                |       |          |         |                                         | (Piloto Curto)     |
-+--------------------------------+-------+----------+---------+-----------------------------------------+--------------------+
-| 4. anjos-cacadores-alados      |    43 |  116.108 |       0 | Lore, Raças, Manobras, Aprimoramentos,  | ALTERNATIVA C      |
-|                                |       |          |         | Poderes, Criaturas/NPCs                 | (Piloto Médio)     |
-+--------------------------------+-------+----------+---------+-----------------------------------------+--------------------+
-```
-
-### 6.3 Justificativa do Candidato Recomendado (`animalidade`)
-
-O livro **`animalidade`** é designado como o **Piloto Principal Recomendado**:
-- **Tamanho Ideal:** 13 páginas originais. Permite a divisão em 3 a 5 jobs modulares de extração e estruturação, tornando o ciclo de transporte manual ágil e auditável sem sobrecarregar o operador.
-- **Riqueza de Domínio Excepcional:** Contém praticamente todas as categorias fundamentais do ecossistema Daemon:
-  - *Identificação de Fonte:* Metadados e créditos.
-  - *Raça / Linhagem:* Metamorfos e Feras (`race_lineage`).
-  - *Cenário e Lore:* A Fúria de Gaea, Ciganos, Leis e Umbral (`setting_lore`).
-  - *Opções de Personagem:* Regras de criação, Aprimoramentos e Fraquezas (`character_option`).
-  - *Poderes e Magia:* Formas e Poderes Animais, Rituais (`power_magic`).
-  - *Criaturas e NPCs:* Fichas completas com atributos e perícias (`creature_npc`).
-- **Qualidade de Fonte Impecável:** Documento `animalidade.docx` possui `badLineScore: 0.0`, zero caracteres corrompidos, texto fluído e sem tabelas truncadas.
-- **Regra de Não-Contaminação:** O pipeline para `animalidade` começará estritamente de `Livros/word/animalidade.docx`. Os arquivos pré-existentes (`data/pilot/animalidade.json` e `data/books/animalidade.json`) serão utilizados exclusivamente pelo `LegacyComparator` como espelho comparativo, nunca como insumo de extração.
+### 5.3 Decisão de Seleção: `animalidade` como Piloto Principal
+O suplemento **`animalidade`** é selecionado como o candidato principal:
+1. **Evidência Documental:** Mapeado formalmente em `data/index/sources.json` (13 páginas, texto íntegro, DOCX limpo em `Livros/word/animalidade.docx`, `badLineScore: 0.0`, zero tabelas quebradas).
+2. **Domínio Completo:** Exercita 6 categorias semânticas distintas (`race_lineage`, `setting_lore`, `character_option`, `power_magic`, `creature_npc`, `source`).
+3. **Escopo Operacional Seguro:** Seus direitos canônicos são `UNKNOWN` e seu modo de publicação é `NOT_PUBLIC`. Portanto, é **plenamente elegível para o piloto local (`eligible_for_local_pilot = True`)**, mas **terminantemente bloqueado para deploy público (`eligible_for_public_release = False`)**. O teste do livro ocorrerá estritamente em visualização local.
+4. **Regra de Não-Contaminação:** O pipeline começa obrigatoriamente de `Livros/word/animalidade.docx`. Os dados antigos (`data/pilot/animalidade.json`, `data/books/animalidade.json`) servem unicamente ao `LegacyComparator` como espelho comparativo de qualidade, nunca como entrada de extração.
 
 ---
 
-## 7. Arquitetura do Piloto
+## 6. Arquitetura Operacional do Piloto
 
-O fluxo operacional da Versão 2.2 desacopla a orquestração interna do Daemon do motor de inferência externo através de bundles serializados em disco:
+O desacoplamento entre a orquestração do Daemon e o ambiente externo do modelo é mediado por pacotes autocontidos e serializados em disco:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐
-│ DAEMON RUNTIME (Local Python Engine)                                   │
+│ DAEMON RUNTIME (Local Engine)                                          │
 │                                                                        │
-│   [Pilot Job Definition]                                               │
+│   [Pilot Job Definition (Attempt N)]                                   │
 │             ↓                                                          │
 │   [ExecutionBundleExporter]                                            │
 │             ↓                                                          │
-│   (outgoing/bundle-<id>/) ──────────────────────────┐                  │
-└─────────────────────────────────────────────────────┼──────────────────┘
-                                                      │
-                                             [Manual Transport]
-                                             (Operador Humano)
-                                                      │
-┌─────────────────────────────────────────────────────┼──────────────────┐
-│ EXTERNAL MODEL ENVIRONMENT                          │                  │
-│                                                     ▼                  │
-│   Antigravity / Gemini Workspace ──→ (Produz Resposta e Artefatos)     │
-│                                                     │                  │
-└─────────────────────────────────────────────────────┼──────────────────┘
-                                                      │
-                                             [Manual Transport]
-                                             (Operador Humano)
-                                                      │
-┌─────────────────────────────────────────────────────┼──────────────────┐
-│ DAEMON RUNTIME (Local Python Engine)                ▼                  │
-│                                           (incoming/bundle-<id>/)      │
-│                                                     ↓                  │
+│   (.daemon_runtime/bundles/outgoing/<bundle-id>/) ───────┐             │
+└──────────────────────────────────────────────────────────┼─────────────┘
+                                                           │
+                                                  [Manual Transport]
+                                                  (Operador Humano)
+                                                           │
+┌──────────────────────────────────────────────────────────┼─────────────┐
+│ EXTERNAL MODEL ENVIRONMENT                               │             │
+│                                                          ▼             │
+│   Antigravity / Gemini Workspace ──→ (Processa Prompt e Salva Output)  │
+│                                                          │             │
+└──────────────────────────────────────────────────────────┼─────────────┘
+                                                           │
+                                                  [Manual Transport]
+                                                  (Operador Humano)
+                                                           │
+┌──────────────────────────────────────────────────────────┼─────────────┐
+│ DAEMON RUNTIME (Local Engine)                            ▼             │
+│                               (.daemon_runtime/bundles/incoming/<id>/) │
+│                                                          ↓             │
 │   [ResultBundleImporter]                                               │
 │             ↓                                                          │
-│   [BundleIntegrityValidator] ──→ (Falha?) ──→ [REJECTED / BLOCKED]     │
+│   [BundleIntegrityValidator] ──→ (Falha?) ──→ [VALIDATION_FAILED]      │
 │             ↓ (Pass)                                                   │
-│   [ExecutionResultValidator] ──→ (Não ACCEPT?) ──→ [BLOCKED]           │
+│   [ExecutionResultValidator] ──→ (Não ACCEPT?) ──→ [VALIDATION_FAILED] │
 │             ↓ (Pass)                                                   │
-│   [LegacyComparator]                                                   │
+│   [LegacyComparator] (Determinístico, sem LLM)                         │
 │             ↓                                                          │
-│   [Pilot Review Request] ──→ (Avaliação Humana) ──→ [REJECTED]         │
-│             ↓ (APPROVED com hash bound)                                │
+│   [Pilot Review Request]                                               │
+│             ↓                                                          │
+│   [Pilot Review Decision] ──→ (Rejeição?) ──→ [REJECTED]               │
+│             ↓ (Aprovação hash-bound)                                   │
 │   [ApplicationCoordinator V2.1]                                        │
-│             ↓ (Atomic Mutation)                                        │
-│   [Repository Working Tree]                                            │
+│             ↓ (Mutação em data/ via AutoApplyRoots)                    │
+│   [Canonical Repository Data (data/)]                                  │
 │             ↓                                                          │
 │   [QA / Release Gates] ──→ (Falha?) ──→ [QA_FAILED]                    │
 │             ↓ (Pass)                                                   │
-│   [Frontend Local Preview]                                             │
+│   [PreviewProjector] (Copia canônico para docs/assets/data/pilot/)     │
+│             ↓                                                          │
+│   [Frontend Local Preview (localhost)]                                 │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Limites e Invariantes do `PilotCoordinator`:
-1. **Sem Chamada Direta de API:** O coordenador exporta arquivos e aguarda o retorno; não instancia sockets de rede nem automatiza chamadas de modelo.
-2. **Sem Escrita Direta no Repositório:** A única entidade que escreve na working tree é a camada de persistência da V2.1 (`ApplicationCoordinator`).
-3. **Sem Decisão Hermenêutica de RPG:** Em caso de ambiguidade nas regras da fonte, o sistema emite apontamento para decisão humana; o coordenador nunca inventa valores mecânicos.
-4. **Sem Publicação Automática:** A liberação para preview é estritamente local (`localhost` ou preview de branch).
+### Invariantes Invioláveis do `PilotCoordinator`:
+1. **Zero Chamada de API:** O coordenador exporta e importa arquivos locais; não instancia conexões remotas nem automações de browser.
+2. **Zero Escrita Direta no Repositório:** A única autoridade com poder de escrita em `data/` é a camada V2.1 (`ApplicationCoordinator`).
+3. **Zero Heurística de Regras de RPG:** O coordenador e seus validadores não inventam regras nem supõem custos ausentes no texto fonte.
+4. **Zero Publicação Automática:** O deploy para produção é fisicamente impossível no fluxo piloto.
 
 ---
 
-## 8. Máquina de Estados do Piloto
+## 7. Máquina de Estados do Piloto e Modelo de Tentativas (Rework/Attempt Model)
 
-O processamento de cada etapa do livro piloto obedece à seguinte máquina de estados finita determinística:
+### 7.1 Imutabilidade Absoluta de Bundles
+- **Execution Bundle Exportado é Imutável:** Uma vez gravado na pasta `outgoing/`, seus arquivos tornam-se somente leitura. É proibido editar um bundle in-place para "corrigir um prompt".
+- **Result Bundle Importado é Imutável:** Uma vez recebido em `incoming/`, o pacote não pode ser alterado.
+- **Rework Gera Nova Tentativa:** Se um resultado for corrompido, reprovado na validação ou rejeitado na revisão humana, o operador cria uma nova tentativa com identificador sequencial:
+  ```text
+  Job: JOB-ANIM-001-EXTRACTION
+  ├── attempt 1 (EB-ANIM-001-att1 / RB-ANIM-001-att1) -> FAILED / REJECTED
+  ├── attempt 2 (EB-ANIM-001-att2 / RB-ANIM-001-att2) -> APPROVED / PERSISTED
+  └── ...
+  ```
+- **Sem Retry Automático:** O sistema nunca entra em loops de retry autônomos. Cada tentativa requer geração explícita de bundle e transporte manual pelo operador.
+
+### 7.2 Diagrama de Estados do Piloto
 
 ```mermaid
 stateDiagram-v2
     [*] --> READY_TO_EXPORT
-    READY_TO_EXPORT --> WAITING_FOR_RESULT: export_bundle()
-    WAITING_FOR_RESULT --> RESULT_IMPORTED: import_bundle()
+    READY_TO_EXPORT --> WAITING_FOR_RESULT: export_bundle(attempt_n)
     
-    RESULT_IMPORTED --> VALIDATION_FAILED: integridade / schema inválido
-    VALIDATION_FAILED --> [*]
+    WAITING_FOR_RESULT --> RESULT_IMPORTED: import_bundle(attempt_n)
+    
+    RESULT_IMPORTED --> VALIDATION_FAILED: integridade / schema / contrato inválido
+    VALIDATION_FAILED --> REWORK_REQUIRED: registrar motivo da falha
     
     RESULT_IMPORTED --> NEEDS_HUMAN_REVIEW: integridade PASS & legacy comparado
     
     NEEDS_HUMAN_REVIEW --> REJECTED: decisão humana == REJECT
-    REJECTED --> [*]
+    REJECTED --> REWORK_REQUIRED: registrar apontamentos humanos
+    
+    REWORK_REQUIRED --> READY_TO_EXPORT: criar nova tentativa (attempt_n+1)
     
     NEEDS_HUMAN_REVIEW --> APPROVED: decisão humana == APPROVE (hash-bound)
     
@@ -232,377 +231,335 @@ stateDiagram-v2
     APPROVED --> VALIDATION_FAILED: V2.1 policy / TOCTOU falha
     
     PERSISTED --> QA_PASS: todos os QA gates PASS
-    PERSISTED --> VALIDATION_FAILED: QA gate FAIL
+    PERSISTED --> QA_FAILED: QA gate FAIL
+    QA_FAILED --> REWORK_REQUIRED: erro estrutural ou de cobertura
     
-    QA_PASS --> PREVIEW_READY: assets e index frontend verificados
-    PREVIEW_READY --> PILOT_VALIDATED: checklist do piloto completo
+    QA_PASS --> PREVIEW_READY: preview_projector.project() executado
+    PREVIEW_READY --> PILOT_VALIDATED: checklist de navegação e busca validado
     PILOT_VALIDATED --> [*]
 ```
 
-### Regras Estritas de Transição:
-- **Proibido Pular Validação:** É impossível transitar de `RESULT_IMPORTED` diretamente para `APPROVED` ou `PERSISTED`.
-- **Proibido Pular Revisão Humana:** É impossível transitar de `RESULT_IMPORTED` para `APPROVED` sem registro formal de aprovação assinado com o SHA-256 do manifesto do resultado.
-- **Fail-Closed:** Qualquer falha em `BundleIntegrityValidator`, `ExecutionResultValidator`, `LegacyComparator` ou gates de QA bloqueia o avanço imediatamente.
+### Regras de Transição:
+- `VALIDATION_FAILED` e `REJECTED` transitam obrigatoriamente para `REWORK_REQUIRED`.
+- `REWORK_REQUIRED` gera um novo `ExecutionBundle` com `attemptNumber = N + 1`, preenchendo o metadado `priorAttemptId` e as instruções de retrabalho (`reworkInstructions`).
+- É estritamente proibido sobrescrever o bundle da tentativa anterior.
 
 ---
 
-## 9. Especificação do Execution Bundle
+## 8. Canonicalização e Algoritmo de Hashing de Bundles
 
-O `Execution Bundle` é o pacote autocontido gerado pelo Daemon para consumo pelo operador e modelo.
+Para assegurar que bundles logicamente idênticos possuam hashes imutáveis e reprodutíveis independentemente do sistema operacional ou relógio, o cálculo de hashes obedece a um algoritmo estrito de canonicalização.
 
-### 9.1 Estrutura em Disco
+### 8.1 Algoritmo Canônico de Serialização JSON
+Toda estrutura de metadados antes de ser hasheada deve ser convertida em bytes UTF-8 via:
+```python
+def canonical_json_bytes(payload: dict) -> bytes:
+    # 1. Ordenação lexicográfica recursiva de todas as chaves
+    # 2. Separadores compactos sem espaços adicionais: ',' e ':'
+    # 3. Formato UTF-8 estrito sem BOM e sem escape desnecessário
+    serialized = json.dumps(
+        payload,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    return serialized.encode("utf-8")
+```
+
+### 8.2 Separação entre Content Identity e Audit Metadata
+Para evitar que dois pacotes com o mesmo conteúdo recebam hashes distintos apenas por terem sido gerados em segundos diferentes:
+- **`inputManifestSha256` (Content Identity Hash):** É calculado exclusivamente sobre o payload canônico de conteúdo de `context-manifest.json` contendo: `bundleId`, `requestId`, `jobId`, `stage`, `bookId` e a lista ordenada de `items` (cada um com `logicalPath`, `role`, `sourceUri`, `sizeBytes`, `sha256`, `mediaType`). O campo temporal `createdAt` é estritamente **excluído** do cálculo do hash de identidade do conteúdo.
+- **`executionBundleId`:** Derivado deterministicamente como:
+  `EB-<BOOK_ID>-<STAGE>-att<ATTEMPT_NUM>-<CONTENT_HASH[:8]>`.
+- **`artifact hashes`:** SHA-256 calculado diretamente sobre os bytes binários brutos de cada arquivo físico presente no diretório `artifacts/`.
+- **`resultManifestSha256`:** Calculado sobre a serialização canônica do conteúdo do `result-manifest.json`, excluindo eventuais campos de auto-referência circular.
+
+---
+
+## 9. Especificação dos Bundles de Transporte
+
+### 9.1 Execution Bundle (outgoing/)
 ```text
 <bundle-runtime-storage>/outgoing/<executionBundleId>/
 ├── execution-request.json      # Payload canônico em conformidade com execution-request.schema.json
-├── prompt.md                   # Instruções procedurais renderizadas para o agente do estágio
+├── prompt.md                   # Instruções renderizadas para o estágio
 ├── output-contract.json        # Schema JSON esperado para os artefatos de saída
-├── context-manifest.json       # Manifesto com inventário e hashes de todos os insumos
-├── context/                    # Diretório com arquivos de contexto materializados (texto, regras, schemas)
+├── context-manifest.json       # Manifesto com inventário e hashes dos insumos
+├── context/                    # Diretório com arquivos de contexto materializados
 │   ├── source_excerpt.txt
-│   └── domain_rules.md
-└── attachments/                # (Opcional) Anexos binários estritamente necessários
+│   └── cataloging-rules.md
+└── attachments/                # (Opcional) Anexos binários essenciais
 ```
 
-### 9.2 Context Manifest (`context-manifest.json`)
-O manifesto de contexto registra a proveniência exata de tudo o que foi entregue ao executor:
-
-```json
-{
-  "$schema": "https://daemon.tools/schemas/context-manifest.schema.json",
-  "bundleId": "EB-ANIM-001-EXTRACTION",
-  "requestId": "req-anim-ext-001",
-  "jobId": "JOB-ANIM-001",
-  "stage": "EXTRACTION",
-  "bookId": "animalidade",
-  "createdAt": "2026-09-08T18:00:00Z",
-  "totalBytes": 124500,
-  "items": [
-    {
-      "logicalPath": "context/source_excerpt.txt",
-      "role": "primary_source",
-      "sourceUri": "Livros/word/animalidade.docx#pages=1-5",
-      "sizeBytes": 24500,
-      "sha256": "3a7b8c...",
-      "mediaType": "text/plain; charset=utf-8"
-    },
-    {
-      "logicalPath": "context/cataloging-rules.md",
-      "role": "guideline",
-      "sourceUri": "docs/reference/cataloging-rules.md",
-      "sizeBytes": 15200,
-      "sha256": "4b8c9d...",
-      "mediaType": "text/markdown; charset=utf-8"
-    }
-  ]
-}
-```
-
-*Regra Inviolável:* O bundle deve conter apenas o contexto essencial para a tarefa específica do job. É expressamente proibido fazer "context dumping" de livros inteiros ou dependências não relacionadas.
-
----
-
-## 10. Especificação do Result Bundle
-
-O `Result Bundle` é o pacote retornado pelo executor contendo a resposta e os artefatos estruturados gerados.
-
-### 10.1 Estrutura em Disco
+### 9.2 Result Bundle (incoming/)
 ```text
 <bundle-runtime-storage>/incoming/<resultBundleId>/
 ├── execution-result.json       # Payload canônico em conformidade com execution-result.schema.json
-├── result-manifest.json        # Manifesto com inventário, hashes e correlação com a entrada
+├── result-manifest.json        # Manifesto de inventário e amarração com a entrada
 └── artifacts/                  # Arquivos resultantes gerados pelo modelo
     ├── data/text/animalidade.txt
     └── data/books/animalidade.json
 ```
 
-### 10.2 Result Manifest (`result-manifest.json`)
-```json
-{
-  "$schema": "https://daemon.tools/schemas/result-manifest.schema.json",
-  "resultBundleId": "RB-ANIM-001-EXTRACTION",
-  "executionBundleId": "EB-ANIM-001-EXTRACTION",
-  "requestId": "req-anim-ext-001",
-  "inputManifestSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "createdAt": "2026-09-08T18:15:00Z",
-  "artifacts": [
-    {
-      "logicalPath": "data/text/animalidade.txt",
-      "artifactType": "extracted_text",
-      "sizeBytes": 22400,
-      "sha256": "9f8e7d...",
-      "encoding": "utf-8"
-    },
-    {
-      "logicalPath": "data/books/animalidade.json",
-      "artifactType": "book_segmentation",
-      "sizeBytes": 4500,
-      "sha256": "1a2b3c...",
-      "encoding": "utf-8"
-    }
-  ]
-}
-```
+---
+
+## 10. Validador de Integridade de Importação (`BundleIntegrityValidator`)
+
+O `BundleIntegrityValidator` atua antes de qualquer inspeção semântica. Ele impõe as seguintes validações determinísticas:
+
+1. **Validação de Schemas:** Conformidade com `execution-result.schema.json` e `result-manifest.schema.json`.
+2. **Amarração de Identidade Cruzada:**
+   - `result.requestId == expected_request_id`
+   - `result.executionBundleId == expected_bundle_id`
+   - `result_manifest.inputManifestSha256 == expected_input_manifest_sha256`
+3. **Integridade de Artefatos:**
+   - Para cada arquivo no diretório `artifacts/`, calcula o SHA-256 real em disco e compara com o declarado em `result-manifest.json`. Divergência gera `ERR_ARTIFACT_HASH_MISMATCH`.
+   - Se houver arquivo na pasta não declarado no manifesto: `ERR_UNEXPECTED_ARTIFACT`.
+   - Se houver arquivo no manifesto ausente na pasta: `ERR_MISSING_ARTIFACT`.
+4. **Hardening de Caminhos de Artefatos:** Cada caminho relativo de artefato é validado contra path traversal (`..`), drive letters, prefixos de dispositivo (`\\?\`, `\\.\`), Alternate Data Streams (`:`) e nomes reservados DOS.
+5. **Limites de Recursos:** Nenhum artefato individual pode exceder 50MB e o total do bundle não pode exceder 200MB.
+
+*Se qualquer verificação falhar, o lote é rejeitado com status `VALIDATION_FAILED`.*
 
 ---
 
-## 11. Vínculo Criptográfico e Integridade de Identidade
+## 11. Comparador com Legado Determinístico (`LegacyComparator`)
 
-Para prevenir ataques de confusão de contexto, substituição acidental de pacotes ou dessincronização entre prompts e respostas, o importador impõe 4 amarrações determinísticas:
+O `LegacyComparator` fornece controle de qualidade e rastreabilidade contra regressões.
 
-1. **Request ID Matching:** `result.requestId == request.requestId`.
-2. **Bundle ID Matching:** `result.executionBundleId == bundle.executionBundleId`.
-3. **Input Manifest Hash Binding:** O `result-manifest.json` deve declarar `inputManifestSha256` igual ao SHA-256 exato calculado sobre o arquivo `context-manifest.json` da entrada.
-4. **Artifact Content Digest Matching:** Para cada artefato presente no diretório `artifacts/`:
-   - O caminho relativo deve constar em `result-manifest.json` e em `proposedArtifacts` de `execution-result.json`.
-   - O SHA-256 calculado diretamente sobre os bytes do arquivo em disco deve bater com o hash declarado no manifesto.
-   - Não são permitidos arquivos órfãos (arquivos na pasta sem registro no manifesto).
-   - Não são permitidos arquivos fantasma (arquivos no manifesto ausentes na pasta).
+### 11.1 Cláusula Pétrea de Determinismo (Sem LLM)
+> **O `LegacyComparator` não utiliza modelos de linguagem (LLM) e não interpreta livremente o texto.** Ele opera exclusivamente através de regras de comparação determinística sobre árvores sintáticas e estruturas canônicas normalizadas.
 
-*Qualquer divergência nestes 4 pontos resulta em rejeição imediata com código `ERR_RESULT_BUNDLE_INTEGRITY_FAILED`.*
-
----
-
-## 12. Armazenamento de Runtime e Governança de Diretórios
-
-Os bundles de transporte são efêmeros e operacionais. Portanto:
-- **Localização:** Ficam localizados fora do repositório Git, no diretório de runtime padrão derivado confiavelmente ao lado do projeto:
-  `<repository-parent>/.daemon_runtime/bundles/`
-- **Subdiretórios de Ciclo de Vida:**
-  - `outgoing/`: Bundles exportados prontos para envio.
-  - `incoming/`: Bundles recebidos aguardando importação.
-  - `accepted/`: Bundles importados com integridade comprovada e auditada.
-  - `rejected/`: Bundles cuja importação ou integridade falhou (preservados para diagnóstico).
-- **Isolamento de Segurança:** Este diretório nunca pode ser alvo de operações de um `ChangeSet` e não é acessível a comandos do modelo.
-
----
-
-## 13. Política de Retenção e Auditoria
-
-1. **Retenção Permanente (Metadados de Governança):**
-   - No histórico do Git e logs de auditoria, são mantidos indefinidamente: `requestId`, `executionBundleId`, manifestos JSON completos, hashes de entrada e saída, histórico de decisões de revisão humana e journals de persistência.
-2. **Retenção Temporária (Payloads Volumosos):**
-   - Os diretórios de staging e bundles brutos contendo textos completos e extrações brutas podem ser limpos após a persistência bem-sucedida no repositório.
-   - Não é necessário acumular gigabytes de bundles em disco após a promoção final da versão.
-
----
-
-## 14. Importador e Validador de Integridade (`BundleIntegrityValidator`)
-
-O `BundleIntegrityValidator` atua como a primeira linha de defesa antes de qualquer processamento semântico. Suas verificações são executadas em ordem estrita:
-
-1. **Validação de Schema dos Manifestos:** Conformidade com `result-manifest.schema.json` e `execution-result.schema.json`.
-2. **Verificação de Identidade Cruzada:** Confronto de IDs contra o bundle de saída registrado.
-3. **Integridade de Hashes:** Verificação byte-a-byte de cada arquivo na pasta `artifacts/`.
-4. **Hardening de Caminhos de Artefatos:** Cada caminho de saída é inspecionado contra traversal (`..`), drive letters, prefixos UNC, ADS (`:`) e dispositivos reservados DOS.
-5. **Limites de Recursos:** Garantia de que nenhum artefato excede 50MB e o pacote total não excede 200MB.
-
----
-
-## 15. Comparador com Legado (`LegacyComparator`)
-
-Para o livro piloto, existem dados catalogados nas primeiras versões do projeto (`data/pilot/`, `data/books/`). Esses dados NÃO são fonte de verdade, mas servem como instrumento de controle de qualidade para alertar o operador humano sobre possíveis perdas ou alterações conceituais.
-
-O `LegacyComparator` opera comparando as entidades recém-extraídas com as entidades históricas:
-
-### Classificações do Comparador:
+### 11.2 Veredictos do Comparador:
 1. **`SEMANTIC_EQUIVALENT`:**
-   - Atributos numéricos, dados vitais, modificadores de regras e essência do texto idênticos ao legado (variações mínimas de pontuação ou espaços ignoradas).
-   - *Ação:* Avança automaticamente para o próximo gate.
+   - Pode ser declarado **somente** quando a equivalência mecânica e factual puder ser comprovada deterministicamente:
+     - Mesmos identificadores canônicos (`id`);
+     - Mesmos tipos e categorias canônicas;
+     - Mesmos valores numéricos normalizados de atributos, modificadores, custos e dados vitais;
+     - Mesmas relações canônicas vinculadas;
+     - Diferenças limitadas a espaçamento em branco, quebras de linha ou ordenação de campos.
+   - *Ação:* Avança automaticamente.
 2. **`STRUCTURAL_DIFFERENCE_ONLY`:**
-   - Informação equivalente, mas reestruturada para o novo schema canônico (ex.: atributos de statblock organizados em dicionário tipado em vez de string corrida; campos normalizados; novos IDs padronizados).
-   - *Ação:* Avança com registro de log de auditoria.
+   - Dados semanticamente idênticos, porém reestruturados para conformidade com novos schemas (ex.: atributos de statblock transformados de string corrida para dicionário tipado `attributes: {"FR": 15, ...}`; novos campos obrigatórios preenchidos conforme catalogação).
+   - *Ação:* Avança com registro em log de auditoria.
 3. **`SEMANTIC_DIFFERENCE`:**
-   - Valores mecânicos divergentes (ex.: Força 15 vs 18; PV 25 vs 19), poderes adicionados ou omitidos, interpretação conflitante de regras ou nomes de perícias ausentes.
-   - *Ação:* Bloqueia avanço automático. Gera alerta detalhado de discrepância exigindo resolução humana no `PilotReviewRecord`.
+   - Divergências mecânicas detectadas (ex.: Força 15 vs 18; PV 25 vs 19), poderes adicionados ou omitidos, discrepância em listas de perícias ou conflito de texto descritivo.
+   - *Ação:* **Bloqueio automático.** Direciona para `HUMAN_REVIEW` como ponto de deliberação no `PilotReviewRequest`.
 4. **`NO_LEGACY_REFERENCE`:**
-   - Entidade ou regra nova extraída da fonte original que não constava no extrato legado antigo.
-   - *Ação:* Registrado como novo conteúdo descoberto e apresentado na revisão.
+   - Entidade ou regra nova presente na fonte original que nunca constou nos extratos legados antigos.
+   - *Ação:* Registrado como novo conteúdo descoberto e catalogado para revisão humana.
+
+*A fonte original em `Livros/` possui autoridade absoluta sobre os dados legados.*
 
 ---
 
-## 16. Protocolo de Revisão Humana do Piloto (`PilotReviewRecord`)
+## 12. Governança de Revisão Humana: Separação entre Request e Decision
 
-No primeiro livro piloto, **nenhuma persistência ocorre sem aprovação humana expressa**.
+Para garantir separação formal de responsabilidades e auditoria inviolável, a revisão humana é dividida em dois contratos distintos:
 
-### 16.1 Contrato da Decisão de Revisão
-A infraestrutura reaproveita e estende semanticamente o schema `schemas/review-request.schema.json`. A decisão aprovada é materializada em um registro de revisão auditável:
-
+### 12.1 Contrato de Solicitação de Revisão (`PilotReviewRequest`)
+Gerado deterministicamente pelo sistema quando o `ResultBundle` é importado e validado tecnicamente:
 ```json
 {
-  "$schema": "https://daemon.tools/schemas/pilot-review.schema.json",
-  "reviewId": "REV-ANIM-001",
+  "$schema": "https://daemon.tools/schemas/pilot-review-request.schema.json",
+  "reviewRequestId": "REV-REQ-ANIM-001-att1",
+  "jobId": "JOB-ANIM-001",
+  "attemptNumber": 1,
   "requestId": "req-anim-ext-001",
-  "executionBundleId": "EB-ANIM-001-EXTRACTION",
-  "resultBundleId": "RB-ANIM-001-EXTRACTION",
-  "reviewedResultManifestSha256": "7c9f8e...",
+  "executionBundleId": "EB-ANIM-001-att1",
+  "resultBundleId": "RB-ANIM-001-att1",
+  "resultManifestSha256": "7c9f8e4d2a...",
   "legacyComparisonSummary": {
-    "status": "SEMANTIC_DIFFERENCE_RESOLVED",
+    "verdict": "SEMANTIC_DIFFERENCE_DETECTED",
     "equivalentCount": 14,
     "structuralDifferenceCount": 8,
     "semanticDifferenceCount": 2,
-    "newEntitiesCount": 3
+    "newEntitiesCount": 3,
+    "discrepancies": [
+      {
+        "entityId": "feras-lobo",
+        "field": "statBlock.attributes.FR",
+        "legacyValue": 15,
+        "extractedValue": 18,
+        "sourceCitation": "Livros/word/animalidade.docx#p.11"
+      }
+    ]
   },
-  "decision": "APPROVE",
-  "reviewer": "operador-humano",
-  "rationale": "Divergências na ficha de NPC Lobo foram conferidas contra a página 11 da fonte original DOCX e corrigem erro antigo do legado.",
-  "resolvedAt": "2026-09-08T18:30:00Z"
+  "questionsToReviewer": [
+    "Confirmar se a Força 18 do Fera Lobo é fidedigna à página 11 da fonte original."
+  ],
+  "status": "PENDING",
+  "createdAt": "2026-09-08T18:20:00Z"
 }
 ```
 
-### 16.2 Invalidação Criptográfica da Revisão
-Se qualquer artefato no `ResultBundle` for recalculado, editado ou substituído após a revisão humana, o `reviewedResultManifestSha256` não baterá mais. A revisão é declarada **INVALIDADA** (`ERR_REVIEW_HASH_MISMATCH`) e o pipeline bloqueia o avanço até que uma nova aprovação humana seja emitida.
-
----
-
-## 17. Integração com a Persistência V2.1
-
-A integração com o sistema de arquivos ocorre única e exclusivamente via **`ApplicationCoordinator` da V2.1**:
-
-```python
-# Pseudo-código de invocação da persistência no PilotCoordinator:
-if review_record.decision == "APPROVE" and integrity_result.valid:
-    app_result = application_coordinator.coordinate_application(
-        request=execution_request,
-        result=execution_result,
-        verdict=execution_verdict  # Verdict determinístico ACCEPT
-    )
-    if app_result.status != "APPLIED":
-        raise PilotPersistenceError(f"V2.1 Persistence rejected: {app_result.failure_code}")
+### 12.2 Contrato de Decisão de Revisão (`PilotReviewDecision`)
+Preenchido formalmente pelo operador humano. É o documento que autoriza a persistência:
+```json
+{
+  "$schema": "https://daemon.tools/schemas/pilot-review-decision.schema.json",
+  "reviewDecisionId": "REV-DEC-ANIM-001-att1",
+  "reviewRequestId": "REV-REQ-ANIM-001-att1",
+  "requestId": "req-anim-ext-001",
+  "executionBundleId": "EB-ANIM-001-att1",
+  "resultBundleId": "RB-ANIM-001-att1",
+  "reviewedResultManifestSha256": "7c9f8e4d2a...",
+  "decision": "APPROVE",
+  "reviewer": "operador-humano",
+  "reason": "Conferido contra a pág. 11 da fonte DOCX: Força 18 é a grafia exata original; o legado antigo continha erro de digitação.",
+  "decidedAt": "2026-09-08T18:30:00Z"
+}
 ```
 
-Nenhum arquivo é copiado ou movido diretamente para as pastas do repositório fora dessa chamada.
+### 12.3 Amarração Criptográfica e Invalidação da Revisão
+- O campo `reviewedResultManifestSha256` amarra a decisão humana ao conteúdo exato do pacote revisado.
+- Se qualquer arquivo em `artifacts/` for modificado, recalculado ou substituído após a decisão, o hash do manifesto será diferente.
+- O validador detectará a divergência e invalidará a decisão imediatamente (`ERR_REVIEW_HASH_MISMATCH`), impedindo a persistência.
 
 ---
 
-## 18. Gates de QA e Release
+## 13. Persistência via V2.1 e Fronteira Canônica para o Preview
 
-Após a aplicação bem-sucedida na working tree, o `PilotCoordinator` dispara a suíte de validação de qualidade:
-1. `python -m pytest tests/agents -q`
-2. `python -m pytest -q`
-3. `python scripts/validate_data.py`
-4. `python scripts/check_book_coverage.py`
-5. `node --check docs/assets/app.js`
-6. **Validação de Proveniência:** Verificação de que 100% das entidades persistidas contêm `source` válido e `pages` mapeadas.
-7. **Validação de Referências Cruzadas:** Nenhuma relação aponta para entidade inexistente sem anotação de unresolved.
+### 13.1 Persistência Canônica via V2.1
+A aplicação no repositório ocorre estritamente através do `ApplicationCoordinator` da V2.1:
+- **Entrada:** `ExecutionRequest`, `ExecutionResult` aprovado tecnicamente (`ACCEPT`) e `PilotReviewDecision` (`APPROVE`).
+- **Destino:** Diretórios pertencentes a `AutoApplyRoots` (`data/text/`, `data/books/`, `data/entities/`, `data/areas/`, `data/pilot/`).
+- **Garantias:** Construção de ChangeSet com hashes base reais, revalidação TOCTOU imediata e criação/atualização atômica no disco.
 
----
-
-## 19. Integração com Frontend e Política de Preview
-
-### 19.1 Adaptações Permitidas no Frontend Existente
-Para que o livro piloto seja navegável, a V2.2 fará apenas os ajustes mínimos estritamente necessários na aplicação existente (`docs/index.html`, `docs/assets/app.js`):
-- Suporte à exibição de novos atributos e blocos introduzidos pela obra (ex.: tabela de metamorfose, poderes e fraquezas de fera).
-- Indexação das novas entidades no motor de busca em memória do frontend.
-- Links clicáveis de relacionamento entre a classe/raça e seus poderes associados.
-
-### 19.2 Proibições Estritas no Frontend
-- Proibido qualquer redesign visual global.
-- Proibida a introdução de novos frameworks (React, Vue, Tailwind, Bootstrap).
-- Proibida a reestruturação da arquitetura de navegação do site.
-
-### 19.3 Política de Preview e Publicação
-- O teste do livro ocorre exclusivamente via servidor HTTP local (`python -m http.server`) ou na visualização da branch `feat/pilot-content-pipeline-v2-2`.
-- O GitHub Pages de produção (`main`) NÃO recebe deploy automático nesta versão.
-- A promoção para publicação pública requer: piloto integralmente aprovado, QA 100% verde e liberação explícita de direitos autorais.
+### 13.2 Fronteira de Projeção para Frontend (`PreviewProjector`)
+O frontend estático consome dados servidos a partir de `docs/assets/data/pilot/`:
+- **Regra de Separação de Autoridade:** O `ApplicationCoordinator` da V2.1 **NÃO** possui autoridade sobre `docs/assets/` (que é protegido em `DEFAULT_PROTECTED_ROOTS`).
+- **Camada `PreviewProjector`:** Uma rotina operacional determinística executada **exclusivamente após QA PASS e verificação de direitos**:
+  1. Verifica se `publicationMode != NOT_PUBLIC` ou se a flag explícita `--local-preview-only` está ativa em ambiente de desenvolvimento local.
+  2. Projeta deterministicamente os dados validados de `data/pilot/<livro>.json` para `docs/assets/data/pilot/<livro>.json`.
+  3. Atualiza o índice `docs/assets/data/pilot/index.json`.
+- **Alterações de Código no Frontend $
+e$ Persistência de Conteúdo:**
+  - Ajustes em `docs/index.html` e `docs/assets/app.js` (para renderizar novos campos ou apoiar busca) são tarefas de desenvolvimento humano na branch `feat/pilot-content-pipeline-v2-2`, com commits de código convencionais.
+  - O pipeline de conteúdo do livro piloto **nunca** muta arquivos de código (`.js`, `.html`, `.css`) através de auto-apply.
 
 ---
 
-## 20. Taxonomia Canônica de Falhas
+## 14. Armazenamento de Runtime e Estratégia de Auditoria Durável
 
-A Versão 2.2 padroniza a seguinte taxonomia de erros fail-closed:
+Os dados operacionais de transporte são separados da auditoria histórica durável:
+
+### 14.1 Runtime Storage (Efêmero, fora do Git)
+Localizado em `<repository-parent>/.daemon_runtime/`:
+- `bundles/outgoing/<executionBundleId>/`: Bundles exportados.
+- `bundles/incoming/<resultBundleId>/`: Bundles importados.
+- `bundles/staging/<changeSetId>/`: Áreas de estagiamento temporário da V2.1.
+- *Política de Retenção:* Payloads brutos, anexos e textos de grande volume podem ser reciclados após persistência bem-sucedida.
+
+### 14.2 Audit Storage Durável (Dentro de `docs/reports/pilot/`)
+Para garantir rastreabilidade histórica permanente sem depender de pastas efêmeras de runtime:
+- Os registros imutáveis de governança são gravados na árvore do repositório em `docs/reports/pilot/<bookId>/`:
+  - `attempt-<N>-context-manifest.json` (Inventário de insumos e hashes).
+  - `attempt-<N>-result-manifest.json` (Inventário de saídas e hashes).
+  - `attempt-<N>-legacy-comparison.json` (Relatório do LegacyComparator).
+  - `attempt-<N>-review-request.json` (Solicitação formal de revisão).
+  - `attempt-<N>-review-decision.json` (Decisão humana hash-bound).
+  - `attempt-<N>-persistence-journal.json` (Cópia do transaction journal da V2.1).
+- Como `docs/reports/` pertence a `AutoApplyRoots`, essa persistência é 100% governada pelas regras da V2.1, sem bypass de segurança.
+
+---
+
+## 15. Taxonomia Canônica de Falhas
 
 | Código Canônico | Categoria | Descrição | Ação |
 |:---|:---|:---|:---|
-| `ERR_EXECUTION_BUNDLE_INVALID` | Export | Bundle de saída malformado ou incompleto | Aborta exportação |
-| `ERR_EXECUTION_BUNDLE_INTEGRITY_FAILED` | Export | Divergência de hash no manifesto de contexto | Aborta exportação |
-| `ERR_RESULT_BUNDLE_INVALID` | Import | Falha de schema no pacote de retorno | `BLOCKED` |
-| `ERR_RESULT_BUNDLE_INTEGRITY_FAILED` | Import | Hashes de arquivos não batem com manifesto | `BLOCKED` |
-| `ERR_REQUEST_ID_MISMATCH` | Binding | ID do request de retorno diverge da saída | `BLOCKED` |
-| `ERR_BUNDLE_ID_MISMATCH` | Binding | ID do bundle de retorno diverge da saída | `BLOCKED` |
-| `ERR_INPUT_MANIFEST_HASH_MISMATCH` | Binding | Retorno não referencia o manifesto de entrada exato | `BLOCKED` |
-| `ERR_ARTIFACT_HASH_MISMATCH` | Integrity | Bytes em disco não correspondem ao hash | `BLOCKED` |
-| `ERR_UNEXPECTED_ARTIFACT` | Integrity | Arquivo presente na pasta mas não no manifesto | `BLOCKED` |
-| `ERR_MISSING_ARTIFACT` | Integrity | Arquivo declarado no manifesto ausente na pasta | `BLOCKED` |
-| `ERR_RESULT_CONTRACT_INVALID` | Contract | Falha na validação semântica da V2 | `BLOCKED` |
-| `ERR_SEMANTIC_DIFFERENCE_REQUIRES_REVIEW` | Legacy | Divergência semântica contra legado | `HUMAN_REVIEW` |
-| `ERR_REVIEW_REQUIRED` | Review | Tentativa de persistência sem registro de revisão | `BLOCKED` |
-| `ERR_REVIEW_REJECTED` | Review | Revisor humano rejeitou a proposta | `REJECTED` |
-| `ERR_REVIEW_HASH_MISMATCH` | Review | Artefatos adulterados após aprovação humana | `BLOCKED` |
-| `ERR_PERSISTENCE_FAILED` | Persistence| Rejeição ou rollback na camada V2.1 | `BLOCKED` |
-| `ERR_QA_FAILED` | QA | Falha em testes, schemas ou cobertura de livros | `QA_FAILED` |
-| `ERR_FRONTEND_INTEGRATION_FAILED` | UI | Dados do livro quebram renderizador local | `BLOCKED` |
-| `ERR_PREVIEW_VALIDATION_FAILED` | Preview | Falha no checklist visual/navegacional do piloto | `BLOCKED` |
-| `ERR_RIGHTS_PUBLICATION_BLOCKED` | Rights | Violação da política de publicação autoral | `BLOCKED` |
+| `ERR_EXECUTION_BUNDLE_INVALID` | Export | Estrutura de bundle de saída malformada | Aborta exportação |
+| `ERR_EXECUTION_BUNDLE_INTEGRITY_FAILED` | Export | Divergência no manifesto de contexto | Aborta exportação |
+| `ERR_RESULT_BUNDLE_INVALID` | Import | Schema de pacote ou manifesto inválido | `VALIDATION_FAILED` |
+| `ERR_RESULT_BUNDLE_INTEGRITY_FAILED` | Import | Hash de arquivo em disco diverge do manifesto | `VALIDATION_FAILED` |
+| `ERR_REQUEST_ID_MISMATCH` | Binding | RequestId retornado não bate com a saída | `VALIDATION_FAILED` |
+| `ERR_BUNDLE_ID_MISMATCH` | Binding | BundleId retornado não bate com a saída | `VALIDATION_FAILED` |
+| `ERR_INPUT_MANIFEST_HASH_MISMATCH` | Binding | Manifesto de entrada referenciado diverge | `VALIDATION_FAILED` |
+| `ERR_ARTIFACT_HASH_MISMATCH` | Integrity | Bytes em disco divergem do hash declarado | `VALIDATION_FAILED` |
+| `ERR_UNEXPECTED_ARTIFACT` | Integrity | Arquivo presente na pasta mas ausente no manifesto | `VALIDATION_FAILED` |
+| `ERR_MISSING_ARTIFACT` | Integrity | Arquivo declarado no manifesto ausente na pasta | `VALIDATION_FAILED` |
+| `ERR_RESULT_CONTRACT_INVALID` | Contract | Falha na validação semântica da V2 | `VALIDATION_FAILED` |
+| `ERR_SEMANTIC_DIFFERENCE_REQUIRES_REVIEW` | Legacy | Divergência mecânica contra dados legados | `NEEDS_HUMAN_REVIEW` |
+| `ERR_REVIEW_REQUIRED` | Review | Tentativa de persistência sem decisão registrada | Bloqueia persistência |
+| `ERR_REVIEW_REJECTED` | Review | Revisor humano emitiu decisão de REJECT | `REJECTED` -> `REWORK_REQUIRED` |
+| `ERR_REVIEW_HASH_MISMATCH` | Review | Artefatos adulterados após decisão humana | Invalida decisão |
+| `ERR_PERSISTENCE_FAILED` | Persistence| Rejeição ou falha de rollback na V2.1 | `VALIDATION_FAILED` |
+| `ERR_QA_FAILED` | QA | Falha em testes, schemas ou cobertura | `QA_FAILED` |
+| `ERR_RIGHTS_PUBLICATION_BLOCKED` | Rights | Tentativa de publicação de fonte não autorizada | Bloqueia projeção pública |
+| `ERR_PREVIEW_PROJECTION_FAILED` | Preview | Falha ao projetar dados locais no frontend | Bloqueia visualização |
 
 ---
 
-## 21. Estratégia de Testes e CI
+## 16. Estratégia de Testes e CI
 
-### 21.1 Testes Unitários e Herméticos
-1. `test_bundle_exporter.py`: Testa a criação de bundles autocontidos, geração de `context-manifest.json`, cálculo de hashes e limites de tamanho em ambiente isolado (`tmp_path`).
-2. `test_bundle_importer.py`: Testa a leitura de pacotes, detecção de caminhos e estruturação em memória.
-3. `test_bundle_integrity_validator.py`: Testa rejeição de hashes adulterados, arquivos extras, arquivos faltando, IDs divergentes e caminhos com path traversal.
-4. `test_legacy_comparator.py`: Testa os 4 veredictos de comparação semântica com fixtures de dados antigos e novos.
-5. `test_pilot_review.py`: Testa validação de aprovação, bloqueio por rejeição e invalidação de aprovação quando o hash do manifesto muda.
-6. `test_pilot_coordinator.py`: Testa a máquina de estados completa do piloto usando mocks offline herméticos.
-7. `test_pilot_pipeline_e2e.py`: Simulação ponta a ponta de um job piloto com fixtures completas, verificando exportação, importação, validação, revisão simulada, persistência V2.1 e integridade.
+### 16.1 Testes Unitários e Herméticos
+- `test_bundle_exporter.py`: Criação de pacotes isolados, cálculo determinístico de hashes e canonicalização JSON.
+- `test_bundle_importer.py`: Leitura e ingestão de pacotes sem efeitos colaterais.
+- `test_bundle_integrity_validator.py`: Rejeição de adulterações, IDs divergentes, path traversal e limites excedidos.
+- `test_legacy_comparator.py`: Validação determinística dos 4 veredictos com fixtures sintéticas sem chamada de rede ou LLM.
+- `test_pilot_review.py`: Validação de contratos de request e decision, bloqueio por divergência de hash de manifesto e registro de recusa.
+- `test_preview_projector.py`: Projeção isolada de dados para caminhos de preview respeitando a política de direitos.
+- `test_pilot_coordinator.py`: Máquina de estados completa, controle de tentativas (`attempt 1 -> rework -> attempt 2`) e integração com V2.1.
+- `test_pilot_pipeline_e2e.py`: Teste integrado ponta a ponta simulando um job completo com fixtures herméticas.
 
-### 21.2 Estratégia de CI
-O GitHub Actions continuará rodando exclusivamente testes **determinísticos e offline**. Nenhum teste de CI tentará comunicar-se com provedores de IA ou exigir credenciais secretas.
+### 16.2 Estratégia de CI
+O GitHub Actions executará exclusivamente os testes automatizados determinísticos. Nenhum teste exigirá tokens de API externos, navegadores gráficos ou credenciais de IA.
 
 ---
 
-## 22. Componentes e Fronteiras de Arquivos Propostos
+## 17. Componentes e Fronteiras de Arquivos Propostos
 
-### 22.1 Novos Schemas JSON
-- `schemas/execution-bundle.schema.json`: Contrato do pacote exportado e seu manifesto.
-- `schemas/result-bundle.schema.json`: Contrato do pacote importado e seu manifesto.
-- `schemas/pilot-review.schema.json`: Contrato do registro de aprovação humana do piloto.
+### 17.1 Schemas JSON (`schemas/`)
+- `schemas/execution-bundle.schema.json`: Contrato de pacotes exportados.
+- `schemas/result-bundle.schema.json`: Contrato de pacotes importados.
+- `schemas/pilot-review-request.schema.json`: Contrato de solicitação formal de revisão humana.
+- `schemas/pilot-review-decision.schema.json`: Contrato de decisão humana hash-bound.
 
-### 22.2 Novos Módulos de Implementação (`scripts/agents/`)
-- `scripts/agents/bundle_exporter.py`: Motor de exportação de Execution Bundles e compilação de manifestos.
-- `scripts/agents/bundle_importer.py`: Leitura e ingestão de Result Bundles.
-- `scripts/agents/bundle_integrity_validator.py`: Verificador determinístico de integridade de pacote e bindings.
-- `scripts/agents/legacy_comparator.py`: Comparador de regressão semântica contra dados legados.
-- `scripts/agents/pilot_review.py`: Validador e gerenciador de registros de revisão humana.
-- `scripts/agents/pilot_coordinator.py`: Orquestrador operacional da máquina de estados do piloto.
+### 17.2 Módulos Python (`scripts/agents/`)
+- `scripts/agents/canonical_json.py`: Utilitário de serialização e hashing canônico de dicionários e manifestos.
+- `scripts/agents/bundle_exporter.py`: Exportador de Execution Bundles e gerador de manifestos de contexto.
+- `scripts/agents/bundle_importer.py`: Ingestor de Result Bundles.
+- `scripts/agents/bundle_integrity_validator.py`: Verificador determinístico de integridade e amarração de pacotes.
+- `scripts/agents/legacy_comparator.py`: Comparador estrutural determinístico contra dados legados.
+- `scripts/agents/pilot_review.py`: Gerenciador de solicitações e decisões de revisão humana.
+- `scripts/agents/preview_projector.py`: Projetor determinístico de dados aprovados para visualização frontend.
+- `scripts/agents/pilot_coordinator.py`: Orquestrador central da máquina de estados do piloto.
 
-### 22.3 Novos Arquivos de Teste (`tests/agents/`)
+### 17.3 Arquivos de Teste (`tests/agents/`)
+- `tests/agents/test_canonical_json.py`
 - `tests/agents/test_bundle_exporter.py`
 - `tests/agents/test_bundle_importer.py`
 - `tests/agents/test_bundle_integrity_validator.py`
 - `tests/agents/test_legacy_comparator.py`
 - `tests/agents/test_pilot_review.py`
+- `tests/agents/test_preview_projector.py`
 - `tests/agents/test_pilot_coordinator.py`
 - `tests/agents/test_pilot_pipeline_e2e.py`
 
 ---
 
-## 23. Sequência de Implementação Proposta (Tasks 35–44)
+## 18. Sequência de Implementação Proposta (Tasks 35–44)
 
-A execução subsequente seguirá o mesmo modelo controlado por TDD e stop-on-error das versões anteriores:
-
-- **Task 35:** Schemas canônicos (`execution-bundle`, `result-bundle`, `pilot-review`).
-- **Task 36:** `ExecutionBundleExporter` e geração do `context-manifest.json`.
-- **Task 37:** `ResultBundleImporter` e leitura de pacotes.
-- **Task 38:** `BundleIntegrityValidator` e regras de binding criptográfico.
-- **Task 39:** `LegacyComparator` e taxonomia de diferenças semânticas.
-- **Task 40:** `PilotReviewEngine` e binding criptográfico de aprovação humana.
-- **Task 41:** `PilotCoordinator` e integração da máquina de estados com a V2.1.
-- **Task 42:** Adaptações mínimas no frontend para renderização do livro piloto.
-- **Task 43:** Testes integrados E2E herméticos do pipeline piloto.
-- **Task 44:** Execução operacional assistida do primeiro livro piloto real (`animalidade`).
+- **Task 35:** Canonical JSON serializer e schemas canônicos (`execution-bundle`, `result-bundle`, `pilot-review-request`, `pilot-review-decision`).
+- **Task 36:** `ExecutionBundleExporter` com amarrações de contexto e hashing canônico.
+- **Task 37:** `ResultBundleImporter` e leitura segura de pacotes.
+- **Task 38:** `BundleIntegrityValidator` e verificador de amarração criptográfica.
+- **Task 39:** `LegacyComparator` determinístico sem LLM.
+- **Task 40:** `PilotReviewEngine` (separação formal de request e decision, invalidação por hash).
+- **Task 41:** `PreviewProjector` e governança de direitos para preview local.
+- **Task 42:** `PilotCoordinator` e orquestração de tentativas de retrabalho com V2.1.
+- **Task 43:** Adaptações pontuais de desenvolvimento no frontend (`docs/index.html`, `docs/assets/app.js`).
+- **Task 44:** Teste integrado hermético E2E e execução assistida do livro piloto real (`animalidade`).
 
 ---
 
-## 24. Self-Review de Conformidade Arquitetural
+## 19. Self-Review de Conformidade com a Revisão 001
 
-- [x] **Sem escritas diretas no repositório por modelos:** Todo filesystem write passa pela V2.1.
-- [x] **Sem bypass de validação:** O resultado bruto não alcança ChangeSet nem filesystem sem veredicto ACCEPT.
-- [x] **Hashes em todos os pacotes:** Manifestos contêm SHA-256 e bytes em disco são checados.
-- [x] **Resultado vinculado à entrada:** Identificadores e hash do manifesto de contexto amarrados.
-- [x] **Legado não é verdade absoluta:** Serve exclusivamente para comparação e alerta, nunca como insumo do pipeline.
-- [x] **Revisão obrigatória e à prova de adulteração:** A decisão humana vincula-se ao SHA-256 do manifesto do resultado.
-- [x] **Armazenamento de bundles fora do Git:** Pasta `.daemon_runtime/bundles` protegida contra tracking.
-- [x] **Sem redesenho prematuro do site:** Frontend mantido em vanilla JS com adições mínimas de campos e busca.
-- [x] **Sem automações mágicas de browser:** Transporte manual formal e auditável.
+- [x] **`LegacyComparator` 100% determinístico:** Não usa LLM, não supõe significados; declara `SEMANTIC_EQUIVALENT` somente com prova estrutural determinística.
+- [x] **Canonicalização explícita de hashing:** Algoritmo JSON com ordenação de chaves, separadores compactos e exclusão de timestamp do hash de identidade do conteúdo.
+- [x] **Imutabilidade e modelo de tentativas:** Bundles são imutáveis; falhas transitam para `REWORK_REQUIRED` gerando nova tentativa (`attempt 2`), preservando o histórico anterior.
+- [x] **Separação entre Review Request e Review Decision:** Dois contratos distintos; decisão amarrada ao hash do manifesto do resultado revisado.
+- [x] **Direitos autorais com base em evidência documental:** `animalidade` auditado com `rightsStatus = UNKNOWN` e `publicationMode = NOT_PUBLIC`; elegível exclusivamente para teste local, nunca para deploy público.
+- [x] **Fronteira canônica para frontend:** Dados fluem via `PreviewProjector` somente após QA + Rights gate; a camada de persistência da V2.1 mantém sua autoridade restrita.
+- [x] **Alterações de código no frontend isoladas:** Ajustes em JS/HTML são commits normais de desenvolvimento, nunca gerados por auto-apply de pipeline de conteúdo.
+- [x] **Auditoria durável preservada:** Registros imutáveis de governança persistidos em `docs/reports/pilot/`, imunes a limpezas de runtime.
