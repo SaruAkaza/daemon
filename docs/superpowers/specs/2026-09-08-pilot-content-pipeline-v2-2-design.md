@@ -5,7 +5,7 @@
 
 Esta especificação define a arquitetura, contratos de dados, máquina de estados, governança de direitos autorais, protocolo de auditoria e fluxo de execução da **Version 2.2 — Pilot Content Pipeline** do repositório Daemon Tools.
 
-O objetivo central da Versão 2.2 é fechar o ciclo operacional completo de transformação de dados processando **um livro real** desde sua fonte original não estruturada até sua visualização navegável, pesquisável e com relações ativas em ambiente de preview local, exercitando todas as camadas do pipeline:
+O objetivo central da Versão 2.2 é fechar o ciclo operacional completo de transformação de dados processando **um livro real** desde sua fonte original não estruturada até sua visualização navegável, pesquisável e com relações ativas em ambiente de preview local seguro, exercitando todas as camadas do pipeline:
 ```text
 Fonte Original (Livros/)
   ↓
@@ -25,13 +25,13 @@ LEGACY COMPARISON (Comparação determinística sem LLM contra histórico)
   ↓
 PILOT HUMAN REVIEW (Solicitação formal vs Decisão humana hash-bound)
   ↓
-V2.1 PERSISTENCE (Mutação atômica segura via ApplicationCoordinator em data/)
+V2.1 PERSISTENCE (Mutação atômica segura via ApplicationCoordinator no RestrictedPilotWorkspace)
   ↓
-QA / RELEASE GATES (Validação determinística de conformidade e integridade)
+QA / DATASET GATES (Validação determinística de conformidade e integridade no workspace)
   ↓
 LOCAL PREVIEW PROJECTION (Projeção runtime-only isolada em <runtime>/preview/)
   ↓
-LOCAL HTTP PREVIEW (Navegação, busca e relações ativas via runtime overlay)
+LOCAL HTTP PREVIEW (Navegação, busca e relações ativas via runtime overlay local)
 ```
 
 ---
@@ -43,7 +43,7 @@ A Versão 2.2 tem como alicerce estrito a **Version 2.1 — Persistence/Applicat
 - **SHA:** `d4622b3cdee956f5cb8dfff34df0a98e3e4dfe13`
 
 Todas as garantias e invariantes de segurança da V2.1 permanecem vigentes e inalteradas:
-1. **Zero Mutação Fora da V2.1:** Toda e qualquer escrita de dados no repositório passa obrigatoriamente pelo `ApplicationCoordinator` / `ChangeSetApplier` da V2.1. O pipeline piloto e seus agentes não possuem autoridade de escrita direta no repositório.
+1. **Zero Mutação Fora da V2.1:** Toda e qualquer escrita no sistema de arquivos passa obrigatoriamente pelo `ApplicationCoordinator` / `ChangeSetApplier` da V2.1. O pipeline piloto e seus agentes não possuem autoridade de escrita paralela.
 2. **ACCEPT Boundary Inviolável:** O construtor de alterações (`ChangeSetBuilder`) e o coordenador de aplicação exigem deterministamente que o veredicto de validação técnica seja `ACCEPT`.
 3. **Interseção Estrita de Autoridade:** $\text{Scope} = \text{allowedWriteScope} \cap \text{AutoApplyRoots} \cap \text{ApplicationPolicy}$. O request jamais pode expandir raízes de aplicação.
 4. **Proteção TOCTOU e Primitivas Atômicas:** Revalidação de estado em disco na Fase 4 pré-mutação, criação atômica exclusiva (`open(..., "xb")` / `O_EXCL`), substituição unitária no mesmo volume (`os.replace`) e journal de rollback compensatório com detecção de adulteração concorrente.
@@ -62,56 +62,45 @@ Todas as garantias e invariantes de segurança da V2.1 permanecem vigentes e ina
 6. **Comparador Determinístico com Legado (`LegacyComparator`):** Contrastar estruturalmente o resultado do pipeline com referências derivadas antigas para alertar o operador humano sobre divergências mecânicas, sem uso de LLM e sem conferir autoridade ao legado.
 7. **Separação Formal entre Review Request e Review Decision:** Registrar a solicitação de revisão e vincular criptograficamente a decisão humana de aprovação ao hash SHA-256 exato do manifesto do resultado revisado.
 8. **Auditoria de Governança Confiável e Segregada (`PilotAuditStore`):** Persistir evidências de governança em armazenamento durável controlado pelo runtime confiável, fora do repositório e totalmente inacessível a auto-apply de ChangeSets de conteúdo.
-9. **Projeção de Preview Runtime-Only (`LocalPreviewProjector`):** Para obras com direitos restritos ou desconhecidos (`NOT_PUBLIC`), projetar dados de preview exclusivamente em diretório de runtime não rastreado (`<runtime>/preview/<bookId>/`), servido por overlay local sem tocar a árvore `docs/`.
-10. **Integração Mínima com o Frontend Existente:** Permitir navegação, filtragem, busca e visualização de relações no visualizador local (`localhost`), sem refatorações de framework.
-11. **Testabilidade Hermética:** 100% dos novos componentes testáveis offline em fixtures isoladas, sem tokens, segredos ou chamadas externas.
+9. **Isolamento de Conteúdo Restrito (`RestrictedPilotWorkspace`):** Para obras com direitos restritos ou desconhecidos (`NOT_PUBLIC` / `UNKNOWN`), persistir o conteúdo gerado através da V2.1 exclusivamente em workspace de runtime isolado fora da working tree do repositório principal.
+10. **Projeção de Preview Runtime-Only (`LocalPreviewProjector`):** Projetar dados de preview exclusivamente em diretório de runtime não rastreado (`<runtime>/preview/<bookId>/`), servido por overlay local sem tocar a árvore `docs/`.
+11. **Preservação da Working Tree Principal Limpa:** O checkout principal do Git permanece 100% limpo de payloads derivados de conteúdo restrito.
+12. **Testabilidade Hermética:** 100% dos novos componentes testáveis offline em fixtures isoladas, sem tokens, segredos ou chamadas externas.
 
 ### 3.2 Non-Goals (Fora do Escopo da Versão 2.2)
-1. **Deploy ou Publicação em Produção:** Proibida a publicação automática ou manual de conteúdo restrito no GitHub Pages público.
-2. **Materialização de Conteúdo Restrito em `docs/`:** Dados derivados de fontes `NOT_PUBLIC` ou `UNKNOWN` jamais entram na árvore rastreada pelo Git (`docs/assets/data/`). Repositórios e branches públicas não são ambientes privados.
-3. **Automação de API com Antigravity / Gemini:** A integração programática de rede permanece classificada como `DEFERRED_PENDING_RUNTIME_API`.
-4. **Automação de Interface ou Navegador:** Proibido o uso de Selenium, Playwright, Puppeteer, PyAutoGUI ou similares.
-5. **Assinaturas Digitais PKI:** A integridade é garantida por hashes SHA-256 canônicos e amarração de manifestos; infraestrutura de certificados assimétricos é postergada.
-6. **Reconciliação Semântica Automática:** O `LegacyComparator` não interpreta significados nem usa IA. Divergências semânticas exigem deliberação humana.
-7. **Redesign do Frontend ou Migração de Stack:** Nenhuma reescrita em React, Vue, Svelte ou Next.js. Proibida a introdução de novos design systems ou bibliotecas pesadas de UI.
-8. **Processamento em Lote Multi-Livro ou Swarm:** Apenas 1 livro piloto será processado em sequência controlada.
+1. **Promoção de Conteúdo Restrito para a Working Tree Principal:** O conteúdo gerado do piloto restrito não é copiado para `data/` do repositório principal na V2.2.
+2. **Deploy ou Publicação em Produção:** Proibida a publicação automática ou manual de conteúdo restrito no GitHub Pages público.
+3. **Materialização de Conteúdo Restrito em `docs/`:** Dados derivados de fontes `NOT_PUBLIC` ou `UNKNOWN` jamais entram na árvore rastreada pelo Git (`docs/assets/data/`). Repositórios e branches públicas não são ambientes privados.
+4. **Automação de API com Antigravity / Gemini:** A integração programática de rede permanece classificada como `DEFERRED_PENDING_RUNTIME_API`.
+5. **Automação de Interface ou Navegador:** Proibido o uso de Selenium, Playwright, Puppeteer, PyAutoGUI ou similares.
+6. **Assinaturas Digitais PKI:** A integridade é garantida por hashes SHA-256 canônicos e amarração de manifestos; infraestrutura de certificados assimétricos é postergada.
+7. **Reconciliação Semântica Automática:** O `LegacyComparator` não interpreta significados nem usa IA. Divergências semânticas exigem deliberação humana.
+8. **Redesign do Frontend ou Migração de Stack:** Nenhuma reescrita em React, Vue, Svelte ou Next.js. Proibida a introdução de novos design systems ou bibliotecas pesadas de UI.
+9. **Processamento em Lote Multi-Livro ou Swarm:** Apenas 1 livro piloto será processado em sequência controlada.
 
 ---
 
-## 4. Critérios de Sucesso do Piloto (`V2.2 VERIFIED`)
+## 4. Invariante de Segurança: `RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE`
 
-A Versão 2.2 só atinge o estado `V2.2 VERIFIED` quando os seguintes critérios objetivos forem atendidos:
-
-1. **Fonte Real Processada:** 1 livro selecionado deterministicamente a partir de seu arquivo original em `Livros/`.
-2. **Cadeia Completa Concluída:** Dados transformados através de todos os estágios formais do pipeline.
-3. **Ponte Manual Operada com Sucesso:** Exportação de bundles pelo Daemon, inferência assistida pelo Antigravity/Gemini e importação sem falhas de formato.
-4. **Integridade de Bundle Validada:** `BundleIntegrityValidator` aprova a amarração de identidade, hashes de manifestos e ausência de adulteração.
-5. **Divergências Semânticas Auditadas:** O `LegacyComparator` classifica todas as alterações e direciona diferenças para aprovação humana.
-6. **Aprovação Humana Registrada no `PilotAuditStore`:** Decisão formal de revisão emitida e vinculada criptograficamente ao manifesto do resultado, fora da autoridade do modelo.
-7. **Persistência Exclusiva via V2.1:** Arquivos gravados no repositório estritamente através do `ApplicationCoordinator` da V2.1 em `data/`, com journals limpos e sem violações TOCTOU.
-8. **QA Automatizado Verde:** Suíte de testes (`pytest`), `validate_data.py`, `check_book_coverage.py` e sintaxe JS aprovados com exit code 0.
-9. **Navegabilidade Comprovada no Preview Local:** O livro piloto aparece no visualizador local servido via runtime overlay, com listagem de seções e entidades.
-10. **Busca Funcional no Preview Local:** Termos e entidades do livro piloto retornam nos filtros e busca do frontend local.
-11. **Relações Clicáveis no Preview Local:** Links cruzados entre entidades navegam corretamente na interface local.
-12. **Bloqueio Absoluto de Publicação Pública:** Comprovado que nenhum arquivo derivado de `animalidade` foi adicionado a `docs/` ou exposto a deploy público.
+> [!CAUTION]
+> **INVARIANTE CRÍTICA DE SEGURANÇA:**  
+> Conteúdo derivado de fontes com `rightsStatus in (UNKNOWN, PRIVATE)` ou `publicationMode == NOT_PUBLIC` que exceda o nível de divulgação autorizado **NUNCA DEVE ENTRAR NA WORKING TREE DO REPOSITÓRIO PRINCIPAL**.  
+> Esta proibição é absoluta: aplica-se a `data/text/`, `data/books/`, `data/entities/`, `data/pilot/`, `docs/assets/data/` e a qualquer outro caminho rastreado ou comitável no Git, mesmo como arquivos não commitados ou em branches de desenvolvimento. Branches em repositórios públicos são públicas; não existe privacidade em working trees rastreadas.
 
 ---
 
 ## 5. Seleção Determinística do Livro Piloto e Evidência Canônica de Direitos
 
-### 5.1 Critérios Determinísticos de Avaliação da Shortlist
-A seleção obedece a 6 dimensões determinísticas auditáveis:
-- **C1. Disponibilidade de Fonte Original:** Arquivo DOCX íntegro em `Livros/word/`.
-- **C2. Existência de Dados Legados:** Presença prévia em `data/books/` e `data/pilot/`.
-- **C3. Qualidade da Fonte:** Documento com `badLineScore == 0.0` no relatório de qualidade (`word-docx-quality-report.json`).
-- **C4. Extensão Gerenciável:** Entre 10 e 50 páginas (permite ciclo ágil de transporte manual sem cansaço operacional).
-- **C5. Representatividade do Domínio Daemon:** Variedade de classes de entidades (mínimo 4 áreas: Lore, Regras, Opções/Poderes, NPCs).
-- **C6. Governança de Direitos Canônicos:** Status de direitos auditado com base em evidência documental, sem inferências implícitas.
+### 5.1 Status da Working Tree de `data/pilot/`
+A auditoria formal no repositório comprovou:
+- `data/pilot/` pertence à working tree rastreada pelo Git (`git ls-files data/pilot/` lista 39 arquivos versionados).
+- Como consequência, materializar arquivos de um piloto restrito diretamente em `data/pilot/` violaria frontalmente a política de não-vazamento de conteúdo restrito.
+- Portanto, o conteúdo do piloto restrito deve ser persistido em um **workspace isolado de runtime**.
 
 ### 5.2 Shortlist Auditada e Evidência Canônica de Direitos
 
 Em conformidade com a Constituição do Projeto (Seção 8):
-> **Regra de Ouro de Direitos:** `UNKNOWN` nunca deve virar permissão implícita. Na ausência de documento formal de liberação assinado pelos detentores dos direitos ou comprovação de domínio público, o status canônico padrão é estritamente `rightsStatus = UNKNOWN` e o modo de publicação é `publicationMode = NOT_PUBLIC`.
+> `UNKNOWN` nunca deve virar permissão implícita. Na ausência de documento formal de liberação assinado pelos detentores dos direitos ou comprovação de domínio público, o status canônico padrão é estritamente `rightsStatus = UNKNOWN` e o modo de publicação é `publicationMode = NOT_PUBLIC`.
 
 | Livro Candidato | Págs. | Chars | Áreas Representadas | Registro Canônico | rightsStatus | publicationMode | eligible_for_local_pilot | eligible_for_public_release |
 |:---|:---:|:---:|:---|:---|:---:|:---:|:---:|:---:|
@@ -120,35 +109,81 @@ Em conformidade com a Constituição do Projeto (Seção 8):
 | **3. anoes** | 8 | 37.190 | Aprimoramentos, Lore, Itens, Kits, Raças | `data/index/sources.json` (`Livros/anoes.pdf`) | `UNKNOWN` | `NOT_PUBLIC` | **SIM** | **NÃO** |
 | **4. anjos-cacadores-alados** | 43 | 116.108 | Lore, Raças, Manobras, Aprimoramentos, Poderes, NPCs | `data/index/sources.json` (`Livros/Anjos cacadores-alados.pdf`) | `UNKNOWN` | `NOT_PUBLIC` | **SIM** | **NÃO** |
 
-### 5.3 Decisão de Seleção: `animalidade`
-O suplemento **`animalidade`** é designado como o piloto da V2.2 sob as seguintes restrições explícitas de governança:
+### 5.3 Decisão de Seleção: `animalidade` como Piloto Restrito
+O suplemento **`animalidade`** é designado como o piloto da V2.2 sob governança estrita:
 - **PILOT MODE:** `LOCAL_RESTRICTED`
 - **PUBLIC DEPLOYMENT:** `BLOCKED`
-- **Evidência Documental:** Registrado em `data/index/sources.json` (13 páginas, DOCX limpo em `Livros/word/animalidade.docx`, `badLineScore: 0.0`, zero tabelas truncadas).
-- **Justificativa Técnica:** Excelente representatividade de regras e lore Daemon em volume ideal (13 páginas) para validação do transporte assistido.
-- **Isolamento de Direitos:** Por ter `rightsStatus = UNKNOWN` e `publicationMode = NOT_PUBLIC`, seus dados derivados residirão canonicamente em `data/` e serão projetados para preview exclusivamente em diretório runtime-owned não rastreado (`<runtime>/preview/animalidade/`). É estritamente proibido espelhar seus dados em `docs/assets/data/`.
-- **Regra de Não-Contaminação:** O pipeline começa obrigatoriamente de `Livros/word/animalidade.docx`. Os dados antigos (`data/pilot/animalidade.json`, `data/books/animalidade.json`) servem unicamente ao `LegacyComparator` como espelho comparativo de qualidade, nunca como entrada de extração.
+- **PROMOTION TO MAIN WORKTREE:** `BLOCKED`
+- **Classificação dos Dados Gerados:** **`Restricted Pilot Candidate Data`** (não são dados publicamente canônicos do repositório).
+- **Justificativa Técnica:** 13 páginas, texto íntegro, excelente riqueza de regras Daemon, ideal para exercício manual do pipeline.
+- **Regra de Não-Contaminação:** O pipeline começa obrigatoriamente de `Livros/word/animalidade.docx`. Os arquivos antigos (`data/pilot/animalidade.json`, `data/books/animalidade.json`) servem unicamente ao `LegacyComparator` como espelho comparativo, nunca como entrada de extração.
 
 ---
 
-## 6. Matriz Canônica de Direitos e Projeção de Preview
+## 6. Arquitetura de Persistência Restrita (`RestrictedPilotWorkspace`)
 
-A autorização para visualização e publicação obedece rigorosamente à seguinte matriz de decisão determinística:
+Para satisfazer simultaneamente a exigência de que **a V2.1 seja o único mecanismo de persistência** e a invariante de que **conteúdo restrito jamais entre na working tree principal**, a V2.2 introduz a fronteira conceitual do `RestrictedPilotWorkspace`.
 
-| rightsStatus | publicationMode | Local Preview Proj. (`LocalPreviewProjector`) | Public Proj. (`PublishProjector`) | Destino Autorizado |
-|:---|:---|:---:|:---:|:---|
-| **`AUTHORIZED` / `PUBLIC_DOMAIN`** | `FULL_TEXT` / `SUMMARY_AND_METADATA` | **PERMITIDO** | **ELEGÍVEL** (após QA + Gates + Aprovação Humana) | Local: `<runtime>/preview/`<br>Público: `docs/assets/data/` |
-| **`METADATA_ONLY`** | `METADATA_ONLY` | **PERMITIDO** (restrito a metadados) | **ELEGÍVEL** (restrito a metadados) | Local: `<runtime>/preview/`<br>Público: `docs/assets/data/` |
-| **`PRIVATE`** | `NOT_PUBLIC` | **PERMITIDO** (somente desenvolvimento local) | **BLOQUEADO** | Local: `<runtime>/preview/` apenas |
-| **`UNKNOWN`** | `NOT_PUBLIC` | **PERMITIDO** (somente desenvolvimento local) | **BLOQUEADO** | Local: `<runtime>/preview/` apenas |
+### 6.1 Estrutura do `RestrictedPilotWorkspace`
+Localizado fora da árvore do repositório Git, no mesmo sistema de arquivos/volume:
+```text
+<repository-parent>/.daemon_runtime/
+└── workspaces/
+    └── pilot/
+        └── animalidade/
+            └── repository/                  <-- repository_root para a V2.1
+                └── data/
+                    ├── text/
+                    ├── books/
+                    ├── entities/
+                    └── pilot/
+```
 
-*Qualquer tentativa de projetar conteúdo `PRIVATE`, `UNKNOWN` ou `NOT_PUBLIC` para `docs/` ou qualquer árvore Git é barrada com erro `ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED`.*
+### 6.2 Propriedades Obrigatórias do `RestrictedPilotWorkspace`:
+1. **Runtime-owned:** Pertence e é gerenciado exclusivamente pelo runtime local.
+2. **Outside Main Working Tree:** Fisicamente localizado fora da pasta do repositório Daemon Tools.
+3. **Untracked pelo Git:** Não possui remote público, não é comitável no repositório principal e não é servido pelo GitHub Pages.
+4. **Não Controlável por LLM:** O caminho é configurado deterministicamente pelo runtime confiável com base na matriz de direitos. O modelo, o prompt e o Result Bundle não podem escolher nem alterar essa raiz.
+5. **Mesmo Sistema de Arquivos (Same-Volume):** Permite que a validação de mesmo filesystem do `StagingManager` (`verify_same_filesystem()`) opere com sucesso, garantindo operações atômicas sem fallback de cópia e deleção.
+
+### 6.3 Compatibilidade Nativa com a Implementação V2.1
+A auditoria técnica da camada V2.1 confirmou que `ApplicationRuntimeConfig.create(repository_root=...)` aceita qualquer caminho absoluto confiável no mesmo filesystem. Portanto:
+- O `ApplicationCoordinator` é instanciado com `repository_root = RestrictedPilotWorkspace`.
+- **Mesmas Validações V2.1:** Schema de ChangeSet, ACCEPT boundary, allowlist de AutoApplyRoots, limites de recursos e integridade de UTF-8.
+- **Mesma Política e Precondições:** Verificação de não-existência para CREATE, base hash para UPDATE e proteção contra symlinks/reparse points.
+- **Mesmo Staging e Primitivas Atômicas:** `open(..., "xb")` exclusivo, `os.replace` no mesmo volume e transaction journal com rollback compensatório.
+- **Resultado:** A V2.1 é preservada integralmente como o único motor de persistência, sem criação de código paralelo de escrita em disco.
 
 ---
 
-## 7. Arquitetura Operacional do Piloto
+## 7. Matriz Canônica de Direitos e Fronteiras de Projeção
 
-O desacoplamento entre a orquestração do Daemon e o ambiente externo do modelo é mediado por pacotes autocontidos e serializados em disco:
+A relação entre a política de direitos e a autorização de projeção é governada deterministamente em conformidade com o `GateEngine`:
+
+| rightsStatus | publicationMode | Projeção Solicitada | Veredicto de Direitos | Destino Autorizado | Mecanismo |
+|:---|:---|:---|:---:|:---|:---|
+| **`AUTHORIZED` / `PUBLIC_DOMAIN`** | `FULL_TEXT` / `SUMMARY_AND_METADATA` | Local Preview | **PERMITIDO** | `<runtime>/preview/<bookId>/` | `LocalPreviewProjector` |
+| **`AUTHORIZED` / `PUBLIC_DOMAIN`** | `FULL_TEXT` / `SUMMARY_AND_METADATA` | Public Release | **ELEGÍVEL** (Requer QA + Gates + Human Release) | `docs/assets/data/` | `PublishProjector` |
+| **`METADATA_ONLY`** | `METADATA_ONLY` | Metadata Local Preview | **PERMITIDO** | `<runtime>/preview/<bookId>/` | `LocalPreviewProjector` |
+| **`METADATA_ONLY`** | `METADATA_ONLY` | Metadata Public Release | **ELEGÍVEL** (Requer QA + Gates + Human Release) | `docs/assets/data/` | `PublishProjector` |
+| **`METADATA_ONLY`** | `METADATA_ONLY` | Full Text (Local ou Público) | **NEGADO** (`DENIED`) | N/A | Bloqueio imediato |
+| **`PRIVATE`** | `NOT_PUBLIC` | Local Preview | **PERMITIDO** (Apenas dev local) | `<runtime>/preview/<bookId>/` | `LocalPreviewProjector` |
+| **`PRIVATE`** | `NOT_PUBLIC` | Public Release | **NEGADO** (`DENIED`) | N/A | Bloqueio absoluto |
+| **`UNKNOWN`** | `NOT_PUBLIC` | Local Preview | **PERMITIDO** (Apenas dev local) | `<runtime>/preview/<bookId>/` | `LocalPreviewProjector` |
+| **`UNKNOWN`** | `NOT_PUBLIC` | Public Release | **NEGADO** (`DENIED`) | N/A | Bloqueio absoluto |
+
+### 7.1 Separação entre `LocalPreviewProjector` e `PublishProjector`
+1. **`LocalPreviewProjector` (Runtime-Only):**
+   - **Fonte:** `RestrictedPilotWorkspace/data/pilot/<bookId>.json` (para conteúdo restrito) ou `data/pilot/<bookId>.json` (para conteúdo público autorizado).
+   - **Destino:** `<repository-parent>/.daemon_runtime/preview/<bookId>/`.
+   - **Operação:** Acionado somente após aprovação nos gates de QA do workspace. Alimenta o servidor HTTP local através de overlay em memória, mantendo `docs/` intocado.
+2. **`PublishProjector` (Publicação / Deploy):**
+   - **Condição:** Exige deliberação positiva explícita do `GateEngine` / política de direitos, QA PASS, release gates PASS e aprovação humana final de publicação.
+   - **Status na V2.2:** **BLOQUEADO / DESATIVADO.** Não haverá publicação de dados na V2.2.
+
+---
+
+## 8. Arquitetura Operacional do Piloto Restrito
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -191,43 +226,24 @@ O desacoplamento entre a orquestração do Daemon e o ambiente externo do modelo
 │   [PilotReviewDecision] (Humano) ──→ Gravado no PilotAuditStore (Rejeição: REJECTED)   │
 │             ↓ (Aprovação hash-bound)                                                   │
 │   [ApplicationCoordinator V2.1]                                                        │
-│             ↓ (Mutação atômica em data/ via AutoApplyRoots)                            │
-│   [Canonical Repository Data (data/)]                                                  │
+│             │ (trusted repository_root = RestrictedPilotWorkspace)                     │
+│             ▼                                                                          │
+│   [RestrictedPilotWorkspace/data/pilot/animalidade.json]                               │
 │             ↓                                                                          │
-│   [QA / Release Gates] ──→ (Falha?) ──→ [QA_FAILED]                                    │
+│   [Pilot Dataset QA Gates] (Executados contra RestrictedPilotWorkspace)                │
 │             ↓ (Pass)                                                                   │
-│   [Rights Gate] ──→ (NOT_PUBLIC / UNKNOWN?) ──┐                                        │
-│             ↓                                 ▼                                        │
-│   [PublishProjector] (BLOCKED)     [LocalPreviewProjector]                             │
-│                                               ↓                                        │
-│                                    (<runtime>/preview/animalidade/)                    │
-│                                               ↓                                        │
-│                                    [Local HTTP Server Overlay]                         │
-│                                    (Serve docs/app.js + dados runtime)                 │
+│   [Rights Gate: UNKNOWN -> NOT_PUBLIC]                                                 │
+│             ↓                                                                          │
+│   [LocalPreviewProjector]                                                              │
+│             ↓ (Copia para runtime untracked)                                           │
+│   (<runtime>/preview/animalidade/)                                                     │
+│             ↓                                                                          │
+│   [Local HTTP Server Overlay] ──→ [Navegador do Desenvolvedor (localhost)]             │
+│   (docs/index.html + docs/app.js + dados de <runtime>/preview/)                        │
+│                                                                                        │
+│   * Working tree principal do Git permanece 100% livre de dados de animalidade *       │
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
----
-
-## 8. Fronteiras Distintas de Projeção e Autoridade de Código
-
-### 8.1 Separação entre `LocalPreviewProjector` e `PublishProjector`
-1. **`LocalPreviewProjector` (Runtime-Only):**
-   - **Autoridade:** Runtime local confiável.
-   - **Gatilho:** Executado somente após QA Gates PASS e verificação de direitos.
-   - **Destino:** `<repository-parent>/.daemon_runtime/preview/<bookId>/`.
-   - **Comportamento:** Projeta os dados estruturados de `data/pilot/<livro>.json` e gera o índice runtime correspondente. O servidor local de teste (ex.: script Python HTTP de preview) faz o overlay entre os assets de código em `docs/` e os dados em `<runtime>/preview/`.
-   - **Isolamento:** **Zero arquivos criados em `docs/` ou rastreados pelo Git.**
-2. **`PublishProjector` (Publicação / Deploy):**
-   - **Autoridade:** Gate de release e direitos estrito.
-   - **Requisitos:** `rightsStatus` compatível (`AUTHORIZED` ou `PUBLIC_DOMAIN`) + `publicationMode` compatível + QA PASS + aprovação humana expressa de publicação.
-   - **Destino:** `docs/assets/data/`.
-   - **Status na V2.2:** **DESATIVADO / BLOQUEADO.** A V2.2 não realiza publicação pública de conteúdo.
-
-### 8.2 Código do Frontend $
-e$ Persistência de Conteúdo
-- Ajustes em `docs/index.html` e `docs/assets/app.js` (para renderizar novos atributos, filtros ou campos de entidades) são **intervenções normais de desenvolvimento de software** realizadas pelo desenvolvedor humano na branch Git `feat/pilot-content-pipeline-v2-2`.
-- O pipeline de conteúdo e a camada de persistência da V2.1 **NUNCA** têm permissão de alterar arquivos de código (`.js`, `.html`, `.css`) através de auto-apply.
 
 ---
 
@@ -266,11 +282,11 @@ stateDiagram-v2
     
     NEEDS_HUMAN_REVIEW --> APPROVED: decisão humana == APPROVE (hash-bound)
     
-    APPROVED --> PERSISTED: application_coordinator.apply() (V2.1 em data/)
+    APPROVED --> PERSISTED: application_coordinator.apply() (V2.1 no RestrictedPilotWorkspace)
     APPROVED --> VALIDATION_FAILED: V2.1 policy / TOCTOU falha
     
-    PERSISTED --> QA_PASS: todos os QA gates PASS
-    PERSISTED --> QA_FAILED: QA gate FAIL
+    PERSISTED --> QA_PASS: todos os Dataset QA gates PASS no workspace
+    PERSISTED --> QA_FAILED: Dataset QA gate FAIL
     QA_FAILED --> REWORK_REQUIRED: erro estrutural ou de cobertura
     
     QA_PASS --> PREVIEW_READY: local_preview_projector.project() (<runtime>/preview/)
@@ -282,111 +298,67 @@ stateDiagram-v2
 
 ## 10. Canonicalização e Algoritmo de Hashing de Bundles
 
-Para assegurar que bundles logicamente idênticos possuam hashes imutáveis e reprodutíveis independentemente do sistema operacional ou relógio, o cálculo de hashes obedece a um algoritmo estrito de canonicalização.
-
-### 10.1 Algoritmo Canônico de Serialização JSON
-Toda estrutura de metadados antes de ser hasheada deve ser convertida em bytes UTF-8 via:
+Toda estrutura de metadados antes de ser hasheada deve ser convertida em bytes UTF-8 canônicos:
 ```python
 def canonical_json_bytes(payload: dict) -> bytes:
-    # 1. Ordenação lexicográfica recursiva de todas as chaves
-    # 2. Separadores compactos sem espaços adicionais: ',' e ':'
-    # 3. Formato UTF-8 estrito sem BOM e sem escape desnecessário
-    serialized = json.dumps(
+    return json.dumps(
         payload,
         ensure_ascii=False,
         sort_keys=True,
         separators=(",", ":"),
-    )
-    return serialized.encode("utf-8")
+    ).encode("utf-8")
 ```
 
-### 10.2 Separação entre Content Identity e Audit Metadata
-- **`inputManifestSha256` (Content Identity Hash):** É calculado exclusivamente sobre o payload canônico de conteúdo de `context-manifest.json` contendo: `bundleId`, `requestId`, `jobId`, `stage`, `bookId` e a lista ordenada de `items` (cada um com `logicalPath`, `role`, `sourceUri`, `sizeBytes`, `sha256`, `mediaType`). O campo temporal `createdAt` é estritamente **excluído** do cálculo do hash de identidade do conteúdo.
+### Regras de Hashing:
+- **`inputManifestSha256`:** Calculado exclusivamente sobre o payload de conteúdo de `context-manifest.json` (`bundleId`, `requestId`, `jobId`, `stage`, `bookId` e `items`). O campo temporal `createdAt` é estritamente **excluído**.
 - **`executionBundleId`:** Derivado deterministicamente como:
   `EB-<BOOK_ID>-<STAGE>-att<ATTEMPT_NUM>-<CONTENT_HASH[:8]>`.
-- **`artifact hashes`:** SHA-256 calculado diretamente sobre os bytes binários brutos de cada arquivo físico presente no diretório `artifacts/`.
-- **`resultManifestSha256`:** Calculado sobre a serialização canônica do conteúdo do `result-manifest.json`, excluindo eventuais campos de auto-referência circular.
+- **`artifact hashes`:** SHA-256 calculado diretamente sobre os bytes físicos brutos de cada arquivo em `artifacts/`.
+- **`resultManifestSha256`:** Calculado sobre a serialização canônica do conteúdo do `result-manifest.json`, excluindo auto-referências circulares.
 
 ---
 
 ## 11. Validador de Integridade de Importação (`BundleIntegrityValidator`)
 
-O `BundleIntegrityValidator` atua antes de qualquer inspeção semântica. Ele impõe as seguintes validações determinísticas:
-
-1. **Validação de Schemas:** Conformidade com `execution-result.schema.json` e `result-manifest.schema.json`.
-2. **Amarração de Identidade Cruzada:**
-   - `result.requestId == expected_request_id`
-   - `result.executionBundleId == expected_bundle_id`
-   - `result_manifest.inputManifestSha256 == expected_input_manifest_sha256`
-3. **Integridade de Artefatos:**
-   - Para cada arquivo no diretório `artifacts/`, calcula o SHA-256 real em disco e compara com o declarado em `result-manifest.json`. Divergência gera `ERR_ARTIFACT_HASH_MISMATCH`.
-   - Se houver arquivo na pasta não declarado no manifesto: `ERR_UNEXPECTED_ARTIFACT`.
-   - Se houver arquivo no manifesto ausente na pasta: `ERR_MISSING_ARTIFACT`.
-4. **Hardening de Caminhos de Artefatos:** Cada caminho relativo de artefato é validado contra path traversal (`..`), drive letters, prefixos de dispositivo (`\\?\`, `\\.\`), Alternate Data Streams (`:`) e nomes reservados DOS.
-5. **Limites de Recursos:** Nenhum artefato individual pode exceder 50MB e o total do bundle não pode exceder 200MB.
+O `BundleIntegrityValidator` impõe validações determinísticas antes de qualquer inspeção semântica:
+1. **Validação de Schemas:** Conformidade estrita com `execution-result.schema.json` e `result-manifest.schema.json`.
+2. **Amarração de Identidade Cruzada:** `requestId`, `executionBundleId` e `inputManifestSha256` idênticos aos registrados na saída.
+3. **Integridade de Artefatos:** Hashes físicos de arquivos em disco devem bater byte-a-byte com os declarados no manifesto. Arquivos órfãos ou ausentes são estritamente proibidos.
+4. **Hardening de Caminhos:** Proteção contra path traversal (`..`), drive letters, prefixos de dispositivo, ADS (`:`) e dispositivos reservados DOS.
+5. **Limites de Recursos:** Limite de 50MB por arquivo e 200MB por bundle.
 
 ---
 
 ## 12. Comparador com Legado Determinístico (`LegacyComparator`)
 
-### 12.1 Cláusula Pétrea de Determinismo (Sem LLM)
 > **O `LegacyComparator` não utiliza modelos de linguagem (LLM) e não interpreta livremente o texto.** Ele opera exclusivamente através de regras de comparação determinística sobre árvores sintáticas e estruturas canônicas normalizadas.
 
-### 12.2 Veredictos do Comparador:
-1. **`SEMANTIC_EQUIVALENT`:**
-   - Pode ser declarado **somente** quando a equivalência mecânica e factual puder ser comprovada deterministicamente:
-     - Mesmos identificadores canônicos (`id`);
-     - Mesmos tipos e categorias canônicas;
-     - Mesmos valores numéricos normalizados de atributos, modificadores, custos e dados vitais;
-     - Mesmas relações canônicas vinculadas;
-     - Diferenças limitadas a espaçamento em branco, quebras de linha ou ordenação de campos.
-   - *Ação:* Avança automaticamente.
-2. **`STRUCTURAL_DIFFERENCE_ONLY`:**
-   - Dados semanticamente idênticos, porém reestruturados para conformidade com novos schemas (ex.: atributos de statblock transformados de string corrida para dicionário tipado `attributes: {"FR": 15, ...}`).
-   - *Ação:* Avança com registro em log de auditoria.
-3. **`SEMANTIC_DIFFERENCE`:**
-   - Divergências mecânicas detectadas (ex.: Força 15 vs 18; PV 25 vs 19), poderes adicionados ou omitidos, discrepância em listas de perícias ou conflito de texto descritivo.
-   - *Ação:* **Bloqueio automático.** Direciona para `HUMAN_REVIEW` como ponto de deliberação no `PilotReviewRequest`.
-4. **`NO_LEGACY_REFERENCE`:**
-   - Entidade ou regra nova presente na fonte original que nunca constou nos extratos legados antigos.
-   - *Ação:* Registrado como novo conteúdo descoberto e catalogado para revisão humana.
+### Veredictos do Comparador:
+1. **`SEMANTIC_EQUIVALENT`:** Apenas diante de prova estrutural determinística (mesmos IDs, mesmos tipos, mesmos valores normalizados de regras/atributos e mesmas relações; permitidas apenas variações de whitespace/formatação).
+2. **`STRUCTURAL_DIFFERENCE_ONLY`:** Dados semanticamente equivalentes adaptados para os novos schemas canônicos.
+3. **`SEMANTIC_DIFFERENCE`:** Divergências numéricas ou de regras mecânicas detectadas. Gera **bloqueio automático** e direciona para `HUMAN_REVIEW`.
+4. **`NO_LEGACY_REFERENCE`:** Entidade nova descoberta na fonte original não presente no legado antigo.
 
 ---
 
 ## 13. Auditoria Confiável e Segregada (`PilotAuditStore`)
 
 ### 13.1 Segregação de Autoridade do `PilotAuditStore`
-Registros de governança e auditoria NÃO são dados de conteúdo derivados de livros.
 - **Autoridade:** Runtime confiável local (`PilotAuditStore`).
-- **Proibição Inviolável:** O motor de persistência de conteúdo da V2.1 (`ApplicationCoordinator`) e os ChangeSets gerados a partir de resultados do modelo **NÃO** possuem autoridade para criar, alterar ou assinar registros de auditoria.
-- **Localização:** Os registros duráveis de governança residem em armazenamento de runtime dedicado e protegido:
-  `<repository-parent>/.daemon_runtime/audit/pilot/<bookId>/`
-
-### 13.2 Conteúdo Armazenado no `PilotAuditStore`
-Para cada job e tentativa, o `PilotAuditStore` grava permanentemente:
-1. `attempt-<N>-context-manifest.json`: Inventário e hashes dos insumos exportados.
-2. `attempt-<N>-result-manifest.json`: Inventário e hashes dos artefatos recebidos.
-3. `attempt-<N>-validation-verdict.json`: Parecer detalhado do `BundleIntegrityValidator` e `ExecutionResultValidator`.
-4. `attempt-<N>-legacy-comparison.json`: Relatório estrutural emitido pelo `LegacyComparator`.
-5. `attempt-<N>-review-request.json`: Solicitação formal de revisão gerada pelo sistema.
-6. `attempt-<N>-review-decision.json`: Decisão formal assinada pelo operador humano, vinculada ao hash do manifesto.
-7. `attempt-<N>-persistence-reference.json`: Registro de vínculo contendo `transactionId` e hash do journal da V2.1.
-8. `attempt-<N>-rights-evaluation.json`: Registro formal de conformidade com a matriz de direitos.
-
-### 13.3 Relação com os Transaction Journals da V2.1
-- Os journals da V2.1 permanecem sob autoridade exclusiva da V2.1 em `audit_root` (`.daemon_audit/`).
-- O `PilotAuditStore` não duplica nem substitui os journals da V2.1; apenas armazena uma referência segura (`transactionId` e SHA-256 do journal da V2.1).
-
-### 13.4 Política de Retenção sem Perda de Governança
-- A limpeza de pacotes volumosos (`outgoing/`, `incoming/`, anexos, contextos temporários, dados de preview local) **NUNCA apaga o histórico mantido no `PilotAuditStore`**.
-- As evidências de identidade, hashes, pareceres de validação e decisões humanas permanecem preservadas permanentemente.
+- **Isolamento Absoluto:** O motor de conteúdo da V2.1, os ChangeSets do modelo e as `AutoApplyRoots` **não possuem autoridade sobre o `PilotAuditStore`**.
+- **Localização:** `<repository-parent>/.daemon_runtime/audit/pilot/<bookId>/`.
+- **Diferenciação de Registros:**
+  - `RestrictedPilotWorkspace`: Armazena **candidate content** gerado.
+  - `PilotAuditStore`: Armazena **governance evidence** imutável.
+- **Relação com Journals da V2.1:** A V2.1 mantém seus transaction journals originais em `.daemon_audit/`. O `PilotAuditStore` apenas armazena referências imutáveis (`transactionId` e hash do journal da V2.1).
+- **Proteção contra Limpeza:** Expurgo de pacotes de bundles temporários ou dados de preview local **nunca remove** os registros do `PilotAuditStore`.
 
 ---
 
 ## 14. Governança de Revisão Humana: Separação entre Request e Decision
 
 ### 14.1 Solicitação de Revisão (`PilotReviewRequest`)
-Gerada deterministicamente pelo sistema quando o `ResultBundle` é importado e validado tecnicamente. Armazenada pelo `PilotAuditStore`:
+Gerada pelo sistema com resumo de alterações e discrepâncias contra o legado, armazenada pelo `PilotAuditStore`:
 ```json
 {
   "$schema": "https://daemon.tools/schemas/pilot-review-request.schema.json",
@@ -422,7 +394,7 @@ Gerada deterministicamente pelo sistema quando o `ResultBundle` é importado e v
 ```
 
 ### 14.2 Decisão de Revisão (`PilotReviewDecision`)
-Emitida pelo operador humano e gravada exclusivamente pelo `PilotAuditStore`. Não pode ser fabricada pelo modelo ou injetada no `ResultBundle`:
+Emitida pelo operador humano e gravada exclusivamente pelo `PilotAuditStore`. Não pode ser gerada pelo modelo:
 ```json
 {
   "$schema": "https://daemon.tools/schemas/pilot-review-decision.schema.json",
@@ -434,19 +406,53 @@ Emitida pelo operador humano e gravada exclusivamente pelo `PilotAuditStore`. N�
   "reviewedResultManifestSha256": "7c9f8e4d2a...",
   "decision": "APPROVE",
   "reviewer": "operador-humano",
-  "reason": "Conferido contra a pág. 11 da fonte DOCX: Força 18 é a grafia exata original; o legado antigo continha erro de digitação.",
+  "reason": "Conferido contra a pág. 11 da fonte DOCX: Força 18 é a grafia exata original; o legado continha erro.",
   "decidedAt": "2026-09-08T18:30:00Z"
 }
 ```
 
-### 14.3 Amarração Criptográfica e Invalidação da Revisão
-- O campo `reviewedResultManifestSha256` amarra a decisão humana ao conteúdo exato do pacote revisado.
-- Se qualquer arquivo em `artifacts/` for modificado ou substituído após a decisão, o hash do manifesto será diferente.
-- O validador detectará a divergência e invalidará a decisão imediatamente (`ERR_REVIEW_HASH_MISMATCH`), impedindo a persistência.
+*Qualquer alteração em artefatos invalida a aprovação (`ERR_REVIEW_HASH_MISMATCH`).*
 
 ---
 
-## 15. Taxonomia Canônica de Falhas
+## 15. Estratégia de QA: Regressão do Repositório vs Dataset Restrito
+
+A validação de qualidade é explicitamente dividida em duas suítes independentes:
+1. **Repository Regression Gates:**
+   - Executados contra a working tree do repositório principal:
+     - `pytest tests/agents -q`
+     - `pytest -q`
+     - `python scripts/validate_data.py`
+     - `python scripts/check_book_coverage.py`
+     - `node --check docs/assets/app.js`
+   - Garante que a base canônica pública existente permaneça 100% verde e inalterada.
+2. **Restricted Pilot Dataset Gates:**
+   - Executados especificamente apontando para `RestrictedPilotWorkspace`:
+     - Validação de schemas dos dados extraídos do piloto;
+     - Verificação de cobertura de páginas da obra piloto;
+     - Verificação de proveniência (`source` e `pages`);
+     - Verificação de grafos de relações canônicas no workspace isolado.
+   - Garante que o dataset de `animalidade` não contamine as contagens do repositório principal.
+
+---
+
+## 16. Critérios de Conclusão da V2.2 para `animalidade` (`V2.2 VERIFIED`)
+
+Para o livro piloto `animalidade`, o estado `V2.2 VERIFIED` é atingido quando:
+1. Fonte original em `Livros/word/animalidade.docx` processada através de todos os estágios do pipeline.
+2. Bundles manuais de transporte exportados, operados e importados com integridade comprovada.
+3. Divergências contra o legado auditadas pelo `LegacyComparator` sem uso de IA.
+4. Solicitações e decisões de revisão humana persistidas no `PilotAuditStore`.
+5. Dados candidatos persistidos exclusivamente através da V2.1 no `RestrictedPilotWorkspace`.
+6. A working tree principal e a árvore `docs/` mantidas 100% livres de payload derivado de `animalidade`.
+7. Repository Regression Gates e Dataset Gates aprovados com sucesso.
+8. Preview local via runtime overlay funcionando plenamente (navegação, busca, relações ativas em `localhost`).
+9. Deploy público no GitHub Pages mantido estritamente bloqueado (`BLOCKED`).
+10. **Promoção para o repositório principal:** Classificada como fora de escopo / `DEFERRED`. Não será realizada na V2.2.
+
+---
+
+## 17. Taxonomia Canônica de Falhas
 
 | Código Canônico | Categoria | Descrição | Ação |
 |:---|:---|:---|:---|
@@ -467,40 +473,21 @@ Emitida pelo operador humano e gravada exclusivamente pelo `PilotAuditStore`. N�
 | `ERR_REVIEW_HASH_MISMATCH` | Review | Artefatos adulterados após decisão humana | Invalida decisão |
 | `ERR_AUDIT_STORE_VIOLATION` | Audit | Violação de integridade ou autoridade no PilotAuditStore | `VALIDATION_FAILED` |
 | `ERR_PERSISTENCE_FAILED` | Persistence| Rejeição ou falha de rollback na V2.1 | `VALIDATION_FAILED` |
-| `ERR_QA_FAILED` | QA | Falha em testes, schemas ou cobertura | `QA_FAILED` |
+| `ERR_QA_FAILED` | QA | Falha em testes de regressão ou dataset gates | `QA_FAILED` |
 | `ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED`| Rights | Tentativa de projetar dados restritos para docs/ | Bloqueia projeção |
-| `ERR_PREVIEW_PROJECTION_FAILED` | Preview | Falha ao projetar dados locais no runtime de preview | Bloqueia visualização |
+| `ERR_PREVIEW_PROJECTION_FAILED` | Preview | Falha ao projetar dados no runtime de preview | Bloqueia visualização |
 
 ---
 
-## 16. Estratégia de Testes e CI
+## 18. Componentes e Sequência de Implementação (Tasks 35–44)
 
-### 16.1 Testes Unitários e Herméticos
-- `test_canonical_json.py`: Hashing determinístico, ordenação de chaves e separadores compactos.
-- `test_bundle_exporter.py`: Criação de pacotes isolados, cálculo de hashes e immutability flags.
-- `test_bundle_importer.py`: Leitura segura de pacotes e rejeição de adulterações.
-- `test_bundle_integrity_validator.py`: Detecção de hashes divergentes, path traversal e resource bounds.
-- `test_legacy_comparator.py`: Validação dos 4 veredictos sem rede e sem LLM.
-- `test_pilot_audit_store.py`: Persistência segregada de governança no runtime, preservação após cleanup e proteção contra escritas via ChangeSet.
-- `test_pilot_review.py`: Contratos separados de request e decision, invalidação criptográfica por hash.
-- `test_preview_projector.py`: Isolamento rigoroso: dados NOT_PUBLIC projetados somente em `<runtime>/preview/`, bloqueio absoluto de escrita em `docs/`.
-- `test_pilot_coordinator.py`: Máquina de estados completa, controle de tentativas (`attempt 1 -> rework -> attempt 2`) e integração V2.1.
-- `test_pilot_pipeline_e2e.py`: Teste ponta a ponta hermético simulando o ciclo completo com fixtures.
+### 18.1 Schemas JSON (`schemas/`)
+- `schemas/execution-bundle.schema.json`
+- `schemas/result-bundle.schema.json`
+- `schemas/pilot-review-request.schema.json`
+- `schemas/pilot-review-decision.schema.json`
 
-### 16.2 Estratégia de CI
-O GitHub Actions rodará exclusivamente os testes determinísticos e offline. Nenhum teste exigirá tokens externos, browsers reais ou credenciais de IA.
-
----
-
-## 17. Componentes e Fronteiras de Arquivos Propostos
-
-### 17.1 Schemas JSON (`schemas/`)
-- `schemas/execution-bundle.schema.json`: Contrato de pacotes exportados.
-- `schemas/result-bundle.schema.json`: Contrato de pacotes importados.
-- `schemas/pilot-review-request.schema.json`: Contrato de solicitação formal de revisão humana.
-- `schemas/pilot-review-decision.schema.json`: Contrato de decisão humana hash-bound.
-
-### 17.2 Módulos Python (`scripts/agents/`)
+### 18.2 Módulos Python (`scripts/agents/`)
 - `scripts/agents/canonical_json.py`: Serialização canônica e cálculo imutável de hashes.
 - `scripts/agents/bundle_exporter.py`: Exportador de Execution Bundles e manifestos de contexto.
 - `scripts/agents/bundle_importer.py`: Ingestor de Result Bundles.
@@ -508,47 +495,32 @@ O GitHub Actions rodará exclusivamente os testes determinísticos e offline. Ne
 - `scripts/agents/legacy_comparator.py`: Comparador estrutural determinístico sem LLM.
 - `scripts/agents/pilot_audit_store.py`: Armazenamento de auditoria e governança durável no runtime.
 - `scripts/agents/pilot_review.py`: Gerenciador de solicitações e decisões de revisão humana.
-- `scripts/agents/preview_projector.py`: Projetor isolado de preview (`LocalPreviewProjector` runtime-only).
+- `scripts/agents/preview_projector.py`: Projetor de preview runtime (`LocalPreviewProjector`).
 - `scripts/agents/pilot_coordinator.py`: Orquestrador central da máquina de estados do piloto.
 
-### 17.3 Arquivos de Teste (`tests/agents/`)
-- `tests/agents/test_canonical_json.py`
-- `tests/agents/test_bundle_exporter.py`
-- `tests/agents/test_bundle_importer.py`
-- `tests/agents/test_bundle_integrity_validator.py`
-- `tests/agents/test_legacy_comparator.py`
-- `tests/agents/test_pilot_audit_store.py`
-- `tests/agents/test_pilot_review.py`
-- `tests/agents/test_preview_projector.py`
-- `tests/agents/test_pilot_coordinator.py`
-- `tests/agents/test_pilot_pipeline_e2e.py`
-
----
-
-## 18. Sequência de Implementação Proposta (Tasks 35–44)
-
-- **Task 35:** Canonical JSON serializer e schemas canônicos (`execution-bundle`, `result-bundle`, `pilot-review-request`, `pilot-review-decision`).
+### 18.3 Sequência de Implementação Proposta
+- **Task 35:** Canonical JSON serializer e schemas canônicos.
 - **Task 36:** `ExecutionBundleExporter` com amarrações de contexto e hashing canônico.
 - **Task 37:** `ResultBundleImporter` e leitura segura de pacotes.
 - **Task 38:** `BundleIntegrityValidator` e verificador de amarração criptográfica.
 - **Task 39:** `LegacyComparator` determinístico sem LLM.
 - **Task 40:** `PilotAuditStore` e `PilotReviewEngine` (segregação de auditoria durável e decisão hash-bound).
 - **Task 41:** `LocalPreviewProjector` e governança de direitos para preview local runtime-only.
-- **Task 42:** `PilotCoordinator` e orquestração de tentativas de retrabalho com V2.1.
+- **Task 42:** `PilotCoordinator` com suporte a `RestrictedPilotWorkspace` via V2.1.
 - **Task 43:** Adaptações pontuais manuais de desenvolvimento no frontend (`docs/index.html`, `docs/assets/app.js`).
 - **Task 44:** Teste integrado hermético E2E e execução assistida do livro piloto real (`animalidade`).
 
 ---
 
-## 19. Self-Review de Conformidade com a Revisão 002
+## 19. Self-Review de Conformidade com a Revisão 003
 
-- [x] **Zero dados restritos em `docs/`:** Conteúdo de `animalidade` (`NOT_PUBLIC` / `UNKNOWN`) jamais é projetado para `docs/assets/data/` ou rastreado pelo Git.
-- [x] **Preview local estritamente runtime-only:** O `LocalPreviewProjector` grava em `<runtime>/preview/animalidade/`, consumido via servidor HTTP local com overlay.
-- [x] **Separação rigorosa entre `LocalPreviewProjector` e `PublishProjector`:** `PublishProjector` está bloqueado/desativado para fontes não autorizadas.
-- [x] **Critérios de sucesso sem deploy público:** Comprovação de busca, navegação e links cruzados é realizada exclusivamente no preview local. Publicação pública permanece bloqueada.
-- [x] **Auditoria de governança fora de `AutoApplyRoots`:** O `PilotAuditStore` reside em `<runtime>/audit/`, sob autoridade do runtime confiável, imune a mutações via ChangeSet de conteúdo.
-- [x] **Transaction journals mantidos sob V2.1:** Não são duplicados; o `PilotAuditStore` apenas referencia seus identificadores e hashes.
-- [x] **Decisão humana nasce fora do modelo:** A aprovação humana é gravada pelo `PilotAuditStore`, impossível de ser fabricada pelo executor.
-- [x] **Limpeza de runtime preserva evidências:** Expurgo de pacotes brutos mantém intactos os registros duráveis no `PilotAuditStore`.
-- [x] **Matriz de direitos implementada:** Mapeamento explícito de `rightsStatus` e `publicationMode` para permissões de preview e publicação.
-- [x] **Status do piloto explícito:** `PILOT MODE = LOCAL_RESTRICTED`, `PUBLICATION = BLOCKED`.
+- [x] **Zero dados de `animalidade` em `data/pilot/` principal:** Persistência configurada estritamente no `RestrictedPilotWorkspace`.
+- [x] **Working tree principal preservada limpa:** Arquivos não entram em `data/` nem em `docs/` do repositório Git.
+- [x] **V2.1 mantida como único motor de persistência:** O `ApplicationCoordinator` opera sobre o workspace isolado sem duplicação de primitivas.
+- [x] **`repository_root` isolado configurado pelo runtime:** O modelo e os bundles são incapazes de selecionar a raiz.
+- [x] **Terminologia exata adotada:** `Restricted Pilot Candidate Data` utilizado em vez de dados canônicos públicos.
+- [x] **`LocalPreviewProjector` lê da fonte correta:** Consome dados de `RestrictedPilotWorkspace/data/pilot/` e grava em `<runtime>/preview/`.
+- [x] **QA segregado em dois gates:** Regression gates do repositório vs Dataset gates do workspace.
+- [x] **`PilotAuditStore` segregado do workspace:** Evidências de governança mantidas em `<runtime>/audit/`, separadas do conteúdo candidato.
+- [x] **Critérios de `V2.2 VERIFIED` respeitam `NOT_PUBLIC`:** Deploy público bloqueado, validação restrita ao preview local.
+- [x] **Invariante `RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE` formalizada.**
