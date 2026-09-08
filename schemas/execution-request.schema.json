@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/execution-request.schema.json",
+  "title": "Execution Request",
+  "description": "Solicitação de execução provider-neutral gerada a partir da decisão de orquestração.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "jobId",
+    "bookId",
+    "targetStage",
+    "assignedAgent",
+    "allowedWriteScope",
+    "executionProfile",
+    "contextPack",
+    "taskInstruction",
+    "outputSchemaName"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Versão do schema da requisição de execução (ex: '2.0')."
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único da requisição de execução (ex: 'REQ-TREVAS-001-EXTRACTION-01')."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do Job pai."
+    },
+    "bookId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador da obra alvo."
+    },
+    "targetStage": {
+      "type": "string",
+      "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release"
+      ],
+      "description": "Estágio do pipeline a ser executado."
+    },
+    "assignedAgent": {
+      "type": "string",
+      "enum": [
+        "source-agent",
+        "extraction-agent",
+        "editorial-agent",
+        "entity-agent",
+        "relations-agent",
+        "frontend-agent",
+        "qa-release-agent",
+        "orchestrator"
+      ],
+      "description": "Papel lógico do agente especialista atribuído."
+    },
+    "allowedWriteScope": {
+      "type": "array",
+      "description": "Lista explícita de caminhos ou padrões de escrita permitidos.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "executionProfile": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Perfil abstrato de execução (ex: 'default-high', 'default-fast', 'offline-test')."
+    },
+    "contextPack": {
+      "type": "object",
+      "description": "Pacote de contexto pré-construído e validado entregue ao agente.",
+      "required": [
+        "schemaVersion",
+        "contextPackId",
+        "jobId",
+        "agent",
+        "stage",
+        "mandatory",
+        "domain",
+        "bookContext",
+        "jobContext",
+        "handoffContext",
+        "task",
+        "outputContract"
+      ]
+    },
+    "taskInstruction": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Instrução técnica explícita a ser executada."
+    },
+    "outputSchemaName": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Nome ou caminho do schema JSON esperado para o resultado."
+    },
+    "timeoutSeconds": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 300,
+      "description": "Limite máximo de tempo de execução em segundos."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadados adicionais da requisição."
+    }
+  }
+}

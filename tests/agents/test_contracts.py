@@ -19,6 +19,8 @@ SCHEMAS = [
     "review-request.schema.json",
     "source-manifest.schema.json",
     "relation.schema.json",
+    "execution-request.schema.json",
+    "execution-result.schema.json",
 ]
 
 

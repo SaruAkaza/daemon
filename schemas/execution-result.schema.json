@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/execution-result.schema.json",
+  "title": "Execution Result",
+  "description": "Resultado padronizado e provider-neutral emitido após a execução do agente especialista.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "executionId",
+    "requestId",
+    "agent",
+    "stage",
+    "status",
+    "proposedArtifacts",
+    "evidence",
+    "uncertainties"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Versão do schema do resultado de execução (ex: '2.0')."
+    },
+    "executionId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único da execução (ex: 'EXEC-REQ-TREVAS-001-EXTRACTION-01-01')."
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador da requisição de execução correspondente."
+    },
+    "agent": {
+      "type": "string",
+      "enum": [
+        "source-agent",
+        "extraction-agent",
+        "editorial-agent",
+        "entity-agent",
+        "relations-agent",
+        "frontend-agent",
+        "qa-release-agent",
+        "orchestrator"
+      ],
+      "description": "Papel lógico do agente especialista executor."
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release"
+      ],
+      "description": "Estágio executado."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "SUCCESS",
+        "VALIDATION_FAILED",
+        "REPAIR_FAILED",
+        "TIMEOUT",
+        "ERROR"
+      ],
+      "description": "Status final da execução do adapter."
+    },
+    "proposedArtifacts": {
+      "type": "object",
+      "description": "Mapa de caminho relativo para conteúdo proposto em memória.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Lista de registros de proveniência (livro, página, seção, trecho original).",
+      "items": {
+        "type": "object",
+        "required": [
+          "book",
+          "page"
+        ],
+        "properties": {
+          "book": {
+            "type": "string",
+            "minLength": 1
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "section": {
+            "type": "string"
+          },
+          "snippet": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "description": "Lista de dúvidas, ambiguidades ou dados ausentes no material de origem.",
+      "items": {
+        "type": "object",
+        "required": [
+          "description"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceRef": {
+            "type": "string"
+          },
+          "suggestedResolution": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "rawResponse": {
+      "description": "Resposta bruta do provedor de inferência para auditoria e depuração.",
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadados operacionais da execução (duração, perfil utilizado, etc.)."
+    }
+  }
+}
