@@ -1119,11 +1119,26 @@ async function load(options = {}) {
   const wasCategoryDefault = !selectedFilterCount(state.filters, filterGroupsData());
   const previousSelectedItemId = state.selectedItemId;
   try {
-    const index = options.index || await fetchJson(DATA_INDEX_PATH);
-    state.indexSignature = indexSignature(index);
-    state.books = await Promise.all(
-      index.sources.map((source) => fetchJson(`assets/data/pilot/${source.file}`)),
+    const isLocalPreview = typeof window !== "undefined" && (
+      window.__DAEMON_LOCAL_PREVIEW__ === true ||
+      window.location.hostname === "127.0.0.1" ||
+      window.location.hostname === "localhost"
     );
+    const previewBookId = options.previewBookId || (
+      isLocalPreview ? new URLSearchParams(window.location.search).get("preview") : null
+    );
+
+    if (previewBookId && isLocalPreview) {
+      const previewData = await fetchJson(`/api/preview/${encodeURIComponent(previewBookId)}/index.json`);
+      state.indexSignature = indexSignature(previewData);
+      state.books = [previewData];
+    } else {
+      const index = options.index || await fetchJson(DATA_INDEX_PATH);
+      state.indexSignature = indexSignature(index);
+      state.books = await Promise.all(
+        index.sources.map((source) => fetchJson(`assets/data/pilot/${source.file}`)),
+      );
+    }
     state.items = state.books.flatMap(buildItems).map(prepareItem);
     refreshAreaCounts();
     invalidateFilterGroups();
