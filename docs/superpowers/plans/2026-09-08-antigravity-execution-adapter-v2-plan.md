@@ -4,7 +4,7 @@
 
 **Goal:** Construir a camada provider-neutral de execução controlada da V2 sem conceder autoridade direta de escrita ao LLM.
 
-**Architecture:** A decisão permanece no OrchestratorStateSelector. A execução é separada em contratos, materialização de contexto, renderização de prompt, adapter de execução e validação determinística do resultado antes de qualquer persistência.
+**Architecture:** A decisão permanece no OrchestratorStateSelector. A execução é separada em contratos, construção de request, materialização de contexto, renderização de prompt, adapter de execução, reparo determinístico e validação do resultado antes de qualquer persistência.
 
 **Tech Stack:** Python 3.12, JSON Schema Draft 2020-12, jsonschema, pytest, Git/GitHub Actions.
 
@@ -16,14 +16,17 @@
 
 1. **Compatibilidade com a V1**: Todos os componentes da V1 (`JobStore`, `HandoffStore`, `ContextLoader`, `ContextPackBuilder`, `GateEngine`, `OrchestratorStateSelector` e suite completa de testes) permanecem 100% funcionais e inalterados em suas garantias essenciais.
 2. **LLM Output is Untrusted Input**: Nenhuma resposta de modelo de linguagem tem autoridade direta de escrita sobre o repositório (`LLM output MUST NOT directly mutate the repository`).
-3. **Sem Autoridade de Persistência no Adapter**: `ExecutionAdapter`, `PromptRenderer` e o modelo de IA retornam apenas propostas estruturadas de alteração (`proposedArtifacts`) dentro do `Execution Result`.
-4. **Persistência Exclusivamente Pós-Validação**: Alterações só podem ser aplicadas em disco por uma camada autorizada após aprovação determinística pelo `ExecutionResultValidator`.
-5. **Neutralidade de Provedor e Modelos**: `ExecutionRequest` e `ExecutionResult` são totalmente provider-neutral. A resolução de provedores e modelos (ex: Gemini 3.7 High, Gemini 2.5 Flash, Mock) é tratada externamente via `executionProfile`.
-6. **Política Estrita de Reparo Estrutural**: É permitida exatamente 1 (uma) tentativa de reparo estrutural/sintático. O reparo **nunca** pode inventar conteúdo semântico, regras, fatos ou atributos.
-7. **Write-Scope Fail-Closed**: Violações de escopo de escrita (`allowedWriteScope`) rejeitam toda a proposta atômica em memória. Nenhuma escrita parcial é permitida.
-8. **Testes 100% Offline e Determinísticos**: A suíte de testes padrão e o CI do GitHub Actions utilizam exclusivamente o `FakeExecutionAdapter`, sem necessidade de tokens, chaves de API ou chamadas de rede.
-9. **Nenhuma Dependência Runtime Obrigatória de Gemini**: A arquitetura da V2 não acopla identidades lógicas de agentes a nenhum provedor proprietário.
-10. **Upstream Intocado**: Todas as alterações são confinadas ao fork de desenvolvimento (`SaruAkaza/daemon`); `guraassessoria/daemon` permanece intacto.
+3. **Sem Autoridade de Persistência no Adapter e Pipeline**: `ExecutionAdapter`, `PromptRenderer`, `ExecutionCoordinator` e o modelo de IA retornam apenas propostas estruturadas de alteração (`proposedArtifacts`) dentro do `Execution Result`.
+4. **Persistência Exclusivamente Pós-Validação**: Alterações só podem ser aplicadas em disco por uma camada de aplicação autorizada após aprovação determinística pelo `ExecutionResultValidator`.
+5. **Decisão Exclusiva no OrchestratorStateSelector**: O `OrchestratorStateSelector` continua sendo a única camada que decide o próximo passo seguro (`RUN_STAGE`, `WAIT`, `BLOCKED`, `HUMAN_REVIEW`, `READY_FOR_DONE`). Nenhum componente da V2 assume autoridade de orquestração ou transição.
+6. **Construção de Request Desacoplada**: A criação da `ExecutionRequest` é responsabilidade de um construtor determinístico (`ExecutionRequestBuilder`), que recebe a seleção já aprovada e os parâmetros de escopo.
+7. **Neutralidade de Provedor e Modelos**: `ExecutionRequest` e `ExecutionResult` são totalmente provider-neutral. A resolução de provedores e modelos (ex: Gemini 3.7 High, Gemini 2.5 Flash, Mock) é tratada externamente via `executionProfile`.
+8. **Reparo Estrutural Estritamente Determinístico (Sem Provedor / Sem Semântica)**: A única tentativa de reparo permitida é **mecanicamente determinística** (ex: limpeza de blocos markdown ```json, normalização de casca sintática). O reparo **NUNCA chama LLM/provedor** e **NUNCA inventa regras, atributos, entidades, evidências ou conclusões**.
+9. **Write-Scope Fail-Closed**: Violações de escopo de escrita (`allowedWriteScope`) rejeitam toda a proposta atômica em memória. Nenhuma escrita parcial é permitida.
+10. **Testes 100% Offline e Determinísticos**: A suíte de testes padrão e o CI do GitHub Actions utilizam exclusivamente o `FakeExecutionAdapter`, sem necessidade de tokens, chaves de API ou chamadas de rede.
+11. **Nenhuma Dependência Runtime Obrigatória de Gemini**: A arquitetura da V2 não acopla identidades lógicas de agentes a nenhum provedor proprietário.
+12. **Condicionalidade Estrita da Task 24**: A integração Antigravity é auditada primeiro; se não houver API programática oficialmente suportada, o resultado é `DEFERRED_PENDING_RUNTIME_API`, sem placeholders, sem automação de browser (Selenium/Puppeteer) e sem automação de GUI.
+13. **Upstream Intocado**: Todas as alterações são confinadas ao fork de desenvolvimento (`SaruAkaza/daemon`); `guraassessoria/daemon` permanece intacto.
 
 ---
 
@@ -33,25 +36,26 @@
 | :--- | :--- | :--- |
 | `schemas/execution-request.schema.json` | Criar | Schema Draft 2020-12 para ordens de trabalho de execução |
 | `schemas/execution-result.schema.json` | Criar | Schema Draft 2020-12 para respostas de execução com propostas |
+| `scripts/agents/execution_request_builder.py` | Criar | Construtor determinístico de `ExecutionRequest` a partir de Job e Selection |
 | `scripts/agents/context_materializer.py` | Criar | Materialização em memória de `ContextPack` validado via `ContextLoader` |
 | `scripts/agents/prompt_renderer.py` | Criar | Montagem determinística de prompts por camadas a partir do contexto materializado |
 | `scripts/agents/execution_profile.py` | Criar | Resolução e registro de perfis de execução provider-neutral (`executionProfile`) |
 | `scripts/agents/execution_adapter.py` | Criar | Protocolo `ExecutionAdapter` e implementação `FakeExecutionAdapter` |
-| `scripts/agents/repair_engine.py` | Criar | Parser de resposta bruta e motor de reparo sintático (max 1 tentativa) |
+| `scripts/agents/repair_engine.py` | Criar | Parser e motor determinístico de reparo sintático (sem provider, max 1) |
 | `scripts/agents/write_scope.py` | Criar | Validador fail-closed de caminhos de escrita autorizados (`allowedWriteScope`) |
 | `scripts/agents/execution_validator.py` | Criar | Validador agregado de resultados (Schema, Escopo, Evidências, Políticas) |
-| `scripts/agents/orchestration_runner_v2.py` | Criar | Executor integrado da V2 conectando Orchestrator, Adapter, Validador e Stores |
-| `scripts/agents/antigravity_adapter.py` | Criar | Fronteira de integração programática com o runtime Antigravity |
-| `tests/agents/test_execution_contracts.py` | Criar | Testes dos schemas `execution-request` e `execution-result` |
+| `scripts/agents/execution_coordinator.py` | Criar | Coordenador em memória da cadeia de execução da V2 (sem mutação no repo) |
+| `scripts/agents/antigravity_adapter.py` | **Condicional** | Adapter Antigravity (apenas se houver API programática real; caso contrário DEFERRED) |
+| `tests/agents/test_execution_contracts.py` | Criar | Testes dos schemas e do `ExecutionRequestBuilder` |
 | `tests/agents/test_context_materializer.py` | Criar | Testes unitários do `ContextMaterializer` |
 | `tests/agents/test_prompt_renderer.py` | Criar | Testes unitários do `PromptRenderer` |
 | `tests/agents/test_execution_profile.py` | Criar | Testes de resolução de perfis de execução |
 | `tests/agents/test_execution_adapter.py` | Criar | Testes do protocolo adapter e `FakeExecutionAdapter` |
-| `tests/agents/test_repair_engine.py` | Criar | Testes de parsing e política de reparo estrutural único |
+| `tests/agents/test_repair_engine.py` | Criar | Testes de parsing e reparo puramente sintático sem chamadas de rede |
 | `tests/agents/test_write_scope.py` | Criar | Testes de validação de escopo de escrita (traversal, absolute, glob) |
 | `tests/agents/test_execution_validator.py` | Criar | Testes agregados de validação e códigos de erro da taxonomia |
-| `tests/agents/test_orchestration_v2_e2e.py` | Criar | Teste de integração end-to-end do pipeline V2 |
-| `tests/agents/test_antigravity_adapter.py` | Criar | Testes da fronteira de integração com Antigravity |
+| `tests/agents/test_execution_coordinator_e2e.py` | Criar | Teste E2E do coordenador de execução em memória |
+| `tests/agents/test_antigravity_adapter.py` | **Condicional** | Testes de integração Antigravity (apenas se API programática existir) |
 
 ---
 
@@ -59,67 +63,75 @@
 
 ---
 
-### Task 15 — Execution Contracts (Schemas & Fixtures)
+### Task 15 — Execution Contracts & Request Builder
 
-**Goal:** Definir os contratos formais JSON Schema Draft 2020-12 para `ExecutionRequest` e `ExecutionResult`, garantindo validação tipada através de `scripts/agents/contracts.py`.
+**Goal:** Definir os contratos formais JSON Schema Draft 2020-12 para `ExecutionRequest` e `ExecutionResult`, e implementar o `ExecutionRequestBuilder` determinístico responsável por instanciar requisições de execução válidas a partir de um Job e da seleção aprovada do Orchestrator.
 
 **Files:**
 - Create: `schemas/execution-request.schema.json`
 - Create: `schemas/execution-result.schema.json`
+- Create: `scripts/agents/execution_request_builder.py`
 - Create: `tests/agents/test_execution_contracts.py`
 
-**Interfaces / Schemas:**
+**Interfaces / Schemas / Assinaturas:**
 - `schemas/execution-request.schema.json`:
   - `required`: `["schemaVersion", "requestId", "jobId", "bookId", "targetStage", "assignedAgent", "allowedWriteScope", "executionProfile", "contextPack", "taskInstruction", "outputSchemaName"]`
-  - `properties`:
-    - `schemaVersion`: string (`"1.0"`)
-    - `requestId`: string (`^REQ-[A-Z0-9_-]+$`)
-    - `jobId`: string (`minLength: 1`)
-    - `bookId`: string (`minLength: 1`)
-    - `targetStage`: enum (`["source", "extraction", "editorial", "entities", "relations", "frontend", "qa", "release"]`)
-    - `assignedAgent`: enum (`["source-agent", "extraction-agent", "editorial-agent", "entity-agent", "relations-agent", "frontend-agent", "qa-release-agent"]`)
-    - `allowedWriteScope`: array de strings relativas
-    - `executionProfile`: string (`minLength: 1`)
-    - `contextPack`: object validado contra `context-pack.schema.json`
-    - `taskInstruction`: string (`minLength: 1`)
-    - `outputSchemaName`: string (`minLength: 1`)
-    - `timeoutSeconds`: integer (`minimum: 1`, default: 300)
-    - `metadata`: object (`additionalProperties: true`)
 - `schemas/execution-result.schema.json`:
   - `required`: `["schemaVersion", "executionId", "requestId", "agent", "stage", "status", "proposedArtifacts", "evidence", "uncertainties"]`
-  - `properties`:
-    - `schemaVersion`: string (`"1.0"`)
-    - `executionId`: string (`^EXEC-[A-Z0-9_-]+$`)
-    - `requestId`: string (`minLength: 1`)
-    - `agent`: string (`minLength: 1`)
-    - `stage`: enum (`["source", "extraction", "editorial", "entities", "relations", "frontend", "qa", "release"]`)
-    - `status`: enum (`["SUCCESS", "VALIDATION_FAILED", "REPAIR_FAILED", "TIMEOUT", "ERROR"]`)
-    - `proposedArtifacts`: object de chave=caminho_relativo, valor=conteudo_string
-    - `evidence`: array de objetos `{"bookId": string, "page": integer, "section": string, "quote": string}`
-    - `uncertainties`: array de strings
-    - `rawResponse`: string opcional
-    - `metadata`: object opcional
+- `scripts/agents/execution_request_builder.py`:
+```python
+class ExecutionRequestBuilderError(RuntimeError):
+    pass
 
-**Dependencies:** `scripts/agents/contracts.py` (V1).
+class ExecutionRequestBuilder:
+    @staticmethod
+    def build_request(
+        job: dict[str, Any],
+        selection: OrchestratorSelection,
+        context_pack: dict[str, Any],
+        *,
+        execution_profile: str,
+        allowed_write_scope: list[str],
+        task_instruction: str,
+        output_schema_name: str,
+        request_id: str | None = None,
+        timeout_seconds: int = 300,
+        metadata: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        """Constructs and validates a schema-compliant ExecutionRequest from an approved Orchestrator selection."""
+        ...
+```
 
-**Non-goals:** Não criar classes Python de parsing nem invocar adapters nesta task.
+**Dependencies:** `scripts/agents/contracts.py` (V1), `scripts/agents/orchestrator_state.py` (V1).
+
+**Non-goals:**
+- NÃO escolhe o próximo estágio (responsabilidade exclusiva do `OrchestratorStateSelector`);
+- NÃO altera o Job;
+- NÃO consulta provedores de IA;
+- NÃO persiste dados em disco;
+- NÃO cria Handoffs.
 
 **TDD Steps:**
-- [ ] **Step 1: Escrever testes unitários com fixtures positivas e negativas**
-  Criar `tests/agents/test_execution_contracts.py` testando `validate_payload("execution-request", payload)` e `validate_payload("execution-result", payload)`.
+- [ ] **Step 1: Escrever testes unitários em `tests/agents/test_execution_contracts.py`**
+  Testar:
+  - Validação positiva e negativa contra `schemas/execution-request.schema.json`;
+  - Validação positiva e negativa contra `schemas/execution-result.schema.json`;
+  - Construção de requisição via `ExecutionRequestBuilder.build_request()` com dados de Job e Selection;
+  - Rejeição caso `selection.action != "RUN_STAGE"`;
+  - Rejeição caso `context_pack` não seja conforme ao schema.
 - [ ] **Step 2: Executar testes para confirmar RED**
   Executar: `python -m pytest tests/agents/test_execution_contracts.py -q`  
   *Expected RED:* `ContractValidationError: Schema file not found: execution-request`.
-- [ ] **Step 3: Implementar os esquemas JSON**
-  Criar `schemas/execution-request.schema.json` e `schemas/execution-result.schema.json`.
+- [ ] **Step 3: Implementar schemas e `ExecutionRequestBuilder`**
+  Criar `schemas/execution-request.schema.json`, `schemas/execution-result.schema.json` e `scripts/agents/execution_request_builder.py`.
 - [ ] **Step 4: Executar testes para confirmar GREEN**
   Executar: `python -m pytest tests/agents/test_execution_contracts.py -q`  
   *Expected GREEN:* todos os testes passam.
 - [ ] **Step 5: Rodar gates de regressão completos**
   Executar suíte completa de agentes e scripts de validação.
 
-**Commit Message:** `feat: define v2 execution request and result schemas`  
-**Stop Condition:** Schemas criados, testes de contrato passando, zero regressões.
+**Commit Message:** `feat: define v2 execution contracts and request builder`  
+**Stop Condition:** Schemas e construtor de request implementados, testados, zero regressões.
 
 ---
 
@@ -377,9 +389,9 @@ class FakeExecutionAdapter(ExecutionAdapter):
 
 ---
 
-### Task 20 — Structural Result Parsing & Repair Engine
+### Task 20 — Deterministic Non-Semantic Structural Repair Engine
 
-**Goal:** Implementar o parser de respostas brutas em `ExecutionResult` com suporte a exatamente 1 tentativa de reparo estrutural em caso de JSON inválido ou malformado.
+**Goal:** Implementar o parser determinístico de respostas brutas em `ExecutionResult` com suporte a exatamente 1 tentativa de reparo mecânico/estrutural em caso de JSON malformatado, **sem jamais chamar provedores/LLMs e sem inventar conteúdo semântico**.
 
 **Files:**
 - Create: `scripts/agents/repair_engine.py`
@@ -391,34 +403,40 @@ class RepairExhaustedError(RuntimeError):
     pass
 
 class StructuralRepairEngine:
-    def __init__(self, adapter: ExecutionAdapter | None = None) -> None:
-        self.adapter = adapter
+    def __init__(self) -> None:
+        pass
 
     def parse_and_repair(
         self,
         raw_response: RawExecutionResponse,
         request: dict[str, Any],
-        prompt: RenderedPrompt,
-        profile: ExecutionProfile,
     ) -> dict[str, Any]:
-        """Parses raw text to ExecutionResult dict, attempting exactly 1 structural repair if malformed."""
+        """Deterministically parses raw text to ExecutionResult, applying at most 1 mechanical structural repair (no LLM, no semantic creation)."""
         ...
 ```
 
-**Dependencies:** Task 15, Task 17, Task 18, Task 19.
+**Mecanismos Permitidos de Reparo Estrutural Determinístico:**
+1. Remoção de cercas markdown (` ```json ... ``` ` ou ` ``` ... ``` `) preservando o payload interno íntegro;
+2. Remoção de texto conversacional antes/depois do bloco JSON identificável;
+3. Normalização determinística de quebras de linha e escape de caracteres sintáticos em strings JSON;
+4. Preenchimento mecânico de metadados (`schemaVersion="1.0"`, `requestId=request["requestId"]`) caso estejam ausentes na casca externa da resposta.
 
-**Non-goals:**
-- O reparo **NUNCA** inventa regras, atributos, entidades ou fatos semânticos;
-- **NUNCA** permite mais de uma tentativa de reparo (se falhar, emite `status="REPAIR_FAILED"` ou levanta `RepairExhaustedError`).
+**Proibições Absolutas de Reparo:**
+- **NÃO chama LLM/provedor** durante o processo de reparo;
+- **NUNCA inventa regras, descrições, fatos, evidências, entidades, valores ou conclusões**;
+- Se a resposta não for estruturalmente recuperável, retorna status `REPAIR_FAILED` ou levanta `RepairExhaustedError`.
+
+**Dependencies:** Task 15, Task 19.
 
 **TDD Steps:**
 - [ ] **Step 1: Escrever testes unitários em `tests/agents/test_repair_engine.py`**
   Testar:
-  - Resposta com JSON válido: parse imediato sem chamada de reparo;
-  - Resposta com markdown/JSON malformado (ex: aspas não fechadas): aciona 1ª tentativa de reparo com sucesso -> resultado parseado;
-  - Resposta com JSON malformado onde o reparo também falha: falha registrada e garantia de que uma 2ª tentativa NÃO ocorre;
-  - Extração limpa de blocos ```json ... ```;
-  - Validação estrita de que o resultado gerado valida contra `execution-result.schema.json`.
+  - Resposta com JSON puro: parse direto sem alteração;
+  - Resposta envolta em cercas markdown: strip mecânico limpo e parse bem-sucedido;
+  - Resposta com texto preliminar conversacional: isolamento determinístico do JSON;
+  - Resposta com JSON semanticamente vazio ou corrompido: falha registrada e garantia de que nenhum dado semântico foi inventado;
+  - Garantia de que zero chamadas a adapters/provedores são feitas;
+  - Garantia de no máximo 1 tentativa mecânica.
 - [ ] **Step 2: Executar testes para confirmar RED**
   Executar: `python -m pytest tests/agents/test_repair_engine.py -q`  
   *Expected RED:* `ModuleNotFoundError: No module named 'scripts.agents.repair_engine'`.
@@ -429,8 +447,8 @@ class StructuralRepairEngine:
   *Expected GREEN:* todos os testes passam.
 - [ ] **Step 5: Rodar gates de regressão completos**
 
-**Commit Message:** `feat: implement structural result parsing and single-attempt repair engine`  
-**Stop Condition:** Motor de parsing e reparo estrutural único implementado com garantias anti-invenção.
+**Commit Message:** `feat: implement deterministic structural repair engine`  
+**Stop Condition:** Motor de parsing e reparo mecânico implementado sem dependência de LLMs e com proibição de invenção.
 
 ---
 
@@ -559,128 +577,106 @@ class ExecutionResultValidator:
 
 ---
 
-### Task 23 — Handoff Preparation & V2 End-to-End Orchestration Runner
+### Task 23 — In-Memory Execution Coordinator & V2 End-to-End Fixture
 
-**Goal:** Integrar todos os componentes da V2 em um executor de passos determinístico e criar a suite de testes ponta a ponta (E2E) simulando ciclos completos de execução com `FakeExecutionAdapter`.
+**Goal:** Implementar o `ExecutionCoordinator` responsável por encadear determinística e exclusivamente em memória os componentes da V2 (`Selection -> ExecutionRequestBuilder -> ContextMaterializer -> PromptRenderer -> FakeExecutionAdapter -> StructuralRepairEngine -> ExecutionResultValidator`), gerando propostas validadas de Handoff sem mutação direta de repositório ou JobStore.
 
 **Files:**
-- Create: `scripts/agents/orchestration_runner_v2.py`
-- Create: `tests/agents/test_orchestration_v2_e2e.py`
+- Create: `scripts/agents/execution_coordinator.py`
+- Create: `tests/agents/test_execution_coordinator_e2e.py`
 
 **Interfaces / Assinaturas:**
 ```python
 @dataclass(frozen=True)
-class OrchestrationStepResult:
-    action: str  # "STEP_COMPLETED", "HUMAN_REVIEW_REQUIRED", "BLOCKED", "NO_ACTION"
-    job_id: str
-    stage: str | None
-    verdict: str | None
-    handoff_id: str | None
-    reasons: tuple[str, ...]
+class ExecutionCoordinationResult:
+    request: dict[str, Any]
+    raw_response: RawExecutionResponse
+    result: dict[str, Any]
+    verdict: ExecutionValidationVerdict
+    proposed_handoff: dict[str, Any] | None = None
 
-class OrchestrationRunnerV2:
+class ExecutionCoordinator:
     def __init__(
         self,
-        job_store: JobStore,
-        handoff_store: HandoffStore,
         adapter: ExecutionAdapter,
-        profile_registry: ProfileRegistry | None = None,
         materializer: ContextMaterializer | None = None,
         renderer: PromptRenderer | None = None,
         repair_engine: StructuralRepairEngine | None = None,
         validator: ExecutionResultValidator | None = None,
-        state_selector: OrchestratorStateSelector | None = None,
     ) -> None:
         ...
 
-    def run_stage_step(
+    def coordinate_execution(
         self,
-        job_id: str,
-        *,
-        human_validated: bool = False,
-        source_manifest: dict[str, Any] | None = None,
-    ) -> OrchestrationStepResult:
-        """Executes a full cycle: state check -> request -> materialize -> prompt -> adapter -> validate -> persist/handoff."""
+        request: dict[str, Any],
+        profile: ExecutionProfile,
+    ) -> ExecutionCoordinationResult:
+        """Coordinates the in-memory execution cycle without mutating repository or Job state."""
         ...
 ```
 
-**Dependencies:** Tasks 15 a 22, `scripts/agents/job_store.py`, `scripts/agents/handoff_store.py`, `scripts/agents/orchestrator_state.py`.
+**Dependencies:** Tasks 15 a 22.
 
 **Non-goals:**
-- NÃO faz chamadas reais a APIs de modelos;
-- NÃO implementa loops infinitos sem controle de parada.
+- **NÃO** substitui nem amplia a autoridade do `OrchestratorStateSelector`;
+- **NÃO** executa transições de estado no `JobStore`;
+- **NÃO** grava artefatos no repositório;
+- **NÃO** chama `HandoffStore.create()` automaticamente como efeito colateral oculto;
+- **NÃO** executa retries ou loops não supervisionados.
 
 **TDD Steps:**
-- [ ] **Step 1: Escrever testes E2E em `tests/agents/test_orchestration_v2_e2e.py`**
+- [ ] **Step 1: Escrever testes de integração em `tests/agents/test_execution_coordinator_e2e.py`**
   Testar:
-  - Fluxo feliz: `Job` em estágio `extraction` -> `RUN_STAGE` -> executa com `FakeExecutionAdapter` -> valida -> cria `Agent Handoff` no `HandoffStore` -> atualiza `JobStore` para estágio passado;
-  - Fluxo de erro estrutural com reparo bem-sucedido na 1ª tentativa;
-  - Fluxo com violação de write-scope: bloqueado, nenhum arquivo escrito, nenhum handoff criado;
-  - Fluxo com incerteza semântica: transiciona para `human_review`, cria `ReviewRequest` e para;
-  - Fluxo final de conclusão `done`: requer `human_validated=True`.
+  - Fluxo completo em memória com `FakeExecutionAdapter` gerando resultado válido e proposta de Handoff com `verdict="ACCEPT"`;
+  - Fluxo com reparo mecânico bem-sucedido na 1ª tentativa;
+  - Fluxo com violação de write-scope resultando em `verdict="BLOCKED"` e `proposed_handoff=None`;
+  - Fluxo com incertezas resultando em `verdict="HUMAN_REVIEW"`;
+  - Confirmação de que nenhum arquivo em disco foi modificado durante toda a execução.
 - [ ] **Step 2: Executar testes para confirmar RED**
-  Executar: `python -m pytest tests/agents/test_orchestration_v2_e2e.py -q`  
-  *Expected RED:* `ModuleNotFoundError: No module named 'scripts.agents.orchestration_runner_v2'`.
-- [ ] **Step 3: Implementar `OrchestrationRunnerV2`**
-  Criar `scripts/agents/orchestration_runner_v2.py`.
+  Executar: `python -m pytest tests/agents/test_execution_coordinator_e2e.py -q`  
+  *Expected RED:* `ModuleNotFoundError: No module named 'scripts.agents.execution_coordinator'`.
+- [ ] **Step 3: Implementar `ExecutionCoordinator`**
+  Criar `scripts/agents/execution_coordinator.py`.
 - [ ] **Step 4: Executar testes para confirmar GREEN**
-  Executar: `python -m pytest tests/agents/test_orchestration_v2_e2e.py -q`  
+  Executar: `python -m pytest tests/agents/test_execution_coordinator_e2e.py -q`  
   *Expected GREEN:* todos os testes passam.
 - [ ] **Step 5: Rodar gates de regressão completos**
 
-**Commit Message:** `test: add v2 end-to-end orchestration runner and integration fixture`  
-**Stop Condition:** Ciclo E2E completo da V2 funcionando deterministamente em testes offline.
+**Commit Message:** `feat: implement in-memory execution coordinator and e2e integration fixture`  
+**Stop Condition:** Coordenador de execução em memória implementado e coberto por testes E2E offline.
 
 ---
 
-### Task 24 — Antigravity Adapter Integration Boundary Audit & Specification
+### Task 24 — Antigravity Adapter Integration Boundary Audit (Conditional)
 
-**Goal:** Auditar a superfície real de integração do runtime Antigravity no ambiente de execução. Se houver uma interface programática officially supported, implementar o wrapper `AntigravityExecutionAdapter`; caso contrário, documentar formalmente o status `DEFERRED_PENDING_RUNTIME_API` mantendo a arquitetura 100% funcional com `FakeExecutionAdapter`.
+**Goal:** Auditar rigorosamente a superfície programática real do runtime Antigravity. Se e somente se houver uma interface oficial programática suportada, implementar o `AntigravityExecutionAdapter`; caso contrário, documentar formalmente o status `DEFERRED_PENDING_RUNTIME_API`, preservando a V2 totalmente funcional e testável via `ExecutionAdapter` protocol + `FakeExecutionAdapter`.
 
-**Files:**
-- Create: `scripts/agents/antigravity_adapter.py`
-- Create: `tests/agents/test_antigravity_adapter.py`
+**Files (Condicionais):**
+- Conditional Create: `scripts/agents/antigravity_adapter.py`
+- Conditional Create: `tests/agents/test_antigravity_adapter.py`
 
-**Interfaces / Assinaturas:**
-```python
-class AntigravityExecutionAdapter(ExecutionAdapter):
-    def __init__(self, client: Any = None) -> None:
-        self.client = client
+**Regras Invioláveis de Auditoria:**
+1. **Auditoria Prévia Obrigatória**: Verificar se existe SDK, CLI ou API programática exposta no ambiente.
+2. **Se NÃO existir API programática suportada**:
+   - Registrar o resultado como `DEFERRED_PENDING_RUNTIME_API`;
+   - **NÃO criar classes com `NotImplementedError`** apenas para preencher arquivo;
+   - **NÃO criar testes fakes ou mocks vazios**;
+   - **NÃO utilizar automação de browser (Selenium, Puppeteer, Playwright)**;
+   - **NÃO utilizar automação de interface gráfica (GUI / PyAutoGUI)**;
+   - **NÃO fingir que existe API**.
+3. **Se existir API programática real**:
+   - Implementar `AntigravityExecutionAdapter(ExecutionAdapter)` isolando chamadas de rede;
+   - Criar testes específicos separados que rodam apenas em ambiente com credenciais ativas, sem nunca impactar o CI normal offline.
 
-    def execute(
-        self,
-        request: dict[str, Any],
-        prompt: RenderedPrompt,
-        profile: ExecutionProfile,
-    ) -> RawExecutionResponse:
-        """Executes prompt via Antigravity runtime if available, or returns controlled runtime status."""
-        ...
-```
-
-**Regras de Integração:**
-1. **NÃO inventar SDK, CLI ou API não existente**.
-2. **NÃO utilizar automação de browser (Puppeteer/Playwright)** para simular API.
-3. **NÃO utilizar automação de interface gráfica (GUI)**.
-4. Testes do CI normal do GitHub Actions **NUNCA** dependem de credenciais Antigravity ou chamadas externas de rede.
-
-**TDD Steps:**
-- [ ] **Step 1: Escrever testes unitários em `tests/agents/test_antigravity_adapter.py`**
-  Testar:
-  - Inicialização e conformidade com o protocolo `ExecutionAdapter`;
-  - Tratamento de ausência de credenciais/runtime retornando status controlado sem falhar o processo;
-  - Encapsulamento de resposta em `RawExecutionResponse`.
-- [ ] **Step 2: Executar testes para confirmar RED**
-  Executar: `python -m pytest tests/agents/test_antigravity_adapter.py -q`  
-  *Expected RED:* `ModuleNotFoundError: No module named 'scripts.agents.antigravity_adapter'`.
-- [ ] **Step 3: Implementar `AntigravityExecutionAdapter`**
-  Criar `scripts/agents/antigravity_adapter.py`.
-- [ ] **Step 4: Executar testes para confirmar GREEN**
-  Executar: `python -m pytest tests/agents/test_antigravity_adapter.py -q`  
-  *Expected GREEN:* todos os testes passam.
+**TDD Steps (Condicionais):**
+- [ ] **Step 1: Executar script de auditoria de runtime no ambiente local**
+- [ ] **Step 2: Se API disponível -> Escrever testes em `tests/agents/test_antigravity_adapter.py`**
+- [ ] **Step 3: Implementar `AntigravityExecutionAdapter` em `scripts/agents/antigravity_adapter.py`**
+- [ ] **Step 4: Se API não disponível -> Registrar relatório de deferimento arquitetural sem criar arquivos fantasmas**
 - [ ] **Step 5: Rodar gates de regressão completos**
 
 **Commit Message:** `feat: establish antigravity execution adapter integration boundary`  
-**Stop Condition:** Fronteira com Antigravity implementada com isolamento estrito e sem quebrar o CI offline.
+**Stop Condition:** Auditoria concluída, adapter implementado ou formalmente diferido, zero impacto no CI offline.
 
 ---
 
@@ -702,7 +698,8 @@ O workflow existente [`.github/workflows/validate.yml`](file:///c:/Users/TI%20Pr
 1. **Spec Coverage**: Todas as seções da especificação (`2026-09-08-antigravity-execution-adapter-v2-design.md`) foram mapeadas nas Tarefas 15 a 24.
 2. **Placeholder Scan**: Não há `TODO`, `TBD`, "similar to previous task" ou etapas sem detalhamento.
 3. **Type & Signature Consistency**: Assinaturas das dataclasses e métodos seguem tipos estritos do Python 3.12 (`dict[str, Any]`, `tuple[str, ...]`, `dataclass(frozen=True)`).
-4. **Dependency-Order Validation**: Nenhuma tarefa depende de classes ou schemas criados em tarefas posteriores.
+4. **Dependency-Order Validation**:
+   $$\text{Task 15 (Contracts \& Builder)} \rightarrow \text{Task 16 (Materializer)} \rightarrow \text{Task 17 (Renderer)} \rightarrow \text{Task 18 (Profiles)} \rightarrow \text{Task 19 (Adapter)} \rightarrow \text{Task 20 (Repair)} \rightarrow \text{Task 21 (Scope)} \rightarrow \text{Task 22 (Validator)} \rightarrow \text{Task 23 (Coordinator)} \rightarrow \text{Task 24 (Antigravity Audit)}$$
 5. **Provider-Neutrality**: `executionProfile` isola provedores; nenhum modelo é hardcodeado nos agentes.
-6. **Write-Authority Bypass Scan**: `LLM output MUST NOT directly mutate the repository` garantido pela separação entre `proposedArtifacts` e validação.
+6. **Write-Authority Bypass Scan**: `LLM output MUST NOT directly mutate the repository` garantido pela separação entre `proposedArtifacts` e validação. O `ExecutionCoordinator` opera estritamente em memória.
 7. **Test Isolation**: Todos os testes normais usam mocks ou `FakeExecutionAdapter` sem rede.
