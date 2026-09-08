@@ -24,6 +24,8 @@ class AppliedOperationRecord:
     type: str
     post_apply_sha256: str
     applied_at: str
+    previous_sha256: str | None = None
+    bytes_written: int = 0
 
 
 @dataclass(frozen=True)
@@ -193,6 +195,7 @@ class ChangeSetApplier:
         applied_records: list[AppliedOperationRecord] = []
         for op in change_set.operations:
             staged_file = staged_paths[op.operation_id]
+            bytes_to_write = staged_file.stat().st_size
             target_path = self.config.repository_root / op.target_path
             backup_path: str | None = None
 
@@ -215,6 +218,8 @@ class ChangeSetApplier:
                     type=op.type,
                     post_apply_sha256=post_sha,
                     applied_at=applied_time,
+                    previous_sha256=op.expected_base_sha256,
+                    bytes_written=bytes_to_write,
                 )
                 applied_records.append(applied_rec)
 

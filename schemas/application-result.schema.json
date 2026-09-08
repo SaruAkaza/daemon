@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon-tools.local/schemas/application-result.schema.json",
+  "title": "ApplicationResult",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "changeSetId",
+    "requestId",
+    "status",
+    "appliedOperations",
+    "blockedOperations",
+    "reasons",
+    "durationMs",
+    "metadata"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "2.1"
+    },
+    "changeSetId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "APPLIED",
+        "NOT_APPLIED",
+        "ROLLED_BACK",
+        "ROLLBACK_FAILED",
+        "HUMAN_REVIEW",
+        "BLOCKED"
+      ]
+    },
+    "appliedOperations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "operationId",
+          "targetPath",
+          "type",
+          "postApplySha256",
+          "appliedAt"
+        ],
+        "properties": {
+          "operationId": { "type": "string" },
+          "targetPath": { "type": "string" },
+          "type": { "type": "string", "enum": ["CREATE", "UPDATE"] },
+          "postApplySha256": { "type": "string" },
+          "appliedAt": { "type": "string" },
+          "previousSha256": { "type": ["string", "null"] },
+          "bytesWritten": { "type": "integer" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "blockedOperations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "failureCode": {
+      "type": ["string", "null"]
+    },
+    "reasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "appliedAt": {
+      "type": ["string", "null"]
+    },
+    "durationMs": {
+      "type": "number",
+      "minimum": 0
+    },
+    "journal": {
+      "type": ["object", "null"]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -68,10 +68,12 @@ class ChangeSetBuilder:
 
     def __init__(
         self,
-        repo_root: Path | str,
+        repo_root: Path | str | None = None,
         validator: ExecutionResultValidator | None = None,
+        repository_root: Path | str | None = None,
     ) -> None:
-        self.repo_root = Path(repo_root).resolve()
+        root = repo_root or repository_root or Path.cwd()
+        self.repo_root = Path(root).resolve()
         self.validator = validator or ExecutionResultValidator()
 
     def build(
