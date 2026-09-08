@@ -166,7 +166,12 @@ class ApplicationPolicy:
         scope_matched = False
         for pattern in allowed_write_scope:
             pat_norm = pattern.strip().replace("\\", "/").lower()
-            if lower_path == pat_norm or fnmatch.fnmatch(lower_path, pat_norm):
+            if (
+                lower_path == pat_norm
+                or (pat_norm.endswith("/") and lower_path.startswith(pat_norm))
+                or fnmatch.fnmatch(lower_path, pat_norm)
+                or fnmatch.fnmatch(lower_path, pat_norm.rstrip("/") + "/*")
+            ):
                 scope_matched = True
                 break
 

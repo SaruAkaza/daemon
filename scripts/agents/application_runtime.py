@@ -81,3 +81,36 @@ class ApplicationRuntimeConfig:
         object.__setattr__(self, "repository_root", Path(self.repository_root).resolve())
         object.__setattr__(self, "staging_root", Path(self.staging_root).resolve())
         object.__setattr__(self, "audit_root", Path(self.audit_root).resolve())
+
+    @classmethod
+    def create(
+        cls,
+        repository_root: Path | str,
+        staging_root: Path | str | None = None,
+        audit_root: Path | str | None = None,
+        auto_apply_roots: tuple[str, ...] = DEFAULT_AUTO_APPLY_ROOTS,
+        protected_roots: tuple[str, ...] = DEFAULT_PROTECTED_ROOTS,
+        hard_blocked_roots: tuple[str, ...] = DEFAULT_HARD_BLOCKED_ROOTS,
+        resource_bounds: ResourceBounds | None = None,
+    ) -> ApplicationRuntimeConfig:
+        repo = Path(repository_root).resolve()
+        staging = (
+            Path(staging_root).resolve()
+            if staging_root
+            else (repo.parent / ".daemon_staging" / repo.name)
+        )
+        audit = (
+            Path(audit_root).resolve()
+            if audit_root
+            else (repo / "docs" / "reports" / "audit")
+        )
+        return cls(
+            repository_root=repo,
+            staging_root=staging,
+            audit_root=audit,
+            auto_apply_roots=auto_apply_roots,
+            protected_roots=protected_roots,
+            hard_blocked_roots=hard_blocked_roots,
+            resource_bounds=resource_bounds or ResourceBounds(),
+        )
+
