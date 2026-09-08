@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/context-manifest.schema.json",
+  "title": "Execution Context Manifest",
+  "description": "Manifesto determinístico descrevendo todo o contexto de entrada incluído no Execution Bundle.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bundleId",
+    "requestId",
+    "jobId",
+    "stage",
+    "bookId",
+    "items",
+    "createdAt"
+  ],
+  "properties": {
+    "bundleId": {
+      "type": "string",
+      "pattern": "^EB-[A-Za-z0-9_-]+$",
+      "description": "Identificador determinístico do Execution Bundle."
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador da ExecutionRequest associada."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do Job pai."
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "SOURCE",
+        "EXTRACTION",
+        "EDITORIAL",
+        "ENTITIES",
+        "RELATIONS",
+        "QA",
+        "PREVIEW"
+      ],
+      "description": "Estágio do pipeline associado ao bundle."
+    },
+    "bookId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Identificador canônico do livro."
+    },
+    "items": {
+      "type": "array",
+      "description": "Lista de itens de contexto incluídos no bundle.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "sizeBytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Caminho relativo do arquivo dentro do bundle."
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "description": "Hash SHA-256 dos bytes do arquivo."
+          },
+          "sizeBytes": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Tamanho do arquivo em bytes."
+          },
+          "description": {
+            "type": "string",
+            "description": "Descrição opcional do papel do arquivo."
+          }
+        }
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp ISO-8601 de geração do manifesto."
+    }
+  }
+}
