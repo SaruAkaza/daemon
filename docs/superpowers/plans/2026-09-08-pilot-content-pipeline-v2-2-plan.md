@@ -4,7 +4,7 @@
 
 **Goal:** Implement the safe, deterministic V2.2 pilot content pipeline that transports execution through manual bundles, validates all returned artifacts, persists restricted candidate content through V2.1 into an isolated runtime workspace, records trusted human governance evidence, and exposes a local-only navigable/searchable/relational preview.
 
-**Architecture:** A multi-stage pipeline where execution requests are exported as self-contained immutable `ExecutionBundles` with explicit instructions for manual transport. Imported `ResultBundles` are checked by a strict `BundleIntegrityValidator`, evaluated deterministically against legacy data without LLMs, and subjected to hash-bound human review. Approved candidate data is persisted exclusively via the V2.1 `ApplicationCoordinator` into an untracked, runtime-owned `RestrictedPilotWorkspace`, validated by segregated QA dataset gates, and projected to a local-only preview environment without modifying the main Git repository.
+**Architecture:** A multi-stage pipeline where execution requests are exported as self-contained immutable `ExecutionBundles` wrapping existing V2 `ExecutionRequest` definitions with explicit instructions for manual transport. Imported `ResultBundles` wrapping V2 `ExecutionResult` structures are checked by a strict `BundleIntegrityValidator`, evaluated deterministically against legacy data without LLMs, and subjected to hash-bound human review. Approved candidate data is persisted exclusively via the V2.1 `ApplicationCoordinator` into an untracked, runtime-owned `RestrictedPilotWorkspace`, validated by segregated QA dataset gates, and projected to a local-only preview environment without modifying the main Git repository.
 
 **Tech Stack:** Python 3.10+, JSON Schema Draft 2020-12 (jsonschema), pytest, hashlib/pathlib/os, vanilla ES6 JavaScript/HTML5, existing V1/V2/V2.1 agent infrastructure.
 
@@ -46,37 +46,201 @@
 | **Pipeline Invariant** | Sem novas cópias rastreadas no Git; sem duplicação de fontes em `docs/`; zero publicação de dados restritos. |
 ---
 
-## Runtime Directory Architecture
+## Pipeline Stage Coverage Matrix
+
+A matriz a seguir define formalmente como cada estágio do pipeline canônico opera sobre a infraestrutura da V2.2:
+
+| Estágio | Task Responsável | ExecutionRequest Produzido / Consumido | Contexto Necessário (`ContextPack`) | Output Contract (`output-contract.json`) | Result Bundle / Artefatos Esperados | Validation Gate | Comportamento de Human Review | Próxima Transição |
+|:---|:---:|:---|:---|:---|:---|:---|:---|:---|
+| **1. SOURCE** | Task 36 / 48 | Consome `Livros/word/feito/animalidade.docx` via `source_doc`; gera `EB-ANIM-SRC-att1` | Metadados de `sources.json`, hash SHA-256 e inventário de páginas | `schemas/source-manifest.schema.json` | `data/blocks/` ou manifesto estruturado da fonte bruta | `BundleIntegrityValidator` + `ExecutionResultValidator` | Verificação de integridade da fonte e direitos (`UNKNOWN` $ightarrow$ `NOT_PUBLIC`) | `EXTRACTION` |
+| **2. EXTRACTION** | Task 36 / 38 | Consome blocos brutos; gera request de extração textual limpa | Parágrafos brutos, tabela de páginas e regras de limpeza | `schemas/segment.schema.json` (texto contínuo e parágrafos limpos) | `data/text/animalidade.txt` e `data/blocks/animalidade.json` | Validação de UTF-8, bounds de caracteres e ausência de texto corrompido | Se texto truncado ou ilegível $ightarrow$ `NEEDS_HUMAN_REVIEW` | `EDITORIAL` |
+| **3. EDITORIAL** | Task 36 / 39 | Consome texto limpo; gera request de segmentação editorial | Texto extraído e índices de partes/páginas (1 a 13) | `schemas/segment.schema.json` e `schemas/entity.schema.json` (tipo `source`) | `data/segments/sources/animalidade.json` e `data/books/animalidade.json` | `check_book_coverage` no workspace (100% de páginas 1–13 mapeadas) | Discrepância de paginação contra DOCX $ightarrow$ `NEEDS_HUMAN_REVIEW` | `ENTITIES` |
+| **4. ENTITIES** | Task 36 / 39 / 40 | Consome segmentos editoriais; gera request de tipagem canônica | Segmentos de regras, atributos, poderes, criaturas e lore | `schemas/entity.schema.json` (todas as 12 categorias canônicas) | `data/entities/<category>.json` (itens com `source` e `page`) | Validação estrita de schema de entidades + `LegacyComparator` | Se divergir do legado $ightarrow$ `PilotReviewRequest` com deliberação humana hash-bound | `RELATIONS` |
+| **5. RELATIONS** | Task 36 / 40 / 42 | Consome entidades extraídas; gera request de grafos de relacionamento | Lista canônica de entidades e vocabulário controlado | `schemas/relation.schema.json` | `data/entities/relations.json` | Validação de pontas órfãs e cardinalidade de vínculos | Vínculo dúbio ou não declarado na fonte $ightarrow$ `NEEDS_HUMAN_REVIEW` | `QA` |
+| **6. QA** | Task 44 | Consome dataset consolidado no `RestrictedPilotWorkspace` | Todo o diretório `repository/data/` do workspace isolado | `PilotQAValidator.validate_dataset()` | `DatasetQAVerdict` registrado no `PilotAuditStore` | Schemas PASS, Cobertura 100%, Proveniência 100%, Zero vazamento na main tree | Falha de QA $ightarrow$ `QA_FAILED` $ightarrow$ `REWORK_REQUIRED` (nova tentativa) | `PREVIEW` |
+| **7. LOCAL PREVIEW** | Task 45 / 46 | Consome dataset aprovado no workspace restrito | `RestrictedPilotWorkspace/repository/data/` | `LocalPreviewProjector.project_local_preview()` | `<runtime>/preview/animalidade/index.json` e `animalidade.json` | Rights Gate (`UNKNOWN` bloqueia release público) + Preview server loopback | Checklist de navegação, busca e relações ativas em `localhost:8080` | `PILOT_VALIDATED` |
+---
+
+## Reuso Estrito dos Contratos da V2 e Autoridades
+
+1. **`ExecutionBundle` como Envelope de Transporte da V2:**
+   - O `ExecutionBundle` (`schemas/execution-bundle.schema.json`) **NÃO** redefine o conceito de `ExecutionRequest`.
+   - Ele atua como um contêiner imutável de transporte que empacota:
+     - `execution-request.json`: Instância válida de `schemas/execution-request.schema.json` da V2.
+     - `prompt.md`: O prompt integral renderizado para o executor externo.
+     - `output-contract.json`: O schema ou contrato de saída exigido pela V2.
+     - `context-manifest.json`: Manifesto declarando os bytes físicos transportados nas subpastas `context/` e `attachments/`.
+     - `ANTIGRAVITY-INSTRUCTIONS.md`: Instruções operacionais para transporte manual.
+2. **`ResultBundle` como Envelope de Retorno da V2:**
+   - O `ResultBundle` (`schemas/result-bundle.schema.json`) **NÃO** redefine o conceito de `ExecutionResult`.
+   - Ele atua como o envelope de recepção que empacota:
+     - `execution-result.json`: Instância válida de `schemas/execution-result.schema.json` da V2.
+     - `result-manifest.json`: Manifesto contendo metadados de execução, amarrações de identidade e hashes SHA-256 byte-a-byte de cada artefato.
+     - `artifacts/`: Diretório contendo os artefatos físicos gerados pelo executor.
+   - O veredito de aceitação técnica permanece de autoridade exclusiva do `ExecutionResultValidator` da V2.
+3. **Relação entre `ContextPack` e `context-manifest.json`:**
+   - O `ContextPack` (`schemas/context-pack.schema.json`) continua sendo o agregador semântico de contexto da V2 (documentos, entidades e regras de negócio selecionadas).
+   - O `context-manifest.json` **NÃO** substitui o `ContextPack`; ele é o manifesto descritor de empacotamento físico de saída que cataloga os arquivos exatos, caminhos relativos e hashes SHA-256 presentes no bundle exportado para transporte manual.
+---
+
+## Modelo de Identidade Criptográfica de Bundles
+
+Toda a cadeia operacional do piloto é rastreada por identidades determinísticas e amarrações de hashes imutáveis:
+
+- **`requestId` (`str`):** Identificador único da requisição de execução (ex: `req-anim-extraction-001`).
+- **`executionBundleId` (`str`):** Identificador derivado deterministicamente:
+  `EB-<BOOK_ID>-<STAGE>-att<ATTEMPT_NUM>-<INPUT_HASH[:8]>` (ex: `EB-ANIM-EXT-att1-a1b2c3d4`).
+- **`resultBundleId` (`str`):** Identificador derivado deterministicamente na importação:
+  `RB-<BOOK_ID>-<STAGE>-att<ATTEMPT_NUM>-<RESULT_HASH[:8]>` (ex: `RB-ANIM-EXT-att1-e5f6a7b8`).
+- **`inputManifestSha256` (`str`):** Hash SHA-256 calculado sobre os bytes UTF-8 canônicos de `context-manifest.json` (excluindo deterministicamente o campo de timestamp `createdAt`).
+- **`resultManifestSha256` (`str`):** Hash SHA-256 calculado sobre a serialização canônica de `result-manifest.json` (excluindo campos de auto-referência circular).
+- **`artifactSha256` (`dict[str, str]`):** Dicionário mapeando cada caminho relativo em `artifacts/` ao hash SHA-256 exato de seus bytes brutos em disco.
+- **`attemptNumber` (`int`):** Número sequencial estrito da tentativa (1-indexed).
+
+A decisão humana (`PilotReviewDecision`) referencia obrigatoriamente `resultBundleId` e `reviewedResultManifestSha256`. Nenhuma identidade é inferida a partir de nomes de arquivos ou pastas.
+---
+
+## Formato de Saída no Restricted Workspace
+
+A persistência do piloto restrito não se resume a um único arquivo `data/pilot/animalidade.json`. Conforme os estágios progridem, os artefatos candidatos gerados são persistidos estritamente sob as raízes permitidas da V2.1 dentro do workspace isolado:
 
 ```text
-<repository-parent>/.daemon_runtime/
-├── bundles/
-│   ├── outgoing/<bundleId>/        <-- Read-only Execution Bundles gerados pelo runtime
-│   ├── incoming/<bundleId>/        <-- Read-only Result Bundles recebidos do operador
-│   ├── accepted/<bundleId>/        <-- Bundles aprovados em integridade e validação técnica
-│   └── rejected/<bundleId>/        <-- Bundles reprovados em integridade ou rejeitados em revisão
-│
-├── workspaces/
-│   └── pilot/<bookId>/repository/  <-- repository_root para a V2.1 (RestrictedPilotWorkspace)
-│       └── data/
-│           ├── text/
-│           ├── books/
-│           ├── entities/
-│           └── pilot/
-│
-├── audit/
-│   └── pilot/<bookId>/             <-- Evidências de governança duráveis (PilotAuditStore)
-│       ├── transitions.jsonl
-│       ├── comparisons/
-│       ├── requests/
-│       ├── decisions/
-│       └── receipts/
-│
-└── preview/
-    └── <bookId>/                   <-- Projeção de preview runtime-only (LocalPreviewProjector)
-        ├── index.json
-        └── <bookId>.json
+<repository-parent>/.daemon_runtime/workspaces/pilot/animalidade/repository/
+└── data/
+    ├── text/
+    │   └── animalidade.txt                  <-- Texto bruto limpo e certificado (Estágio EXTRACTION)
+    ├── blocks/
+    │   └── animalidade.json                 <-- Blocos normatizados de texto (Estágio SOURCE/EXTRACTION)
+    ├── segments/
+    │   └── sources/
+    │       └── animalidade.json             <-- Segmentação por páginas e seções (Estágio EDITORIAL)
+    ├── books/
+    │   └── animalidade.json                 <-- Metadados da obra e mapeamento de páginas (Estágio EDITORIAL)
+    ├── entities/
+    │   ├── creature_npc.json                <-- Feras, lobos e NPCs tipados (Estágio ENTITIES)
+    │   ├── power_magic.json                 <-- Poderes de animalidade (Estágio ENTITIES)
+    │   ├── race_lineage.json                <-- Raças e metamorfos (Estágio ENTITIES)
+    │   └── relations.json                   <-- Grafo canônico de relações (Estágio RELATIONS)
+    └── pilot/
+        └── animalidade.json                 <-- Consolidado navegável para preview local (Estágio PREVIEW)
 ```
+
+> [!CAUTION]
+> **INVARIANTE:** Todos os caminhos acima existem **EXCLUSIVAMENTE** dentro do `RestrictedPilotWorkspace`. Nenhum arquivo equivalente é criado ou alterado na working tree do repositório principal.
+---
+
+## Prova Determinística de Isolamento da Main Worktree
+
+As Tasks que validam `RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE` (especificamente Task 42 e Task 47) implementam verificações determinísticas que comprovam a ausência de contaminação:
+
+1. **Execução Hermética em Repositório Temporário (`tmp_path`):**
+   - Os testes criam um clone temporário ou simulação controlada do repositório Daemon Tools e um runtime isolado no mesmo volume temporário.
+   - O pipeline executa persistência completa de múltiplos artefatos restritos contra o workspace isolado.
+2. **Varredura Completa Pós-Execução:**
+   - `git status --short` no repositório principal deve ser 100% vazio (zero arquivos untracked e zero modificados).
+   - `git ls-files -o` (arquivos untracked) não pode conter nenhum arquivo sob `data/` ou `docs/`.
+   - Varredura física por glob em `data/pilot/`, `data/books/`, `data/entities/`, `data/text/` e `docs/assets/data/` comprova que nenhum arquivo ou entidade de `animalidade` foi materializado na árvore principal.
+   - Nenhuma fixture de teste utiliza o checkout real como sandbox de mutação.
+---
+
+## Durabilidade e Resiliência do PilotAuditStore
+
+O `PilotAuditStore` é o livro-razão de governança do runtime confiável:
+
+- **Autoridade de Escrita:** Somente o código Python local do runtime confiável (`scripts/agents/pilot_audit_store.py`) pode gravar no store. Agentes externos, prompts e ChangeSets da V2.1 não possuem autoridade sobre essa árvore.
+- **Append-Only Ledger (`transitions.jsonl`):** Cada evento de transição de estado é serializado em uma linha JSON compacta, contendo:
+  - `seq` (`int`): Número sequencial monotônico estrito (1, 2, 3...).
+  - `eventId` (`str`): SHA-256 do payload do evento (chave de idempotência).
+  - `timestamp` (`str`): Timestamp UTC ISO-8601.
+  - `fromState` (`str`), `event` (`str`), `toState` (`str`).
+  - `details` (`dict`): Identificadores de bundle, hashes e autorizações.
+- **Escrita Atômica de Registros Individuais:** Requisições (`requests/`), decisões (`decisions/`) e recibos de persistência (`receipts/`) são gravados usando criação exclusiva (`open(..., "xb")`) ou escrita em arquivo temporário com substituição atômica (`os.replace`), garantindo que não haja registros parciais.
+- **Resiliência a Linhas Malformadas:** O leitor de `transitions.jsonl` valida sintaxe linha a linha; se uma linha corrompida for detectada (por exemplo, decorrente de interrupção de energia), a linha é isolada e reportada sem invalidar o histórico prévio válido.
+- **Deduplicação de Eventos:** Tentativas de reinserção de eventos com o mesmo `eventId` são ignoradas deterministicamente (operação idempotente).
+- **Sobrevivência a Limpeza:** Comandos de expurgo de bundles temporários (`bundles/incoming/`, `bundles/outgoing/`) ou caches de preview **nunca tocam** a pasta `audit/pilot/<bookId>/`.
+---
+
+## Origem Estritamente Externa da Decisão de Revisão Humana
+
+1. **Proibição de Auto-Aprovação pelo Executor:**
+   - O executor externo / LLM jamais pode emitir ou aprovar uma revisão humana.
+   - Qualquer campo como `ExecutionResult["approved"] = true` ou declaração de aprovação dentro do Result Bundle é terminantemente rejeitada como erro de contrato ou atributo desconhecido.
+2. **Fluxo Estrito de Governança:**
+   ```text
+   Result Bundle Validado (BundleIntegrityValidator PASS)
+     ↓
+   Comparador com Legado (LegacyComparator)
+     ↓
+   Sistema emite PilotReviewRequest (gravado no PilotAuditStore)
+     ↓
+   Operador Humano inspeciona divergências e toma decisão
+     ↓
+   Operador Humano emite PilotReviewDecision (assinado por nome/motivo e amarrado a hash)
+     ↓
+   Sistema valida hash (decision.reviewedResultManifestSha256 == actual_hash)
+     ↓
+   Se hash bater: Estado APPROVE -> elegível para persistência via V2.1
+   Se hash divergir: ERR_REVIEW_HASH_MISMATCH -> invalidação imediata
+   ```
+---
+
+## Arquitetura de Preview Local: "Local by Construction"
+
+1. **Prevenção de Ativação em Produção / GitHub Pages:**
+   - O código estático em `docs/assets/app.js` servido pelo GitHub Pages público opera em modo somente-leitura sobre `assets/data/pilot/index.json`.
+   - Se um usuário acessar `https://saruakaza.github.io/daemon/?preview=animalidade`, a aplicação **NÃO** tentará carregar dados restritos e falhará fechada (`fail-closed`), permanecendo no visualizador público padrão.
+2. **Ativação Exclusiva via Local `PreviewServer`:**
+   - O carregamento de preview restrito só é ativado quando a aplicação é servida através do `PreviewServer` local (`scripts/agents/preview_server.py`).
+   - O servidor local injeta uma configuração de ambiente confiável em tempo de resposta (ex: cabeçalho HTTP local `X-Daemon-Local-Preview: active` ou variável de inicialização `window.__DAEMON_LOCAL_PREVIEW__ = true`) e serve a rota `/api/preview/<bookId>/` mapeada para `<runtime>/preview/<bookId>/`.
+3. **Segurança do Servidor de Preview Local:**
+   - **Binding Exclusivo:** Vincula-se obrigatoriamente a `127.0.0.1` / `localhost`. Tentativas de bind em interfaces externas (`0.0.0.0`) são ativamente bloqueadas.
+   - **Validação de `bookId`:** Regex estrita `^[a-z0-9-]+$` impedindo injeção de caracteres especiais.
+   - **Proteção contra Traversal:** Rejeita qualquer tentativa de navegação relativa (`..`), drive letters ou caminhos absolutos.
+   - **Superfície Restrita:** O servidor expõe única e exclusivamente a interface estática de `docs/` e os arquivos de preview em `<runtime>/preview/<bookId>/`. Ele **NÃO** expõe a pasta `.daemon_runtime` como um todo, não expõe `audit/`, não expõe `bundles/` e não expõe o acervo original em `Livros/`.
+---
+
+## Testes de Aceitação do Frontend no CI
+
+O critério de conformidade da V2.2 exige que o preview local seja **pesquisável, navegável e com relações clicáveis**. No CI hermético, esses critérios são validados através de uma fixture sintética não restrita (`synthetic-pilot`):
+
+1. **Teste de Busca (`test_frontend_acceptance_search`):**
+   - Prova determinística de que digitar uma query de busca (ex: "Lobo") filtra a lista de segmentos e retorna a entidade correspondente.
+2. **Teste de Navegação (`test_frontend_acceptance_navigation`):**
+   - Prova de que selecionar um item na lista carrega seus detalhes completos no painel direito (`#detailPanel`) e sincroniza o hash da URL (ex: `#/criaturas-npcs/feras-lobo`).
+3. **Teste de Relações Clicáveis (`test_frontend_acceptance_relations`):**
+   - Prova de que clicar em um badge de relação (ex: "Poder: Animalidade") navega diretamente para a entidade de destino.
+   - Prova de que clicar em uma relação com entidade ausente exibe indicação visual de entidade não encontrada de forma determinística sem quebrar o estado da aplicação.
+4. **Isolamento de Dados:**
+   - O CI roda esses testes contra a fixture `tests/agents/fixtures/synthetic_preview_data/`, garantindo zero dependência de arquivos restritos de `animalidade`.
+---
+
+## Custódia da Fonte Durante o Transporte Manual
+
+Para a fonte real `Livros/word/feito/animalidade.docx` (`PRE_EXISTING_SOURCE_CUSTODY_CONDITION`):
+
+1. O exportador de bundles (`ExecutionBundleExporter`) copia o arquivo de entrada diretamente para a pasta temporária de runtime do pacote:
+   `<runtime>/bundles/outgoing/<bundleId>/attachments/animalidade.docx`.
+2. O arquivo **NUNCA** é copiado para `docs/`, `data/` ou qualquer outro diretório rastreado pelo Git.
+3. O hash SHA-256 da fonte (`5d29232c68c18b12d7c71f9fc87cbe7c19589f9a`) e a proveniência exata são registrados no `context-manifest.json`.
+4. Uma política de retenção remove os anexos de runtime após a conclusão do ciclo operacional do livro.
+---
+
+## Fronteira Pétrea da Task 48: Zero Contato com o Livro Real
+
+A **Task 48** implementa o ferramental de preparação e pré-requisitos (`prepare_pilot_job.py`). Para atingir o checkpoint:
+```text
+INFRASTRUCTURE_VERIFIED
+```
+a Task 48 opera **EXCLUSIVAMENTE** com:
+- Fixtures sintéticas em diretórios temporários (`tmp_path`).
+- Mock de execução de bundles e validações controladas.
+
+> [!IMPORTANT]
+> **PROIBIÇÃO ABSOLUTA NA TASK 48:**
+> - Proibido processar `Livros/word/feito/animalidade.docx`.
+> - Proibido gerar Execution Bundle real para `animalidade`.
+> - Proibido acionar o operador humano ou Antigravity para extração real do livro.
+> - O primeiro bundle real do livro será criado apenas no Master Runbook subsequente.
 ---
 
 ## Proposed File Map
@@ -117,7 +281,7 @@
 | `tests/agents/test_preview_projector.py` | NEW | Testes de isolamento de preview e bloqueio público | `test_project_restricted()`, `test_blocked_public_leak()`, `test_docs_clean()` | Task 45 |
 | `scripts/agents/preview_server.py` | NEW | Servidor HTTP de desenvolvimento com overlay de preview | `PreviewServer.run_preview_server()` | Task 46 |
 | `docs/assets/app.js` | MODIFY | Suporte a parâmetro dinâmico de preview em desenvolvimento | `load({ previewBookId })` dynamic loader | Task 46 |
-| `tests/agents/test_preview_server.py` | NEW | Testes do servidor de preview e overlay de dados | `test_serve_app()`, `test_serve_runtime_preview_data()`, `test_docs_untouched()` | Task 46 |
+| `tests/agents/test_preview_server.py` | NEW | Testes do servidor de preview, segurança e rotas | `test_serve_app()`, `test_serve_runtime_preview_data()`, `test_docs_untouched()`, `test_loopback_binding_only()` | Task 46 |
 | `tests/agents/test_pilot_pipeline_e2e.py` | NEW | Suíte hermética integrada ponta a ponta | `test_full_pilot_pipeline_hermetic_success()`, `test_pipeline_rework()` | Task 47 |
 | `scripts/agents/prepare_pilot_job.py` | NEW | Preflight e emissor de checkpoint operacional | `PilotJobPreparer.prepare_pilot_environment()` | Task 48 |
 | `tests/agents/test_prepare_pilot_job.py` | NEW | Testes do preflight e emissão do checkpoint | `test_preflight_success()`, `test_checkpoint_infrastructure_verified()` | Task 48 |
@@ -173,13 +337,14 @@
 | *Qualquer* | *Transição não listada* | *Qualquer* | **NÃO** | Emite `ERR_STATE_TRANSITION_ILLEGAL`, aborta execução |
 ---
 
-## Tasks de Implementação (Tasks 35–48)
+## Tasks de Implementação Detalhadas (Tasks 35–48)
 
 ### Task 35: Canonical Hashing & Core Bundle Schemas
 - **Objetivo:** Estabelecer a camada de serialização canônica JSON e hashing SHA-256 à prova de variações de formatação e os schemas estruturais para pacotes de execução (`execution-bundle.schema.json`) e de resultado (`result-bundle.schema.json`).
+- **Dependências:** Nenhuma (início da V2.2).
 - **Consumes:**
-  - `schemas/execution-request.schema.json`
-  - `schemas/execution-result.schema.json`
+  - `schemas/execution-request.schema.json` (V2)
+  - `schemas/execution-result.schema.json` (V2)
 - **Produces:**
   - `schemas/execution-bundle.schema.json`
   - `schemas/result-bundle.schema.json`
@@ -195,16 +360,19 @@
   - `derive_execution_bundle_id(book_id: str, stage: str, attempt: int, content_hash: str) -> str`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_canonical_json.py` e `tests/agents/test_bundle_schemas.py` cobrindo ordenação de chaves, separadores compactos `(",", ":")`, exclusão de `createdAt` no hash de entrada, ausência de BOM e validação dos schemas.
-  - [ ] Executar: `python -m pytest tests/agents/test_canonical_json.py tests/agents/test_bundle_schemas.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_canonical_json.py tests/agents/test_bundle_schemas.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.canonical_json'` e arquivos de schema ausentes.
   - [ ] **GREEN:** Implementar `schemas/execution-bundle.schema.json`, `schemas/result-bundle.schema.json` e `scripts/agents/canonical_json.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_canonical_json.py tests/agents/test_bundle_schemas.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_canonical_json.py tests/agents/test_bundle_schemas.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement canonical hashing and bundle schemas"`
+  - [ ] **Stop Condition:** Parar se qualquer teste unitário falhar ou se os hashes canônicos variarem entre plataformas.
 
 ---
 
 ### Task 36: Execution Bundle Exporter & Manual Antigravity Bridge Instructions
 - **Objetivo:** Implementar o empacotador de solicitações de execução que materializa bundles imutáveis de saída contendo `execution-request.json`, `prompt.md`, `output-contract.json`, `context-manifest.json`, subpastas `context/` e `attachments/`, e o guia operacional `ANTIGRAVITY-INSTRUCTIONS.md`.
+- **Dependências:** Task 35.
 - **Consumes:**
   - `scripts/agents/canonical_json.py`
   - `schemas/context-manifest.schema.json`
@@ -219,16 +387,19 @@
     - `render_antigravity_instructions(bundle_id: str, request_id: str, contract_name: str) -> str`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_bundle_exporter.py` verificando geração do layout de diretórios, cálculo correto do `inputManifestSha256`, inclusão de `ANTIGRAVITY-INSTRUCTIONS.md` e permissões de somente-leitura pós-exportação.
-  - [ ] Executar: `python -m pytest tests/agents/test_bundle_exporter.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_bundle_exporter.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.bundle_exporter'`.
   - [ ] **GREEN:** Implementar `schemas/context-manifest.schema.json` e `scripts/agents/bundle_exporter.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_bundle_exporter.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_bundle_exporter.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement execution bundle exporter and instructions"`
+  - [ ] **Stop Condition:** Parar se a exportação permitir mutação do pacote após selamento ou se caminhos de saída violarem a estrutura esperada.
 
 ---
 
 ### Task 37: Result Bundle Importer & Ingestion Hardening
 - **Objetivo:** Implementar a fronteira de recepção física dos pacotes retornados pelo operador, validando estrutura básica de arquivos (`execution-result.json`, `result-manifest.json`, pasta `artifacts/`) e organizando o fluxo entre `incoming/`, `accepted/` e `rejected/`.
+- **Dependências:** Task 35, Task 36.
 - **Consumes:**
   - `schemas/result-bundle.schema.json`
   - `scripts/agents/canonical_json.py`
@@ -244,16 +415,19 @@
     - `promote_to_accepted(bundle_dir: Path, accepted_dir: Path) -> Path`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_bundle_importer.py` para ingestão bem-sucedida, detecção de arquivos faltantes, isolamento em `rejected/` diante de anomalias estruturais e imutabilidade dos artefatos.
-  - [ ] Executar: `python -m pytest tests/agents/test_bundle_importer.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_bundle_importer.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.bundle_importer'`.
   - [ ] **GREEN:** Implementar `scripts/agents/bundle_importer.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_bundle_importer.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_bundle_importer.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement result bundle importer and staging layout"`
+  - [ ] **Stop Condition:** Parar se o importador tentar processar pacotes com nomes ou arquivos fora do envelope padrão.
 
 ---
 
 ### Task 38: Bundle Integrity Validator & Cryptographic Binding
 - **Objetivo:** Implementar o validador de integridade e segurança de pacotes, garantindo casamento estrito entre saída e retorno, verificação byte-a-byte de artefatos físicos, e proteção rigorosa contra path traversal, nomes de dispositivos reservados e symlinks.
+- **Dependências:** Task 37.
 - **Consumes:**
   - `scripts/agents/bundle_importer.py`
   - `scripts/agents/canonical_json.py`
@@ -268,16 +442,19 @@
     - `validate(envelope: ResultBundleEnvelope, expected_request_id: str, expected_bundle_id: str, expected_input_manifest_hash: str) -> IntegrityVerdict`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes abrangentes em `tests/agents/test_bundle_integrity_validator.py` cobrindo: `ERR_REQUEST_ID_MISMATCH`, `ERR_BUNDLE_ID_MISMATCH`, `ERR_INPUT_MANIFEST_HASH_MISMATCH`, `ERR_ARTIFACT_HASH_MISMATCH`, artefatos órfãos, artefatos faltantes, caracteres proibidos (`..`, `:`, drive letters, `CON`, `NUL`), e limites de tamanho (50MB por arquivo, 200MB por bundle).
-  - [ ] Executar: `python -m pytest tests/agents/test_bundle_integrity_validator.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_bundle_integrity_validator.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.bundle_integrity_validator'`.
   - [ ] **GREEN:** Implementar `scripts/agents/bundle_integrity_validator.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_bundle_integrity_validator.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_bundle_integrity_validator.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement bundle integrity validator and binding"`
+  - [ ] **Stop Condition:** Parar se qualquer brecha de path traversal for aceita ou se discrepâncias de hash passarem silenciosamente.
 
 ---
 
 ### Task 39: Deterministic Legacy Comparator (No-LLM)
 - **Objetivo:** Implementar o comparador estrutural determinístico entre entidades extraídas do livro e bases legadas de referência existentes, gerando diagnósticos objetivos e precisos sem nenhuma interpretação por LLM.
+- **Dependências:** Task 35.
 - **Consumes:**
   - `scripts/agents/canonical_json.py`
 - **Produces:**
@@ -294,16 +471,19 @@
     - `compare_entities(extracted_entities: list[dict], legacy_entities: list[dict]) -> LegacyComparisonResult`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_legacy_comparator.py` validando: equivalência canônica determinística (mesmos IDs, valores normalizados, atributos e relações), diferenças estruturais (adaptações a novos schemas), diferenças de valor mecânico (gera `SEMANTIC_DIFFERENCE` e escala para review) e novas entidades (`NO_LEGACY_REFERENCE`).
-  - [ ] Executar: `python -m pytest tests/agents/test_legacy_comparator.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_legacy_comparator.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.legacy_comparator'`.
   - [ ] **GREEN:** Implementar `scripts/agents/legacy_comparator.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_legacy_comparator.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_legacy_comparator.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement deterministic legacy comparator"`
+  - [ ] **Stop Condition:** Parar se o comparador tentar reconciliar diferenças de texto automaticamente sem apontar discrepância.
 
 ---
 
 ### Task 40: Pilot Review Request & Decision Engine
 - **Objetivo:** Implementar os contratos formais e motor de validação da revisão humana, separando estritamente a solicitação do sistema (`PilotReviewRequest`) da deliberação humana (`PilotReviewDecision`), com amarração criptográfica via hash SHA-256 ao manifesto do pacote.
+- **Dependências:** Task 38, Task 39.
 - **Consumes:**
   - `scripts/agents/canonical_json.py`
   - `scripts/agents/legacy_comparator.py`
@@ -318,16 +498,19 @@
     - `validate_review_decision(decision: dict, request: dict, current_result_manifest_hash: str) -> tuple[bool, str]`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_pilot_review.py` verificando validação contra schemas JSON, aprovação válida vinculada ao hash exato, rejeição de decisões adulteradas (`ERR_REVIEW_HASH_MISMATCH`), e bloqueio de deliberações geradas pelo próprio modelo.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_review.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_pilot_review.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.pilot_review'`.
   - [ ] **GREEN:** Implementar schemas e `scripts/agents/pilot_review.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_review.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_pilot_review.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement pilot review schemas and validation engine"`
+  - [ ] **Stop Condition:** Parar se qualquer decisão humana for aceita sem conferência exata do hash SHA-256 do manifesto do resultado.
 
 ---
 
 ### Task 41: Segregated Pilot Audit Store & Governance Ledger
 - **Objetivo:** Implementar o armazenamento durável e segregado de evidências de governança em `<repository-parent>/.daemon_runtime/audit/pilot/<bookId>/`, garantindo imutabilidade de registros e separação total de autoridade contra ChangeSets e motor de conteúdo.
+- **Dependências:** Task 35, Task 40.
 - **Consumes:**
   - `scripts/agents/canonical_json.py`
 - **Produces:**
@@ -341,17 +524,20 @@
     - `record_persistence_receipt(book_id: str, receipt_data: dict) -> Path`
     - `get_audit_history(book_id: str) -> list[dict]`
 - **TDD Steps:**
-  - [ ] **RED:** Criar testes em `tests/agents/test_pilot_audit_store.py` validando gravação em append-only (`transitions.jsonl`), persistência segura de decisões e requisições, preservação dos dados mesmo sob expurgo de bundles e prevenção contra tentativas de escrita via ChangeSet.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_audit_store.py -q` (deve falhar).
+  - [ ] **RED:** Criar testes em `tests/agents/test_pilot_audit_store.py` validando gravação em append-only (`transitions.jsonl`) com numeração monotônica `seq`, persistência segura de decisões e requisições, preservação dos dados sob expurgo de bundles e isolamento absoluto contra escrita por ChangeSet.
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_pilot_audit_store.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.pilot_audit_store'`.
   - [ ] **GREEN:** Implementar `scripts/agents/pilot_audit_store.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_audit_store.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_pilot_audit_store.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement segregated pilot audit store"`
+  - [ ] **Stop Condition:** Parar se o audit store permitir sobrescrita de eventos passados ou falhar na detecção de sequenciamento monotônico.
 
 ---
 
 ### Task 42: Restricted Pilot Workspace & V2.1 Application Adapter
 - **Objetivo:** Implementar o provedor de workspace isolado (`RestrictedPilotWorkspace`) e o adaptador de persistência que inicializa a V2.1 (`ApplicationRuntimeConfig.create(repository_root=...)`) apontando para a raiz de runtime, garantindo que nenhum arquivo de `animalidade` seja escrito na working tree principal.
+- **Dependências:** Task 40, V2.1 baseline.
 - **Consumes:**
   - `scripts/agents/application_runtime.py` (V2.1)
   - `scripts/agents/application_coordinator.py` (V2.1)
@@ -368,17 +554,20 @@
   - `class PilotPersistenceAdapter:`
     - `apply_pilot_artifacts(workspace_root: Path, staging_root: Path, proposed_artifacts: list[dict], review_decision: dict) -> ApplicationResult`
 - **TDD Steps:**
-  - [ ] **RED:** Criar testes em `tests/agents/test_restricted_workspace.py` e `tests/agents/test_pilot_persistence_adapter.py` comprovando: persistência exclusiva no workspace isolado, integridade de todas as garantias da V2.1 (TOCTOU, `open(xb)`, atomicidade, rollback), e assert de que a pasta `data/pilot/` da working tree principal permanece 100% inalterada.
-  - [ ] Executar: `python -m pytest tests/agents/test_restricted_workspace.py tests/agents/test_pilot_persistence_adapter.py -q` (deve falhar).
+  - [ ] **RED:** Criar testes em `tests/agents/test_restricted_workspace.py` e `tests/agents/test_pilot_persistence_adapter.py` comprovando: persistência exclusiva no workspace isolado sob múltiplos caminhos canônicos (`data/text/`, `data/blocks/`, `data/segments/`, `data/entities/`, `data/books/`, `data/pilot/`), integridade das garantias V2.1, e prova determinística via `tmp_path` de que a working tree principal permanece 100% limpa de arquivos rastreados ou untracked.
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_restricted_workspace.py tests/agents/test_pilot_persistence_adapter.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.restricted_workspace'`.
   - [ ] **GREEN:** Implementar `scripts/agents/restricted_workspace.py` e `scripts/agents/pilot_persistence_adapter.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_restricted_workspace.py tests/agents/test_pilot_persistence_adapter.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_restricted_workspace.py tests/agents/test_pilot_persistence_adapter.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement restricted workspace and v2.1 persistence adapter"`
+  - [ ] **Stop Condition:** Parar se qualquer arquivo for escrito fora de `RestrictedPilotWorkspace` ou se a V2.1 falhar na validação de volume.
 
 ---
 
 ### Task 43: Pilot State Machine & Attempt Lifecycle Coordinator
 - **Objetivo:** Implementar o motor formal da máquina de estados do piloto e o coordenador de tentativas sequenciais imutáveis (`attempt-001`, `attempt-002`), impondo parada imediata diante de erros e impossibilidade de sobreposição de tentativas.
+- **Dependências:** Task 36, Task 37, Task 38, Task 40, Task 41, Task 42.
 - **Consumes:**
   - `scripts/agents/pilot_audit_store.py`
   - `scripts/agents/bundle_exporter.py`
@@ -401,16 +590,19 @@
     - `submit_human_decision(decision: dict) -> dict`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_pilot_state_machine.py` e `tests/agents/test_pilot_coordinator.py` testando cada transição válida da tabela canônica, rejeição com `ERR_STATE_TRANSITION_ILLEGAL` para transições proibidas, e criação estrita de nova tentativa ao invés de retry in-place.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_state_machine.py tests/agents/test_pilot_coordinator.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_pilot_state_machine.py tests/agents/test_pilot_coordinator.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.pilot_state_machine'`.
   - [ ] **GREEN:** Implementar `scripts/agents/pilot_state_machine.py` e `scripts/agents/pilot_coordinator.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_state_machine.py tests/agents/test_pilot_coordinator.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_pilot_state_machine.py tests/agents/test_pilot_coordinator.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement pilot state machine and attempt coordinator"`
+  - [ ] **Stop Condition:** Parar se transição ilegal for aceita ou se uma tentativa tentar sobrescrever bundles anteriores.
 
 ---
 
 ### Task 44: Restricted Pilot Dataset QA Gates
 - **Objetivo:** Implementar a suíte determinística de validação de qualidade voltada especificamente para o `RestrictedPilotWorkspace`, auditando conformidade com schemas, proveniência completa (fonte e página em cada entidade), cobertura integral de páginas e integridade relacional.
+- **Dependências:** Task 42.
 - **Consumes:**
   - `scripts/agents/restricted_workspace.py`
   - `schemas/entity.schema.json`
@@ -425,16 +617,19 @@
     - `validate_dataset(workspace_root: Path, book_id: str, expected_pages: int) -> DatasetQAVerdict`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_pilot_qa_validator.py` testando aprovação de dataset íntegro, falha diante de página ausente, falha diante de entidade sem fonte/página e falha diante de relação quebrada.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_qa_validator.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_pilot_qa_validator.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.pilot_qa_validator'`.
   - [ ] **GREEN:** Implementar `scripts/agents/pilot_qa_validator.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_qa_validator.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_pilot_qa_validator.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement restricted pilot dataset qa gates"`
+  - [ ] **Stop Condition:** Parar se qualquer violação de schema, cobertura ou proveniência passar sem ser reportada no veredicto.
 
 ---
 
 ### Task 45: Local Preview Projector & Runtime Data Isolation
 - **Objetivo:** Implementar o projetor de dados para preview local, lendo os dados persistidos no `RestrictedPilotWorkspace` e gerando os arquivos de projeção exclusivamente em `<repository-parent>/.daemon_runtime/preview/<bookId>/`, com bloqueio absoluto de qualquer projeção pública para conteúdos `UNKNOWN` / `NOT_PUBLIC`.
+- **Dependências:** Task 42, Task 44.
 - **Consumes:**
   - `scripts/agents/restricted_workspace.py`
   - `scripts/agents/canonical_json.py`
@@ -446,16 +641,19 @@
     - `project_local_preview(workspace_root: Path, preview_root: Path, book_id: str, rights_status: str, publication_mode: str) -> Path`
 - **TDD Steps:**
   - [ ] **RED:** Criar testes em `tests/agents/test_preview_projector.py` verificando projeção válida no runtime, formatação do `index.json` local, e emissão de `ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED` se o caminho de destino for dentro de `docs/` ou repositório rastreado.
-  - [ ] Executar: `python -m pytest tests/agents/test_preview_projector.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_preview_projector.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.preview_projector'`.
   - [ ] **GREEN:** Implementar `scripts/agents/preview_projector.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_preview_projector.py -q` (deve passar 100%).
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_preview_projector.py -q` (deve passar 100%).
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement local preview projector and rights guard"`
+  - [ ] **Stop Condition:** Parar se o projetor permitir que dados `NOT_PUBLIC` sejam direcionados para `docs/assets/data/`.
 
 ---
 
-### Task 46: Frontend Runtime Preview Integration (Non-destructive local loader)
-- **Objetivo:** Implementar o servidor local HTTP de desenvolvimento com rota de overlay para dados de preview e ajustar pontualmente `docs/assets/app.js` para aceitar parâmetro de preview dinâmico sem alterar ou escrever nenhum arquivo em `docs/assets/data/`.
+### Task 46: Frontend Runtime Preview Integration & Acceptance Suite
+- **Objetivo:** Implementar o servidor local HTTP de desenvolvimento (`PreviewServer`) vinculado exclusivamente a loopback, com rota de overlay para dados de preview, ajustar pontualmente `docs/assets/app.js` para aceitar parâmetro de preview dinâmico sem alterar ou escrever nenhum arquivo em `docs/assets/data/`, e implementar suíte de testes de aceitação do frontend provando busca, navegação e relações clicáveis sobre fixtures sintéticas.
+- **Dependências:** Task 45.
 - **Consumes:**
   - `scripts/agents/preview_projector.py`
   - `docs/assets/app.js`
@@ -464,24 +662,31 @@
   - `scripts/agents/preview_server.py`
   - `docs/assets/app.js` (MODIFIED)
   - `tests/agents/test_preview_server.py`
+  - `tests/agents/fixtures/synthetic_preview_data/`
 - **Interfaces:**
   - `class PreviewServer:`
-    - `run_preview_server(preview_root: Path, port: int = 8080) -> None`
-  - Frontend contract:
-    - URL: `http://localhost:8080/?preview=animalidade` carrega dados runtime sem tocar `docs/assets/data/pilot/`.
+    - `run_preview_server(preview_root: Path, port: int = 8080, host: str = "127.0.0.1") -> None`
+  - Frontend acceptance verification:
+    - Search finds synthetic entity.
+    - Navigation opens detail pane and updates hash.
+    - Relations resolve target badge or display missing target gracefully.
+    - Non-local access to `?preview=...` fails closed without loading restricted data.
 - **TDD Steps:**
-  - [ ] **RED:** Criar testes em `tests/agents/test_preview_server.py` testando que o servidor entrega os arquivos estáticos de `docs/` e intercepta requests de dados direcionando para a pasta runtime `<runtime>/preview/animalidade/`.
-  - [ ] Executar: `python -m pytest tests/agents/test_preview_server.py -q` (deve falhar).
-  - [ ] **GREEN:** Implementar `scripts/agents/preview_server.py` e modificar minimamente `docs/assets/app.js` para suporte a preview sem quebrar o baseline.
-  - [ ] Executar: `python -m pytest tests/agents/test_preview_server.py -q` (deve passar 100%).
+  - [ ] **RED:** Criar testes em `tests/agents/test_preview_server.py` testando: entrega de arquivos estáticos de `docs/`, interceptação de dados de preview para `<runtime>/preview/`, binding estrito a `127.0.0.1` (rejeitando `0.0.0.0`), proteção contra path traversal, e testes determinísticos provando busca, navegação e relações clicáveis na fixture sintética.
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_preview_server.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.preview_server'`.
+  - [ ] **GREEN:** Implementar `scripts/agents/preview_server.py` e modificar minimamente `docs/assets/app.js` para suporte a preview local sem quebrar a baseline.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_preview_server.py -q` (deve passar 100%).
   - [ ] Executar validação de sintaxe JS: `node --check docs/assets/app.js`.
-  - [ ] Executar regressão: `python -m pytest tests/agents -q`.
+  - [ ] Executar Regressão: `python -m pytest tests/agents -q`.
   - [ ] Commit: `git commit -m "feat(pilot): implement preview server and non-destructive frontend loader"`
+  - [ ] **Stop Condition:** Parar se o servidor permitir acesso fora de localhost ou se o código do frontend falhar na sintaxe.
 
 ---
 
 ### Task 47: Hermetic End-to-End Pipeline Integration & Regression Suite
 - **Objetivo:** Construir a suíte hermética completa E2E integrando todos os componentes da V2.2, simulando a jornada ponta a ponta com fixtures sintéticas do livro piloto (13 páginas de regras, criaturas e rituais), validando fluxos felizes e caminhos de erro/rework.
+- **Dependências:** Tasks 35 a 46.
 - **Consumes:**
   - Todos os componentes criados nas Tasks 35 a 46.
 - **Produces:**
@@ -493,34 +698,40 @@
   - `test_main_worktree_remains_strictly_clean_after_persistence()`
 - **TDD Steps:**
   - [ ] **RED:** Implementar testes ponta a ponta em `tests/agents/test_pilot_pipeline_e2e.py` exercitando: Export -> Import -> Integrity Validator -> Legacy Comparator -> Review Request -> Review Decision -> Restricted Workspace Persistence -> QA Gates -> Preview Projection -> Invariant check (main worktree clean).
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_pipeline_e2e.py -q` (deve falhar).
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_pilot_pipeline_e2e.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'tests.agents.test_pilot_pipeline_e2e'` ou fixtures ausentes.
   - [ ] **GREEN:** Ajustar eventuais arestas de integração até que 100% dos cenários E2E passem hermeticamente offline.
-  - [ ] Executar: `python -m pytest tests/agents/test_pilot_pipeline_e2e.py -q` (deve passar 100%).
-  - [ ] Executar suite completa: `python -m pytest -q`.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_pilot_pipeline_e2e.py -q` (deve passar 100%).
+  - [ ] Executar Suite Completa: `python -m pytest -q`.
   - [ ] Commit: `git commit -m "test(pilot): add hermetic e2e pipeline integration suite"`
+  - [ ] **Stop Condition:** Parar se qualquer etapa da cadeia quebrar ou se o teste deixar artefatos residuais fora de `tmp_path`.
 
 ---
 
 ### Task 48: Operational Pilot Preparation & `INFRASTRUCTURE_VERIFIED` Checkpoint
-- **Objetivo:** Implementar o script de preparação do job piloto real de `animalidade`, validando a custódia da fonte (`Livros/word/feito/animalidade.docx`), pré-requisitos de runtime e emitindo formalmente o checkpoint de verificação da infraestrutura antes de qualquer geração de bundle real.
+- **Objetivo:** Implementar o ferramental de preparação e auditoria pré-voo (`prepare_pilot_job.py`) e validá-lo exclusivamente contra fixtures sintéticas e testes unitários em `tmp_path`, emitindo formalmente o checkpoint de verificação da infraestrutura sem processar o livro real.
+- **Dependências:** Task 47.
 - **Consumes:**
   - `scripts/agents/pilot_coordinator.py`
-  - `Livros/word/feito/animalidade.docx`
+  - `Livros/word/feito/animalidade.docx` (auditoria estática de custódia e hash)
 - **Produces:**
   - `scripts/agents/prepare_pilot_job.py`
   - `tests/agents/test_prepare_pilot_job.py`
 - **Interfaces:**
   - `class PilotJobPreparer:`
     - `verify_source_custody(book_id: str) -> SourceCustodyReport`
-    - `prepare_pilot_environment(book_id: str) -> PilotReadinessStatus`
+    - `prepare_pilot_environment(book_id: str, runtime_base: Path) -> PilotReadinessStatus`
     - `emit_infrastructure_verified_checkpoint() -> str`
 - **TDD Steps:**
-  - [ ] **RED:** Criar testes em `tests/agents/test_prepare_pilot_job.py` verificando detecção correta da custódia de `animalidade`, inicialização das pastas runtime e validação de prontidão.
-  - [ ] Executar: `python -m pytest tests/agents/test_prepare_pilot_job.py -q` (deve falhar).
+  - [ ] **RED:** Criar testes em `tests/agents/test_prepare_pilot_job.py` verificando detecção correta da custódia de `animalidade`, inicialização das pastas runtime e validação de prontidão sobre ambiente simulado.
+  - [ ] Executar Targeted RED: `python -m pytest tests/agents/test_prepare_pilot_job.py -q`
+  - [ ] *Motivo esperado da falha:* `ModuleNotFoundError: No module named 'scripts.agents.prepare_pilot_job'`.
   - [ ] **GREEN:** Implementar `scripts/agents/prepare_pilot_job.py`.
-  - [ ] Executar: `python -m pytest tests/agents/test_prepare_pilot_job.py -q` (deve passar 100%).
-  - [ ] Executar suite completa e validadores.
+  - [ ] Executar Targeted PASS: `python -m pytest tests/agents/test_prepare_pilot_job.py -q` (deve passar 100%).
+  - [ ] Executar Suite Completa: `python -m pytest -q`.
+  - [ ] Executar Validadores: `python scripts/validate_data.py`, `python scripts/check_book_coverage.py`, `node --check docs/assets/app.js`.
   - [ ] Commit: `git commit -m "feat(pilot): implement pilot job preparation and readiness checkpoint"`
+  - [ ] **Stop Condition:** Parar se o script de preparação tentar gerar um bundle real do livro ou se tentar chamar modelos externos.
 
 ---
 
@@ -531,18 +742,45 @@
 > ```text
 > INFRASTRUCTURE_VERIFIED
 > ```
-> NENHUM bundle real do livro `animalidade` será exportado e NENHUM dado piloto será processado antes da verificação e validação formal desse checkpoint por aprovação humana.
+> NENHUM bundle real do livro `animalidade` será exportado e NENHUM dado piloto será processado antes da verificação e validação formal desse checkpoint por aprovação humana. A execução operacional do livro ocorrerá no Master Runbook subsequente.
 
+---
+
+## Plan Traceability Matrix
+
+A matriz abaixo mapeia cada seção normativa da especificação de design (`docs/superpowers/specs/2026-09-08-pilot-content-pipeline-v2-2-design.md`) à sua respectiva Task, arquivos de teste e evidência determinística:
+
+| Seção da Spec | Tópico Normativo | Task de Implementação | Arquivo de Teste | Critério de Aceitação / Gate |
+|:---|:---|:---:|:---|:---|
+| **Seção 2 & 4** | Invariante `RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE` | Task 42 / 47 | `test_restricted_workspace.py`, `test_pilot_pipeline_e2e.py` | Main worktree 100% clean de tracked e untracked files |
+| **Seção 2 & 6** | V2.1 como motor único de persistência | Task 42 | `test_pilot_persistence_adapter.py` | Reuso estrito de `ApplicationCoordinator`, TOCTOU e atomicidade |
+| **Seção 3 & 6** | `RestrictedPilotWorkspace` isolado em runtime | Task 42 | `test_restricted_workspace.py` | Armazenamento em `<runtime>/workspaces/pilot/<bookId>/repository/` |
+| **Seção 7** | Matriz de Direitos e Bloqueio de Publicação Pública | Task 45 | `test_preview_projector.py` | `ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED` para `UNKNOWN`/`NOT_PUBLIC` |
+| **Seção 8 & 18** | Empacotamento manual e `ANTIGRAVITY-INSTRUCTIONS.md` | Task 36 | `test_bundle_exporter.py` | Bundle exportado autocontido com instruções operacionais |
+| **Seção 9** | Máquina de estados e modelo de tentativas (`attempt-N`) | Task 43 | `test_pilot_state_machine.py`, `test_pilot_coordinator.py` | Imutabilidade de bundles, sem sobrescrita, fail-closed |
+| **Seção 10** | Canonicalização JSON e amarrações de hash SHA-256 | Task 35 | `test_canonical_json.py` | Hashes canônicos determinísticos excluindo timestamps temporais |
+| **Seção 11** | `BundleIntegrityValidator` e integridade física | Task 38 | `test_bundle_integrity_validator.py` | Hashes de arquivos em disco batem com manifesto; path traversal bloqueado |
+| **Seção 12** | `LegacyComparator` determinístico sem LLM | Task 39 | `test_legacy_comparator.py` | Veredictos estruturais objetivos; divergência gera review |
+| **Seção 13** | `PilotAuditStore` durável e segregado | Task 41 | `test_pilot_audit_store.py` | Append-only `transitions.jsonl` isolado de ChangeSets e limpezas |
+| **Seção 14** | Revisão humana amarrada ao hash do resultado | Task 40 | `test_pilot_review.py` | `ERR_REVIEW_HASH_MISMATCH` se artefatos adulterados; proíbe auto-aprovação |
+| **Seção 15** | Estratégia de QA em dois níveis | Task 44 / 47 | `test_pilot_qa_validator.py` | Repository regression gates vs Restricted dataset QA gates |
+| **Seção 7 & 18** | Projeção e Servidor de Preview Local | Task 45 / 46 | `test_preview_projector.py`, `test_preview_server.py` | Bind exclusivo em 127.0.0.1; busca, navegação e relações ativas |
+| **Seção 16** | Critérios de conclusão e checkpoint operacional | Task 48 | `test_prepare_pilot_job.py` | Emissão de `INFRASTRUCTURE_VERIFIED` sem processar livro real |
 ---
 
 ## Self-Review de Conformidade com a Especificação
 
 - [x] **Spec Coverage:** Todas as seções e requisitos da especificação V2.2 (`docs/superpowers/specs/2026-09-08-pilot-content-pipeline-v2-2-design.md`) foram cobertos nas Tasks 35–48.
-- [x] **No Placeholders:** Nenhum `TODO`, `TBD` ou descrição genérica foi utilizada. Todas as interfaces, schemas e testes possuem assinaturas e responsabilidades explícitas.
-- [x] **Restricted Invariant:** `RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE` protegido arquiteturalmente e verificado em testes de integração (Task 42 e Task 47).
-- [x] **V2.1 Reuse:** Reuso total e exclusivo do `ApplicationCoordinator`, `ChangeSetBuilder`, `StagingManager` e primitivas atômicas da V2.1 sem código duplicado (Task 42).
-- [x] **Segregated Audit:** `PilotAuditStore` de propriedade exclusiva do runtime confiável, segregated from content (Task 41).
-- [x] **Manual Antigravity Bridge:** Geração de `ANTIGRAVITY-INSTRUCTIONS.md` sem automação de API de terceiros ou browser (Task 36).
-- [x] **Frontend / Publication Isolation:** `PublishProjector` permanece deferido; preview local opera através de servidor runtime overlay sem escrita em `docs/` (Task 45 e Task 46).
-- [x] **Deterministic Legacy Comparator:** Comparação estrutural estrita sem uso de LLM (Task 39).
-- [x] **Pre-existing Source Custody:** Condição de `Livros/word/feito/animalidade.docx` formalizada como `PRE_EXISTING_SOURCE_CUSTODY_CONDITION` sem novas cópias no Git (Preflight e Task 48).
+- [x] **Stage Coverage Matrix:** Matriz completa cobrindo Source, Extraction, Editorial, Entities, Relations, QA e Frontend Preview incluída.
+- [x] **V2 Contracts Reuse:** Explicitado que `ExecutionBundle` encapsula `ExecutionRequest` e `ResultBundle` encapsula `ExecutionResult` sem criar modelos redundantes.
+- [x] **Result Identity Model:** Interfaces concretas para `requestId`, `executionBundleId`, `resultBundleId`, `inputManifestSha256`, `resultManifestSha256`, `artifactSha256` e `attemptNumber`.
+- [x] **Restricted Output Shape:** Documentados todos os caminhos canônicos permitidos (`data/text/`, `data/blocks/`, `data/segments/`, `data/entities/`, `data/books/`, `data/pilot/`) no workspace isolado.
+- [x] **Main Worktree Proof:** Prova determinística de working tree limpa usando fixtures temporárias (`tmp_path`) sem tocar o checkout real.
+- [x] **Audit Store Durability:** Monotonia estrita (`seq`), atomicidade de escrita, resiliência a registros corrompidos e imunidade a expurgos de cache.
+- [x] **External Human Decision:** Proibição formal de auto-aprovação pelo executor; decisão amarrada ao hash exato do manifesto.
+- [x] **Local by Construction:** Preview indisponível no GitHub Pages público por query string; ativado unicamente pelo servidor loopback local.
+- [x] **Preview Server Security:** Vinculação estrita a `127.0.0.1`, regex de `bookId`, proteção contra traversal e isolamento contra o resto do sistema de arquivos.
+- [x] **Frontend Acceptance Tests:** Testes de busca, navegação e relações ativas sobre fixtures sintéticas no CI.
+- [x] **Task 48 Boundary:** Limite estrito mantido; nenhuma operação real com `animalidade.docx` antes do runbook pós-infraestrutura.
+- [x] **Stop-on-Error Readiness:** Todos os passos TDD contam com comando targeted RED, motivo esperado de falha, implementação mínima GREEN, targeted PASS e gate de regressão.
+- [x] **Traceability Matrix:** Matriz completa de rastreabilidade entre seções normativas da spec e tasks de implementação adicionada.
