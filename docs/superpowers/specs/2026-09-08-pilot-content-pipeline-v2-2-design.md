@@ -158,7 +158,13 @@ A auditoria técnica da camada V2.1 confirmou que `ApplicationRuntimeConfig.crea
 
 ## 7. Matriz Canônica de Direitos e Fronteiras de Projeção
 
-A relação entre a política de direitos e a autorização de projeção é governada deterministamente em conformidade com o `GateEngine`:
+A autorização de qualquer projeção pública é determinada de forma estrita e canônica pelo `GateEngine` e pela política de direitos para a **projeção exata solicitada**. O `PublishProjector` não reimplementa nem interpreta regras de direitos; ele opera unicamente como executor técnico subordinado ao veredicto determinístico emitido pelo `GateEngine`:
+
+- **`AUTHORIZED` + modo de publicação compatível:** Potencialmente permitido (`ELEGÍVEL`, sujeito a QA PASS + Release Gates PASS + Decisão Humana de Release).
+- **`PUBLIC_DOMAIN` + modo de publicação compatível:** Potencialmente permitido (`ELEGÍVEL`, sujeito a QA PASS + Release Gates PASS + Decisão Humana de Release).
+- **`METADATA_ONLY` (permissão de metadados) + projeção restrita a metadados:** Potencialmente permitido (`ELEGÍVEL`, estritamente limitado aos metadados autorizados; requer QA PASS + Release Gates PASS + Decisão Humana).
+- **`METADATA_ONLY` + projeção de texto integral (`FULL_TEXT`):** **NEGADO** (`DENIED`).
+- **`PRIVATE`, `UNKNOWN` ou modo de publicação `NOT_PUBLIC`:** **NEGADO** (`DENIED`) para qualquer projeção pública de payload.
 
 | rightsStatus | publicationMode | Projeção Solicitada | Veredicto de Direitos | Destino Autorizado | Mecanismo |
 |:---|:---|:---|:---:|:---|:---|
@@ -178,8 +184,9 @@ A relação entre a política de direitos e a autorização de projeção é gov
    - **Destino:** `<repository-parent>/.daemon_runtime/preview/<bookId>/`.
    - **Operação:** Acionado somente após aprovação nos gates de QA do workspace. Alimenta o servidor HTTP local através de overlay em memória, mantendo `docs/` intocado.
 2. **`PublishProjector` (Publicação / Deploy):**
-   - **Condição:** Exige deliberação positiva explícita do `GateEngine` / política de direitos, QA PASS, release gates PASS e aprovação humana final de publicação.
-   - **Status na V2.2:** **BLOQUEADO / DESATIVADO.** Não haverá publicação de dados na V2.2.
+   - **Autoridade:** Não possui autoridade de governança própria; subordina-se estritamente ao veredicto do `GateEngine` para a projeção exata solicitada.
+   - **Condição:** Exige veredicto positivo explícito do `GateEngine`, aprovação formal em QA PASS, aprovação em Release Gates PASS e deliberação humana final de publicação.
+   - **Status na V2.2:** **BLOQUEADO / DESATIVADO.** Não haverá qualquer publicação de dados na V2.2.
 
 ---
 
