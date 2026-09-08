@@ -24,9 +24,10 @@ A **Version 2.1 (Persistence / Application Layer)** define a fronteira segura, d
 3. **Allowlist-First Application Authority.** (Por padrão, qualquer mutação exige `HUMAN_REVIEW`. Somente caminhos pertencentes explicitamente a `AutoApplyRoots` são elegíveis para aplicação automática).
 4. **Requested write scope never expands application authority.** (A autoridade real de mutação é a interseção estrita: `requested_scope` $\cap$ `AutoApplyRoots` $\cap$ `ApplicationPolicy`).
 5. **Every filesystem mutation must pass deterministic preconditions immediately before mutation (TOCTOU Recheck).** (Verificação fail-closed de concorrência otimista via SHA256 base e ausência de arquivo imediatamente antes da primeira mutação física).
-6. **No partial ChangeSet application is allowed.** (Semântica all-or-nothing implementada através de pré-validação, staging isolado, journal de transação e rollback compensatório).
-7. **Destructive operations (DELETE, RENAME, MOVE) are strictly forbidden in V2.1.** (Apenas criação exclusiva de novos arquivos e atualização de arquivos existentes são autorizadas).
+6. **No partial ChangeSet application is allowed.** (Semântica all-or-nothing implementada através de pré-validação, staging isolado no mesmo volume, journal transacional e rollback compensatório restrito).
+7. **Destructive operations (DELETE, RENAME, MOVE) are strictly forbidden in V2.1.** (Apenas criação exclusiva de novos arquivos e atualização de arquivos existentes são autorizadas para propostas e ChangeSets. Remoção de arquivos é autorizada exclusivamente como rotina interna de compensação/rollback para desarmar um `CREATE` recém-aplicado na mesma transação que falhou).
 8. **CREATE operations never overwrite existing targets.** (Criação exclusiva atômica; qualquer conflito aborta a transação e escala para `HUMAN_REVIEW`).
+9. **Same-Filesystem Staging Invariant.** (O diretório de staging deve residir no mesmo volume do repositório para garantir atomicidade de renomeação. Se a equivalência de volume não puder ser garantida, a auto-aplicação falha em modo fechado: `AUTO_APPLY` fail-closed).
 
 ---
 
@@ -39,19 +40,24 @@ A **Version 2.1 (Persistence / Application Layer)** define a fronteira segura, d
 - **Interseção Estrita de Autoridade**: Garantir que `allowedWriteScope` da requisição nunca amplie as raízes elegíveis de auto-aplicação.
 - **PreconditionValidator com Proteção TOCTOU**: Validar existência, ausência e hash SHA256 do arquivo base na análise inicial e revalidar imediatamente antes da primeira mutação física.
 - **PatchApplier em Memória**: Gerar e validar conteúdo candidato (UTF-8, JSON) sem alterar arquivos vivos.
-- **Staging Isolado Fora da Árvore Versionada**: Gravar candidatos em diretório de staging runtime-owned, não controlável por LLM e hard-blocked como alvo de mutações.
-- **Aplicação All-or-Nothing em 6 Fases**: Executar mutações atômicas individuais com journal transacional e rollback compensatório em caso de falha.
+- **Staging no Mesmo Filesystem Fora da Árvore Versionada**: Gerenciar staging temporário em diretório runtime-owned no mesmo volume de disco dos alvos, fora do controle do LLM e hard-blocked como alvo de mutações.
+- **Aplicação All-or-Nothing em 6 Fases**: Executar mutações atômicas individuais com journal transacional como fonte única de autoridade para compensação.
 - **Proteção de Criação Exclusiva**: Garantir que `CREATE` nunca sobrescreva arquivos existentes mesmo sob condições de corrida concorrente.
+- **Rollback Compensatório Estritamente Delimitado**:
+  - Reversão de `CREATE`: Remoção compensatória restrita ao arquivo recém-criado, verificando correspondência exata de hash.
+  - Reversão de `UPDATE`: Restauração de snapshot original verificando que o arquivo não foi modificado por processo concorrente externo.
 - **ApplicationResult e Journal Forense**: Registrar resultado detalhado com taxonomia clara (`APPLIED`, `NOT_APPLIED`, `ROLLED_BACK`, `ROLLBACK_FAILED`, `HUMAN_REVIEW`, `BLOCKED`).
 
 ### 2.2 Non-Goals (Fora do Escopo da V2.1)
-- **NÃO** suporta operações destrutivas (`DELETE`, `RENAME`, `MOVE`).
+- **NÃO** suporta operações destrutivas (`DELETE`, `RENAME`, `MOVE`) pelo usuário, LLM ou ExecutionResult.
 - **NÃO** executa commits git automáticos, push remoto ou abertura de Pull Requests.
 - **NÃO** implementa concorrência distribuída ou múltiplos escritores concorrentes (assume escritor único controlado).
 - **NÃO** faz chamadas a provedores ou LLMs para "resolver conflitos" ou "recuperar falhas".
 - **NÃO** substitui arquivos silenciosamente sem verificação de hash base (`expectedBaseSha256`).
-- **NÃO** promete primitivas nativas de transação atômica multi-arquivo que o sistema de arquivos não oferece (utiliza semântica all-or-nothing com rollback compensatório).
+- **NÃO** promete primitivas nativas de transação atômica multi-arquivo que o sistema de arquivos não oferece (utiliza semântica all-or-nothing com journal e rollback compensatório).
+- **NÃO** degrada silenciosamente para cópia não-atômica entre volumes se o staging estiver em outro filesystem (falha fechado com `ERR_CROSS_VOLUME_STAGING`).
 - **NÃO** permite que o modelo ou a ExecutionRequest configurem ou acessem o caminho de staging.
+- **NÃO** sobrescreve modificações externas concorrentes durante uma tentativa de rollback.
 
 ---
 
@@ -146,7 +152,7 @@ $$\text{EffectiveAutoApplyScope} = \text{requested\_write\_scope} \cap \text{Aut
 
 ## 4. Arquitetura e Fluxo de Execução em 6 Fases
 
-O sistema de arquivos local não oferece suporte a transações ACID multi-arquivo nativas. Por isso, a V2.1 garante a semântica **all-or-nothing** através de um processo determinístico em 6 fases:
+O sistema de arquivos local não oferece suporte a transações ACID multi-arquivo nativas. Por isso, a V2.1 garante a semântica **all-or-nothing** através de um processo determinístico em 6 fases com journal transacional:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -171,8 +177,9 @@ O sistema de arquivos local não oferece suporte a transações ACID multi-arqui
                                             │
                                             ▼
                         ┌───────────────────────────────────────┐
-                        │ Phase 3: Isolated Runtime Staging     │
-                        │ - Staging outside git tracked tree    │
+                        │ Phase 3: Same-Filesystem Staging      │
+                        │ - Same volume check (fail-closed)     │
+                        │ - Outside tracked repo tree           │
                         │ - Write candidates & verify hashes    │
                         └───────────────────┬───────────────────┘
                                             │
@@ -192,7 +199,8 @@ O sistema de arquivos local não oferece suporte a transações ACID multi-arqui
                         │ Phase 5: Individual Atomic Operations │
                         │ - Sequential atomic replace / create  │
                         │ - Exclusive CREATE (O_CREAT | O_EXCL) │
-                        │ - Backup snapshots & active journal   │
+                        │ - Pre-mutation backup snapshot        │
+                        │ - Active transaction journal logging  │
                         └───────────────┬───────────────────────┘
                                         │
                  ┌──────────────────────┴──────────────────────┐
@@ -200,10 +208,12 @@ O sistema de arquivos local não oferece suporte a transações ACID multi-arqui
                  ▼                                             ▼
 ┌─────────────────────────────────┐           ┌─────────────────────────────────┐
 │ Success Finalization            │           │ Phase 6: Compensating Rollback  │
-│ - Final verification            │           │ - Restore all backups           │
-│ - Staging cleanup               │           │ - Verify restoration hashes     │
-│ - Status: APPLIED               │           │ - If clean: ROLLED_BACK         │
-└─────────────────────────────────┘           │ - If failed: ROLLBACK_FAILED    │
+│ - Final state verification      │           │ - Journal-driven compensation   │
+│ - Cleanup temporary candidates  │           │ - CREATE: Compensating cleanup  │
+│ - Status: APPLIED               │           │ - UPDATE: Snapshot restoration  │
+└─────────────────────────────────┘           │ - If clean: ROLLED_BACK         │
+                                              │ - If external change / fail:    │
+                                              │   ROLLBACK_FAILED (BLOCKED)     │
                                               └─────────────────────────────────┘
 ```
 
@@ -228,12 +238,12 @@ O sistema de arquivos local não oferece suporte a transações ACID multi-arqui
    - Para arquivos com extensão `.json`: validação de parse sintático JSON.
 2. Gera estruturas em memória `CandidateArtifact` prontas para estagiamento.
 
-#### Fase 3: Estagiamento Isolado (Runtime Staging)
-1. Cria diretório temporário isolado de staging:
-   - Localização padrão: Diretório temporário do sistema operacional (ex: `tempfile.gettempdir()/daemon_staging/<changeSetId>/`), fora da árvore rastreada do Git.
-   - Alternativa de configuração: Diretório de runtime ignorado pelo git (ex: `.daemon_runtime/staging/<changeSetId>/`), explicitamente protegido e hard-blocked como destino.
-2. O caminho de staging é gerado exclusivamente pelo runtime do sistema; modelos e requisições nunca têm visibilidade ou controle sobre ele.
-3. Grava os candidatos no diretório de staging e calcula o SHA256 de cada arquivo estagiado (`candidate_sha256`).
+#### Fase 3: Estagiamento Isolado no Mesmo Filesystem (Same-Volume Staging)
+1. **Regra de Invariância de Volume**: O diretório de staging deve residir comprovadamente no **mesmo filesystem / volume** que os alvos do repositório (para garantir que `os.replace` execute uma substituição atômica de inode/diretório sem fallback para cópia entre volumes).
+   - Se o caminho de staging estiver em volume diferente ou se a verificação de volume falhar $\rightarrow$ `AUTO_APPLY` falha em modo fechado com código `ERR_CROSS_VOLUME_STAGING` e escala para `HUMAN_REVIEW`.
+2. **Localização Segura**: O staging deve residir **fora da árvore rastreada do Git** (ex: diretório derivado localmente no parent ou em `.daemon_runtime/staging/<changeSetId>/` com gitignore estrito e hard-blocked como alvo).
+3. O caminho de staging é gerenciado exclusivamente pelo runtime; modelos e requisições não podem configurá-lo, observá-lo ou direcionar mutações para ele.
+4. Grava os candidatos no staging e calcula o SHA256 de cada arquivo estagiado (`candidate_sha256`).
 
 #### Fase 4: Revalidação de Pré-condições TOCTOU (Imediatamente Pré-Mutação)
 Imediatamente antes de realizar a primeira mutação física no repositório, o `PreconditionValidator` inspeciona o sistema de arquivos ao vivo:
@@ -254,33 +264,39 @@ Imediatamente antes de realizar a primeira mutação física no repositório, o 
 1. Cria subdiretório de backup no staging: `<stagingDir>/backups/`.
 2. Para cada operação no `ChangeSet`:
    - Para `UPDATE`: Copia o arquivo atual em disco para o diretório de backups antes da substituição.
-   - Inicializa registro no `TransactionJournal`.
+   - Registra entrada `PENDING` no `TransactionJournal`.
 3. Aplica cada operação individualmente:
-   - Para `UPDATE`: Executa substituição atômica via `os.replace(staged_file, target_path)`. (No mesmo volume do sistema de arquivos, `os.replace` é uma operação atômica de renomeação).
+   - Para `UPDATE`: Executa substituição atômica via `os.replace(staged_file, target_path)` no mesmo volume.
    - Para `CREATE`: Executa **criação exclusiva atômica** via flags de sistema `os.O_CREAT | os.O_EXCL | os.O_WRONLY` (ou modo `"x"` em Python). Se o arquivo tiver surgido milissegundos antes, a criação falha deterministicamente sem sobrescrever o arquivo existente.
-4. Registra o sucesso de cada mutação individual no journal.
+4. Lê o hash pós-aplicação no disco (`observed_post_apply_sha256`) e atualiza o journal para `APPLIED`.
 5. Se todas as operações forem concluídas com sucesso:
-   - Limpa o staging.
+   - Executa limpeza dos arquivos temporários de staging (conforme Seção 5.4).
    - Emite `ApplicationResult` com status `APPLIED`.
 
-#### Fase 6: Rollback Compensatório (Tratamento de Falha Parcial)
+#### Fase 6: Rollback Compensatório Orientado por Journal (Falha Parcial)
 Se ocorrer qualquer falha durante a Fase 5 (erro de I/O, falha de permissão, conflito de criação concorrente na operação $K$ de $N$):
 1. Interrompe imediatamente novas gravações.
-2. Registra o erro no journal de transação.
-3. Inicia processo de reversão compensatória:
-   - Para cada operação aplicada anteriormente ($1$ a $K-1$):
-     - Se era `CREATE`: Remove o arquivo criado pelo sistema.
-     - Se era `UPDATE`: Restaura o arquivo original a partir do snapshot em `<stagingDir>/backups/` usando `os.replace`.
-4. Verifica os hashes de todos os arquivos restaurados contra os hashes originais:
-   - Se todos os arquivos foram revertidos com integridade 100% comprovada:
+2. O `TransactionJournal` é a **fonte determinística exclusiva de autoridade** para a compensação. O rollback só atua sobre operações com status `APPLIED` registradas naquele `changeSetId`.
+3. Para cada operação aplicada anteriormente ($1$ a $K-1$), na ordem inversa:
+   - **Para operação `CREATE` (Internal Compensating Cleanup)**:
+     - Verifica se o hash atual no disco coincide rigorosamente com o hash gerado pela própria transação (`current_disk_hash == observed_post_apply_sha256`).
+     - Se o hash coincidir: remove **exclusivamente** o arquivo criado pela transação (`os.remove(target_path)`).
+     - Se o hash NÃO coincidir (o arquivo foi modificado por processo externo após a criação): **NÃO REMOVER**. Marca `rollback_result = SKIPPED_EXTERNAL_MUTATION`, aborta a compensação e define o status como `ROLLBACK_FAILED` $\rightarrow$ `CRITICAL` (`ERR_CRITICAL_ROLLBACK_FAILED`).
+   - **Para operação `UPDATE` (Snapshot Restoration)**:
+     - Verifica se o hash atual no disco coincide rigorosamente com o hash aplicado pela transação (`current_disk_hash == observed_post_apply_sha256`).
+     - Se o hash coincidir: restaura o arquivo original a partir do snapshot em `<stagingDir>/backups/` usando `os.replace`.
+     - Se o hash NÃO coincidir (o arquivo foi alterado por processo externo após o replace): **NÃO SOBRESCREVER**. Marca `rollback_result = SKIPPED_EXTERNAL_MUTATION`, aborta a compensação e define o status como `ROLLBACK_FAILED` $\rightarrow$ `CRITICAL` (`ERR_CRITICAL_ROLLBACK_FAILED`).
+4. Avalia o resultado da compensação:
+   - Se todas as operações aplicadas foram revertidas com 100% de sucesso e integridade confirmada:
      - Status: `ROLLED_BACK`.
      - Código de Erro: `ERR_ATOMIC_COMMIT_FAILED`.
+     - Staging de backups é limpo após confirmação dos hashes originais.
      - Ação: Escalação para `HUMAN_REVIEW`.
-   - Se a restauração de backup também encontrar falha de disco/hardware:
+   - Se qualquer passo de rollback falhar (erro de I/O ou mutação externa concorrente detectada):
      - Status: `ROLLBACK_FAILED`.
      - Código de Erro: `ERR_CRITICAL_ROLLBACK_FAILED`.
      - Severidade: `CRITICAL` $\rightarrow$ `BLOCKED` + `HUMAN_REVIEW`.
-     - O journal completo e os snapshots de backup são **preservados** em disco para permitir intervenção manual.
+     - **Preservação Obrigatória**: O staging, os backups e o journal **NÃO são excluídos**, permanecendo em disco para recuperação forense e manual.
      - `ROLLBACK_FAILED` **nunca** é reportado como uma aplicação limpa.
 
 ---
@@ -312,20 +328,24 @@ class ChangeSet:
     metadata: dict[str, Any]
 ```
 
-### 5.2 `TransactionJournal`
+### 5.2 `TransactionJournal` (Autoridade Determinística de Compensação)
 
 ```python
 @dataclass(frozen=True)
 class JournalOperationEntry:
     operation_id: str
-    type: str
+    type: str                     # "CREATE" ou "UPDATE"
     target_path: str
+    original_exists: bool
     expected_base_sha256: str | None
     candidate_sha256: str
-    status: str                   # "PENDING", "APPLIED", "REVERTED", "REVERT_FAILED"
+    applied_status: str           # "NOT_APPLIED", "APPLIED", "REVERTED", "REVERT_FAILED"
+    observed_post_apply_sha256: str | None
     backup_path: str | None
     applied_at: str | None
     reverted_at: str | None
+    rollback_attempted: bool
+    rollback_result: str | None   # "SUCCESS", "SKIPPED_EXTERNAL_MUTATION", "FAILED_IO"
     error_message: str | None
 
 @dataclass(frozen=True)
@@ -378,6 +398,18 @@ class ApplicationResult:
 | `HUMAN_REVIEW` | 0 mutações automáticas realizadas | Consistente (estado original) | Fila de revisão humana |
 | `BLOCKED` | 0 mutações realizadas (violação grave de segurança) | Consistente (estado original) | Rejeição imediata |
 
+### 5.4 Política de Ciclo de Vida e Limpeza de Staging
+
+1. **Quando o status é `APPLIED`**:
+   - Os arquivos candidatos e snapshots temporários são removidos do diretório de staging.
+   - O journal estruturado é mantido em log/metadados da execução para fins de auditoria.
+2. **Quando o status é `ROLLED_BACK`**:
+   - O runtime verifica a integridade de todos os hashes originais no disco.
+   - Somente após confirmar que o sistema de arquivos retornou 100% ao estado inicial, o diretório de staging é limpo.
+3. **Quando o status é `ROLLBACK_FAILED`**:
+   - O runtime **NÃO limpa** o diretório de staging, mantendo intactos todos os backups, arquivos candidatos e o journal.
+   - O estado do sistema é classificado como `PARTIALLY_MODIFIED_UNCERTAIN` e os artefatos preservados servem de base para resolução manual por operadores humanos.
+
 ---
 
 ## 6. Taxonomia Completa de Falhas da V2.1
@@ -388,6 +420,7 @@ class ApplicationResult:
 | `ERR_OPERATION_NOT_ALLOWED` | `BLOCKED` | Alta | Tentativa de DELETE, RENAME, MOVE ou operação não suportada |
 | `ERR_WRITE_SCOPE_VIOLATION` | `BLOCKED` | Alta | Caminho fora do allowedWriteScope da ExecutionRequest |
 | `ERR_HARD_BLOCKED_PATH` | `BLOCKED` | Crítica | Tentativa de mutação em `.git/`, staging ou path traversal |
+| `ERR_CROSS_VOLUME_STAGING` | `HUMAN_REVIEW` | Alta | Staging e alvos estão em volumes diferentes; atomicidade inviabilizada |
 | `ERR_NON_ALLOWLISTED_PATH` | `HUMAN_REVIEW` | Média | Caminho fora de `AutoApplyRoots` (política default de revisão) |
 | `ERR_PROTECTED_PATH` | `HUMAN_REVIEW` | Média | Tentativa de mutação em arquivos de código, schemas ou docs vitais |
 | `ERR_STALE_BASE` | `HUMAN_REVIEW` | Média | Hash SHA256 do arquivo em disco difere da base esperada (TOCTOU) |
@@ -413,19 +446,24 @@ class ApplicationResult:
    - Mutações em caminhos novos fora de `AutoApplyRoots` $\rightarrow$ `HUMAN_REVIEW` com `ERR_NON_ALLOWLISTED_PATH`.
    - Tentativa de mutação em `.git/` ou path traversal `../` $\rightarrow$ `BLOCKED` com `ERR_HARD_BLOCKED_PATH`.
    - Interseção estrita: `allowedWriteScope` contendo `scripts/` não autoriza auto-aplicação.
-2. **TOCTOU Precondition Recheck**:
+2. **Same-Filesystem Verification & Fail-Closed Staging**:
+   - Staging configurado no mesmo volume $\rightarrow$ aplicação normal autorizada.
+   - Staging simulado em ponto de montagem/volume distinto $\rightarrow$ rejeição fail-closed com `ERR_CROSS_VOLUME_STAGING`.
+3. **TOCTOU Precondition Recheck**:
    - `UPDATE`: Teste com alteração concorrente do arquivo no disco entre a Fase 1 e a Fase 4 $\rightarrow$ aborta antes da Fase 5 com `ERR_STALE_BASE` e zero alterações no repo.
    - `CREATE`: Teste com criação concorrente de arquivo no disco antes da Fase 4 $\rightarrow$ aborta com `ERR_CREATE_CONFLICT`.
-3. **Exclusive CREATE Race Protection**:
+4. **Exclusive CREATE Race Protection**:
    - Simulação de criação concorrente imediata durante a chamada de `CREATE` $\rightarrow$ detecção via `FileExistsError` / `O_EXCL`, abortando com rollback limpo.
-4. **All-or-Nothing Application & Compensating Rollback**:
-   - Lote de 3 arquivos bem-sucedido: 3 arquivos aplicados e status `APPLIED`.
-   - Lote de 3 arquivos com falha induzida no 3º arquivo: 1º e 2º arquivos restaurados com integridade perfeita, status `ROLLED_BACK`.
-   - Simulação de erro fatal de restauração: status `ROLLBACK_FAILED`, journal preservado com diagnósticos completos.
-5. **Staging Isolation**:
-   - Verificação de que o staging é criado fora da árvore rastreada do Git.
-   - Tentativa de passar staging path na request $\rightarrow$ ignorado/bloqueado.
-   - Limpeza automática de staging após execução bem-sucedida ou rollback.
+5. **Rollback Compensation & Journal Authority**:
+   - Compensating cleanup de `CREATE`: remove estritamente o arquivo criado pela transação quando o hash bate.
+   - Proteção de mutação externa em `CREATE`: se o arquivo criado for alterado externamente antes do rollback $\rightarrow$ não remove, status `ROLLBACK_FAILED`.
+   - Rollback de `UPDATE`: restaura o snapshot original quando o hash pós-aplicação bate.
+   - Proteção de mutação externa em `UPDATE`: se o arquivo atualizado for alterado externamente antes do rollback $\rightarrow$ não sobrescreve, status `ROLLBACK_FAILED`.
+   - Lote de 3 arquivos com falha induzida no 3º: 1º e 2º revertidos com integridade perfeita, status `ROLLED_BACK`.
+6. **Staging Cleanup Lifecycle**:
+   - Em `APPLIED`: staging temporário limpo.
+   - Em `ROLLED_BACK`: staging limpo somente após verificação de integridade dos hashes originais.
+   - Em `ROLLBACK_FAILED`: staging e backups preservados em disco para intervenção manual.
 
 ---
 
@@ -439,10 +477,10 @@ class ApplicationResult:
    - Lógica de interseção estrita com `allowedWriteScope`.
 3. **Task 27 — PreconditionValidator & TOCTOU Rechecker**:
    - Validador fail-closed de pré-condições, path safety, verificação de base SHA256 e revalidação TOCTOU pré-mutação.
-4. **Task 28 — PatchApplier & Isolated Staging Manager**:
-   - Construtor de candidatos em memória e gerenciador de staging temporário isolado fora do git.
+4. **Task 28 — PatchApplier & Same-Filesystem Staging Manager**:
+   - Construtor de candidatos em memória e gerenciador de staging temporário com validação fail-closed de mesmo volume de disco.
 5. **Task 29 — Atomic Applier with Compensating Rollback Engine**:
-   - Executor transacional all-or-nothing com substituição atômica unitária, exclusive CREATE, journal forense e motor de rollback.
+   - Executor transacional all-or-nothing com substituição atômica unitária, exclusive CREATE, journal forense como autoridade única de rollback e proteções contra mutações externas concorrentes.
 6. **Task 30 — End-to-End Persistence Pipeline & Fixtures**:
    - Integração completa da camada de persistência com `ExecutionCoordinator` da V2 em ambiente de teste determinístico.
 
