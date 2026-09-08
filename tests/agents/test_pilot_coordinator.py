@@ -1,0 +1,125 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+import pytest
+
+from scripts.agents.bundle_importer import ResultBundleEnvelope
+from scripts.agents.canonical_json import sha256_bytes
+from scripts.agents.pilot_audit_store import PilotAuditStore
+from scripts.agents.pilot_coordinator import PilotCoordinator, PilotCoordinatorError
+
+
+@pytest.fixture
+def coordinator_env(tmp_path: Path):
+    runtime_root = tmp_path / ".daemon_runtime"
+    audit_store = PilotAuditStore(runtime_root / "audit" / "pilot")
+    coordinator = PilotCoordinator(audit_store=audit_store, runtime_root=runtime_root)
+    return coordinator, runtime_root, audit_store
+
+
+def test_initialize_attempt_success(coordinator_env):
+    coord, _, audit_store = coordinator_env
+    attempt_meta = coord.initialize_attempt("JOB-ANIM-001", "animalidade", "EXTRACTION", attempt_num=1)
+
+    assert attempt_meta["attemptNumber"] == 1
+    assert attempt_meta["state"] == "READY_TO_EXPORT"
+
+    history = audit_store.get_audit_history("animalidade")
+    assert len(history) == 1
+    assert history[0]["toState"] == "READY_TO_EXPORT"
+
+
+def test_no_retry_overwrite(coordinator_env):
+    coord, _, _ = coordinator_env
+    coord.initialize_attempt("JOB-ANIM-001", "animalidade", "EXTRACTION", attempt_num=1)
+
+    with pytest.raises(PilotCoordinatorError):
+        # Attempting to re-initialize attempt 1 must fail closed
+        coord.initialize_attempt("JOB-ANIM-001", "animalidade", "EXTRACTION", attempt_num=1)
+
+
+def test_process_imported_bundle_and_human_decision(coordinator_env, tmp_path: Path):
+    coord, runtime_root, audit_store = coordinator_env
+    coord.initialize_attempt("JOB-ANIM-001", "animalidade", "EXTRACTION", attempt_num=1)
+
+    # Export transition
+    coord.record_export("animalidade", attempt_num=1, bundle_id="EB-ANIM-EXTRACTION-att1-12345678")
+
+    # Create dummy incoming result bundle
+    bdir = tmp_path / "incoming" / "RB-ANIM-EXTRACTION-att1-12345678"
+    bdir.mkdir(parents=True)
+    art_dir = bdir / "artifacts"
+    art_dir.mkdir()
+    art_file = art_dir / "extracted.txt"
+    art_file.write_text("Extracted text", encoding="utf-8")
+    art_hash = sha256_bytes(art_file.read_bytes())
+
+    exec_res = {
+        "schemaVersion": "2.0",
+        "resultId": "RES-01",
+        "requestId": "REQ-01",
+        "verdict": "ACCEPT",
+        "artifacts": [{"path": "artifacts/extracted.txt"}],
+    }
+    (bdir / "execution-result.json").write_text(json.dumps(exec_res), encoding="utf-8")
+
+    manifest = {
+        "resultBundleId": "RB-ANIM-EXTRACTION-att1-12345678",
+        "executionBundleId": "EB-ANIM-EXTRACTION-att1-12345678",
+        "requestId": "REQ-01",
+        "bookId": "animalidade",
+        "attemptNumber": 1,
+        "inputManifestSha256": "a" * 64,
+        "resultManifestSha256": "placeholder",
+        "executionResultPath": "execution-result.json",
+        "resultManifestPath": "result-manifest.json",
+        "artifacts": [
+            {
+                "path": "artifacts/extracted.txt",
+                "sha256": art_hash,
+                "sizeBytes": art_file.stat().st_size,
+            }
+        ],
+        "completedAt": "2026-09-08T12:00:00Z",
+    }
+    (bdir / "result-manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+
+    envelope = ResultBundleEnvelope(
+        bundle_id="RB-ANIM-EXTRACTION-att1-12345678",
+        bundle_dir=bdir,
+        result_manifest_path=bdir / "result-manifest.json",
+        execution_result_path=bdir / "execution-result.json",
+        artifacts_dir=art_dir,
+    )
+
+    proc_res = coord.process_imported_bundle(
+        envelope,
+        expected_request_id="REQ-01",
+        expected_bundle_id="RB-ANIM-EXTRACTION-att1-12345678",
+        expected_input_manifest_hash="a" * 64,
+    )
+
+    assert proc_res["status"] == "NEEDS_HUMAN_REVIEW"
+    review_req = proc_res["reviewRequest"]
+
+    # Submit decision
+    decision = {
+        "decisionId": "DEC-01",
+        "requestId": "REQ-01",
+        "resultBundleId": "RB-ANIM-EXTRACTION-att1-12345678",
+        "reviewedResultManifestSha256": proc_res["resultManifestSha256"],
+        "decision": "APPROVE",
+        "reviewer": "human-reviewer",
+        "reviewNotes": "All verified.",
+        "decidedAt": "2026-09-08T14:00:00Z",
+    }
+
+    dec_outcome = coord.submit_human_decision(
+        book_id="animalidade",
+        decision=decision,
+        review_request=review_req,
+        current_result_manifest_hash=proc_res["resultManifestSha256"],
+    )
+
+    assert dec_outcome["status"] == "APPROVED"
