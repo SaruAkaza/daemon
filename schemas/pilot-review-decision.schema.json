@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/pilot-review-decision.schema.json",
+  "title": "Pilot Review Decision",
+  "description": "Decisão formal deliberada por operador humano e vinculada a hash SHA-256.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decisionId",
+    "requestId",
+    "resultBundleId",
+    "reviewedResultManifestSha256",
+    "decision",
+    "reviewer",
+    "reviewNotes",
+    "decidedAt"
+  ],
+  "properties": {
+    "decisionId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resultBundleId": {
+      "type": "string",
+      "pattern": "^RB-[A-Za-z0-9_-]+$"
+    },
+    "reviewedResultManifestSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "decision": {
+      "type": "string",
+      "enum": ["APPROVE", "REJECT"]
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewNotes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decidedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

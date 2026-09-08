@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/pilot-review-request.schema.json",
+  "title": "Pilot Review Request",
+  "description": "Solicitação formal emitida pelo sistema para deliberação humana sobre pacote e legado.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "jobId",
+    "attemptNumber",
+    "requestId",
+    "resultBundleId",
+    "resultManifestSha256",
+    "legacyComparison",
+    "status",
+    "createdAt"
+  ],
+  "properties": {
+    "jobId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "attemptNumber": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resultBundleId": {
+      "type": "string",
+      "pattern": "^RB-[A-Za-z0-9_-]+$"
+    },
+    "resultManifestSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "legacyComparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "equivalentCount",
+        "structuralDiffCount",
+        "semanticDiffCount",
+        "newEntitiesCount",
+        "discrepancies"
+      ],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "SEMANTIC_EQUIVALENT",
+            "STRUCTURAL_DIFFERENCE_ONLY",
+            "SEMANTIC_DIFFERENCE",
+            "NO_LEGACY_REFERENCE"
+          ]
+        },
+        "equivalentCount": {"type": "integer", "minimum": 0},
+        "structuralDiffCount": {"type": "integer", "minimum": 0},
+        "semanticDiffCount": {"type": "integer", "minimum": 0},
+        "newEntitiesCount": {"type": "integer", "minimum": 0},
+        "discrepancies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["entityId", "fieldPath", "extractedValue", "legacyValue", "sourceCitation"],
+            "properties": {
+              "entityId": {"type": "string"},
+              "fieldPath": {"type": "string"},
+              "extractedValue": {},
+              "legacyValue": {},
+              "sourceCitation": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["PENDING", "RESOLVED", "CANCELLED"]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
