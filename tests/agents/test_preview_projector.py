@@ -77,3 +77,44 @@ def test_project_blocked_if_target_in_repo_docs(workspace_with_data: Path):
             publication_mode="NOT_PUBLIC",
         )
     assert "ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED" in str(exc.value)
+
+
+def test_project_blocked_when_cwd_is_repo_subdirectory(workspace_with_data: Path, tmp_path: Path, monkeypatch):
+    repo_dir = tmp_path / "mock_repo"
+    repo_dir.mkdir()
+    sub_dir = repo_dir / "scripts" / "sub"
+    sub_dir.mkdir(parents=True)
+    forbidden_preview = repo_dir / "data" / "preview"
+
+    monkeypatch.chdir(sub_dir)
+
+    projector = LocalPreviewProjector()
+    with pytest.raises(LocalPreviewProjectorError) as exc:
+        projector.project_local_preview(
+            workspace_root=workspace_with_data,
+            preview_root=forbidden_preview,
+            book_id="animalidade",
+            rights_status="UNKNOWN",
+            publication_mode="NOT_PUBLIC",
+            repository_root=repo_dir,
+        )
+    assert "ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED" in str(exc.value)
+
+
+def test_project_blocked_when_target_inside_trusted_repo_anywhere(workspace_with_data: Path, tmp_path: Path):
+    repo_dir = tmp_path / "mock_repo"
+    repo_dir.mkdir()
+    forbidden_preview = repo_dir / "internal" / "preview"
+
+    projector = LocalPreviewProjector()
+    with pytest.raises(LocalPreviewProjectorError) as exc:
+        projector.project_local_preview(
+            workspace_root=workspace_with_data,
+            preview_root=forbidden_preview,
+            book_id="animalidade",
+            rights_status="PRIVATE",
+            publication_mode="NOT_PUBLIC",
+            repository_root=repo_dir,
+        )
+    assert "ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED" in str(exc.value)
+

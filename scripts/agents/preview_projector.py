@@ -24,9 +24,11 @@ class LocalPreviewProjector:
         book_id: str,
         rights_status: str,
         publication_mode: str,
+        repository_root: Path | None = None,
     ) -> Path:
         """Projects local navigable/searchable preview bundle under preview_root/<bookId>/."""
         resolved_preview = Path(preview_root).resolve()
+        repo = Path(repository_root).resolve() if repository_root else Path(__file__).resolve().parents[2]
 
         # Enforce RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE
         if rights_status.upper() in ("UNKNOWN", "PRIVATE") or publication_mode.upper() == "NOT_PUBLIC":
@@ -36,11 +38,10 @@ class LocalPreviewProjector:
                     f"ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED: Cannot project restricted book '{book_id}' into docs: {resolved_preview}"
                 )
             try:
-                rel = resolved_preview.relative_to(Path.cwd().resolve())
-                if "docs" in rel.parts or "data" in rel.parts:
-                    raise LocalPreviewProjectorError(
-                        f"ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED: Cannot project restricted book '{book_id}' into repository: {resolved_preview}"
-                    )
+                resolved_preview.relative_to(repo)
+                raise LocalPreviewProjectorError(
+                    f"ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED: Cannot project restricted book '{book_id}' into repository: {resolved_preview}"
+                )
             except ValueError:
                 # Outside repository root
                 pass
