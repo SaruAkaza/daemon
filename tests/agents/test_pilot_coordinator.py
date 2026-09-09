@@ -123,3 +123,86 @@ def test_process_imported_bundle_and_human_decision(coordinator_env, tmp_path: P
     )
 
     assert dec_outcome["status"] == "APPROVED"
+
+
+def test_process_imported_bundle_semantic_difference_surfaces_in_review_request(tmp_path: Path):
+    audit_store = PilotAuditStore(tmp_path / "audit" / "pilot")
+    coord = PilotCoordinator(audit_store=audit_store, runtime_root=tmp_path)
+
+    coord.initialize_attempt("JOB-01", "animalidade", "EXTRACTION", attempt_num=1)
+    coord.record_export("animalidade", attempt_num=1, bundle_id="EB-01")
+
+    bdir = tmp_path / "incoming" / "RB-DIFF-01"
+    bdir.mkdir(parents=True)
+    art_dir = bdir / "artifacts"
+    art_dir.mkdir()
+
+    # Extracted entity with attr = 12
+    extracted_entity = {"id": "creature-lobo", "name": "Lobo", "attributes": {"FR": 12}}
+    ent_bytes = json.dumps(extracted_entity).encode("utf-8")
+    (art_dir / "creature.json").write_bytes(ent_bytes)
+    ent_hash = sha256_bytes(ent_bytes)
+
+    exec_res = {
+        "schemaVersion": "2.0",
+        "resultId": "RES-01",
+        "requestId": "REQ-DIFF-01",
+        "verdict": "ACCEPT",
+        "artifacts": [{"path": "artifacts/creature.json"}],
+    }
+    (bdir / "execution-result.json").write_text(json.dumps(exec_res), encoding="utf-8")
+
+    manifest = {
+        "resultBundleId": "RB-DIFF-01",
+        "executionBundleId": "EB-01",
+        "requestId": "REQ-DIFF-01",
+        "bookId": "animalidade",
+        "attemptNumber": 1,
+        "inputManifestSha256": "a" * 64,
+        "resultManifestSha256": "placeholder",
+        "executionResultPath": "execution-result.json",
+        "resultManifestPath": "result-manifest.json",
+        "artifacts": [
+            {
+                "path": "artifacts/creature.json",
+                "sha256": ent_hash,
+                "sizeBytes": len(ent_bytes),
+            }
+        ],
+        "completedAt": "2026-09-08T12:00:00Z",
+    }
+    (bdir / "result-manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+
+    envelope = ResultBundleEnvelope(
+        bundle_id="RB-DIFF-01",
+        bundle_dir=bdir,
+        result_manifest_path=bdir / "result-manifest.json",
+        execution_result_path=bdir / "execution-result.json",
+        artifacts_dir=art_dir,
+    )
+
+    # Legacy record has FR = 10 (genuine difference!)
+    legacy_entities = [{"id": "creature-lobo", "name": "Lobo", "attributes": {"FR": 10}}]
+
+    proc_res = coord.process_imported_bundle(
+        envelope,
+        expected_request_id="REQ-DIFF-01",
+        expected_bundle_id="RB-DIFF-01",
+        expected_input_manifest_hash="a" * 64,
+        expected_execution_bundle_id="EB-01",
+        legacy_entities=legacy_entities,
+    )
+
+    assert proc_res["status"] == "NEEDS_HUMAN_REVIEW"
+    review_req = proc_res["reviewRequest"]
+    comp = review_req["legacyComparison"]
+
+    assert comp["verdict"] == "SEMANTIC_DIFFERENCE"
+    assert comp["semanticDiffCount"] == 1
+    assert len(comp["discrepancies"]) == 1
+    disc = comp["discrepancies"][0]
+    assert disc["entityId"] == "creature-lobo"
+    assert "FR" in disc["fieldPath"]
+    assert disc["extractedValue"] == 12
+    assert disc["legacyValue"] == 10
+

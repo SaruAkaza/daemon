@@ -6,7 +6,7 @@ from typing import Any
 
 from scripts.agents.bundle_importer import ResultBundleEnvelope, ResultBundleImporter
 from scripts.agents.bundle_integrity_validator import BundleIntegrityValidator
-from scripts.agents.legacy_comparator import LegacyComparisonResult
+from scripts.agents.legacy_comparator import LegacyComparisonResult, LegacyComparator
 from scripts.agents.pilot_audit_store import PilotAuditStore
 from scripts.agents.pilot_review import PilotReviewEngine
 from scripts.agents.pilot_state_machine import PilotStateMachine
@@ -31,6 +31,7 @@ class PilotCoordinator:
         self.importer = ResultBundleImporter()
         self.validator = BundleIntegrityValidator()
         self.review_engine = PilotReviewEngine()
+        self.comparator = LegacyComparator()
 
     def initialize_attempt(
         self,
@@ -88,13 +89,18 @@ class PilotCoordinator:
         expected_bundle_id: str,
         expected_input_manifest_hash: str,
         expected_execution_bundle_id: str | None = None,
+        legacy_entities: list[dict[str, Any]] | None = None,
     ) -> dict[str, Any]:
         """Validates bundle integrity and either quarantines it or advances to human review."""
         book_id = "animalidade"
+        attempt = 1
+        job_id = "JOB-ANIM-001"
         try:
             with open(envelope.result_manifest_path, encoding="utf-8") as f:
                 mdata = json.load(f)
             book_id = mdata.get("bookId", "animalidade")
+            attempt = mdata.get("attemptNumber", 1)
+            job_id = mdata.get("jobId", "JOB-ANIM-001")
         except Exception:
             pass
 
@@ -135,18 +141,38 @@ class PilotCoordinator:
         accepted_dir = self.runtime_root / "bundles" / "accepted"
         promoted_dir = self.importer.promote_to_accepted(envelope.bundle_dir, accepted_dir)
 
-        comp = LegacyComparisonResult(
-            verdict="SEMANTIC_EQUIVALENT",
-            equivalent_count=len(verdict.artifact_hashes),
-            structural_diff_count=0,
-            semantic_diff_count=0,
-            new_entities_count=0,
-            discrepancies=[],
-        )
+        # Collect extracted entities for deterministic comparison
+        extracted_entities: list[dict[str, Any]] = []
+        artifacts_dir = promoted_dir / "artifacts"
+        if artifacts_dir.is_dir():
+            for jf in sorted(artifacts_dir.glob("*.json")):
+                if jf.name in ("execution-result.json", "result-manifest.json"):
+                    continue
+                try:
+                    with open(jf, encoding="utf-8") as f:
+                        jdata = json.load(f)
+                    if isinstance(jdata, list):
+                        extracted_entities.extend([item for item in jdata if isinstance(item, dict)])
+                    elif isinstance(jdata, dict):
+                        extracted_entities.append(jdata)
+                except Exception:
+                    pass
+
+        if legacy_entities is not None:
+            comp = self.comparator.compare_entities(extracted_entities, legacy_entities)
+        else:
+            comp = LegacyComparisonResult(
+                verdict="SEMANTIC_EQUIVALENT",
+                equivalent_count=len(verdict.artifact_hashes),
+                structural_diff_count=0,
+                semantic_diff_count=0,
+                new_entities_count=0,
+                discrepancies=[],
+            )
 
         review_req = self.review_engine.create_review_request(
-            job_id="JOB-ANIM-001",
-            attempt=1,
+            job_id=job_id,
+            attempt=attempt,
             request_id=expected_request_id,
             bundle_id=expected_bundle_id,
             result_manifest_hash=verdict.result_manifest_sha256,
@@ -159,7 +185,11 @@ class PilotCoordinator:
             from_state="RESULT_IMPORTED",
             event="integrity_passed",
             to_state="NEEDS_HUMAN_REVIEW",
-            details={"bundleId": expected_bundle_id, "manifestHash": verdict.result_manifest_sha256},
+            details={
+                "bundleId": expected_bundle_id,
+                "manifestHash": verdict.result_manifest_sha256,
+                "comparisonVerdict": comp.verdict,
+            },
         )
 
         return {
