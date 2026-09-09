@@ -214,25 +214,28 @@ function pill(label, tone = "") {
 }
 
 function baseItem(book, extra) {
+  const source = book.source || book.bookId || "unknown";
+  const title = book.title || book.bookId || "Sem título";
   const item = {
     book,
-    bookTitle: book.title,
-    sourceFile: book.sourceFile,
-    parentName: book.title,
+    bookTitle: title,
+    sourceFile: book.sourceFile || `${source}.json`,
+    parentName: title,
     ...extra,
   };
   if (item.area === "cenarios_lore") {
-    item.title = `Cenarios/Lore - ${book.title}`;
+    item.title = `Cenarios/Lore - ${title}`;
   }
   return item;
 }
 
 function buildCharacterItems(book) {
   const items = [];
+  const source = book.source || book.bookId || "unknown";
 
   if (book.intro) {
     items.push(baseItem(book, {
-      id: `${book.source}:lore-intro`,
+      id: `${source}:lore-intro`,
       kind: "section",
       area: "cenarios_lore",
       title: book.loreTitle || book.title,
@@ -246,7 +249,7 @@ function buildCharacterItems(book) {
   for (const npc of book.characters || []) {
     const sections = npc.sections || [];
     items.push(baseItem(book, {
-      id: `${book.source}:npc-${npc.id}`,
+      id: `${source}:npc-${npc.id}`,
       kind: "npc",
       area: "criaturas_npcs",
       title: npc.name,
@@ -262,10 +265,11 @@ function buildCharacterItems(book) {
 }
 
 function buildSectionItems(book) {
+  const source = book.source || book.bookId || "unknown";
   const items = (book.sections || [])
     .filter((section) => section.area !== "front_matter")
     .map((section) => baseItem(book, {
-      id: `${book.source}:section-${section.area}-${section.kind || "section"}-${section.id}`,
+      id: `${source}:section-${section.area}-${section.kind || "section"}-${section.id}`,
       kind: section.kind || "section",
       area: section.area,
       title: section.title,
@@ -278,7 +282,7 @@ function buildSectionItems(book) {
 
   for (const group of book.groups || []) {
     items.push(baseItem(book, {
-      id: `${book.source}:group-${group.id}`,
+      id: `${source}:group-${group.id}`,
       kind: group.kind || "group",
       area: group.area,
       title: group.title,
@@ -292,7 +296,7 @@ function buildSectionItems(book) {
 
   for (const adventure of book.adventures || []) {
     items.push(baseItem(book, {
-      id: `${book.source}:adventure-${adventure.id}`,
+      id: `${source}:adventure-${adventure.id}`,
       kind: "adventure",
       area: "aventuras",
       title: adventure.title,
@@ -307,10 +311,129 @@ function buildSectionItems(book) {
   return items;
 }
 
+const CATEGORY_TO_AREA = {
+  core_rule: "regras_base",
+  attribute_skill: "regras_base",
+  combat: "manobras_combate",
+  character_option: "aprimoramentos",
+  kit_class: "classes_racas",
+  kit: "kits",
+  class: "classes_racas",
+  race_lineage: "classes_racas",
+  race: "classes_racas",
+  lineage: "classes_racas",
+  power_magic: "poderes",
+  power: "poderes",
+  magia: "magias",
+  magic: "magias",
+  ritual_spell: "rituais",
+  ritual: "rituais",
+  item_equipment: "itens_equipamentos",
+  item: "itens_equipamentos",
+  equipment: "itens_equipamentos",
+  creature_npc: "criaturas_npcs",
+  creature: "criaturas_npcs",
+  npc: "criaturas_npcs",
+  setting_lore: "cenarios_lore",
+  setting: "cenarios_lore",
+  lore: "cenarios_lore",
+  adventure: "cenarios_lore",
+  table_generator: "tabelas",
+  table: "tabelas",
+};
+
+const CATEGORY_TO_KIND = {
+  creature_npc: "npc",
+  creature: "creature",
+  npc: "npc",
+  core_rule: "ruleset",
+  attribute_skill: "ruleset",
+  combat: "maneuver",
+  character_option: "enhancement",
+  kit_class: "class",
+  kit: "kit",
+  class: "class",
+  race_lineage: "race",
+  race: "race",
+  lineage: "lineage",
+  power_magic: "power",
+  power: "power",
+  magia: "magia",
+  magic: "magia",
+  ritual_spell: "ritual",
+  ritual: "ritual",
+  item_equipment: "equipment",
+  item: "equipment",
+  equipment: "equipment",
+  setting_lore: "setting",
+  setting: "setting",
+  lore: "setting",
+  adventure: "adventure",
+  table_generator: "table",
+  table: "table",
+};
+
+function buildEntityItems(book) {
+  const items = [];
+  const source = book.source || book.bookId || "unknown";
+  const existingIds = new Set();
+  for (const c of book.characters || []) {
+    existingIds.add(c.id);
+    existingIds.add(`creature-${c.id}`);
+  }
+
+  for (const entity of book.entities || []) {
+    if (existingIds.has(entity.id)) continue;
+    const category = entity.category || "creature_npc";
+    const area = entity.area || CATEGORY_TO_AREA[category] || "regras_base";
+    const kind = entity.kind || CATEGORY_TO_KIND[category] || "section";
+
+    let sections = entity.sections || [];
+    if (sections.length === 0) {
+      const paragraphs = entity.paragraphs || entity.entries || [];
+      if (paragraphs.length > 0) {
+        sections = [{
+          id: "ficha",
+          title: "Ficha",
+          paragraphs: Array.isArray(paragraphs) ? paragraphs : [String(paragraphs)],
+        }];
+      }
+    }
+
+    const paragraphs = sections.flatMap((s) => s.paragraphs || []);
+    const npc = (kind === "npc" || kind === "creature" || area === "criaturas_npcs") ? {
+      id: entity.id,
+      name: entity.name || entity.title || entity.id,
+      statBlock: entity.statBlock || null,
+      attributes: entity.attributes || {},
+      sections,
+    } : null;
+
+    items.push(baseItem(book, {
+      id: entity.id?.includes(":") ? entity.id : `${source}:${kind}-${entity.id}`,
+      kind,
+      area,
+      title: entity.name || entity.title || entity.id,
+      sectionId: entity.id,
+      sectionTitle: entity.name || entity.title || entity.id,
+      paragraphs,
+      sections,
+      npc,
+      relations: (book.relations || []).filter(
+        (r) => r.sourceEntityId === entity.id || r.targetEntityId === entity.id ||
+               r.sourceEntityId === `${source}:${kind}-${entity.id}` || r.targetEntityId === `${source}:${kind}-${entity.id}`
+      ),
+    }));
+  }
+
+  return items;
+}
+
 function buildItems(book) {
   return [
     ...buildCharacterItems(book),
     ...buildSectionItems(book),
+    ...buildEntityItems(book),
   ];
 }
 

@@ -76,11 +76,45 @@ class LocalPreviewProjector:
                     relations = rdata if isinstance(rdata, list) else [rdata]
 
             pilot_data = {
+                "source": book_id,
                 "bookId": book_id,
                 "title": book_id.capitalize(),
                 "entities": entities,
                 "relations": relations,
             }
+
+        # Normalize required metadata
+        pilot_data.setdefault("source", pilot_data.get("bookId", book_id))
+        pilot_data.setdefault("bookId", pilot_data.get("source", book_id))
+        pilot_data.setdefault("title", book_id.capitalize())
+
+        # Project entities into characters for backwards compatibility with frontend
+        characters = list(pilot_data.get("characters", []))
+        if not characters and "entities" in pilot_data:
+            for ent in pilot_data["entities"]:
+                cat = ent.get("category", "")
+                if cat in ("creature_npc", "creature", "npc") or ent.get("area") == "criaturas_npcs":
+                    ent_id = ent.get("id", "")
+                    clean_id = ent_id.split("-", 1)[1] if ent_id.startswith("creature-") else ent_id
+                    sections = ent.get("sections", [])
+                    if not sections:
+                        pars = ent.get("paragraphs") or ent.get("entries") or []
+                        sections = [
+                            {
+                                "id": "ficha",
+                                "title": "Ficha",
+                                "paragraphs": pars if isinstance(pars, list) else [str(pars)],
+                            }
+                        ]
+                    characters.append(
+                        {
+                            "id": clean_id,
+                            "name": ent.get("name", clean_id),
+                            "sections": sections,
+                        }
+                    )
+            if characters:
+                pilot_data["characters"] = characters
 
         index_file = target_dir / "index.json"
         index_file.write_bytes(canonical_json_bytes(pilot_data))

@@ -49,6 +49,31 @@ def test_project_local_preview_success(workspace_with_data: Path, tmp_path: Path
     assert len(loaded["entities"]) == 1
 
 
+def test_project_local_preview_frontend_contract_compliance(workspace_with_data: Path, tmp_path: Path):
+    projector = LocalPreviewProjector()
+    preview_root = tmp_path / ".daemon_runtime" / "preview"
+
+    out_path = projector.project_local_preview(
+        workspace_root=workspace_with_data,
+        preview_root=preview_root,
+        book_id="animalidade",
+        rights_status="UNKNOWN",
+        publication_mode="NOT_PUBLIC",
+    )
+
+    with open(out_path / "index.json", encoding="utf-8") as f:
+        loaded = json.load(f)
+
+    assert loaded.get("source") == "animalidade"
+    assert loaded.get("bookId") == "animalidade"
+    assert "characters" in loaded
+    assert len(loaded["characters"]) == 1
+    assert loaded["characters"][0]["name"] == "Lobo"
+    assert "entities" in loaded
+    assert "relations" in loaded
+
+
+
 def test_project_blocked_if_target_is_docs(workspace_with_data: Path, tmp_path: Path):
     projector = LocalPreviewProjector()
     forbidden_root = tmp_path / "docs" / "assets" / "data"
