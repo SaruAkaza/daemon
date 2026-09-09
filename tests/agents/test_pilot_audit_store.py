@@ -68,15 +68,32 @@ def test_resilience_to_malformed_lines(tmp_path: Path):
     store = PilotAuditStore(audit_base_dir=tmp_path)
     store.record_transition("animalidade", "S1", "E1", "S2", {})
 
-    # Corrupt the file by appending bad syntax
     log_file = tmp_path / "animalidade" / "transitions.jsonl"
     with open(log_file, "a", encoding="utf-8") as f:
-        f.write("CORRUPTED NOT JSON LINE\n")
+        f.write("CORRUPTED_JSON_LINE\n")
+        f.write('{"missing_seq": true}\n')
 
     store.record_transition("animalidade", "S2", "E2", "S3", {})
-
     history = store.get_audit_history("animalidade")
-    # Should read both valid entries without crashing
     assert len(history) == 2
-    assert history[0]["fromState"] == "S1"
-    assert history[1]["fromState"] == "S2"
+    assert history[0]["seq"] == 1
+    assert history[1]["seq"] == 2
+
+
+def test_record_review_decision_rejects_unsafe_path_traversal(tmp_path: Path):
+    store = PilotAuditStore(audit_base_dir=tmp_path)
+    bad_dec = {"decisionId": "../unsafe_dec", "requestId": "REQ-01", "decision": "APPROVE"}
+    with pytest.raises(PilotAuditStoreError) as exc:
+        store.record_review_decision("animalidade", bad_dec)
+    assert "ERR_UNSAFE_IDENTIFIER" in str(exc.value)
+
+    bad_file = tmp_path / "animalidade" / "unsafe_dec.json"
+    assert not bad_file.exists()
+
+
+def test_record_review_request_rejects_unsafe_path_traversal(tmp_path: Path):
+    store = PilotAuditStore(audit_base_dir=tmp_path)
+    bad_req = {"requestId": "../../bad_req", "jobId": "JOB-01"}
+    with pytest.raises(PilotAuditStoreError) as exc:
+        store.record_review_request("animalidade", bad_req)
+    assert "ERR_UNSAFE_IDENTIFIER" in str(exc.value)

@@ -211,10 +211,10 @@ class PilotCoordinator:
         valid, msg = self.review_engine.validate_review_decision(
             decision, review_request, current_result_manifest_hash
         )
-        self.audit_store.record_review_decision(book_id, decision)
 
         if not valid:
             if "ERR_REVIEW_REJECTED" in msg:
+                self.audit_store.record_review_decision(book_id, decision)
                 self.audit_store.record_transition(
                     book_id=book_id,
                     from_state="NEEDS_HUMAN_REVIEW",
@@ -232,6 +232,8 @@ class PilotCoordinator:
                 return {"status": "REWORK_REQUIRED", "error": msg}
             else:
                 return {"status": "VALIDATION_FAILED", "error": msg}
+
+        self.audit_store.record_review_decision(book_id, decision)
 
         self.audit_store.record_transition(
             book_id=book_id,

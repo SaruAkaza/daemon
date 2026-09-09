@@ -206,3 +206,42 @@ def test_process_imported_bundle_semantic_difference_surfaces_in_review_request(
     assert disc["extractedValue"] == 12
     assert disc["legacyValue"] == 10
 
+
+def test_submit_invalid_human_decision_does_not_persist_to_audit_store(tmp_path: Path):
+    runtime_root = tmp_path / ".daemon_runtime"
+    coord = PilotCoordinator(runtime_root=runtime_root)
+
+    review_req = {
+        "requestId": "REQ-01",
+        "resultBundleId": "RB-01",
+        "resultManifestSha256": "b" * 64,
+    }
+
+    # Invalid decision: reviewer is an automated agent (model cannot self-approve)
+    bad_decision = {
+        "decisionId": "DEC-INVALID-01",
+        "requestId": "REQ-01",
+        "resultBundleId": "RB-01",
+        "reviewedResultManifestSha256": "b" * 64,
+        "decision": "APPROVE",
+        "reviewer": "pilot-agent",
+        "reviewNotes": "Self approved.",
+        "decidedAt": "2026-09-08T14:00:00Z",
+    }
+
+    outcome = coord.submit_human_decision(
+        book_id="animalidade",
+        decision=bad_decision,
+        review_request=review_req,
+        current_result_manifest_hash="b" * 64,
+    )
+
+    assert outcome["status"] == "VALIDATION_FAILED"
+    assert "ERR_REVIEW_AUTHORITY_VIOLATION" in outcome["error"]
+
+    # Verify that DEC-INVALID-01 was NOT written to the audit store
+    audit_dec_dir = runtime_root / "audit" / "pilot" / "animalidade" / "decisions"
+    if audit_dec_dir.exists():
+        assert not (audit_dec_dir / "DEC-INVALID-01.json").exists()
+
+

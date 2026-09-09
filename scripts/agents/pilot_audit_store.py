@@ -91,14 +91,27 @@ class PilotAuditStore:
         with open(log_file, "a", encoding="utf-8") as f:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
+    def _sanitize_id(self, identifier: str) -> str:
+        if not identifier or not isinstance(identifier, str):
+            raise PilotAuditStoreError(f"ERR_UNSAFE_IDENTIFIER: Invalid identifier: {identifier}")
+        clean = Path(identifier).name
+        if clean != identifier or "/" in identifier or "\\" in identifier or ".." in identifier:
+            raise PilotAuditStoreError(
+                f"ERR_UNSAFE_IDENTIFIER: Identifier contains unsafe characters or directory traversal: {identifier}"
+            )
+        return clean
+
     def record_review_request(self, book_id: str, request_data: dict[str, Any]) -> Path:
         """Atomically saves formal review request into audit/pilot/<bookId>/requests/."""
         bdir = self._get_book_dir(book_id)
         req_dir = bdir / "requests"
         req_dir.mkdir(parents=True, exist_ok=True)
 
-        req_id = request_data.get("requestId", f"REQ-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}")
-        target_path = req_dir / f"{req_id}.json"
+        raw_id = request_data.get("requestId", f"REQ-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}")
+        req_id = self._sanitize_id(raw_id)
+        target_path = (req_dir / f"{req_id}.json").resolve()
+        if not target_path.is_relative_to(req_dir.resolve()):
+            raise PilotAuditStoreError(f"ERR_UNSAFE_IDENTIFIER: Target path escapes requests directory: {target_path}")
         target_path.write_bytes(canonical_json_bytes(request_data))
         return target_path
 
@@ -108,8 +121,11 @@ class PilotAuditStore:
         dec_dir = bdir / "decisions"
         dec_dir.mkdir(parents=True, exist_ok=True)
 
-        dec_id = decision_data.get("decisionId", f"DEC-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}")
-        target_path = dec_dir / f"{dec_id}.json"
+        raw_id = decision_data.get("decisionId", f"DEC-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}")
+        dec_id = self._sanitize_id(raw_id)
+        target_path = (dec_dir / f"{dec_id}.json").resolve()
+        if not target_path.is_relative_to(dec_dir.resolve()):
+            raise PilotAuditStoreError(f"ERR_UNSAFE_IDENTIFIER: Target path escapes decisions directory: {target_path}")
         target_path.write_bytes(canonical_json_bytes(decision_data))
         return target_path
 
@@ -119,7 +135,10 @@ class PilotAuditStore:
         rec_dir = bdir / "receipts"
         rec_dir.mkdir(parents=True, exist_ok=True)
 
-        rec_id = receipt_data.get("receiptId", f"REC-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}")
-        target_path = rec_dir / f"{rec_id}.json"
+        raw_id = receipt_data.get("receiptId", f"REC-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}")
+        rec_id = self._sanitize_id(raw_id)
+        target_path = (rec_dir / f"{rec_id}.json").resolve()
+        if not target_path.is_relative_to(rec_dir.resolve()):
+            raise PilotAuditStoreError(f"ERR_UNSAFE_IDENTIFIER: Target path escapes receipts directory: {target_path}")
         target_path.write_bytes(canonical_json_bytes(receipt_data))
         return target_path
