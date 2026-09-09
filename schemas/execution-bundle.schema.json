@@ -39,13 +39,24 @@
     "stage": {
       "type": "string",
       "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "qa",
+        "preview",
+        "frontend",
+        "release",
         "SOURCE",
         "EXTRACTION",
         "EDITORIAL",
         "ENTITIES",
         "RELATIONS",
         "QA",
-        "PREVIEW"
+        "PREVIEW",
+        "FRONTEND",
+        "RELEASE"
       ],
       "description": "Estágio do pipeline associado ao bundle."
     },

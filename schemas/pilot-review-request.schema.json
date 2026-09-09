@@ -54,6 +54,7 @@
             "SEMANTIC_EQUIVALENT",
             "STRUCTURAL_DIFFERENCE_ONLY",
             "SEMANTIC_DIFFERENCE",
+            "NEEDS_SEMANTIC_REVIEW",
             "NO_LEGACY_REFERENCE"
           ]
         },
