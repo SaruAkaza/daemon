@@ -202,63 +202,38 @@ def test_full_pilot_pipeline_hermetic_success(hermetic_pipeline_env: dict):
     )
     assert dec_outcome["status"] == "APPROVED"
 
-    # Step 6: Persist through V2.1 Application Adapter into RestrictedPilotWorkspace
-    adapter = PilotPersistenceAdapter()
-    app_result = adapter.apply_pilot_artifacts(
+    # Step 6: Persist through Coordinator into RestrictedPilotWorkspace
+    persist_res = coord.apply_persistence(
+        book_id=book_id,
         workspace_root=ws_root,
         staging_root=staging_root,
         execution_request=req_payload,
         execution_result=exec_result_payload,
         review_decision=decision_payload,
     )
-    assert app_result.status == "APPLIED"
+    assert persist_res["status"] == "PERSISTED"
     assert (ws_root / "data" / "text" / "animalidade.txt").exists()
     assert (ws_root / "data" / "entities" / "creature_npc.json").exists()
 
-    coord.audit_store.record_transition(
+    # Step 7: Dataset QA Gates orchestrated by Coordinator
+    qa_res = coord.run_qa_validation(book_id=book_id, workspace_root=ws_root, expected_pages=1)
+    assert qa_res["status"] == "QA_PASS"
+    assert qa_res["verdict"].passed is True
+
+    # Step 8: Local Preview Projection orchestrated by Coordinator
+    preview_res = coord.project_preview(
         book_id=book_id,
-        from_state="APPROVED",
-        event="apply_persistence",
-        to_state="PERSISTED",
-        details={"changeSetId": app_result.change_set_id},
-    )
-
-    # Step 7: Dataset QA Gates against isolated workspace
-    qa_validator = PilotQAValidator()
-    qa_verdict = qa_validator.validate_dataset(ws_root, book_id=book_id, expected_pages=1)
-    assert qa_verdict.passed is True
-
-    coord.audit_store.record_transition(
-        book_id=book_id,
-        from_state="PERSISTED",
-        event="qa_gates_passed",
-        to_state="QA_PASS",
-    )
-
-    # Step 8: Local Preview Projection
-    projector = LocalPreviewProjector()
-    projected_path = projector.project_local_preview(
         workspace_root=ws_root,
         preview_root=preview_root,
-        book_id=book_id,
         rights_status="UNKNOWN",
         publication_mode="NOT_PUBLIC",
     )
+    assert preview_res["status"] == "PREVIEW_READY"
+    projected_path = Path(preview_res["path"])
     assert (projected_path / "index.json").exists()
 
-    coord.audit_store.record_transition(
-        book_id=book_id,
-        from_state="QA_PASS",
-        event="project_preview",
-        to_state="PREVIEW_READY",
-        details={"path": str(projected_path)},
-    )
-    coord.audit_store.record_transition(
-        book_id=book_id,
-        from_state="PREVIEW_READY",
-        event="validate_navigation",
-        to_state="PILOT_VALIDATED",
-    )
+    pilot_complete_res = coord.complete_pilot(book_id=book_id)
+    assert pilot_complete_res["status"] == "PILOT_VALIDATED"
 
     # Clean up permissions so tmp_path can be removed cleanly
     for root, _, files in os.walk(env["runtime_root"]):

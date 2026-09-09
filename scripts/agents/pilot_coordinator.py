@@ -8,8 +8,11 @@ from scripts.agents.bundle_importer import ResultBundleEnvelope, ResultBundleImp
 from scripts.agents.bundle_integrity_validator import BundleIntegrityValidator
 from scripts.agents.legacy_comparator import LegacyComparisonResult, LegacyComparator
 from scripts.agents.pilot_audit_store import PilotAuditStore
+from scripts.agents.pilot_persistence_adapter import PilotPersistenceAdapter
+from scripts.agents.pilot_qa_validator import PilotQAValidator
 from scripts.agents.pilot_review import PilotReviewEngine
 from scripts.agents.pilot_state_machine import PilotStateMachine
+from scripts.agents.preview_projector import LocalPreviewProjector
 
 
 class PilotCoordinatorError(RuntimeError):
@@ -32,6 +35,9 @@ class PilotCoordinator:
         self.validator = BundleIntegrityValidator()
         self.review_engine = PilotReviewEngine()
         self.comparator = LegacyComparator()
+        self.persistence_adapter = PilotPersistenceAdapter()
+        self.qa_validator = PilotQAValidator()
+        self.projector = LocalPreviewProjector()
 
     def initialize_attempt(
         self,
@@ -246,3 +252,168 @@ class PilotCoordinator:
             },
         )
         return {"status": "APPROVED", "decision": decision}
+
+    def _get_current_state(self, book_id: str) -> str:
+        history = self.audit_store.get_audit_history(book_id)
+        if not history:
+            return "READY_TO_EXPORT"
+        return history[-1].get("toState", "READY_TO_EXPORT")
+
+    def apply_persistence(
+        self,
+        book_id: str,
+        workspace_root: Path,
+        staging_root: Path,
+        execution_request: dict[str, Any],
+        execution_result: dict[str, Any],
+        review_decision: dict[str, Any],
+    ) -> dict[str, Any]:
+        """Applies approved candidate artifacts into the isolated workspace via V2.1 Application engine."""
+        current_state = self._get_current_state(book_id)
+        if not self.sm.can_transition(current_state, "apply_persistence"):
+            return {
+                "status": "BLOCKED",
+                "error": f"ERR_STATE_TRANSITION_ILLEGAL: Cannot apply persistence from state '{current_state}'. State must be 'APPROVED'.",
+            }
+
+        app_result = self.persistence_adapter.apply_pilot_artifacts(
+            workspace_root=workspace_root,
+            staging_root=staging_root,
+            execution_request=execution_request,
+            execution_result=execution_result,
+            review_decision=review_decision,
+        )
+
+        if app_result.status == "APPLIED":
+            self.audit_store.record_persistence_receipt(
+                book_id,
+                {
+                    "receiptId": f"REC-{app_result.change_set_id}",
+                    "changeSetId": app_result.change_set_id,
+                    "appliedAt": getattr(app_result, "applied_at", ""),
+                },
+            )
+            self.audit_store.record_transition(
+                book_id=book_id,
+                from_state="APPROVED",
+                event="apply_persistence",
+                to_state="PERSISTED",
+                details={"changeSetId": app_result.change_set_id},
+            )
+            return {
+                "status": "PERSISTED",
+                "changeSetId": app_result.change_set_id,
+                "appResult": app_result,
+            }
+        else:
+            self.audit_store.record_transition(
+                book_id=book_id,
+                from_state="APPROVED",
+                event="persistence_failed",
+                to_state="VALIDATION_FAILED",
+                details={"errors": getattr(app_result, "errors", [])},
+            )
+            return {
+                "status": "VALIDATION_FAILED",
+                "errors": getattr(app_result, "errors", []),
+                "appResult": app_result,
+            }
+
+    def run_qa_validation(
+        self,
+        book_id: str,
+        workspace_root: Path,
+        expected_pages: int = 1,
+    ) -> dict[str, Any]:
+        """Executes QA gates against the isolated workspace and records audit state transition."""
+        current_state = self._get_current_state(book_id)
+        if not self.sm.can_transition(current_state, "qa_gates_passed"):
+            return {
+                "status": "BLOCKED",
+                "error": f"ERR_STATE_TRANSITION_ILLEGAL: Cannot run QA validation from state '{current_state}'. State must be 'PERSISTED'.",
+            }
+
+        qa_verdict = self.qa_validator.validate_dataset(
+            workspace_root, book_id=book_id, expected_pages=expected_pages
+        )
+
+        if qa_verdict.passed:
+            self.audit_store.record_transition(
+                book_id=book_id,
+                from_state="PERSISTED",
+                event="qa_gates_passed",
+                to_state="QA_PASS",
+                details={"pagesCovered": sorted(list(qa_verdict.pages_covered))},
+            )
+            return {
+                "status": "QA_PASS",
+                "verdict": qa_verdict,
+            }
+        else:
+            self.audit_store.record_transition(
+                book_id=book_id,
+                from_state="PERSISTED",
+                event="qa_gates_failed",
+                to_state="QA_FAILED",
+                details={"errors": qa_verdict.errors},
+            )
+            return {
+                "status": "QA_FAILED",
+                "verdict": qa_verdict,
+                "errors": qa_verdict.errors,
+            }
+
+    def project_preview(
+        self,
+        book_id: str,
+        workspace_root: Path,
+        preview_root: Path,
+        rights_status: str = "UNKNOWN",
+        publication_mode: str = "NOT_PUBLIC",
+        repository_root: Path | None = None,
+    ) -> dict[str, Any]:
+        """Projects preview files into untracked runtime directory and records audit state transition."""
+        current_state = self._get_current_state(book_id)
+        if not self.sm.can_transition(current_state, "project_preview"):
+            return {
+                "status": "BLOCKED",
+                "error": f"ERR_STATE_TRANSITION_ILLEGAL: Cannot project preview from state '{current_state}'. State must be 'QA_PASS'.",
+            }
+
+        projected_path = self.projector.project_local_preview(
+            workspace_root=workspace_root,
+            preview_root=preview_root,
+            book_id=book_id,
+            rights_status=rights_status,
+            publication_mode=publication_mode,
+            repository_root=repository_root,
+        )
+
+        self.audit_store.record_transition(
+            book_id=book_id,
+            from_state="QA_PASS",
+            event="project_preview",
+            to_state="PREVIEW_READY",
+            details={"path": str(projected_path)},
+        )
+        return {
+            "status": "PREVIEW_READY",
+            "path": str(projected_path),
+        }
+
+    def complete_pilot(self, book_id: str) -> dict[str, Any]:
+        """Final transition validating that the pilot preview is complete and navigable."""
+        current_state = self._get_current_state(book_id)
+        if not self.sm.can_transition(current_state, "validate_navigation"):
+            return {
+                "status": "BLOCKED",
+                "error": f"ERR_STATE_TRANSITION_ILLEGAL: Cannot complete pilot from state '{current_state}'. State must be 'PREVIEW_READY'.",
+            }
+
+        self.audit_store.record_transition(
+            book_id=book_id,
+            from_state="PREVIEW_READY",
+            event="validate_navigation",
+            to_state="PILOT_VALIDATED",
+        )
+        return {"status": "PILOT_VALIDATED"}

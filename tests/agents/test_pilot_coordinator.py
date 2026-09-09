@@ -245,3 +245,22 @@ def test_submit_invalid_human_decision_does_not_persist_to_audit_store(tmp_path:
         assert not (audit_dec_dir / "DEC-INVALID-01.json").exists()
 
 
+def test_coordinator_apply_persistence_blocked_if_not_approved(tmp_path: Path):
+    runtime_root = tmp_path / ".daemon_runtime"
+    coord = PilotCoordinator(runtime_root=runtime_root)
+    ws_root = tmp_path / "workspaces" / "pilot" / "animalidade" / "repository"
+    staging_root = tmp_path / "staging"
+
+    outcome = coord.apply_persistence(
+        book_id="animalidade",
+        workspace_root=ws_root,
+        staging_root=staging_root,
+        execution_request={},
+        execution_result={},
+        review_decision={"decision": "APPROVE"},
+    )
+    assert outcome["status"] == "BLOCKED"
+    assert "ERR_STATE_TRANSITION_ILLEGAL" in outcome["error"]
+
+
+
