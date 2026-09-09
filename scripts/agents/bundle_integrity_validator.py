@@ -73,9 +73,10 @@ class BundleIntegrityValidator:
             if not isinstance(exec_res, dict):
                 errors.append("ERR_RESULT_CONTRACT_INVALID: execution-result.json must be an object")
             else:
+                status = exec_res.get("status")
                 verdict = exec_res.get("verdict")
-                if verdict != "ACCEPT":
-                    errors.append(f"ERR_RESULT_CONTRACT_INVALID: verdict '{verdict}' is not ACCEPT")
+                if status != "SUCCESS" and verdict != "ACCEPT":
+                    errors.append(f"ERR_RESULT_CONTRACT_INVALID: execution result status '{status or verdict}' is not SUCCESS")
                 res_req_id = exec_res.get("requestId")
                 if res_req_id != expected_request_id:
                     errors.append(

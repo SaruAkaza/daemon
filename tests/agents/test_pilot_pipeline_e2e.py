@@ -66,11 +66,25 @@ def test_full_pilot_pipeline_hermetic_success(hermetic_pipeline_env: dict):
         "allowedWriteScope": ["data/text/animalidade.txt", "data/entities/creature_npc.json"],
         "executionProfile": "manual-antigravity",
         "contextPack": {
-            "sourceType": "docx",
-            "sourcePath": "Livros/word/feito/animalidade.docx",
+            "schemaVersion": "1.0",
+            "contextPackId": f"CTX-{request_id}",
+            "jobId": job_id,
+            "agent": "extraction-agent",
+            "stage": "extraction",
+            "mandatory": ["docs/architecture/constitution.md"],
+            "domain": ["docs/context/domain/taxonomy.md"],
+            "bookContext": ["coordination/books/animalidade.md"],
+            "jobContext": ["coordination/queue/codex.json"],
+            "handoffContext": [],
+            "task": {
+                "type": "extract_pilot",
+                "sourceType": "docx",
+                "sourcePath": "Livros/word/feito/animalidade.docx",
+            },
+            "outputContract": "schemas/entity.schema.json",
         },
         "taskInstruction": "Extract pilot data",
-        "outputSchemaName": "raw-text-block.schema.json",
+        "outputSchemaName": "entity.schema.json",
     }
     exporter = ExecutionBundleExporter()
     outgoing_dir = runtime_root / "bundles" / "outgoing"
@@ -94,16 +108,14 @@ def test_full_pilot_pipeline_hermetic_success(hermetic_pipeline_env: dict):
     text_hash = sha256_bytes(text_bytes)
     text_content = text_bytes.decode("utf-8")
 
-    entity_data = [
-        {
-            "id": "creature-lobo",
-            "name": "Lobo",
-            "category": "creature_npc",
-            "source": "animalidade",
-            "page": 1,
-            "entries": ["Lobo selvagem."],
-        }
-    ]
+    entity_data = {
+        "id": "creature-lobo",
+        "name": "Lobo",
+        "category": "creature_npc",
+        "source": "animalidade",
+        "page": 1,
+        "entries": ["Lobo selvagem."],
+    }
     entity_str = json.dumps(entity_data)
     entity_bytes = entity_str.encode("utf-8")
     (artifacts_dir / "creature_npc.json").write_bytes(entity_bytes)
@@ -111,13 +123,17 @@ def test_full_pilot_pipeline_hermetic_success(hermetic_pipeline_env: dict):
 
     exec_result_payload = {
         "schemaVersion": "2.0",
-        "resultId": "RES-ANIM-01",
+        "executionId": f"EXEC-{request_id}-01",
         "requestId": request_id,
-        "verdict": "ACCEPT",
-        "artifacts": [
-            {"path": "artifacts/animalidade.txt"},
-            {"path": "artifacts/creature_npc.json"},
-        ],
+        "agent": "extraction-agent",
+        "stage": "extraction",
+        "status": "SUCCESS",
+        "proposedArtifacts": {
+            "data/text/animalidade.txt": text_content,
+            "data/entities/creature_npc.json": entity_str,
+        },
+        "evidence": [{"book": "animalidade", "page": 1}],
+        "uncertainties": [],
     }
     (incoming_dir / "execution-result.json").write_text(json.dumps(exec_result_payload), encoding="utf-8")
 
@@ -188,14 +204,11 @@ def test_full_pilot_pipeline_hermetic_success(hermetic_pipeline_env: dict):
 
     # Step 6: Persist through V2.1 Application Adapter into RestrictedPilotWorkspace
     adapter = PilotPersistenceAdapter()
-    proposed_arts = [
-        {"path": "data/text/animalidade.txt", "content": text_content, "action": "CREATE"},
-        {"path": "data/entities/creature_npc.json", "content": entity_str, "action": "CREATE"},
-    ]
     app_result = adapter.apply_pilot_artifacts(
         workspace_root=ws_root,
         staging_root=staging_root,
-        proposed_artifacts=proposed_arts,
+        execution_request=req_payload,
+        execution_result=exec_result_payload,
         review_decision=decision_payload,
     )
     assert app_result.status == "APPLIED"

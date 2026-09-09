@@ -21,18 +21,60 @@ def test_apply_to_isolated_workspace_success(workspace_env: tuple[Path, Path]):
     ws_root, staging_root = workspace_env
     adapter = PilotPersistenceAdapter()
 
-    proposed = [
-        {
-            "path": "data/text/animalidade.txt",
-            "content": "Paragraph 1\nParagraph 2\n",
-            "action": "CREATE",
+    req = {
+        "schemaVersion": "2.0",
+        "requestId": "REQ-ANIM-01",
+        "jobId": "JOB-ANIM-01",
+        "bookId": "animalidade",
+        "targetStage": "extraction",
+        "assignedAgent": "extraction-agent",
+        "allowedWriteScope": ["data/text/animalidade.txt", "data/pilot/animalidade.json"],
+        "executionProfile": "manual-antigravity",
+        "contextPack": {
+            "schemaVersion": "1.0",
+            "contextPackId": "CTX-REQ-ANIM-01",
+            "jobId": "JOB-ANIM-01",
+            "agent": "extraction-agent",
+            "stage": "extraction",
+            "mandatory": ["docs/architecture/constitution.md"],
+            "domain": ["docs/context/domain/taxonomy.md"],
+            "bookContext": ["coordination/books/animalidade.md"],
+            "jobContext": ["coordination/queue/codex.json"],
+            "handoffContext": [],
+            "task": {
+                "type": "persist_pilot_artifacts",
+                "sourceType": "docx",
+                "sourcePath": "Livros/word/feito/animalidade.docx",
+            },
+            "outputContract": "schemas/raw-text-block.schema.json",
         },
-        {
-            "path": "data/pilot/animalidade.json",
-            "content": json.dumps({"bookId": "animalidade", "title": "Animalidade"}),
-            "action": "CREATE",
+        "taskInstruction": "Extract and clean text paragraphs from animalidade source.",
+        "outputSchemaName": "entity.schema.json",
+    }
+
+    entity_content = json.dumps({
+        "id": "creature-lobo",
+        "name": "Lobo",
+        "category": "creature_npc",
+        "source": "animalidade",
+        "page": 1,
+        "entries": ["Lobo selvagem."],
+    })
+
+    res = {
+        "schemaVersion": "2.0",
+        "executionId": "EXEC-REQ-ANIM-01-01",
+        "requestId": "REQ-ANIM-01",
+        "agent": "extraction-agent",
+        "stage": "extraction",
+        "status": "SUCCESS",
+        "proposedArtifacts": {
+            "data/text/animalidade.txt": "Paragraph 1\nParagraph 2\n",
+            "data/pilot/animalidade.json": entity_content,
         },
-    ]
+        "evidence": [{"book": "animalidade", "page": 1}],
+        "uncertainties": [],
+    }
 
     decision = {
         "decisionId": "DEC-001",
@@ -48,7 +90,8 @@ def test_apply_to_isolated_workspace_success(workspace_env: tuple[Path, Path]):
     result = adapter.apply_pilot_artifacts(
         workspace_root=ws_root,
         staging_root=staging_root,
-        proposed_artifacts=proposed,
+        execution_request=req,
+        execution_result=res,
         review_decision=decision,
     )
 
@@ -58,17 +101,203 @@ def test_apply_to_isolated_workspace_success(workspace_env: tuple[Path, Path]):
     assert (ws_root / "data/pilot/animalidade.json").exists()
 
 
+def test_apply_rejects_when_execution_result_validator_rejects(workspace_env: tuple[Path, Path]):
+    ws_root, staging_root = workspace_env
+    adapter = PilotPersistenceAdapter()
+
+    req = {
+        "schemaVersion": "2.0",
+        "requestId": "REQ-ANIM-01",
+        "jobId": "JOB-ANIM-01",
+        "bookId": "animalidade",
+        "targetStage": "extraction",
+        "assignedAgent": "extraction-agent",
+        "allowedWriteScope": ["data/text/animalidade.txt"],
+        "executionProfile": "manual-antigravity",
+        "contextPack": {
+            "schemaVersion": "1.0",
+            "contextPackId": "CTX-REQ-ANIM-01",
+            "jobId": "JOB-ANIM-01",
+            "agent": "extraction-agent",
+            "stage": "extraction",
+            "mandatory": ["docs/architecture/constitution.md"],
+            "domain": ["docs/context/domain/taxonomy.md"],
+            "bookContext": ["coordination/books/animalidade.md"],
+            "jobContext": ["coordination/queue/codex.json"],
+            "handoffContext": [],
+            "task": {
+                "type": "persist_pilot_artifacts",
+                "sourceType": "docx",
+                "sourcePath": "Livros/word/feito/animalidade.docx",
+            },
+            "outputContract": "schemas/raw-text-block.schema.json",
+        },
+        "taskInstruction": "Extract",
+        "outputSchemaName": "raw-text-block.schema.json",
+    }
+
+    # Result with status ERROR must fail technical validation
+    res = {
+        "schemaVersion": "2.0",
+        "executionId": "EXEC-REQ-ANIM-01-01",
+        "requestId": "REQ-ANIM-01",
+        "agent": "extraction-agent",
+        "stage": "extraction",
+        "status": "ERROR",
+        "proposedArtifacts": {
+            "data/text/animalidade.txt": "Partial text",
+        },
+        "evidence": [{"book": "animalidade", "page": 1}],
+        "uncertainties": [],
+    }
+
+    decision = {
+        "decisionId": "DEC-001",
+        "requestId": "REQ-ANIM-01",
+        "resultBundleId": "RB-ANIM-01",
+        "reviewedResultManifestSha256": "0" * 64,
+        "decision": "APPROVE",
+        "reviewer": "human-editor",
+        "reviewNotes": "Approved.",
+        "decidedAt": "2026-09-08T15:00:00Z",
+    }
+
+    result = adapter.apply_pilot_artifacts(
+        workspace_root=ws_root,
+        staging_root=staging_root,
+        execution_request=req,
+        execution_result=res,
+        review_decision=decision,
+    )
+
+    assert result.status == "BLOCKED"
+    assert not (ws_root / "data/text/animalidade.txt").exists()
+
+
+def test_apply_rejects_artifacts_outside_original_allowed_write_scope(workspace_env: tuple[Path, Path]):
+    ws_root, staging_root = workspace_env
+    adapter = PilotPersistenceAdapter()
+
+    req = {
+        "schemaVersion": "2.0",
+        "requestId": "REQ-ANIM-01",
+        "jobId": "JOB-ANIM-01",
+        "bookId": "animalidade",
+        "targetStage": "extraction",
+        "assignedAgent": "extraction-agent",
+        # Only text path is allowed in request
+        "allowedWriteScope": ["data/text/animalidade.txt"],
+        "executionProfile": "manual-antigravity",
+        "contextPack": {
+            "schemaVersion": "1.0",
+            "contextPackId": "CTX-REQ-ANIM-01",
+            "jobId": "JOB-ANIM-01",
+            "agent": "extraction-agent",
+            "stage": "extraction",
+            "mandatory": ["docs/architecture/constitution.md"],
+            "domain": ["docs/context/domain/taxonomy.md"],
+            "bookContext": ["coordination/books/animalidade.md"],
+            "jobContext": ["coordination/queue/codex.json"],
+            "handoffContext": [],
+            "task": {
+                "type": "persist_pilot_artifacts",
+                "sourceType": "docx",
+                "sourcePath": "Livros/word/feito/animalidade.docx",
+            },
+            "outputContract": "schemas/raw-text-block.schema.json",
+        },
+        "taskInstruction": "Extract",
+        "outputSchemaName": "raw-text-block.schema.json",
+    }
+
+    # Result tries to write outside allowed scope
+    res = {
+        "schemaVersion": "2.0",
+        "executionId": "EXEC-REQ-ANIM-01-01",
+        "requestId": "REQ-ANIM-01",
+        "agent": "extraction-agent",
+        "stage": "extraction",
+        "status": "SUCCESS",
+        "proposedArtifacts": {
+            "data/text/animalidade.txt": "Text",
+            "data/entities/creature.json": "{}",
+        },
+        "evidence": [{"book": "animalidade", "page": 1}],
+        "uncertainties": [],
+    }
+
+    decision = {
+        "decisionId": "DEC-001",
+        "requestId": "REQ-ANIM-01",
+        "resultBundleId": "RB-ANIM-01",
+        "reviewedResultManifestSha256": "0" * 64,
+        "decision": "APPROVE",
+        "reviewer": "human-editor",
+        "reviewNotes": "Approved.",
+        "decidedAt": "2026-09-08T15:00:00Z",
+    }
+
+    result = adapter.apply_pilot_artifacts(
+        workspace_root=ws_root,
+        staging_root=staging_root,
+        execution_request=req,
+        execution_result=res,
+        review_decision=decision,
+    )
+
+    assert result.status == "BLOCKED"
+    assert not (ws_root / "data/text/animalidade.txt").exists()
+    assert not (ws_root / "data/entities/creature.json").exists()
+
+
 def test_apply_fails_if_decision_not_approved(workspace_env: tuple[Path, Path]):
     ws_root, staging_root = workspace_env
     adapter = PilotPersistenceAdapter()
 
-    proposed = [
-        {
-            "path": "data/text/animalidade.txt",
-            "content": "Text",
-            "action": "CREATE",
-        }
-    ]
+    req = {
+        "schemaVersion": "2.0",
+        "requestId": "REQ-ANIM-01",
+        "jobId": "JOB-ANIM-01",
+        "bookId": "animalidade",
+        "targetStage": "extraction",
+        "assignedAgent": "extraction-agent",
+        "allowedWriteScope": ["data/text/animalidade.txt"],
+        "executionProfile": "manual-antigravity",
+        "contextPack": {
+            "schemaVersion": "1.0",
+            "contextPackId": "CTX-REQ-ANIM-01",
+            "jobId": "JOB-ANIM-01",
+            "agent": "extraction-agent",
+            "stage": "extraction",
+            "mandatory": ["docs/architecture/constitution.md"],
+            "domain": ["docs/context/domain/taxonomy.md"],
+            "bookContext": ["coordination/books/animalidade.md"],
+            "jobContext": ["coordination/queue/codex.json"],
+            "handoffContext": [],
+            "task": {
+                "type": "persist_pilot_artifacts",
+                "sourceType": "docx",
+                "sourcePath": "Livros/word/feito/animalidade.docx",
+            },
+            "outputContract": "schemas/raw-text-block.schema.json",
+        },
+        "taskInstruction": "Extract",
+        "outputSchemaName": "raw-text-block.schema.json",
+    }
+
+    res = {
+        "schemaVersion": "2.0",
+        "executionId": "EXEC-REQ-ANIM-01-01",
+        "requestId": "REQ-ANIM-01",
+        "agent": "extraction-agent",
+        "stage": "extraction",
+        "status": "SUCCESS",
+        "proposedArtifacts": {
+            "data/text/animalidade.txt": "Text",
+        },
+        "evidence": [{"book": "animalidade", "page": 1}],
+        "uncertainties": [],
+    }
 
     decision = {
         "decisionId": "DEC-002",
@@ -84,7 +313,8 @@ def test_apply_fails_if_decision_not_approved(workspace_env: tuple[Path, Path]):
     result = adapter.apply_pilot_artifacts(
         workspace_root=ws_root,
         staging_root=staging_root,
-        proposed_artifacts=proposed,
+        execution_request=req,
+        execution_result=res,
         review_decision=decision,
     )
 
@@ -96,13 +326,50 @@ def test_v21_auto_apply_roots_enforced(workspace_env: tuple[Path, Path]):
     ws_root, staging_root = workspace_env
     adapter = PilotPersistenceAdapter()
 
-    proposed = [
-        {
-            "path": "scripts/malicious.py",
-            "content": "print('attack')",
-            "action": "CREATE",
-        }
-    ]
+    req = {
+        "schemaVersion": "2.0",
+        "requestId": "REQ-ANIM-01",
+        "jobId": "JOB-ANIM-01",
+        "bookId": "animalidade",
+        "targetStage": "extraction",
+        "assignedAgent": "extraction-agent",
+        "allowedWriteScope": ["scripts/malicious.py"],
+        "executionProfile": "manual-antigravity",
+        "contextPack": {
+            "schemaVersion": "1.0",
+            "contextPackId": "CTX-REQ-ANIM-01",
+            "jobId": "JOB-ANIM-01",
+            "agent": "extraction-agent",
+            "stage": "extraction",
+            "mandatory": ["docs/architecture/constitution.md"],
+            "domain": ["docs/context/domain/taxonomy.md"],
+            "bookContext": ["coordination/books/animalidade.md"],
+            "jobContext": ["coordination/queue/codex.json"],
+            "handoffContext": [],
+            "task": {
+                "type": "persist_pilot_artifacts",
+                "sourceType": "docx",
+                "sourcePath": "Livros/word/feito/animalidade.docx",
+            },
+            "outputContract": "schemas/raw-text-block.schema.json",
+        },
+        "taskInstruction": "Attack",
+        "outputSchemaName": "raw-text-block.schema.json",
+    }
+
+    res = {
+        "schemaVersion": "2.0",
+        "executionId": "EXEC-REQ-ANIM-01-01",
+        "requestId": "REQ-ANIM-01",
+        "agent": "extraction-agent",
+        "stage": "extraction",
+        "status": "SUCCESS",
+        "proposedArtifacts": {
+            "scripts/malicious.py": "print('attack')",
+        },
+        "evidence": [{"book": "animalidade", "page": 1}],
+        "uncertainties": [],
+    }
 
     decision = {
         "decisionId": "DEC-003",
@@ -118,9 +385,11 @@ def test_v21_auto_apply_roots_enforced(workspace_env: tuple[Path, Path]):
     result = adapter.apply_pilot_artifacts(
         workspace_root=ws_root,
         staging_root=staging_root,
-        proposed_artifacts=proposed,
+        execution_request=req,
+        execution_result=res,
         review_decision=decision,
     )
 
     assert result.status in ("BLOCKED", "HUMAN_REVIEW")
     assert not (ws_root / "scripts/malicious.py").exists()
+
