@@ -55,6 +55,23 @@ def test_path_traversal_blocked(server_instance: PreviewServer):
     assert exc.value.code in (400, 403, 404)
 
 
+def test_windows_ads_and_device_paths_blocked(server_instance: PreviewServer):
+    # Test Alternate Data Stream (ADS)
+    url_ads = f"http://127.0.0.1:{server_instance.port}/api/preview/synthetic-pilot/index.json::$DATA"
+    req_ads = urllib.request.Request(url_ads)
+    with pytest.raises(urllib.error.HTTPError) as exc_ads:
+        urllib.request.urlopen(req_ads)
+    assert exc_ads.value.code in (400, 403, 404)
+
+    # Test reserved device name
+    url_dev = f"http://127.0.0.1:{server_instance.port}/CON"
+    req_dev = urllib.request.Request(url_dev)
+    with pytest.raises(urllib.error.HTTPError) as exc_dev:
+        urllib.request.urlopen(req_dev)
+    assert exc_dev.value.code in (400, 403, 404)
+
+
+
 def test_frontend_acceptance_search():
     fixture_path = Path("tests/agents/fixtures/synthetic_preview_data/synthetic-pilot/index.json")
     with open(fixture_path, encoding="utf-8") as f:

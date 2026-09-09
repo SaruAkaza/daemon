@@ -9,6 +9,24 @@ from pathlib import Path
 from typing import Any
 
 
+WINDOWS_RESERVED_NAMES = {
+    "con", "prn", "aux", "nul",
+    "com1", "com2", "com3", "com4", "com5", "com6", "com7", "com8", "com9",
+    "lpt1", "lpt2", "lpt3", "lpt4", "lpt5", "lpt6", "lpt7", "lpt8", "lpt9",
+}
+
+
+def _is_unsafe_path(req_path: str) -> bool:
+    if ".." in req_path.split("/") or "\\" in req_path or ":" in req_path:
+        return True
+    segments = [s.strip().lower() for s in req_path.split("/") if s.strip()]
+    for s in segments:
+        base_name = s.split(".")[0]
+        if base_name in WINDOWS_RESERVED_NAMES:
+            return True
+    return False
+
+
 class PreviewServer:
     """Local HTTP development server serving static docs with dynamic runtime preview overlay."""
 
@@ -43,9 +61,9 @@ class PreviewServer:
                 parsed = urllib.parse.urlparse(self.path)
                 req_path = urllib.parse.unquote(parsed.path)
 
-                # Path traversal check
-                if ".." in req_path.split("/") or "\\" in req_path:
-                    self.send_error(400, "Path traversal forbidden")
+                # Path traversal and Windows ADS / device check
+                if _is_unsafe_path(req_path):
+                    self.send_error(400, "Path traversal or unsafe path forbidden")
                     return
 
                 # Check /api/preview/ or /preview/
