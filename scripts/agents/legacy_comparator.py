@@ -98,23 +98,49 @@ class LegacyComparator:
                             )
                         )
 
-            # 2. Compare matching terminal keys when structure differs
-            ext_terminals = {p.split(".")[-1]: (p, v) for p, v in ext_leaves.items()}
-            leg_terminals = {p.split(".")[-1]: (p, v) for p, v in leg_leaves.items()}
-            for k, (ext_p, ext_v) in ext_terminals.items():
-                if k in leg_terminals:
-                    leg_p, leg_v = leg_terminals[k]
-                    if ext_p not in leg_leaves and ext_v != leg_v:
-                        # Value discrepancy across structural difference
-                        entity_discrepancies.append(
-                            LegacyDiscrepancy(
-                                entity_id=eid,
-                                field_path=ext_p,
-                                extracted_value=ext_v,
-                                legacy_value=leg_v,
-                                source_citation=source_cit,
-                            )
+            # 2. Compare matching terminal keys when structure differs (preserve full path hierarchy)
+            leg_by_terminal: dict[str, list[tuple[str, Any]]] = {}
+            for p, v in leg_leaves.items():
+                k = p.split(".")[-1]
+                leg_by_terminal.setdefault(k, []).append((p, v))
+
+            for ext_p, ext_v in ext_leaves.items():
+                if ext_p in leg_leaves:
+                    continue  # Already compared in common direct paths
+                k = ext_p.split(".")[-1]
+                candidates = leg_by_terminal.get(k)
+                if not candidates:
+                    continue
+
+                if len(candidates) == 1:
+                    leg_p, leg_v = candidates[0]
+                else:
+                    ext_parts = ext_p.split(".")
+                    best_match = candidates[0]
+                    max_suffix = -1
+                    for cand_p, cand_v in candidates:
+                        cand_parts = cand_p.split(".")
+                        matched_len = 0
+                        for ep, lp in zip(reversed(ext_parts), reversed(cand_parts)):
+                            if ep == lp:
+                                matched_len += 1
+                            else:
+                                break
+                        if matched_len > max_suffix:
+                            max_suffix = matched_len
+                            best_match = (cand_p, cand_v)
+                    leg_p, leg_v = best_match
+
+                if ext_v != leg_v:
+                    entity_discrepancies.append(
+                        LegacyDiscrepancy(
+                            entity_id=eid,
+                            field_path=ext_p,
+                            extracted_value=ext_v,
+                            legacy_value=leg_v,
+                            source_citation=source_cit,
                         )
+                    )
 
             if entity_discrepancies:
                 semantic_diff_count += 1

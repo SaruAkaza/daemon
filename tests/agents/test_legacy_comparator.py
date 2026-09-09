@@ -145,3 +145,40 @@ def test_mixed_with_semantic_difference_precedence():
     assert result.equivalent_count == 1
     assert result.semantic_diff_count == 1
     assert len(result.discrepancies) == 1
+
+
+def test_terminal_key_collision_preserves_all_discrepancies():
+    # Both combat.attack.bonus and combat.defense.bonus end with 'bonus'
+    extracted = [
+        {
+            "id": "item-sword",
+            "name": "Sword",
+            "combat": {
+                "attack": {"bonus": 2},
+                "defense": {"bonus": 1},
+            },
+        }
+    ]
+    # In legacy, structure has attack.bonus = 5 and defense.bonus = 4
+    legacy = [
+        {
+            "id": "item-sword",
+            "name": "Sword",
+            "stats": {
+                "attack": {"bonus": 5},
+                "defense": {"bonus": 4},
+            },
+        }
+    ]
+
+    comparator = LegacyComparator()
+    result = comparator.compare_entities(extracted, legacy)
+
+    assert result.verdict == "SEMANTIC_DIFFERENCE"
+    assert result.semantic_diff_count == 1
+    # MUST detect BOTH discrepancies without overwriting terminal keys
+    assert len(result.discrepancies) == 2
+    paths = {d.field_path for d in result.discrepancies}
+    assert "combat.attack.bonus" in paths
+    assert "combat.defense.bonus" in paths
+
