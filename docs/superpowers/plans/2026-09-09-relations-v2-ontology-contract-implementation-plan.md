@@ -48,7 +48,7 @@
 - `schemas/unresolved-relation-collection.schema.json` (Collection contract for unresolved relations)
 - `schemas/relation-compatibility.schema.json` (Schema validating the compatibility matrix)
 - `schemas/relation-compatibility-v2.json` (Machine-readable canonical authority for semantic compatibility)
-- `docs/reference/relation-compatibility-v2.md` (Explanatory human documentation; canonical authority is the JSON)
+- `docs/reference/relation-compatibility-v2.md` (Explanatory human documentation only; canonical authority remains exclusively schemas/relation-compatibility-v2.json; zero triplet duplication)
 - `docs/context/decisions/ADR-0004-relations-v2-ontology-and-contracts.md` (Verified next ADR in repository sequence)
 - `scripts/agents/relation_compatibility.py` (`RelationCompatibilityValidator` implementation)
 - `scripts/agents/historical_relations_auditor.py` (`HistoricalRelationsAuditor` implementation)
@@ -250,7 +250,7 @@
   - `schemas/relation-compatibility-v2.json`:
     Machine-readable canonical authority containing all approved triplets.
   - `docs/reference/relation-compatibility-v2.md`:
-    Explanatory markdown documentation declaring: `machine-readable JSON = canonical authority`, `markdown = explanatory only`.
+    Explanatory markdown documentation only (`markdown = explanatory only`). It MAY describe purpose, loading model, usage examples, fail-closed behavior, and links to canonical JSON. It MUST NOT duplicate the complete `relation type -> source -> target -> predicates` matrix. Canonical authority remains exclusively: `schemas/relation-compatibility-v2.json`.
 - **Tests**:
   - `tests/agents/test_relation_compatibility_schema.py::test_compatibility_matrix_self_validates`
   - `tests/agents/test_relation_compatibility_schema.py::test_compatibility_matrix_contains_all_canonical_predicates`
@@ -262,7 +262,7 @@
 - **Minimal Implementation**:
   1. Create `schemas/relation-compatibility.schema.json`.
   2. Create `schemas/relation-compatibility-v2.json` with all valid triplets derived from `entity.schema.json` categories.
-  3. Create `docs/reference/relation-compatibility-v2.md` referencing the canonical JSON.
+  3. Create `docs/reference/relation-compatibility-v2.md` as explanatory documentation only (purpose, model, links to canonical JSON; zero triplet duplication).
   4. Implement `tests/agents/test_relation_compatibility_schema.py`.
 - **GREEN Command**:
   `pytest tests/agents/test_relation_compatibility_schema.py -v`
@@ -633,21 +633,52 @@ verify classified records, and sign off via a ReviewDecision artifact.
 ### Task S: Relations Attempt 2 Execution / Human Boundary
 - **Action**:
   1. Execute Relations Agent in isolated runtime workspace (`.daemon_runtime/workspaces/pilot/animalidade/`).
-  2. Expected semantic extraction:
-     - `HAS_POWER`: 0 relations.
-     - `CAN_CHOOSE_POWER`: 107 relations.
-     - `HAS_WEAKNESS`: explicit innate weaknesses.
-     - `unresolved-relations.json`: 1 record (*Rapidez* in *Garras de Sharikan*).
+  2. **Re-derivation Requirement (No Target Count)**:
+     Relations Attempt 2 MUST re-derive candidate relations directly from the approved source and extraction evidence under `relations-v2`. It MUST NOT mechanically copy or transform the 108 Attempt 1 edges.
+     Acceptance must validate semantic classes, not target predefined counts:
+     - Explicit selectable power option -> `CAN_CHOOSE_POWER`
+     - Explicit actual power possession -> `HAS_POWER`
+     - Explicit assigned weakness -> `HAS_WEAKNESS`
+     - Unresolved external or missing target -> `unresolved-relations.json`
+     - Unsupported instruction (e.g., "Escolha uma raça") -> no invented edge
+     Final relation counts are observed outputs of the derivation, not predefined acceptance criteria.
   3. Package Result Bundle `RB-ANIM-RELATIONS-att2-*`.
   4. Run `ExecutionResultValidator.validate()`.
+  5. **Relation Count Reconciliation Output**:
+     The execution and review packet must produce a deterministic reconciliation table:
+     - `Attempt 1 materialized relations:` [observed count, 108 in Attempt 1]
+     - `Attempt 2 materialized relations:` [observed count]
+     - `Attempt 2 HAS_POWER:` [observed count]
+     - `Attempt 2 CAN_CHOOSE_POWER:` [observed count]
+     - `Attempt 2 HAS_WEAKNESS:` [observed count]
+     - `Attempt 2 unresolved references:` [observed count]
+     - `Attempt 1 -> Attempt 2 relations retained semantically:` [observed count]
+     - `Attempt 1 -> Attempt 2 relations retyped:` [observed count]
+     - `Attempt 1 relations not reproduced:` [observed count]
+     - `New Attempt 2 relations:` [observed count]
+     - *For every numerical delta: deterministic, source-backed explanation required.*
 
 ```
 ================================================================================
 >>> HARD STOP 2: HUMAN REVIEW REQUIRED <<<
 DO NOT PROCEED TO FRONTEND STAGE OR PUBLICATION.
-Operator must inspect Result Bundle RB-ANIM-RELATIONS-att2-*, verify
-CAN_CHOOSE_POWER assignments, confirm zero HAS_POWER, confirm unresolved Rapidez,
-and issue a formal ReviewDecision before any frontend integration.
+Operator must inspect Result Bundle RB-ANIM-RELATIONS-att2-* and verify:
+1. No selectable-option evidence was incorrectly encoded as HAS_POWER.
+2. Every materialized CAN_CHOOSE_POWER is explicitly supported by approved
+   source evidence (e.g. "Poderes Possíveis" lists).
+3. Every materialized HAS_WEAKNESS is explicitly supported and resolves to an
+   approved weakness entity.
+4. Every HAS_POWER, if any, has explicit actual-possession evidence.
+5. Rapidez remains in unresolved-relations.json unless a canonical approved
+   endpoint has legitimately become available before Attempt 2.
+6. Non-relation instructions ("Escolha uma raça") generate zero invented edges.
+7. Endpoint integrity = PASS (zero dangling references in relations.json).
+8. Compatibility matrix = PASS (conforms to schemas/relation-compatibility-v2.json).
+9. Provenance = PASS (all relations cite valid source/page evidence).
+
+DO NOT require an exact CAN_CHOOSE_POWER count or exact HAS_WEAKNESS count before
+execution. The review report compares observed counts with Attempt 1 and explains
+all numerical deltas with source evidence.
 ================================================================================
 ```
 
