@@ -46,6 +46,7 @@ class PilotJobPreparer:
     """Prepares and validates the hermetic runtime environment for a pilot book."""
 
     REQUIRED_SCHEMAS = (
+        "context-manifest.schema.json",
         "execution-bundle.schema.json",
         "result-bundle.schema.json",
         "pilot-review-request.schema.json",

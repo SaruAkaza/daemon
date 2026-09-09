@@ -142,3 +142,27 @@ def test_render_antigravity_instructions():
     assert "REQ-01" in instr
     assert "raw-text-block.schema.json" in instr
     assert "artifacts/" in instr
+
+
+def test_exporter_with_custom_repo_root_resolves_schemas(tmp_path: Path, sample_request: dict):
+    custom_repo = tmp_path / "custom_repo"
+    custom_schemas = custom_repo / "schemas"
+    custom_schemas.mkdir(parents=True)
+    custom_schema_file = custom_schemas / "custom-contract.schema.json"
+    custom_schema_file.write_text(json.dumps({"$id": "custom", "type": "object"}), encoding="utf-8")
+
+    req = dict(sample_request)
+    req["outputSchemaName"] = "custom-contract.schema.json"
+
+    exporter = ExecutionBundleExporter(repo_root=custom_repo)
+    bundle_dir = exporter.export_bundle(req, attempt=1, output_base_dir=tmp_path / "bundles")
+
+    contract_file = bundle_dir / "output-contract.json"
+    with open(contract_file, encoding="utf-8") as f:
+        contract_data = json.load(f)
+    assert contract_data.get("$id") == "custom"
+
+    for root, _, files in os.walk(bundle_dir):
+        for fname in files:
+            os.chmod(Path(root) / fname, stat.S_IWRITE | stat.S_IREAD)
+

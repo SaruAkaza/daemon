@@ -26,6 +26,9 @@ class ExecutionBundleExporterError(RuntimeError):
 class ExecutionBundleExporter:
     """Exports self-contained, immutable Execution Bundles for manual operator bridge."""
 
+    def __init__(self, repo_root: Path | None = None) -> None:
+        self.repo_root = Path(repo_root).resolve() if repo_root else Path(__file__).resolve().parents[2]
+
     @staticmethod
     def render_antigravity_instructions(bundle_id: str, request_id: str, contract_name: str) -> str:
         """Renders standard operational guidance for execution in Antigravity."""
@@ -109,9 +112,10 @@ class ExecutionBundleExporter:
         contract_path = bundle_dir / "output-contract.json"
         contract_payload = {"outputSchemaName": output_schema_name}
         # If schema file exists locally, include full schema
-        schema_candidate = Path("schemas") / output_schema_name
+        schemas_dir = self.repo_root / "schemas"
+        schema_candidate = schemas_dir / output_schema_name
         if not schema_candidate.exists() and not output_schema_name.endswith(".schema.json"):
-            schema_candidate = Path("schemas") / f"{output_schema_name}.schema.json"
+            schema_candidate = schemas_dir / f"{output_schema_name}.schema.json"
         if schema_candidate.exists():
             with open(schema_candidate, encoding="utf-8") as sf:
                 contract_payload = json.load(sf)
