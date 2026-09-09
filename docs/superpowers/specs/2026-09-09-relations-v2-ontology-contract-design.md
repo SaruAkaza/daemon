@@ -70,7 +70,7 @@ A auditoria semântica minuciosa do texto original de *Animalidade* (p. 10-12) r
 2. **Atualizar Resolução no Validador**: Garantir que o `ExecutionResultValidator` resolva contratos de arquivo declarados explicitamente na `ExecutionRequest`.
 3. **Refinar a Ontologia Semântica de Relações**:
    - Redefinir `HAS_POWER` de forma exata: a entidade de origem efetivamente possui o poder alvo (`the source entity actually possesses the target power`), distinguindo posse efetiva de opções selecionáveis.
-   - Introduzir `CAN_CHOOSE_POWER`: a entidade de origem possui o poder alvo disponível como opção de seleção durante criação ou progressão de personagem (`the source entity has the target power available as a selectable option during character creation or progression`).
+   - Introduzir `CAN_CHOOSE_POWER`: a entidade ou template de origem tem permissão explícita para selecionar o poder alvo como uma opção de construção ou configuração (`the source entity/template is explicitly allowed to select the target power as a build or configuration option`). Exemplos podem incluir criação de personagem, progressão de personagem, construção de templates ou configuração de criaturas/NPCs, sem que esses exemplos estreitem a definição canônica.
    - Introduzir `HAS_WEAKNESS`: a entidade de origem possui a fraqueza, vulnerabilidade ou limitação alvo (`the source entity possesses the target weakness, vulnerability, or limitation`).
 4. **Governança de Referências Não Resolvidas**: Estabelecer formato e isolamento estrito para relações com alvos externos ou ausentes no livro através do artifact lógico `unresolved-relations.json`, mantendo referências não resolvidas fora do grafo canônico de relações (`relations.json`).
 5. **Matriz Declarativa de Compatibilidade**:
@@ -102,11 +102,16 @@ A ontologia de relações passa a ser governada por semântica estrita de proven
 - **Escopo**: Não restringir posse a suposições restritivas como "innate", "native", "standard stat block" ou "starting character" a menos que uma decisão arquitetural futura faça isso explicitamente. A exigência canônica é que a fonte confirme a posse efetiva daquele poder pela entidade.
 - **Critério de Proveniência**: O texto da fonte deve afirmar a posse efetiva (ex: afirmação direta de que a criatura possui o poder ou habilidade). Se a fonte indicar uma lista de opções ou custo de pontos a gastar/escolher, `HAS_POWER` é proibido e deve ser utilizado `CAN_CHOOSE_POWER`.
 
-### 3.2 `CAN_CHOOSE_POWER` (Novo Tipo Canônico)
-- **Definição**: **The source entity has the target power available as a selectable option during character creation or progression.** (A entidade de origem possui o poder alvo disponível como opção de seleção durante criação ou progressão de personagem).
-- **Exemplos Canônicos**: Listas de "Poderes Possíveis" de cada Fera em *Animalidade*, listas de opções permitidas por classe/kit, magias selecionáveis por círculo.
-- **Critério de Proveniência**: Presença de listas de seleção de poderes, regras de alocação de pontos de personagem (ex: "5 pontos para gastar"), cabeçalhos como "Poderes Possíveis", "Opções Permitidas".
-- **Semântica no Grafo**: Permite ao motor de regras e à UI orientar a construção de ficha, sem assumir falsamente que a entidade possui todas as habilidades listadas.
+### 3.2 `CAN_CHOOSE_POWER` (Definição Canônica)
+- **Definição**: **The source entity/template is explicitly allowed to select the target power as a build or configuration option.** (A entidade ou template de origem tem permissão explícita para selecionar o poder alvo como uma opção de construção ou configuração).
+- **Escopo e Exemplos Não Restritivos**: Os casos de uso e exemplos podem incluir:
+  - Criação de personagem (character creation)
+  - Progressão de personagem (character progression)
+  - Construção de templates (template construction)
+  - Configuração de criaturas ou NPCs (creature/NPC configuration)
+  *Esses exemplos ilustram aplicações frequentes, mas não restringem nem estreitam o significado canônico da relação.*
+- **Critério de Proveniência**: Presença na fonte de listas de seleção de poderes, menus de opções, regras de alocação de pontos de construção ou ficha (ex: "5 pontos para gastar"), tabelas de escolhas permitidas ou cabeçalhos canônicos como "Poderes Possíveis", "Opções Permitidas".
+- **Semântica no Grafo**: Permite ao motor de regras e à UI orientar a montagem, configuração e evolução da entidade/template, sem assumir falsamente que a entidade possui ativamente todas as opções listadas.
 
 ### 3.3 `HAS_WEAKNESS` (Novo Tipo Canônico)
 - **Definição**: **The source entity possesses the target weakness, vulnerability, or limitation.** (A entidade de origem possui a fraqueza, vulnerabilidade ou limitação alvo).
@@ -205,7 +210,7 @@ A matriz valida a tripla:
       "allowedSourceCategories": ["creature_npc", "character_option"],
       "allowedTargetCategories": ["character_option"],
       "allowedTargetSubtypes": ["aprimoramento", "poder", "magia"],
-      "semanticMeaning": "Selectable power option during character creation or progression"
+      "semanticMeaning": "The source entity/template is explicitly allowed to select the target power as a build or configuration option"
     },
     {
       "relationType": "HAS_WEAKNESS",
@@ -223,7 +228,7 @@ A matriz valida a tripla:
 | Relação | Origem Permitida | Destino Permitido | Cardinalidade | Semântica Canônica |
 |---|---|---|---|---|
 | `HAS_POWER` | `creature_npc`, `character_option` | `character_option` (poder, aprimoramento) | N:M | A entidade de origem efetivamente possui o poder alvo. |
-| `CAN_CHOOSE_POWER` | `creature_npc`, `character_option` | `character_option` (poder, aprimoramento) | N:M | O poder alvo está disponível como opção selecionável. |
+| `CAN_CHOOSE_POWER` | `creature_npc`, `character_option` | `character_option` (poder, aprimoramento) | N:M | A entidade/template de origem pode selecionar o poder alvo como opção de construção ou configuração. |
 | `HAS_WEAKNESS` | `creature_npc`, `character_option` | `character_option` (fraqueza, aprimoramento) | N:M | A entidade de origem possui a fraqueza ou vulnerabilidade alvo. |
 | `MODIFIES` | `character_option` | `character_option` | N:M | Modificador mecânico de outra opção. |
 | `REQUIRES` | `character_option` | `character_option` | N:M | Pré-requisito de compra ou ativação. |
@@ -412,7 +417,7 @@ O ADR-0004 deve ser registrado em:
 - **Decisão**:
   - Introdução de `relation-collection.schema.json` para validação de listas.
   - Definição canônica de `HAS_POWER` (posse efetiva).
-  - Criação de `CAN_CHOOSE_POWER` (opções selecionáveis) e `HAS_WEAKNESS` (fraquezas efetivas).
+  - Criação de `CAN_CHOOSE_POWER` (opção selecionável de construção ou configuração) e `HAS_WEAKNESS` (fraquezas efetivas).
   - Rejeição de `CAN_CHOOSE_WEAKNESS` por YAGNI.
   - Instituição de `schemas/relation-compatibility-v2.json` como autoridade única de compatibilidade, validada por `schemas/relation-compatibility.schema.json`.
   - Isolamento de referências externas no artifact lógico `unresolved-relations.json`.
@@ -447,7 +452,7 @@ A futura implementação da arquitetura V2 deverá seguir estritamente a sequên
 
 A especificação e futura implementação da Versão 2 de Relações serão consideradas completas e bem-sucedidas quando:
 1. O validador aceitar deterministicamente coleções de relações declaradas via `relation-collection.schema.json` sem falhas espúrias de tipo.
-2. A ontologia distinguir com fidelidade canônica de 100% posse efetiva (`HAS_POWER`) de opções de construção de personagem (`CAN_CHOOSE_POWER`).
+2. A ontologia distinguir com fidelidade canônica de 100% posse efetiva (`HAS_POWER = actual possession`) de opções selecionáveis de construção ou configuração (`CAN_CHOOSE_POWER = selectable build/configuration option`).
 3. Nenhuma referência não resolvida (externa ou ambígua) contaminar o grafo canônico `relations.json`, sendo mantida no artifact lógico `unresolved-relations.json`.
 4. Conteúdo restrito do piloto permanecer estritamente isolado do main worktree do Git.
 5. A matriz `schemas/relation-compatibility-v2.json` atuar como autoridade canônica única de compatibilidade.
