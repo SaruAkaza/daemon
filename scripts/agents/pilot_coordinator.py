@@ -87,6 +87,7 @@ class PilotCoordinator:
         expected_request_id: str,
         expected_bundle_id: str,
         expected_input_manifest_hash: str,
+        expected_execution_bundle_id: str | None = None,
     ) -> dict[str, Any]:
         """Validates bundle integrity and either quarantines it or advances to human review."""
         book_id = "animalidade"
@@ -110,6 +111,7 @@ class PilotCoordinator:
             expected_request_id=expected_request_id,
             expected_bundle_id=expected_bundle_id,
             expected_input_manifest_hash=expected_input_manifest_hash,
+            expected_execution_bundle_id=expected_execution_bundle_id,
         )
 
         if not verdict.is_valid:

@@ -60,6 +60,7 @@ class BundleIntegrityValidator:
         expected_request_id: str,
         expected_bundle_id: str,
         expected_input_manifest_hash: str,
+        expected_execution_bundle_id: str | None = None,
     ) -> IntegrityVerdict:
         """Validates bundle envelope byte-for-byte against expected parameters."""
         errors: list[str] = []
@@ -100,6 +101,13 @@ class BundleIntegrityValidator:
                     errors.append(
                         f"ERR_BUNDLE_ID_MISMATCH: result-manifest bundleId '{man_bundle_id}' != expected '{expected_bundle_id}'"
                     )
+
+                if expected_execution_bundle_id is not None:
+                    man_exec_bundle_id = manifest_data.get("executionBundleId")
+                    if man_exec_bundle_id != expected_execution_bundle_id:
+                        errors.append(
+                            f"ERR_BUNDLE_ID_MISMATCH: result-manifest executionBundleId '{man_exec_bundle_id}' != expected '{expected_execution_bundle_id}'"
+                        )
 
                 man_req_id = manifest_data.get("requestId")
                 if man_req_id != expected_request_id:

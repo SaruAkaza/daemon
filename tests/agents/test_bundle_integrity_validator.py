@@ -114,6 +114,21 @@ def test_validate_bundle_id_mismatch(make_valid_bundle):
     assert any("ERR_BUNDLE_ID_MISMATCH" in err for err in verdict.errors)
 
 
+def test_validate_execution_bundle_id_mismatch(make_valid_bundle):
+    envelope = make_valid_bundle()
+    validator = BundleIntegrityValidator()
+    verdict = validator.validate(
+        envelope,
+        expected_request_id="REQ-01",
+        expected_bundle_id="RB-ANIM-EXTRACTION-att1-12345678",
+        expected_input_manifest_hash="a" * 64,
+        expected_execution_bundle_id="EB-EXPECTED-OTHER-12345678",
+    )
+    assert verdict.is_valid is False
+    assert any("ERR_BUNDLE_ID_MISMATCH" in err for err in verdict.errors)
+
+
+
 def test_validate_input_manifest_hash_mismatch(make_valid_bundle):
     envelope = make_valid_bundle(input_manifest_hash="b" * 64)
     validator = BundleIntegrityValidator()
