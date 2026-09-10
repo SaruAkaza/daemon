@@ -6,6 +6,8 @@ from typing import Any
 
 from jsonschema import Draft202012Validator
 from jsonschema.exceptions import SchemaError, ValidationError
+from referencing import Registry, Resource
+from referencing.jsonschema import DRAFT202012
 
 ROOT = Path(__file__).resolve().parents[2]
 SCHEMAS_DIR = (ROOT / "schemas").resolve()
@@ -89,19 +91,51 @@ def load_schema(name: str) -> dict[str, Any]:
     return schema
 
 
-def validate_payload(schema_name: str, payload: dict[str, Any]) -> None:
-    """Validate a dictionary payload against the specified schema.
+def _build_schemas_registry(schemas_dir: Path) -> Registry:
+    """Build a referencing.Registry from all JSON schemas in schemas_dir."""
+    registry: Registry = Registry()
+    if not schemas_dir.is_dir():
+        return registry
+
+    for f in sorted(schemas_dir.glob("*.json")):
+        try:
+            raw = f.read_text(encoding="utf-8")
+            contents = json.loads(raw)
+            if not isinstance(contents, dict):
+                continue
+            resource = Resource.from_contents(contents, default_specification=DRAFT202012)
+            registry = registry.with_resource(f.name, resource)
+            schema_id = contents.get("$id")
+            if schema_id and isinstance(schema_id, str):
+                registry = registry.with_resource(schema_id, resource)
+        except Exception:
+            continue
+
+    return registry
+
+
+def validate_payload(schema_name: str, payload: Any) -> None:
+    """Validate a payload against the specified schema.
 
     Raises:
         ContractValidationError: If the payload fails validation or schema is invalid.
     """
-    if not isinstance(payload, dict):
-        raise ContractValidationError(
-            f"Payload to validate against '{schema_name}' must be a dict, got {type(payload).__name__}"
-        )
-
     schema = load_schema(schema_name)
-    validator = Draft202012Validator(schema)
+    schema_type = schema.get("type")
+
+    if schema_type == "array":
+        if not isinstance(payload, list):
+            raise ContractValidationError(
+                f"Payload to validate against '{schema_name}' must be a list, got {type(payload).__name__}"
+            )
+    else:
+        if not isinstance(payload, dict):
+            raise ContractValidationError(
+                f"Payload to validate against '{schema_name}' must be a dict, got {type(payload).__name__}"
+            )
+
+    registry = _build_schemas_registry(SCHEMAS_DIR)
+    validator = Draft202012Validator(schema, registry=registry)
 
     errors = sorted(validator.iter_errors(payload), key=lambda e: [str(p) for p in e.path])
     if errors:

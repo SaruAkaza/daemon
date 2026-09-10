@@ -5,6 +5,10 @@ import json
 import pytest
 from dataclasses import FrozenInstanceError
 
+from scripts.agents.contracts import (
+    ContractValidationError,
+    validate_payload,
+)
 from scripts.agents.execution_validator import (
     ExecutionResultValidator,
     ExecutionValidationVerdict,
@@ -131,3 +135,92 @@ def test_validator_verdict_immutability(valid_result, valid_request):
     verdict = validator.validate(valid_result, valid_request)
     with pytest.raises(FrozenInstanceError):
         verdict.verdict = "BLOCKED"  # type: ignore
+
+
+def test_regression_relations_attempt_1_schema_contract():
+    relations_list = [
+        {
+            "schemaVersion": "1.0",
+            "id": "rel-cacador-teologia-001",
+            "type": "REQUIRES",
+            "sourceEntityId": "kit:cacador-de-bruxas",
+            "targetEntityId": "skill:teologia",
+            "source": "inquisicao",
+            "page": 14,
+            "confidence": 1.0,
+        }
+    ]
+
+    # Attempt 1 bug: validating against single relation.schema.json raises ContractValidationError
+    with pytest.raises(ContractValidationError):
+        validate_payload("relation.schema.json", relations_list)
+
+    # Validating against relation-collection.schema.json succeeds
+    validate_payload("relation-collection.schema.json", relations_list)
+
+
+def test_execution_validator_accepts_relation_collection_payload():
+    relations_list = [
+        {
+            "schemaVersion": "1.0",
+            "id": "rel-cacador-teologia-001",
+            "type": "REQUIRES",
+            "sourceEntityId": "kit:cacador-de-bruxas",
+            "targetEntityId": "skill:teologia",
+            "source": "inquisicao",
+            "page": 14,
+            "confidence": 1.0,
+        }
+    ]
+
+    request = {
+        "schemaVersion": "2.0",
+        "requestId": "REQ-JOB-TREVAS-001-RELATIONS",
+        "jobId": "JOB-TREVAS-001",
+        "bookId": "trevas-3-0",
+        "targetStage": "relations",
+        "assignedAgent": "relations-agent",
+        "allowedWriteScope": [
+            "data/entities/relations.json",
+        ],
+        "executionProfile": "offline-test",
+        "contextPack": {
+            "schemaVersion": "1.0",
+            "contextPackId": "CTX-TREVAS-RELATIONS-001",
+            "jobId": "JOB-TREVAS-001",
+            "agent": "relations-agent",
+            "stage": "relations",
+            "mandatory": [],
+            "domain": [],
+            "bookContext": [],
+            "jobContext": [],
+            "handoffContext": [],
+            "task": {"type": "extract_relations"},
+            "outputContract": "schemas/relation-collection.schema.json",
+        },
+        "taskInstruction": "Extract relations",
+        "outputSchemaName": "relation-collection.schema.json",
+    }
+
+    result = {
+        "schemaVersion": "2.0",
+        "executionId": "EXEC-REQ-JOB-TREVAS-001-RELATIONS-01",
+        "requestId": "REQ-JOB-TREVAS-001-RELATIONS",
+        "agent": "relations-agent",
+        "stage": "relations",
+        "status": "SUCCESS",
+        "proposedArtifacts": {
+            "data/entities/relations.json": json.dumps(relations_list),
+        },
+        "evidence": [
+            {"book": "inquisicao", "source": "test", "page": 1}
+        ],
+        "uncertainties": [],
+    }
+
+    validator = ExecutionResultValidator()
+    verdict = validator.validate(result, request)
+
+    assert verdict.verdict == "ACCEPT", f"Failed with {verdict.code}: {verdict.reasons}"
+    assert verdict.code == "ALLOW"
+

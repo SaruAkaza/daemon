@@ -43,7 +43,7 @@ class ExecutionResultValidator:
         4. Write scope violation -> BLOCKED
         5. Semantic uncertainties -> HUMAN_REVIEW
         6. Missing provenance evidence -> HUMAN_REVIEW
-        7. Output artifact schema validity -> HUMAN_REVIEW / BLOCKED
+        7. Output artifact schema validity (object or array collection) -> HUMAN_REVIEW / BLOCKED
         8. Everything valid -> ACCEPT
         """
         if not isinstance(result, dict) or not isinstance(request, dict):
