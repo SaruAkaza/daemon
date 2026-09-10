@@ -4,14 +4,30 @@ Prepares the runtime environment, validates source custody, and emits
 formal verification checkpoints without processing candidate content.
 """
 
+from __future__ import annotations
+
+import copy
 from dataclasses import dataclass, field
 import hashlib
 from pathlib import Path
-from typing import List, Optional
+from typing import Any, List, Optional
 
+from scripts.agents.execution_request_builder import ExecutionRequestBuilder
 from scripts.agents.pilot_audit_store import PilotAuditStore
 from scripts.agents.pilot_coordinator import PilotCoordinator
 from scripts.agents.restricted_workspace import RestrictedPilotWorkspace
+
+
+STAGE_CONFIGURATIONS: dict[str, dict[str, Any]] = {
+    "relations": {
+        "outputSchemaName": "relation-collection.schema.json",
+        "allowedWriteScope": [
+            "data/entities/relations.json",
+            "data/entities/unresolved-relations.json",
+        ],
+        "relationOntologyVersion": "relations-v2",
+    },
+}
 
 
 @dataclass
@@ -51,7 +67,13 @@ class PilotJobPreparer:
         "result-bundle.schema.json",
         "pilot-review-request.schema.json",
         "pilot-review-decision.schema.json",
+        "relation-collection.schema.json",
+        "unresolved-relation-collection.schema.json",
+        "relation-compatibility-v2.json",
     )
+
+    STAGE_CONFIGURATIONS: dict[str, dict[str, Any]] = STAGE_CONFIGURATIONS
+
 
     def __init__(self, repo_root: Optional[Path] = None) -> None:
         if repo_root is None:
@@ -187,3 +209,47 @@ class PilotJobPreparer:
     def emit_infrastructure_verified_checkpoint(self) -> str:
         """Emits the formal checkpoint string asserting infrastructure readiness."""
         return "INFRASTRUCTURE_VERIFIED"
+
+    def get_stage_configuration(self, stage: str) -> dict[str, Any]:
+        """Returns a deep copy of the stage configuration."""
+        if stage not in self.STAGE_CONFIGURATIONS:
+            raise KeyError(f"Unknown stage configuration: {stage}")
+        return copy.deepcopy(self.STAGE_CONFIGURATIONS[stage])
+
+    def build_relations_stage_request(
+        self,
+        job: dict[str, Any],
+        selection: Any,
+        context_pack: dict[str, Any],
+        **kwargs: Any,
+    ) -> dict[str, Any]:
+        """Builds an execution request for the relations stage bound to relations-v2."""
+        config = self.get_stage_configuration("relations")
+        execution_profile = kwargs.pop("execution_profile", "default-high")
+        allowed_write_scope = kwargs.pop(
+            "allowed_write_scope", config["allowedWriteScope"]
+        )
+        output_schema_name = kwargs.pop(
+            "output_schema_name", config["outputSchemaName"]
+        )
+        relation_ontology_version = kwargs.pop(
+            "relation_ontology_version", config["relationOntologyVersion"]
+        )
+        book_id = job.get("bookId", "")
+        task_instruction = kwargs.pop(
+            "task_instruction",
+            f"Catalog relations for {book_id} under {relation_ontology_version}",
+        )
+
+        return ExecutionRequestBuilder.build_request(
+            job=job,
+            selection=selection,
+            context_pack=context_pack,
+            execution_profile=execution_profile,
+            allowed_write_scope=allowed_write_scope,
+            task_instruction=task_instruction,
+            output_schema_name=output_schema_name,
+            relation_ontology_version=relation_ontology_version,
+            **kwargs,
+        )
+

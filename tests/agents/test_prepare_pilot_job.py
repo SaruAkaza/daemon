@@ -1,11 +1,14 @@
 from pathlib import Path
 import pytest
 
+from scripts.agents.contracts import validate_payload
+from scripts.agents.orchestrator_state import OrchestratorSelection
 from scripts.agents.prepare_pilot_job import (
     PilotJobPreparer,
     SourceCustodyReport,
     PilotReadinessStatus,
 )
+
 
 
 def test_verify_source_custody_existing_source():
@@ -95,4 +98,91 @@ def test_preparer_never_touches_main_worktree(tmp_path: Path):
     # Ensure no pilot artifacts leaked into repo data
     assert not (repo_root / "data" / "pilot" / "animalidade").exists()
     assert not (repo_root / "data" / "entities" / "pilot").exists()
+
+
+def test_prepare_pilot_job_relations_stage_binds_collection_schema_and_v2():
+    repo_root = Path(__file__).resolve().parents[2]
+    preparer = PilotJobPreparer(repo_root=repo_root)
+
+    # 1. Verify stage configuration defaults
+    config = preparer.get_stage_configuration("relations")
+    assert config["outputSchemaName"] == "relation-collection.schema.json"
+    assert config["allowedWriteScope"] == [
+        "data/entities/relations.json",
+        "data/entities/unresolved-relations.json",
+    ]
+    assert config["relationOntologyVersion"] == "relations-v2"
+
+    # 2. Verify building request produces schema-compliant execution-request with exact bindings
+    job = {
+        "schemaVersion": "1.0",
+        "jobId": "JOB-ANIMALIDADE-REL-001",
+        "kind": "book_ingestion",
+        "bookId": "animalidade",
+        "status": "in_progress",
+        "createdAt": "2026-09-10T10:00:00-03:00",
+        "updatedAt": "2026-09-10T10:00:00-03:00",
+        "requestedBy": "human",
+        "currentStage": "relations",
+        "stages": {
+            "source": "pass",
+            "extraction": "pass",
+            "editorial": "pass",
+            "entities": "pass",
+            "relations": "ready",
+            "frontend": "waiting",
+            "qa": "waiting",
+            "release": "waiting",
+        },
+        "humanReviewRequired": False,
+        "blockingReasons": [],
+        "artifacts": [],
+        "history": [
+            {
+                "timestamp": "2026-09-10T10:00:00-03:00",
+                "event": "stage_ready",
+                "stage": "relations",
+                "message": "Relations stage ready",
+            }
+        ],
+    }
+    selection = OrchestratorSelection(
+        action="RUN_STAGE",
+        code="ALLOW",
+        stage="relations",
+        agent="relations-agent",
+        reasons=("Relations stage ready.",),
+    )
+    context_pack = {
+        "schemaVersion": "1.0",
+        "contextPackId": "CTX-ANIMALIDADE-RELATIONS-001",
+        "jobId": "JOB-ANIMALIDADE-REL-001",
+        "agent": "relations-agent",
+        "stage": "relations",
+        "mandatory": ["docs/architecture/constitution.md"],
+        "domain": ["docs/context/domain/taxonomy.md"],
+        "bookContext": ["coordination/books/animalidade.md"],
+        "jobContext": [],
+        "handoffContext": [],
+        "task": {
+            "type": "catalog_relations",
+            "scope": {
+                "bookId": "animalidade",
+            },
+        },
+        "outputContract": "schemas/relation-collection.schema.json",
+        "relationOntologyVersion": "relations-v2",
+    }
+
+    req = preparer.build_relations_stage_request(job, selection, context_pack)
+    assert req["targetStage"] == "relations"
+    assert req["assignedAgent"] == "relations-agent"
+    assert req["outputSchemaName"] == "relation-collection.schema.json"
+    assert req["allowedWriteScope"] == [
+        "data/entities/relations.json",
+        "data/entities/unresolved-relations.json",
+    ]
+    assert req["relationOntologyVersion"] == "relations-v2"
+    validate_payload("execution-request.schema.json", req)
+
 
