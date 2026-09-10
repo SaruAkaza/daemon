@@ -28,6 +28,7 @@ class ExecutionRequestBuilder:
         request_id: str | None = None,
         timeout_seconds: int = 300,
         metadata: dict[str, Any] | None = None,
+        relation_ontology_version: str | None = None,
     ) -> dict[str, Any]:
         """Constructs and validates a schema-compliant ExecutionRequest from an approved Orchestrator selection."""
         if not isinstance(job, dict):
@@ -121,6 +122,22 @@ class ExecutionRequestBuilder:
         }
         if metadata is not None:
             req_payload["metadata"] = copy.deepcopy(metadata)
+
+        if target_stage == "relations":
+            rel_ver = relation_ontology_version or context_pack.get("relationOntologyVersion")
+            if rel_ver == "relations-v1":
+                raise ExecutionRequestBuilderError(
+                    "New execution requests for relations stage reject 'relations-v1'; 'relations-v2' is required."
+                )
+            if rel_ver != "relations-v2":
+                raise ExecutionRequestBuilderError(
+                    f"Relations stage requires relation_ontology_version='relations-v2', got '{rel_ver}'"
+                )
+            req_payload["relationOntologyVersion"] = rel_ver
+        elif relation_ontology_version or context_pack.get("relationOntologyVersion"):
+            req_payload["relationOntologyVersion"] = (
+                relation_ontology_version or context_pack.get("relationOntologyVersion")
+            )
 
         # Validate generated request against execution-request schema
         try:

@@ -127,6 +127,11 @@
       "type": "string",
       "minLength": 1,
       "description": "Caminho do schema formal exigido como contrato de saída (ex: 'schemas/agent-handoff.schema.json')."
+    },
+    "relationOntologyVersion": {
+      "type": "string",
+      "enum": ["relations-v1", "relations-v2"],
+      "description": "Versão da ontologia de relações quando o estágio for relations."
     }
   }
 }

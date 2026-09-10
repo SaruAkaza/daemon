@@ -37,12 +37,14 @@ class ContextPackBuilder:
         *,
         metadata: dict[str, Any],
         layers: dict[str, Any],
+        relation_ontology_version: str | None = None,
     ) -> dict[str, Any]:
         """Build and validate a deterministic, minimum sufficient Context Pack.
 
         Args:
             metadata: Top-level Context Pack properties (contextPackId, jobId, agent, stage, task, outputContract, etc.)
             layers: Mapping of canonical context layers to sequences of repository relative paths.
+            relation_ontology_version: Optional version of relation ontology ('relations-v1' or 'relations-v2').
 
         Returns:
             A validated Context Pack dictionary compliant with context-pack.schema.json.
@@ -131,6 +133,16 @@ class ContextPackBuilder:
 
         if "outputContract" in metadata_copy:
             pack["outputContract"] = metadata_copy["outputContract"]
+
+        if metadata_copy.get("stage") == "relations":
+            rel_ver = relation_ontology_version or metadata_copy.get("relationOntologyVersion")
+            if rel_ver != "relations-v2":
+                raise ContextPackBuilderError(
+                    f"Relations stage requires relation_ontology_version='relations-v2', got '{rel_ver}'"
+                )
+            pack["relationOntologyVersion"] = rel_ver
+        elif relation_ontology_version is not None:
+            pack["relationOntologyVersion"] = relation_ontology_version
 
         # Preserve any additional properties from metadata (which schema validation will check)
         for k, v in metadata_copy.items():
