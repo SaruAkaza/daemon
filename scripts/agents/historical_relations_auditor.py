@@ -48,7 +48,13 @@ class HistoricalRelationsAuditor:
             try:
                 with open(ent_file, "r", encoding="utf-8") as f:
                     content = json.load(f)
-                items = content if isinstance(content, list) else [content]
+                items: list[dict[str, Any]] = []
+                if isinstance(content, list):
+                    items.extend(content)
+                elif isinstance(content, dict):
+                    items.append(content)
+                    if "entities" in content and isinstance(content["entities"], list):
+                        items.extend(content["entities"])
                 for item in items:
                     if isinstance(item, dict) and "id" in item:
                         entity_index[item["id"]] = item

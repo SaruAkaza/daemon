@@ -65,23 +65,25 @@ class LocalPreviewProjector:
                         data = json.load(f)
                         if isinstance(data, list):
                             entities.extend(data)
-                        else:
-                            entities.append(data)
-
-            relations: list[dict[str, Any]] = []
-            rel_file = entities_dir / "relations.json"
-            if rel_file.exists():
-                with open(rel_file, encoding="utf-8") as f:
-                    rdata = json.load(f)
-                    relations = rdata if isinstance(rdata, list) else [rdata]
+                        elif isinstance(data, dict):
+                            if "entities" in data and isinstance(data["entities"], list):
+                                entities.extend(data["entities"])
+                            else:
+                                entities.append(data)
 
             pilot_data = {
                 "source": book_id,
                 "bookId": book_id,
                 "title": book_id.capitalize(),
                 "entities": entities,
-                "relations": relations,
+                "relations": [],
             }
+
+        rel_file = Path(workspace_root) / "data" / "entities" / "relations.json"
+        if rel_file.exists():
+            with open(rel_file, encoding="utf-8") as f:
+                rdata = json.load(f)
+                pilot_data["relations"] = rdata if isinstance(rdata, list) else [rdata]
 
         # Normalize required metadata
         pilot_data.setdefault("source", pilot_data.get("bookId", book_id))
@@ -117,6 +119,11 @@ class LocalPreviewProjector:
                 pilot_data["characters"] = characters
 
         index_file = target_dir / "index.json"
+        if index_file.exists():
+            try:
+                os.chmod(index_file, stat.S_IWRITE)
+            except Exception:
+                pass
         index_file.write_bytes(canonical_json_bytes(pilot_data))
 
         # Seal index.json as read-only

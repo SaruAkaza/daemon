@@ -73,7 +73,13 @@ class PilotQAValidator:
                 try:
                     with open(ent_file, encoding="utf-8") as f:
                         data = json.load(f)
-                    items = data if isinstance(data, list) else [data]
+                    items: list[dict[str, Any]] = []
+                    if isinstance(data, list):
+                        items.extend(data)
+                    elif isinstance(data, dict):
+                        items.append(data)
+                        if "entities" in data and isinstance(data["entities"], list):
+                            items.extend(data["entities"])
                     for ent in items:
                         if not isinstance(ent, dict):
                             errors.append(f"File {ent_file.name} contains non-object entity.")
