@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/unresolved-relation-collection.schema.json",
+  "title": "Unresolved Entity Relation Collection",
+  "description": "Coleção de relações não resolvidas ou externas isoladas fora do grafo canônico.",
+  "type": "array",
+  "items": {
+    "$ref": "unresolved-relation.schema.json"
+  },
+  "uniqueItems": true
+}
