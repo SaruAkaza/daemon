@@ -38,6 +38,8 @@
         "REPLACES",
         "ALTERNATIVE_TO",
         "HAS_POWER",
+        "CAN_CHOOSE_POWER",
+        "HAS_WEAKNESS",
         "HAS_SKILL",
         "USES_RULE"
       ],

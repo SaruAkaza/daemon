@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/relation-collection.schema.json",
+  "title": "Entity Relation Collection",
+  "description": "Coleção de vínculos semânticos entre entidades no Daemon Tools.",
+  "type": "array",
+  "items": {
+    "$ref": "relation.schema.json"
+  },
+  "uniqueItems": true
+}
