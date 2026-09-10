@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from scripts.agents.contracts import validate_payload
+from scripts.agents.pilot_qa_validator import DatasetQAVerdict
 
 PIPELINE_STAGES: tuple[str, ...] = (
     "source",
@@ -237,4 +238,24 @@ class GateEngine:
             code="ALLOW",
             reasons=("Release conditions and rights evidence satisfied.",),
         )
+
+    def evaluate_relations_stage(
+        self,
+        qa_verdict: DatasetQAVerdict,
+    ) -> GateDecision:
+        """Evaluate QA dataset verdict fail-closed for relations stage progression."""
+        if not isinstance(qa_verdict, DatasetQAVerdict):
+            raise GateEngineError(f"qa_verdict must be DatasetQAVerdict, got {type(qa_verdict).__name__}")
+        if not qa_verdict.passed:
+            return GateDecision(
+                allowed=False,
+                code="SEMANTIC_COMPATIBILITY_FAILED",
+                reasons=tuple(qa_verdict.errors),
+            )
+        return GateDecision(
+            allowed=True,
+            code="ALLOW",
+            reasons=("Relations dataset passed all technical, coverage, and semantic QA gates.",),
+        )
+
 

@@ -13,6 +13,7 @@ def make_workspace(tmp_path: Path):
     def _create(
         entities: list[dict],
         relations: list[dict] | None = None,
+        unresolved_relations: list[dict] | None = None,
     ) -> Path:
         ws_root = RestrictedPilotWorkspace.get_workspace_path(tmp_path, "animalidade")
         RestrictedPilotWorkspace.initialize_layout(ws_root)
@@ -25,6 +26,11 @@ def make_workspace(tmp_path: Path):
         if relations is not None:
             rel_file = ws_root / "data" / "entities" / "relations.json"
             rel_file.write_text(json.dumps(relations), encoding="utf-8")
+
+        # Write unresolved relations
+        if unresolved_relations is not None:
+            unrel_file = ws_root / "data" / "entities" / "unresolved-relations.json"
+            unrel_file.write_text(json.dumps(unresolved_relations), encoding="utf-8")
 
         return ws_root
 
@@ -44,7 +50,8 @@ def test_validate_dataset_success(make_workspace):
         {
             "id": "power-faro",
             "name": "Faro Aguçado",
-            "category": "power_magic",
+            "category": "character_option",
+            "subtype": "poder",
             "source": "animalidade",
             "page": 2,
             "entries": ["Sentidos apurados."],
@@ -145,3 +152,114 @@ def test_validate_dataset_broken_relation(make_workspace):
 
     assert verdict.passed is False
     assert any("broken" in err.lower() or "power-nonexistent" in err for err in verdict.errors)
+
+
+def test_qa_validator_enforces_semantic_compatibility(make_workspace):
+    entities = [
+        {
+            "id": "creature-lobo",
+            "name": "Lobo",
+            "category": "creature_npc",
+            "source": "animalidade",
+            "page": 1,
+            "entries": ["Lobo selvagem."],
+        },
+        {
+            "id": "creature-urso",
+            "name": "Urso",
+            "category": "creature_npc",
+            "source": "animalidade",
+            "page": 2,
+            "entries": ["Urso pardo."],
+        },
+    ]
+    relations = [
+        {
+            "schemaVersion": "1.0",
+            "id": "rel-lobo-urso-bad",
+            "type": "HAS_POWER",
+            "sourceEntityId": "creature-lobo",
+            "targetEntityId": "creature-urso",
+            "source": "animalidade",
+            "page": 1,
+            "confidence": 1.0,
+        }
+    ]
+    ws = make_workspace(entities, relations)
+    validator = PilotQAValidator()
+    verdict = validator.validate_dataset(ws, "animalidade", expected_pages=2)
+
+    assert verdict.passed is False
+    assert any("Semantic compatibility failed" in err for err in verdict.errors)
+
+
+def test_qa_validator_validates_unresolved_relations_file(make_workspace):
+    entities = [
+        {
+            "id": "creature-lobo",
+            "name": "Lobo",
+            "category": "creature_npc",
+            "source": "animalidade",
+            "page": 1,
+            "entries": ["Lobo selvagem."],
+        }
+    ]
+    unresolved_relations = [
+        {
+            "sourceEntityId": "creature-lobo",
+            "candidateRelationType": "REQUIRES",
+            "candidateTargetEntityId": "skill-rastreamento-externa",
+            "rawReferenceText": "Exige perícia Rastreamento.",
+            "sourcePage": 1,
+            "sourceParagraph": 2,
+            "reason": "Perícia externa não catalogada no livro local.",
+            "status": "UNRESOLVED_PENDING_CROSS_BOOK_LINK",
+        }
+    ]
+    ws = make_workspace(entities, unresolved_relations=unresolved_relations)
+    validator = PilotQAValidator()
+    verdict = validator.validate_dataset(ws, "animalidade", expected_pages=1)
+
+    assert verdict.passed is True
+    assert len(verdict.errors) == 0
+
+
+def test_qa_validator_rejects_unresolved_pointing_to_known_entity(make_workspace):
+    entities = [
+        {
+            "id": "creature-lobo",
+            "name": "Lobo",
+            "category": "creature_npc",
+            "source": "animalidade",
+            "page": 1,
+            "entries": ["Lobo selvagem."],
+        },
+        {
+            "id": "power-faro",
+            "name": "Faro Aguçado",
+            "category": "character_option",
+            "subtype": "poder",
+            "source": "animalidade",
+            "page": 1,
+            "entries": ["Sentidos apurados."],
+        },
+    ]
+    unresolved_relations = [
+        {
+            "sourceEntityId": "creature-lobo",
+            "candidateRelationType": "HAS_POWER",
+            "candidateTargetEntityId": "power-faro",
+            "rawReferenceText": "Possui faro aguçado.",
+            "sourcePage": 1,
+            "sourceParagraph": 1,
+            "reason": "Deveria estar em relations.json.",
+            "status": "UNRESOLVED_PENDING_CROSS_BOOK_LINK",
+        }
+    ]
+    ws = make_workspace(entities, unresolved_relations=unresolved_relations)
+    validator = PilotQAValidator()
+    verdict = validator.validate_dataset(ws, "animalidade", expected_pages=1)
+
+    assert verdict.passed is False
+    assert any("targets local known entity" in err or "must be in relations.json" in err for err in verdict.errors)
+
