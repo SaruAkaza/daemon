@@ -39,6 +39,16 @@ def test_no_retry_overwrite(coordinator_env):
         coord.initialize_attempt("JOB-ANIM-001", "animalidade", "EXTRACTION", attempt_num=1)
 
 
+def test_initialize_attempt_stage_scoped(coordinator_env):
+    coord, _, _ = coordinator_env
+    # Initialize attempt 1 for EXTRACTION
+    coord.initialize_attempt("JOB-ANIM-001", "animalidade", "EXTRACTION", attempt_num=1)
+    # Initializing attempt 1 for RELATIONS should be allowed because stage is different
+    rel_meta = coord.initialize_attempt("JOB-ANIM-001", "animalidade", "RELATIONS", attempt_num=1)
+    assert rel_meta["attemptNumber"] == 1
+    assert rel_meta["stage"] == "RELATIONS"
+
+
 def test_process_imported_bundle_and_human_decision(coordinator_env, tmp_path: Path):
     coord, runtime_root, audit_store = coordinator_env
     coord.initialize_attempt("JOB-ANIM-001", "animalidade", "EXTRACTION", attempt_num=1)

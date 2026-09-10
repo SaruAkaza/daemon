@@ -52,9 +52,16 @@ class PilotCoordinator:
 
         history = self.audit_store.get_audit_history(book_id)
         for rec in history:
-            if rec.get("details", {}).get("attemptNumber") == attempt_num:
+            details = rec.get("details", {})
+            rec_stage = details.get("stage", "")
+            if not rec_stage and "bundleId" in details:
+                parts = details["bundleId"].split("-")
+                if len(parts) >= 3:
+                    rec_stage = parts[2]
+            rec_att = details.get("attemptNumber")
+            if rec_stage and rec_stage.lower() == stage.lower() and rec_att == attempt_num:
                 raise PilotCoordinatorError(
-                    f"Attempt {attempt_num} already exists for book '{book_id}'. Overwrites prohibited."
+                    f"Attempt {attempt_num} already exists for book '{book_id}' in stage '{stage}'. Overwrites prohibited."
                 )
 
         from_state = history[-1]["toState"] if history else "READY_TO_EXPORT"
