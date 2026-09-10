@@ -1,0 +1,89 @@
+{
+  "$schema": "relation-compatibility.schema.json",
+  "version": "2.0.0",
+  "ontologyVersion": "relations-v2",
+  "rules": [
+    {
+      "relationType": "REQUIRES",
+      "allowedSourceCategories": ["character_option", "item", "creature_npc"],
+      "allowedTargetCategories": ["character_option", "item", "magic"],
+      "semanticMeaning": "Source entity requires target entity as a mandatory prerequisite."
+    },
+    {
+      "relationType": "GRANTS",
+      "allowedSourceCategories": ["character_option", "item"],
+      "allowedTargetCategories": ["character_option", "item", "magic"],
+      "semanticMeaning": "Source entity automatically grants target entity."
+    },
+    {
+      "relationType": "BELONGS_TO",
+      "allowedSourceCategories": ["character_option", "item", "creature_npc"],
+      "allowedTargetCategories": ["faction_organization", "lore_world"],
+      "semanticMeaning": "Source entity belongs to target organization, setting, or pantheon."
+    },
+    {
+      "relationType": "DERIVED_FROM",
+      "allowedSourceCategories": ["character_option", "item", "creature_npc"],
+      "allowedTargetCategories": ["character_option", "item", "creature_npc"],
+      "semanticMeaning": "Source entity is derived from or a variant of target base entity."
+    },
+    {
+      "relationType": "APPEARS_IN",
+      "allowedSourceCategories": ["character_option", "item", "creature_npc", "faction_organization", "lore_world", "rules_mechanics"],
+      "allowedTargetCategories": ["lore_world"],
+      "semanticMeaning": "Source entity is referenced, reprinted, or appears in target source or setting."
+    },
+    {
+      "relationType": "MODIFIES",
+      "allowedSourceCategories": ["character_option", "item", "magic"],
+      "allowedTargetCategories": ["character_option", "rules_mechanics"],
+      "semanticMeaning": "Source entity modifies or adjusts the rules or attributes of target entity."
+    },
+    {
+      "relationType": "REPLACES",
+      "allowedSourceCategories": ["character_option"],
+      "allowedTargetCategories": ["character_option"],
+      "semanticMeaning": "Source entity formally replaces target entity or rule."
+    },
+    {
+      "relationType": "ALTERNATIVE_TO",
+      "allowedSourceCategories": ["character_option", "item"],
+      "allowedTargetCategories": ["character_option", "item"],
+      "semanticMeaning": "Source entity is a mechanical variant or equivalent alternative to target entity."
+    },
+    {
+      "relationType": "HAS_POWER",
+      "allowedSourceCategories": ["creature_npc", "character_option"],
+      "allowedTargetCategories": ["character_option"],
+      "allowedTargetSubtypes": ["aprimoramento", "poder", "poder_sobrenatural", "magia"],
+      "semanticMeaning": "the source entity actually possesses the target power."
+    },
+    {
+      "relationType": "CAN_CHOOSE_POWER",
+      "allowedSourceCategories": ["creature_npc", "character_option"],
+      "allowedTargetCategories": ["character_option"],
+      "allowedTargetSubtypes": ["aprimoramento", "poder", "poder_sobrenatural", "magia"],
+      "semanticMeaning": "the source entity/template is explicitly allowed to select the target power as a build or configuration option."
+    },
+    {
+      "relationType": "HAS_WEAKNESS",
+      "allowedSourceCategories": ["creature_npc", "character_option"],
+      "allowedTargetCategories": ["character_option"],
+      "allowedTargetSubtypes": ["aprimoramento", "fraqueza", "desvantagem"],
+      "semanticMeaning": "the source entity possesses the target weakness, vulnerability, or limitation."
+    },
+    {
+      "relationType": "HAS_SKILL",
+      "allowedSourceCategories": ["creature_npc", "character_option"],
+      "allowedTargetCategories": ["character_option"],
+      "allowedTargetSubtypes": ["pericia"],
+      "semanticMeaning": "Source entity possesses skill or expertise."
+    },
+    {
+      "relationType": "USES_RULE",
+      "allowedSourceCategories": ["character_option", "item", "creature_npc", "magic"],
+      "allowedTargetCategories": ["rules_mechanics"],
+      "semanticMeaning": "Entity references and relies upon specific system mechanic."
+    }
+  ]
+}
