@@ -77,6 +77,47 @@ Areas atuais:
 - `table_generator`
 - `source`
 
+## Relações (Relations V2)
+
+As interconexões semânticas entre entidades são armazenadas em `data/entities/relations.json`.
+
+### Contratos de Schema
+- **Contrato de Item**: `schemas/relation.schema.json` valida instâncias individuais de relação.
+- **Contrato de Coleção**: `schemas/relation-collection.schema.json` valida o array de relações (`type: "array"`, itens referenciando `relation.schema.json`, `uniqueItems: true`).
+- **Contrato de Relações Não Resolvidas**: `schemas/unresolved-relation-collection.schema.json` isola referências externas ou ausentes em `unresolved-relations.json`, impedindo referências quebradas no grafo canônico.
+
+### Campos Principais de uma Relação
+- `id`: identificador estável da relação.
+- `sourceId`: ID da entidade de origem.
+- `sourceCategory`: categoria da entidade de origem.
+- `relationType`: tipo semântico da relação (predicado).
+- `targetId`: ID da entidade de destino.
+- `targetCategory`: categoria da entidade de destino.
+- `sourcePage`: número da página no livro original de proveniência.
+- `confidence`: nível de confiança da extração (`HIGH`, `MEDIUM`, `LOW`).
+
+### Ontologia e Predicados Canônicos (V2)
+A ontologia V2 (`relations-v2`) formaliza a semântica de vínculos:
+- `HAS_POWER`: a entidade de origem efetivamente possui o poder alvo (posse efetiva distinta de opções disponíveis: `actual possession != selectable/available option`).
+- `CAN_CHOOSE_POWER`: a entidade ou template de origem tem permissão para escolher o poder como opção de construção/configuração (listas de seleção, menus, poderes possíveis).
+- `HAS_WEAKNESS`: a entidade de origem possui a fraqueza, vulnerabilidade ou limitação alvo.
+- `REQUIRES`: pré-requisito obrigatório para compra, escolha ou evolução.
+- `GRANTS`: concessão automática de bônus, benefício ou poder.
+- `BELONGS_TO`: pertencimento a caminho, panteão ou facção.
+- `DERIVED_FROM`: derivação direta ou variante de outra entidade base.
+- `APPEARS_IN`: presença em suplemento adicional.
+- `MODIFIES`: modificação de regra ou atributo preexistente.
+- `REPLACES`: substituição formal de regra anterior.
+- `ALTERNATIVE_TO`: variante mecânica ou opção temática equivalente.
+- `HAS_SKILL`: associação direta a pacote de perícias.
+- `USES_RULE`: vinculação mecânica a uma regra base.
+
+*Nota de Decisão*: `CAN_CHOOSE_WEAKNESS` foi formalmente rejeitado por YAGNI e ausência de precedente canônico.
+
+### Governança e Compatibilidade
+- A autoridade canônica para pares permitidos reside em `schemas/relation-compatibility-v2.json`.
+- Versionamento: `relations-v1` é estritamente histórico/somente-leitura (`historical / read-only`); `relations-v2` é obrigatório para novas execuções (`mandatory for new execution`).
+
 ## Estrategia De Extracao
 
 1. Inventario dos arquivos.

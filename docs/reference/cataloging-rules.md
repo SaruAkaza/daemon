@@ -175,3 +175,27 @@ Todo poder deve ser detalhado assim:
 - Juntar linhas iniciadas por modificador/bônus quando a linha anterior ficou aberta: `você ganha` + `+3 Poderes...`.
 - Remover assinaturas soltas de citação e resíduos de cabeçalho/rodapé quando forem ruído isolado.
 - Preservar bullets/listas quando forem conteúdo real.
+
+## Regras de Catalogação de Relações (Ontologia V2)
+
+A partir da adoção da ontologia `relations-v2`, o mapeamento de vínculos relacionais deve seguir rigorosamente os princípios semânticos e contratos formais:
+
+- **`HAS_POWER`**: **the source entity actually possesses the target power.**
+  - Deve ser utilizado estritamente quando o texto-fonte afirma que a entidade de origem efetivamente possui o poder alvo.
+  - A posse efetiva é estritamente distinta de opções selecionáveis ou disponíveis (`actual possession != selectable/available option`).
+  - Não adicionar restrições artificiais ou não declaradas na fonte, tais como "innate", "native", "standard stat block" ou "starting character". O critério unificador é a declaração textual de posse efetiva.
+- **`CAN_CHOOSE_POWER`**: **the source entity/template is explicitly allowed to select the target power as a build or configuration option.**
+  - Deve ser utilizado para listas de seleção, menus de opções, regras de alocação de pontos de compra/criação ou tabelas de poderes permitidos (como os cabeçalhos de "Poderes Possíveis").
+  - Exemplos não restritivos de aplicação incluem: criação de personagem (character creation), progressão de personagem (character progression), construção de templates (template construction) e configuração de criaturas ou NPCs (creature/NPC configuration). Esses exemplos ilustram os casos de uso, sem restringir nem estreitar o significado canônico.
+  - **Proibição expressa**: Nunca catalogar itens de menus de opções ou listas de escolha como `HAS_POWER`.
+- **`HAS_WEAKNESS`**: **the source entity possesses the target weakness, vulnerability, or limitation.**
+  - Deve ser utilizado para registrar fraquezas, desvantagens automáticas, vulnerabilidades ou limitações estruturais inerentes possuídas pela entidade (ex.: vulnerabilidade a prata, dano agravado).
+- **Decisão sobre `CAN_CHOOSE_WEAKNESS`**:
+  - Rejeitado formalmente sob o princípio de YAGNI e ausência de precedente canônico no material original.
+- **Versionamento de Ontologia**:
+  - `relations-v1`: histórico / somente-leitura (`historical / read-only`).
+  - `relations-v2`: obrigatório para qualquer nova catalogação e execução (`mandatory for new execution`).
+- **Governança e Integridade Referencial**:
+  - A autoridade canônica para pares compatíveis reside em `schemas/relation-compatibility-v2.json`.
+  - Referências a entidades ausentes ou externas ao livro não devem ser forçadas no arquivo `relations.json` (o que criaria referências órfãs / *dangling references*). Elas devem ser catalogadas como pendências no arquivo dedicado de relações não resolvidas (`unresolved-relations.json`).
+

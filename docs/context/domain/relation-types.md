@@ -1,10 +1,10 @@
-﻿# Tipos de Relações Semânticas (Relation Types)
+# Tipos de Relações Semânticas (Relation Types)
 
 Este documento define o vocabulário canônico de relações semânticas e dependências de regras do **Daemon Tools**. Este vocabulário formaliza os vínculos entre entidades, permitindo a construção de grafos de regras, validação de pré-requisitos e navegação hipertextual rica.
 
 ---
 
-## 1. Vocabulário Canônico de Relações
+## 1. Vocabulário Canônico de Relações (Ontologia V2)
 
 ### 1. `REQUIRES`
 - **Significado**: A entidade de origem exige a entidade de destino como pré-requisito obrigatório para compra, escolha ou evolução.
@@ -71,14 +71,37 @@ Este documento define o vocabulário canônico de relações semânticas e depen
 ---
 
 ### 9. `HAS_POWER`
-- **Significado**: A entidade (como raça, kit ou NPC) possui acesso nativo ou lista estruturada de poderes.
+- **Definição Canônica**: the source entity actually possesses the target power.
+- **Significado**: A entidade de origem efetivamente possui o poder alvo.
+- **Distinção Essencial**: A posse efetiva é estritamente distinta de opções selecionáveis ou disponíveis (`actual possession != selectable/available option`).
+- **Escopo**: Não adicionar restrições não declaradas na fonte, como inata, nativa, ficha padrão ou personagem inicial (do not add restrictions such as innate, native, standard stat block, or starting character). O critério de uso é a afirmação textual de que a entidade efetivamente possui o poder.
 - **Origem Esperada**: `race_lineage`, `kit_class`, `creature_npc`.
 - **Destino Esperado**: `power_magic`.
-- **Exemplo**: `race:alastor` ──`HAS_POWER`──> `power:pirocinese`.
+- **Exemplo**: `creature:vampiro-anciao` ──`HAS_POWER`──> `power:hipnose`.
 
 ---
 
-### 10. `HAS_SKILL`
+### 10. `CAN_CHOOSE_POWER`
+- **Definição Canônica**: the source entity/template is explicitly allowed to select the target power as a build or configuration option.
+- **Significado**: A entidade ou template de origem tem permissão explícita para selecionar o poder alvo como uma opção de construção ou configuração.
+- **Exemplos e Escopo Não Restritivo**: Exemplos de uso podem incluir criação de personagem (character creation), progressão de personagem (character progression), construção de templates (template construction), configuração de criaturas ou NPCs (creature/NPC configuration), mas esses exemplos não estreitam o significado canônico da relação.
+- **Critério de Proveniência**: Utilizado quando a fonte apresenta listas de "Poderes Possíveis", menus de opções, regras de alocação de pontos de criação/compra ou tabelas de escolhas permitidas.
+- **Origem Esperada**: `race_lineage`, `kit_class`, `creature_npc`.
+- **Destino Esperado**: `power_magic`.
+- **Exemplo**: `creature:lobisomem` ──`CAN_CHOOSE_POWER`──> `power:garras`.
+
+---
+
+### 11. `HAS_WEAKNESS`
+- **Definição Canônica**: the source entity possesses the target weakness, vulnerability, or limitation.
+- **Significado**: A entidade de origem possui a fraqueza, vulnerabilidade ou limitação alvo.
+- **Origem Esperada**: `race_lineage`, `kit_class`, `creature_npc`.
+- **Destino Esperado**: `character_option`.
+- **Exemplo**: `creature:lobisomem` ──`HAS_WEAKNESS`──> `enhancement:vulnerabilidade-a-prata`.
+
+---
+
+### 12. `HAS_SKILL`
 - **Significado**: A entidade possui um pacote ou requisito específico de perícias operacionais.
 - **Origem Esperada**: `kit_class`, `creature_npc`.
 - **Destino Esperado**: `attribute_skill`.
@@ -86,7 +109,7 @@ Este documento define o vocabulário canônico de relações semânticas e depen
 
 ---
 
-### 11. `USES_RULE`
+### 13. `USES_RULE`
 - **Significado**: A entidade opera com base em uma mecânica específica descrita em uma regra base do sistema.
 - **Origem Esperada**: `combat`, `ritual_spell`, `power_magic`.
 - **Destino Esperado**: `core_rule`.
@@ -94,7 +117,24 @@ Este documento define o vocabulário canônico de relações semânticas e depen
 
 ---
 
-## 2. Política de Evolução de Relações
+## 2. Decisões Ontológicas Negativas
 
-> [!NOTE]
-> A inclusão de qualquer novo tipo de relação semântica no futuro exige alteração conjunta neste documento de domínio e no correspondente JSON Schema em `schemas/`.
+### Rejeição de `CAN_CHOOSE_WEAKNESS`
+O predicado `CAN_CHOOSE_WEAKNESS` foi formalmente rejeitado sob o princípio de **YAGNI** (You Aren't Gonna Need It) e ausência de precedente canônico no material original analisado. As fontes do sistema Daemon não apresentam menus de seleção para fraquezas opcionais; fraquezas são diretamente possuídas pela entidade (`HAS_WEAKNESS`) ou aprimoramentos negativos gerais adquiridos pelo sistema comum.
+
+---
+
+## 3. Versionamento da Ontologia (Ontology Versioning)
+
+A taxonomia e semântica de relações adota governança de versões estrita:
+
+- **`relations-v1`**: Ontologia inicial. Classificada como **historical / read-only** (somente leitura para fins de histórico e auditoria).
+- **`relations-v2`**: Ontologia formal V2. Classificada como **mandatory for new execution** (obrigatório para novas execuções). Toda nova requisição de execução e novo pipeline exige V2.
+- É estritamente proibido mesclar dados V1 e V2 em um mesmo arquivo `relations.json` ou pacote de entrega.
+
+---
+
+## 4. Governança e Autoridade Canônica de Compatibilidade
+
+- **Autoridade Canônica Exclusiva**: O arquivo `schemas/relation-compatibility-v2.json` é a única autoridade canônica legível por máquina (`machine-readable JSON = canonical authority`) para determinar a compatibilidade semântica de triplets (`sourceCategory`, `relationType`, `targetCategory`).
+- **Documentação Explicativa**: O documento `docs/reference/relation-compatibility-v2.md` possui finalidade unicamente explicativa para leitura humana (`markdown = explanatory only`), sem qualquer duplicação de triplets que possa gerar divergência ou obsolescência.
