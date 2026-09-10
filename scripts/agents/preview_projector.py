@@ -59,7 +59,7 @@ class LocalPreviewProjector:
             entities_dir = Path(workspace_root) / "data" / "entities"
             if entities_dir.exists():
                 for ef in sorted(entities_dir.glob("*.json")):
-                    if ef.name == "relations.json":
+                    if ef.name in ("relations.json", "unresolved-relations.json"):
                         continue
                     with open(ef, encoding="utf-8") as f:
                         data = json.load(f)

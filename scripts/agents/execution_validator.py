@@ -121,9 +121,12 @@ class ExecutionResultValidator:
         if output_schema_name and proposed_artifacts:
             for path, content in proposed_artifacts.items():
                 if path.endswith(".json") and output_schema_name.endswith(".schema.json"):
+                    schema_to_validate = output_schema_name
+                    if path.endswith("unresolved-relations.json"):
+                        schema_to_validate = "unresolved-relation-collection.schema.json"
                     try:
                         parsed_artifact = json.loads(content)
-                        validate_payload(output_schema_name, parsed_artifact)
+                        validate_payload(schema_to_validate, parsed_artifact)
                     except json.JSONDecodeError as e:
                         return ExecutionValidationVerdict(
                             verdict="HUMAN_REVIEW",
@@ -134,7 +137,7 @@ class ExecutionResultValidator:
                         return ExecutionValidationVerdict(
                             verdict="HUMAN_REVIEW",
                             code="ERR_SCHEMA_VALIDATION",
-                            reasons=(f"Proposed artifact '{path}' failed validation against '{output_schema_name}': {e}",),
+                            reasons=(f"Proposed artifact '{path}' failed validation against '{schema_to_validate}': {e}",),
                         )
                     except Exception:
                         pass
