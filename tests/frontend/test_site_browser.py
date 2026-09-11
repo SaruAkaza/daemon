@@ -97,3 +97,77 @@ def test_responsive_viewports(page, site_url):
         page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
         assert page.locator('[data-entity-id="a"]').is_visible()
 
+
+def test_three_synthetic_predicates_and_bidirectional_routes(page, site_url):
+    """Verify in real browser with real HTTP transport:
+    - 3 synthetic predicates: HAS_POWER, CAN_CHOOSE_POWER, HAS_WEAKNESS.
+    - Outgoing and incoming labels derived from central projector registry.
+    - Bi-directional navigation across entities preserving routes.
+    - Unresolved reference has no anchor tag.
+    - Technical details section exists in restricted preview.
+    """
+    page.goto(site_url + "#/entity/a")
+    page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+
+    # 1. Outgoing relations on entity a (Lobo):
+    # HAS_POWER -> Faro Aguçado
+    link_b = page.locator('.site-relations-list a[href="#/entity/b"]')
+    assert link_b.count() >= 1
+    assert "Faro Aguçado" in link_b.first.text_content()
+    assert "Possui poder" in page.text_content(".site-relations-list")
+
+    # CAN_CHOOSE_POWER -> Ataque em Bando
+    link_c = page.locator('.site-relations-list a[href="#/entity/c"]')
+    assert link_c.count() >= 1
+    assert "Ataque em Bando" in link_c.first.text_content()
+    assert "Pode escolher poder" in page.text_content(".site-relations-list")
+
+    # HAS_WEAKNESS -> Vulnerabilidade a Fogo
+    link_d = page.locator('.site-relations-list a[href="#/entity/d"]')
+    assert link_d.count() >= 1
+    assert "Vulnerabilidade a Fogo" in link_d.first.text_content()
+    assert "Possui fraqueza" in page.text_content(".site-relations-list")
+
+    # 2. Navigate to CAN_CHOOSE_POWER target (Ataque em Bando)
+    link_c.first.click()
+    page.wait_for_selector('[data-entity-id="c"]', timeout=10000)
+    assert page.url.endswith("#/entity/c")
+    assert "Ataque em Bando" in page.text_content("h1")
+
+    # Verify incoming relation: "Pode ser escolhido por" -> Lobo
+    inc_c = page.locator('.site-relations-list a[href="#/entity/a"]')
+    assert inc_c.count() >= 1
+    assert "Lobo" in inc_c.first.text_content()
+    assert "Pode ser escolhido por" in page.text_content(".site-relations-list")
+
+    # Navigate back to Lobo via incoming relation
+    inc_c.first.click()
+    page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+    assert page.url.endswith("#/entity/a")
+
+    # 3. Navigate to HAS_WEAKNESS target (Vulnerabilidade a Fogo)
+    link_d_again = page.locator('.site-relations-list a[href="#/entity/d"]')
+    link_d_again.first.click()
+    page.wait_for_selector('[data-entity-id="d"]', timeout=10000)
+    assert page.url.endswith("#/entity/d")
+    assert "Vulnerabilidade a Fogo" in page.text_content("h1")
+
+    # Verify incoming relation: "É fraqueza de" -> Lobo
+    inc_d = page.locator('.site-relations-list a[href="#/entity/a"]')
+    assert inc_d.count() >= 1
+    assert "Lobo" in inc_d.first.text_content()
+    assert "É fraqueza de" in page.text_content(".site-relations-list")
+
+    # 4. Return to entity a and check unresolved reference and technical details
+    inc_d.first.click()
+    page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+    assert page.locator(".site-unresolved-list").count() >= 1
+    assert "Presença Invisível" in page.text_content(".site-unresolved-list")
+    assert page.locator(".site-unresolved-list a").count() == 0
+
+    # Technical details in restricted preview
+    tech_details = page.locator(".entity-technical-details")
+    assert tech_details.count() >= 1
+    assert "Detalhes Técnicos" in page.text_content(".entity-technical-details")
+
+

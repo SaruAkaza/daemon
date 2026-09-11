@@ -109,7 +109,15 @@ class LocalPreviewProjector:
         if unresolved_file.exists():
             with open(unresolved_file, encoding="utf-8") as uf:
                 udata = json.load(uf)
-                unresolved_references = udata if isinstance(udata, list) else [udata]
+                raw_list = udata if isinstance(udata, list) else [udata]
+                for item in raw_list:
+                    if isinstance(item, dict):
+                        norm_u = dict(item)
+                        if "name" not in norm_u and "rawReferenceText" in norm_u:
+                            norm_u["name"] = norm_u["rawReferenceText"]
+                        if "provenance" not in norm_u and "sourcePage" in norm_u:
+                            norm_u["provenance"] = {"source": book_id, "pages": [norm_u["sourcePage"]]}
+                        unresolved_references.append(norm_u)
         elif "unresolvedReferences" in pilot_data and isinstance(pilot_data["unresolvedReferences"], list):
             unresolved_references = list(pilot_data["unresolvedReferences"])
 

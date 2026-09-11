@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -56,6 +56,38 @@ def site_preview_env(tmp_path_factory):
                 ],
                 "provenance": {"source": "synthetic", "pages": [15]},
             },
+            {
+                "id": "c",
+                "name": "Ataque em Bando",
+                "category": "character_option",
+                "subtype": "poder",
+                "displayType": "Poder",
+                "aliases": [],
+                "tags": ["tática"],
+                "content": [
+                    {
+                        "title": "Descrição",
+                        "paragraphs": ["Bônus para ataques coordenados em grupo."],
+                    }
+                ],
+                "provenance": {"source": "synthetic", "pages": [16]},
+            },
+            {
+                "id": "d",
+                "name": "Vulnerabilidade a Fogo",
+                "category": "character_option",
+                "subtype": "aprimoramento",
+                "displayType": "Aprimoramento",
+                "aliases": [],
+                "tags": ["fraqueza"],
+                "content": [
+                    {
+                        "title": "Descrição",
+                        "paragraphs": ["Recebe o dobro de dano por fogo."],
+                    }
+                ],
+                "provenance": {"source": "synthetic", "pages": [18]},
+            },
         ],
         "relations": [
             {
@@ -63,7 +95,19 @@ def site_preview_env(tmp_path_factory):
                 "type": "HAS_POWER",
                 "sourceEntityId": "a",
                 "targetEntityId": "b",
-            }
+            },
+            {
+                "relationId": "rel-02",
+                "type": "CAN_CHOOSE_POWER",
+                "sourceEntityId": "a",
+                "targetEntityId": "c",
+            },
+            {
+                "relationId": "rel-03",
+                "type": "HAS_WEAKNESS",
+                "sourceEntityId": "a",
+                "targetEntityId": "d",
+            },
         ],
         "groups": [
             {

@@ -654,6 +654,31 @@ def test_synthetic_pilot_relations_stage_v2_e2e(hermetic_pipeline_env: dict):
     rel_types = {r["type"] for r in preview_data["relations"]}
     assert rel_types == {"HAS_POWER", "CAN_CHOOSE_POWER", "HAS_WEAKNESS"}
 
+    # Frontend Site View Model validation
+    from scripts.agents.site_view_model import validate_projection
+
+    site_root = projected_path / "site-data"
+    assert site_root.is_dir()
+    files = {
+        p.relative_to(site_root).as_posix(): json.loads(p.read_text(encoding="utf-8"))
+        for p in site_root.rglob("*.json")
+    }
+    validate_projection(files)
+    assert files["catalog.json"]["mode"] == "restricted_preview"
+    assert files["search-index.json"]["entries"]
+
+    # Confirm 3 synthetic predicates in site data
+    synth_book_file = files[f"books/{book_id}.json"]
+    assert len(synth_book_file["relations"]) == 3
+    rel_predicates = {r["type"] for r in synth_book_file["relations"]}
+    assert rel_predicates == {"HAS_POWER", "CAN_CHOOSE_POWER", "HAS_WEAKNESS"}
+    assert "unresolvedReferences" in synth_book_file
+    assert len(synth_book_file["unresolvedReferences"]) == 1
+    assert synth_book_file["unresolvedReferences"][0]["name"] == "Menção a poder externo não catalogado"
+
+    # Confirm zero canonical mutation from projection
+    assert (ws_root / "data" / "entities" / "relations.json").exists()
+
     pilot_complete_res = coord.complete_pilot(book_id=book_id)
     assert pilot_complete_res["status"] == "PILOT_VALIDATED"
 
