@@ -195,8 +195,8 @@ class HistoricalRelationsMigrator:
         )
         total_to_migrate = max(to_migrate_count, itemized_to_migrate)
 
-        # 3. Check for validated no-op
-        if not target_path.is_file() or total_to_migrate == 0:
+        # 3. Check for validated no-op when zero migrations pending
+        if total_to_migrate == 0:
             return {
                 "status": "SUCCESS",
                 "dryRun": dry_run,
@@ -208,6 +208,13 @@ class HistoricalRelationsMigrator:
                 "auditReportSha256": self.audit_report_sha256,
                 "approvalDecisionId": self.approval_decision_id,
             }
+
+        # 4. Fail-closed: target file must exist when migrations are pending
+        if not target_path.is_file():
+            raise MigrationBlockedError(
+                f"Migration blocked: target relations file '{target_path}' does not exist, "
+                f"but {total_to_migrate} approved migration(s) are pending."
+            )
 
         # 4. Read existing relations
         with open(target_path, "r", encoding="utf-8") as f:

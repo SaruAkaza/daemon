@@ -307,3 +307,110 @@ def test_migrator_applies_approved_conversions_atomically(tmp_path: Path):
     # 5. Verify schemas
     validate_payload("relation-collection.schema.json", migrated_relations)
     validate_payload("unresolved-relation-collection.schema.json", unresolved_relations)
+
+
+def test_migrator_blocks_when_destination_absent_with_pending_conversions(tmp_path: Path):
+    """Regression test: when migrations are pending and destination is missing, fail-closed."""
+    audit_report = {
+        "totalRelationsScanned": 1,
+        "hasPowerCount": 1,
+        "recommendations": {
+            "keepHasPower": 0,
+            "migrateToCanChoosePower": 1,
+            "migrateToHasWeakness": 0,
+            "migrateToUnresolved": 0,
+            "invalidTriplets": 0,
+        },
+        "itemized": [
+            {
+                "relationId": "rel-01",
+                "sourceEntityId": "creature-lobo",
+                "targetEntityId": "power-opcao",
+                "classification": "SELECTABLE_OPTION",
+                "recommendation": "migrateToCanChoosePower",
+                "reason": "Opção selecionável de poder.",
+            }
+        ],
+    }
+    report_file = tmp_path / "audit_report.json"
+    report_bytes = json.dumps(audit_report, indent=2, ensure_ascii=False).encode("utf-8")
+    report_file.write_bytes(report_bytes)
+    report_hash = hashlib.sha256(report_bytes).hexdigest()
+
+    decision = {
+        "decisionId": "DEC-TEST-REGRESSION-01",
+        "status": "APPROVED",
+        "decision": "APPROVE",
+        "decidedBy": "human-curator",
+        "auditReportSha256": report_hash,
+    }
+    decision_file = tmp_path / "decision.json"
+    decision_file.write_text(json.dumps(decision, indent=2), encoding="utf-8")
+
+    absent_dest = tmp_path / "data" / "entities" / "relations.json"
+    assert not absent_dest.exists(), "Destination must not exist before test"
+
+    migrator = HistoricalRelationsMigrator(
+        approval_decision_path=decision_file,
+        audit_report_path=report_file,
+        data_dir=tmp_path / "data",
+    )
+
+    # Both dry-run and live apply MUST fail/block explicitly and MUST NOT return SUCCESS
+    with pytest.raises(MigrationBlockedError, match="does not exist|not found|pending"):
+        migrator.apply_migration(target_relations_file=absent_dest, dry_run=False)
+
+    with pytest.raises(MigrationBlockedError, match="does not exist|not found|pending"):
+        migrator.apply_migration(target_relations_file=absent_dest, dry_run=True)
+
+    # Destination MUST NOT have been created or fabricated
+    assert not absent_dest.exists(), "Destination must not be created or fabricated on failure"
+
+
+def test_migrator_validated_noop_when_zero_pending_and_destination_absent(tmp_path: Path):
+    """Matrix Case B: when pending conversions = 0 and destination is absent, validated no-op succeeds."""
+    audit_report = {
+        "totalRelationsScanned": 0,
+        "hasPowerCount": 0,
+        "recommendations": {
+            "keepHasPower": 0,
+            "migrateToCanChoosePower": 0,
+            "migrateToHasWeakness": 0,
+            "migrateToUnresolved": 0,
+            "invalidTriplets": 0,
+        },
+        "itemized": [],
+    }
+    report_file = tmp_path / "audit_report_empty.json"
+    report_bytes = json.dumps(audit_report, indent=2).encode("utf-8")
+    report_file.write_bytes(report_bytes)
+    report_hash = hashlib.sha256(report_bytes).hexdigest()
+
+    decision = {
+        "decisionId": "DEC-TEST-NOOP-01",
+        "status": "APPROVED",
+        "decision": "APPROVE",
+        "decidedBy": "human-curator",
+        "auditReportSha256": report_hash,
+    }
+    decision_file = tmp_path / "decision_noop.json"
+    decision_file.write_text(json.dumps(decision, indent=2), encoding="utf-8")
+
+    absent_dest = tmp_path / "data" / "entities" / "relations.json"
+    assert not absent_dest.exists()
+
+    migrator = HistoricalRelationsMigrator(
+        approval_decision_path=decision_file,
+        audit_report_path=report_file,
+        data_dir=tmp_path / "data",
+    )
+
+    result = migrator.apply_migration(target_relations_file=absent_dest, dry_run=False)
+    assert result["status"] == "SUCCESS"
+    assert result["totalScanned"] == 0
+    assert result["migratedCanChoosePower"] == 0
+    assert result["migratedHasWeakness"] == 0
+    assert result["migratedUnresolved"] == 0
+    assert not absent_dest.exists()
+
+
