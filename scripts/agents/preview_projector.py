@@ -2,11 +2,15 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import stat
+import uuid
 from pathlib import Path
 from typing import Any
 
 from scripts.agents.canonical_json import canonical_json_bytes
+from scripts.agents.frontend_projector import FrontendProjector
+from scripts.agents.site_view_model import ProjectionError
 
 
 class LocalPreviewProjectorError(RuntimeError):
@@ -32,8 +36,7 @@ class LocalPreviewProjector:
 
         # Enforce RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE
         if rights_status.upper() in ("UNKNOWN", "PRIVATE") or publication_mode.upper() == "NOT_PUBLIC":
-            parts = resolved_preview.parts
-            if "docs" in parts:
+            if any(p.lower() == "docs" for p in resolved_preview.parts):
                 raise LocalPreviewProjectorError(
                     f"ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED: Cannot project restricted book '{book_id}' into docs: {resolved_preview}"
                 )
@@ -47,13 +50,17 @@ class LocalPreviewProjector:
                 pass
 
         target_dir = resolved_preview / book_id
-        target_dir.mkdir(parents=True, exist_ok=True)
+        if target_dir.exists() and any(target_dir.iterdir()):
+            raise LocalPreviewProjectorError(
+                f"ERR_PREVIEW_TARGET_EXISTS: Target directory '{target_dir}' already exists and is not empty"
+            )
 
         # Retrieve pilot data from workspace
         pilot_file = Path(workspace_root) / "data" / "pilot" / f"{book_id}.json"
         if pilot_file.exists():
             with open(pilot_file, encoding="utf-8") as f:
                 pilot_data = json.load(f)
+            canonical_title = pilot_data.get("title") or book_id
         else:
             entities: list[dict[str, Any]] = []
             entities_dir = Path(workspace_root) / "data" / "entities"
@@ -75,6 +82,14 @@ class LocalPreviewProjector:
                     rdata = json.load(f)
                     relations = rdata if isinstance(rdata, list) else [rdata]
 
+            book_meta_file = Path(workspace_root) / "data" / "books" / f"{book_id}.json"
+            if book_meta_file.exists():
+                with open(book_meta_file, encoding="utf-8") as bf:
+                    bmeta = json.load(bf)
+                    canonical_title = bmeta.get("title", book_id)
+            else:
+                canonical_title = book_id
+
             pilot_data = {
                 "source": book_id,
                 "bookId": book_id,
@@ -83,10 +98,20 @@ class LocalPreviewProjector:
                 "relations": relations,
             }
 
-        # Normalize required metadata
+        # Normalize required metadata for legacy index.json
         pilot_data.setdefault("source", pilot_data.get("bookId", book_id))
         pilot_data.setdefault("bookId", pilot_data.get("source", book_id))
         pilot_data.setdefault("title", book_id.capitalize())
+
+        # Unresolved references from canonical artifact
+        unresolved_file = Path(workspace_root) / "data" / "entities" / "unresolved-relations.json"
+        unresolved_references: list[dict[str, Any]] = []
+        if unresolved_file.exists():
+            with open(unresolved_file, encoding="utf-8") as uf:
+                udata = json.load(uf)
+                unresolved_references = udata if isinstance(udata, list) else [udata]
+        elif "unresolvedReferences" in pilot_data and isinstance(pilot_data["unresolvedReferences"], list):
+            unresolved_references = list(pilot_data["unresolvedReferences"])
 
         # Project entities into characters for backwards compatibility with frontend
         characters = list(pilot_data.get("characters", []))
@@ -116,13 +141,120 @@ class LocalPreviewProjector:
             if characters:
                 pilot_data["characters"] = characters
 
-        index_file = target_dir / "index.json"
-        index_file.write_bytes(canonical_json_bytes(pilot_data))
+        # Adapt workspace entities to ApprovedBook contract
+        adapted_entities: list[dict[str, Any]] = []
+        for ent in pilot_data.get("entities", []):
+            eid = ent.get("id") or ent.get("entityId")
+            if not eid:
+                continue
+            cat = ent.get("category") or ent.get("type", "core_rule")
+            subtype = ent.get("subtype")
+            display_type = ent.get("displayType")
+            raw_prov = ent.get("provenance")
+            if isinstance(raw_prov, dict) and "source" in raw_prov and "pages" in raw_prov:
+                prov = {"source": str(raw_prov["source"]), "pages": list(raw_prov["pages"])}
+            else:
+                ent_src = ent.get("source", book_id)
+                ent_pages = ent.get("pages") or ([ent["page"]] if ent.get("page") else [1])
+                prov = {"source": str(ent_src), "pages": list(ent_pages)}
 
-        # Seal index.json as read-only
+            content: list[dict[str, Any]] = []
+            if "content" in ent and isinstance(ent["content"], list):
+                for blk in ent["content"]:
+                    if isinstance(blk, dict) and "title" in blk and "paragraphs" in blk:
+                        content.append({"title": str(blk["title"]), "paragraphs": [str(p) for p in blk["paragraphs"]]})
+            elif "entries" in ent and isinstance(ent["entries"], list):
+                content = [{"title": "Conteúdo", "paragraphs": [str(e) for e in ent["entries"]]}]
+            elif "sections" in ent and isinstance(ent["sections"], list):
+                for sec in ent["sections"]:
+                    if isinstance(sec, dict):
+                        content.append({
+                            "title": str(sec.get("title", "Seção")),
+                            "paragraphs": [str(p) for p in (sec.get("paragraphs") or [])],
+                        })
+            elif "paragraphs" in ent and isinstance(ent["paragraphs"], list):
+                content = [{"title": "Descrição", "paragraphs": [str(p) for p in ent["paragraphs"]]}]
+
+            adapted_ent = {
+                "id": str(eid),
+                "name": str(ent.get("name", eid)),
+                "category": str(cat),
+                "provenance": prov,
+                "content": content,
+                "aliases": list(ent.get("aliases", [])),
+                "tags": list(ent.get("tags", [])),
+            }
+            if subtype:
+                adapted_ent["subtype"] = str(subtype)
+            if display_type:
+                adapted_ent["displayType"] = str(display_type)
+            if "technicalDetails" in ent:
+                adapted_ent["technicalDetails"] = dict(ent["technicalDetails"])
+            adapted_entities.append(adapted_ent)
+
+        adapted_relations: list[dict[str, Any]] = []
+        for rel in pilot_data.get("relations", []):
+            rid = rel.get("id") or rel.get("relationId")
+            if not rid:
+                continue
+            adapted_rel = {
+                "id": str(rid),
+                "relationId": str(rid),
+                "type": str(rel["type"]),
+                "sourceEntityId": str(rel["sourceEntityId"]),
+                "targetEntityId": str(rel["targetEntityId"]),
+            }
+            if "outgoingLabel" in rel:
+                adapted_rel["outgoingLabel"] = str(rel["outgoingLabel"])
+            if "incomingLabel" in rel:
+                adapted_rel["incomingLabel"] = str(rel["incomingLabel"])
+            adapted_relations.append(adapted_rel)
+
+        approved_book: dict[str, Any] = {
+            "bookId": book_id,
+            "title": canonical_title,
+            "rightsStatus": rights_status,
+            "publicationMode": publication_mode,
+            "entities": adapted_entities,
+            "relations": adapted_relations,
+            "groups": list(pilot_data.get("groups", [])),
+        }
+        if unresolved_references:
+            approved_book["unresolvedReferences"] = unresolved_references
+
+        # Build site view model files using FrontendProjector
+        projector = FrontendProjector()
         try:
-            os.chmod(index_file, stat.S_IREAD | stat.S_IRGRP | stat.S_IROTH)
-        except Exception:
-            pass
+            site_files = projector.build([approved_book], "restricted_preview")
+        except ProjectionError as pe:
+            raise LocalPreviewProjectorError(f"ERR_PREVIEW_BUILD_FAILED: {pe}") from pe
+
+        # Staging directory on the same parent volume
+        resolved_preview.mkdir(parents=True, exist_ok=True)
+        staging_dir = resolved_preview / f".tmp_staging_{book_id}_{os.getpid()}_{uuid.uuid4().hex[:8]}"
+        staging_dir.mkdir(parents=True, exist_ok=False)
+
+        try:
+            # 1. Write legacy index.json
+            legacy_index = staging_dir / "index.json"
+            legacy_index.write_bytes(canonical_json_bytes(pilot_data))
+            try:
+                os.chmod(legacy_index, stat.S_IREAD | stat.S_IRGRP | stat.S_IROTH)
+            except Exception:
+                pass
+
+            # 2. Write site-data using FrontendProjector.write
+            site_data_dir = staging_dir / "site-data"
+            projector.write(site_files, site_data_dir, repo)
+
+            # 3. Promote staging_dir to target_dir atomically
+            if target_dir.exists():
+                target_dir.rmdir()
+            os.replace(staging_dir, target_dir)
+        except Exception as exc:
+            shutil.rmtree(staging_dir, ignore_errors=True)
+            if isinstance(exc, LocalPreviewProjectorError):
+                raise
+            raise LocalPreviewProjectorError(f"ERR_PREVIEW_WRITE_FAILED: {exc}") from exc
 
         return target_dir

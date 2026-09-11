@@ -16,11 +16,41 @@ WINDOWS_RESERVED_NAMES = {
 }
 
 
+def _is_contained(child: Path, parent: Path) -> bool:
+    """Validate that child path is strictly contained within parent directory after symlink resolution."""
+    try:
+        child.resolve().relative_to(parent.resolve())
+        return True
+    except ValueError:
+        return False
+
+
+def _get_content_type(file_path: Path) -> str:
+    """Determine MIME content-type with proper UTF-8 charset and JavaScript standard types."""
+    suffix = file_path.suffix.lower()
+    if suffix in (".js", ".mjs"):
+        return "application/javascript; charset=utf-8"
+    if suffix == ".json":
+        return "application/json; charset=utf-8"
+    if suffix == ".css":
+        return "text/css; charset=utf-8"
+    if suffix in (".html", ".htm"):
+        return "text/html; charset=utf-8"
+    ctype, _ = mimetypes.guess_type(str(file_path))
+    if ctype:
+        if "text" in ctype or "javascript" in ctype:
+            return f"{ctype}; charset=utf-8"
+        return ctype
+    return "application/octet-stream"
+
+
 def _is_unsafe_path(req_path: str) -> bool:
-    if ".." in req_path.split("/") or "\\" in req_path or ":" in req_path:
+    if "\\" in req_path or ":" in req_path:
         return True
     segments = [s.strip().lower() for s in req_path.split("/") if s.strip()]
     for s in segments:
+        if s in ("..", "."):
+            return True
         base_name = s.split(".")[0]
         if base_name in WINDOWS_RESERVED_NAMES:
             return True
@@ -70,15 +100,17 @@ class PreviewServer:
                 match = re.match(r"^/(?:api/)?preview/([a-z0-9-]+)/(.*)$", req_path)
                 if match:
                     book_id, subpath = match.group(1), match.group(2)
-                    target_file = (preview_root / book_id / subpath).resolve()
-                    if not str(target_file).startswith(str(preview_root)):
+                    book_dir = (preview_root / book_id).resolve()
+                    target_file = (book_dir / subpath).resolve()
+                    if not _is_contained(target_file, book_dir):
                         self.send_error(403, "Access forbidden")
                         return
 
                     if target_file.is_file():
                         content = target_file.read_bytes()
+                        ctype = _get_content_type(target_file)
                         self.send_response(200)
-                        self.send_header("Content-Type", "application/json; charset=utf-8")
+                        self.send_header("Content-Type", ctype)
                         self.send_header("Content-Length", str(len(content)))
                         self.send_header("X-Daemon-Local-Preview", "active")
                         self.end_headers()
@@ -90,30 +122,20 @@ class PreviewServer:
 
                 # Static docs serving
                 if req_path in ("/", ""):
-                    static_file = docs_root / "index.html"
+                    static_file = (docs_root / "index.html").resolve()
                 else:
                     rel_path = req_path.lstrip("/")
                     static_file = (docs_root / rel_path).resolve()
 
-                if not str(static_file).startswith(str(docs_root)):
+                if not _is_contained(static_file, docs_root):
                     self.send_error(403, "Access forbidden")
                     return
 
                 if static_file.is_file():
                     content = static_file.read_bytes()
-                    ctype, _ = mimetypes.guess_type(str(static_file))
-                    if not ctype:
-                        if static_file.suffix == ".js":
-                            ctype = "application/javascript"
-                        elif static_file.suffix == ".css":
-                            ctype = "text/css"
-                        elif static_file.suffix == ".json":
-                            ctype = "application/json"
-                        else:
-                            ctype = "text/plain"
-
+                    ctype = _get_content_type(static_file)
                     self.send_response(200)
-                    self.send_header("Content-Type", f"{ctype}; charset=utf-8")
+                    self.send_header("Content-Type", ctype)
                     self.send_header("Content-Length", str(len(content)))
                     self.end_headers()
                     self.wfile.write(content)

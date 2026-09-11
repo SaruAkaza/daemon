@@ -17,10 +17,11 @@ def workspace_with_data(tmp_path: Path) -> Path:
         "bookId": "animalidade",
         "title": "Animalidade Pilot",
         "entities": [
-            {"id": "creature-lobo", "name": "Lobo", "category": "creature_npc"}
+            {"id": "creature-lobo", "name": "Lobo", "category": "creature_npc", "page": 1, "entries": ["Lobo selvagem."]},
+            {"id": "power-faro", "name": "Faro", "category": "character_option", "subtype": "poder", "page": 1, "entries": ["Faro aguçado."]},
         ],
         "relations": [
-            {"id": "rel-01", "type": "HAS_POWER", "sourceEntityId": "creature-lobo", "targetEntityId": "power-faro"}
+            {"id": "rel-01", "type": "HAS_POWER", "sourceEntityId": "creature-lobo", "targetEntityId": "power-faro", "source": "animalidade", "page": 1}
         ],
     }
     (ws_root / "data" / "pilot" / "animalidade.json").write_text(json.dumps(pilot_data), encoding="utf-8")
@@ -41,12 +42,15 @@ def test_project_local_preview_success(workspace_with_data: Path, tmp_path: Path
 
     assert out_path.exists()
     assert out_path == preview_root / "animalidade"
-    assert (out_path / "index.json").exists()
+    assert (out_path / "index.json").is_file()
+    assert (out_path / "site-data" / "catalog.json").is_file()
+    assert (out_path / "site-data" / "search-index.json").is_file()
+    assert (out_path / "site-data" / "books" / "animalidade.json").is_file()
 
     with open(out_path / "index.json", encoding="utf-8") as f:
         loaded = json.load(f)
     assert loaded["bookId"] == "animalidade"
-    assert len(loaded["entities"]) == 1
+    assert len(loaded["entities"]) == 2
 
 
 def test_project_local_preview_frontend_contract_compliance(workspace_with_data: Path, tmp_path: Path):
@@ -142,4 +146,55 @@ def test_project_blocked_when_target_inside_trusted_repo_anywhere(workspace_with
             repository_root=repo_dir,
         )
     assert "ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED" in str(exc.value)
+
+
+def test_project_local_preview_rejects_existing_non_empty_target(workspace_with_data: Path, tmp_path: Path):
+    projector = LocalPreviewProjector()
+    preview_root = tmp_path / ".daemon_runtime" / "preview"
+
+    out_path = projector.project_local_preview(
+        workspace_root=workspace_with_data,
+        preview_root=preview_root,
+        book_id="animalidade",
+        rights_status="UNKNOWN",
+        publication_mode="NOT_PUBLIC",
+    )
+    assert out_path.exists()
+
+    with pytest.raises(LocalPreviewProjectorError) as exc:
+        projector.project_local_preview(
+            workspace_root=workspace_with_data,
+            preview_root=preview_root,
+            book_id="animalidade",
+            rights_status="UNKNOWN",
+            publication_mode="NOT_PUBLIC",
+        )
+    assert "ERR_PREVIEW_TARGET_EXISTS" in str(exc.value)
+
+
+def test_project_local_preview_includes_unresolved_references(workspace_with_data: Path, tmp_path: Path):
+    unresolved_file = workspace_with_data / "data" / "entities" / "unresolved-relations.json"
+    unresolved_file.write_text(
+        json.dumps([{"name": "Rapidez", "sourceEntityId": "creature-lobo", "status": "PENDING"}]),
+        encoding="utf-8",
+    )
+
+    projector = LocalPreviewProjector()
+    preview_root = tmp_path / ".daemon_runtime" / "preview"
+
+    out_path = projector.project_local_preview(
+        workspace_root=workspace_with_data,
+        preview_root=preview_root,
+        book_id="animalidade",
+        rights_status="UNKNOWN",
+        publication_mode="NOT_PUBLIC",
+    )
+
+    book_json_path = out_path / "site-data" / "books" / "animalidade.json"
+    assert book_json_path.is_file()
+    with open(book_json_path, encoding="utf-8") as f:
+        book_data = json.load(f)
+    assert "unresolvedReferences" in book_data
+    assert len(book_data["unresolvedReferences"]) == 1
+    assert book_data["unresolvedReferences"][0]["name"] == "Rapidez"
 
