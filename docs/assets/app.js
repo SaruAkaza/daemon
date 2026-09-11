@@ -1377,5 +1377,43 @@ function showError(error) {
 }
 
 applyTheme(preferredTheme());
-load().catch(showError);
-setInterval(checkForRemoteUpdates, AUTO_REFRESH_INTERVAL_MS);
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get("site") === "1") {
+  // Hide legacy elements
+  const legacyShell = document.querySelector(".shell");
+  if (legacyShell) legacyShell.style.display = "none";
+  const legacyTopbar = document.querySelector(".topbar");
+  if (legacyTopbar) legacyTopbar.style.display = "none";
+  const legacyFooter = document.querySelector(".footer");
+  if (legacyFooter) legacyFooter.style.display = "none";
+
+  let root = document.querySelector("#siteRoot");
+  if (!root) {
+    root = document.createElement("div");
+    root.id = "siteRoot";
+    document.body.appendChild(root);
+  }
+
+  const previewBook = urlParams.get("preview");
+  const baseUrl = previewBook
+    ? `/api/preview/${encodeURIComponent(previewBook)}/site-data/`
+    : "assets/site-data/";
+
+  import("./site-model.mjs")
+    .then(({ createSiteStore }) => {
+      const store = createSiteStore(baseUrl);
+      import("./site-ui.mjs").then(({ mountSite }) => {
+        mountSite({ root, store, storage: localStorage });
+      });
+    })
+    .catch((err) => {
+      if (root) {
+        root.textContent = `Erro ao carregar módulo do site: ${err.message}`;
+      }
+    });
+} else {
+  load().catch(showError);
+  setInterval(checkForRemoteUpdates, AUTO_REFRESH_INTERVAL_MS);
+}
+
