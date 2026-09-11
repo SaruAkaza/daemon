@@ -438,3 +438,115 @@ def test_public_projection_gate_six_criteria_and_leak_detection():
         for r in file_data.get("relations", []):
             assert r["sourceEntityId"] in all_public_entity_ids
             assert r["targetEntityId"] in all_public_entity_ids
+
+
+def test_restricted_preview_technical_details_fields():
+    """FIX 2 RED Test: In restricted_preview, entity technicalDetails must contain:
+    - entityId
+    - type
+    - sourceId
+    - provenance / page
+    - mode = restricted_preview
+    - rightsStatus
+    - publicationMode
+    - context (if present in input)
+    - relationOntologyVersion (if present in input)
+    - unresolved status when pertinent
+    AND must never invent missing fields.
+    In public mode, technicalDetails is forbidden.
+    """
+    books = [
+        {
+            "bookId": "preview-book",
+            "title": "Preview Book",
+            "rightsStatus": "UNKNOWN",
+            "publicationMode": "NOT_PUBLIC",
+            "context": "LOCAL_RESTRICTED",
+            "relationOntologyVersion": "relations-v2",
+            "groups": [],
+            "entities": [
+                {
+                    "id": "ent-1",
+                    "name": "Guardião",
+                    "aliases": [],
+                    "category": "creature_npc",
+                    "source": "preview-book",
+                    "pages": [5],
+                    "entries": ["Descrição do guardião."],
+                },
+                {
+                    "id": "ent-2",
+                    "name": "Sentinela",
+                    "aliases": [],
+                    "category": "creature_npc",
+                    "source": "preview-book",
+                    "pages": [6],
+                    "entries": ["Sentinela neutro."],
+                }
+            ],
+            "relations": [],
+            "unresolvedReferences": [
+                {
+                    "sourceEntityId": "ent-1",
+                    "name": "Força Oculta",
+                    "status": "UNRESOLVED_PENDING_CROSS_BOOK_LINK",
+                }
+            ],
+        },
+        {
+            "bookId": "plain-book",
+            "title": "Plain Book Without Context",
+            "rightsStatus": "UNKNOWN",
+            "publicationMode": "NOT_PUBLIC",
+            # No context, no relationOntologyVersion
+            "groups": [],
+            "entities": [
+                {
+                    "id": "ent-plain",
+                    "name": "Simples",
+                    "aliases": [],
+                    "category": "core_rule",
+                    "source": "plain-book",
+                    "pages": [1],
+                    "entries": ["Regra simples."],
+                }
+            ],
+            "relations": [],
+        }
+    ]
+
+    projector = FrontendProjector()
+    files = projector.build(books, "restricted_preview")
+
+    preview_book_file = files["books/preview-book.json"]
+    ent1 = next(e for e in preview_book_file["entities"] if e["entityId"] == "ent-1")
+    tech1 = ent1.get("technicalDetails")
+
+    assert tech1 is not None, "entity must have technicalDetails in restricted_preview"
+    assert tech1["entityId"] == "ent-1"
+    assert tech1["type"] == "creature_npc"
+    assert tech1["sourceId"] == "preview-book"
+    assert tech1["provenance"] == {"source": "preview-book", "pages": [5]}
+    assert tech1["mode"] == "restricted_preview"
+    assert tech1["rightsStatus"] == "UNKNOWN"
+    assert tech1["publicationMode"] == "NOT_PUBLIC"
+    assert tech1["context"] == "LOCAL_RESTRICTED"
+    assert tech1["relationOntologyVersion"] == "relations-v2"
+    # Unresolved status preserved for source entity
+    assert "unresolvedReferences" in tech1
+    assert tech1["unresolvedReferences"] == [
+        {"name": "Força Oculta", "status": "UNRESOLVED_PENDING_CROSS_BOOK_LINK"}
+    ]
+
+    # Check that missing fields are NOT invented when absent in input
+    plain_book_file = files["books/plain-book.json"]
+    ent_plain = next(e for e in plain_book_file["entities"] if e["entityId"] == "ent-plain")
+    tech_plain = ent_plain.get("technicalDetails")
+
+    assert tech_plain is not None
+    assert tech_plain["entityId"] == "ent-plain"
+    assert tech_plain["type"] == "core_rule"
+    assert tech_plain["mode"] == "restricted_preview"
+    assert "context" not in tech_plain, "context must NOT be invented when missing from source"
+    assert "relationOntologyVersion" not in tech_plain, "relationOntologyVersion must NOT be invented when missing"
+    assert "unresolvedReferences" not in tech_plain, "unresolvedReferences must NOT be present when none exist"

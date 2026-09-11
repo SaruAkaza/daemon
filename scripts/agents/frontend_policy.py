@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from typing import Any
 
@@ -147,9 +147,38 @@ def project_allowed_book(book: dict[str, Any], mode: str) -> dict[str, Any] | No
             }
 
             # technicalDetails only in restricted_preview
-            if mode == "restricted_preview" and "technicalDetails" in ent:
-                if isinstance(ent["technicalDetails"], dict):
-                    projected_entity["technicalDetails"] = dict(ent["technicalDetails"])
+            if mode == "restricted_preview":
+                src_val = (
+                    ent.get("sourceId")
+                    or ent.get("source")
+                    or book.get("sourceId")
+                    or book.get("source")
+                    or book_id
+                )
+                tech_details: dict[str, Any] = {
+                    "entityId": str(eid),
+                    "type": str(category),
+                    "sourceId": str(src_val),
+                    "provenance": provenance,
+                    "mode": "restricted_preview",
+                    "rightsStatus": rights_status,
+                    "publicationMode": publication_mode,
+                }
+                ctx = ent.get("context") or book.get("context")
+                if ctx:
+                    tech_details["context"] = str(ctx)
+
+                rov = ent.get("relationOntologyVersion") or book.get("relationOntologyVersion")
+                if rov:
+                    tech_details["relationOntologyVersion"] = str(rov)
+
+                # Merge pre-existing technicalDetails without fabricating absent fields
+                if "technicalDetails" in ent and isinstance(ent["technicalDetails"], dict):
+                    for k, v in ent["technicalDetails"].items():
+                        if k not in tech_details:
+                            tech_details[k] = v
+
+                projected_entity["technicalDetails"] = tech_details
 
             projected["entities"].append(projected_entity)
 

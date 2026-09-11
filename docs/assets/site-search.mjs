@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Daemon Tools — Deterministic Entity Search and Ranking (ES Module)
  * Implements strict lexical sorting, 5-tier scoring, and authorized field filtering.
  */
@@ -59,7 +59,7 @@ export function searchEntities(entries, query, { bookId = null, type = null } = 
   const filtered = entries.filter((e) => {
     if (!e || typeof e !== 'object') return false;
     if (bookId && e.bookId !== bookId) return false;
-    if (type && e.type !== type) return false;
+    if (type && e.type !== type && e.displayType !== type) return false;
     return true;
   });
 

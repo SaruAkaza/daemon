@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from copy import deepcopy
 import hashlib
@@ -88,6 +88,25 @@ class FrontendProjector:
             # Deterministic sorting of relations
             projected_relations.sort(key=lambda r: r["relationId"])
             b["relations"] = projected_relations
+
+        # Step 5b: In restricted_preview, link matching unresolved references to entity technicalDetails
+        if mode == "restricted_preview":
+            for b in allowed_books:
+                unres_list = b.get("unresolvedReferences", [])
+                if unres_list:
+                    for ent in b.get("entities", []):
+                        eid = ent["entityId"]
+                        matching = [
+                            u for u in unres_list
+                            if isinstance(u, dict) and u.get("sourceEntityId") == eid
+                        ]
+                        if matching:
+                            if "technicalDetails" not in ent:
+                                ent["technicalDetails"] = {}
+                            ent["technicalDetails"]["unresolvedReferences"] = [
+                                {"name": u["name"], **({"status": u["status"]} if "status" in u else {})}
+                                for u in matching
+                            ]
 
         # Step 6: Build search index entries
         search_entries: list[dict[str, Any]] = []

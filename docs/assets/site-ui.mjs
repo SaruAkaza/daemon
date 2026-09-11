@@ -525,16 +525,17 @@ export function mountSite({ root, store, storage = localStorage }) {
                 unresList.className = 'site-unresolved-list';
                 for (const u of unres) {
                   const uLi = document.createElement('li');
+
+                  const uLabel = document.createElement('span');
+                  uLabel.className = 'unresolved-label';
+                  uLabel.textContent = 'Referência não vinculada: ';
+                  uLi.appendChild(uLabel);
+
                   const uName = document.createElement('span');
                   uName.className = 'unresolved-name';
                   uName.textContent = u.name;
                   uLi.appendChild(uName);
-                  if (u.status) {
-                    const uStat = document.createElement('span');
-                    uStat.className = 'unresolved-status';
-                    uStat.textContent = ` (${u.status})`;
-                    uLi.appendChild(uStat);
-                  }
+
                   unresList.appendChild(uLi);
                 }
                 relationsPanel.appendChild(unresList);
@@ -566,6 +567,105 @@ export function mountSite({ root, store, storage = localStorage }) {
     const h1 = document.createElement('h1');
     h1.textContent = 'Busca de Entidades';
     container.appendChild(h1);
+
+    // Filter controls: Book, Type, and Reset
+    const filterBar = document.createElement('div');
+    filterBar.className = 'site-search-filter-bar';
+
+    // 1. Book Filter
+    const bookWrap = document.createElement('div');
+    bookWrap.className = 'site-search-filter-field';
+    const bookLabel = document.createElement('label');
+    bookLabel.htmlFor = 'siteSearchBookFilter';
+    bookLabel.textContent = 'Livro:';
+    const bookSelect = document.createElement('select');
+    bookSelect.id = 'siteSearchBookFilter';
+    bookSelect.setAttribute('aria-label', 'Filtrar por livro');
+
+    const bookDefaultOpt = document.createElement('option');
+    bookDefaultOpt.value = '';
+    bookDefaultOpt.textContent = 'Todos os livros';
+    bookSelect.appendChild(bookDefaultOpt);
+
+    const availableBooks = catalog && Array.isArray(catalog.books) ? catalog.books : [];
+    for (const b of availableBooks) {
+      const opt = document.createElement('option');
+      opt.value = b.bookId;
+      opt.textContent = b.title;
+      if (state.bookId === b.bookId) {
+        opt.selected = true;
+      }
+      bookSelect.appendChild(opt);
+    }
+
+    bookSelect.addEventListener('change', (e) => {
+      state = setFilters(state, { bookId: e.target.value || null });
+      renderActiveView();
+    });
+
+    bookWrap.appendChild(bookLabel);
+    bookWrap.appendChild(bookSelect);
+    filterBar.appendChild(bookWrap);
+
+    // 2. Type Filter (dynamically derived from authorized searchIndex entries)
+    const typeWrap = document.createElement('div');
+    typeWrap.className = 'site-search-filter-field';
+    const typeLabel = document.createElement('label');
+    typeLabel.htmlFor = 'siteSearchTypeFilter';
+    typeLabel.textContent = 'Tipo:';
+    const typeSelect = document.createElement('select');
+    typeSelect.id = 'siteSearchTypeFilter';
+    typeSelect.setAttribute('aria-label', 'Filtrar por tipo');
+
+    const typeDefaultOpt = document.createElement('option');
+    typeDefaultOpt.value = '';
+    typeDefaultOpt.textContent = 'Todos os tipos';
+    typeSelect.appendChild(typeDefaultOpt);
+
+    const entries = searchIndex && Array.isArray(searchIndex.entries) ? searchIndex.entries : [];
+    const uniqueTypesMap = new Map();
+    for (const ent of entries) {
+      const dt = ent.displayType || ent.type;
+      if (dt && !uniqueTypesMap.has(dt)) {
+        uniqueTypesMap.set(dt, { displayType: dt, type: ent.type });
+      }
+    }
+    const sortedTypes = Array.from(uniqueTypesMap.values()).sort((a, b) =>
+      a.displayType.localeCompare(b.displayType)
+    );
+    for (const t of sortedTypes) {
+      const opt = document.createElement('option');
+      opt.value = t.displayType;
+      opt.textContent = t.displayType;
+      if (state.type === t.displayType || state.type === t.type) {
+        opt.selected = true;
+      }
+      typeSelect.appendChild(opt);
+    }
+
+    typeSelect.addEventListener('change', (e) => {
+      state = setFilters(state, { type: e.target.value || null });
+      renderActiveView();
+    });
+
+    typeWrap.appendChild(typeLabel);
+    typeWrap.appendChild(typeSelect);
+    filterBar.appendChild(typeWrap);
+
+    // 3. Reset Button
+    const resetBtn = document.createElement('button');
+    resetBtn.id = 'siteSearchResetFilters';
+    resetBtn.type = 'button';
+    resetBtn.className = 'site-btn-reset-filters';
+    resetBtn.textContent = 'Limpar filtros';
+    resetBtn.addEventListener('click', () => {
+      state = setFilters(state, { bookId: null, type: null, query: '' });
+      searchInput.value = '';
+      renderActiveView();
+    });
+    filterBar.appendChild(resetBtn);
+
+    container.appendChild(filterBar);
 
     const countP = document.createElement('p');
     countP.className = 'site-search-count';

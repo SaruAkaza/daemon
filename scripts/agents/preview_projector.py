@@ -230,6 +230,22 @@ class LocalPreviewProjector:
         if unresolved_references:
             approved_book["unresolvedReferences"] = unresolved_references
 
+        if "context" in pilot_data:
+            approved_book["context"] = pilot_data["context"]
+        elif rights_status.upper() == "UNKNOWN" and publication_mode.upper() == "NOT_PUBLIC":
+            approved_book["context"] = "LOCAL_RESTRICTED"
+
+        if "relationOntologyVersion" in pilot_data:
+            approved_book["relationOntologyVersion"] = pilot_data["relationOntologyVersion"]
+        elif any(r.get("relationOntologyVersion") for r in pilot_data.get("relations", [])):
+            for r in pilot_data["relations"]:
+                if r.get("relationOntologyVersion"):
+                    approved_book["relationOntologyVersion"] = r["relationOntologyVersion"]
+                    break
+
+        if "sourceId" in pilot_data:
+            approved_book["sourceId"] = pilot_data["sourceId"]
+
         # Build site view model files using FrontendProjector
         projector = FrontendProjector()
         try:
