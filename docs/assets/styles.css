@@ -1337,6 +1337,91 @@ button:focus-visible {
   color: var(--muted);
 }
 
+/* Technical details in restricted_preview */
+.entity-technical-details {
+  margin-top: 20px;
+  padding: 12px 16px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+}
+
+.entity-technical-details summary {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 0;
+  outline: none;
+}
+
+.entity-technical-details summary:hover,
+.entity-technical-details summary:focus {
+  color: var(--ink);
+}
+
+.tech-details-content {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.technical-details-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 16px;
+  margin: 0 0 12px 0;
+  font-size: 0.88rem;
+}
+
+.technical-details-list dt {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.technical-details-list dd {
+  margin: 0;
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.tech-unresolved-box {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.tech-unresolved-box h4 {
+  margin: 0 0 6px 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.tech-unresolved-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tech-unresolved-item {
+  font-size: 0.85rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.tech-unres-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tech-unres-status {
+  color: var(--accent);
+}
+
 .site-search-filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -1422,6 +1507,68 @@ button:focus-visible {
 
 /* Mobile responsive rules */
 @media (max-width: 48rem) {
+  .site-topbar {
+    padding: 10px 14px;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .site-nav-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    box-sizing: border-box;
+  }
+
+  .site-btn-preferences {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    box-sizing: border-box;
+  }
+
+  .site-relations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-relations-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .site-relations-list a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    box-sizing: border-box;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--surface);
+    color: var(--ink);
+    text-decoration: none;
+    max-width: 100%;
+  }
+
+  .site-relations-list a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
   .site-shell[data-layout] .site-browser {
     display: flex !important;
     flex-direction: column !important;
@@ -1454,6 +1601,8 @@ button:focus-visible {
     box-sizing: border-box;
     border: 1px solid var(--line);
     border-radius: 6px;
+    display: flex;
+    align-items: center;
   }
 
   .site-search-wrap {
@@ -1484,11 +1633,13 @@ button:focus-visible {
   .site-search-filter-field select {
     width: 100%;
     min-height: 44px;
+    box-sizing: border-box;
   }
 
   .site-btn-reset-filters {
     width: 100%;
     min-height: 44px;
+    box-sizing: border-box;
   }
 
   .site-search-results {
@@ -1502,8 +1653,29 @@ button:focus-visible {
     padding: 14px 16px;
   }
 
+  .site-search-result-title {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
   .site-book-source {
     margin-left: 0;
+  }
+
+  .site-entity-list a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    box-sizing: border-box;
+  }
+
+  .site-book-title {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
   }
 }
 

@@ -66,6 +66,7 @@ class PreviewServer:
         docs_root: Path | str = Path("docs"),
         host: str = "127.0.0.1",
         port: int = 8080,
+        public_root: Path | str | None = None,
     ) -> None:
         if host not in ("127.0.0.1", "localhost"):
             raise ValueError(f"Binding to non-loopback interface '{host}' is strictly prohibited.")
@@ -74,6 +75,7 @@ class PreviewServer:
         self.requested_port = port
         self.preview_root = Path(preview_root).resolve()
         self.docs_root = Path(docs_root).resolve()
+        self.public_root = Path(public_root).resolve() if public_root else None
         self._server: HTTPServer | None = None
         self._thread: threading.Thread | None = None
         self.port = port
@@ -81,6 +83,7 @@ class PreviewServer:
     def _make_handler(self):
         preview_root = self.preview_root
         docs_root = self.docs_root
+        public_root = self.public_root
 
         class PreviewHandler(BaseHTTPRequestHandler):
             def log_message(self, format: str, *args: Any) -> None:
@@ -119,6 +122,71 @@ class PreviewServer:
                     else:
                         self.send_error(404, f"Preview file not found: {subpath}")
                         return
+
+                # Check /api/public/ or /public/
+                match_pub = re.match(r"^/(?:api/)?public/(.*)$", req_path)
+                if match_pub:
+                    subpath = match_pub.group(1)
+                    effective_public = public_root
+                    if not effective_public:
+                        cand = (preview_root / "public").resolve()
+                        if cand.is_dir():
+                            effective_public = cand
+
+                    if not effective_public or not effective_public.is_dir():
+                        self.send_error(404, "Public projection root not configured")
+                        return
+
+                    target_file = (effective_public / subpath).resolve()
+                    if not target_file.is_file() and subpath.startswith("site-data/"):
+                        rel_sub = subpath[len("site-data/"):]
+                        target_file = (effective_public / rel_sub).resolve()
+                    if not target_file.is_file():
+                        target_file = (effective_public / "site-data" / subpath).resolve()
+
+                    if not _is_contained(target_file, effective_public):
+                        self.send_error(403, "Access forbidden")
+                        return
+
+                    if target_file.is_file():
+                        content = target_file.read_bytes()
+                        ctype = _get_content_type(target_file)
+                        self.send_response(200)
+                        self.send_header("Content-Type", ctype)
+                        self.send_header("Content-Length", str(len(content)))
+                        self.send_header("X-Daemon-Public-Preview", "active")
+                        self.end_headers()
+                        self.wfile.write(content)
+                        return
+                    else:
+                        self.send_error(404, f"Public file not found: {subpath}")
+                        return
+
+                # Check /assets/site-data/ (serve from public_root if configured and present)
+                match_assets_data = re.match(r"^/assets/site-data/(.*)$", req_path)
+                if match_assets_data:
+                    effective_public = public_root
+                    if not effective_public:
+                        cand = (preview_root / "public").resolve()
+                        if cand.is_dir():
+                            effective_public = cand
+
+                    if effective_public and effective_public.is_dir():
+                        subpath = match_assets_data.group(1)
+                        target_file = (effective_public / subpath).resolve()
+                        if not target_file.is_file():
+                            target_file = (effective_public / "site-data" / subpath).resolve()
+
+                        if target_file.is_file() and _is_contained(target_file, effective_public):
+                            content = target_file.read_bytes()
+                            ctype = _get_content_type(target_file)
+                            self.send_response(200)
+                            self.send_header("Content-Type", ctype)
+                            self.send_header("Content-Length", str(len(content)))
+                            self.send_header("X-Daemon-Public-Preview", "active")
+                            self.end_headers()
+                            self.wfile.write(content)
+                            return
 
                 # Static docs serving
                 if req_path in ("/", ""):
@@ -169,9 +237,10 @@ class PreviewServer:
         preview_root: Path | str,
         port: int = 8080,
         host: str = "127.0.0.1",
+        public_root: Path | str | None = None,
     ) -> None:
         """Entry point to run the preview server indefinitely in the foreground."""
-        server = cls(preview_root=preview_root, port=port, host=host)
+        server = cls(preview_root=preview_root, port=port, host=host, public_root=public_root)
         server.start()
         print(f"Daemon Tools Local Preview Server running on http://{host}:{server.port}")
         try:

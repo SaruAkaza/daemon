@@ -255,6 +255,13 @@ export function mountSite({ root, store, storage = localStorage }) {
     stats.appendChild(entitiesStat);
     container.appendChild(stats);
 
+    if (catalog && catalog.books.length === 0) {
+      const emptyPublicMsg = document.createElement('p');
+      emptyPublicMsg.className = 'site-empty-public-message';
+      emptyPublicMsg.textContent = 'Nenhum conteúdo público disponível.';
+      container.appendChild(emptyPublicMsg);
+    }
+
     mainContent.appendChild(container);
   }
 
@@ -459,9 +466,109 @@ export function mountSite({ root, store, storage = localStorage }) {
               const sum = document.createElement('summary');
               sum.textContent = 'Detalhes Técnicos';
               tech.appendChild(sum);
-              const pre = document.createElement('pre');
-              pre.textContent = JSON.stringify(entity.technicalDetails, null, 2);
-              tech.appendChild(pre);
+
+              const contentBox = document.createElement('div');
+              contentBox.className = 'tech-details-content';
+
+              const dl = document.createElement('dl');
+              dl.className = 'technical-details-list';
+
+              const td = entity.technicalDetails;
+              const allowedScalars = [
+                { key: 'entityId', label: 'ID da Entidade' },
+                { key: 'type', label: 'Tipo Canônico' },
+                { key: 'sourceId', label: 'ID da Fonte' },
+                { key: 'mode', label: 'Modo' },
+                { key: 'rightsStatus', label: 'Status de Direitos' },
+                { key: 'publicationMode', label: 'Modo de Publicação' },
+                { key: 'context', label: 'Contexto' },
+                { key: 'relationOntologyVersion', label: 'Ontologia de Relações' },
+              ];
+
+              for (const { key, label } of allowedScalars) {
+                if (td[key] !== undefined && td[key] !== null && String(td[key]).trim() !== '') {
+                  const dt = document.createElement('dt');
+                  dt.textContent = label;
+                  const dd = document.createElement('dd');
+                  dd.setAttribute('data-field', key);
+                  dd.textContent = String(td[key]);
+                  dl.appendChild(dt);
+                  dl.appendChild(dd);
+                }
+              }
+
+              // Provenance formatting
+              if (td.provenance && typeof td.provenance === 'object') {
+                const provSource = td.provenance.source;
+                const provPages = Array.isArray(td.provenance.pages) ? td.provenance.pages.join(', ') : '';
+                if (provSource) {
+                  const dt = document.createElement('dt');
+                  dt.textContent = 'Proveniência';
+                  const dd = document.createElement('dd');
+                  dd.setAttribute('data-field', 'provenance');
+                  dd.textContent = provPages ? `${provSource}, pág. ${provPages}` : provSource;
+                  dl.appendChild(dt);
+                  dl.appendChild(dd);
+                }
+              }
+
+              // Any other authorized custom non-internal fields that might exist in technicalDetails (except unresolvedReferences)
+              for (const [k, v] of Object.entries(td)) {
+                if (
+                  k !== 'unresolvedReferences' &&
+                  k !== 'provenance' &&
+                  !allowedScalars.some((s) => s.key === k) &&
+                  v !== undefined &&
+                  v !== null &&
+                  typeof v !== 'object'
+                ) {
+                  const dt = document.createElement('dt');
+                  dt.textContent = k;
+                  const dd = document.createElement('dd');
+                  dd.setAttribute('data-field', k);
+                  dd.textContent = String(v);
+                  dl.appendChild(dt);
+                  dl.appendChild(dd);
+                }
+              }
+
+              contentBox.appendChild(dl);
+
+              // Unresolved references list
+              if (Array.isArray(td.unresolvedReferences) && td.unresolvedReferences.length > 0) {
+                const unresBox = document.createElement('div');
+                unresBox.className = 'tech-unresolved-box';
+                unresBox.setAttribute('data-field', 'unresolvedReferences');
+
+                const unresTitle = document.createElement('h4');
+                unresTitle.textContent = 'Referências Não Vinculadas';
+                unresBox.appendChild(unresTitle);
+
+                const unresUl = document.createElement('ul');
+                unresUl.className = 'tech-unresolved-list';
+                for (const u of td.unresolvedReferences) {
+                  if (u && u.name) {
+                    const li = document.createElement('li');
+                    li.className = 'tech-unresolved-item';
+                    const nameSpan = document.createElement('span');
+                    nameSpan.className = 'tech-unres-name';
+                    nameSpan.textContent = u.name;
+                    li.appendChild(nameSpan);
+
+                    if (u.status) {
+                      const statusSpan = document.createElement('span');
+                      statusSpan.className = 'tech-unres-status';
+                      statusSpan.textContent = `: ${u.status}`;
+                      li.appendChild(statusSpan);
+                    }
+                    unresUl.appendChild(li);
+                  }
+                }
+                unresBox.appendChild(unresUl);
+                contentBox.appendChild(unresBox);
+              }
+
+              tech.appendChild(contentBox);
               article.appendChild(tech);
             }
 

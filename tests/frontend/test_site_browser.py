@@ -314,3 +314,240 @@ def test_mobile_spacing_and_no_overflow(page, site_url):
         assert not is_search_overflowing, f"Horizontal overflow detected on #/search at {vp['width']}px"
 
 
+def test_technical_details_visual_rendering(page, site_url):
+    """REMEDIATION 02 - FIX 1 RED Test:
+    In restricted_preview, entity technicalDetails must render a structured,
+    accessible collapsible section without raw JSON dump, displaying only
+    authorized fields (entityId, type, sourceId, mode, rightsStatus, publicationMode,
+    provenance, unresolvedReferences) without undefined/null.
+    """
+    page.goto(site_url + "#/entity/a")
+    page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+
+    tech = page.locator(".entity-technical-details")
+    assert tech.count() == 1, "Expected .entity-technical-details section"
+    summary = tech.locator("summary")
+    assert "Detalhes Técnicos" in summary.text_content()
+
+    # Must NOT use raw JSON pre tag
+    assert tech.locator("pre").count() == 0, "Technical details must not be a raw JSON pre dump"
+
+    # Structured fields container
+    content = tech.locator(".tech-details-content, dl.technical-details-list")
+    assert content.count() >= 1, "Expected structured container inside .entity-technical-details"
+
+    # Verify authorized fields
+    assert tech.locator('[data-field="entityId"]').count() == 1
+    assert "a" in tech.locator('[data-field="entityId"]').text_content()
+
+    assert tech.locator('[data-field="type"]').count() == 1
+    assert "creature_npc" in tech.locator('[data-field="type"]').text_content()
+
+    assert tech.locator('[data-field="sourceId"]').count() == 1
+    assert "synthetic" in tech.locator('[data-field="sourceId"]').text_content()
+
+    assert tech.locator('[data-field="mode"]').count() == 1
+    assert "restricted_preview" in tech.locator('[data-field="mode"]').text_content()
+
+    assert tech.locator('[data-field="rightsStatus"]').count() == 1
+    assert "UNKNOWN" in tech.locator('[data-field="rightsStatus"]').text_content()
+
+    assert tech.locator('[data-field="publicationMode"]').count() == 1
+    assert "NOT_PUBLIC" in tech.locator('[data-field="publicationMode"]').text_content()
+
+    assert tech.locator('[data-field="provenance"]').count() == 1
+    assert "synthetic" in tech.locator('[data-field="provenance"]').text_content()
+
+    # Unresolved references list inside technical details
+    assert tech.locator('[data-field="unresolvedReferences"]').count() == 1
+    unres_tech = tech.locator('[data-field="unresolvedReferences"]').text_content()
+    assert "Presença Invisível" in unres_tech
+    assert "PENDING_CLASSIFICATION" in unres_tech
+
+    # No undefined or null text
+    tech_full_text = tech.text_content()
+    assert "undefined" not in tech_full_text
+    assert "null" not in tech_full_text
+
+
+def test_public_mode_empty_catalog_local_serving(browser, tmp_path):
+    """REMEDIATION 02 - FIX 2 RED Test:
+    In public mode with restricted book (rightsStatus=UNKNOWN, publicationMode=NOT_PUBLIC),
+    the generated public projection contains:
+    - books: [] (0 books)
+    - search entries: [] (0 entities)
+    - 0 technicalDetails, 0 unresolvedReferences, 0 restricted sentinels.
+    The PreviewServer must serve this local public projection without writing to docs/.
+    Frontend must load catalog.json cleanly (200 OK) without 404, displaying
+    empty state gracefully (e.g. '0 Livros Catalogados', 'Nenhum conteúdo público disponível.').
+    """
+    from pathlib import Path
+    from scripts.agents.frontend_projector import FrontendProjector
+    from scripts.agents.preview_server import PreviewServer
+
+    repo_root = Path(__file__).resolve().parents[2]
+    docs_root = repo_root / "docs"
+
+    # Restricted candidate book
+    restricted_book = {
+        "bookId": "secret-book",
+        "title": "Livro Restrito",
+        "rightsStatus": "UNKNOWN",
+        "publicationMode": "NOT_PUBLIC",
+        "entities": [
+            {
+                "id": "sec-1",
+                "name": "Segredo Oculto",
+                "category": "creature_npc",
+                "displayType": "Criatura / NPC",
+                "aliases": [],
+                "tags": [],
+                "content": [{"title": "Restrito", "paragraphs": ["SENTINEL_RESTRICTED_DATA_SECRET"]}],
+                "provenance": {"source": "secret", "pages": [1]},
+            }
+        ],
+        "relations": [],
+    }
+
+    # Generate public projection
+    projector = FrontendProjector()
+    public_files = projector.build([restricted_book], "public")
+
+    # Assert contract of public projection for restricted book
+    assert public_files["catalog.json"]["books"] == []
+    assert public_files["search-index.json"]["entries"] == []
+    for fpath, payload in public_files.items():
+        assert "technicalDetails" not in payload
+        assert "unresolvedReferences" not in payload
+        payload_str = str(payload)
+        assert "SENTINEL_RESTRICTED_DATA_SECRET" not in payload_str
+        assert "Segredo Oculto" not in payload_str
+
+    # Write public projection to isolated tmp_path
+    public_site_data = tmp_path / "public_site_data"
+    projector.write(public_files, public_site_data, repo_root)
+
+    # Start PreviewServer with public_root
+    server = PreviewServer(
+        preview_root=tmp_path / "empty_preview",
+        docs_root=docs_root,
+        host="127.0.0.1",
+        port=0,
+        public_root=public_site_data,
+    )
+    server.start()
+    try:
+        page = browser.new_page()
+        # Navigate with site=1 and public=1
+        page.goto(f"http://127.0.0.1:{server.port}/?site=1&public=1#/")
+        page.wait_for_selector(".site-home-view", timeout=10000)
+
+        # Confirm 0 books and 0 entities rendered
+        text = page.locator(".site-home-view").text_content()
+        assert "Livros Catalogados" in text
+        assert "Entidades no Índice" in text
+        assert "0" in page.locator(".site-stat-card").first.text_content()
+        assert "Nenhum conteúdo público disponível." in text
+
+        # Confirm books view
+        page.goto(f"http://127.0.0.1:{server.port}/?site=1&public=1#/books")
+        page.wait_for_selector(".site-books-view", timeout=10000)
+        assert "Nenhum livro autorizado disponível." in page.locator(".site-books-view").text_content()
+
+        # Also confirm root /?site=1#/ route works without error
+        page.goto(f"http://127.0.0.1:{server.port}/?site=1#/")
+        page.wait_for_selector(".site-home-view", timeout=10000)
+        assert "Livros Catalogados" in page.locator(".site-home-view").text_content()
+        assert "0" in page.locator(".site-stat-card").first.text_content()
+
+        # Confirm zero restricted leakage in browser DOM
+        dom_text = page.content()
+        assert "SENTINEL_RESTRICTED_DATA_SECRET" not in dom_text
+        assert "Segredo Oculto" not in dom_text
+        assert "technicalDetails" not in dom_text
+    finally:
+        server.stop()
+
+
+def test_interactive_touch_targets_mobile(page, site_url):
+    """REMEDIATION 02 - FIX 3 RED Test:
+    Interactive elements on mobile (390px) must have comfortable touch targets (height >= 44px):
+    - navigation link (.site-nav-link)
+    - preferences button (.site-btn-preferences)
+    - entity row (.site-entity-row)
+    - relation link (.site-relations-list a)
+    - book filter select (#siteSearchBookFilter)
+    - type filter select (#siteSearchTypeFilter)
+    - reset filters button (.site-btn-reset-filters)
+    - search result link (.site-search-result-title)
+    Also verify zero horizontal overflow across 390px, 768px, 1440px.
+    """
+    page.set_viewport_size({"width": 390, "height": 844})
+    page.goto(site_url + "#/entity/a")
+    page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+
+    # 1. Navigation links
+    nav_link = page.locator(".site-nav-link").first
+    box_nav = nav_link.bounding_box()
+    assert box_nav is not None
+    assert box_nav["height"] >= 44, f"Nav link touch target {box_nav['height']}px is below 44px"
+
+    # 2. Preferences button
+    pref_btn = page.locator(".site-btn-preferences")
+    box_pref = pref_btn.bounding_box()
+    assert box_pref is not None
+    assert box_pref["height"] >= 44, f"Preferences button touch target {box_pref['height']}px is below 44px"
+
+    # 3. Entity row
+    row = page.locator(".site-entity-row").first
+    box_row = row.bounding_box()
+    assert box_row is not None
+    assert box_row["height"] >= 44, f"Entity row touch target {box_row['height']}px is below 44px"
+
+    # 4. Relation link
+    rel_link = page.locator(".site-relations-list a").first
+    box_rel = rel_link.bounding_box()
+    assert box_rel is not None
+    assert box_rel["height"] >= 44, f"Relation link touch target {box_rel['height']}px is below 44px"
+
+    # 5. Search view controls
+    page.goto(site_url + "#/search")
+    page.wait_for_selector(".site-search-results", timeout=10000)
+
+    book_sel = page.locator("#siteSearchBookFilter")
+    box_book = book_sel.bounding_box()
+    assert box_book is not None
+    assert box_book["height"] >= 44, f"Book filter select {box_book['height']}px is below 44px"
+
+    type_sel = page.locator("#siteSearchTypeFilter")
+    box_type = type_sel.bounding_box()
+    assert box_type is not None
+    assert box_type["height"] >= 44, f"Type filter select {box_type['height']}px is below 44px"
+
+    reset_btn = page.locator(".site-btn-reset-filters")
+    box_reset = reset_btn.bounding_box()
+    assert box_reset is not None
+    assert box_reset["height"] >= 44, f"Reset button {box_reset['height']}px is below 44px"
+
+    res_link = page.locator(".site-search-result-title").first
+    box_res = res_link.bounding_box()
+    assert box_res is not None
+    assert box_res["height"] >= 44, f"Search result title link {box_res['height']}px is below 44px"
+
+    # 6. Verify zero horizontal overflow at 390, 768, 1440
+    for width in [390, 768, 1440]:
+        page.set_viewport_size({"width": width, "height": 844})
+        page.goto(site_url + "#/entity/a")
+        page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+        overflow_entity = page.evaluate("() => document.documentElement.scrollWidth > document.documentElement.clientWidth")
+        assert not overflow_entity, f"Horizontal overflow on entity view at {width}px"
+
+        page.goto(site_url + "#/search")
+        page.wait_for_selector(".site-search-results", timeout=10000)
+        overflow_search = page.evaluate("() => document.documentElement.scrollWidth > document.documentElement.clientWidth")
+        assert not overflow_search, f"Horizontal overflow on search view at {width}px"
+
+
+
+
+

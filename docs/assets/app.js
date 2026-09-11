@@ -1396,8 +1396,11 @@ if (urlParams.get("site") === "1") {
   }
 
   const previewBook = urlParams.get("preview");
+  const isPublic = urlParams.get("public") === "1" || urlParams.get("mode") === "public";
   const baseUrl = previewBook
     ? `/api/preview/${encodeURIComponent(previewBook)}/site-data/`
+    : isPublic
+    ? "/api/public/site-data/"
     : "assets/site-data/";
 
   import("./site-model.mjs")

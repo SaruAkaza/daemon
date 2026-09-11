@@ -217,3 +217,37 @@ def test_frontend_acceptance_relations():
     assert rel["type"] == "HAS_POWER"
     assert rel["sourceEntityId"] == "synthetic-pilot:npc-lobo"
     assert rel["targetEntityId"] == "synthetic-pilot:group-poderes-lobo"
+
+
+def test_serve_local_public_site_data(tmp_path: Path):
+    pub_dir = tmp_path / "public_data"
+    pub_dir.mkdir(parents=True)
+    (pub_dir / "catalog.json").write_text('{"books": []}', encoding="utf-8")
+
+    server = PreviewServer(
+        preview_root=tmp_path / "preview",
+        docs_root=Path("docs"),
+        host="127.0.0.1",
+        port=0,
+        public_root=pub_dir,
+    )
+    server.start()
+    try:
+        # Route 1: /api/public/site-data/catalog.json
+        url1 = f"http://127.0.0.1:{server.port}/api/public/site-data/catalog.json"
+        with urllib.request.urlopen(url1) as resp1:
+            assert resp1.status == 200
+            assert resp1.headers.get("X-Daemon-Public-Preview") == "active"
+            data1 = json.loads(resp1.read().decode("utf-8"))
+            assert data1["books"] == []
+
+        # Route 2: /assets/site-data/catalog.json
+        url2 = f"http://127.0.0.1:{server.port}/assets/site-data/catalog.json"
+        with urllib.request.urlopen(url2) as resp2:
+            assert resp2.status == 200
+            assert resp2.headers.get("X-Daemon-Public-Preview") == "active"
+            data2 = json.loads(resp2.read().decode("utf-8"))
+            assert data2["books"] == []
+    finally:
+        server.stop()
+
