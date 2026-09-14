@@ -234,7 +234,7 @@ Authorization: Bearer <ephemeral-local-token>
 1. **Loopback Only**: O Ops Controller vincula-se estritamente à interface loopback (`127.0.0.1` e `::1`). Qualquer requisição recebida em interface pública ou externa é recusada na camada de rede.
 2. **Token Efêmero por Sessão**:
    - Gerado criptograficamente com alta entropia (`secrets.token_urlsafe(32)`) na inicialização do serviço local.
-   - Gravado exclusivamente em arquivo transitório de runtime (`.daemon_runtime/ops_token`), com permissões restritas de sistema de arquivos (chmod 600).
+   - Gravado exclusivamente em arquivo transitório no runtime (`.daemon_runtime/ops_token`) com permissões de acesso restritas ao usuário/processo atual, usando o mecanismo apropriado do sistema operacional (por exemplo, `chmod 600` em ambientes POSIX ou ACLs/permissões equivalentes restritas ao proprietário no Windows).
    - **O token efêmero nunca entra no Git** (`.gitignore` explícito e verificado).
 3. **Validação de Origem e Headers**:
    - `Host`, `Origin` e `Referer` validados contra `127.0.0.1:<port>` e `localhost:<port>`.
@@ -252,7 +252,7 @@ A interface de usuário e o Ops Controller exigem rituais de confirmação propo
 
 | Nível de Risco | Ações | Ritual de Confirmação |
 | :--- | :--- | :--- |
-| **Baixo** | Priorizar livro na fila, Pausar orquestrador, Retomar orquestrador | Clique de confirmação simples em modal ou botão toggle. |
+| **Baixo** | Priorizar livro na fila, Pausar livro (`PAUSE_BOOK`), Retomar livro (`RESUME_BOOK`) | Clique de confirmação simples em modal ou botão toggle. |
 | **Médio** | Reprocessar estágio individual, Rejeitar item de review, Pedir correção com instrução | Confirmação detalhada com preview dos estágios impactados e motivo obrigatório. |
 | **Alto** | Alteração de `rightsStatus`, alteração de `publicationMode`, invalidação ampla de múltiplos estágios/livros, remoção definitiva de checkpoints, autorização de publicação | Confirmação forte: digitação explícita do identificador do livro/ação, preenchimento de justificativa auditável obrigatória e verificação de duplo consentimento. Não é permitida automação não assistida para ações de alto risco. |
 
@@ -320,6 +320,7 @@ O pipeline é estritamente transacional e particionado por estágio:
     "warnings": []
   }
   ```
+  *(Nota: O valor `<entities-contract-version>` é ilustrativo; a versão canônica concreta deve ser reutilizada se já existir no repositório ou definida formalmente no Implementation Plan. A Spec não inventa uma nova versão de contrato.)*
 
 ### 4.3 Retomada Determinística (Crash Recovery)
 
@@ -384,7 +385,7 @@ Source -> Extraction -> Editorial -> Entities -> Relations -> Frontend -> QA
 
 ### 5.1 Arquitetura de Navegação Restrita
 
-No ambiente restrito (`mode=restricted`), a navegação do Daemon Tools é estruturada em dois macro-ambientes:
+No ambiente restrito (`mode=restricted_preview`), a navegação do Daemon Tools é estruturada em dois macro-ambientes:
 
 ```text
 +-------------------------------------------------------------------------+
@@ -438,7 +439,9 @@ No ambiente restrito (`mode=restricted`), a navegação do Daemon Tools é estru
   - `Concluídos (Done)`: n livros.
 - **Ações Operacionais Controladas**:
   - *Priorizar*: envia comando assíncrono para reordenar a fila determinística.
-  - *Pausar / Retomar*: suspende ou retoma a ingestão de novos jobs pelo Orchestrator.
+  - *Pausar Livro (`PAUSE_BOOK`)*: suspende o avanço do livro para novos estágios do pipeline, sem abortar transformações em andamento de forma insegura; a pausa ocorre preferencialmente em fronteiras seguras de checkpoint e não afeta o processamento dos demais livros ativos no pool.
+  - *Retomar Livro (`RESUME_BOOK`)*: recoloca o livro pausado em estado elegível no fluxo do orquestrador, respeitando rigorosamente a fila priorizada, os checkpoints consolidados e os gates de validação, sem pular etapas.
+  - *(Nota: Operações globais como `PAUSE_ORCHESTRATOR` / `RESUME_ORCHESTRATOR` constituem comandos administrativos globais distintos, não se confundem com o controle por livro e não são requisito do MVP desta fase.)*
   - *Reprocessar Estágio*: invalida e reexecuta um estágio a partir de seu checkpoint.
   - *Aprovar / Rejeitar / Pedir Correção de Review*: resolve itens da Human Review Queue.
 - **Regra de Integridade Absoluta**: Nenhuma ação no Painel Operacional edita arquivos de dados (`data/entities/`, `relations.json`) de forma arbitrária ou manual. Todas as mutações derivam de reexecuções válidas dos estágios do pipeline sob os QA Gates formais.
