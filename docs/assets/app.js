@@ -1394,6 +1394,7 @@ if (urlParams.get("site") === "1") {
     root.id = "siteRoot";
     document.body.appendChild(root);
   }
+  document.body.classList.add("site-mode");
 
   const previewBook = urlParams.get("preview");
   const isPublic = urlParams.get("public") === "1" || urlParams.get("mode") === "public";

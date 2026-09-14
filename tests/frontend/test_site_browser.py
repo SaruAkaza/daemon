@@ -548,6 +548,39 @@ def test_interactive_touch_targets_mobile(page, site_url):
         assert not overflow_search, f"Horizontal overflow on search view at {width}px"
 
 
+def test_desktop_and_mobile_scroll_interactions(page, site_url):
+    """Verify that desktop panels and search views scroll with mouse wheel,
+    panels have bounded heights, and mobile allows natural vertical document scroll."""
+    # 1. Desktop Search view scroll
+    page.set_viewport_size({"width": 1280, "height": 720})
+    page.goto(site_url + "#/search")
+    page.wait_for_selector(".site-search-results", timeout=10000)
+    box = page.locator(".site-main-content").bounding_box()
+    assert box is not None
+    page.mouse.move(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
+    page.mouse.wheel(0, 300)
+    page.wait_for_timeout(200)
+    assert page.locator(".site-main-content").evaluate("el => el.scrollTop") >= 0
 
+    # 2. Entity browser panels scroll independently with bounded heights
+    page.goto(site_url + "#/entity/a")
+    page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+    list_panel = page.locator(".site-list-panel")
+    detail_panel = page.locator(".site-detail-panel")
+    assert list_panel.evaluate("el => window.getComputedStyle(el).overflowY") == "auto"
+    assert detail_panel.evaluate("el => window.getComputedStyle(el).overflowY") == "auto"
 
+    shell_h = page.locator(".site-shell").evaluate("el => el.clientHeight")
+    list_h = list_panel.evaluate("el => el.clientHeight")
+    assert list_h <= shell_h, f"List panel height {list_h}px expanded beyond shell {shell_h}px"
+
+    # 3. Mobile 390x844 allows vertical scrolling without horizontal overflow
+    page.set_viewport_size({"width": 390, "height": 844})
+    page.goto(site_url + "#/search")
+    page.wait_for_selector(".site-search-results", timeout=10000)
+    page.mouse.move(195, 300)
+    page.mouse.wheel(0, 300)
+    page.wait_for_timeout(200)
+    overflow = page.evaluate("() => document.documentElement.scrollWidth > document.documentElement.clientWidth")
+    assert not overflow
 

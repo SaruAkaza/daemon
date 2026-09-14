@@ -1089,16 +1089,31 @@ button:focus-visible {
    Site View Model MVP Styles & Responsive Layouts
    ========================================================================== */
 
+body.site-mode,
+body:has(#siteRoot .site-shell) {
+  display: block;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+#siteRoot {
+  height: 100%;
+  width: 100%;
+}
+
 .site-shell {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
   width: 100%;
   background: var(--bg);
   color: var(--ink);
 }
 
 .site-topbar {
+  flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1211,32 +1226,40 @@ button:focus-visible {
 }
 
 .site-main-content {
-  flex: 1;
+  flex: 1 1 0%;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   padding: 16px 24px;
+  overflow-y: auto;
 }
 
 /* Layout Composition Rules */
 .site-shell[data-layout="classic"] .site-browser {
   display: grid;
   grid-template-columns: minmax(16rem, 1fr) minmax(24rem, 3fr);
+  grid-template-rows: minmax(0, 1fr);
   gap: 16px;
   height: 100%;
+  min-height: 0;
 }
 
 .site-shell[data-layout="balanced"] .site-browser {
   display: grid;
   grid-template-columns: minmax(12rem, 1fr) minmax(20rem, 2fr) minmax(12rem, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   gap: 16px;
   height: 100%;
+  min-height: 0;
 }
 
 .site-shell[data-layout="advanced"] .site-browser {
   display: grid;
   grid-template-columns: minmax(12rem, 1fr) minmax(12rem, 1fr) minmax(20rem, 2fr) minmax(12rem, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   gap: 16px;
   height: 100%;
+  min-height: 0;
 }
 
 .site-panel {
@@ -1245,6 +1268,8 @@ button:focus-visible {
   border-radius: 6px;
   padding: 16px;
   overflow-y: auto;
+  min-height: 0;
+  height: 100%;
 }
 
 .site-entity-items {
@@ -1569,12 +1594,28 @@ button:focus-visible {
     color: var(--accent);
   }
 
+  body.site-mode,
+  body:has(#siteRoot .site-shell) {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-y: auto !important;
+  }
+
+  .site-shell {
+    height: auto !important;
+    min-height: 100vh !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
   .site-shell[data-layout] .site-browser {
     display: flex !important;
     flex-direction: column !important;
     gap: 16px;
     max-width: 100%;
     box-sizing: border-box;
+    height: auto !important;
+    min-height: 0 !important;
   }
 
   .site-main-content {
@@ -1582,12 +1623,16 @@ button:focus-visible {
     max-width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+    overflow-y: visible !important;
+    flex: none !important;
   }
 
   .site-panel {
     padding: 14px;
     max-width: 100%;
     box-sizing: border-box;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .site-entity-items {
