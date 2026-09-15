@@ -125,9 +125,21 @@ def site_preview_env(tmp_path_factory):
         ],
     }
 
+    unworked_book = {
+        "bookId": "synthetic-empty",
+        "title": "Livro Sintético Vazio",
+        "rightsStatus": "UNKNOWN",
+        "publicationMode": "NOT_PUBLIC",
+        "pipelineStatus": "WAITING",
+        "currentStage": None,
+        "entities": [],
+        "relations": [],
+        "groups": [],
+    }
+
     # 2. Build Site View Model
     projector = FrontendProjector()
-    site_files = projector.build([approved_book], "restricted_preview")
+    site_files = projector.build([approved_book, unworked_book], "restricted_preview")
     site_data_dir = target_dir / "site-data"
     for rel_path, content in site_files.items():
         dest = site_data_dir / rel_path

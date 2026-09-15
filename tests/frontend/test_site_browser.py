@@ -584,3 +584,90 @@ def test_desktop_and_mobile_scroll_interactions(page, site_url):
     overflow = page.evaluate("() => document.documentElement.scrollWidth > document.documentElement.clientWidth")
     assert not overflow
 
+
+def test_books_catalog_filters_and_stepper_strict(page, site_url):
+    page.goto(site_url + "#/books")
+    page.wait_for_selector(".site-books-grid", timeout=10000)
+
+    # Both books must exist
+    assert page.locator(".site-book-card").count() >= 2
+
+    # Strict assertion: unworked book link MUST exist (no conditional pass)
+    unworked_link = page.locator('a[href="#/book/synthetic-empty"]')
+    assert unworked_link.count() == 1, "Unworked book card must be present in restricted preview"
+    unworked_link.first.click()
+
+    # Wait for book detail view
+    page.wait_for_selector(".pipeline-stepper", timeout=10000)
+
+    # Stepper MUST contain exactly 7 stages
+    steps = page.locator(".stepper-step")
+    assert steps.count() == 7
+
+    # For an unworked book, ALL 7 stages MUST have class 'pending' and ZERO active
+    assert page.locator(".stepper-step.pending").count() == 7
+    assert page.locator(".stepper-step.active").count() == 0
+
+    # Empty state message MUST be visible
+    empty_state = page.locator(".site-book-empty-state")
+    assert empty_state.count() == 1
+    assert "Nenhuma entidade processada" in empty_state.text_content()
+
+    # Dual-axis badges MUST be visible
+    assert page.locator(".site-badge-rights").count() >= 1
+    assert page.locator(".site-badge-pipeline").count() >= 1
+
+
+def test_books_catalog_public_mode_fail_closed(browser, tmp_path):
+    """Verifies that in mode=public, restricted books are strictly excluded from catalog and detail routes."""
+    from pathlib import Path
+    from scripts.agents.frontend_projector import FrontendProjector
+    from scripts.agents.preview_server import PreviewServer
+
+    repo_root = Path(__file__).resolve().parents[2]
+    docs_root = repo_root / "docs"
+    projector = FrontendProjector()
+
+    synthetic_catalog = [
+        # Restricted books
+        {"bookId": "synthetic-empty", "title": "Livro Vazio", "rightsStatus": "UNKNOWN", "publicationMode": "NOT_PUBLIC", "entities": []},
+        {"bookId": "animalidade", "title": "Animalidade", "rightsStatus": "UNKNOWN", "publicationMode": "NOT_PUBLIC", "entities": [{"id": "e1", "name": "Fera"}]},
+        # Authorized public book
+        {"bookId": "public-rules", "title": "Regras Públicas", "rightsStatus": "PUBLIC_DOMAIN", "publicationMode": "FULL_TEXT", "entities": [{"id": "e2", "name": "Regra", "category": "core_rule", "content": [{"title": "C1", "paragraphs": ["Público"]}]}]},
+    ]
+
+    public_files = projector.build(synthetic_catalog, mode="public")
+    public_site_data = tmp_path / "public_site_data"
+    projector.write(public_files, public_site_data, repo_root)
+
+    server = PreviewServer(
+        preview_root=tmp_path / "empty_preview",
+        docs_root=docs_root,
+        host="127.0.0.1",
+        port=0,
+        public_root=public_site_data,
+    )
+    server.start()
+
+    try:
+        page = browser.new_page()
+        # Navigate to public catalog
+        page.goto(f"http://127.0.0.1:{server.port}/?site=1&public=1#/books")
+        page.wait_for_selector(".site-books-grid", timeout=10000)
+
+        # Restricted books MUST NOT appear
+        assert page.locator('a[href="#/book/animalidade"]').count() == 0
+        assert page.locator('a[href="#/book/synthetic-empty"]').count() == 0
+
+        # Only authorized public book must appear
+        assert page.locator('a[href="#/book/public-rules"]').count() == 1
+
+        # Direct navigation to restricted book route MUST NOT deliver restricted content
+        page.goto(f"http://127.0.0.1:{server.port}/?site=1&public=1#/book/animalidade")
+        page.wait_for_timeout(1000)
+        assert page.locator(".pipeline-stepper").count() == 0
+        assert "Fera" not in page.content()
+    finally:
+        server.stop()
+
+
