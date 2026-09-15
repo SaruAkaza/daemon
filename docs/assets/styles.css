@@ -1724,3 +1724,150 @@ body:has(#siteRoot .site-shell) {
   }
 }
 
+/* ==========================================================================
+   Dual-Axis Acervo 281 & Catalog Badges Styling
+   ========================================================================== */
+
+.site-books-filterbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.site-books-filterbar .site-input {
+  flex: 1 1 240px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.site-books-filterbar .site-select {
+  flex: 0 1 200px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.site-books-count {
+  margin: 8px 0 16px 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.site-book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.site-book-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.site-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.site-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.site-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Rights badges */
+.site-badge-rights[data-rights="AUTHORIZED"],
+.site-badge-rights[data-rights="PUBLIC_DOMAIN"] {
+  background: #1b5e20;
+  color: #fff;
+}
+
+.site-badge-rights[data-rights="UNKNOWN"] {
+  background: #424242;
+  color: #e0e0e0;
+}
+
+.site-badge-rights[data-rights="METADATA_ONLY"] {
+  background: #e65100;
+  color: #fff;
+}
+
+.site-badge-rights[data-rights="PRIVATE"] {
+  background: #c62828;
+  color: #fff;
+}
+
+/* Pipeline badges */
+.site-badge-pipeline[data-status="WAITING"] {
+  background: #37474f;
+  color: #cfd8dc;
+}
+
+.site-badge-pipeline[data-status="RUNNING"] {
+  background: #0277bd;
+  color: #fff;
+}
+
+.site-badge-pipeline[data-status="READY_FOR_HUMAN_APPROVAL"] {
+  background: #e65100;
+  color: #fff;
+}
+
+.site-badge-pipeline[data-status="DONE"] {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.site-badge-pipeline[data-status="BLOCKED"],
+.site-badge-pipeline[data-status="NEEDS_HUMAN_REVIEW"] {
+  background: #c62828;
+  color: #fff;
+}
+
+/* Publication mode badges */
+.site-badge-pub[data-mode="FULL_TEXT"] {
+  background: #1b5e20;
+  color: #fff;
+}
+
+.site-badge-pub[data-mode="NOT_PUBLIC"] {
+  background: #424242;
+  color: #e0e0e0;
+}
+
+.site-badge-pub[data-mode="METADATA_ONLY"],
+.site-badge-pub[data-mode="SUMMARY_AND_METADATA"] {
+  background: #0277bd;
+  color: #fff;
+}
+
+

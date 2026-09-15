@@ -3,8 +3,57 @@
  * Pure vanilla DOM, secure textContent injection, zero unsafe innerHTML.
  */
 
-import { searchEntities } from './site-search.mjs';
-import { createState, parseRoute, setLayout, setRoute, setFilters } from './site-state.mjs';
+import { searchEntities, filterBooks } from './site-search.mjs';
+import { createState, parseRoute, setLayout, setRoute, setFilters, setBookFilters } from './site-state.mjs';
+
+/**
+ * Sanitizes special characters to prevent arbitrary HTML markup injection.
+ *
+ * @param {*} str
+ * @returns {string}
+ */
+export function escapeHtml(str) {
+  return String(str ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+/**
+ * Builds HTML string for a catalog book card with dual-axis badges and safe escaping.
+ *
+ * @param {object} b - Catalog book entry
+ * @returns {string}
+ */
+export function createBookCard(b) {
+  const safeId = encodeURIComponent(b.bookId || '');
+  const safeTitle = escapeHtml(b.title || safeId);
+  const safePipeline = escapeHtml(b.pipelineStatus || 'WAITING');
+  const safeRights = escapeHtml(b.rightsStatus || 'UNKNOWN');
+  const safePub = escapeHtml(b.publicationMode || 'NOT_PUBLIC');
+  const stageText = b.currentStage ? `Estágio: ${escapeHtml(b.currentStage)}` : 'Não iniciado';
+  const entityCount = Number.isInteger(b.entityCount) ? b.entityCount : 0;
+  const pageCount = Number.isInteger(b.pageCount) ? b.pageCount : 0;
+
+  return `
+    <div class="site-book-card" data-book-id="${safeId}">
+      <a href="#/book/${safeId}" class="site-book-title">${safeTitle}</a>
+      <div class="site-card-badges">
+        <span class="site-badge site-badge-pipeline" data-status="${safePipeline}">${safePipeline}</span>
+        <span class="site-badge site-badge-rights" data-rights="${safeRights}">${safeRights}</span>
+        <span class="site-badge site-badge-pub" data-mode="${safePub}">${safePub}</span>
+      </div>
+      <div class="site-card-meta">
+        <span class="site-card-stage">${stageText}</span>
+        <span class="site-card-count">${entityCount} entidades</span>
+        <span class="site-card-pages">${pageCount} págs</span>
+      </div>
+    </div>
+  `.trim();
+}
+
 
 /**
  * Mounts the site MVP UI into root element.
@@ -270,39 +319,140 @@ export function mountSite({ root, store, storage = localStorage }) {
     container.className = 'site-books-view';
 
     const h1 = document.createElement('h1');
-    h1.textContent = 'Livros Disponíveis';
+    h1.textContent = 'Acervo de Livros';
     container.appendChild(h1);
 
     if (!catalog || catalog.books.length === 0) {
       const empty = document.createElement('p');
+      empty.className = 'site-empty-message';
       empty.textContent = 'Nenhum livro autorizado disponível.';
       container.appendChild(empty);
       mainContent.appendChild(container);
       return;
     }
 
-    const list = document.createElement('div');
-    list.className = 'site-books-grid';
+    // Filter controls bar
+    const filterbar = document.createElement('div');
+    filterbar.className = 'site-books-filterbar';
 
-    for (const b of catalog.books) {
-      const card = document.createElement('div');
-      card.className = 'site-book-card';
+    // Search input
+    const searchInput = document.createElement('input');
+    searchInput.id = 'siteBookSearch';
+    searchInput.type = 'search';
+    searchInput.placeholder = 'Filtrar por título ou ID...';
+    searchInput.value = (state.bookFilters && state.bookFilters.query) || '';
+    searchInput.className = 'site-input';
+    searchInput.setAttribute('aria-label', 'Buscar livros');
+    searchInput.addEventListener('input', (e) => {
+      state = setBookFilters(state, { query: e.target.value });
+      renderActiveView();
+    });
+    filterbar.appendChild(searchInput);
 
-      const titleLink = document.createElement('a');
-      titleLink.href = `#/book/${b.bookId}`;
-      titleLink.textContent = b.title;
-      titleLink.className = 'site-book-title';
+    // Pipeline status filter
+    const pipeSelect = document.createElement('select');
+    pipeSelect.id = 'siteBookPipelineFilter';
+    pipeSelect.className = 'site-select';
+    pipeSelect.setAttribute('aria-label', 'Filtrar por status de processamento');
+    const pipeOptions = [
+      { value: 'all', label: 'Todos os Status (Pipeline)' },
+      { value: 'WAITING', label: 'WAITING (Não iniciado)' },
+      { value: 'RUNNING', label: 'RUNNING (Em processamento)' },
+      { value: 'BLOCKED', label: 'BLOCKED (Bloqueado)' },
+      { value: 'NEEDS_HUMAN_REVIEW', label: 'NEEDS_HUMAN_REVIEW (Aguardando revisão)' },
+      { value: 'READY_FOR_HUMAN_APPROVAL', label: 'READY_FOR_HUMAN_APPROVAL (Aguardando aprovação)' },
+      { value: 'DONE', label: 'DONE (Concluído)' },
+    ];
+    for (const opt of pipeOptions) {
+      const el = document.createElement('option');
+      el.value = opt.value;
+      el.textContent = opt.label;
+      if (state.bookFilters && state.bookFilters.pipelineStatus === opt.value) el.selected = true;
+      pipeSelect.appendChild(el);
+    }
+    pipeSelect.addEventListener('change', (e) => {
+      state = setBookFilters(state, { pipelineStatus: e.target.value });
+      renderActiveView();
+    });
+    filterbar.appendChild(pipeSelect);
 
-      const modeBadge = document.createElement('span');
-      modeBadge.className = 'site-badge';
-      modeBadge.textContent = b.publicationMode;
+    // Rights status filter
+    const rightsSelect = document.createElement('select');
+    rightsSelect.id = 'siteBookRightsFilter';
+    rightsSelect.className = 'site-select';
+    rightsSelect.setAttribute('aria-label', 'Filtrar por direitos');
+    const rightsOptions = [
+      { value: 'all', label: 'Todos os Direitos' },
+      { value: 'UNKNOWN', label: 'UNKNOWN (Desconhecido)' },
+      { value: 'AUTHORIZED', label: 'AUTHORIZED (Autorizado)' },
+      { value: 'PUBLIC_DOMAIN', label: 'PUBLIC_DOMAIN (Domínio Público)' },
+      { value: 'METADATA_ONLY', label: 'METADATA_ONLY (Somente Metadados)' },
+      { value: 'PRIVATE', label: 'PRIVATE (Privado)' },
+    ];
+    for (const opt of rightsOptions) {
+      const el = document.createElement('option');
+      el.value = opt.value;
+      el.textContent = opt.label;
+      if (state.bookFilters && state.bookFilters.rightsStatus === opt.value) el.selected = true;
+      rightsSelect.appendChild(el);
+    }
+    rightsSelect.addEventListener('change', (e) => {
+      state = setBookFilters(state, { rightsStatus: e.target.value });
+      renderActiveView();
+    });
+    filterbar.appendChild(rightsSelect);
 
-      card.appendChild(titleLink);
-      card.appendChild(modeBadge);
-      list.appendChild(card);
+    // Sort select
+    const sortSelect = document.createElement('select');
+    sortSelect.id = 'siteBookSort';
+    sortSelect.className = 'site-select';
+    sortSelect.setAttribute('aria-label', 'Ordenar livros');
+    const sortOptions = [
+      { value: 'title_asc', label: 'Título (A-Z)' },
+      { value: 'title_desc', label: 'Título (Z-A)' },
+      { value: 'entities_desc', label: 'Mais entidades' },
+      { value: 'pages_desc', label: 'Mais páginas' },
+    ];
+    for (const opt of sortOptions) {
+      const el = document.createElement('option');
+      el.value = opt.value;
+      el.textContent = opt.label;
+      if (state.bookFilters && state.bookFilters.sortBy === opt.value) el.selected = true;
+      sortSelect.appendChild(el);
+    }
+    sortSelect.addEventListener('change', (e) => {
+      state = setBookFilters(state, { sortBy: e.target.value });
+      renderActiveView();
+    });
+    filterbar.appendChild(sortSelect);
+
+    container.appendChild(filterbar);
+
+    const filtered = filterBooks(catalog.books, state.bookFilters || {});
+
+    // Counter badge
+    const countP = document.createElement('p');
+    countP.className = 'site-books-count';
+    countP.textContent = `Exibindo ${filtered.length} de ${catalog.books.length} livros`;
+    container.appendChild(countP);
+
+    const grid = document.createElement('div');
+    grid.className = 'site-books-grid';
+
+    if (filtered.length === 0) {
+      const noResults = document.createElement('p');
+      noResults.className = 'site-empty-message';
+      noResults.textContent = 'Nenhum livro corresponde aos filtros selecionados.';
+      grid.appendChild(noResults);
+    } else {
+      for (const b of filtered) {
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = createBookCard(b);
+        grid.appendChild(wrapper.firstElementChild);
+      }
     }
 
-    container.appendChild(list);
+    container.appendChild(grid);
     mainContent.appendChild(container);
   }
 
