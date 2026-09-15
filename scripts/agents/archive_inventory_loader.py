@@ -230,6 +230,8 @@ def load_certified_pilot_artifacts(
         ]
         approved_decisions: dict[str, dict[str, Any]] = {}
         active_requests: dict[str, dict[str, Any]] = {}
+        decided_request_ids: set[str] = set()
+        decided_bundle_ids: set[str] = set()
 
         for a_dir in audit_dirs:
             if not a_dir.is_dir():
@@ -251,13 +253,23 @@ def load_certified_pilot_artifacts(
                     if reviewer in AUTOMATED_AGENT_IDENTIFIERS or any(agt in reviewer for agt in ("-agent", "llm", "gemini", "claude", "gpt")):
                         continue
 
+                    # Track all deliberated requests / bundles (decisions resolve requests)
+                    if d.get("requestId"):
+                        decided_request_ids.add(d["requestId"])
+                    if d.get("resultBundleId"):
+                        decided_bundle_ids.add(d["resultBundleId"])
+
                     if d.get("decision") in ("APPROVE", "APPROVED") or d.get("status") == "APPROVED":
                         rb_id = d.get("resultBundleId")
                         if rb_id:
                             stg = _extract_stage_from_bundle_id(rb_id) or d.get("stage")
                             if stg:
                                 expected_hash = d.get("reviewedResultManifestSha256") or d.get("manifestHash")
-                                if expected_hash and not HEX_SHA256_PATTERN.match(expected_hash):
+                                if not expected_hash:
+                                    raise ProcessedStateReadError(
+                                        f"Missing external manifest hash in approved decision {df.name} for bundle '{rb_id}'"
+                                    )
+                                if not HEX_SHA256_PATTERN.match(expected_hash):
                                     raise ProcessedStateReadError(
                                         f"Invalid external manifest hash format '{expected_hash}' in decision {df.name}: expected 64-character lowercase hex SHA-256"
                                     )
@@ -265,22 +277,28 @@ def load_certified_pilot_artifacts(
                                     "bundleId": rb_id,
                                     "manifestHash": expected_hash,
                                     "inputEntitiesBundle": d.get("inputEntitiesBundle"),
-                                    "decisionId": d.get("decisionId"),
+                                    "decisionId": d.get("decisionId", df.name),
                                     "attemptNumber": d.get("attemptNumber", _extract_attempt_from_bundle_id(rb_id)),
                                     "decidedAt": d.get("decidedAt", ""),
                                 }
                                 if stg in approved_decisions:
                                     prev = approved_decisions[stg]
-                                    if prev["bundleId"] != rb_id or prev["manifestHash"] != expected_hash:
-                                        # If different bundles, check supersession
-                                        if dec_entry["attemptNumber"] > prev["attemptNumber"] or dec_entry["decidedAt"] > prev["decidedAt"]:
-                                            approved_decisions[stg] = dec_entry
-                                        elif dec_entry["attemptNumber"] < prev["attemptNumber"] or dec_entry["decidedAt"] < prev["decidedAt"]:
-                                            pass
-                                        else:
-                                            raise ProcessedStateReadError(
-                                                f"Ambiguous approved decisions for stage '{stg}' in book '{book_id}' ({prev['decisionId']} vs {dec_entry['decisionId']})"
-                                            )
+                                    if prev["bundleId"] != rb_id:
+                                        raise ProcessedStateReadError(
+                                            f"Ambiguous approved decisions for stage '{stg}' in book '{book_id}' ({prev['decisionId']} vs {dec_entry['decisionId']})"
+                                        )
+                                    if prev["manifestHash"] != expected_hash:
+                                        raise ProcessedStateReadError(
+                                            f"Conflicting manifest hashes in decisions for bundle '{rb_id}' in stage '{stg}' of book '{book_id}' ({prev['manifestHash']} vs {expected_hash})"
+                                        )
+                                    prev_input_ent = prev.get("inputEntitiesBundle")
+                                    curr_input_ent = dec_entry.get("inputEntitiesBundle")
+                                    if prev_input_ent and curr_input_ent and prev_input_ent != curr_input_ent:
+                                        raise ProcessedStateReadError(
+                                            f"Conflicting input entities declarations in decisions for bundle '{rb_id}' in book '{book_id}' ({prev_input_ent} vs {curr_input_ent})"
+                                        )
+                                    merged_input_ent = curr_input_ent or prev_input_ent
+                                    approved_decisions[stg]["inputEntitiesBundle"] = merged_input_ent
                                 else:
                                     approved_decisions[stg] = dec_entry
 
@@ -304,18 +322,31 @@ def load_certified_pilot_artifacts(
                         continue
 
                     req_job_id = r.get("jobId")
-                    if req_job_id and req_job_id != job_id:
+                    # Request MUST be explicitly linked to current job
+                    if not req_job_id or req_job_id != job_id:
                         continue
 
+                    # If request or bundle has already been decided by human decision, it is no longer pending review
+                    req_id = r.get("requestId") or r.get("reviewRequestId")
                     rb_id = r.get("resultBundleId") or r.get("bundleId")
+                    if (req_id and req_id in decided_request_ids) or (rb_id and rb_id in decided_bundle_ids):
+                        continue
+
                     stg = r.get("stage") or (_extract_stage_from_bundle_id(rb_id) if rb_id else None)
+                    # Request MUST match current job's stage to be an active candidate authority
+                    if not stg or stg != current_stage:
+                        continue
                     if stg and rb_id:
                         expected_hash = (
                             r.get("reviewedResultManifestSha256")
                             or r.get("resultManifestSha256")
                             or r.get("manifestHash")
                         )
-                        if expected_hash and not HEX_SHA256_PATTERN.match(expected_hash):
+                        if not expected_hash:
+                            raise ProcessedStateReadError(
+                                f"Missing external manifest hash in request {rf.name} for bundle '{rb_id}'"
+                            )
+                        if not HEX_SHA256_PATTERN.match(expected_hash):
                             raise ProcessedStateReadError(
                                 f"Invalid external manifest hash format '{expected_hash}' in request {rf.name}: expected 64-character lowercase hex SHA-256"
                             )
@@ -323,7 +354,7 @@ def load_certified_pilot_artifacts(
                             "bundleId": rb_id,
                             "manifestHash": expected_hash,
                             "inputEntitiesBundle": r.get("inputEntitiesBundle"),
-                            "requestId": r.get("requestId") or r.get("reviewRequestId"),
+                            "requestId": r.get("requestId") or r.get("reviewRequestId") or rf.name,
                             "status": req_status,
                             "attemptNumber": r.get("attemptNumber", _extract_attempt_from_bundle_id(rb_id)),
                             "createdAt": r.get("createdAt", ""),
@@ -332,20 +363,21 @@ def load_certified_pilot_artifacts(
                         if stg in active_requests:
                             prev_req = active_requests[stg]
                             if prev_req["bundleId"] != rb_id:
-                                if req_entry["attemptNumber"] > prev_req["attemptNumber"] or req_entry["createdAt"] > prev_req["createdAt"]:
-                                    active_requests[stg] = req_entry
-                                elif req_entry["attemptNumber"] < prev_req["attemptNumber"] or req_entry["createdAt"] < prev_req["createdAt"]:
-                                    pass
-                                else:
-                                    raise ProcessedStateReadError(
-                                        f"Ambiguous active review requests for stage '{stg}' in book '{book_id}' ({prev_req['requestId']} vs {req_entry['requestId']})"
-                                    )
-                            else:
-                                # Same bundle: preserve inputEntitiesBundle and take newer record
-                                merged_input_ent = req_entry.get("inputEntitiesBundle") or prev_req.get("inputEntitiesBundle")
-                                if req_entry["createdAt"] >= prev_req.get("createdAt", ""):
-                                    active_requests[stg] = req_entry
-                                active_requests[stg]["inputEntitiesBundle"] = merged_input_ent
+                                raise ProcessedStateReadError(
+                                    f"Ambiguous active review requests for stage '{stg}' in book '{book_id}' ({prev_req['requestId']} vs {req_entry['requestId']})"
+                                )
+                            if prev_req["manifestHash"] != expected_hash:
+                                raise ProcessedStateReadError(
+                                    f"Conflicting manifest hashes in requests for bundle '{rb_id}' in stage '{stg}' of book '{book_id}' ({prev_req['manifestHash']} vs {expected_hash})"
+                                )
+                            prev_input_ent = prev_req.get("inputEntitiesBundle")
+                            curr_input_ent = req_entry.get("inputEntitiesBundle")
+                            if prev_input_ent and curr_input_ent and prev_input_ent != curr_input_ent:
+                                raise ProcessedStateReadError(
+                                    f"Conflicting input entities declarations in requests for bundle '{rb_id}' in book '{book_id}' ({prev_input_ent} vs {curr_input_ent})"
+                                )
+                            merged_input_ent = curr_input_ent or prev_input_ent
+                            active_requests[stg]["inputEntitiesBundle"] = merged_input_ent
                         else:
                             active_requests[stg] = req_entry
 
@@ -362,8 +394,8 @@ def load_certified_pilot_artifacts(
             chosen_ent_id = approved_decisions["entities"]["bundleId"]
             expected_ent_hash = approved_decisions["entities"]["manifestHash"]
         elif "entities" in active_requests:
-            # Allow candidate preview ONLY if operational stage matches and request is active for this job/book
-            if current_stage == "entities" or raw_status == "needs_review" or pipeline_status == "NEEDS_HUMAN_REVIEW":
+            # Allow candidate preview ONLY if operational currentStage matches "entities"
+            if current_stage == "entities":
                 chosen_ent_id = active_requests["entities"]["bundleId"]
                 expected_ent_hash = active_requests["entities"]["manifestHash"]
 
@@ -374,13 +406,16 @@ def load_certified_pilot_artifacts(
                     f"Certified entities bundle '{chosen_ent_id}' not found in accepted bundles"
                 )
             binfo = book_candidate_bundles[chosen_ent_id]
-            if expected_ent_hash:
-                real_canonical = binfo["canonicalSha256"]
-                real_raw = binfo["rawSha256"]
-                if expected_ent_hash != real_canonical and expected_ent_hash != real_raw:
-                    raise ProcessedStateReadError(
-                        f"Manifest hash mismatch for entities bundle '{chosen_ent_id}': expected {expected_ent_hash}, computed canonical={real_canonical}, file={real_raw}"
-                    )
+            if not expected_ent_hash:
+                raise ProcessedStateReadError(
+                    f"Missing external manifest hash authority for entities bundle '{chosen_ent_id}'"
+                )
+            real_canonical = binfo["canonicalSha256"]
+            real_raw = binfo["rawSha256"]
+            if expected_ent_hash != real_canonical and expected_ent_hash != real_raw:
+                raise ProcessedStateReadError(
+                    f"Manifest hash mismatch for entities bundle '{chosen_ent_id}': expected {expected_ent_hash}, computed canonical={real_canonical}, file={real_raw}"
+                )
             b_dir = binfo["bundleDir"]
             ent_file = b_dir / "artifacts" / "entities.json"
             if not ent_file.exists():
@@ -424,7 +459,8 @@ def load_certified_pilot_artifacts(
             expected_rel_hash = approved_decisions["relations"]["manifestHash"]
             required_input_ent = approved_decisions["relations"].get("inputEntitiesBundle")
         elif "relations" in active_requests:
-            if current_stage == "relations" or raw_status == "needs_review" or pipeline_status == "NEEDS_HUMAN_REVIEW":
+            # Allow candidate preview ONLY if operational currentStage matches "relations"
+            if current_stage == "relations":
                 chosen_rel_id = active_requests["relations"]["bundleId"]
                 expected_rel_hash = active_requests["relations"]["manifestHash"]
                 required_input_ent = active_requests["relations"].get("inputEntitiesBundle")
@@ -442,13 +478,16 @@ def load_certified_pilot_artifacts(
                     f"Certified relations bundle '{chosen_rel_id}' not found in accepted bundles"
                 )
             binfo = book_candidate_bundles[chosen_rel_id]
-            if expected_rel_hash:
-                real_canonical = binfo["canonicalSha256"]
-                real_raw = binfo["rawSha256"]
-                if expected_rel_hash != real_canonical and expected_rel_hash != real_raw:
-                    raise ProcessedStateReadError(
-                        f"Manifest hash mismatch for relations bundle '{chosen_rel_id}': expected {expected_rel_hash}, computed canonical={real_canonical}, file={real_raw}"
-                    )
+            if not expected_rel_hash:
+                raise ProcessedStateReadError(
+                    f"Missing external manifest hash authority for relations bundle '{chosen_rel_id}'"
+                )
+            real_canonical = binfo["canonicalSha256"]
+            real_raw = binfo["rawSha256"]
+            if expected_rel_hash != real_canonical and expected_rel_hash != real_raw:
+                raise ProcessedStateReadError(
+                    f"Manifest hash mismatch for relations bundle '{chosen_rel_id}': expected {expected_rel_hash}, computed canonical={real_canonical}, file={real_raw}"
+                )
 
             # 2. inputEntitiesBundle MUST exist and MUST equal chosen_ent_id
             input_ent_ref = required_input_ent or binfo["manifest"].get("inputEntitiesBundle")
