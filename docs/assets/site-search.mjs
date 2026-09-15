@@ -155,3 +155,76 @@ export function searchEntities(entries, query, { bookId = null, type = null } = 
 
   return results.map((r) => r.entry);
 }
+
+/**
+ * Filters and sorts catalog books based on dual-axis criteria and text search.
+ *
+ * @param {Array} books - List of catalog book entries
+ * @param {object} [options={}] - Filter and sort options
+ * @returns {Array} - Filtered and sorted books
+ */
+export function filterBooks(
+  books,
+  {
+    query = '',
+    pipelineStatus = '',
+    rightsStatus = '',
+    publicationMode = '',
+    categoryHint = '',
+    sortBy = 'title_asc',
+  } = {}
+) {
+  if (!Array.isArray(books)) {
+    return [];
+  }
+
+  let result = [...books];
+
+  const q = normalizeSearch(query);
+  if (q) {
+    result = result.filter(
+      (b) =>
+        normalizeSearch(b.title).includes(q) ||
+        normalizeSearch(b.bookId).includes(q)
+    );
+  }
+
+  if (pipelineStatus && pipelineStatus !== 'all') {
+    result = result.filter((b) => b.pipelineStatus === pipelineStatus);
+  }
+
+  if (rightsStatus && rightsStatus !== 'all') {
+    result = result.filter((b) => b.rightsStatus === rightsStatus);
+  }
+
+  if (publicationMode && publicationMode !== 'all') {
+    result = result.filter((b) => b.publicationMode === publicationMode);
+  }
+
+  if (categoryHint && categoryHint !== 'all') {
+    result = result.filter(
+      (b) => Array.isArray(b.categoryHints) && b.categoryHints.includes(categoryHint)
+    );
+  }
+
+  if (sortBy === 'title_asc') {
+    result.sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
+  } else if (sortBy === 'title_desc') {
+    result.sort((a, b) => String(b.title || '').localeCompare(String(a.title || '')));
+  } else if (sortBy === 'entities_desc') {
+    result.sort(
+      (a, b) =>
+        (b.entityCount || 0) - (a.entityCount || 0) ||
+        String(a.title || '').localeCompare(String(b.title || ''))
+    );
+  } else if (sortBy === 'pages_desc') {
+    result.sort(
+      (a, b) =>
+        (b.pageCount || 0) - (a.pageCount || 0) ||
+        String(a.title || '').localeCompare(String(b.title || ''))
+    );
+  }
+
+  return result;
+}
+

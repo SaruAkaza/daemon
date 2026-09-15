@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeSearch, searchEntities } from '../../docs/assets/site-search.mjs';
+import { normalizeSearch, searchEntities, filterBooks } from '../../docs/assets/site-search.mjs';
 
 test('normalizeSearch strips accents, lowercases and trims', () => {
   assert.equal(normalizeSearch('  Árvore de Ébano!  '), 'arvore de ebano!');
@@ -173,3 +173,43 @@ test('input permutation invariance', () => {
   assert.deepEqual(r1, r2);
   assert.deepEqual(r2, r3);
 });
+
+test('filterBooks filters by rightsStatus and pipelineStatus independently and combined', () => {
+  const books = [
+    { bookId: 'b1', title: 'Trevas', pipelineStatus: 'DONE', rightsStatus: 'UNKNOWN', publicationMode: 'NOT_PUBLIC', entityCount: 10, pageCount: 50 },
+    { bookId: 'b2', title: 'Arkanun', pipelineStatus: 'WAITING', rightsStatus: 'AUTHORIZED', publicationMode: 'FULL_TEXT', entityCount: 0, pageCount: 20 },
+    { bookId: 'b3', title: 'Invasao', pipelineStatus: 'WAITING', rightsStatus: 'UNKNOWN', publicationMode: 'NOT_PUBLIC', entityCount: 0, pageCount: 100 },
+  ];
+
+  // Filter by pipelineStatus
+  assert.equal(filterBooks(books, { pipelineStatus: 'WAITING' }).length, 2);
+
+  // Filter by rightsStatus
+  assert.equal(filterBooks(books, { rightsStatus: 'AUTHORIZED' }).length, 1);
+  assert.equal(filterBooks(books, { rightsStatus: 'AUTHORIZED' })[0].bookId, 'b2');
+
+  // Combined filter
+  assert.equal(filterBooks(books, { pipelineStatus: 'WAITING', rightsStatus: 'UNKNOWN' }).length, 1);
+  assert.equal(filterBooks(books, { pipelineStatus: 'WAITING', rightsStatus: 'UNKNOWN' })[0].bookId, 'b3');
+});
+
+test('filterBooks sorting options', () => {
+  const books = [
+    { bookId: 'b1', title: 'Trevas', entityCount: 10, pageCount: 50 },
+    { bookId: 'b2', title: 'Arkanun', entityCount: 5, pageCount: 200 },
+    { bookId: 'b3', title: 'Invasao', entityCount: 20, pageCount: 10 },
+  ];
+
+  const byTitleAsc = filterBooks(books, { sortBy: 'title_asc' });
+  assert.deepEqual(byTitleAsc.map(b => b.bookId), ['b2', 'b3', 'b1']);
+
+  const byTitleDesc = filterBooks(books, { sortBy: 'title_desc' });
+  assert.deepEqual(byTitleDesc.map(b => b.bookId), ['b1', 'b3', 'b2']);
+
+  const byEntitiesDesc = filterBooks(books, { sortBy: 'entities_desc' });
+  assert.deepEqual(byEntitiesDesc.map(b => b.bookId), ['b3', 'b1', 'b2']);
+
+  const byPagesDesc = filterBooks(books, { sortBy: 'pages_desc' });
+  assert.deepEqual(byPagesDesc.map(b => b.bookId), ['b2', 'b1', 'b3']);
+});
+

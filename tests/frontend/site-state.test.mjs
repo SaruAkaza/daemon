@@ -1,6 +1,6 @@
-﻿import test from 'node:test';
+import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseRoute, createState, setLayout, setRoute, setFilters } from '../../docs/assets/site-state.mjs';
+import { parseRoute, createState, setLayout, setRoute, setFilters, setBookFilters } from '../../docs/assets/site-state.mjs';
 
 function createMockStorage(initial = {}) {
   const store = { ...initial };
@@ -128,3 +128,25 @@ test('setFilters updates query, bookId, and type preserving route and layout', (
   assert.equal(next.route, '#/entity/a');
   assert.equal(next.layout, 'classic');
 });
+
+test('createState initializes bookFilters with dual-axis defaults', () => {
+  const state = createState();
+  assert.deepEqual(state.bookFilters, {
+    query: '',
+    pipelineStatus: 'all',
+    rightsStatus: 'all',
+    publicationMode: 'all',
+    sortBy: 'title_asc',
+  });
+});
+
+test('setBookFilters updates bookFilters immutably', () => {
+  const state = createState();
+  const next = setBookFilters(state, { pipelineStatus: 'RUNNING', rightsStatus: 'UNKNOWN' });
+  assert.notEqual(state, next);
+  assert.equal(next.bookFilters.pipelineStatus, 'RUNNING');
+  assert.equal(next.bookFilters.rightsStatus, 'UNKNOWN');
+  assert.equal(next.bookFilters.sortBy, 'title_asc');
+  assert.equal(state.bookFilters.pipelineStatus, 'all');
+});
+

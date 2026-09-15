@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Daemon Tools — Site View Model Store and Client-Side Validator (ES Module)
  * Implements strict, fail-closed schema validation and lazy per-book loading.
  */
@@ -305,13 +305,17 @@ export function createSiteStore(baseUrl, fetcher = fetch) {
       return catalog;
     },
 
+    getBookMetadata(bookId) {
+      if (!catalog || !Array.isArray(catalog.books)) return null;
+      return catalog.books.find((b) => b.bookId === bookId) || null;
+    },
+
     getSearchIndex() {
       return searchIndex;
     },
 
     getLoadedBook(bookId) {
-      return bookCache.get(bookId) || null,
-      bookCache.has(bookId) ? bookCache.get(bookId) : null;
+      return bookCache.get(bookId) || null;
     },
 
     getLoadedBookIds() {

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Daemon Tools — Site Route Parsing and Layout State Management (ES Module)
  * Handles client-side navigation, defensive storage reads, and responsive layout preferences.
  */
@@ -90,6 +90,13 @@ export function createState(storage = null, initialHash = '#/') {
     query: '',
     type: null,
     layout,
+    bookFilters: {
+      query: '',
+      pipelineStatus: 'all',
+      rightsStatus: 'all',
+      publicationMode: 'all',
+      sortBy: 'title_asc',
+    },
   };
 }
 
@@ -149,3 +156,21 @@ export function setFilters(state, { query, bookId, type }) {
     ...(type !== undefined ? { type: type ? String(type) : null } : {}),
   };
 }
+
+/**
+ * Updates catalog book filters and sorting immutably.
+ *
+ * @param {object} state
+ * @param {object} [updates={}]
+ * @returns {object}
+ */
+export function setBookFilters(state, updates = {}) {
+  return {
+    ...state,
+    bookFilters: {
+      ...state.bookFilters,
+      ...updates,
+    },
+  };
+}
+

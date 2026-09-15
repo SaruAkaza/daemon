@@ -1,4 +1,4 @@
-﻿import test from 'node:test';
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createSiteStore } from '../../docs/assets/site-model.mjs';
 
@@ -205,3 +205,34 @@ test('clear() resets store and cached books', async () => {
   await store.loadBook('book-a');
   assert.equal(fetcher.getCounts()['/site-data/books/book-a.json'], 2);
 });
+
+test('getBookMetadata returns dual-axis fields', async () => {
+  const fetcher = mockFetcher({
+    '/site-data/catalog.json': {
+      data: {
+        siteViewModelVersion: '1',
+        mode: 'restricted_preview',
+        projectionId: 'proj-001',
+        books: [
+          {
+            bookId: 'trevas',
+            title: 'Trevas',
+            pipelineStatus: 'DONE',
+            rightsStatus: 'UNKNOWN',
+            publicationMode: 'NOT_PUBLIC',
+            currentStage: 'qa',
+            path: 'books/trevas.json',
+            groups: [],
+          },
+        ],
+      },
+    },
+  });
+  const store = createSiteStore('/site-data/', fetcher);
+  await store.loadCatalog();
+  const meta = store.getBookMetadata('trevas');
+  assert.equal(meta.rightsStatus, 'UNKNOWN');
+  assert.equal(meta.pipelineStatus, 'DONE');
+  assert.equal(meta.currentStage, 'qa');
+});
+
