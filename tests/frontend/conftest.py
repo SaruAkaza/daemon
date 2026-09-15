@@ -239,6 +239,7 @@ def _setup_synthetic_archive_runtime(runtime_dir: Path) -> Path:
     dec_data = {
         "decisionId": "DEC-ANIM-001-ENTITIES-01",
         "decision": "APPROVE",
+        "reviewer": "human-evaluator",
         "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
         "reviewedResultManifestSha256": ent_manifest_hash,
     }

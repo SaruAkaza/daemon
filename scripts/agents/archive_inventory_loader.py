@@ -248,8 +248,14 @@ def load_certified_pilot_artifacts(
                     except Exception as e:
                         raise ProcessedStateReadError(f"Corrupt decision file {df}: {e}") from e
 
-                    # Reject non-human or automated agent decisions
-                    reviewer = str(d.get("reviewer", "")).strip().lower()
+                    # Human reviewer identity is strictly required for decision authority
+                    raw_reviewer = d.get("reviewer")
+                    if raw_reviewer is None or not isinstance(raw_reviewer, str) or not raw_reviewer.strip():
+                        raise ProcessedStateReadError(
+                            f"Missing or blank reviewer in decision {df.name}"
+                        )
+
+                    reviewer = raw_reviewer.strip().lower()
                     if reviewer in AUTOMATED_AGENT_IDENTIFIERS or any(agt in reviewer for agt in ("-agent", "llm", "gemini", "claude", "gpt")):
                         continue
 

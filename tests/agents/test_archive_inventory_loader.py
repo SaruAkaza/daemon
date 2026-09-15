@@ -1108,3 +1108,110 @@ def test_request_stage_match_promotes_candidate_for_current_stage(tmp_path):
     assert len(overlay2["synbook"]["relations"]) == 1
     assert overlay2["synbook"]["relations"][0]["relationId"] == "r-1"
 
+
+def test_missing_reviewer_decision_fails_closed(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="approved", current_stage="entities")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    ent_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    ent_art = ent_dir / "artifacts"
+    ent_art.mkdir(parents=True)
+    (ent_art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    ent_man = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    ent_hash = compute_result_manifest_hash(ent_man)
+    (ent_dir / "result-manifest.json").write_text(json.dumps(ent_man), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    # Decision omits reviewer field entirely
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": ent_hash,
+        }),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ProcessedStateReadError, match="Missing or blank reviewer in decision"):
+        load_certified_pilot_artifacts(runtime_dir=tmp_path)
+
+
+def test_blank_reviewer_decision_fails_closed(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="approved", current_stage="entities")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    ent_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    ent_art = ent_dir / "artifacts"
+    ent_art.mkdir(parents=True)
+    (ent_art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    ent_man = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    ent_hash = compute_result_manifest_hash(ent_man)
+    (ent_dir / "result-manifest.json").write_text(json.dumps(ent_man), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    # Decision has blank reviewer
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "reviewer": "   ",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": ent_hash,
+        }),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ProcessedStateReadError, match="Missing or blank reviewer in decision"):
+        load_certified_pilot_artifacts(runtime_dir=tmp_path)
+
+
+def test_automated_agent_reviewer_decision_does_not_exercise_authority(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="in_progress", current_stage="entities")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    ent_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    ent_art = ent_dir / "artifacts"
+    ent_art.mkdir(parents=True)
+    (ent_art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    ent_man = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    ent_hash = compute_result_manifest_hash(ent_man)
+    (ent_dir / "result-manifest.json").write_text(json.dumps(ent_man), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    # Decision is signed by an automated agent (gemini / llm) -> cannot exercise human authority
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "reviewer": "entities-agent",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": ent_hash,
+        }),
+        encoding="utf-8",
+    )
+
+    overlay = load_certified_pilot_artifacts(runtime_dir=tmp_path)
+    assert "synbook" in overlay
+    # Agent decision does not authorize the bundle, so entities remain empty
+    assert overlay["synbook"]["entities"] == []
+
+
