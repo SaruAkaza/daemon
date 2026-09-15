@@ -299,6 +299,92 @@ def test_dedicated_archive_endpoint(tmp_path: Path):
         server.stop()
 
 
+def test_archive_root_strict_containment(tmp_path: Path):
+    preview_root = tmp_path / "preview"
+    preview_root.mkdir(parents=True)
+    # File in preview_root, sibling to site-data
+    (preview_root / "secret.json").write_text('{"secret": "hidden"}', encoding="utf-8")
+
+    site_data = preview_root / "site-data"
+    site_data.mkdir(parents=True)
+    (site_data / "catalog.json").write_text('{"archive": true}', encoding="utf-8")
+
+    server = PreviewServer(preview_root=preview_root, docs_root=Path("docs"), host="127.0.0.1", port=0)
+    server.start()
+    try:
+        # GET /api/preview/archive/secret.json -> 404 (secret.json is not in site-data)
+        url_sec = f"http://127.0.0.1:{server.port}/api/preview/archive/secret.json"
+        with pytest.raises(urllib.error.HTTPError) as exc:
+            urllib.request.urlopen(url_sec)
+        assert exc.value.code == 404
+
+        # GET /api/preview/archive/../secret.json -> 400 or 403 or 404 (path traversal blocked)
+        url_sec_trav = f"http://127.0.0.1:{server.port}/api/preview/archive/../secret.json"
+        with pytest.raises(urllib.error.HTTPError) as exc_trav:
+            urllib.request.urlopen(url_sec_trav)
+        assert exc_trav.value.code in (400, 403, 404)
+
+        # GET /api/preview/archive/catalog.json -> 200
+        url_cat = f"http://127.0.0.1:{server.port}/api/preview/archive/catalog.json"
+        with urllib.request.urlopen(url_cat) as resp:
+            assert resp.status == 200
+            data = json.loads(resp.read().decode("utf-8"))
+            assert data["archive"] is True
+    finally:
+        server.stop()
+
+
+def test_entrypoint_real_execution_with_project_archive(tmp_path: Path, monkeypatch):
+    from scripts.agents.preview_server import PreviewServer, main
+    import threading
+
+    preview_root = tmp_path / "custom_preview"
+    runtime_dir = tmp_path / "runtime"
+    runtime_dir.mkdir(parents=True)
+    (runtime_dir / "jobs").mkdir(parents=True)
+
+    import time
+
+    captured_server = []
+    original_start = PreviewServer.start
+
+    def patched_start(self):
+        original_start(self)
+        captured_server.append(self)
+
+    monkeypatch.setattr(PreviewServer, "start", patched_start)
+
+    request_results = {}
+
+    # Monkeypatch time.sleep to make requests while server is alive and then raise KeyboardInterrupt
+    def fake_sleep(seconds):
+        srv = captured_server[0]
+        url = f"http://127.0.0.1:{srv.port}/api/preview/archive/catalog.json"
+        with urllib.request.urlopen(url) as resp:
+            request_results["status"] = resp.status
+            request_results["header"] = resp.headers.get("X-Daemon-Local-Preview")
+            request_results["data"] = json.loads(resp.read().decode("utf-8"))
+        raise KeyboardInterrupt()
+
+    monkeypatch.setattr(time, "sleep", fake_sleep)
+
+    # Run main entrypoint with --project-archive
+    cli_args = [
+        "--project-archive",
+        "--preview-root", str(preview_root),
+        "--runtime-dir", str(runtime_dir),
+        "--port", "0",
+    ]
+    exit_code = main(cli_args)
+    assert exit_code == 0
+    assert len(captured_server) == 1
+    assert request_results.get("status") == 200
+    assert request_results.get("header") == "active"
+    assert len(request_results.get("data", {}).get("books", [])) == 281
+    assert (preview_root / "site-data" / "catalog.json").is_file()
+    assert captured_server[0]._server is None
+
+
 def test_main_cli_help():
     from scripts.agents.preview_server import main
     with pytest.raises(SystemExit) as exc:

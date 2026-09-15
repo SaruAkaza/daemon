@@ -3,6 +3,7 @@ from __future__ import annotations
 import mimetypes
 import re
 import threading
+import time
 import urllib.parse
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
@@ -107,10 +108,8 @@ class PreviewServer:
                     target_file = (archive_root / subpath).resolve()
                     if not target_file.is_file() and subpath.startswith("site-data/"):
                         target_file = (archive_root / subpath[len("site-data/"):]).resolve()
-                    if not target_file.is_file():
-                        target_file = (preview_root / subpath).resolve()
 
-                    if not (_is_contained(target_file, archive_root) or _is_contained(target_file, preview_root)):
+                    if not _is_contained(target_file, archive_root):
                         self.send_error(403, "Access forbidden")
                         return
 
@@ -203,13 +202,10 @@ class PreviewServer:
                 match_assets_data = re.match(r"^/assets/site-data/(.*)$", req_path)
                 if match_assets_data:
                     subpath = match_assets_data.group(1)
+                    archive_root = (preview_root / "site-data").resolve()
+                    target_file = (archive_root / subpath).resolve()
 
-                    # 1. Local restricted preview root
-                    target_file = (preview_root / "site-data" / subpath).resolve()
-                    if not target_file.is_file():
-                        target_file = (preview_root / subpath).resolve()
-
-                    if target_file.is_file() and (_is_contained(target_file, (preview_root / "site-data").resolve()) or _is_contained(target_file, preview_root)):
+                    if _is_contained(target_file, archive_root) and target_file.is_file():
                         content = target_file.read_bytes()
                         ctype = _get_content_type(target_file)
                         self.send_response(200)
@@ -228,13 +224,13 @@ class PreviewServer:
                             effective_public = cand
 
                     if effective_public and effective_public.is_dir():
-                        target_file = (effective_public / subpath).resolve()
-                        if not target_file.is_file():
-                            target_file = (effective_public / "site-data" / subpath).resolve()
+                        pub_target = (effective_public / "site-data" / subpath).resolve()
+                        if not pub_target.is_file():
+                            pub_target = (effective_public / subpath).resolve()
 
-                        if target_file.is_file() and _is_contained(target_file, effective_public):
-                            content = target_file.read_bytes()
-                            ctype = _get_content_type(target_file)
+                        if _is_contained(pub_target, effective_public) and pub_target.is_file():
+                            content = pub_target.read_bytes()
+                            ctype = _get_content_type(pub_target)
                             self.send_response(200)
                             self.send_header("Content-Type", ctype)
                             self.send_header("Content-Length", str(len(content)))
@@ -242,6 +238,9 @@ class PreviewServer:
                             self.end_headers()
                             self.wfile.write(content)
                             return
+
+                    self.send_error(404, f"Site data asset not found: {subpath}")
+                    return
 
                 # Static docs serving
                 if req_path in ("/", ""):
@@ -289,26 +288,40 @@ class PreviewServer:
     @classmethod
     def run_preview_server(
         cls,
-        preview_root: Path | str,
+        preview_root: Path | str | None = None,
         port: int = 8080,
         host: str = "127.0.0.1",
         public_root: Path | str | None = None,
-        project_archive: bool = True,
+        project_archive: bool = False,
         runtime_dir: Path | str | None = None,
+        workspace_root: Path | str | None = None,
     ) -> None:
         """Entry point to run the preview server indefinitely in the foreground."""
-        p_root = Path(preview_root).resolve()
+        from scripts.agents.archive_inventory_loader import resolve_canonical_runtime_dir
+
+        ws_root = Path(workspace_root).resolve() if workspace_root else Path(__file__).parents[2].resolve()
+
+        if preview_root is None:
+            canonical_rt = resolve_canonical_runtime_dir(runtime_dir)
+            p_root = (canonical_rt / "preview").resolve()
+        else:
+            p_root = Path(preview_root).resolve()
+
         if project_archive:
             from scripts.agents.preview_projector import LocalPreviewProjector
             projector = LocalPreviewProjector()
-            projector.project_archive_preview(preview_root=p_root, runtime_dir=runtime_dir)
+            projector.project_archive_preview(
+                workspace_root=ws_root,
+                preview_root=p_root,
+                runtime_dir=runtime_dir,
+            )
 
         server = cls(preview_root=p_root, port=port, host=host, public_root=public_root)
         server.start()
         print(f"Daemon Tools Local Preview Server running on http://{host}:{server.port}")
         try:
             while True:
-                threading.Event().wait(1.0)
+                time.sleep(1.0)
         except KeyboardInterrupt:
             print("\nStopping preview server...")
             server.stop()
@@ -321,18 +334,19 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--public-root", type=str, default=None, help="Root directory for public projection")
     parser.add_argument("--port", type=int, default=8080, help="Port to listen on (default: 8080)")
     parser.add_argument("--host", type=str, default="127.0.0.1", help="Host interface (default: 127.0.0.1)")
-    parser.add_argument("--no-project-archive", action="store_true", help="Skip project_archive_preview")
+    parser.add_argument("--project-archive", action="store_true", default=False, help="Project Acervo 281 preview before starting server")
     parser.add_argument("--runtime-dir", type=str, default=None, help="Path to .daemon_runtime")
+    parser.add_argument("--workspace-root", type=str, default=None, help="Path to repository workspace root")
     args = parser.parse_args(argv)
 
-    p_root = Path(args.preview_root).resolve() if args.preview_root else (Path(__file__).parents[2] / ".daemon_runtime" / "preview")
     PreviewServer.run_preview_server(
-        preview_root=p_root,
+        preview_root=args.preview_root,
         port=args.port,
         host=args.host,
         public_root=args.public_root,
-        project_archive=not args.no_project_archive,
+        project_archive=args.project_archive,
         runtime_dir=args.runtime_dir,
+        workspace_root=args.workspace_root,
     )
     return 0
 

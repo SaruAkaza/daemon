@@ -173,9 +173,10 @@ def test_archive_inventory_loader_loads_real_animalidade_runtime_artifacts():
     # Rights must strictly remain canonical
     assert anim["rightsStatus"] == "UNKNOWN"
     assert anim["publicationMode"] == "NOT_PUBLIC"
+from scripts.agents.canonical_json import compute_result_manifest_hash, sha256_bytes
 
 
-def _make_test_job(job_id: str, book_id: str, status: str = "in_progress", current_stage: str | None = "entities") -> dict:
+def _make_test_job(job_id: str, book_id: str, status: str = "in_progress", current_stage: str = "entities") -> dict:
     return {
         "schemaVersion": "1.0",
         "jobId": job_id,
@@ -217,15 +218,14 @@ def test_lineage_selection_favors_certified_reference_over_highest_attempt(tmp_p
         json.dumps([{"id": "ent-1", "name": "Approved Ent", "provenance": {"source": "synbook", "pages": [1]}}]),
         encoding="utf-8",
     )
-    (b1_dir / "result-manifest.json").write_text(
-        json.dumps({
-            "bookId": "synbook",
-            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
-            "attemptNumber": 1,
-            "resultManifestSha256": "hash-att1",
-        }),
-        encoding="utf-8",
-    )
+    b1_manifest = {
+        "bookId": "synbook",
+        "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+        "attemptNumber": 1,
+    }
+    b1_hash = compute_result_manifest_hash(b1_manifest)
+    b1_manifest["resultManifestSha256"] = b1_hash
+    (b1_dir / "result-manifest.json").write_text(json.dumps(b1_manifest), encoding="utf-8")
 
     b2_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att2-22222222"
     b2_art = b2_dir / "artifacts"
@@ -234,25 +234,25 @@ def test_lineage_selection_favors_certified_reference_over_highest_attempt(tmp_p
         json.dumps([{"id": "ent-2", "name": "Rogue Ent", "provenance": {"source": "synbook", "pages": [1]}}]),
         encoding="utf-8",
     )
-    (b2_dir / "result-manifest.json").write_text(
-        json.dumps({
-            "bookId": "synbook",
-            "resultBundleId": "RB-SYN-ENTITIES-att2-22222222",
-            "attemptNumber": 2,
-            "resultManifestSha256": "hash-att2",
-        }),
-        encoding="utf-8",
-    )
+    b2_manifest = {
+        "bookId": "synbook",
+        "resultBundleId": "RB-SYN-ENTITIES-att2-22222222",
+        "attemptNumber": 2,
+    }
+    b2_hash = compute_result_manifest_hash(b2_manifest)
+    b2_manifest["resultManifestSha256"] = b2_hash
+    (b2_dir / "result-manifest.json").write_text(json.dumps(b2_manifest), encoding="utf-8")
 
-    # Decision certifies att1 explicitly
+    # Decision certifies att1 explicitly with its real cryptographic hash
     dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
     dec_dir.mkdir(parents=True)
     (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
         json.dumps({
             "decisionId": "DEC-SYN-001-ENTITIES-01",
             "decision": "APPROVE",
+            "reviewer": "human-reviewer",
             "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
-            "reviewedResultManifestSha256": "hash-att1",
+            "reviewedResultManifestSha256": b1_hash,
         }),
         encoding="utf-8",
     )
@@ -264,32 +264,70 @@ def test_lineage_selection_favors_certified_reference_over_highest_attempt(tmp_p
     assert overlay["synbook"]["entities"][0]["name"] == "Approved Ent"
 
 
-def test_multiple_accepted_bundles_without_certification_fails_closed(tmp_path):
+def test_single_accepted_bundle_without_certified_authority_is_not_selected(tmp_path):
     jobs_dir = tmp_path / "jobs"
     jobs_dir.mkdir(parents=True)
     job_payload = _make_test_job("JOB-SYN-001", "synbook", status="in_progress", current_stage="entities")
     (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
 
-    # Create 2 accepted entity bundles without decision or request
-    for att in [1, 2]:
-        b_dir = tmp_path / "bundles" / "accepted" / f"RB-SYN-ENTITIES-att{att}-abcdef{att}"
-        art = b_dir / "artifacts"
-        art.mkdir(parents=True)
-        (art / "entities.json").write_text(
-            json.dumps([{"id": f"ent-{att}", "name": f"Ent {att}", "provenance": {"source": "synbook", "pages": [1]}}]),
-            encoding="utf-8",
-        )
-        (b_dir / "result-manifest.json").write_text(
-            json.dumps({
-                "bookId": "synbook",
-                "resultBundleId": f"RB-SYN-ENTITIES-att{att}-abcdef{att}",
-                "attemptNumber": att,
-            }),
-            encoding="utf-8",
-        )
+    # Create 1 accepted entity bundle without decision or request
+    b_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    art = b_dir / "artifacts"
+    art.mkdir(parents=True)
+    (art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    (b_dir / "result-manifest.json").write_text(
+        json.dumps({
+            "bookId": "synbook",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "attemptNumber": 1,
+        }),
+        encoding="utf-8",
+    )
 
-    with pytest.raises(ProcessedStateReadError, match="Multiple accepted entities bundles"):
-        load_certified_pilot_artifacts(runtime_dir=tmp_path)
+    overlay = load_certified_pilot_artifacts(runtime_dir=tmp_path)
+    assert "synbook" in overlay
+    # Without certified authority, entities must remain empty (no arbitrary assumption)
+    assert overlay["synbook"]["entities"] == []
+
+
+def test_rejected_or_cancelled_request_never_authorizes_candidate_bundle(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="needs_review", current_stage="entities")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    b_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    art = b_dir / "artifacts"
+    art.mkdir(parents=True)
+    (art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    b_man = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    b_hash = compute_result_manifest_hash(b_man)
+    (b_dir / "result-manifest.json").write_text(json.dumps(b_man), encoding="utf-8")
+
+    # Request has status REJECTED
+    req_dir = tmp_path / "audit" / "pilot" / "synbook" / "requests"
+    req_dir.mkdir(parents=True)
+    (req_dir / "REQ-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "requestId": "REQ-SYN-001-ENTITIES-01",
+            "jobId": "JOB-SYN-001",
+            "stage": "entities",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "resultManifestSha256": b_hash,
+            "status": "REJECTED",
+        }),
+        encoding="utf-8",
+    )
+
+    overlay = load_certified_pilot_artifacts(runtime_dir=tmp_path)
+    assert "synbook" in overlay
+    assert overlay["synbook"]["entities"] == []
 
 
 def test_multiple_jobs_for_same_book_fails_closed(tmp_path):
@@ -301,6 +339,151 @@ def test_multiple_jobs_for_same_book_fails_closed(tmp_path):
     (jobs_dir / "JOB-A-002.json").write_text(json.dumps(j2), encoding="utf-8")
 
     with pytest.raises(ProcessedStateReadError, match="Multiple jobs found for bookId 'booka'"):
+        load_certified_pilot_artifacts(runtime_dir=tmp_path)
+
+
+def test_ambiguous_approved_decisions_fails_closed(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="approved", current_stage="entities")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    h1 = "1" * 64
+    h2 = "2" * 64
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "reviewer": "human-1",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": h1,
+            "attemptNumber": 1,
+            "decidedAt": "2026-09-09T10:00:00Z",
+        }),
+        encoding="utf-8",
+    )
+    (dec_dir / "DEC-SYN-001-ENTITIES-02.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-02",
+            "decision": "APPROVE",
+            "reviewer": "human-2",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-22222222",
+            "reviewedResultManifestSha256": h2,
+            "attemptNumber": 1,
+            "decidedAt": "2026-09-09T10:00:00Z",
+        }),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ProcessedStateReadError, match="Ambiguous approved decisions"):
+        load_certified_pilot_artifacts(runtime_dir=tmp_path)
+
+
+def test_cross_stage_lineage_missing_certified_entities_fails_closed(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="needs_review", current_stage="relations")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    rel_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-RELATIONS-att1-99999999"
+    rel_art = rel_dir / "artifacts"
+    rel_art.mkdir(parents=True)
+    (rel_art / "relations.json").write_text(
+        json.dumps([{"relationId": "r-1", "type": "CAN_CHOOSE_POWER", "sourceEntityId": "ent-1", "targetEntityId": "ent-2", "source": "synbook"}]),
+        encoding="utf-8",
+    )
+    rel_manifest = {
+        "bookId": "synbook",
+        "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
+        "attemptNumber": 1,
+        "inputEntitiesBundle": "RB-SYN-ENTITIES-att1-11111111",
+    }
+    rel_hash = compute_result_manifest_hash(rel_manifest)
+    (rel_dir / "result-manifest.json").write_text(json.dumps(rel_manifest), encoding="utf-8")
+
+    req_dir = tmp_path / "audit" / "pilot" / "synbook" / "requests"
+    req_dir.mkdir(parents=True)
+    (req_dir / "REQ-SYN-001-RELATIONS-01.json").write_text(
+        json.dumps({
+            "requestId": "REQ-SYN-001-RELATIONS-01",
+            "jobId": "JOB-SYN-001",
+            "stage": "relations",
+            "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
+            "resultManifestSha256": rel_hash,
+            "status": "PENDING",
+            "inputEntitiesBundle": "RB-SYN-ENTITIES-att1-11111111",
+        }),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ProcessedStateReadError, match="without certified entities bundle"):
+        load_certified_pilot_artifacts(runtime_dir=tmp_path)
+
+
+def test_cross_stage_lineage_missing_input_entities_declaration_fails_closed(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="needs_review", current_stage="relations")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    # Certified entities
+    ent_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    ent_art = ent_dir / "artifacts"
+    ent_art.mkdir(parents=True)
+    (ent_art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    ent_man = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    ent_hash = compute_result_manifest_hash(ent_man)
+    (ent_dir / "result-manifest.json").write_text(json.dumps(ent_man), encoding="utf-8")
+
+    # Certified relations WITHOUT inputEntitiesBundle
+    rel_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-RELATIONS-att1-99999999"
+    rel_art = rel_dir / "artifacts"
+    rel_art.mkdir(parents=True)
+    (rel_art / "relations.json").write_text(
+        json.dumps([{"relationId": "r-1", "type": "CAN_CHOOSE_POWER", "sourceEntityId": "ent-1", "targetEntityId": "ent-2", "source": "synbook"}]),
+        encoding="utf-8",
+    )
+    rel_man = {
+        "bookId": "synbook",
+        "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
+        "attemptNumber": 1,
+    }
+    rel_hash = compute_result_manifest_hash(rel_man)
+    (rel_dir / "result-manifest.json").write_text(json.dumps(rel_man), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "reviewer": "human",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": ent_hash,
+        }),
+        encoding="utf-8",
+    )
+
+    req_dir = tmp_path / "audit" / "pilot" / "synbook" / "requests"
+    req_dir.mkdir(parents=True)
+    (req_dir / "REQ-SYN-001-RELATIONS-01.json").write_text(
+        json.dumps({
+            "requestId": "REQ-SYN-001-RELATIONS-01",
+            "jobId": "JOB-SYN-001",
+            "stage": "relations",
+            "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
+            "resultManifestSha256": rel_hash,
+            "status": "PENDING",
+        }),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ProcessedStateReadError, match="missing required inputEntitiesBundle"):
         load_certified_pilot_artifacts(runtime_dir=tmp_path)
 
 
@@ -318,10 +501,9 @@ def test_cross_stage_lineage_mismatch_fails_closed(tmp_path):
         json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
         encoding="utf-8",
     )
-    (ent_dir / "result-manifest.json").write_text(
-        json.dumps({"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}),
-        encoding="utf-8",
-    )
+    ent_man = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    ent_hash = compute_result_manifest_hash(ent_man)
+    (ent_dir / "result-manifest.json").write_text(json.dumps(ent_man), encoding="utf-8")
 
     # Relations bundle claiming to be built from mismatched ent att2
     rel_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-RELATIONS-att1-99999999"
@@ -331,11 +513,38 @@ def test_cross_stage_lineage_mismatch_fails_closed(tmp_path):
         json.dumps([{"relationId": "r-1", "type": "CAN_CHOOSE_POWER", "sourceEntityId": "ent-1", "targetEntityId": "ent-2", "source": "synbook"}]),
         encoding="utf-8",
     )
-    (rel_dir / "result-manifest.json").write_text(
+    rel_man = {
+        "bookId": "synbook",
+        "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
+        "attemptNumber": 1,
+        "inputEntitiesBundle": "RB-SYN-ENTITIES-att2-22222222",
+    }
+    rel_hash = compute_result_manifest_hash(rel_man)
+    (rel_dir / "result-manifest.json").write_text(json.dumps(rel_man), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
         json.dumps({
-            "bookId": "synbook",
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "reviewer": "human",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": ent_hash,
+        }),
+        encoding="utf-8",
+    )
+
+    req_dir = tmp_path / "audit" / "pilot" / "synbook" / "requests"
+    req_dir.mkdir(parents=True)
+    (req_dir / "REQ-SYN-001-RELATIONS-01.json").write_text(
+        json.dumps({
+            "requestId": "REQ-SYN-001-RELATIONS-01",
+            "jobId": "JOB-SYN-001",
+            "stage": "relations",
             "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
-            "attemptNumber": 1,
+            "resultManifestSha256": rel_hash,
+            "status": "PENDING",
             "inputEntitiesBundle": "RB-SYN-ENTITIES-att2-22222222",
         }),
         encoding="utf-8",
@@ -345,7 +554,116 @@ def test_cross_stage_lineage_mismatch_fails_closed(tmp_path):
         load_certified_pilot_artifacts(runtime_dir=tmp_path)
 
 
-def test_manifest_hash_mismatch_fails_closed(tmp_path):
+def test_cross_stage_lineage_valid_reference_passes(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="needs_review", current_stage="relations")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    # Certified entities bundle att1
+    ent_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    ent_art = ent_dir / "artifacts"
+    ent_art.mkdir(parents=True)
+    (ent_art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    ent_man = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    ent_hash = compute_result_manifest_hash(ent_man)
+    (ent_dir / "result-manifest.json").write_text(json.dumps(ent_man), encoding="utf-8")
+
+    # Certified relations bundle correctly matching att1
+    rel_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-RELATIONS-att1-99999999"
+    rel_art = rel_dir / "artifacts"
+    rel_art.mkdir(parents=True)
+    (rel_art / "relations.json").write_text(
+        json.dumps([{"relationId": "r-1", "type": "CAN_CHOOSE_POWER", "sourceEntityId": "ent-1", "targetEntityId": "ent-2", "source": "synbook"}]),
+        encoding="utf-8",
+    )
+    rel_man = {
+        "bookId": "synbook",
+        "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
+        "attemptNumber": 1,
+        "inputEntitiesBundle": "RB-SYN-ENTITIES-att1-11111111",
+    }
+    rel_hash = compute_result_manifest_hash(rel_man)
+    (rel_dir / "result-manifest.json").write_text(json.dumps(rel_man), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "reviewer": "human",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": ent_hash,
+        }),
+        encoding="utf-8",
+    )
+
+    req_dir = tmp_path / "audit" / "pilot" / "synbook" / "requests"
+    req_dir.mkdir(parents=True)
+    (req_dir / "REQ-SYN-001-RELATIONS-01.json").write_text(
+        json.dumps({
+            "requestId": "REQ-SYN-001-RELATIONS-01",
+            "jobId": "JOB-SYN-001",
+            "stage": "relations",
+            "resultBundleId": "RB-SYN-RELATIONS-att1-99999999",
+            "resultManifestSha256": rel_hash,
+            "status": "PENDING",
+            "inputEntitiesBundle": "RB-SYN-ENTITIES-att1-11111111",
+        }),
+        encoding="utf-8",
+    )
+
+    overlay = load_certified_pilot_artifacts(runtime_dir=tmp_path)
+    assert "synbook" in overlay
+    assert len(overlay["synbook"]["entities"]) == 1
+    assert len(overlay["synbook"]["relations"]) == 1
+
+
+def test_manifest_tamper_detection_fails_closed(tmp_path):
+    jobs_dir = tmp_path / "jobs"
+    jobs_dir.mkdir(parents=True)
+    job_payload = _make_test_job("JOB-SYN-001", "synbook", status="approved", current_stage="entities")
+    (jobs_dir / "JOB-SYN-001.json").write_text(json.dumps(job_payload), encoding="utf-8")
+
+    ent_dir = tmp_path / "bundles" / "accepted" / "RB-SYN-ENTITIES-att1-11111111"
+    ent_art = ent_dir / "artifacts"
+    ent_art.mkdir(parents=True)
+    (ent_art / "entities.json").write_text(
+        json.dumps([{"id": "ent-1", "name": "Ent 1", "provenance": {"source": "synbook", "pages": [1]}}]),
+        encoding="utf-8",
+    )
+    original_manifest = {"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}
+    original_hash = compute_result_manifest_hash(original_manifest)
+
+    # 1. Tamper detection: Manifest on disk has tampered extra field, but keeps original resultManifestSha256 self-declared
+    tampered_manifest = dict(original_manifest)
+    tampered_manifest["tamperedField"] = "malicious_injection"
+    tampered_manifest["resultManifestSha256"] = original_hash
+    (ent_dir / "result-manifest.json").write_text(json.dumps(tampered_manifest), encoding="utf-8")
+
+    dec_dir = tmp_path / "audit" / "pilot" / "synbook" / "decisions"
+    dec_dir.mkdir(parents=True)
+    (dec_dir / "DEC-SYN-001-ENTITIES-01.json").write_text(
+        json.dumps({
+            "decisionId": "DEC-SYN-001-ENTITIES-01",
+            "decision": "APPROVE",
+            "reviewer": "human",
+            "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
+            "reviewedResultManifestSha256": original_hash,
+        }),
+        encoding="utf-8",
+    )
+
+    # Real calculated hash differs from original_hash -> must fail tamper check
+    with pytest.raises(ProcessedStateReadError, match="Manifest hash mismatch"):
+        load_certified_pilot_artifacts(runtime_dir=tmp_path)
+
+
+def test_invalid_external_manifest_hash_format_fails_closed(tmp_path):
     jobs_dir = tmp_path / "jobs"
     jobs_dir.mkdir(parents=True)
     job_payload = _make_test_job("JOB-SYN-001", "synbook", status="approved", current_stage="entities")
@@ -359,7 +677,7 @@ def test_manifest_hash_mismatch_fails_closed(tmp_path):
         encoding="utf-8",
     )
     (ent_dir / "result-manifest.json").write_text(
-        json.dumps({"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1, "resultManifestSha256": "actual_sha"}),
+        json.dumps({"bookId": "synbook", "resultBundleId": "RB-SYN-ENTITIES-att1-11111111", "attemptNumber": 1}),
         encoding="utf-8",
     )
 
@@ -369,13 +687,14 @@ def test_manifest_hash_mismatch_fails_closed(tmp_path):
         json.dumps({
             "decisionId": "DEC-SYN-001-ENTITIES-01",
             "decision": "APPROVE",
+            "reviewer": "human",
             "resultBundleId": "RB-SYN-ENTITIES-att1-11111111",
-            "reviewedResultManifestSha256": "tampered_sha_expected",
+            "reviewedResultManifestSha256": "not-a-valid-sha256",
         }),
         encoding="utf-8",
     )
 
-    with pytest.raises(ProcessedStateReadError, match="Manifest hash mismatch"):
+    with pytest.raises(ProcessedStateReadError, match="Invalid external manifest hash format"):
         load_certified_pilot_artifacts(runtime_dir=tmp_path)
 
 

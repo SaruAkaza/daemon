@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import pytest
 
-from scripts.agents.canonical_json import canonical_json_bytes
+from scripts.agents.canonical_json import canonical_json_bytes, compute_result_manifest_hash
 from scripts.agents.frontend_projector import FrontendProjector
 from scripts.agents.preview_projector import LocalPreviewProjector
 from scripts.agents.preview_server import PreviewServer
@@ -219,11 +219,28 @@ def _setup_synthetic_archive_runtime(runtime_dir: Path) -> Path:
     req_dir = runtime_dir / "audit" / "pilot" / "animalidade" / "requests"
     req_dir.mkdir(parents=True, exist_ok=True)
 
+    ent_manifest = {
+        "bookId": "animalidade",
+        "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
+        "attemptNumber": 1,
+    }
+    ent_manifest_hash = compute_result_manifest_hash(ent_manifest)
+    ent_manifest["resultManifestSha256"] = ent_manifest_hash
+
+    rel_manifest = {
+        "bookId": "animalidade",
+        "resultBundleId": "RB-ANIM-RELATIONS-att2-3c451b57",
+        "attemptNumber": 2,
+        "inputEntitiesBundle": "RB-ANIM-ENTITIES-att1-50691836",
+    }
+    rel_manifest_hash = compute_result_manifest_hash(rel_manifest)
+    rel_manifest["resultManifestSha256"] = rel_manifest_hash
+
     dec_data = {
         "decisionId": "DEC-ANIM-001-ENTITIES-01",
         "decision": "APPROVE",
         "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
-        "reviewedResultManifestSha256": "7468a84aa69b5acacc2a5cc99da8fc8c6aba30a05829835222dcca8911a1f58a",
+        "reviewedResultManifestSha256": ent_manifest_hash,
     }
     (dec_dir / "DEC-ANIM-001-ENTITIES-01.json").write_text(json.dumps(dec_data), encoding="utf-8")
 
@@ -233,7 +250,7 @@ def _setup_synthetic_archive_runtime(runtime_dir: Path) -> Path:
         "attemptNumber": 2,
         "resultBundleId": "RB-ANIM-RELATIONS-att2-3c451b57",
         "inputEntitiesBundle": "RB-ANIM-ENTITIES-att1-50691836",
-        "reviewedResultManifestSha256": "ff959c8a43127de61dab385a4a07bd41e7b8d49df6c03064cf5fbef109a6f7a0",
+        "reviewedResultManifestSha256": rel_manifest_hash,
         "status": "NEEDS_HUMAN_REVIEW",
     }
     (req_dir / "REV-ANIM-001-RELATIONS-02.json").write_text(json.dumps(req_data), encoding="utf-8")
@@ -253,15 +270,7 @@ def _setup_synthetic_archive_runtime(runtime_dir: Path) -> Path:
         for i in range(56)
     ]
     (ent_art / "entities.json").write_text(json.dumps(entities), encoding="utf-8")
-    (ent_bundle / "result-manifest.json").write_text(
-        json.dumps({
-            "bookId": "animalidade",
-            "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
-            "attemptNumber": 1,
-            "resultManifestSha256": "7468a84aa69b5acacc2a5cc99da8fc8c6aba30a05829835222dcca8911a1f58a",
-        }),
-        encoding="utf-8",
-    )
+    (ent_bundle / "result-manifest.json").write_bytes(canonical_json_bytes(ent_manifest))
 
     rel_bundle = runtime_dir / "bundles" / "accepted" / "RB-ANIM-RELATIONS-att2-3c451b57"
     rel_art = rel_bundle / "artifacts"
@@ -277,16 +286,7 @@ def _setup_synthetic_archive_runtime(runtime_dir: Path) -> Path:
         for i in range(164)
     ]
     (rel_art / "relations.json").write_text(json.dumps(relations), encoding="utf-8")
-    (rel_bundle / "result-manifest.json").write_text(
-        json.dumps({
-            "bookId": "animalidade",
-            "resultBundleId": "RB-ANIM-RELATIONS-att2-3c451b57",
-            "attemptNumber": 2,
-            "inputEntitiesBundle": "RB-ANIM-ENTITIES-att1-50691836",
-            "resultManifestSha256": "ff959c8a43127de61dab385a4a07bd41e7b8d49df6c03064cf5fbef109a6f7a0",
-        }),
-        encoding="utf-8",
-    )
+    (rel_bundle / "result-manifest.json").write_bytes(canonical_json_bytes(rel_manifest))
 
     return runtime_dir
 
