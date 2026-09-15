@@ -54,6 +54,103 @@ export function createBookCard(b) {
   `.trim();
 }
 
+export const PIPELINE_STAGES = [
+  'Source',
+  'Extraction',
+  'Editorial',
+  'Entities',
+  'Relations',
+  'Frontend',
+  'QA',
+];
+
+/**
+ * Computes state for each of the 7 pipeline stages.
+ *
+ * @param {string} pipelineStatus
+ * @param {string|null} currentStage
+ * @returns {Array<{ stage: string, state: string }>}
+ */
+export function getStageStates(pipelineStatus, currentStage) {
+  if (pipelineStatus === 'DONE' || pipelineStatus === 'READY_FOR_HUMAN_APPROVAL') {
+    return PIPELINE_STAGES.map((s) => ({ stage: s, state: 'done' }));
+  }
+  if (!currentStage || pipelineStatus === 'WAITING') {
+    return PIPELINE_STAGES.map((s) => ({ stage: s, state: 'pending' }));
+  }
+  const curLower = currentStage.toLowerCase();
+  const stagesLower = PIPELINE_STAGES.map((s) => s.toLowerCase());
+  const curIdx = stagesLower.indexOf(curLower);
+  if (curIdx === -1) {
+    return PIPELINE_STAGES.map((s) => ({ stage: s, state: 'pending' }));
+  }
+
+  const activeState =
+    pipelineStatus === 'BLOCKED' || pipelineStatus === 'NEEDS_HUMAN_REVIEW'
+      ? 'blocked'
+      : 'active';
+
+  return PIPELINE_STAGES.map((s, idx) => {
+    if (idx < curIdx) return { stage: s, state: 'done' };
+    if (idx === curIdx) return { stage: s, state: activeState };
+    return { stage: s, state: 'pending' };
+  });
+}
+
+/**
+ * Builds HTML string for book detail view including 7-stage visual stepper and entity list/empty banner.
+ *
+ * @param {object} params
+ * @param {object} params.book
+ * @param {object} [params.catalogMeta]
+ * @param {Array} [params.entities]
+ * @returns {string}
+ */
+export function renderBookDetailHtml({ book, catalogMeta, entities = [] }) {
+  const meta = catalogMeta || {};
+  const safeTitle = escapeHtml((book && book.title) || meta.title || 'Livro');
+  const safePipeline = escapeHtml(meta.pipelineStatus || 'WAITING');
+  const safeRights = escapeHtml(meta.rightsStatus || 'UNKNOWN');
+  const safePub = escapeHtml(meta.publicationMode || 'NOT_PUBLIC');
+
+  const stageStates = getStageStates(safePipeline, meta.currentStage || null);
+  const stepperHtml = `
+    <div class="pipeline-stepper">
+      ${stageStates.map((s) => `<span class="stepper-step ${s.state}">${escapeHtml(s.stage)}</span>`).join('')}
+    </div>
+  `;
+
+  let contentHtml = '';
+  if (entities.length === 0) {
+    contentHtml = `
+      <div class="site-book-empty-state">
+        <p>Nenhuma entidade processada para este livro ainda. O livro encontra-se na fila de processamento.</p>
+      </div>
+    `;
+  } else {
+    contentHtml = `
+      <h2>Entidades deste Livro (${entities.length})</h2>
+      <ul class="site-entity-list">
+        ${entities.map((e) => `<li><a href="#/entity/${encodeURIComponent(e.entityId)}">${escapeHtml(e.name)} (${escapeHtml(e.displayType)})</a></li>`).join('')}
+      </ul>
+    `;
+  }
+
+  return `
+    <div class="site-book-detail">
+      <h1>${safeTitle}</h1>
+      <div class="site-card-badges">
+        <span class="site-badge site-badge-pipeline" data-status="${safePipeline}">${safePipeline}</span>
+        <span class="site-badge site-badge-rights" data-rights="${safeRights}">${safeRights}</span>
+        <span class="site-badge site-badge-pub" data-mode="${safePub}">${safePub}</span>
+      </div>
+      ${stepperHtml}
+      ${contentHtml}
+    </div>
+  `.trim();
+}
+
+
 
 /**
  * Mounts the site MVP UI into root element.
@@ -459,34 +556,16 @@ export function mountSite({ root, store, storage = localStorage }) {
   async function renderBookDetailView(bookId) {
     try {
       const bookData = await store.loadBook(bookId);
-      const container = document.createElement('div');
-      container.className = 'site-book-detail';
-
-      const h1 = document.createElement('h1');
-      h1.textContent = bookData.book.title;
-      container.appendChild(h1);
-
-      const meta = document.createElement('p');
-      meta.textContent = `Modo de Publicação: ${bookData.book.publicationMode}`;
-      container.appendChild(meta);
-
-      const entTitle = document.createElement('h2');
-      entTitle.textContent = 'Entidades deste Livro';
-      container.appendChild(entTitle);
-
-      const entList = document.createElement('ul');
-      entList.className = 'site-entity-list';
-      for (const ent of bookData.entities) {
-        const li = document.createElement('li');
-        const link = document.createElement('a');
-        link.href = `#/entity/${ent.entityId}`;
-        link.textContent = `${ent.name} (${ent.displayType})`;
-        li.appendChild(link);
-        entList.appendChild(li);
-      }
-      container.appendChild(entList);
-
-      mainContent.appendChild(container);
+      const catalogMeta = store.getBookMetadata
+        ? store.getBookMetadata(bookId)
+        : (catalog && catalog.books.find((b) => b.bookId === bookId));
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = renderBookDetailHtml({
+        book: bookData.book,
+        catalogMeta,
+        entities: bookData.entities || [],
+      });
+      mainContent.appendChild(wrapper.firstElementChild || wrapper);
     } catch (err) {
       renderError(`Erro ao carregar livro: ${err.message}`);
     }
