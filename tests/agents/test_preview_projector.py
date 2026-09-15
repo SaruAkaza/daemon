@@ -198,3 +198,37 @@ def test_project_local_preview_includes_unresolved_references(workspace_with_dat
     assert len(book_data["unresolvedReferences"]) == 1
     assert book_data["unresolvedReferences"][0]["name"] == "Rapidez"
 
+
+def test_project_archive_preview_success(tmp_path: Path):
+    projector = LocalPreviewProjector()
+    preview_root = tmp_path / ".daemon_runtime" / "preview"
+
+    site_data_path = projector.project_archive_preview(
+        workspace_root=Path("."),
+        preview_root=preview_root,
+    )
+
+    assert site_data_path.exists()
+    assert site_data_path == preview_root / "site-data"
+    assert (site_data_path / "catalog.json").is_file()
+    assert (site_data_path / "search-index.json").is_file()
+    assert (site_data_path / "books" / "animalidade.json").is_file()
+    assert (site_data_path / "books" / "4killers.json").is_file()
+
+    with open(site_data_path / "catalog.json", encoding="utf-8") as f:
+        cat = json.load(f)
+    assert len(cat["books"]) == 281
+    assert cat["mode"] == "restricted_preview"
+
+
+def test_project_archive_preview_blocked_if_target_is_docs(tmp_path: Path):
+    projector = LocalPreviewProjector()
+    forbidden_root = tmp_path / "docs" / "site-data"
+
+    with pytest.raises(LocalPreviewProjectorError, match="ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED"):
+        projector.project_archive_preview(
+            workspace_root=Path("."),
+            preview_root=forbidden_root,
+        )
+
+

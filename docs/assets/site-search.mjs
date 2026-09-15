@@ -208,20 +208,22 @@ export function filterBooks(
   }
 
   if (sortBy === 'title_asc') {
-    result.sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
+    result.sort((a, b) => lexical(a.title, b.title) || lexical(a.bookId, b.bookId));
   } else if (sortBy === 'title_desc') {
-    result.sort((a, b) => String(b.title || '').localeCompare(String(a.title || '')));
+    result.sort((a, b) => lexical(b.title, a.title) || lexical(b.bookId, a.bookId));
   } else if (sortBy === 'entities_desc') {
     result.sort(
       (a, b) =>
         (b.entityCount || 0) - (a.entityCount || 0) ||
-        String(a.title || '').localeCompare(String(b.title || ''))
+        lexical(a.title, b.title) ||
+        lexical(a.bookId, b.bookId)
     );
   } else if (sortBy === 'pages_desc') {
     result.sort(
       (a, b) =>
         (b.pageCount || 0) - (a.pageCount || 0) ||
-        String(a.title || '').localeCompare(String(b.title || ''))
+        lexical(a.title, b.title) ||
+        lexical(a.bookId, b.bookId)
     );
   }
 

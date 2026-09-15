@@ -113,3 +113,64 @@ def test_archive_inventory_loader_corrupt_artifact_fails_closed(tmp_path):
     corrupt_file.write_text("{malformed json", encoding="utf-8")
     with pytest.raises(ProcessedStateReadError):
         load_certified_pilot_artifacts(runtime_dir=tmp_path)
+
+
+def test_archive_inventory_loader_entity_provenance_mismatch_fails_closed():
+    loader = ArchiveInventoryLoader()
+    bad_overlay = {
+        "animalidade": {
+            "bookId": "animalidade",
+            "pipelineStatus": "RUNNING",
+            "currentStage": "entities",
+            "entities": [
+                {
+                    "id": "ent-1",
+                    "name": "Poder Alien",
+                    "provenance": {"source": "wrong_book", "pages": [1]},
+                }
+            ],
+            "relations": [],
+        }
+    }
+    with pytest.raises(ProcessedStateReadError, match="source mismatch: 'wrong_book' != 'animalidade'"):
+        loader.load_inventory(operational_overlay=bad_overlay)
+
+
+def test_archive_inventory_loader_relation_source_mismatch_fails_closed():
+    loader = ArchiveInventoryLoader()
+    bad_overlay = {
+        "animalidade": {
+            "bookId": "animalidade",
+            "pipelineStatus": "RUNNING",
+            "currentStage": "relations",
+            "entities": [],
+            "relations": [
+                {
+                    "relationId": "r-1",
+                    "type": "CAN_CHOOSE_POWER",
+                    "sourceEntityId": "e1",
+                    "targetEntityId": "e2",
+                    "source": "different_book",
+                }
+            ],
+        }
+    }
+    with pytest.raises(ProcessedStateReadError, match="source provenance or mismatch: 'different_book' != 'animalidade'"):
+        loader.load_inventory(operational_overlay=bad_overlay)
+
+
+
+def test_archive_inventory_loader_loads_real_animalidade_runtime_artifacts():
+    loader = ArchiveInventoryLoader()
+    books = loader.load_inventory()
+    assert len(books) == 281
+
+    anim = next(b for b in books if b["bookId"] == "animalidade")
+    # Animalidade has real accepted bundle in .daemon_runtime with 56 entities and 164 relations
+    assert len(anim["entities"]) == 56
+    assert len(anim["relations"]) == 164
+    assert anim["pipelineStatus"] in ("RUNNING", "NEEDS_HUMAN_REVIEW", "WAITING")
+    # Rights must strictly remain canonical
+    assert anim["rightsStatus"] == "UNKNOWN"
+    assert anim["publicationMode"] == "NOT_PUBLIC"
+

@@ -30,23 +30,33 @@ export function escapeHtml(str) {
 export function createBookCard(b) {
   const safeId = encodeURIComponent(b.bookId || '');
   const safeTitle = escapeHtml(b.title || safeId);
-  const safePipeline = escapeHtml(b.pipelineStatus || 'WAITING');
   const safeRights = escapeHtml(b.rightsStatus || 'UNKNOWN');
   const safePub = escapeHtml(b.publicationMode || 'NOT_PUBLIC');
-  const stageText = b.currentStage ? `Estágio: ${escapeHtml(b.currentStage)}` : 'Não iniciado';
   const entityCount = Number.isInteger(b.entityCount) ? b.entityCount : 0;
   const pageCount = Number.isInteger(b.pageCount) ? b.pageCount : 0;
+
+  const hasPipeline = b.pipelineStatus !== undefined && b.pipelineStatus !== null && b.pipelineStatus !== '';
+  const safePipeline = hasPipeline ? escapeHtml(b.pipelineStatus) : '';
+  const pipelineBadge = hasPipeline
+    ? `<span class="site-badge site-badge-pipeline" data-status="${safePipeline}">${safePipeline}</span>`
+    : '';
+
+  const stageText = b.currentStage
+    ? `<span class="site-card-stage">Estágio: ${escapeHtml(b.currentStage)}</span>`
+    : hasPipeline
+    ? `<span class="site-card-stage">Não iniciado</span>`
+    : '';
 
   return `
     <div class="site-book-card" data-book-id="${safeId}">
       <a href="#/book/${safeId}" class="site-book-title">${safeTitle}</a>
       <div class="site-card-badges">
-        <span class="site-badge site-badge-pipeline" data-status="${safePipeline}">${safePipeline}</span>
+        ${pipelineBadge}
         <span class="site-badge site-badge-rights" data-rights="${safeRights}">${safeRights}</span>
         <span class="site-badge site-badge-pub" data-mode="${safePub}">${safePub}</span>
       </div>
       <div class="site-card-meta">
-        <span class="site-card-stage">${stageText}</span>
+        ${stageText}
         <span class="site-card-count">${entityCount} entidades</span>
         <span class="site-card-pages">${pageCount} págs</span>
       </div>
@@ -109,16 +119,24 @@ export function getStageStates(pipelineStatus, currentStage) {
 export function renderBookDetailHtml({ book, catalogMeta, entities = [] }) {
   const meta = catalogMeta || {};
   const safeTitle = escapeHtml((book && book.title) || meta.title || 'Livro');
-  const safePipeline = escapeHtml(meta.pipelineStatus || 'WAITING');
   const safeRights = escapeHtml(meta.rightsStatus || 'UNKNOWN');
   const safePub = escapeHtml(meta.publicationMode || 'NOT_PUBLIC');
 
-  const stageStates = getStageStates(safePipeline, meta.currentStage || null);
-  const stepperHtml = `
-    <div class="pipeline-stepper">
-      ${stageStates.map((s) => `<span class="stepper-step ${s.state}">${escapeHtml(s.stage)}</span>`).join('')}
-    </div>
-  `;
+  const hasPipeline = meta.pipelineStatus !== undefined && meta.pipelineStatus !== null && meta.pipelineStatus !== '';
+  const safePipeline = hasPipeline ? escapeHtml(meta.pipelineStatus) : '';
+  const pipelineBadge = hasPipeline
+    ? `<span class="site-badge site-badge-pipeline" data-status="${safePipeline}">${safePipeline}</span>`
+    : '';
+
+  let stepperHtml = '';
+  if (hasPipeline) {
+    const stageStates = getStageStates(meta.pipelineStatus, meta.currentStage || null);
+    stepperHtml = `
+      <div class="pipeline-stepper">
+        ${stageStates.map((s) => `<span class="stepper-step ${s.state}">${escapeHtml(s.stage)}</span>`).join('')}
+      </div>
+    `;
+  }
 
   let contentHtml = '';
   if (entities.length === 0) {
@@ -138,11 +156,14 @@ export function renderBookDetailHtml({ book, catalogMeta, entities = [] }) {
 
   return `
     <div class="site-book-detail">
-      <h1>${safeTitle}</h1>
-      <div class="site-card-badges">
-        <span class="site-badge site-badge-pipeline" data-status="${safePipeline}">${safePipeline}</span>
-        <span class="site-badge site-badge-rights" data-rights="${safeRights}">${safeRights}</span>
-        <span class="site-badge site-badge-pub" data-mode="${safePub}">${safePub}</span>
+      <a href="#/books" class="site-back-link">← Voltar ao Acervo de Livros</a>
+      <div class="site-book-detail-header">
+        <h1>${safeTitle}</h1>
+        <div class="site-card-badges">
+          ${pipelineBadge}
+          <span class="site-badge site-badge-rights" data-rights="${safeRights}">${safeRights}</span>
+          <span class="site-badge site-badge-pub" data-mode="${safePub}">${safePub}</span>
+        </div>
       </div>
       ${stepperHtml}
       ${contentHtml}
@@ -456,6 +477,7 @@ export function mountSite({ root, store, storage = localStorage }) {
       { value: 'WAITING', label: 'WAITING (Não iniciado)' },
       { value: 'RUNNING', label: 'RUNNING (Em processamento)' },
       { value: 'BLOCKED', label: 'BLOCKED (Bloqueado)' },
+      { value: 'FAILED', label: 'FAILED (Falha)' },
       { value: 'NEEDS_HUMAN_REVIEW', label: 'NEEDS_HUMAN_REVIEW (Aguardando revisão)' },
       { value: 'READY_FOR_HUMAN_APPROVAL', label: 'READY_FOR_HUMAN_APPROVAL (Aguardando aprovação)' },
       { value: 'DONE', label: 'DONE (Concluído)' },
@@ -498,6 +520,31 @@ export function mountSite({ root, store, storage = localStorage }) {
       renderActiveView();
     });
     filterbar.appendChild(rightsSelect);
+
+    // Publication mode filter
+    const pubSelect = document.createElement('select');
+    pubSelect.id = 'siteBookPublicationFilter';
+    pubSelect.className = 'site-select';
+    pubSelect.setAttribute('aria-label', 'Filtrar por modo de publicação');
+    const pubOptions = [
+      { value: 'all', label: 'Todos os Modos (Publicação)' },
+      { value: 'FULL_TEXT', label: 'FULL_TEXT (Texto Completo)' },
+      { value: 'SUMMARY_AND_METADATA', label: 'SUMMARY_AND_METADATA (Resumo e Metadados)' },
+      { value: 'METADATA_ONLY', label: 'METADATA_ONLY (Somente Metadados)' },
+      { value: 'NOT_PUBLIC', label: 'NOT_PUBLIC (Não Público)' },
+    ];
+    for (const opt of pubOptions) {
+      const el = document.createElement('option');
+      el.value = opt.value;
+      el.textContent = opt.label;
+      if (state.bookFilters && state.bookFilters.publicationMode === opt.value) el.selected = true;
+      pubSelect.appendChild(el);
+    }
+    pubSelect.addEventListener('change', (e) => {
+      state = setBookFilters(state, { publicationMode: e.target.value });
+      renderActiveView();
+    });
+    filterbar.appendChild(pubSelect);
 
     // Sort select
     const sortSelect = document.createElement('select');

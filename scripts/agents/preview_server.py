@@ -105,7 +105,23 @@ class PreviewServer:
                     book_id, subpath = match.group(1), match.group(2)
                     book_dir = (preview_root / book_id).resolve()
                     target_file = (book_dir / subpath).resolve()
-                    if not _is_contained(target_file, book_dir):
+
+                    if not target_file.is_file() and subpath.startswith("site-data/"):
+                        rel_sub = subpath[len("site-data/"):]
+                        cand = (book_dir / rel_sub).resolve()
+                        if cand.is_file():
+                            target_file = cand
+
+                    if not target_file.is_file() and book_id == "archive":
+                        cand1 = (preview_root / "site-data" / subpath).resolve()
+                        if cand1.is_file():
+                            target_file = cand1
+                        elif subpath.startswith("site-data/"):
+                            cand2 = (preview_root / subpath).resolve()
+                            if cand2.is_file():
+                                target_file = cand2
+
+                    if not _is_contained(target_file, preview_root):
                         self.send_error(403, "Access forbidden")
                         return
 
@@ -162,9 +178,28 @@ class PreviewServer:
                         self.send_error(404, f"Public file not found: {subpath}")
                         return
 
-                # Check /assets/site-data/ (serve from public_root if configured and present)
+                # Check /assets/site-data/ (serve from local preview_root if present, else public_root)
                 match_assets_data = re.match(r"^/assets/site-data/(.*)$", req_path)
                 if match_assets_data:
+                    subpath = match_assets_data.group(1)
+
+                    # 1. Local restricted preview root
+                    target_file = (preview_root / "site-data" / subpath).resolve()
+                    if not target_file.is_file():
+                        target_file = (preview_root / subpath).resolve()
+
+                    if target_file.is_file() and _is_contained(target_file, preview_root):
+                        content = target_file.read_bytes()
+                        ctype = _get_content_type(target_file)
+                        self.send_response(200)
+                        self.send_header("Content-Type", ctype)
+                        self.send_header("Content-Length", str(len(content)))
+                        self.send_header("X-Daemon-Local-Preview", "active")
+                        self.end_headers()
+                        self.wfile.write(content)
+                        return
+
+                    # 2. Public projection root if configured
                     effective_public = public_root
                     if not effective_public:
                         cand = (preview_root / "public").resolve()
@@ -172,7 +207,6 @@ class PreviewServer:
                             effective_public = cand
 
                     if effective_public and effective_public.is_dir():
-                        subpath = match_assets_data.group(1)
                         target_file = (effective_public / subpath).resolve()
                         if not target_file.is_file():
                             target_file = (effective_public / "site-data" / subpath).resolve()

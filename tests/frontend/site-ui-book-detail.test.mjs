@@ -1,4 +1,4 @@
-﻿import test from 'node:test';
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import { getStageStates, renderBookDetailHtml } from '../../docs/assets/site-ui.mjs';
 
@@ -80,4 +80,22 @@ test('renderBookDetailHtml renders processed book with all 7 done stages and ent
   assert.doesNotMatch(html, /site-book-empty-state/);
   assert.match(html, /class="site-entity-list"/);
   assert.match(html, /Garras/);
+});
+
+test('renderBookDetailHtml in public mode does not render pipeline badge or stepper', () => {
+  const catalogMeta = {
+    bookId: 'inquisicao',
+    title: 'Inquisição',
+    rightsStatus: 'AUTHORIZED',
+    publicationMode: 'FULL_TEXT',
+  };
+  const entities = [{ entityId: 'ent-1', name: 'Inquisidor', displayType: 'Classe' }];
+  const html = renderBookDetailHtml({ book: { title: 'Inquisição' }, catalogMeta, entities });
+
+  assert.match(html, /<div class="site-book-detail"/);
+  assert.doesNotMatch(html, /pipeline-stepper/);
+  assert.doesNotMatch(html, /site-badge-pipeline/);
+  assert.match(html, /class="site-badge site-badge-rights" data-rights="AUTHORIZED"/);
+  assert.match(html, /class="site-badge site-badge-pub" data-mode="FULL_TEXT"/);
+  assert.match(html, /Inquisidor/);
 });

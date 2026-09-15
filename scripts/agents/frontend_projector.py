@@ -147,13 +147,14 @@ class FrontendProjector:
                 "publicationMode": b["publicationMode"],
                 "path": f"books/{b['bookId']}.json",
                 "groups": b.get("groups", []),
-                "pipelineStatus": b.get("pipelineStatus", "WAITING"),
-                "currentStage": b.get("currentStage"),
                 "entityCount": len(b.get("entities", [])),
                 "pageCount": b.get("pageCount", 0),
                 "categoryHints": list(b.get("categoryHints", [])),
                 "sizeBytes": b.get("sizeBytes", 0),
             }
+            if mode == "restricted_preview":
+                cat_entry["pipelineStatus"] = b.get("pipelineStatus", "WAITING")
+                cat_entry["currentStage"] = b.get("currentStage")
             catalog_books.append(cat_entry)
         catalog_books.sort(key=lambda b: b["bookId"])
 
@@ -172,21 +173,24 @@ class FrontendProjector:
         }
 
         for b in allowed_books:
+            book_meta: dict[str, Any] = {
+                "bookId": b["bookId"],
+                "title": b["title"],
+                "rightsStatus": b.get("rightsStatus", "UNKNOWN"),
+                "publicationMode": b["publicationMode"],
+                "entityCount": len(b.get("entities", [])),
+                "pageCount": b.get("pageCount", 0),
+                "categoryHints": list(b.get("categoryHints", [])),
+                "sizeBytes": b.get("sizeBytes", 0),
+            }
+            if mode == "restricted_preview":
+                book_meta["pipelineStatus"] = b.get("pipelineStatus", "WAITING")
+                book_meta["currentStage"] = b.get("currentStage")
+
             book_payload: dict[str, Any] = {
                 "siteViewModelVersion": EXPECTED_VERSION,
                 "mode": mode,
-                "book": {
-                    "bookId": b["bookId"],
-                    "title": b["title"],
-                    "rightsStatus": b.get("rightsStatus", "UNKNOWN"),
-                    "publicationMode": b["publicationMode"],
-                    "pipelineStatus": b.get("pipelineStatus", "WAITING"),
-                    "currentStage": b.get("currentStage"),
-                    "entityCount": len(b.get("entities", [])),
-                    "pageCount": b.get("pageCount", 0),
-                    "categoryHints": list(b.get("categoryHints", [])),
-                    "sizeBytes": b.get("sizeBytes", 0),
-                },
+                "book": book_meta,
                 "groups": b.get("groups", []),
                 "entities": b.get("entities", []),
                 "relations": b.get("relations", []),

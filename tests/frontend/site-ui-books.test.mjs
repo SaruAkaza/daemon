@@ -1,4 +1,4 @@
-﻿import test from 'node:test';
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createBookCard, escapeHtml } from '../../docs/assets/site-ui.mjs';
 
@@ -34,4 +34,23 @@ test('createBookCard renders .site-book-card with dual-axis badges and safe esca
   assert.match(cardHtml, /class="site-badge site-badge-rights" data-rights="UNKNOWN"/);
   assert.match(cardHtml, /class="site-badge site-badge-pub" data-mode="NOT_PUBLIC"/);
   assert.match(cardHtml, /56 entidades/);
+});
+
+test('createBookCard in public mode does not render pipeline badge or stage text', () => {
+  const publicBook = {
+    bookId: 'inquisicao',
+    title: 'Inquisição',
+    rightsStatus: 'AUTHORIZED',
+    publicationMode: 'FULL_TEXT',
+    entityCount: 12,
+    pageCount: 50,
+  };
+
+  const cardHtml = createBookCard(publicBook);
+  assert.match(cardHtml, /<div class="site-book-card"/);
+  assert.doesNotMatch(cardHtml, /site-badge-pipeline/);
+  assert.doesNotMatch(cardHtml, /Estágio:/);
+  assert.doesNotMatch(cardHtml, /Não iniciado/);
+  assert.match(cardHtml, /class="site-badge site-badge-rights" data-rights="AUTHORIZED"/);
+  assert.match(cardHtml, /class="site-badge site-badge-pub" data-mode="FULL_TEXT"/);
 });

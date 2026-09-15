@@ -1,4 +1,4 @@
-﻿import pytest
+import pytest
 from scripts.agents.archive_inventory_loader import ArchiveInventoryLoader
 from scripts.agents.frontend_projector import FrontendProjector
 from scripts.agents.site_view_model import validate_projection
@@ -164,3 +164,37 @@ def test_real_archive_inventory_fails_closed_without_authorization():
     for b in catalog["books"]:
         assert b["publicationMode"] != "NOT_PUBLIC"
         assert b["rightsStatus"] != "UNKNOWN"
+
+
+def test_public_mode_omits_pipeline_status_and_current_stage():
+    projector = FrontendProjector()
+    synthetic_books = [
+        {
+            "bookId": "pub-book",
+            "title": "Public Book",
+            "rightsStatus": "PUBLIC_DOMAIN",
+            "publicationMode": "FULL_TEXT",
+            "pipelineStatus": "DONE",
+            "currentStage": "qa",
+            "entities": [
+                {
+                    "id": "e-1",
+                    "name": "Public Rule",
+                    "category": "core_rule",
+                    "content": [{"title": "C", "paragraphs": ["P"]}],
+                }
+            ],
+            "relations": [],
+        }
+    ]
+
+    files = projector.build(synthetic_books, mode="public")
+    catalog_book = files["catalog.json"]["books"][0]
+    # pipelineStatus and currentStage must be omitted in public mode
+    assert "pipelineStatus" not in catalog_book
+    assert "currentStage" not in catalog_book
+
+    book_envelope = files["books/pub-book.json"]["book"]
+    assert "pipelineStatus" not in book_envelope
+    assert "currentStage" not in book_envelope
+

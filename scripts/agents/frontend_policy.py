@@ -61,8 +61,6 @@ def project_allowed_book(book: dict[str, Any], mode: str) -> dict[str, Any] | No
         "title": book.get("title", book_id),
         "rightsStatus": rights_status,
         "publicationMode": publication_mode,
-        "pipelineStatus": book.get("pipelineStatus", "WAITING"),
-        "currentStage": book.get("currentStage"),
         "pageCount": book.get("pageCount", 0),
         "categoryHints": list(book.get("categoryHints", [])),
         "sizeBytes": book.get("sizeBytes", 0),
@@ -70,6 +68,10 @@ def project_allowed_book(book: dict[str, Any], mode: str) -> dict[str, Any] | No
         "entities": [],
         "relations": [],
     }
+
+    if mode == "restricted_preview":
+        projected["pipelineStatus"] = book.get("pipelineStatus", "WAITING")
+        projected["currentStage"] = book.get("currentStage")
 
     # Clean groups
     raw_groups = book.get("groups", [])

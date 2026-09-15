@@ -671,3 +671,88 @@ def test_books_catalog_public_mode_fail_closed(browser, tmp_path):
         server.stop()
 
 
+def test_real_archive_catalog_renders_281_books_and_filters(page, archive_site_url):
+    page.goto(archive_site_url + "#/books")
+    page.wait_for_selector(".site-books-grid", timeout=15000)
+
+    # All 281 canonical books must be present
+    assert page.locator(".site-book-card").count() == 281
+
+    # Search filter by title
+    page.locator("#siteBookSearch").fill("Animalidade")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 1
+    assert "animalidade" in page.text_content(".site-book-card").lower()
+
+    # Search filter by unworked book
+    page.locator("#siteBookSearch").fill("4killers")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 1
+    assert "4killers" in page.text_content(".site-book-card").lower()
+
+    # Clear search
+    page.locator("#siteBookSearch").fill("")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 281
+
+    # Rights filter: UNKNOWN -> 281
+    page.locator("#siteBookRightsFilter").select_option("UNKNOWN")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 281
+
+    # Publication filter: NOT_PUBLIC -> 281
+    page.locator("#siteBookPublicationFilter").select_option("NOT_PUBLIC")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 281
+
+    # Reset filters
+    page.locator("#siteBookRightsFilter").select_option("all")
+    page.locator("#siteBookPublicationFilter").select_option("all")
+    page.wait_for_timeout(300)
+
+    # Sort by entities descending -> Animalidade should be the first card
+    page.locator("#siteBookSort").select_option("entities_desc")
+    page.wait_for_timeout(300)
+    first_card = page.locator(".site-book-card").first
+    assert "animalidade" in first_card.text_content().lower()
+
+
+def test_real_archive_navigation_to_animalidade_and_unworked_book(page, archive_site_url):
+    # Navigate to Animalidade
+    page.goto(archive_site_url + "#/book/animalidade")
+    page.wait_for_selector(".site-book-detail", timeout=15000)
+
+    # Verify Animalidade details
+    assert "animalidade" in page.text_content("h1").lower()
+    assert page.locator(".site-badge-rights").count() >= 1
+    assert page.locator(".site-badge-pub").count() >= 1
+    assert page.locator(".pipeline-stepper").count() == 1
+
+
+    # Animalidade has 56 entities loaded from runtime accepted bundle
+    page.wait_for_selector(".site-entity-list", timeout=10000)
+    assert page.locator(".site-entity-list li").count() == 56
+
+    # Click first entity to navigate to entity detail
+    page.locator(".site-entity-list a").first.click()
+    page.wait_for_selector(".site-detail-panel", timeout=10000)
+    assert page.locator(".site-detail-panel").is_visible()
+
+
+    # Navigate to unworked book 4killers
+    page.goto(archive_site_url + "#/book/4killers")
+    page.wait_for_selector(".site-book-detail", timeout=15000)
+
+    assert "4killers" in page.text_content("h1")
+    assert page.locator(".pipeline-stepper").count() == 1
+    # 7 pending stages, 0 active
+    assert page.locator(".stepper-step.pending").count() == 7
+    assert page.locator(".stepper-step.active").count() == 0
+
+    # Empty state message
+    empty_state = page.locator(".site-book-empty-state")
+    assert empty_state.count() == 1
+    assert "Nenhuma entidade processada" in empty_state.text_content()
+
+
+

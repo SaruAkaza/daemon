@@ -6,6 +6,7 @@ import pytest
 
 from scripts.agents.canonical_json import canonical_json_bytes
 from scripts.agents.frontend_projector import FrontendProjector
+from scripts.agents.preview_projector import LocalPreviewProjector
 from scripts.agents.preview_server import PreviewServer
 
 
@@ -181,3 +182,34 @@ def site_preview_env(tmp_path_factory):
 @pytest.fixture
 def site_url(site_preview_env):
     return site_preview_env["site_url"]
+
+
+@pytest.fixture(scope="session")
+def archive_preview_env(tmp_path_factory):
+    runtime_root = tmp_path_factory.mktemp("daemon_archive_runtime")
+    preview_root = runtime_root / "preview"
+
+    projector = LocalPreviewProjector()
+    projector.project_archive_preview(
+        workspace_root=Path("."),
+        preview_root=preview_root,
+    )
+
+    docs_root = Path("docs").resolve()
+    server = PreviewServer(preview_root=preview_root, docs_root=docs_root, host="127.0.0.1", port=0)
+    server.start()
+
+    yield {
+        "server": server,
+        "port": server.port,
+        "base_url": f"http://127.0.0.1:{server.port}",
+        "site_url": f"http://127.0.0.1:{server.port}/?site=1",
+    }
+
+    server.stop()
+
+
+@pytest.fixture
+def archive_site_url(archive_preview_env):
+    return archive_preview_env["site_url"]
+

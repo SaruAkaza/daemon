@@ -282,3 +282,53 @@ class LocalPreviewProjector:
             raise LocalPreviewProjectorError(f"ERR_PREVIEW_WRITE_FAILED: {exc}") from exc
 
         return target_dir
+
+    def project_archive_preview(
+        self,
+        workspace_root: Path | str,
+        preview_root: Path | str,
+        runtime_dir: Path | str | None = None,
+        repository_root: Path | str | None = None,
+    ) -> Path:
+        """Projects full archive preview (all 281 canonical books with certified runtime overlay) into preview_root / 'site-data'."""
+        resolved_preview = Path(preview_root).resolve()
+        repo = Path(repository_root).resolve() if repository_root else Path(__file__).resolve().parents[2]
+
+        # Enforce RESTRICTED_CONTENT_NEVER_ENTERS_MAIN_WORKTREE
+        if any(p.lower() == "docs" for p in resolved_preview.parts):
+            raise LocalPreviewProjectorError(
+                f"ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED: Cannot project restricted archive into docs: {resolved_preview}"
+            )
+        try:
+            resolved_preview.relative_to(repo)
+            raise LocalPreviewProjectorError(
+                f"ERR_RESTRICTED_CONTENT_PROJECTION_BLOCKED: Cannot project restricted archive into repository: {resolved_preview}"
+            )
+        except ValueError:
+            # Outside repository root
+            pass
+
+        from scripts.agents.archive_inventory_loader import ArchiveInventoryLoader
+
+        loader = ArchiveInventoryLoader(workspace_root=workspace_root, runtime_dir=runtime_dir)
+        books = loader.load_inventory()
+
+        projector = FrontendProjector()
+        try:
+            site_files = projector.build(books, "restricted_preview")
+        except ProjectionError as pe:
+            raise LocalPreviewProjectorError(f"ERR_PREVIEW_BUILD_FAILED: {pe}") from pe
+
+        target_site_data = resolved_preview / "site-data"
+        if target_site_data.exists():
+            shutil.rmtree(target_site_data)
+
+        try:
+            projector.write(site_files, target_site_data, repo)
+        except Exception as exc:
+            if isinstance(exc, (LocalPreviewProjectorError, ProjectionError)):
+                raise
+            raise LocalPreviewProjectorError(f"ERR_PREVIEW_WRITE_FAILED: {exc}") from exc
+
+        return target_site_data
+
