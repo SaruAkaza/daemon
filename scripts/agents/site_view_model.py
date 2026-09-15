@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import re
 from typing import Any
@@ -89,6 +89,27 @@ def validate_projection(files: dict[str, dict[str, Any]]) -> None:
 
         if not path or not isinstance(path, str):
             raise ProjectionError(f"Catalog book '{bid}' missing valid path")
+
+        VALID_RIGHTS = {"AUTHORIZED", "PRIVATE", "PUBLIC_DOMAIN", "METADATA_ONLY", "UNKNOWN"}
+        rights_st = book.get("rightsStatus")
+        if rights_st is not None and (not isinstance(rights_st, str) or rights_st not in VALID_RIGHTS):
+            raise ProjectionError(f"Catalog book '{bid}' has invalid rightsStatus: '{rights_st}'")
+
+        pipeline_status = book.get("pipelineStatus")
+        if pipeline_status is not None and not isinstance(pipeline_status, str):
+            raise ProjectionError(f"Catalog book '{bid}' has invalid pipelineStatus")
+
+        current_stage = book.get("currentStage")
+        if current_stage is not None and not isinstance(current_stage, str):
+            raise ProjectionError(f"Catalog book '{bid}' has invalid currentStage")
+
+        entity_count = book.get("entityCount")
+        if entity_count is not None and not isinstance(entity_count, int):
+            raise ProjectionError(f"Catalog book '{bid}' has invalid entityCount")
+
+        page_count = book.get("pageCount")
+        if page_count is not None and not isinstance(page_count, int):
+            raise ProjectionError(f"Catalog book '{bid}' has invalid pageCount")
 
         # Security & Path Containment: must be books/<bookId>.json
         match = BOOK_PATH_PATTERN.match(path)

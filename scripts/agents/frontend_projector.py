@@ -140,13 +140,21 @@ class FrontendProjector:
         # Step 7: Build catalog books metadata
         catalog_books: list[dict[str, Any]] = []
         for b in allowed_books:
-            catalog_books.append({
+            cat_entry = {
                 "bookId": b["bookId"],
                 "title": b["title"],
+                "rightsStatus": b.get("rightsStatus", "UNKNOWN"),
                 "publicationMode": b["publicationMode"],
                 "path": f"books/{b['bookId']}.json",
                 "groups": b.get("groups", []),
-            })
+                "pipelineStatus": b.get("pipelineStatus", "WAITING"),
+                "currentStage": b.get("currentStage"),
+                "entityCount": len(b.get("entities", [])),
+                "pageCount": b.get("pageCount", 0),
+                "categoryHints": list(b.get("categoryHints", [])),
+                "sizeBytes": b.get("sizeBytes", 0),
+            }
+            catalog_books.append(cat_entry)
         catalog_books.sort(key=lambda b: b["bookId"])
 
         # Step 8: Build file envelopes before projectionId computation
@@ -170,7 +178,14 @@ class FrontendProjector:
                 "book": {
                     "bookId": b["bookId"],
                     "title": b["title"],
+                    "rightsStatus": b.get("rightsStatus", "UNKNOWN"),
                     "publicationMode": b["publicationMode"],
+                    "pipelineStatus": b.get("pipelineStatus", "WAITING"),
+                    "currentStage": b.get("currentStage"),
+                    "entityCount": len(b.get("entities", [])),
+                    "pageCount": b.get("pageCount", 0),
+                    "categoryHints": list(b.get("categoryHints", [])),
+                    "sizeBytes": b.get("sizeBytes", 0),
                 },
                 "groups": b.get("groups", []),
                 "entities": b.get("entities", []),
