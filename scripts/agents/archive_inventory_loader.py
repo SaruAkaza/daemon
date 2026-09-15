@@ -14,53 +14,89 @@ DEFAULT_SOURCES_PATH = ROOT / "data" / "index" / "sources.json"
 DEFAULT_JOBS_DIR = ROOT / "coordination" / "jobs"
 
 
+import hashlib
+
+def _sha256_file(path: Path) -> str:
+    """Computes SHA-256 hash of a file."""
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(65536):
+            h.update(chunk)
+    return h.hexdigest()
+
+
 def resolve_canonical_runtime_dir(repo_or_worktree_root: Path | str | None = None) -> Path:
-    """Resolves the canonical .daemon_runtime directory whether running from main repo or isolated worktree."""
-    env_dir = os.environ.get("DAEMON_RUNTIME_DIR")
-    if env_dir:
-        return Path(env_dir).resolve()
-
-    raw_candidates = []
+    """Resolves canonical .daemon_runtime directory with strict 4-tier precedence:
+    1. Explicit path argument if provided
+    2. DAEMON_RUNTIME_DIR environment variable
+    3. Git repository / worktree locator (.git gitdir, .worktrees, or repo root)
+    4. Documented default fallback
+    """
+    # Tier 1: Explicit argument
     if repo_or_worktree_root:
-        raw_candidates.append(Path(repo_or_worktree_root))
-    raw_candidates.extend([
-        Path.cwd(),
-        Path(__file__).parents[2],
-        ROOT,
-    ])
+        p = Path(repo_or_worktree_root).resolve()
+        if p.name == ".daemon_runtime":
+            return p
+        if (p / ".daemon_runtime").is_dir():
+            return (p / ".daemon_runtime").resolve()
+        for cand in [p / ".daemon_runtime", p.parent / ".daemon_runtime", p.parent.parent / ".daemon_runtime", p.parent.parent.parent / ".daemon_runtime"]:
+            if (cand / "jobs").is_dir() and (cand / "bundles").is_dir():
+                return cand.resolve()
+            if (cand / "jobs").is_dir() or (cand / "bundles").is_dir():
+                return cand.resolve()
+            if cand.is_dir():
+                return cand.resolve()
+        return p
 
-    # Pass 1: Find an existing runtime directory containing jobs or bundles
-    for base in raw_candidates:
-        curr = base
+    # Tier 2: Environment variable
+    env_dir = os.environ.get("DAEMON_RUNTIME_DIR")
+    if env_dir and env_dir.strip():
+        return Path(env_dir.strip()).resolve()
+
+    # Tier 3: Git repository / worktree locator
+    bases = [ROOT, Path.cwd()]
+    git_path = ROOT / ".git"
+    if git_path.is_file():
+        try:
+            content = git_path.read_text(encoding="utf-8").strip()
+            if content.startswith("gitdir:"):
+                gd = Path(content[len("gitdir:"):].strip()).resolve()
+                bases.append(gd.parent.parent if "worktrees" in gd.parts else gd.parent)
+        except Exception:
+            pass
+
+    # Pass 3a: Look for runtime directory with both jobs and bundles
+    for b in bases:
+        curr = b
+        while curr and curr.parent != curr:
+            cand = curr / ".daemon_runtime"
+            if (cand / "jobs").is_dir() and (cand / "bundles").is_dir():
+                return cand.resolve()
+            curr = curr.parent
+
+    # Pass 3b: Look for runtime directory with jobs or bundles
+    for b in bases:
+        curr = b
         while curr and curr.parent != curr:
             cand = curr / ".daemon_runtime"
             if (cand / "jobs").is_dir() or (cand / "bundles").is_dir():
                 return cand.resolve()
-            if curr.name == ".worktrees":
-                # Check parent of worktrees container directory
-                cand_wt = curr.parent.parent / ".daemon_runtime"
-                if (cand_wt / "jobs").is_dir() or (cand_wt / "bundles").is_dir():
-                    return cand_wt.resolve()
             curr = curr.parent
 
-    # Pass 2: Fallback to any existing .daemon_runtime directory
-    for base in raw_candidates:
-        curr = base
+    # Pass 3c: Look for any existing .daemon_runtime
+    for b in bases:
+        curr = b
         while curr and curr.parent != curr:
-            if curr.name == ".worktrees":
-                cand = curr.parent.parent / ".daemon_runtime"
-                if cand.is_dir():
-                    return cand.resolve()
             cand = curr / ".daemon_runtime"
             if cand.is_dir():
                 return cand.resolve()
             curr = curr.parent
 
-    # Pass 3: Default layout assumption
+    # Tier 4: Documented fallback
     if ".worktrees" in ROOT.parts:
         idx = ROOT.parts.index(".worktrees")
-        return (Path(*ROOT.parts[:idx]).parent / ".daemon_runtime").resolve()
-
+        main_repo = Path(*ROOT.parts[:idx])
+        return (main_repo.parent / ".daemon_runtime").resolve()
     return (ROOT.parent / ".daemon_runtime").resolve()
 
 
@@ -102,8 +138,6 @@ def load_certified_pilot_artifacts(
     """Loads certified operational state and accepted artifact bundles from runtime store read-only."""
     r_dir = Path(runtime_dir).resolve() if runtime_dir else resolve_canonical_runtime_dir()
     j_dir = Path(jobs_dir).resolve() if jobs_dir else (r_dir / "jobs")
-    if not j_dir.exists() and DEFAULT_JOBS_DIR.exists():
-        j_dir = DEFAULT_JOBS_DIR
 
     overlay: dict[str, dict[str, Any]] = {}
     if not j_dir.exists():
@@ -112,8 +146,8 @@ def load_certified_pilot_artifacts(
     job_store = JobStore(j_dir)
     accepted_bundles_dir = r_dir / "bundles" / "accepted"
 
-    # Index accepted bundles by (book_id, stage, attempt_num)
-    accepted_bundles_by_book: dict[str, list[dict[str, Any]]] = {}
+    # Index accepted bundles by directory name
+    available_bundles: dict[str, dict[str, Any]] = {}
     if accepted_bundles_dir.exists():
         for b_dir in sorted(accepted_bundles_dir.iterdir()):
             if not b_dir.is_dir():
@@ -131,15 +165,21 @@ def load_certified_pilot_artifacts(
             rb_id = m_data.get("resultBundleId", b_dir.name)
             att_num = m_data.get("attemptNumber", _extract_attempt_from_bundle_id(rb_id))
             stage = _extract_stage_from_bundle_id(rb_id)
-            if b_id:
-                accepted_bundles_by_book.setdefault(b_id, []).append({
-                    "bundleDir": b_dir,
-                    "manifest": m_data,
-                    "resultBundleId": rb_id,
-                    "attemptNumber": att_num,
-                    "stage": stage,
-                })
+            bundle_sha = m_data.get("resultManifestSha256") or _sha256_file(manifest_file)
+            raw_sha = _sha256_file(manifest_file)
+            available_bundles[rb_id] = {
+                "bundleDir": b_dir,
+                "manifest": m_data,
+                "resultBundleId": rb_id,
+                "attemptNumber": att_num,
+                "stage": stage,
+                "bookId": b_id,
+                "sha256": bundle_sha,
+                "rawSha256": raw_sha,
+            }
 
+    # Group jobs by bookId to detect ambiguous multiple jobs without authoritative resolution
+    jobs_by_book: dict[str, list[tuple[str, dict[str, Any]]]] = {}
     for job_id in job_store.list_job_ids():
         try:
             job_data = job_store.load(job_id)
@@ -151,6 +191,17 @@ def load_certified_pilot_artifacts(
         book_id = job_data.get("bookId")
         if not book_id:
             raise ProcessedStateReadError(f"Job '{job_id}' missing required bookId")
+
+        jobs_by_book.setdefault(book_id, []).append((job_id, job_data))
+
+    for book_id, job_list in jobs_by_book.items():
+        if len(job_list) > 1:
+            job_ids = [j[0] for j in job_list]
+            raise ProcessedStateReadError(
+                f"Multiple jobs found for bookId '{book_id}' ({job_ids}) without authoritative resolution"
+            )
+
+        job_id, job_data = job_list[0]
 
         raw_status = job_data.get("status")
         status_map = {
@@ -167,18 +218,103 @@ def load_certified_pilot_artifacts(
         pipeline_status = status_map[raw_status]
         current_stage = job_data.get("currentStage")
 
+        # Discover certified audit evidence for this book
+        audit_dirs = [
+            r_dir / "audit" / "pilot" / book_id,
+            r_dir / "audit" / book_id,
+        ]
+        approved_decisions: dict[str, dict[str, Any]] = {}
+        active_requests: dict[str, dict[str, Any]] = {}
+
+        for a_dir in audit_dirs:
+            if not a_dir.is_dir():
+                continue
+            # Check decisions
+            dec_dir = a_dir / "decisions"
+            if dec_dir.is_dir():
+                for df in sorted(dec_dir.iterdir()):
+                    if not df.name.endswith(".json"):
+                        continue
+                    try:
+                        with open(df, "r", encoding="utf-8") as f:
+                            d = json.load(f)
+                    except Exception as e:
+                        raise ProcessedStateReadError(f"Corrupt decision file {df}: {e}") from e
+                    if d.get("decision") in ("APPROVE", "APPROVED") or d.get("status") == "APPROVED":
+                        rb_id = d.get("resultBundleId")
+                        if rb_id:
+                            stg = _extract_stage_from_bundle_id(rb_id) or d.get("stage")
+                            if stg:
+                                approved_decisions[stg] = {
+                                    "bundleId": rb_id,
+                                    "manifestHash": d.get("reviewedResultManifestSha256") or d.get("manifestHash"),
+                                    "decisionId": d.get("decisionId"),
+                                }
+
+            # Check requests
+            req_dir = a_dir / "requests"
+            if req_dir.is_dir():
+                for rf in sorted(req_dir.iterdir()):
+                    if not rf.name.endswith(".json"):
+                        continue
+                    try:
+                        with open(rf, "r", encoding="utf-8") as f:
+                            r = json.load(f)
+                    except Exception as e:
+                        raise ProcessedStateReadError(f"Corrupt request file {rf}: {e}") from e
+                    rb_id = r.get("resultBundleId") or r.get("bundleId")
+                    stg = r.get("stage") or (_extract_stage_from_bundle_id(rb_id) if rb_id else None)
+                    if stg and rb_id:
+                        active_requests[stg] = {
+                            "bundleId": rb_id,
+                            "manifestHash": (
+                                r.get("reviewedResultManifestSha256")
+                                or r.get("resultManifestSha256")
+                                or r.get("manifestHash")
+                            ),
+                            "inputEntitiesBundle": r.get("inputEntitiesBundle"),
+                            "requestId": r.get("requestId") or r.get("reviewRequestId"),
+                            "status": r.get("status"),
+                        }
+
+        # Filter candidate accepted bundles for this book
+        book_candidate_bundles = {
+            k: v for k, v in available_bundles.items() if v.get("bookId") == book_id
+        }
+
+        # 1. Resolve Entities Stage from Certified Lineage
+        ent_candidates = [
+            k for k, v in book_candidate_bundles.items()
+            if v["stage"] == "entities" or (v["bundleDir"] / "artifacts" / "entities.json").exists()
+        ]
+        chosen_ent_id: str | None = None
+        expected_ent_hash: str | None = None
+
+        if "entities" in approved_decisions:
+            chosen_ent_id = approved_decisions["entities"]["bundleId"]
+            expected_ent_hash = approved_decisions["entities"]["manifestHash"]
+        elif "entities" in active_requests:
+            chosen_ent_id = active_requests["entities"]["bundleId"]
+            expected_ent_hash = active_requests["entities"]["manifestHash"]
+        elif len(ent_candidates) == 1:
+            chosen_ent_id = ent_candidates[0]
+        elif len(ent_candidates) > 1:
+            raise ProcessedStateReadError(
+                f"Multiple accepted entities bundles for book '{book_id}' ({ent_candidates}) without certified decision or request authority"
+            )
+
         entities: list[dict[str, Any]] = []
-        relations: list[dict[str, Any]] = []
-
-        book_bundles = accepted_bundles_by_book.get(book_id, [])
-
-        # Find approved bundle for entities stage
-        ent_bundles = [b for b in book_bundles if b["stage"] == "entities" or (b["bundleDir"] / "artifacts" / "entities.json").exists()]
-        if ent_bundles:
-            # Sort by attemptNumber descending to pick the latest accepted attempt
-            ent_bundles.sort(key=lambda x: x["attemptNumber"], reverse=True)
-            chosen_ent_bundle = ent_bundles[0]
-            b_dir = chosen_ent_bundle["bundleDir"]
+        if chosen_ent_id:
+            if chosen_ent_id not in book_candidate_bundles:
+                raise ProcessedStateReadError(
+                    f"Certified entities bundle '{chosen_ent_id}' not found in accepted bundles"
+                )
+            binfo = book_candidate_bundles[chosen_ent_id]
+            if expected_ent_hash and binfo["sha256"] != expected_ent_hash and binfo.get("rawSha256") != expected_ent_hash:
+                raise ProcessedStateReadError(
+                    f"Manifest hash mismatch for entities bundle '{chosen_ent_id}': expected {expected_ent_hash}, got {binfo['sha256']}"
+                )
+            b_dir = binfo["bundleDir"]
             ent_file = b_dir / "artifacts" / "entities.json"
             if not ent_file.exists():
                 ent_file = b_dir / "artifacts" / "data" / "entities" / f"{book_id}.json"
@@ -191,7 +327,6 @@ def load_certified_pilot_artifacts(
                     for ent in raw_ents:
                         if not isinstance(ent, dict):
                             continue
-                        # Validate provenance fail-closed
                         prov = ent.get("provenance")
                         ent_src = (
                             (prov.get("source") if isinstance(prov, dict) else None)
@@ -212,12 +347,50 @@ def load_certified_pilot_artifacts(
                 except Exception as e:
                     raise ProcessedStateReadError(f"Corrupt entity artifact in bundle {b_dir}: {e}") from e
 
-        # Find approved bundle for relations stage
-        rel_bundles = [b for b in book_bundles if b["stage"] == "relations" or (b["bundleDir"] / "artifacts" / "relations.json").exists()]
-        if rel_bundles:
-            rel_bundles.sort(key=lambda x: x["attemptNumber"], reverse=True)
-            chosen_rel_bundle = rel_bundles[0]
-            b_dir = chosen_rel_bundle["bundleDir"]
+        # 2. Resolve Relations Stage from Certified Lineage & Validate Cross-Stage Lineage
+        rel_candidates = [
+            k for k, v in book_candidate_bundles.items()
+            if v["stage"] == "relations" or (v["bundleDir"] / "artifacts" / "relations.json").exists()
+        ]
+        chosen_rel_id: str | None = None
+        expected_rel_hash: str | None = None
+        required_input_ent: str | None = None
+
+        if "relations" in approved_decisions:
+            chosen_rel_id = approved_decisions["relations"]["bundleId"]
+            expected_rel_hash = approved_decisions["relations"]["manifestHash"]
+        elif "relations" in active_requests:
+            chosen_rel_id = active_requests["relations"]["bundleId"]
+            expected_rel_hash = active_requests["relations"]["manifestHash"]
+            required_input_ent = active_requests["relations"].get("inputEntitiesBundle")
+        elif len(rel_candidates) == 1:
+            chosen_rel_id = rel_candidates[0]
+            required_input_ent = book_candidate_bundles[chosen_rel_id]["manifest"].get("inputEntitiesBundle")
+        elif len(rel_candidates) > 1:
+            raise ProcessedStateReadError(
+                f"Multiple accepted relations bundles for book '{book_id}' ({rel_candidates}) without certified decision or request authority"
+            )
+
+        relations: list[dict[str, Any]] = []
+        if chosen_rel_id:
+            if chosen_rel_id not in book_candidate_bundles:
+                raise ProcessedStateReadError(
+                    f"Certified relations bundle '{chosen_rel_id}' not found in accepted bundles"
+                )
+            binfo = book_candidate_bundles[chosen_rel_id]
+            if expected_rel_hash and binfo["sha256"] != expected_rel_hash and binfo.get("rawSha256") != expected_rel_hash:
+                raise ProcessedStateReadError(
+                    f"Manifest hash mismatch for relations bundle '{chosen_rel_id}': expected {expected_rel_hash}, got {binfo['sha256']}"
+                )
+
+            # Cross-stage lineage validation
+            input_ent_ref = required_input_ent or binfo["manifest"].get("inputEntitiesBundle")
+            if input_ent_ref and chosen_ent_id and input_ent_ref != chosen_ent_id:
+                raise ProcessedStateReadError(
+                    f"Cross-stage lineage mismatch: relations bundle '{chosen_rel_id}' requires inputEntitiesBundle '{input_ent_ref}', but certified entities bundle is '{chosen_ent_id}'"
+                )
+
+            b_dir = binfo["bundleDir"]
             rel_file = b_dir / "artifacts" / "relations.json"
             if not rel_file.exists():
                 rel_file = b_dir / "artifacts" / "data" / "entities" / "relations.json"

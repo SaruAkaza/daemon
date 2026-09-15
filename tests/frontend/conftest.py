@@ -184,15 +184,124 @@ def site_url(site_preview_env):
     return site_preview_env["site_url"]
 
 
+def _setup_synthetic_archive_runtime(runtime_dir: Path) -> Path:
+    jobs_dir = runtime_dir / "jobs"
+    jobs_dir.mkdir(parents=True, exist_ok=True)
+    job_data = {
+        "schemaVersion": "1.0",
+        "jobId": "JOB-ANIM-001",
+        "kind": "book_ingestion",
+        "bookId": "animalidade",
+        "status": "in_progress",
+        "createdAt": "2026-09-09T17:12:08.418844+00:00",
+        "updatedAt": "2026-09-09T18:56:11.482194+00:00",
+        "requestedBy": "human",
+        "currentStage": "relations",
+        "stages": {
+            "source": "pass",
+            "extraction": "pass",
+            "editorial": "pass",
+            "entities": "pass",
+            "relations": "ready",
+            "frontend": "waiting",
+            "qa": "waiting",
+            "release": "waiting",
+        },
+        "humanReviewRequired": False,
+        "blockingReasons": [],
+        "artifacts": [],
+        "history": [],
+    }
+    (jobs_dir / "JOB-ANIM-001.json").write_text(json.dumps(job_data), encoding="utf-8")
+
+    dec_dir = runtime_dir / "audit" / "pilot" / "animalidade" / "decisions"
+    dec_dir.mkdir(parents=True, exist_ok=True)
+    req_dir = runtime_dir / "audit" / "pilot" / "animalidade" / "requests"
+    req_dir.mkdir(parents=True, exist_ok=True)
+
+    dec_data = {
+        "decisionId": "DEC-ANIM-001-ENTITIES-01",
+        "decision": "APPROVE",
+        "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
+        "reviewedResultManifestSha256": "7468a84aa69b5acacc2a5cc99da8fc8c6aba30a05829835222dcca8911a1f58a",
+    }
+    (dec_dir / "DEC-ANIM-001-ENTITIES-01.json").write_text(json.dumps(dec_data), encoding="utf-8")
+
+    req_data = {
+        "reviewRequestId": "REV-ANIM-001-RELATIONS-02",
+        "stage": "relations",
+        "attemptNumber": 2,
+        "resultBundleId": "RB-ANIM-RELATIONS-att2-3c451b57",
+        "inputEntitiesBundle": "RB-ANIM-ENTITIES-att1-50691836",
+        "reviewedResultManifestSha256": "ff959c8a43127de61dab385a4a07bd41e7b8d49df6c03064cf5fbef109a6f7a0",
+        "status": "NEEDS_HUMAN_REVIEW",
+    }
+    (req_dir / "REV-ANIM-001-RELATIONS-02.json").write_text(json.dumps(req_data), encoding="utf-8")
+
+    ent_bundle = runtime_dir / "bundles" / "accepted" / "RB-ANIM-ENTITIES-att1-50691836"
+    ent_art = ent_bundle / "artifacts"
+    ent_art.mkdir(parents=True, exist_ok=True)
+    entities = [
+        {
+            "id": f"ent-anim-{i}",
+            "name": f"Poder Animal {i}",
+            "category": "character_option",
+            "subtype": "poder",
+            "displayType": "Poder",
+            "provenance": {"source": "animalidade", "pages": [1]},
+        }
+        for i in range(56)
+    ]
+    (ent_art / "entities.json").write_text(json.dumps(entities), encoding="utf-8")
+    (ent_bundle / "result-manifest.json").write_text(
+        json.dumps({
+            "bookId": "animalidade",
+            "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
+            "attemptNumber": 1,
+            "resultManifestSha256": "7468a84aa69b5acacc2a5cc99da8fc8c6aba30a05829835222dcca8911a1f58a",
+        }),
+        encoding="utf-8",
+    )
+
+    rel_bundle = runtime_dir / "bundles" / "accepted" / "RB-ANIM-RELATIONS-att2-3c451b57"
+    rel_art = rel_bundle / "artifacts"
+    rel_art.mkdir(parents=True, exist_ok=True)
+    relations = [
+        {
+            "relationId": f"rel-anim-{i}",
+            "type": "CAN_CHOOSE_POWER" if i < 108 else "HAS_WEAKNESS",
+            "sourceEntityId": "ent-anim-0",
+            "targetEntityId": f"ent-anim-{(i % 55) + 1}",
+            "source": "animalidade",
+        }
+        for i in range(164)
+    ]
+    (rel_art / "relations.json").write_text(json.dumps(relations), encoding="utf-8")
+    (rel_bundle / "result-manifest.json").write_text(
+        json.dumps({
+            "bookId": "animalidade",
+            "resultBundleId": "RB-ANIM-RELATIONS-att2-3c451b57",
+            "attemptNumber": 2,
+            "inputEntitiesBundle": "RB-ANIM-ENTITIES-att1-50691836",
+            "resultManifestSha256": "ff959c8a43127de61dab385a4a07bd41e7b8d49df6c03064cf5fbef109a6f7a0",
+        }),
+        encoding="utf-8",
+    )
+
+    return runtime_dir
+
+
 @pytest.fixture(scope="session")
 def archive_preview_env(tmp_path_factory):
     runtime_root = tmp_path_factory.mktemp("daemon_archive_runtime")
     preview_root = runtime_root / "preview"
+    synthetic_runtime = _setup_synthetic_archive_runtime(runtime_root / "runtime")
 
     projector = LocalPreviewProjector()
     projector.project_archive_preview(
         workspace_root=Path("."),
         preview_root=preview_root,
+        runtime_dir=synthetic_runtime,
     )
 
     docs_root = Path("docs").resolve()

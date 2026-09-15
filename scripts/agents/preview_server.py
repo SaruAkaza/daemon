@@ -99,7 +99,36 @@ class PreviewServer:
                     self.send_error(400, "Path traversal or unsafe path forbidden")
                     return
 
-                # Check /api/preview/ or /preview/
+                # Check /api/preview/archive/ or /preview/archive/
+                match_archive = re.match(r"^/(?:api/)?preview/archive/(.*)$", req_path)
+                if match_archive:
+                    subpath = match_archive.group(1)
+                    archive_root = (preview_root / "site-data").resolve()
+                    target_file = (archive_root / subpath).resolve()
+                    if not target_file.is_file() and subpath.startswith("site-data/"):
+                        target_file = (archive_root / subpath[len("site-data/"):]).resolve()
+                    if not target_file.is_file():
+                        target_file = (preview_root / subpath).resolve()
+
+                    if not (_is_contained(target_file, archive_root) or _is_contained(target_file, preview_root)):
+                        self.send_error(403, "Access forbidden")
+                        return
+
+                    if target_file.is_file():
+                        content = target_file.read_bytes()
+                        ctype = _get_content_type(target_file)
+                        self.send_response(200)
+                        self.send_header("Content-Type", ctype)
+                        self.send_header("Content-Length", str(len(content)))
+                        self.send_header("X-Daemon-Local-Preview", "active")
+                        self.end_headers()
+                        self.wfile.write(content)
+                        return
+                    else:
+                        self.send_error(404, f"Archive preview file not found: {subpath}")
+                        return
+
+                # Check /api/preview/<book_id>/ or /preview/<book_id>/
                 match = re.match(r"^/(?:api/)?preview/([a-z0-9-]+)/(.*)$", req_path)
                 if match:
                     book_id, subpath = match.group(1), match.group(2)
@@ -112,16 +141,8 @@ class PreviewServer:
                         if cand.is_file():
                             target_file = cand
 
-                    if not target_file.is_file() and book_id == "archive":
-                        cand1 = (preview_root / "site-data" / subpath).resolve()
-                        if cand1.is_file():
-                            target_file = cand1
-                        elif subpath.startswith("site-data/"):
-                            cand2 = (preview_root / subpath).resolve()
-                            if cand2.is_file():
-                                target_file = cand2
-
-                    if not _is_contained(target_file, preview_root):
+                    # Strict individual book containment
+                    if not _is_contained(target_file, book_dir):
                         self.send_error(403, "Access forbidden")
                         return
 
@@ -188,7 +209,7 @@ class PreviewServer:
                     if not target_file.is_file():
                         target_file = (preview_root / subpath).resolve()
 
-                    if target_file.is_file() and _is_contained(target_file, preview_root):
+                    if target_file.is_file() and (_is_contained(target_file, (preview_root / "site-data").resolve()) or _is_contained(target_file, preview_root)):
                         content = target_file.read_bytes()
                         ctype = _get_content_type(target_file)
                         self.send_response(200)
@@ -272,9 +293,17 @@ class PreviewServer:
         port: int = 8080,
         host: str = "127.0.0.1",
         public_root: Path | str | None = None,
+        project_archive: bool = True,
+        runtime_dir: Path | str | None = None,
     ) -> None:
         """Entry point to run the preview server indefinitely in the foreground."""
-        server = cls(preview_root=preview_root, port=port, host=host, public_root=public_root)
+        p_root = Path(preview_root).resolve()
+        if project_archive:
+            from scripts.agents.preview_projector import LocalPreviewProjector
+            projector = LocalPreviewProjector()
+            projector.project_archive_preview(preview_root=p_root, runtime_dir=runtime_dir)
+
+        server = cls(preview_root=p_root, port=port, host=host, public_root=public_root)
         server.start()
         print(f"Daemon Tools Local Preview Server running on http://{host}:{server.port}")
         try:
@@ -283,3 +312,30 @@ class PreviewServer:
         except KeyboardInterrupt:
             print("\nStopping preview server...")
             server.stop()
+
+
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+    parser = argparse.ArgumentParser(description="Daemon Tools Local Preview Server for Acervo 281")
+    parser.add_argument("--preview-root", type=str, default=None, help="Root directory for preview")
+    parser.add_argument("--public-root", type=str, default=None, help="Root directory for public projection")
+    parser.add_argument("--port", type=int, default=8080, help="Port to listen on (default: 8080)")
+    parser.add_argument("--host", type=str, default="127.0.0.1", help="Host interface (default: 127.0.0.1)")
+    parser.add_argument("--no-project-archive", action="store_true", help="Skip project_archive_preview")
+    parser.add_argument("--runtime-dir", type=str, default=None, help="Path to .daemon_runtime")
+    args = parser.parse_args(argv)
+
+    p_root = Path(args.preview_root).resolve() if args.preview_root else (Path(__file__).parents[2] / ".daemon_runtime" / "preview")
+    PreviewServer.run_preview_server(
+        preview_root=p_root,
+        port=args.port,
+        host=args.host,
+        public_root=args.public_root,
+        project_archive=not args.no_project_archive,
+        runtime_dir=args.runtime_dir,
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    main()

@@ -467,33 +467,35 @@ export function mountSite({ root, store, storage = localStorage }) {
     });
     filterbar.appendChild(searchInput);
 
-    // Pipeline status filter
-    const pipeSelect = document.createElement('select');
-    pipeSelect.id = 'siteBookPipelineFilter';
-    pipeSelect.className = 'site-select';
-    pipeSelect.setAttribute('aria-label', 'Filtrar por status de processamento');
-    const pipeOptions = [
-      { value: 'all', label: 'Todos os Status (Pipeline)' },
-      { value: 'WAITING', label: 'WAITING (Não iniciado)' },
-      { value: 'RUNNING', label: 'RUNNING (Em processamento)' },
-      { value: 'BLOCKED', label: 'BLOCKED (Bloqueado)' },
-      { value: 'FAILED', label: 'FAILED (Falha)' },
-      { value: 'NEEDS_HUMAN_REVIEW', label: 'NEEDS_HUMAN_REVIEW (Aguardando revisão)' },
-      { value: 'READY_FOR_HUMAN_APPROVAL', label: 'READY_FOR_HUMAN_APPROVAL (Aguardando aprovação)' },
-      { value: 'DONE', label: 'DONE (Concluído)' },
-    ];
-    for (const opt of pipeOptions) {
-      const el = document.createElement('option');
-      el.value = opt.value;
-      el.textContent = opt.label;
-      if (state.bookFilters && state.bookFilters.pipelineStatus === opt.value) el.selected = true;
-      pipeSelect.appendChild(el);
+    // Pipeline status filter (restricted/archive only, hidden in public mode)
+    if (!catalog || catalog.mode !== 'public') {
+      const pipeSelect = document.createElement('select');
+      pipeSelect.id = 'siteBookPipelineFilter';
+      pipeSelect.className = 'site-select';
+      pipeSelect.setAttribute('aria-label', 'Filtrar por status de processamento');
+      const pipeOptions = [
+        { value: 'all', label: 'Todos os Status (Pipeline)' },
+        { value: 'WAITING', label: 'WAITING (Não iniciado)' },
+        { value: 'RUNNING', label: 'RUNNING (Em processamento)' },
+        { value: 'BLOCKED', label: 'BLOCKED (Bloqueado)' },
+        { value: 'FAILED', label: 'FAILED (Falha)' },
+        { value: 'NEEDS_HUMAN_REVIEW', label: 'NEEDS_HUMAN_REVIEW (Aguardando revisão)' },
+        { value: 'READY_FOR_HUMAN_APPROVAL', label: 'READY_FOR_HUMAN_APPROVAL (Aguardando aprovação)' },
+        { value: 'DONE', label: 'DONE (Concluído)' },
+      ];
+      for (const opt of pipeOptions) {
+        const el = document.createElement('option');
+        el.value = opt.value;
+        el.textContent = opt.label;
+        if (state.bookFilters && state.bookFilters.pipelineStatus === opt.value) el.selected = true;
+        pipeSelect.appendChild(el);
+      }
+      pipeSelect.addEventListener('change', (e) => {
+        state = setBookFilters(state, { pipelineStatus: e.target.value });
+        renderActiveView();
+      });
+      filterbar.appendChild(pipeSelect);
     }
-    pipeSelect.addEventListener('change', (e) => {
-      state = setBookFilters(state, { pipelineStatus: e.target.value });
-      renderActiveView();
-    });
-    filterbar.appendChild(pipeSelect);
 
     // Rights status filter
     const rightsSelect = document.createElement('select');

@@ -251,3 +251,57 @@ def test_serve_local_public_site_data(tmp_path: Path):
     finally:
         server.stop()
 
+
+def test_cross_book_containment_blocked(tmp_path: Path):
+    preview_root = tmp_path / "preview"
+    book_a = preview_root / "book-a"
+    book_a.mkdir(parents=True)
+    (book_a / "index.json").write_text('{"book": "a"}', encoding="utf-8")
+
+    book_b = preview_root / "book-b"
+    book_b.mkdir(parents=True)
+    (book_b / "index.json").write_text('{"book": "b"}', encoding="utf-8")
+
+    server = PreviewServer(preview_root=preview_root, docs_root=Path("docs"), host="127.0.0.1", port=0)
+    server.start()
+    try:
+        # Cross-book access from book-a to book-b must be rejected
+        url = f"http://127.0.0.1:{server.port}/api/preview/book-a/../book-b/index.json"
+        with pytest.raises(urllib.error.HTTPError) as exc:
+            urllib.request.urlopen(url)
+        assert exc.value.code in (400, 403, 404)
+    finally:
+        server.stop()
+
+
+def test_dedicated_archive_endpoint(tmp_path: Path):
+    preview_root = tmp_path / "preview"
+    site_data = preview_root / "site-data"
+    site_data.mkdir(parents=True)
+    (site_data / "catalog.json").write_text('{"archive": true}', encoding="utf-8")
+
+    server = PreviewServer(preview_root=preview_root, docs_root=Path("docs"), host="127.0.0.1", port=0)
+    server.start()
+    try:
+        url = f"http://127.0.0.1:{server.port}/api/preview/archive/catalog.json"
+        with urllib.request.urlopen(url) as resp:
+            assert resp.status == 200
+            assert resp.headers.get("X-Daemon-Local-Preview") == "active"
+            data = json.loads(resp.read().decode("utf-8"))
+            assert data["archive"] is True
+
+        # Traversal from archive endpoint must be blocked
+        url_bad = f"http://127.0.0.1:{server.port}/api/preview/archive/../../secret.json"
+        with pytest.raises(urllib.error.HTTPError) as exc:
+            urllib.request.urlopen(url_bad)
+        assert exc.value.code in (400, 403, 404)
+    finally:
+        server.stop()
+
+
+def test_main_cli_help():
+    from scripts.agents.preview_server import main
+    with pytest.raises(SystemExit) as exc:
+        main(["--help"])
+    assert exc.value.code == 0
+

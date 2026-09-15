@@ -659,6 +659,9 @@ def test_books_catalog_public_mode_fail_closed(browser, tmp_path):
         assert page.locator('a[href="#/book/animalidade"]').count() == 0
         assert page.locator('a[href="#/book/synthetic-empty"]').count() == 0
 
+        # Public mode MUST NOT render internal pipeline filter
+        assert page.locator("#siteBookPipelineFilter").count() == 0
+
         # Only authorized public book must appear
         assert page.locator('a[href="#/book/public-rules"]').count() == 1
 
@@ -676,6 +679,25 @@ def test_real_archive_catalog_renders_281_books_and_filters(page, archive_site_u
     page.wait_for_selector(".site-books-grid", timeout=15000)
 
     # All 281 canonical books must be present
+    assert page.locator(".site-book-card").count() == 281
+
+    # Pipeline filter MUST be present in archive preview
+    assert page.locator("#siteBookPipelineFilter").count() == 1
+
+    # Pipeline filter: RUNNING -> exactly 1 (Animalidade)
+    page.locator("#siteBookPipelineFilter").select_option("RUNNING")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 1
+    assert "animalidade" in page.text_content(".site-book-card").lower()
+
+    # Pipeline filter: WAITING -> 280 unworked books
+    page.locator("#siteBookPipelineFilter").select_option("WAITING")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 280
+
+    # Reset pipeline filter
+    page.locator("#siteBookPipelineFilter").select_option("all")
+    page.wait_for_timeout(300)
     assert page.locator(".site-book-card").count() == 281
 
     # Search filter by title
@@ -715,6 +737,11 @@ def test_real_archive_catalog_renders_281_books_and_filters(page, archive_site_u
     page.wait_for_timeout(300)
     first_card = page.locator(".site-book-card").first
     assert "animalidade" in first_card.text_content().lower()
+
+    # Sort by title descending
+    page.locator("#siteBookSort").select_option("title_desc")
+    page.wait_for_timeout(300)
+    assert page.locator(".site-book-card").count() == 281
 
 
 def test_real_archive_navigation_to_animalidade_and_unworked_book(page, archive_site_url):
