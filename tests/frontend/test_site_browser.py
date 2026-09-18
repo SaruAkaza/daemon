@@ -794,6 +794,11 @@ def test_ops_panel_and_review_resolution_restricted(page, site_url, site_preview
     assert "Painel de Controle Operacional" in page.text_content("h1")
     assert page.locator(".site-ops-metric-card").count() >= 4
 
+    # Assert live SSE status in header
+    meta_text = page.text_content(".site-ops-meta")
+    assert "Conexão SSE:" in meta_text
+    assert ("ATIVA" in meta_text or "CONECTANDO" in meta_text)
+
     server = site_preview_env["server"]
     if server.review_store:
         server.review_store.create_review({
@@ -818,17 +823,94 @@ def test_ops_panel_and_review_resolution_restricted(page, site_url, site_preview
 
     page.locator(".site-btn-approve").click()
     page.wait_for_selector(".site-ops-modal", timeout=5000)
+
+    # 1. Operator identity prompt appears first because operator is not identified yet
+    assert "Identificação do Operador Humano" in page.text_content(".site-ops-modal")
+    page.locator("#siteOpsOperatorInput").fill("alice-silva")
+    page.locator(".site-btn-confirm").click()
+
+    # 2. Risk modal for approval opens
+    page.wait_for_selector(".site-ops-modal", timeout=5000)
     assert "Aprovar Revisão" in page.text_content(".site-ops-modal")
 
     page.locator(".site-btn-confirm").click()
-    page.wait_for_timeout(500)
 
-    if server.command_processor:
-        server.command_processor.process_pending_commands()
+    # 3. Wait for automatic background worker (NO manual process_pending_commands)
+    import time
+    for _ in range(50):
+        rev = server.review_store.get_review("REV-UI-TEST-001") if server.review_store else None
+        if rev and rev.get("status") == "RESOLVED":
+            break
+        time.sleep(0.1)
+
+    assert rev is not None
+    assert rev["status"] == "RESOLVED"
+    assert rev["decidedBy"] == "alice-silva"
 
     page.reload()
     page.wait_for_selector(".site-ops-review-detail-view", timeout=10000)
     assert "Decisão Registrada" in page.text_content(".site-ops-review-detail-view")
+    assert "alice-silva" in page.text_content(".site-ops-review-detail-view")
+
+
+def test_policy_or_rights_records_exact_human_operator(page, site_url, site_preview_env):
+    server = site_preview_env["server"]
+    if server.review_store:
+        server.review_store.create_review({
+            "reviewId": "REV-RIGHTS-999",
+            "bookId": "synthetic",
+            "stage": "EDITORIAL",
+            "category": "POLICY_OR_RIGHTS",
+            "problem": "Verificação formal de titularidade de direitos",
+            "evidence": {"contrato": "anexo_a"},
+            "recommendation": "Exige aprovação expressa com autoridade humana",
+            "impact": "Alto",
+        })
+
+    page.goto(site_url + "#/ops/review/REV-RIGHTS-999")
+    page.wait_for_selector(".site-ops-review-detail-view", timeout=10000)
+
+    page.locator(".site-btn-approve").first.click()
+    page.wait_for_selector(".site-ops-modal", timeout=5000)
+
+    # If operator prompt opens, fill exact operator name
+    if "Identificação do Operador" in page.text_content(".site-ops-modal"):
+        page.locator("#siteOpsOperatorInput").fill("carlos-auditor-direitos")
+        page.locator(".site-btn-confirm").click()
+        page.wait_for_selector(".site-ops-modal", timeout=5000)
+
+    assert "Alto Risco" in page.text_content(".site-ops-modal")
+    # Fill reason, check box, and type bookId to confirm
+    page.locator(".site-ops-textarea").fill("Autorização formal assinada pelo titular")
+    page.locator(".site-ops-checkbox-label input").check()
+    page.locator(".site-ops-input").fill("synthetic")
+    page.locator(".site-btn-confirm").click()
+
+    # Wait for automatic worker execution
+    import time
+    for _ in range(50):
+        rev = server.review_store.get_review("REV-RIGHTS-999") if server.review_store else None
+        if rev and rev.get("status") == "RESOLVED":
+            break
+        time.sleep(0.1)
+
+    assert rev is not None
+    assert rev["status"] == "RESOLVED"
+    assert rev["decidedBy"] == "carlos-auditor-direitos"
+
+
+def test_queue_displays_pausa_solicitada_not_pausado(page, site_url, site_preview_env):
+    server = site_preview_env["server"]
+    if server.command_store:
+        server.command_store.set_control_override("pauseRequests", ["synthetic"])
+        server.command_store.set_control_override("pausedBooks", ["synthetic"])
+
+    page.goto(site_url + "#/ops/queue")
+    page.wait_for_selector(".site-ops-table", timeout=10000)
+
+    table_text = page.text_content(".site-ops-table")
+    assert "PAUSA SOLICITADA" in table_text
+    assert "PAUSADO" not in table_text
 
 
 def test_ops_panel_strictly_blocked_in_public_mode(page, public_site_url):

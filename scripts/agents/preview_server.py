@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import mimetypes
+import queue
 import re
 import threading
 import time
 import urllib.parse
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
 
@@ -92,8 +93,9 @@ class PreviewServer:
         self.public_root = Path(public_root).resolve() if public_root else None
         self.mode = mode
         self.runtime_dir = runtime_dir
-        self._server: HTTPServer | None = None
+        self._server: ThreadingHTTPServer | None = None
         self._thread: threading.Thread | None = None
+        self._shutdown_requested = False
         self.port = port
 
         if self.mode == "restricted_preview":
@@ -103,12 +105,13 @@ class PreviewServer:
             self.command_store = CommandStore(stores_dir=stores_dir)
             self.audit_log = CommandAuditLog(stores_dir=stores_dir)
             self.review_store = ReviewStore(stores_dir=stores_dir)
+            self.broadcaster = EventBroadcaster()
             self.command_processor = CommandProcessor(
                 command_store=self.command_store,
                 audit_log=self.audit_log,
                 review_store=self.review_store,
+                broadcaster=self.broadcaster,
             )
-            self.broadcaster = EventBroadcaster()
             self.ops_handler = OpsRequestHandler(
                 token_manager=self.token_manager,
                 command_processor=self.command_processor,
@@ -150,6 +153,65 @@ class PreviewServer:
                         return
                     if not server_ref.ops_handler:
                         self.send_error(404, "Ops handler not configured")
+                        return
+
+                    # Real continuous SSE streaming for /api/ops/events
+                    if req_path.rstrip("/") == "/api/ops/events":
+                        # Authentication check (cookie or bearer)
+                        cookie_hdr = self.headers.get("Cookie")
+                        auth_hdr = self.headers.get("Authorization")
+                        if not server_ref.token_manager.validate_session(cookie_hdr, auth_hdr):
+                            self.send_error(401, "Unauthorized")
+                            return
+
+                        if self.client_address[0] not in ("127.0.0.1", "::1", "localhost"):
+                            self.send_error(403, "Forbidden")
+                            return
+
+                        self.send_response(200)
+                        self.send_header("Content-Type", "text/event-stream; charset=utf-8")
+                        self.send_header("Cache-Control", "no-cache, no-transform")
+                        self.send_header("Connection", "keep-alive")
+                        self.send_header("X-Accel-Buffering", "no")
+                        self.end_headers()
+                        try:
+                            self.wfile.flush()
+                        except OSError:
+                            return
+
+                        last_event_id_str = self.headers.get("Last-Event-ID")
+                        if last_event_id_str:
+                            try:
+                                last_id = int(last_event_id_str)
+                                past_events, needs_snap = server_ref.broadcaster.get_events_since(last_id)
+                                if needs_snap:
+                                    msg = "event: snapshot_required\ndata: {}\n\n"
+                                    self.wfile.write(msg.encode("utf-8"))
+                                    self.wfile.flush()
+                                else:
+                                    for ev in past_events:
+                                        msg = server_ref.broadcaster.format_sse_message(ev["id"], ev["type"], ev["data"])
+                                        self.wfile.write(msg.encode("utf-8"))
+                                    self.wfile.flush()
+                            except (ValueError, OSError):
+                                pass
+
+                        sub_queue = server_ref.broadcaster.subscribe()
+                        try:
+                            while not server_ref._shutdown_requested:
+                                try:
+                                    ev = sub_queue.get(timeout=2.0)
+                                    msg = server_ref.broadcaster.format_sse_message(ev["id"], ev["type"], ev["data"])
+                                    self.wfile.write(msg.encode("utf-8"))
+                                    self.wfile.flush()
+                                except queue.Empty:
+                                    self.wfile.write(b": keepalive\n\n")
+                                    self.wfile.flush()
+                        except (BrokenPipeError, ConnectionResetError, OSError):
+                            pass
+                        finally:
+                            server_ref.broadcaster.unsubscribe(sub_queue)
+                            self.close_connection = True
                         return
 
                     headers_dict = {k: v for k, v in self.headers.items()}
@@ -355,10 +417,23 @@ class PreviewServer:
                         self.send_error(404, "Ops handler not configured")
                         return
 
-                    try:
-                        content_length = int(self.headers.get("Content-Length", 0))
-                    except ValueError:
+                    cl_header = self.headers.get("Content-Length")
+                    if cl_header is None:
                         content_length = 0
+                    else:
+                        try:
+                            content_length = int(cl_header.strip())
+                            if content_length < 0:
+                                self.send_error(400, "Invalid Content-Length")
+                                return
+                        except ValueError:
+                            self.send_error(400, "Invalid Content-Length")
+                            return
+
+                    from scripts.ops.ops_server import MAX_PAYLOAD_SIZE
+                    if content_length > MAX_PAYLOAD_SIZE:
+                        self.send_error(413, "Payload Too Large: maximum body size is 64KB")
+                        return
 
                     body = self.rfile.read(content_length) if content_length > 0 else b""
                     headers_dict = {k: v for k, v in self.headers.items()}
@@ -386,14 +461,20 @@ class PreviewServer:
 
     def start(self) -> None:
         """Starts the server in a background thread."""
+        self._shutdown_requested = False
         handler_cls = self._make_handler()
-        self._server = HTTPServer((self.host, self.requested_port), handler_cls)
+        self._server = ThreadingHTTPServer((self.host, self.requested_port), handler_cls)
         self.port = self._server.server_address[1]
         self._thread = threading.Thread(target=self._server.serve_forever, daemon=True)
         self._thread.start()
+        if self.mode == "restricted_preview" and self.command_processor:
+            self.command_processor.start_worker()
 
     def stop(self) -> None:
         """Shuts down and releases socket."""
+        self._shutdown_requested = True
+        if self.command_processor:
+            self.command_processor.stop_worker()
         if self._server:
             self._server.shutdown()
             self._server.server_close()

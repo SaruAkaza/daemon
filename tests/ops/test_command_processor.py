@@ -58,7 +58,7 @@ def test_idempotent_resubmission_returns_200(tmp_path):
 
     # Conflict on changed payload
     cmd_conflict = dict(cmd)
-    cmd_conflict["payload"] = {"priorityWeight": 999}
+    cmd_conflict["payload"] = {"priorityWeight": 150}
     with pytest.raises(CommandConflictError):
         proc.submit_command(cmd_conflict)
 
@@ -255,3 +255,82 @@ def test_worker_failure_recording(tmp_path):
     rec = cs.get_command("CMD-FAIL-000001")
     assert rec["status"] == "FAILED"
     assert "ReviewStore is required" in rec["error"]
+
+
+def test_automated_background_worker_lifecycle(tmp_path):
+    import time
+    cs = CommandStore(stores_dir=tmp_path)
+    audit = CommandAuditLog(stores_dir=tmp_path)
+    proc = CommandProcessor(command_store=cs, audit_log=audit)
+
+    proc.start_worker()
+    try:
+        proc.submit_command({
+            "commandId": "CMD-AUTO-00001",
+            "commandType": "PAUSE_BOOK",
+            "bookId": "trevas-3ed",
+            "payload": {},
+            "reason": "Test automatic background worker",
+            "operatorId": "alice",
+            "confirmation": {"confirmed": True},
+        })
+
+        # Wait for worker to transition without any manual call
+        deadline = time.time() + 3.0
+        while time.time() < deadline:
+            rec = proc.get_command_status("CMD-AUTO-00001")
+            if rec and rec["status"] == "SUCCEEDED":
+                break
+            time.sleep(0.05)
+
+        rec = proc.get_command_status("CMD-AUTO-00001")
+        assert rec is not None
+        assert rec["status"] == "SUCCEEDED"
+        assert rec["result"]["action"] == "PAUSE_REQUESTED"
+    finally:
+        proc.stop_worker()
+
+
+def test_running_command_recovery_on_restart(tmp_path):
+    cs = CommandStore(stores_dir=tmp_path)
+    audit = CommandAuditLog(stores_dir=tmp_path)
+    proc = CommandProcessor(command_store=cs, audit_log=audit)
+
+    proc.submit_command({
+        "commandId": "CMD-RESTART-0001",
+        "commandType": "PAUSE_BOOK",
+        "bookId": "trevas-3ed",
+        "payload": {},
+        "reason": "Simulate crash while running",
+        "operatorId": "alice",
+        "confirmation": {"confirmed": True},
+    })
+    # Simulate that server crashed while command was RUNNING
+    cs.update_command_status("CMD-RESTART-0001", "RUNNING")
+    assert cs.get_command("CMD-RESTART-0001")["status"] == "RUNNING"
+
+    # Simulate restart by instantiating a new CommandStore
+    new_cs = CommandStore(stores_dir=tmp_path)
+    rec = new_cs.get_command("CMD-RESTART-0001")
+    assert rec["status"] == "ACCEPTED"
+    assert "interrupted by server restart" in rec.get("recoveryNote", "")
+
+
+def test_operator_identity_rejects_automated_agents(tmp_path):
+    cs = CommandStore(stores_dir=tmp_path)
+    audit = CommandAuditLog(stores_dir=tmp_path)
+    proc = CommandProcessor(command_store=cs, audit_log=audit)
+
+    for bad_agent in ("llm-agent", "gemini-flash", "claude-3-opus", "gpt-4", "daemon-agent"):
+        with pytest.raises(RiskValidationError) as exc:
+            proc.submit_command({
+                "commandId": f"CMD-AGENT-{bad_agent[:8]}",
+                "commandType": "PAUSE_BOOK",
+                "bookId": "trevas-3ed",
+                "payload": {},
+                "reason": "Agent submission attempt",
+                "operatorId": bad_agent,
+                "confirmation": {"confirmed": True},
+            })
+        assert "forbidden" in str(exc.value).lower()
+

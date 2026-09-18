@@ -108,7 +108,12 @@ def test_valid_cookie_allows_post_command_202(ops_env):
     code, headers, body = handler.handle_request(
         method="POST",
         path="/api/ops/commands",
-        headers={"host": "127.0.0.1:8080", "cookie": ops_env["cookie"]},
+        headers={
+            "host": "127.0.0.1:8080",
+            "origin": "http://127.0.0.1:8080",
+            "content-type": "application/json",
+            "cookie": ops_env["cookie"],
+        },
         client_address=("127.0.0.1", 45678),
         body=json.dumps(cmd_data).encode("utf-8"),
     )
@@ -116,6 +121,118 @@ def test_valid_cookie_allows_post_command_202(ops_env):
     resp_json = json.loads(body.decode("utf-8"))
     assert resp_json["status"] == "ACCEPTED"
     assert resp_json["commandId"] == "CMD-SEC-00000001"
+
+
+def test_exact_origin_port_mismatch_forbidden(ops_env):
+    handler = ops_env["handler"]
+    cmd_data = {
+        "commandId": "CMD-SEC-PORT-01",
+        "commandType": "PAUSE_BOOK",
+        "bookId": "trevas-3ed",
+        "payload": {},
+        "reason": "Origin port mismatch attack",
+        "operatorId": "alice",
+        "confirmation": {"confirmed": True},
+    }
+    code, headers, body = handler.handle_request(
+        method="POST",
+        path="/api/ops/commands",
+        headers={
+            "host": "127.0.0.1:8080",
+            "origin": "http://127.0.0.1:9999",
+            "content-type": "application/json",
+            "cookie": ops_env["cookie"],
+        },
+        client_address=("127.0.0.1", 45678),
+        body=json.dumps(cmd_data).encode("utf-8"),
+    )
+    assert code == 403
+    assert b"Origin does not match" in body
+    assert ops_env["cs"].get_command("CMD-SEC-PORT-01") is None
+
+
+def test_content_type_non_json_returns_415(ops_env):
+    handler = ops_env["handler"]
+    cmd_data = {
+        "commandId": "CMD-SEC-CTYPE-01",
+        "commandType": "PAUSE_BOOK",
+        "bookId": "trevas-3ed",
+        "payload": {},
+        "reason": "Non json content-type",
+        "operatorId": "alice",
+        "confirmation": {"confirmed": True},
+    }
+    for bad_ct in ("text/plain", "application/x-www-form-urlencoded", "multipart/form-data"):
+        code, headers, body = handler.handle_request(
+            method="POST",
+            path="/api/ops/commands",
+            headers={
+                "host": "127.0.0.1:8080",
+                "origin": "http://127.0.0.1:8080",
+                "content-type": bad_ct,
+                "cookie": ops_env["cookie"],
+            },
+            client_address=("127.0.0.1", 45678),
+            body=json.dumps(cmd_data).encode("utf-8"),
+        )
+        assert code == 415
+        assert b"Unsupported Media Type" in body
+        assert ops_env["cs"].get_command("CMD-SEC-CTYPE-01") is None
+
+
+def test_csrf_attack_rejected_zero_mutation(ops_env):
+    handler = ops_env["handler"]
+    cmd_data = {
+        "commandId": "CMD-CSRF-001",
+        "commandType": "PAUSE_BOOK",
+        "bookId": "trevas-3ed",
+        "payload": {},
+        "reason": "CSRF attempt with form/plain",
+        "operatorId": "alice",
+        "confirmation": {"confirmed": True},
+    }
+    # Attacker tries from different port with text/plain body
+    code, headers, body = handler.handle_request(
+        method="POST",
+        path="/api/ops/commands",
+        headers={
+            "host": "127.0.0.1:8080",
+            "origin": "http://127.0.0.1:9999",
+            "content-type": "text/plain",
+            "cookie": ops_env["cookie"],
+        },
+        client_address=("127.0.0.1", 45678),
+        body=json.dumps(cmd_data).encode("utf-8"),
+    )
+    assert code == 403
+    assert ops_env["cs"].get_command("CMD-CSRF-001") is None
+    assert "CMD-CSRF-001" not in [e.get("commandId") for e in ops_env["audit"].read_all_actions()]
+
+
+def test_cli_bearer_without_origin_allowed(ops_env):
+    handler = ops_env["handler"]
+    cmd_data = {
+        "commandId": "CMD-BEARER-001",
+        "commandType": "PAUSE_BOOK",
+        "bookId": "trevas-3ed",
+        "payload": {},
+        "reason": "CLI bearer operation without browser origin",
+        "operatorId": "cli-operator",
+        "confirmation": {"confirmed": True},
+    }
+    code, headers, body = handler.handle_request(
+        method="POST",
+        path="/api/ops/commands",
+        headers={
+            "host": "127.0.0.1:8080",
+            "authorization": f"Bearer {ops_env['token']}",
+            "content-type": "application/json",
+        },
+        client_address=("127.0.0.1", 45678),
+        body=json.dumps(cmd_data).encode("utf-8"),
+    )
+    assert code == 202
+    assert ops_env["cs"].get_command("CMD-BEARER-001") is not None
 
 
 def test_conflicting_command_payload_returns_409(ops_env):
@@ -132,7 +249,12 @@ def test_conflicting_command_payload_returns_409(ops_env):
     code1, _, _ = handler.handle_request(
         method="POST",
         path="/api/ops/commands",
-        headers={"host": "127.0.0.1:8080", "cookie": ops_env["cookie"]},
+        headers={
+            "host": "127.0.0.1:8080",
+            "origin": "http://127.0.0.1:8080",
+            "content-type": "application/json",
+            "cookie": ops_env["cookie"],
+        },
         client_address=("127.0.0.1", 45678),
         body=json.dumps(cmd_data).encode("utf-8"),
     )
@@ -143,7 +265,12 @@ def test_conflicting_command_payload_returns_409(ops_env):
     code2, _, body2 = handler.handle_request(
         method="POST",
         path="/api/ops/commands",
-        headers={"host": "127.0.0.1:8080", "cookie": ops_env["cookie"]},
+        headers={
+            "host": "127.0.0.1:8080",
+            "origin": "http://127.0.0.1:8080",
+            "content-type": "application/json",
+            "cookie": ops_env["cookie"],
+        },
         client_address=("127.0.0.1", 45678),
         body=json.dumps(cmd_diff).encode("utf-8"),
     )
@@ -157,7 +284,12 @@ def test_payload_too_large_returns_413(ops_env):
     code, headers, body = handler.handle_request(
         method="POST",
         path="/api/ops/commands",
-        headers={"host": "127.0.0.1:8080", "cookie": ops_env["cookie"]},
+        headers={
+            "host": "127.0.0.1:8080",
+            "origin": "http://127.0.0.1:8080",
+            "content-type": "application/json",
+            "cookie": ops_env["cookie"],
+        },
         client_address=("127.0.0.1", 45678),
         body=large_body,
     )

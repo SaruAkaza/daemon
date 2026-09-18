@@ -83,13 +83,13 @@ def test_complete_ops_lifecycle_e2e(tmp_path):
             "bookId": "trevas-3ed",
             "payload": {},
             "reason": "Pausa para checagem operacional",
-            "operatorId": "operator-alice",
+            "operatorId": "alice-silva",
             "confirmation": {"confirmed": True},
         }
         req_pause = urllib.request.Request(
             f"{base_url}/api/ops/commands",
             data=json.dumps(pause_cmd).encode("utf-8"),
-            headers={"Content-Type": "application/json", "Cookie": cookie_val},
+            headers={"Content-Type": "application/json", "Cookie": cookie_val, "Origin": base_url},
             method="POST",
         )
         with urllib.request.urlopen(req_pause) as resp:
@@ -107,13 +107,13 @@ def test_complete_ops_lifecycle_e2e(tmp_path):
             "reviewId": "REV-E2E-0002",
             "payload": {},
             "reason": "Aprovando sem digitar ID",
-            "operatorId": "operator-alice",
+            "operatorId": "alice-silva",
             "confirmation": {"confirmed": True, "typedConfirmation": "wrong-id"},
         }
         req_bad_high = urllib.request.Request(
             f"{base_url}/api/ops/commands",
             data=json.dumps(bad_high_cmd).encode("utf-8"),
-            headers={"Content-Type": "application/json", "Cookie": cookie_val},
+            headers={"Content-Type": "application/json", "Cookie": cookie_val, "Origin": base_url},
             method="POST",
         )
         with pytest.raises(urllib.error.HTTPError) as exc_info:
@@ -128,24 +128,38 @@ def test_complete_ops_lifecycle_e2e(tmp_path):
             "reviewId": "REV-E2E-0002",
             "payload": {},
             "reason": "Autoridade humana expressa concedida",
-            "operatorId": "human-alice",
+            "operatorId": "alice-silva",
             "confirmation": {"confirmed": True, "typedConfirmation": "demonio-guia"},
         }
         req_good_high = urllib.request.Request(
             f"{base_url}/api/ops/commands",
             data=json.dumps(good_high_cmd).encode("utf-8"),
-            headers={"Content-Type": "application/json", "Cookie": cookie_val},
+            headers={"Content-Type": "application/json", "Cookie": cookie_val, "Origin": base_url},
             method="POST",
         )
         with urllib.request.urlopen(req_good_high) as resp:
             assert resp.status == 202
 
-        # 9. Execute worker loop
-        count = server.command_processor.process_pending_commands()
-        assert count == 2
+        # 9. Wait for automatic background worker (NO manual process_pending_commands)
+        import time
+        for _ in range(50):
+            c1 = server.command_store.get_command("CMD-E2E-PAUSE-01")
+            c2 = server.command_store.get_command("CMD-E2E-HIGH-OK01")
+            if (
+                c1 and c1.get("status") in ("SUCCEEDED", "FAILED", "BLOCKED")
+                and c2 and c2.get("status") in ("SUCCEEDED", "FAILED", "BLOCKED")
+            ):
+                break
+            time.sleep(0.1)
 
-        # 10. Verify state: trevas-3ed is paused, REV-E2E-0002 is resolved
+        c1 = server.command_store.get_command("CMD-E2E-PAUSE-01")
+        c2 = server.command_store.get_command("CMD-E2E-HIGH-OK01")
+        assert c1["status"] == "SUCCEEDED"
+        assert c2["status"] == "SUCCEEDED"
+
+        # 10. Verify state: trevas-3ed has pause requested, REV-E2E-0002 is resolved
         ctrl = server.command_store.get_control_state()
+        assert "trevas-3ed" in ctrl["pauseRequests"]
         assert "trevas-3ed" in ctrl["pausedBooks"]
 
         rev_rights = server.review_store.get_review("REV-E2E-0002")
@@ -157,16 +171,16 @@ def test_complete_ops_lifecycle_e2e(tmp_path):
         valid_dec, _, _ = server.review_store.decision_logger.verify_integrity()
         assert valid_dec is True
 
-        # 12. Test SSE streaming endpoint /api/ops/events
+        # 12. Test SSE streaming endpoint /api/ops/events receives live data
         req_events = urllib.request.Request(
             f"{base_url}/api/ops/events",
             headers={"Cookie": cookie_val, "Accept": "text/event-stream"},
         )
-        with urllib.request.urlopen(req_events) as resp:
+        with urllib.request.urlopen(req_events, timeout=5.0) as resp:
             assert resp.status == 200
             assert "text/event-stream" in resp.headers.get("Content-Type", "")
-            data_read = resp.read().decode("utf-8")
-            assert len(data_read) > 0
+            first_line = resp.readline().decode("utf-8")
+            assert len(first_line) > 0
 
     finally:
         server.stop()

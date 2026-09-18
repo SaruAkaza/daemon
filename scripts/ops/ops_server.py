@@ -48,27 +48,47 @@ class OpsRequestHandler:
             return 403, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Forbidden: non-loopback access denied"}'
 
         # 2. Host header verification (DNS rebinding prevention)
-        host_hdr = norm_headers.get("host", "").split(":")[0].strip().lower()
-        if not host_hdr or host_hdr not in self.allowed_hosts:
+        raw_host = norm_headers.get("host", "").strip().lower()
+        host_name = raw_host.split(":")[0].strip().lower()
+        if not host_name or host_name not in self.allowed_hosts:
             return 403, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Forbidden: invalid Host header"}'
 
-        # 3. Origin header verification (if present)
+        # 3. Authentication check (same-origin session cookie or Bearer token)
+        cookie_hdr = norm_headers.get("cookie")
+        auth_hdr = norm_headers.get("authorization")
+        is_cookie_auth = bool(cookie_hdr and self.token_manager.validate_session(cookie_hdr, None))
+        is_bearer_auth = bool(auth_hdr and self.token_manager.validate_session(None, auth_hdr))
+
+        if not (is_cookie_auth or is_bearer_auth):
+            return 401, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Unauthorized: valid session cookie or Bearer token required"}'
+
+        # Origin check: if Origin is provided on ANY request, it must be from an allowed host
         origin_hdr = norm_headers.get("origin")
         if origin_hdr:
-            parsed = urllib.parse.urlparse(origin_hdr)
-            origin_host = (parsed.hostname or "").lower()
+            parsed_origin = urllib.parse.urlparse(origin_hdr.strip().lower())
+            origin_host = (parsed_origin.hostname or "").lower()
             if origin_host not in self.allowed_hosts:
                 return 403, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Forbidden: invalid Origin header"}'
 
-        # 4. Request body size check
+        # 4. Origin & Content-Type verification for mutable methods (CSRF prevention)
+        if method in ("POST", "PUT", "DELETE", "PATCH"):
+            if is_cookie_auth and not is_bearer_auth:
+                if not origin_hdr:
+                    return 403, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Forbidden: Origin header strictly required for cookie-authenticated mutable requests"}'
+                parsed_origin = urllib.parse.urlparse(origin_hdr.strip().lower())
+                expected_origin = f"http://{raw_host}"
+                actual_origin = f"{parsed_origin.scheme}://{parsed_origin.netloc}"
+                if actual_origin != expected_origin:
+                    return 403, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Forbidden: Origin does not match exact server Host and port"}'
+
+            ctype = norm_headers.get("content-type", "")
+            media_type = ctype.split(";")[0].strip().lower()
+            if media_type != "application/json":
+                return 415, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Unsupported Media Type: Content-Type must be application/json"}'
+
+        # 5. Request body size check
         if len(body) > MAX_PAYLOAD_SIZE:
             return 413, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Payload Too Large: maximum body size is 64KB"}'
-
-        # 5. Authentication check (same-origin session cookie or Bearer token)
-        cookie_hdr = norm_headers.get("cookie")
-        auth_hdr = norm_headers.get("authorization")
-        if not self.token_manager.validate_session(cookie_hdr, auth_hdr):
-            return 401, {"Content-Type": "application/json; charset=utf-8"}, b'{"error":"Unauthorized: valid session cookie or Bearer token required"}'
 
         # 6. Route dispatching
         clean_path = urllib.parse.urlparse(path).path.rstrip("/")

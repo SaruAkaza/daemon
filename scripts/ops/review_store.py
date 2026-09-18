@@ -37,6 +37,7 @@ class ReviewStore:
         self.decision_logger = HashChainLogger(self.decisions_file)
         self._lock = threading.RLock()
         self._ensure_files()
+        self._reconcile_with_decision_log()
 
     def _ensure_files(self) -> None:
         if not self.reviews_file.exists():
@@ -51,6 +52,45 @@ class ReviewStore:
 
     def _save_reviews(self, reviews: list[dict[str, Any]]) -> None:
         write_atomic(self.reviews_file, canonical_json_bytes({"reviews": reviews}))
+
+    def _reconcile_with_decision_log(self) -> None:
+        """Reconciles reviews.json snapshot against immutable decision log."""
+        with self._lock:
+            decisions = self.decision_logger.read_all_entries()
+            if not decisions:
+                return
+            reviews = self._load_reviews()
+            dirty = False
+            for dec in decisions:
+                rev_id = dec.get("reviewId")
+                matched = False
+                for r in reviews:
+                    if r["reviewId"] == rev_id:
+                        matched = True
+                        if r.get("status") != "RESOLVED" or r.get("decisionId") != dec.get("decisionId"):
+                            r["status"] = "RESOLVED"
+                            r["decisionId"] = dec.get("decisionId")
+                            r["resolutionAction"] = dec.get("decision")
+                            r["decidedBy"] = dec.get("decidedBy")
+                            r["resolvedAt"] = dec.get("timestamp")
+                            dirty = True
+                        break
+                if not matched:
+                    reviews.append({
+                        "reviewId": rev_id,
+                        "bookId": dec.get("bookId"),
+                        "stage": "EDITORIAL",
+                        "category": dec.get("category", "TECHNICAL"),
+                        "problem": "Reconciled from immutable decision log",
+                        "status": "RESOLVED",
+                        "decisionId": dec.get("decisionId"),
+                        "resolutionAction": dec.get("decision"),
+                        "decidedBy": dec.get("decidedBy"),
+                        "resolvedAt": dec.get("timestamp"),
+                    })
+                    dirty = True
+            if dirty:
+                self._save_reviews(reviews)
 
     def create_review(self, record: dict[str, Any]) -> dict[str, Any]:
         with self._lock:
@@ -114,6 +154,14 @@ class ReviewStore:
             raise DecisionValidationError("Decision requires a 'reviewId'")
 
         with self._lock:
+            # First check immutable decision log directly
+            existing_decisions = self.decision_logger.read_all_entries()
+            for d in existing_decisions:
+                if d.get("reviewId") == review_id:
+                    raise ReviewConflictError(
+                        f"Review '{review_id}' already has an immutable decision recorded in decision log"
+                    )
+
             reviews = self._load_reviews()
             target_rev = None
             for r in reviews:

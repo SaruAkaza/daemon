@@ -6,6 +6,8 @@ import json
 import threading
 from typing import Any
 
+import queue
+
 from scripts.ops.command_audit import scrub_sensitive_data
 
 
@@ -17,6 +19,18 @@ class EventBroadcaster:
         self._buffer: deque[dict[str, Any]] = deque(maxlen=buffer_size)
         self._current_id = 0
         self._lock = threading.RLock()
+        self._subscribers: list[queue.Queue[dict[str, Any]]] = []
+
+    def subscribe(self) -> queue.Queue[dict[str, Any]]:
+        q: queue.Queue[dict[str, Any]] = queue.Queue(maxsize=200)
+        with self._lock:
+            self._subscribers.append(q)
+        return q
+
+    def unsubscribe(self, q: queue.Queue[dict[str, Any]]) -> None:
+        with self._lock:
+            if q in self._subscribers:
+                self._subscribers.remove(q)
 
     def publish_event(self, event_type: str, data: dict[str, Any]) -> int:
         """Publish a new event into the circular buffer with a strictly monotonic ID."""
@@ -31,6 +45,11 @@ class EventBroadcaster:
                 "timestamp": datetime.now(timezone.utc).isoformat(),
             }
             self._buffer.append(entry)
+            for q in list(self._subscribers):
+                try:
+                    q.put_nowait(entry)
+                except queue.Full:
+                    pass
             return event_id
 
     def get_events_since(self, last_event_id: int) -> tuple[list[dict[str, Any]], bool]:

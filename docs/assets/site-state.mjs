@@ -92,11 +92,32 @@ function readSavedLayout(storage) {
   }
 }
 
+export const STORAGE_KEY_OPERATOR = 'daemonSite.operatorId';
+
+/**
+ * Defensively reads saved operator ID from Web Storage.
+ *
+ * @param {Storage|object|null} storage
+ * @returns {string}
+ */
+export function readSavedOperatorId(storage) {
+  if (!storage || typeof storage.getItem !== 'function') {
+    return '';
+  }
+  try {
+    const val = storage.getItem(STORAGE_KEY_OPERATOR);
+    return typeof val === 'string' ? val.trim() : '';
+  } catch {
+    return '';
+  }
+}
+
 /**
  * Creates initial application state.
  *
  * @param {Storage|object|null} [storage=null]
  * @param {string} [initialHash='#/']
+ * @param {object} [options={}]
  * @returns {object}
  */
 export function createState(storage = null, initialHash = '#/', options = {}) {
@@ -104,6 +125,8 @@ export function createState(storage = null, initialHash = '#/', options = {}) {
   const route = initialHash || '#/';
   const routeInfo = parseRoute(route, { mode });
   const layout = readSavedLayout(storage);
+  const sessionStore = options.sessionStorage || (typeof window !== 'undefined' ? window.sessionStorage : null);
+  const operatorId = readSavedOperatorId(sessionStore);
 
   return {
     mode,
@@ -128,6 +151,8 @@ export function createState(storage = null, initialHash = '#/', options = {}) {
       activeTab: 'overview',
       selectedReviewId: null,
       modalState: null,
+      operatorId,
+      sseStatus: 'DESCONECTADA',
     },
   };
 }
@@ -205,4 +230,52 @@ export function setBookFilters(state, updates = {}) {
     },
   };
 }
+
+/**
+ * Updates operator ID and persists to session storage if provided.
+ *
+ * @param {object} state
+ * @param {string} operatorId
+ * @param {Storage|object|null} [storage=null]
+ * @returns {object}
+ */
+export function setOperatorId(state, operatorId, storage = null) {
+  const trimmed = String(operatorId || '').trim();
+  if (storage && typeof storage.setItem === 'function') {
+    try {
+      if (trimmed) {
+        storage.setItem(STORAGE_KEY_OPERATOR, trimmed);
+      } else if (typeof storage.removeItem === 'function') {
+        storage.removeItem(STORAGE_KEY_OPERATOR);
+      }
+    } catch {
+      // ignore
+    }
+  }
+  return {
+    ...state,
+    ops: {
+      ...state.ops,
+      operatorId: trimmed,
+    },
+  };
+}
+
+/**
+ * Updates SSE connection status in state.
+ *
+ * @param {object} state
+ * @param {'CONECTANDO'|'ATIVA'|'DESCONECTADA'} sseStatus
+ * @returns {object}
+ */
+export function setSseStatus(state, sseStatus) {
+  return {
+    ...state,
+    ops: {
+      ...state.ops,
+      sseStatus,
+    },
+  };
+}
+
 

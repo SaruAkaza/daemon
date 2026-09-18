@@ -154,3 +154,29 @@ def test_command_audit_hash_chain_and_tamper_detection(tmp_path):
     audit_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     assert audit.verify_audit_chain() is False
+
+    from scripts.ops.hash_chain import IntegrityError
+    with pytest.raises(IntegrityError):
+        CommandAuditLog(stores_dir=tmp_path)
+
+
+def test_command_store_blocked_status_and_control_intents(tmp_path):
+    store = CommandStore(stores_dir=tmp_path)
+    ctrl = store.get_control_state()
+    assert "pauseRequests" in ctrl
+    assert "dequeueRequests" in ctrl
+
+    cmd = {
+        "commandId": "CMD-BLOCK-001",
+        "commandType": "PAUSE_BOOK",
+        "bookId": "trevas-3ed",
+        "payload": {},
+        "reason": "Test blocked",
+        "operatorId": "alice",
+        "confirmation": {"confirmed": True},
+    }
+    store.save_command_intent(cmd)
+    rec = store.update_command_status("CMD-BLOCK-001", "BLOCKED", error="Requires operator manual intervention")
+    assert rec["status"] == "BLOCKED"
+    assert rec["error"] == "Requires operator manual intervention"
+

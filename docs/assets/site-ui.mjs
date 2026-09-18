@@ -4,7 +4,16 @@
  */
 
 import { searchEntities, filterBooks } from './site-search.mjs';
-import { createState, parseRoute, setLayout, setRoute, setFilters, setBookFilters } from './site-state.mjs';
+import {
+  createState,
+  parseRoute,
+  setLayout,
+  setRoute,
+  setFilters,
+  setBookFilters,
+  setOperatorId,
+  setSseStatus,
+} from './site-state.mjs';
 import { OpsClient } from './site-ops.mjs';
 
 /**
@@ -191,8 +200,63 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
 
   let opsClient = null;
   let opsEventsConnection = null;
+
+  function connectOpsEvents() {
+    if (state.mode !== 'restricted_preview' || !opsClient) return;
+    if (opsEventsConnection) return;
+
+    state = setSseStatus(state, 'CONECTANDO');
+    opsEventsConnection = opsClient.connectEvents({
+      onOpen: () => {
+        state = setSseStatus(state, 'ATIVA');
+        if (state.routeInfo.kind.startsWith('ops')) {
+          renderActiveView();
+        }
+      },
+      onEvent: (payload, eventType) => {
+        if (eventType === 'command_updated') {
+          const cmds = [...(state.ops.commands || [])];
+          const idx = cmds.findIndex((c) => c.commandId === payload.commandId);
+          if (idx >= 0) {
+            cmds[idx] = payload;
+          } else {
+            cmds.unshift(payload);
+          }
+          state.ops.commands = cmds;
+        } else if (eventType === 'review_updated') {
+          const revs = [...(state.ops.reviews || [])];
+          const idx = revs.findIndex((r) => r.reviewId === payload.reviewId);
+          if (idx >= 0) {
+            revs[idx] = payload;
+          } else {
+            revs.push(payload);
+          }
+          state.ops.reviews = revs;
+        } else if (eventType === 'control_updated') {
+          state.ops.controlState = payload;
+        }
+        if (state.routeInfo.kind.startsWith('ops')) {
+          renderActiveView();
+        }
+      },
+      onSnapshotRequired: async () => {
+        await loadOpsData();
+        if (state.routeInfo.kind.startsWith('ops')) {
+          renderActiveView();
+        }
+      },
+      onError: () => {
+        state = setSseStatus(state, 'DESCONECTADA');
+        if (state.routeInfo.kind.startsWith('ops')) {
+          renderActiveView();
+        }
+      },
+    });
+  }
+
   if (state.mode === 'restricted_preview') {
     opsClient = new OpsClient();
+    connectOpsEvents();
   }
 
   // Clear root
@@ -1126,6 +1190,111 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     }
   }
 
+  function promptOperatorIdentity(onSuccess, onCancel) {
+    const existing = document.querySelector('.site-ops-modal-backdrop');
+    if (existing) existing.remove();
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'site-ops-modal-backdrop';
+
+    const panel = document.createElement('section');
+    panel.className = 'site-ops-modal site-ops-modal-medium';
+    panel.setAttribute('role', 'dialog');
+    panel.setAttribute('aria-modal', 'true');
+    panel.setAttribute('aria-label', 'Identificação do Operador Humano');
+
+    const head = document.createElement('header');
+    head.className = 'site-ops-modal-head';
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Identificação do Operador Humano';
+    head.appendChild(h2);
+    panel.appendChild(head);
+
+    const body = document.createElement('div');
+    body.className = 'site-ops-modal-body';
+
+    const pDesc = document.createElement('p');
+    pDesc.textContent =
+      'Para executar comandos operacionais ou resolver revisões na Release B, informe seu identificador humano para esta sessão (ex: seu nome ou matrícula). Valores em branco ou nomes de agentes automatizados serão rejeitados.';
+    body.appendChild(pDesc);
+
+    const errBox = document.createElement('div');
+    errBox.className = 'site-ops-error-box';
+    errBox.hidden = true;
+    body.appendChild(errBox);
+
+    const field = document.createElement('div');
+    field.className = 'site-field';
+    const label = document.createElement('label');
+    label.htmlFor = 'siteOpsOperatorInput';
+    label.textContent = 'Identificador do Operador:';
+    const input = document.createElement('input');
+    input.id = 'siteOpsOperatorInput';
+    input.type = 'text';
+    input.placeholder = 'ex: alice-silva';
+    input.value = state.ops.operatorId || '';
+    field.appendChild(label);
+    field.appendChild(input);
+    body.appendChild(field);
+    panel.appendChild(body);
+
+    const foot = document.createElement('footer');
+    foot.className = 'site-ops-modal-foot';
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.className = 'site-btn-cancel';
+    cancelBtn.textContent = 'Cancelar';
+    cancelBtn.addEventListener('click', () => {
+      backdrop.remove();
+      if (onCancel) onCancel();
+    });
+
+    const confirmBtn = document.createElement('button');
+    confirmBtn.type = 'button';
+    confirmBtn.className = 'site-btn-confirm site-btn-primary';
+    confirmBtn.textContent = 'Confirmar Identidade';
+
+    const handleConfirm = () => {
+      const val = input.value.trim();
+      if (!val) {
+        errBox.textContent = 'O identificador do operador não pode ser vazio.';
+        errBox.hidden = false;
+        return;
+      }
+      const automated = ['gemini', 'claude', 'gpt', 'bot', 'subagent', 'pipeline', 'automated', 'system', 'agent'];
+      if (automated.includes(val.toLowerCase())) {
+        errBox.textContent = 'Identificador de agente automatizado não é permitido no console humano.';
+        errBox.hidden = false;
+        return;
+      }
+      const sessionStore = typeof window !== 'undefined' ? window.sessionStorage : null;
+      state = setOperatorId(state, val, sessionStore);
+      backdrop.remove();
+      if (onSuccess) onSuccess(val);
+    };
+
+    confirmBtn.addEventListener('click', handleConfirm);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleConfirm();
+    });
+
+    foot.appendChild(cancelBtn);
+    foot.appendChild(confirmBtn);
+    panel.appendChild(foot);
+    backdrop.appendChild(panel);
+    root.appendChild(backdrop);
+    input.focus();
+  }
+
+  function ensureOperatorId(onReady) {
+    if (state.ops.operatorId && state.ops.operatorId.trim().length > 0) {
+      onReady(state.ops.operatorId.trim());
+      return;
+    }
+    promptOperatorIdentity(onReady);
+  }
+
   function openRiskModal({ title, riskLevel, message, targetBookId = null, onConfirm }) {
     const existing = document.querySelector('.site-ops-modal-backdrop');
     if (existing) existing.remove();
@@ -1273,7 +1442,22 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     h1.textContent = 'Painel de Controle Operacional — Release B';
     const sub = document.createElement('p');
     sub.className = 'site-ops-meta';
-    sub.textContent = 'Modo: Restricted Preview | Operador: Local | Conexão SSE: Ativa';
+    const opDisplay = state.ops.operatorId ? escapeHtml(state.ops.operatorId) : 'Não identificado';
+    const sseDisplay = escapeHtml(state.ops.sseStatus || 'DESCONECTADA');
+    sub.innerHTML = `Modo: Restricted Preview | Operador: <strong>${opDisplay}</strong> | Conexão SSE: <strong>${sseDisplay}</strong>`;
+
+    const changeOpBtn = document.createElement('button');
+    changeOpBtn.type = 'button';
+    changeOpBtn.className = 'site-btn-secondary site-btn-sm';
+    changeOpBtn.style.marginLeft = '1rem';
+    changeOpBtn.textContent = state.ops.operatorId ? 'Alterar Operador' : 'Identificar Operador';
+    changeOpBtn.addEventListener('click', () => {
+      promptOperatorIdentity(() => {
+        renderActiveView();
+      });
+    });
+    sub.appendChild(changeOpBtn);
+
     header.appendChild(h1);
     header.appendChild(sub);
     container.appendChild(header);
@@ -1305,6 +1489,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
 
     const totalBooks = catalog && catalog.books ? catalog.books.length : 281;
     const pausedBooks = (state.ops.controlState && state.ops.controlState.pausedBooks) || [];
+    const pauseList = (state.ops.controlState && state.ops.controlState.pauseRequests) || pausedBooks;
     const doneBooks = catalog && catalog.books ? catalog.books.filter((b) => b.pipelineStatus === 'DONE' || b.pipelineStatus === 'READY_FOR_HUMAN_APPROVAL').length : 0;
     const runningBooks = catalog && catalog.books ? catalog.books.filter((b) => b.pipelineStatus === 'RUNNING').length : 0;
 
@@ -1313,7 +1498,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       { label: 'Concluídos', value: doneBooks },
       { label: 'Em Execução', value: runningBooks },
       { label: 'Revisão Pendente', value: pendingReviews.length },
-      { label: 'Pausados', value: pausedBooks.length },
+      { label: 'Pausa Solicitada', value: pauseList.length },
     ];
 
     for (const c of cards) {
@@ -1342,7 +1527,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       overridesSec.appendChild(secH2);
 
       const pDesc = document.createElement('p');
-      pDesc.textContent = `Livros Pausados (${pausedBooks.length}): ${pausedBooks.length > 0 ? pausedBooks.join(', ') : 'Nenhum'}`;
+      pDesc.textContent = `Livros com Pausa Solicitada (${pauseList.length}): ${pauseList.length > 0 ? pauseList.join(', ') : 'Nenhum'}`;
       overridesSec.appendChild(pDesc);
       tabContent.appendChild(overridesSec);
 
@@ -1395,7 +1580,10 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       const tbody = document.createElement('tbody');
       for (const b of booksList) {
         const tr = document.createElement('tr');
-        const isPaused = pausedBooks.includes(b.bookId);
+        const isPauseRequested = (
+          (state.ops.controlState && state.ops.controlState.pauseRequests && state.ops.controlState.pauseRequests.includes(b.bookId)) ||
+          pausedBooks.includes(b.bookId)
+        );
         const priorityOverrides = (state.ops.controlState && state.ops.controlState.priorityOverrides) || {};
         const prio = priorityOverrides[b.bookId] || 100;
 
@@ -1403,7 +1591,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
         tdBook.textContent = b.title || b.bookId;
 
         const tdStatus = document.createElement('td');
-        tdStatus.textContent = isPaused ? 'PAUSADO' : (b.pipelineStatus || 'WAITING');
+        tdStatus.textContent = isPauseRequested ? 'PAUSA SOLICITADA' : (b.pipelineStatus || 'WAITING');
 
         const tdPrio = document.createElement('td');
         tdPrio.textContent = String(prio);
@@ -1414,25 +1602,27 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
         // Pause / Resume button
         const pauseBtn = document.createElement('button');
         pauseBtn.type = 'button';
-        pauseBtn.className = isPaused ? 'site-btn-resume' : 'site-btn-pause';
-        pauseBtn.textContent = isPaused ? 'Retomar' : 'Pausar';
+        pauseBtn.className = isPauseRequested ? 'site-btn-resume' : 'site-btn-pause';
+        pauseBtn.textContent = isPauseRequested ? 'Retomar' : 'Pausar';
         pauseBtn.addEventListener('click', () => {
-          openRiskModal({
-            title: isPaused ? 'Retomar Livro' : 'Pausar Livro',
-            riskLevel: 'LOW',
-            message: `Confirma ${isPaused ? 'a retomada' : 'a pausa'} do livro "${b.bookId}" no processamento?`,
-            targetBookId: b.bookId,
-            onConfirm: async (res) => {
-              await opsClient.submitCommand({
-                commandType: isPaused ? 'RESUME_BOOK' : 'PAUSE_BOOK',
-                bookId: b.bookId,
-                reason: res.reason,
-                operatorId: 'operator',
-                confirmation: { confirmed: true },
-              });
-              await loadOpsData();
-              renderActiveView();
-            },
+          ensureOperatorId((opId) => {
+            openRiskModal({
+              title: isPauseRequested ? 'Retomar Livro' : 'Pausar Livro',
+              riskLevel: 'LOW',
+              message: `Confirma ${isPauseRequested ? 'a retomada' : 'a solicitação de pausa'} do livro "${b.bookId}" no processamento?`,
+              targetBookId: b.bookId,
+              onConfirm: async (res) => {
+                await opsClient.submitCommand({
+                  commandType: isPauseRequested ? 'RESUME_BOOK' : 'PAUSE_BOOK',
+                  bookId: b.bookId,
+                  reason: res.reason,
+                  operatorId: opId,
+                  confirmation: { confirmed: true },
+                });
+                await loadOpsData();
+                renderActiveView();
+              },
+            });
           });
         });
         tdActions.appendChild(pauseBtn);
@@ -1443,28 +1633,30 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
         prioBtn.className = 'site-btn-priority';
         prioBtn.textContent = 'Priorizar';
         prioBtn.addEventListener('click', () => {
-          const newWeightStr = window.prompt(`Defina a nova prioridade para "${b.bookId}" (1-200):`, String(prio));
-          if (!newWeightStr) return;
-          const weight = parseInt(newWeightStr, 10);
-          if (isNaN(weight)) return;
+          ensureOperatorId((opId) => {
+            const newWeightStr = window.prompt(`Defina a nova prioridade para "${b.bookId}" (1-200):`, String(prio));
+            if (!newWeightStr) return;
+            const weight = parseInt(newWeightStr, 10);
+            if (isNaN(weight)) return;
 
-          openRiskModal({
-            title: 'Alterar Prioridade',
-            riskLevel: 'LOW',
-            message: `Definir peso de prioridade ${weight} para "${b.bookId}"?`,
-            targetBookId: b.bookId,
-            onConfirm: async (res) => {
-              await opsClient.submitCommand({
-                commandType: 'PRIORITIZE_BOOK',
-                bookId: b.bookId,
-                payload: { priorityWeight: weight },
-                reason: res.reason,
-                operatorId: 'operator',
-                confirmation: { confirmed: true },
-              });
-              await loadOpsData();
-              renderActiveView();
-            },
+            openRiskModal({
+              title: 'Alterar Prioridade',
+              riskLevel: 'LOW',
+              message: `Definir peso de prioridade ${weight} para "${b.bookId}"?`,
+              targetBookId: b.bookId,
+              onConfirm: async (res) => {
+                await opsClient.submitCommand({
+                  commandType: 'PRIORITIZE_BOOK',
+                  bookId: b.bookId,
+                  payload: { priorityWeight: weight },
+                  reason: res.reason,
+                  operatorId: opId,
+                  confirmation: { confirmed: true },
+                });
+                await loadOpsData();
+                renderActiveView();
+              },
+            });
           });
         });
         tdActions.appendChild(prioBtn);
@@ -1636,26 +1828,28 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       approveBtn.className = 'site-btn-approve';
       approveBtn.textContent = 'Aprovar Revisão';
       approveBtn.addEventListener('click', () => {
-        const isHigh = review.category === 'POLICY_OR_RIGHTS';
-        openRiskModal({
-          title: isHigh ? 'Aprovação de Alto Risco — Direitos e Políticas' : 'Aprovar Revisão',
-          riskLevel: isHigh ? 'HIGH' : 'LOW',
-          targetBookId: review.bookId,
-          message: isHigh
-            ? `Esta revisão envolve direitos/política para "${review.bookId}". Sua aprovação assume autoridade humana formal.`
-            : `Confirma a aprovação da revisão para o livro "${review.bookId}"?`,
-          onConfirm: async (res) => {
-            await opsClient.submitCommand({
-              commandType: 'APPROVE_REVIEW',
-              bookId: review.bookId,
-              reviewId: review.reviewId,
-              reason: res.reason,
-              operatorId: 'human-reviewer',
-              confirmation: { confirmed: true, typedConfirmation: res.typedConfirmation },
-            });
-            await loadOpsData();
-            renderActiveView();
-          },
+        ensureOperatorId((opId) => {
+          const isHigh = review.category === 'POLICY_OR_RIGHTS';
+          openRiskModal({
+            title: isHigh ? 'Aprovação de Alto Risco — Direitos e Políticas' : 'Aprovar Revisão',
+            riskLevel: isHigh ? 'HIGH' : 'LOW',
+            targetBookId: review.bookId,
+            message: isHigh
+              ? `Esta revisão envolve direitos/política para "${review.bookId}". Sua aprovação assume autoridade humana formal.`
+              : `Confirma a aprovação da revisão para o livro "${review.bookId}"?`,
+            onConfirm: async (res) => {
+              await opsClient.submitCommand({
+                commandType: 'APPROVE_REVIEW',
+                bookId: review.bookId,
+                reviewId: review.reviewId,
+                reason: res.reason,
+                operatorId: opId,
+                confirmation: { confirmed: true, typedConfirmation: res.typedConfirmation },
+              });
+              await loadOpsData();
+              renderActiveView();
+            },
+          });
         });
       });
       btnRow.appendChild(approveBtn);
@@ -1666,23 +1860,25 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       rejectBtn.className = 'site-btn-reject';
       rejectBtn.textContent = 'Rejeitar';
       rejectBtn.addEventListener('click', () => {
-        openRiskModal({
-          title: 'Rejeitar Revisão (Médio Risco)',
-          riskLevel: 'MEDIUM',
-          targetBookId: review.bookId,
-          message: `Rejeitar esta alteração para o livro "${review.bookId}". Justificativa técnica obrigatória.`,
-          onConfirm: async (res) => {
-            await opsClient.submitCommand({
-              commandType: 'REJECT_REVIEW',
-              bookId: review.bookId,
-              reviewId: review.reviewId,
-              reason: res.reason,
-              operatorId: 'human-reviewer',
-              confirmation: { confirmed: true },
-            });
-            await loadOpsData();
-            renderActiveView();
-          },
+        ensureOperatorId((opId) => {
+          openRiskModal({
+            title: 'Rejeitar Revisão (Médio Risco)',
+            riskLevel: 'MEDIUM',
+            targetBookId: review.bookId,
+            message: `Rejeitar esta alteração para o livro "${review.bookId}". Justificativa técnica obrigatória.`,
+            onConfirm: async (res) => {
+              await opsClient.submitCommand({
+                commandType: 'REJECT_REVIEW',
+                bookId: review.bookId,
+                reviewId: review.reviewId,
+                reason: res.reason,
+                operatorId: opId,
+                confirmation: { confirmed: true },
+              });
+              await loadOpsData();
+              renderActiveView();
+            },
+          });
         });
       });
       btnRow.appendChild(rejectBtn);
@@ -1693,23 +1889,25 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       reqCorBtn.className = 'site-btn-correction';
       reqCorBtn.textContent = 'Solicitar Correção';
       reqCorBtn.addEventListener('click', () => {
-        openRiskModal({
-          title: 'Solicitar Correção (Médio Risco)',
-          riskLevel: 'MEDIUM',
-          targetBookId: review.bookId,
-          message: `Solicitar correção para os agentes no livro "${review.bookId}". Indique os ajustes exigidos.`,
-          onConfirm: async (res) => {
-            await opsClient.submitCommand({
-              commandType: 'REQUEST_CORRECTION',
-              bookId: review.bookId,
-              reviewId: review.reviewId,
-              reason: res.reason,
-              operatorId: 'human-reviewer',
-              confirmation: { confirmed: true },
-            });
-            await loadOpsData();
-            renderActiveView();
-          },
+        ensureOperatorId((opId) => {
+          openRiskModal({
+            title: 'Solicitar Correção (Médio Risco)',
+            riskLevel: 'MEDIUM',
+            targetBookId: review.bookId,
+            message: `Solicitar correção para os agentes no livro "${review.bookId}". Indique os ajustes exigidos.`,
+            onConfirm: async (res) => {
+              await opsClient.submitCommand({
+                commandType: 'REQUEST_CORRECTION',
+                bookId: review.bookId,
+                reviewId: review.reviewId,
+                reason: res.reason,
+                operatorId: opId,
+                confirmation: { confirmed: true },
+              });
+              await loadOpsData();
+              renderActiveView();
+            },
+          });
         });
       });
       btnRow.appendChild(reqCorBtn);
@@ -1773,6 +1971,10 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
   return {
     destroy() {
       window.removeEventListener('hashchange', onHashChange);
+      if (opsEventsConnection && typeof opsEventsConnection.close === 'function') {
+        opsEventsConnection.close();
+        opsEventsConnection = null;
+      }
       clearNode(root);
     },
   };

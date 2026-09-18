@@ -23,6 +23,17 @@ class HashChainLogger:
         self.log_path = Path(log_path).resolve()
         self.log_path.parent.mkdir(parents=True, exist_ok=True)
         self._lock = threading.RLock()
+        self.verify_on_startup()
+
+    def verify_on_startup(self) -> None:
+        """Verifies full log integrity on startup fail-closed."""
+        with self._lock:
+            if self.log_path.is_file() and self.log_path.stat().st_size > 0:
+                valid, line_no, err = self.verify_integrity()
+                if not valid:
+                    raise IntegrityError(
+                        f"Log integrity check failed for '{self.log_path.name}' at line {line_no}: {err}"
+                    )
 
     def _get_last_entry_hash(self) -> str:
         if not self.log_path.is_file():
@@ -36,6 +47,12 @@ class HashChainLogger:
 
     def append_entry(self, record: dict[str, Any]) -> dict[str, Any]:
         with self._lock:
+            if self.log_path.is_file() and self.log_path.stat().st_size > 0:
+                valid, line_no, err = self.verify_integrity()
+                if not valid:
+                    raise IntegrityError(
+                        f"Refusing to append to corrupted hash chain '{self.log_path.name}' at line {line_no}: {err}"
+                    )
             prev_hash = self._get_last_entry_hash()
             rec = dict(record)
             rec["prevHash"] = prev_hash

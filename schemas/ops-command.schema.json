@@ -47,11 +47,13 @@
     },
     "operatorId": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "pattern": "^\\S(.*\\S)?$"
     },
     "confirmation": {
       "type": "object",
       "required": ["confirmed"],
+      "additionalProperties": false,
       "properties": {
         "confirmed": { "type": "boolean" },
         "typedConfirmation": { "type": "string" }
@@ -61,5 +63,96 @@
       "type": "string",
       "format": "date-time"
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "commandType": {
+            "enum": [
+              "PRIORITIZE_BOOK",
+              "PAUSE_BOOK",
+              "RESUME_BOOK",
+              "REPROCESS_STAGE",
+              "DEQUEUE_BOOK"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": ["bookId"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "commandType": {
+            "enum": [
+              "APPROVE_REVIEW",
+              "REJECT_REVIEW",
+              "REQUEST_CORRECTION"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": ["reviewId"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "commandType": {
+            "const": "PRIORITIZE_BOOK"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": ["priorityWeight"],
+            "properties": {
+              "priorityWeight": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 200
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "commandType": {
+            "const": "REPROCESS_STAGE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": ["stage"],
+            "properties": {
+              "stage": {
+                "type": "string",
+                "enum": [
+                  "SOURCE",
+                  "EXTRACTION",
+                  "EDITORIAL",
+                  "ENTITIES",
+                  "RELATIONS",
+                  "FRONTEND",
+                  "QA"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

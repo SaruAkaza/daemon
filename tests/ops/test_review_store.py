@@ -208,3 +208,90 @@ def test_concurrent_double_decision_conflict_prevented(tmp_path):
             "decision": "REJECT",
             "justification": "Resolução B",
         })
+
+
+def test_tampered_decision_log_blocks_store_startup(tmp_path):
+    store = ReviewStore(stores_dir=tmp_path)
+    store.create_review({
+        "reviewId": "REV-500",
+        "bookId": "trevas-3ed",
+        "stage": "EDITORIAL",
+        "category": "TECHNICAL",
+        "problem": "Teste tamper",
+        "evidence": {},
+        "recommendation": "",
+        "impact": "",
+    })
+    store.record_decision({
+        "decisionId": "DEC-500",
+        "reviewId": "REV-500",
+        "decidedBy": "human-alice",
+        "decision": "APPROVE",
+        "justification": "OK",
+    })
+
+    # Tamper with decisions.jsonl
+    dec_file = tmp_path / "decisions.jsonl"
+    lines = dec_file.read_text(encoding="utf-8").splitlines()
+    lines[0] = lines[0].replace("human-alice", "mallory")
+    dec_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    # Creating a new ReviewStore must fail-closed on startup
+    from scripts.ops.hash_chain import IntegrityError
+    with pytest.raises(IntegrityError):
+        ReviewStore(stores_dir=tmp_path)
+
+
+def test_crash_consistency_reconciliation_between_log_and_snapshot(tmp_path):
+    store = ReviewStore(stores_dir=tmp_path)
+    store.create_review({
+        "reviewId": "REV-600",
+        "bookId": "trevas-3ed",
+        "stage": "EDITORIAL",
+        "category": "TECHNICAL",
+        "problem": "Teste crash",
+        "evidence": {},
+        "recommendation": "",
+        "impact": "",
+    })
+    # Record decision
+    store.record_decision({
+        "decisionId": "DEC-600",
+        "reviewId": "REV-600",
+        "decidedBy": "human-alice",
+        "decision": "APPROVE",
+        "justification": "Aprovado antes de crash",
+    })
+
+    # Simulate crash before reviews.json write by reverting reviews.json to PENDING
+    from scripts.agents.contracts import write_atomic
+    from scripts.agents.canonical_json import canonical_json_bytes
+    write_atomic(tmp_path / "reviews.json", canonical_json_bytes({
+        "reviews": [{
+            "reviewId": "REV-600",
+            "bookId": "trevas-3ed",
+            "stage": "EDITORIAL",
+            "category": "TECHNICAL",
+            "problem": "Teste crash",
+            "status": "PENDING",
+        }]
+    }))
+
+    # New ReviewStore boots and reconciles from immutable decision log
+    store2 = ReviewStore(stores_dir=tmp_path)
+    rev = store2.get_review("REV-600")
+    assert rev is not None
+    assert rev["status"] == "RESOLVED"
+    assert rev["decisionId"] == "DEC-600"
+    assert rev["decidedBy"] == "human-alice"
+
+    # Second decision attempt must be rejected
+    with pytest.raises(ReviewConflictError):
+        store2.record_decision({
+            "decisionId": "DEC-600-DUPLICATE",
+            "reviewId": "REV-600",
+            "decidedBy": "human-bob",
+            "decision": "REJECT",
+            "justification": "Tentativa indevida",
+        })
+

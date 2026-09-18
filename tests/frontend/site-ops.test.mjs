@@ -120,3 +120,98 @@ test('OpsClient handles snapshot_required SSE event by invoking onSnapshotRequir
 
   connection.close();
 });
+
+test('frontend files do not contain fixed operator identity strings', async () => {
+  const fs = await import('node:fs/promises');
+  const path = await import('node:path');
+
+  const uiPath = path.resolve('docs/assets/site-ui.mjs');
+  const opsPath = path.resolve('docs/assets/site-ops.mjs');
+
+  const uiContent = await fs.readFile(uiPath, 'utf-8');
+  const opsContent = await fs.readFile(opsPath, 'utf-8');
+
+  const forbiddenStrings = [
+    "operatorId: 'operator'",
+    'operatorId: "operator"',
+    "operatorId: 'human-reviewer'",
+    'operatorId: "human-reviewer"',
+  ];
+
+  for (const s of forbiddenStrings) {
+    assert.equal(uiContent.includes(s), false, `site-ui.mjs must not contain hardcoded '${s}'`);
+    assert.equal(opsContent.includes(s), false, `site-ops.mjs must not contain hardcoded '${s}'`);
+  }
+});
+
+test('setOperatorId manages operator identity and session storage defensively', async () => {
+  const { createState, setOperatorId, readSavedOperatorId } = await import('../../docs/assets/site-state.mjs');
+
+  const fakeSessionStorage = {
+    store: {},
+    getItem(k) { return this.store[k] ?? null; },
+    setItem(k, v) { this.store[k] = String(v); },
+    removeItem(k) { delete this.store[k]; },
+  };
+
+  let state = createState(null, '#/', { mode: 'restricted_preview', sessionStorage: fakeSessionStorage });
+  assert.equal(state.ops.operatorId, '');
+
+  state = setOperatorId(state, '  alice-silva  ', fakeSessionStorage);
+  assert.equal(state.ops.operatorId, 'alice-silva');
+  assert.equal(fakeSessionStorage.getItem('daemonSite.operatorId'), 'alice-silva');
+
+  // Verify new state initialized with that storage recovers the operator
+  const recoveredState = createState(null, '#/', { mode: 'restricted_preview', sessionStorage: fakeSessionStorage });
+  assert.equal(recoveredState.ops.operatorId, 'alice-silva');
+
+  // Emptying operator removes it
+  state = setOperatorId(state, '   ', fakeSessionStorage);
+  assert.equal(state.ops.operatorId, '');
+  assert.equal(fakeSessionStorage.getItem('daemonSite.operatorId'), null);
+});
+
+test('OpsClient connectEvents handles onOpen, eventType in onEvent, and close', () => {
+  let opened = false;
+  let closed = false;
+  let receivedPayload = null;
+  let receivedType = null;
+
+  class MockEventSourceWithOpen {
+    constructor(url) {
+      this.url = url;
+      this.listeners = {};
+      setTimeout(() => {
+        if (this.onopen) this.onopen();
+      }, 0);
+    }
+    addEventListener(type, cb) {
+      this.listeners[type] = cb;
+    }
+    close() {
+      closed = true;
+    }
+    simulate(type, data) {
+      if (this.listeners[type]) {
+        this.listeners[type]({ data: JSON.stringify(data), type: type });
+      }
+    }
+  }
+
+  const client = new OpsClient({ baseUrl: '', EventSourceClass: MockEventSourceWithOpen });
+  const conn = client.connectEvents({
+    onOpen: () => { opened = true; },
+    onEvent: (payload, type) => {
+      receivedPayload = payload;
+      receivedType = type;
+    },
+  });
+
+  conn.source.simulate('command_updated', { commandId: 'CMD-99', status: 'RUNNING' });
+  assert.equal(receivedPayload.commandId, 'CMD-99');
+  assert.equal(receivedType, 'command_updated');
+
+  conn.close();
+  assert.equal(closed, true);
+});
+

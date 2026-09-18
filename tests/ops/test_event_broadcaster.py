@@ -92,3 +92,15 @@ def test_sensitive_tokens_scrubbed_from_events():
     formatted = broadcaster.format_sse_message(1, "auth_event", data)
     assert "secret-token-value-12345" not in formatted
     assert "[REDACTED]" in formatted
+
+
+def test_subscriber_queue_receives_live_events():
+    broadcaster = EventBroadcaster()
+    q = broadcaster.subscribe()
+    try:
+        broadcaster.publish_event("command_updated", {"commandId": "CMD-01", "status": "RUNNING"})
+        ev = q.get(timeout=1.0)
+        assert ev["type"] == "command_updated"
+        assert ev["data"]["status"] == "RUNNING"
+    finally:
+        broadcaster.unsubscribe(q)

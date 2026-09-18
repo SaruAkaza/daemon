@@ -6,8 +6,10 @@ import threading
 from typing import Any
 
 from scripts.agents.contracts import validate_payload
+from scripts.agents.pilot_review import AUTOMATED_AGENT_IDENTIFIERS
 from scripts.ops.command_audit import CommandAuditLog
 from scripts.ops.command_store import CommandStore, CommandConflictError
+from scripts.ops.event_broadcaster import EventBroadcaster
 from scripts.ops.review_store import ReviewStore
 
 MEDIUM_RISK_COMMANDS = {
@@ -31,11 +33,56 @@ class CommandProcessor:
         command_store: CommandStore | None = None,
         audit_log: CommandAuditLog | None = None,
         review_store: ReviewStore | None = None,
+        broadcaster: EventBroadcaster | None = None,
     ) -> None:
         self.command_store = command_store if command_store is not None else CommandStore()
         self.audit_log = audit_log if audit_log is not None else CommandAuditLog()
         self.review_store = review_store
+        self.broadcaster = broadcaster
         self._lock = threading.RLock()
+
+        # Background worker management
+        self._worker_thread: threading.Thread | None = None
+        self._worker_running = False
+        self._worker_event = threading.Event()
+
+    def _notify_event(self, event_type: str, data: dict[str, Any]) -> None:
+        if self.broadcaster:
+            try:
+                self.broadcaster.publish_event(event_type, data)
+            except Exception:
+                pass
+
+    def start_worker(self) -> None:
+        """Starts the dedicated background worker loop for processing commands."""
+        with self._lock:
+            if self._worker_thread and self._worker_thread.is_alive():
+                return
+            self._worker_running = True
+            self._worker_event.clear()
+            self._worker_thread = threading.Thread(
+                target=self._worker_loop, daemon=True, name="OpsCommandWorker"
+            )
+            self._worker_thread.start()
+
+    def stop_worker(self, timeout: float = 5.0) -> None:
+        """Stops the background worker loop cleanly."""
+        with self._lock:
+            self._worker_running = False
+            self._worker_event.set()
+        if self._worker_thread and self._worker_thread.is_alive():
+            self._worker_thread.join(timeout=timeout)
+
+    def _worker_loop(self) -> None:
+        while self._worker_running:
+            self._worker_event.wait(timeout=0.2)
+            self._worker_event.clear()
+            if not self._worker_running:
+                break
+            try:
+                self.process_pending_commands()
+            except Exception:
+                pass
 
     def _validate_risk(self, cmd_payload: dict[str, Any]) -> None:
         cmd_type = cmd_payload.get("commandType", "")
@@ -45,6 +92,16 @@ class CommandProcessor:
             raise RiskValidationError("Confirmation must be an object with boolean 'confirmed'")
 
         confirmed = confirmation.get("confirmed", False)
+
+        # Operator identity validation
+        operator_id = str(cmd_payload.get("operatorId") or "").strip()
+        if not operator_id:
+            raise RiskValidationError("Operator ID must be a non-empty string")
+        operator_id_lower = operator_id.lower()
+        if operator_id_lower in AUTOMATED_AGENT_IDENTIFIERS or any(
+            agt in operator_id_lower for agt in ("-agent", "llm", "gemini", "claude", "gpt")
+        ):
+            raise RiskValidationError(f"Automated agent '{operator_id}' is forbidden from submitting commands")
 
         # 1. Check for HIGH-risk: Any review decision on POLICY_OR_RIGHTS
         if cmd_type in ("APPROVE_REVIEW", "REJECT_REVIEW", "REQUEST_CORRECTION"):
@@ -108,6 +165,11 @@ class CommandProcessor:
                 "reviewId": record.get("reviewId"),
             },
         )
+
+        # 5. Notify broadcaster and wake background worker
+        self._notify_event("command_updated", record)
+        self._worker_event.set()
+
         return record, 202
 
     def process_pending_commands(self) -> int:
@@ -120,11 +182,18 @@ class CommandProcessor:
             for cmd in pending:
                 cid = cmd["commandId"]
                 cmd_type = cmd.get("commandType")
-                self.command_store.update_command_status(cid, "RUNNING")
+                running_rec = self.command_store.update_command_status(cid, "RUNNING")
+                self._notify_event("command_updated", running_rec)
 
                 try:
                     result_data = self._execute_command(cmd)
-                    self.command_store.update_command_status(cid, "SUCCEEDED", result=result_data)
+                    succ_rec = self.command_store.update_command_status(cid, "SUCCEEDED", result=result_data)
+                    self._notify_event("command_updated", succ_rec)
+                    if cmd_type in ("APPROVE_REVIEW", "REJECT_REVIEW", "REQUEST_CORRECTION"):
+                        self._notify_event("review_updated", result_data)
+                    elif cmd_type in ("PAUSE_BOOK", "RESUME_BOOK", "PRIORITIZE_BOOK", "DEQUEUE_BOOK", "REPROCESS_STAGE"):
+                        self._notify_event("control_updated", self.command_store.get_control_state())
+
                     self.audit_log.append(
                         "COMMAND_SUCCEEDED",
                         {
@@ -136,7 +205,8 @@ class CommandProcessor:
                     )
                     processed_count += 1
                 except Exception as e:
-                    self.command_store.update_command_status(cid, "FAILED", error=str(e))
+                    fail_rec = self.command_store.update_command_status(cid, "FAILED", error=str(e))
+                    self._notify_event("command_updated", fail_rec)
                     self.audit_log.append(
                         "COMMAND_FAILED",
                         {
@@ -158,20 +228,30 @@ class CommandProcessor:
         if cmd_type == "PAUSE_BOOK":
             if not book_id:
                 raise ValueError("PAUSE_BOOK requires bookId")
-            paused = list(self.command_store.get_control_state().get("pausedBooks", []))
-            if book_id not in paused:
-                paused.append(book_id)
-                self.command_store.set_control_override("pausedBooks", paused)
-            return {"bookId": book_id, "action": "paused"}
+            ctrl = self.command_store.get_control_state()
+            pause_reqs = list(ctrl.get("pauseRequests", []))
+            paused_books = list(ctrl.get("pausedBooks", []))
+            if book_id not in pause_reqs:
+                pause_reqs.append(book_id)
+            if book_id not in paused_books:
+                paused_books.append(book_id)
+            self.command_store.set_control_override("pauseRequests", pause_reqs)
+            self.command_store.set_control_override("pausedBooks", paused_books)
+            return {"bookId": book_id, "action": "PAUSE_REQUESTED"}
 
         elif cmd_type == "RESUME_BOOK":
             if not book_id:
                 raise ValueError("RESUME_BOOK requires bookId")
-            paused = list(self.command_store.get_control_state().get("pausedBooks", []))
-            if book_id in paused:
-                paused.remove(book_id)
-                self.command_store.set_control_override("pausedBooks", paused)
-            return {"bookId": book_id, "action": "resumed"}
+            ctrl = self.command_store.get_control_state()
+            pause_reqs = list(ctrl.get("pauseRequests", []))
+            paused_books = list(ctrl.get("pausedBooks", []))
+            if book_id in pause_reqs:
+                pause_reqs.remove(book_id)
+            if book_id in paused_books:
+                paused_books.remove(book_id)
+            self.command_store.set_control_override("pauseRequests", pause_reqs)
+            self.command_store.set_control_override("pausedBooks", paused_books)
+            return {"bookId": book_id, "action": "PAUSE_REQUEST_CANCELLED"}
 
         elif cmd_type == "PRIORITIZE_BOOK":
             if not book_id:
@@ -180,7 +260,7 @@ class CommandProcessor:
             weight = payload.get("priorityWeight", 100)
             overrides[book_id] = weight
             self.command_store.set_control_override("priorityOverrides", overrides)
-            return {"bookId": book_id, "priorityWeight": weight}
+            return {"bookId": book_id, "priorityWeight": weight, "action": "PRIORITY_SET"}
 
         elif cmd_type == "REPROCESS_STAGE":
             if not book_id:
@@ -192,20 +272,32 @@ class CommandProcessor:
                 "requestedAt": datetime.now(timezone.utc).isoformat(),
             }
             self.command_store.set_control_override("reprocessIntents", reprocesses)
-            return {"bookId": book_id, "stage": stage}
+            return {"bookId": book_id, "stage": stage, "action": "STAGE_REPROCESS_INTENT_RECORDED"}
 
         elif cmd_type == "DEQUEUE_BOOK":
             if not book_id:
                 raise ValueError("DEQUEUE_BOOK requires bookId")
-            paused = list(self.command_store.get_control_state().get("pausedBooks", []))
-            if book_id in paused:
-                paused.remove(book_id)
-                self.command_store.set_control_override("pausedBooks", paused)
-            overrides = dict(self.command_store.get_control_state().get("priorityOverrides", {}))
+            ctrl = self.command_store.get_control_state()
+            dequeue_reqs = list(ctrl.get("dequeueRequests", []))
+            if book_id not in dequeue_reqs:
+                dequeue_reqs.append(book_id)
+            self.command_store.set_control_override("dequeueRequests", dequeue_reqs)
+
+            # Clear any pause request when dequeuing
+            pause_reqs = list(ctrl.get("pauseRequests", []))
+            paused_books = list(ctrl.get("pausedBooks", []))
+            if book_id in pause_reqs:
+                pause_reqs.remove(book_id)
+            if book_id in paused_books:
+                paused_books.remove(book_id)
+            self.command_store.set_control_override("pauseRequests", pause_reqs)
+            self.command_store.set_control_override("pausedBooks", paused_books)
+
+            overrides = dict(ctrl.get("priorityOverrides", {}))
             if book_id in overrides:
                 del overrides[book_id]
                 self.command_store.set_control_override("priorityOverrides", overrides)
-            return {"bookId": book_id, "action": "dequeued"}
+            return {"bookId": book_id, "action": "DEQUEUE_REQUESTED"}
 
         elif cmd_type in ("APPROVE_REVIEW", "REJECT_REVIEW", "REQUEST_CORRECTION"):
             if not self.review_store:
@@ -219,6 +311,18 @@ class CommandProcessor:
                 if cmd_type == "APPROVE_REVIEW"
                 else ("REJECT" if cmd_type == "REJECT_REVIEW" else "REQUEST_CORRECTION")
             )
+
+            # Check immutable decision log to prevent duplicate decisions
+            existing_decisions = self.review_store.decision_logger.read_all_entries()
+            for d in existing_decisions:
+                if d.get("reviewId") == rev_id:
+                    return {
+                        "reviewId": rev_id,
+                        "decision": d.get("decision"),
+                        "decisionId": d.get("decisionId"),
+                        "status": "ALREADY_COMMITTED",
+                    }
+
             dec_payload = {
                 "reviewId": rev_id,
                 "decidedBy": cmd.get("operatorId"),

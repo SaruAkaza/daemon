@@ -95,17 +95,21 @@ export class OpsClient {
     return data;
   }
 
-  connectEvents({ onEvent, onSnapshotRequired, onError }) {
+  connectEvents({ onEvent, onSnapshotRequired, onError, onOpen }) {
     if (!this.EventSource) {
       return { close: () => {} };
     }
 
     const source = new this.EventSource(`${this.baseUrl}/api/ops/events`);
 
+    if (onOpen) {
+      source.onopen = onOpen;
+    }
+
     const handleMessage = (e) => {
       try {
         const payload = JSON.parse(e.data);
-        if (onEvent) onEvent(payload);
+        if (onEvent) onEvent(payload, e.type);
       } catch (err) {
         // ignore parse errors
       }
@@ -114,6 +118,7 @@ export class OpsClient {
     source.addEventListener('message', handleMessage);
     source.addEventListener('command_updated', handleMessage);
     source.addEventListener('review_updated', handleMessage);
+    source.addEventListener('control_updated', handleMessage);
     source.addEventListener('stage_invalidated', handleMessage);
 
     source.addEventListener('snapshot_required', () => {

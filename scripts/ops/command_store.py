@@ -26,6 +26,7 @@ class CommandStore:
         self.control_state_file = self.stores_dir / "control_state.json"
         self._lock = threading.RLock()
         self._ensure_files()
+        self._recover_running_commands()
 
     def _ensure_files(self) -> None:
         if not self.commands_file.exists():
@@ -33,8 +34,28 @@ class CommandStore:
         if not self.control_state_file.exists():
             write_atomic(
                 self.control_state_file,
-                canonical_json_bytes({"pausedBooks": [], "priorityOverrides": {}, "reprocessIntents": {}}),
+                canonical_json_bytes({
+                    "pauseRequests": [],
+                    "pausedBooks": [],
+                    "priorityOverrides": {},
+                    "reprocessIntents": {},
+                    "dequeueRequests": [],
+                }),
             )
+
+    def _recover_running_commands(self) -> None:
+        """Recovers any interrupted RUNNING commands on startup, reclassifying to ACCEPTED."""
+        with self._lock:
+            commands = self._load_commands()
+            dirty = False
+            for cid, cmd in commands.items():
+                if cmd.get("status") == "RUNNING":
+                    cmd["status"] = "ACCEPTED"
+                    cmd["recoveredAt"] = datetime.now(timezone.utc).isoformat()
+                    cmd["recoveryNote"] = "Execution interrupted by server restart; reset to ACCEPTED"
+                    dirty = True
+            if dirty:
+                self._save_commands(commands)
 
     def _load_commands(self) -> dict[str, Any]:
         if not self.commands_file.exists():
