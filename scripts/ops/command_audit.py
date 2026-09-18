@@ -40,6 +40,11 @@ class CommandAuditLog:
         cleaned_rec = scrub_sensitive_data(rec)
         return self.logger.append_entry(cleaned_rec)
 
+    def append(self, action: str, details: dict[str, Any]) -> dict[str, Any]:
+        rec = dict(details)
+        rec["action"] = action
+        return self.log_action(rec)
+
     def verify_audit_chain(self) -> bool:
         valid, _, _ = self.logger.verify_integrity()
         return valid

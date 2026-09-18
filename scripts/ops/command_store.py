@@ -136,3 +136,8 @@ class CommandStore:
         with self._lock:
             commands = self._load_commands()
             return commands.get(command_id)
+
+    def list_commands(self) -> list[dict[str, Any]]:
+        with self._lock:
+            commands = self._load_commands()
+            return list(commands.values())
