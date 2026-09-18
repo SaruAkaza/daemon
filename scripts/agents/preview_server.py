@@ -9,6 +9,15 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from typing import Any
 
+from scripts.ops.command_audit import CommandAuditLog
+from scripts.ops.command_processor import CommandProcessor
+from scripts.ops.command_store import CommandStore
+from scripts.ops.event_broadcaster import EventBroadcaster
+from scripts.ops.ops_server import OpsRequestHandler
+from scripts.ops.review_store import ReviewStore
+from scripts.ops.runtime_locator import get_ops_stores_dir
+from scripts.ops.token_manager import TokenManager
+
 
 WINDOWS_RESERVED_NAMES = {
     "con", "prn", "aux", "nul",
@@ -68,23 +77,57 @@ class PreviewServer:
         host: str = "127.0.0.1",
         port: int = 8080,
         public_root: Path | str | None = None,
+        mode: str = "restricted_preview",
+        runtime_dir: Path | str | None = None,
     ) -> None:
         if host not in ("127.0.0.1", "localhost"):
             raise ValueError(f"Binding to non-loopback interface '{host}' is strictly prohibited.")
+        if mode not in ("restricted_preview", "public"):
+            raise ValueError(f"Invalid server mode: '{mode}'. Must be 'restricted_preview' or 'public'.")
 
         self.host = host
         self.requested_port = port
         self.preview_root = Path(preview_root).resolve()
         self.docs_root = Path(docs_root).resolve()
         self.public_root = Path(public_root).resolve() if public_root else None
+        self.mode = mode
+        self.runtime_dir = runtime_dir
         self._server: HTTPServer | None = None
         self._thread: threading.Thread | None = None
         self.port = port
+
+        if self.mode == "restricted_preview":
+            stores_dir = get_ops_stores_dir(runtime_dir)
+            self.token_manager = TokenManager(runtime_dir=runtime_dir)
+            self.token_manager.initialize()
+            self.command_store = CommandStore(stores_dir=stores_dir)
+            self.audit_log = CommandAuditLog(stores_dir=stores_dir)
+            self.review_store = ReviewStore(stores_dir=stores_dir)
+            self.command_processor = CommandProcessor(
+                command_store=self.command_store,
+                audit_log=self.audit_log,
+                review_store=self.review_store,
+            )
+            self.broadcaster = EventBroadcaster()
+            self.ops_handler = OpsRequestHandler(
+                token_manager=self.token_manager,
+                command_processor=self.command_processor,
+                broadcaster=self.broadcaster,
+            )
+        else:
+            self.token_manager = None
+            self.command_store = None
+            self.audit_log = None
+            self.review_store = None
+            self.command_processor = None
+            self.broadcaster = None
+            self.ops_handler = None
 
     def _make_handler(self):
         preview_root = self.preview_root
         docs_root = self.docs_root
         public_root = self.public_root
+        server_ref = self
 
         class PreviewHandler(BaseHTTPRequestHandler):
             def log_message(self, format: str, *args: Any) -> None:
@@ -98,6 +141,34 @@ class PreviewServer:
                 # Path traversal and Windows ADS / device check
                 if _is_unsafe_path(req_path):
                     self.send_error(400, "Path traversal or unsafe path forbidden")
+                    return
+
+                # Public mode fail-closed barrier & ops handler routing
+                if req_path.startswith("/api/ops"):
+                    if server_ref.mode == "public":
+                        self.send_error(404, "Not Found")
+                        return
+                    if not server_ref.ops_handler:
+                        self.send_error(404, "Ops handler not configured")
+                        return
+
+                    headers_dict = {k: v for k, v in self.headers.items()}
+                    status_code, resp_headers, resp_body = server_ref.ops_handler.handle_request(
+                        method="GET",
+                        path=req_path,
+                        headers=headers_dict,
+                        client_address=self.client_address,
+                        body=b"",
+                    )
+                    self.send_response(status_code)
+                    for hk, hv in resp_headers.items():
+                        self.send_header(hk, hv)
+                    if isinstance(resp_body, bytes):
+                        self.send_header("Content-Length", str(len(resp_body)))
+                        self.end_headers()
+                        self.wfile.write(resp_body)
+                    else:
+                        self.end_headers()
                     return
 
                 # Check /api/preview/archive/ or /preview/archive/
@@ -259,11 +330,57 @@ class PreviewServer:
                     self.send_response(200)
                     self.send_header("Content-Type", ctype)
                     self.send_header("Content-Length", str(len(content)))
+                    if server_ref.mode == "restricted_preview" and server_ref.token_manager and "html" in ctype:
+                        cookie_val = server_ref.token_manager.create_session_cookie()
+                        self.send_header("Set-Cookie", cookie_val)
                     self.end_headers()
                     self.wfile.write(content)
                     return
 
                 self.send_error(404, f"File not found: {req_path}")
+
+            def do_POST(self) -> None:
+                parsed = urllib.parse.urlparse(self.path)
+                req_path = urllib.parse.unquote(parsed.path)
+
+                if _is_unsafe_path(req_path):
+                    self.send_error(400, "Path traversal or unsafe path forbidden")
+                    return
+
+                if req_path.startswith("/api/ops"):
+                    if server_ref.mode == "public":
+                        self.send_error(404, "Not Found")
+                        return
+                    if not server_ref.ops_handler:
+                        self.send_error(404, "Ops handler not configured")
+                        return
+
+                    try:
+                        content_length = int(self.headers.get("Content-Length", 0))
+                    except ValueError:
+                        content_length = 0
+
+                    body = self.rfile.read(content_length) if content_length > 0 else b""
+                    headers_dict = {k: v for k, v in self.headers.items()}
+                    status_code, resp_headers, resp_body = server_ref.ops_handler.handle_request(
+                        method="POST",
+                        path=req_path,
+                        headers=headers_dict,
+                        client_address=self.client_address,
+                        body=body,
+                    )
+                    self.send_response(status_code)
+                    for hk, hv in resp_headers.items():
+                        self.send_header(hk, hv)
+                    if isinstance(resp_body, bytes):
+                        self.send_header("Content-Length", str(len(resp_body)))
+                        self.end_headers()
+                        self.wfile.write(resp_body)
+                    else:
+                        self.end_headers()
+                    return
+
+                self.send_error(404, "Not Found")
 
         return PreviewHandler
 
@@ -284,6 +401,8 @@ class PreviewServer:
         if self._thread:
             self._thread.join(timeout=2.0)
             self._thread = None
+        if self.token_manager:
+            self.token_manager.cleanup()
 
     @classmethod
     def run_preview_server(
@@ -295,6 +414,7 @@ class PreviewServer:
         project_archive: bool = False,
         runtime_dir: Path | str | None = None,
         workspace_root: Path | str | None = None,
+        mode: str = "restricted_preview",
     ) -> None:
         """Entry point to run the preview server indefinitely in the foreground."""
         from scripts.agents.archive_inventory_loader import resolve_canonical_runtime_dir
@@ -316,9 +436,16 @@ class PreviewServer:
                 runtime_dir=runtime_dir,
             )
 
-        server = cls(preview_root=p_root, port=port, host=host, public_root=public_root)
+        server = cls(
+            preview_root=p_root,
+            port=port,
+            host=host,
+            public_root=public_root,
+            mode=mode,
+            runtime_dir=runtime_dir,
+        )
         server.start()
-        print(f"Daemon Tools Local Preview Server running on http://{host}:{server.port}")
+        print(f"Daemon Tools Local Preview Server running on http://{host}:{server.port} (mode: {mode})")
         try:
             while True:
                 time.sleep(1.0)
@@ -337,6 +464,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--project-archive", action="store_true", default=False, help="Project Acervo 281 preview before starting server")
     parser.add_argument("--runtime-dir", type=str, default=None, help="Path to .daemon_runtime")
     parser.add_argument("--workspace-root", type=str, default=None, help="Path to repository workspace root")
+    parser.add_argument(
+        "--mode",
+        type=str,
+        choices=["restricted_preview", "public"],
+        default="restricted_preview",
+        help="Server mode (default: restricted_preview)",
+    )
     args = parser.parse_args(argv)
 
     PreviewServer.run_preview_server(
@@ -347,6 +481,7 @@ def main(argv: list[str] | None = None) -> int:
         project_archive=args.project_archive,
         runtime_dir=args.runtime_dir,
         workspace_root=args.workspace_root,
+        mode=args.mode,
     )
     return 0
 
