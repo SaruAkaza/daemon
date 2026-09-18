@@ -31,6 +31,20 @@ test('parseRoute handles the six standard routes and invalid fallback', () => {
   assert.deepEqual(parseRoute('#/entity/'), { kind: 'not-found', id: null });
 });
 
+test('parseRoute handles ops routes in restricted_preview and falls back in public mode', () => {
+  const restrictedOpts = { mode: 'restricted_preview' };
+  assert.deepEqual(parseRoute('#/ops', restrictedOpts), { kind: 'ops', id: null });
+  assert.deepEqual(parseRoute('#/ops/queue', restrictedOpts), { kind: 'ops-queue', id: null });
+  assert.deepEqual(parseRoute('#/ops/reviews', restrictedOpts), { kind: 'ops-reviews', id: null });
+  assert.deepEqual(parseRoute('#/ops/review/REV-123', restrictedOpts), { kind: 'ops-review', id: 'REV-123' });
+
+  const publicOpts = { mode: 'public' };
+  assert.deepEqual(parseRoute('#/ops', publicOpts), { kind: 'home', id: null });
+  assert.deepEqual(parseRoute('#/ops/queue', publicOpts), { kind: 'home', id: null });
+  assert.deepEqual(parseRoute('#/ops/reviews', publicOpts), { kind: 'home', id: null });
+  assert.deepEqual(parseRoute('#/ops/review/REV-123', publicOpts), { kind: 'home', id: null });
+});
+
 test('createState initializes from storage and route', () => {
   const storage = createMockStorage({ 'daemonSite.layout': 'advanced' });
   const state = createState(storage, '#/entity/lobo-1');

@@ -1408,7 +1408,8 @@ if (urlParams.get("site") === "1") {
     .then(({ createSiteStore }) => {
       const store = createSiteStore(baseUrl);
       import("./site-ui.mjs").then(({ mountSite }) => {
-        mountSite({ root, store, storage: localStorage });
+        const mode = isPublic ? "public" : "restricted_preview";
+        mountSite({ root, store, storage: localStorage, mode });
       });
     })
     .catch((err) => {

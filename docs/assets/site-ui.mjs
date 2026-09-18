@@ -5,6 +5,7 @@
 
 import { searchEntities, filterBooks } from './site-search.mjs';
 import { createState, parseRoute, setLayout, setRoute, setFilters, setBookFilters } from './site-state.mjs';
+import { OpsClient } from './site-ops.mjs';
 
 /**
  * Sanitizes special characters to prevent arbitrary HTML markup injection.
@@ -182,11 +183,17 @@ export function renderBookDetailHtml({ book, catalogMeta, entities = [] }) {
  * @param {Storage|object} [options.storage=localStorage]
  * @returns {{ destroy: Function }}
  */
-export function mountSite({ root, store, storage = localStorage }) {
-  let state = createState(storage, window.location.hash || '#/');
+export function mountSite({ root, store, storage = localStorage, mode = 'restricted_preview' }) {
+  let state = createState(storage, window.location.hash || '#/', { mode });
   let catalog = null;
   let searchIndex = null;
   let isPreferencesOpen = false;
+
+  let opsClient = null;
+  let opsEventsConnection = null;
+  if (state.mode === 'restricted_preview') {
+    opsClient = new OpsClient();
+  }
 
   // Clear root
   while (root.firstChild) {
@@ -218,6 +225,10 @@ export function mountSite({ root, store, storage = localStorage }) {
     { label: 'Entidades', href: '#/entities' },
     { label: 'Busca', href: '#/search' },
   ];
+
+  if (state.mode === 'restricted_preview') {
+    navItems.push({ label: 'Operações', href: '#/ops' });
+  }
 
   for (const item of navItems) {
     const link = document.createElement('a');
@@ -379,6 +390,14 @@ export function mountSite({ root, store, storage = localStorage }) {
       await renderEntitiesOrEntityView(id);
     } else if (kind === 'search') {
       renderSearchView();
+    } else if (kind === 'ops') {
+      await renderOpsDashboard('overview');
+    } else if (kind === 'ops-queue') {
+      await renderOpsDashboard('queue');
+    } else if (kind === 'ops-reviews') {
+      await renderOpsDashboard('reviews');
+    } else if (kind === 'ops-review') {
+      await renderOpsReviewDetail(id);
     } else {
       renderNotFoundView();
     }
@@ -1090,6 +1109,633 @@ export function mountSite({ root, store, storage = localStorage }) {
     }
 
     container.appendChild(list);
+    mainContent.appendChild(container);
+  }
+
+  async function loadOpsData() {
+    if (!opsClient) return;
+    try {
+      const snap = await opsClient.fetchSnapshot();
+      if (snap) {
+        state.ops.controlState = snap.controlState || { pausedBooks: [], priorityOverrides: {}, reprocessIntents: {} };
+        state.ops.commands = snap.commands || [];
+        state.ops.reviews = snap.reviews || [];
+      }
+    } catch (err) {
+      console.warn('Ops snapshot error:', err);
+    }
+  }
+
+  function openRiskModal({ title, riskLevel, message, targetBookId = null, onConfirm }) {
+    const existing = document.querySelector('.site-ops-modal-backdrop');
+    if (existing) existing.remove();
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'site-ops-modal-backdrop';
+
+    const panel = document.createElement('section');
+    panel.className = `site-ops-modal site-ops-modal-${riskLevel.toLowerCase()}`;
+    panel.setAttribute('role', 'dialog');
+    panel.setAttribute('aria-modal', 'true');
+    panel.setAttribute('aria-label', title);
+
+    const head = document.createElement('header');
+    head.className = 'site-ops-modal-head';
+    const h2 = document.createElement('h2');
+    h2.textContent = title;
+    const badge = document.createElement('span');
+    badge.className = `site-badge site-badge-risk-${riskLevel.toLowerCase()}`;
+    badge.textContent =
+      riskLevel === 'HIGH' ? 'ALTO RISCO — ATENÇÃO' : (riskLevel === 'MEDIUM' ? 'MÉDIO RISCO' : 'BAIXO RISCO');
+    head.appendChild(h2);
+    head.appendChild(badge);
+    panel.appendChild(head);
+
+    const body = document.createElement('div');
+    body.className = 'site-ops-modal-body';
+
+    const msgP = document.createElement('p');
+    msgP.textContent = message;
+    body.appendChild(msgP);
+
+    let reasonInput = null;
+    let confirmCheckbox = null;
+    let typedInput = null;
+
+    if (riskLevel === 'MEDIUM' || riskLevel === 'HIGH') {
+      const reasonLabel = document.createElement('label');
+      reasonLabel.textContent = 'Motivo / Justificativa (obrigatório):';
+      reasonLabel.className = 'site-ops-field-label';
+      reasonInput = document.createElement('textarea');
+      reasonInput.className = 'site-ops-textarea';
+      reasonInput.placeholder = 'Explique a razão técnica ou operacional desta decisão...';
+      body.appendChild(reasonLabel);
+      body.appendChild(reasonInput);
+
+      const checkWrap = document.createElement('label');
+      checkWrap.className = 'site-ops-checkbox-label';
+      confirmCheckbox = document.createElement('input');
+      confirmCheckbox.type = 'checkbox';
+      checkWrap.appendChild(confirmCheckbox);
+      const checkSpan = document.createElement('span');
+      checkSpan.textContent = ' Estou ciente das consequências desta ação operacional.';
+      checkWrap.appendChild(checkSpan);
+      body.appendChild(checkWrap);
+    }
+
+    if (riskLevel === 'HIGH') {
+      const typedLabel = document.createElement('label');
+      typedLabel.className = 'site-ops-field-label site-ops-danger-text';
+      typedLabel.textContent = `Digite "${targetBookId}" exatamente para confirmar autoridade humana:`;
+      typedInput = document.createElement('input');
+      typedInput.type = 'text';
+      typedInput.className = 'site-ops-input';
+      typedInput.placeholder = targetBookId;
+      body.appendChild(typedLabel);
+      body.appendChild(typedInput);
+    }
+
+    const errBox = document.createElement('div');
+    errBox.className = 'site-ops-error-box';
+    errBox.hidden = true;
+    body.appendChild(errBox);
+
+    panel.appendChild(body);
+
+    const foot = document.createElement('footer');
+    foot.className = 'site-ops-modal-foot';
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.className = 'site-btn-cancel';
+    cancelBtn.textContent = 'Cancelar';
+    cancelBtn.addEventListener('click', () => backdrop.remove());
+
+    const confirmBtn = document.createElement('button');
+    confirmBtn.type = 'button';
+    confirmBtn.className = `site-btn-confirm ${riskLevel === 'HIGH' ? 'site-btn-danger' : 'site-btn-primary'}`;
+    confirmBtn.textContent = 'Confirmar Ação';
+
+    function checkValidity() {
+      if (riskLevel === 'LOW') {
+        confirmBtn.disabled = false;
+        return;
+      }
+      const hasReason = reasonInput && reasonInput.value.trim().length > 0;
+      const isChecked = confirmCheckbox && confirmCheckbox.checked;
+      let typedOk = true;
+      if (riskLevel === 'HIGH') {
+        typedOk = typedInput && typedInput.value.trim() === targetBookId;
+      }
+      confirmBtn.disabled = !(hasReason && isChecked && typedOk);
+    }
+
+    if (riskLevel !== 'LOW') {
+      confirmBtn.disabled = true;
+      if (reasonInput) reasonInput.addEventListener('input', checkValidity);
+      if (confirmCheckbox) confirmCheckbox.addEventListener('change', checkValidity);
+      if (typedInput) typedInput.addEventListener('input', checkValidity);
+    }
+
+    confirmBtn.addEventListener('click', async () => {
+      confirmBtn.disabled = true;
+      errBox.hidden = true;
+      try {
+        await onConfirm({
+          reason: reasonInput ? reasonInput.value.trim() : 'Comando operacional',
+          confirmed: true,
+          typedConfirmation: typedInput ? typedInput.value.trim() : undefined,
+        });
+        backdrop.remove();
+      } catch (err) {
+        confirmBtn.disabled = false;
+        errBox.textContent = err.message || 'Erro ao processar comando';
+        errBox.hidden = false;
+      }
+    });
+
+    foot.appendChild(cancelBtn);
+    foot.appendChild(confirmBtn);
+    panel.appendChild(foot);
+    backdrop.appendChild(panel);
+    root.appendChild(backdrop);
+  }
+
+  async function renderOpsDashboard(activeTab = 'overview') {
+    if (!state.ops.controlState) {
+      await loadOpsData();
+    }
+
+    const container = document.createElement('div');
+    container.className = 'site-ops-view';
+
+    const header = document.createElement('header');
+    header.className = 'site-ops-header';
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Painel de Controle Operacional — Release B';
+    const sub = document.createElement('p');
+    sub.className = 'site-ops-meta';
+    sub.textContent = 'Modo: Restricted Preview | Operador: Local | Conexão SSE: Ativa';
+    header.appendChild(h1);
+    header.appendChild(sub);
+    container.appendChild(header);
+
+    // Nav tabs
+    const tabs = document.createElement('nav');
+    tabs.className = 'site-ops-tabs';
+    tabs.setAttribute('aria-label', 'Seções operacionais');
+
+    const pendingReviews = (state.ops.reviews || []).filter((r) => r.status === 'PENDING');
+    const tabItems = [
+      { id: 'overview', label: 'Visão Geral', href: '#/ops' },
+      { id: 'queue', label: 'Fila e Concorrência', href: '#/ops/queue' },
+      { id: 'reviews', label: `Revisão Humana (${pendingReviews.length})`, href: '#/ops/reviews' },
+    ];
+
+    for (const t of tabItems) {
+      const a = document.createElement('a');
+      a.href = t.href;
+      a.textContent = t.label;
+      a.className = `site-ops-tab ${activeTab === t.id ? 'active' : ''}`;
+      tabs.appendChild(a);
+    }
+    container.appendChild(tabs);
+
+    // Summary metrics cards
+    const metricsGrid = document.createElement('div');
+    metricsGrid.className = 'site-ops-metrics-grid';
+
+    const totalBooks = catalog && catalog.books ? catalog.books.length : 281;
+    const pausedBooks = (state.ops.controlState && state.ops.controlState.pausedBooks) || [];
+    const doneBooks = catalog && catalog.books ? catalog.books.filter((b) => b.pipelineStatus === 'DONE' || b.pipelineStatus === 'READY_FOR_HUMAN_APPROVAL').length : 0;
+    const runningBooks = catalog && catalog.books ? catalog.books.filter((b) => b.pipelineStatus === 'RUNNING').length : 0;
+
+    const cards = [
+      { label: 'Total Acervo', value: totalBooks },
+      { label: 'Concluídos', value: doneBooks },
+      { label: 'Em Execução', value: runningBooks },
+      { label: 'Revisão Pendente', value: pendingReviews.length },
+      { label: 'Pausados', value: pausedBooks.length },
+    ];
+
+    for (const c of cards) {
+      const card = document.createElement('div');
+      card.className = 'site-ops-metric-card';
+      const val = document.createElement('strong');
+      val.textContent = String(c.value);
+      const lbl = document.createElement('span');
+      lbl.textContent = c.label;
+      card.appendChild(val);
+      card.appendChild(lbl);
+      metricsGrid.appendChild(card);
+    }
+    container.appendChild(metricsGrid);
+
+    // Render active tab content
+    const tabContent = document.createElement('div');
+    tabContent.className = 'site-ops-tab-content';
+
+    if (activeTab === 'overview') {
+      // Overrides Summary
+      const overridesSec = document.createElement('section');
+      overridesSec.className = 'site-ops-section';
+      const secH2 = document.createElement('h2');
+      secH2.textContent = 'Controles Operacionais Ativos';
+      overridesSec.appendChild(secH2);
+
+      const pDesc = document.createElement('p');
+      pDesc.textContent = `Livros Pausados (${pausedBooks.length}): ${pausedBooks.length > 0 ? pausedBooks.join(', ') : 'Nenhum'}`;
+      overridesSec.appendChild(pDesc);
+      tabContent.appendChild(overridesSec);
+
+      // Audit list
+      const auditSec = document.createElement('section');
+      auditSec.className = 'site-ops-section';
+      const auditH2 = document.createElement('h2');
+      auditH2.textContent = 'Últimos Comandos Operacionais';
+      auditSec.appendChild(auditH2);
+
+      const cmds = state.ops.commands || [];
+      if (cmds.length === 0) {
+        const noCmd = document.createElement('p');
+        noCmd.textContent = 'Nenhum comando registrado ainda nesta sessão.';
+        auditSec.appendChild(noCmd);
+      } else {
+        const cmdList = document.createElement('div');
+        cmdList.className = 'site-ops-cmd-list';
+        for (const cmd of cmds.slice(-10).reverse()) {
+          const item = document.createElement('div');
+          item.className = 'site-ops-cmd-item';
+          const title = document.createElement('strong');
+          title.textContent = `${cmd.commandType} (${cmd.commandId})`;
+          const meta = document.createElement('span');
+          meta.className = 'site-ops-cmd-meta';
+          meta.textContent = `Status: ${cmd.status} | Operador: ${cmd.operatorId} | Livro: ${cmd.bookId || '-'}`;
+          item.appendChild(title);
+          item.appendChild(meta);
+          cmdList.appendChild(item);
+        }
+        auditSec.appendChild(cmdList);
+      }
+      tabContent.appendChild(auditSec);
+
+    } else if (activeTab === 'queue') {
+      const queueSec = document.createElement('section');
+      queueSec.className = 'site-ops-section';
+      const qH2 = document.createElement('h2');
+      qH2.textContent = 'Controle de Fila e Prioridade de Livros';
+      queueSec.appendChild(qH2);
+
+      const booksList = catalog && catalog.books ? catalog.books.slice(0, 50) : [];
+      const table = document.createElement('table');
+      table.className = 'site-ops-table';
+
+      const thead = document.createElement('thead');
+      thead.innerHTML = `<tr><th>Livro</th><th>Status</th><th>Prioridade</th><th>Ações</th></tr>`;
+      table.appendChild(thead);
+
+      const tbody = document.createElement('tbody');
+      for (const b of booksList) {
+        const tr = document.createElement('tr');
+        const isPaused = pausedBooks.includes(b.bookId);
+        const priorityOverrides = (state.ops.controlState && state.ops.controlState.priorityOverrides) || {};
+        const prio = priorityOverrides[b.bookId] || 100;
+
+        const tdBook = document.createElement('td');
+        tdBook.textContent = b.title || b.bookId;
+
+        const tdStatus = document.createElement('td');
+        tdStatus.textContent = isPaused ? 'PAUSADO' : (b.pipelineStatus || 'WAITING');
+
+        const tdPrio = document.createElement('td');
+        tdPrio.textContent = String(prio);
+
+        const tdActions = document.createElement('td');
+        tdActions.className = 'site-ops-actions-cell';
+
+        // Pause / Resume button
+        const pauseBtn = document.createElement('button');
+        pauseBtn.type = 'button';
+        pauseBtn.className = isPaused ? 'site-btn-resume' : 'site-btn-pause';
+        pauseBtn.textContent = isPaused ? 'Retomar' : 'Pausar';
+        pauseBtn.addEventListener('click', () => {
+          openRiskModal({
+            title: isPaused ? 'Retomar Livro' : 'Pausar Livro',
+            riskLevel: 'LOW',
+            message: `Confirma ${isPaused ? 'a retomada' : 'a pausa'} do livro "${b.bookId}" no processamento?`,
+            targetBookId: b.bookId,
+            onConfirm: async (res) => {
+              await opsClient.submitCommand({
+                commandType: isPaused ? 'RESUME_BOOK' : 'PAUSE_BOOK',
+                bookId: b.bookId,
+                reason: res.reason,
+                operatorId: 'operator',
+                confirmation: { confirmed: true },
+              });
+              await loadOpsData();
+              renderActiveView();
+            },
+          });
+        });
+        tdActions.appendChild(pauseBtn);
+
+        // Priority button
+        const prioBtn = document.createElement('button');
+        prioBtn.type = 'button';
+        prioBtn.className = 'site-btn-priority';
+        prioBtn.textContent = 'Priorizar';
+        prioBtn.addEventListener('click', () => {
+          const newWeightStr = window.prompt(`Defina a nova prioridade para "${b.bookId}" (1-200):`, String(prio));
+          if (!newWeightStr) return;
+          const weight = parseInt(newWeightStr, 10);
+          if (isNaN(weight)) return;
+
+          openRiskModal({
+            title: 'Alterar Prioridade',
+            riskLevel: 'LOW',
+            message: `Definir peso de prioridade ${weight} para "${b.bookId}"?`,
+            targetBookId: b.bookId,
+            onConfirm: async (res) => {
+              await opsClient.submitCommand({
+                commandType: 'PRIORITIZE_BOOK',
+                bookId: b.bookId,
+                payload: { priorityWeight: weight },
+                reason: res.reason,
+                operatorId: 'operator',
+                confirmation: { confirmed: true },
+              });
+              await loadOpsData();
+              renderActiveView();
+            },
+          });
+        });
+        tdActions.appendChild(prioBtn);
+
+        tr.appendChild(tdBook);
+        tr.appendChild(tdStatus);
+        tr.appendChild(tdPrio);
+        tr.appendChild(tdActions);
+        tbody.appendChild(tr);
+      }
+      table.appendChild(tbody);
+      queueSec.appendChild(table);
+      tabContent.appendChild(queueSec);
+
+    } else if (activeTab === 'reviews') {
+      const reviewSec = document.createElement('section');
+      reviewSec.className = 'site-ops-section';
+      const rH2 = document.createElement('h2');
+      rH2.textContent = 'Fila de Decisões Humanas Pendentes';
+      reviewSec.appendChild(rH2);
+
+      const allReviews = state.ops.reviews || [];
+      if (allReviews.length === 0) {
+        const emptyRev = document.createElement('p');
+        emptyRev.textContent = 'Nenhuma revisão pendente no momento.';
+        reviewSec.appendChild(emptyRev);
+      } else {
+        const revList = document.createElement('div');
+        revList.className = 'site-ops-review-list';
+
+        for (const rev of allReviews) {
+          const card = document.createElement('div');
+          card.className = `site-ops-review-card site-ops-review-card-${rev.status.toLowerCase()}`;
+
+          const cHead = document.createElement('div');
+          cHead.className = 'site-ops-review-head';
+
+          const rTitle = document.createElement('h3');
+          rTitle.textContent = `${rev.reviewId} — Livro: ${rev.bookId}`;
+
+          const badgeWrap = document.createElement('div');
+          badgeWrap.className = 'site-ops-badges-wrap';
+
+          const catBadge = document.createElement('span');
+          catBadge.className = `site-badge site-badge-${rev.category.toLowerCase()}`;
+          catBadge.textContent = rev.category;
+
+          const statusBadge = document.createElement('span');
+          statusBadge.className = `site-badge site-badge-status-${rev.status.toLowerCase()}`;
+          statusBadge.textContent = rev.status;
+
+          badgeWrap.appendChild(catBadge);
+          badgeWrap.appendChild(statusBadge);
+          cHead.appendChild(rTitle);
+          cHead.appendChild(badgeWrap);
+          card.appendChild(cHead);
+
+          const probP = document.createElement('p');
+          probP.className = 'site-ops-problem-text';
+          probP.textContent = rev.problem;
+          card.appendChild(probP);
+
+          const actLink = document.createElement('a');
+          actLink.href = `#/ops/review/${rev.reviewId}`;
+          actLink.className = 'site-btn-action-link';
+          actLink.textContent = rev.status === 'PENDING' ? 'Examinar e Decidir →' : 'Ver Detalhes da Decisão →';
+          card.appendChild(actLink);
+
+          revList.appendChild(card);
+        }
+        reviewSec.appendChild(revList);
+      }
+      tabContent.appendChild(reviewSec);
+    }
+
+    container.appendChild(tabContent);
+    mainContent.appendChild(container);
+  }
+
+  async function renderOpsReviewDetail(reviewId) {
+    if (!state.ops.controlState) {
+      await loadOpsData();
+    }
+
+    const review = (state.ops.reviews || []).find((r) => r.reviewId === reviewId);
+    const container = document.createElement('div');
+    container.className = 'site-ops-review-detail-view';
+
+    const backLink = document.createElement('a');
+    backLink.href = '#/ops/reviews';
+    backLink.className = 'site-back-link';
+    backLink.textContent = '← Voltar para a Fila de Revisão';
+    container.appendChild(backLink);
+
+    if (!review) {
+      const notFound = document.createElement('p');
+      notFound.textContent = `Revisão "${reviewId}" não encontrada no sistema operacional.`;
+      container.appendChild(notFound);
+      mainContent.appendChild(container);
+      return;
+    }
+
+    const h1 = document.createElement('h1');
+    h1.textContent = `Revisão Humana: ${review.reviewId}`;
+    container.appendChild(h1);
+
+    // Meta box
+    const metaBox = document.createElement('div');
+    metaBox.className = 'site-ops-detail-meta';
+    metaBox.innerHTML = `
+      <div><strong>Livro:</strong> <span>${escapeHtml(review.bookId)}</span></div>
+      <div><strong>Estágio:</strong> <span>${escapeHtml(review.stage)}</span></div>
+      <div><strong>Categoria:</strong> <span class="site-badge site-badge-${escapeHtml(review.category.toLowerCase())}">${escapeHtml(review.category)}</span></div>
+      <div><strong>Status:</strong> <span class="site-badge">${escapeHtml(review.status)}</span></div>
+    `;
+    container.appendChild(metaBox);
+
+    // Problem description
+    const probSec = document.createElement('section');
+    probSec.className = 'site-ops-section';
+    const probH2 = document.createElement('h2');
+    probH2.textContent = 'Problema Identificado';
+    const probP = document.createElement('p');
+    probP.textContent = review.problem;
+    probSec.appendChild(probH2);
+    probSec.appendChild(probP);
+    container.appendChild(probSec);
+
+    // Evidence / Diff Section (Safe textContent)
+    const evSec = document.createElement('section');
+    evSec.className = 'site-ops-section';
+    const evH2 = document.createElement('h2');
+    evH2.textContent = 'Evidência / Contexto Técnico';
+    evSec.appendChild(evH2);
+
+    const diffBox = document.createElement('div');
+    diffBox.className = 'site-ops-diff-viewer';
+    const pre = document.createElement('pre');
+    pre.textContent = JSON.stringify(review.evidence || {}, null, 2);
+    diffBox.appendChild(pre);
+    evSec.appendChild(diffBox);
+    container.appendChild(evSec);
+
+    if (review.recommendation) {
+      const recSec = document.createElement('section');
+      recSec.className = 'site-ops-section';
+      const recH2 = document.createElement('h2');
+      recH2.textContent = 'Recomendação dos Agentes';
+      const recP = document.createElement('p');
+      recP.textContent = review.recommendation;
+      recSec.appendChild(recH2);
+      recSec.appendChild(recP);
+      container.appendChild(recSec);
+    }
+
+    // Decision block
+    const decSec = document.createElement('section');
+    decSec.className = 'site-ops-section site-ops-decision-section';
+
+    if (review.status === 'PENDING') {
+      const decH2 = document.createElement('h2');
+      decH2.textContent = 'Decisão Humana Obrigatória';
+      decSec.appendChild(decH2);
+
+      const btnRow = document.createElement('div');
+      btnRow.className = 'site-ops-btn-row';
+
+      // 1. Approve button
+      const approveBtn = document.createElement('button');
+      approveBtn.type = 'button';
+      approveBtn.className = 'site-btn-approve';
+      approveBtn.textContent = 'Aprovar Revisão';
+      approveBtn.addEventListener('click', () => {
+        const isHigh = review.category === 'POLICY_OR_RIGHTS';
+        openRiskModal({
+          title: isHigh ? 'Aprovação de Alto Risco — Direitos e Políticas' : 'Aprovar Revisão',
+          riskLevel: isHigh ? 'HIGH' : 'LOW',
+          targetBookId: review.bookId,
+          message: isHigh
+            ? `Esta revisão envolve direitos/política para "${review.bookId}". Sua aprovação assume autoridade humana formal.`
+            : `Confirma a aprovação da revisão para o livro "${review.bookId}"?`,
+          onConfirm: async (res) => {
+            await opsClient.submitCommand({
+              commandType: 'APPROVE_REVIEW',
+              bookId: review.bookId,
+              reviewId: review.reviewId,
+              reason: res.reason,
+              operatorId: 'human-reviewer',
+              confirmation: { confirmed: true, typedConfirmation: res.typedConfirmation },
+            });
+            await loadOpsData();
+            renderActiveView();
+          },
+        });
+      });
+      btnRow.appendChild(approveBtn);
+
+      // 2. Reject button
+      const rejectBtn = document.createElement('button');
+      rejectBtn.type = 'button';
+      rejectBtn.className = 'site-btn-reject';
+      rejectBtn.textContent = 'Rejeitar';
+      rejectBtn.addEventListener('click', () => {
+        openRiskModal({
+          title: 'Rejeitar Revisão (Médio Risco)',
+          riskLevel: 'MEDIUM',
+          targetBookId: review.bookId,
+          message: `Rejeitar esta alteração para o livro "${review.bookId}". Justificativa técnica obrigatória.`,
+          onConfirm: async (res) => {
+            await opsClient.submitCommand({
+              commandType: 'REJECT_REVIEW',
+              bookId: review.bookId,
+              reviewId: review.reviewId,
+              reason: res.reason,
+              operatorId: 'human-reviewer',
+              confirmation: { confirmed: true },
+            });
+            await loadOpsData();
+            renderActiveView();
+          },
+        });
+      });
+      btnRow.appendChild(rejectBtn);
+
+      // 3. Request correction button
+      const reqCorBtn = document.createElement('button');
+      reqCorBtn.type = 'button';
+      reqCorBtn.className = 'site-btn-correction';
+      reqCorBtn.textContent = 'Solicitar Correção';
+      reqCorBtn.addEventListener('click', () => {
+        openRiskModal({
+          title: 'Solicitar Correção (Médio Risco)',
+          riskLevel: 'MEDIUM',
+          targetBookId: review.bookId,
+          message: `Solicitar correção para os agentes no livro "${review.bookId}". Indique os ajustes exigidos.`,
+          onConfirm: async (res) => {
+            await opsClient.submitCommand({
+              commandType: 'REQUEST_CORRECTION',
+              bookId: review.bookId,
+              reviewId: review.reviewId,
+              reason: res.reason,
+              operatorId: 'human-reviewer',
+              confirmation: { confirmed: true },
+            });
+            await loadOpsData();
+            renderActiveView();
+          },
+        });
+      });
+      btnRow.appendChild(reqCorBtn);
+
+      decSec.appendChild(btnRow);
+    } else {
+      const resH2 = document.createElement('h2');
+      resH2.textContent = 'Decisão Registrada';
+      decSec.appendChild(resH2);
+
+      const resBox = document.createElement('div');
+      resBox.className = 'site-ops-resolved-box';
+      resBox.innerHTML = `
+        <p><strong>Decisão:</strong> ${escapeHtml(review.resolutionAction || 'RESOLVIDA')}</p>
+        <p><strong>Decidido por:</strong> ${escapeHtml(review.decidedBy || 'Humano')}</p>
+        <p><strong>Data/Hora:</strong> ${escapeHtml(review.resolvedAt || '-')}</p>
+        <p><strong>ID da Decisão:</strong> ${escapeHtml(review.decisionId || '-')}</p>
+      `;
+      decSec.appendChild(resBox);
+    }
+
+    container.appendChild(decSec);
     mainContent.appendChild(container);
   }
 

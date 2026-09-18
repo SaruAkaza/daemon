@@ -22,7 +22,7 @@ export const STORAGE_KEY_LAYOUT = 'daemonSite.layout';
  * @param {string} hash
  * @returns {{ kind: string, id: string | null }}
  */
-export function parseRoute(hash) {
+export function parseRoute(hash, options = {}) {
   const raw = String(hash ?? '').trim();
   const path = raw.startsWith('#') ? raw : `#${raw}`;
 
@@ -37,6 +37,28 @@ export function parseRoute(hash) {
   }
   if (path === '#/search') {
     return { kind: 'search', id: null };
+  }
+
+  const isRestricted = options.mode === 'restricted_preview';
+
+  if (path.startsWith('#/ops')) {
+    if (!isRestricted) {
+      return { kind: 'home', id: null };
+    }
+    if (path === '#/ops') {
+      return { kind: 'ops', id: null };
+    }
+    if (path === '#/ops/queue') {
+      return { kind: 'ops-queue', id: null };
+    }
+    if (path === '#/ops/reviews') {
+      return { kind: 'ops-reviews', id: null };
+    }
+    const reviewMatch = path.match(/^#\/ops\/review\/([A-Za-z0-9_-]+)$/);
+    if (reviewMatch) {
+      return { kind: 'ops-review', id: reviewMatch[1] };
+    }
+    return { kind: 'not-found', id: null };
   }
 
   const bookMatch = path.match(/^#\/book\/([a-z0-9-]+)$/);
@@ -77,12 +99,14 @@ function readSavedLayout(storage) {
  * @param {string} [initialHash='#/']
  * @returns {object}
  */
-export function createState(storage = null, initialHash = '#/') {
+export function createState(storage = null, initialHash = '#/', options = {}) {
+  const mode = options.mode || 'restricted_preview';
   const route = initialHash || '#/';
-  const routeInfo = parseRoute(route);
+  const routeInfo = parseRoute(route, { mode });
   const layout = readSavedLayout(storage);
 
   return {
+    mode,
     route,
     routeInfo,
     selectedEntityId: routeInfo.kind === 'entity' ? routeInfo.id : null,
@@ -96,6 +120,14 @@ export function createState(storage = null, initialHash = '#/') {
       rightsStatus: 'all',
       publicationMode: 'all',
       sortBy: 'title_asc',
+    },
+    ops: {
+      controlState: null,
+      commands: [],
+      reviews: [],
+      activeTab: 'overview',
+      selectedReviewId: null,
+      modalState: null,
     },
   };
 }
@@ -129,7 +161,7 @@ export function setLayout(state, layout, storage = null) {
  */
 export function setRoute(state, hash) {
   const route = hash || '#/';
-  const routeInfo = parseRoute(route);
+  const routeInfo = parseRoute(route, { mode: state?.mode || 'restricted_preview' });
   const selectedEntityId =
     routeInfo.kind === 'entity' ? routeInfo.id : state.selectedEntityId;
 
