@@ -1,68 +1,289 @@
 # Scale-Out Release B — Ops Controller & Human Review Queue Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use `superpowers:subagent-driven-development` (recommended) or `superpowers:executing-plans` to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Constraint:** This is a documentation and planning artifact. Execution of tasks must follow formal human approval and proceed strictly in dedicated worktrees with strict TDD.
 
-**Goal:** Deliver the local-first operational control plane for Daemon Tools, providing a secure loopback-only Ops Controller with ephemeral session token authentication (Windows-first), transactional asynchronous command processing (`POST /api/ops/commands`) with strong idempotency, durable Human Review Queue storage (`ReviewStore`), tamper-evident human decision logging (`DecisionLog`), append-only command auditing (`CommandAuditLog`), real-time Server-Sent Events notifications (`GET /api/ops/events`) with `Last-Event-ID` replay, and restricted frontend operational views (`#/ops`, `#/ops/queue`, `#/ops/reviews`, `#/ops/review/:reviewId`) featuring risk-proportional confirmation rituals and total fail-closed isolation in public mode.
+**Goal:** Deliver the hardened, local-first operational control plane for Daemon Tools, providing a secure, loopback-only Ops Controller integrated directly inside `PreviewServer` with same-origin session-cookie authentication (Windows-first), transactional asynchronous command processing (`POST /api/ops/commands`) with durable idempotency, durable Human Review Queue storage (`ReviewStore`), tamper-evident decision logging (`DecisionLog`), tamper-evident command auditing (`CommandAuditLog`), real-time Server-Sent Events notifications (`GET /api/ops/events`) with `Last-Event-ID` replay and snapshot fallback, server-side risk-proportional confirmation enforcement, and restricted frontend operational views (`#/ops`, `#/ops/queue`, `#/ops/reviews`, `#/ops/review/:reviewId`) with total fail-closed isolation in public mode.
 
-**Architecture:** The Ops Controller operates as a thin, loopback-only HTTP/SSE transport layer completely decoupled from RPG domain rules and Batch Orchestrator scheduling. Frontend code never interacts with persistent stores directly on the filesystem; all mutations flow via authenticated POST commands returning `202 Accepted` with a tracking `commandId`, while state changes push to the UI over an SSE stream backed by an in-memory ring buffer with snapshot fallback. Operational state is durably anchored in append-only JSON/JSONL stores (`runtime/stores/reviews.json`, `runtime/stores/decisions.jsonl`, `runtime/stores/command_audit.jsonl`). In public mode (`mode=public`), operational routes are absent from the router and all `/api/ops/*` endpoints return `404 Not Found`.
+**Architecture:**
+The Ops Controller operates as a thin, loopback-only HTTP/SSE transport layer mounted internally within `PreviewServer` when running in `mode="restricted_preview"`. It is completely decoupled from RPG domain rules and Batch Orchestrator scheduling (which belongs to Release C).
+- **No Third Server:** Ops routes run on the exact same origin as the preview server. No independent secondary server or port is spawned.
+- **Browser Authentication & SSE Compatibility:** Browser JavaScript NEVER reads `.daemon_runtime/ops_token` from disk, NEVER receives file paths, NEVER stores tokens in `localStorage`/`sessionStorage`, and NEVER transmits credentials in URL query strings. Authentication for both `fetch` and native browser `EventSource` is handled via a process-scoped, same-origin, `HttpOnly; SameSite=Strict; Path=/api/ops` session cookie issued by `PreviewServer` upon loading the restricted preview. A separate CLI Bearer token interface exists strictly for local scripts and tooling.
+- **Fail-Closed Token Manager:** High-entropy token generation (`secrets.token_urlsafe(32)`). Process-scoped. Windows file ACLs are enforced via Windows native `icacls` (without external pywin32 dependencies); if ACL restriction cannot be applied and verified, the controller fails closed and refuses to start. POSIX environments enforce `chmod 600`. Stale tokens from prior runs are rotated immediately on startup.
+- **Durable Idempotency & Truly Asynchronous Processing:** Mutations flow via `POST /api/ops/commands`. The controller validates payload against `schemas/ops-command.schema.json`, verifies server-side risk confirmation, writes command state to `commands.json`, records `ACCEPTED` into `command_audit.jsonl`, and immediately responds with `202 Accepted`. A background worker loop asynchronously executes transitions (`ACCEPTED` -> `RUNNING` -> `SUCCEEDED` / `FAILED` / `BLOCKED`). Re-submitting the same `commandId` with the identical canonical payload returns the existing state without repeating mutations; re-submitting the same `commandId` with a conflicting payload strictly returns `409 Conflict`.
+- **No Faking Release C:** Release B does not execute the batch pipeline. Commands persist operational intents (`PAUSE_REQUESTED`, priority overrides in `control_state.json`, `REPROCESS_STAGE` intent, `DEQUEUE_BOOK` queue removal). Real initial states are retrieved from existing stores; state transitions are never fabricated.
+- **Human Authority & Tamper-Evident Logs:** Review decisions require an explicit human `operatorId`/`reviewer`; automated agent identities (`AUTOMATED_AGENT_IDENTIFIERS` from `scripts/agents/pilot_review.py`) are strictly rejected. Both `decisions.jsonl` and `command_audit.jsonl` are protected by a tamper-evident SHA-256 hash chain (`prevHash` + `entryHash`).
+- **Total Public Fail-Closed Barrier:** In `mode="public"`, `OpsRequestHandler` is never registered, `/api/ops/*` returns `404 Not Found` (fail-closed), operational routes are omitted from the router, and frontend navigation contains zero references to operational controls.
 
-**Tech Stack:** Python 3.10+, pytest, standard library `http.server`, standard library `secrets`, `hashlib`, Windows ACL primitives (`icacls` / `win32security` fallback via pure Python stdlib), vanilla ES modules (`.mjs`), HTML5/CSS3, Playwright browser test harness (`pytest tests/frontend/test_site_browser.py`).
+**Tech Stack:** Python 3.10+, pytest, standard library `http.server`, standard library `secrets`, standard library `hashlib`, standard library `subprocess` (for Windows native `icacls`), vanilla ES modules (`.mjs`), HTML5/CSS3, Playwright browser test harness (`pytest tests/frontend/test_site_browser.py`).
 
-**Spec:** `docs/superpowers/specs/2026-09-14-scale-out-acervo-batch-ops-design.md`, commit `117b626cc1bb049f6beeb6498dfa5b7ea511e765`.
-
----
-
-## Global Constraints
-
-- **PROCESSADO != PUBLICÁVEL**: Technical processing does not imply or authorize public distribution.
-- `restricted_preview` and `public` are runtime execution modes (`mode=restricted_preview` / `mode=public`), never to be confused with canonical `publicationMode`.
-- **Total Public Fail-Closed Barrier**: In `mode=public` (static export, production docs, GitHub Pages), the Ops Controller is never started, zero `/api/ops/*` endpoints exist (404 Fail-Closed), and the frontend operational routes (`#/ops/*`) are excluded from navigation and route resolution.
-- **Loopback Only**: Server binds strictly to `127.0.0.1` and `::1`. Any external request is immediately dropped or rejected (`403 Forbidden`).
-- **Ephemeral Token Security**:
-  - Generated cryptographically at runtime (`secrets.token_urlsafe(32)`).
-  - Persisted in `.daemon_runtime/ops_token` with owner-restricted permissions (Windows-first file access controls; `chmod 600` on POSIX).
-  - `.daemon_runtime/` is strictly ignored by Git and never committed.
-- **Frontend Isolation**: The frontend **never reads store files directly** from disk. Reads occur via authenticated HTTP endpoints (`GET /api/ops/snapshot`, `GET /api/ops/events`).
-- **Idempotency**: Every command carries a client-generated `commandId`. Repeated submissions return the existing command status (`200 OK` or `202 Accepted`) without repeating actions.
-- **Safe Book Actions**:
-  - `PAUSE_BOOK`: Safely flags the book to pause at the next stage checkpoint boundary; never aborts executing subagents mid-stream and never blocks other running books.
-  - `RESUME_BOOK`: Restores a paused book to eligible queued state, respecting validated checkpoints and stage gates.
-  - `PRIORITIZE_BOOK`: Adjusts deterministic queue weight without skipping QA gates or integrity checks.
-  - Global `PAUSE_ORCHESTRATOR` is an administrative command and **not an MVP requirement**.
-- **Human Authority on Rights and Ambiguities**:
-  - Decisions in `POLICY_OR_RIGHTS` and `DOMAIN_AMBIGUITY` are strictly human; automated agents (`AUTOMATED_AGENT_IDENTIFIERS`) are rejected by the validator.
-  - Rejection of artifacts or requests for correction record immutable rationale in `DecisionLog`.
-- **SSE Non-Authority**: SSE is strictly a reactive notification mechanism; durable disk stores are the source of truth for operational state.
+**Authoritative Spec:** `docs/superpowers/specs/2026-09-14-scale-out-acervo-batch-ops-design.md`, commit `117b626cc1bb049f6beeb6498dfa5b7ea511e765`.
 
 ---
 
-## Interfaces and File Map
+## 1. Global Constraints & Architectural Tenets
+
+1. **PROCESSADO != PUBLICÁVEL**: Technical pipeline completion does not imply or authorize public distribution.
+2. **Canonical Runtime Directory (`resolve_canonical_runtime_dir`)**:
+   - Release B MUST NOT introduce alternative runtime directories or independent defaults such as `ROOT / "runtime"` or `ROOT / ".daemon_runtime"`.
+   - All runtime paths MUST be resolved via `resolve_canonical_runtime_dir(runtime_dir)` as established in `scripts/agents/archive_inventory_loader.py`.
+   - Operational directory structure:
+     ```text
+     <canonical .daemon_runtime>/
+         ops/
+             stores/
+                 reviews.json
+                 decisions.jsonl
+                 commands.json
+                 command_audit.jsonl
+                 control_state.json
+             ops_token
+     ```
+   - All operational files remain untracked and strictly ignored by Git.
+   - All automated test suites (`tests/ops/`, `tests/frontend/`) execute against synthetic runtimes located in `tmp_path`. The developer's real `.daemon_runtime` is accessed exclusively in separate Local Acceptance procedures.
+3. **No Third Server (Internal Same-Origin Preview Integration)**:
+   - Ops Controller is NOT an independent HTTP server listening on another port.
+   - `PreviewServer` remains the single local HTTP server.
+   - `OpsRequestHandler` is mounted internally inside `PreviewServer`.
+   - In `mode="restricted_preview"`: Ops routes are active on the same origin (e.g. `http://127.0.0.1:8080/api/ops/*`).
+   - In `mode="public"`: Ops routes are completely absent; requests to `/api/ops/*` strictly return `404 Not Found`.
+4. **Browser Authentication & SSE Compatibility**:
+   - Browser JavaScript NEVER accesses filesystem paths or reads `.daemon_runtime/ops_token`.
+   - Browser JavaScript NEVER stores credentials in `localStorage` or `sessionStorage`.
+   - Credentials NEVER appear in URL query strings (e.g., `?token=...` is strictly forbidden).
+   - Upon initial page load in `restricted_preview`, `PreviewServer` establishes a process-ephemeral session and sets an `HttpOnly; SameSite=Strict; Path=/api/ops` cookie.
+   - Standard browser `fetch("/api/ops/...")` and native `new EventSource("/api/ops/events")` authenticate transparently via this same-origin session cookie.
+   - CLI/curl requests can authenticate via `Authorization: Bearer <token>` reading from `<runtime>/ops/ops_token`.
+5. **Fail-Closed Token & Session Security**:
+   - Token generated using `secrets.token_urlsafe(32)`.
+   - Token is rotated upon each Ops Controller startup.
+   - Windows file permissions on `ops_token` are configured with native `icacls` to grant read/write access solely to the current user and strip inheritance. If `icacls` execution fails or permissions cannot be verified, startup is aborted immediately (fail-closed; no `except: pass`).
+   - POSIX environments apply `chmod 600` and assert file mode.
+   - Token file is removed upon graceful server shutdown.
+6. **Typed Command Schema & Canonical Identifiers**:
+   - Every operational command must validate against `schemas/ops-command.schema.json`.
+   - Command types are canonical SCREAMING_SNAKE_CASE:
+     - `PRIORITIZE_BOOK`
+     - `PAUSE_BOOK`
+     - `RESUME_BOOK`
+     - `REPROCESS_STAGE`
+     - `DEQUEUE_BOOK`
+     - `APPROVE_REVIEW`
+     - `REJECT_REVIEW`
+     - `REQUEST_CORRECTION`
+   - Global `PAUSE_ORCHESTRATOR` is an administrative command and is **not part of the MVP**.
+7. **Durable Idempotency & Crash Recovery**:
+   - Idempotency is persisted in `commands.json` via atomic replacement (`write_atomic`).
+   - Each command stores its canonical payload hash (`canonical_json_bytes` + SHA-256).
+   - Resubmission with the exact same `commandId` and payload returns the existing command record (zero duplicate mutations or audit records).
+   - Resubmission with the same `commandId` but conflicting payload returns `409 Conflict` (zero mutation).
+   - State survives process crashes and restarts.
+8. **Asynchronous Command Processing Lifecycle**:
+   - `POST /api/ops/commands` validates, persists command state as `ACCEPTED`, records audit entry, and immediately responds with `202 Accepted`.
+   - Execution occurs asynchronously via a local processor loop:
+     `ACCEPTED` -> `RUNNING` -> `SUCCEEDED` / `FAILED` / `BLOCKED`.
+   - All state transitions are durably recorded and broadcast via SSE.
+9. **No Faking Release C**:
+   - Release B does NOT invoke the Batch Orchestrator or execute pipelines.
+   - `PAUSE_BOOK` persists `PAUSE_REQUESTED` intent in `control_state.json`.
+   - `RESUME_BOOK` clears pause intent.
+   - `PRIORITIZE_BOOK` persists priority overrides in `control_state.json`.
+   - `REPROCESS_STAGE` persists stage reprocess intent without running pipelines.
+   - `DEQUEUE_BOOK` removes book from operational queue without deleting book sources or certified artifacts.
+   - Real previous state is queried from current inventory, never defaulted to `"QUEUED"`.
+10. **Human Authority & Tamper-Evident Integrity**:
+    - Review decisions strictly require non-empty human operator identity (`decidedBy`/`reviewer`). Automated agents (`AUTOMATED_AGENT_IDENTIFIERS`) are rejected fail-closed.
+    - Decisions on `POLICY_OR_RIGHTS` and `DOMAIN_AMBIGUITY` are strictly human; agents cannot authorize rights or publication.
+    - `decisions.jsonl` and `command_audit.jsonl` implement SHA-256 tamper-evident hash chaining. Modifications to historical lines trigger an `IntegrityError` upon startup/read.
+11. **Server-Side Risk Model**:
+    - Risk levels are enforced server-side on `POST /api/ops/commands`:
+      - **LOW** (`PRIORITIZE_BOOK`, `PAUSE_BOOK`, `RESUME_BOOK`): Single-action execution.
+      - **MEDIUM** (`REPROCESS_STAGE`, `REJECT_REVIEW`, `REQUEST_CORRECTION`, `DEQUEUE_BOOK`): Requires non-empty `reason` and explicit `confirmation=true`.
+      - **HIGH** (`POLICY_OR_RIGHTS` approval, broad stage invalidation): Requires non-empty `reason`, typed confirmation matching `bookId`, and human reviewer identity.
+12. **Server-Sent Events (SSE) Semantics**:
+    - SSE is strictly a reactive push mechanism; durable stores are the source of truth.
+    - Monotonic `eventId` sequence within server process.
+    - 100-event circular ring buffer.
+    - Reconnection via `Last-Event-ID`: if ID is in buffer, replays missing events; if expired or server restarted, emits `snapshot_required` event prompting frontend to fetch `GET /api/ops/snapshot`.
+    - Periodic `: keepalive\n\n` comments prevent socket timeouts.
+    - Zero credentials or tokens are ever sent over SSE.
+13. **Public Fail-Closed Total Barrier**:
+    - In `mode="public"`: `/api/ops/*` routes are unregistered (`404 Not Found`).
+    - Frontend routes `#/ops/*` are not registered; navigation omits Operations.
+    - Public JavaScript never initiates `EventSource` or calls `/api/ops/*`.
+    - Protected content (e.g. Animalidade raw data) remains strictly unexposed.
+
+---
+
+## 2. Schema Contracts & Data Interfaces
+
+### 2.1 `schemas/ops-command.schema.json`
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/ops-command.schema.json",
+  "title": "Ops Command Contract",
+  "description": "Canonical typed command contract for Daemon Tools operational control plane.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "commandId",
+    "commandType",
+    "payload",
+    "reason",
+    "operatorId",
+    "confirmation"
+  ],
+  "properties": {
+    "commandId": {
+      "type": "string",
+      "pattern": "^CMD-[A-Za-z0-9_-]{8,32}$"
+    },
+    "commandType": {
+      "type": "string",
+      "enum": [
+        "PRIORITIZE_BOOK",
+        "PAUSE_BOOK",
+        "RESUME_BOOK",
+        "REPROCESS_STAGE",
+        "DEQUEUE_BOOK",
+        "APPROVE_REVIEW",
+        "REJECT_REVIEW",
+        "REQUEST_CORRECTION"
+      ]
+    },
+    "bookId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "operatorId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confirmation": {
+      "type": "object",
+      "required": ["confirmed"],
+      "properties": {
+        "confirmed": { "type": "boolean" },
+        "typedConfirmation": { "type": "string" }
+      }
+    },
+    "submittedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
+```
+
+### 2.2 Tamper-Evident Hash Chain Algorithm
+For append-only logs (`decisions.jsonl`, `command_audit.jsonl`):
+1. The genesis entry uses `prevHash = "0" * 64`.
+2. Each subsequent entry receives the `entryHash` of the immediately preceding line as its `prevHash`.
+3. The `entryHash` is computed deterministically:
+   $$\text{entryHash} = \text{SHA-256}(\text{canonical\_json\_bytes}(\{\dots\text{record without entryHash}, \text{"prevHash"}: \text{prevHash}\}))$$
+4. Any line addition, modification, or reordering invalidates the chain and causes `IntegrityError`.
+
+---
+
+## 3. Interfaces and File Map
 
 | File | Action | Responsibility |
 | :--- | :--- | :--- |
-| `scripts/ops/token_manager.py` | Create | Generates high-entropy session token, writes to `.daemon_runtime/ops_token` with OS-appropriate permissions (Windows ACLs / POSIX), and validates incoming Bearer tokens. |
-| `scripts/ops/review_store.py` | Create | Durable CRUD store for Human Review Queue items (`runtime/stores/reviews.json`) and append-only cryptographic decisions (`runtime/stores/decisions.jsonl`). |
-| `scripts/ops/command_audit.py` | Create | Append-only audit logger (`runtime/stores/command_audit.jsonl`) recording every submitted command, parameters, operator reason, and result. |
-| `scripts/ops/command_processor.py` | Create | Asynchronous command dispatcher handling `PAUSE_BOOK`, `RESUME_BOOK`, `PRIORITIZE_BOOK`, `APPROVE_REVIEW`, `REJECT_REVIEW`, and `REQUEST_CORRECTION` with strong idempotency. |
-| `scripts/ops/event_broadcaster.py` | Create | In-memory SSE broadcaster with circular ring buffer (100 events), `Last-Event-ID` replay, client connection management, and snapshot fallback notification. |
-| `scripts/ops/ops_server.py` | Create | Thin loopback HTTP request handler routing `POST /api/ops/commands`, `GET /api/ops/events`, `GET /api/ops/snapshot`, with strict Origin/Host and token validation. |
-| `scripts/agents/preview_server.py` | Modify | Integrates Ops Controller routing in `restricted_preview` mode while enforcing strict 404 fail-closed behavior in `public` mode. |
-| `docs/assets/site-ops.mjs` | Create | Frontend operational client: handles token management, SSE connection with auto-reconnect, snapshot fetching, and command submission with optimistic feedback. |
-| `docs/assets/site-state.mjs` | Modify | Registers operational routes (`#/ops`, `#/ops/queue`, `#/ops/reviews`, `#/ops/review/:reviewId`) only when running in restricted mode. |
-| `docs/assets/site-ui.mjs` | Modify | Renders operational dashboard, review queue table, interactive review resolution modal, and risk-proportional confirmation dialogs. |
-| `docs/assets/styles.css` | Modify | Styles for operational badges, review evidence diff viewer, confirmation modals, and live SSE connection indicator. |
-| `tests/ops/test_token_manager.py` | Create | Unit tests for token generation, permission setting on Windows and POSIX, and token verification. |
-| `tests/ops/test_review_store.py` | Create | Unit tests for review creation, retrieval, status transitions, and immutable decision logging with agent rejection. |
-| `tests/ops/test_command_processor.py` | Create | Unit tests for command validation, idempotency caching, state transitions, and audit logging. |
-| `tests/ops/test_event_broadcaster.py` | Create | Unit tests for SSE event formatting, client registration, buffer replay via `Last-Event-ID`, and buffer overflow fallback. |
-| `tests/ops/test_ops_server_security.py` | Create | Unit tests verifying loopback binding, token rejection, invalid Origin rejection, and public mode 404 fail-closed protection. |
-| `tests/frontend/test_site_browser.py` | Modify | Playwright browser tests for `#/ops` dashboard, review resolution flow, and risk-proportional confirmation modals. |
+| `schemas/ops-command.schema.json` | Create | JSON Schema Draft 2020-12 contract for operational commands. |
+| `scripts/ops/runtime_locator.py` | Create | Canonical runtime directory resolution delegating to `resolve_canonical_runtime_dir()`. |
+| `scripts/ops/token_manager.py` | Create | High-entropy process token generation, fail-closed Windows `icacls` / POSIX `chmod 600` permissions, session cookie generation and verification. |
+| `scripts/ops/hash_chain.py` | Create | SHA-256 tamper-evident chain calculation, appending, and full log verification utilities. |
+| `scripts/ops/review_store.py` | Create | Durable review CRUD store (`reviews.json`), tamper-evident decision log (`decisions.jsonl`), in-process mutex locking, agent rejection. |
+| `scripts/ops/command_store.py` | Create | Durable command state store (`commands.json`), control state (`control_state.json`), payload hashing, idempotency validation. |
+| `scripts/ops/command_audit.py` | Create | Append-only tamper-evident command audit logger (`command_audit.jsonl`). |
+| `scripts/ops/command_processor.py` | Create | Asynchronous command handler, 202 Accepted ingestion, transition worker loop, server-side risk validator, intent persistence for Release B. |
+| `scripts/ops/event_broadcaster.py` | Create | In-memory SSE broadcaster, 100-event ring buffer, monotonic IDs, `Last-Event-ID` replay, `snapshot_required` fallback, keepalive comments. |
+| `scripts/ops/ops_server.py` | Create | Loopback request dispatcher for `/api/ops/*`, same-origin cookie check, CLI Bearer token validation, Host/Origin validation, body limits. |
+| `scripts/agents/preview_server.py` | Modify | Mounts `OpsRequestHandler` in `restricted_preview` mode, sets HttpOnly session cookie on preview entry, enforces strict 404 in `public` mode. |
+| `docs/assets/site-ops.mjs` | Create | Frontend operational client (cookie-authenticated, zero token in JS, SSE lifecycle, snapshot fallback, command posting with risk ritual helpers). |
+| `docs/assets/site-state.mjs` | Modify | Registers operational routes (`#/ops`, `#/ops/queue`, `#/ops/reviews`, `#/ops/review/:reviewId`) exclusively in restricted mode; redirects to `#/` in public mode. |
+| `docs/assets/site-ui.mjs` | Modify | Renders operational dashboard, review queue, diff evidence viewer with safe DOM APIs (`textContent`), risk confirmation modals. |
+| `docs/assets/styles.css` | Modify | Styles for operational badges, review diff tables, confirmation modals, SSE live status indicator. |
+| `tests/ops/test_store_foundations.py` | Create | Tests for canonical runtime resolution, store initialization, and hash chaining. |
+| `tests/ops/test_token_manager.py` | Create | Tests for token entropy, fail-closed ACL enforcement, session cookie derivation, and stale token cleanup. |
+| `tests/ops/test_review_store.py` | Create | Tests for review lifecycle, tamper-evident decision logging, automated agent rejection, concurrent decision conflict prevention. |
+| `tests/ops/test_command_store.py` | Create | Tests for durable idempotency, payload hash mismatch 409 conflict, crash recovery across restarts. |
+| `tests/ops/test_command_processor.py` | Create | Tests for asynchronous lifecycle (ACCEPTED -> RUNNING -> SUCCEEDED), server-side risk verification, Release B intent persistence. |
+| `tests/ops/test_event_broadcaster.py` | Create | Tests for monotonic IDs, ring buffer replay, snapshot fallback on overflow/stale ID, keepalive comments. |
+| `tests/ops/test_ops_server_security.py` | Create | Tests for loopback binding, session cookie auth, CLI Bearer auth, Origin/Host validation, 404 barrier in public mode. |
+| `tests/agents/test_preview_server_ops_barrier.py` | Create | Tests verifying preview server integration and fail-closed public mode isolation. |
+| `tests/frontend/site-ops.test.mjs` | Create | Node tests for frontend ops client, SSE reconnect handling, snapshot fallback. |
+| `tests/frontend/site-state.test.mjs` | Modify | Tests verifying operational routes active in restricted mode and strictly absent in public mode. |
+| `tests/frontend/test_site_browser.py` | Modify | Playwright browser tests for operational dashboard, review resolution, risk confirmation modals, public mode absence. |
 
 ---
 
-## Tasks
+## 4. Implementation Tasks
 
-### Task 1: Ephemeral Token Manager with Windows-First Permissions (`scripts/ops/token_manager.py`)
+### Task 1: Schemas, Runtime Locator & Store Foundations
+
+**Files:**
+- Create: `schemas/ops-command.schema.json`
+- Create: `scripts/ops/runtime_locator.py`
+- Create: `scripts/ops/hash_chain.py`
+- Create: `tests/ops/test_store_foundations.py`
+
+**Interfaces:**
+```python
+# scripts/ops/runtime_locator.py
+def get_ops_runtime_dir(runtime_dir: Path | str | None = None) -> Path: ...
+def get_ops_stores_dir(runtime_dir: Path | str | None = None) -> Path: ...
+
+# scripts/ops/hash_chain.py
+class IntegrityError(RuntimeError): ...
+
+class HashChainLogger:
+    def __init__(self, log_path: Path) -> None: ...
+    def append_entry(self, record: dict[str, Any]) -> dict[str, Any]: ...
+    def verify_integrity(self) -> tuple[bool, int, str]: ...
+    def read_all_entries(self) -> list[dict[str, Any]]: ...
+```
+
+- [ ] **Step 1: Write failing test (`tests/ops/test_store_foundations.py`)**
+  - Verify `get_ops_runtime_dir()` returns `<canonical .daemon_runtime>/ops`.
+  - Verify `schemas/ops-command.schema.json` validates valid command and rejects missing `commandId` or unknown `commandType`.
+  - Verify `HashChainLogger` calculates deterministic SHA-256 chain and raises `IntegrityError` if a historical line is modified.
+- [ ] **Step 2: Run test and confirm RED**
+  ```powershell
+  python -m pytest tests/ops/test_store_foundations.py -v
+  ```
+- [ ] **Step 3: Implement minimal code**
+  - Implement `schemas/ops-command.schema.json`.
+  - Implement `scripts/ops/runtime_locator.py` importing `resolve_canonical_runtime_dir`.
+  - Implement `scripts/ops/hash_chain.py` using `canonical_json_bytes` and `sha256_bytes`.
+- [ ] **Step 4: Run test and confirm GREEN**
+  ```powershell
+  python -m pytest tests/ops/test_store_foundations.py -v
+  ```
+- [ ] **Step 5: Run focused regressions**
+  ```powershell
+  python -m pytest tests/ops/test_store_foundations.py -q
+  ```
+- [ ] **Step 6: Commit**
+  ```powershell
+  git add schemas/ops-command.schema.json scripts/ops/runtime_locator.py scripts/ops/hash_chain.py tests/ops/test_store_foundations.py
+  git commit -m "feat(ops): implement ops command schema, canonical runtime locator, and hash chain foundations"
+  ```
+
+---
+
+### Task 2: Ephemeral Token Manager & Session Cookie Security
 
 **Files:**
 - Create: `scripts/ops/token_manager.py`
@@ -72,146 +293,46 @@
 ```python
 class TokenManager:
     def __init__(self, runtime_dir: Path | str | None = None) -> None: ...
-    def initialize_token(self) -> str: ...
+    def initialize(self) -> str: ...
     def get_token(self) -> str | None: ...
-    def validate_token(self, provided_token: str | None) -> bool: ...
+    def create_session_cookie(self) -> str: ...
+    def validate_session(self, cookie_header: str | None, auth_header: str | None) -> bool: ...
     def cleanup(self) -> None: ...
 ```
 
-- [ ] **Step 1: Write failing test**
-Create `tests/ops/test_token_manager.py`:
-```python
-from pathlib import Path
-import pytest
-from scripts.ops.token_manager import TokenManager
-
-def test_token_manager_generates_and_validates_token(tmp_path):
-    tm = TokenManager(runtime_dir=tmp_path)
-    token = tm.initialize_token()
-
-    assert isinstance(token, str)
-    assert len(token) >= 32
-    assert (tmp_path / "ops_token").exists()
-
-    # Valid token
-    assert tm.validate_token(token) is True
-    assert tm.validate_token(f"Bearer {token}") is True
-
-    # Invalid tokens
-    assert tm.validate_token("wrong-token") is False
-    assert tm.validate_token("") is False
-    assert tm.validate_token(None) is False
-
-    tm.cleanup()
-    assert not (tmp_path / "ops_token").exists()
-```
-
+- [ ] **Step 1: Write failing test (`tests/ops/test_token_manager.py`)**
+  - Test token entropy (at least 32 urlsafe bytes).
+  - Test file permission restriction: on Windows, verifies `icacls` invocation; if permissions cannot be applied, `initialize()` raises `RuntimeError` (fail-closed).
+  - Test session cookie generation and verification (`HttpOnly`, `SameSite=Strict`).
+  - Test validation succeeds with valid session cookie OR valid `Bearer <token>`.
+  - Test rejection of missing, empty, or forged credentials.
+  - Test stale token rotation on process restart.
 - [ ] **Step 2: Run test and confirm RED**
-```powershell
-python -m pytest tests/ops/test_token_manager.py -v
-```
-Expected: `ModuleNotFoundError: No module named 'scripts.ops'`.
-
-- [ ] **Step 3: Implement minimal code**
-Create `scripts/ops/token_manager.py`:
-```python
-from __future__ import annotations
-import os
-from pathlib import Path
-import secrets
-import stat
-import subprocess
-import sys
-
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_RUNTIME_DIR = ROOT / ".daemon_runtime"
-
-class TokenManager:
-    def __init__(self, runtime_dir: Path | str | None = None) -> None:
-        self.runtime_dir = Path(runtime_dir).resolve() if runtime_dir else DEFAULT_RUNTIME_DIR
-        self.token_file = self.runtime_dir / "ops_token"
-        self._current_token: str | None = None
-
-    def initialize_token(self) -> str:
-        self.runtime_dir.mkdir(parents=True, exist_ok=True)
-        self._current_token = secrets.token_urlsafe(32)
-
-        # Write token file
-        with open(self.token_file, "w", encoding="utf-8") as f:
-            f.write(self._current_token)
-
-        self._restrict_file_permissions(self.token_file)
-        return self._current_token
-
-    def _restrict_file_permissions(self, path: Path) -> None:
-        if sys.platform == "win32":
-            # Restrict permissions to current user on Windows via icacls
-            try:
-                username = os.environ.get("USERNAME")
-                if username:
-                    subprocess.run(
-                        ["icacls", str(path), "/inheritance:r", "/grant:r", f"{username}:(R,W)"],
-                        capture_output=True,
-                        check=False,
-                    )
-            except Exception:
-                pass
-        else:
-            # POSIX chmod 600
-            try:
-                path.chmod(stat.S_IRUSR | stat.S_IWUSR)
-            except Exception:
-                pass
-
-    def get_token(self) -> str | None:
-        if self._current_token:
-            return self._current_token
-        if self.token_file.exists():
-            self._current_token = self.token_file.read_text(encoding="utf-8").strip()
-            return self._current_token
-        return None
-
-    def validate_token(self, provided_token: str | None) -> bool:
-        if not provided_token:
-            return False
-        current = self.get_token()
-        if not current:
-            return False
-        clean = provided_token.strip()
-        if clean.lower().startswith("bearer "):
-            clean = clean[7:].strip()
-        return secrets.compare_digest(clean, current)
-
-    def cleanup(self) -> None:
-        self._current_token = None
-        if self.token_file.exists():
-            try:
-                self.token_file.unlink()
-            except OSError:
-                pass
-```
-
+  ```powershell
+  python -m pytest tests/ops/test_token_manager.py -v
+  ```
+- [ ] **Step 3: Implement minimal code (`scripts/ops/token_manager.py`)**
+  - Use `secrets.token_urlsafe(32)`.
+  - Implement Windows `icacls` configuration with strict error checking (fail-closed).
+  - Derive HMAC session token for cookie validation.
+  - Implement cleanup unlinking `ops_token`.
 - [ ] **Step 4: Run test and confirm GREEN**
-```powershell
-python -m pytest tests/ops/test_token_manager.py -v
-```
-Expected: 1 passed.
-
+  ```powershell
+  python -m pytest tests/ops/test_token_manager.py -v
+  ```
 - [ ] **Step 5: Run focused regressions**
-```powershell
-python -m pytest tests/ops/test_token_manager.py -q
-```
-Expected: 1 passed.
-
+  ```powershell
+  python -m pytest tests/ops/test_token_manager.py tests/ops/test_store_foundations.py -q
+  ```
 - [ ] **Step 6: Commit**
-```powershell
-git add scripts/ops/token_manager.py tests/ops/test_token_manager.py
-git commit -m "feat(ops): implement secure ephemeral session token manager"
-```
+  ```powershell
+  git add scripts/ops/token_manager.py tests/ops/test_token_manager.py
+  git commit -m "feat(ops): implement fail-closed token manager and same-origin session security"
+  ```
 
 ---
 
-### Task 2: Durable Review Store and Decision Log (`scripts/ops/review_store.py`)
+### Task 3: Durable Review Store & Tamper-Evident Decision Log
 
 **Files:**
 - Create: `scripts/ops/review_store.py`
@@ -219,412 +340,161 @@ git commit -m "feat(ops): implement secure ephemeral session token manager"
 
 **Interfaces:**
 ```python
+class DecisionValidationError(ValueError): ...
+class ReviewConflictError(RuntimeError): ...
+
 class ReviewStore:
-    def __init__(self, store_dir: Path | str | None = None) -> None: ...
+    def __init__(self, stores_dir: Path | str | None = None) -> None: ...
     def create_review(self, record: dict[str, Any]) -> dict[str, Any]: ...
     def get_review(self, review_id: str) -> dict[str, Any] | None: ...
-    def list_reviews(self, status: str | None = None) -> list[dict[str, Any]]: ...
+    def list_reviews(self, status: str | None = None, category: str | None = None) -> list[dict[str, Any]]: ...
     def record_decision(self, decision: dict[str, Any]) -> dict[str, Any]: ...
 ```
 
-- [ ] **Step 1: Write failing test**
-Create `tests/ops/test_review_store.py`:
-```python
-from pathlib import Path
-import pytest
-from scripts.ops.review_store import ReviewStore, DecisionValidationError
-
-def test_review_store_lifecycle_and_decision_logging(tmp_path):
-    store = ReviewStore(store_dir=tmp_path)
-
-    review_data = {
-        "reviewId": "REV-001",
-        "bookId": "trevas-3ed",
-        "stage": "EDITORIAL",
-        "reason": "Divergência de custo de atributo",
-        "severity": "HIGH",
-        "evidence": {"file": "editorial.json", "excerptA": "3 pts", "excerptB": "2 pts"},
-        "agentRecommendation": "Adotar tabela",
-        "impact": "Altera perícias",
-    }
-
-    created = store.create_review(review_data)
-    assert created["status"] == "PENDING"
-    assert created["createdAt"] is not None
-
-    # Automated agent cannot decide
-    with pytest.raises(DecisionValidationError):
-        store.record_decision({
-            "decisionId": "DEC-001",
-            "reviewId": "REV-001",
-            "bookId": "trevas-3ed",
-            "decidedBy": "editorial-agent",
-            "decision": "APPROVE",
-            "justification": "Automated resolution",
-        })
-
-    # Human decision succeeds
-    dec = store.record_decision({
-        "decisionId": "DEC-001",
-        "reviewId": "REV-001",
-        "bookId": "trevas-3ed",
-        "decidedBy": "operador-humano-1",
-        "decision": "APPROVE",
-        "justification": "Regra confirmada pelo manual de erratas",
-    })
-
-    assert dec["decisionId"] == "DEC-001"
-    rev = store.get_review("REV-001")
-    assert rev["status"] == "RESOLVED"
-    assert rev["decisionId"] == "DEC-001"
-```
-
+- [ ] **Step 1: Write failing test (`tests/ops/test_review_store.py`)**
+  - Test creation of review item with `category` in `{"DOMAIN_AMBIGUITY", "POLICY_OR_RIGHTS", "TECHNICAL"}`.
+  - Test human decision records successfully into `reviews.json` (atomic write) and `decisions.jsonl` (hash-chained).
+  - Test automated agent identities (`AUTOMATED_AGENT_IDENTIFIERS`) fail closed with `DecisionValidationError`.
+  - Test missing/empty `decidedBy` fails closed with `DecisionValidationError`.
+  - Test concurrent resolution attempts on the same review: exactly one succeeds, second raises `ReviewConflictError`.
+  - Test `POLICY_OR_RIGHTS` review strictly requires human reviewer and non-empty justification.
 - [ ] **Step 2: Run test and confirm RED**
-```powershell
-python -m pytest tests/ops/test_review_store.py -v
-```
-Expected: `ModuleNotFoundError: No module named 'scripts.ops.review_store'`.
-
-- [ ] **Step 3: Implement minimal code**
-Create `scripts/ops/review_store.py`:
-```python
-from __future__ import annotations
-from datetime import datetime, timezone
-import json
-from pathlib import Path
-from typing import Any
-
-from scripts.agents.contracts import write_atomic
-from scripts.agents.pilot_review import AUTOMATED_AGENT_IDENTIFIERS
-
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_STORES_DIR = ROOT / "runtime" / "stores"
-
-class DecisionValidationError(ValueError):
-    pass
-
-class ReviewStore:
-    def __init__(self, store_dir: Path | str | None = None) -> None:
-        self.store_dir = Path(store_dir).resolve() if store_dir else DEFAULT_STORES_DIR
-        self.store_dir.mkdir(parents=True, exist_ok=True)
-        self.reviews_file = self.store_dir / "reviews.json"
-        self.decisions_file = self.store_dir / "decisions.jsonl"
-        self._ensure_files()
-
-    def _ensure_files(self) -> None:
-        if not self.reviews_file.exists():
-            write_atomic(self.reviews_file, json.dumps({"reviews": []}, indent=2).encode("utf-8"))
-        if not self.decisions_file.exists():
-            self.decisions_file.touch()
-
-    def _load_reviews(self) -> list[dict[str, Any]]:
-        with open(self.reviews_file, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data.get("reviews", [])
-
-    def _save_reviews(self, reviews: list[dict[str, Any]]) -> None:
-        write_atomic(self.reviews_file, json.dumps({"reviews": reviews}, indent=2).encode("utf-8"))
-
-    def create_review(self, record: dict[str, Any]) -> dict[str, Any]:
-        reviews = self._load_reviews()
-        rid = record["reviewId"]
-        if any(r["reviewId"] == rid for r in reviews):
-            raise ValueError(f"Review with id '{rid}' already exists")
-
-        new_record = dict(record)
-        new_record.setdefault("createdAt", datetime.now(timezone.utc).isoformat())
-        new_record["status"] = "PENDING"
-        reviews.append(new_record)
-        self._save_reviews(reviews)
-        return new_record
-
-    def get_review(self, review_id: str) -> dict[str, Any] | None:
-        reviews = self._load_reviews()
-        for r in reviews:
-            if r["reviewId"] == review_id:
-                return r
-        return None
-
-    def list_reviews(self, status: str | None = None) -> list[dict[str, Any]]:
-        reviews = self._load_reviews()
-        if status:
-            return [r for r in reviews if r["status"] == status]
-        return reviews
-
-    def record_decision(self, decision: dict[str, Any]) -> dict[str, Any]:
-        decided_by = decision.get("decidedBy", "").strip().lower()
-        if not decided_by:
-            raise DecisionValidationError("Decision requires a valid 'decidedBy' operator identifier")
-        if decided_by in AUTOMATED_AGENT_IDENTIFIERS or any(agent in decided_by for agent in AUTOMATED_AGENT_IDENTIFIERS):
-            raise DecisionValidationError(f"Automated agent '{decided_by}' is not authorized to make human review decisions")
-
-        action = decision.get("decision")
-        if action not in {"APPROVE", "REJECT", "REQUEST_CORRECTION"}:
-            raise DecisionValidationError(f"Invalid decision action: '{action}'")
-
-        review_id = decision.get("reviewId")
-        review = self.get_review(review_id)
-        if not review:
-            raise DecisionValidationError(f"Review '{review_id}' not found")
-        if review["status"] != "PENDING":
-            raise DecisionValidationError(f"Review '{review_id}' is already resolved")
-
-        dec_record = dict(decision)
-        dec_record.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
-
-        # Append to decisions.jsonl
-        with open(self.decisions_file, "a", encoding="utf-8") as f:
-            f.write(json.dumps(dec_record) + "\n")
-
-        # Update review record
-        reviews = self._load_reviews()
-        for r in reviews:
-            if r["reviewId"] == review_id:
-                r["status"] = "RESOLVED"
-                r["decisionId"] = dec_record["decisionId"]
-                r["resolvedAt"] = dec_record["timestamp"]
-                r["resolutionAction"] = action
-                break
-        self._save_reviews(reviews)
-
-        return dec_record
-```
-
+  ```powershell
+  python -m pytest tests/ops/test_review_store.py -v
+  ```
+- [ ] **Step 3: Implement minimal code (`scripts/ops/review_store.py`)**
+  - Integrate `write_atomic` and `HashChainLogger`.
+  - Import `AUTOMATED_AGENT_IDENTIFIERS` from `scripts.agents.pilot_review`.
+  - Implement thread-safe file lock on `reviews.json` mutations.
 - [ ] **Step 4: Run test and confirm GREEN**
-```powershell
-python -m pytest tests/ops/test_review_store.py -v
-```
-Expected: 1 passed.
-
+  ```powershell
+  python -m pytest tests/ops/test_review_store.py -v
+  ```
 - [ ] **Step 5: Run focused regressions**
-```powershell
-python -m pytest tests/ops/test_review_store.py tests/ops/test_token_manager.py -q
-```
-Expected: All pass.
-
+  ```powershell
+  python -m pytest tests/ops/test_review_store.py tests/ops/test_token_manager.py -q
+  ```
 - [ ] **Step 6: Commit**
-```powershell
-git add scripts/ops/review_store.py tests/ops/test_review_store.py
-git commit -m "feat(ops): implement durable review store and decision log with agent rejection"
-```
+  ```powershell
+  git add scripts/ops/review_store.py tests/ops/test_review_store.py
+  git commit -m "feat(ops): implement durable review store and tamper-evident decision log"
+  ```
 
 ---
 
-### Task 3: Command Audit Log & Asynchronous Command Processor (`scripts/ops/command_processor.py`)
+### Task 4: Durable Command Store & Tamper-Evident Audit Log
 
 **Files:**
+- Create: `scripts/ops/command_store.py`
 - Create: `scripts/ops/command_audit.py`
+- Create: `tests/ops/test_command_store.py`
+
+**Interfaces:**
+```python
+# scripts/ops/command_store.py
+class CommandConflictError(RuntimeError): ...
+
+class CommandStore:
+    def __init__(self, stores_dir: Path | str | None = None) -> None: ...
+    def save_command_intent(self, cmd_payload: dict[str, Any]) -> tuple[dict[str, Any], bool]: ...
+    def update_command_status(self, command_id: str, status: str, result: dict[str, Any] | None = None, error: str | None = None) -> dict[str, Any]: ...
+    def get_command(self, command_id: str) -> dict[str, Any] | None: ...
+    def get_control_state(self) -> dict[str, Any]: ...
+    def set_control_override(self, key: str, value: Any) -> None: ...
+
+# scripts/ops/command_audit.py
+class CommandAuditLog:
+    def __init__(self, stores_dir: Path | str | None = None) -> None: ...
+    def log_action(self, entry: dict[str, Any]) -> dict[str, Any]: ...
+    def verify_audit_chain(self) -> bool: ...
+```
+
+- [ ] **Step 1: Write failing test (`tests/ops/test_command_store.py`)**
+  - Test command persistence in `commands.json`.
+  - Test idempotency: resubmission with same `commandId` and same payload returns existing command with `is_duplicate=True`.
+  - Test conflict: resubmission with same `commandId` and different payload raises `CommandConflictError`.
+  - Test crash recovery: save command, re-instantiate `CommandStore`, verify command and control state are fully recovered.
+  - Test audit log: actions appended to `command_audit.jsonl` with valid tamper-evident hash chain.
+- [ ] **Step 2: Run test and confirm RED**
+  ```powershell
+  python -m pytest tests/ops/test_command_store.py -v
+  ```
+- [ ] **Step 3: Implement minimal code**
+  - Implement `CommandStore` computing canonical payload hash (`canonical_json_bytes` + `sha256_bytes`).
+  - Implement `CommandAuditLog` delegating to `HashChainLogger`.
+- [ ] **Step 4: Run test and confirm GREEN**
+  ```powershell
+  python -m pytest tests/ops/test_command_store.py -v
+  ```
+- [ ] **Step 5: Run focused regressions**
+  ```powershell
+  python -m pytest tests/ops/test_command_store.py tests/ops/test_review_store.py -q
+  ```
+- [ ] **Step 6: Commit**
+  ```powershell
+  git add scripts/ops/command_store.py scripts/ops/command_audit.py tests/ops/test_command_store.py
+  git commit -m "feat(ops): implement durable command store, idempotency validator, and audit log"
+  ```
+
+---
+
+### Task 5: Asynchronous Command Processor with Durable Idempotency & Server-Side Risk Model
+
+**Files:**
 - Create: `scripts/ops/command_processor.py`
 - Create: `tests/ops/test_command_processor.py`
 
 **Interfaces:**
 ```python
-class CommandAuditLog:
-    def __init__(self, log_path: Path | str | None = None) -> None: ...
-    def append_log(self, entry: dict[str, Any]) -> None: ...
-
-class CommandProcessor:
-    def __init__(self, audit_log: CommandAuditLog | None = None, review_store: ReviewStore | None = None) -> None: ...
-    def submit_command(self, cmd_payload: dict[str, Any]) -> dict[str, Any]: ...
-    def get_command_status(self, command_id: str) -> dict[str, Any] | None: ...
-```
-
-- [ ] **Step 1: Write failing test**
-Create `tests/ops/test_command_processor.py`:
-```python
-from pathlib import Path
-import pytest
-from scripts.ops.command_processor import CommandProcessor
-from scripts.ops.command_audit import CommandAuditLog
-
-def test_command_processor_idempotency_and_transitions(tmp_path):
-    audit = CommandAuditLog(log_path=tmp_path / "command_audit.jsonl")
-    proc = CommandProcessor(audit_log=audit)
-
-    cmd = {
-        "commandId": "CMD-001",
-        "command": "PrioritizeBook",
-        "bookId": "demonio-guia",
-        "payload": {"priorityWeight": 150},
-        "reason": "Teste de priorização",
-    }
-
-    # First submission -> ACCEPTED
-    res1 = proc.submit_command(cmd)
-    assert res1["status"] in ("ACCEPTED", "SUCCEEDED")
-    assert res1["commandId"] == "CMD-001"
-
-    # Duplicate submission -> returns cached result without re-executing
-    res2 = proc.submit_command(cmd)
-    assert res2["commandId"] == "CMD-001"
-    assert res2["status"] == res1["status"]
-
-    # Verify audit log entry exists
-    assert (tmp_path / "command_audit.jsonl").exists()
-```
-
-- [ ] **Step 2: Run test and confirm RED**
-```powershell
-python -m pytest tests/ops/test_command_processor.py -v
-```
-Expected: `ModuleNotFoundError: No module named 'scripts.ops.command_processor'`.
-
-- [ ] **Step 3: Implement minimal code**
-Create `scripts/ops/command_audit.py`:
-```python
-from __future__ import annotations
-from datetime import datetime, timezone
-import json
-from pathlib import Path
-from typing import Any
-
-ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_AUDIT_PATH = ROOT / "runtime" / "stores" / "command_audit.jsonl"
-
-class CommandAuditLog:
-    def __init__(self, log_path: Path | str | None = None) -> None:
-        self.log_path = Path(log_path).resolve() if log_path else DEFAULT_AUDIT_PATH
-        self.log_path.parent.mkdir(parents=True, exist_ok=True)
-        if not self.log_path.exists():
-            self.log_path.touch()
-
-    def append_log(self, entry: dict[str, Any]) -> None:
-        rec = dict(entry)
-        rec.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
-        with open(self.log_path, "a", encoding="utf-8") as f:
-            f.write(json.dumps(rec) + "\n")
-```
-
-Create `scripts/ops/command_processor.py`:
-```python
-from __future__ import annotations
-from datetime import datetime, timezone
-from typing import Any
-
-from scripts.ops.command_audit import CommandAuditLog
-from scripts.ops.review_store import ReviewStore
-
-SUPPORTED_COMMANDS = {
-    "PrioritizeBook",
-    "PauseBook",
-    "ResumeBook",
-    "ApproveReview",
-    "RejectReview",
-    "RequestCorrection",
-}
+class RiskValidationError(ValueError): ...
 
 class CommandProcessor:
     def __init__(
         self,
+        command_store: CommandStore | None = None,
         audit_log: CommandAuditLog | None = None,
         review_store: ReviewStore | None = None,
-    ) -> None:
-        self.audit_log = audit_log or CommandAuditLog()
-        self.review_store = review_store or ReviewStore()
-        self._commands: dict[str, dict[str, Any]] = {}
-
-    def submit_command(self, cmd_payload: dict[str, Any]) -> dict[str, Any]:
-        cid = cmd_payload.get("commandId")
-        if not cid:
-            raise ValueError("Command requires a non-empty 'commandId'")
-
-        # Idempotency check: if already processed or in-flight, return existing state
-        if cid in self._commands:
-            return self._commands[cid]
-
-        cmd_type = cmd_payload.get("command")
-        if cmd_type not in SUPPORTED_COMMANDS:
-            raise ValueError(f"Unsupported command type: '{cmd_type}'")
-
-        book_id = cmd_payload.get("bookId")
-        reason = cmd_payload.get("reason", "")
-        payload = cmd_payload.get("payload", {})
-
-        record = {
-            "commandId": cid,
-            "command": cmd_type,
-            "bookId": book_id,
-            "status": "ACCEPTED",
-            "submittedAt": datetime.now(timezone.utc).isoformat(),
-            "payload": payload,
-            "reason": reason,
-        }
-        self._commands[cid] = record
-
-        # Execute command handling
-        try:
-            self._handle_command(cmd_type, book_id, payload, reason, record)
-            record["status"] = "SUCCEEDED"
-        except Exception as e:
-            record["status"] = "FAILED"
-            record["error"] = str(e)
-
-        # Audit log
-        self.audit_log.append_log({
-            "commandId": cid,
-            "commandType": cmd_type,
-            "bookId": book_id,
-            "previousState": "QUEUED",
-            "actionPayload": payload,
-            "reason": reason,
-            "result": record["status"],
-            "decisionId": payload.get("decisionId"),
-        })
-
-        return record
-
-    def _handle_command(
-        self,
-        cmd_type: str,
-        book_id: str | None,
-        payload: dict[str, Any],
-        reason: str,
-        record: dict[str, Any],
-    ) -> None:
-        # Handling logic for commands; Batch Orchestrator will bind to these states in Release C
-        if cmd_type == "PrioritizeBook":
-            record["appliedPriority"] = payload.get("priorityWeight", 100)
-        elif cmd_type == "PauseBook":
-            record["targetStatus"] = "PAUSED_AT_CHECKPOINT"
-        elif cmd_type == "ResumeBook":
-            record["targetStatus"] = "RESUMED_QUEUED"
-        elif cmd_type in {"ApproveReview", "RejectReview", "RequestCorrection"}:
-            rev_id = payload.get("reviewId")
-            decision_action = "APPROVE" if cmd_type == "ApproveReview" else "REJECT" if cmd_type == "RejectReview" else "REQUEST_CORRECTION"
-            self.review_store.record_decision({
-                "decisionId": f"DEC-{record['commandId']}",
-                "reviewId": rev_id,
-                "bookId": book_id or "unknown",
-                "decidedBy": payload.get("decidedBy", "operator"),
-                "decision": decision_action,
-                "justification": reason,
-            })
-
-    def get_command_status(self, command_id: str) -> dict[str, Any] | None:
-        return self._commands.get(command_id)
+    ) -> None: ...
+    def submit_command(self, cmd_payload: dict[str, Any]) -> tuple[dict[str, Any], int]: ...
+    def process_pending_commands(self) -> int: ...
+    def get_command_status(self, command_id: str) -> dict[str, Any] | None: ...
 ```
 
+- [ ] **Step 1: Write failing test (`tests/ops/test_command_processor.py`)**
+  - Test `submit_command` returns HTTP status `202 Accepted` and status `ACCEPTED` without executing handlers synchronously.
+  - Test server-side risk validation:
+    - `PRIORITIZE_BOOK` (LOW): accepted with simple submission.
+    - `REPROCESS_STAGE` (MEDIUM): rejected if `reason` is empty or `confirmation.confirmed` is false.
+    - `APPROVE_REVIEW` for `POLICY_OR_RIGHTS` (HIGH): rejected if typed confirmation does not match `bookId`.
+  - Test asynchronous worker loop: `process_pending_commands()` transitions `ACCEPTED` -> `RUNNING` -> `SUCCEEDED`.
+  - Test Release B intent persistence: `PAUSE_BOOK` writes `PAUSE_REQUESTED` into control state without faking execution.
+  - Test `APPROVE_REVIEW` executes human decision in `ReviewStore` with explicit operator identity.
+- [ ] **Step 2: Run test and confirm RED**
+  ```powershell
+  python -m pytest tests/ops/test_command_processor.py -v
+  ```
+- [ ] **Step 3: Implement minimal code (`scripts/ops/command_processor.py`)**
+  - Validate against `schemas/ops-command.schema.json`.
+  - Enforce server-side risk verification rules.
+  - Record audit log on `ACCEPTED` and on terminal states (`SUCCEEDED`/`FAILED`).
+  - Implement handler dispatching for Release B operational intents.
 - [ ] **Step 4: Run test and confirm GREEN**
-```powershell
-python -m pytest tests/ops/test_command_processor.py -v
-```
-Expected: 1 passed.
-
+  ```powershell
+  python -m pytest tests/ops/test_command_processor.py -v
+  ```
 - [ ] **Step 5: Run focused regressions**
-```powershell
-python -m pytest tests/ops -q
-```
-Expected: All pass.
-
+  ```powershell
+  python -m pytest tests/ops/test_command_processor.py tests/ops/test_command_store.py -q
+  ```
 - [ ] **Step 6: Commit**
-```powershell
-git add scripts/ops/command_audit.py scripts/ops/command_processor.py tests/ops/test_command_processor.py
-git commit -m "feat(ops): implement idempotent command processor and append-only audit log"
-```
+  ```powershell
+  git add scripts/ops/command_processor.py tests/ops/test_command_processor.py
+  git commit -m "feat(ops): implement asynchronous command processor with server-side risk validation"
+  ```
 
 ---
 
-### Task 4: Server-Sent Events (SSE) Broadcaster with Buffer Replay (`scripts/ops/event_broadcaster.py`)
+### Task 6: Server-Sent Events Broadcaster with Ring Buffer & Snapshot Fallback
 
 **Files:**
 - Create: `scripts/ops/event_broadcaster.py`
@@ -637,113 +507,41 @@ class EventBroadcaster:
     def publish_event(self, event_type: str, data: dict[str, Any]) -> int: ...
     def get_events_since(self, last_event_id: int) -> tuple[list[dict[str, Any]], bool]: ...
     def format_sse_message(self, event_id: int, event_type: str, data: dict[str, Any]) -> str: ...
+    def format_keepalive(self) -> str: ...
 ```
 
-- [ ] **Step 1: Write failing test**
-Create `tests/ops/test_event_broadcaster.py`:
-```python
-import pytest
-from scripts.ops.event_broadcaster import EventBroadcaster
-
-def test_event_broadcaster_publishes_and_replays_via_last_event_id():
-    b = EventBroadcaster(buffer_size=5)
-
-    id1 = b.publish_event("job.updated", {"bookId": "a", "status": "RUNNING"})
-    id2 = b.publish_event("queue.changed", {"count": 10})
-    id3 = b.publish_event("review.created", {"reviewId": "REV-1"})
-
-    assert id1 == 1
-    assert id2 == 2
-    assert id3 == 3
-
-    # Replay from event 1
-    events, needs_snapshot = b.get_events_since(1)
-    assert needs_snapshot is False
-    assert len(events) == 2
-    assert events[0]["id"] == 2
-    assert events[1]["id"] == 3
-
-    # Format SSE
-    msg = b.format_sse_message(id1, "job.updated", {"bookId": "a"})
-    assert "id: 1\n" in msg
-    assert "event: job.updated\n" in msg
-    assert 'data: {"bookId": "a"}\n\n' in msg
-```
-
+- [ ] **Step 1: Write failing test (`tests/ops/test_event_broadcaster.py`)**
+  - Test monotonic event IDs across publishes.
+  - Test replay via `Last-Event-ID` when within circular buffer (100 items).
+  - Test snapshot fallback: returns `needs_snapshot=True` if `Last-Event-ID` is older than oldest retained item or 0 on restart.
+  - Test SSE wire formatting (`id: ...\nevent: ...\ndata: ...\n\n`).
+  - Test keepalive comment formatting (`: keepalive\n\n`).
+  - Test that secret tokens never appear in event payloads.
 - [ ] **Step 2: Run test and confirm RED**
-```powershell
-python -m pytest tests/ops/test_event_broadcaster.py -v
-```
-Expected: `ModuleNotFoundError: No module named 'scripts.ops.event_broadcaster'`.
-
-- [ ] **Step 3: Implement minimal code**
-Create `scripts/ops/event_broadcaster.py`:
-```python
-from __future__ import annotations
-from collections import deque
-import json
-import threading
-from typing import Any
-
-class EventBroadcaster:
-    def __init__(self, buffer_size: int = 100) -> None:
-        self.buffer_size = buffer_size
-        self._counter = 0
-        self._lock = threading.Lock()
-        self._history: deque[dict[str, Any]] = deque(maxlen=buffer_size)
-
-    def publish_event(self, event_type: str, data: dict[str, Any]) -> int:
-        with self._lock:
-            self._counter += 1
-            eid = self._counter
-            event_record = {
-                "id": eid,
-                "event": event_type,
-                "data": data,
-            }
-            self._history.append(event_record)
-            return eid
-
-    def get_events_since(self, last_event_id: int) -> tuple[list[dict[str, Any]], bool]:
-        with self._lock:
-            if not self._history:
-                return [], False
-
-            oldest_id = self._history[0]["id"]
-            if last_event_id < oldest_id - 1:
-                # Buffer gap: client is too far behind, requires full snapshot
-                return [], True
-
-            events = [e for e in self._history if e["id"] > last_event_id]
-            return events, False
-
-    @staticmethod
-    def format_sse_message(event_id: int, event_type: str, data: dict[str, Any]) -> str:
-        payload = json.dumps(data, separators=(",", ":"))
-        return f"id: {event_id}\nevent: {event_type}\ndata: {payload}\n\n"
-```
-
+  ```powershell
+  python -m pytest tests/ops/test_event_broadcaster.py -v
+  ```
+- [ ] **Step 3: Implement minimal code (`scripts/ops/event_broadcaster.py`)**
+  - Thread-safe deque with maxlen=100.
+  - Snapshot fallback detection.
+  - JSON serialization without whitespace.
 - [ ] **Step 4: Run test and confirm GREEN**
-```powershell
-python -m pytest tests/ops/test_event_broadcaster.py -v
-```
-Expected: 1 passed.
-
+  ```powershell
+  python -m pytest tests/ops/test_event_broadcaster.py -v
+  ```
 - [ ] **Step 5: Run focused regressions**
-```powershell
-python -m pytest tests/ops -q
-```
-Expected: All pass.
-
+  ```powershell
+  python -m pytest tests/ops/test_event_broadcaster.py -q
+  ```
 - [ ] **Step 6: Commit**
-```powershell
-git add scripts/ops/event_broadcaster.py tests/ops/test_event_broadcaster.py
-git commit -m "feat(ops): implement SSE event broadcaster with Last-Event-ID replay buffer"
-```
+  ```powershell
+  git add scripts/ops/event_broadcaster.py tests/ops/test_event_broadcaster.py
+  git commit -m "feat(ops): implement SSE broadcaster with ring buffer replay and snapshot fallback"
+  ```
 
 ---
 
-### Task 5: Ops Controller Loopback Server & Preview Integration (`scripts/ops/ops_server.py`)
+### Task 7: Ops Request Handler & Preview Server Integration with Public Fail-Closed Barrier
 
 **Files:**
 - Create: `scripts/ops/ops_server.py`
@@ -752,300 +550,259 @@ git commit -m "feat(ops): implement SSE event broadcaster with Last-Event-ID rep
 - Create: `tests/agents/test_preview_server_ops_barrier.py`
 
 **Interfaces:**
-- `OpsServer`: handles loopback requests for `/api/ops/commands`, `/api/ops/events`, and `/api/ops/snapshot`.
-- `PreviewServer`: delegates `/api/ops/*` to `OpsServer` when `mode == "restricted_preview"`; strictly returns `404 Not Found` when `mode == "public"`.
-
-- [ ] **Step 1: Write failing test**
-Create `tests/ops/test_ops_server_security.py`:
 ```python
-import json
-from pathlib import Path
-import pytest
-from scripts.ops.token_manager import TokenManager
-from scripts.ops.command_processor import CommandProcessor
-from scripts.ops.event_broadcaster import EventBroadcaster
-from scripts.ops.ops_server import OpsRequestHandler
-
-def test_ops_server_rejects_missing_or_invalid_token(tmp_path):
-    tm = TokenManager(runtime_dir=tmp_path)
-    valid_token = tm.initialize_token()
-
-    handler = OpsRequestHandler(
-        token_manager=tm,
-        command_processor=CommandProcessor(),
-        broadcaster=EventBroadcaster(),
-    )
-
-    # Missing token -> 401
-    code, _, body = handler.dispatch("POST", "/api/ops/commands", headers={}, body=b"{}")
-    assert code == 401
-
-    # Valid token -> 200 or 202
-    cmd = {"commandId": "C-1", "command": "PauseBook", "bookId": "a"}
-    headers = {"Authorization": f"Bearer {valid_token}", "Content-Type": "application/json"}
-    code, _, body = handler.dispatch("POST", "/api/ops/commands", headers=headers, body=json.dumps(cmd).encode("utf-8"))
-    assert code == 202
-```
-
-- [ ] **Step 2: Run test and confirm RED**
-```powershell
-python -m pytest tests/ops/test_ops_server_security.py -v
-```
-Expected: `ModuleNotFoundError: No module named 'scripts.ops.ops_server'`.
-
-- [ ] **Step 3: Implement minimal code**
-Create `scripts/ops/ops_server.py`:
-```python
-from __future__ import annotations
-import json
-from typing import Any
-
-from scripts.ops.command_processor import CommandProcessor
-from scripts.ops.event_broadcaster import EventBroadcaster
-from scripts.ops.token_manager import TokenManager
-
+# scripts/ops/ops_server.py
 class OpsRequestHandler:
     def __init__(
         self,
         token_manager: TokenManager,
         command_processor: CommandProcessor,
         broadcaster: EventBroadcaster,
-    ) -> None:
-        self.token_manager = token_manager
-        self.command_processor = command_processor
-        self.broadcaster = broadcaster
-
-    def dispatch(
+        allowed_hosts: set[str] | None = None,
+    ) -> None: ...
+    def handle_request(
         self,
         method: str,
         path: str,
         headers: dict[str, str],
+        client_address: tuple[str, int],
         body: bytes,
-    ) -> tuple[int, dict[str, str], bytes]:
-        # Validate authentication
-        auth_header = headers.get("Authorization") or headers.get("authorization")
-        if not self.token_manager.validate_token(auth_header):
-            return 401, {"Content-Type": "application/json"}, json.dumps({"error": "Unauthorized: invalid or missing ops token"}).encode("utf-8")
-
-        if path == "/api/ops/commands" and method == "POST":
-            ctype = headers.get("Content-Type") or headers.get("content-type") or ""
-            if "application/json" not in ctype:
-                return 400, {"Content-Type": "application/json"}, json.dumps({"error": "Content-Type must be application/json"}).encode("utf-8")
-            try:
-                cmd_data = json.loads(body.decode("utf-8"))
-                result = self.command_processor.submit_command(cmd_data)
-                self.broadcaster.publish_event("command.updated", result)
-                return 202, {"Content-Type": "application/json"}, json.dumps(result).encode("utf-8")
-            except Exception as e:
-                return 400, {"Content-Type": "application/json"}, json.dumps({"error": str(e)}).encode("utf-8")
-
-        if path == "/api/ops/snapshot" and method == "GET":
-            reviews = self.command_processor.review_store.list_reviews()
-            snapshot = {
-                "activeJobs": 0,
-                "maxActiveBooks": 3,
-                "pendingReviews": reviews,
-            }
-            return 200, {"Content-Type": "application/json"}, json.dumps(snapshot).encode("utf-8")
-
-        return 404, {"Content-Type": "application/json"}, json.dumps({"error": "Not Found"}).encode("utf-8")
-```
-Modify `scripts/agents/preview_server.py` to route `/api/ops/*` in `restricted_preview` and reject with 404 in `public`:
-```python
-        # Check ops route barrier
-        if self.path.startswith("/api/ops"):
-            if self.server.mode != "restricted_preview":
-                self.send_response(404)
-                self.end_headers()
-                self.wfile.write(b"Not Found: Ops routes unavailable in public mode")
-                return
-            # Delegate to OpsRequestHandler...
+    ) -> tuple[int, dict[str, str], bytes | Iterator[bytes]]: ...
 ```
 
-- [ ] **Step 4: Run test and confirm GREEN**
-```powershell
-python -m pytest tests/ops/test_ops_server_security.py -v
-```
-Expected: 1 passed.
-
-- [ ] **Step 5: Write public mode fail-closed barrier test**
-Create `tests/agents/test_preview_server_ops_barrier.py` to verify that starting `PreviewServer` in `public` mode strictly returns `404` for any `/api/ops/*` request.
+- [ ] **Step 1: Write failing tests**
+  - `tests/ops/test_ops_server_security.py`:
+    - Non-loopback client IP (e.g. `192.168.1.50`) -> `403 Forbidden`.
+    - Host header spoofing / DNS rebinding (Host: `malicious.com`) -> `403 Forbidden`.
+    - Missing session cookie and missing Bearer header -> `401 Unauthorized`.
+    - Valid session cookie -> `202 Accepted` for `POST /api/ops/commands`.
+    - Conflicting payload with existing `commandId` -> `409 Conflict`.
+    - Large body (> 64KB) -> `413 Payload Too Large`.
+  - `tests/agents/test_preview_server_ops_barrier.py`:
+    - Start `PreviewServer` in `mode="restricted_preview"`: `/api/ops/snapshot` returns 200/401, sets session cookie on `/`.
+    - Start `PreviewServer` in `mode="public"`: `/api/ops/commands`, `/api/ops/events`, `/api/ops/snapshot` strictly return `404 Not Found`.
+- [ ] **Step 2: Run tests and confirm RED**
+  ```powershell
+  python -m pytest tests/ops/test_ops_server_security.py tests/agents/test_preview_server_ops_barrier.py -v
+  ```
+- [ ] **Step 3: Implement minimal code**
+  - Implement `OpsRequestHandler` with loopback check, Host/Origin validation, body size capping, and same-origin cookie parsing.
+  - Mount `OpsRequestHandler` inside `PreviewServer.do_GET`, `do_POST` when `self.server.mode == "restricted_preview"`.
+  - In `PreviewServer`, issue `Set-Cookie: daemon_ops_session=...; HttpOnly; SameSite=Strict; Path=/api/ops` on restricted preview requests.
+  - Enforce strict `404 Not Found` for any `/api/ops/*` path in `mode="public"`.
+- [ ] **Step 4: Run tests and confirm GREEN**
+  ```powershell
+  python -m pytest tests/ops/test_ops_server_security.py tests/agents/test_preview_server_ops_barrier.py -v
+  ```
+- [ ] **Step 5: Run focused regressions**
+  ```powershell
+  python -m pytest tests/ops -q
+  python -m pytest tests/agents/test_preview_server*.py -q
+  ```
 - [ ] **Step 6: Commit**
-```powershell
-git add scripts/ops/ops_server.py scripts/agents/preview_server.py tests/ops/test_ops_server_security.py tests/agents/test_preview_server_ops_barrier.py
-git commit -m "feat(ops): implement ops loopback controller and preview server fail-closed barrier"
-```
+  ```powershell
+  git add scripts/ops/ops_server.py scripts/agents/preview_server.py tests/ops/test_ops_server_security.py tests/agents/test_preview_server_ops_barrier.py
+  git commit -m "feat(ops): mount secure ops request handler in preview server with public fail-closed barrier"
+  ```
 
 ---
 
-### Task 6: Frontend Operational Client & Route Configuration (`docs/assets/site-ops.mjs`)
+### Task 8: Frontend Operational Client, Views & Risk-Proportional Confirmation Modals
 
 **Files:**
 - Create: `docs/assets/site-ops.mjs`
 - Modify: `docs/assets/site-state.mjs`
+- Modify: `docs/assets/site-ui.mjs`
 - Modify: `docs/assets/styles.css`
+- Create: `tests/frontend/site-ops.test.mjs`
 - Modify: `tests/frontend/site-state.test.mjs`
 
 **Interfaces:**
-- `site-ops.mjs`: manages SSE stream (`EventSource`), authentication token storage, command dispatch (`postCommand`), and real-time state subscribers.
-- `site-state.mjs`: registers `#/ops`, `#/ops/queue`, `#/ops/reviews`, `#/ops/review/:reviewId` only if `mode === 'restricted_preview'`.
-
-- [ ] **Step 1: Write failing test in `tests/frontend/site-state.test.mjs`**
-Verify route parsing recognizes `#/ops` in restricted mode, but redirects/falls back to `#/` in public mode.
-- [ ] **Step 2: Run test and confirm RED**
-```powershell
-node --test tests/frontend/site-state.test.mjs
-```
-- [ ] **Step 3: Implement `site-ops.mjs` and update `site-state.mjs`**
-Create `docs/assets/site-ops.mjs`:
 ```javascript
+// docs/assets/site-ops.mjs
 export class OpsClient {
-  constructor({ baseUrl = '', token = null } = {}) {
-    this.baseUrl = baseUrl;
-    this.token = token;
-    this.listeners = new Set();
-    this.eventSource = null;
-  }
-
-  subscribe(callback) {
-    this.listeners.add(callback);
-    return () => this.listeners.delete(callback);
-  }
-
-  notify(event) {
-    for (const cb of this.listeners) {
-      try { cb(event); } catch (err) { console.error(err); }
-    }
-  }
-
-  async sendCommand(command, bookId, payload = {}, reason = '') {
-    const commandId = 'CMD-' + Math.random().toString(36).substring(2, 11);
-    const body = { commandId, command, bookId, payload, reason };
-    const res = await fetch(`${this.baseUrl}/api/ops/commands`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${this.token}`,
-      },
-      body: JSON.stringify(body),
-    });
-    if (!res.ok) {
-      throw new Error(`Command failed with status ${res.status}`);
-    }
-    return await res.json();
-  }
+  constructor({ baseUrl = '' } = {}) { ... }
+  async fetchSnapshot() { ... }
+  connectEvents({ onEvent, onSnapshotRequired }) { ... }
+  async submitCommand({ commandType, bookId, reviewId, payload, reason, operatorId, confirmation }) { ... }
 }
 ```
-- [ ] **Step 4: Run test and confirm GREEN**
-```powershell
-node --test tests/frontend/site-state.test.mjs
-```
-Expected: All pass.
+
+- [ ] **Step 1: Write failing frontend unit tests**
+  - `tests/frontend/site-state.test.mjs`:
+    - In `mode === 'restricted_preview'`: routes `#/ops`, `#/ops/queue`, `#/ops/reviews`, `#/ops/review/:reviewId` resolve correctly.
+    - In `mode === 'public'`: `#/ops` routes resolve to fallback `#/` and are excluded from navigation.
+  - `tests/frontend/site-ops.test.mjs`:
+    - `OpsClient` sends same-origin credentials (`credentials: 'same-origin'`).
+    - Does NOT store token in `localStorage`, `sessionStorage`, or window.
+    - Listens for `snapshot_required` SSE event and triggers full snapshot reload.
+- [ ] **Step 2: Run tests and confirm RED**
+  ```powershell
+  node --test tests/frontend/*.test.mjs
+  ```
+- [ ] **Step 3: Implement minimal frontend code**
+  - Create `docs/assets/site-ops.mjs`.
+  - Update `docs/assets/site-state.mjs` to register ops routes only in restricted mode.
+  - Update `docs/assets/site-ui.mjs` to render operational dashboard, review queue, diff viewer with `textContent`, and risk-proportional confirmation modals (low, medium, high).
+  - Update `docs/assets/styles.css` with operational dashboard and modal styles.
+- [ ] **Step 4: Run tests and confirm GREEN**
+  ```powershell
+  node --test tests/frontend/*.test.mjs
+  node --check docs/assets/app.js
+  node --check docs/assets/site-ui.mjs
+  ```
 - [ ] **Step 5: Commit**
-```powershell
-git add docs/assets/site-ops.mjs docs/assets/site-state.mjs tests/frontend/site-state.test.mjs
-git commit -m "feat(frontend): implement ops client and restricted operational routing"
-```
+  ```powershell
+  git add docs/assets/site-ops.mjs docs/assets/site-state.mjs docs/assets/site-ui.mjs docs/assets/styles.css tests/frontend/site-ops.test.mjs tests/frontend/site-state.test.mjs
+  git commit -m "feat(frontend): implement operational client views and risk-proportional confirmation modals"
+  ```
 
 ---
 
-### Task 7: Operational UI Dashboard & Risk-Proportional Confirmation Modals (`docs/assets/site-ui.mjs`)
-
-**Files:**
-- Modify: `docs/assets/site-ui.mjs`
-- Modify: `docs/assets/styles.css`
-
-**Interfaces:**
-- `renderOpsDashboard()`: renders 7 global counters (`Total Catalogado: 281`, `Ativos`, `Aguardando`, `Revisões Pendentes`, `Bloqueados`, `Prontos para Aprovação`, `Concluídos`).
-- `renderOpsReviews()`: table of human reviews with status, severity badge, and action button.
-- `renderReviewDetailModal(reviewId)`: compares `excerptA` vs `excerptB`, displays agent recommendation, and provides Approve, Reject, and Request Correction buttons with reason field.
-- Risk-Proportional Modals:
-  - Low Risk (`PauseBook`, `ResumeBook`): single-click toggle.
-  - Medium Risk (Reject Review, Request Correction): requires text justification.
-  - High Risk (Rights changes): requires explicit typed confirmation of `bookId`.
-
-- [ ] **Step 1: Implement UI methods in `docs/assets/site-ui.mjs`**
-- [ ] **Step 2: Add styles in `docs/assets/styles.css` for operational dashboard and modals**
-- [ ] **Step 3: Verify syntax integrity**
-```powershell
-node --check docs/assets/app.js
-```
-Expected: Exit code 0.
-- [ ] **Step 4: Commit**
-```powershell
-git add docs/assets/site-ui.mjs docs/assets/styles.css
-git commit -m "feat(frontend): implement operational dashboard views and confirmation modals"
-```
-
----
-
-### Task 8: Browser Test Harness for Operations & Human Review E2E
+### Task 9: Public Mode Isolation, Full Regression & End-to-End Browser Verification
 
 **Files:**
 - Modify: `tests/frontend/test_site_browser.py`
+- Create: `tests/ops/test_ops_e2e.py`
 
 **Interfaces:**
-- Browser tests verifying:
-  - `#/ops` dashboard counters display.
-  - Navigating to `#/ops/reviews`.
-  - Opening a review item and submitting an approval.
-  - Verifying public mode suppresses `#/ops` and redirects to `#/`.
+- Comprehensive Playwright tests verifying:
+  - Restricted mode dashboard loads, displays 281 total books, live counters.
+  - Review queue opens, shows discrepancies, submits approval via modal.
+  - F5 reload restores state from snapshot cleanly.
+  - Public mode: navigating to `#/ops` immediately redirects to `#/`; zero Operations menu items visible; direct `fetch('/api/ops/snapshot')` returns 404.
+  - Full project regression suites.
 
-- [ ] **Step 1: Write browser test in `tests/frontend/test_site_browser.py`**
-```python
-def test_ops_panel_and_review_resolution_browser(page, site_url):
-    page.goto(site_url + "#/ops")
-    page.wait_for_selector(".site-ops-dashboard", timeout=10000)
+- [ ] **Step 1: Write E2E browser tests in `tests/frontend/test_site_browser.py`**
+  ```python
+  def test_ops_panel_and_review_resolution_restricted(page, site_url):
+      # Tests restricted preview ops panel and review resolution
+      ...
 
-    assert "Painel Operacional" in page.text_content("h1")
-    assert "Total Catalogado" in page.text_content(".site-ops-counters")
-
-    # Navigate to reviews
-    page.goto(site_url + "#/ops/reviews")
-    page.wait_for_selector(".site-ops-reviews-table", timeout=10000)
-    assert "Fila Central de Revisão Humana" in page.text_content("h1")
-```
-- [ ] **Step 2: Run test and confirm GREEN**
-```powershell
-python -m pytest tests/frontend/test_site_browser.py -q
-```
-Expected: All pass.
-- [ ] **Step 3: Run full regression suite**
-```powershell
-python -m pytest tests/ops -q
-python -m pytest tests/agents -q
-node --test tests/frontend/site-model.test.mjs tests/frontend/site-search.test.mjs tests/frontend/site-state.test.mjs
-python scripts/validate_data.py
-python scripts/check_book_coverage.py
-node --check docs/assets/app.js
-```
-Expected: All pass.
+  def test_ops_panel_strictly_blocked_in_public_mode(page, public_site_url):
+      # Asserts #/ops redirects to #/ and /api/ops/* returns 404
+      ...
+  ```
+- [ ] **Step 2: Run tests and confirm GREEN**
+  ```powershell
+  python -m pytest tests/frontend/test_site_browser.py -q
+  python -m pytest tests/ops/test_ops_e2e.py -v
+  ```
+- [ ] **Step 3: Run full automated regression suite**
+  ```powershell
+  python -m pytest tests/ops -q
+  python -m pytest tests/agents -q
+  python -m pytest tests/frontend/test_site_browser.py -q
+  node --test tests/frontend/*.test.mjs
+  python -m pytest -q
+  python scripts/validate_data.py
+  python scripts/check_book_coverage.py
+  node --check docs/assets/app.js
+  node --check docs/assets/site-ui.mjs
+  ```
 - [ ] **Step 4: Commit**
-```powershell
-git add tests/frontend/test_site_browser.py
-git commit -m "test(browser): verify operational dashboard and human review queue E2E"
-```
+  ```powershell
+  git add tests/frontend/test_site_browser.py tests/ops/test_ops_e2e.py
+  git commit -m "test(ops): verify complete ops controller and public isolation E2E"
+  ```
 
 ---
 
-## Verification Plan
+## 5. Required Test Matrix
 
-### Automated Tests
-1. Unit tests for token manager: `python -m pytest tests/ops/test_token_manager.py -v`
-2. Unit tests for review store & decision log: `python -m pytest tests/ops/test_review_store.py -v`
-3. Unit tests for command processor: `python -m pytest tests/ops/test_command_processor.py -v`
-4. Unit tests for SSE broadcaster: `python -m pytest tests/ops/test_event_broadcaster.py -v`
-5. Unit tests for security and fail-closed public barriers: `python -m pytest tests/ops/test_ops_server_security.py tests/agents/test_preview_server_ops_barrier.py -v`
-6. Frontend node tests: `node --test tests/frontend/site-state.test.mjs`
-7. Browser E2E tests: `python -m pytest tests/frontend/test_site_browser.py -q`
-8. Global regressions:
-   `python -m pytest tests/agents -q`
-   `python scripts/validate_data.py`
-   `python scripts/check_book_coverage.py`
-   `node --check docs/assets/app.js`
+The following test matrix must be fully covered by automated unit and integration tests:
 
-### Manual Verification
-- Start local preview in `restricted_preview` mode.
-- Access `#/ops` in browser; verify token is picked up from `.daemon_runtime/ops_token`.
-- Submit a `PauseBook` command; verify `202 Accepted` and optimistic card update.
-- Verify that opening `#/ops` in `mode=public` immediately redirects to `#/` and produces 404 for any direct `/api/ops/*` curl.
+| Domain | Test Identifier | Expected Behavior |
+| :--- | :--- | :--- |
+| **TOKEN** | `test_token_entropy` | Generates >= 32 urlsafe characters with high cryptographic entropy. |
+| **TOKEN** | `test_token_acl_enforcement` | Configures owner-only permissions via `icacls` (Windows) or `chmod 600` (POSIX). |
+| **TOKEN** | `test_token_acl_failure_aborts` | Failure to apply or verify ACL raises exception and halts Ops Controller (fail-closed). |
+| **TOKEN** | `test_token_stale_rotation` | Old token file is replaced with a fresh token upon server restart. |
+| **TOKEN** | `test_no_browser_token_exposure` | Token string never appears in HTML, DOM, client scripts, localStorage, or query params. |
+| **AUTH** | `test_auth_missing_session` | Request to `/api/ops/*` without session cookie or Bearer header returns 401. |
+| **AUTH** | `test_auth_invalid_session` | Forged or expired session cookie returns 401. |
+| **AUTH** | `test_auth_invalid_origin` | Cross-origin request with mismatched `Origin` header returns 403 Forbidden. |
+| **AUTH** | `test_auth_invalid_host` | Request with external/unknown `Host` header returns 403 Forbidden. |
+| **AUTH** | `test_auth_non_loopback` | Connection from non-loopback IP (not 127.0.0.1 or ::1) returns 403 Forbidden. |
+| **AUTH** | `test_auth_public_mode_404` | Any `/api/ops/*` call when server is in `public` mode returns 404 Not Found. |
+| **IDEMPOTENCY** | `test_idempotency_same_payload` | Submitting existing `commandId` with identical payload returns cached command without side effects. |
+| **IDEMPOTENCY** | `test_idempotency_conflicting_payload` | Submitting existing `commandId` with different payload returns 409 Conflict. |
+| **IDEMPOTENCY** | `test_idempotency_survives_restart` | Command deduplication remains strictly effective after stopping and restarting the process. |
+| **COMMAND** | `test_command_lifecycle_transitions` | State moves `ACCEPTED` -> `RUNNING` -> `SUCCEEDED` / `FAILED` with persisted transitions. |
+| **COMMAND** | `test_command_schema_validation` | Malformed command payloads or invalid enum values fail closed with 400 Bad Request. |
+| **AUDIT** | `test_audit_append_only_chain` | Every command appends to `command_audit.jsonl` with correct previous hash linkage. |
+| **AUDIT** | `test_audit_tamper_detection` | Tampering with any historical line in audit log raises `IntegrityError` on startup. |
+| **AUDIT** | `test_audit_no_token_leakage` | Session cookies and tokens are scrubbed and never recorded in audit payloads. |
+| **REVIEWS** | `test_review_human_decision_only` | Review approval succeeds with valid human operator ID. |
+| **REVIEWS** | `test_review_automated_agent_rejected` | Decision bearing agent name from `AUTOMATED_AGENT_IDENTIFIERS` is rejected fail-closed. |
+| **REVIEWS** | `test_review_double_decision_prevented` | Second concurrent decision on same review ID returns conflict; exactly one decision recorded. |
+| **REVIEWS** | `test_review_rights_requires_justification`| `POLICY_OR_RIGHTS` review strictly requires non-empty justification and typed confirmation. |
+| **SSE** | `test_sse_monotonic_ids` | Event IDs strictly increment as integer sequence during process lifetime. |
+| **SSE** | `test_sse_buffer_replay` | Reconnection with valid `Last-Event-ID` within buffer replays missed events in order. |
+| **SSE** | `test_sse_snapshot_required_on_overflow`| Stale `Last-Event-ID` beyond ring buffer emits `snapshot_required` event. |
+| **SSE** | `test_sse_keepalive_comments` | Broadcaster emits `: keepalive\n\n` comments to prevent connection drops. |
+| **SSE** | `test_sse_no_secrets` | Stream events contain zero authentication tokens or private session cookies. |
+| **RISK** | `test_risk_low_command` | `PAUSE_BOOK` executes with basic valid command payload. |
+| **RISK** | `test_risk_medium_missing_reason` | `REPROCESS_STAGE` without reason fails with 400 Bad Request. |
+| **RISK** | `test_risk_high_missing_typed_confirm` | Rights modification without exact typed `bookId` fails with 400 Bad Request. |
+| **PUBLIC** | `test_public_routes_unregistered` | Router does not recognize `#/ops/*` routes in public mode, redirecting to `#/`. |
+| **PUBLIC** | `test_public_ui_omits_ops` | Public navigation bar and dashboard render zero operational controls or review links. |
+| **RESTART** | `test_restart_state_reconstruction` | After server crash, active intents, reviews, decisions, and audit history reload fully intact. |
+
+---
+
+## 6. Verification Plan & Local Acceptance
+
+### 6.1 Automated CI/Local Test Commands
+All commands below must execute cleanly against synthetic test fixtures:
+```powershell
+# 1. Ops Unit and Security Test Suites
+python -m pytest tests/ops -q
+
+# 2. Agent and Preview Pipeline Suites
+python -m pytest tests/agents -q
+
+# 3. Frontend Playwright Browser Tests
+python -m pytest tests/frontend/test_site_browser.py -q
+
+# 4. Frontend Node Test Suites
+node --test tests/frontend/*.test.mjs
+
+# 5. Full Repository Test Suite
+python -m pytest -q
+
+# 6. Data Integrity & Book Coverage Gates
+python scripts/validate_data.py
+python scripts/check_book_coverage.py
+
+# 7. JavaScript Syntax & ESM Validation
+node --check docs/assets/app.js
+node --check docs/assets/site-ui.mjs
+node --check docs/assets/site-ops.mjs
+```
+
+### 6.2 Local Acceptance Protocol (Isolated Manual Verification)
+Executed separately using the local development runtime:
+1. Start `PreviewServer` in restricted mode:
+   ```powershell
+   python scripts/agents/preview_server.py --mode restricted_preview --port 8080
+   ```
+2. Navigate to `http://127.0.0.1:8080/#/ops`:
+   - Verify 7 global counters are displayed (`Total Catalogado: 281`, etc.).
+   - Verify session cookie `daemon_ops_session` is present with `HttpOnly; SameSite=Strict`.
+   - Verify browser console and `localStorage` contain zero token strings.
+3. Submit a `PauseBook` command via UI:
+   - Verify optimistic card update.
+   - Verify `202 Accepted` response in Network tab.
+   - Verify SSE receives `command.updated` event.
+4. Navigate to `http://127.0.0.1:8080/#/ops/reviews`:
+   - Open pending review item.
+   - Attempt approval with agent name -> verify rejected.
+   - Approve with human name and justification -> verify item moves to `RESOLVED` in UI and `decisions.jsonl`.
+5. Start `PreviewServer` in public mode:
+   ```powershell
+   python scripts/agents/preview_server.py --mode public --port 8081
+   ```
+6. Verify public isolation:
+   - Navigating to `http://127.0.0.1:8081/#/ops` immediately redirects to `#/`.
+   - `curl http://127.0.0.1:8081/api/ops/snapshot` returns `404 Not Found`.
