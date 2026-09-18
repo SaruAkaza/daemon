@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/ops-command.schema.json",
+  "title": "Ops Command Contract",
+  "description": "Canonical typed command contract for Daemon Tools operational control plane.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "commandId",
+    "commandType",
+    "payload",
+    "reason",
+    "operatorId",
+    "confirmation"
+  ],
+  "properties": {
+    "commandId": {
+      "type": "string",
+      "pattern": "^CMD-[A-Za-z0-9_-]{8,32}$"
+    },
+    "commandType": {
+      "type": "string",
+      "enum": [
+        "PRIORITIZE_BOOK",
+        "PAUSE_BOOK",
+        "RESUME_BOOK",
+        "REPROCESS_STAGE",
+        "DEQUEUE_BOOK",
+        "APPROVE_REVIEW",
+        "REJECT_REVIEW",
+        "REQUEST_CORRECTION"
+      ]
+    },
+    "bookId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "operatorId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confirmation": {
+      "type": "object",
+      "required": ["confirmed"],
+      "properties": {
+        "confirmed": { "type": "boolean" },
+        "typedConfirmation": { "type": "string" }
+      }
+    },
+    "submittedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
