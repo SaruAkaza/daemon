@@ -18,6 +18,32 @@ class ContractValidationError(ValueError):
     pass
 
 
+def write_atomic(path: Path | str, data: bytes) -> None:
+    """Safely write binary data to a file using atomic write-to-temp-and-rename with fsync."""
+    import os
+    import secrets
+
+    p = Path(path).resolve()
+    p.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = p.with_name(f".{p.name}.{os.getpid()}.{secrets.token_hex(4)}.tmp")
+    try:
+        with open(temp_path, "wb") as f:
+            f.write(data)
+            f.flush()
+            try:
+                os.fsync(f.fileno())
+            except OSError:
+                pass
+        temp_path.replace(p)
+    except Exception:
+        if temp_path.exists():
+            try:
+                temp_path.unlink()
+            except OSError:
+                pass
+        raise
+
+
 def load_json(path: Path | str) -> dict[str, Any]:
     """Load and parse a JSON file, ensuring top-level object structure.
 
