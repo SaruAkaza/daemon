@@ -166,7 +166,13 @@ def site_preview_env(tmp_path_factory):
 
     # 4. Start PreviewServer
     docs_root = Path("docs").resolve()
-    server = PreviewServer(preview_root=preview_root, docs_root=docs_root, host="127.0.0.1", port=0)
+    server = PreviewServer(
+        preview_root=preview_root,
+        docs_root=docs_root,
+        host="127.0.0.1",
+        port=0,
+        runtime_dir=runtime_root,
+    )
     server.start()
 
     yield {
@@ -322,4 +328,59 @@ def archive_preview_env(tmp_path_factory):
 @pytest.fixture
 def archive_site_url(archive_preview_env):
     return archive_preview_env["site_url"]
+
+
+@pytest.fixture(scope="session")
+def public_preview_env(tmp_path_factory):
+    runtime_root = tmp_path_factory.mktemp("daemon_public_runtime")
+    preview_root = runtime_root / "preview"
+    preview_root.mkdir(parents=True)
+    public_root = runtime_root / "public"
+    public_root.mkdir(parents=True)
+
+    # Write minimal public site-data catalog so site boots
+    site_data = public_root / "site-data"
+    site_data.mkdir(parents=True)
+    cat = {
+        "schemaVersion": "1.0",
+        "projectionId": "proj-pub-001",
+        "generationTimestamp": "2026-09-14T00:00:00Z",
+        "mode": "public",
+        "books": [],
+    }
+    s_idx = {
+        "schemaVersion": "1.0",
+        "projectionId": "proj-pub-001",
+        "generationTimestamp": "2026-09-14T00:00:00Z",
+        "mode": "public",
+        "entries": [],
+    }
+    (site_data / "catalog.json").write_bytes(canonical_json_bytes(cat))
+    (site_data / "search-index.json").write_bytes(canonical_json_bytes(s_idx))
+
+    docs_root = Path("docs").resolve()
+    server = PreviewServer(
+        preview_root=preview_root,
+        docs_root=docs_root,
+        host="127.0.0.1",
+        port=0,
+        public_root=public_root,
+        mode="public",
+        runtime_dir=runtime_root,
+    )
+    server.start()
+
+    yield {
+        "server": server,
+        "port": server.port,
+        "base_url": f"http://127.0.0.1:{server.port}",
+        "site_url": f"http://127.0.0.1:{server.port}/?site=1&public=1",
+    }
+
+    server.stop()
+
+
+@pytest.fixture
+def public_site_url(public_preview_env):
+    return public_preview_env["site_url"]
 

@@ -782,4 +782,70 @@ def test_real_archive_navigation_to_animalidade_and_unworked_book(page, archive_
     assert "Nenhuma entidade processada" in empty_state.text_content()
 
 
+def test_ops_panel_and_review_resolution_restricted(page, site_url, site_preview_env):
+    page.goto(site_url)
+    page.wait_for_selector(".site-nav", timeout=10000)
+    ops_link = page.locator('a.site-nav-link[href="#/ops"]')
+    assert ops_link.count() == 1
+    assert "Operações" in ops_link.text_content()
+
+    ops_link.click()
+    page.wait_for_selector(".site-ops-view", timeout=10000)
+    assert "Painel de Controle Operacional" in page.text_content("h1")
+    assert page.locator(".site-ops-metric-card").count() >= 4
+
+    server = site_preview_env["server"]
+    if server.review_store:
+        server.review_store.create_review({
+            "reviewId": "REV-UI-TEST-001",
+            "bookId": "synthetic",
+            "stage": "EDITORIAL",
+            "category": "DOMAIN_AMBIGUITY",
+            "problem": "Ambiguidade detectada em atributos sintéticos",
+            "evidence": {"term": "atributo_x", "line": 42},
+            "recommendation": "Aprovar como termo canônico",
+            "impact": "Médio",
+        })
+
+    page.locator('a.site-ops-tab[href="#/ops/reviews"]').click()
+    page.wait_for_selector(".site-ops-review-card", timeout=10000)
+    assert "REV-UI-TEST-001" in page.text_content(".site-ops-review-card")
+
+    page.locator('a.site-btn-action-link[href="#/ops/review/REV-UI-TEST-001"]').click()
+    page.wait_for_selector(".site-ops-review-detail-view", timeout=10000)
+    assert "REV-UI-TEST-001" in page.text_content("h1")
+    assert "Ambiguidade detectada em atributos sintéticos" in page.text_content(".site-ops-review-detail-view")
+
+    page.locator(".site-btn-approve").click()
+    page.wait_for_selector(".site-ops-modal", timeout=5000)
+    assert "Aprovar Revisão" in page.text_content(".site-ops-modal")
+
+    page.locator(".site-btn-confirm").click()
+    page.wait_for_timeout(500)
+
+    if server.command_processor:
+        server.command_processor.process_pending_commands()
+
+    page.reload()
+    page.wait_for_selector(".site-ops-review-detail-view", timeout=10000)
+    assert "Decisão Registrada" in page.text_content(".site-ops-review-detail-view")
+
+
+def test_ops_panel_strictly_blocked_in_public_mode(page, public_site_url):
+    page.goto(public_site_url)
+    page.wait_for_selector(".site-nav", timeout=10000)
+
+    assert page.locator('a.site-nav-link[href="#/ops"]').count() == 0
+
+    page.goto(public_site_url + "#/ops")
+    page.wait_for_selector(".site-home-view", timeout=10000)
+    assert page.locator(".site-ops-view").count() == 0
+
+    status_snap = page.evaluate("() => fetch('/api/ops/snapshot').then(r => r.status)")
+    assert status_snap == 404
+
+    status_cmd = page.evaluate("() => fetch('/api/ops/commands').then(r => r.status)")
+    assert status_cmd == 404
+
+
 

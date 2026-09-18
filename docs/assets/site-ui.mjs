@@ -1262,9 +1262,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
   }
 
   async function renderOpsDashboard(activeTab = 'overview') {
-    if (!state.ops.controlState) {
-      await loadOpsData();
-    }
+    await loadOpsData();
 
     const container = document.createElement('div');
     container.className = 'site-ops-view';
@@ -1547,9 +1545,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
   }
 
   async function renderOpsReviewDetail(reviewId) {
-    if (!state.ops.controlState) {
-      await loadOpsData();
-    }
+    await loadOpsData();
 
     const review = (state.ops.reviews || []).find((r) => r.reviewId === reviewId);
     const container = document.createElement('div');
