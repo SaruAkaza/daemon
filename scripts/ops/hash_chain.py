@@ -22,7 +22,7 @@ class HashChainLogger:
     def __init__(self, log_path: Path | str) -> None:
         self.log_path = Path(log_path).resolve()
         self.log_path.parent.mkdir(parents=True, exist_ok=True)
-        self._lock = threading.Lock()
+        self._lock = threading.RLock()
 
     def _get_last_entry_hash(self) -> str:
         if not self.log_path.is_file():

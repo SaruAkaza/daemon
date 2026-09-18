@@ -35,7 +35,7 @@ class ReviewStore:
         self.reviews_file = self.stores_dir / "reviews.json"
         self.decisions_file = self.stores_dir / "decisions.jsonl"
         self.decision_logger = HashChainLogger(self.decisions_file)
-        self._lock = threading.Lock()
+        self._lock = threading.RLock()
         self._ensure_files()
 
     def _ensure_files(self) -> None:
