@@ -1935,7 +1935,7 @@ body:has(#siteRoot .site-shell) {
 .site-ops-header h1 {
   margin: 0 0 4px 0;
   font-size: 1.6rem;
-  color: var(--text-primary, #eceff1);
+  color: inherit;
 }
 
 .site-ops-meta {

@@ -119,6 +119,7 @@ export class OpsClient {
     source.addEventListener('command_updated', handleMessage);
     source.addEventListener('review_updated', handleMessage);
     source.addEventListener('control_updated', handleMessage);
+    source.addEventListener('batch_updated', handleMessage);
     source.addEventListener('stage_invalidated', handleMessage);
 
     source.addEventListener('snapshot_required', () => {

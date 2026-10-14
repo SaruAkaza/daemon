@@ -26,6 +26,12 @@ mudanças propostas e as pendências de versões/páginas. A preparação de có
 privadas para revisão usa `python scripts/prepare_source_migration.py --stage`;
 veja [Preparação da migração](docs/reference/source-migration.md).
 
+O motor privado da Release C controla fila, concorrência, checkpoints e retomada.
+A demonstração com cinco livros sintéticos usa
+`python -m scripts.orchestrator --demo --runtime-dir /tmp/daemon-demo --serve`.
+Os executores do acervo real ainda precisam de integração e certificação. Veja
+[Motor de lotes e aprovação privada](docs/reference/batch-orchestrator.md).
+
 ## Estrutura proposta
 
 - `Livros/`: arquivos fonte originais.
