@@ -15,6 +15,12 @@ em [Consolidação técnica](docs/reports/2026-10-14-consolidation-validation.md
 Inventário e testes aprovados não significam que os 281 livros estejam revisados
 ou autorizados para publicação.
 
+A reconciliação das fontes atuais com o inventário histórico pode ser consultada
+em `data/index/source-reconciliation.json`. O diagnóstico e a verificação são
+somente de leitura: `python scripts/reconcile_sources.py` e
+`python scripts/reconcile_sources.py --check`. Veja
+[Reconciliação de fontes legadas](docs/reference/source-reconciliation.md).
+
 ## Estrutura proposta
 
 - `Livros/`: arquivos fonte originais.

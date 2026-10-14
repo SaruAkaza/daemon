@@ -119,15 +119,22 @@ def validate_publication(
     # Pilot DOCX/PDF claims must identify the same source as their permission.
     # A similarly named edition or a different file cannot borrow that grant.
     for payload, kind in inputs:
-        if kind == "pilot" and "sourcePath" in payload:
+        if kind == "pilot" and ("sourcePath" in payload or "sourceFile" in payload):
             source = indexed.get(payload["source"])
-            claimed_path = payload["sourcePath"]
+            claimed_path = payload.get("sourcePath")
+            claimed_file = payload.get("sourceFile")
             if (
                 source is None
-                or not isinstance(claimed_path, str)
-                or claimed_path.replace("\\", "/") != str(source.get("path", "")).replace("\\", "/")
+                or ("sourcePath" in payload and (
+                    not isinstance(claimed_path, str)
+                    or claimed_path.replace("\\", "/") != str(source.get("path", "")).replace("\\", "/")
+                ))
+                or ("sourceFile" in payload and (
+                    not isinstance(claimed_file, str)
+                    or claimed_file != str(source.get("path", "")).replace("\\", "/").rsplit("/", 1)[-1]
+                ))
             ):
-                raise PublicationBlocked(f"{payload['source']}: pilot sourcePath does not match inventory")
+                raise PublicationBlocked(f"{payload['source']}: pilot sourcePath/sourceFile does not match inventory")
 
     manifests: dict[str, dict[str, Any]] = {}
     for path in sorted(manifests_dir.glob("*.json")):

@@ -23,6 +23,8 @@ Para uma cópia integral, o manifesto deve:
 
 O `sourcePath` de um piloto, quando presente, também deve corresponder à fonte
 inventariada. Caminhos Windows e POSIX são comparados com separadores normalizados.
+O `sourceFile`, quando declarado, deve corresponder ao nome do arquivo inventariado,
+inclusive quando o piloto não informa `sourcePath`.
 Um DOCX, outra edição ou um arquivo de mesmo nome não pode usar a autorização
 de um PDF diferente.
 
@@ -71,3 +73,6 @@ O verificador de sincronização continua comparando esses arquivos por leitura.
 Próximas etapas: reconciliar os IDs/caminhos legados com o inventário, registrar
 direitos por fonte e migrar a distribuição de metadados/resumos para o projetor
 público antes de autorizar uma reconstrução do acervo publicado.
+
+O fluxo de evidências, sem migração automática, está em
+[Reconciliação de fontes legadas](source-reconciliation.md).

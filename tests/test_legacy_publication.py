@@ -217,6 +217,16 @@ def test_pilot_source_path_cannot_borrow_permission_for_another_file(publication
         pilots.build_index(manifests_dir=manifests)
 
 
+@pytest.mark.parametrize("source_file", ["synthetic.docx", "other-edition.pdf", "../synthetic.pdf"])
+def test_pilot_without_source_path_cannot_borrow_rights_for_a_different_filename(publication_tree, source_file):
+    _, data, _, manifests, _, _ = publication_tree
+    write_json(data / "pilot" / "synthetic.json", {
+        "source": "synthetic", "title": "Synthetic", "sourceFile": source_file,
+    })
+    with pytest.raises(PublicationBlocked, match="sourceFile"):
+        pilots.build_index(manifests_dir=manifests)
+
+
 def test_shared_writer_blocks_individual_generators_before_touching_public_tree(publication_tree, monkeypatch):
     root, _, public, manifests, _, _ = publication_tree
     monkeypatch.setattr(common, "ROOT", root)
