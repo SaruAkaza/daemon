@@ -57,6 +57,12 @@ O teste Chromium inicia um servidor real, retoma o livro pelo painel, aguarda
 a revisão e registra uma aprovação **somente sintética**, ligada ao snapshot.
 Confere que há uma única tela de revisão e que release permanece pendente.
 
+Uma execução do CI expôs um limite artificial de 15 segundos no
+teste de drenagem do lote: três livros já estavam prontos e os dois restantes
+continuavam avançando, sem falha do motor. O prazo do harness foi ajustado para
+45 segundos em runners com cobertura; todas as verificações de concorrência,
+checkpoints e estados finais foram mantidas.
+
 ## Limites e próximo passo
 
 Os adaptadores semânticos do acervo real ainda precisam de integração e

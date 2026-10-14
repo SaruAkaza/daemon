@@ -37,7 +37,9 @@ def executors(runner=run, version="test-1") -> dict:
     return {stage: StageExecutor(version, ("entity",), runner, validate) for stage in STAGES[1:]}
 
 
-def pump(engine: BatchOrchestrator, predicate, timeout=15):
+def pump(engine: BatchOrchestrator, predicate, timeout=45):
+    # CI plus coverage can take longer to validate all five books. The contract
+    # concerns progress and concurrency, not a 15-second throughput deadline.
     deadline = time.monotonic() + timeout
     while time.monotonic() < deadline:
         engine.tick()
