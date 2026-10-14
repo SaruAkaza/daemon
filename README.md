@@ -6,6 +6,15 @@ Repositorio para transformar a biblioteca em `Livros/` em uma referencia digital
 
 O 5e.tools organiza conteudo de RPG como entidades filtraveis, com busca, filtros, fontes e paginas de detalhe. Este repositorio usa essa arquitetura como inspiracao, mas a taxonomia e os dados sao do sistema Daemon/Trevas presente na pasta `Livros`.
 
+## Estado da consolidação
+
+A integração de 2026-10-14 reúne o pipeline, o frontend MVP, o catálogo ampliado,
+o painel operacional e as correções de relações em uma branch para revisão.
+Resultados, commits de origem, limites de publicação e trabalho restante estão
+em [Consolidação técnica](docs/reports/2026-10-14-consolidation-validation.md).
+Inventário e testes aprovados não significam que os 281 livros estejam revisados
+ou autorizados para publicação.
+
 ## Estrutura proposta
 
 - `Livros/`: arquivos fonte originais.
@@ -18,6 +27,25 @@ O 5e.tools organiza conteudo de RPG como entidades filtraveis, com busca, filtro
 - `docs/reports/`: relatorios de auditoria, certificacao, extracao granular e revisao manual.
 - `schemas/`: JSON Schemas para validar entidades.
 - `scripts/`: automacoes de inventario, extracao e categorizacao.
+
+## Coordenação agentic
+
+- `AGENTS.md` — entrada para agentes
+- `PROJECT-BRAIN.md` — entrada central de conhecimento (Obsidian Vault entry)
+- `docs/architecture/` — regras e arquitetura
+- `docs/reference/` — regras editoriais e modelo de dados
+- `docs/obsidian/` — MOCs e templates do Daemon Project Brain
+- `coordination/` — estado operacional e coordenação
+
+## Project Brain / Obsidian
+
+O repositório pode ser aberto diretamente como um Vault do Obsidian.
+
+Página inicial:
+
+`PROJECT-BRAIN.md`
+
+O Obsidian é uma camada de navegação sobre a documentação versionada; ele não substitui Git nem cria uma segunda fonte da verdade.
 
 ## Fluxo de trabalho
 

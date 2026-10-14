@@ -1,0 +1,281 @@
+/**
+ * Daemon Tools — Site Route Parsing and Layout State Management (ES Module)
+ * Handles client-side navigation, defensive storage reads, and responsive layout preferences.
+ */
+
+export const VALID_LAYOUTS = ['classic', 'balanced', 'advanced'];
+export const DEFAULT_LAYOUT = 'balanced';
+export const STORAGE_KEY_LAYOUT = 'daemonSite.layout';
+
+/**
+ * Parses URL hash into structured route descriptor.
+ *
+ * Recognized routes:
+ *   #/ or empty -> { kind: 'home', id: null }
+ *   #/books -> { kind: 'books', id: null }
+ *   #/book/:bookId -> { kind: 'book', id: ':bookId' }
+ *   #/entities -> { kind: 'entities', id: null }
+ *   #/entity/:entityId -> { kind: 'entity', id: ':entityId' }
+ *   #/search -> { kind: 'search', id: null }
+ *   others -> { kind: 'not-found', id: null }
+ *
+ * @param {string} hash
+ * @returns {{ kind: string, id: string | null }}
+ */
+export function parseRoute(hash, options = {}) {
+  const raw = String(hash ?? '').trim();
+  const path = raw.startsWith('#') ? raw : `#${raw}`;
+
+  if (path === '#' || path === '#/' || path === '') {
+    return { kind: 'home', id: null };
+  }
+  if (path === '#/books') {
+    return { kind: 'books', id: null };
+  }
+  if (path === '#/entities') {
+    return { kind: 'entities', id: null };
+  }
+  if (path === '#/search') {
+    return { kind: 'search', id: null };
+  }
+
+  const isRestricted = options.mode === 'restricted_preview';
+
+  if (path.startsWith('#/ops')) {
+    if (!isRestricted) {
+      return { kind: 'home', id: null };
+    }
+    if (path === '#/ops') {
+      return { kind: 'ops', id: null };
+    }
+    if (path === '#/ops/queue') {
+      return { kind: 'ops-queue', id: null };
+    }
+    if (path === '#/ops/reviews') {
+      return { kind: 'ops-reviews', id: null };
+    }
+    const reviewMatch = path.match(/^#\/ops\/review\/([A-Za-z0-9_-]+)$/);
+    if (reviewMatch) {
+      return { kind: 'ops-review', id: reviewMatch[1] };
+    }
+    return { kind: 'not-found', id: null };
+  }
+
+  const bookMatch = path.match(/^#\/book\/([a-z0-9-]+)$/);
+  if (bookMatch) {
+    return { kind: 'book', id: bookMatch[1] };
+  }
+
+  const entityMatch = path.match(/^#\/entity\/([a-z0-9-:]+)$/);
+  if (entityMatch) {
+    return { kind: 'entity', id: entityMatch[1] };
+  }
+
+  return { kind: 'not-found', id: null };
+}
+
+/**
+ * Defensively reads saved layout preference from Web Storage.
+ *
+ * @param {Storage|object|null} storage
+ * @returns {string}
+ */
+function readSavedLayout(storage) {
+  if (!storage || typeof storage.getItem !== 'function') {
+    return DEFAULT_LAYOUT;
+  }
+  try {
+    const val = storage.getItem(STORAGE_KEY_LAYOUT);
+    return VALID_LAYOUTS.includes(val) ? val : DEFAULT_LAYOUT;
+  } catch {
+    return DEFAULT_LAYOUT;
+  }
+}
+
+export const STORAGE_KEY_OPERATOR = 'daemonSite.operatorId';
+
+/**
+ * Defensively reads saved operator ID from Web Storage.
+ *
+ * @param {Storage|object|null} storage
+ * @returns {string}
+ */
+export function readSavedOperatorId(storage) {
+  if (!storage || typeof storage.getItem !== 'function') {
+    return '';
+  }
+  try {
+    const val = storage.getItem(STORAGE_KEY_OPERATOR);
+    return typeof val === 'string' ? val.trim() : '';
+  } catch {
+    return '';
+  }
+}
+
+/**
+ * Creates initial application state.
+ *
+ * @param {Storage|object|null} [storage=null]
+ * @param {string} [initialHash='#/']
+ * @param {object} [options={}]
+ * @returns {object}
+ */
+export function createState(storage = null, initialHash = '#/', options = {}) {
+  const mode = options.mode || 'restricted_preview';
+  const route = initialHash || '#/';
+  const routeInfo = parseRoute(route, { mode });
+  const layout = readSavedLayout(storage);
+  const sessionStore = options.sessionStorage || (typeof window !== 'undefined' ? window.sessionStorage : null);
+  const operatorId = readSavedOperatorId(sessionStore);
+
+  return {
+    mode,
+    route,
+    routeInfo,
+    selectedEntityId: routeInfo.kind === 'entity' ? routeInfo.id : null,
+    bookId: null,
+    query: '',
+    type: null,
+    layout,
+    bookFilters: {
+      query: '',
+      pipelineStatus: 'all',
+      rightsStatus: 'all',
+      publicationMode: 'all',
+      sortBy: 'title_asc',
+    },
+    ops: {
+      controlState: null,
+      commands: [],
+      reviews: [],
+      activeTab: 'overview',
+      selectedReviewId: null,
+      modalState: null,
+      operatorId,
+      sseStatus: 'DESCONECTADA',
+    },
+  };
+}
+
+/**
+ * Updates layout preference immutably and persists to storage if available.
+ *
+ * @param {object} state
+ * @param {string} layout
+ * @param {Storage|object|null} [storage=null]
+ * @returns {object}
+ */
+export function setLayout(state, layout, storage = null) {
+  const selected = VALID_LAYOUTS.includes(layout) ? layout : DEFAULT_LAYOUT;
+  if (storage && typeof storage.setItem === 'function') {
+    try {
+      storage.setItem(STORAGE_KEY_LAYOUT, selected);
+    } catch {
+      // Storage unavailable or quota exceeded; maintain in-memory
+    }
+  }
+  return { ...state, layout: selected };
+}
+
+/**
+ * Updates route and associated route parameters without resetting other state.
+ *
+ * @param {object} state
+ * @param {string} hash
+ * @returns {object}
+ */
+export function setRoute(state, hash) {
+  const route = hash || '#/';
+  const routeInfo = parseRoute(route, { mode: state?.mode || 'restricted_preview' });
+  const selectedEntityId =
+    routeInfo.kind === 'entity' ? routeInfo.id : state.selectedEntityId;
+
+  return {
+    ...state,
+    route,
+    routeInfo,
+    selectedEntityId,
+  };
+}
+
+/**
+ * Updates search query and filter parameters immutably.
+ *
+ * @param {object} state
+ * @param {object} filters
+ * @returns {object}
+ */
+export function setFilters(state, { query, bookId, type }) {
+  return {
+    ...state,
+    ...(query !== undefined ? { query: String(query) } : {}),
+    ...(bookId !== undefined ? { bookId: bookId ? String(bookId) : null } : {}),
+    ...(type !== undefined ? { type: type ? String(type) : null } : {}),
+  };
+}
+
+/**
+ * Updates catalog book filters and sorting immutably.
+ *
+ * @param {object} state
+ * @param {object} [updates={}]
+ * @returns {object}
+ */
+export function setBookFilters(state, updates = {}) {
+  return {
+    ...state,
+    bookFilters: {
+      ...state.bookFilters,
+      ...updates,
+    },
+  };
+}
+
+/**
+ * Updates operator ID and persists to session storage if provided.
+ *
+ * @param {object} state
+ * @param {string} operatorId
+ * @param {Storage|object|null} [storage=null]
+ * @returns {object}
+ */
+export function setOperatorId(state, operatorId, storage = null) {
+  const trimmed = String(operatorId || '').trim();
+  if (storage && typeof storage.setItem === 'function') {
+    try {
+      if (trimmed) {
+        storage.setItem(STORAGE_KEY_OPERATOR, trimmed);
+      } else if (typeof storage.removeItem === 'function') {
+        storage.removeItem(STORAGE_KEY_OPERATOR);
+      }
+    } catch {
+      // ignore
+    }
+  }
+  return {
+    ...state,
+    ops: {
+      ...state.ops,
+      operatorId: trimmed,
+    },
+  };
+}
+
+/**
+ * Updates SSE connection status in state.
+ *
+ * @param {object} state
+ * @param {'CONECTANDO'|'ATIVA'|'DESCONECTADA'} sseStatus
+ * @returns {object}
+ */
+export function setSseStatus(state, sseStatus) {
+  return {
+    ...state,
+    ops: {
+      ...state.ops,
+      sseStatus,
+    },
+  };
+}
+
+

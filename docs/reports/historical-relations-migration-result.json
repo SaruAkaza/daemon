@@ -1,0 +1,11 @@
+{
+  "status": "SUCCESS",
+  "dryRun": false,
+  "totalScanned": 0,
+  "migratedCanChoosePower": 0,
+  "migratedHasWeakness": 0,
+  "migratedUnresolved": 0,
+  "unmodifiedHasPower": 0,
+  "auditReportSha256": "5ff417cd6a686268d8d1728b1a86af6abff858e60d61dba6b8c9b00cd1096845",
+  "approvalDecisionId": "DEC-HIST-RELATIONS-V2-01"
+}

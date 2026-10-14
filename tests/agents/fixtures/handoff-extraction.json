@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0",
+  "handoffId": "HANDOFF-TREVAS-EXTRACTION-001",
+  "jobId": "BOOK-TREVAS-001",
+  "agent": "extraction-agent",
+  "stage": "extraction",
+  "status": "pass_with_warnings",
+  "startedAt": "2026-09-04T10:00:00-03:00",
+  "completedAt": "2026-09-04T10:09:30-03:00",
+  "inputs": [
+    "Livros/Trevas 3.0.pdf"
+  ],
+  "outputs": [
+    "data/text/trevas.txt"
+  ],
+  "changes": [
+    "extracted text for 214 pages",
+    "normalized ligatures",
+    "fixed column line wrap and hyphenation"
+  ],
+  "evidence": [
+    {
+      "type": "coverage",
+      "value": "214/214 pages represented",
+      "command": "python scripts/check_book_coverage.py"
+    },
+    {
+      "type": "test",
+      "value": "pass",
+      "command": "python -m pytest -q"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "OCR_UNCERTAIN",
+      "source": "trevas",
+      "page": 87,
+      "message": "Low-confidence token sequence on table footnote."
+    }
+  ],
+  "uncertainties": [
+    {
+      "code": "LAYOUT_MULTI_COLUMN",
+      "source": "trevas",
+      "page": 87,
+      "confidence": 0.82,
+      "message": "Double-column table required manual check."
+    }
+  ],
+  "qualityMetrics": {
+    "sourcePages": 214,
+    "processedPages": 214,
+    "coverageRatio": 1.0,
+    "warningsCount": 1
+  },
+  "recommendedNextStage": "editorial",
+  "requiresHumanReview": false,
+  "blockingReason": null
+}

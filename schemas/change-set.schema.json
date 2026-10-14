@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/change-set.schema.json",
+  "title": "ChangeSet",
+  "description": "Manifesto estruturado e determinístico de mutações autorizadas no sistema de arquivos.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "changeSetId",
+    "requestId",
+    "jobId",
+    "bookId",
+    "stage",
+    "agent",
+    "operations",
+    "metadata"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "enum": [
+        "2.1"
+      ],
+      "description": "Versão do schema do ChangeSet."
+    },
+    "changeSetId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único do ChangeSet."
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador da ExecutionRequest de origem."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do Job de origem."
+    },
+    "bookId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do livro."
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release"
+      ],
+      "description": "Estágio do pipeline."
+    },
+    "agent": {
+      "type": "string",
+      "enum": [
+        "source-agent",
+        "extraction-agent",
+        "editorial-agent",
+        "entity-agent",
+        "relations-agent",
+        "frontend-agent",
+        "qa-release-agent",
+        "orchestrator"
+      ],
+      "description": "Agente responsável."
+    },
+    "operations": {
+      "type": "array",
+      "description": "Lista determinística de operações de mutação atômica individual.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "operationId",
+          "type",
+          "targetPath",
+          "expectedBaseSha256",
+          "candidateContent",
+          "encoding",
+          "format"
+        ],
+        "properties": {
+          "operationId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "CREATE",
+              "UPDATE"
+            ],
+            "description": "Tipo de operação. DELETE, RENAME e MOVE são estritamente proibidos."
+          },
+          "targetPath": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Caminho relativo POSIX normalizado."
+          },
+          "expectedBaseSha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{64}$",
+            "description": "Hash SHA256 do arquivo original em UPDATE; null em CREATE."
+          },
+          "candidateContent": {
+            "type": "string",
+            "description": "Conteúdo textual UTF-8 candidato a ser gravado."
+          },
+          "encoding": {
+            "type": "string",
+            "enum": [
+              "utf-8"
+            ]
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "text",
+              "json"
+            ]
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadados adicionais da transação."
+    }
+  }
+}

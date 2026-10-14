@@ -1,0 +1,12 @@
+{
+  "totalRelationsScanned": 0,
+  "hasPowerCount": 0,
+  "recommendations": {
+    "keepHasPower": 0,
+    "migrateToCanChoosePower": 0,
+    "migrateToHasWeakness": 0,
+    "migrateToUnresolved": 0,
+    "invalidTriplets": 0
+  },
+  "itemized": []
+}

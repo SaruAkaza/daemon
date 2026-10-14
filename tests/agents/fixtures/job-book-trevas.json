@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "jobId": "BOOK-TREVAS-001",
+  "kind": "book_ingestion",
+  "bookId": "trevas",
+  "status": "in_progress",
+  "createdAt": "2026-09-04T10:00:00-03:00",
+  "updatedAt": "2026-09-04T10:10:00-03:00",
+  "requestedBy": "human",
+  "currentStage": "extraction",
+  "stages": {
+    "source": "pass",
+    "extraction": "running",
+    "editorial": "waiting",
+    "entities": "waiting",
+    "relations": "waiting",
+    "frontend": "waiting",
+    "qa": "waiting",
+    "release": "waiting"
+  },
+  "humanReviewRequired": false,
+  "blockingReasons": [],
+  "artifacts": [
+    "data/text/trevas.txt"
+  ],
+  "history": [
+    {
+      "timestamp": "2026-09-04T10:00:00-03:00",
+      "event": "job_created",
+      "stage": "source",
+      "message": "Job initiated for Trevas 3.0"
+    }
+  ]
+}

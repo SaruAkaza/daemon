@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/relation-compatibility.schema.json",
+  "title": "Relation Compatibility Matrix Schema",
+  "description": "Schema formal de validação para matrizes de compatibilidade semântica de relações no Daemon Tools.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "ontologyVersion",
+    "rules"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ontologyVersion": {
+      "type": "string",
+      "enum": ["relations-v2"]
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relationType",
+          "allowedSourceCategories",
+          "allowedTargetCategories",
+          "semanticMeaning"
+        ],
+        "properties": {
+          "relationType": {
+            "type": "string",
+            "enum": [
+              "REQUIRES",
+              "GRANTS",
+              "BELONGS_TO",
+              "DERIVED_FROM",
+              "APPEARS_IN",
+              "MODIFIES",
+              "REPLACES",
+              "ALTERNATIVE_TO",
+              "HAS_POWER",
+              "CAN_CHOOSE_POWER",
+              "HAS_WEAKNESS",
+              "HAS_SKILL",
+              "USES_RULE"
+            ]
+          },
+          "allowedSourceCategories": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "allowedTargetCategories": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "allowedTargetSubtypes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "allowedSourceSubtypes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "semanticMeaning": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

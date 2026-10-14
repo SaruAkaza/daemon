@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/unresolved-relation.schema.json",
+  "title": "Unresolved Entity Relation",
+  "description": "Registro de relação não resolvida ou com alvo externo ao livro, isolada fora do grafo canônico.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sourceEntityId",
+    "candidateRelationType",
+    "rawReferenceText",
+    "sourcePage",
+    "sourceParagraph",
+    "reason",
+    "status"
+  ],
+  "properties": {
+    "sourceEntityId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ID da entidade de origem afirmada no livro local."
+    },
+    "candidateRelationType": {
+      "type": "string",
+      "enum": [
+        "REQUIRES",
+        "GRANTS",
+        "BELONGS_TO",
+        "DERIVED_FROM",
+        "APPEARS_IN",
+        "MODIFIES",
+        "REPLACES",
+        "ALTERNATIVE_TO",
+        "HAS_POWER",
+        "CAN_CHOOSE_POWER",
+        "HAS_WEAKNESS",
+        "HAS_SKILL",
+        "USES_RULE"
+      ],
+      "description": "Tipo de relação proposta que não pôde ser resolvida localmente."
+    },
+    "candidateTargetEntityId": {
+      "type": "string",
+      "description": "ID provisório do alvo se inferível, opcional."
+    },
+    "rawReferenceText": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Texto literal ou menção da fonte original apontando para o alvo pendente."
+    },
+    "sourcePage": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Página onde a menção ocorre."
+    },
+    "sourceParagraph": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Parágrafo aproximado ou bloco onde ocorre a menção."
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Explicação determinística da razão de não resolução."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "UNRESOLVED_PENDING_CROSS_BOOK_LINK",
+        "UNRESOLVED_AMBIGUOUS_NAME",
+        "UNRESOLVED_MISSING_TARGET"
+      ],
+      "description": "Status taxonômico da pendência de resolução."
+    }
+  }
+}

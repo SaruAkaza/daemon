@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/agent-handoff.schema.json",
+  "title": "Agent Handoff",
+  "description": "Contrato de entrega de evidências e resultados de um estágio para o Orchestrator.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "handoffId",
+    "jobId",
+    "agent",
+    "stage",
+    "status",
+    "startedAt",
+    "completedAt",
+    "inputs",
+    "outputs",
+    "changes",
+    "evidence",
+    "warnings",
+    "uncertainties",
+    "qualityMetrics",
+    "recommendedNextStage",
+    "requiresHumanReview"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Versão do schema do handoff (ex: '1.0')."
+    },
+    "handoffId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único do handoff (ex: 'HANDOFF-TREVAS-EXTRACTION-001')."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador do job ao qual este handoff pertence."
+    },
+    "agent": {
+      "type": "string",
+      "enum": [
+        "source-agent",
+        "extraction-agent",
+        "editorial-agent",
+        "entity-agent",
+        "relations-agent",
+        "frontend-agent",
+        "qa-release-agent",
+        "orchestrator"
+      ],
+      "description": "Papel lógico que executou a etapa."
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release"
+      ],
+      "description": "Estágio do pipeline concluído."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "pass_with_warnings",
+        "fail",
+        "blocked",
+        "needs_review"
+      ],
+      "description": "Resultado da execução do estágio (status 'done' pertence ao Job, não ao handoff)."
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp ISO 8601 de início do trabalho no estágio."
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp ISO 8601 de conclusão do estágio."
+    },
+    "inputs": {
+      "type": "array",
+      "description": "Lista de caminhos de arquivos lidos e consumidos como entrada.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "description": "Lista de caminhos de arquivos gerados ou modificados.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "changes": {
+      "type": "array",
+      "description": "Resumo descritivo das alterações técnicas e semânticas realizadas.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Evidências verificáveis do resultado e qualidade obtidos.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "value"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "command": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "description": "Lista de avisos não-bloqueantes identificados durante o processamento.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "description": "Lista de ambiguidades ou incertezas registradas formalmente.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0
+          }
+        }
+      }
+    },
+    "qualityMetrics": {
+      "type": "object",
+      "description": "Métricas escalares de qualidade observadas no estágio.",
+      "additionalProperties": {
+        "type": ["string", "number", "integer", "boolean", "null"]
+      }
+    },
+    "recommendedNextStage": {
+      "type": ["string", "null"],
+      "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release",
+        null
+      ],
+      "description": "Próximo estágio sugerido pelo agente executor."
+    },
+    "requiresHumanReview": {
+      "type": "boolean",
+      "description": "Indica se o resultado exige obrigatoriamente validação humana."
+    },
+    "blockingReason": {
+      "type": ["string", "null"],
+      "description": "Motivo do bloqueio caso o status seja 'blocked'."
+    }
+  }
+}

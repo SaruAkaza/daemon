@@ -1,0 +1,50 @@
+{
+  "source": "synthetic-pilot",
+  "title": "Synthetic Pilot Book",
+  "characters": [
+    {
+      "id": "lobo",
+      "name": "Lobo",
+      "sections": [
+        {
+          "id": "ficha",
+          "title": "Ficha",
+          "paragraphs": [
+            "Fera canina selvagem.",
+            "Poderes: Faro Agu\u00e7ado."
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "poderes-lobo",
+      "title": "Poderes do Lobo",
+      "kind": "power",
+      "area": "poderes",
+      "sectionTitle": "Poderes",
+      "sections": [
+        {
+          "id": "faro",
+          "title": "Faro Agu\u00e7ado",
+          "area": "poderes",
+          "paragraphs": [
+            "Permite rastrear pelo olfato."
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-01",
+      "type": "HAS_POWER",
+      "sourceEntityId": "synthetic-pilot:npc-lobo",
+      "targetEntityId": "synthetic-pilot:group-poderes-lobo",
+      "source": "synthetic-pilot",
+      "page": 1,
+      "confidence": 1.0
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "decisionId": "DEC-HIST-RELATIONS-V2-01",
+  "targetReport": "docs/reports/historical-relations-v2-audit-report.json",
+  "auditReportSha256": "5ff417cd6a686268d8d1728b1a86af6abff858e60d61dba6b8c9b00cd1096845",
+  "decision": "APPROVE",
+  "status": "APPROVED",
+  "decidedBy": "human",
+  "purpose": "Relations v2 historical migration gate",
+  "timestamp": "2026-09-10T11:00:00Z",
+  "notes": "Hard Stop 1 human approval granted: 0 historical relations require migration."
+}

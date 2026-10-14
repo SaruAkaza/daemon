@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://daemon.tools/schemas/agent-job.schema.json",
+  "title": "Agent Job",
+  "description": "Estado e ciclo de vida de um trabalho de processamento no Daemon Tools.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "jobId",
+    "kind",
+    "bookId",
+    "status",
+    "createdAt",
+    "updatedAt",
+    "requestedBy",
+    "currentStage",
+    "stages",
+    "humanReviewRequired",
+    "blockingReasons",
+    "artifacts",
+    "history"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Versão do schema do job (ex: '1.0')."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único do job (ex: 'BOOK-TREVAS-001')."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["book_ingestion"],
+      "description": "Tipo de trabalho a ser executado."
+    },
+    "bookId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identificador único do livro sendo processado."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "todo",
+        "in_progress",
+        "blocked",
+        "needs_review",
+        "approved",
+        "done"
+      ],
+      "description": "Estado atual do ciclo de vida do job."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp ISO 8601 de criação do job."
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp ISO 8601 da última atualização do job."
+    },
+    "requestedBy": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identidade do solicitante (ex: 'human', 'orchestrator')."
+    },
+    "currentStage": {
+      "type": "string",
+      "enum": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release"
+      ],
+      "description": "Estágio atualmente ativo no pipeline."
+    },
+    "stages": {
+      "type": "object",
+      "description": "Mapa de status técnico para cada estágio oficial do pipeline.",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "extraction",
+        "editorial",
+        "entities",
+        "relations",
+        "frontend",
+        "qa",
+        "release"
+      ],
+      "properties": {
+        "source": { "$ref": "#/$defs/stageStatus" },
+        "extraction": { "$ref": "#/$defs/stageStatus" },
+        "editorial": { "$ref": "#/$defs/stageStatus" },
+        "entities": { "$ref": "#/$defs/stageStatus" },
+        "relations": { "$ref": "#/$defs/stageStatus" },
+        "frontend": { "$ref": "#/$defs/stageStatus" },
+        "qa": { "$ref": "#/$defs/stageStatus" },
+        "release": { "$ref": "#/$defs/stageStatus" }
+      }
+    },
+    "humanReviewRequired": {
+      "type": "boolean",
+      "description": "Sinaliza se há necessidade de intervenção/validação humana pendente."
+    },
+    "blockingReasons": {
+      "type": "array",
+      "description": "Lista de motivos ou impedimentos que bloquearam o job.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "description": "Lista de caminhos relativos de artefatos gerados pelo job.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "history": {
+      "type": "array",
+      "description": "Registro cronológico de eventos e transições do job.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["timestamp", "event"],
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "event": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stage": {
+            "type": "string",
+            "enum": [
+              "source",
+              "extraction",
+              "editorial",
+              "entities",
+              "relations",
+              "frontend",
+              "qa",
+              "release"
+            ]
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "stageStatus": {
+      "type": "string",
+      "enum": [
+        "waiting",
+        "ready",
+        "running",
+        "pass",
+        "fail",
+        "blocked",
+        "human_review"
+      ]
+    }
+  }
+}
