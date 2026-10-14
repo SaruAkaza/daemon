@@ -200,6 +200,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
 
   let opsClient = null;
   let opsEventsConnection = null;
+  let renderVersion = 0;
 
   function connectOpsEvents() {
     if (state.mode !== 'restricted_preview' || !opsClient) return;
@@ -234,6 +235,8 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
           state.ops.reviews = revs;
         } else if (eventType === 'control_updated') {
           state.ops.controlState = payload;
+        } else if (eventType === 'batch_updated') {
+          state.ops.batch = payload;
         }
         if (state.routeInfo.kind.startsWith('ops')) {
           renderActiveView();
@@ -435,6 +438,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
   }
 
   async function renderActiveView() {
+    const version = ++renderVersion;
     clearNode(mainContent);
 
     // Sync search input value with state query
@@ -455,13 +459,13 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     } else if (kind === 'search') {
       renderSearchView();
     } else if (kind === 'ops') {
-      await renderOpsDashboard('overview');
+      await renderOpsDashboard('overview', version);
     } else if (kind === 'ops-queue') {
-      await renderOpsDashboard('queue');
+      await renderOpsDashboard('queue', version);
     } else if (kind === 'ops-reviews') {
-      await renderOpsDashboard('reviews');
+      await renderOpsDashboard('reviews', version);
     } else if (kind === 'ops-review') {
-      await renderOpsReviewDetail(id);
+      await renderOpsReviewDetail(id, version);
     } else {
       renderNotFoundView();
     }
@@ -1184,6 +1188,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
         state.ops.controlState = snap.controlState || { pausedBooks: [], priorityOverrides: {}, reprocessIntents: {} };
         state.ops.commands = snap.commands || [];
         state.ops.reviews = snap.reviews || [];
+        state.ops.batch = snap.batch || null;
       }
     } catch (err) {
       console.warn('Ops snapshot error:', err);
@@ -1430,8 +1435,9 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     root.appendChild(backdrop);
   }
 
-  async function renderOpsDashboard(activeTab = 'overview') {
+  async function renderOpsDashboard(activeTab = 'overview', version = renderVersion) {
     await loadOpsData();
+    if (version !== renderVersion) return;
 
     const container = document.createElement('div');
     container.className = 'site-ops-view';
@@ -1439,7 +1445,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     const header = document.createElement('header');
     header.className = 'site-ops-header';
     const h1 = document.createElement('h1');
-    h1.textContent = 'Painel de Controle Operacional — Release B';
+    h1.textContent = state.ops.batch ? 'Painel de Controle Operacional — Release C' : 'Painel de Controle Operacional — Release B';
     const sub = document.createElement('p');
     sub.className = 'site-ops-meta';
     const opDisplay = state.ops.operatorId ? escapeHtml(state.ops.operatorId) : 'Não identificado';
@@ -1460,6 +1466,17 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
 
     header.appendChild(h1);
     header.appendChild(sub);
+    if (state.ops.batch) {
+      const batchInfo = document.createElement('p');
+      batchInfo.textContent = `Motor ativo: ${state.ops.batch.activeBooks.length}/${state.ops.batch.concurrency} livros. Aprovação privada exige revisão humana; publicação tem validação própria.`;
+      header.appendChild(batchInfo);
+      if (state.ops.batch.fatalError) {
+        const engineError = document.createElement('p');
+        engineError.setAttribute('role', 'alert');
+        engineError.textContent = `Motor interrompido: ${state.ops.batch.fatalError}`;
+        header.appendChild(engineError);
+      }
+    }
     container.appendChild(header);
 
     // Nav tabs
@@ -1489,13 +1506,15 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
 
     const totalBooks = catalog && catalog.books ? catalog.books.length : 281;
     const pausedBooks = (state.ops.controlState && state.ops.controlState.pausedBooks) || [];
-    const pauseList = (state.ops.controlState && state.ops.controlState.pauseRequests) || pausedBooks;
-    const doneBooks = catalog && catalog.books ? catalog.books.filter((b) => b.pipelineStatus === 'DONE' || b.pipelineStatus === 'READY_FOR_HUMAN_APPROVAL').length : 0;
-    const runningBooks = catalog && catalog.books ? catalog.books.filter((b) => b.pipelineStatus === 'RUNNING').length : 0;
+    const pauseList = state.ops.batch ? state.ops.batch.books.filter((b) => b.paused) : ((state.ops.controlState && state.ops.controlState.pauseRequests) || pausedBooks);
+    const batchBooks = state.ops.batch && state.ops.batch.books;
+    const operationalBooks = batchBooks || (catalog && catalog.books) || [];
+    const doneBooks = operationalBooks.filter((b) => b.pipelineStatus === 'DONE' || b.pipelineStatus === 'APPROVED_PRIVATE').length;
+    const runningBooks = operationalBooks.filter((b) => b.pipelineStatus === 'RUNNING').length;
 
     const cards = [
       { label: 'Total Acervo', value: totalBooks },
-      { label: 'Concluídos', value: doneBooks },
+      { label: 'Aprovados', value: doneBooks },
       { label: 'Em Execução', value: runningBooks },
       { label: 'Revisão Pendente', value: pendingReviews.length },
       { label: 'Pausa Solicitada', value: pauseList.length },
@@ -1569,7 +1588,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       qH2.textContent = 'Controle de Fila e Prioridade de Livros';
       queueSec.appendChild(qH2);
 
-      const booksList = catalog && catalog.books ? catalog.books.slice(0, 50) : [];
+      const booksList = operationalBooks.slice(0, 50);
       const table = document.createElement('table');
       table.className = 'site-ops-table';
 
@@ -1580,18 +1599,24 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       const tbody = document.createElement('tbody');
       for (const b of booksList) {
         const tr = document.createElement('tr');
-        const isPauseRequested = (
+        const isPauseRequested = state.ops.batch ? b.paused : (
           (state.ops.controlState && state.ops.controlState.pauseRequests && state.ops.controlState.pauseRequests.includes(b.bookId)) ||
           pausedBooks.includes(b.bookId)
         );
         const priorityOverrides = (state.ops.controlState && state.ops.controlState.priorityOverrides) || {};
-        const prio = priorityOverrides[b.bookId] || 100;
+        const prio = b.priorityWeight || priorityOverrides[b.bookId] || 100;
 
         const tdBook = document.createElement('td');
         tdBook.textContent = b.title || b.bookId;
 
         const tdStatus = document.createElement('td');
         tdStatus.textContent = isPauseRequested ? 'PAUSA SOLICITADA' : (b.pipelineStatus || 'WAITING');
+        if (state.ops.batch && b.currentStage) {
+          const stageNames = { source: 'Fonte', extraction: 'Extração', editorial: 'Editorial', entities: 'Entidades', relations: 'Relações', frontend: 'Apresentação', qa: 'Validação', release: 'Publicação pendente' };
+          const stageInfo = document.createElement('small');
+          stageInfo.textContent = ` ${stageNames[b.currentStage] || b.currentStage} (${b.completedStages}/7)`;
+          tdStatus.appendChild(stageInfo);
+        }
 
         const tdPrio = document.createElement('td');
         tdPrio.textContent = String(prio);
@@ -1660,6 +1685,49 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
           });
         });
         tdActions.appendChild(prioBtn);
+
+        if (state.ops.batch) {
+          const stageSelect = document.createElement('select');
+          stageSelect.setAttribute('aria-label', `Etapa para reprocessar ${b.title || b.bookId}`);
+          for (const [value, label] of [['SOURCE', 'Fonte'], ['EXTRACTION', 'Extração'], ['EDITORIAL', 'Editorial'], ['ENTITIES', 'Entidades'], ['RELATIONS', 'Relações'], ['FRONTEND', 'Apresentação'], ['QA', 'Validação final']]) {
+            const option = document.createElement('option');
+            option.value = value;
+            option.textContent = label;
+            stageSelect.appendChild(option);
+          }
+          tdActions.appendChild(stageSelect);
+          const reprocessBtn = document.createElement('button');
+          reprocessBtn.type = 'button';
+          reprocessBtn.textContent = 'Reprocessar';
+          reprocessBtn.addEventListener('click', () => ensureOperatorId((opId) => {
+            const stage = stageSelect.value;
+            openRiskModal({
+              title: 'Reprocessar etapa', riskLevel: 'MEDIUM', targetBookId: b.bookId,
+              message: `Reexecutar a etapa selecionada e suas sucessoras para "${b.bookId}"?`,
+              onConfirm: async (res) => {
+                await opsClient.submitCommand({ commandType: 'REPROCESS_STAGE', bookId: b.bookId,
+                  payload: { stage }, reason: res.reason, operatorId: opId, confirmation: { confirmed: true } });
+                await loadOpsData();
+                renderActiveView();
+              },
+            });
+          }));
+          tdActions.appendChild(reprocessBtn);
+          const dequeueBtn = document.createElement('button');
+          dequeueBtn.type = 'button';
+          dequeueBtn.textContent = 'Retirar da fila';
+          dequeueBtn.addEventListener('click', () => ensureOperatorId((opId) => openRiskModal({
+            title: 'Retirar livro da fila', riskLevel: 'MEDIUM', targetBookId: b.bookId,
+            message: `Retirar "${b.bookId}" após a etapa atual terminar?`,
+            onConfirm: async (res) => {
+              await opsClient.submitCommand({ commandType: 'DEQUEUE_BOOK', bookId: b.bookId,
+                reason: res.reason, operatorId: opId, confirmation: { confirmed: true } });
+              await loadOpsData();
+              renderActiveView();
+            },
+          })));
+          tdActions.appendChild(dequeueBtn);
+        }
 
         tr.appendChild(tdBook);
         tr.appendChild(tdStatus);
@@ -1736,8 +1804,9 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     mainContent.appendChild(container);
   }
 
-  async function renderOpsReviewDetail(reviewId) {
+  async function renderOpsReviewDetail(reviewId, version = renderVersion) {
     await loadOpsData();
+    if (version !== renderVersion) return;
 
     const review = (state.ops.reviews || []).find((r) => r.reviewId === reviewId);
     const container = document.createElement('div');
@@ -1778,7 +1847,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     const probH2 = document.createElement('h2');
     probH2.textContent = 'Problema Identificado';
     const probP = document.createElement('p');
-    probP.textContent = review.problem;
+    probP.textContent = review.problem || review.summary || '';
     probSec.appendChild(probH2);
     probSec.appendChild(probP);
     container.appendChild(probSec);
@@ -1842,6 +1911,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
                 commandType: 'APPROVE_REVIEW',
                 bookId: review.bookId,
                 reviewId: review.reviewId,
+                payload: review.snapshotSha256 ? { snapshotSha256: review.snapshotSha256 } : {},
                 reason: res.reason,
                 operatorId: opId,
                 confirmation: { confirmed: true, typedConfirmation: res.typedConfirmation },
@@ -1871,6 +1941,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
                 commandType: 'REJECT_REVIEW',
                 bookId: review.bookId,
                 reviewId: review.reviewId,
+                payload: review.snapshotSha256 ? { snapshotSha256: review.snapshotSha256 } : {},
                 reason: res.reason,
                 operatorId: opId,
                 confirmation: { confirmed: true },
@@ -1900,6 +1971,7 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
                 commandType: 'REQUEST_CORRECTION',
                 bookId: review.bookId,
                 reviewId: review.reviewId,
+                payload: review.snapshotSha256 ? { snapshotSha256: review.snapshotSha256 } : {},
                 reason: res.reason,
                 operatorId: opId,
                 confirmation: { confirmed: true },
@@ -1913,6 +1985,10 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
       btnRow.appendChild(reqCorBtn);
 
       decSec.appendChild(btnRow);
+    } else if (review.status === 'SUPERSEDED') {
+      const retired = document.createElement('p');
+      retired.textContent = `Revisão substituída: ${review.supersededReason || 'As entradas ou etapas foram alteradas.'}`;
+      decSec.appendChild(retired);
     } else {
       const resH2 = document.createElement('h2');
       resH2.textContent = 'Decisão Registrada';

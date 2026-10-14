@@ -118,6 +118,8 @@ class OpsRequestHandler:
             "reviews": reviews,
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
+        if self.command_processor.orchestrator:
+            snapshot["batch"] = self.command_processor.orchestrator.snapshot()
         return 200, {"Content-Type": "application/json; charset=utf-8"}, canonical_json_bytes(snapshot)
 
     def _handle_get_commands(self) -> tuple[int, dict[str, str], bytes]:

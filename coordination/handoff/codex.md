@@ -1,5 +1,36 @@
 # Handoff - Codex
 
+## 2026-10-14 — Motor privado da Release C
+
+- Branch `codex/release-c-batch-orchestrator`, baseada em
+  `codex/legacy-publication-rights` (`fff33473`, PR #2). Status `needs_review`.
+- `scripts/orchestrator/`: fila persistente, até três livros ativos,
+  checkpoints com hashes/gates, dois retries transitórios (2s/8s), recuperação
+  após kill, invalidação da etapa/sucessoras e proteção contra resultados tardios.
+  Runtime externo ao checkout com lease POSIX; nenhum dado canônico foi alterado.
+- Comandos do painel conectados ao motor via `CommandProcessor`; servidor
+  privado compartilha a instância de `ReviewStore`. Modo público rejeita motor.
+  SSE mostra progresso; corrigida duplicação de telas durante eventos concorrentes.
+- Decisão humana deve citar o hash do snapshot. Aprovação técnica resulta em
+  `APPROVED_PRIVATE` e job `approved`, mantendo `release=waiting`. Não usar o
+  `DONE` técnico simplificado do plano para contornar o `GateEngine` canônico.
+  Revisões obsoletas são substituídas sem inventar decisões humanas.
+- CLI: `python -m scripts.orchestrator --demo --runtime-dir /tmp/daemon-demo --serve`.
+  Cinco DOCXs sintéticos; nenhum livro real processado ou aprovado. Executores
+  reais de extração/editorial/entidades/relações/frontend/QA ainda precisam
+  de integração e certificação. A factory exige adapters e gates independentes.
+- Validação local: 983 Python (28 novos, incluindo Chromium e kill/restart),
+  46 Node, cobertura 65,92%; lint, sintaxe, dados, cobertura, sincronização,
+  reconciliação e plano de migração aprovados. Demonstração CLI executada.
+- Arquivos compartilhados tocados: `scripts/ops/{command_processor,review_store,
+  ops_server}.py`, `scripts/agents/preview_server.py`, `docs/assets/site-{ui,
+  state,ops}.mjs`. Faça merge/pull antes de alterá-los.
+- Relatório: `docs/reports/2026-10-14-release-c-validation.md`.
+  Contrato e uso: `docs/reference/batch-orchestrator.md`.
+- Próximo trabalho: conectar executores reais com gates de limpeza/proveniência/
+  páginas/cobertura; resolver as pendências do PR #2 antes de uma onda real.
+  Não elevar de três para cinco vagas sem evidências e aprovação humana.
+
 ## 2026-10-14 — Plano e staging privado da migração
 
 - Continuação no PR #2, branch `codex/legacy-publication-rights`.
