@@ -12,8 +12,8 @@ from scripts.agents.archive_inventory_loader import (
 )
 
 
-def test_archive_inventory_loader_loads_281_books_unworked_by_default():
-    loader = ArchiveInventoryLoader()
+def test_archive_inventory_loader_loads_281_books_unworked_by_default(tmp_path):
+    loader = ArchiveInventoryLoader(runtime_dir=tmp_path)
     books = loader.load_inventory()
     assert len(books) == 281
     # Check default fields of an unworked book
@@ -160,13 +160,13 @@ def test_archive_inventory_loader_relation_source_mismatch_fails_closed():
 
 
 
-def test_archive_inventory_loader_loads_real_animalidade_runtime_artifacts():
-    loader = ArchiveInventoryLoader()
+def test_archive_inventory_loader_loads_certified_synthetic_artifacts(certified_archive_runtime):
+    loader = ArchiveInventoryLoader(runtime_dir=certified_archive_runtime)
     books = loader.load_inventory()
     assert len(books) == 281
 
     anim = next(b for b in books if b["bookId"] == "animalidade")
-    # Animalidade has real accepted bundle in .daemon_runtime with 56 entities and 164 relations
+    # Load certified bundles through the real reader without private developer data.
     assert len(anim["entities"]) == 56
     assert len(anim["relations"]) == 164
     assert anim["pipelineStatus"] in ("RUNNING", "NEEDS_HUMAN_REVIEW", "WAITING")

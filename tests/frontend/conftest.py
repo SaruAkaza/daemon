@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import pytest
 
-from scripts.agents.canonical_json import canonical_json_bytes, compute_result_manifest_hash
+from scripts.agents.canonical_json import canonical_json_bytes
 from scripts.agents.frontend_projector import FrontendProjector
 from scripts.agents.preview_projector import LocalPreviewProjector
 from scripts.agents.preview_server import PreviewServer
@@ -190,119 +190,60 @@ def site_url(site_preview_env):
     return site_preview_env["site_url"]
 
 
-def _setup_synthetic_archive_runtime(runtime_dir: Path) -> Path:
-    jobs_dir = runtime_dir / "jobs"
-    jobs_dir.mkdir(parents=True, exist_ok=True)
-    job_data = {
-        "schemaVersion": "1.0",
-        "jobId": "JOB-ANIM-001",
-        "kind": "book_ingestion",
-        "bookId": "animalidade",
-        "status": "in_progress",
-        "createdAt": "2026-09-09T17:12:08.418844+00:00",
-        "updatedAt": "2026-09-09T18:56:11.482194+00:00",
-        "requestedBy": "human",
-        "currentStage": "relations",
-        "stages": {
-            "source": "pass",
-            "extraction": "pass",
-            "editorial": "pass",
-            "entities": "pass",
-            "relations": "ready",
-            "frontend": "waiting",
-            "qa": "waiting",
-            "release": "waiting",
-        },
-        "humanReviewRequired": False,
-        "blockingReasons": [],
-        "artifacts": [],
-        "history": [],
-    }
-    (jobs_dir / "JOB-ANIM-001.json").write_text(json.dumps(job_data), encoding="utf-8")
-
-    dec_dir = runtime_dir / "audit" / "pilot" / "animalidade" / "decisions"
-    dec_dir.mkdir(parents=True, exist_ok=True)
-    req_dir = runtime_dir / "audit" / "pilot" / "animalidade" / "requests"
-    req_dir.mkdir(parents=True, exist_ok=True)
-
-    ent_manifest = {
-        "bookId": "animalidade",
-        "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
-        "attemptNumber": 1,
-    }
-    ent_manifest_hash = compute_result_manifest_hash(ent_manifest)
-    ent_manifest["resultManifestSha256"] = ent_manifest_hash
-
-    rel_manifest = {
-        "bookId": "animalidade",
-        "resultBundleId": "RB-ANIM-RELATIONS-att2-3c451b57",
-        "attemptNumber": 2,
-        "inputEntitiesBundle": "RB-ANIM-ENTITIES-att1-50691836",
-    }
-    rel_manifest_hash = compute_result_manifest_hash(rel_manifest)
-    rel_manifest["resultManifestSha256"] = rel_manifest_hash
-
-    dec_data = {
-        "decisionId": "DEC-ANIM-001-ENTITIES-01",
-        "decision": "APPROVE",
-        "reviewer": "human-evaluator",
-        "resultBundleId": "RB-ANIM-ENTITIES-att1-50691836",
-        "reviewedResultManifestSha256": ent_manifest_hash,
-    }
-    (dec_dir / "DEC-ANIM-001-ENTITIES-01.json").write_text(json.dumps(dec_data), encoding="utf-8")
-
-    req_data = {
-        "reviewRequestId": "REV-ANIM-001-RELATIONS-02",
-        "stage": "relations",
-        "attemptNumber": 2,
-        "resultBundleId": "RB-ANIM-RELATIONS-att2-3c451b57",
-        "inputEntitiesBundle": "RB-ANIM-ENTITIES-att1-50691836",
-        "reviewedResultManifestSha256": rel_manifest_hash,
-        "status": "NEEDS_HUMAN_REVIEW",
-    }
-    (req_dir / "REV-ANIM-001-RELATIONS-02.json").write_text(json.dumps(req_data), encoding="utf-8")
-
-    ent_bundle = runtime_dir / "bundles" / "accepted" / "RB-ANIM-ENTITIES-att1-50691836"
-    ent_art = ent_bundle / "artifacts"
-    ent_art.mkdir(parents=True, exist_ok=True)
+@pytest.fixture(scope="session")
+def scroll_site_url(tmp_path_factory):
+    runtime_root = tmp_path_factory.mktemp("scroll_site")
+    preview_root = runtime_root / "preview"
+    book_id = "scroll-synthetic"
     entities = [
         {
-            "id": f"ent-anim-{i}",
-            "name": f"Poder Animal {i}",
-            "category": "character_option",
-            "subtype": "poder",
-            "displayType": "Poder",
-            "provenance": {"source": "animalidade", "pages": [1]},
+            "id": f"scroll-{index:03d}",
+            "name": f"Entrada sintética {index:03d}",
+            "category": "core_rule",
+            "provenance": {"source": book_id, "pages": [1]},
+            "content": [{
+                "title": "Conteúdo sintético",
+                "paragraphs": (
+                    [f"Parágrafo sintético {number}: texto para conferir acesso ao conteúdo longo." for number in range(80)]
+                    + ["Fim do conteúdo sintético"]
+                    if index == 0 else ["Entrada sintética para teste de navegação."]
+                ),
+            }],
         }
-        for i in range(56)
+        for index in range(96)
     ]
-    (ent_art / "entities.json").write_text(json.dumps(entities), encoding="utf-8")
-    (ent_bundle / "result-manifest.json").write_bytes(canonical_json_bytes(ent_manifest))
-
-    rel_bundle = runtime_dir / "bundles" / "accepted" / "RB-ANIM-RELATIONS-att2-3c451b57"
-    rel_art = rel_bundle / "artifacts"
-    rel_art.mkdir(parents=True, exist_ok=True)
-    relations = [
-        {
-            "relationId": f"rel-anim-{i}",
-            "type": "CAN_CHOOSE_POWER" if i < 108 else "HAS_WEAKNESS",
-            "sourceEntityId": "ent-anim-0",
-            "targetEntityId": f"ent-anim-{(i % 55) + 1}",
-            "source": "animalidade",
-        }
-        for i in range(164)
-    ]
-    (rel_art / "relations.json").write_text(json.dumps(relations), encoding="utf-8")
-    (rel_bundle / "result-manifest.json").write_bytes(canonical_json_bytes(rel_manifest))
-
-    return runtime_dir
+    files = FrontendProjector().build([{
+        "bookId": book_id,
+        "title": "Livro sintético longo",
+        "rightsStatus": "UNKNOWN",
+        "publicationMode": "NOT_PUBLIC",
+        "entities": entities,
+        "relations": [],
+    }], "restricted_preview")
+    site_data_dir = preview_root / book_id / "site-data"
+    for relative_path, payload in files.items():
+        destination = site_data_dir / relative_path
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(canonical_json_bytes(payload))
+    server = PreviewServer(
+        preview_root=preview_root,
+        docs_root=Path("docs").resolve(),
+        host="127.0.0.1",
+        port=0,
+        runtime_dir=runtime_root,
+    )
+    server.start()
+    try:
+        yield f"http://127.0.0.1:{server.port}/?site=1&preview={book_id}"
+    finally:
+        server.stop()
 
 
 @pytest.fixture(scope="session")
-def archive_preview_env(tmp_path_factory):
+def archive_preview_env(tmp_path_factory, certified_archive_runtime):
     runtime_root = tmp_path_factory.mktemp("daemon_archive_runtime")
     preview_root = runtime_root / "preview"
-    synthetic_runtime = _setup_synthetic_archive_runtime(runtime_root / "runtime")
+    synthetic_runtime = certified_archive_runtime
 
     projector = LocalPreviewProjector()
     projector.project_archive_preview(
@@ -312,7 +253,7 @@ def archive_preview_env(tmp_path_factory):
     )
 
     docs_root = Path("docs").resolve()
-    server = PreviewServer(preview_root=preview_root, docs_root=docs_root, host="127.0.0.1", port=0)
+    server = PreviewServer(preview_root=preview_root, docs_root=docs_root, host="127.0.0.1", port=0, runtime_dir=runtime_root)
     server.start()
 
     yield {

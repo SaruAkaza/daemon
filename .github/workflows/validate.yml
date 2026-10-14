@@ -42,6 +42,12 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install Chromium for browser tests
+        run: python -m playwright install --with-deps chromium
+
+      - name: Frontend module tests
+        run: node --test tests/frontend/*.test.mjs
+
       - name: Agent tests
         run: python -m pytest tests/agents -q
 
@@ -55,4 +61,7 @@ jobs:
         run: python scripts/check_book_coverage.py
 
       - name: Check frontend syntax
-        run: node --check docs/assets/app.js
+        run: |
+          for file in docs/assets/*.js docs/assets/*.mjs; do
+            node --check "$file" || exit 1
+          done

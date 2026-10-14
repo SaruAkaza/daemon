@@ -6,6 +6,15 @@ Repositorio para transformar a biblioteca em `Livros/` em uma referencia digital
 
 O 5e.tools organiza conteudo de RPG como entidades filtraveis, com busca, filtros, fontes e paginas de detalhe. Este repositorio usa essa arquitetura como inspiracao, mas a taxonomia e os dados sao do sistema Daemon/Trevas presente na pasta `Livros`.
 
+## Estado da consolidação
+
+A integração de 2026-10-14 reúne o pipeline, o frontend MVP, o catálogo ampliado,
+o painel operacional e as correções de relações em uma branch para revisão.
+Resultados, commits de origem, limites de publicação e trabalho restante estão
+em [Consolidação técnica](docs/reports/2026-10-14-consolidation-validation.md).
+Inventário e testes aprovados não significam que os 281 livros estejam revisados
+ou autorizados para publicação.
+
 ## Estrutura proposta
 
 - `Livros/`: arquivos fonte originais.

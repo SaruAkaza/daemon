@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import pytest
+from playwright.sync_api import expect
 
 
 def test_layout_preserves_entity_and_search(page, site_url):
@@ -548,41 +549,51 @@ def test_interactive_touch_targets_mobile(page, site_url):
         assert not overflow_search, f"Horizontal overflow on search view at {width}px"
 
 
-def test_desktop_and_mobile_scroll_interactions(page, site_url):
-    """Verify that desktop panels and search views scroll with mouse wheel,
-    panels have bounded heights, and mobile allows natural vertical document scroll."""
-    # 1. Desktop Search view scroll
-    page.set_viewport_size({"width": 1280, "height": 720})
-    page.goto(site_url + "#/search")
-    page.wait_for_selector(".site-search-results", timeout=10000)
-    box = page.locator(".site-main-content").bounding_box()
+def _wheel_to_end(page, panel, last_content):
+    assert panel.evaluate("el => el.scrollHeight > el.clientHeight"), "Fixture must require scrolling"
+    before = panel.evaluate("el => el.scrollTop")
+    box = panel.bounding_box()
     assert box is not None
     page.mouse.move(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
-    page.mouse.wheel(0, 300)
-    page.wait_for_timeout(200)
-    assert page.locator(".site-main-content").evaluate("el => el.scrollTop") >= 0
+    page.mouse.wheel(0, panel.evaluate("el => el.scrollHeight"))
+    page.wait_for_function(
+        "({panel, before}) => panel.scrollTop > before",
+        arg={"panel": panel.element_handle(), "before": before},
+        timeout=5000,
+    )
+    expect(last_content).to_be_in_viewport()
 
-    # 2. Entity browser panels scroll independently with bounded heights
-    page.goto(site_url + "#/entity/a")
-    page.wait_for_selector('[data-entity-id="a"]', timeout=10000)
+
+@pytest.mark.parametrize("width", [1280, 1440])
+@pytest.mark.parametrize("layout", ["classic", "balanced", "advanced"])
+def test_desktop_search_and_entity_panels_scroll_to_last_content(page, scroll_site_url, width, layout):
+    page.set_viewport_size({"width": width, "height": 720})
+    page.add_init_script(f"localStorage.setItem('daemonSite.layout', '{layout}')")
+    page.goto(scroll_site_url + "#/search")
+    expect(page.locator(".site-search-result-card")).to_have_count(96)
+    _wheel_to_end(page, page.locator(".site-main-content"), page.locator(".site-search-result-card").last)
+
+    page.goto(scroll_site_url + "#/entity/scroll-000")
+    page.wait_for_selector('[data-entity-id="scroll-000"]', timeout=10000)
     list_panel = page.locator(".site-list-panel")
     detail_panel = page.locator(".site-detail-panel")
-    assert list_panel.evaluate("el => window.getComputedStyle(el).overflowY") == "auto"
-    assert detail_panel.evaluate("el => window.getComputedStyle(el).overflowY") == "auto"
+    _wheel_to_end(page, list_panel, list_panel.locator(".site-entity-row").last)
+    _wheel_to_end(page, detail_panel, detail_panel.get_by_text("Fim do conteúdo sintético", exact=True))
+    assert page.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth")
 
-    shell_h = page.locator(".site-shell").evaluate("el => el.clientHeight")
-    list_h = list_panel.evaluate("el => el.clientHeight")
-    assert list_h <= shell_h, f"List panel height {list_h}px expanded beyond shell {shell_h}px"
 
-    # 3. Mobile 390x844 allows vertical scrolling without horizontal overflow
-    page.set_viewport_size({"width": 390, "height": 844})
-    page.goto(site_url + "#/search")
-    page.wait_for_selector(".site-search-results", timeout=10000)
-    page.mouse.move(195, 300)
-    page.mouse.wheel(0, 300)
-    page.wait_for_timeout(200)
-    overflow = page.evaluate("() => document.documentElement.scrollWidth > document.documentElement.clientWidth")
-    assert not overflow
+@pytest.mark.parametrize("width", [390, 768])
+def test_mobile_document_scroll_reaches_last_result(page, scroll_site_url, width):
+    page.set_viewport_size({"width": width, "height": 844})
+    page.goto(scroll_site_url + "#/search")
+    expect(page.locator(".site-search-result-card")).to_have_count(96)
+    assert page.evaluate("document.scrollingElement.scrollHeight > document.scrollingElement.clientHeight")
+    before = page.evaluate("document.scrollingElement.scrollTop")
+    page.mouse.move(width / 2, 400)
+    page.mouse.wheel(0, page.evaluate("document.scrollingElement.scrollHeight"))
+    page.wait_for_function("before => document.scrollingElement.scrollTop > before", arg=before, timeout=5000)
+    expect(page.locator(".site-search-result-card").last).to_be_in_viewport()
+    assert page.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth")
 
 
 def test_books_catalog_filters_and_stepper_strict(page, site_url):
