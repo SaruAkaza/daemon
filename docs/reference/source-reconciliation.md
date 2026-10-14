@@ -74,3 +74,6 @@ decisão sobre direitos e do aceite de release.
 Revisar os candidatos do inventário histórico e as versões efetivamente usadas
 pelos pilotos; registrar decisões de migração e direitos. Em seguida, aplicar a
 migração por estágio e usar o projetor público para os modos permitidos.
+
+As propostas concretas e a materialização em runtime isolado estão descritas em
+[Preparação privada da migração de proveniência](source-migration.md).

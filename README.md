@@ -21,6 +21,11 @@ somente de leitura: `python scripts/reconcile_sources.py` e
 `python scripts/reconcile_sources.py --check`. Veja
 [Reconciliação de fontes legadas](docs/reference/source-reconciliation.md).
 
+O plano de migração em `data/index/source-migration-plan.json` registra as
+mudanças propostas e as pendências de versões/páginas. A preparação de cópias
+privadas para revisão usa `python scripts/prepare_source_migration.py --stage`;
+veja [Preparação da migração](docs/reference/source-migration.md).
+
 ## Estrutura proposta
 
 - `Livros/`: arquivos fonte originais.

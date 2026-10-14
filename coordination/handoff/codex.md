@@ -1,5 +1,35 @@
 # Handoff - Codex
 
+## 2026-10-14 — Plano e staging privado da migração
+
+- Continuação no PR #2, branch `codex/legacy-publication-rights`.
+  O CI de `b316432` passou antes desta extensão.
+- Auditoria: nenhum dos 38 pilotos contém campos de páginas de origem;
+  11.431 objetos com conteúdo. Não inferir página `1` nem transformar índices
+  de parágrafos em páginas para fazer o gate passar.
+- `scripts/prepare_source_migration.py`: diagnóstico por leitura, `--write-plan`,
+  `--check` e `--stage`. O CI executa somente `--check`, sem staging do acervo.
+- Plano salvo: `data/index/source-migration-plan.json`. Inclui hashes dos inputs
+  e candidatos, mudanças de raiz antes/depois, auditoria de páginas e bloqueios.
+- 38 candidatos foram materializados fora do checkout no runtime privado:
+  8.838.526 bytes. Pacote identificado pelo hash
+  `cdeda640ea8da31555de2db47d7ba8d026ceea7a79d279d4d1ccd7555ca573f3`.
+  Outra máquina pode regenerar o pacote usando `--stage`.
+- Os candidatos propõem corrigir/normalizar 33 `sourcePath`s e acrescentam
+  variante física e revisão. IDs legados, referências, regras, valores,
+  conteúdo e páginas são preservados. Tudo continua `NEEDS_HUMAN_REVIEW`.
+- Nenhum candidato foi promovido. Não há modo de aplicação canônica nessa
+  ferramenta. Alterações de inputs ou manifestos exigem regeneração do plano.
+- Validação local: 955 Python (32 novos), 46 Node, cobertura 64,65%; lint,
+  JSONs/schemas, cobertura, sincronização, sintaxe e verificações por leitura
+  aprovados. Testes de limites, locks, edições existentes, symlinks e falhas de
+  disco verificam que os originais e decisões existentes ficam intactos.
+- Relatório: `docs/reports/2026-10-14-source-migration-preparation.md`.
+  Contrato: `docs/reference/source-migration.md`.
+- Próximo trabalho: evidências de versões e localizadores de páginas nos
+  estágios de extração/editorial, antes de aplicar a migração definitiva.
+  Direitos e release permanecem sujeitos aos manifestos e gates próprios.
+
 ## 2026-10-14 — Reconciliação de fontes e manifestos pendentes
 
 - Continuação na branch `codex/legacy-publication-rights`, PR #2 em rascunho.

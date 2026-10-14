@@ -63,6 +63,9 @@ jobs:
       - name: Verify source reconciliation without writing
         run: python scripts/reconcile_sources.py --check
 
+      - name: Verify source migration plan without staging
+        run: python scripts/prepare_source_migration.py --check
+
       - name: Check book coverage
         run: python scripts/check_book_coverage.py
 
