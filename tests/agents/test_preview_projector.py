@@ -53,6 +53,35 @@ def test_project_local_preview_success(workspace_with_data: Path, tmp_path: Path
     assert len(loaded["entities"]) == 2
 
 
+def test_canonical_relations_reach_legacy_and_site_preview(workspace_with_data: Path, tmp_path: Path):
+    canonical_relation = {
+        "id": "rel-canonical",
+        "type": "CAN_CHOOSE_POWER",
+        "sourceEntityId": "creature-lobo",
+        "targetEntityId": "power-faro",
+        "relationOntologyVersion": "relations-v2",
+    }
+    (workspace_with_data / "data" / "entities" / "relations.json").write_text(
+        json.dumps([canonical_relation]), encoding="utf-8"
+    )
+
+    out_path = LocalPreviewProjector().project_local_preview(
+        workspace_root=workspace_with_data,
+        preview_root=tmp_path / ".daemon_runtime" / "preview",
+        book_id="animalidade",
+        rights_status="UNKNOWN",
+        publication_mode="NOT_PUBLIC",
+    )
+
+    legacy = json.loads((out_path / "index.json").read_text(encoding="utf-8"))
+    site_book = json.loads(
+        (out_path / "site-data" / "books" / "animalidade.json").read_text(encoding="utf-8")
+    )
+    assert legacy["relations"] == [canonical_relation]
+    assert [relation["type"] for relation in site_book["relations"]] == ["CAN_CHOOSE_POWER"]
+    assert site_book["relations"][0]["relationId"] == "rel-canonical"
+
+
 def test_project_local_preview_frontend_contract_compliance(workspace_with_data: Path, tmp_path: Path):
     projector = LocalPreviewProjector()
     preview_root = tmp_path / ".daemon_runtime" / "preview"

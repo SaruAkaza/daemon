@@ -72,15 +72,11 @@ class LocalPreviewProjector:
                         data = json.load(f)
                         if isinstance(data, list):
                             entities.extend(data)
-                        else:
-                            entities.append(data)
-
-            relations: list[dict[str, Any]] = []
-            rel_file = entities_dir / "relations.json"
-            if rel_file.exists():
-                with open(rel_file, encoding="utf-8") as f:
-                    rdata = json.load(f)
-                    relations = rdata if isinstance(rdata, list) else [rdata]
+                        elif isinstance(data, dict):
+                            if "entities" in data and isinstance(data["entities"], list):
+                                entities.extend(data["entities"])
+                            else:
+                                entities.append(data)
 
             book_meta_file = Path(workspace_root) / "data" / "books" / f"{book_id}.json"
             if book_meta_file.exists():
@@ -95,8 +91,14 @@ class LocalPreviewProjector:
                 "bookId": book_id,
                 "title": book_id.capitalize(),
                 "entities": entities,
-                "relations": relations,
+                "relations": [],
             }
+
+        rel_file = Path(workspace_root) / "data" / "entities" / "relations.json"
+        if rel_file.exists():
+            with open(rel_file, encoding="utf-8") as f:
+                rdata = json.load(f)
+                pilot_data["relations"] = rdata if isinstance(rdata, list) else [rdata]
 
         # Normalize required metadata for legacy index.json
         pilot_data.setdefault("source", pilot_data.get("bookId", book_id))

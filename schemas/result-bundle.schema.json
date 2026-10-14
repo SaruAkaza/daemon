@@ -48,6 +48,11 @@
       "pattern": "^[a-f0-9]{64}$",
       "description": "Hash SHA-256 do result-manifest."
     },
+    "inputManifestSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Hash SHA-256 do manifesto de entrada do Execution Bundle correspondente."
+    },
     "executionResultPath": {
       "type": "string",
       "const": "execution-result.json"
@@ -88,4 +93,3 @@
     }
   }
 }
-
