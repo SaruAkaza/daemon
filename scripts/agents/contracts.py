@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from jsonschema import Draft202012Validator
-from jsonschema.exceptions import SchemaError, ValidationError
+from jsonschema.exceptions import SchemaError
 from referencing import Registry, Resource
 from referencing.jsonschema import DRAFT202012
 

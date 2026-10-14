@@ -2,10 +2,8 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
 from pathlib import Path
 import shutil
-from typing import Any
 
 from scripts.agents.application_runtime import ApplicationRuntimeConfig
 from scripts.agents.patch_applier import CandidateArtifact

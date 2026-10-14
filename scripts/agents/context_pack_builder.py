@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import copy
 from pathlib import Path
-from typing import Any, Iterable, Mapping
+from typing import Any, Iterable
 
 from scripts.agents.context_loader import ContextLoader
 from scripts.agents.contracts import validate_payload

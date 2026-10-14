@@ -10,7 +10,8 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.agents.relation_compatibility import RelationCompatibilityValidator
+# Direct CLI execution requires the repository root on sys.path first.
+from scripts.agents.relation_compatibility import RelationCompatibilityValidator  # noqa: E402
 
 
 class HistoricalRelationsAuditor:

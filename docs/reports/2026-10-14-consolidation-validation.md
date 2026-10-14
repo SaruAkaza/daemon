@@ -39,6 +39,13 @@ como destino de edição.
   acesso ao último resultado/parágrafo.
 - O workflow passa a instalar Chromium, executar os testes dos módulos Node e
   verificar a sintaxe de todos os arquivos JS e MJS do frontend.
+- Restaurados lint Python, limite mínimo existente de cobertura e verificação
+  de sincronização dos dados publicados. A sincronização agora é conferida por
+  leitura, sem reconstruir ou publicar conteúdo durante o CI.
+- O teste de falha de permissões exercita explicitamente Windows e POSIX. A
+  simulação anterior dependia de subprocessos Windows e não verificava a falha
+  correspondente no Linux.
+- Removidos imports e variáveis não usados para recuperar o gate de lint.
 
 ## Validação local
 
@@ -48,15 +55,16 @@ separada dos resultados locais.
 
 | Verificação | Resultado |
 | --- | --- |
-| Suíte Python, exceto navegador | 805 aprovados, 2 ignorados |
-| Suíte de navegador Chromium | 28 aprovados |
+| Suíte Python completa, incluindo Chromium | 839 aprovados, 2 ignorados |
+| Suíte de navegador Chromium, contida na suíte completa | 28 aprovados |
 | Testes de rolagem, contidos na suíte de navegador | 8 aprovados |
 | Testes dos módulos Node | 46 aprovados |
 | Validação dos JSONs e schemas existentes | PASS |
 | Cobertura de páginas | 281 livros, nenhum erro |
 | Sintaxe do frontend | 6 arquivos JS/MJS, PASS |
 | Sincronização das áreas publicadas | 14 arquivos idênticos e resumo idêntico |
-| Lint dos arquivos Python ajustados na consolidação | PASS |
+| Lint de todos os scripts Python | PASS |
+| Cobertura automatizada | 63,50%; mínimo existente de 15% preservado |
 
 Os dois testes ignorados exigem criação de symlinks, indisponível com as permissões
 Windows usadas na validação. Eles permanecem na suíte; não foram removidos ou
@@ -65,11 +73,12 @@ transformados em aprovação.
 Comandos principais:
 
 ```text
-python -m pytest -q --ignore=tests/frontend
-python -m pytest tests/frontend -q
+python -m pytest -q --cov=scripts --cov-report=term --cov-fail-under=15
 node --test tests/frontend/*.test.mjs
+ruff check scripts/
 python scripts/validate_data.py
 python scripts/check_book_coverage.py
+python scripts/check_published_data_sync.py
 node --check <cada arquivo .js e .mjs em docs/assets>
 ```
 

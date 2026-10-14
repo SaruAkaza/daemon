@@ -181,7 +181,7 @@ class PilotJobPreparer:
             audit_store = PilotAuditStore(audit_base_dir=runtime_base / "audit" / "pilot")
             audit_store_ready = True
 
-            coord = PilotCoordinator(audit_store=audit_store, runtime_root=runtime_base)
+            PilotCoordinator(audit_store=audit_store, runtime_root=runtime_base)
             coordinator_ready = True
         except Exception as e:
             errors.append(f"Failed to initialize runtime coordinators: {e}")

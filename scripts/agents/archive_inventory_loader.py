@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Any
 
 from scripts.agents.canonical_json import (
-    canonical_json_bytes,
     compute_result_manifest_hash,
     sha256_file,
 )

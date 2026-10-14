@@ -13,7 +13,6 @@ from scripts.agents.content_validator import ContentValidator
 from scripts.agents.contracts import validate_payload
 from scripts.agents.execution_validator import (
     ExecutionResultValidator,
-    ExecutionValidationVerdict,
 )
 from scripts.agents.patch_applier import PatchApplier
 from scripts.agents.precondition_validator import PreconditionValidator

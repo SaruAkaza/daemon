@@ -2,12 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import hashlib
-from pathlib import Path
-from typing import Any
 
 from scripts.agents.application_policy import ApplicationPolicy
 from scripts.agents.application_runtime import ApplicationRuntimeConfig
-from scripts.agents.change_set import ChangeOperation, ChangeSet
+from scripts.agents.change_set import ChangeSet
 from scripts.agents.content_validator import ContentValidator
 
 

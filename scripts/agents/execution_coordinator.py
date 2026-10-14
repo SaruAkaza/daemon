@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from scripts.agents.context_materializer import ContextMaterializer
-from scripts.agents.contracts import ContractValidationError, validate_payload
+from scripts.agents.contracts import validate_payload
 from scripts.agents.execution_adapter import ExecutionAdapter, RawExecutionResponse
 from scripts.agents.execution_profile import ExecutionProfile
 from scripts.agents.execution_validator import (

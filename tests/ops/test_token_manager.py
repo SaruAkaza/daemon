@@ -64,13 +64,22 @@ def test_stale_token_rotated_on_reinit(tmp_path):
     tm2.cleanup()
 
 
-def test_acl_failure_fails_closed(tmp_path, monkeypatch):
+@pytest.mark.parametrize("platform", ["win32", "linux"])
+def test_permission_setup_failure_fails_closed(tmp_path, monkeypatch, platform):
     tm = TokenManager(runtime_dir=tmp_path)
+    monkeypatch.setattr("scripts.ops.token_manager.sys.platform", platform)
+    monkeypatch.setenv("USERNAME", "synthetic-test-user")
 
     def mock_subprocess_run(*args, **kwargs):
         return subprocess.CompletedProcess(args=args, returncode=1, stderr=b"Access denied")
 
-    monkeypatch.setattr(subprocess, "run", mock_subprocess_run)
+    if platform == "win32":
+        monkeypatch.setattr(subprocess, "run", mock_subprocess_run)
+    else:
+        def reject_chmod(*args, **kwargs):
+            raise PermissionError("Synthetic permission failure")
+
+        monkeypatch.setattr(Path, "chmod", reject_chmod)
 
     with pytest.raises(RuntimeError) as exc:
         tm.initialize()

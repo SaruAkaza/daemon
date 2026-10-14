@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import json
-from typing import Any
 
 from scripts.agents.application_runtime import ResourceBounds
 from scripts.agents.change_set import ChangeOperation, ChangeSet

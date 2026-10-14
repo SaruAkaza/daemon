@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.agents.pilot_review import AUTOMATED_AGENT_IDENTIFIERS
+# Direct CLI execution requires the repository root on sys.path first.
+from scripts.agents.pilot_review import AUTOMATED_AGENT_IDENTIFIERS  # noqa: E402
 
 
 class MigrationSecurityError(Exception):

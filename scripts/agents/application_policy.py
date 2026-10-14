@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import fnmatch
 import os
-from pathlib import Path
 from typing import Sequence
 from dataclasses import dataclass
 

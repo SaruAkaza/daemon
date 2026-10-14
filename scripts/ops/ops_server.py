@@ -2,8 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 import json
-from pathlib import Path
-from typing import Any, Iterator
+from typing import Iterator
 import urllib.parse
 
 from scripts.agents.canonical_json import canonical_json_bytes

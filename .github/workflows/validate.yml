@@ -42,6 +42,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Lint Python scripts
+        run: ruff check scripts/
+
       - name: Install Chromium for browser tests
         run: python -m playwright install --with-deps chromium
 
@@ -52,13 +55,16 @@ jobs:
         run: python -m pytest tests/agents -q
 
       - name: Full test suite
-        run: python -m pytest -q
+        run: python -m pytest -q --cov=scripts --cov-report=term --cov-fail-under=15
 
       - name: Validate data
         run: python scripts/validate_data.py
 
       - name: Check book coverage
         run: python scripts/check_book_coverage.py
+
+      - name: Check published data synchronization
+        run: python scripts/check_published_data_sync.py
 
       - name: Check frontend syntax
         run: |

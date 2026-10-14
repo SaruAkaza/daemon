@@ -143,7 +143,6 @@ def validate_projection(files: dict[str, dict[str, Any]]) -> None:
         type_ = entry.get("type")
         display_type = entry.get("displayType")
         entry_book_id = entry.get("bookId")
-        entry_book_title = entry.get("bookTitle")
         tags = entry.get("tags")
         search_text = entry.get("searchText")
 

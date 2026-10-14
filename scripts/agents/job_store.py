@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Any
 
 from scripts.agents.contracts import (
-    ContractValidationError,
     load_json,
     validate_payload,
 )
