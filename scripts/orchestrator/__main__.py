@@ -7,6 +7,8 @@ from pathlib import Path
 import time
 
 from scripts.agents.preview_server import PreviewServer
+from scripts.agents.frontend_projector import FrontendProjector
+from scripts.agents.canonical_json import canonical_json_bytes
 from scripts.orchestrator.batch_orchestrator import BatchOrchestrator
 
 
@@ -51,11 +53,10 @@ def main() -> int:
             if args.serve:
                 site_data = runtime / "preview/site-data"
                 site_data.mkdir(parents=True, exist_ok=True)
-                for filename, key in (("catalog.json", "books"), ("search-index.json", "entries")):
+                for filename, payload in FrontendProjector().build([], "restricted_preview").items():
                     path = site_data / filename
                     if not path.exists():
-                        path.write_text(json.dumps({"schemaVersion": "1.0", "mode": "restricted_preview",
-                                                    key: []}), encoding="utf-8")
+                        path.write_bytes(canonical_json_bytes(payload))
                 server = PreviewServer(runtime / "preview", docs_root=project / "docs", port=args.port,
                                        runtime_dir=runtime, orchestrator=engine)
                 server.start()

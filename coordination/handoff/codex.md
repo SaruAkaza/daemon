@@ -19,12 +19,16 @@
   Cinco DOCXs sintéticos; nenhum livro real processado ou aprovado. Executores
   reais de extração/editorial/entidades/relações/frontend/QA ainda precisam
   de integração e certificação. A factory exige adapters e gates independentes.
-- Validação local: 983 Python (28 novos, incluindo Chromium e kill/restart),
-  46 Node, cobertura 65,92%; lint, sintaxe, dados, cobertura, sincronização,
+- Validação local: 984 Python (29 novos, incluindo Chromium e kill/restart),
+  46 Node, cobertura 65,91%; lint, sintaxe, dados, cobertura, sincronização,
   reconciliação e plano de migração aprovados. Demonstração CLI executada.
+- O preview conectado usa o runtime exato do motor para stores/token; não usa
+  outro runtime de um diretório pai. A CLI gera o catálogo vazio com o projetor
+  existente. Ambos os casos foram conferidos no ambiente real e no navegador.
 - Arquivos compartilhados tocados: `scripts/ops/{command_processor,review_store,
   ops_server}.py`, `scripts/agents/preview_server.py`, `docs/assets/site-{ui,
-  state,ops}.mjs`. Faça merge/pull antes de alterá-los.
+  state,ops}.mjs`, `scripts/ops/token_manager.py`, `docs/assets/styles.css`.
+  Faça merge/pull antes de alterá-los.
 - Relatório: `docs/reports/2026-10-14-release-c-validation.md`.
   Contrato e uso: `docs/reference/batch-orchestrator.md`.
 - Próximo trabalho: conectar executores reais com gates de limpeza/proveniência/

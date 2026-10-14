@@ -1504,16 +1504,16 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     const metricsGrid = document.createElement('div');
     metricsGrid.className = 'site-ops-metrics-grid';
 
-    const totalBooks = catalog && catalog.books ? catalog.books.length : 281;
+    const batchBooks = state.ops.batch && state.ops.batch.books;
+    const totalBooks = batchBooks ? batchBooks.length : (catalog && catalog.books ? catalog.books.length : 281);
     const pausedBooks = (state.ops.controlState && state.ops.controlState.pausedBooks) || [];
     const pauseList = state.ops.batch ? state.ops.batch.books.filter((b) => b.paused) : ((state.ops.controlState && state.ops.controlState.pauseRequests) || pausedBooks);
-    const batchBooks = state.ops.batch && state.ops.batch.books;
     const operationalBooks = batchBooks || (catalog && catalog.books) || [];
     const doneBooks = operationalBooks.filter((b) => b.pipelineStatus === 'DONE' || b.pipelineStatus === 'APPROVED_PRIVATE').length;
     const runningBooks = operationalBooks.filter((b) => b.pipelineStatus === 'RUNNING').length;
 
     const cards = [
-      { label: 'Total Acervo', value: totalBooks },
+      { label: batchBooks ? 'Livros no lote' : 'Total Acervo', value: totalBooks },
       { label: 'Aprovados', value: doneBooks },
       { label: 'Em Execução', value: runningBooks },
       { label: 'Revisão Pendente', value: pendingReviews.length },

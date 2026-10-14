@@ -16,6 +16,9 @@ O painel autenticado conecta pausa, retomada, prioridade, reprocessamento,
 retirada da fila e decisões humanas ao motor. Exibe etapa/progresso e recebe
 atualizações por SSE. Renderizações antigas são descartadas para impedir telas
 de revisão duplicadas quando chegam vários eventos próximos.
+O preview conectado usa o runtime exato do motor, mesmo quando existe outro
+`.daemon_runtime` em um diretório pai. A CLI gera o catálogo vazio pelo projetor
+existente, preservando o contrato do frontend e os dados já presentes.
 
 A conclusão técnica fica `READY_FOR_HUMAN_APPROVAL`; uma decisão humana ligada
 ao SHA-256 do snapshot produz `APPROVED_PRIVATE` e job canônico `approved`.
@@ -27,10 +30,10 @@ são marcadas `SUPERSEDED`, sem fabricar uma decisão humana.
 
 | Verificação | Resultado |
 | --- | --- |
-| Suíte Python completa, incluindo Chromium | 983 aprovados |
-| Novos cenários Python da Release C | 28 aprovados |
+| Suíte Python completa, incluindo Chromium | 984 aprovados |
+| Novos cenários Python da Release C | 29 aprovados |
 | Suíte Node do frontend | 46 aprovados |
-| Cobertura de scripts | 65,92% |
+| Cobertura de scripts | 65,91% |
 | Ruff e sintaxe dos módulos frontend | Aprovados |
 | Dados/schemas e cobertura do inventário histórico | Aprovados |
 | Sincronização publicada | 14 áreas e resumo sincronizados |

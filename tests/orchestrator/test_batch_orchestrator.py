@@ -350,3 +350,21 @@ def test_public_server_cannot_attach_batch_engine(tmp_path):
         with pytest.raises(ValueError, match="restricted_preview"):
             PreviewServer(tmp_path / "preview", mode="public", runtime_dir=engine.runtime_dir,
                           orchestrator=engine)
+
+
+def test_preview_uses_exact_batch_runtime_when_ancestor_has_another_runtime(tmp_path):
+    from scripts.agents.preview_server import PreviewServer
+    existing = tmp_path / ".daemon_runtime/ops"
+    existing.mkdir(parents=True)
+    token = existing / "ops_token"
+    token.write_text("sentinel-existing-runtime")
+    with engine_for(tmp_path) as engine:
+        server = PreviewServer(tmp_path / "preview", port=0, runtime_dir=engine.runtime_dir, orchestrator=engine)
+        try:
+            server.start()
+            assert server.token_manager.ops_dir == engine.runtime_dir / "ops"
+            assert server.command_store.stores_dir == engine.reviews.stores_dir
+            assert server.review_store is engine.reviews
+        finally:
+            server.stop()
+    assert token.read_text() == "sentinel-existing-runtime"

@@ -89,7 +89,8 @@ class PreviewServer:
         if orchestrator is not None and mode != "restricted_preview":
             raise ValueError("Batch execution is available only in restricted_preview mode")
         if orchestrator is not None:
-            if get_ops_stores_dir(runtime_dir) != orchestrator.reviews.stores_dir:
+            runtime_dir = runtime_dir if runtime_dir is not None else orchestrator.runtime_dir
+            if Path(runtime_dir).resolve() != orchestrator.runtime_dir:
                 raise ValueError("Preview and batch must use the same private runtime")
 
         self.host = host
@@ -105,8 +106,9 @@ class PreviewServer:
         self.port = port
 
         if self.mode == "restricted_preview":
-            stores_dir = get_ops_stores_dir(runtime_dir)
-            self.token_manager = TokenManager(runtime_dir=runtime_dir)
+            stores_dir = orchestrator.reviews.stores_dir if orchestrator else get_ops_stores_dir(runtime_dir)
+            self.token_manager = TokenManager(runtime_dir=runtime_dir,
+                                             ops_dir=orchestrator.runtime_dir / "ops" if orchestrator else None)
             self.token_manager.initialize()
             self.command_store = CommandStore(stores_dir=stores_dir)
             self.audit_log = CommandAuditLog(stores_dir=stores_dir)

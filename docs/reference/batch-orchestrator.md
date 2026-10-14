@@ -63,6 +63,8 @@ adaptador/gate exige aumentar sua versão para invalidar checkpoints antigos.
   `batch/{state.json,checkpoints/,attempts/}`. Uma lease do sistema operacional
   impede dois motores no mesmo runtime e é liberada após um processo morto.
   O servidor e o motor precisam compartilhar a mesma instância de `ReviewStore`.
+  Quando conectado ao motor, o preview usa esse runtime exato para os stores e
+  o token; não reutiliza outro `.daemon_runtime` encontrado em um diretório pai.
 - Cada tentativa usa um diretório UUID. Checkpoints guardam fonte, input,
   artefatos, hashes, schemas/versões transitivos, epoch, tentativa e timestamps.
   Arquivos, schemas e gates são novamente verificados antes da retomada.

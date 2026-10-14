@@ -3,6 +3,8 @@ from pathlib import Path
 from playwright.sync_api import expect
 
 from scripts.agents.preview_server import PreviewServer
+from scripts.agents.frontend_projector import FrontendProjector
+from scripts.agents.canonical_json import canonical_json_bytes
 from scripts.orchestrator.batch_orchestrator import BatchOrchestrator
 from scripts.orchestrator.demo import build_executors, create_sources
 from tests.orchestrator.helpers import command, pump
@@ -21,11 +23,12 @@ def test_batch_panel_controls_live_engine_and_hash_bound_approval(page, tmp_path
             # Seed only site navigation metadata; the operational queue comes from the engine.
             site_data = runtime / "preview/site-data"
             site_data.mkdir(parents=True)
-            (site_data / "catalog.json").write_text('{"schemaVersion":"1.0","mode":"restricted_preview","books":[]}')
-            (site_data / "search-index.json").write_text('{"schemaVersion":"1.0","mode":"restricted_preview","entries":[]}')
+            for filename, payload in FrontendProjector().build([], "restricted_preview").items():
+                (site_data / filename).write_bytes(canonical_json_bytes(payload))
             page.goto(f"http://127.0.0.1:{server.port}/?site=1#/ops/queue")
             expect(page.get_by_role("heading", name="Painel de Controle Operacional — Release C")).to_be_visible()
             expect(page.get_by_text("Demonstração A", exact=True)).to_be_visible()
+            expect(page.get_by_text("Erro ao carregar dados do site", exact=False)).to_have_count(0)
             page.get_by_role("button", name="Identificar Operador", exact=True).click()
             page.get_by_label("Identificador do Operador", exact=False).fill("human-browser-tester")
             page.get_by_role("button", name="Confirmar Identidade", exact=False).click()
