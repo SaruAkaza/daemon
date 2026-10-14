@@ -1,0 +1,3297 @@
+{
+  "version": 1,
+  "sourceTreeOid": "aa1d987070c1dae03e6caa38fbf53e26c50abeeb",
+  "inventorySha256": "fc62f4603c5c16ac8dd332511086857669680e224778d869eaf44868410f8de4",
+  "summary": {
+    "trackedSourceCount": 269,
+    "inventorySourceCount": 281,
+    "inventoryPathsAbsent": 281,
+    "pilotCount": 38,
+    "identifiedPilotCount": 38,
+    "sourceVariantCount": 38,
+    "unresolvedPilotCount": 0
+  },
+  "inventoryReview": [
+    {
+      "sourceId": "4killers",
+      "inventoriedPath": "Livros/4killers.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/4killers.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "a-assassina",
+      "inventoriedPath": "Livros/A Assassina.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "abismo",
+      "inventoriedPath": "Livros/Abismo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Abismo.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "abismo-infinito-quick-start",
+      "inventoriedPath": "Livros/Abismo-Infinito-Quick-Start.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Abismo-Infinito-Quick-Start.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "alastores-a-justica-infernal",
+      "inventoriedPath": "Livros/Alastores - A Justiça Infernal.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Alastores - A Justiça Infernal.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "alianca-daemon-01",
+      "inventoriedPath": "Livros/Aliança Daemon 01.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Aliança Daemon 01.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "animalidade",
+      "inventoriedPath": "Livros/animalidade.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/animalidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anime-rpg-powers",
+      "inventoriedPath": "Livros/Anime RPG - Powers.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Anime RPG - Powers.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anime-rpg-supers-monstros-e-viloes",
+      "inventoriedPath": "Livros/Anime RPG - Supers - Monstros e Vilões.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Anime RPG - Supers - Monstros e Vilões.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anime-rpg-supers-powers",
+      "inventoriedPath": "Livros/Anime RPG - Supers - Powers.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Anime RPG - Supers - Powers.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-a-cidade-de-prata",
+      "inventoriedPath": "Livros/Anjos_-_A_Cidade_de_Prata.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Anjos_A_Cidade_de_Prata.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-a-cidade-de-prata-angelicos-sicarios",
+      "inventoriedPath": "Livros/Anjos - A Cidade de Prata - Angélicos Sicários.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Anjos - A Cidade de Prata - Angélicos Sicários.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-cacadores-alados",
+      "inventoriedPath": "Livros/Anjos cacadores-alados.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Anjos cacadores-alados.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-caidos-dragao-brasil-especial-16-biblioteca-elfica",
+      "inventoriedPath": "Livros/Anjos-caidos-dragao-brasil-especial-16-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-involucro-e-barreira",
+      "inventoriedPath": "Livros/Anjos - Involucro e Barreira.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Anjos_Involucro_e_Barreira_OCR_extraido.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-jyhad-faces-da-fe",
+      "inventoriedPath": "Livros/Anjos Jyhad - Faces da Fé.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Anjos Jyhad - Faces da Fé.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-jyhad-guerra-santa-biblioteca-elfica",
+      "inventoriedPath": "Livros/Anjos Jyhad-guerra-santa-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjos-requiem-de-fe",
+      "inventoriedPath": "Livros/Anjos - Réquiem de Fé.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Anjos - Réquiem de Fé.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjossombras01",
+      "inventoriedPath": "Livros/anjossombras01.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjossombras02",
+      "inventoriedPath": "Livros/anjossombras02.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjossombras03",
+      "inventoriedPath": "Livros/anjossombras03.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjossombras04",
+      "inventoriedPath": "Livros/anjossombras04.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anjossombras05",
+      "inventoriedPath": "Livros/anjossombras05.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "anoes",
+      "inventoriedPath": "Livros/anoes.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Anoes_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "aprimoramentos-1",
+      "inventoriedPath": "Livros/Aprimoramentos 1.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_1_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "aprimoramentos-2",
+      "inventoriedPath": "Livros/Aprimoramentos 2.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_2_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "aprimoramentos-3",
+      "inventoriedPath": "Livros/Aprimoramentos 3.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_3_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "aprimoramentos-4",
+      "inventoriedPath": "Livros/Aprimoramentos 4.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_4_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "aprimoramentostormenta",
+      "inventoriedPath": "Livros/aprimoramentostormenta.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "arcadia-nova-arcadia",
+      "inventoriedPath": "Livros/Arcádia - Nova Arcádia.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Arcadia_Nova_Arcadia_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "arcanis",
+      "inventoriedPath": "Livros/arcanis.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Arcanis_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "archonan",
+      "inventoriedPath": "Livros/archonan.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Archonan_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ark-a-nun-arquivos-de-bel-kalaa",
+      "inventoriedPath": "Livros/Ark-a-nun - Arquivos de Bel-Kalaa.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Ark_a_nun_Arquivos_de_Bel_Kalaa_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "arkanun",
+      "inventoriedPath": "Livros/Arkanun.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Arkanun_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "arkanun-1e-ultra-raro",
+      "inventoriedPath": "Livros/Arkanun-1e-ultra-raro.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Arkanun_1e_Ultra_Raro_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "armadura-magica-de-ataque",
+      "inventoriedPath": "Livros/Armadura Mágica de Ataque.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Armadura_Magica_de_Ataque_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "armamedieval",
+      "inventoriedPath": "Livros/armamedieval.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "armas-da-segunda-guerra",
+      "inventoriedPath": "Livros/Armas da Segunda Guerra.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "armas-da-segunda-guerra-mundial",
+      "inventoriedPath": "Livros/Armas da Segunda Guerra Mundial.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Armas_da_Segunda_Guerra_Mundial_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "armas-de-fogo",
+      "inventoriedPath": "Livros/Armas de Fogo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Armas_de_Fogo_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "armasbrancas",
+      "inventoriedPath": "Livros/armasbrancas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "armasmagicas",
+      "inventoriedPath": "Livros/armasmagicas.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "arquimago2",
+      "inventoriedPath": "Livros/arquimago2.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "arte-da-guerra",
+      "inventoriedPath": "Livros/Arte da Guerra.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Arte_da_Guerra_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "artes-marciais",
+      "inventoriedPath": "Livros/Artes Marciais.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Artes_Marciais_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "assassinos-orientais",
+      "inventoriedPath": "Livros/Assassinos Orientais.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Assassinos_Orientais_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "atributos",
+      "inventoriedPath": "Livros/Atributos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "auras",
+      "inventoriedPath": "Livros/Auras.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "avatar-volume-1",
+      "inventoriedPath": "Livros/avatar_volume_1.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "avatars-vol-2",
+      "inventoriedPath": "Livros/avatars_vol_2.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "batalhas",
+      "inventoriedPath": "Livros/batalhas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "battlemage",
+      "inventoriedPath": "Livros/BattleMage.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/BattleMage.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "biohazard",
+      "inventoriedPath": "Livros/biohazard.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/biohazard_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "blade-marvel",
+      "inventoriedPath": "Livros/Blade Marvel.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Blade_Marvel_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "bruxaria",
+      "inventoriedPath": "Livros/bruxaria.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/bruxaria_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cabala",
+      "inventoriedPath": "Livros/cabala.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Cabala_OCR_alta_qualidade.docx",
+        "Livros/word/feito/cabala.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cabala-2",
+      "inventoriedPath": "Livros/Cabala.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Cabala_OCR_alta_qualidade.docx",
+        "Livros/word/feito/cabala.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "caes-de-guerra",
+      "inventoriedPath": "Livros/Cães de Guerra.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Caes_de_Guerra_OCR_parcial.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "caminhos2",
+      "inventoriedPath": "Livros/Caminhos2.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Caminhos2_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "canislux",
+      "inventoriedPath": "Livros/Canislux.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Canislux_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "capitao-planeta",
+      "inventoriedPath": "Livros/Capitao planeta.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Capitao_planeta_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cdd",
+      "inventoriedPath": "Livros/Cdd.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Cdd_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ceifadores",
+      "inventoriedPath": "Livros/ceifadores.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/ceifadores_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "charadas",
+      "inventoriedPath": "Livros/Charadas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Charadas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ciganos",
+      "inventoriedPath": "Livros/ciganos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/ciganos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cimeria",
+      "inventoriedPath": "Livros/Ciméria.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Ciméria.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "clube-de-caca",
+      "inventoriedPath": "Livros/Clube de Caça.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Clube_de_Caca_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "clube-de-caca-guia-do-jogador",
+      "inventoriedPath": "Livros/Clube de Caça - Guia do Jogador.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Clube_de_Caca_Guia_do_Jogador_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cobaias",
+      "inventoriedPath": "Livros/cobaias.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Cobaias_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cobaias15",
+      "inventoriedPath": "Livros/cobaias15.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "compendio-de-regras-daemon-trevas",
+      "inventoriedPath": "Livros/Compendio de regras DAEMON Trevas.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Compendio de regras DAEMON Trevas.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "conan",
+      "inventoriedPath": "Livros/conan.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Conan_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "corondor",
+      "inventoriedPath": "Livros/Corondor.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Corondor.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cura",
+      "inventoriedPath": "Livros/cura.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Cura_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "cyfell",
+      "inventoriedPath": "Livros/Cyfell.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Cyfell_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daemon-anime-rpg",
+      "inventoriedPath": "Livros/Daemon - Anime RPG.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daemon_Anime_RPG_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daemon-medieval",
+      "inventoriedPath": "Livros/Daemon Medieval.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daemon_Medieval_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daemon-revisado-playtest-alfa-3-6",
+      "inventoriedPath": "Livros/Daemon_Revisado_playtest_alfa_3.6.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daemon_Revisado_playtest_alfa_3_6_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daemon-sem-nivel",
+      "inventoriedPath": "Livros/Daemon-Sem-Nivel.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daemon_Sem_Nivel_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daemon-tormenta",
+      "inventoriedPath": "Livros/Daemon Tormenta.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daemon_Tormenta_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daemonium",
+      "inventoriedPath": "Livros/daemonium.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daemonium_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daiphir-legado-de-sangue",
+      "inventoriedPath": "Livros/Daiphir - Legado de Sangue.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daiphir_Legado_de_Sangue_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "daiphir-legado-de-sangue-biblioteca-elfica",
+      "inventoriedPath": "Livros/Daiphir-legado-de-sangue-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Daiphir_Legado_de_Sangue_Biblioteca_Elfica_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "dbz-rpg",
+      "inventoriedPath": "Livros/DBZ_RPG.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/DBZ_RPG_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "deform",
+      "inventoriedPath": "Livros/deform.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "dem-nio-o-pre-o-do-poder",
+      "inventoriedPath": "Livros/Dem_nio_-_O_Pre_o_do_Poder.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "demon-cthulhu",
+      "inventoriedPath": "Livros/Demon Cthulhu.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Demon_Cthulhu_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "demonios-a-divina-comedia",
+      "inventoriedPath": "Livros/Demônios - A Divina Comédia.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Demonios_A_Divina_Comedia_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "desentsu",
+      "inventoriedPath": "Livros/desentsu.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "devilmaycry",
+      "inventoriedPath": "Livros/Devilmaycry.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "diferencas",
+      "inventoriedPath": "Livros/Diferencas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Diferencas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "domini-urbs-biblioteca-elfica",
+      "inventoriedPath": "Livros/Domini-urbs-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "dragao",
+      "inventoriedPath": "Livros/dragao.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "dragao-brasil-especial-06-trevas",
+      "inventoriedPath": "Livros/Dragão Brasil especial 06 - Trevas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Dragao_Brasil_Especial_06_Trevas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "dragoes-reis-caidos-sistema-daemon",
+      "inventoriedPath": "Livros/Dragoes-Reis-Caidos-Sistema-Daemon.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Dragoes_Reis_Caidos_Sistema_Daemon_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "dragoes2",
+      "inventoriedPath": "Livros/dragoes2.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "elf",
+      "inventoriedPath": "Livros/elf.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "enciclopedia-a10",
+      "inventoriedPath": "Livros/Enciclopedia_A10.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Enciclopedia_A10_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "energia-mistica",
+      "inventoriedPath": "Livros/Energia Mistica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Energia_Mistica_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "equip",
+      "inventoriedPath": "Livros/equip.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "era-dos-herois",
+      "inventoriedPath": "Livros/ERA DOS HERÓIS.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Era_dos_Herois_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "escudos02",
+      "inventoriedPath": "Livros/escudos02.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "etruscos",
+      "inventoriedPath": "Livros/Etruscos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Etruscos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "evolucao-alternativa",
+      "inventoriedPath": "Livros/Evolução Alternativa.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Evolucao_Alternativa_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "existe-uma-cidade-nos-distritos-cujo-unico-objetivo-e-a-satisfac-u00e3o",
+      "inventoriedPath": "Livros/Existe uma cidade nos distritos cujo único objetivo é a satisfaç_U00E3o.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Existe uma cidade nos distritos cujo único objetivo é a satisfaç_U00E3o.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "fadadaluz",
+      "inventoriedPath": "Livros/fadadaluz.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "fadas",
+      "inventoriedPath": "Livros/fadas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Fadas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "fadas-2",
+      "inventoriedPath": "Livros/Fadas 2.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Fadas_2_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "fadas-3-edicao",
+      "inventoriedPath": "Livros/Fadas 3 edição.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Fadas_3_Edicao_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ficha-de-personagem-daemon",
+      "inventoriedPath": "Livros/Ficha de Personagem-Daemon.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Ficha_de_Personagem_Daemon_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ficha-mago-trevas",
+      "inventoriedPath": "Livros/ficha_mago_trevas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Ficha_Mago_Trevas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "frankenstein",
+      "inventoriedPath": "Livros/Frankenstein.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Frankenstein_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "fusd-r6",
+      "inventoriedPath": "Livros/FUSD-R6.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/FUSD_R6_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "gaki",
+      "inventoriedPath": "Livros/gaki.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Gaki_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "gdac-light",
+      "inventoriedPath": "Livros/GdAC - Light.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/GdAC_Light_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "gerador-de-criaturas",
+      "inventoriedPath": "Livros/Gerador de criaturas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Gerador_de_Criaturas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "geradoritem02",
+      "inventoriedPath": "Livros/geradoritem02.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "gigantes-mitologicos",
+      "inventoriedPath": "Livros/Gigantes Mitologicos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Gigantes_Mitologicos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "grimark201",
+      "inventoriedPath": "Livros/grimark201.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "grimorio",
+      "inventoriedPath": "Livros/Grimorio.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Grimorio_OCR_parcial.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "grimorio101",
+      "inventoriedPath": "Livros/Grimorio101.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guerra-de-monstros",
+      "inventoriedPath": "Livros/Guerra de Monstros.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Guerra_de_Monstros_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guerreiros-orientais",
+      "inventoriedPath": "Livros/Guerreiros Orientais.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Guerreiros_Orientais_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-de-armas-de-fogo-3a-edicao",
+      "inventoriedPath": "Livros/Guia de Armas de Fogo - 3a Edição.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Guia_de_Armas_de_Fogo_3a_Edicao_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-de-armas-medievais-3a-edicao",
+      "inventoriedPath": "Livros/Guia de Armas Medievais - 3ª Edição.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Guia_de_Armas_Medievais_3a_Edicao_OCR_parcial.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-de-classes-de-prestigio-biblioteca-elfica",
+      "inventoriedPath": "Livros/Guia-de-classes-de-prestigio-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-de-itens-magicos",
+      "inventoriedPath": "Livros/Guia de Itens Mágicos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Guia_de_Itens_Magicos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-de-monstros-de-arkanum",
+      "inventoriedPath": "Livros/Guia de Monstros de Arkanum.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Guia_de_Monstros_de_Arkanum_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-de-monstros-de-arton",
+      "inventoriedPath": "Livros/Guia de Monstros de Arton.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Guia_de_Monstros_de_Arton_OCR_parcial.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-de-racas-de-arton-tormentarpg",
+      "inventoriedPath": "Livros/guia_de_raças_de_arton_tormentarpg.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-do-aventureiro-de-arton",
+      "inventoriedPath": "Livros/Guia do Aventureiro de Arton.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Guia_do_Aventureiro_de_Arton_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-dos-dragoes-1-biblioteca-elfica",
+      "inventoriedPath": "Livros/Guia-dos-dragoes-1-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-dragoes-vol-ii",
+      "inventoriedPath": "Livros/guia-dragoes_vol-II.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-guerreiro",
+      "inventoriedPath": "Livros/guia_guerreiro.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guia-pericias",
+      "inventoriedPath": "Livros/guia_pericias.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "guiademagias",
+      "inventoriedPath": "Livros/guiademagias.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "harrypotter",
+      "inventoriedPath": "Livros/harrypotter.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "heroismo",
+      "inventoriedPath": "Livros/Heroísmo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Heroismo_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "hi-brazil-biblioteca-elfica",
+      "inventoriedPath": "Livros/Hi-brazil-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "hydora",
+      "inventoriedPath": "Livros/hydora.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Hydora_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "imortal",
+      "inventoriedPath": "Livros/Imortal.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Imortal_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "imortal-a-centelha",
+      "inventoriedPath": "Livros/Imortal - A Centelha.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "imortal-a-centelha-2",
+      "inventoriedPath": "Livros/Imortal-a centelha.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "inquisicao-biblioteca-elfica",
+      "inventoriedPath": "Livros/Inquisicao-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "inquisicao-celestial",
+      "inventoriedPath": "Livros/Inquisição Celestial.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Inquisicao_Celestial_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ismails-anjos-islamicos",
+      "inventoriedPath": "Livros/Ismails - Anjos Islâmicos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Ismails_Anjos_Islamicos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "jedi",
+      "inventoriedPath": "Livros/jedi.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "jiraya",
+      "inventoriedPath": "Livros/JIRAYA.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Jiraya_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "judaismo",
+      "inventoriedPath": "Livros/Judaismo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Judaismo_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "juppongatana",
+      "inventoriedPath": "Livros/juppongatana.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Juppongatana_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "jutsu-e-um-termo-japones-para-tecnica",
+      "inventoriedPath": "Livros/Jutsu é um termo japonês para técnica.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Jutsu é um termo japonês para técnica.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "kidous-arte-das-trevas",
+      "inventoriedPath": "Livros/Kidous - Arte das Trevas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Kidous_Arte_das_Trevas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "kits",
+      "inventoriedPath": "Livros/KITS.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "kits-arton",
+      "inventoriedPath": "Livros/Kits Arton.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Kits_Arton_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "kits-militares",
+      "inventoriedPath": "Livros/Kits Militares.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Kits_Militares_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "kits-orientais",
+      "inventoriedPath": "Livros/Kits Orientais.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Kits Orientais.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "kitsat",
+      "inventoriedPath": "Livros/kitsat.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "kitsdaemon",
+      "inventoriedPath": "Livros/kitsdaemon.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "livrodomal",
+      "inventoriedPath": "Livros/livrodomal.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "lobisomem-a-maldicao-v2-biblioteca-elfica",
+      "inventoriedPath": "Livros/Lobisomem-a-maldicao-v2-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "lobisomem02",
+      "inventoriedPath": "Livros/lobisomem02.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "lobisomemv3",
+      "inventoriedPath": "Livros/LobisomemV3.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "lobisomens",
+      "inventoriedPath": "Livros/lobisomens.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Lobisomens_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "loucura",
+      "inventoriedPath": "Livros/Loucura.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Loucura_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "luz-e-sombra-rpg-livro-de-regras-portugues-do-brasil-br",
+      "inventoriedPath": "Livros/Luz_e_Sombra_RPG_-_Livro_de_Regras_(Português_do_Brasil)(BR).pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "magia-negra",
+      "inventoriedPath": "Livros/Magia Negra.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Magia_Negra_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "magic-para-daemon",
+      "inventoriedPath": "Livros/Magic para Daemon.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Magic_para_Daemon_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mago-sistema-daemon",
+      "inventoriedPath": "Livros/Mago Sistema Daemon.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mago_Sistema_Daemon_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "manobras-de-combate",
+      "inventoriedPath": "Livros/Manobras de Combate.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Manobras_de_Combate_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "manual-de-converscao",
+      "inventoriedPath": "Livros/Manual de Conversção.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "marvel",
+      "inventoriedPath": "Livros/marvel.PDF",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "marvel-rpg-7o-edicao",
+      "inventoriedPath": "Livros/MARVEL RPG 7º Edição.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "masmorra-goblin",
+      "inventoriedPath": "Livros/Masmorra  Goblin.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Masmorra  Goblin.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "masmorras",
+      "inventoriedPath": "Livros/Masmorras.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Masmorras.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mecha",
+      "inventoriedPath": "Livros/mecha.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mecha_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "metropolis",
+      "inventoriedPath": "Livros/metropolis.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "metropolis-2",
+      "inventoriedPath": "Livros/Metropolis (2).pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mitologia-assirio-babilonica",
+      "inventoriedPath": "Livros/Mitologia Assírio-babilônica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mitologia_Assirio_Babilonica_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mitologia-celta",
+      "inventoriedPath": "Livros/Mitologia Celta.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mitologia_Celta_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mitologia-egipcia",
+      "inventoriedPath": "Livros/Mitologia Egípcia.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mitologia_Egipcia_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mitologia-nordica",
+      "inventoriedPath": "Livros/Mitologia Nórdica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mitologia_Nordica_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mitraismo",
+      "inventoriedPath": "Livros/Mitraísmo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mitraismo_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "modulo-basico-expandido-e-modificado",
+      "inventoriedPath": "Livros/Módulo Básico - Expandido e Modificado.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "modulo-combate",
+      "inventoriedPath": "Livros/MÓDULO COMBATE.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Modulo_Combate_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "monges-daemon",
+      "inventoriedPath": "Livros/Monges Daemon.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Monges_Daemon_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mortal-kombat",
+      "inventoriedPath": "Livros/MORTAL KOMBAT.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mortal_Kombat_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mortos-vivos",
+      "inventoriedPath": "Livros/Mortos Vivos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mortos_Vivos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mortos-vivos-2",
+      "inventoriedPath": "Livros/Mortos vivos 2.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mortos_Vivos_2_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "mutacao",
+      "inventoriedPath": "Livros/Mutação.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Mutacao_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "naruto",
+      "inventoriedPath": "Livros/naruto.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Naruto_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "naruto-daemon-2a-ed",
+      "inventoriedPath": "Livros/Naruto-daemon-2ª-Ed.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Naruto_Daemon_2a_Ed_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "naruto-rpg-daemon-2a-edicao",
+      "inventoriedPath": "Livros/Naruto RPG Daemon - 2ª Edição.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Naruto_RPG_Daemon_2a_Edicao_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "neokosmos-biblioteca-elfica",
+      "inventoriedPath": "Livros/Neokosmos-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "neter-khertet-a-cidade-dourada-de-ra-biblioteca-elfica",
+      "inventoriedPath": "Livros/Neter-khertet-a-cidade-dourada-de-ra-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ninjutsu",
+      "inventoriedPath": "Livros/ninjutsu.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Ninjutsu_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "novas-armas-de-fogo",
+      "inventoriedPath": "Livros/Novas Armas de Fogo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Novas_Armas_de_Fogo_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "novo-aeon-guia-basico",
+      "inventoriedPath": "Livros/Novo Aeon - Guia Básico.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Novo_Aeon_Guia_Basico_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "novos-poderes-para-fadas-e-fadas-da-luz",
+      "inventoriedPath": "Livros/Novos poderes para fadas e fadas da Luz.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "o-corvo",
+      "inventoriedPath": "Livros/O Corvo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/O_Corvo_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "o-segredo-das-artes-negras",
+      "inventoriedPath": "Livros/O Segredo das Artes Negras.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/O_Segredo_das_Artes_Negras_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "one-punch-man-rpg",
+      "inventoriedPath": "Livros/One Punch Man RPG.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/One_Punch_Man_RPG_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "onmyodo",
+      "inventoriedPath": "Livros/Onmyodo.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Onmyodo_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ordens-de-ark-a-nun",
+      "inventoriedPath": "Livros/Ordens de Ark-a-nun.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Ordens_de_Ark_a_nun_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "oriente-cronologia",
+      "inventoriedPath": "Livros/Oriente_Cronologia.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Oriente_Cronologia_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "origem-e-descendencia-racial-v-teste",
+      "inventoriedPath": "Livros/Origem e Descendência Racial (v. teste).pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "os-caminhos-secundarios",
+      "inventoriedPath": "Livros/OS CAMINHOS SECUNDARIOS.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Os_Caminhos_Secundarios_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "os-invocadores-de-demencia",
+      "inventoriedPath": "Livros/Os Invocadores de demência.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Os Invocadores de demência.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "pactos",
+      "inventoriedPath": "Livros/pactos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Pactos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "para-preservar-o-equilibrio-entre-o-ceu-eo-inferno",
+      "inventoriedPath": "Livros/Para preservar o equilíbrio entre o Céu eo Inferno.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Para preservar o equilíbrio entre o Céu eo Inferno.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "pets",
+      "inventoriedPath": "Livros/pets.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "phage",
+      "inventoriedPath": "Livros/Phage.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Phage.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "poder",
+      "inventoriedPath": "Livros/poder.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Poder_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "poderes-cabalisticos",
+      "inventoriedPath": "Livros/Poderes Cabalisticos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Poderes_Cabalisticos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "poderes-de-fe-02",
+      "inventoriedPath": "Livros/poderes de fe 02.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Poderes_de_Fe_02_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "poderes-mentais",
+      "inventoriedPath": "Livros/PODERES MENTAIS.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Poderes_Mentais_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "pontos-heroicos",
+      "inventoriedPath": "Livros/Pontos Heróicos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Pontos_Heroicos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "principais-deuses-da-mitologia-n-u00d3rdica",
+      "inventoriedPath": "Livros/PRINCIPAIS DEUSES DA MITOLOGIA N_U00D3RDICA.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/PRINCIPAIS DEUSES DA MITOLOGIA N_U00D3RDICA.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "psi",
+      "inventoriedPath": "Livros/psi.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "racas",
+      "inventoriedPath": "Livros/racas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "ray",
+      "inventoriedPath": "Livros/ray.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "redentor",
+      "inventoriedPath": "Livros/Redentor.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Redentor_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "regra-opcional-ataques-a-objetos",
+      "inventoriedPath": "Livros/Regra Opcional Ataques a Objetos.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Regra Opcional Ataques a Objetos.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "regras-de-boa-convivencia",
+      "inventoriedPath": "Livros/Regras de boa convivência.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Regras de boa convivência.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "revolucao-francesa",
+      "inventoriedPath": "Livros/Revolução Francesa.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Revolucao_Francesa_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "rituais",
+      "inventoriedPath": "Livros/rituais.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Rituais_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "rocknrt",
+      "inventoriedPath": "Livros/rocknrt.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "rpg-dragon-ball-oficial-l-by-fractius",
+      "inventoriedPath": "Livros/RPG Dragon Ball Oficial l By Fractius.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "samurai-shodown",
+      "inventoriedPath": "Livros/Samurai Shodown.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Samurai Shodown.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "samurai-shodown-v-move-list",
+      "inventoriedPath": "Livros/Samurai Shodown V Move List.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Samurai Shodown V Move List.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "samurai-x",
+      "inventoriedPath": "Livros/Samurai X.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Samurai_X_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "samurais",
+      "inventoriedPath": "Livros/Samurais.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Samurais_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "santa-cruz-biblioteca-elfica",
+      "inventoriedPath": "Livros/Santa-cruz-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "santa-cruz-inferno-verde-biblioteca-elfica",
+      "inventoriedPath": "Livros/Santa-cruz-inferno-verde-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "sda-rpg",
+      "inventoriedPath": "Livros/sda_rpg.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "se-eu-pudesse-voar",
+      "inventoriedPath": "Livros/Se Eu Pudesse Voar.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Se_Eu_Pudesse_Voar_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "secundarios",
+      "inventoriedPath": "Livros/secundarios.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "seitas",
+      "inventoriedPath": "Livros/seitas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "sistema-daemon-2-x",
+      "inventoriedPath": "Livros/Sistema-Daemon-2-X.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Sistema_Daemon_2_X_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "sistema-daemon-3-0",
+      "inventoriedPath": "Livros/Sistema-Daemon-3-0.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Sistema_Daemon_3_0_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "sistema-daemon-modulo-basico-dragonslayer-01-e-02",
+      "inventoriedPath": "Livros/Sistema-Daemon-Modulo-Basico-DragonSlayer-01-e-02.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "sobrenatural",
+      "inventoriedPath": "Livros/Sobrenatural.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Sobrenatural_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "spawn",
+      "inventoriedPath": "Livros/Spawn.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Spawn_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "spiritum",
+      "inventoriedPath": "Livros/Spiritum.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Spiritum_OCR_parcial_com_imagens.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "steampunk",
+      "inventoriedPath": "Livros/steampunk.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Steampunk_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "supers",
+      "inventoriedPath": "Livros/Supers.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Supers_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "supers01",
+      "inventoriedPath": "Livros/supers01.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "tabela-de-fadiga-dos-jogadores-e-npc",
+      "inventoriedPath": "Livros/Tabela de Fadiga dos Jogadores e NPC.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Tabela de Fadiga dos Jogadores e NPC.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "tabela-e-regras-para-magos",
+      "inventoriedPath": "Livros/Tabela e Regras para magos.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Tabela e Regras para magos.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "tagmar-daemon",
+      "inventoriedPath": "Livros/Tagmar Daemon.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Tagmar_Daemon_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "tagmar-daemon-versao-completa",
+      "inventoriedPath": "Livros/Tagmar-Daemon-Versao-Completa.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Tagmar_Daemon_Versao_Completa_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "talentos",
+      "inventoriedPath": "Livros/talentos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Talentos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "tartarugasninja",
+      "inventoriedPath": "Livros/tartarugasninja.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "templarios-biblioteca-elfica",
+      "inventoriedPath": "Livros/Templarios-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "terras-natais",
+      "inventoriedPath": "Livros/Terras Natais.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Terras Natais.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "tradicoes-magicas-vodu",
+      "inventoriedPath": "Livros/Tradições Mágicas - Vodu.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Tradicoes_Magicas_Vodu_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "trappers",
+      "inventoriedPath": "Livros/Trappers.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Trappers_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "trev3-fi",
+      "inventoriedPath": "Livros/Trev3-fi.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "trevas-3-0",
+      "inventoriedPath": "Livros/Trevas 3.0.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Trevas_3_0_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "trevas-campanha-epica",
+      "inventoriedPath": "Livros/Trevas - Campanha Épica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Trevas_Campanha_Epica_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "trevas-de-marte",
+      "inventoriedPath": "Livros/Trevas_de_Marte.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Trevas_de_Marte_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "trevas-diego",
+      "inventoriedPath": "Livros/trevas_DIEGO.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Trevas_Diego_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "trevas-do-oriente-28-palacios",
+      "inventoriedPath": "Livros/Trevas do oriente - 28 Palácios.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Trevas_do_Oriente_28_Palacios_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "um-sussurro-nas-trevas",
+      "inventoriedPath": "Livros/Um Sussurro nas Trevas.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Um_Sussurro_nas_Trevas_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "uma-sucubo-em-extase",
+      "inventoriedPath": "Livros/Uma sucúbo em êxtase.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Uma_Sucubo_em_Extase_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "umbral-e-seus-vales",
+      "inventoriedPath": "Livros/Umbral e seus vales.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Umbral_e_seus_Vales_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "universo-daemon-01",
+      "inventoriedPath": "Livros/Universo Daemon #01.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Universo_Daemon_01_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "utupia-d10",
+      "inventoriedPath": "Livros/Utupia d10.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "vampiros-mitologicos",
+      "inventoriedPath": "Livros/Vampiros Mitológicos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Vampiros_Mitologicos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "vantagens",
+      "inventoriedPath": "Livros/Vantagens.docx",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/feito/Vantagens.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "vantagens-regionais-ii",
+      "inventoriedPath": "Livros/Vantagens Regionais II.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Vantagens_Regionais_II_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "varna-chamado-da-guerra",
+      "inventoriedPath": "Livros/Varna - Chamado da Guerra.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/corrigir/Varna_Chamado_da_Guerra_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "vaticano",
+      "inventoriedPath": "Livros/Vaticano.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Vaticano_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "veiculos",
+      "inventoriedPath": "Livros/Veiculos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Veiculos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "venenos",
+      "inventoriedPath": "Livros/venenos.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Venenos_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "vikings",
+      "inventoriedPath": "Livros/vikings.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Vikings_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "vikings-biblioteca-elfica",
+      "inventoriedPath": "Livros/Vikings-biblioteca-elfica.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Vikings_Biblioteca_Elfica_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "watchmen",
+      "inventoriedPath": "Livros/Watchmen.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Watchmen_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "youkai-kyuukai",
+      "inventoriedPath": "Livros/Youkai_Kyuukai.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Youkai_Kyuukai_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "youkais",
+      "inventoriedPath": "Livros/Youkais.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Youkais_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "yuyu-hakusho-rpg-para-daemon",
+      "inventoriedPath": "Livros/yuyu_hakusho_RPG_para_Daemon.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "sourceId": "zoologico",
+      "inventoriedPath": "Livros/Zoologico.pdf",
+      "pathState": "ABSENT_FROM_CURRENT_TREE",
+      "candidatePaths": [
+        "Livros/word/Zoologico_OCR_alta_qualidade.docx"
+      ],
+      "reviewStatus": "NEEDS_HUMAN_REVIEW"
+    }
+  ],
+  "sourceVariants": [
+    {
+      "sourceId": "file-7822aebc3d20aca51fee54dc8126b4bead885100760b5d28eea111ebda5304db",
+      "title": "Anjos - A Cidade de Prata - Angélicos Sicários",
+      "path": "Livros/word/Anjos - A Cidade de Prata - Angélicos Sicários.docx",
+      "extension": ".docx",
+      "sha256": "7822aebc3d20aca51fee54dc8126b4bead885100760b5d28eea111ebda5304db",
+      "gitBlobOid": "0d0a208d670d1e621b8848cfb94f5cb8eb50f2ea",
+      "sizeBytes": 65908
+    },
+    {
+      "sourceId": "file-28ec91d5f865d6853a23951b5dd24ba147fb10687bb3581e9aebd33e838f26ec",
+      "title": "Anjos - Réquiem de Fé",
+      "path": "Livros/word/Anjos - Réquiem de Fé.docx",
+      "extension": ".docx",
+      "sha256": "28ec91d5f865d6853a23951b5dd24ba147fb10687bb3581e9aebd33e838f26ec",
+      "gitBlobOid": "039356acb9a8f553949350e133d8a42a32cb66e2",
+      "sizeBytes": 257200
+    },
+    {
+      "sourceId": "file-2eb203e6adb059d3324465b3f675e3d8f5563fce05b4cb8b40ec86e9b1fd4bb3",
+      "title": "Anjos Jyhad - Faces da Fé",
+      "path": "Livros/word/Anjos Jyhad - Faces da Fé.docx",
+      "extension": ".docx",
+      "sha256": "2eb203e6adb059d3324465b3f675e3d8f5563fce05b4cb8b40ec86e9b1fd4bb3",
+      "gitBlobOid": "8a309159ef0e5d31f10212afedddd458fb1c444b",
+      "sizeBytes": 115095
+    },
+    {
+      "sourceId": "file-365509f62044650c54eb6c2144b982b91361321529844049a7af2185b2067e79",
+      "title": "Anjos cacadores-alados",
+      "path": "Livros/word/Anjos cacadores-alados.docx",
+      "extension": ".docx",
+      "sha256": "365509f62044650c54eb6c2144b982b91361321529844049a7af2185b2067e79",
+      "gitBlobOid": "08c010df7fbc4a45aae20c8a3924a788c3a06f7b",
+      "sizeBytes": 83576
+    },
+    {
+      "sourceId": "file-c5932976320eae825de2ff192a5cb9baf63678be2b31d0d230564cfd2c9610b0",
+      "title": "Daemon_Medieval_OCR_alta_qualidade",
+      "path": "Livros/word/Daemon_Medieval_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "c5932976320eae825de2ff192a5cb9baf63678be2b31d0d230564cfd2c9610b0",
+      "gitBlobOid": "e222652ef22079013d1192937488ac43307878e7",
+      "sizeBytes": 180173
+    },
+    {
+      "sourceId": "file-e5274d90e4418ff6178ad93b121176734220143219ef2cf28554224ee620f9b4",
+      "title": "Daemon_Tormenta_OCR_alta_qualidade",
+      "path": "Livros/word/Daemon_Tormenta_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "e5274d90e4418ff6178ad93b121176734220143219ef2cf28554224ee620f9b4",
+      "gitBlobOid": "bf28b16996190410601eeca30067945b821ac899",
+      "sizeBytes": 267668
+    },
+    {
+      "sourceId": "file-45a231be2c63d0c7a68d8abaf6a9b177a129b015ab3fd6401b73ae31f23cb7d1",
+      "title": "4killers",
+      "path": "Livros/word/feito/4killers.docx",
+      "extension": ".docx",
+      "sha256": "45a231be2c63d0c7a68d8abaf6a9b177a129b015ab3fd6401b73ae31f23cb7d1",
+      "gitBlobOid": "3dbb9edbd6c2c43d89748b9c69414cf4119b9634",
+      "sizeBytes": 19474
+    },
+    {
+      "sourceId": "file-34b13c247dd55e1b067a392bdfb78878669c88f4a4222c87b3ed865ec4f6ae16",
+      "title": "Abismo-Infinito-Quick-Start",
+      "path": "Livros/word/feito/Abismo-Infinito-Quick-Start.docx",
+      "extension": ".docx",
+      "sha256": "34b13c247dd55e1b067a392bdfb78878669c88f4a4222c87b3ed865ec4f6ae16",
+      "gitBlobOid": "279bacd0edc62843b02421177c9a7fb968ccf4ef",
+      "sizeBytes": 21985001
+    },
+    {
+      "sourceId": "file-75982ba9b19e7c2c7db11370b6dfa678665679369f91f7bc18a0404db91011fe",
+      "title": "Abismo",
+      "path": "Livros/word/feito/Abismo.docx",
+      "extension": ".docx",
+      "sha256": "75982ba9b19e7c2c7db11370b6dfa678665679369f91f7bc18a0404db91011fe",
+      "gitBlobOid": "0d8e0b1a0dcfbc1f7ab6b504ec4afab409b6d0d6",
+      "sizeBytes": 8699657
+    },
+    {
+      "sourceId": "file-0988a565aa26707c1bdcef746b4bd188205810eb7dab0be8ad773c752f5943ff",
+      "title": "Alastores - A Justiça Infernal",
+      "path": "Livros/word/feito/Alastores - A Justiça Infernal.docx",
+      "extension": ".docx",
+      "sha256": "0988a565aa26707c1bdcef746b4bd188205810eb7dab0be8ad773c752f5943ff",
+      "gitBlobOid": "51917b4885ebe2ed1e04e1bed93c699bc4a41748",
+      "sizeBytes": 5939833
+    },
+    {
+      "sourceId": "file-88eab4408955ceea522d98c0b0f393313e088c9b8bac84703b4deb5601424dcf",
+      "title": "Aliança Daemon 01",
+      "path": "Livros/word/feito/Aliança Daemon 01.docx",
+      "extension": ".docx",
+      "sha256": "88eab4408955ceea522d98c0b0f393313e088c9b8bac84703b4deb5601424dcf",
+      "gitBlobOid": "3d6b554dfacec769fd7be81d5ebf91ce3f7513a1",
+      "sizeBytes": 17503759
+    },
+    {
+      "sourceId": "file-4781a8f8329b83835c76e979801f93492544f6e9739746b078d976db2c66e9a1",
+      "title": "Anime RPG - Powers",
+      "path": "Livros/word/feito/Anime RPG - Powers.docx",
+      "extension": ".docx",
+      "sha256": "4781a8f8329b83835c76e979801f93492544f6e9739746b078d976db2c66e9a1",
+      "gitBlobOid": "e2cf257582e909815c2f06b9d557b37cb152dbbe",
+      "sizeBytes": 19289717
+    },
+    {
+      "sourceId": "file-01577a5433601380377cbb40a2884d09a74620e41c914e5e2a5b42bec38b9d48",
+      "title": "Anime RPG - Supers - Monstros e Vilões",
+      "path": "Livros/word/feito/Anime RPG - Supers - Monstros e Vilões.docx",
+      "extension": ".docx",
+      "sha256": "01577a5433601380377cbb40a2884d09a74620e41c914e5e2a5b42bec38b9d48",
+      "gitBlobOid": "a84c9774164c8ce092b58f0699628005a471faeb",
+      "sizeBytes": 8066993
+    },
+    {
+      "sourceId": "file-7cc152c16a3dfb0260c2ad9924e33b1a6c6479bc2ceb4af0327ad9c0d53e3133",
+      "title": "Anime RPG - Supers - Powers",
+      "path": "Livros/word/feito/Anime RPG - Supers - Powers.docx",
+      "extension": ".docx",
+      "sha256": "7cc152c16a3dfb0260c2ad9924e33b1a6c6479bc2ceb4af0327ad9c0d53e3133",
+      "gitBlobOid": "1bbf9c29df214242ffe4a7b108e0043e51402af1",
+      "sizeBytes": 35098
+    },
+    {
+      "sourceId": "file-7440864aee0b57206dc2fe4622ec5374e79184250deb877e85bb7af09e95db4d",
+      "title": "Anoes_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Anoes_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "7440864aee0b57206dc2fe4622ec5374e79184250deb877e85bb7af09e95db4d",
+      "gitBlobOid": "c89f4b1fb68155d031f8d6648e903dfc9f2225c5",
+      "sizeBytes": 52060
+    },
+    {
+      "sourceId": "file-e5cf0cec76f50af51bafd7078421e43539bf570664201baf4da70dde6af72f2a",
+      "title": "Aprimoramentos_1_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Aprimoramentos_1_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "e5cf0cec76f50af51bafd7078421e43539bf570664201baf4da70dde6af72f2a",
+      "gitBlobOid": "db5b6067f14d78a49ed586d75f1f6429281ea242",
+      "sizeBytes": 69527
+    },
+    {
+      "sourceId": "file-a1417bcbb1bf3e2003025874d30e53c2477b2e1662c2755c35d114571f474906",
+      "title": "Aprimoramentos_2_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Aprimoramentos_2_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "a1417bcbb1bf3e2003025874d30e53c2477b2e1662c2755c35d114571f474906",
+      "gitBlobOid": "8c88582e047ee590ba607b633d7883838fb9d9ea",
+      "sizeBytes": 47396
+    },
+    {
+      "sourceId": "file-c1022a3730b54bf171bf289244cbc638576b3b56a50d6d433e4eecce84117077",
+      "title": "Aprimoramentos_3_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Aprimoramentos_3_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "c1022a3730b54bf171bf289244cbc638576b3b56a50d6d433e4eecce84117077",
+      "gitBlobOid": "5c52537137fd510ad8073bd9af7c2987353d2d47",
+      "sizeBytes": 64495
+    },
+    {
+      "sourceId": "file-22617317e0be65a150d3631365e1114c609730b263ca708477c7470338f11a56",
+      "title": "Aprimoramentos_4_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Aprimoramentos_4_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "22617317e0be65a150d3631365e1114c609730b263ca708477c7470338f11a56",
+      "gitBlobOid": "d2ea57d72a25460d17269f2ac837ef976db3781b",
+      "sizeBytes": 49616
+    },
+    {
+      "sourceId": "file-1d0cb35d72e3cd55a6c37a28a347c5e165020bdfe68ce8bde9ada54f37d4aa68",
+      "title": "Aprimoramentos_Tormenta_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Aprimoramentos_Tormenta_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "1d0cb35d72e3cd55a6c37a28a347c5e165020bdfe68ce8bde9ada54f37d4aa68",
+      "gitBlobOid": "a00527d6e2ca71ae19a552545b56ff18e5508da3",
+      "sizeBytes": 51221
+    },
+    {
+      "sourceId": "file-53b94bfe4e07a9d93c2a1b01948d531f6b1c5609f90c2f20f421b02727bd16dd",
+      "title": "Arcadia_Nova_Arcadia_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Arcadia_Nova_Arcadia_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "53b94bfe4e07a9d93c2a1b01948d531f6b1c5609f90c2f20f421b02727bd16dd",
+      "gitBlobOid": "7c3e7f751ca282d950ea29a18cc136baf5eca76a",
+      "sizeBytes": 52912
+    },
+    {
+      "sourceId": "file-84ebbb5dd44e90b6cafcc9a832cb87e5c02452e6768dec80a04177f184945864",
+      "title": "Arcanis_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Arcanis_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "84ebbb5dd44e90b6cafcc9a832cb87e5c02452e6768dec80a04177f184945864",
+      "gitBlobOid": "e265795a1539ce79d271e55988e4ca01a931e7ad",
+      "sizeBytes": 52812
+    },
+    {
+      "sourceId": "file-3417cdd01edf011f7865fd689a894b757ccce94b9ae69af994a3bcdea7c190b8",
+      "title": "Archonan_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Archonan_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "3417cdd01edf011f7865fd689a894b757ccce94b9ae69af994a3bcdea7c190b8",
+      "gitBlobOid": "99cafd6acd581d07db0c1ed70581a460e056f411",
+      "sizeBytes": 49162
+    },
+    {
+      "sourceId": "file-57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367",
+      "title": "Corondor",
+      "path": "Livros/word/feito/Corondor.docx",
+      "extension": ".docx",
+      "sha256": "57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367",
+      "gitBlobOid": "62ef94e6c454ce5b6dc53b0f0d11185ce2134107",
+      "sizeBytes": 9466067
+    },
+    {
+      "sourceId": "file-93ddaab9168efa7fe2e0fa249f07b1dbc2ae6da062fe24fb8699900978c4f754",
+      "title": "Diferencas_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Diferencas_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "93ddaab9168efa7fe2e0fa249f07b1dbc2ae6da062fe24fb8699900978c4f754",
+      "gitBlobOid": "addfad1f478a1e516e91dbbee8fac622ffb7e6df",
+      "sizeBytes": 38652
+    },
+    {
+      "sourceId": "file-c4cbcb6c63145d2877148acc8e0cf55fba877ebbb7d8daf4c4578cc9eac48006",
+      "title": "Juppongatana_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Juppongatana_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "c4cbcb6c63145d2877148acc8e0cf55fba877ebbb7d8daf4c4578cc9eac48006",
+      "gitBlobOid": "3b90e7ea5fe67b84100f7917ff7c225f07bf0595",
+      "sizeBytes": 46903
+    },
+    {
+      "sourceId": "file-093c982cc7c9e2df5d2a2c5aaf75187a408ec5a8e82f96ea73fc3976b31ab6af",
+      "title": "Kits Orientais",
+      "path": "Livros/word/feito/Kits Orientais.docx",
+      "extension": ".docx",
+      "sha256": "093c982cc7c9e2df5d2a2c5aaf75187a408ec5a8e82f96ea73fc3976b31ab6af",
+      "gitBlobOid": "86932e9b159104a582c608f2a056d22495082520",
+      "sizeBytes": 2518610
+    },
+    {
+      "sourceId": "file-4d3ead737bb3faff5eb1725a44b283ac094cbc71c1bd32cbaafef94e7b21db7f",
+      "title": "Masmorra  Goblin",
+      "path": "Livros/word/feito/Masmorra  Goblin.docx",
+      "extension": ".docx",
+      "sha256": "4d3ead737bb3faff5eb1725a44b283ac094cbc71c1bd32cbaafef94e7b21db7f",
+      "gitBlobOid": "0256d163d739c2f1f9be65d3c8358cb2397c7063",
+      "sizeBytes": 37411
+    },
+    {
+      "sourceId": "file-0128b83f94eea09fa2b81664cba24370ce0d691b9d46d87c673812214fdb8588",
+      "title": "Masmorras",
+      "path": "Livros/word/feito/Masmorras.docx",
+      "extension": ".docx",
+      "sha256": "0128b83f94eea09fa2b81664cba24370ce0d691b9d46d87c673812214fdb8588",
+      "gitBlobOid": "be4cab738c9d96c8a4bf0eeee9766b6c825cc943",
+      "sizeBytes": 1231543
+    },
+    {
+      "sourceId": "file-d202ccd8ecf6ee8436a85bcfa32a7e789bf79349e5e037f04e0d9c06a87f3441",
+      "title": "Modulo_Combate_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Modulo_Combate_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "d202ccd8ecf6ee8436a85bcfa32a7e789bf79349e5e037f04e0d9c06a87f3441",
+      "gitBlobOid": "eb3ec8aac918145b52f6f5dccc463077f0674d52",
+      "sizeBytes": 47158
+    },
+    {
+      "sourceId": "file-19a866d769848a5937d19aa1578d07debba507505166f0e3e45e30634034dbc1",
+      "title": "Monges_Daemon_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Monges_Daemon_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "19a866d769848a5937d19aa1578d07debba507505166f0e3e45e30634034dbc1",
+      "gitBlobOid": "75deb8a483289dfe4d6b92dd9bf94cdb7d4aeaa3",
+      "sizeBytes": 38177
+    },
+    {
+      "sourceId": "file-5a9575685c5cd832265841692bc27c5336c07de2ac37f62ca9f78c1ef404d8ec",
+      "title": "Novas_Armas_de_Fogo_OCR_alta_qualidade",
+      "path": "Livros/word/feito/Novas_Armas_de_Fogo_OCR_alta_qualidade.docx",
+      "extension": ".docx",
+      "sha256": "5a9575685c5cd832265841692bc27c5336c07de2ac37f62ca9f78c1ef404d8ec",
+      "gitBlobOid": "e58eb29f6f7837eb8c48ee4788faa92cccf38238",
+      "sizeBytes": 37851
+    },
+    {
+      "sourceId": "file-876c4eb1b4260e3e671d6e65cacf2c1d08de44574f4433b8e4bea99d40d2ee19",
+      "title": "Phage",
+      "path": "Livros/word/feito/Phage.docx",
+      "extension": ".docx",
+      "sha256": "876c4eb1b4260e3e671d6e65cacf2c1d08de44574f4433b8e4bea99d40d2ee19",
+      "gitBlobOid": "444f6e4ebcee7c0f3c55bc50c899e1a383a7b260",
+      "sizeBytes": 31165
+    },
+    {
+      "sourceId": "file-6560255e6fee79ca7fccb3439677a5d8633592fb69061da0c7d8bce3ea32d6d1",
+      "title": "Regra Opcional Ataques a Objetos",
+      "path": "Livros/word/feito/Regra Opcional Ataques a Objetos.docx",
+      "extension": ".docx",
+      "sha256": "6560255e6fee79ca7fccb3439677a5d8633592fb69061da0c7d8bce3ea32d6d1",
+      "gitBlobOid": "e758106390dcfe9231612bd1ec3b20fa25189c42",
+      "sizeBytes": 15074
+    },
+    {
+      "sourceId": "file-59b936419ed39bacbadc4e1e62aaa16d0d274222f4b96c0387de43692dc52153",
+      "title": "Spiritum_OCR_parcial_com_imagens",
+      "path": "Livros/word/feito/Spiritum_OCR_parcial_com_imagens.docx",
+      "extension": ".docx",
+      "sha256": "59b936419ed39bacbadc4e1e62aaa16d0d274222f4b96c0387de43692dc52153",
+      "gitBlobOid": "03281a6c1ccb3332cf4c1ab75574663c265969ba",
+      "sizeBytes": 18741312
+    },
+    {
+      "sourceId": "file-43b5d7962610622309958dadb86e31109ec149622be09a1c42a6cea5ee7b31c3",
+      "title": "Vantagens",
+      "path": "Livros/word/feito/Vantagens.docx",
+      "extension": ".docx",
+      "sha256": "43b5d7962610622309958dadb86e31109ec149622be09a1c42a6cea5ee7b31c3",
+      "gitBlobOid": "16baca707a16e089904226e24663d8fc4174cc1b",
+      "sizeBytes": 56771
+    },
+    {
+      "sourceId": "file-216dc621ce8040745a3765d7c86b647123894e51262d09f133e314f57f6566a6",
+      "title": "animalidade",
+      "path": "Livros/word/feito/animalidade.docx",
+      "extension": ".docx",
+      "sha256": "216dc621ce8040745a3765d7c86b647123894e51262d09f133e314f57f6566a6",
+      "gitBlobOid": "5d29232c68c18b12d7c71f9fc87cbe7c19589f9a",
+      "sizeBytes": 217712
+    },
+    {
+      "sourceId": "file-71e66dcb6765128bf8d0c8cc07af46bb5dcfe4baafd092646d1ee7a925dd4aad",
+      "title": "cabala",
+      "path": "Livros/word/feito/cabala.docx",
+      "extension": ".docx",
+      "sha256": "71e66dcb6765128bf8d0c8cc07af46bb5dcfe4baafd092646d1ee7a925dd4aad",
+      "gitBlobOid": "48877d4903134fa79a06f02ddb5f61802f0d99e5",
+      "sizeBytes": 27663
+    }
+  ],
+  "pilotReview": [
+    {
+      "pilotFile": "data/pilot/4killers.json",
+      "pilotSha256": "b878944fd1c1d02f86a80874d06a4e8823491c9c745a42aed04d2c0f793c62a2",
+      "legacySourceId": "4killers",
+      "inventoriedPath": "Livros/4killers.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\4killers.docx",
+      "claimedSourceFile": "4killers.docx",
+      "candidatePaths": [
+        "Livros/word/feito/4killers.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-45a231be2c63d0c7a68d8abaf6a9b177a129b015ab3fd6401b73ae31f23cb7d1",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/abismo-infinito-quick-start.json",
+      "pilotSha256": "01915700fb7f22fb8600db2f00389ea031b925cd8eaaf3c2ab2ab8fcbc59f82c",
+      "legacySourceId": "abismo-infinito-quick-start",
+      "inventoriedPath": "Livros/Abismo-Infinito-Quick-Start.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Abismo-Infinito-Quick-Start.docx",
+      "claimedSourceFile": "Abismo-Infinito-Quick-Start.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Abismo-Infinito-Quick-Start.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-34b13c247dd55e1b067a392bdfb78878669c88f4a4222c87b3ed865ec4f6ae16",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/abismo.json",
+      "pilotSha256": "270264a39df2747c5795023e94ca1341e74f8fd4e06f5f5c85a8db75c13954c6",
+      "legacySourceId": "abismo",
+      "inventoriedPath": "Livros/Abismo.pdf",
+      "claimedSourcePath": "Livros/word/feito/Abismo.docx",
+      "claimedSourceFile": "Abismo.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Abismo.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-75982ba9b19e7c2c7db11370b6dfa678665679369f91f7bc18a0404db91011fe",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/alastores-a-justica-infernal.json",
+      "pilotSha256": "22c77fac9e9dde0a12855e9f4fbf4d99f031289bbdc18186c77c247e1be2f422",
+      "legacySourceId": "alastores-a-justica-infernal",
+      "inventoriedPath": "Livros/Alastores - A Justiça Infernal.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Alastores - A Justiça Infernal.docx",
+      "claimedSourceFile": "Alastores - A Justiça Infernal.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Alastores - A Justiça Infernal.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-0988a565aa26707c1bdcef746b4bd188205810eb7dab0be8ad773c752f5943ff",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/alianca-daemon-01.json",
+      "pilotSha256": "b9afa555faac1c5ddcf36a6733bfe22ec305f713e8e1a9e81b976e585cb3ea04",
+      "legacySourceId": "alianca-daemon-01",
+      "inventoriedPath": "Livros/Aliança Daemon 01.pdf",
+      "claimedSourcePath": "Livros/word/feito/Aliança Daemon 01.docx",
+      "claimedSourceFile": "Aliança Daemon 01.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Aliança Daemon 01.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-88eab4408955ceea522d98c0b0f393313e088c9b8bac84703b4deb5601424dcf",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/animalidade.json",
+      "pilotSha256": "44100fd3a10f519a0833b94d92f92d403799e79eaa5dbd2a024db63c4f0ef56c",
+      "legacySourceId": "animalidade",
+      "inventoriedPath": "Livros/animalidade.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\animalidade.docx",
+      "claimedSourceFile": "animalidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/animalidade.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-216dc621ce8040745a3765d7c86b647123894e51262d09f133e314f57f6566a6",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anime-rpg-powers.json",
+      "pilotSha256": "a43fcbf3c0a06b3cef27f09d31b8e044cd0cd5fea4c29ff643510e3b7d6b32ce",
+      "legacySourceId": "anime-rpg-powers",
+      "inventoriedPath": "Livros/Anime RPG - Powers.pdf",
+      "claimedSourcePath": "Livros/word/feito/Anime RPG - Powers.docx",
+      "claimedSourceFile": "Anime RPG - Powers.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Anime RPG - Powers.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-4781a8f8329b83835c76e979801f93492544f6e9739746b078d976db2c66e9a1",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anime-rpg-supers-monstros-viloes.json",
+      "pilotSha256": "51a41a19866117cf26dcdc2bdbfa91472102e6ea79ac6cf3913bcbc240d4e582",
+      "legacySourceId": "anime-rpg-supers-monstros-viloes",
+      "inventoriedPath": null,
+      "claimedSourcePath": "Livros/word/feito/Anime RPG - Supers - Monstros e Vilões.docx",
+      "claimedSourceFile": "Anime RPG - Supers - Monstros e Vilões.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Anime RPG - Supers - Monstros e Vilões.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-01577a5433601380377cbb40a2884d09a74620e41c914e5e2a5b42bec38b9d48",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anime-rpg-supers-powers.json",
+      "pilotSha256": "b9323a0ea8db1501666b2f6b150d33489e6824b6d3b98906806df0bf62ab5ca3",
+      "legacySourceId": "anime-rpg-supers-powers",
+      "inventoriedPath": "Livros/Anime RPG - Supers - Powers.pdf",
+      "claimedSourcePath": "Livros/word/feito/Anime RPG - Supers - Powers.docx",
+      "claimedSourceFile": "Anime RPG - Supers - Powers.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Anime RPG - Supers - Powers.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-7cc152c16a3dfb0260c2ad9924e33b1a6c6479bc2ceb4af0327ad9c0d53e3133",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-angelicos-sicarios.json",
+      "pilotSha256": "e1ff4bfe9ec06d9be7934a11424741cff342984fd2bb7658e6d7a0744e81f0d7",
+      "legacySourceId": "anjos-angelicos-sicarios",
+      "inventoriedPath": null,
+      "claimedSourcePath": "Livros\\word\\Anjos - A Cidade de Prata - Angélicos Sicários.docx",
+      "claimedSourceFile": "Anjos - A Cidade de Prata - Angélicos Sicários.docx",
+      "candidatePaths": [
+        "Livros/word/Anjos - A Cidade de Prata - Angélicos Sicários.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-7822aebc3d20aca51fee54dc8126b4bead885100760b5d28eea111ebda5304db",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-cacadores-alados.json",
+      "pilotSha256": "3ceb5c6e73880456cc46979c5b9d024c6cc6297bb94fb841c4c6a757fdf282f0",
+      "legacySourceId": "anjos-cacadores-alados",
+      "inventoriedPath": "Livros/Anjos cacadores-alados.pdf",
+      "claimedSourcePath": "Livros\\word\\Anjos cacadores-alados.docx",
+      "claimedSourceFile": "Anjos cacadores-alados.docx",
+      "candidatePaths": [
+        "Livros/word/Anjos cacadores-alados.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-365509f62044650c54eb6c2144b982b91361321529844049a7af2185b2067e79",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-jyhad-faces-da-fe.json",
+      "pilotSha256": "a316efab9c7d259cc338711e892effeadd828c47bf7fb3b3f7e45451b26b1be1",
+      "legacySourceId": "anjos-jyhad-faces-da-fe",
+      "inventoriedPath": "Livros/Anjos Jyhad - Faces da Fé.pdf",
+      "claimedSourcePath": "Livros\\word\\Anjos Jyhad - Faces da Fé.docx",
+      "claimedSourceFile": "Anjos Jyhad - Faces da Fé.docx",
+      "candidatePaths": [
+        "Livros/word/Anjos Jyhad - Faces da Fé.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-2eb203e6adb059d3324465b3f675e3d8f5563fce05b4cb8b40ec86e9b1fd4bb3",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-requiem-de-fe.json",
+      "pilotSha256": "fb7cc10801f43dcd157899cc7317284ad4d80e834bc1b3ca44b1c6aed0f0eae5",
+      "legacySourceId": "anjos-requiem-de-fe",
+      "inventoriedPath": "Livros/Anjos - Réquiem de Fé.pdf",
+      "claimedSourcePath": "Livros\\word\\Anjos - Réquiem de Fé.docx",
+      "claimedSourceFile": "Anjos - Réquiem de Fé.docx",
+      "candidatePaths": [
+        "Livros/word/Anjos - Réquiem de Fé.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-28ec91d5f865d6853a23951b5dd24ba147fb10687bb3581e9aebd33e838f26ec",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/anoes.json",
+      "pilotSha256": "e412f2e6b52146e112ef48a77bcb8517865ef6d20dc55791c4a0a6bf742bba6d",
+      "legacySourceId": "anoes",
+      "inventoriedPath": "Livros/anoes.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Anoes_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Anoes_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Anoes_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-7440864aee0b57206dc2fe4622ec5374e79184250deb877e85bb7af09e95db4d",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-1.json",
+      "pilotSha256": "79430dbe47852a784d7c035fbd36d1cf10a723547976845aee735f0629bb91ab",
+      "legacySourceId": "aprimoramentos-1",
+      "inventoriedPath": "Livros/Aprimoramentos 1.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Aprimoramentos_1_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Aprimoramentos_1_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_1_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-e5cf0cec76f50af51bafd7078421e43539bf570664201baf4da70dde6af72f2a",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-2.json",
+      "pilotSha256": "b31cd8e8f85cbf046e18ed4819d375ae5014f5414c7e15278677613f2a9da9b9",
+      "legacySourceId": "aprimoramentos-2",
+      "inventoriedPath": "Livros/Aprimoramentos 2.pdf",
+      "claimedSourcePath": "Livros\\word\\Aprimoramentos_2_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Aprimoramentos_2_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_2_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-a1417bcbb1bf3e2003025874d30e53c2477b2e1662c2755c35d114571f474906",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-3.json",
+      "pilotSha256": "e999fca35bee6a654c99e65c57b08ad1fde11e13842d560111bfcd4d154586b0",
+      "legacySourceId": "aprimoramentos-3",
+      "inventoriedPath": "Livros/Aprimoramentos 3.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Aprimoramentos_3_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Aprimoramentos_3_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_3_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-c1022a3730b54bf171bf289244cbc638576b3b56a50d6d433e4eecce84117077",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-4.json",
+      "pilotSha256": "9e1cb76a8cf6392327463295b8e8de2fcf4dafdf487b84a2ff92c0936dabb063",
+      "legacySourceId": "aprimoramentos-4",
+      "inventoriedPath": "Livros/Aprimoramentos 4.pdf",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Aprimoramentos_4_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_4_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-22617317e0be65a150d3631365e1114c609730b263ca708477c7470338f11a56",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-tormenta.json",
+      "pilotSha256": "bf2617a7da19d2d2dc471b4f0ed1ada2e7926285253c17fcbb4ef79ab321e60f",
+      "legacySourceId": "aprimoramentos-tormenta",
+      "inventoriedPath": null,
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Aprimoramentos_Tormenta_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Aprimoramentos_Tormenta_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-1d0cb35d72e3cd55a6c37a28a347c5e165020bdfe68ce8bde9ada54f37d4aa68",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/arcadia-nova-arcadia.json",
+      "pilotSha256": "71be29a0644fba95d067af874f0b152e46232407f8f785da162f2e095062c0c6",
+      "legacySourceId": "arcadia-nova-arcadia",
+      "inventoriedPath": "Livros/Arcádia - Nova Arcádia.pdf",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Arcadia_Nova_Arcadia_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Arcadia_Nova_Arcadia_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-53b94bfe4e07a9d93c2a1b01948d531f6b1c5609f90c2f20f421b02727bd16dd",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/arcanis.json",
+      "pilotSha256": "144d790fe5c71d16637350fffefa9f21f8fee9867c979d3c9765b3202a023609",
+      "legacySourceId": "arcanis",
+      "inventoriedPath": "Livros/arcanis.pdf",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Arcanis_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Arcanis_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-84ebbb5dd44e90b6cafcc9a832cb87e5c02452e6768dec80a04177f184945864",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/archonan.json",
+      "pilotSha256": "6fe8d2134fb74515f6da8eca8fc78ba6a83e486df96ebd322292997575e8d976",
+      "legacySourceId": "archonan",
+      "inventoriedPath": "Livros/archonan.pdf",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Archonan_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Archonan_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-3417cdd01edf011f7865fd689a894b757ccce94b9ae69af994a3bcdea7c190b8",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/cabala-forum.json",
+      "pilotSha256": "3b404b429e1eea8c6c3dd5f9873bea51775c8941eb8e5c0ea479f1bc4258bdf9",
+      "legacySourceId": "cabala-forum",
+      "inventoriedPath": null,
+      "claimedSourcePath": "Livros\\word\\feito\\cabala.docx",
+      "claimedSourceFile": "cabala.docx",
+      "candidatePaths": [
+        "Livros/word/feito/cabala.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-71e66dcb6765128bf8d0c8cc07af46bb5dcfe4baafd092646d1ee7a925dd4aad",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/corondor.json",
+      "pilotSha256": "958dd3e8806f1eb7775794976ddb0bcc51d7644f0440f7e88a73d49612eebc85",
+      "legacySourceId": "corondor",
+      "inventoriedPath": "Livros/Corondor.docx",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Corondor.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Corondor.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/daemon-medieval.json",
+      "pilotSha256": "ce8ae7e803f143d6c8f4b0398a2803fd8067efd2b910355bde9f69053b04ab51",
+      "legacySourceId": "daemon-medieval",
+      "inventoriedPath": "Livros/Daemon Medieval.pdf",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Daemon_Medieval_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/Daemon_Medieval_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-c5932976320eae825de2ff192a5cb9baf63678be2b31d0d230564cfd2c9610b0",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/daemon-tormenta.json",
+      "pilotSha256": "9301f87597d6760d365072e703918518d9409eb2f1acae71772e85adb7be42b9",
+      "legacySourceId": "daemon-tormenta",
+      "inventoriedPath": "Livros/Daemon Tormenta.pdf",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Daemon_Tormenta_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/Daemon_Tormenta_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-e5274d90e4418ff6178ad93b121176734220143219ef2cf28554224ee620f9b4",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/diferencas.json",
+      "pilotSha256": "dba65d94a8b4c9a5aa68d4750b13ef10daf2c11719ff706611e900ba98df95c6",
+      "legacySourceId": "diferencas",
+      "inventoriedPath": "Livros/Diferencas.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Diferencas_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Diferencas_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Diferencas_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-93ddaab9168efa7fe2e0fa249f07b1dbc2ae6da062fe24fb8699900978c4f754",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/juppongatana.json",
+      "pilotSha256": "37dc19d3503fa8b36db1d49444dd00ec0596a304d4d0602d598e5b2f13b178aa",
+      "legacySourceId": "juppongatana",
+      "inventoriedPath": "Livros/juppongatana.pdf",
+      "claimedSourcePath": "Livros\\word\\Juppongatana_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Juppongatana_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Juppongatana_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-c4cbcb6c63145d2877148acc8e0cf55fba877ebbb7d8daf4c4578cc9eac48006",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/kits-orientais.json",
+      "pilotSha256": "00fb4a7899db1870c255379eb3f58d458d23fa120059624a3c264c634fdd11b7",
+      "legacySourceId": "kits-orientais",
+      "inventoriedPath": "Livros/Kits Orientais.docx",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Kits Orientais.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Kits Orientais.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-093c982cc7c9e2df5d2a2c5aaf75187a408ec5a8e82f96ea73fc3976b31ab6af",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/masmorra-goblin.json",
+      "pilotSha256": "a60ca4364d070e86f02c5f35720e2d11349702f15f6909d511b235a7afb82200",
+      "legacySourceId": "masmorra-goblin",
+      "inventoriedPath": "Livros/Masmorra  Goblin.docx",
+      "claimedSourcePath": "Livros\\word\\feito\\Masmorra  Goblin.docx",
+      "claimedSourceFile": "Masmorra  Goblin.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Masmorra  Goblin.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-4d3ead737bb3faff5eb1725a44b283ac094cbc71c1bd32cbaafef94e7b21db7f",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/masmorras.json",
+      "pilotSha256": "9b82e2662f66d1f2525ba21992ad329c7f911d176a06efb10426dcbbdc8c4012",
+      "legacySourceId": "masmorras",
+      "inventoriedPath": "Livros/Masmorras.docx",
+      "claimedSourcePath": "Livros\\word\\feito\\Masmorras.docx",
+      "claimedSourceFile": "Masmorras.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Masmorras.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-0128b83f94eea09fa2b81664cba24370ce0d691b9d46d87c673812214fdb8588",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/modulo-combate.json",
+      "pilotSha256": "9049abb473c8a4770fefaf181d4bd66c495148344c2a8ff344254d2bcd1f45fa",
+      "legacySourceId": "modulo-combate",
+      "inventoriedPath": "Livros/MÓDULO COMBATE.pdf",
+      "claimedSourcePath": "Livros\\word\\Modulo_Combate_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Modulo_Combate_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Modulo_Combate_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-d202ccd8ecf6ee8436a85bcfa32a7e789bf79349e5e037f04e0d9c06a87f3441",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/monges-daemon.json",
+      "pilotSha256": "1fe0b9cda70c980657f1ab91311699a228692073f3589164a3e207187b5572d0",
+      "legacySourceId": "monges-daemon",
+      "inventoriedPath": "Livros/Monges Daemon.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Monges_Daemon_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Monges_Daemon_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Monges_Daemon_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-19a866d769848a5937d19aa1578d07debba507505166f0e3e45e30634034dbc1",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/novas-armas-de-fogo.json",
+      "pilotSha256": "8eda488cc24bd9e25dfc42cefdbf9696e74ea67016e5399a169b7e96b225ce21",
+      "legacySourceId": "novas-armas-de-fogo",
+      "inventoriedPath": "Livros/Novas Armas de Fogo.pdf",
+      "claimedSourcePath": "Livros\\word\\feito\\Novas_Armas_de_Fogo_OCR_alta_qualidade.docx",
+      "claimedSourceFile": "Novas_Armas_de_Fogo_OCR_alta_qualidade.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Novas_Armas_de_Fogo_OCR_alta_qualidade.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-5a9575685c5cd832265841692bc27c5336c07de2ac37f62ca9f78c1ef404d8ec",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/phage.json",
+      "pilotSha256": "de3fa95f118042a95f11abae20b222c82d0b71a3e61c82e52b69c3947c481f7b",
+      "legacySourceId": "phage",
+      "inventoriedPath": "Livros/Phage.docx",
+      "claimedSourcePath": "Livros\\word\\feito\\Phage.docx",
+      "claimedSourceFile": "Phage.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Phage.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-876c4eb1b4260e3e671d6e65cacf2c1d08de44574f4433b8e4bea99d40d2ee19",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/regra-opcional-ataques-a-objetos.json",
+      "pilotSha256": "28de83c2a2cc1b52e7c847384733e075989cc70161edd76ad630d99828efb67e",
+      "legacySourceId": "regra-opcional-ataques-a-objetos",
+      "inventoriedPath": "Livros/Regra Opcional Ataques a Objetos.docx",
+      "claimedSourcePath": "Livros\\word\\feito\\Regra Opcional Ataques a Objetos.docx",
+      "claimedSourceFile": "Regra Opcional Ataques a Objetos.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Regra Opcional Ataques a Objetos.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-6560255e6fee79ca7fccb3439677a5d8633592fb69061da0c7d8bce3ea32d6d1",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/spiritum.json",
+      "pilotSha256": "ef35cf3c44a8137d39221e96580f0798fe0bc7471caf8aec8c9e67faed6dbf19",
+      "legacySourceId": "spiritum",
+      "inventoriedPath": "Livros/Spiritum.pdf",
+      "claimedSourcePath": null,
+      "claimedSourceFile": "Spiritum_OCR_parcial_com_imagens.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Spiritum_OCR_parcial_com_imagens.docx"
+      ],
+      "matchMethod": "UNIQUE_FILENAME",
+      "candidateSourceId": "file-59b936419ed39bacbadc4e1e62aaa16d0d274222f4b96c0387de43692dc52153",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    },
+    {
+      "pilotFile": "data/pilot/vantagens.json",
+      "pilotSha256": "91a3f88180dc10e36da1c1884106b991f8ded135a68d3d830649fe2518f41ce6",
+      "legacySourceId": "vantagens",
+      "inventoriedPath": "Livros/Vantagens.docx",
+      "claimedSourcePath": "Livros\\word\\feito\\Vantagens.docx",
+      "claimedSourceFile": "Vantagens.docx",
+      "candidatePaths": [
+        "Livros/word/feito/Vantagens.docx"
+      ],
+      "matchMethod": "EXACT_PATH",
+      "candidateSourceId": "file-43b5d7962610622309958dadb86e31109ec149622be09a1c42a6cea5ee7b31c3",
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "status": "FILE_IDENTIFIED"
+    }
+  ]
+}

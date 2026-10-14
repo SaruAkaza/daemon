@@ -1,0 +1,1964 @@
+{
+  "version": 1,
+  "mode": "PRIVATE_REVIEW_ONLY",
+  "sourceTreeOid": "aa1d987070c1dae03e6caa38fbf53e26c50abeeb",
+  "reconciliationSha256": "1ffec95e716ecec3ea7ddf5ba973bfb0a718285e44550b54cefba0c6f0590e13",
+  "sourceManifestInputs": [
+    {
+      "path": "data/source-manifests/file-0128b83f94eea09fa2b81664cba24370ce0d691b9d46d87c673812214fdb8588.json",
+      "sha256": "5711b0a12ebca586f750f93c7d1d1f6e67c33d12228b9eb4e0ad01645d860c02"
+    },
+    {
+      "path": "data/source-manifests/file-01577a5433601380377cbb40a2884d09a74620e41c914e5e2a5b42bec38b9d48.json",
+      "sha256": "afc7e9578fafd7277853f0220ab6be06904e2b7be6de983e891b6da33a0c080d"
+    },
+    {
+      "path": "data/source-manifests/file-093c982cc7c9e2df5d2a2c5aaf75187a408ec5a8e82f96ea73fc3976b31ab6af.json",
+      "sha256": "8bf1c095208e544011fedd394e69f3a2b02f4736390a122a235ae87dec804113"
+    },
+    {
+      "path": "data/source-manifests/file-0988a565aa26707c1bdcef746b4bd188205810eb7dab0be8ad773c752f5943ff.json",
+      "sha256": "76b95206cbf4e8238635559cb79f144d301be710ea1693c56878b7a51c2f5f2f"
+    },
+    {
+      "path": "data/source-manifests/file-19a866d769848a5937d19aa1578d07debba507505166f0e3e45e30634034dbc1.json",
+      "sha256": "432987f7074232fe39b92ebe9aa265c4656d6a2497eaa3dad6fe29387eb408be"
+    },
+    {
+      "path": "data/source-manifests/file-1d0cb35d72e3cd55a6c37a28a347c5e165020bdfe68ce8bde9ada54f37d4aa68.json",
+      "sha256": "386cc7702e9d960e7caa48355997a5560443361b3a6607faf9b8626e06976a36"
+    },
+    {
+      "path": "data/source-manifests/file-216dc621ce8040745a3765d7c86b647123894e51262d09f133e314f57f6566a6.json",
+      "sha256": "bfbec1e9ec041364b95dee132b036d55b9675af0ca67f970796d4f760bb1ceb2"
+    },
+    {
+      "path": "data/source-manifests/file-22617317e0be65a150d3631365e1114c609730b263ca708477c7470338f11a56.json",
+      "sha256": "a19c79ca7ffceb987bf8d4f6e0c1b1d8f9668cca13d6302fb6714736021ab2b1"
+    },
+    {
+      "path": "data/source-manifests/file-28ec91d5f865d6853a23951b5dd24ba147fb10687bb3581e9aebd33e838f26ec.json",
+      "sha256": "6e9c73c2c942b16004c8d4679a0a0326ddefa1db5b417808a85c385d8141da30"
+    },
+    {
+      "path": "data/source-manifests/file-2eb203e6adb059d3324465b3f675e3d8f5563fce05b4cb8b40ec86e9b1fd4bb3.json",
+      "sha256": "2b41cb1ac77bd5ddd4f17284f4025003c207dca65d7d77170823a5bb33e2ffd5"
+    },
+    {
+      "path": "data/source-manifests/file-3417cdd01edf011f7865fd689a894b757ccce94b9ae69af994a3bcdea7c190b8.json",
+      "sha256": "63f9a3603c92884a5ad09665cdd048b0a2ffe691486eb1e38ac29c2a7cb9ef7e"
+    },
+    {
+      "path": "data/source-manifests/file-34b13c247dd55e1b067a392bdfb78878669c88f4a4222c87b3ed865ec4f6ae16.json",
+      "sha256": "318ec8dc2bd3fe9ef11ce1cc795858120489b57c70f9061035ea0b59562c709b"
+    },
+    {
+      "path": "data/source-manifests/file-365509f62044650c54eb6c2144b982b91361321529844049a7af2185b2067e79.json",
+      "sha256": "6ff881739e65752d2fb39d47eeeb0fd26a60a7164939b5488b1bc20399f56075"
+    },
+    {
+      "path": "data/source-manifests/file-43b5d7962610622309958dadb86e31109ec149622be09a1c42a6cea5ee7b31c3.json",
+      "sha256": "0f0516764701ee779e75887af9c0edc1d7bef32bcfc8dc2ce9cfe41522e5affe"
+    },
+    {
+      "path": "data/source-manifests/file-45a231be2c63d0c7a68d8abaf6a9b177a129b015ab3fd6401b73ae31f23cb7d1.json",
+      "sha256": "3d4ba01a95e78fa8aa38b3dd25339225e9ada5da699dc740138bc171ab4c92a1"
+    },
+    {
+      "path": "data/source-manifests/file-4781a8f8329b83835c76e979801f93492544f6e9739746b078d976db2c66e9a1.json",
+      "sha256": "753dc9c660151c525c46481bfb61df522f9fd27a3b7118d48acba98a0716f1f3"
+    },
+    {
+      "path": "data/source-manifests/file-4d3ead737bb3faff5eb1725a44b283ac094cbc71c1bd32cbaafef94e7b21db7f.json",
+      "sha256": "cf2b0fc168c5adc52ab1c9dc498f011f0ddd39fc8e1a5345cc4a64673630fd4f"
+    },
+    {
+      "path": "data/source-manifests/file-53b94bfe4e07a9d93c2a1b01948d531f6b1c5609f90c2f20f421b02727bd16dd.json",
+      "sha256": "8b32d3632c6487bf76478c6461f0d579ccedf7ed8aaa10d86acb351497007c69"
+    },
+    {
+      "path": "data/source-manifests/file-57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367.json",
+      "sha256": "f4f087e112d5d2b018655347edc89064f597ba47deff1743c2fc7740f09febac"
+    },
+    {
+      "path": "data/source-manifests/file-59b936419ed39bacbadc4e1e62aaa16d0d274222f4b96c0387de43692dc52153.json",
+      "sha256": "910176ed8030433ec0a180c21891d182e15f3c8d472c012f5950ad069611a60e"
+    },
+    {
+      "path": "data/source-manifests/file-5a9575685c5cd832265841692bc27c5336c07de2ac37f62ca9f78c1ef404d8ec.json",
+      "sha256": "660a5a1f9475c54aaf116fabebfbb08f16b7087f51da89c5480d02036d5cfc35"
+    },
+    {
+      "path": "data/source-manifests/file-6560255e6fee79ca7fccb3439677a5d8633592fb69061da0c7d8bce3ea32d6d1.json",
+      "sha256": "f416177dd9463b72c9f81781d62a98bad9097622cd5ea8fca6c8547d278a26d5"
+    },
+    {
+      "path": "data/source-manifests/file-71e66dcb6765128bf8d0c8cc07af46bb5dcfe4baafd092646d1ee7a925dd4aad.json",
+      "sha256": "5d8a682d1b19b217a80bcfbec7976de3fa8f22ad53b7832715ac9028f12bcb5f"
+    },
+    {
+      "path": "data/source-manifests/file-7440864aee0b57206dc2fe4622ec5374e79184250deb877e85bb7af09e95db4d.json",
+      "sha256": "73719b8fa2c79315d20129f19f9f6c363361d8faac4ec7f94224d05442a75b46"
+    },
+    {
+      "path": "data/source-manifests/file-75982ba9b19e7c2c7db11370b6dfa678665679369f91f7bc18a0404db91011fe.json",
+      "sha256": "d752dcc69f14d0e714cdc42376c010729b9c107dbc54e0c9c03d0d44dd470dd3"
+    },
+    {
+      "path": "data/source-manifests/file-7822aebc3d20aca51fee54dc8126b4bead885100760b5d28eea111ebda5304db.json",
+      "sha256": "b97c69e4838ec0de8557630325af509c12dcc1eea320fc835ded9ed3bb43bf42"
+    },
+    {
+      "path": "data/source-manifests/file-7cc152c16a3dfb0260c2ad9924e33b1a6c6479bc2ceb4af0327ad9c0d53e3133.json",
+      "sha256": "0d3e604d17f26673bcbbf2734dd209e4793d94ae4285f70f5c8b1fd36489132a"
+    },
+    {
+      "path": "data/source-manifests/file-84ebbb5dd44e90b6cafcc9a832cb87e5c02452e6768dec80a04177f184945864.json",
+      "sha256": "3857d191e937276bad439bc0cb9cfbc2e207a393d0b531fb65f1b7d06fc6493f"
+    },
+    {
+      "path": "data/source-manifests/file-876c4eb1b4260e3e671d6e65cacf2c1d08de44574f4433b8e4bea99d40d2ee19.json",
+      "sha256": "40adc055e4a2ca4c661ba8685d57b439d971d7cab41ed75544252a6136643fcd"
+    },
+    {
+      "path": "data/source-manifests/file-88eab4408955ceea522d98c0b0f393313e088c9b8bac84703b4deb5601424dcf.json",
+      "sha256": "9d5b0256d8e323db875eddf687c76c0b08e3b541dc3c9e76b6e944f31e8053c6"
+    },
+    {
+      "path": "data/source-manifests/file-93ddaab9168efa7fe2e0fa249f07b1dbc2ae6da062fe24fb8699900978c4f754.json",
+      "sha256": "978927570801d4420a1cb5b145bd49f3b92435c7a52447cae6eb5c27c532f2e5"
+    },
+    {
+      "path": "data/source-manifests/file-a1417bcbb1bf3e2003025874d30e53c2477b2e1662c2755c35d114571f474906.json",
+      "sha256": "b0d5a871ca6bd21bc98de723d8e3dc451a8531239ce3e5c6af4751ada8b52d61"
+    },
+    {
+      "path": "data/source-manifests/file-c1022a3730b54bf171bf289244cbc638576b3b56a50d6d433e4eecce84117077.json",
+      "sha256": "9a6fa7f538d7da3c75020602f40ca29ae5d4166154ee3ddd1438e4aa7a919cf5"
+    },
+    {
+      "path": "data/source-manifests/file-c4cbcb6c63145d2877148acc8e0cf55fba877ebbb7d8daf4c4578cc9eac48006.json",
+      "sha256": "1ebcbdc05b55a7089b0dd0f49051a5ad9a17603c6f898eab51045570730c4b3f"
+    },
+    {
+      "path": "data/source-manifests/file-c5932976320eae825de2ff192a5cb9baf63678be2b31d0d230564cfd2c9610b0.json",
+      "sha256": "bfa6fe8efaef110154dc769e03b96821853a656aecadc245263c85fbc2d61a42"
+    },
+    {
+      "path": "data/source-manifests/file-d202ccd8ecf6ee8436a85bcfa32a7e789bf79349e5e037f04e0d9c06a87f3441.json",
+      "sha256": "f6cb582c94e4a1d384ccc17e5219bd266dde967940cf3e29674b2a48d722c53c"
+    },
+    {
+      "path": "data/source-manifests/file-e5274d90e4418ff6178ad93b121176734220143219ef2cf28554224ee620f9b4.json",
+      "sha256": "84a98e59f455be15a5314fea49230c361f05aa5aa982de4c26863736fb5a213b"
+    },
+    {
+      "path": "data/source-manifests/file-e5cf0cec76f50af51bafd7078421e43539bf570664201baf4da70dde6af72f2a.json",
+      "sha256": "4d93e9d19d08e2ef03718a3f2eca27542fe19578c53183de1e83427bb7fd00ac"
+    }
+  ],
+  "summary": {
+    "pilotCount": 38,
+    "candidateCount": 38,
+    "pilotsMissingPages": 38,
+    "pilotsWithInvalidPages": 0,
+    "contentBlockCount": 11431,
+    "canonicalPromotionCount": 0
+  },
+  "items": [
+    {
+      "pilotFile": "data/pilot/4killers.json",
+      "legacySourceId": "4killers",
+      "inputSha256": "b878944fd1c1d02f86a80874d06a4e8823491c9c745a42aed04d2c0f793c62a2",
+      "candidateSourceId": "file-45a231be2c63d0c7a68d8abaf6a9b177a129b015ab3fd6401b73ae31f23cb7d1",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 21,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\4killers.docx",
+          "after": "Livros/word/feito/4killers.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-45a231be2c63d0c7a68d8abaf6a9b177a129b015ab3fd6401b73ae31f23cb7d1"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "b878944fd1c1d02f86a80874d06a4e8823491c9c745a42aed04d2c0f793c62a2",
+            "sourceSha256": "45a231be2c63d0c7a68d8abaf6a9b177a129b015ab3fd6401b73ae31f23cb7d1",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-ad1e0ad09ae6c2ea",
+      "candidateSha256": "b3ac4ce1b48c6a42ffd5e654786cda001e2f85bb6363b2a33611864ce1506ef8"
+    },
+    {
+      "pilotFile": "data/pilot/abismo-infinito-quick-start.json",
+      "legacySourceId": "abismo-infinito-quick-start",
+      "inputSha256": "01915700fb7f22fb8600db2f00389ea031b925cd8eaaf3c2ab2ab8fcbc59f82c",
+      "candidateSourceId": "file-34b13c247dd55e1b067a392bdfb78878669c88f4a4222c87b3ed865ec4f6ae16",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 59,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Abismo-Infinito-Quick-Start.docx",
+          "after": "Livros/word/feito/Abismo-Infinito-Quick-Start.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-34b13c247dd55e1b067a392bdfb78878669c88f4a4222c87b3ed865ec4f6ae16"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "01915700fb7f22fb8600db2f00389ea031b925cd8eaaf3c2ab2ab8fcbc59f82c",
+            "sourceSha256": "34b13c247dd55e1b067a392bdfb78878669c88f4a4222c87b3ed865ec4f6ae16",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-a251a33225560dca",
+      "candidateSha256": "6adcd78ad20bc578f6aed7ec9ef24ddc63d0512b78075a67610e56ec68d91460"
+    },
+    {
+      "pilotFile": "data/pilot/abismo.json",
+      "legacySourceId": "abismo",
+      "inputSha256": "270264a39df2747c5795023e94ca1341e74f8fd4e06f5f5c85a8db75c13954c6",
+      "candidateSourceId": "file-75982ba9b19e7c2c7db11370b6dfa678665679369f91f7bc18a0404db91011fe",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 190,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-75982ba9b19e7c2c7db11370b6dfa678665679369f91f7bc18a0404db91011fe"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "270264a39df2747c5795023e94ca1341e74f8fd4e06f5f5c85a8db75c13954c6",
+            "sourceSha256": "75982ba9b19e7c2c7db11370b6dfa678665679369f91f7bc18a0404db91011fe",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-859cb3baa0745adc",
+      "candidateSha256": "da05c7299e506513eb34922ebc26a3111b301cec0110987ff0204d409c733564"
+    },
+    {
+      "pilotFile": "data/pilot/alastores-a-justica-infernal.json",
+      "legacySourceId": "alastores-a-justica-infernal",
+      "inputSha256": "22c77fac9e9dde0a12855e9f4fbf4d99f031289bbdc18186c77c247e1be2f422",
+      "candidateSourceId": "file-0988a565aa26707c1bdcef746b4bd188205810eb7dab0be8ad773c752f5943ff",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 198,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Alastores - A Justiça Infernal.docx",
+          "after": "Livros/word/feito/Alastores - A Justiça Infernal.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-0988a565aa26707c1bdcef746b4bd188205810eb7dab0be8ad773c752f5943ff"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "22c77fac9e9dde0a12855e9f4fbf4d99f031289bbdc18186c77c247e1be2f422",
+            "sourceSha256": "0988a565aa26707c1bdcef746b4bd188205810eb7dab0be8ad773c752f5943ff",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-2f5d8193be14e453",
+      "candidateSha256": "1a73bed5f5fd48a60aa8d370c2a1177bd58a654579011b11291df9bb36bb3c43"
+    },
+    {
+      "pilotFile": "data/pilot/alianca-daemon-01.json",
+      "legacySourceId": "alianca-daemon-01",
+      "inputSha256": "b9afa555faac1c5ddcf36a6733bfe22ec305f713e8e1a9e81b976e585cb3ea04",
+      "candidateSourceId": "file-88eab4408955ceea522d98c0b0f393313e088c9b8bac84703b4deb5601424dcf",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 37,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-88eab4408955ceea522d98c0b0f393313e088c9b8bac84703b4deb5601424dcf"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "b9afa555faac1c5ddcf36a6733bfe22ec305f713e8e1a9e81b976e585cb3ea04",
+            "sourceSha256": "88eab4408955ceea522d98c0b0f393313e088c9b8bac84703b4deb5601424dcf",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-e8b0d1aca0864863",
+      "candidateSha256": "c376022544d7d31aecca5fd6e88b436a8c74a23432ca60fe8d4ae7c485615fea"
+    },
+    {
+      "pilotFile": "data/pilot/animalidade.json",
+      "legacySourceId": "animalidade",
+      "inputSha256": "44100fd3a10f519a0833b94d92f92d403799e79eaa5dbd2a024db63c4f0ef56c",
+      "candidateSourceId": "file-216dc621ce8040745a3765d7c86b647123894e51262d09f133e314f57f6566a6",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 200,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\animalidade.docx",
+          "after": "Livros/word/feito/animalidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-216dc621ce8040745a3765d7c86b647123894e51262d09f133e314f57f6566a6"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "44100fd3a10f519a0833b94d92f92d403799e79eaa5dbd2a024db63c4f0ef56c",
+            "sourceSha256": "216dc621ce8040745a3765d7c86b647123894e51262d09f133e314f57f6566a6",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-25a13c212483a85e",
+      "candidateSha256": "523e3f41e73dbca8485d368dc41b530d99cef98f3772884614766bdeaac7bd29"
+    },
+    {
+      "pilotFile": "data/pilot/anime-rpg-powers.json",
+      "legacySourceId": "anime-rpg-powers",
+      "inputSha256": "a43fcbf3c0a06b3cef27f09d31b8e044cd0cd5fea4c29ff643510e3b7d6b32ce",
+      "candidateSourceId": "file-4781a8f8329b83835c76e979801f93492544f6e9739746b078d976db2c66e9a1",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 268,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-4781a8f8329b83835c76e979801f93492544f6e9739746b078d976db2c66e9a1"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "a43fcbf3c0a06b3cef27f09d31b8e044cd0cd5fea4c29ff643510e3b7d6b32ce",
+            "sourceSha256": "4781a8f8329b83835c76e979801f93492544f6e9739746b078d976db2c66e9a1",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-fd02243cbeda967a",
+      "candidateSha256": "44714be63dfb5a581d41da64cf0bc1f43525a38516f1b85bc9a1d4c5a19c17aa"
+    },
+    {
+      "pilotFile": "data/pilot/anime-rpg-supers-monstros-viloes.json",
+      "legacySourceId": "anime-rpg-supers-monstros-viloes",
+      "inputSha256": "51a41a19866117cf26dcdc2bdbfa91472102e6ea79ac6cf3913bcbc240d4e582",
+      "candidateSourceId": "file-01577a5433601380377cbb40a2884d09a74620e41c914e5e2a5b42bec38b9d48",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 242,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-01577a5433601380377cbb40a2884d09a74620e41c914e5e2a5b42bec38b9d48"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "51a41a19866117cf26dcdc2bdbfa91472102e6ea79ac6cf3913bcbc240d4e582",
+            "sourceSha256": "01577a5433601380377cbb40a2884d09a74620e41c914e5e2a5b42bec38b9d48",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-756d9309e28632ad",
+      "candidateSha256": "a31b794f636fe24ef9f36d89c253f1ab685e9bbd591a8777b1ea7e91bd36b274"
+    },
+    {
+      "pilotFile": "data/pilot/anime-rpg-supers-powers.json",
+      "legacySourceId": "anime-rpg-supers-powers",
+      "inputSha256": "b9323a0ea8db1501666b2f6b150d33489e6824b6d3b98906806df0bf62ab5ca3",
+      "candidateSourceId": "file-7cc152c16a3dfb0260c2ad9924e33b1a6c6479bc2ceb4af0327ad9c0d53e3133",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 71,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-7cc152c16a3dfb0260c2ad9924e33b1a6c6479bc2ceb4af0327ad9c0d53e3133"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "b9323a0ea8db1501666b2f6b150d33489e6824b6d3b98906806df0bf62ab5ca3",
+            "sourceSha256": "7cc152c16a3dfb0260c2ad9924e33b1a6c6479bc2ceb4af0327ad9c0d53e3133",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-3f365697e665762a",
+      "candidateSha256": "5b280be79537d5224eb05fd31cfd70a312c10cf5b8d7b16f768bfec145a1bd03"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-angelicos-sicarios.json",
+      "legacySourceId": "anjos-angelicos-sicarios",
+      "inputSha256": "e1ff4bfe9ec06d9be7934a11424741cff342984fd2bb7658e6d7a0744e81f0d7",
+      "candidateSourceId": "file-7822aebc3d20aca51fee54dc8126b4bead885100760b5d28eea111ebda5304db",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 81,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\Anjos - A Cidade de Prata - Angélicos Sicários.docx",
+          "after": "Livros/word/Anjos - A Cidade de Prata - Angélicos Sicários.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-7822aebc3d20aca51fee54dc8126b4bead885100760b5d28eea111ebda5304db"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "e1ff4bfe9ec06d9be7934a11424741cff342984fd2bb7658e6d7a0744e81f0d7",
+            "sourceSha256": "7822aebc3d20aca51fee54dc8126b4bead885100760b5d28eea111ebda5304db",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-fdcd23c21e9e7f46",
+      "candidateSha256": "0a38928c43508d4fa658a14b10252ff36b615dd35c1f148e352c8c96e1e263fa"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-cacadores-alados.json",
+      "legacySourceId": "anjos-cacadores-alados",
+      "inputSha256": "3ceb5c6e73880456cc46979c5b9d024c6cc6297bb94fb841c4c6a757fdf282f0",
+      "candidateSourceId": "file-365509f62044650c54eb6c2144b982b91361321529844049a7af2185b2067e79",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 248,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\Anjos cacadores-alados.docx",
+          "after": "Livros/word/Anjos cacadores-alados.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-365509f62044650c54eb6c2144b982b91361321529844049a7af2185b2067e79"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "3ceb5c6e73880456cc46979c5b9d024c6cc6297bb94fb841c4c6a757fdf282f0",
+            "sourceSha256": "365509f62044650c54eb6c2144b982b91361321529844049a7af2185b2067e79",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-9f7c76b57613dd18",
+      "candidateSha256": "ecf9b55b5d6807adbdb1ee524380233546685658e9ec470bb070c683377598d1"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-jyhad-faces-da-fe.json",
+      "legacySourceId": "anjos-jyhad-faces-da-fe",
+      "inputSha256": "a316efab9c7d259cc338711e892effeadd828c47bf7fb3b3f7e45451b26b1be1",
+      "candidateSourceId": "file-2eb203e6adb059d3324465b3f675e3d8f5563fce05b4cb8b40ec86e9b1fd4bb3",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 169,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\Anjos Jyhad - Faces da Fé.docx",
+          "after": "Livros/word/Anjos Jyhad - Faces da Fé.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-2eb203e6adb059d3324465b3f675e3d8f5563fce05b4cb8b40ec86e9b1fd4bb3"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "a316efab9c7d259cc338711e892effeadd828c47bf7fb3b3f7e45451b26b1be1",
+            "sourceSha256": "2eb203e6adb059d3324465b3f675e3d8f5563fce05b4cb8b40ec86e9b1fd4bb3",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-5a2c51fd0c560054",
+      "candidateSha256": "594ebe7502f9050f61e6631579f8d3bd2a3ce637f80892f7cdf7fe3da86e5198"
+    },
+    {
+      "pilotFile": "data/pilot/anjos-requiem-de-fe.json",
+      "legacySourceId": "anjos-requiem-de-fe",
+      "inputSha256": "fb7cc10801f43dcd157899cc7317284ad4d80e834bc1b3ca44b1c6aed0f0eae5",
+      "candidateSourceId": "file-28ec91d5f865d6853a23951b5dd24ba147fb10687bb3581e9aebd33e838f26ec",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 1184,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\Anjos - Réquiem de Fé.docx",
+          "after": "Livros/word/Anjos - Réquiem de Fé.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-28ec91d5f865d6853a23951b5dd24ba147fb10687bb3581e9aebd33e838f26ec"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "fb7cc10801f43dcd157899cc7317284ad4d80e834bc1b3ca44b1c6aed0f0eae5",
+            "sourceSha256": "28ec91d5f865d6853a23951b5dd24ba147fb10687bb3581e9aebd33e838f26ec",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-67974f85bcce5134",
+      "candidateSha256": "2a6f7c5dafb5d642a707ec9f81bf5b491b4ef0ab21008d92b002a024577fce92"
+    },
+    {
+      "pilotFile": "data/pilot/anoes.json",
+      "legacySourceId": "anoes",
+      "inputSha256": "e412f2e6b52146e112ef48a77bcb8517865ef6d20dc55791c4a0a6bf742bba6d",
+      "candidateSourceId": "file-7440864aee0b57206dc2fe4622ec5374e79184250deb877e85bb7af09e95db4d",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 72,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Anoes_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Anoes_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-7440864aee0b57206dc2fe4622ec5374e79184250deb877e85bb7af09e95db4d"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "e412f2e6b52146e112ef48a77bcb8517865ef6d20dc55791c4a0a6bf742bba6d",
+            "sourceSha256": "7440864aee0b57206dc2fe4622ec5374e79184250deb877e85bb7af09e95db4d",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-c85b2bb56b797a9f",
+      "candidateSha256": "4791d0790dcf381ac7ec6aba5ee65edd3d87afa894510fcad5ad7a9208fc1acc"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-1.json",
+      "legacySourceId": "aprimoramentos-1",
+      "inputSha256": "79430dbe47852a784d7c035fbd36d1cf10a723547976845aee735f0629bb91ab",
+      "candidateSourceId": "file-e5cf0cec76f50af51bafd7078421e43539bf570664201baf4da70dde6af72f2a",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 460,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Aprimoramentos_1_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Aprimoramentos_1_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-e5cf0cec76f50af51bafd7078421e43539bf570664201baf4da70dde6af72f2a"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "79430dbe47852a784d7c035fbd36d1cf10a723547976845aee735f0629bb91ab",
+            "sourceSha256": "e5cf0cec76f50af51bafd7078421e43539bf570664201baf4da70dde6af72f2a",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-0ca09066b8796a27",
+      "candidateSha256": "946f31a111301dc41d4b747b0671d3a9a66dfb6b45e0c3cd28feb78a8776934f"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-2.json",
+      "legacySourceId": "aprimoramentos-2",
+      "inputSha256": "b31cd8e8f85cbf046e18ed4819d375ae5014f5414c7e15278677613f2a9da9b9",
+      "candidateSourceId": "file-a1417bcbb1bf3e2003025874d30e53c2477b2e1662c2755c35d114571f474906",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 183,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\Aprimoramentos_2_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Aprimoramentos_2_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-a1417bcbb1bf3e2003025874d30e53c2477b2e1662c2755c35d114571f474906"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "b31cd8e8f85cbf046e18ed4819d375ae5014f5414c7e15278677613f2a9da9b9",
+            "sourceSha256": "a1417bcbb1bf3e2003025874d30e53c2477b2e1662c2755c35d114571f474906",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-53654c6c419600a9",
+      "candidateSha256": "2d85e5848ecd2d4936c7e16b6cd4f9c5000fb43af3b21259b12bd3ebe33bca94"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-3.json",
+      "legacySourceId": "aprimoramentos-3",
+      "inputSha256": "e999fca35bee6a654c99e65c57b08ad1fde11e13842d560111bfcd4d154586b0",
+      "candidateSourceId": "file-c1022a3730b54bf171bf289244cbc638576b3b56a50d6d433e4eecce84117077",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 353,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Aprimoramentos_3_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Aprimoramentos_3_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-c1022a3730b54bf171bf289244cbc638576b3b56a50d6d433e4eecce84117077"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "e999fca35bee6a654c99e65c57b08ad1fde11e13842d560111bfcd4d154586b0",
+            "sourceSha256": "c1022a3730b54bf171bf289244cbc638576b3b56a50d6d433e4eecce84117077",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-a34f0f40c154ebac",
+      "candidateSha256": "fbbee845e209456f099e584c34da85ff42442db2b2b622dcf3495376ec789559"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-4.json",
+      "legacySourceId": "aprimoramentos-4",
+      "inputSha256": "9e1cb76a8cf6392327463295b8e8de2fcf4dafdf487b84a2ff92c0936dabb063",
+      "candidateSourceId": "file-22617317e0be65a150d3631365e1114c609730b263ca708477c7470338f11a56",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 204,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Aprimoramentos_4_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-22617317e0be65a150d3631365e1114c609730b263ca708477c7470338f11a56"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "9e1cb76a8cf6392327463295b8e8de2fcf4dafdf487b84a2ff92c0936dabb063",
+            "sourceSha256": "22617317e0be65a150d3631365e1114c609730b263ca708477c7470338f11a56",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-092f8087b7afbdc5",
+      "candidateSha256": "6b9e9deadd0437cfdca370c440f05a3c67ab37c687a4ddd70b43ada45050fb05"
+    },
+    {
+      "pilotFile": "data/pilot/aprimoramentos-tormenta.json",
+      "legacySourceId": "aprimoramentos-tormenta",
+      "inputSha256": "bf2617a7da19d2d2dc471b4f0ed1ada2e7926285253c17fcbb4ef79ab321e60f",
+      "candidateSourceId": "file-1d0cb35d72e3cd55a6c37a28a347c5e165020bdfe68ce8bde9ada54f37d4aa68",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 203,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Aprimoramentos_Tormenta_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-1d0cb35d72e3cd55a6c37a28a347c5e165020bdfe68ce8bde9ada54f37d4aa68"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "bf2617a7da19d2d2dc471b4f0ed1ada2e7926285253c17fcbb4ef79ab321e60f",
+            "sourceSha256": "1d0cb35d72e3cd55a6c37a28a347c5e165020bdfe68ce8bde9ada54f37d4aa68",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-e1ba8a2ca18cc2ba",
+      "candidateSha256": "9f42732e18fb799739c12c0ab08610db0c7f7b77bc3d16fe1621ccb0122529a8"
+    },
+    {
+      "pilotFile": "data/pilot/arcadia-nova-arcadia.json",
+      "legacySourceId": "arcadia-nova-arcadia",
+      "inputSha256": "71be29a0644fba95d067af874f0b152e46232407f8f785da162f2e095062c0c6",
+      "candidateSourceId": "file-53b94bfe4e07a9d93c2a1b01948d531f6b1c5609f90c2f20f421b02727bd16dd",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 162,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Arcadia_Nova_Arcadia_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-53b94bfe4e07a9d93c2a1b01948d531f6b1c5609f90c2f20f421b02727bd16dd"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "71be29a0644fba95d067af874f0b152e46232407f8f785da162f2e095062c0c6",
+            "sourceSha256": "53b94bfe4e07a9d93c2a1b01948d531f6b1c5609f90c2f20f421b02727bd16dd",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-53fb3b5e574562f2",
+      "candidateSha256": "1f3063d14e8d5b10e1ed2caa616257d6c36dc4648e876485ae7329cd6b19ab7a"
+    },
+    {
+      "pilotFile": "data/pilot/arcanis.json",
+      "legacySourceId": "arcanis",
+      "inputSha256": "144d790fe5c71d16637350fffefa9f21f8fee9867c979d3c9765b3202a023609",
+      "candidateSourceId": "file-84ebbb5dd44e90b6cafcc9a832cb87e5c02452e6768dec80a04177f184945864",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 141,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Arcanis_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-84ebbb5dd44e90b6cafcc9a832cb87e5c02452e6768dec80a04177f184945864"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "144d790fe5c71d16637350fffefa9f21f8fee9867c979d3c9765b3202a023609",
+            "sourceSha256": "84ebbb5dd44e90b6cafcc9a832cb87e5c02452e6768dec80a04177f184945864",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-8b3fa7a9b07ca941",
+      "candidateSha256": "7fd1af145fc0f1ec730048a3dba0388aef3a75c94f8cf5b353f6318c85d536dc"
+    },
+    {
+      "pilotFile": "data/pilot/archonan.json",
+      "legacySourceId": "archonan",
+      "inputSha256": "6fe8d2134fb74515f6da8eca8fc78ba6a83e486df96ebd322292997575e8d976",
+      "candidateSourceId": "file-3417cdd01edf011f7865fd689a894b757ccce94b9ae69af994a3bcdea7c190b8",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 36,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Archonan_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-3417cdd01edf011f7865fd689a894b757ccce94b9ae69af994a3bcdea7c190b8"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "6fe8d2134fb74515f6da8eca8fc78ba6a83e486df96ebd322292997575e8d976",
+            "sourceSha256": "3417cdd01edf011f7865fd689a894b757ccce94b9ae69af994a3bcdea7c190b8",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-e6b308250807bf62",
+      "candidateSha256": "486addd79f69e68f476ce45c8b284e258bd7c76b0a3d25db22a70a87503022bf"
+    },
+    {
+      "pilotFile": "data/pilot/cabala-forum.json",
+      "legacySourceId": "cabala-forum",
+      "inputSha256": "3b404b429e1eea8c6c3dd5f9873bea51775c8941eb8e5c0ea479f1bc4258bdf9",
+      "candidateSourceId": "file-71e66dcb6765128bf8d0c8cc07af46bb5dcfe4baafd092646d1ee7a925dd4aad",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 7,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\cabala.docx",
+          "after": "Livros/word/feito/cabala.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-71e66dcb6765128bf8d0c8cc07af46bb5dcfe4baafd092646d1ee7a925dd4aad"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "3b404b429e1eea8c6c3dd5f9873bea51775c8941eb8e5c0ea479f1bc4258bdf9",
+            "sourceSha256": "71e66dcb6765128bf8d0c8cc07af46bb5dcfe4baafd092646d1ee7a925dd4aad",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-4cb6710c39a2daf9",
+      "candidateSha256": "6555854b728e6def8d8fef4510897a033b92b682e4eff4e71fda27cf8c7438fc"
+    },
+    {
+      "pilotFile": "data/pilot/corondor.json",
+      "legacySourceId": "corondor",
+      "inputSha256": "958dd3e8806f1eb7775794976ddb0bcc51d7644f0440f7e88a73d49612eebc85",
+      "candidateSourceId": "file-57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 570,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Corondor.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "958dd3e8806f1eb7775794976ddb0bcc51d7644f0440f7e88a73d49612eebc85",
+            "sourceSha256": "57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-b50ad9ad0c39d978",
+      "candidateSha256": "a53e50a91a397347a44b72f25bb84be8f0a2e4198a1ab9384657ffad2e10ba76"
+    },
+    {
+      "pilotFile": "data/pilot/daemon-medieval.json",
+      "legacySourceId": "daemon-medieval",
+      "inputSha256": "ce8ae7e803f143d6c8f4b0398a2803fd8067efd2b910355bde9f69053b04ab51",
+      "candidateSourceId": "file-c5932976320eae825de2ff192a5cb9baf63678be2b31d0d230564cfd2c9610b0",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 646,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/Daemon_Medieval_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-c5932976320eae825de2ff192a5cb9baf63678be2b31d0d230564cfd2c9610b0"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "ce8ae7e803f143d6c8f4b0398a2803fd8067efd2b910355bde9f69053b04ab51",
+            "sourceSha256": "c5932976320eae825de2ff192a5cb9baf63678be2b31d0d230564cfd2c9610b0",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-0fd0a046454eb246",
+      "candidateSha256": "6643f46db34fbbbc42149ee5ba1e252c4a7691a86872a833ffe059477fb22a53"
+    },
+    {
+      "pilotFile": "data/pilot/daemon-tormenta.json",
+      "legacySourceId": "daemon-tormenta",
+      "inputSha256": "9301f87597d6760d365072e703918518d9409eb2f1acae71772e85adb7be42b9",
+      "candidateSourceId": "file-e5274d90e4418ff6178ad93b121176734220143219ef2cf28554224ee620f9b4",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 1097,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/Daemon_Tormenta_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-e5274d90e4418ff6178ad93b121176734220143219ef2cf28554224ee620f9b4"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "9301f87597d6760d365072e703918518d9409eb2f1acae71772e85adb7be42b9",
+            "sourceSha256": "e5274d90e4418ff6178ad93b121176734220143219ef2cf28554224ee620f9b4",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-9e7a31d6a2d38d8e",
+      "candidateSha256": "4bfe18b14d959a8df49f67502cb20040cdef0d9ad38f21ec9530db3e67f896bc"
+    },
+    {
+      "pilotFile": "data/pilot/diferencas.json",
+      "legacySourceId": "diferencas",
+      "inputSha256": "dba65d94a8b4c9a5aa68d4750b13ef10daf2c11719ff706611e900ba98df95c6",
+      "candidateSourceId": "file-93ddaab9168efa7fe2e0fa249f07b1dbc2ae6da062fe24fb8699900978c4f754",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 3,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Diferencas_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Diferencas_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-93ddaab9168efa7fe2e0fa249f07b1dbc2ae6da062fe24fb8699900978c4f754"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "dba65d94a8b4c9a5aa68d4750b13ef10daf2c11719ff706611e900ba98df95c6",
+            "sourceSha256": "93ddaab9168efa7fe2e0fa249f07b1dbc2ae6da062fe24fb8699900978c4f754",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-54e6694dc71af682",
+      "candidateSha256": "8ec40cd1aafc92fa13189450f844f26b1af6014fc803d6b7292a505fbaac4c3b"
+    },
+    {
+      "pilotFile": "data/pilot/juppongatana.json",
+      "legacySourceId": "juppongatana",
+      "inputSha256": "37dc19d3503fa8b36db1d49444dd00ec0596a304d4d0602d598e5b2f13b178aa",
+      "candidateSourceId": "file-c4cbcb6c63145d2877148acc8e0cf55fba877ebbb7d8daf4c4578cc9eac48006",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 82,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\Juppongatana_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Juppongatana_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-c4cbcb6c63145d2877148acc8e0cf55fba877ebbb7d8daf4c4578cc9eac48006"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "37dc19d3503fa8b36db1d49444dd00ec0596a304d4d0602d598e5b2f13b178aa",
+            "sourceSha256": "c4cbcb6c63145d2877148acc8e0cf55fba877ebbb7d8daf4c4578cc9eac48006",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-d89db0f50d419465",
+      "candidateSha256": "93b3283b7907a169f8070ebf648c61170b24ad01c005775bf0e4ec5fd10511ed"
+    },
+    {
+      "pilotFile": "data/pilot/kits-orientais.json",
+      "legacySourceId": "kits-orientais",
+      "inputSha256": "00fb4a7899db1870c255379eb3f58d458d23fa120059624a3c264c634fdd11b7",
+      "candidateSourceId": "file-093c982cc7c9e2df5d2a2c5aaf75187a408ec5a8e82f96ea73fc3976b31ab6af",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 3069,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Kits Orientais.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-093c982cc7c9e2df5d2a2c5aaf75187a408ec5a8e82f96ea73fc3976b31ab6af"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "00fb4a7899db1870c255379eb3f58d458d23fa120059624a3c264c634fdd11b7",
+            "sourceSha256": "093c982cc7c9e2df5d2a2c5aaf75187a408ec5a8e82f96ea73fc3976b31ab6af",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-15f3fc3c0a569881",
+      "candidateSha256": "b0e469a7cfd721bd4313c5954baf73c6ea02e13e3e6459cddcab7f02b2cfe2bf"
+    },
+    {
+      "pilotFile": "data/pilot/masmorra-goblin.json",
+      "legacySourceId": "masmorra-goblin",
+      "inputSha256": "a60ca4364d070e86f02c5f35720e2d11349702f15f6909d511b235a7afb82200",
+      "candidateSourceId": "file-4d3ead737bb3faff5eb1725a44b283ac094cbc71c1bd32cbaafef94e7b21db7f",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 29,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Masmorra  Goblin.docx",
+          "after": "Livros/word/feito/Masmorra  Goblin.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-4d3ead737bb3faff5eb1725a44b283ac094cbc71c1bd32cbaafef94e7b21db7f"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "a60ca4364d070e86f02c5f35720e2d11349702f15f6909d511b235a7afb82200",
+            "sourceSha256": "4d3ead737bb3faff5eb1725a44b283ac094cbc71c1bd32cbaafef94e7b21db7f",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-7a00ee9708f510c5",
+      "candidateSha256": "2fa2b84b7a056f64a0ea60ee0679a91c53433cab1a8eb9c31af1c75348921daf"
+    },
+    {
+      "pilotFile": "data/pilot/masmorras.json",
+      "legacySourceId": "masmorras",
+      "inputSha256": "9b82e2662f66d1f2525ba21992ad329c7f911d176a06efb10426dcbbdc8c4012",
+      "candidateSourceId": "file-0128b83f94eea09fa2b81664cba24370ce0d691b9d46d87c673812214fdb8588",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 17,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Masmorras.docx",
+          "after": "Livros/word/feito/Masmorras.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-0128b83f94eea09fa2b81664cba24370ce0d691b9d46d87c673812214fdb8588"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "9b82e2662f66d1f2525ba21992ad329c7f911d176a06efb10426dcbbdc8c4012",
+            "sourceSha256": "0128b83f94eea09fa2b81664cba24370ce0d691b9d46d87c673812214fdb8588",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-831b52ac9496c0ea",
+      "candidateSha256": "96636f2671ec1ff998a174e319545202e027c6ecd98b75913727b3e8f2884cf1"
+    },
+    {
+      "pilotFile": "data/pilot/modulo-combate.json",
+      "legacySourceId": "modulo-combate",
+      "inputSha256": "9049abb473c8a4770fefaf181d4bd66c495148344c2a8ff344254d2bcd1f45fa",
+      "candidateSourceId": "file-d202ccd8ecf6ee8436a85bcfa32a7e789bf79349e5e037f04e0d9c06a87f3441",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 49,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\Modulo_Combate_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Modulo_Combate_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-d202ccd8ecf6ee8436a85bcfa32a7e789bf79349e5e037f04e0d9c06a87f3441"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "9049abb473c8a4770fefaf181d4bd66c495148344c2a8ff344254d2bcd1f45fa",
+            "sourceSha256": "d202ccd8ecf6ee8436a85bcfa32a7e789bf79349e5e037f04e0d9c06a87f3441",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-f05335408c3c7817",
+      "candidateSha256": "aa423d1bf4177457b217429ca351d0c52c3485759a6d0e5f6b93db3b9885ce69"
+    },
+    {
+      "pilotFile": "data/pilot/monges-daemon.json",
+      "legacySourceId": "monges-daemon",
+      "inputSha256": "1fe0b9cda70c980657f1ab91311699a228692073f3589164a3e207187b5572d0",
+      "candidateSourceId": "file-19a866d769848a5937d19aa1578d07debba507505166f0e3e45e30634034dbc1",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 20,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Monges_Daemon_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Monges_Daemon_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-19a866d769848a5937d19aa1578d07debba507505166f0e3e45e30634034dbc1"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "1fe0b9cda70c980657f1ab91311699a228692073f3589164a3e207187b5572d0",
+            "sourceSha256": "19a866d769848a5937d19aa1578d07debba507505166f0e3e45e30634034dbc1",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-2d6965463773c740",
+      "candidateSha256": "cf41e79727cc5f43d42b5d96a4770465bd900bb5942e393975c17d59455be81e"
+    },
+    {
+      "pilotFile": "data/pilot/novas-armas-de-fogo.json",
+      "legacySourceId": "novas-armas-de-fogo",
+      "inputSha256": "8eda488cc24bd9e25dfc42cefdbf9696e74ea67016e5399a169b7e96b225ce21",
+      "candidateSourceId": "file-5a9575685c5cd832265841692bc27c5336c07de2ac37f62ca9f78c1ef404d8ec",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 42,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Novas_Armas_de_Fogo_OCR_alta_qualidade.docx",
+          "after": "Livros/word/feito/Novas_Armas_de_Fogo_OCR_alta_qualidade.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-5a9575685c5cd832265841692bc27c5336c07de2ac37f62ca9f78c1ef404d8ec"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "8eda488cc24bd9e25dfc42cefdbf9696e74ea67016e5399a169b7e96b225ce21",
+            "sourceSha256": "5a9575685c5cd832265841692bc27c5336c07de2ac37f62ca9f78c1ef404d8ec",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-c1129ecc1a618731",
+      "candidateSha256": "813cd576a8e28c95793e366ca9a085fac73956903deecdeecf0d7fbdf6677670"
+    },
+    {
+      "pilotFile": "data/pilot/phage.json",
+      "legacySourceId": "phage",
+      "inputSha256": "de3fa95f118042a95f11abae20b222c82d0b71a3e61c82e52b69c3947c481f7b",
+      "candidateSourceId": "file-876c4eb1b4260e3e671d6e65cacf2c1d08de44574f4433b8e4bea99d40d2ee19",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 8,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Phage.docx",
+          "after": "Livros/word/feito/Phage.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-876c4eb1b4260e3e671d6e65cacf2c1d08de44574f4433b8e4bea99d40d2ee19"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "de3fa95f118042a95f11abae20b222c82d0b71a3e61c82e52b69c3947c481f7b",
+            "sourceSha256": "876c4eb1b4260e3e671d6e65cacf2c1d08de44574f4433b8e4bea99d40d2ee19",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-029345c8feafb0ba",
+      "candidateSha256": "fe7159e19e8de45f53a33a84c04ac55531bbcfd8fc14176e15ea979d3e0a3f92"
+    },
+    {
+      "pilotFile": "data/pilot/regra-opcional-ataques-a-objetos.json",
+      "legacySourceId": "regra-opcional-ataques-a-objetos",
+      "inputSha256": "28de83c2a2cc1b52e7c847384733e075989cc70161edd76ad630d99828efb67e",
+      "candidateSourceId": "file-6560255e6fee79ca7fccb3439677a5d8633592fb69061da0c7d8bce3ea32d6d1",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 4,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Regra Opcional Ataques a Objetos.docx",
+          "after": "Livros/word/feito/Regra Opcional Ataques a Objetos.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-6560255e6fee79ca7fccb3439677a5d8633592fb69061da0c7d8bce3ea32d6d1"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "28de83c2a2cc1b52e7c847384733e075989cc70161edd76ad630d99828efb67e",
+            "sourceSha256": "6560255e6fee79ca7fccb3439677a5d8633592fb69061da0c7d8bce3ea32d6d1",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-3717d781d4cd36aa",
+      "candidateSha256": "f73b475d9a2994e3770a0142e008200413e56d71c0c580c08adbf4f2f1c3968f"
+    },
+    {
+      "pilotFile": "data/pilot/spiritum.json",
+      "legacySourceId": "spiritum",
+      "inputSha256": "ef35cf3c44a8137d39221e96580f0798fe0bc7471caf8aec8c9e67faed6dbf19",
+      "candidateSourceId": "file-59b936419ed39bacbadc4e1e62aaa16d0d274222f4b96c0387de43692dc52153",
+      "matchMethod": "UNIQUE_FILENAME",
+      "pageAudit": {
+        "contentBlockCount": 591,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": false,
+          "before": null,
+          "after": "Livros/word/feito/Spiritum_OCR_parcial_com_imagens.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-59b936419ed39bacbadc4e1e62aaa16d0d274222f4b96c0387de43692dc52153"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "ef35cf3c44a8137d39221e96580f0798fe0bc7471caf8aec8c9e67faed6dbf19",
+            "sourceSha256": "59b936419ed39bacbadc4e1e62aaa16d0d274222f4b96c0387de43692dc52153",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-149af6c7e4eb0047",
+      "candidateSha256": "3317faed1b501fad32ff0f817cc0af1cb618e5d7078f547ee2140bc985bccd52"
+    },
+    {
+      "pilotFile": "data/pilot/vantagens.json",
+      "legacySourceId": "vantagens",
+      "inputSha256": "91a3f88180dc10e36da1c1884106b991f8ded135a68d3d830649fe2518f41ce6",
+      "candidateSourceId": "file-43b5d7962610622309958dadb86e31109ec149622be09a1c42a6cea5ee7b31c3",
+      "matchMethod": "EXACT_PATH",
+      "pageAudit": {
+        "contentBlockCount": 415,
+        "pageFieldCount": 0,
+        "invalidPageFieldPaths": [],
+        "status": "MISSING_PAGE_CLAIMS"
+      },
+      "reviewStatus": "NEEDS_HUMAN_REVIEW",
+      "promotionAllowed": false,
+      "blockingReasons": [
+        "SOURCE_VERSION_REVIEW_REQUIRED",
+        "MISSING_PAGE_CLAIMS"
+      ],
+      "proposedRootChanges": [
+        {
+          "field": "sourcePath",
+          "existed": true,
+          "before": "Livros\\word\\feito\\Vantagens.docx",
+          "after": "Livros/word/feito/Vantagens.docx"
+        },
+        {
+          "field": "sourceVariantId",
+          "existed": false,
+          "before": null,
+          "after": "file-43b5d7962610622309958dadb86e31109ec149622be09a1c42a6cea5ee7b31c3"
+        },
+        {
+          "field": "sourceMigration",
+          "existed": false,
+          "before": null,
+          "after": {
+            "status": "NEEDS_HUMAN_REVIEW",
+            "inputPilotSha256": "91a3f88180dc10e36da1c1884106b991f8ded135a68d3d830649fe2518f41ce6",
+            "sourceSha256": "43b5d7962610622309958dadb86e31109ec149622be09a1c42a6cea5ee7b31c3",
+            "sourceVersionStatus": "UNVERIFIED",
+            "pageMappingStatus": "MISSING_PAGE_CLAIMS",
+            "publicReleaseAllowed": false
+          }
+        }
+      ],
+      "operationId": "pilot-e2a1267e2613ecb9",
+      "candidateSha256": "f365abe986ea03b1e8aeb08df7725d4a72740e4eb9703584df7cba0cb0eee6fb"
+    }
+  ]
+}

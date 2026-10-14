@@ -3,6 +3,15 @@
 O repositório é a fonte da verdade — os agentes não compartilham memória.
 Protocolo para trabalharmos em paralelo **sem colisão**.
 
+## Publicação legada após a consolidação
+
+`build_pilot_index.py`, `build_github_pages_site.py` e gravações públicas por
+`common.write_json` exigem manifestos de direitos válidos. Os comandos legados
+abaixo não concedem autorização de publicação. Comece com `--check-only`;
+consulte [Publicação dos JSONs legados](../docs/reference/legacy-publication.md).
+Uma falha preserva os assets públicos existentes; não fabrique permissões para
+fazer a cópia passar. Saídas canônicas em `data/` permanecem disponíveis.
+
 ## Legacy and Current Coordination
 
 O repositório contém atualmente tanto artefatos de coordenação legados quanto o novo substrato validado de coordenação multiagente:

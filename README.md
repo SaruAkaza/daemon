@@ -8,12 +8,23 @@ O 5e.tools organiza conteudo de RPG como entidades filtraveis, com busca, filtro
 
 ## Estado da consolidação
 
-A integração de 2026-10-14 reúne o pipeline, o frontend MVP, o catálogo ampliado,
-o painel operacional e as correções de relações em uma branch para revisão.
+A integração de 2026-10-14 reuniu o pipeline, o frontend MVP, o catálogo ampliado,
+o painel operacional e as correções de relações na `main` (PR #1).
 Resultados, commits de origem, limites de publicação e trabalho restante estão
 em [Consolidação técnica](docs/reports/2026-10-14-consolidation-validation.md).
 Inventário e testes aprovados não significam que os 281 livros estejam revisados
 ou autorizados para publicação.
+
+A reconciliação das fontes atuais com o inventário histórico pode ser consultada
+em `data/index/source-reconciliation.json`. O diagnóstico e a verificação são
+somente de leitura: `python scripts/reconcile_sources.py` e
+`python scripts/reconcile_sources.py --check`. Veja
+[Reconciliação de fontes legadas](docs/reference/source-reconciliation.md).
+
+O plano de migração em `data/index/source-migration-plan.json` registra as
+mudanças propostas e as pendências de versões/páginas. A preparação de cópias
+privadas para revisão usa `python scripts/prepare_source_migration.py --stage`;
+veja [Preparação da migração](docs/reference/source-migration.md).
 
 ## Estrutura proposta
 
@@ -85,11 +96,16 @@ O Obsidian é uma camada de navegação sobre a documentação versionada; ele n
    python scripts/build_area_catalog.py
    ```
 
-7. Publicar os dados consumidos pelo GitHub Pages:
+7. Verificar os direitos antes de publicar os dados consumidos pelo GitHub Pages:
 
    ```powershell
-   python scripts/build_github_pages_site.py
+   python scripts/build_github_pages_site.py --check-only
    ```
+
+   A cópia integral exige manifestos de fonte válidos, vinculados ao inventário,
+   com visibilidade pública e permissão `FULL_TEXT`. Após revisão e autorização
+   da release, execute sem `--check-only`. Veja
+   [Publicação dos JSONs legados](docs/reference/legacy-publication.md).
 
 ## GitHub Pages
 
@@ -104,7 +120,7 @@ Para publicar no GitHub:
 
   ```powershell
   python scripts/build_area_catalog.py
-  python scripts/build_github_pages_site.py
+  python scripts/build_github_pages_site.py --check-only
   ```
 
 O site usa apenas HTML, CSS, JavaScript e JSON estatico em `docs/assets/data/`.
@@ -133,7 +149,10 @@ python scripts/build_area_catalog.py
 python scripts/build_github_pages_site.py
 ```
 
-O workflow `Validate data` executa testes, validacao dos JSONs, cobertura dos livros, rebuild do catalogo e verifica se `data/areas`, `data/index/area-summary.json` e `docs/assets/data` ficaram sincronizados.
+O workflow `Validate` executa lint, testes Python/Node/Chromium, validação dos JSONs,
+cobertura dos livros e sincronização dos dados existentes por leitura. O CI não
+reconstrói nem publica conteúdo do acervo. Os publicadores de áreas e pilotos
+bloqueiam cópia integral sem os manifestos de direitos descritos acima.
 
 ## Atualizacao apos editar `data/text/`
 
