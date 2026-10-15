@@ -33,7 +33,8 @@ def test_offline_review_search_pagination_images_and_notes_roundtrip(page, tmp_p
     expect(page.locator("#progress")).to_contain_text("1 blocos com página anotada")
     page.get_by_role("button", name="Imagens", exact=True).click()
     expect(page.locator(".card img")).to_have_count(1)
-    assert page.locator(".card img").evaluate("image => image.complete && image.naturalWidth > 0")
+    page.locator(".card img").scroll_into_view_if_needed()
+    assert page.locator(".card img").evaluate("async image => { await image.decode(); return image.complete && image.naturalWidth > 0; }")
     expect(page.get_by_role("button", name="Ir ao bloco 4", exact=True)).to_be_visible()
     page.get_by_label("Conferi esta imagem no original").check()
     with page.expect_download() as received:
