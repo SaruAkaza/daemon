@@ -1,5 +1,50 @@
 # Handoff - Codex
 
+## 2026-10-15 — Retomada do produto: anexar, converter e consultar
+
+- O usuário esclareceu que quer anexar livros e ter o conteúdo na ferramenta.
+  Não retornar à contagem manual/preenchimento de milhares de tópicos como fluxo
+  principal. A revisão técnica anterior permanece auxiliar e não bloqueia a
+  consulta pessoal. Isso não aprova fontes, entidades ou release canônica.
+- Branch `codex/book-upload-library`, sobre o PR #4. Nova aplicação estática em
+  `web/library/`: PDF.js, OCR Tesseract português/inglês, Word e imagens, fila,
+  cancelamento, união de imagens por nome e biblioteca com busca/organização
+  inicial por títulos/categorias. Dependências exatas, lockfile e modelos locais.
+- IndexedDB guarda texto e originais no navegador. ZIP exporta tudo para cópia
+  e transferência; restauração valida hashes/fontes/limites, sem substituir os
+  livros existentes. Não há backend de upload nem sincronização entre contas.
+  A interface explica como guardar uma cópia. Nenhuma chave de LLM configurada.
+- Corondor foi importado no Chromium real: 2.609 blocos iguais à auditoria Python,
+  três partes, 66 seções sugeridas. Sem inventar páginas Word, custos ou dados.
+  Importados são `PERSONAL_UNVERIFIED`, consultáveis e fora do catálogo certificado.
+- Mesmo Site `appgprj_6ad030f853348191ba3480c5f2dea691`, audiência owner-private
+  confirmada (custom, um usuário, nenhum grupo), URL
+  `https://daemon-corondor-revisao.airydegu10.chatgpt.site`.
+  Checkout próprio `/workspace/sites/daemon-corondor-revisao`; reutilizar seu ID,
+  audiência e repositório privado. O helper do plugin não está instalado neste
+  ambiente; sincronização portátil usa stdin oculto, tokens só em memória,
+  verificação de SHA remoto e arquivo do estado exato publicado.
+- Publicação privada inclui o original de Corondor já existente no projeto para
+  o botão “Importar Corondor do projeto”. Não copiar obras ou builds para o GitHub
+  público. O caderno antigo continua em `/revisao-corondor.html` no Site privado.
+- Sete testes Node e três testes Chromium novos: OCR real, PDF digital/escaneado,
+  Word, busca, páginas vazias, duplicatas, cancelamento, cópia/restauração e
+  originais intactos. CI instala/constrói a aplicação antes dos testes de navegador.
+- Corrigido um teste anterior do caderno que verificava uma imagem lazy antes
+  de decodificar: agora rola até ela e aguarda `image.decode()`, mantendo a asserção.
+- Validação final: 1.014 Python, 46 Node existentes + 7 novos; cobertura 66,80%.
+  Build, lint e gates de dados/cobertura/sincronização/reconciliação/migração
+  passaram. Os arquivos exatos da instância privada foram conferidos no navegador,
+  incluindo a importação opcional de Corondor em um clique.
+- Uso/limites: `web/library/README.md`; evidências:
+  `docs/reports/2026-10-15-personal-library.md`; contrato próprio
+  `coordination/books/personal-library-intake.md`. Filas/livros do Claude,
+  acervo canônico, schemas, inventário e dados publicados preservados.
+- Próximo foco: melhorar organização e extração de entidades a partir dos textos
+  já acessíveis, com proveniência/validação. Organização inicial por título não
+  é catalogação semântica completa. Não prometer sincronização automática ou
+  declarar obra `done` sem a decisão humana exigida pelo projeto.
+
 ## 2026-10-15 — Caderno privado para conferência posterior
 
 - Continuação na branch `codex/real-extraction-review-adapters` e no PR #4;

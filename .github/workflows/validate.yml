@@ -51,6 +51,13 @@ jobs:
       - name: Frontend module tests
         run: node --test tests/frontend/*.test.mjs
 
+      - name: Build personal library and run import model tests
+        working-directory: web/library
+        run: |
+          npm ci --no-audit --no-fund
+          npm test
+          npm run build
+
       - name: Agent tests
         run: python -m pytest tests/agents -q
 

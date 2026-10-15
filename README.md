@@ -41,6 +41,13 @@ O comando `python -m scripts.orchestrator.review_packet` prepara um caderno HTML
 privado com busca, prévias DOCX e anotações exportáveis para conferir depois.
 O arquivo fica fora do checkout; suas anotações não aprovam etapas do pipeline.
 
+A nova [biblioteca pessoal](web/library/README.md) permite anexar PDF, DOCX e
+imagens, extrair texto/OCR no navegador e consultar o resultado com busca e
+organização inicial por seções/categorias. Inclui salvamento local, originais
+e cópia ZIP restaurável; não exige preencher o caderno técnico para ler o livro.
+É uma entrada pessoal de consulta, com promoção ao catálogo certificado ainda
+separada dos livros recém-importados.
+
 ## Estrutura proposta
 
 - `Livros/`: arquivos fonte originais.
