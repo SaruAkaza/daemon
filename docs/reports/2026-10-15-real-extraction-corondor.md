@@ -41,6 +41,40 @@ Snapshot da revisão:
 IDs de execução/diretórios identificam a tentativa; seus hashes podem mudar
 ao regenerar o pacote. O hash da fonte deve permanecer igual.
 
+## Caderno privado para revisão posterior
+
+Continuação autorizada enquanto o usuário prepara sua conferência. O comando
+`python -m scripts.orchestrator.review_packet` verificou o hash da evidência
+acima, recalculou sua extração contra a fonte e produziu um HTML independente
+de servidor em:
+
+`/workspace/.daemon_runtime/real-extraction-corondor-20261015/review/corondor-revisao-20261015.html`.
+
+Tamanho: 12.334.794 bytes. SHA-256:
+`db01ee8626747dd4edcc40e096f25c01e3dc89e35179c7028f66afc904021d46`.
+
+- Todos os 2.609 blocos mantidos com os textos bruto/normalizado e localizadores.
+- 118 prévias de mídia, todas decodificadas com sucesso no Chromium; 126 vínculos
+  de mídia a parágrafos. Nenhuma mídia sem vínculo ou relação externa pendente
+  nesta fonte. As prévias são derivadas, não certificam resolução/layout/animação.
+- Busca, lotes de 40 itens, filtro de não conferidos e links de imagem para texto.
+- Campos para documento de referência, tipo de numeração, página/intervalo,
+  observação e marca de conferência; total de páginas opcional sem atribuição
+  automática a blocos.
+- Exportação/importação de rascunhos vinculados à fonte/evidência e aos hashes
+  dos itens. Nenhum rascunho ou decisão de operador foi fabricado no ensaio.
+- Saída privada `0600`, fora do checkout, sem sobrescrita; política de conteúdo
+  bloqueia rede e código vindo da fonte. Conteúdo integral não foi versionado.
+- Conferido em 1.280 × 900 e 390 × 844 pixels: sem erros de script, solicitações
+  externas ou transbordamento horizontal no celular.
+
+Fonte, evidência de extração e estado `NEEDS_HUMAN_REVIEW` preservados. O HTML
+não registra aprovação humana e as anotações não são aplicadas automaticamente.
+Os nove testes novos, sete de geração/limites/CLI e dois Chromium, usam somente
+conteúdo sintético. Cobrem preservação, hashes, mídia compartilhada/externa,
+conteúdo HTML malicioso, saída exclusiva/privada, páginas PDF vazias e retomada
+por importação sem aceitar outra fonte/tentativa ou localizadores adulterados.
+
 ## Integração e limites
 
 Foram conectadas a extração determinística de PDF/DOCX e a preparação editorial.
@@ -71,10 +105,11 @@ locais:
 
 | Gate | Resultado |
 | --- | --- |
-| Suíte Python completa, incluindo Chromium | 1.002 aprovados |
+| Suíte Python completa, incluindo Chromium | 1.011 aprovados |
 | Novos testes da integração real | 18 aprovados |
+| Novos testes do caderno de revisão | 9 aprovados |
 | Suíte Node | 46 aprovados |
-| Cobertura de scripts | 66,54% |
+| Cobertura de scripts | 66,80% |
 | Ruff e sintaxe frontend | Aprovados |
 | Dados/schemas, cobertura de livros e sincronização | Aprovados |
 | Reconciliação e plano de migração (`--check`) | Aprovados, somente leitura |
@@ -85,6 +120,7 @@ para as primeiras versões suportadas que só tinham o alias. O teste continua
 exigindo JSON estrito; nenhum aviso é removido artificialmente da saída.
 Os 19 testes focados (adapters e navegador) passaram tanto com PyMuPDF 1.26.6
 quanto com 1.28.2 em um ambiente isolado, incluindo a CLI em subprocesso.
+Os nove testes adicionais do caderno também passaram nas duas versões.
 
 Próximo trabalho: obter prova de edição/páginas e revisar o conteúdo visual da
 variante física antes de liberar a extração para catalogação. Não converter

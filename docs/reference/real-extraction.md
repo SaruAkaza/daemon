@@ -87,6 +87,56 @@ antes de devolver os bytes. Conteúdo é enviado como anexo JSON com `no-store`.
 O modo público retorna 404 para essa rota. O download não publica nem promove
 os resultados. O modelo de identidade local do preview permanece o mesmo.
 
+## Caderno privado para conferir depois
+
+O comando abaixo gera um HTML independente de servidor, com busca, navegação
+em lotes de 40 blocos, texto bruto, normalizações/tokens auxiliares, prévias de
+mídia DOCX e campos de anotações. Ele exige o hash da evidência baixada na
+revisão e recalcula a extração contra a fonte; alterar um resultado e fornecer
+seu novo hash não torna o conteúdo válido.
+
+```bash
+python -m scripts.orchestrator.review_packet \
+  --source-root /caminho/do/checkout \
+  --manifest /caminho/do/checkout/data/source-manifests/file-SHA256.json \
+  --evidence /caminho/privado/execution-result.json \
+  --evidence-sha256 HASH_DA_EVIDENCIA_NA_REVISAO \
+  --output /caminho/privado/revisao.html
+```
+
+Abra o HTML no navegador, identifique a referência e escolha a numeração:
+contador físico do PDF, número impresso ou página do Word na formatação atual.
+O total de páginas é opcional e não atribui páginas aos trechos. Cada bloco
+permite página/intervalo, observação e marca de conferência. As imagens têm
+localizadores de mídia, hashes e links aos parágrafos recuperados.
+
+**Exportar anotações** baixa um JSON de rascunho. Para continuar em outra sessão,
+reabra o mesmo HTML e use **Importar anotações**. Não há salvamento automático;
+o navegador avisa ao fechar com alterações não exportadas. A importação exige
+os mesmos hashes de fonte/evidência, localizadores e hashes de cada item,
+rejeita duplicatas e preserva o trabalho atual se o JSON for inválido. A troca
+de um rascunho com mudanças locais exige confirmação na própria tela.
+
+As anotações têm `status=DRAFT_UNVERIFIED`: não são decisões assinadas de
+operador, não são importadas para stores e não removem gates. Sua conferência
+será a evidência para uma etapa posterior de revisão registrada. Não há botão
+de aprovação do livro neste caderno.
+
+O arquivo contém texto e imagens privados: a saída deve ficar fora do checkout,
+é criada com permissão `0600` e não sobrescreve arquivos existentes. HTML/JS/CSS
+são locais; a política de conteúdo bloqueia conexões de rede e conteúdo ativo
+de fontes. As prévias DOCX são pixels raster decodificados, limitados a 1.200
+pixels por lado, apenas primeiro quadro, com recompressão JPEG quando aplicável.
+Não preservam diagramação, resolução integral, animação ou objetos incorporados:
+confira os detalhes no original. SVG/formatos não suportados ficam como
+pendências sem incorporar binários ativos. Links externos nunca são acessados.
+Para PDFs, o caderno mantém os blocos/páginas físicas do relatório; não renderiza
+páginas nem recupera sua mídia nesta versão. Consulte o PDF para revisão visual.
+
+Limites adicionais: 64 MiB de mídia descompactada, 2.048 partes de mídia,
+20 milhões de pixels por imagem, 100 milhões no total, 16 MiB de relações DOCX
+e 2 MiB por parte de relações; HTML final até 50 MiB e anotações até 10 MiB.
+
 Limites: fonte/resultado de até 50 MiB, XML descompactado de até 64 MiB, até
 100.000 blocos e 10.000 páginas PDF. Fontes inválidas bloqueiam por erro técnico.
 Não há integração com provedor LLM nem certificado de edição/paginação implícito.

@@ -1,5 +1,36 @@
 # Handoff - Codex
 
+## 2026-10-15 — Caderno privado para conferência posterior
+
+- Continuação na branch `codex/real-extraction-review-adapters` e no PR #4;
+  o usuário validará depois. Livro continua `needs_review`, sem nova decisão.
+- `python -m scripts.orchestrator.review_packet`: HTML offline com busca,
+  40 itens por lote, texto bruto/normalizações/tokens, prévias DOCX, vínculos
+  mídia-parágrafo e anotações exportáveis/importáveis. Recalcula extração e
+  confere SHA da fonte/evidência; não altera adapters, gates ou schemas.
+- Caderno em `/workspace/.daemon_runtime/real-extraction-corondor-20261015/review/corondor-revisao-20261015.html`;
+  12.334.794 bytes, SHA `db01ee8626747dd4edcc40e096f25c01e3dc89e35179c7028f66afc904021d46`.
+  Contém material privado, não versionar ou copiar para `docs/`/GitHub Pages.
+- 2.609 blocos e 118 prévias; 126 vínculos de mídia a parágrafos, nenhum órfão
+  nesta fonte. Todas as prévias foram decodificadas no Chromium real. Conferido
+  desktop/celular sem erros de script, transbordamento ou acesso à rede.
+- Notas têm `DRAFT_UNVERIFIED`, hashes de fonte/evidência/item; só exportar/importar
+  no mesmo caderno. Não são decisões de operador nem aplicação de paginação.
+  Sem salvamento automático; exportar JSON antes de fechar. Total de páginas
+  não preenche os blocos. Previews são primeiro quadro e até 1.200 pixels;
+  o usuário precisa conferir detalhes/edição/páginas com o original.
+- Novos arquivos isolados em `scripts/orchestrator/review_packet.py`,
+  `scripts/orchestrator/review_assets/` e testes próprios; nenhum arquivo
+  compartilhado de servidor/frontend alterado nesta continuação.
+- Nove testes novos aprovados, incluindo dois Chromium. Contrato/limites:
+  `docs/reference/real-extraction.md`; evidência técnica no relatório de Corondor.
+- Suíte completa: 1.011 Python, 46 Node, cobertura 66,80%. Ruff, sintaxe, dados,
+  cobertura de livros, sincronização, reconciliação e plano de migração passaram.
+  Os nove testes do caderno passaram também no ambiente isolado PyMuPDF 1.28.2.
+- Fonte, extração privada anterior, dados, publicação, fila Claude e decisões
+  canônicas preservados. Próxima etapa: receber a conferência do usuário e a
+  prova de referência/páginas; não remover gates usando apenas estas notas.
+
 ## 2026-10-15 — Extração real e revisão privada de Corondor
 
 - Branch `codex/real-extraction-review-adapters`, baseada na Release C (PR #3,

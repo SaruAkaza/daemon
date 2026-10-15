@@ -1,8 +1,11 @@
 # Corondor — auditoria privada de extração
 
 Responsável: Codex. Branch: `codex/real-extraction-review-adapters`.
-Estado: `needs_review`, 2026-10-15. A integração de código está em validação;
-o livro não foi aprovado.
+Estado do livro: `needs_review`, 2026-10-15; o livro não foi aprovado.
+Continuação na mesma branch: pacote HTML privado entregue no runtime,
+navegável e independente de servidor para conferir texto, mídia e páginas.
+As anotações exportadas serão rascunhos vinculados aos hashes da fonte/evidência;
+não serão decisões humanas canônicas nem removerão gates automaticamente.
 
 ## Escopo
 
@@ -44,3 +47,13 @@ checkpoint de extração, categorização ou aprovação humana automática.
 Artefatos guardados fora do checkout no runtime
 `/workspace/.daemon_runtime/real-extraction-corondor-20261015`.
 Relatório: `docs/reports/2026-10-15-real-extraction-corondor.md`.
+
+## Conferência posterior pelo usuário
+
+Caderno privado em `review/corondor-revisao-20261015.html` dentro do runtime,
+12.334.794 bytes. Preserva os 2.609 blocos; 118 prévias verificadas no Chromium,
+126 vínculos aos parágrafos e nenhuma mídia sem vínculo recuperado. Inclui
+busca, filtro e exportação/importação de notas `DRAFT_UNVERIFIED` ligadas aos
+hashes da fonte/evidência e dos itens. Sem salvamento automático ou aplicação
+canônica. Leia `docs/reference/real-extraction.md` antes de usar/exportar notas.
+Nenhuma aprovação humana registrada; paginação e revisão visual seguem abertas.
