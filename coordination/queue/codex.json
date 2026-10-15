@@ -1,0 +1,13 @@
+{
+  "agent": "codex",
+  "updatedAt": "2026-10-15",
+  "books": [
+    {
+      "file": "Corondor.docx",
+      "source": "file-57dd236dd3e0a36888cc88f16a4d60f0121c9159c866a96475633e9fa2a98367",
+      "status": "needs_review",
+      "branch": "codex/real-extraction-review-adapters",
+      "notes": "Ensaio privado: 2.609 blocos, 7.196 nós de texto, 14 tabelas. Extração aguarda prova de páginas e revisão visual (118 partes de mídia); sem checkpoint de extração. Não migra o piloto legado corondor nem publica texto. Atribuição histórica ao Codex em book_assignments.md."
+    }
+  ]
+}

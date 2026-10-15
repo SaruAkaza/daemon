@@ -1,5 +1,42 @@
 # Handoff - Codex
 
+## 2026-10-15 — Extração real e revisão privada de Corondor
+
+- Branch `codex/real-extraction-review-adapters`, baseada na Release C (PR #3,
+  `4adbaf5`). O CI da Release C passou. Esta continuação fica em `needs_review`.
+- Factory `scripts.orchestrator.real_adapters:build_executors`: extração real
+  PDF/DOCX e preparação editorial com o schema existente `execution-result`.
+  Não usa fragmentos por tamanho ou marcas DOCX como páginas. Normaliza apenas
+  ligaturas Unicode; preserva valores/hífens e guarda bruto+normalizado.
+- Ensaio real: variante física de Corondor `file-57dd236d...a98367`, sem promover
+  vínculo ao ID legado. Fonte com SHA-256 conferido; 2.609 blocos, 7.196 nós de
+  texto Word, 14 tabelas e 118 partes de mídia. `NEEDS_HUMAN_REVIEW` em extração
+  por paginação desconhecida e revisão visual. Sem checkpoint de extração.
+- Runtime privado externo: `/workspace/.daemon_runtime/real-extraction-corondor-20261015`.
+  Artefatos de extração contêm texto integral apenas nesse runtime, não no Git.
+  Fonte, pilotos, inventário, entidades, dados publicados e schemas intactos.
+- Etapas rejeitadas preservam evidências validadas por schema/hash. A revisão
+  vincula tentativa, input, contrato e artefatos. Retomada invalida evidências
+  alteradas; aprovar correção não fabrica páginas nem avança o pipeline.
+- Download no painel: GET autenticado para artefato da revisão atual, bytes
+  verificados e `no-store`; modo público 404. CLI aceita `--until-idle`; mudanças
+  de manifesto no registry exigem revisão explícita, não substituição silenciosa.
+- Validação local: 1.002 Python (18 novos, incluindo Chromium), 46 Node,
+  cobertura 66,54%; lint, sintaxe, dados/schemas, cobertura, sincronização,
+  reconciliação e plano de migração aprovados. Ensaio real executado pela CLI.
+- Compartilhados tocados: `scripts/orchestrator/{batch_orchestrator,
+  checkpoint_manager,__main__}.py`, `scripts/ops/ops_server.py`,
+  `scripts/agents/preview_server.py`, `docs/assets/site-ui.mjs`.
+  Faça merge/pull antes de alterá-los.
+- Contrato: `docs/reference/real-extraction.md`. Relatório:
+  `docs/reports/2026-10-15-real-extraction-corondor.md`. Livro:
+  `coordination/books/corondor-extraction-audit.md`. Fila própria criada; fila do
+  Claude e seus contratos foram preservados.
+- Próximo trabalho: prova de edição/páginas e revisão visual antes de certificar
+  extração; classificar blocos após a fonte estar certificada. Entidades,
+  relações, frontend e QA reais ainda não têm adapters certificados nesta factory.
+  Não avançar com mocks, aprovações automáticas ou páginas inventadas.
+
 ## 2026-10-14 — Motor privado da Release C
 
 - Branch `codex/release-c-batch-orchestrator`, baseada em

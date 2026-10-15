@@ -23,7 +23,10 @@ def main() -> int:
     parser.add_argument("--port", type=int, default=8080)
     parser.add_argument("--concurrency", type=int, default=3)
     parser.add_argument("--wave-review-id")
+    parser.add_argument("--until-idle", action="store_true", help="Encerrar quando não houver execução/retry pendente")
     args = parser.parse_args()
+    if args.until_idle and args.serve:
+        parser.error("--until-idle não pode ser combinado com --serve")
     if args.demo and any((args.registry, args.adapters, args.source_root)):
         parser.error("--demo não aceita registry/adapters/source-root")
     if not args.demo and not all((args.registry, args.adapters, args.source_root)):
@@ -48,6 +51,8 @@ def main() -> int:
             if registration["bookId"] not in engine.state["books"]:
                 engine.register(registration["bookId"], registration.get("manifest"),
                                 metadata=registration.get("metadata"))
+            elif engine.state["books"][registration["bookId"]]["manifest"] != registration.get("manifest"):
+                raise ValueError("Registry manifest changed; use an explicit reviewed source revision or a new runtime")
         server = None
         try:
             if args.serve:
@@ -66,7 +71,7 @@ def main() -> int:
                 if engine.fatal_error:
                     raise RuntimeError(engine.fatal_error)
                 snapshot = engine.snapshot()
-                if args.demo and not args.serve and all(b["pipelineStatus"] not in
+                if (args.demo or args.until_idle) and not args.serve and all(b["pipelineStatus"] not in
                     ("RUNNING", "QUEUED", "RETRY_WAIT") for b in snapshot["books"]):
                     print(json.dumps(snapshot, ensure_ascii=False, indent=2))
                     return 0

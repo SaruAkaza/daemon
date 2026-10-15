@@ -41,6 +41,14 @@ def _source_validate(context: StageContext, payloads: dict[str, Any]) -> None:
         raise ValueError("Original source differs from its registered SHA-256")
 
 
+class _GateFailure(StageFailure):
+    """Only the engine attaches schema/hash-validated artifacts to a rejected gate."""
+
+    def __init__(self, failure: StageFailure, refs: dict[str, Any]) -> None:
+        super().__init__(failure.category, str(failure))
+        self.artifact_refs = copy.deepcopy(refs)
+
+
 class BatchOrchestrator:
     """Single owner of a private runtime, with bounded concurrent stage workers.
 
@@ -141,7 +149,7 @@ class BatchOrchestrator:
     def _context(self, book: dict[str, Any], stage: str, workspace: Path,
                  prefix: list[dict[str, Any]], attempt: int) -> StageContext:
         return StageContext(book["bookId"], stage, copy.deepcopy(book["manifest"]),
-                            self._source_path(book), workspace, tuple(copy.deepcopy(prefix)), attempt)
+                            self._source_path(book), workspace, tuple(copy.deepcopy(prefix)), attempt, self.root)
 
     def _input_hash(self, book: dict[str, Any], prefix: list[dict[str, Any]]) -> str:
         return digest({"manifest": book["manifest"],
@@ -152,7 +160,7 @@ class BatchOrchestrator:
             book["epochs"][affected] += 1
             book["attempts"][affected] = 0
         book.update(status="QUEUED", retryAt=0, reviewId=None, failure=None,
-                    invalidatedAt=now(), invalidationReason=reason)
+                    failedAttempt=None, invalidatedAt=now(), invalidationReason=reason)
         self._save()  # Epochs fence off both durable checkpoints and late worker results.
 
     def _prefix(self, book: dict[str, Any]) -> list[dict[str, Any]]:
@@ -192,6 +200,8 @@ class BatchOrchestrator:
         job["humanReviewRequired"] = status in ("NEEDS_HUMAN_REVIEW", "READY_FOR_HUMAN_APPROVAL")
         job["blockingReasons"] = [book["failure"]] if book.get("failure") else []
         job["artifacts"] = [str(self.root / path) for cp in prefix for path in cp["artifactRefs"]]
+        job["artifacts"].extend(str(self.root / path) for path in
+                                (book.get("failedAttempt") or {}).get("artifactRefs", {}))
         job["status"] = {"BLOCKED": "blocked", "NEEDS_HUMAN_REVIEW": "needs_review",
                          "READY_FOR_HUMAN_APPROVAL": "needs_review", "APPROVED_PRIVATE": "approved",
                          "RUNNING": "in_progress"}.get(status, "todo")
@@ -249,19 +259,25 @@ class BatchOrchestrator:
             self._sync_job(book, [])
 
     def _review(self, book: dict[str, Any], stage: str, kind: str,
-                prefix: list[dict[str, Any]], category: str, message: str) -> None:
-        snapshot = digest({"bookId": book["bookId"], "manifest": book["manifest"],
-                           "epochs": book["epochs"], "checkpoints": prefix, "kind": kind})
+                prefix: list[dict[str, Any]], category: str, message: str,
+                failed_attempt: dict[str, Any] | None = None) -> None:
+        snapshot_data = {"bookId": book["bookId"], "manifest": book["manifest"],
+                         "epochs": book["epochs"], "checkpoints": prefix, "kind": kind}
+        if failed_attempt:
+            snapshot_data["failedAttempt"] = failed_attempt
+        snapshot = digest(snapshot_data)
         review_id = f"BATCH-{snapshot}"
         if not self.reviews.get_review(review_id):
             self.reviews.create_review({"reviewId": review_id, "bookId": book["bookId"],
                                         "stage": stage, "category": category, "reviewKind": kind,
                                         "snapshotSha256": snapshot, "summary": message, "problem": message,
                                         "evidence": {"snapshotSha256": snapshot,
+                                                     **({"failedAttempt": failed_attempt} if failed_attempt else {}),
                                                      "checkpoints": [{k: cp[k] for k in
                                                         ("stage", "inputHash", "outputHash", "contractHash", "artifactRefs")}
                                                                      for cp in prefix]},
-                                        "artifactRefs": [p for cp in prefix for p in cp["artifactRefs"]]})
+                                        "artifactRefs": [p for cp in prefix for p in cp["artifactRefs"]]
+                                                        + list((failed_attempt or {}).get("artifactRefs", {}))})
         book["reviewId"] = review_id
 
     def _complete(self, book: dict[str, Any], prefix: list[dict[str, Any]]) -> None:
@@ -275,6 +291,11 @@ class BatchOrchestrator:
             if not book["manifest"]:
                 continue
             prefix = self._prefix(book)
+            if book["status"] == "NEEDS_HUMAN_REVIEW" and book.get("failedAttempt"):
+                try:
+                    self._verify_failed_attempt(book, prefix, book["failedAttempt"])
+                except (ValueError, OSError) as exc:
+                    self._invalidate(book, book["failedAttempt"]["stage"], f"Review evidence changed: {exc}")
             if book["status"] == "APPROVED_PRIVATE":
                 # Re-establish approval from the immutable human log, not the mutable state flag.
                 book["status"] = "READY_FOR_HUMAN_APPROVAL"
@@ -317,6 +338,49 @@ class BatchOrchestrator:
                 raise ValueError("Review artifacts changed; reprocessing required")
             if review.get("reviewKind") == "BATCH_FINAL" and len(prefix) != len(STAGES):
                 raise ValueError("Final review requires all seven validated checkpoints")
+            failed_attempt = review.get("evidence", {}).get("failedAttempt")
+            if failed_attempt:
+                if failed_attempt != book.get("failedAttempt"):
+                    raise ValueError("Review does not match the current failed attempt")
+                self._verify_failed_attempt(book, prefix, failed_attempt)
+
+    def _verify_failed_attempt(self, book: dict[str, Any], prefix: list[dict[str, Any]], failed: dict) -> None:
+        stage = failed["stage"]
+        executor = self.executors[stage]
+        if (failed["bookId"] != book["bookId"] or failed["epoch"] != book["epochs"][stage]
+                or failed["inputHash"] != self._input_hash(book, prefix)
+                or failed["contractHash"] != executor.fingerprint()):
+            raise ValueError("Failed attempt input or contract is stale")
+        workspace = (self.root / failed["workspace"]).resolve()
+        workspace.relative_to(self.root)
+        for relative in failed["artifactRefs"]:
+            contained_file(self.root, relative).relative_to(workspace)
+        self.checkpoints.artifacts(failed["artifactRefs"], executor)
+
+    def review_artifact(self, review_id: str, relative: str) -> bytes:
+        """Read only artifacts explicitly attached to the current, verified review."""
+        with self._lock:
+            self._ensure_open()
+            self.validate_review(review_id)
+            review = self.reviews.get_review(review_id) or {}
+            if review.get("reviewKind") not in ("BATCH_FINAL", "BATCH_CORRECTION"):
+                raise ValueError("Artifact downloads require a current batch review")
+            if relative not in review.get("artifactRefs", []):
+                raise ValueError("Artifact is outside this review")
+            book = self.state["books"][review["bookId"]]
+            candidates = [*self._prefix(book)]
+            if book.get("failedAttempt"):
+                candidates.append(book["failedAttempt"])
+            refs = [ref for cp in candidates for path, ref in cp["artifactRefs"].items() if path == relative]
+            if len(refs) != 1:
+                raise ValueError("Artifact is not part of the current batch snapshot")
+            path = contained_file(self.root, relative)
+            with path.open("rb") as stream:
+                raw = stream.read(50 * 1024 * 1024 + 1)
+            import hashlib
+            if len(raw) > 50 * 1024 * 1024 or hashlib.sha256(raw).hexdigest() != refs[0]["sha256"]:
+                raise ValueError("Review artifact hash or resource limit mismatch")
+            return raw
 
     def apply_command(self, command: dict[str, Any]) -> dict[str, Any]:
         """Called only by the existing authenticated/risk-validated Ops processor."""
@@ -357,7 +421,7 @@ class BatchOrchestrator:
                     book["epochs"][affected] += 1
                     book["attempts"][affected] = 0
                 book.update(status="QUEUED", retryAt=0, reviewId=None, failure=None,
-                            dequeued=False, invalidatedAt=now(), invalidationReason=command.get("reason"))
+                            failedAttempt=None, dequeued=False, invalidatedAt=now(), invalidationReason=command.get("reason"))
             else:
                 raise ValueError(f"Unsupported batch command: {kind}")
             result = {"bookId": book["bookId"], "action": kind, "status": book["status"],
@@ -375,8 +439,11 @@ class BatchOrchestrator:
             path = contained_file(context.workspace, relative)
             refs[str(path.relative_to(self.root))] = {"schema": schema, "sha256": file_hash(path)}
         payloads = self.checkpoints.artifacts(refs, executor)
-        if executor.validate(context, payloads) is not None:
-            raise ValueError("Gate must raise on rejection and return None on acceptance")
+        try:
+            if executor.validate(context, payloads) is not None:
+                raise ValueError("Gate must raise on rejection and return None on acceptance")
+        except StageFailure as exc:
+            raise _GateFailure(exc, refs) from exc
         return refs
 
     def _failure(self, book: dict[str, Any], task: dict[str, Any], exc: Exception,
@@ -389,7 +456,15 @@ class BatchOrchestrator:
             book.update(status="RETRY_WAIT", retryAt=time.time() + delay)
         elif category in (FailureClass.DOMAIN_AMBIGUITY, FailureClass.POLICY_OR_RIGHTS):
             book["status"] = "NEEDS_HUMAN_REVIEW"
-            self._review(book, task["stage"], "BATCH_CORRECTION", prefix, category.value, str(exc))
+            failed = {**task, "artifactRefs": exc.artifact_refs} if isinstance(exc, _GateFailure) else None
+            if failed:
+                try:
+                    self._verify_failed_attempt(book, prefix, failed)
+                except (ValueError, OSError) as invalid:
+                    book.update(status="BLOCKED", failure=f"Rejected review artifacts: {invalid}")
+                    return
+            book["failedAttempt"] = failed
+            self._review(book, task["stage"], "BATCH_CORRECTION", prefix, category.value, str(exc), failed)
         else:
             book["status"] = "BLOCKED"
 
@@ -405,12 +480,12 @@ class BatchOrchestrator:
             if task["epoch"] != book["epochs"][task["stage"]]:
                 continue
             try:
-                refs = future.result()
                 executor = self.executors[task["stage"]]
                 if (self._input_hash(book, prefix) != task["inputHash"]
                         or executor.fingerprint() != task["contractHash"]):
                     self._invalidate(book, task["stage"], "Inputs changed during execution")
                     continue
+                refs = future.result()
                 cp = {**task, "artifactRefs": refs, "outputHash": digest(refs),
                       "status": "PASSED", "completedAt": now()}
                 context = self._context(book, task["stage"], self.root / task["workspace"], prefix, task["attempt"])
@@ -418,7 +493,7 @@ class BatchOrchestrator:
                                         input_hash=task["inputHash"], executor=executor, context=context)
                 self.checkpoints.commit(cp)  # Recovery can discover this before state/job updates.
                 prefix.append(cp)
-                book.update(status="QUEUED", retryAt=0, failure=None)
+                book.update(status="QUEUED", retryAt=0, failure=None, failedAttempt=None)
                 if len(prefix) == len(STAGES):
                     self._complete(book, prefix)
             except Exception as exc:
