@@ -9,6 +9,11 @@ import unicodedata
 import xml.etree.ElementTree as ET
 import zipfile
 
+try:
+    import pymupdf
+except ImportError:  # Compatibility with the earliest supported PyMuPDF 1.24 releases.
+    import fitz as pymupdf
+
 from scripts.agents.application_runtime import ResourceBounds
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
@@ -145,11 +150,9 @@ def _docx(raw: bytes) -> dict:
 
 
 def _pdf(raw: bytes) -> dict:
-    import fitz
-
     blocks = []
     visual_pages = []
-    with fitz.open(stream=raw, filetype="pdf") as document:
+    with pymupdf.open(stream=raw, filetype="pdf") as document:
         if document.needs_pass:
             raise ValueError("Encrypted PDF needs an explicitly configured reader")
         if document.page_count > MAX_PAGES:

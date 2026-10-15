@@ -4,16 +4,14 @@ from __future__ import annotations
 import hashlib
 import json
 
-import fitz
-
 from scripts.agents.application_runtime import ResourceBounds
 from scripts.agents.canonical_json import canonical_json_bytes
 from scripts.agents.contracts import validate_payload, write_atomic
 from scripts.orchestrator.checkpoint_manager import StageContext, StageExecutor, contained_file, digest
 from scripts.orchestrator.retry_policy import FailureClass, StageFailure
-from scripts.orchestrator.source_extraction import NORMALIZATION_VERSION, extract_source, text_hash
+from scripts.orchestrator.source_extraction import NORMALIZATION_VERSION, extract_source, pymupdf, text_hash
 
-VERSION = f"real-evidence-1.0.0/{NORMALIZATION_VERSION}/pymupdf-{fitz.VersionBind}"
+VERSION = f"real-evidence-1.0.0/{NORMALIZATION_VERSION}/pymupdf-{pymupdf.VersionBind}"
 
 
 def _envelope(context: StageContext, metadata: dict, issue_codes: list[str], evidence: list[dict]) -> dict:

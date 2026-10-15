@@ -14,7 +14,10 @@ import zipfile
 
 from docx import Document
 from docx.oxml import OxmlElement
-import fitz
+try:
+    import pymupdf as fitz
+except ImportError:
+    import fitz
 import pytest
 
 from scripts.agents.canonical_json import canonical_json_bytes

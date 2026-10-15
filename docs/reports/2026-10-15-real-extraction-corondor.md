@@ -79,6 +79,13 @@ locais:
 | Dados/schemas, cobertura de livros e sincronização | Aprovados |
 | Reconciliação e plano de migração (`--check`) | Aprovados, somente leitura |
 
+O CI com PyMuPDF 1.28.2 identificou que o alias legado `fitz` imprime aviso em
+stdout e quebra o JSON da CLI. Os novos adapters usam `pymupdf`, com fallback
+para as primeiras versões suportadas que só tinham o alias. O teste continua
+exigindo JSON estrito; nenhum aviso é removido artificialmente da saída.
+Os 19 testes focados (adapters e navegador) passaram tanto com PyMuPDF 1.26.6
+quanto com 1.28.2 em um ambiente isolado, incluindo a CLI em subprocesso.
+
 Próximo trabalho: obter prova de edição/páginas e revisar o conteúdo visual da
 variante física antes de liberar a extração para catalogação. Não converter
 marcas de renderização ou blocos por tamanho em páginas para eliminar a pendência.
