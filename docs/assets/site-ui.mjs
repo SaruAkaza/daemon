@@ -1865,6 +1865,15 @@ export function mountSite({ root, store, storage = localStorage, mode = 'restric
     pre.textContent = JSON.stringify(review.evidence || {}, null, 2);
     diffBox.appendChild(pre);
     evSec.appendChild(diffBox);
+    if (state.ops.batch && review.reviewKind && review.reviewKind.startsWith('BATCH_')) {
+      for (const relative of review.artifactRefs || []) {
+        const download = document.createElement('a');
+        download.href = `/api/ops/reviews/${encodeURIComponent(review.reviewId)}/artifact?path=${encodeURIComponent(relative)}`;
+        download.textContent = `Baixar evidência privada: ${relative.split('/').pop()}`;
+        download.className = 'site-btn-action-link';
+        evSec.appendChild(download);
+      }
+    }
     container.appendChild(evSec);
 
     if (review.recommendation) {

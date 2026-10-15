@@ -32,6 +32,15 @@ A demonstração com cinco livros sintéticos usa
 Os executores do acervo real ainda precisam de integração e certificação. Veja
 [Motor de lotes e aprovação privada](docs/reference/batch-orchestrator.md).
 
+A extração real PDF/DOCX e a preparação de evidências para revisão podem ser
+conectadas com `--adapters scripts.orchestrator.real_adapters:build_executors`.
+O primeiro ensaio privado, Corondor, preservou 2.609 blocos e parou para revisão
+de páginas/conteúdo visual. Veja [Extração real](docs/reference/real-extraction.md)
+e [Resultados de Corondor](docs/reports/2026-10-15-real-extraction-corondor.md).
+O comando `python -m scripts.orchestrator.review_packet` prepara um caderno HTML
+privado com busca, prévias DOCX e anotações exportáveis para conferir depois.
+O arquivo fica fora do checkout; suas anotações não aprovam etapas do pipeline.
+
 ## Estrutura proposta
 
 - `Livros/`: arquivos fonte originais.

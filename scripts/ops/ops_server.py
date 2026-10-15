@@ -99,6 +99,19 @@ class OpsRequestHandler:
             return self._handle_post_command(body)
         elif clean_path == "/api/ops/reviews" and method == "GET":
             return self._handle_get_reviews()
+        elif clean_path.startswith("/api/ops/reviews/") and clean_path.endswith("/artifact") and method == "GET":
+            review_id = urllib.parse.unquote(clean_path[len("/api/ops/reviews/"):-len("/artifact")])
+            query = urllib.parse.parse_qs(urllib.parse.urlparse(path).query)
+            if set(query) != {"path"} or len(query["path"]) != 1:
+                return 400, {"Content-Type": "application/json"}, b'{"error":"One artifact path is required"}'
+            if not self.command_processor.orchestrator:
+                return 404, {"Content-Type": "application/json"}, b'{"error":"Batch engine unavailable"}'
+            try:
+                artifact = self.command_processor.orchestrator.review_artifact(review_id, query["path"][0])
+            except (ValueError, KeyError, OSError):
+                return 409, {"Content-Type": "application/json"}, b'{"error":"Review evidence is stale or unavailable"}'
+            return 200, {"Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store",
+                         "X-Content-Type-Options": "nosniff", "Content-Disposition": 'attachment; filename="review-artifact.json"'}, artifact
         elif clean_path == "/api/ops/events" and method == "GET":
             return self._handle_events(norm_headers)
         else:
