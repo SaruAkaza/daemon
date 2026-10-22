@@ -228,7 +228,7 @@ class PreviewServer:
                     headers_dict = {k: v for k, v in self.headers.items()}
                     status_code, resp_headers, resp_body = server_ref.ops_handler.handle_request(
                         method="GET",
-                        path=req_path,
+                        path=self.path,
                         headers=headers_dict,
                         client_address=self.client_address,
                         body=b"",

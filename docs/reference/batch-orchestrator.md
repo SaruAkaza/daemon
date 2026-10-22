@@ -6,6 +6,11 @@ implementada e exercitada com fontes sintéticas. Os seis executores do acervo
 real ainda precisam de integração e certificação; o motor não fornece um
 extrator semântico ou serviço LLM pronto. A migração dos pilotos continua pendente.
 
+A factory de [extração real e preparação de revisão](real-extraction.md) já
+conecta PDF/DOCX e a preparação editorial. Ela bloqueia quando faltam páginas,
+revisão visual ou classificação; as etapas semânticas posteriores não simulam
+sucesso. O ensaio real não certificou livros nem concluiu a migração.
+
 ## Demonstração executável
 
 Requer Python 3.12, dependências do projeto e Linux/POSIX (`flock`). Na raiz:

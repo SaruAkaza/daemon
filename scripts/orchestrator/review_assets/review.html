@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'sha256-@@CSS_HASH@@'; script-src 'sha256-@@SCRIPT_HASH@@'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Daemon · Revisão privada</title>
+<style>@@CSS@@</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">DAEMON / CADERNO DE REVISÃO PRIVADO</div>
+  <h1 id="title">Revisão da fonte</h1>
+  <p id="summary"></p>
+  <p class="notice">Confira com o documento de referência. As páginas continuam sem certificação. Suas anotações são um rascunho e não aprovam o livro.</p>
+</header>
+<main>
+  <details class="guide" open>
+    <summary>Como revisar</summary>
+    <ol>
+      <li>Identifique abaixo o PDF ou a edição que você está consultando e o tipo de numeração.</li>
+      <li>Busque um trecho, confira o texto e anote a página ou intervalo. Os números dos blocos são apenas localizadores.</li>
+      <li>Abra <strong>Imagens</strong> para conferir as prévias com a fonte. Elas mostram só o primeiro quadro, reduzido a até 1.200 pixels; confira os originais para detalhes.</li>
+      <li>Use <strong>Exportar anotações</strong> para guardar seu trabalho. Para continuar depois, abra este HTML e importe o JSON. Nada é salvo automaticamente ao fechar.</li>
+    </ol>
+  </details>
+  <section class="reference" aria-label="Documento de referência">
+    <label>Seu nome <input id="reviewer" maxlength="200" autocomplete="off"></label>
+    <label>Documento / edição de referência <input id="reference" maxlength="2000" placeholder="Nome do PDF, edição ou impressão"></label>
+    <label>Numeração usada <select id="page-basis"><option value="UNSPECIFIED">Ainda não informada</option><option value="PDF_PHYSICAL_INDEX">Página física do PDF (contador do leitor)</option><option value="PRINTED_LABEL">Número impresso na página</option><option value="DOCX_RENDERED_PAGE">Página do Word nesta formatação</option></select></label>
+    <label>Total de páginas na referência (opcional) <input id="page-count" type="number" min="1" max="100000" step="1" placeholder="Não preenche páginas dos trechos"></label>
+    <label class="wide">Observações gerais <textarea id="general" maxlength="10000" rows="2"></textarea></label>
+  </section>
+  <div class="actions">
+    <button id="export" class="primary">Exportar anotações</button>
+    <label class="file-label">Importar anotações <input id="import" type="file" accept="application/json,.json"></label>
+    <span id="save-status" role="status">Sem alterações.</span>
+  </div>
+  <p id="error" role="alert" hidden></p>
+  <div class="toolbar">
+    <div class="tabs" role="group" aria-label="Conteúdo"><button id="text-tab" aria-pressed="true">Texto</button><button id="media-tab" aria-pressed="false">Imagens</button></div>
+    <label class="search">Buscar texto ou localizador <input id="search" type="search" placeholder="Digite uma palavra, bloco ou parte XML"></label>
+    <label class="filter"><input id="pending" type="checkbox"> Só não conferidos</label>
+  </div>
+  <p id="progress" aria-live="polite"></p>
+  <div class="pagination"><button id="previous">Anterior</button><span id="range"></span><button id="next">Próximos</button></div>
+  <section id="items" aria-label="Itens da revisão"></section>
+  <details class="integrity"><summary>Identificação e limites da evidência</summary><pre id="integrity"></pre><p>O pacote não inclui uma renderização de páginas DOCX, nem valida edição, paginação ou cobertura visual. Referências externas de imagens não são acessadas. O rascunho exportado não altera o pipeline.</p></details>
+</main>
+<script id="packet-data" type="application/json">@@DATA@@</script>
+<script>@@SCRIPT@@</script>
+</body>
+</html>

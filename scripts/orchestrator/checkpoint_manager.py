@@ -45,6 +45,7 @@ class StageContext:
     workspace: Path
     predecessors: tuple[dict[str, Any], ...]
     attempt: int
+    artifact_root: Path | None = None
 
 
 @dataclass(frozen=True)
