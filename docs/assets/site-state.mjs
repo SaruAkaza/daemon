@@ -146,6 +146,7 @@ export function createState(storage = null, initialHash = '#/', options = {}) {
     },
     ops: {
       controlState: null,
+      batch: null,
       commands: [],
       reviews: [],
       activeTab: 'overview',

@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import sys
 import unicodedata
 from pathlib import Path
 from typing import Any
@@ -42,6 +43,14 @@ def read_json(path: Path, default: Any) -> Any:
 
 
 def write_json(path: Path, payload: Any) -> None:
+    # Individual legacy book builders also write directly to public assets.
+    # Keep their canonical/local outputs available, but apply the same rights
+    # preflight before a public destination or its parent is created.
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from scripts.legacy_publication import validate_public_write
+
+    validate_public_write(path, payload, repo_root=ROOT)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",

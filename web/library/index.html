@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Anexe seus livros de Daemon e consulte o texto, as páginas e as seções em uma biblioteca pessoal.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self' blob: data:; img-src 'self' data: blob:; style-src 'self'; font-src 'self' data: blob:; object-src 'none'; base-uri 'self'">
+  <title>Daemon Tools · Minha biblioteca</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Daemon Tools, início"><span class="brand-mark">D</span><span>DAEMON <small>TOOLS</small></span></a>
+    <span class="private-label">Biblioteca pessoal</span>
+    <nav aria-label="Ações da biblioteca"><button id="backup-export">Exportar biblioteca</button><button id="backup-import">Restaurar cópia</button></nav>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro-copy"><span class="eyebrow">SEU ACERVO, PRONTO PARA CONSULTAR</span><h1>Dos livros<br>para a sua mesa.</h1><p>Adicione PDFs, documentos Word ou imagens. O texto é extraído e vira uma biblioteca com busca, seções e acesso à fonte.</p></div>
+      <section class="dropzone" id="dropzone" aria-label="Adicionar livros">
+        <div class="upload-symbol" aria-hidden="true">↑</div><h2>Adicione seus livros</h2><p>Arraste os arquivos para cá ou escolha no seu dispositivo.</p>
+        <button id="choose-files" class="primary">Selecionar arquivos</button>
+        <input id="files" class="visually-hidden" type="file" multiple accept=".pdf,.docx,.png,.jpg,.jpeg,.webp,.gif,.bmp" aria-label="Arquivos dos livros">
+        <span class="formats">PDF · DOCX · PNG · JPG · WebP · GIF · BMP<br>Até 50 MB por arquivo · OCR automático</span>
+        <label class="image-group"><input id="group-images" type="checkbox" checked> Unir imagens em um livro, pela ordem dos nomes</label>
+      </section>
+    </section>
+    <section id="conversion" class="conversion" aria-label="Progresso da importação" hidden><div><strong id="conversion-title"></strong><p id="conversion-message" role="status"></p></div><progress id="conversion-progress" max="1" value="0"></progress><button id="cancel">Cancelar importação</button></section>
+    <div id="messages" aria-live="polite"></div>
+    <p class="storage-note">Seus livros ficam salvos <strong>neste navegador</strong>. Use <strong>Exportar biblioteca</strong> para guardar uma cópia com os originais ou continuar em outro dispositivo.</p>
+    <section class="library" aria-labelledby="library-title">
+      <div class="library-heading"><div><span class="eyebrow">CONSULTA</span><h2 id="library-title">Minha biblioteca <span id="book-count">0</span></h2></div><label class="search">Buscar nos livros<input id="search" type="search" placeholder="Uma regra, um poder, um nome…"></label></div>
+      <div id="book-cards" class="book-cards"></div>
+      <div class="browser" id="browser" hidden>
+        <aside class="categories"><label for="book-filter">Livro</label><select id="book-filter"><option value="all">Todos os livros</option></select><h3>Categorias</h3><div id="categories"></div><p>Organização inicial pelos títulos encontrados. O texto original é preservado para consulta.</p></aside>
+        <section class="results-panel" aria-label="Trechos encontrados"><div class="results-heading"><strong>Seções e trechos</strong><span id="result-count"></span></div><div id="results"></div><button id="more" hidden>Mostrar mais trechos</button></section>
+        <article id="reader" class="reader"><p>Escolha um trecho para ler.</p></article>
+      </div>
+      <div id="empty" class="empty"><div class="empty-mark" aria-hidden="true">☷</div><h3>Seu próximo livro começa aqui.</h3><p>Selecione um arquivo acima. Quando a conversão terminar, você poderá buscar e ler o conteúdo nesta tela.</p></div>
+    </section>
+    <footer><span>DAEMON TOOLS</span><span>Texto de OCR pode precisar de conferência. Os números das páginas PDF seguem o contador do arquivo.</span><a href="THIRD_PARTY_LICENSES.txt">Licenças</a></footer>
+  </main>
+  <input id="backup-file" class="visually-hidden" type="file" accept=".zip,application/zip" aria-label="Cópia da biblioteca">
+  <dialog id="source-dialog"><header><h2 id="source-title">Fonte original</h2><button id="source-close" aria-label="Fechar fonte original">Fechar</button></header><p id="source-message" role="status"></p><canvas id="source-canvas"></canvas></dialog>
+  <script src="assets/library.js" type="module"></script>
+</body>
+</html>
