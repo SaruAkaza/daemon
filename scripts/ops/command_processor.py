@@ -33,11 +33,15 @@ class CommandProcessor:
         audit_log: CommandAuditLog | None = None,
         review_store: ReviewStore | None = None,
         broadcaster: EventBroadcaster | None = None,
+        orchestrator: Any | None = None,
     ) -> None:
         self.command_store = command_store if command_store is not None else CommandStore()
         self.audit_log = audit_log if audit_log is not None else CommandAuditLog()
         self.review_store = review_store
         self.broadcaster = broadcaster
+        self.orchestrator = orchestrator
+        if orchestrator is not None and review_store is not orchestrator.reviews:
+            raise ValueError("Ops and batch must share the same ReviewStore instance")
         self._lock = threading.RLock()
 
         # Background worker management
@@ -186,6 +190,8 @@ class CommandProcessor:
 
                 try:
                     result_data = self._execute_command(cmd)
+                    if self.orchestrator:
+                        self._notify_event("batch_updated", self.orchestrator.snapshot())
                     succ_rec = self.command_store.update_command_status(cid, "SUCCEEDED", result=result_data)
                     self._notify_event("command_updated", succ_rec)
                     if cmd_type in ("APPROVE_REVIEW", "REJECT_REVIEW", "REQUEST_CORRECTION"):
@@ -223,6 +229,11 @@ class CommandProcessor:
         cmd_type = cmd.get("commandType")
         book_id = cmd.get("bookId")
         payload = cmd.get("payload") or {}
+
+        if self.orchestrator and cmd_type in (
+            "PAUSE_BOOK", "RESUME_BOOK", "PRIORITIZE_BOOK", "REPROCESS_STAGE", "DEQUEUE_BOOK"
+        ):
+            self.orchestrator.apply_command(cmd)
 
         if cmd_type == "PAUSE_BOOK":
             if not book_id:
@@ -328,6 +339,10 @@ class CommandProcessor:
                 "decision": action,
                 "justification": cmd.get("reason", ""),
             }
+            if self.orchestrator:
+                self.orchestrator.validate_review(rev_id)
+            if "snapshotSha256" in payload:
+                dec_payload["snapshotSha256"] = payload["snapshotSha256"]
             dec_record = self.review_store.record_decision(dec_payload)
             return {"reviewId": rev_id, "decision": action, "decisionId": dec_record.get("decisionId")}
 

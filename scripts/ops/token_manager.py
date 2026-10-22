@@ -16,8 +16,9 @@ from scripts.ops.runtime_locator import get_ops_runtime_dir
 class TokenManager:
     """Manages high-entropy process-scoped tokens, Windows/POSIX file permissions, and session cookies."""
 
-    def __init__(self, runtime_dir: Path | str | None = None) -> None:
-        self.ops_dir = get_ops_runtime_dir(runtime_dir)
+    def __init__(self, runtime_dir: Path | str | None = None,
+                 *, ops_dir: Path | str | None = None) -> None:
+        self.ops_dir = Path(ops_dir).resolve() if ops_dir is not None else get_ops_runtime_dir(runtime_dir)
         self.token_file = self.ops_dir / "ops_token"
         self._token: str | None = None
         self._session_secret: str = secrets.token_hex(32)

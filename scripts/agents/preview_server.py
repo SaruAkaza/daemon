@@ -80,11 +80,18 @@ class PreviewServer:
         public_root: Path | str | None = None,
         mode: str = "restricted_preview",
         runtime_dir: Path | str | None = None,
+        orchestrator: Any | None = None,
     ) -> None:
         if host not in ("127.0.0.1", "localhost"):
             raise ValueError(f"Binding to non-loopback interface '{host}' is strictly prohibited.")
         if mode not in ("restricted_preview", "public"):
             raise ValueError(f"Invalid server mode: '{mode}'. Must be 'restricted_preview' or 'public'.")
+        if orchestrator is not None and mode != "restricted_preview":
+            raise ValueError("Batch execution is available only in restricted_preview mode")
+        if orchestrator is not None:
+            runtime_dir = runtime_dir if runtime_dir is not None else orchestrator.runtime_dir
+            if Path(runtime_dir).resolve() != orchestrator.runtime_dir:
+                raise ValueError("Preview and batch must use the same private runtime")
 
         self.host = host
         self.requested_port = port
@@ -99,18 +106,22 @@ class PreviewServer:
         self.port = port
 
         if self.mode == "restricted_preview":
-            stores_dir = get_ops_stores_dir(runtime_dir)
-            self.token_manager = TokenManager(runtime_dir=runtime_dir)
+            stores_dir = orchestrator.reviews.stores_dir if orchestrator else get_ops_stores_dir(runtime_dir)
+            self.token_manager = TokenManager(runtime_dir=runtime_dir,
+                                             ops_dir=orchestrator.runtime_dir / "ops" if orchestrator else None)
             self.token_manager.initialize()
             self.command_store = CommandStore(stores_dir=stores_dir)
             self.audit_log = CommandAuditLog(stores_dir=stores_dir)
-            self.review_store = ReviewStore(stores_dir=stores_dir)
+            self.review_store = orchestrator.reviews if orchestrator else ReviewStore(stores_dir=stores_dir)
             self.broadcaster = EventBroadcaster()
+            if orchestrator:
+                orchestrator.broadcaster = self.broadcaster
             self.command_processor = CommandProcessor(
                 command_store=self.command_store,
                 audit_log=self.audit_log,
                 review_store=self.review_store,
                 broadcaster=self.broadcaster,
+                orchestrator=orchestrator,
             )
             self.ops_handler = OpsRequestHandler(
                 token_manager=self.token_manager,
@@ -217,7 +228,7 @@ class PreviewServer:
                     headers_dict = {k: v for k, v in self.headers.items()}
                     status_code, resp_headers, resp_body = server_ref.ops_handler.handle_request(
                         method="GET",
-                        path=req_path,
+                        path=self.path,
                         headers=headers_dict,
                         client_address=self.client_address,
                         body=b"",

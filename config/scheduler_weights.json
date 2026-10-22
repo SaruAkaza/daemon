@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "criteriaWeights": {
+    "rightsClarity": 25,
+    "sourceIntegrity": 20,
+    "extractionSimplicity": 15,
+    "dependencyPrecedence": 20,
+    "costEfficiency": 10,
+    "editorialPriority": 10
+  },
+  "rightsScores": {
+    "AUTHORIZED": 1.0,
+    "PUBLIC_DOMAIN": 1.0,
+    "METADATA_ONLY": 0.5,
+    "PRIVATE": 0.2,
+    "UNKNOWN": 0.0
+  },
+  "complexityMultipliers": {"LOW": 1.0, "MEDIUM": 0.6, "HIGH": 0.2}
+}

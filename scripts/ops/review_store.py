@@ -26,6 +26,18 @@ class ReviewConflictError(RuntimeError):
     pass
 
 
+def validate_human_operator(identifier: Any) -> str:
+    actor = str(identifier or "").strip()
+    if not actor:
+        raise DecisionValidationError("Decision requires a non-empty operator identifier")
+    lowered = actor.lower()
+    if lowered in AUTOMATED_AGENT_IDENTIFIERS or any(
+        name in lowered for name in ("-agent", "llm", "gemini", "claude", "gpt")
+    ):
+        raise DecisionValidationError(f"Automated agent '{actor}' cannot make human review decisions")
+    return actor
+
+
 class ReviewStore:
     """Durable CRUD store for Human Review Queue and tamper-evident decision log."""
 
@@ -131,17 +143,7 @@ class ReviewStore:
             return result
 
     def record_decision(self, decision: dict[str, Any]) -> dict[str, Any]:
-        decided_by = str(decision.get("decidedBy") or decision.get("reviewer") or "").strip()
-        if not decided_by:
-            raise DecisionValidationError("Decision requires a non-empty operator identifier")
-
-        decided_by_lower = decided_by.lower()
-        if decided_by_lower in AUTOMATED_AGENT_IDENTIFIERS or any(
-            agt in decided_by_lower for agt in ("-agent", "llm", "gemini", "claude", "gpt")
-        ):
-            raise DecisionValidationError(
-                f"Automated agent '{decided_by}' is not authorized to make human review decisions"
-            )
+        decided_by = validate_human_operator(decision.get("decidedBy") or decision.get("reviewer"))
 
         action = decision.get("decision")
         if action not in VALID_DECISION_ACTIONS:
@@ -178,6 +180,10 @@ class ReviewStore:
             if target_rev.get("category") == "POLICY_OR_RIGHTS" and not justification:
                 raise DecisionValidationError("POLICY_OR_RIGHTS reviews strictly require non-empty justification")
 
+            snapshot_hash = target_rev.get("snapshotSha256")
+            if snapshot_hash and decision.get("snapshotSha256") != snapshot_hash:
+                raise DecisionValidationError("Decision must cite the reviewed snapshot SHA-256")
+
             dec_id = str(decision.get("decisionId") or f"DEC-{review_id}").strip()
             timestamp = decision.get("timestamp") or datetime.now(timezone.utc).isoformat()
 
@@ -191,6 +197,10 @@ class ReviewStore:
                 "category": target_rev.get("category"),
                 "timestamp": timestamp,
             }
+            if snapshot_hash:
+                dec_record.update(snapshotSha256=snapshot_hash,
+                                  stage=target_rev.get("stage"),
+                                  reviewKind=target_rev.get("reviewKind"))
 
             appended_dec = self.decision_logger.append_entry(dec_record)
 
@@ -202,3 +212,14 @@ class ReviewStore:
 
             self._save_reviews(reviews)
             return appended_dec
+
+    def supersede_review(self, review_id: str, reason: str) -> None:
+        """Retire an obsolete snapshot without fabricating a human decision."""
+        with self._lock:
+            reviews = self._load_reviews()
+            for review in reviews:
+                if review["reviewId"] == review_id and review["status"] == "PENDING":
+                    review.update(status="SUPERSEDED", supersededAt=datetime.now(timezone.utc).isoformat(),
+                                  supersededReason=reason)
+                    self._save_reviews(reviews)
+                    return
