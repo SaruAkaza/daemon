@@ -1,6 +1,11 @@
 {
   "agent": "codex",
   "updatedAt": "2026-10-15",
+  "currentWork": {
+    "status": "needs_review",
+    "branch": "codex/book-upload-library",
+    "scope": "Entrada de PDF/DOCX/imagens, OCR local e biblioteca pessoal consultável entregue em web/library e preparada no Site privado. O usuário redirecionou o produto para anexar e converter; não exigir preenchimento do caderno técnico. Corondor: 2.609 blocos preservados, 66 seções sugeridas. Sem promoção canônica ou publicação pública de livros."
+  },
   "books": [
     {
       "file": "Corondor.docx",
